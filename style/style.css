@@ -654,6 +654,7 @@ template {
   margin-right: 30rem;
 }
 .phone-list__link {
+  width: 100%;
   display: flex;
   align-items: center;
 }
