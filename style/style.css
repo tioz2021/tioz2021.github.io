@@ -1069,16 +1069,16 @@ template {
 .custom-select__link:hover {
   color: #7de25b;
 }
-.custom-select:hover .custom-select__icon path {
+.custom-select.hover .custom-select__icon path {
   stroke: #7de25b;
 }
-.custom-select:hover .custom-select__active {
+.custom-select.hover .custom-select__active {
   color: #7de25b;
 }
-.custom-select:hover .custom-select__arrow {
+.custom-select.hover .custom-select__arrow {
   transform: rotate(180deg);
 }
-.custom-select:hover .custom-select__arrow line {
+.custom-select.hover .custom-select__arrow line {
   stroke: #7de25b;
 }
 
@@ -1111,13 +1111,13 @@ template {
 .lng-list .urrent-lang {
   order: -1;
 }
-.lng-list:hover .urrent-lang a {
+.lng-list.hover .urrent-lang a {
   color: #7de25b;
 }
-.lng-list:hover .custom-select__content {
+.lng-list.hover .custom-select__content {
   height: var(--lhh);
 }
-.lng-list:hover .custom-select__item {
+.lng-list.hover .custom-select__item {
   margin-bottom: 0;
 }
 
@@ -1170,7 +1170,7 @@ template {
 .sity-list .custom-select__item:last-child {
   padding-bottom: 0;
 }
-.sity-list:hover .custom-select__content {
+.sity-list.hover .custom-select__content {
   height: var(--shh);
 }
 

@@ -75,25 +75,6 @@
   // });
 })();
 
-// custom-select
-(() => {
-  const customSelect = document.querySelectorAll(".custom-select");
-  if (customSelect) {
-    function customSelectToggle(e) {
-      let elm = this;
-
-      this.mousedown = function () {
-        console.log(elm);
-        elm.classList.remove("active");
-      };
-      elm.classList.toggle("active");
-    }
-    customSelect.forEach((e) => {
-      e.addEventListener("click", customSelectToggle);
-    });
-  }
-})();
-
 (() => {
   const btn1 = document.querySelector(".auto-btn1");
   const btn2 = document.querySelector(".auto-btn2");
@@ -118,4 +99,26 @@
   }
   btn1.addEventListener("click", test);
   btn2.addEventListener("click", test);
+})();
+
+// custom-select
+(() => {
+  const customSelect = document.querySelectorAll(".custom-select");
+  function customSelectToggle(e) {
+    if (this.classList.contains("hover")) {
+      this.classList.remove("hover");
+    } else {
+      this.classList.add("hover");
+    }
+  }
+
+  customSelect.forEach((e) => {
+    // e.addEventListener("click", customSelectToggle);
+    e.addEventListener("mouseenter", function () {
+      this.classList.add("hover");
+    });
+    e.addEventListener("mouseleave", function () {
+      this.classList.remove("hover");
+    });
+  });
 })();
