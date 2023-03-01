@@ -78,7 +78,7 @@
 
   // .fs__start
   &__start {
-    width: 1242rem;
+    width: 1223rem;
     min-height: 958rem;
     background: $bg1;
     border-radius: 12rem;
@@ -755,7 +755,7 @@
   width: 100%;
   left: 0;
   top: 0;
-  overflow-y: scroll;
+  overflow-y: auto;
   z-index: 19;
   top: -200%;
   transition: top 1000ms ease;

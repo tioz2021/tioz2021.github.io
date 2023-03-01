@@ -558,11 +558,11 @@ template {
 
 .container {
   width: 100%;
-  max-width: 1920rem;
+  max-width: 1900rem;
   box-sizing: border-box;
   margin: 0 auto;
-  padding-left: 45rem;
-  padding-right: 45rem;
+  padding-left: 44rem;
+  padding-right: 44rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -1248,7 +1248,6 @@ html {
 
 body {
   font-family: "Formular", "Arial", sans-serif;
-  max-width: 1920rem;
   margin: 0 auto;
   overflow-x: hidden;
 }
@@ -1326,7 +1325,7 @@ button {
   justify-content: space-between;
 }
 .fs__start {
-  width: 1242rem;
+  width: 1223rem;
   min-height: 958rem;
   background: #f7f9fa;
   border-radius: 12rem;
@@ -1856,7 +1855,7 @@ button {
   width: 100%;
   left: 0;
   top: 0;
-  overflow-y: scroll;
+  overflow-y: auto;
   z-index: 19;
   top: -200%;
   transition: top 1000ms ease;
@@ -2475,8 +2474,8 @@ button {
   .container {
     width: 100%;
     max-width: 768rem;
-    padding-left: 45rem;
-    padding-right: 45rem;
+    padding-left: 44rem;
+    padding-right: 44rem;
   }
   .s1__container {
     max-width: 678rem;
