@@ -119,13 +119,9 @@
       e.addEventListener("mouseenter", function () {
         this.classList.add("hover");
       });
+      e.addEventListener("mouseleave", function () {
+        this.classList.remove("hover");
+      });
     }
-
-    // e.addEventListener("mouseenter", function () {
-    //   this.classList.add("hover");
-    // });
-    e.addEventListener("mouseleave", function () {
-      this.classList.remove("hover");
-    });
   });
 })();
