@@ -247,8 +247,8 @@
 
   // .s3__end
   &__end {
-    height: 730rem;
-    overflow-y: scroll;
+    // height: 730rem;
+    // overflow-y: scroll;
     // padding-top: 30rem;
     padding-left: 15rem;
     padding-right: 15rem;
@@ -412,12 +412,19 @@
 
 .map-banner {
   width: 328rem;
-  height: 340rem;
+  min-height: 340rem;
   min-height: unset;
   padding-top: 30rem;
   padding-bottom: 30rem;
   padding-left: 15rem;
   padding-right: 15rem;
+
+  // .map-banner__logo
+  &__logo {
+    width: 103rem;
+    height: 12rem;
+    margin-bottom: 4rem;
+  }
 
   // .map-banner__title
   &__title {

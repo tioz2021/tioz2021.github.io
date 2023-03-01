@@ -668,6 +668,13 @@
   padding: 60rem;
   padding-right: 100rem;
 
+  // .map-banner__logo
+  &__logo {
+    width: 147rem;
+    height: 16rem;
+    margin-bottom: 15rem;
+  }
+
   // .map-banner__title
   &__title {
     font-weight: 400;

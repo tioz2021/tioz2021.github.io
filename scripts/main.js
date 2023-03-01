@@ -40,7 +40,7 @@
     popupCloseBtn.addEventListener("click", toggleAllPopups);
     popupsBg.addEventListener("click", toggleAllPopups);
     mobileMenuOpen.addEventListener("click", toggleAllPopups);
-    popupOpenBtn.forEach((e) => e.addEventListener("click", toggleAllPopups));
+    // popupOpenBtn.forEach((e) => e.addEventListener("click", toggleAllPopups));
   }
 })();
 
