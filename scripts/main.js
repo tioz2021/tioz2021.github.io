@@ -84,15 +84,15 @@
     let list2 = document.querySelector(".s3__auto-list:nth-child(3)");
 
     if (this == btn1) {
-      list1.style.transform = "translateX(0%)";
-      list2.style.transform = "translateX(0%)";
-      btn1.classList.add("active");
-      btn2.classList.remove("active");
+      // list1.style.transform = "translateX(0%)";
+      // list2.style.transform = "translateX(0%)";
+      // btn1.classList.add("active");
+      // btn2.classList.remove("active");
     } else {
-      list1.style.transform = "translateX(-106%)";
-      list2.style.transform = "translateX(-105%)";
-      btn2.classList.add("active");
-      btn1.classList.remove("active");
+      // list1.style.transform = "translateX(-106%)";
+      // list2.style.transform = "translateX(-105%)";
+      // btn2.classList.add("active");
+      // btn1.classList.remove("active");
     }
     // document.querySelector(".s3__auto-list:nth-child(1)").style.transform =
     //   "translateX('-100%')";

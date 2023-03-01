@@ -228,11 +228,11 @@
 
   // .s3__start
   &__start {
-    height: 668rem;
-    padding-top: 30rem;
-    padding-bottom: 30rem;
-    padding-left: 15rem;
-    padding-right: 15rem;
+    height: unset;
+    padding-top: 30rem !important;
+    padding-bottom: 30rem !important;
+    padding-left: 15rem !important;
+    padding-right: 15rem !important;
 
     overflow: hidden;
   }

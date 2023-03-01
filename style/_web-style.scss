@@ -362,12 +362,12 @@
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
-    padding: 60rem;
+    padding: 60rem !important;
   }
 
   // .s3__auto-list
   &__auto-list {
-    width: 50%;
+    width: 50% !important;
   }
 
   // .s3__end

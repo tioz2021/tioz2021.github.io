@@ -1584,10 +1584,10 @@ button {
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
-  padding: 60rem;
+  padding: 60rem !important;
 }
 .s3__auto-list {
-  width: 50%;
+  width: 50% !important;
 }
 .s3__end {
   width: 901rem;
@@ -2227,8 +2227,8 @@ button {
   }
   .s3__start {
     width: 100%;
-    padding-left: 30rem;
-    padding-right: 30rem;
+    padding-left: 30rem !important;
+    padding-right: 30rem !important;
     margin-bottom: 22rem;
   }
   .s3__end {
@@ -2491,6 +2491,7 @@ button {
   }
   .auto-list__list {
     width: 100%;
+    height: unset;
   }
   .auto-list__item {
     padding-bottom: 8rem;
@@ -2753,11 +2754,11 @@ button {
     margin-bottom: 5rem;
   }
   .s3__start {
-    height: 668rem;
-    padding-top: 30rem;
-    padding-bottom: 30rem;
-    padding-left: 15rem;
-    padding-right: 15rem;
+    height: unset;
+    padding-top: 30rem !important;
+    padding-bottom: 30rem !important;
+    padding-left: 15rem !important;
+    padding-right: 15rem !important;
     overflow: hidden;
   }
   .s3__auto-list {
@@ -3013,6 +3014,15 @@ button {
   }
   .fs__img {
     margin-bottom: 0rem;
+  }
+  .s3__auto-list {
+    width: 100% !important;
+  }
+  .auto-btn1 {
+    color: #53728d !important;
+  }
+  .swiper-button-disabled {
+    color: #fff !important;
   }
 }
 .pops-active {
