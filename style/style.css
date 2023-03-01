@@ -1902,6 +1902,7 @@ button {
 }
 .pops__header-btn {
   padding: 0;
+  width: 117rem;
   transition: all 500ms ease;
 }
 .pops__header-btn span {
