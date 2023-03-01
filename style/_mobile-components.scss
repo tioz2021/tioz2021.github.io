@@ -88,6 +88,8 @@
 }
 
 .phone-list {
+  justify-content: space-between;
+
   // .phone-list__item
   &__item {
     min-width: 136rem;

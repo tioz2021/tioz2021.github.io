@@ -2507,6 +2507,9 @@ button {
     min-width: unset;
     width: 59rem;
   }
+  .phone-list {
+    justify-content: space-between;
+  }
   .phone-list__item {
     min-width: 136rem;
     margin-bottom: 8rem !important;
