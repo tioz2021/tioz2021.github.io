@@ -113,10 +113,17 @@
   }
 
   customSelect.forEach((e) => {
-    // e.addEventListener("click", customSelectToggle);
-    e.addEventListener("mouseenter", function () {
-      this.classList.add("hover");
-    });
+    if (document.body.offsetWidth < 600) {
+      e.addEventListener("click", customSelectToggle);
+    } else {
+      e.addEventListener("mouseenter", function () {
+        this.classList.add("hover");
+      });
+    }
+
+    // e.addEventListener("mouseenter", function () {
+    //   this.classList.add("hover");
+    // });
     e.addEventListener("mouseleave", function () {
       this.classList.remove("hover");
     });
