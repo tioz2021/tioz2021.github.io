@@ -76,23 +76,23 @@
 })();
 
 // custom-select
-// (() => {
-//   const customSelect = document.querySelectorAll(".custom-select");
-//   if (customSelect) {
-//     function customSelectToggle(e) {
-//       let elm = this;
+(() => {
+  const customSelect = document.querySelectorAll(".custom-select");
+  if (customSelect) {
+    function customSelectToggle(e) {
+      let elm = this;
 
-//       this.mousedown = function () {
-//         console.log(elm);
-//         elm.classList.remove("active");
-//       };
-//       elm.classList.toggle("active");
-//     }
-//     customSelect.forEach((e) => {
-//       e.addEventListener("click", customSelectToggle);
-//     });
-//   }
-// })();
+      this.mousedown = function () {
+        console.log(elm);
+        elm.classList.remove("active");
+      };
+      elm.classList.toggle("active");
+    }
+    customSelect.forEach((e) => {
+      e.addEventListener("click", customSelectToggle);
+    });
+  }
+})();
 
 (() => {
   const btn1 = document.querySelector(".auto-btn1");

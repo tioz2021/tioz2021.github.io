@@ -763,7 +763,7 @@
 .pops {
   position: absolute;
   width: 100%;
-  min-height: 1024rem;
+  min-height: 900rem;
   height: 100vh;
   // height: calc(var(--vh, 1vh) * 100);
 
@@ -851,7 +851,7 @@
     z-index: 0;
     background-color: rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(45rem);
-    min-height: 1024rem;
+    min-height: 900rem;
     transition: opacity 750ms ease;
     opacity: 1;
   }
