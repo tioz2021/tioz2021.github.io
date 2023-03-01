@@ -113,7 +113,7 @@
   }
 
   customSelect.forEach((e) => {
-    if (document.body.offsetWidth < 600) {
+    if (document.body.offsetWidth < 1000) {
       e.addEventListener("click", customSelectToggle);
     } else {
       e.addEventListener("mouseenter", function () {
