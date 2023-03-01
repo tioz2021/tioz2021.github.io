@@ -334,7 +334,7 @@
   // .auto-list__list
   &__list {
     height: 675rem;
-    max-width: 370rem;
+    // max-width: 370rem;
     overflow-y: auto;
 
     // .auto-list .auto-list__list scroll
@@ -484,8 +484,8 @@
 
     // .delivery-list__img svg
     svg {
-      width: unset;
-      height: unset;
+      width: 30rem;
+      height: 30rem;
     }
   }
 

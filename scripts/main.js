@@ -13,9 +13,13 @@
 
     if (popups.classList.contains("closed")) {
       popups.style.top = "0%";
+      document.querySelector(".pops-wrp").style.top = "0%";
+      document.querySelector("body").style.overflowY = "hidden";
     } else {
       setTimeout(() => {
         popups.style.top = "-200%";
+        document.querySelector(".pops-wrp").style.top = "-200%";
+        document.querySelector("body").style.overflowY = "scroll";
       }, 0);
     }
 

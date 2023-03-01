@@ -87,6 +87,9 @@ button {
   .s1__container {
     max-width: 978rem;
   }
+  .pops .s1__container {
+    max-width: 678rem;
+  }
   .delivery-list {
     width: 48%;
   }
@@ -98,6 +101,17 @@ button {
   }
   .ls__title br {
     display: none;
+  }
+
+  .fs__start {
+    overflow: hidden;
+  }
+  .fs__title {
+    max-width: 620rem;
+  }
+  .fs__img {
+    margin-bottom: -54rem;
+    height: 278rem;
   }
 }
 
@@ -183,4 +197,13 @@ button {
   .s3__auto-list:nth-child(2) {
     margin-right: 16rem;
   }
+
+  .pops .s1__container {
+    max-width: 328rem;
+  }
+}
+
+.pops-active {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(45px);
 }
