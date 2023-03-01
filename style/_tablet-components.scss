@@ -539,59 +539,59 @@
 }
 
 .pops {
-  @media screen and (max-height: 700px) {
-    .pops__header {
-      margin-bottom: 2vh;
-    }
-    .s1__container {
-      padding-top: 3vh;
-    }
-    .s1__start h2 {
-      margin-bottom: 3vh;
-    }
-    .s1__market-list {
-      margin-bottom: 3vh;
-    }
-    .s1__img {
-      // max-height: 54vh;
-      margin-top: auto;
-    }
-    .s1__card-list {
-      bottom: 3vh;
-    }
-    .s1__end {
-      display: flex;
-    }
+  // @media screen and (max-height: 700px) {
+  //   .pops__header {
+  //     margin-bottom: 2vh;
+  //   }
+  //   .s1__container {
+  //     padding-top: 3vh;
+  //   }
+  //   .s1__start h2 {
+  //     margin-bottom: 3vh;
+  //   }
+  //   .s1__market-list {
+  //     margin-bottom: 3vh;
+  //   }
+  //   .s1__img {
+  //     // max-height: 54vh;
+  //     margin-top: auto;
+  //   }
+  //   .s1__card-list {
+  //     bottom: 3vh;
+  //   }
+  //   .s1__end {
+  //     display: flex;
+  //   }
 
-    .mobile-menu {
-      height: auto;
-    }
-    .phone-list {
-      margin-bottom: 2vh;
-    }
+  //   .mobile-menu {
+  //     height: auto;
+  //   }
+  //   .phone-list {
+  //     margin-bottom: 2vh;
+  //   }
 
-    .mobile-menu nav li {
-      margin-bottom: 2vh;
-    }
-    .mobile-menu nav {
-      margin-bottom: 4vh;
-    }
-  }
-  @media screen and (max-height: 550px) {
-    .pops__header {
-      margin-top: -20rem;
-      transform: scale(0.8);
-    }
+  //   .mobile-menu nav li {
+  //     margin-bottom: 2vh;
+  //   }
+  //   .mobile-menu nav {
+  //     margin-bottom: 4vh;
+  //   }
+  // }
+  //   @media screen and (max-height: 550px) {
+  //     .pops__header {
+  //       margin-top: -20rem;
+  //       transform: scale(0.8);
+  //     }
 
-    .s1-banner {
-      margin-top: -40rem;
-      transform: scale(0.8);
-    }
-    .mobile-menu {
-      margin-top: -40rem;
-      transform: scale(0.8);
-    }
-  }
+  //     .s1-banner {
+  //       margin-top: -40rem;
+  //       transform: scale(0.8);
+  //     }
+  //     .mobile-menu {
+  //       margin-top: -40rem;
+  //       transform: scale(0.8);
+  //     }
+  //   }
 }
 
 .mobile-menu {

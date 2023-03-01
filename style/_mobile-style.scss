@@ -510,103 +510,104 @@
 
     // .pops__logo a
     a {
+      // }
+
+      // .pops__logo object
+      object {
+        width: 100%;
+        height: 100%;
+      }
     }
 
-    // .pops__logo object
-    object {
-      width: 100%;
-      height: 100%;
-    }
-  }
+    // .pops__header-btn
+    &__header-btn {
+      width: 100rem;
+      height: 30rem;
 
-  // .pops__header-btn
-  &__header-btn {
-    width: 100rem;
-    height: 30rem;
+      // .pops__header-btn:hover
+      &:hover {
+      }
 
-    // .pops__header-btn:hover
-    &:hover {
+      // .pops__header-btn span
+      span {
+      }
     }
 
-    // .pops__header-btn span
-    span {
+    // .pops__bg
+    &__bg {
+      min-height: 500rem;
     }
-  }
 
-  // .pops__bg
-  &__bg {
-    min-height: 500rem;
-  }
-
-  // .pops .s1-banner
-  .s1-banner {
-  }
-
-  .s1__start div.def-text {
-    margin-bottom: 3vh;
-  }
-
-  .pops .s1__market-list {
-    margin-bottom: 1.5vh;
-  }
-
-  @media screen and (min-height: 650px) {
-    // .pops .s1-banner .s1__container
-    .s1__container {
-    }
-    .s1__start h2 {
-    }
-    .s1__market-list {
-    }
-    .s1__img {
-    }
-    .s1__end {
-    }
-  }
-
-  &.closed {
-    .pops__header {
-    }
+    // .pops .s1-banner
     .s1-banner {
     }
-    .pops__bg {
+
+    .s1__start div.def-text {
+      margin-bottom: 3vh;
+    }
+
+    .pops .s1__market-list {
+      margin-bottom: 1.5vh;
+    }
+
+    @media screen and (min-height: 650px) {
+      // .pops .s1-banner .s1__container
+      .s1__container {
+      }
+      .s1__start h2 {
+      }
+      .s1__market-list {
+      }
+      .s1__img {
+      }
+      .s1__end {
+      }
+    }
+
+    &.closed {
+      .pops__header {
+      }
+      .s1-banner {
+      }
+      .pops__bg {
+      }
     }
   }
-}
 
-.ls {
-  margin-bottom: 30rem;
-  &__start {
-    padding-top: 30rem;
-    padding-bottom: 30rem;
-    padding-left: 15rem;
-    padding-right: 15rem;
-    margin-bottom: 15rem;
-  }
-
-  &__title {
-    margin-bottom: 10rem;
-  }
-
-  &__desc {
+  .ls {
     margin-bottom: 30rem;
-  }
+    &__start {
+      padding-top: 30rem;
+      padding-bottom: 30rem;
+      padding-left: 15rem;
+      padding-right: 15rem;
+      margin-bottom: 15rem;
+    }
 
-  &__end {
-    padding-top: 30rem;
-    padding-bottom: 30rem;
-    padding-left: 15rem;
-    padding-right: 15rem;
-  }
+    &__title {
+      margin-bottom: 10rem;
+    }
 
-  h4 {
-    margin-bottom: 8rem;
-  }
+    &__desc {
+      margin-bottom: 30rem;
+    }
 
-  .ls__info-list b {
-    min-height: 26rem;
-  }
+    &__end {
+      padding-top: 30rem;
+      padding-bottom: 30rem;
+      padding-left: 15rem;
+      padding-right: 15rem;
+    }
 
-  &__map {
+    h4 {
+      margin-bottom: 8rem;
+    }
+
+    .ls__info-list b {
+      min-height: 26rem;
+    }
+
+    &__map {
+    }
   }
 }
