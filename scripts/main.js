@@ -1,7 +1,6 @@
 //popups toggle
 (() => {
   const popupCloseBtn = document.querySelector(".pops__header-btn");
-  const popupOpenBtn = document.querySelectorAll(".open-popup-btn");
   const popups = document.querySelector(".pops");
   const popupsBg = document.querySelector(".pops__bg");
 
@@ -9,7 +8,6 @@
 
   function toggleAllPopups(e) {
     e.preventDefault();
-    // this.addEventListener("click", toggleAllPopups);
 
     if (popups.classList.contains("closed")) {
       popups.style.top = "0%";
@@ -40,7 +38,6 @@
     popupCloseBtn.addEventListener("click", toggleAllPopups);
     popupsBg.addEventListener("click", toggleAllPopups);
     mobileMenuOpen.addEventListener("click", toggleAllPopups);
-    // popupOpenBtn.forEach((e) => e.addEventListener("click", toggleAllPopups));
   }
 })();
 
@@ -56,24 +53,7 @@
 })();
 
 // custom select change height
-(() => {
-  // const sityCustomSelect = document.querySelector(
-  //   ".sity-list .custom-select__content"
-  // );
-  // let sityItem = sityCustomSelect.querySelectorAll(".custom-select__item");
-  // let sityHeight = sityItem.length * 55;
-  // sityCustomSelect.style.setProperty("--shh", `${sityHeight}rem`);
-  // const lngCustomSelect = document.querySelectorAll(
-  //   ".lng-list .custom-select__content"
-  // );
-  // lngCustomSelect.forEach((e) => {
-  //   let lngItem = e.querySelectorAll(".custom-select__item");
-  //   let n = 0;
-  //   lngItem.length === 3 ? (n = 32) : (n = 28);
-  //   let lngHeight = lngItem.length * n;
-  //   e.style.setProperty("--lhh", `${lngHeight}rem`);
-  // });
-})();
+(() => {})();
 
 (() => {
   const btn1 = document.querySelector(".auto-btn1");
@@ -84,18 +64,8 @@
     let list2 = document.querySelector(".s3__auto-list:nth-child(3)");
 
     if (this == btn1) {
-      // list1.style.transform = "translateX(0%)";
-      // list2.style.transform = "translateX(0%)";
-      // btn1.classList.add("active");
-      // btn2.classList.remove("active");
     } else {
-      // list1.style.transform = "translateX(-106%)";
-      // list2.style.transform = "translateX(-105%)";
-      // btn2.classList.add("active");
-      // btn1.classList.remove("active");
     }
-    // document.querySelector(".s3__auto-list:nth-child(1)").style.transform =
-    //   "translateX('-100%')";
   }
   btn1.addEventListener("click", test);
   btn2.addEventListener("click", test);
