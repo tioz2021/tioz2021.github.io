@@ -768,7 +768,6 @@ template {
 }
 .auto-list__list {
   height: 675rem;
-  overflow-y: auto;
 }
 .auto-list__list::-webkit-scrollbar-track {
   border-radius: 4px;
