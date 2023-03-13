@@ -67,7 +67,7 @@
 }
 
 .fs {
-  min-height: 958rem;
+  min-height: 880rem;
   margin-bottom: 30rem;
 
   // .fs__container
@@ -79,7 +79,7 @@
   // .fs__start
   &__start {
     width: 1223rem;
-    min-height: 958rem;
+    min-height: 855rem;
     background: $bg1;
     border-radius: 12rem;
     box-sizing: border-box;
@@ -142,7 +142,7 @@
   // .fs__end
   &__end {
     width: 560rem;
-    height: 958rem;
+    height: 873rem;
     background-color: #edf1f4;
     border-radius: 12rem;
     overflow: hidden;

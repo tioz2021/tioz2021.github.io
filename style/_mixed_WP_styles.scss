@@ -1,0 +1,37 @@
+
+.links-404 {
+    margin-top: 15rem;
+    display: flex;
+  }
+  
+  .links-404 .link-404 {
+    font-size: 22rem;
+  }
+  
+  .links-404 .link-404 span {    
+    margin: 0 10px; 
+  }
+  .links-404 .link-404:first-child span {
+    display: none;
+  } 
+  
+  @media (max-width: 1200px) {
+    .links-404 {
+      flex-wrap: wrap;
+    }
+  }
+  
+  @media (max-width: 760px) {
+    .links-404 .link-404:first-child span {
+      display: block;
+    } 
+    .links-404 .link-404 {
+      display: flex;
+      width: 100%;
+    }
+  }
+  @media (max-width: 600px) {
+    .links-404 .link-404 {
+        font-size: 15rem;
+    }
+  }

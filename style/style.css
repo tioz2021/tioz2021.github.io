@@ -542,6 +542,13 @@ template {
   color: #fff;
 }
 
+.mobile-menu a.small-text {
+  font-weight: 500;
+  font-size: 32rem;
+  line-height: 38rem;
+  color: #fff;
+}
+
 .small-title-text {
   font-weight: 500;
   font-size: 54rem;
@@ -614,7 +621,7 @@ template {
   width: 280rem;
   height: 30rem;
 }
-.main-logo object {
+.main-logo svg {
   z-index: -1;
 }
 
@@ -642,7 +649,7 @@ template {
   align-items: center;
   justify-content: space-between;
 }
-.main-nav a {
+.main-nav .lang-item a {
   text-transform: uppercase;
 }
 
@@ -677,13 +684,13 @@ template {
 .phone-list__item:hover span {
   color: #59c233;
 }
-.phone-list__item:hover:nth-child(1) circle, .phone-list__item:hover:nth-child(2) circle, .phone-list__item:hover:nth-child(4) circle {
+.phone-list__item:hover:nth-child(1) circle, .phone-list__item:hover:nth-child(4) circle, .phone-list__item:hover:nth-child(3) circle {
   fill: #59c233;
 }
-.phone-list__item:hover:nth-child(1) g > path:first-child, .phone-list__item:hover:nth-child(2) g > path:first-child, .phone-list__item:hover:nth-child(4) g > path:first-child {
+.phone-list__item:hover:nth-child(1) g > path:first-child, .phone-list__item:hover:nth-child(4) g > path:first-child, .phone-list__item:hover:nth-child(3) g > path:first-child {
   fill: #59c233;
 }
-.phone-list__item:hover:nth-child(3) path {
+.phone-list__item:hover:nth-child(2) path {
   fill: #59c233;
 }
 .phone-list__item circle,
@@ -768,6 +775,7 @@ template {
 }
 .auto-list__list {
   height: 675rem;
+  /*overflow-y: auto;*/
 }
 .auto-list__list::-webkit-scrollbar-track {
   border-radius: 4px;
@@ -1048,6 +1056,11 @@ template {
   position: relative;
   transition: all 500ms ease;
 }
+.custom-select ul {
+  width: 100%;
+  position: relative;
+  transition: all 500ms ease;
+}
 .custom-select__item {
   box-sizing: border-box;
   height: 22rem;
@@ -1055,7 +1068,17 @@ template {
   align-items: center;
   padding-bottom: 4rem;
 }
+.custom-select li {
+  box-sizing: border-box;
+  height: 22rem;
+  display: flex;
+  align-items: center;
+  padding-bottom: 4rem;
+}
 .custom-select__item:last-child {
+  padding-bottom: 0;
+}
+.custom-select li:last-child {
   padding-bottom: 0;
 }
 .custom-select__link {
@@ -1066,6 +1089,22 @@ template {
   transition: color 250ms ease;
 }
 .custom-select__link:hover {
+  color: #7de25b;
+}
+.custom-select .lang-item a {
+  text-transform: uppercase;
+}
+.custom-select .lang-item a {
+  box-sizing: border-box;
+  padding-left: 31rem;
+  width: 100%;
+  color: #050b20;
+  transition: color 250ms ease;
+  font-weight: 400;
+  font-size: 16rem;
+  line-height: 22rem;
+}
+.custom-select .lang-item a:hover {
   color: #7de25b;
 }
 .custom-select.hover .custom-select__icon path {
@@ -1084,7 +1123,9 @@ template {
 .lng-list .custom-select__title {
   justify-content: space-between;
   width: 68rem;
-  height: 48rem;
+  height: 30rem;
+  margin-top: 9rem;
+  margin-bottom: 0;
   position: absolute;
   z-index: 2;
   left: 50%;
@@ -1107,16 +1148,29 @@ template {
   transition: margin-bottom 500ms ease;
   margin-bottom: 10rem;
 }
+.lng-list li.lang-item {
+  transition: margin-bottom 500ms ease;
+  margin-bottom: 10rem;
+}
 .lng-list .urrent-lang {
   order: -1;
 }
+.lng-list .current-lang {
+  order: -1;
+}
 .lng-list.hover .urrent-lang a {
+  color: #7de25b;
+}
+.lng-list.hover .current-lang a {
   color: #7de25b;
 }
 .lng-list.hover .custom-select__content {
   height: var(--lhh);
 }
 .lng-list.hover .custom-select__item {
+  margin-bottom: 0;
+}
+.lng-list.hover li.lang-item {
   margin-bottom: 0;
 }
 
@@ -1126,6 +1180,9 @@ template {
   z-index: 2;
 }
 .sity-list .custom-select__link {
+  padding-left: 0;
+}
+.sity-list .lang-item a {
   padding-left: 0;
 }
 .sity-list .custom-select__content {
@@ -1160,7 +1217,21 @@ template {
   margin-left: -16rem;
   border-radius: 22rem;
 }
+.sity-list ul {
+  padding: 0;
+  background-color: #edf1f4;
+  box-sizing: border-box;
+  padding: 16rem;
+  margin-left: -16rem;
+  border-radius: 22rem;
+}
 .sity-list .custom-select__item {
+  height: 36rem;
+  box-sizing: border-box;
+  margin-bottom: 0;
+  padding-bottom: 8rem;
+}
+.sity-list li {
   height: 36rem;
   box-sizing: border-box;
   margin-bottom: 0;
@@ -1187,6 +1258,12 @@ template {
   padding: 30rem;
 }
 .mobile-menu a.str-text {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 32rem;
+  line-height: 38rem;
+}
+.mobile-menu a.small-text { 
   text-transform: uppercase;
   text-align: center;
   font-size: 32rem;
@@ -1316,7 +1393,7 @@ button {
 }
 
 .fs {
-  min-height: 958rem;
+  min-height: 880rem;
   margin-bottom: 30rem;
 }
 .fs__container {
@@ -1325,7 +1402,7 @@ button {
 }
 .fs__start {
   width: 1223rem;
-  min-height: 958rem;
+  min-height: 855rem;
   background: #f7f9fa;
   border-radius: 12rem;
   box-sizing: border-box;
@@ -1393,7 +1470,7 @@ button {
 }
 .fs__end {
   width: 560rem;
-  height: 958rem;
+  height: 873rem;
   background-color: #edf1f4;
   border-radius: 12rem;
   overflow: hidden;
@@ -1989,6 +2066,13 @@ button {
     display: flex;
     align-items: center;
   }
+  .mobile-menu a.small-text {  
+    font-size: 24rem;
+    line-height: 30rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+  }
   .small-title-text {
     font-size: 32rem;
     line-height: 38rem;
@@ -2090,6 +2174,7 @@ button {
   .lng-list .custom-select__title {
     height: 44rem;
     width: 68rem;
+    margin-top: 0;
   }
   .lng-list .custom-select__content {
     height: 44rem;
@@ -2549,6 +2634,10 @@ button {
     font-size: 12rem;
     line-height: 16rem;
   }
+  .custom-select .lang-item a {
+    font-size: 12rem;
+    line-height: 16rem;
+  }
   .lng-list {
     z-index: 2;
   }
@@ -2571,6 +2660,9 @@ button {
     transform: translateY(-2.5rem);
   }
   .lng-list .custom-select__link {
+    padding: 0;
+  }
+  .lng-list .lang-item a {
     padding: 0;
   }
   .lng-list .custom-select__arrow {
@@ -2606,6 +2698,10 @@ button {
     padding: 15rem;
   }
   .mobile-menu a.str-text {
+    font-size: 24rem;
+    line-height: 30rem;
+  }
+  .mobile-menu a.small-text { 
     font-size: 24rem;
     line-height: 30rem;
   }
@@ -2931,7 +3027,7 @@ button {
     width: 123rem;
     height: 12rem;
   }
-  .pops__logo a object {
+  .pops__logo a svg {
     width: 100%;
     height: 100%;
   }
@@ -3028,4 +3124,41 @@ button {
   background: rgba(255, 255, 255, 0.4);
   -webkit-backdrop-filter: blur(45px);
           backdrop-filter: blur(45px);
+}/*# sourceMappingURL=style.css.map */
+
+.links-404 {
+  margin-top: 15rem;
+  display: flex;
+}
+
+.links-404 .link-404 {
+  font-size: 22rem;
+}
+
+.links-404 .link-404 span {    
+  margin: 0 10px; 
+}
+.links-404 .link-404:first-child span {
+  display: none;
+} 
+
+@media (max-width: 1200px) {
+  .links-404 {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 760px) {
+  .links-404 .link-404:first-child span {
+    display: block;
+  } 
+  .links-404 .link-404 {
+    display: flex;
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .links-404 .link-404 {
+      font-size: 15rem;
+  }
 }

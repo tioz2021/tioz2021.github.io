@@ -14,6 +14,14 @@
   align-items: center;
 }
 
+.mobile-menu a.small-text {  
+  font-size: 24rem;
+  line-height: 30rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+
 .small-title-text {
   font-size: 32rem;
   line-height: 38rem;
@@ -475,6 +483,7 @@
   .custom-select__title {
     height: 44rem;
     width: 68rem;
+    margin-top: 0;
   }
 
   // .custom-select__content

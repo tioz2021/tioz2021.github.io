@@ -452,6 +452,11 @@
     &:hover {
     }
   }
+  
+  .lang-item a {
+    font-size: 12rem;
+    line-height: 16rem;
+  }
 
   // .custom-select.active
   &:hover {
@@ -502,6 +507,10 @@
   }
 
   .custom-select__link {
+    padding: 0;
+  }
+
+  .lang-item a {
     padding: 0;
   }
 
@@ -579,6 +588,11 @@
   padding: 15rem;
 
   a.str-text {
+    font-size: 24rem;
+    line-height: 30rem;
+  }
+
+  a.small-text { 
     font-size: 24rem;
     line-height: 30rem;
   }
