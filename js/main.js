@@ -13,7 +13,7 @@
 (() => {
   const allSiteBtn = document.querySelectorAll(".main-btn");
   const popupBg = document.querySelector(".popup-bg");
-  const popupBody = document.querySelector(".popup-body");
+  // const popupBody = document.querySelector(".popup-body");
   const popup = document.querySelector(".popup");
 
   const openPopups = (e) => {
@@ -27,7 +27,7 @@
     setTimeout(() => {
       //popup.style.display = "none";
       popup.style.zIndex = "-1";
-    }, 1000);
+    }, 500);
   };
 
   popupBg.addEventListener("click", hiddenPopups);

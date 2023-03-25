@@ -104,10 +104,12 @@
 }
 
 html {
+  background-color: #fff;
   font-size: 0.05208vw;
 }
 
 body {
+  background-color: #fff;
   font-family: "Montserrat", sans-serif;
   color: #000;
 }
@@ -137,6 +139,10 @@ body {
   height: 32rem;
   border-bottom: 1rem solid;
   max-width: 130rem;
+}
+
+section {
+  background-color: #fff;
 }
 
 // jd:max-w-[1440rem]
