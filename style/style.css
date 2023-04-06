@@ -560,6 +560,9 @@ table {
   transform: scale(1);
   width: 24px;
   height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: all 500ms ease;
 }
 .police .police__close-btn:hover {
