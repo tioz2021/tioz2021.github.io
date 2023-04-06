@@ -1,0 +1,57 @@
+@media screen and (max-width: 520px) {
+  .container {
+    max-width: 95%;
+  }
+  .text-wrap {
+    padding: 6px 8px;
+  }
+  .text-step p {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .soc-list {
+    padding: 6px 8px;
+  }
+  .soc-list span {
+    font-size: 9px;
+  }
+  .footer {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .form-page .top-img {
+    min-height: 240px;
+  }
+  .b-price__price {
+    font-size: 24px;
+  }
+  .main-form__top {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .main-form__top span {
+    font-size: 11px;
+  }
+  .main-form form {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .main-form__input-wrp {
+    flex-wrap: wrap;
+  }
+  .main-form label {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  .main-form input,
+  .main-form textarea {
+    width: 100%;
+  }
+  .main-form .iti {
+    width: 100%;
+  }
+  .radio-container {
+    margin-left: 10px;
+  }
+}
