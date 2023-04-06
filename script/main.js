@@ -3,7 +3,7 @@
   const slideWrp = document.querySelector(".slide-wrp");
   const slides = document.querySelectorAll(".slide");
   const slideStartBtn = document.querySelector(".start-slide");
-  const secondStartBtn = document.querySelector(".second-slide");
+  const slideSecondBtn = document.querySelector(".second-slide");
   const slide1 = (e) => {
     console.log(slides[0]);
     slideWrp.style.left = "-100%";
@@ -13,7 +13,7 @@
     slideWrp.style.left = "-200%";
   };
   if (slideStartBtn) slideStartBtn.addEventListener("click", slide1);
-  if (secondStartBtn) secondStartBtn.addEventListener("click", slide2);
+  if (slideSecondBtn) slideSecondBtn.addEventListener("click", slide2);
 })();
 
 // toggle police popup
