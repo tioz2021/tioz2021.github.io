@@ -166,6 +166,7 @@
   //.footer-text
   &-text {
     display: flex;
+    // min-height: 23px;
   }
 
   color: #7e7e7e;
@@ -234,6 +235,7 @@
 .form-group span {
   display: block;
   margin-top: 1px;
+  // margin-top: 7px;
 }
 
 .form-group label {
@@ -336,6 +338,8 @@
     color: red;
     cursor: pointer;
     transform: scale(1);
+    width: 24px;
+    height: 24px;
 
     transition: all 500ms ease;
     &:hover {
@@ -487,6 +491,9 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+  opacity: 0.6;
+  padding-left: 28px;
+  padding-right: 28px;
 
   //.certifications .img-wrp
   .img-wrp {
