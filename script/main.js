@@ -10,6 +10,8 @@
       slideWrp.style.left = "-100%";
       c.nextElementSibling.querySelector("span").style.color = "#7e7e7e";
       c.nextElementSibling.querySelector("span a").style.color = "#7e7e7e";
+      slides[1].style.position = "static";
+      slides[1].style.zIndex = "unset";
     } else {
       c.nextElementSibling.querySelector("span").style.color = "red";
       c.nextElementSibling.querySelector("span a").style.color = "red";
@@ -18,6 +20,8 @@
   const slide2 = (e) => {
     console.log(slides[0]);
     slideWrp.style.left = "-200%";
+    slides[2].style.position = "static";
+    slides[2].style.zIndex = "unset";
   };
   if (slideStartBtn) slideStartBtn.addEventListener("click", slide1);
   if (slideSecondBtn) slideSecondBtn.addEventListener("click", slide2);
