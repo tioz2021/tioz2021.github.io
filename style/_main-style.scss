@@ -503,6 +503,10 @@
     width: 100%;
     max-width: 300px;
     height: 31px;
+    img {
+      //.certifications .img-wrp img
+      object-fit: contain;
+    }
   }
 }
 

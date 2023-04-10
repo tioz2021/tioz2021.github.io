@@ -686,6 +686,10 @@ table {
   max-width: 300px;
   height: 31px;
 }
+.certifications .img-wrp img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 
 .main-form {
   padding-bottom: 32px;

@@ -5,8 +5,15 @@
   const slideStartBtn = document.querySelector(".start-slide");
   const slideSecondBtn = document.querySelector(".second-slide");
   const slide1 = (e) => {
-    console.log(slides[0]);
-    slideWrp.style.left = "-100%";
+    let c = document.querySelector("#success");
+    if (c.checked == true) {
+      slideWrp.style.left = "-100%";
+      c.nextElementSibling.querySelector("span").style.color = "#7e7e7e";
+      c.nextElementSibling.querySelector("span a").style.color = "#7e7e7e";
+    } else {
+      c.nextElementSibling.querySelector("span").style.color = "red";
+      c.nextElementSibling.querySelector("span a").style.color = "red";
+    }
   };
   const slide2 = (e) => {
     console.log(slides[0]);
