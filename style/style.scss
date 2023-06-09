@@ -36,7 +36,7 @@ a {
 body {
   font-family: "Formular", "Arial", sans-serif;
   background: #f8f8f8;
-  // overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 .header {
@@ -128,6 +128,7 @@ body {
   height: 1275rem;
   background-image: url("../img/s1/bg-sky.jpg");
   @include bg-def-set(center top, contain);
+
   box-sizing: border-box;
   padding-top: 85rem;
   margin-top: 88rem;
@@ -213,6 +214,7 @@ body {
     top: 143rem;
     right: 614rem;
     z-index: 2;
+    // transition: all 250ms ease;
   }
   // .s1__decor-elm-bird2
   &__decor-elm-bird2 {
@@ -221,6 +223,7 @@ body {
     position: absolute;
     bottom: 605rem;
     left: 660rem;
+    // transition: all 250ms ease;
   }
   // .s1__decor-elm-house
   &__decor-elm-house {
@@ -242,6 +245,7 @@ body {
   padding-top: 120rem;
   padding-bottom: 120rem;
   margin-bottom: 120rem;
+  overflow: hidden;
 
   // .s2__container
   &__container {
@@ -367,7 +371,8 @@ body {
 }
 
 .s3 {
-  margin-bottom: 130rem;
+  overflow: hidden;
+  // margin-bottom: 130rem;
 
   // .s3__container
   &__container {
@@ -472,6 +477,10 @@ body {
   // .s5__list-icon
   &__list-icon {
     margin-right: 15rem;
+    img {
+      width: 120rem;
+      height: 120rem;
+    }
   }
   // .s5__list-text-wrp
   &__list-text-wrp {
@@ -638,7 +647,7 @@ body {
   &__b3 {
     display: flex;
     // margin-top: -168rem;
-    margin-top: -126rem;
+    margin-top: -162rem;
     position: relative;
 
     // .s7__b3 .wrp
@@ -697,7 +706,7 @@ body {
   box-sizing: border-box;
   padding-top: 120rem;
   padding-bottom: 120rem;
-  margin-bottom: 120rem;
+  // margin-bottom: 120rem;
 
   // .s8__title
   &__title {
@@ -712,6 +721,8 @@ body {
 }
 
 .s9 {
+  box-sizing: border-box;
+  padding-top: 120rem;
   // .s9__container
   &__container {
   }
@@ -884,6 +895,7 @@ body {
     // height: 892rem;
     margin-bottom: 85rem;
     position: relative;
+    padding-top: 130rem;
   }
   // .s4__title
   &__title {
@@ -962,7 +974,7 @@ body {
   // .s4__gellry-helper
   &__gellry-helper {
     position: absolute;
-    top: 30rem;
+    top: 151rem;
     right: 0;
     display: flex;
     align-items: center;
@@ -1607,6 +1619,7 @@ body {
   // .popups__info
   &__info {
     height: 100%;
+    min-height: 100vh;
     width: 100%;
     box-sizing: border-box;
     padding-top: 60rem;
@@ -1714,6 +1727,7 @@ body {
       height: 443rem;
       position: relative;
       z-index: 3;
+      transform: scaleX(-1);
     }
     // .popups__info-end-img-wrp .img-wrp:last-child
     .img-wrp:last-child {
@@ -1722,7 +1736,8 @@ body {
       bottom: 0;
       z-index: 2;
       width: 100%;
-      height: 369rem;
+      // height: 369rem;
+      height: 383rem;
     }
   }
 
@@ -1766,7 +1781,7 @@ body {
   backdrop-filter: blur(23px);
   left: -200%;
   opacity: 0;
-  transition: all 500ms ease;
+  transition: all 750ms ease;
   &.active {
     left: 0%;
     opacity: 1;
@@ -1784,6 +1799,7 @@ body {
 .tab .img-wrp {
   top: 50%;
   transform: translateY(-50%);
+  // z-index: -1;
 }
 
 .tab .wrp {
@@ -1822,6 +1838,10 @@ body {
 .page404 .s2__list-first {
   width: 405rem;
   margin-right: 48rem;
+}
+
+.man-mob {
+  display: none;
 }
 
 @media screen and (max-width: 1600px) {

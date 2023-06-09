@@ -159,6 +159,9 @@
   max-width: 100%;
   text-align: center;
   margin-bottom: 50px;
+  br {
+    display: none;
+  }
 }
 
 .s9__map {
@@ -173,11 +176,16 @@
   width: 100%;
 }
 
+.popups__info {
+  // max-width: 760rem;
+  // margin: 0 auto;
+}
 .popups__info-start {
   width: 665rem;
 }
 .popups__info-end {
-  width: 530rem;
+  max-width: 760rem;
+  margin: 0 auto;
 }
 
 .popups__info-end .wrp-btn {
@@ -285,9 +293,9 @@
   margin-bottom: 48rem;
 }
 
-.popups__info-end {
-  width: 100%;
-}
+// .popups__info-end {
+//   width: 100%;
+// }
 
 .popups__info-end .main-btn {
   width: 330rem;
@@ -379,4 +387,12 @@
 
 .popups__form .form-control {
   justify-content: space-between;
+}
+
+.popups__info-end-img-wrp .img-wrp:last-child {
+  height: 320rem;
+}
+
+.s2__item {
+  margin-right: 0 !important;
 }

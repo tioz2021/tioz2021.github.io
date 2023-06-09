@@ -1,6 +1,3 @@
-.header .nav {
-  // display: none;
-}
 .header__logo .img-wrp {
   margin-right: 12rem;
 }
@@ -230,7 +227,7 @@
 }
 
 .s3 {
-  margin-bottom: 120rem;
+  // margin-bottom: 120rem;
 }
 
 .s4__info-item:last-child {
@@ -342,7 +339,7 @@
 }
 
 .s6__step-wrp {
-  padding-bottom: 36rem;
+  // padding-bottom: 36rem;
 }
 
 .s6__item {
@@ -467,7 +464,7 @@
 }
 
 .s8 {
-  margin-bottom: 105rem;
+  // margin-bottom: 105rem;
 }
 .s9__end-start {
   width: 100%;
@@ -646,12 +643,16 @@
   box-sizing: border-box;
   padding: 24rem;
 
-  top: -400rem;
-  // top: 105rem;
-  transition: all 500ms ease;
+  // top: -400rem;
+  top: 105rem;
+  right: -200%;
+  transform: translateX(50%);
+  transition: all 1000ms ease;
 
   &.active {
-    top: 105rem;
+    right: 50%;
+    // transform: translateX(50%);
+    // top: 105rem;
   }
 }
 .nav ul {
@@ -721,4 +722,50 @@
 
 .page404 .ddlogo {
   position: static;
+}
+
+.s8__title {
+  width: 100%;
+  text-align: left;
+}
+
+.s9__map-point {
+  width: 36rem;
+  height: 36rem;
+}
+
+.s9 {
+  padding-top: 105rem;
+}
+
+.man-mob {
+  display: block;
+}
+.man-web {
+  display: none;
+}
+
+.s2__img-man {
+  width: 341rem;
+  height: 385rem;
+}
+.s2__img-bg-man {
+  width: 718rem;
+  height: 306rem;
+}
+
+.popups__info-end-img-wrp .img-wrp:last-child {
+  // height: 296rem;
+}
+
+.popups__info {
+  // margin: unset;
+  // max-width: unset;
+}
+.popups__info-end {
+  width: 100%;
+}
+
+.popups__info-end-img-wrp .img-wrp:last-child {
+  height: 306rem;
 }

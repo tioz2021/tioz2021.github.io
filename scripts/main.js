@@ -2,6 +2,11 @@
 (() => {
   const items = document.querySelectorAll(".tab");
   const activeItem = (e) => {
+    if (e.target.parentNode.parentNode.classList.contains("active")) {
+      console.log("?");
+      e.target.parentNode.parentNode.classList.remove("active");
+      return;
+    }
     items.forEach((e) => e.classList.remove("active"));
 
     const content =
@@ -464,4 +469,32 @@ function exit() {
     mobileMenuBg.classList.remove("active");
   }
   allBtnList.forEach((e) => e.addEventListener("click", closeMenu));
+})();
+
+// test paralax for scrolling
+(() => {
+  const s1Bird1 = document.querySelector(".s1__decor-elm-bird1");
+  const s1Bird1Styles = window.getComputedStyle(s1Bird1);
+  const s1Bird2 = document.querySelector(".s1__decor-elm-bird2");
+  const s1Bird2Styles = window.getComputedStyle(s1Bird2);
+  s1Bird1.style.top = parseInt(s1Bird1Styles.top) + "px";
+  s1Bird2.style.bottom = parseInt(s1Bird2Styles.bottom) + "px";
+
+  function scrolling() {
+    if (window.pageYOffset > 0 && window.pageYOffset < 130) {
+      s1Bird1.style.top = parseFloat(s1Bird1.style.top) + 0.5 + "px";
+      s1Bird2.style.bottom = parseFloat(s1Bird2.style.bottom) + 0.5 + "px";
+    } else if (window.pageYOffset > 130 && window.pageYOffset < 260) {
+      s1Bird1.style.top = parseFloat(s1Bird1.style.top) - 0.5 + "px";
+      s1Bird2.style.bottom = parseFloat(s1Bird2.style.bottom) - 0.5 + "px";
+    }
+  }
+
+  function resizing() {
+    s1Bird1.removeAttribute("style");
+    s1Bird2.removeAttribute("style");
+  }
+
+  document.addEventListener("scroll", scrolling);
+  window.addEventListener("resize", resizing);
 })();

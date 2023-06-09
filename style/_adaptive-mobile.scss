@@ -306,7 +306,7 @@
 }
 
 .s3 {
-  margin-bottom: 60rem;
+  // margin-bottom: 60rem;
 }
 
 .s4__title {
@@ -404,6 +404,7 @@
 }
 
 .s4__container {
+  padding-top: 60rem;
   margin-bottom: 60rem;
 }
 
@@ -677,7 +678,7 @@ input[type="checkbox"]::before {
 .s8 {
   padding-top: 60rem;
   padding-bottom: 60rem;
-  margin-bottom: 60rem;
+  // margin-bottom: 60rem;
 }
 
 .s8__title {
@@ -711,6 +712,10 @@ input[type="checkbox"]::before {
 
 .tab input {
   // display: none;
+}
+
+.s9 {
+  padding-top: 60rem;
 }
 
 .s9__start {
@@ -1010,7 +1015,7 @@ input[type="checkbox"]::before {
 }
 
 .s7__b1 .s7__img-big {
-  width: calc(100% - 24rem);
+  width: calc(100% - 24rem) !important;
   height: 209rem;
   left: 50%;
   transform: translateX(-50%);
@@ -1048,7 +1053,7 @@ input[type="checkbox"]::before {
 
 .s7__b4 .s7__img-def,
 .s7__b4 .s7__img-big {
-  width: 160rem;
+  width: 165rem !important;
   height: 102rem;
   position: relative;
   transform: unset;
@@ -1060,6 +1065,9 @@ input[type="checkbox"]::before {
 .s7__b1-text-block,
 .s7__b2-text-block {
   border-radius: 16rem !important;
+}
+.s7 .img-wrp {
+  width: 168rem;
 }
 
 .s7 {
