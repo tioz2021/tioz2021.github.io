@@ -691,7 +691,8 @@ input[type="checkbox"]::before {
 }
 
 .tab-label {
-  max-width: 290rem;
+  // max-width: 290rem;
+  max-width: 325rem;
   font-size: 16rem;
   line-height: 22rem;
   padding-bottom: 12rem;
@@ -1066,7 +1067,7 @@ input[type="checkbox"]::before {
 .s7__b2-text-block {
   border-radius: 16rem !important;
 }
-.s7 .img-wrp {
+.s7__b1 .s7__img-def {
   width: 168rem;
 }
 
@@ -1120,4 +1121,8 @@ input[type="checkbox"]::before {
 
 .popups__form .form-control span {
   max-width: 274rem;
+}
+
+.s5 {
+  overflow: unset;
 }

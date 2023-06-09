@@ -3969,7 +3969,7 @@ body {
     text-align: left;
   }
   .tab-label {
-    max-width: 290rem;
+    max-width: 325rem;
     font-size: 16rem;
     line-height: 22rem;
     padding-bottom: 12rem;
@@ -4265,7 +4265,7 @@ body {
   .s7__b2-text-block {
     border-radius: 16rem !important;
   }
-  .s7 .img-wrp {
+  .s7__b1 .s7__img-def {
     width: 168rem;
   }
   .s7 {
@@ -4308,5 +4308,8 @@ body {
   }
   .popups__form .form-control span {
     max-width: 274rem;
+  }
+  .s5 {
+    overflow: unset;
   }
 }

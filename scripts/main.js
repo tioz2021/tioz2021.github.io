@@ -469,6 +469,9 @@ function exit() {
     mobileMenuBg.classList.remove("active");
   }
   allBtnList.forEach((e) => e.addEventListener("click", closeMenu));
+  document
+    .querySelector(".header-nav-menu-btn")
+    .addEventListener("click", closeMenu);
 })();
 
 // test paralax for scrolling
