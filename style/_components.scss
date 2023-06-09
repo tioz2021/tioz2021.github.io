@@ -369,12 +369,17 @@
     font-weight: 400;
     font-size: 24rem;
     line-height: 30rem;
-    color: rgba(248, 248, 248, 0.5);
+    // color: rgba(248, 248, 248, 0.5);
+    color: rgba(248, 248, 248, 1);
 
     background: rgba(44, 46, 53, 0.3);
     border: 1rem solid rgba(255, 255, 255, 0.3);
     border-radius: 40rem;
     outline: unset !important;
+
+    &::placeholder {
+      color: rgba(248, 248, 248, 0.5);
+    }
   }
 }
 
