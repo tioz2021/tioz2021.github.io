@@ -4179,4 +4179,26 @@ body {
   .page404 .s2__container {
     margin-bottom: 0;
   }
+  .header .nav {
+    width: calc(100% - 24rem);
+    height: 276rem;
+  }
+  .popups__white-blur-bg {
+    top: 48rem;
+  }
+  .open-mobile-menu.active span:first-child {
+    top: 5rem;
+  }
+  .open-mobile-menu.active span:nth-child(3) {
+    top: -8rem;
+  }
+  .header .nav ul {
+    margin-bottom: 24rem;
+  }
+  .header .nav li {
+    margin-bottom: 16rem;
+  }
+  .header .nav li:last-child {
+    margin-bottom: 0;
+  }
 }
