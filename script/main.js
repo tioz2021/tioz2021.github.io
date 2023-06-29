@@ -31,6 +31,11 @@
       listItem.forEach((e) => e.classList.remove("active"));
       textOverflow.classList.remove("active");
     });
+  if (document.body)
+    document.body.addEventListener("click", (e) => {
+      listItem.forEach((e) => e.classList.remove("active"));
+      textOverflow.classList.remove("active");
+    });
 })();
 
 // s3 item change
