@@ -12,6 +12,16 @@
     textOverflow.innerHTML = this.querySelector(
       ".fs__list-hidden-text"
     ).innerHTML;
+    if (listItem[0] == this || listItem[1] == this) {
+      textOverflow.classList.add("top-minus-rem1");
+      textOverflow.classList.remove("top-minus-rem2");
+    } else if (listItem[2] == this || listItem[3] == this) {
+      textOverflow.classList.remove("top-minus-rem1");
+      textOverflow.classList.add("top-minus-rem2");
+    } else if (listItem[4] == this || listItem[5] == this) {
+      textOverflow.classList.remove("top-minus-rem1");
+      textOverflow.classList.remove("top-minus-rem2");
+    }
   }
 
   if (listItem)
@@ -48,11 +58,12 @@
   function changed() {
     this.classList.toggle("active");
   }
-  if (lng) lng.addEventListener("mouseover", changed);
-  if (header)
-    header.addEventListener("mouseout", (e) => {
-      lng.classList.remove("active");
-    });
+  // mouseover
+  if (lng) lng.addEventListener("click", changed);
+  // if (header)
+  //   header.addEventListener("mouseout", (e) => {
+  //     lng.classList.remove("active");
+  //   });
 })();
 
 // menu mobile
