@@ -26,8 +26,8 @@
 
   if (listItem)
     listItem.forEach((e) => e.addEventListener("mouseover", changed));
-  if (firstScrin)
-    firstScrin.addEventListener("mouseout", (e) => {
+  if (document.body)
+    document.body.addEventListener("mouseout", (e) => {
       listItem.forEach((e) => e.classList.remove("active"));
       textOverflow.classList.remove("active");
     });
