@@ -1441,7 +1441,9 @@ input[type=checkbox]:disabled {
   }
   .fs__list-overflov-text.active {
     right: 0;
-    height: 625rem;
+    height: auto;
+    box-sizing: border-box;
+    padding-top: 22px;
   }
   .s1__title {
     font-size: 24rem;

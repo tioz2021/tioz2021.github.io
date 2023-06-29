@@ -6,16 +6,23 @@
     <title>Albaraka</title>
 
     <link rel="stylesheet" href="style/style.css" />
-		<!-- animate-css -->
-		<link rel="stylesheet" href="libs/animate-css/animate.css">
+    <!-- animate-css -->
+    <link rel="stylesheet" href="libs/animate-css/animate.css" />
   </head>
 
   <body>
-    <header class="header animate__animated animate__fadeIn animate__delay-1s" style="--animate-delay: 0.25s;">
+    <header
+      class="header animate__animated animate__fadeIn animate__delay-1s"
+      style="--animate-delay: 0.25s"
+    >
       <div class="container header__container">
         <div class="header__logo img-wrp">
           <img class="web-logo" src="image/logo.png" alt="site logo" />
-					<img class="mobile-logo" src="image/mobile-logo.png" alt="site logo" />
+          <img
+            class="mobile-logo"
+            src="image/mobile-logo.png"
+            alt="site logo"
+          />
         </div>
         <div class="header__info-wrp wrp">
           <div class="header__title">
@@ -83,28 +90,59 @@
                 </ul>
               </nav>
               <div class="header__lng-switcher">
-								<div class="img-wrp">
-									<svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M6.375 3.75L4.5 6L2.625 3.75H6.375Z" fill="white"/>
-									</svg>
-								</div>
-								<ul>
-									<li><a href="#" class="disabled">En</a></li>
-									<li><a href="#">Ru</a></li>
-								</ul>
-							</div>
-							<div class="mobile-menu">
-								<div class="mobile-menu-open img-wrp">
-									<svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M39.1665 23.5C39.1665 22.4184 38.2897 21.5417 37.2082 21.5417L9.7915 21.5417C8.70994 21.5417 7.83317 22.4184 7.83317 23.5C7.83317 24.5816 8.70994 25.4583 9.7915 25.4583L37.2082 25.4583C38.2897 25.4583 39.1665 24.5816 39.1665 23.5ZM31.3332 13.7083C31.3332 12.6268 30.4564 11.75 29.3748 11.75L9.7915 11.75C8.70995 11.75 7.83317 12.6268 7.83317 13.7083C7.83317 14.7899 8.70995 15.6667 9.7915 15.6667L29.3748 15.6667C30.4564 15.6667 31.3332 14.7899 31.3332 13.7083ZM23.4998 33.2917C23.4998 32.2101 22.6231 31.3333 21.5415 31.3333H9.7915C8.70995 31.3333 7.83317 32.2101 7.83317 33.2917C7.83317 34.3732 8.70995 35.25 9.7915 35.25L21.5415 35.25C22.6231 35.25 23.4998 34.3732 23.4998 33.2917Z" fill="#414141"/>
-									</svg>
-								</div>
-								<div class="mobile-menu-close img-wrp">
-									<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M7.05703 7.0572C7.57773 6.5365 8.42195 6.5365 8.94265 7.0572L15.9998 14.1144L23.057 7.0572C23.5777 6.5365 24.4219 6.5365 24.9426 7.0572C25.4633 7.5779 25.4633 8.42212 24.9426 8.94281L17.8855 16L24.9426 23.0572C25.4633 23.5779 25.4633 24.4221 24.9426 24.9428C24.4219 25.4635 23.5777 25.4635 23.057 24.9428L15.9998 17.8856L8.94265 24.9428C8.42195 25.4635 7.57773 25.4635 7.05703 24.9428C6.53633 24.4221 6.53633 23.5779 7.05703 23.0572L14.1142 16L7.05703 8.94281C6.53633 8.42212 6.53633 7.5779 7.05703 7.0572Z" fill="#414141"/>
-									</svg>
-								</div>
-							</div>
+                <div class="img-wrp">
+                  <svg
+                    width="9"
+                    height="9"
+                    viewBox="0 0 9 9"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.375 3.75L4.5 6L2.625 3.75H6.375Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                <ul>
+                  <li><a href="#" class="disabled">En</a></li>
+                  <li><a href="#">Ru</a></li>
+                </ul>
+              </div>
+              <div class="mobile-menu">
+                <div class="mobile-menu-open img-wrp">
+                  <svg
+                    width="47"
+                    height="47"
+                    viewBox="0 0 47 47"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M39.1665 23.5C39.1665 22.4184 38.2897 21.5417 37.2082 21.5417L9.7915 21.5417C8.70994 21.5417 7.83317 22.4184 7.83317 23.5C7.83317 24.5816 8.70994 25.4583 9.7915 25.4583L37.2082 25.4583C38.2897 25.4583 39.1665 24.5816 39.1665 23.5ZM31.3332 13.7083C31.3332 12.6268 30.4564 11.75 29.3748 11.75L9.7915 11.75C8.70995 11.75 7.83317 12.6268 7.83317 13.7083C7.83317 14.7899 8.70995 15.6667 9.7915 15.6667L29.3748 15.6667C30.4564 15.6667 31.3332 14.7899 31.3332 13.7083ZM23.4998 33.2917C23.4998 32.2101 22.6231 31.3333 21.5415 31.3333H9.7915C8.70995 31.3333 7.83317 32.2101 7.83317 33.2917C7.83317 34.3732 8.70995 35.25 9.7915 35.25L21.5415 35.25C22.6231 35.25 23.4998 34.3732 23.4998 33.2917Z"
+                      fill="#414141"
+                    />
+                  </svg>
+                </div>
+                <div class="mobile-menu-close img-wrp">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7.05703 7.0572C7.57773 6.5365 8.42195 6.5365 8.94265 7.0572L15.9998 14.1144L23.057 7.0572C23.5777 6.5365 24.4219 6.5365 24.9426 7.0572C25.4633 7.5779 25.4633 8.42212 24.9426 8.94281L17.8855 16L24.9426 23.0572C25.4633 23.5779 25.4633 24.4221 24.9426 24.9428C24.4219 25.4635 23.5777 25.4635 23.057 24.9428L15.9998 17.8856L8.94265 24.9428C8.42195 25.4635 7.57773 25.4635 7.05703 24.9428C6.53633 24.4221 6.53633 23.5779 7.05703 23.0572L14.1142 16L7.05703 8.94281C6.53633 8.42212 6.53633 7.5779 7.05703 7.0572Z"
+                      fill="#414141"
+                    />
+                  </svg>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -113,56 +151,135 @@
     <main>
       <section class="fs">
         <div class="fs__container container">
-          <div class="fs__title animate__animated animate__fadeInLeft animate__delay-1s" style="--animate-delay: 0.35s;">
+          <div
+            class="fs__title animate__animated animate__fadeInLeft animate__delay-1s"
+            style="--animate-delay: 0.35s"
+          >
             <h1>
               <strong>Our mission is to find the right product</strong> and
               deliver it in right place at the right time
             </h1>
           </div>
-					<div class="fs__img-container animate__animated animate__fadeInRight animate__delay-1s" style="--animate-delay: 0.50s;">
-						<div class="fs__img-container-bg img-wrp">
-							<img src="image/fs/fs-container-img-bg.png" alt="img">
-						</div>
-						<div class="fs__img-container-gradient-bg img-wrp">
-							<svg width="925" height="684" viewBox="0 0 925 684" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<g filter="url(#filter0_f_139_20)">
-								<ellipse cx="358.5" cy="300" rx="124.5" ry="67" fill="#5ABAFF"/>
-								<ellipse cx="566.5" cy="309" rx="124.5" ry="67" fill="#DDFF56"/>
-								<ellipse cx="492.5" cy="383" rx="124.5" ry="67" fill="#FF9E9E"/>
-								</g>
-								<defs>
-								<filter id="filter0_f_139_20" x="0" y="-1" width="925" height="685" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-								<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-								<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-								<feGaussianBlur stdDeviation="117" result="effect1_foregroundBlur_139_20"/>
-								</filter>
-								</defs>
-							</svg>
-						</div>
-						<div class="fs__img-container-img img-wrp">
-							<img src="image/fs/fs-container-img.png" alt="img">
-						</div>
-						<div class="fs__img-container-img-shadow">
-							<svg width="213" height="53" viewBox="0 0 213 53" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<g opacity="0.32" clip-path="url(#clip0_107_18)">
-								<g filter="url(#filter0_f_107_18)">
-								<path d="M14.4976 5.98334L211.671 24.0593L10.3894 50.7954L14.4976 5.98334Z" fill="#575454"/>
-								</g>
-								</g>
-								<defs>
-								<filter id="filter0_f_107_18" x="-21.6106" y="-26.0167" width="265.281" height="108.812" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-								<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-								<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-								<feGaussianBlur stdDeviation="16" result="effect1_foregroundBlur_107_18"/>
-								</filter>
-								<clipPath id="clip0_107_18">
-								<rect width="209" height="34" fill="white" transform="translate(4) rotate(5.23799)"/>
-								</clipPath>
-								</defs>
-							</svg>
-						</div>
-					</div>
-          <div class="fs__info animate__animated animate__fadeInLeft animate__delay-1s" style="--animate-delay: 0.60s;">
+          <div
+            class="fs__img-container animate__animated animate__fadeInRight animate__delay-1s"
+            style="--animate-delay: 0.5s"
+          >
+            <div class="fs__img-container-bg img-wrp">
+              <img src="image/fs/fs-container-img-bg.png" alt="img" />
+            </div>
+            <div class="fs__img-container-gradient-bg img-wrp">
+              <svg
+                width="925"
+                height="684"
+                viewBox="0 0 925 684"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g filter="url(#filter0_f_139_20)">
+                  <ellipse
+                    cx="358.5"
+                    cy="300"
+                    rx="124.5"
+                    ry="67"
+                    fill="#5ABAFF"
+                  />
+                  <ellipse
+                    cx="566.5"
+                    cy="309"
+                    rx="124.5"
+                    ry="67"
+                    fill="#DDFF56"
+                  />
+                  <ellipse
+                    cx="492.5"
+                    cy="383"
+                    rx="124.5"
+                    ry="67"
+                    fill="#FF9E9E"
+                  />
+                </g>
+                <defs>
+                  <filter
+                    id="filter0_f_139_20"
+                    x="0"
+                    y="-1"
+                    width="925"
+                    height="685"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB"
+                  >
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="BackgroundImageFix"
+                      result="shape"
+                    />
+                    <feGaussianBlur
+                      stdDeviation="117"
+                      result="effect1_foregroundBlur_139_20"
+                    />
+                  </filter>
+                </defs>
+              </svg>
+            </div>
+            <div class="fs__img-container-img img-wrp">
+              <img src="image/fs/fs-container-img.png" alt="img" />
+            </div>
+            <div class="fs__img-container-img-shadow">
+              <svg
+                width="213"
+                height="53"
+                viewBox="0 0 213 53"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g opacity="0.32" clip-path="url(#clip0_107_18)">
+                  <g filter="url(#filter0_f_107_18)">
+                    <path
+                      d="M14.4976 5.98334L211.671 24.0593L10.3894 50.7954L14.4976 5.98334Z"
+                      fill="#575454"
+                    />
+                  </g>
+                </g>
+                <defs>
+                  <filter
+                    id="filter0_f_107_18"
+                    x="-21.6106"
+                    y="-26.0167"
+                    width="265.281"
+                    height="108.812"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB"
+                  >
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="BackgroundImageFix"
+                      result="shape"
+                    />
+                    <feGaussianBlur
+                      stdDeviation="16"
+                      result="effect1_foregroundBlur_107_18"
+                    />
+                  </filter>
+                  <clipPath id="clip0_107_18">
+                    <rect
+                      width="209"
+                      height="34"
+                      fill="white"
+                      transform="translate(4) rotate(5.23799)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+          </div>
+          <div
+            class="fs__info animate__animated animate__fadeInLeft animate__delay-1s"
+            style="--animate-delay: 0.6s"
+          >
             <div class="fs__list-title">Our area of Specialization</div>
             <ul class="fs__list">
               <li class="fs__list-item">
@@ -172,36 +289,31 @@
                   </div>
                 </div>
                 <div class="fs__list-text">Metals and Alloys </div>
-								<div class="fs__list-hidden-text">
-									<div class="img-wrp mobile-text-overflow-close">
-										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M3.52876 3.52858C3.78911 3.26823 4.21122 3.26823 4.47157 3.52858L8.00016 7.05717L11.5288 3.52858C11.7891 3.26823 12.2112 3.26823 12.4716 3.52858C12.7319 3.78892 12.7319 4.21103 12.4716 4.47138L8.94297 7.99998L12.4716 11.5286C12.7319 11.7889 12.7319 12.211 12.4716 12.4714C12.2112 12.7317 11.7891 12.7317 11.5288 12.4714L8.00016 8.94279L4.47157 12.4714C4.21122 12.7317 3.78911 12.7317 3.52876 12.4714C3.26841 12.211 3.26841 11.7889 3.52876 11.5286L7.05735 7.99998L3.52876 4.47138C3.26841 4.21103 3.26841 3.78892 3.52876 3.52858Z" fill="#414141"/>
-										</svg>
-									</div>
-									<p>
-										Key factors of our competitive advantage our company can offer
-										are: 1
-									</p>
-									<p>
-										Product Range and Customization: Providing a diverse range of
-										heavy machinery products and accessories can cater to the varying
-										needs of customers. Offering customization options, such as
-										different sizes, configurations, or attachments, allows customers
-										to select machinery that best fits their specific requirements.
-										This flexibility and ability to meet individual customer needs is
-										our competitive advantage.
-									</p>
-									<p>
-										Service and Support: Offering excellent
-										customer service and after-sales support is critical in the heavy
-										machinery industry. Providing timely maintenance, repair services,
-										and spare parts availability ensures minimal downtime for
-										customers and helps build long-term relationships. We can offer
-										partner-contractor companies that have an extensive service
-										network, offer training programs, and have responsive customer
-										support teams.
-									</p>
-								</div>
+                <div class="fs__list-hidden-text">
+                  <div class="img-wrp mobile-text-overflow-close">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3.52876 3.52858C3.78911 3.26823 4.21122 3.26823 4.47157 3.52858L8.00016 7.05717L11.5288 3.52858C11.7891 3.26823 12.2112 3.26823 12.4716 3.52858C12.7319 3.78892 12.7319 4.21103 12.4716 4.47138L8.94297 7.99998L12.4716 11.5286C12.7319 11.7889 12.7319 12.211 12.4716 12.4714C12.2112 12.7317 11.7891 12.7317 11.5288 12.4714L8.00016 8.94279L4.47157 12.4714C4.21122 12.7317 3.78911 12.7317 3.52876 12.4714C3.26841 12.211 3.26841 11.7889 3.52876 11.5286L7.05735 7.99998L3.52876 4.47138C3.26841 4.21103 3.26841 3.78892 3.52876 3.52858Z"
+                        fill="#414141"
+                      />
+                    </svg>
+                  </div>
+                  <p>
+                    Our company has established a Strong Supplier Network. We
+                    have established and maintain a wide and reliable network of
+                    metal suppliers. This gives our company access to diverse
+                    sources and ensures a steady supply of metals at competitive
+                    prices, reducing the risk of shortages and price volatility.
+                  </p>
+                </div>
               </li>
               <li class="fs__list-item">
                 <div class="fs__list-icon">
@@ -210,36 +322,32 @@
                   </div>
                 </div>
                 <div class="fs__list-text">Agriculture</div>
-								<div class="fs__list-hidden-text">
-									<div class="img-wrp mobile-text-overflow-close">
-										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M3.52876 3.52858C3.78911 3.26823 4.21122 3.26823 4.47157 3.52858L8.00016 7.05717L11.5288 3.52858C11.7891 3.26823 12.2112 3.26823 12.4716 3.52858C12.7319 3.78892 12.7319 4.21103 12.4716 4.47138L8.94297 7.99998L12.4716 11.5286C12.7319 11.7889 12.7319 12.211 12.4716 12.4714C12.2112 12.7317 11.7891 12.7317 11.5288 12.4714L8.00016 8.94279L4.47157 12.4714C4.21122 12.7317 3.78911 12.7317 3.52876 12.4714C3.26841 12.211 3.26841 11.7889 3.52876 11.5286L7.05735 7.99998L3.52876 4.47138C3.26841 4.21103 3.26841 3.78892 3.52876 3.52858Z" fill="#414141"/>
-										</svg>
-									</div>
-									<p>
-										Key factors of our competitive advantage our company can offer
-										are: 2
-									</p>
-									<p>
-										Product Range and Customization: Providing a diverse range of
-										heavy machinery products and accessories can cater to the varying
-										needs of customers. Offering customization options, such as
-										different sizes, configurations, or attachments, allows customers
-										to select machinery that best fits their specific requirements.
-										This flexibility and ability to meet individual customer needs is
-										our competitive advantage.
-									</p>
-									<p>
-										Service and Support: Offering excellent
-										customer service and after-sales support is critical in the heavy
-										machinery industry. Providing timely maintenance, repair services,
-										and spare parts availability ensures minimal downtime for
-										customers and helps build long-term relationships. We can offer
-										partner-contractor companies that have an extensive service
-										network, offer training programs, and have responsive customer
-										support teams.
-									</p>
-								</div>
+                <div class="fs__list-hidden-text">
+                  <div class="img-wrp mobile-text-overflow-close">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3.52876 3.52858C3.78911 3.26823 4.21122 3.26823 4.47157 3.52858L8.00016 7.05717L11.5288 3.52858C11.7891 3.26823 12.2112 3.26823 12.4716 3.52858C12.7319 3.78892 12.7319 4.21103 12.4716 4.47138L8.94297 7.99998L12.4716 11.5286C12.7319 11.7889 12.7319 12.211 12.4716 12.4714C12.2112 12.7317 11.7891 12.7317 11.5288 12.4714L8.00016 8.94279L4.47157 12.4714C4.21122 12.7317 3.78911 12.7317 3.52876 12.4714C3.26841 12.211 3.26841 11.7889 3.52876 11.5286L7.05735 7.99998L3.52876 4.47138C3.26841 4.21103 3.26841 3.78892 3.52876 3.52858Z"
+                        fill="#414141"
+                      />
+                    </svg>
+                  </div>
+                  <p>
+                    Our company maintains a Strong Farmer Network: Establishing
+                    strong relationships with farmers and growers is critical in
+                    the agricultural products industry. Building long-term
+                    partnerships, providing technical support, and offering fair
+                    pricing and payment terms can secure a consistent and
+                    reliable supply of raw materials.
+                  </p>
+                </div>
               </li>
               <li class="fs__list-item">
                 <div class="fs__list-icon">
@@ -248,36 +356,31 @@
                   </div>
                 </div>
                 <div class="fs__list-text">Oil and Gas</div>
-								<div class="fs__list-hidden-text">
-									<div class="img-wrp mobile-text-overflow-close">
-										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M3.52876 3.52858C3.78911 3.26823 4.21122 3.26823 4.47157 3.52858L8.00016 7.05717L11.5288 3.52858C11.7891 3.26823 12.2112 3.26823 12.4716 3.52858C12.7319 3.78892 12.7319 4.21103 12.4716 4.47138L8.94297 7.99998L12.4716 11.5286C12.7319 11.7889 12.7319 12.211 12.4716 12.4714C12.2112 12.7317 11.7891 12.7317 11.5288 12.4714L8.00016 8.94279L4.47157 12.4714C4.21122 12.7317 3.78911 12.7317 3.52876 12.4714C3.26841 12.211 3.26841 11.7889 3.52876 11.5286L7.05735 7.99998L3.52876 4.47138C3.26841 4.21103 3.26841 3.78892 3.52876 3.52858Z" fill="#414141"/>
-										</svg>
-									</div>
-									<p>
-										Key factors of our competitive advantage our company can offer
-										are: 3
-									</p>
-									<p>
-										Product Range and Customization: Providing a diverse range of
-										heavy machinery products and accessories can cater to the varying
-										needs of customers. Offering customization options, such as
-										different sizes, configurations, or attachments, allows customers
-										to select machinery that best fits their specific requirements.
-										This flexibility and ability to meet individual customer needs is
-										our competitive advantage.
-									</p>
-									<p>
-										Service and Support: Offering excellent
-										customer service and after-sales support is critical in the heavy
-										machinery industry. Providing timely maintenance, repair services,
-										and spare parts availability ensures minimal downtime for
-										customers and helps build long-term relationships. We can offer
-										partner-contractor companies that have an extensive service
-										network, offer training programs, and have responsive customer
-										support teams.
-									</p>
-								</div>
+                <div class="fs__list-hidden-text">
+                  <div class="img-wrp mobile-text-overflow-close">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3.52876 3.52858C3.78911 3.26823 4.21122 3.26823 4.47157 3.52858L8.00016 7.05717L11.5288 3.52858C11.7891 3.26823 12.2112 3.26823 12.4716 3.52858C12.7319 3.78892 12.7319 4.21103 12.4716 4.47138L8.94297 7.99998L12.4716 11.5286C12.7319 11.7889 12.7319 12.211 12.4716 12.4714C12.2112 12.7317 11.7891 12.7317 11.5288 12.4714L8.00016 8.94279L4.47157 12.4714C4.21122 12.7317 3.78911 12.7317 3.52876 12.4714C3.26841 12.211 3.26841 11.7889 3.52876 11.5286L7.05735 7.99998L3.52876 4.47138C3.26841 4.21103 3.26841 3.78892 3.52876 3.52858Z"
+                        fill="#414141"
+                      />
+                    </svg>
+                  </div>
+                  <p>
+                    Our team of specialists has expertise in the oil and gas
+                    sector to make sure our clients have access to high-quality
+                    oil and gas products. We have direct relationships and
+                    contracts with Oil and Gas industry leaders wherefore we can
+                    offer a wide variety of products on demand.
+                  </p>
+                </div>
               </li>
               <li class="fs__list-item">
                 <div class="fs__list-icon">
@@ -286,36 +389,47 @@
                   </div>
                 </div>
                 <div class="fs__list-text">Textiles</div>
-								<div class="fs__list-hidden-text">
-									<div class="img-wrp mobile-text-overflow-close">
-										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M3.52876 3.52858C3.78911 3.26823 4.21122 3.26823 4.47157 3.52858L8.00016 7.05717L11.5288 3.52858C11.7891 3.26823 12.2112 3.26823 12.4716 3.52858C12.7319 3.78892 12.7319 4.21103 12.4716 4.47138L8.94297 7.99998L12.4716 11.5286C12.7319 11.7889 12.7319 12.211 12.4716 12.4714C12.2112 12.7317 11.7891 12.7317 11.5288 12.4714L8.00016 8.94279L4.47157 12.4714C4.21122 12.7317 3.78911 12.7317 3.52876 12.4714C3.26841 12.211 3.26841 11.7889 3.52876 11.5286L7.05735 7.99998L3.52876 4.47138C3.26841 4.21103 3.26841 3.78892 3.52876 3.52858Z" fill="#414141"/>
-										</svg>
-									</div>
-									<p>
-										Key factors of our competitive advantage our company can offer
-										are: 4
-									</p>
-									<p>
-										Product Range and Customization: Providing a diverse range of
-										heavy machinery products and accessories can cater to the varying
-										needs of customers. Offering customization options, such as
-										different sizes, configurations, or attachments, allows customers
-										to select machinery that best fits their specific requirements.
-										This flexibility and ability to meet individual customer needs is
-										our competitive advantage.
-									</p>
-									<p>
-										Service and Support: Offering excellent
-										customer service and after-sales support is critical in the heavy
-										machinery industry. Providing timely maintenance, repair services,
-										and spare parts availability ensures minimal downtime for
-										customers and helps build long-term relationships. We can offer
-										partner-contractor companies that have an extensive service
-										network, offer training programs, and have responsive customer
-										support teams.
-									</p>
-								</div>
+                <div class="fs__list-hidden-text">
+                  <div class="img-wrp mobile-text-overflow-close">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3.52876 3.52858C3.78911 3.26823 4.21122 3.26823 4.47157 3.52858L8.00016 7.05717L11.5288 3.52858C11.7891 3.26823 12.2112 3.26823 12.4716 3.52858C12.7319 3.78892 12.7319 4.21103 12.4716 4.47138L8.94297 7.99998L12.4716 11.5286C12.7319 11.7889 12.7319 12.211 12.4716 12.4714C12.2112 12.7317 11.7891 12.7317 11.5288 12.4714L8.00016 8.94279L4.47157 12.4714C4.21122 12.7317 3.78911 12.7317 3.52876 12.4714C3.26841 12.211 3.26841 11.7889 3.52876 11.5286L7.05735 7.99998L3.52876 4.47138C3.26841 4.21103 3.26841 3.78892 3.52876 3.52858Z"
+                        fill="#414141"
+                      />
+                    </svg>
+                  </div>
+                  <p>
+                    in the textiles industry our team may offer expertise in the
+                    following:
+                  </p>
+                  <p>
+                    Product Differentiation: Offering unique and innovative
+                    textile products. Our team has partners which concentrate on
+                    developing proprietary fabrics, finishes, or designs that
+                    cater to specific market segments or customer preferences.
+                    Differentiation can also be achieved through customization
+                    and personalization options, allowing customers to create
+                    unique products tailored to their needs.
+                  </p>
+                  <p>
+                    Quality and Consistency: Providing high-quality textiles
+                    consistently has made us one of the leading suppliers in the
+                    industry. Ensuring that products meet or exceed industry
+                    standards, investing in quality control processes, and using
+                    reliable and sustainable materials contribute to our
+                    competitive advantage. Implementing strict quality assurance
+                    measures throughout the production process helps maintain
+                    consistency and reliability.
+                  </p>
+                </div>
               </li>
               <li class="fs__list-item">
                 <div class="fs__list-icon">
@@ -324,36 +438,48 @@
                   </div>
                 </div>
                 <div class="fs__list-text">Autoparts</div>
-								<div class="fs__list-hidden-text">
-									<div class="img-wrp mobile-text-overflow-close">
-										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M3.52876 3.52858C3.78911 3.26823 4.21122 3.26823 4.47157 3.52858L8.00016 7.05717L11.5288 3.52858C11.7891 3.26823 12.2112 3.26823 12.4716 3.52858C12.7319 3.78892 12.7319 4.21103 12.4716 4.47138L8.94297 7.99998L12.4716 11.5286C12.7319 11.7889 12.7319 12.211 12.4716 12.4714C12.2112 12.7317 11.7891 12.7317 11.5288 12.4714L8.00016 8.94279L4.47157 12.4714C4.21122 12.7317 3.78911 12.7317 3.52876 12.4714C3.26841 12.211 3.26841 11.7889 3.52876 11.5286L7.05735 7.99998L3.52876 4.47138C3.26841 4.21103 3.26841 3.78892 3.52876 3.52858Z" fill="#414141"/>
-										</svg>
-									</div>
-									<p>
-										Key factors of our competitive advantage our company can offer
-										are: 5
-									</p>
-									<p>
-										Product Range and Customization: Providing a diverse range of
-										heavy machinery products and accessories can cater to the varying
-										needs of customers. Offering customization options, such as
-										different sizes, configurations, or attachments, allows customers
-										to select machinery that best fits their specific requirements.
-										This flexibility and ability to meet individual customer needs is
-										our competitive advantage.
-									</p>
-									<p>
-										Service and Support: Offering excellent
-										customer service and after-sales support is critical in the heavy
-										machinery industry. Providing timely maintenance, repair services,
-										and spare parts availability ensures minimal downtime for
-										customers and helps build long-term relationships. We can offer
-										partner-contractor companies that have an extensive service
-										network, offer training programs, and have responsive customer
-										support teams.
-									</p>
-								</div>
+                <div class="fs__list-hidden-text">
+                  <div class="img-wrp mobile-text-overflow-close">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3.52876 3.52858C3.78911 3.26823 4.21122 3.26823 4.47157 3.52858L8.00016 7.05717L11.5288 3.52858C11.7891 3.26823 12.2112 3.26823 12.4716 3.52858C12.7319 3.78892 12.7319 4.21103 12.4716 4.47138L8.94297 7.99998L12.4716 11.5286C12.7319 11.7889 12.7319 12.211 12.4716 12.4714C12.2112 12.7317 11.7891 12.7317 11.5288 12.4714L8.00016 8.94279L4.47157 12.4714C4.21122 12.7317 3.78911 12.7317 3.52876 12.4714C3.26841 12.211 3.26841 11.7889 3.52876 11.5286L7.05735 7.99998L3.52876 4.47138C3.26841 4.21103 3.26841 3.78892 3.52876 3.52858Z"
+                        fill="#414141"
+                      />
+                    </svg>
+                  </div>
+                  <p>
+                    Key factors of our competitive advantage our company can
+                    offer are:
+                  </p>
+                  <p>
+                    Quality and Reliability of the products: Providing
+                    high-quality autoparts that meet or exceed industry
+                    standards is crucial. Ensuring that products are reliable,
+                    durable, and perform as expected contributes to customer
+                    satisfaction and loyalty. Implementing rigorous quality
+                    control measures, testing procedures, and certifications can
+                    enhance product quality and differentiate our company from
+                    its competitors.
+                  </p>
+                  <p>
+                    Broad Product Range: Offering a comprehensive range of
+                    autoparts for various vehicle makes and models attracts
+                    customers seeking convenience and a one-stop solution.
+                    Having a diverse product portfolio, including engine
+                    components, braking systems, electrical parts, and
+                    accessories, allows customers to source multiple parts from
+                    a single supplier, reduces complexity and improves
+                    efficiency.
+                  </p>
+                </div>
               </li>
               <li class="fs__list-item">
                 <div class="fs__list-icon">
@@ -362,36 +488,47 @@
                   </div>
                 </div>
                 <div class="fs__list-text">Heavy machinery</div>
-								<div class="fs__list-hidden-text">
-									<div class="img-wrp mobile-text-overflow-close">
-										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M3.52876 3.52858C3.78911 3.26823 4.21122 3.26823 4.47157 3.52858L8.00016 7.05717L11.5288 3.52858C11.7891 3.26823 12.2112 3.26823 12.4716 3.52858C12.7319 3.78892 12.7319 4.21103 12.4716 4.47138L8.94297 7.99998L12.4716 11.5286C12.7319 11.7889 12.7319 12.211 12.4716 12.4714C12.2112 12.7317 11.7891 12.7317 11.5288 12.4714L8.00016 8.94279L4.47157 12.4714C4.21122 12.7317 3.78911 12.7317 3.52876 12.4714C3.26841 12.211 3.26841 11.7889 3.52876 11.5286L7.05735 7.99998L3.52876 4.47138C3.26841 4.21103 3.26841 3.78892 3.52876 3.52858Z" fill="#414141"/>
-										</svg>
-									</div>
-									<p>
-										Key factors of our competitive advantage our company can offer
-										are: 6
-									</p>
-									<p>
-										Product Range and Customization: Providing a diverse range of
-										heavy machinery products and accessories can cater to the varying
-										needs of customers. Offering customization options, such as
-										different sizes, configurations, or attachments, allows customers
-										to select machinery that best fits their specific requirements.
-										This flexibility and ability to meet individual customer needs is
-										our competitive advantage.
-									</p>
-									<p>
-										Service and Support: Offering excellent
-										customer service and after-sales support is critical in the heavy
-										machinery industry. Providing timely maintenance, repair services,
-										and spare parts availability ensures minimal downtime for
-										customers and helps build long-term relationships. We can offer
-										partner-contractor companies that have an extensive service
-										network, offer training programs, and have responsive customer
-										support teams.
-									</p>
-								</div>
+                <div class="fs__list-hidden-text">
+                  <div class="img-wrp mobile-text-overflow-close">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3.52876 3.52858C3.78911 3.26823 4.21122 3.26823 4.47157 3.52858L8.00016 7.05717L11.5288 3.52858C11.7891 3.26823 12.2112 3.26823 12.4716 3.52858C12.7319 3.78892 12.7319 4.21103 12.4716 4.47138L8.94297 7.99998L12.4716 11.5286C12.7319 11.7889 12.7319 12.211 12.4716 12.4714C12.2112 12.7317 11.7891 12.7317 11.5288 12.4714L8.00016 8.94279L4.47157 12.4714C4.21122 12.7317 3.78911 12.7317 3.52876 12.4714C3.26841 12.211 3.26841 11.7889 3.52876 11.5286L7.05735 7.99998L3.52876 4.47138C3.26841 4.21103 3.26841 3.78892 3.52876 3.52858Z"
+                        fill="#414141"
+                      />
+                    </svg>
+                  </div>
+                  <p>
+                    Key factors of our competitive advantage our company can
+                    offer are:
+                  </p>
+                  <p>
+                    Product Range and Customization: Providing a diverse range
+                    of heavy machinery products and accessories can cater to the
+                    varying needs of customers. Offering customization options,
+                    such as different sizes, configurations, or attachments,
+                    allows customers to select machinery that best fits their
+                    specific requirements. This flexibility and ability to meet
+                    individual customer needs is our competitive advantage.
+                  </p>
+                  <p>
+                    Service and Support: Offering excellent customer service and
+                    after-sales support is critical in the heavy machinery
+                    industry. Providing timely maintenance, repair services, and
+                    spare parts availability ensures minimal downtime for
+                    customers and helps build long-term relationships. We can
+                    offer partner-contractor companies that have an extensive
+                    service network, offer training programs, and have
+                    responsive customer support teams.
+                  </p>
+                </div>
               </li>
             </ul>
             <div class="fs__list-decoration">
@@ -411,239 +548,455 @@
                   </svg>
                 </div>
               </div>
-							<div class="fs__list-decoration-text">and many more</div>
+              <div class="fs__list-decoration-text">and many more</div>
             </div>
             <div class="fs__list-overflov-text">
-							<div class="img-wrp mobile-text-overflow-close">
-								<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path fill-rule="evenodd" clip-rule="evenodd" d="M3.52876 3.52858C3.78911 3.26823 4.21122 3.26823 4.47157 3.52858L8.00016 7.05717L11.5288 3.52858C11.7891 3.26823 12.2112 3.26823 12.4716 3.52858C12.7319 3.78892 12.7319 4.21103 12.4716 4.47138L8.94297 7.99998L12.4716 11.5286C12.7319 11.7889 12.7319 12.211 12.4716 12.4714C12.2112 12.7317 11.7891 12.7317 11.5288 12.4714L8.00016 8.94279L4.47157 12.4714C4.21122 12.7317 3.78911 12.7317 3.52876 12.4714C3.26841 12.211 3.26841 11.7889 3.52876 11.5286L7.05735 7.99998L3.52876 4.47138C3.26841 4.21103 3.26841 3.78892 3.52876 3.52858Z" fill="#414141"/>
-								</svg>
-							</div>
-							<p>
-								Key factors of our competitive advantage our company can offer
-								are:
-							</p>
-							<p>
-								Product Range and Customization: Providing a diverse range of
-								heavy machinery products and accessories can cater to the varying
-								needs of customers. Offering customization options, such as
-								different sizes, configurations, or attachments, allows customers
-								to select machinery that best fits their specific requirements.
-								This flexibility and ability to meet individual customer needs is
-								our competitive advantage.
-							</p>
-							<p>
-								Service and Support: Offering excellent
-								customer service and after-sales support is critical in the heavy
-								machinery industry. Providing timely maintenance, repair services,
-								and spare parts availability ensures minimal downtime for
-								customers and helps build long-term relationships. We can offer
-								partner-contractor companies that have an extensive service
-								network, offer training programs, and have responsive customer
-								support teams.
-							</p>
+              <div class="img-wrp mobile-text-overflow-close">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M3.52876 3.52858C3.78911 3.26823 4.21122 3.26823 4.47157 3.52858L8.00016 7.05717L11.5288 3.52858C11.7891 3.26823 12.2112 3.26823 12.4716 3.52858C12.7319 3.78892 12.7319 4.21103 12.4716 4.47138L8.94297 7.99998L12.4716 11.5286C12.7319 11.7889 12.7319 12.211 12.4716 12.4714C12.2112 12.7317 11.7891 12.7317 11.5288 12.4714L8.00016 8.94279L4.47157 12.4714C4.21122 12.7317 3.78911 12.7317 3.52876 12.4714C3.26841 12.211 3.26841 11.7889 3.52876 11.5286L7.05735 7.99998L3.52876 4.47138C3.26841 4.21103 3.26841 3.78892 3.52876 3.52858Z"
+                    fill="#414141"
+                  />
+                </svg>
+              </div>
+              <p>
+                Key factors of our competitive advantage our company can offer
+                are:
+              </p>
+              <p>
+                Product Range and Customization: Providing a diverse range of
+                heavy machinery products and accessories can cater to the
+                varying needs of customers. Offering customization options, such
+                as different sizes, configurations, or attachments, allows
+                customers to select machinery that best fits their specific
+                requirements. This flexibility and ability to meet individual
+                customer needs is our competitive advantage.
+              </p>
+              <p>
+                Service and Support: Offering excellent customer service and
+                after-sales support is critical in the heavy machinery industry.
+                Providing timely maintenance, repair services, and spare parts
+                availability ensures minimal downtime for customers and helps
+                build long-term relationships. We can offer partner-contractor
+                companies that have an extensive service network, offer training
+                programs, and have responsive customer support teams.
+              </p>
             </div>
           </div>
         </div>
       </section>
-			<section class="s1" id="s1">
-				<div class="s1__container container">
-					<div class="s1__title wow animate__animated animate__fadeIn" data-wow-delay="1s">Our specialization</div>
-					<ul class="s1__list">
-						<li class="s1__item wow animate__animated animate__fadeIn" data-wow-delay="0.2s">
-							<div class="s1__item-img img-wrp">
-								<img src="image/s1/s1-img-1.png" alt="img">
-							</div>
-							<div class="s1__item-title">Find and Deliver</div>
-							<div class="s1__item-text">
-								The instability, as is known, grows rapidly if the moment of application allows taking measures from consideration of the angular velocity vector, which is connected with the gyroscopic nature of the phenomena.
-							</div>
-						</li>
-						<li class="s1__item wow animate__animated animate__fadeIn" data-wow-delay="0.45s">
-							<div class="s1__item-img img-wrp">
-								<img src="image/s1/s1-img-2.png" alt="img">
-							</div>
-							<div class="s1__item-title">We are experts in the GCC region</div>
-							<div class="s1__item-text">
-								The instability, as is known, grows rapidly if the moment of application allows taking measures from consideration of the angular velocity vector, which is connected with the gyroscopic nature of the phenomena.
-							</div>
-						</li>
-						<li class="s1__item wow animate__animated animate__fadeIn" data-wow-delay="0.65s">
-							<div class="s1__item-img img-wrp">
-								<img src="image/s1/s1-img-3.png" alt="img">
-							</div>
-							<div class="s1__item-title">Partner Network in China</div>
-							<div class="s1__item-text">
-								The instability, as is known, grows rapidly if the moment of application allows taking measures from consideration of the angular velocity vector, which is connected with the gyroscopic nature of the phenomena.
-							</div>
-						</li>
-					</ul>
-				</div>
-			</section>
-			<section class="s2" id="s2">
-				<div class="s2__container container">
-					<div class="s2__title wow animate__animated animate__fadeInLeft">
-						Al Baraka Group for Investment and Trading L.L.C
-					</div>
-					<div class="s2__text wow animate__animated animate__fadeInLeft">
-						<p>
-							is a company specializing in sales of products and operates in the business-to-business sector, serving other businesses as its primary customer base. The company's core focus is to provide products that meet the specific needs and requirements of other businesses.
-						</p>
-						<strong>Our key competitive advantages:</strong>
-						<p>
-							Product Portfolio: Our company offers a comprehensive range of products tailored to the needs of businesses across various industries. The product portfolio may include equipment, machinery, components, supplies, or any other products relevant to the target market.
-							Industry Expertise: The company possesses in-depth knowledge and expertise in the industries it serves. It understands the specific challenges, regulations, and trends within each industry, allowing it to provide valuable insights and recommend suitable products to customers.
-							Customer Relationship Management: Building strong relationships with customers is a priority for the company. It strives to understand the unique requirements of each customer and provides personalized solutions. By maintaining open lines of communication and offering exceptional customer service, the company fosters long-term partnerships and customer loyalty.
-							Sourcing and Supply Chain Management: The company has a robust network of suppliers and manufacturers, allowing it to source high-quality products at competitive prices. Effective supply chain management ensures the timely delivery of products, minimizing disruptions and meeting customer expectations.
-						</p>
-					</div>
-					<div class="s2__phone-container wow animate__animated animate__fadeIn">
-						<form action="" class="s2__phone-form form">
-							<input class="s2__form-input form__input" type="text" placeholder="Name">
-							<input class="s2__form-input form__input" type="text" placeholder="Telephone">
-							<input class="s2__form-input s2__form-input--last form__input" type="text" placeholder="E-mail">
-							<label class="s2__chexbox form-control">
-								<input type="checkbox" name="checkbox" />
-								<span>I accept the user agreement and privacy policy</span>
-							</label>
-							<button class="s2__btn main-btn">Get a Quote</button>
-						</form>
-					</div>
-					<div class="s2__phone-decoration-gradient img-wrp">
-						<svg width="716" height="964" viewBox="0 0 716 964" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<g filter="url(#filter0_f_63_34)">
-							<ellipse cx="314.5" cy="387.5" rx="80.5" ry="153.5" fill="#5ABAFF"/>
-							<ellipse cx="399" cy="409.5" rx="58" ry="110.5" fill="#DDFF56"/>
-							<ellipse cx="401.5" cy="576.5" rx="80.5" ry="153.5" fill="#FF9E9E"/>
-							</g>
-							<defs>
-							<filter id="filter0_f_63_34" x="0" y="0" width="716" height="964" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-							<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-							<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-							<feGaussianBlur stdDeviation="117" result="effect1_foregroundBlur_63_34"/>
-							</filter>
-							</defs>
-						</svg>
-					</div>
-				</div>
-			</section>
-			<div class="wrp-bg-grey">
-				<section class="s3" id="s3">
-					<div class="s3__container container">
-						<div class="s3__title">Services</div>
-						<ul class="s3__list">
-							<li class="s3__item wow animate__animated animate__fadeIn" data-wow-delay="0.2s">
-								<div class="top">
-									<div class="s3__item-img img-wrp">
-										<img src="image/s3/s3-img-1.png" alt="img">
-									</div>
-									<div class="s3__item-title">Import & Export</div>
-								</div>
-								<div class="s3__item-text">
-									The instability, as is known, grows rapidly if the moment of application allows taking measures from consideration of the angular velocity vector, which is connected with the gyroscopic nature of the phenomena.llows taking measures from consideration of the angular velocity vector, which is connected with the gyroscopic nature of the phenomena.llows taking measures from
-									The instability, as is known, grows rapidly if the moment of application allows taking measures from consideration of the angular velocity vector, which is connected with the gyroscopic nature of the phenomena.llows taking measures from consideration of the angular velocity vector, which is connected with the gyroscopic nature of the phenomena.llows taking measures from
-								</div>
-							</li>
-							<li class="s3__item wow animate__animated animate__fadeIn" data-wow-delay="0.4s">
-								<div class="top">
-									<div class="s3__item-img img-wrp">
-										<img src="image/s3/s3-img-2.png" alt="img">
-									</div>
-									<div class="s3__item-title">Procurement</div>
-								</div>
-								<div class="s3__item-text">
-									The instability, as is known, grows rapidly if the moment of application allows taking measures from consideration of the angular velocity vector, which is connected with the gyroscopic nature of the phenomena.llows taking measures from consideration of the angular velocity vector, which is connected with the gyroscopic nature of the phenomena.llows taking measures from
-								</div>
-							</li>
-							<li class="s3__item wow animate__animated animate__fadeIn" data-wow-delay="0.6s">
-								<div class="top">
-									<div class="s3__item-img img-wrp">
-										<img src="image/s3/s3-img-3.png" alt="img">
-									</div>
-									<div class="s3__item-title">Logistics and Shipping</div>
-								</div>
-								<div class="s3__item-text">
-									The instability, as is known, grows rapidly if the moment of application allows taking measures from consideration of the angular velocity vector, which is connected with the gyroscopic nature of the phenomena.llows taking measures from consideration of the angular velocity vector, which is connected with the gyroscopic nature of the phenomena.llows taking measures from
-								</div>
-							</li>
-						</ul>
-						<form action="/" class="s3__form form wow animate__animated animate__fadeInUp" data-wow-delay="0.8s">
-							<div class="wrp">
-								<input class="s3__form-input form__input" type="text" placeholder="Name">
-								<input class="s3__form-input form__input" type="text" placeholder="E-mail">
-								<input class="s3__form-input form__input" type="text" placeholder="Telephone">
-								<label class="s3__chexbox form-control">
-									<input type="checkbox" name="checkbox" />
-									<span>I accept the user agreement and privacy policy</span>
-								</label>
-							</div>
-							<button class="s3__btn main-btn">Get a Quote</button>
-						</form>
-					</div>
-				</section>
-				<section class="s4" id="s4">
-					<div class="s4__container container">
-						<div class="s4__title">Contact Us</div>
-						<div class="s4__start wow animate__animated animate__fadeInLeft">
-							<div class="s4__text">Licence info Licence info Licence info Licence info Licence info</div>
-							<ul class="s4__contact-list">
-								<li class="s4__contact-item">
-									<a href="#">
-										<div class="s4__contact-icon">
-											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path fill-rule="evenodd" clip-rule="evenodd" d="M12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24ZM11.9998 11C13.0219 11 17.992 8.39585 17.992 8.39585L18 7.93057C18 7.41689 17.5526 7 16.9998 7H6.99971C6.44742 7 6 7.41689 6 7.93057V8.34514C6 8.34514 11.0245 11 11.9998 11ZM6.00799 10C6.00749 10 11.0245 12.6735 11.9998 12.6735C13.0689 12.6735 17.992 10 17.992 10L18 16C18 16.552 17.5526 17 16.9998 17H6.99971C6.44792 17 6 16.552 6 16L6.00799 10Z" fill="#414141"/>
-											</svg>
-										</div>
-										info@wandermode.ru
-									</a>
-								</li>
-								<li class="s4__contact-item">
-									<div class="s4__contact-icon">
-										<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M9 3C5.68629 3 3 5.68629 3 9C3 12.3137 5.68629 15 9 15C12.3137 15 15 12.3137 15 9C15 5.68629 12.3137 3 9 3ZM1.5 9C1.5 4.85786 4.85786 1.5 9 1.5C13.1421 1.5 16.5 4.85786 16.5 9C16.5 13.1421 13.1421 16.5 9 16.5C4.85786 16.5 1.5 13.1421 1.5 9ZM9 4.5C9.41421 4.5 9.75 4.83579 9.75 5.25V8.68934L11.7803 10.7197C12.0732 11.0126 12.0732 11.4874 11.7803 11.7803C11.4874 12.0732 11.0126 12.0732 10.7197 11.7803L8.46967 9.53033C8.32902 9.38968 8.25 9.19891 8.25 9V5.25C8.25 4.83579 8.58578 4.5 9 4.5Z" fill="white"/>
-										</svg>
-									</div>
-									г.Москва ул.Льва Толстого 17а
-								</li>
-								<li class="s4__contact-item">
-									<a href="#">
-										<div class="s4__contact-icon">
-											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0ZM8.39388 6C8.42939 6.02816 8.45755 6.02816 8.48572 6.02449C8.63143 6.01225 8.75633 6.04776 8.83715 6.18123C8.85143 6.20438 8.86571 6.22753 8.88 6.25069C9.04706 6.52146 9.21443 6.79272 9.37349 7.07022C9.48864 7.27086 9.59849 7.47475 9.70846 7.67885C9.78909 7.82852 9.86979 7.97829 9.95268 8.12698C9.98477 8.18724 10.0249 8.244 10.065 8.30078C10.0876 8.33283 10.1102 8.36489 10.1315 8.39759C10.1826 8.47894 10.2315 8.56249 10.2793 8.64406L10.287 8.65719C10.3898 8.85188 10.3849 9.04781 10.2319 9.20332C10.0707 9.36806 9.89757 9.52411 9.72473 9.67987C9.66375 9.73481 9.60282 9.78972 9.54247 9.84496C9.46743 9.91382 9.3913 9.98158 9.3152 10.0493C9.19507 10.1562 9.07504 10.263 8.9596 10.374C8.81266 10.516 8.7747 10.6935 8.87389 10.8809C8.88306 10.8981 8.89222 10.9152 8.90139 10.9324C9.0452 11.2017 9.18884 11.4708 9.34655 11.7344C9.9686 12.7715 10.7633 13.6532 11.7674 14.3328C12.1543 14.5961 12.5572 14.8373 12.9638 15.0675C13.347 15.2842 13.4964 15.2475 13.794 14.9157C13.9511 14.7411 14.1051 14.565 14.2593 14.3886C14.3767 14.2544 14.4941 14.1201 14.6132 13.9863C14.6793 13.9116 14.7589 13.8454 14.836 13.7818C14.9928 13.6495 15.1642 13.6348 15.3442 13.7254C15.3555 13.7309 15.367 13.7363 15.3785 13.7417C15.4181 13.7603 15.4582 13.7791 15.4924 13.8038C15.8117 14.0322 16.1562 14.2158 16.5002 14.3991C16.6707 14.4899 16.8411 14.5807 17.0083 14.6769C17.1807 14.7759 17.35 14.8794 17.519 14.9827C17.6153 15.0415 17.7114 15.1003 17.8079 15.1581C17.9512 15.2426 18.0087 15.3663 17.9989 15.5365C17.972 16.0153 17.8924 16.4855 17.6144 16.8896C17.4981 17.0573 17.3328 17.2043 17.1663 17.323C16.7046 17.6463 16.1891 17.8459 15.6405 17.9684C15.1422 18.0798 14.645 18.0394 14.1674 17.89C13.2454 17.6059 12.3368 17.2802 11.5005 16.7867C10.7413 16.3373 10.0506 15.7949 9.41145 15.1887C8.60204 14.4185 7.87958 13.5785 7.29549 12.6222C6.91467 12.0013 6.64283 11.3327 6.3967 10.6507C6.24731 10.2393 6.10037 9.83149 6.03425 9.39557C5.95833 8.90209 6.01098 8.42698 6.16894 7.95922C6.31099 7.53676 6.48854 7.13267 6.75671 6.77144C6.96732 6.49103 7.23059 6.28531 7.57101 6.19347C7.76335 6.14258 7.95691 6.09898 8.1504 6.0554C8.2316 6.03711 8.31279 6.01882 8.39388 6Z" fill="#414141"/>
-											</svg>
-										</div>
-										+7(495) 929-70-81
-									</a>
-								</li>
-								<li class="s4__contact-item">
-										<div class="s4__contact-icon">
-											<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path fill-rule="evenodd" clip-rule="evenodd" d="M9 3C6.51472 3 4.5 5.01472 4.5 7.5C4.5 8.2709 4.77296 9.1326 5.23613 10.0259C5.69593 10.9126 6.3177 11.7819 6.95395 12.5545C7.58837 13.3248 8.22488 13.9843 8.70359 14.4516C8.81122 14.5567 8.91064 14.6518 9 14.7361C9.08935 14.6518 9.18878 14.5567 9.29641 14.4516C9.77512 13.9843 10.4116 13.3248 11.0461 12.5545C11.6823 11.7819 12.3041 10.9126 12.7639 10.0259C13.227 9.1326 13.5 8.2709 13.5 7.5C13.5 5.01472 11.4853 3 9 3ZM9 15.75C8.51191 16.3194 8.51177 16.3193 8.51162 16.3192L8.51003 16.3178L8.50625 16.3146L8.4931 16.3032C8.48188 16.2934 8.46583 16.2794 8.44527 16.2613C8.40414 16.2251 8.34492 16.1724 8.27019 16.1045C8.12079 15.9688 7.90908 15.7722 7.65578 15.525C7.15012 15.0313 6.47413 14.3314 5.79605 13.508C5.1198 12.6869 4.42907 11.728 3.9045 10.7163C3.38329 9.71115 3 8.6041 3 7.5C3 4.18629 5.68629 1.5 9 1.5C12.3137 1.5 15 4.18629 15 7.5C15 8.6041 14.6167 9.71115 14.0955 10.7163C13.5709 11.728 12.8802 12.6869 12.2039 13.508C11.5259 14.3314 10.8499 15.0313 10.3442 15.525C10.0909 15.7722 9.87921 15.9688 9.72981 16.1045C9.65508 16.1724 9.59586 16.2251 9.55473 16.2613C9.53417 16.2794 9.51812 16.2934 9.5069 16.3032L9.49375 16.3146L9.48997 16.3178L9.48879 16.3188C9.48864 16.319 9.48809 16.3194 9 15.75ZM9 15.75L8.51162 16.3192C8.79248 16.5599 9.20723 16.5602 9.48809 16.3194L9 15.75ZM9 6C8.17157 6 7.5 6.67157 7.5 7.5C7.5 8.32843 8.17157 9 9 9C9.82843 9 10.5 8.32843 10.5 7.5C10.5 6.67157 9.82843 6 9 6ZM6 7.5C6 5.84315 7.34315 4.5 9 4.5C10.6569 4.5 12 5.84315 12 7.5C12 9.15685 10.6569 10.5 9 10.5C7.34315 10.5 6 9.15685 6 7.5Z" fill="white"/>
-											</svg>
-										</div>
-										10.00:11.00
-								</li>
-							</ul>
-						</div>
-						<div class="s4__end wow animate__animated animate__fadeIn" data-wow-delay="0.3s">
-							<form action="" class="s4__phone-form form">
-								<input class="s4__form-input form__input" type="text" placeholder="Name">
-								<input class="s4__form-input form__input" type="text" placeholder="Telephone">
-								<input class="s4__form-input s4__form-input--last form__input" type="text" placeholder="E-mail">
-								<label class="s4__chexbox form-control">
-									<input type="checkbox" name="checkbox" />
-									<span>I accept the user agreement and privacy policy</span>
-								</label>
-								<button class="s4__btn main-btn">Get a Quote</button>
-							</form>
-						</div>
-					</div>
-				</section>
-			</div>
+      <section class="s1" id="s1">
+        <div class="s1__container container">
+          <div
+            class="s1__title wow animate__animated animate__fadeIn"
+            data-wow-delay="1s"
+          >
+            Our specialization
+          </div>
+          <ul class="s1__list">
+            <li
+              class="s1__item wow animate__animated animate__fadeIn"
+              data-wow-delay="0.2s"
+            >
+              <div class="s1__item-img img-wrp">
+                <img src="image/s1/s1-img-1.png" alt="img" />
+              </div>
+              <div class="s1__item-title">Find and Deliver</div>
+              <div class="s1__item-text">
+                The instability, as is known, grows rapidly if the moment of
+                application allows taking measures from consideration of the
+                angular velocity vector, which is connected with the gyroscopic
+                nature of the phenomena.
+              </div>
+            </li>
+            <li
+              class="s1__item wow animate__animated animate__fadeIn"
+              data-wow-delay="0.45s"
+            >
+              <div class="s1__item-img img-wrp">
+                <img src="image/s1/s1-img-2.png" alt="img" />
+              </div>
+              <div class="s1__item-title">We are experts in the GCC region</div>
+              <div class="s1__item-text">
+                The instability, as is known, grows rapidly if the moment of
+                application allows taking measures from consideration of the
+                angular velocity vector, which is connected with the gyroscopic
+                nature of the phenomena.
+              </div>
+            </li>
+            <li
+              class="s1__item wow animate__animated animate__fadeIn"
+              data-wow-delay="0.65s"
+            >
+              <div class="s1__item-img img-wrp">
+                <img src="image/s1/s1-img-3.png" alt="img" />
+              </div>
+              <div class="s1__item-title">Partner Network in China</div>
+              <div class="s1__item-text">
+                The instability, as is known, grows rapidly if the moment of
+                application allows taking measures from consideration of the
+                angular velocity vector, which is connected with the gyroscopic
+                nature of the phenomena.
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="s2" id="s2">
+        <div class="s2__container container">
+          <div class="s2__title wow animate__animated animate__fadeInLeft">
+            Al Baraka Group for Investment and Trading L.L.C
+          </div>
+          <div class="s2__text wow animate__animated animate__fadeInLeft">
+            <p>
+              is a company specializing in sales of products and operates in the
+              business-to-business sector, serving other businesses as its
+              primary customer base. The company's core focus is to provide
+              products that meet the specific needs and requirements of other
+              businesses.
+            </p>
+            <strong>Our key competitive advantages:</strong>
+            <p>
+              Product Portfolio: Our company offers a comprehensive range of
+              products tailored to the needs of businesses across various
+              industries. The product portfolio may include equipment,
+              machinery, components, supplies, or any other products relevant to
+              the target market. Industry Expertise: The company possesses
+              in-depth knowledge and expertise in the industries it serves. It
+              understands the specific challenges, regulations, and trends
+              within each industry, allowing it to provide valuable insights and
+              recommend suitable products to customers. Customer Relationship
+              Management: Building strong relationships with customers is a
+              priority for the company. It strives to understand the unique
+              requirements of each customer and provides personalized solutions.
+              By maintaining open lines of communication and offering
+              exceptional customer service, the company fosters long-term
+              partnerships and customer loyalty. Sourcing and Supply Chain
+              Management: The company has a robust network of suppliers and
+              manufacturers, allowing it to source high-quality products at
+              competitive prices. Effective supply chain management ensures the
+              timely delivery of products, minimizing disruptions and meeting
+              customer expectations.
+            </p>
+          </div>
+          <div
+            class="s2__phone-container wow animate__animated animate__fadeIn"
+          >
+            <form action="" class="s2__phone-form form">
+              <input
+                class="s2__form-input form__input"
+                type="text"
+                placeholder="Name"
+              />
+              <input
+                class="s2__form-input form__input"
+                type="text"
+                placeholder="Telephone"
+              />
+              <input
+                class="s2__form-input s2__form-input--last form__input"
+                type="text"
+                placeholder="E-mail"
+              />
+              <label class="s2__chexbox form-control">
+                <input type="checkbox" name="checkbox" />
+                <span>I accept the user agreement and privacy policy</span>
+              </label>
+              <button class="s2__btn main-btn">Get a Quote</button>
+            </form>
+          </div>
+          <div class="s2__phone-decoration-gradient img-wrp">
+            <svg
+              width="716"
+              height="964"
+              viewBox="0 0 716 964"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g filter="url(#filter0_f_63_34)">
+                <ellipse
+                  cx="314.5"
+                  cy="387.5"
+                  rx="80.5"
+                  ry="153.5"
+                  fill="#5ABAFF"
+                />
+                <ellipse
+                  cx="399"
+                  cy="409.5"
+                  rx="58"
+                  ry="110.5"
+                  fill="#DDFF56"
+                />
+                <ellipse
+                  cx="401.5"
+                  cy="576.5"
+                  rx="80.5"
+                  ry="153.5"
+                  fill="#FF9E9E"
+                />
+              </g>
+              <defs>
+                <filter
+                  id="filter0_f_63_34"
+                  x="0"
+                  y="0"
+                  width="716"
+                  height="964"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="BackgroundImageFix"
+                    result="shape"
+                  />
+                  <feGaussianBlur
+                    stdDeviation="117"
+                    result="effect1_foregroundBlur_63_34"
+                  />
+                </filter>
+              </defs>
+            </svg>
+          </div>
+        </div>
+      </section>
+      <div class="wrp-bg-grey">
+        <section class="s3" id="s3">
+          <div class="s3__container container">
+            <div class="s3__title">Services</div>
+            <ul class="s3__list">
+              <li
+                class="s3__item wow animate__animated animate__fadeIn"
+                data-wow-delay="0.2s"
+              >
+                <div class="top">
+                  <div class="s3__item-img img-wrp">
+                    <img src="image/s3/s3-img-1.png" alt="img" />
+                  </div>
+                  <div class="s3__item-title">Import & Export</div>
+                </div>
+                <div class="s3__item-text">
+                  The instability, as is known, grows rapidly if the moment of
+                  application allows taking measures from consideration of the
+                  angular velocity vector, which is connected with the
+                  gyroscopic nature of the phenomena.llows taking measures from
+                  consideration of the angular velocity vector, which is
+                  connected with the gyroscopic nature of the phenomena.llows
+                  taking measures from The instability, as is known, grows
+                  rapidly if the moment of application allows taking measures
+                  from consideration of the angular velocity vector, which is
+                  connected with the gyroscopic nature of the phenomena.llows
+                  taking measures from consideration of the angular velocity
+                  vector, which is connected with the gyroscopic nature of the
+                  phenomena.llows taking measures from
+                </div>
+              </li>
+              <li
+                class="s3__item wow animate__animated animate__fadeIn"
+                data-wow-delay="0.4s"
+              >
+                <div class="top">
+                  <div class="s3__item-img img-wrp">
+                    <img src="image/s3/s3-img-2.png" alt="img" />
+                  </div>
+                  <div class="s3__item-title">Procurement</div>
+                </div>
+                <div class="s3__item-text">
+                  The instability, as is known, grows rapidly if the moment of
+                  application allows taking measures from consideration of the
+                  angular velocity vector, which is connected with the
+                  gyroscopic nature of the phenomena.llows taking measures from
+                  consideration of the angular velocity vector, which is
+                  connected with the gyroscopic nature of the phenomena.llows
+                  taking measures from
+                </div>
+              </li>
+              <li
+                class="s3__item wow animate__animated animate__fadeIn"
+                data-wow-delay="0.6s"
+              >
+                <div class="top">
+                  <div class="s3__item-img img-wrp">
+                    <img src="image/s3/s3-img-3.png" alt="img" />
+                  </div>
+                  <div class="s3__item-title">Logistics and Shipping</div>
+                </div>
+                <div class="s3__item-text">
+                  The instability, as is known, grows rapidly if the moment of
+                  application allows taking measures from consideration of the
+                  angular velocity vector, which is connected with the
+                  gyroscopic nature of the phenomena.llows taking measures from
+                  consideration of the angular velocity vector, which is
+                  connected with the gyroscopic nature of the phenomena.llows
+                  taking measures from
+                </div>
+              </li>
+            </ul>
+            <form
+              action="/"
+              class="s3__form form wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.8s"
+            >
+              <div class="wrp">
+                <input
+                  class="s3__form-input form__input"
+                  type="text"
+                  placeholder="Name"
+                />
+                <input
+                  class="s3__form-input form__input"
+                  type="text"
+                  placeholder="E-mail"
+                />
+                <input
+                  class="s3__form-input form__input"
+                  type="text"
+                  placeholder="Telephone"
+                />
+                <label class="s3__chexbox form-control">
+                  <input type="checkbox" name="checkbox" />
+                  <span>I accept the user agreement and privacy policy</span>
+                </label>
+              </div>
+              <button class="s3__btn main-btn">Get a Quote</button>
+            </form>
+          </div>
+        </section>
+        <section class="s4" id="s4">
+          <div class="s4__container container">
+            <div class="s4__title">Contact Us</div>
+            <div class="s4__start wow animate__animated animate__fadeInLeft">
+              <div class="s4__text">
+                Licence info Licence info Licence info Licence info Licence info
+              </div>
+              <ul class="s4__contact-list">
+                <li class="s4__contact-item">
+                  <a href="#">
+                    <div class="s4__contact-icon">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24ZM11.9998 11C13.0219 11 17.992 8.39585 17.992 8.39585L18 7.93057C18 7.41689 17.5526 7 16.9998 7H6.99971C6.44742 7 6 7.41689 6 7.93057V8.34514C6 8.34514 11.0245 11 11.9998 11ZM6.00799 10C6.00749 10 11.0245 12.6735 11.9998 12.6735C13.0689 12.6735 17.992 10 17.992 10L18 16C18 16.552 17.5526 17 16.9998 17H6.99971C6.44792 17 6 16.552 6 16L6.00799 10Z"
+                          fill="#414141"
+                        />
+                      </svg>
+                    </div>
+                    info@wandermode.ru
+                  </a>
+                </li>
+                <li class="s4__contact-item">
+                  <div class="s4__contact-icon">
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M9 3C5.68629 3 3 5.68629 3 9C3 12.3137 5.68629 15 9 15C12.3137 15 15 12.3137 15 9C15 5.68629 12.3137 3 9 3ZM1.5 9C1.5 4.85786 4.85786 1.5 9 1.5C13.1421 1.5 16.5 4.85786 16.5 9C16.5 13.1421 13.1421 16.5 9 16.5C4.85786 16.5 1.5 13.1421 1.5 9ZM9 4.5C9.41421 4.5 9.75 4.83579 9.75 5.25V8.68934L11.7803 10.7197C12.0732 11.0126 12.0732 11.4874 11.7803 11.7803C11.4874 12.0732 11.0126 12.0732 10.7197 11.7803L8.46967 9.53033C8.32902 9.38968 8.25 9.19891 8.25 9V5.25C8.25 4.83579 8.58578 4.5 9 4.5Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                  г.Москва ул.Льва Толстого 17а
+                </li>
+                <li class="s4__contact-item">
+                  <a href="#">
+                    <div class="s4__contact-icon">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0ZM8.39388 6C8.42939 6.02816 8.45755 6.02816 8.48572 6.02449C8.63143 6.01225 8.75633 6.04776 8.83715 6.18123C8.85143 6.20438 8.86571 6.22753 8.88 6.25069C9.04706 6.52146 9.21443 6.79272 9.37349 7.07022C9.48864 7.27086 9.59849 7.47475 9.70846 7.67885C9.78909 7.82852 9.86979 7.97829 9.95268 8.12698C9.98477 8.18724 10.0249 8.244 10.065 8.30078C10.0876 8.33283 10.1102 8.36489 10.1315 8.39759C10.1826 8.47894 10.2315 8.56249 10.2793 8.64406L10.287 8.65719C10.3898 8.85188 10.3849 9.04781 10.2319 9.20332C10.0707 9.36806 9.89757 9.52411 9.72473 9.67987C9.66375 9.73481 9.60282 9.78972 9.54247 9.84496C9.46743 9.91382 9.3913 9.98158 9.3152 10.0493C9.19507 10.1562 9.07504 10.263 8.9596 10.374C8.81266 10.516 8.7747 10.6935 8.87389 10.8809C8.88306 10.8981 8.89222 10.9152 8.90139 10.9324C9.0452 11.2017 9.18884 11.4708 9.34655 11.7344C9.9686 12.7715 10.7633 13.6532 11.7674 14.3328C12.1543 14.5961 12.5572 14.8373 12.9638 15.0675C13.347 15.2842 13.4964 15.2475 13.794 14.9157C13.9511 14.7411 14.1051 14.565 14.2593 14.3886C14.3767 14.2544 14.4941 14.1201 14.6132 13.9863C14.6793 13.9116 14.7589 13.8454 14.836 13.7818C14.9928 13.6495 15.1642 13.6348 15.3442 13.7254C15.3555 13.7309 15.367 13.7363 15.3785 13.7417C15.4181 13.7603 15.4582 13.7791 15.4924 13.8038C15.8117 14.0322 16.1562 14.2158 16.5002 14.3991C16.6707 14.4899 16.8411 14.5807 17.0083 14.6769C17.1807 14.7759 17.35 14.8794 17.519 14.9827C17.6153 15.0415 17.7114 15.1003 17.8079 15.1581C17.9512 15.2426 18.0087 15.3663 17.9989 15.5365C17.972 16.0153 17.8924 16.4855 17.6144 16.8896C17.4981 17.0573 17.3328 17.2043 17.1663 17.323C16.7046 17.6463 16.1891 17.8459 15.6405 17.9684C15.1422 18.0798 14.645 18.0394 14.1674 17.89C13.2454 17.6059 12.3368 17.2802 11.5005 16.7867C10.7413 16.3373 10.0506 15.7949 9.41145 15.1887C8.60204 14.4185 7.87958 13.5785 7.29549 12.6222C6.91467 12.0013 6.64283 11.3327 6.3967 10.6507C6.24731 10.2393 6.10037 9.83149 6.03425 9.39557C5.95833 8.90209 6.01098 8.42698 6.16894 7.95922C6.31099 7.53676 6.48854 7.13267 6.75671 6.77144C6.96732 6.49103 7.23059 6.28531 7.57101 6.19347C7.76335 6.14258 7.95691 6.09898 8.1504 6.0554C8.2316 6.03711 8.31279 6.01882 8.39388 6Z"
+                          fill="#414141"
+                        />
+                      </svg>
+                    </div>
+                    +7(495) 929-70-81
+                  </a>
+                </li>
+                <li class="s4__contact-item">
+                  <div class="s4__contact-icon">
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M9 3C6.51472 3 4.5 5.01472 4.5 7.5C4.5 8.2709 4.77296 9.1326 5.23613 10.0259C5.69593 10.9126 6.3177 11.7819 6.95395 12.5545C7.58837 13.3248 8.22488 13.9843 8.70359 14.4516C8.81122 14.5567 8.91064 14.6518 9 14.7361C9.08935 14.6518 9.18878 14.5567 9.29641 14.4516C9.77512 13.9843 10.4116 13.3248 11.0461 12.5545C11.6823 11.7819 12.3041 10.9126 12.7639 10.0259C13.227 9.1326 13.5 8.2709 13.5 7.5C13.5 5.01472 11.4853 3 9 3ZM9 15.75C8.51191 16.3194 8.51177 16.3193 8.51162 16.3192L8.51003 16.3178L8.50625 16.3146L8.4931 16.3032C8.48188 16.2934 8.46583 16.2794 8.44527 16.2613C8.40414 16.2251 8.34492 16.1724 8.27019 16.1045C8.12079 15.9688 7.90908 15.7722 7.65578 15.525C7.15012 15.0313 6.47413 14.3314 5.79605 13.508C5.1198 12.6869 4.42907 11.728 3.9045 10.7163C3.38329 9.71115 3 8.6041 3 7.5C3 4.18629 5.68629 1.5 9 1.5C12.3137 1.5 15 4.18629 15 7.5C15 8.6041 14.6167 9.71115 14.0955 10.7163C13.5709 11.728 12.8802 12.6869 12.2039 13.508C11.5259 14.3314 10.8499 15.0313 10.3442 15.525C10.0909 15.7722 9.87921 15.9688 9.72981 16.1045C9.65508 16.1724 9.59586 16.2251 9.55473 16.2613C9.53417 16.2794 9.51812 16.2934 9.5069 16.3032L9.49375 16.3146L9.48997 16.3178L9.48879 16.3188C9.48864 16.319 9.48809 16.3194 9 15.75ZM9 15.75L8.51162 16.3192C8.79248 16.5599 9.20723 16.5602 9.48809 16.3194L9 15.75ZM9 6C8.17157 6 7.5 6.67157 7.5 7.5C7.5 8.32843 8.17157 9 9 9C9.82843 9 10.5 8.32843 10.5 7.5C10.5 6.67157 9.82843 6 9 6ZM6 7.5C6 5.84315 7.34315 4.5 9 4.5C10.6569 4.5 12 5.84315 12 7.5C12 9.15685 10.6569 10.5 9 10.5C7.34315 10.5 6 9.15685 6 7.5Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                  10.00:11.00
+                </li>
+              </ul>
+            </div>
+            <div
+              class="s4__end wow animate__animated animate__fadeIn"
+              data-wow-delay="0.3s"
+            >
+              <form action="" class="s4__phone-form form">
+                <input
+                  class="s4__form-input form__input"
+                  type="text"
+                  placeholder="Name"
+                />
+                <input
+                  class="s4__form-input form__input"
+                  type="text"
+                  placeholder="Telephone"
+                />
+                <input
+                  class="s4__form-input s4__form-input--last form__input"
+                  type="text"
+                  placeholder="E-mail"
+                />
+                <label class="s4__chexbox form-control">
+                  <input type="checkbox" name="checkbox" />
+                  <span>I accept the user agreement and privacy policy</span>
+                </label>
+                <button class="s4__btn main-btn">Get a Quote</button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
 
-		<!-- wow.js -->
-		<script src="libs/wow-js/wow.min.js"></script>
-		<script src="script/main.js"></script>
+    <!-- wow.js -->
+    <script src="libs/wow-js/wow.min.js"></script>
+    <script src="script/main.js"></script>
   </body>
 </html>
