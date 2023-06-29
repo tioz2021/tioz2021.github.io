@@ -446,16 +446,10 @@
   }
 }
 
-.header {
-  // position: fixed;
-  // left: 50%;
-  // transform: translateX(-50%);
-  // z-index: 10;
-  // box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
-  // background-color: #fff;
-}
 .fs {
   // margin-top: 180rem;
+  margin-top: 0;
+  padding-top: 180rem;
 }
 
 .header .wrp {

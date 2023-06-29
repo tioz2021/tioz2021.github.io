@@ -676,7 +676,7 @@ input[type=checkbox]:disabled {
   box-sizing: border-box;
   padding-top: 10rem;
   padding-bottom: 10rem;
-  border-bottom: 1px solid rgba(100, 77, 44, 0.2);
+  border-bottom: 1rem solid rgba(100, 77, 44, 0.2);
 }
 .header__contacts-wrp {
   max-width: 525rem;
@@ -763,6 +763,7 @@ input[type=checkbox]:disabled {
   z-index: 1;
   background: #2d3240;
   transition: height 250ms ease-in-out;
+  overflow: hidden;
 }
 .header__lng-switcher li {
   height: 25rem;
@@ -792,7 +793,8 @@ input[type=checkbox]:disabled {
 }
 
 .fs {
-  margin-top: 100rem;
+  box-sizing: border-box;
+  padding-top: 180rem;
   margin-bottom: 225rem;
 }
 .fs__container {
@@ -1328,6 +1330,18 @@ input[type=checkbox]:disabled {
   display: none;
 }
 
+.header {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  background-color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+  padding-bottom: 5rem;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
 @media screen and (max-width: 1700px) {
   html {
     font-size: 0.07208vw;
@@ -1716,6 +1730,10 @@ input[type=checkbox]:disabled {
   .header__contacts-wrp.active .header__nav {
     opacity: 1;
     height: 160rem;
+  }
+  .fs {
+    margin-top: 0;
+    padding-top: 180rem;
   }
   .header .wrp {
     width: 100%;
