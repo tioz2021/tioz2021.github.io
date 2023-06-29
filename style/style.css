@@ -1776,6 +1776,9 @@ input[type=checkbox]:disabled {
     height: 53rem;
     margin-bottom: 3rem;
   }
+  .header__title {
+    font-size: 11rem;
+  }
   .mobile-menu {
     top: 8rem;
   }
