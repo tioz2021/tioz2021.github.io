@@ -1324,6 +1324,10 @@ input[type=checkbox]:disabled {
   display: none;
 }
 
+.mobile-text-overflow-close {
+  display: none;
+}
+
 @media screen and (max-width: 1700px) {
   html {
     font-size: 0.07208vw;
@@ -1723,5 +1727,13 @@ input[type=checkbox]:disabled {
   }
   .top-minus-rem2 {
     top: -110rem;
+  }
+  .mobile-text-overflow-close {
+    display: block;
+    width: 16rem;
+    height: 16rem;
+    position: absolute;
+    top: 6rem;
+    right: 6rem;
   }
 }
