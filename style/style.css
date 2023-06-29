@@ -1707,6 +1707,7 @@ input[type=checkbox]:disabled {
     opacity: 0;
     height: 0rem;
     transition: all 500ms ease-in-out;
+    overflow: hidden;
   }
   .header__contacts {
     opacity: 0;
@@ -1769,5 +1770,20 @@ input[type=checkbox]:disabled {
   }
   .fs {
     margin-bottom: 130rem;
+  }
+  .header__logo {
+    width: 147rem;
+    height: 53rem;
+    margin-bottom: 3rem;
+  }
+  .mobile-menu {
+    top: 8rem;
+  }
+  .header__lng-switcher {
+    top: 20rem;
+  }
+  .header__info-wrp {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
   }
 }
