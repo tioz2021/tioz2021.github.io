@@ -26,13 +26,13 @@
 
   if (listItem)
     listItem.forEach((e) => e.addEventListener("mouseover", changed));
-  if (document.body)
-    document.body.addEventListener("mouseout", (e) => {
+  if (firstScrin)
+    firstScrin.addEventListener("mouseout", (e) => {
       listItem.forEach((e) => e.classList.remove("active"));
       textOverflow.classList.remove("active");
     });
-  if (document.body)
-    document.body.addEventListener("click", (e) => {
+  if (document.querySelector(".s1"))
+    document.querySelector(".s1").addEventListener("click", (e) => {
       listItem.forEach((e) => e.classList.remove("active"));
       textOverflow.classList.remove("active");
     });
