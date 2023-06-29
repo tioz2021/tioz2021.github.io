@@ -177,7 +177,8 @@
   // margin-top: 100rem;
   box-sizing: border-box;
   padding-top: 180rem;
-  margin-bottom: 225rem;
+  margin-bottom: 125rem;
+
   // .fs__container
   &__container {
     position: relative;
@@ -371,7 +372,10 @@
   }
 }
 .s1 {
-  margin-bottom: 180rem;
+  box-sizing: border-box;
+  padding-top: 100rem;
+  margin-bottom: 80rem;
+
   // .s1__container
   &__container {
   }
@@ -422,6 +426,9 @@
 }
 
 .s2 {
+  box-sizing: border-box;
+  padding-top: 100rem;
+
   // .s2__container
   &__container {
     width: 1344rem;
@@ -526,6 +533,7 @@
   box-sizing: border-box;
   // margin-top: 290rem;
   padding-bottom: 150rem;
+  padding-top: 100rem;
 
   // .s3__container
   &__container {

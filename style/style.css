@@ -551,8 +551,8 @@ a {
 .wrp-bg-grey {
   background: #f7f8fb;
   box-sizing: border-box;
-  padding-top: 360rem;
-  margin-top: -73px;
+  padding-top: 260rem;
+  margin-top: -73rem;
 }
 
 :root {
@@ -795,7 +795,7 @@ input[type=checkbox]:disabled {
 .fs {
   box-sizing: border-box;
   padding-top: 180rem;
-  margin-bottom: 225rem;
+  margin-bottom: 125rem;
 }
 .fs__container {
   position: relative;
@@ -950,7 +950,9 @@ input[type=checkbox]:disabled {
 }
 
 .s1 {
-  margin-bottom: 180rem;
+  box-sizing: border-box;
+  padding-top: 100rem;
+  margin-bottom: 80rem;
 }
 .s1__title {
   color: #2d3240;
@@ -991,6 +993,10 @@ input[type=checkbox]:disabled {
   font-weight: 400;
 }
 
+.s2 {
+  box-sizing: border-box;
+  padding-top: 100rem;
+}
 .s2__container {
   width: 1344rem;
   height: 594rem;
@@ -1077,6 +1083,7 @@ input[type=checkbox]:disabled {
 .s3 {
   box-sizing: border-box;
   padding-bottom: 150rem;
+  padding-top: 100rem;
 }
 .s3__title {
   color: #2d3240;
@@ -1559,7 +1566,7 @@ input[type=checkbox]:disabled {
     font-size: 12rem;
   }
   .s3 {
-    padding-bottom: 120rem;
+    padding-bottom: 0;
   }
   .s4__title {
     font-size: 24rem;
@@ -1609,6 +1616,8 @@ input[type=checkbox]:disabled {
     max-width: unset;
   }
   .s4 {
+    box-sizing: border-box;
+    padding-top: 120rem;
     padding-bottom: 0;
   }
   .s4__btn {
