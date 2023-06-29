@@ -464,11 +464,19 @@
   display: block;
 }
 
+.fs__list-overflov-text {
+  position: absolute;
+  top: 400rem;
+  background-color: #fff;
+}
+
 .top-minus-rem1 {
-  top: -220rem;
+  // top: -220rem;
+  top: 155rem;
 }
 .top-minus-rem2 {
-  top: -110rem;
+  // top: -110rem;
+  top: 265rem;
 }
 
 .mobile-text-overflow-close {
@@ -478,4 +486,13 @@
   position: absolute;
   top: 6rem;
   right: 6rem;
+}
+
+.s1 {
+  position: relative;
+  z-index: -1;
+}
+
+.fs {
+  margin-bottom: 130rem;
 }
