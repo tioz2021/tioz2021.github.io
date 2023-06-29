@@ -1845,16 +1845,17 @@ body {
 }
 
 @media screen and (max-width: 1600px) {
-  html {
-    font-size: 0.07208vw;
-  }
-  @import "_adaptive-web.scss";
+  // html {
+  //   font-size: 0.07208vw;
+  // }
+  // @import "_adaptive-web.scss";
 }
 
 @media screen and (max-width: 1200px) {
   html {
     font-size: 0.12999vw;
   }
+  @import "_adaptive-web.scss";
   @import "_adaptive-tab.scss";
 }
 
