@@ -60,10 +60,10 @@
   }
   // mouseover
   if (lng) lng.addEventListener("click", changed);
-  // if (header)
-  //   header.addEventListener("mouseout", (e) => {
-  //     lng.classList.remove("active");
-  //   });
+  if (header)
+    header.addEventListener("mouseout", (e) => {
+      lng.classList.remove("active");
+    });
 })();
 
 // menu mobile
