@@ -7,6 +7,8 @@
   margin-top: 55rem;
   // margin-bottom: 130rem;
   margin-bottom: 60rem;
+  position: relative;
+  z-index: 2;
 }
 .fs__title {
   max-width: 100%;
@@ -492,7 +494,7 @@
 
 .s1 {
   position: relative;
-  z-index: -1;
+  z-index: 1;
 }
 
 .fs {

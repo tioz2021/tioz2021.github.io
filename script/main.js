@@ -31,11 +31,11 @@
       listItem.forEach((e) => e.classList.remove("active"));
       textOverflow.classList.remove("active");
     });
-  if (document.querySelector(".s1"))
-    document.querySelector(".s1").addEventListener("click", (e) => {
-      listItem.forEach((e) => e.classList.remove("active"));
-      textOverflow.classList.remove("active");
-    });
+  // if (document.querySelector(".s1"))
+  //   document.querySelector(".s1").addEventListener("click", (e) => {
+  //     listItem.forEach((e) => e.classList.remove("active"));
+  //     textOverflow.classList.remove("active");
+  //   });
 })();
 
 // s3 item change
