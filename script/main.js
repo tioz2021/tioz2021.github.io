@@ -90,3 +90,29 @@
 
 // wow js init
 new WOW().init();
+
+// first screen animation
+(() => {
+  const fs = document.querySelector(".fs__wrp");
+  const animation = document.querySelector(".animation-element");
+
+  function animActive() {
+    fs.classList.add("disabled");
+    animation.classList.add("active");
+    animation.querySelector("video").play();
+  }
+
+  function animDisabled() {
+    fs.classList.remove("disabled");
+    animation.classList.remove("active");
+    animation.querySelector("video").pause();
+  }
+
+  // fs.querySelector(".fs__img-container").addEventListener(
+  //   "mouseenter",
+  //   animActive
+  // );
+  fs.querySelector(".fs__img-container").addEventListener("click", animActive);
+  // animation.addEventListener("mouseleave", animDisabled);
+  animation.addEventListener("click", animDisabled);
+})();

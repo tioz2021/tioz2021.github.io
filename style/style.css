@@ -203,7 +203,7 @@ abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -302,9 +302,9 @@ select {
  * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-[type=button],
-[type=reset],
-[type=submit] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button;
 }
 
@@ -312,9 +312,9 @@ button,
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type=button]::-moz-focus-inner,
-[type=reset]::-moz-focus-inner,
-[type=submit]::-moz-focus-inner {
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -323,9 +323,9 @@ button::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type=button]:-moz-focusring,
-[type=reset]:-moz-focusring,
-[type=submit]:-moz-focusring {
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
   outline: 1rem dotted ButtonText;
 }
 
@@ -369,8 +369,8 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-[type=checkbox],
-[type=radio] {
+[type="checkbox"],
+[type="radio"] {
   box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
@@ -378,8 +378,8 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type=number]::-webkit-inner-spin-button,
-[type=number]::-webkit-outer-spin-button {
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -387,7 +387,7 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type=search] {
+[type="search"] {
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2rem; /* 2 */
 }
@@ -395,7 +395,7 @@ textarea {
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type=search]::-webkit-search-decoration {
+[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -442,66 +442,96 @@ template {
 
 @font-face {
   font-family: "Montserrat";
-  src: local("Montserrat"), url("../fonts/montserrat/Montserrat-Light.ttf") format("ttf"), url("../fonts/montserrat/Montserrat-Light.woff") format("woff"), url("../fonts/montserrat/Montserrat-Light.woff2") format("woff2");
+  src: local("Montserrat"),
+    url("../fonts/montserrat/Montserrat-Light.ttf") format("ttf"),
+    url("../fonts/montserrat/Montserrat-Light.woff") format("woff"),
+    url("../fonts/montserrat/Montserrat-Light.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: "Montserrat";
-  src: local("Montserrat"), url("../fonts/montserrat/Montserrat-Regular.ttf") format("ttf"), url("../fonts/montserrat/Montserrat-Regular.woff") format("woff"), url("../fonts/montserrat/Montserrat-Regular.woff2") format("woff2");
+  src: local("Montserrat"),
+    url("../fonts/montserrat/Montserrat-Regular.ttf") format("ttf"),
+    url("../fonts/montserrat/Montserrat-Regular.woff") format("woff"),
+    url("../fonts/montserrat/Montserrat-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Montserrat";
-  src: local("Montserrat"), url("../fonts/montserrat/Montserrat-SemiBold.ttf") format("ttf"), url("../fonts/montserrat/Montserrat-SemiBold.woff") format("woff"), url("../fonts/montserrat/Montserrat-SemiBold.woff2") format("woff2");
+  src: local("Montserrat"),
+    url("../fonts/montserrat/Montserrat-SemiBold.ttf") format("ttf"),
+    url("../fonts/montserrat/Montserrat-SemiBold.woff") format("woff"),
+    url("../fonts/montserrat/Montserrat-SemiBold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "Montserrat";
-  src: local("Montserrat"), url("../fonts/montserrat/Montserrat-Bold.ttf") format("ttf"), url("../fonts/montserrat/Montserrat-Bold.woff") format("woff"), url("../fonts/montserrat/Montserrat-Bold.woff2") format("woff2");
+  src: local("Montserrat"),
+    url("../fonts/montserrat/Montserrat-Bold.ttf") format("ttf"),
+    url("../fonts/montserrat/Montserrat-Bold.woff") format("woff"),
+    url("../fonts/montserrat/Montserrat-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Montserrat";
-  src: local("Montserrat"), url("../fonts/montserrat/Montserrat-ExtraBold.ttf") format("ttf"), url("../fonts/montserrat/Montserrat-ExtraBold.woff") format("woff"), url("../fonts/montserrat/Montserrat-ExtraBold.woff2") format("woff2");
+  src: local("Montserrat"),
+    url("../fonts/montserrat/Montserrat-ExtraBold.ttf") format("ttf"),
+    url("../fonts/montserrat/Montserrat-ExtraBold.woff") format("woff"),
+    url("../fonts/montserrat/Montserrat-ExtraBold.woff2") format("woff2");
   font-weight: 800;
   font-style: normal;
 }
 @font-face {
   font-family: "Helvetica Neue Cyr";
   src: url("../fonts/helvetica/HelveticaNeueCyr-Light.eot");
-  src: url("../fonts/helvetica/HelveticaNeueCyr-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/helvetica/HelveticaNeueCyr-Light.woff") format("woff"), url("../fonts/helvetica/HelveticaNeueCyr-Light.ttf") format("truetype");
+  src: url("../fonts/helvetica/HelveticaNeueCyr-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/helvetica/HelveticaNeueCyr-Light.woff") format("woff"),
+    url("../fonts/helvetica/HelveticaNeueCyr-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: "Helvetica Neue Cyr";
   src: url("../fonts/helvetica/HelveticaNeueCyr-Roman.eot");
-  src: url("../fonts/helvetica/HelveticaNeueCyr-Roman.eot?#iefix") format("embedded-opentype"), url("../fonts/helvetica/HelveticaNeueCyr-Roman.woff") format("woff"), url("../fonts/helvetica/HelveticaNeueCyr-Roman.ttf") format("truetype");
+  src: url("../fonts/helvetica/HelveticaNeueCyr-Roman.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/helvetica/HelveticaNeueCyr-Roman.woff") format("woff"),
+    url("../fonts/helvetica/HelveticaNeueCyr-Roman.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Helvetica Neue Cyr";
   src: url("../fonts/helvetica/HelveticaNeueCyr-Medium.eot");
-  src: url("../fonts/helvetica/HelveticaNeueCyr-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/helvetica/HelveticaNeueCyr-Medium.woff") format("woff"), url("../fonts/helvetica/HelveticaNeueCyr-Medium.ttf") format("truetype");
+  src: url("../fonts/helvetica/HelveticaNeueCyr-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/helvetica/HelveticaNeueCyr-Medium.woff") format("woff"),
+    url("../fonts/helvetica/HelveticaNeueCyr-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Helvetica Neue Cyr";
   src: url("../fonts/helvetica/HelveticaNeueCyr-Bold.eot");
-  src: url("../fonts/helvetica/HelveticaNeueCyr-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/helvetica/HelveticaNeueCyr-Bold.woff") format("woff"), url("../fonts/helvetica/HelveticaNeueCyr-Bold.ttf") format("truetype");
+  src: url("../fonts/helvetica/HelveticaNeueCyr-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/helvetica/HelveticaNeueCyr-Bold.woff") format("woff"),
+    url("../fonts/helvetica/HelveticaNeueCyr-Bold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "Gilroy Light";
   src: url("../fonts/gilroy/Gilroy-Light.eot");
-  src: url("../fonts/gilroy/Gilroy-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/gilroy/Gilroy-Light.woff") format("woff"), url("../fonts/gilroy/Gilroy-Light.ttf") format("truetype");
+  src: url("../fonts/gilroy/Gilroy-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/gilroy/Gilroy-Light.woff") format("woff"),
+    url("../fonts/gilroy/Gilroy-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
@@ -537,7 +567,7 @@ a {
   top: 50%;
   transform: translate(-50%, -50%);
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 .container {
@@ -577,10 +607,10 @@ a {
   cursor: not-allowed;
 }
 
-input[type=checkbox] {
+input[type="checkbox"] {
   -webkit-appearance: none;
   -moz-appearance: none;
-       appearance: none;
+  appearance: none;
   margin: 0;
   width: 16rem;
   height: 16rem;
@@ -591,12 +621,19 @@ input[type=checkbox] {
   margin-right: 16rem;
 }
 
-input[type=checkbox]::before {
+input[type="checkbox"]::before {
   content: "";
   width: 8rem;
   height: 8rem;
-  -webkit-clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
-          clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  -webkit-clip-path: polygon(
+    14% 44%,
+    0 65%,
+    50% 100%,
+    100% 16%,
+    80% 0%,
+    43% 62%
+  );
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
   transform: scale(0);
   transform-origin: bottom left;
   transition: 120ms transform ease-in-out;
@@ -605,11 +642,11 @@ input[type=checkbox]::before {
   background-color: CanvasText;
 }
 
-input[type=checkbox]:checked::before {
+input[type="checkbox"]:checked::before {
   transform: scale(1);
 }
 
-input[type=checkbox]:disabled {
+input[type="checkbox"]:disabled {
   --form-control-color: var(--form-control-disabled);
   color: var(--form-control-disabled);
   cursor: not-allowed;
@@ -633,7 +670,11 @@ input[type=checkbox]:disabled {
 .main-btn {
   border-radius: 11rem;
   border: 1rem solid #c57326;
-  background: radial-gradient(35.48% 57.87% at 50% 100%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+  background: radial-gradient(
+    35.48% 57.87% at 50% 100%,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
   box-shadow: 0px 5px 4px 0px rgba(255, 255, 255, 0.34) inset;
   color: #c57326;
   text-align: center;
@@ -883,7 +924,11 @@ input[type=checkbox]:disabled {
 }
 .fs__list-icon {
   border-radius: 6rem;
-  background: linear-gradient(180deg, rgba(44, 73, 100, 0.22) 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(44, 73, 100, 0.22) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
   width: 57rem;
   height: 57rem;
   box-sizing: border-box;
@@ -924,7 +969,7 @@ input[type=checkbox]:disabled {
   border: 1rem solid #e3a953;
   background: rgba(255, 255, 255, 0.95);
   -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
   box-sizing: border-box;
   padding: 20rem;
   color: #414141;
@@ -1203,7 +1248,7 @@ input[type=checkbox]:disabled {
 .s3 .form-control {
   width: 259rem;
 }
-.s3 input[type=checkbox]::before {
+.s3 input[type="checkbox"]::before {
   box-shadow: inset 1em 1em #e59536;
   background-color: #e59536;
 }
@@ -1308,7 +1353,7 @@ input[type=checkbox]:disabled {
 .s4__form-input--last {
   margin-bottom: 45rem;
 }
-.s4 input[type=checkbox]::before {
+.s4 input[type="checkbox"]::before {
   box-shadow: inset 1em 1em #e59536;
 }
 .s4__btn {
@@ -1797,5 +1842,89 @@ input[type=checkbox]:disabled {
   .header__info-wrp {
     padding-top: 7rem;
     padding-bottom: 7rem;
+  }
+}
+.animation-element {
+  position: absolute;
+  width: 100%;
+  height: 764rem;
+  /* top: -115rem; */
+  transform: translateX(-50%);
+  left: 50%;
+  /* right: -239rem; */
+  opacity: 0;
+  top: -1500rem;
+  z-index: 3;
+  transition: opacity 1500ms ease-in-out;
+
+  width: 1920rem;
+  height: 850rem;
+}
+
+.animation-element img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.animation-element.active {
+  top: -115rem;
+  opacity: 1;
+}
+.fs__wrp {
+  display: block;
+  transition: opacity 1500ms ease-in-out;
+}
+.fs__wrp.disabled {
+  opacity: 0;
+  /* display: none; */
+}
+
+.animation-element::after {
+  content: "";
+  position: absolute;
+  left: -3rem;
+  top: 0;
+  height: 100%;
+  width: 7rem;
+  background-color: #fff;
+}
+.animation-element::before {
+  content: "";
+  position: absolute;
+  right: -3rem;
+  top: 0;
+  height: 100%;
+  width: 5rem;
+  background-color: #fff;
+}
+.fs__img-container {
+  z-index: 2;
+  cursor: pointer;
+}
+.fs__info {
+  z-index: 3;
+}
+
+.fs__list-overflov-text {
+  display: none;
+}
+.fs__list-overflov-text.active {
+  display: block;
+}
+
+@media screen and (max-width: 900px) {
+  .animation-element {
+    width: 330rem;
+    height: 241rem;
+    transform: translateX(-50%);
+    left: 50%;
+    right: unset;
+  }
+  .animation-element.active {
+    top: -70rem;
+  }
+  .fs__wrp.disabled {
+    display: none;
   }
 }
