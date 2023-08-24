@@ -14,9 +14,13 @@
   line-height: 80rem;
 }
 
+.fs {
+  background-image: url("../image/fs-bg.png");
+  @include bg-def-set(center, cover);
+}
+
 #bgvid {
-  background: url("../image/fs-bg.png") #000 no-repeat center center fixed;
-  opacity: 0.6;
+  display: none;
 }
 
 .fs__desc {
