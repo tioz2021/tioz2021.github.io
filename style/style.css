@@ -599,13 +599,16 @@ template {
 .flower-anim {
   animation-name: flower;
 }
+.flower-anim img {
+  transform: rotate(-6deg);
+}
 
 @keyframes flower {
   0% {
-    transform: translate(-100%, 50%) rotate(15deg) scale(0);
+    transform: translate(-100%, 50%) rotate(-90deg) scale(0);
   }
   100% {
-    transform: translate(0%, 0%) rotate(0) scale(1);
+    transform: translate(0%, 0%) rotate(0deg) scale(1);
   }
 }
 @keyframes float {
