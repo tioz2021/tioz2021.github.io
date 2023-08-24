@@ -47,5 +47,5 @@ window.onload = function () {
   setTimeout(() => {
     document.querySelector(".preloader").classList.add("disable");
     document.querySelector("main").style.opacity = "1";
-  }, 2000);
+  }, 1500);
 };
