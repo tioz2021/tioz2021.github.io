@@ -707,7 +707,7 @@ a {
   align-items: center;
   z-index: 999;
   opacity: 1;
-  // transition: opacity 2000ms ease-in-out;
+  transition: opacity 500ms ease-in-out;
 }
 
 .preloader.disable {
