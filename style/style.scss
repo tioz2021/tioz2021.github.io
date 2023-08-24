@@ -709,6 +709,10 @@ a {
   opacity: 1;
   transition: opacity 500ms ease-in-out;
 }
+.preloader__video {
+  width: 300rem !important;
+  height: 300rem !important;
+}
 
 .preloader.disable {
   opacity: 0;

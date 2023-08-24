@@ -1152,6 +1152,11 @@ a {
   transition: opacity 500ms ease-in-out;
 }
 
+.preloader__video {
+  width: 300rem !important;
+  height: 300rem !important;
+}
+
 .preloader.disable {
   opacity: 0;
   z-index: -1;
@@ -1797,5 +1802,9 @@ a {
     top: 20rem;
     left: unset;
     right: 36rem;
+  }
+  .preloader__video {
+    width: 120rem !important;
+    height: 50rem !important;
   }
 }
