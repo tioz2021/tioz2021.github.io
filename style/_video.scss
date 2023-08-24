@@ -1,0 +1,22 @@
+video {
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // min-width: 100%;
+  // min-height: 100%;
+  // width: auto;
+  // height: auto;
+  // z-index: -100;
+  // transform: translateX(-50%) translateY(-50%);
+  background: url("../image/fs-bg.png") no-repeat;
+  background-size: cover;
+  transition: 1s opacity;
+}
+@media screen and (max-device-width: 800px) {
+  html {
+    // background: url("../image/fs-bg.png") #000 no-repeat center center fixed;
+  }
+  // #bgvid {
+  //   background: url("../image/fs-bg.png") #000 no-repeat center center fixed;
+  // }
+}

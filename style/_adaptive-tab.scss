@@ -1,0 +1,368 @@
+.container {
+  max-width: 768rem;
+  padding-left: 45rem;
+  padding-right: 45rem;
+}
+.fs__title {
+  font-size: 70rem;
+  line-height: 76rem;
+  margin-bottom: 7rem;
+}
+.fs__title span:first-child,
+.fs__title span:last-child {
+  font-size: 100rem;
+  line-height: 80rem;
+}
+
+#bgvid {
+  background: url("../image/fs-bg.png") #000 no-repeat center center fixed;
+  opacity: 0.6;
+}
+
+.fs__desc {
+  font-size: 42rem;
+  line-height: 46rem;
+}
+
+.s1 {
+  padding-top: 160rem;
+  margin-bottom: 200rem;
+}
+.s1__title {
+  font-size: 70rem;
+  line-height: 76rem;
+  padding-top: 40rem;
+  max-width: 620rem;
+}
+.fs__title span {
+  font-size: 100rem;
+  line-height: 80rem;
+}
+
+.s1__swiper-flow {
+  display: none;
+}
+.s1__swiper-text {
+  // display: none;
+  position: static;
+}
+
+.main-swiper-wrp .swiper-button-next,
+.main-swiper-wrp .swiper-button-prev {
+  display: none;
+}
+
+.main__swiper {
+  width: 100%;
+  height: 392rem;
+}
+
+.s1__swiper-text-bg {
+  display: none;
+}
+.s1__swiper-text span {
+  position: static;
+  transform: unset;
+  color: $color-body3-white;
+  display: block;
+  width: 100%;
+  text-align: center;
+  max-width: unset;
+  margin-top: 35rem;
+}
+
+.s2__decor-galactics {
+  width: 100%;
+}
+
+.s2__decor-galactics {
+  // display: none;
+  width: 726rem;
+  height: 281rem;
+  top: 15rem;
+  left: 15rem;
+}
+
+.s2__container {
+  padding-top: 200rem;
+}
+
+.s2__text {
+  font-size: 42rem;
+  line-height: 46rem;
+  margin-bottom: 24rem;
+}
+
+.s2__map-wrp {
+  width: 100%;
+  height: 400rem;
+  border-radius: 16rem;
+}
+
+.s2__point {
+  width: 44rem;
+  height: 53rem;
+}
+
+.s2__map-wrp {
+  margin-bottom: 160rem;
+}
+
+.s2__decor-birds {
+  width: 100%;
+  height: 171.531rem;
+}
+
+.s2__decor-bird--1 {
+  width: 90.678rem;
+  height: 66.759rem;
+  margin-right: 125rem;
+  top: 156rem;
+}
+
+.s2__decor-bird--2 {
+  width: 61.643rem;
+  height: 53.304rem;
+  margin-right: 97rem;
+  top: 195rem;
+}
+.s2__decor-bird--3 {
+  width: 86.722rem;
+  height: 80.609rem;
+  margin-right: 89rem;
+  top: 103rem;
+}
+.s2__decor-bird--4 {
+  width: 124.585rem;
+  height: 86.179rem;
+  top: 179rem;
+}
+
+.s2__decor-cloud--cloud2 {
+  width: 414rem;
+  height: 196rem;
+  right: -52rem;
+  top: 668rem;
+}
+
+.s2__decor-cloud--cloud1 {
+  left: -60rem;
+  width: 437.99rem;
+  height: 206.766rem;
+  top: 646rem;
+}
+
+.s2__text-footer {
+  font-size: 100rem;
+  line-height: 86rem;
+  margin-bottom: 300rem;
+}
+
+.s2__decor-men--men1 {
+  width: 303rem;
+  height: 278rem;
+  left: -27rem;
+  bottom: -12rem;
+}
+
+.s2__decor-men--men2 {
+  width: 404rem;
+  height: 276rem;
+  bottom: 0;
+  right: -35rem;
+}
+
+.s2 {
+  min-height: unset;
+}
+
+.s2__decor-galactics-star--star1 {
+  top: 30rem;
+  left: 95rem;
+  width: 42.673rem;
+  height: 42.673rem;
+}
+
+.s2__decor-galactics-star--star2 {
+  top: 76rem;
+  right: 193rem;
+  width: 128rem;
+  height: 67rem;
+}
+
+.s2__decor-galactics-star--star3 {
+  width: 31rem;
+  height: 31rem;
+  top: 76rem;
+  left: 197rem;
+}
+.s2__decor-galactics-star--star4 {
+  width: 47rem;
+  height: 46rem;
+  top: 20rem;
+  left: 311rem;
+}
+
+.s2__decor-galactics-star--star5 {
+  width: 17rem;
+  height: 17rem;
+  top: 40rem;
+  left: unset;
+  right: 273rem;
+}
+.s2__decor-galactics-star--star6 {
+  width: 39.958rem;
+  height: 39.958rem;
+  top: 46rem;
+  right: 93rem;
+}
+
+.s3 {
+  margin-top: 0;
+  padding-top: 200rem;
+  padding-bottom: 200rem;
+}
+
+.s3__title {
+  font-size: 98rem;
+  line-height: 86rem;
+}
+
+.s3__title span {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.swiper-pagination-bullets {
+  bottom: var(--swiper-pagination-bottom, 24rem) !important;
+}
+
+.s3__swiper-wrp {
+  margin-bottom: 70rem;
+}
+
+.s3__list {
+  flex-wrap: wrap;
+}
+
+.s3__item {
+  margin-bottom: 44rem;
+}
+
+.s3__item:nth-child(1) .s3__item-img {
+  width: 74rem;
+  height: 77rem;
+}
+.s3__item:nth-child(2) .s3__item-img {
+  width: 72rem;
+  height: 71rem;
+}
+.s3__item:nth-child(3) .s3__item-img {
+  width: 76rem;
+  height: 68rem;
+}
+.s3__item:nth-child(4) .s3__item-img {
+  width: 78rem;
+  height: 59rem;
+}
+.s3__item:nth-child(5) .s3__item-img {
+  width: 107rem;
+  height: 58rem;
+}
+.s3__item:nth-child(6) .s3__item-img {
+  width: 76rem;
+  height: 50rem;
+}
+.s3__item-img {
+  margin-bottom: 20rem;
+}
+.s3__item-text {
+  font-size: 30rem;
+  line-height: 34rem;
+  max-width: 206rem;
+}
+
+.s3__item:nth-child(4),
+.s3__item:nth-child(5),
+.s3__item:nth-child(6) {
+  margin-bottom: 0;
+}
+
+.s3__title-img {
+  margin-left: 12rem;
+  width: 80rem;
+  height: 68rem;
+}
+
+.s4 {
+  padding-top: 200rem;
+}
+
+.s4__title {
+  font-size: 100rem;
+  line-height: 86rem;
+  margin-bottom: 60rem;
+}
+
+.s4__title span {
+  font-size: 86rem;
+  line-height: 100rem;
+}
+
+.s4__item {
+  flex-direction: column;
+}
+
+.s4__item-text {
+  text-align: center;
+  font-size: 42rem;
+  line-height: 46rem;
+  max-width: unset;
+}
+.s4__item-img {
+  margin-right: 0;
+  margin-bottom: 24rem;
+}
+.s4__item:first-child .img-wrp {
+  width: 78rem;
+  height: 78rem;
+}
+
+.s4__item:last-child .img-wrp {
+  width: 119rem;
+  height: 95rem;
+}
+
+.s4__list {
+  margin-bottom: calc(80rem + 335rem);
+}
+
+.s4__decor-img {
+  width: 100%;
+  height: 334rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.s4 {
+  position: relative;
+}
+
+.ls {
+  padding-top: 80rem;
+  padding-bottom: 80rem;
+}
+
+.ls__text {
+  font-size: 42rem;
+  line-height: 46rem;
+  text-align: center;
+  margin-bottom: 35rem;
+}
+
+.ls__phone {
+  font-size: 74rem;
+  line-height: 74rem;
+}

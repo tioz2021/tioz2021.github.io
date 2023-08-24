@@ -1,0 +1,354 @@
+.container {
+  max-width: 360rem;
+  padding-left: 15rem;
+  padding-right: 15rem;
+}
+
+.fs__logo::after {
+  width: 160rem;
+  height: 160rem;
+  top: -90rem;
+}
+.fs__logo {
+  width: 87rem;
+  height: 36rem;
+}
+
+.fs__title {
+  font-size: 38rem;
+  line-height: 42rem;
+  margin-bottom: 4rem;
+}
+.fs__title span {
+  font-size: 48rem !important;
+  line-height: 42rem !important;
+}
+.fs__desc {
+  font-size: 23rem;
+  line-height: 28rem;
+}
+
+.fs__arrow-bottom {
+  width: 24rem;
+  height: 24rem;
+  margin-left: -12rem;
+  bottom: 17rem;
+}
+
+.s1 {
+  padding-top: 40rem;
+  margin-bottom: 80rem;
+}
+
+.s1__title {
+  padding-top: 40rem;
+  font-size: 48rem;
+  line-height: 40rem;
+  margin-bottom: 36rem;
+  max-width: unset;
+}
+
+.main__swiper {
+  height: 190rem;
+}
+
+.swiper-pagination-bullets .swiper-pagination-bullet {
+  width: 8rem;
+  height: 8rem;
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 4rem) !important;
+}
+.swiper-pagination-bullets {
+  bottom: var(--swiper-pagination-bottom, 16rem) !important;
+}
+
+.s1__swiper-text span {
+  margin-top: 24rem;
+  font-size: 24rem;
+  line-height: 28rem;
+}
+
+.s2__container {
+  padding-top: 80rem;
+}
+
+.s2__text {
+  font-size: 24rem;
+  line-height: 28rem;
+  margin-bottom: 16rem;
+}
+
+.s2__map-wrp {
+  height: 200rem;
+  margin-bottom: 80rem;
+}
+
+.s2__text-footer {
+  margin-bottom: 160rem;
+  font-size: 48rem;
+  line-height: 40rem;
+}
+
+.s2__point {
+  width: 24rem;
+  height: 29rem;
+}
+
+.s2__decor-birds {
+  width: 301.847rem;
+  height: 73.461rem;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 340rem;
+}
+
+.s2__decor-bird--1 {
+  width: 39.912rem;
+  height: 29.384rem;
+  margin-right: 65rem;
+  top: 20rem;
+}
+
+.s2__decor-bird--2 {
+  width: 27.131rem;
+  height: 23.461rem;
+  margin-right: 9rem;
+  top: 35rem;
+}
+
+.s2__decor-bird--3 {
+  width: 38.17rem;
+  height: 35.483rem;
+  margin-right: 66rem;
+  top: -10rem;
+}
+
+.s2__decor-bird--4 {
+  width: 54.847rem;
+  height: 37.935rem;
+  top: 10rem;
+}
+
+.s2__decor-cloud--cloud1 {
+  width: 199rem;
+  height: 99rem;
+  left: -24rem;
+  top: 315rem;
+}
+
+.s2__decor-cloud--cloud2 {
+  width: 185rem;
+  height: 88rem;
+  top: 320rem;
+  right: -10rem;
+}
+
+.s2__decor-men--men1 {
+  width: 168.305rem;
+  height: 153.42rem;
+  bottom: -7rem;
+  left: -20rem;
+}
+
+.s2__decor-men--men2 {
+  width: 223rem;
+  height: 152rem;
+  bottom: 0;
+  right: -10rem;
+}
+
+.s2__decor-galactics {
+  // display: none;
+  width: 328rem;
+  height: 127rem;
+  top: 9rem;
+  left: 16rem;
+}
+
+.s3 {
+  padding-top: 80rem;
+  padding-bottom: 80rem;
+}
+
+.s3__title {
+  font-size: 48rem;
+  line-height: 40rem;
+  margin-bottom: 36rem;
+}
+
+.s3__title-img {
+  margin-left: 8rem;
+  width: 35rem;
+  height: 30rem;
+}
+
+.main__swiper {
+  border-radius: 16rem;
+}
+
+.s3__swiper-wrp {
+  margin-bottom: 36rem;
+}
+.s3__item {
+  margin-bottom: 24rem;
+  margin-right: 17rem;
+  min-width: 156rem;
+}
+.s3__item:nth-child(4),
+.s3__item:nth-child(5),
+.s3__item:nth-child(6) {
+  margin-bottom: 24rem;
+}
+.s3__item:nth-child(5),
+.s3__item:nth-child(6) {
+  margin-bottom: 0;
+}
+
+.s3__item:nth-child(2),
+.s3__item:nth-child(4),
+.s3__item:nth-child(6) {
+  margin-right: 0;
+}
+
+.s3__item-text {
+  font-size: 16rem;
+  line-height: 20rem;
+}
+
+.s3__item:nth-child(1) .s3__item-img {
+  width: 40rem;
+  height: 42rem;
+}
+.s3__item:nth-child(2) .s3__item-img {
+  width: 42rem;
+  height: 41rem;
+}
+.s3__item:nth-child(3) .s3__item-img {
+  width: 41rem;
+  height: 36rem;
+}
+.s3__item:nth-child(4) .s3__item-img {
+  width: 51rem;
+  height: 39rem;
+}
+.s3__item:nth-child(5) .s3__item-img {
+  width: 57rem;
+  height: 32rem;
+}
+.s3__item:nth-child(6) .s3__item-img {
+  width: 48rem;
+  height: 32rem;
+}
+
+.s4 {
+  padding-top: 80rem;
+}
+
+.s4__title {
+  font-size: 58rem;
+  line-height: 38rem;
+  margin-bottom: 36rem;
+}
+.s4__title span {
+  font-size: 42rem;
+  line-height: 46rem;
+}
+
+.s4__item:first-child {
+  margin-bottom: 24rem;
+}
+.s4__item .img-wrp {
+  margin-bottom: 8rem;
+}
+.s4__item:first-child .img-wrp {
+  width: 44rem;
+  height: 44rem;
+}
+
+.s4__item-text {
+  font-size: 24rem;
+  line-height: 28rem;
+}
+
+.s4__item:last-child .img-wrp {
+  width: 65rem;
+  height: 52rem;
+}
+
+.s4__list {
+  margin-bottom: 200rem;
+}
+
+.s4__decor-img {
+  width: 386.987rem;
+  height: 168.207rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ls {
+  padding-top: 60rem;
+  padding-bottom: 60rem;
+}
+
+.ls__text {
+  font-size: 24rem;
+  line-height: 28rem;
+  margin-bottom: 16rem;
+}
+
+.ls__phone {
+  font-size: 36rem;
+  line-height: 42rem;
+}
+
+.s2__decor-galactics-star {
+  display: none;
+}
+.s2__decor-galactics-star--star1 {
+  display: block;
+  width: 19.26rem;
+  height: 19.26rem;
+  top: 21rem;
+  left: 54rem;
+}
+
+.s2__decor-galactics-star--star2 {
+  display: block;
+  width: 57.77rem;
+  height: 30.239rem;
+  top: 33rem;
+  right: 81rem;
+}
+.s2__decor-galactics-star--star3 {
+  display: block;
+  width: 13.991rem;
+  height: 13.991rem;
+  top: 33rem;
+  left: 90rem;
+}
+.s2__decor-galactics-star--star4 {
+  display: block;
+  width: 21.212rem;
+  height: 20.76rem;
+  top: 8rem;
+  left: 154rem;
+  right: unset;
+}
+.s2__decor-galactics-star--star5 {
+  display: block;
+  width: 7.673rem;
+  height: 7.673rem;
+  top: 17rem;
+  left: unset;
+  right: 117rem;
+}
+.s2__decor-galactics-star--star6 {
+  display: block;
+  width: 18.034rem;
+  height: 18.034rem;
+  top: 20rem;
+  left: unset;
+  right: 36rem;
+}
