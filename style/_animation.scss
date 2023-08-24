@@ -14,6 +14,14 @@
   animation-name: flower;
   // animation-duration: 6s;
 }
+@keyframes flower {
+  0% {
+    transform: translate(-100%, 50%) rotate(15deg) scale(0);
+  }
+  100% {
+    transform: translate(0%, 0%) rotate(0) scale(1);
+  }
+}
 
 @keyframes float {
   0%,
@@ -32,14 +40,5 @@
   }
   50% {
     transform: rotate(10deg);
-  }
-}
-
-@keyframes flower {
-  0% {
-    transform: translate(-100%, 50%) rotate(15deg);
-  }
-  100% {
-    transform: translate(0%, 0%) rotate(0deg);
   }
 }

@@ -557,21 +557,24 @@ template {
 
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
-  transform: scale(1);
-  transition: transform 500ms ease-in-out;
   left: var(--swiper-navigation-sides-offset, 162rem) !important;
 }
 
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
-  transform: scale(1);
-  transition: transform 500ms ease-in-out;
   right: var(--swiper-navigation-sides-offset, 162rem) !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  will-change: transform;
+  transition: transform 500ms ease;
+  transform: scale(100%);
 }
 
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
-  transform: scale(1.15);
+  transform: scale(110%);
 }
 
 .main-swiper-wrp {
@@ -597,6 +600,14 @@ template {
   animation-name: flower;
 }
 
+@keyframes flower {
+  0% {
+    transform: translate(-100%, 50%) rotate(15deg) scale(0);
+  }
+  100% {
+    transform: translate(0%, 0%) rotate(0) scale(1);
+  }
+}
 @keyframes float {
   0%, 100% {
     transform: translateY(0);
@@ -611,14 +622,6 @@ template {
   }
   50% {
     transform: rotate(10deg);
-  }
-}
-@keyframes flower {
-  0% {
-    transform: translate(-100%, 50%) rotate(15deg);
-  }
-  100% {
-    transform: translate(0%, 0%) rotate(0deg);
   }
 }
 video {
