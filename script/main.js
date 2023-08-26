@@ -23,6 +23,11 @@
       el: ".swiper-pagination",
     },
 
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+
     breakpoints: {
       // 900: {
       //   slidesPerView: 2,
