@@ -51,7 +51,8 @@ a {
 
   height: calc(var(--vh, 1vh) * 100);
 
-  // min-height: 1024rem;
+  // height: 1024rem;
+
   // background-image: url("../image/fs-bg.png");
   // @include bg-def-set(center, cover);
 
@@ -120,8 +121,8 @@ a {
     line-height: 120rem;
     margin-bottom: 15rem;
     max-width: 1350rem;
-    margin-bottom: 49rem;
-    padding-top: 77rem;
+    margin-bottom: 45rem;
+    padding-top: 8rem;
 
     // .fs__title span
     span {
@@ -181,7 +182,7 @@ a {
 
 .s1 {
   box-sizing: border-box;
-  padding-top: 250rem;
+  padding-top: 184rem;
   margin-bottom: 240rem;
 
   // .s1__container
@@ -597,7 +598,7 @@ a {
     font-family: $font-studioC;
     font-size: 280rem;
     line-height: 200rem; /* 71.429% */
-    margin-bottom: 80rem;
+    margin-bottom: 89rem;
 
     // .s4__title span
     span {
@@ -613,7 +614,7 @@ a {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 130rem;
+    margin-bottom: 111rem;
     // max-width: 1438rem;
   }
   // .s4__item
@@ -623,6 +624,7 @@ a {
 
     // .s4__item:first-child
     &:first-child {
+      margin-left: 150rem;
       margin-bottom: 95rem;
 
       // .s4__item:first-child .img-wrp
@@ -660,7 +662,7 @@ a {
   &__decor-img {
     width: 100%;
     height: 786rem;
-    margin-bottom: -6rem;
+    margin-bottom: 5rem;
   }
 }
 
