@@ -679,7 +679,7 @@ a {
   width: 145rem;
   height: 60rem;
   position: absolute;
-  top: 2.2vh;
+  top: 3.5vh;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -704,6 +704,8 @@ a {
   line-height: 120rem;
   margin-bottom: 15rem;
   max-width: 1350rem;
+  margin-bottom: 49rem;
+  padding-top: 77rem;
 }
 .fs__title span {
   font-family: "StudioScriptC", "Calibri", "Arial", sans-serif;
@@ -748,7 +750,7 @@ a {
 
 .s1 {
   box-sizing: border-box;
-  padding-top: 200rem;
+  padding-top: 250rem;
   margin-bottom: 240rem;
 }
 .s1__container {
@@ -765,7 +767,7 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: 106rem;
-  margin-bottom: 60rem;
+  margin-bottom: 78rem;
 }
 .s1__title span {
   color: #75a165;
@@ -800,14 +802,14 @@ a {
 }
 
 .s2 {
-  min-height: 1700rem;
+  min-height: 1683rem;
   background-color: #75a165;
   position: relative;
   z-index: 2;
 }
 .s2__container {
   box-sizing: border-box;
-  padding-top: 240rem;
+  padding-top: 180rem;
   position: relative;
   justify-content: center;
 }
@@ -868,7 +870,7 @@ a {
   text-align: center;
   font-size: 50rem;
   line-height: 56rem;
-  margin-bottom: 35rem;
+  margin-bottom: 98rem;
 }
 .s2__map-wrp {
   width: 1200rem;
@@ -969,8 +971,8 @@ a {
 .s3 {
   background-color: #fff;
   box-sizing: border-box;
-  padding-top: 270rem;
-  padding-bottom: 240rem;
+  padding-top: 250rem;
+  padding-bottom: 232rem;
   margin-top: -30rem;
   position: relative;
   z-index: 1;
@@ -984,7 +986,7 @@ a {
   font-size: 130rem;
   font-weight: 400;
   line-height: 106rem; /* 81.538% */
-  margin-bottom: 60rem;
+  margin-bottom: 80rem;
 }
 .s3__title .wrp {
   display: flex;
@@ -1051,7 +1053,7 @@ a {
 
 .s4 {
   box-sizing: border-box;
-  padding-top: 240rem;
+  padding-top: 200rem;
   overflow: hidden;
 }
 .s4__container {
@@ -1076,14 +1078,14 @@ a {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 160rem;
+  margin-bottom: 130rem;
 }
 .s4__item {
   display: flex;
   align-items: center;
 }
 .s4__item:first-child {
-  margin-bottom: 45rem;
+  margin-bottom: 95rem;
 }
 .s4__item:first-child .img-wrp {
   width: 106rem;
@@ -1115,7 +1117,7 @@ a {
 
 .ls {
   box-sizing: border-box;
-  padding-top: 160rem;
+  padding-top: 155rem;
   padding-bottom: 160rem;
   background-color: #fff;
 }
@@ -1128,7 +1130,7 @@ a {
   font-size: 50rem;
   line-height: 56rem; /* 112% */
   margin-bottom: 45rem;
-  max-width: 1200rem;
+  width: 100%;
 }
 .ls__phone {
   color: #111214;
