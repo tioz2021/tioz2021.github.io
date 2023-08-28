@@ -1521,11 +1521,13 @@ a {
   .fs__logo {
     width: 87rem;
     height: 36rem;
+    top: 1.5vh;
   }
   .fs__title {
     font-size: 38rem;
     line-height: 42rem;
-    margin-bottom: 4rem;
+    margin-bottom: 15rem;
+    margin-top: -87rem;
   }
   .fs__title span {
     font-size: 48rem !important;
@@ -1543,10 +1545,10 @@ a {
   }
   .s1 {
     padding-top: 40rem;
-    margin-bottom: 80rem;
+    margin-bottom: 70rem;
   }
   .s1__title {
-    padding-top: 40rem;
+    padding-top: 35rem;
     font-size: 48rem;
     line-height: 40rem;
     margin-bottom: 36rem;
@@ -1564,24 +1566,24 @@ a {
     bottom: var(--swiper-pagination-bottom, 16rem) !important;
   }
   .s1__swiper-text span {
-    margin-top: 24rem;
+    margin-top: 37rem;
     font-size: 24rem;
     line-height: 28rem;
   }
   .s2__container {
-    padding-top: 80rem;
+    padding-top: 58rem;
   }
   .s2__text {
     font-size: 24rem;
     line-height: 28rem;
-    margin-bottom: 16rem;
+    margin-bottom: 38rem;
   }
   .s2__map-wrp {
     height: 200rem;
-    margin-bottom: 80rem;
+    margin-bottom: 73rem;
   }
   .s2__text-footer {
-    margin-bottom: 160rem;
+    margin-bottom: 165rem;
     font-size: 48rem;
     line-height: 40rem;
   }
@@ -1652,29 +1654,29 @@ a {
     left: 16rem;
   }
   .s3 {
-    padding-top: 80rem;
-    padding-bottom: 80rem;
+    padding-top: 74rem;
+    padding-bottom: 79rem;
   }
   .s3__title {
-    font-size: 48rem;
+    font-size: 47rem;
     line-height: 40rem;
     margin-bottom: 36rem;
   }
   .s3__title-img {
     margin-left: 8rem;
-    width: 35rem;
+    width: 36rem;
     height: 30rem;
   }
   .main__swiper {
     border-radius: 16rem;
   }
   .s3__swiper-wrp {
-    margin-bottom: 36rem;
+    margin-bottom: 35rem;
   }
   .s3__item {
     margin-bottom: 24rem;
     margin-right: 17rem;
-    min-width: 156rem;
+    min-width: 147rem;
   }
   .s3__item:nth-child(4),
   .s3__item:nth-child(5),
@@ -1719,19 +1721,19 @@ a {
     height: 32rem;
   }
   .s4 {
-    padding-top: 80rem;
+    padding-top: 74rem;
   }
   .s4__title {
-    font-size: 58rem;
-    line-height: 38rem;
+    font-size: 55rem;
+    line-height: 41rem;
     margin-bottom: 36rem;
   }
   .s4__title span {
-    font-size: 42rem;
+    font-size: 41rem;
     line-height: 46rem;
   }
   .s4__item:first-child {
-    margin-bottom: 24rem;
+    margin-bottom: 49rem;
   }
   .s4__item .img-wrp {
     margin-bottom: 8rem;
@@ -1749,7 +1751,7 @@ a {
     height: 52rem;
   }
   .s4__list {
-    margin-bottom: 200rem;
+    margin-bottom: 216rem;
   }
   .s4__decor-img {
     width: 386.987rem;
@@ -1764,7 +1766,7 @@ a {
   .ls__text {
     font-size: 24rem;
     line-height: 28rem;
-    margin-bottom: 16rem;
+    margin-bottom: 22rem;
   }
   .ls__phone {
     font-size: 36rem;
@@ -1821,5 +1823,14 @@ a {
   .preloader__video {
     width: 120rem !important;
     height: 50rem !important;
+  }
+  .s3__title span {
+    font-size: 46rem;
+  }
+  .s3__title {
+    margin-bottom: 40rem;
+  }
+  .s3__item-img {
+    margin-bottom: 8rem;
   }
 }
