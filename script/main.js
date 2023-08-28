@@ -49,8 +49,8 @@
 // wow init ( animation ) and preloader
 window.onload = function () {
   new WOW().init();
-  // setTimeout(() => {
-  document.querySelector(".preloader").classList.add("disable");
-  document.querySelector("main").style.opacity = "1";
-  // }, 1500);
+  setTimeout(() => {
+    document.querySelector(".preloader").classList.add("disable");
+    document.querySelector("main").style.opacity = "1";
+  }, 1500);
 };
