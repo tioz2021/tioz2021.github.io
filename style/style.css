@@ -654,7 +654,7 @@ a {
 }
 
 .fs {
-  height: calc(var(--vh, 1vh) * 100);
+  height: 100vh;
 }
 .fs__bg-video {
   position: absolute;
