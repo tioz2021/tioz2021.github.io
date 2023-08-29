@@ -1193,6 +1193,15 @@ a {
     font-size: 100rem;
     line-height: 80rem;
   }
+  .fs {
+    background-image: url("../image/fs-bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #bgvid {
+    display: none;
+  }
   .fs__desc {
     font-size: 41rem;
     line-height: 46rem;
@@ -1727,7 +1736,7 @@ a {
     margin-bottom: 36rem;
   }
   .s4__title span {
-    font-size: 41rem;
+    font-size: 38rem;
     line-height: 46rem;
   }
   .s4__item:first-child {

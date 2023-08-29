@@ -16,13 +16,13 @@
 }
 
 .fs {
-  // background-image: url("../image/fs-bg.png");
-  // @include bg-def-set(center, cover);
+  background-image: url("../image/fs-bg.png");
+  @include bg-def-set(center, cover);
   // max-height: 1024rem;
 }
 
 #bgvid {
-  // display: none;
+  display: none;
 }
 
 .fs__desc {
