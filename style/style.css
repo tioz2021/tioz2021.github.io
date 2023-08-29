@@ -654,7 +654,6 @@ a {
 }
 
 .fs {
-  height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
 }
 .fs__bg-video {
@@ -700,7 +699,7 @@ a {
   color: #fff;
   text-align: center;
   font-size: 100rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 120rem;
   margin-bottom: 15rem;
   max-width: 1350rem;
@@ -724,7 +723,7 @@ a {
   text-align: center;
   font-size: 50rem;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 56rem;
 }
 .fs__arrow-bottom {
@@ -871,6 +870,7 @@ a {
   font-size: 50rem;
   line-height: 56rem;
   margin-bottom: 98rem;
+  font-weight: 300;
 }
 .s2__map-wrp {
   width: 1200rem;
@@ -1049,6 +1049,7 @@ a {
   text-align: center;
   font-size: 36rem;
   line-height: 40rem; /* 111.111% */
+  font-weight: 300;
 }
 
 .s4 {
@@ -1071,7 +1072,7 @@ a {
   font-family: "Calibri", "Arial", sans-serif;
   font-style: italic;
   font-weight: 300;
-  font-size: 230rem;
+  font-size: 220rem;
   color: #75a165;
 }
 .s4__list {
@@ -1106,7 +1107,7 @@ a {
   color: #fff;
   font-size: 50rem;
   font-style: italic;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 56rem; /* 112% */
   max-width: 900rem;
 }
@@ -1130,8 +1131,9 @@ a {
   text-align: center;
   font-size: 50rem;
   line-height: 56rem; /* 112% */
-  margin-bottom: 45rem;
+  margin-bottom: 55rem;
   width: 100%;
+  font-weight: 300;
 }
 .ls__phone {
   color: #111214;
@@ -1494,6 +1496,7 @@ a {
     line-height: 46rem;
     text-align: center;
     margin-bottom: 35rem;
+    max-width: 600rem;
   }
   .ls__phone {
     font-size: 74rem;
