@@ -51,6 +51,7 @@ a {
 
 @supports (-webkit-touch-callout: none) {
   .fs {
+    height: 100%;
     height: -webkit-fill-available !important;
   }
 }
@@ -61,6 +62,8 @@ a {
 
   // height: calc(var(--vh, 1vh) * 100);
   height: 100vh;
+  // height: 100%;
+  // height: -webkit-fill-available;
   // height: -webkit-fill-available;
   // height: var(--app-height);
 
@@ -123,7 +126,7 @@ a {
 
   // .fs__text
   &__text {
-    border: 1px solid pink;
+    border: 1px solid brown;
   }
 
   // .fs__title
