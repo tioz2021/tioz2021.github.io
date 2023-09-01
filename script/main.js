@@ -1,3 +1,6 @@
+// init slider
+new WOW().init();
+
 // fs 100vh fixing
 (() => {
   // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
@@ -55,8 +58,6 @@
 
 // wow init ( animation ) and preloader
 window.onload = function () {
-  new WOW().init();
-
   setTimeout(() => {
     document.querySelector(".preloader").classList.add("disable");
     document.querySelector("main").style.opacity = "1";
