@@ -747,6 +747,10 @@ a {
   z-index: -1;
 }
 
+.mobile-slider {
+  display: none;
+}
+
 @media screen and (max-width: 1000px) {
   html {
     font-size: 0.12999vw;

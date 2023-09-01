@@ -17,6 +17,11 @@
     transform: rotate(-6deg);
   }
 }
+
+.mobile-slider-animation {
+  // animation: fs_slider 25s ease-in-out infinite;
+}
+
 @keyframes flower {
   0% {
     transform: translate(-100%, 50%) rotate(-90deg) scale(0);
@@ -45,3 +50,24 @@
     transform: rotate(10deg);
   }
 }
+
+// @keyframes fs_slider {
+//   0% {
+//     left: 0%;
+//   }
+//   20% {
+//     left: -100%;
+//   }
+//   40% {
+//     left: -200%;
+//   }
+//   60% {
+//     left: -300%;
+//   }
+//   80% {
+//     left: -400%;
+//   }
+//   100% {
+//     left: -500%;
+//   }
+// }

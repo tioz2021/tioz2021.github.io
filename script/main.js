@@ -1,7 +1,7 @@
 // init slider
 new WOW().init();
 
-// fs 100vh fixing
+// fs 100vh fixing animation fs mobile
 (() => {
   // let vh = window.innerHeight * 0.01;
   // document.documentElement.style.setProperty("--vh", `${vh}px`);
@@ -9,12 +9,32 @@ new WOW().init();
   //   let vh = window.innerHeight * 0.01;
   //   document.documentElement.style.setProperty("--vh", `${vh}px`);
   // });
-  const appHeight = () => {
-    const doc = document.documentElement;
-    doc.style.setProperty("--app-height", `${window.innerHeight}px`);
-  };
-  window.addEventListener("resize", appHeight);
-  appHeight();
+  // const appHeight = () => {
+  //   const doc = document.documentElement;
+  //   doc.style.setProperty("--app-height", `${window.innerHeight}px`);
+  // };
+  // window.addEventListener("resize", appHeight);
+  // appHeight();
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const images = document.querySelectorAll(".image-container img");
+    let currentImageIndex = 0;
+
+    function fadeInNextImage() {
+      images[currentImageIndex].style.opacity = 0;
+      images[currentImageIndex].style.transform = "scale(0.9)";
+      currentImageIndex = (currentImageIndex + 1) % images.length;
+      images[currentImageIndex].style.opacity = 1;
+      images[currentImageIndex].style.transform = "scale(1)";
+    }
+
+    // Начните с первой картинки
+    images[currentImageIndex].style.opacity = 1;
+    images[currentImageIndex].style.transform = "scale(1)";
+
+    // Задайте интервал для смены картинок (например, каждые 3 секунды)
+    setInterval(fadeInNextImage, 5000);
+  });
 })();
 
 // sliders init and config
