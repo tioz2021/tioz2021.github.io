@@ -49,6 +49,12 @@ a {
   text-decoration: unset;
 }
 
+@supports (-webkit-touch-callout: none) {
+  .fs {
+    height: -webkit-fill-available;
+  }
+}
+
 // fs
 .fs {
   // height: 100vh;
@@ -249,6 +255,7 @@ a {
       text-align: center;
       font-size: 36rem;
       line-height: 40rem;
+      font-weight: 300;
       transform: rotate(-5.042deg) translateY(-50%);
       position: absolute;
       top: 50%;
