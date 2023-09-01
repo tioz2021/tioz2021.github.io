@@ -51,8 +51,8 @@ a {
 
 @supports (-webkit-touch-callout: none) {
   .fs {
-    height: 100%;
-    height: -webkit-fill-available !important;
+    height: 100vh;
+    min-height: -webkit-fill-available !important;
   }
 }
 
@@ -126,7 +126,7 @@ a {
 
   // .fs__text
   &__text {
-    border: 1px solid brown;
+    border: 1px solid goldenrod;
   }
 
   // .fs__title
