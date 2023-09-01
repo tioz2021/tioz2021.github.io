@@ -700,6 +700,9 @@ a {
   transform: translateX(-50%);
   z-index: -1;
 }
+.fs__text {
+  border: 1px solid red;
+}
 .fs__title {
   color: #fff;
   text-align: center;
