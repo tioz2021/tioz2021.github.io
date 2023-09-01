@@ -657,13 +657,9 @@ a {
   text-decoration: unset;
 }
 
-@supports (-webkit-touch-callout: none) {
-  .fs {
-    height: -webkit-fill-available;
-  }
-}
 .fs {
   height: 100vh;
+  height: var(--app-height);
 }
 .fs__bg-video {
   position: absolute;
