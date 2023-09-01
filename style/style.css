@@ -705,9 +705,6 @@ a {
   transform: translateX(-50%);
   z-index: -1;
 }
-.fs__text {
-  border: 1px solid green;
-}
 .fs__title {
   color: #fff;
   text-align: center;
@@ -1571,7 +1568,7 @@ a {
   .s1__title {
     padding-top: 35rem;
     font-size: 48rem;
-    line-height: 40rem;
+    line-height: 48rem;
     margin-bottom: 36rem;
     max-width: unset;
   }
@@ -1607,7 +1604,7 @@ a {
   .s2__text-footer {
     margin-bottom: 165rem;
     font-size: 48rem;
-    line-height: 40rem;
+    line-height: 48rem;
   }
   .s2__point {
     width: 24rem;
