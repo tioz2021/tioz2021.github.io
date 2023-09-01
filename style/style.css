@@ -1566,10 +1566,10 @@ a {
     margin-bottom: 70rem;
   }
   .s1__title {
-    padding-top: 30rem;
+    padding-top: 35rem;
     font-size: 48rem;
-    line-height: 50rem;
-    margin-bottom: 31rem;
+    line-height: 40rem;
+    margin-bottom: 36rem;
     max-width: unset;
   }
   .main__swiper {
@@ -1673,7 +1673,7 @@ a {
     left: 16rem;
   }
   .s2__decor-galactic {
-    width: 102%;
+    width: 103%;
   }
   .s3 {
     padding-top: 74rem;
