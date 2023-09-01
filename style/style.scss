@@ -47,9 +47,9 @@ a {
 
 // fs
 .fs {
-  height: 100vh;
+  // height: 100vh;
 
-  // height: calc(var(--vh, 1vh) * 100);
+  height: calc(var(--vh, 1vh) * 100);
 
   // height: 1024rem;
 
