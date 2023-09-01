@@ -659,7 +659,7 @@ a {
 
 @supports (-webkit-touch-callout: none) {
   .fs {
-    height: -webkit-fill-available;
+    height: -webkit-fill-available !important;
   }
 }
 .fs {
@@ -705,7 +705,7 @@ a {
   z-index: -1;
 }
 .fs__text {
-  border: 1px solid yellow;
+  border: 1px solid pink;
 }
 .fs__title {
   color: #fff;
