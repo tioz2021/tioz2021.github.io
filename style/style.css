@@ -659,7 +659,7 @@ a {
 
 .fs {
   height: 100vh;
-  height: var(--app-height);
+  height: -webkit-fill-available;
 }
 .fs__bg-video {
   position: absolute;
@@ -701,7 +701,7 @@ a {
   z-index: -1;
 }
 .fs__text {
-  border: 1px solid red;
+  border: 1px solid green;
 }
 .fs__title {
   color: #fff;
