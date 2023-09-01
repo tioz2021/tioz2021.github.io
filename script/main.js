@@ -3,19 +3,6 @@ new WOW().init();
 
 // fs 100vh fixing animation fs mobile
 (() => {
-  // let vh = window.innerHeight * 0.01;
-  // document.documentElement.style.setProperty("--vh", `${vh}px`);
-  // window.addEventListener("resize", () => {
-  //   let vh = window.innerHeight * 0.01;
-  //   document.documentElement.style.setProperty("--vh", `${vh}px`);
-  // });
-  // const appHeight = () => {
-  //   const doc = document.documentElement;
-  //   doc.style.setProperty("--app-height", `${window.innerHeight}px`);
-  // };
-  // window.addEventListener("resize", appHeight);
-  // appHeight();
-
   document.addEventListener("DOMContentLoaded", function () {
     const images = document.querySelectorAll(".image-container img");
     let currentImageIndex = 0;
@@ -76,24 +63,4 @@ window.onload = function () {
     document.querySelector(".preloader").classList.add("disable");
     document.querySelector("main").style.opacity = "1";
   }, 1500);
-
-  // var vid = document.getElementById("bgvid");
-  // var pauseButton = document.querySelector("#polina button");
-
-  // if (window.matchMedia("(prefers-reduced-motion)").matches) {
-  //   vid.removeAttribute("autoplay");
-  //   vid.pause();
-  //   pauseButton.innerHTML = "Paused";
-  // }
-
-  // function vidFade() {
-  //   vid.classList.add("stopfade");
-  // }
-
-  // vid.addEventListener("ended", function () {
-  //   // only functional if "loop" is removed
-  //   vid.pause();
-  //   // to capture IE10
-  //   vidFade();
-  // });
 };
