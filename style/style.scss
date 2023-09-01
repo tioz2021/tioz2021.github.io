@@ -25,6 +25,10 @@
 // video
 @import "_video";
 
+:root {
+  --app-height: 100%;
+}
+
 html {
   font-family: $font-calibri;
   overflow-x: hidden;
@@ -49,7 +53,9 @@ a {
 .fs {
   // height: 100vh;
 
-  height: calc(var(--vh, 1vh) * 100);
+  // height: calc(var(--vh, 1vh) * 100);
+  height: 100vh;
+  height: var(--app-height);
 
   // height: 1024rem;
 
