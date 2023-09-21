@@ -1,5 +1,5 @@
 .handl-animation {
-  animation: moveUpDown 2.1s ease-in-out infinite alternate;
+  animation: moveUpDown 1.5s ease-in-out infinite alternate;
   transform: translateY(9rem);
 }
 
@@ -9,6 +9,9 @@
 
 @keyframes moveUpDown {
   0% {
+    transform: translateY(9rem);
+  }
+  25% {
     transform: translateY(9rem);
   }
   100% {
@@ -150,11 +153,13 @@
   overflow: hidden;
 }
 
-.s3__banner-tag-list {
-  display: inline-block;
-  white-space: nowrap;
-  animation: moveLeft 15s linear infinite;
-  animation-timing-function: linear;
+@media screen and (max-width: 600px) {
+  .s3__banner-tag-list {
+    display: inline-block;
+    white-space: nowrap;
+    animation: moveLeft 15s linear infinite;
+    animation-timing-function: linear;
+  }
 }
 
 .s3__banner-tag-list-item {

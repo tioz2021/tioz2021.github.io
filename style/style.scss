@@ -265,6 +265,10 @@ button {
   &__title {
     font-family: $font-asgard;
   }
+  // .s2__title br
+  br {
+    display: none;
+  }
   // .s2__top-list
   &__top-list {
     display: flex;
@@ -1146,6 +1150,22 @@ button {
 .s3__img-4.sticky,
 .s3__img-5.sticky {
   transform: translateY(0);
+}
+
+.s1__img-shadow {
+  position: absolute;
+  width: 855rem;
+  height: 401rem;
+  left: 89rem;
+  top: 189rem;
+}
+
+.s3__banner-tag-list-item-mobile {
+  display: none;
+}
+
+.s5__title-strong--tab {
+  display: none !important;
 }
 
 @media screen and (max-width: 1000px) {

@@ -63,6 +63,10 @@
   margin-bottom: 36rem;
 }
 
+.s1__title span {
+  display: inline-block;
+}
+
 .s1__img-wrp {
   position: relative;
   top: unset;
@@ -132,6 +136,7 @@
 }
 
 .s2__title {
+  width: 100%;
   font-size: 64rem;
   line-height: 68rem;
   margin-bottom: 24rem;
@@ -445,7 +450,7 @@
 
 .s5__title {
   margin-bottom: 44rem;
-  font-size: 100rem;
+  font-size: 98rem;
 }
 .s5__title br {
   display: none;
@@ -594,103 +599,116 @@
 }
 
 .popup-decor__icon1 {
-  width: 81px;
-  height: 94px;
-  left: 27px;
-  top: -67px;
+  width: 81rem;
+  height: 94rem;
+  left: 27rem;
+  top: -67rem;
 }
 
 .popup-decor__icon2 {
-  width: 80px;
-  height: 65px;
-  top: -41px;
-  right: 175px;
+  width: 80rem;
+  height: 65rem;
+  top: -41rem;
+  right: 175rem;
   left: unset;
 }
 .popup-decor__icon3 {
-  width: 58px;
-  height: 61px;
-  right: 400px;
-  top: -102px;
+  width: 58rem;
+  height: 61rem;
+  right: 400rem;
+  top: -102rem;
 }
 
 .popup-decor__icon4 {
-  width: 81px;
-  height: 60px;
-  left: -9px;
+  width: 81rem;
+  height: 60rem;
+  left: -9rem;
 }
 
 .popup-decor__icon5 {
-  width: 87px;
-  height: 68px;
+  width: 87rem;
+  height: 68rem;
 }
 .popup-decor__icon6 {
-  width: 74px;
-  height: 75px;
-  left: 141px;
-  bottom: -37px;
+  width: 74rem;
+  height: 75rem;
+  left: 141rem;
+  bottom: -37rem;
 }
 
 .popup-decor__icon7 {
-  width: 67px;
-  height: 55px;
-  right: 70px;
-  bottom: -27px;
+  width: 67rem;
+  height: 55rem;
+  right: 70rem;
+  bottom: -27rem;
 }
 .popup-decor__icon8 {
-  width: 88px;
-  height: 79px;
-  right: 295px;
-  bottom: -125px;
+  width: 88rem;
+  height: 79rem;
+  right: 295rem;
+  bottom: -125rem;
 }
 
 .popup__form-end {
   .popup-decor__icon1 {
-    left: 127px;
-    top: -60px;
+    left: 127rem;
+    top: -60rem;
   }
 
   .popup-decor__icon2 {
-    top: -48px;
-    right: 184px;
+    top: -48rem;
+    right: 184rem;
     left: unset;
   }
   .popup-decor__icon3 {
     right: unset;
-    left: 89px;
-    top: 137px;
+    left: 89rem;
+    top: 137rem;
   }
 
   .popup-decor__icon4 {
-    top: 354px;
-    left: -45px;
+    top: 354rem;
+    left: -45rem;
   }
 
   .popup-decor__icon5 {
-    right: -17px;
-    top: 238px;
+    right: -17rem;
+    top: 238rem;
   }
   .popup-decor__icon6 {
-    left: 141px;
-    bottom: -37px;
+    left: 141rem;
+    bottom: -37rem;
   }
 
   .popup-decor__icon7 {
     left: unset;
-    right: 54px;
-    bottom: -27px;
+    right: 54rem;
+    bottom: -27rem;
   }
   .popup-decor__icon8 {
-    right: 295px;
-    bottom: -125px;
-    top: 64px;
-    right: 26px;
+    right: 295rem;
+    bottom: -125rem;
+    top: 64rem;
+    right: 26rem;
   }
 }
 
 .popup-body .wrp {
-  padding-left: 36px;
-  padding-right: 36px;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-left: 36rem;
+  padding-right: 36rem;
+  padding-top: 60rem;
+  padding-bottom: 60rem;
+}
+
+.s1__img-shadow {
+  display: none;
+}
+.s5__title-strong {
+  display: none !important;
+}
+.s5__title-strong--tab {
+  display: inline-block !important;
+}
+.s2__title br {
+  display: inline-block;
 }
