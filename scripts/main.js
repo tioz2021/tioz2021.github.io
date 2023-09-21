@@ -226,14 +226,16 @@
 })();
 
 new WOW().init();
+window.addEventListener("scroll", function () {
+  const images = document.querySelectorAll(".s3__img-obj");
+  const startStickyAt = 200; // Установите желаемую высоту начала изменений
 
-// var autoSwiper = new Swiper(".auto-swiper", {
-//   slidesPerView: "auto",
-//   spaceBetween: 15,
-//   speed: 750,
-//   loop: true,
-//   autoplay: {
-//     delay: 2500,
-//     disableOnInteraction: false,
-//   },
-// });
+  images.forEach((image) => {
+    const imagePosition = image.getBoundingClientRect().top;
+    if (imagePosition <= startStickyAt) {
+      image.style.transform = "translateY(0)";
+    } else {
+      image.style.transform = "translateY(-10%)";
+    }
+  });
+});

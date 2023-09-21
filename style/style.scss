@@ -1123,6 +1123,31 @@ button {
   display: none;
 }
 
+.s3__img-1 {
+  transition: transform 0.5s ease;
+}
+.s3__img-2 {
+  transition: transform 0.3s ease;
+}
+.s3__img-3 {
+  transition: transform 0.4s ease;
+}
+.s3__img-4 {
+  transition: transform 0.6s ease;
+}
+.s3__img-5 {
+  transition: transform 0.2s ease;
+}
+
+/* Добавьте стили для эффекта "зависания" */
+.s3__img-1.sticky,
+.s3__img-2.sticky,
+.s3__img-3.sticky,
+.s3__img-4.sticky,
+.s3__img-5.sticky {
+  transform: translateY(0);
+}
+
 @media screen and (max-width: 1000px) {
   html {
     font-size: 0.12999vw;
