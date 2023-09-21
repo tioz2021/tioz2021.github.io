@@ -2578,7 +2578,7 @@ button {
   .s1__flow-text {
     top: -43rem;
     width: 100%;
-    height: 90rem;
+    height: unset;
     border-radius: 16rem;
     padding: 16rem;
     font-size: 14rem;
