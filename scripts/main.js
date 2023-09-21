@@ -26,14 +26,30 @@
     if (window.innerWidth < 600) {
       if (!mySwiper2 || mySwiper2.destroyed) {
         mySwiper2 = new Swiper("#swiper-container-2", {
-          slidesPerView: "auto",
+          slidesPerView: 3,
+          loop: true,
           spaceBetween: 4,
           speed: 750,
-          loop: true,
           autoplay: {
             delay: 2500,
             disableOnInteraction: false,
           },
+        });
+        // Вручную скопируйте слайды для циклического перелистывания
+        var originalSlides = document.querySelectorAll(
+          "#swiper-container-2 .swiper-slide"
+        );
+        var duplicatedSlides = [];
+
+        originalSlides.forEach(function (slide) {
+          var duplicate = slide.cloneNode(true);
+          duplicatedSlides.push(duplicate);
+        });
+
+        duplicatedSlides.forEach(function (duplicate) {
+          document
+            .querySelector("#swiper-container-2 .swiper-wrapper")
+            .appendChild(duplicate);
         });
       }
     } else if (mySwiper2 && !mySwiper2.destroyed) {
@@ -226,16 +242,40 @@
 })();
 
 new WOW().init();
-window.addEventListener("scroll", function () {
-  const images = document.querySelectorAll(".s3__img-obj");
-  const startStickyAt = 200; // Установите желаемую высоту начала изменений
 
-  images.forEach((image) => {
-    const imagePosition = image.getBoundingClientRect().top;
-    if (imagePosition <= startStickyAt) {
-      image.style.transform = "translateY(0)";
-    } else {
-      image.style.transform = "translateY(-10%)";
-    }
+// parallax
+(() => {
+  window.addEventListener("scroll", function () {
+    const images = document.querySelectorAll(".s3__img-obj");
+    const startStickyAt = 200; // Установите желаемую высоту начала изменений
+
+    images.forEach((image) => {
+      const imagePosition = image.getBoundingClientRect().top;
+      if (imagePosition <= startStickyAt) {
+        image.style.transform = "translateY(0)";
+      } else {
+        image.style.transform = "translateY(-10%)";
+      }
+    });
   });
-});
+})();
+
+// const list = document.querySelector(".s3__banner-tag-list");
+// const items = document.querySelectorAll(".s3__banner-tag-list-item");
+// const itemWidth = items[0].offsetWidth + 20; // Ширина элемента + отступ (20px)
+
+// let currentScroll = 0;
+
+// function moveList() {
+//   currentScroll -= 1;
+//   if (currentScroll <= -itemWidth) {
+//     currentScroll = 0;
+//     list.style.transition = "none";
+//   } else {
+//     list.style.transition = "transform 2s linear"; // Время анимации (2 секунды)
+//   }
+//   list.style.transform = `translateX(${currentScroll}px)`;
+//   requestAnimationFrame(moveList);
+// }
+
+// requestAnimationFrame(moveList);

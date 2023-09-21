@@ -327,6 +327,7 @@
   line-height: 16rem;
 }
 .s3__banner {
+  position: relative;
   border-radius: 16rem;
   padding-top: 16rem;
   padding-bottom: 16rem;
@@ -344,13 +345,16 @@
 .s3__banner-title {
   font-size: 20rem;
   line-height: 24rem;
-  margin-bottom: 12rem;
+  // margin-bottom: 12rem;
+  margin-bottom: 64rem;
 }
 .s3__banner-tag-list {
   flex-wrap: nowrap;
+  margin-bottom: 0;
 }
 #swiper-container-2 .swiper-wrapper {
   margin-bottom: 0;
+  justify-content: unset;
 }
 .s3__body #swiper-container-2 {
   margin-bottom: 12rem;
@@ -720,4 +724,17 @@
     left: unset;
     right: 27rem;
   }
+}
+
+.s3__banner-tag-list {
+  justify-content: unset;
+}
+
+.s3__banner-tag-list-item {
+  margin-right: 8rem !important;
+}
+
+.s3__banner-tag-list-container {
+  position: absolute;
+  top: 135rem;
 }
