@@ -868,7 +868,7 @@ button {
       transform: translateY(3rem);
     }
     100% {
-      transform: translateY(-15rem);
+      transform: translateY(-10rem);
     }
   }
   @keyframes moveUpDown2 {
@@ -2656,7 +2656,7 @@ button {
     padding-bottom: 24rem;
   }
   .s1__title {
-    font-size: 26rem;
+    font-size: 22rem;
     line-height: 30rem;
     margin-bottom: 16rem;
   }
