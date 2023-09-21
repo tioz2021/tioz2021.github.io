@@ -763,6 +763,7 @@ button {
     background: #6113e1;
     display: flex;
     align-items: flex-end;
+    overflow: hidden;
 
     // .s4__list-img-wrp .s4__list-img:nth-child(1)
     .s4__list-img:nth-child(1) {
@@ -770,7 +771,6 @@ button {
       height: 496rem;
       margin-left: 156rem;
     }
-    // .s4__list-img-wrp .s4__list-img:nth-child(2)
     .s4__list-img:nth-child(2) {
       width: 586rem;
       height: 496rem;
@@ -1158,6 +1158,13 @@ button {
   height: 401rem;
   left: 89rem;
   top: 189rem;
+}
+
+.s4__list-item:nth-child(2) .s4__list-img {
+  margin-left: 98rem;
+  width: 586rem;
+  height: 496rem;
+  margin-bottom: -3rem;
 }
 
 .s3__banner-tag-list-item-mobile {
