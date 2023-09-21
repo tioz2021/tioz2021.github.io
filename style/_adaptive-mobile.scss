@@ -61,8 +61,8 @@
   padding-bottom: 24rem;
 }
 .s1__title {
-  // font-size: 26rem;
-  font-size: 22rem;
+  font-size: 24rem;
+  // font-size: 22rem;
   line-height: 30rem;
   margin-bottom: 16rem;
 }
@@ -739,4 +739,8 @@
 .s3__banner-tag-list-container {
   position: absolute;
   top: 135rem;
+}
+
+.s1__title .hidden {
+  display: none;
 }
