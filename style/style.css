@@ -825,8 +825,6 @@ button {
     overflow: hidden;
     transition: max-height 0.5s ease-in-out;
     box-sizing: border-box;
-    margin-top: -20rem;
-    margin-bottom: 20rem;
   }
   /* Стили для активного содержимого */
   .accordion-item.active .accordion-content {
@@ -2602,6 +2600,16 @@ button {
   }
   .s2__title br {
     display: inline-block;
+  }
+  .s2__top-list {
+    margin-left: 0;
+  }
+  .object:first-child {
+    margin-left: 0rem;
+  }
+  .accordion-content {
+    margin-top: -30rem;
+    margin-bottom: 36rem;
   }
 }
 @media screen and (max-width: 600px) {

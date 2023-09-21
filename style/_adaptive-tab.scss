@@ -716,3 +716,16 @@
 .s2__title br {
   display: inline-block;
 }
+
+.s2__top-list {
+  // margin-left: -15rem;
+  margin-left: 0;
+}
+.object:first-child {
+  margin-left: 0rem;
+}
+
+.accordion-content {
+  margin-top: -30rem;
+  margin-bottom: 36rem;
+}
