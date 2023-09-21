@@ -2745,7 +2745,7 @@ button {
   }
   .accordion-header {
     padding-top: 16rem;
-    padding-bottom: 16rem;
+    padding-bottom: 0;
   }
   .s2__main-item-title {
     font-size: 19rem;
@@ -2755,7 +2755,7 @@ button {
     font-size: 14rem;
     line-height: 16rem;
     margin-bottom: 16rem;
-    margin-top: -16rem;
+    margin-top: 6rem;
   }
   .s2__main-item:nth-child(1) {
     padding-left: 16rem;

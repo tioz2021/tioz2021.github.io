@@ -153,9 +153,14 @@
 .s2__main-item {
   border-radius: 16rem;
 }
+.accordion-item {
+  // height: 50rem;
+}
 .accordion-header {
+  // height: 50rem;
   padding-top: 16rem;
-  padding-bottom: 16rem;
+  padding-bottom: 0;
+  // padding-bottom: 16rem;
 }
 .s2__main-item-title {
   font-size: 19rem;
@@ -165,7 +170,8 @@
   font-size: 14rem;
   line-height: 16rem;
   margin-bottom: 16rem;
-  margin-top: -16rem;
+  // margin-top: -16rem;
+  margin-top: 6rem;
 }
 .s2__main-item:nth-child(1) {
   padding-left: 16rem;
