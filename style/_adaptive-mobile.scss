@@ -111,7 +111,8 @@
   width: 23rem;
   height: 23rem;
   top: -6rem;
-  left: 126rem;
+  // left: 126rem;
+  left: 139rem;
 }
 .s1__img-coment {
   width: 24rem;
@@ -122,7 +123,8 @@
 .s1__img-profit {
   width: 50rem;
   height: 16rem;
-  left: 156rem;
+  // left: 156rem;
+  left: 166rem;
   top: 2rem;
   // left: 186rem;
   // top: -20rem;
@@ -469,7 +471,7 @@
   margin-bottom: 16rem;
   font-size: 18rem;
   line-height: 24rem;
-  @include text-overflow(1);
+  // @include text-overflow(1);
 }
 .s5__body-list-item {
   margin-bottom: 8rem;
@@ -613,7 +615,7 @@
   margin-bottom: 16rem;
   font-size: 18rem;
   line-height: 24rem;
-  @include text-overflow(1);
+  // @include text-overflow(1);
 }
 .popup__form-exit {
   width: 24rem;
