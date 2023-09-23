@@ -513,6 +513,7 @@ button {
   // .s3__list
   &__list {
     width: 1120rem;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -1175,9 +1176,16 @@ button {
   display: none !important;
 }
 
+.s3__body .swiper {
+  height: 726rem;
+}
+
 @media screen and (max-width: 1000px) {
   html {
     font-size: 0.12999vw;
+  }
+  .s3__body .swiper {
+    height: auto;
   }
   @import "_adaptive-tab";
 }
