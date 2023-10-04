@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "Asgard";
+  src: url("../fonts/asgard/new/AsgardTrial-FitLightTrial.ttf");
+  src: local("Asgard-FitLight"), local("Asgard FitLight"),
+    url("../fonts/asgard/new/AsgardTrial-FitLightTrial.woff2") format("woff2"),
+    url("../fonts/asgard/new/AsgardTrial-FitLightTrial.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Asgard";
+  src: url("../fonts/asgard/new/AsgardTrial-FitRegularTrial.ttf");
+  src: local("Asgard-FitRegular"), local("Asgard FitRegular"),
+    url("../fonts/asgard/new/AsgardTrial-FitRegularTrial.woff2") format("woff2"),
+    url("../fonts/asgard/new/AsgardTrial-FitRegularTrial.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Asgard";
+  src: url("../fonts/asgard/new/AsgardTrial-FitMediumTrial.ttf");
+  src: local("Asgard-FitMedium"), local("Asgard FitMedium"),
+    url("../fonts/asgard/new/AsgardTrial-FitMediumTrial.woff2") format("woff2"),
+    url("../fonts/asgard/new/AsgardTrial-FitMediumTrial.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+// asgard number
+@font-face {
+  font-family: "Asgard Number";
+  src: url("../fonts/asgard/Asgard-Regular.ttf");
+  src: local("Asgard-Regular"), local("Asgard Regular"),
+    url("../fonts/asgard/Asgard-Regular.woff2") format("woff2"),
+    url("../fonts/asgard/Asgard-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+// asgard trial
+@font-face {
+  font-family: "Asgard Trial";
+  src: url("../fonts/asgard/AsgardTrial-FitRegularItalicTrial.ttf");
+  src: local("AsgardTrial-FitRegularItalicTrial"),
+    local("AsgardTrial FitRegularItalicTrial"),
+    url("../fonts/asgard/AsgardTrial-FitRegularItalicTrial.woff2")
+      format("woff2"),
+    url("../fonts/asgard/AsgardTrial-FitRegularItalicTrial.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Onest";
+  src: url("../fonts/ones/OnestRegular1602-hint.ttf");
+  src: local("OnestRegular1602-hint"), local("OnestRegular1602 hint"),
+    url("../fonts/ones/OnestRegular1602-hint.woff2") format("woff2"),
+    url("../fonts/ones/OnestRegular1602-hint.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Onest";
+  src: url("../fonts/ones/OnestMedium1602-hint.ttf");
+  src: local("OnestMedium1602-hint"), local("OnestMedium1602 hint"),
+    url("../fonts/ones/OnestMedium1602-hint.woff2") format("woff2"),
+    url("../fonts/ones/OnestMedium1602-hint.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Onest";
+  src: url("../fonts/ones/OnestBold1602-hint.ttf");
+  src: local("OnestBold1602-hint"), local("OnestBold1602-hint"),
+    url("../fonts/ones/OnestBold1602-hint.woff2") format("woff2"),
+    url("../fonts/ones/OnestBold1602-hint.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Onest";
+  src: url("../fonts/ones/OnestExtraBold1602-hint.ttf");
+  src: local("OnestExtraBold1602-hint"), local("OnestExtraBold1602 hint"),
+    url("../fonts/ones/OnestExtraBold1602-hint.woff2") format("woff2"),
+    url("../fonts/ones/OnestExtraBold1602-hint.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
