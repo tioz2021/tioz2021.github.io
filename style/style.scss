@@ -32,6 +32,21 @@ body {
   background-color: #3d47d1;
 }
 
+/* хром, сафари */
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+/* ie 10+ */
+body {
+  -ms-overflow-style: none;
+}
+
+/* фф (свойство больше не работает, других способов тоже нет)*/
+body {
+  overflow: -moz-scrollbars-none;
+}
+
 a {
   text-decoration: unset;
   cursor: pointer;
