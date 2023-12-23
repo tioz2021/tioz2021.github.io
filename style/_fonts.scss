@@ -1,0 +1,87 @@
+// VelaSans Light 200
+@font-face {
+  font-family: "VelaSans";
+  src: url("../fonts/vela-sans/ttf/VelaSans-ExtraLight.ttf");
+  src: local("VelaSans-ExtraLight"), local("VelaSans ExtraLight"),
+    url("../fonts/vela-sans/woff/VelaSans-ExtraLight.woff") format("woff"),
+    url("../fonts/vela-sans/woff2/VelaSans-ExtraLight.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+}
+
+// VelaSans Light 300
+@font-face {
+  font-family: "VelaSans";
+  src: url("../fonts/vela-sans/ttf/VelaSans-Light.ttf");
+  src: local("VelaSans-Light"), local("VelaSans Light"),
+    url("../fonts/vela-sans/woff/VelaSans-Light.woff") format("woff"),
+    url("../fonts/vela-sans/woff2/VelaSans-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+// VelaSans Regular 400
+@font-face {
+  font-family: "VelaSans";
+  src: url("../fonts/vela-sans/ttf/VelaSans-Regular.ttf");
+  src: local("VelaSans-Regular"), local("VelaSans Regular"),
+    url("../fonts/vela-sans/woff/VelaSans-Regular.woff") format("woff"),
+    url("../fonts/vela-sans/woff2/VelaSans-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+// VelaSans Medium 500
+@font-face {
+  font-family: "VelaSans";
+  src: url("../fonts/vela-sans/ttf/VelaSans-Medium.ttf");
+  src: local("VelaSans-Medium"), local("VelaSans Medium"),
+    url("../fonts/vela-sans/woff/VelaSans-Medium.woff") format("woff"),
+    url("../fonts/vela-sans/woff2/VelaSans-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+// VelaSans SemiBold 600
+@font-face {
+  font-family: "VelaSans";
+  src: url("../fonts/vela-sans/ttf/VelaSans-SemiBold.ttf");
+  src: local("VelaSans-SemiBold"), local("VelaSans SemiBold"),
+    url("../fonts/vela-sans/woff/VelaSans-SemiBold.woff") format("woff"),
+    url("../fonts/vela-sans/woff2/VelaSans-SemiBold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+// VelaSans Bold 700
+@font-face {
+  font-family: "VelaSans";
+  src: url("../fonts/vela-sans/ttf/VelaSans-Bold.ttf");
+  src: local("VelaSans-Bold"), local("VelaSans Bold"),
+    url("../fonts/vela-sans/woff/VelaSans-Bold.woff") format("woff"),
+    url("../fonts/vela-sans/woff2/VelaSans-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+// VelaSans ExtraBold 800
+@font-face {
+  font-family: "VelaSans";
+  src: url("../fonts/vela-sans/ttf/VelaSans-ExtraBold.ttf");
+  src: local("VelaSans-ExtraBold"), local("VelaSans ExtraBold"),
+    url("../fonts/vela-sans/woff/VelaSans-ExtraBold.woff") format("woff"),
+    url("../fonts/vela-sans/woff2/VelaSans-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+
+// caretfree
+@font-face {
+  font-family: "caretfree";
+  src: url("../fonts/caretfree.ttf");
+  src: local("Caretfree"), local("caretfree"),
+    url("../fonts/caretfree.woff") format("woff"),
+    url("../fonts/caretfree.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
