@@ -6,6 +6,7 @@
   const swiper1 = new Swiper(".swiper1", {
     // Optional parameters
     spaceBetween: 30,
+    speed: 600,
     loop: true,
 
     // If we need pagination
@@ -35,6 +36,7 @@
       const swiper2 = new Swiper(".swiper2", {
         // Optional parameters
         spaceBetween: 30,
+        speed: 600,
         loop: true,
 
         // If we need pagination
@@ -65,7 +67,7 @@
     if (screenWidth <= 1000) {
       const swiper3 = new Swiper(".swiper3", {
         // Optional parameters
-        speed: 300,
+        speed: 600,
         spaceBetween: 30,
         centeredSlides: true,
         // watchSlidesProgress: true,
@@ -110,8 +112,8 @@
 
             if (screenWidth <= 600) {
               // first_str = "translateX(%)";
-              two_str = "translateX(-6%)";
-              three_str = "translateX(-19%)";
+              two_str = "translateX(-13%)";
+              three_str = "translateX(-32%)";
             }
             console.log("Click event");
             setTimeout((e) => {

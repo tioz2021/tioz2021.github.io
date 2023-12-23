@@ -2107,6 +2107,18 @@ button {
     &:last-child {
       border: unset;
     }
+    // .p-vac-s4__accordion-item: path
+    path {
+      transition: all 300ms ease-in-out;
+      fill: rgb(236, 237, 253);
+    }
+    // .p-vac-s4__accordion-item:hover
+    &:hover {
+      // .p-vac-s4__accordion-item:hover path
+      path {
+        fill: #21fa90;
+      }
+    }
   }
   // .p-vac-s4__accordion-header
   &__accordion-header {
@@ -2191,6 +2203,20 @@ button {
 .p-vac-s3__item-title-wrp--tab {
   display: none;
 }
+
+/* хром, сафари */
+.main-form textarea.main-form__input::-webkit-scrollbar {
+  width: 0;
+}
+/* ie 10+ */
+.main-form textarea.main-form__input {
+  -ms-overflow-style: none;
+}
+/* фф (свойство больше не работает, других способов тоже нет)*/
+.main-form textarea.main-form__input {
+  overflow: -moz-scrollbars-none;
+}
+
 @media screen and (max-width: 1000px) {
   html {
     font-size: 0.12999vw;
