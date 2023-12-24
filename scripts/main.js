@@ -229,13 +229,13 @@ new WOW().init();
                 element.classList.add("visible");
                 element.play();
                 observer.disconnect();
-              }, 250);
+              }, 200);
             } else if (element.id == "anim_item-3") {
               setTimeout((e) => {
                 element.classList.add("visible");
                 element.play();
                 observer.disconnect();
-              }, 500);
+              }, 400);
             } else {
               // Если элемент видим, добавляем класс "visible"
               element.classList.add("visible");
@@ -276,31 +276,6 @@ new WOW().init();
   });
 })();
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   const accordionItems = document.querySelectorAll(".accordion-item");
-
-//   accordionItems.forEach(function (item) {
-//     const header = item.querySelector(".accordion-header");
-//     const content = item.querySelector(".accordion-content");
-
-//     header.addEventListener("click", function () {
-//       content.style.marginBottom =
-//         content.style.marginBottom === "0px"
-//           ? `-${content.scrollHeight}px`
-//           : "0px";
-
-//       // Закрывать другие элементы аккордеона при открытии текущего
-//       accordionItems.forEach(function (otherItem) {
-//         if (otherItem !== item) {
-//           otherItem.querySelector(
-//             ".accordion-content"
-//           ).style.marginBottom = `-${content.scrollHeight}px`;
-//         }
-//       });
-//     });
-//   });
-// });
-
 // acardion
 (() => {
   // Получаем все элементы аккордеона
@@ -337,73 +312,49 @@ new WOW().init();
   });
 })();
 
-document.addEventListener("DOMContentLoaded", function () {
-  var scrollToTopButton = document.getElementById("scrollToTopButton");
+// slow scrolling to top
+(() => {
+  document.addEventListener("DOMContentLoaded", function () {
+    var scrollToTopButton = document.getElementById("scrollToTopButton");
 
-  window.addEventListener("scroll", function () {
-    if (document.documentElement.scrollTop > 20) {
-      scrollToTopButton.style.display = "block";
-    } else {
-      scrollToTopButton.style.display = "none";
-    }
+    window.addEventListener("scroll", function () {
+      if (document.documentElement.scrollTop > 20) {
+        scrollToTopButton.style.display = "block";
+      } else {
+        scrollToTopButton.style.display = "none";
+      }
+    });
+
+    scrollToTopButton.addEventListener("click", function () {
+      scrollToTopWithSpeed();
+    });
   });
 
-  scrollToTopButton.addEventListener("click", function () {
-    // scrollToTop();
-    scrollToTopWithSpeed();
-  });
-});
+  function scrollToTopWithSpeed() {
+    var start = window.scrollY;
+    var startTime;
 
-function scrollToTopWithSpeed() {
-  var start = window.scrollY;
-  var startTime;
+    function animateScroll(timestamp) {
+      if (!startTime) {
+        startTime = timestamp;
+      }
 
-  function animateScroll(timestamp) {
-    if (!startTime) {
-      startTime = timestamp;
+      var progress = Math.min((timestamp - startTime) / 300, 1); // Общее время анимации 600 мс
+      var ease = customEaseFunction(progress);
+
+      window.scrollTo(0, start * (1 - ease));
+
+      if (progress < 1) {
+        requestAnimationFrame(animateScroll);
+      }
     }
 
-    var progress = Math.min((timestamp - startTime) / 300, 1); // Общее время анимации 600 мс
-    var ease = customEaseFunction(progress);
-
-    window.scrollTo(0, start * (1 - ease));
-
-    if (progress < 1) {
-      requestAnimationFrame(animateScroll);
+    function customEaseFunction(t) {
+      // Используйте кастомную кривую интерполяции (ease function)
+      // Ниже представлен пример easeInOutQuad
+      return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
     }
+
+    requestAnimationFrame(animateScroll);
   }
-
-  function customEaseFunction(t) {
-    // Используйте кастомную кривую интерполяции (ease function)
-    // Ниже представлен пример easeInOutQuad
-    return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
-  }
-
-  requestAnimationFrame(animateScroll);
-}
-
-// function scrollToTop() {
-//   var start = window.scrollY;
-//   var startTime;
-
-//   function animateScroll(timestamp) {
-//     if (!startTime) {
-//       startTime = timestamp;
-//     }
-
-//     var progress = Math.min((timestamp - startTime) / 500, 1); // Время анимации в миллисекундах
-//     var ease = easeOutCubic(progress);
-
-//     window.scrollTo(0, start * (1 - ease));
-
-//     if (progress < 1) {
-//       requestAnimationFrame(animateScroll);
-//     }
-//   }
-
-//   function easeOutCubic(t) {
-//     return 1 - Math.pow(1 - t, 3);
-//   }
-
-//   requestAnimationFrame(animateScroll);
-// }
+})();
