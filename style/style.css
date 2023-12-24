@@ -718,6 +718,7 @@ template {
   margin-bottom: 26rem;
   will-change: transform;
   transition: all 500ms ease-in-out;
+  cursor: pointer;
 }
 .arrow-top:hover {
   transform: scale(1.1);

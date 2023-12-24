@@ -145,8 +145,7 @@
 				<ul class="p-vac-s2__list">
 					<li class="p-vac-s2__item p-vac-s2__item--1">
 						<div class="p-vac-s2__item-icon">
-							<dotlottie-player src="animation/vacancies/ic/aple.json" background="transparent" speed="0.5" loop
-								autoplay></dotlottie-player>
+							<dotlottie-player id="anim_item-1" src="animation/vacancies/ic/aple.json" background="transparent" speed="0.5"></dotlottie-player>
 						</div>
 						<div class="p-vac-s2__item-text">
 							Персональ<br>
@@ -157,15 +156,13 @@
 						<div class="p-vac-s2__item-text">
 							Зарплата от 1500$
 						</div>
-						<div class="p-vac-s2__item-icon">
-							<dotlottie-player src="animation/vacancies/ic/money.json" background="transparent" speed="0.5" loop
-								autoplay></dotlottie-player>
+						<div class="p-vac-s2__item-icon wow animate__animated animate__fadeInUp" data-wow-duration="2s" data-wow-delay="600ms">
+							<dotlottie-player id="anim_item-2" src="animation/vacancies/ic/money.json" background="transparent" speed="0.5"></dotlottie-player>
 						</div>
 					</li>
 					<li class="p-vac-s2__item p-vac-s2__item--3">
 						<div class="p-vac-s2__item-icon">
-							<dotlottie-player src="animation/vacancies/ic/ic_pizza.json" background="transparent" speed="0.5" loop
-								autoplay></dotlottie-player>
+							<dotlottie-player id="anim_item-3" src="animation/vacancies/ic/ic_pizza.json" background="transparent" speed="0.5"></dotlottie-player>
 						</div>
 						<div class="p-vac-s2__item-text">
 							Веселые корпоративы
@@ -567,7 +564,7 @@
 					</div>
 				</div>
 				<div class="footer__end-end">
-					<a href="#header" class="arrow-top img-wrp">
+					<a href="#header" id="scrollToTopButton" class="arrow-top img-wrp">
 						<svg width="50" height="81" viewBox="0 0 50 81" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M24.8516 3L24.8516 79" stroke="url(#paint0_linear_1202_534)" stroke-width="3"
 								stroke-linecap="round" />

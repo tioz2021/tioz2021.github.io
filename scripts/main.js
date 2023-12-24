@@ -1,5 +1,5 @@
 // init animation
-// new WOW().init();
+new WOW().init();
 
 // sliders
 (() => {
@@ -224,12 +224,26 @@
       entries.forEach(
         (entry) => {
           if (entry.isIntersecting) {
-            // Если элемент видим, добавляем класс "visible"
-            element.classList.add("visible");
-            // Запускаем вашу анимацию
-            element.play();
-            // Отключаем наблюдение, если больше не нужно
-            observer.disconnect();
+            if (element.id == "anim_item-1") {
+              setTimeout((e) => {
+                element.classList.add("visible");
+                element.play();
+                observer.disconnect();
+              }, 250);
+            } else if (element.id == "anim_item-3") {
+              setTimeout((e) => {
+                element.classList.add("visible");
+                element.play();
+                observer.disconnect();
+              }, 500);
+            } else {
+              // Если элемент видим, добавляем класс "visible"
+              element.classList.add("visible");
+              // Запускаем вашу анимацию
+              element.play();
+              // Отключаем наблюдение, если больше не нужно
+              observer.disconnect();
+            }
           }
         },
         {
@@ -245,6 +259,9 @@
     "anim_s4",
     "anim_s5",
     "anim_s6",
+    "anim_item-1",
+    "anim_item-2",
+    "anim_item-3",
   ];
 
   const observers = [];
@@ -319,3 +336,74 @@
     });
   });
 })();
+
+document.addEventListener("DOMContentLoaded", function () {
+  var scrollToTopButton = document.getElementById("scrollToTopButton");
+
+  window.addEventListener("scroll", function () {
+    if (document.documentElement.scrollTop > 20) {
+      scrollToTopButton.style.display = "block";
+    } else {
+      scrollToTopButton.style.display = "none";
+    }
+  });
+
+  scrollToTopButton.addEventListener("click", function () {
+    // scrollToTop();
+    scrollToTopWithSpeed();
+  });
+});
+
+function scrollToTopWithSpeed() {
+  var start = window.scrollY;
+  var startTime;
+
+  function animateScroll(timestamp) {
+    if (!startTime) {
+      startTime = timestamp;
+    }
+
+    var progress = Math.min((timestamp - startTime) / 300, 1); // Общее время анимации 600 мс
+    var ease = customEaseFunction(progress);
+
+    window.scrollTo(0, start * (1 - ease));
+
+    if (progress < 1) {
+      requestAnimationFrame(animateScroll);
+    }
+  }
+
+  function customEaseFunction(t) {
+    // Используйте кастомную кривую интерполяции (ease function)
+    // Ниже представлен пример easeInOutQuad
+    return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+  }
+
+  requestAnimationFrame(animateScroll);
+}
+
+// function scrollToTop() {
+//   var start = window.scrollY;
+//   var startTime;
+
+//   function animateScroll(timestamp) {
+//     if (!startTime) {
+//       startTime = timestamp;
+//     }
+
+//     var progress = Math.min((timestamp - startTime) / 500, 1); // Время анимации в миллисекундах
+//     var ease = easeOutCubic(progress);
+
+//     window.scrollTo(0, start * (1 - ease));
+
+//     if (progress < 1) {
+//       requestAnimationFrame(animateScroll);
+//     }
+//   }
+
+//   function easeOutCubic(t) {
+//     return 1 - Math.pow(1 - t, 3);
+//   }
+
+//   requestAnimationFrame(animateScroll);
+// }
