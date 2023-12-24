@@ -1309,9 +1309,10 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  transform: rotate(0deg);
 }
 .s5__item:first-child {
-  transform: rotate(3.908deg);
+  transform: rotate(3.908deg) !important;
   background-color: #616ff6;
   left: 0;
   bottom: 3.5rem;
@@ -1320,7 +1321,7 @@ button {
   width: 238rem;
 }
 .s5__item:nth-child(2) {
-  transform: rotate(2.763deg);
+  transform: rotate(2.763deg) !important;
   background-color: #1c204e;
   top: 6.5rem;
   left: 289rem;
@@ -1329,7 +1330,7 @@ button {
   width: 200rem;
 }
 .s5__item:nth-child(3) {
-  transform: rotate(-9.042deg);
+  transform: rotate(-9.042deg) !important;
   background-color: #21fa90;
   right: 6rem;
   bottom: 2.5rem;
