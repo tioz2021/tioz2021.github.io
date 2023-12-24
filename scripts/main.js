@@ -223,6 +223,7 @@ AOS.init();
 // observer stroke lottie animation
 (() => {
   function createIntersectionObserver(element) {
+    if (!element) return;
     return new IntersectionObserver((entries, observer) => {
       entries.forEach(
         (entry) => {
@@ -361,34 +362,3 @@ AOS.init();
     requestAnimationFrame(animateScroll);
   }
 })();
-
-document.addEventListener("DOMContentLoaded", function () {
-  var blocks = document.querySelectorAll(".block");
-
-  function isInViewport(element) {
-    var rect = element.getBoundingClientRect();
-    return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <=
-        (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-  }
-
-  function handleScroll() {
-    blocks.forEach(function (block) {
-      if (isInViewport(block)) {
-        block.classList.add("transformed");
-      } else {
-        block.classList.remove("transformed");
-      }
-    });
-  }
-
-  // Обработка события скролла
-  window.addEventListener("scroll", handleScroll);
-
-  // Обработка события загрузки страницы для первичной проверки видимости
-  window.addEventListener("load", handleScroll);
-});
