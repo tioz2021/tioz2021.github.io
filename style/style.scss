@@ -933,8 +933,8 @@ button {
   }
   // .p-serv .main-form__checbox-text::before
   .main-form__checbox-text::before {
-    top: 50%;
-    transform: translateY(-50%);
+    // top: 50%;
+    // transform: translateY(-50%);
   }
 }
 
@@ -2234,6 +2234,10 @@ button {
   overflow: -moz-scrollbars-none;
 }
 
+.main-form__checbox-text {
+  display: block;
+  height: 100%;
+}
 @media screen and (max-width: 1000px) {
   html {
     font-size: 0.12999vw;

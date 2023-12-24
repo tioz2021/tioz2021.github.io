@@ -209,8 +209,10 @@
       content: "";
       position: absolute;
       left: -26rem;
-      top: 52%;
-      transform: translateY(-52%);
+      // top: 52%;
+      // transform: translateY(-52%);
+      top: 50%;
+      transform: translateY(-50%);
       width: 8rem;
       height: 8rem;
       background-color: #3d47d1;

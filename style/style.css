@@ -669,8 +669,8 @@ template {
   content: "";
   position: absolute;
   left: -26rem;
-  top: 52%;
-  transform: translateY(-52%);
+  top: 50%;
+  transform: translateY(-50%);
   width: 8rem;
   height: 8rem;
   background-color: #3d47d1;
@@ -1569,11 +1569,6 @@ button {
 .p-serv .s4 {
   margin-bottom: 0;
 }
-.p-serv .main-form__checbox-text::before {
-  top: 50%;
-  transform: translateY(-50%);
-}
-
 .p-serv-s2 {
   box-sizing: border-box;
   padding-top: 100rem;
@@ -2546,6 +2541,11 @@ button {
 /* фф (свойство больше не работает, других способов тоже нет)*/
 .main-form textarea.main-form__input {
   overflow: -moz-scrollbars-none;
+}
+
+.main-form__checbox-text {
+  display: block;
+  height: 100%;
 }
 
 @media screen and (max-width: 1000px) {
