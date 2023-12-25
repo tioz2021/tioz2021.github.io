@@ -1321,7 +1321,7 @@ button {
   width: 238rem;
 }
 .s5__item:nth-child(2) {
-  transform: rotate(2.763deg) translateX(-50%) !important;
+  transform: rotate(2.763deg) !important;
   background-color: #1c204e;
   top: 6.5rem;
   left: 289rem;
@@ -2739,7 +2739,7 @@ button {
   }
   .s5__item:nth-child(2) {
     left: 50%;
-    transform: rotate(2.763deg) translateX(-50%);
+    transform: rotate(2.763deg) translateX(-50%) !important;
   }
   .s5__item--last {
     left: 50%;
@@ -3456,7 +3456,7 @@ button {
     padding-bottom: 19rem;
   }
   .s5__item:nth-child(2) {
-    transform: rotate(-2.36deg) !important;
+    transform: rotate(2.763deg) !important;
     order: -1;
     z-index: 1;
     padding-top: 25rem;
