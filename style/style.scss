@@ -2238,6 +2238,12 @@ button {
   display: block;
   height: 100%;
 }
+
+.fs__main-title-animation--tab {
+}
+.fs__main-title-animation--mob {
+}
+
 @media screen and (max-width: 1000px) {
   html {
     font-size: 0.12999vw;
@@ -2259,6 +2265,11 @@ button {
   }
   .p-vac-s3__item-title-wrp--tab {
     display: flex;
+  }
+
+  .fs__main-title-animation {
+  }
+  .fs__main-title-animation--tab {
   }
   @import "_adaptive-tab";
 }
@@ -2282,5 +2293,6 @@ button {
     padding-left: 16rem;
     padding-right: 16rem;
   }
+
   @import "_adaptive-mobile";
 }

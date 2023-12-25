@@ -4,7 +4,7 @@ new WOW().init();
 // init aos
 AOS.init();
 
-// sliders
+// sliders and change animation
 (() => {
   const swiper1 = new Swiper(".swiper1", {
     // Optional parameters
@@ -24,6 +24,49 @@ AOS.init();
     },
   });
 
+  // index
+  const fsMainTitleAnimation = document.querySelector(
+    ".fs__main-title-animation"
+  );
+  const s3TitleAnimation = document.querySelector(".s3__title-animation");
+  const s5TitleAnimation = document.querySelector(".s5__main-title-animation");
+  const s6TitleAnimation = document.querySelector(".s6__title-animation");
+  const s7TitleAnimation = document.querySelector(".s6__content-animation");
+  const s5ItemLastAnimation = document.querySelector(
+    ".s5__item--last-animation"
+  );
+
+  // services
+  const ser_fsMainTitleAnimation = document.querySelector(
+    ".fs__main-title-animation"
+  );
+  const pServS3TitleAnimation = document.querySelector(
+    ".p-serv-s3__title-animation"
+  );
+  const pServS4TitleAnimation = document.querySelector(
+    ".p-serv-s4__title-animation"
+  );
+  const ser_s3TitleAnimation = document.querySelector(".s3__title-animation");
+
+  // vacantion
+  const pVacFsTitleAnimation = document.querySelector(
+    ".p-vac-fs__title-animation"
+  );
+  const pVacS1TitleAnimation = document.querySelector(
+    ".p-vac-s1__title-animation"
+  );
+  const pVacS2TitleAnimation = document.querySelector(
+    ".p-vac-s2__title-animation"
+  );
+  const pVacS4TitleAnimation = document.querySelector(
+    ".p-vac-s4__title-animation"
+  );
+
+  // 404
+  const p404Animation = document.querySelector(
+    ".p-404-body__main-title-animation"
+  );
+
   // Функция для проверки ширины экрана
   function checkScreenWidth() {
     // Получаем текущую ширину экрана
@@ -32,40 +75,66 @@ AOS.init();
       document.documentElement.clientWidth ||
       document.body.clientWidth;
 
-    // phone
-    if (screenWidth <= 600) {
-      // Ваш код для выполнения действий при ширине экрана <= 360px
-      console.log("Ширина экрана меньше или равна 360px!");
-      const swiper2 = new Swiper(".swiper2", {
-        // Optional parameters
-        spaceBetween: 30,
-        speed: 600,
-        loop: true,
-
-        // If we need pagination
-        pagination: {
-          el: ".swiper-pagination2",
-        },
-
-        // Navigation arrows
-        navigation: {
-          nextEl: ".swiper-button-next2",
-          prevEl: ".swiper-button-prev2",
-        },
-
-        // Responsive breakpoints
-        breakpoints: {
-          // when window width is >= 360px
-          360: {
-            noSwiping: true,
-          },
-        },
-      });
+    // web
+    if (screenWidth >= 1000) {
+      // Ваш код для выполнения действий при ширине экрана больше 360px
+      console.log("Ширина экрана больше 360px.");
       if (document.querySelector(".slider-navigation2"))
-        document
-          .querySelector(".slider-navigation2")
-          .classList.remove("disabled");
+        document.querySelector(".slider-navigation2").classList.add("disabled");
+      if (document.querySelector(".slider-navigation3"))
+        document.querySelector(".slider-navigation3").classList.add("disabled");
+
+      // change animation
+      // index
+      if (fsMainTitleAnimation)
+        fsMainTitleAnimation.setAttribute("src", "animation/stroke/s1.json");
+      if (s3TitleAnimation)
+        s3TitleAnimation.setAttribute("src", "animation/stroke/s2.json");
+      if (s5TitleAnimation)
+        s5TitleAnimation.setAttribute("src", "animation/stroke/s3.json");
+      if (s6TitleAnimation)
+        s6TitleAnimation.setAttribute("src", "animation/stroke/s5.json");
+      if (s7TitleAnimation)
+        s7TitleAnimation.setAttribute("src", "animation/stroke/price_s9.json");
+      if (s5ItemLastAnimation)
+        s5ItemLastAnimation.setAttribute("src", "animation/stroke/s4.json");
+
+      // services
+      if (ser_fsMainTitleAnimation)
+        ser_fsMainTitleAnimation.setAttribute(
+          "src",
+          "animation/stroke/s1.json"
+        );
+
+      if (pServS4TitleAnimation)
+        pServS4TitleAnimation.setAttribute("src", "animation/stroke/s5.json");
+      if (pServS3TitleAnimation)
+        pServS3TitleAnimation.setAttribute("src", "animation/stroke/s3.json");
+      if (ser_s3TitleAnimation)
+        ser_s3TitleAnimation.setAttribute("src", "animation/stroke/s2.json");
+
+      // vacantion
+      if (pVacFsTitleAnimation)
+        pVacFsTitleAnimation.setAttribute(
+          "src",
+          "animation/stroke/s_vac_title.json"
+        );
+      if (pVacS1TitleAnimation)
+        pVacS1TitleAnimation.setAttribute("src", "animation/stroke/s5.json");
+      if (pVacS2TitleAnimation)
+        pVacS2TitleAnimation.setAttribute("src", "animation/stroke/s3.json");
+      if (pVacS4TitleAnimation)
+        pVacS4TitleAnimation.setAttribute(
+          "src",
+          "animation/stroke/vac_stan_line.json"
+        );
+
+      // 404
+      if (p404Animation)
+        p404Animation.setAttribute("src", "animation/stroke/404.json");
+      console.log("web");
     }
+
     // tablet
     if (screenWidth <= 1000) {
       const swiper3 = new Swiper(".swiper3", {
@@ -139,16 +208,149 @@ AOS.init();
           e.addEventListener("click", change);
         });
       }
+
+      // change animation
+      // index
+      if (fsMainTitleAnimation)
+        fsMainTitleAnimation.setAttribute(
+          "src",
+          "animation/adapt/tablet/1b.json"
+        );
+      if (s3TitleAnimation)
+        s3TitleAnimation.setAttribute("src", "animation/adapt/tablet/2b.json");
+      if (s5TitleAnimation)
+        s5TitleAnimation.setAttribute("src", "animation/adapt/tablet/3b.json");
+      if (s6TitleAnimation)
+        s6TitleAnimation.setAttribute("src", "animation/adapt/tablet/5b.json");
+      if (s7TitleAnimation)
+        s7TitleAnimation.setAttribute("src", "animation/adapt/tablet/4b.json");
+
+      // services
+      if (ser_fsMainTitleAnimation)
+        ser_fsMainTitleAnimation.setAttribute(
+          "src",
+          "animation/adapt/tablet/6b.json"
+        );
+      if (pServS3TitleAnimation)
+        pServS3TitleAnimation.setAttribute(
+          "src",
+          "animation/adapt/tablet/7b.json"
+        );
+      if (pServS4TitleAnimation)
+        pServS4TitleAnimation.setAttribute(
+          "src",
+          "animation/adapt/tablet/8b.json"
+        );
+      if (ser_s3TitleAnimation)
+        ser_s3TitleAnimation.setAttribute(
+          "src",
+          "animation/adapt/tablet/9b.json"
+        );
+
+      // vacantion
+      if (pVacFsTitleAnimation)
+        pVacFsTitleAnimation.setAttribute(
+          "src",
+          "animation/adapt/tablet/10b.json"
+        );
+      if (pVacS1TitleAnimation)
+        pVacS1TitleAnimation.setAttribute(
+          "src",
+          "animation/adapt/tablet/11b.json"
+        );
+      if (pVacS2TitleAnimation)
+        pVacS2TitleAnimation.setAttribute(
+          "src",
+          "animation/adapt/tablet/12b.json"
+        );
+      if (pVacS4TitleAnimation)
+        pVacS4TitleAnimation.setAttribute(
+          "src",
+          "animation/adapt/tablet/13b.json"
+        );
+
+      // 404
+      if (p404Animation)
+        p404Animation.setAttribute("src", "animation/adapt/tablet/14b.json");
+      console.log("tablet");
     }
 
-    // web
-    if (screenWidth >= 1000) {
-      // Ваш код для выполнения действий при ширине экрана больше 360px
-      console.log("Ширина экрана больше 360px.");
+    // phone
+    if (screenWidth <= 600) {
+      // Ваш код для выполнения действий при ширине экрана <= 360px
+      console.log("Ширина экрана меньше или равна 360px!");
+      const swiper2 = new Swiper(".swiper2", {
+        // Optional parameters
+        spaceBetween: 30,
+        speed: 600,
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination2",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next2",
+          prevEl: ".swiper-button-prev2",
+        },
+
+        // Responsive breakpoints
+        breakpoints: {
+          // when window width is >= 360px
+          360: {
+            noSwiping: true,
+          },
+        },
+      });
       if (document.querySelector(".slider-navigation2"))
-        document.querySelector(".slider-navigation2").classList.add("disabled");
-      if (document.querySelector(".slider-navigation3"))
-        document.querySelector(".slider-navigation3").classList.add("disabled");
+        document
+          .querySelector(".slider-navigation2")
+          .classList.remove("disabled");
+
+      // change animation
+      // index
+      if (fsMainTitleAnimation)
+        fsMainTitleAnimation.setAttribute("src", "animation/adapt/mob/1.json");
+      if (s3TitleAnimation)
+        s3TitleAnimation.setAttribute("src", "animation/adapt/mob/2.json");
+      if (s5TitleAnimation)
+        s5TitleAnimation.setAttribute("src", "animation/adapt/mob/3.json");
+      if (s6TitleAnimation)
+        s6TitleAnimation.setAttribute("src", "animation/adapt/mob/5.json");
+      if (s7TitleAnimation)
+        s7TitleAnimation.setAttribute("src", "animation/adapt/mob/6.json");
+      if (s5ItemLastAnimation)
+        s5ItemLastAnimation.setAttribute("src", "animation/adapt/mob/4.json");
+
+      // services
+      if (ser_fsMainTitleAnimation)
+        ser_fsMainTitleAnimation.setAttribute(
+          "src",
+          "animation/adapt/mob/7.json"
+        );
+      if (pServS3TitleAnimation)
+        pServS3TitleAnimation.setAttribute("src", "animation/adapt/mob/8.json");
+      if (pServS4TitleAnimation)
+        pServS4TitleAnimation.setAttribute("src", "animation/adapt/mob/9.json");
+      if (ser_s3TitleAnimation)
+        ser_s3TitleAnimation.setAttribute("src", "animation/adapt/mob/10.json");
+
+      // vacantion
+      if (pVacFsTitleAnimation)
+        pVacFsTitleAnimation.setAttribute("src", "animation/adapt/mob/11.json");
+      if (pVacS1TitleAnimation)
+        pVacS1TitleAnimation.setAttribute("src", "animation/adapt/mob/12.json");
+      if (pVacS2TitleAnimation)
+        pVacS2TitleAnimation.setAttribute("src", "animation/adapt/mob/13.json");
+      if (pVacS4TitleAnimation)
+        pVacS4TitleAnimation.setAttribute("src", "animation/adapt/mob/14.json");
+
+      // 404
+      if (p404Animation)
+        p404Animation.setAttribute("src", "animation/adapt/mob/15.json");
+      console.log("mob");
     }
   }
 
