@@ -152,7 +152,8 @@
 
   // .main-form textarea.main-form__input
   textarea.main-form__input {
-    height: 64rem;
+    min-height: 64rem;
+    height: auto;
     resize: vertical;
   }
 

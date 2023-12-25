@@ -388,3 +388,13 @@ AOS.init();
     requestAnimationFrame(animateScroll);
   }
 })();
+
+// auto change height on textarea
+(() => {
+  const textarea = document.querySelector("textarea");
+  if (textarea) textarea.addEventListener("input", autoResize);
+  function autoResize() {
+    this.style.height = "auto"; // Сбросим высоту, чтобы получить новую высоту после ввода текста
+    this.style.height = this.scrollHeight + 12 + "rem"; // Установим высоту
+  }
+})();
