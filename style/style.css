@@ -4135,13 +4135,13 @@ button {
     margin-bottom: 12rem;
   }
   .p-vac-s3__item-title-swiper {
-    width: 300rem;
+    width: 320rem;
     padding-bottom: 10rem;
     overflow: visible;
   }
   .p-vac-s3__item-title-wrp--tab {
-    width: 600rem;
-    transform: translateX(3%);
+    width: 640rem;
+    transform: translateX(2%);
   }
   .p-vac-s3__item-title-wrp--tab .p-vac-s3__item-title {
     font-size: 24rem;
@@ -4156,7 +4156,8 @@ button {
   }
   .p-vac-s3__text {
     width: 260rem;
-    padding: 12rem;
+    padding: 16rem;
+    height: auto;
   }
   .p-vac-s3__item:last-child .p-vac-s3__item-wrp-animation dotlottie-player {
     transform: scale(1.06) translateX(-17rem);
@@ -4356,4 +4357,17 @@ button {
   .p-vac-s3__item-title-wrp--tab .p-vac-s3__item-title:last-child {
     transform: rotate(-7.035deg);
   }
+}
+[data-aos^=fade][data-aos^=fade] {
+  opacity: 1 !important;
+  transition-property: opacity, transform;
+}
+
+[data-aos^=fade][data-aos^=fade].aos-animate {
+  opacity: 1;
+  transform: translateZ(0);
+}
+
+.p-vac-s2 [data-aos=fade-up] {
+  transform: translate3d(0, 25rem, 0);
 }

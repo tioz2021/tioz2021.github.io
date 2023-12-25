@@ -2353,11 +2353,15 @@ button {
 }
 
 // aos fix
-// [data-aos^="fade"][data-aos^="fade"] {
-//   opacity: 1 !important;
-//   transition-property: opacity, transform;
-// }
-// [data-aos^="fade"][data-aos^="fade"].aos-animate {
-//   opacity: 1;
-//   transform: translateZ(0);
-// }
+[data-aos^="fade"][data-aos^="fade"] {
+  opacity: 1 !important;
+  transition-property: opacity, transform;
+}
+[data-aos^="fade"][data-aos^="fade"].aos-animate {
+  opacity: 1;
+  transform: translateZ(0);
+}
+
+.p-vac-s2 [data-aos="fade-up"] {
+  transform: translate3d(0, 25rem, 0);
+}

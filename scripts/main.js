@@ -95,9 +95,11 @@ AOS.init();
             three_str = "translateX(-34%)";
 
             if (screenWidth <= 600) {
-              first_str = "translateX(3%)";
-              two_str = "translateX(-15.5%)";
-              three_str = "translateX(-32%)";
+              first_str = "translateX(2%)";
+              // two_str = "translateX(-15.5%)";
+              two_str = "translateX(-13%)";
+              // three_str = "translateX(-32%)";
+              three_str = "translateX(-28.8%)";
             }
             console.log("Click event");
             setTimeout((e) => {
