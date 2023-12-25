@@ -4371,3 +4371,7 @@ button {
 .p-vac-s2 [data-aos=fade-up] {
   transform: translate3d(0, 25rem, 0);
 }
+
+.s5__list [data-aos=fade-up] {
+  transform: unset;
+}
