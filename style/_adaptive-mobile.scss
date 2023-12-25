@@ -287,22 +287,47 @@ dotlottie-player.s3__animation {
   // padding-bottom: 30rem;
 }
 
+@keyframes s5__item-rotate1 {
+  0% {
+    transform: translateZ(0);
+  }
+  100% {
+    transform: rotate(7.154deg);
+  }
+}
 .s5__item:first-child {
-  transform: rotate(7.154deg) !important;
+  // transform: rotate(7.154deg) !important;
   padding-top: 19rem;
   padding-bottom: 19rem;
 }
 
-.s5__item:nth-child(2) {
-  // transform: rotate(-2.36deg) !important;
-  transform: rotate(2.763deg) !important;
+@keyframes s5__item-rotate2 {
+  0% {
+    transform: translateZ(0);
+  }
+  100% {
+    transform: rotate(2.763deg);
+  }
+}
+.s5__list .s5__item:nth-child(2) {
+  margin-left: 0;
+  // transform: rotate(2.763deg) !important;
   order: -1;
   z-index: 1;
   padding-top: 25rem;
   padding-bottom: 25rem;
 }
+
+@keyframes s5__item-rotate3 {
+  0% {
+    transform: translateZ(0);
+  }
+  100% {
+    transform: rotate(-3.635deg);
+  }
+}
 .s5__item:nth-child(3) {
-  transform: rotate(-3.635deg) !important;
+  // transform: rotate(-3.635deg) !important;
   padding-top: 16rem;
   padding-bottom: 16rem;
 }
@@ -1037,10 +1062,11 @@ dotlottie-player.s3__animation {
 .p-vac-s3__item-title-swiper {
   width: 300rem;
   padding-bottom: 10rem;
+  overflow: visible;
 }
 .p-vac-s3__item-title-wrp--tab {
   width: 600rem;
-  // transform: translateX(-3%);
+  transform: translateX(3%);
 }
 
 .p-vac-s3__item-title-wrp--tab .p-vac-s3__item-title {
@@ -1281,4 +1307,20 @@ dotlottie-player.s3__animation {
   right: 16rem;
   width: 30rem;
   height: 30rem;
+}
+
+.p-vac-s3__item-title-wrp--tab .p-vac-s3__item-title:first-child {
+  transform: rotate(5.464deg);
+}
+.p-vac-s3__item-title-wrp--tab .p-vac-s3__item-title:nth-child(2) {
+  transform: rotate(-7.035deg);
+}
+.p-vac-s3__item-title-wrp--tab .p-vac-s3__item-title:nth-child(3) {
+  transform: rotate(0deg);
+}
+.p-vac-s3__item-title-wrp--tab .p-vac-s3__item-title:nth-child(4) {
+  transform: rotate(5.464deg);
+}
+.p-vac-s3__item-title-wrp--tab .p-vac-s3__item-title:last-child {
+  transform: rotate(-7.035deg);
 }

@@ -582,7 +582,7 @@ button {
     // .s5__item:first-child
     &:first-child {
       // transition: transform 250ms ease-in-out;
-      transform: rotate(3.908deg) !important;
+      // transform: rotate(3.908deg) !important;
       background-color: #616ff6;
       left: 0;
       bottom: 3.5rem;
@@ -591,11 +591,23 @@ button {
       .s5__item-text {
         width: 238rem;
       }
+
+      @keyframes s5__item-rotate1 {
+        0% {
+          transform: translateZ(0);
+        }
+        100% {
+          transform: rotate(3.908deg);
+        }
+      }
+      &[data-aos^="fade"][data-aos^="fade"].aos-animate {
+        animation: 0.6s ease-in 0.6s both s5__item-rotate1;
+      }
     }
     // .s5__item:nth-child(2)
     &:nth-child(2) {
       // transition: transform 500ms ease-in-out;
-      transform: rotate(2.763deg) !important;
+      // transform: rotate(2.763deg) !important;
       background-color: #1c204e;
       top: 6.5rem;
       left: 289rem;
@@ -604,11 +616,23 @@ button {
       .s5__item-text {
         width: 200rem;
       }
+
+      @keyframes s5__item-rotate2 {
+        0% {
+          transform: translateZ(0);
+        }
+        100% {
+          transform: rotate(2.763deg);
+        }
+      }
+      &[data-aos^="fade"][data-aos^="fade"].aos-animate {
+        animation: 0.6s ease-in 0.6s both s5__item-rotate2;
+      }
     }
     // .s5__item:nth-child(3)
     &:nth-child(3) {
       // transition: transform 750ms ease-in-out;
-      transform: rotate(-9.042deg) !important;
+      // transform: rotate(-9.042deg) !important;
       background-color: #21fa90;
       right: 6rem;
       bottom: 2.5rem;
@@ -617,6 +641,18 @@ button {
       .s5__item-text {
         width: 261rem;
         color: #1c204e;
+      }
+
+      @keyframes s5__item-rotate3 {
+        0% {
+          transform: translateZ(0);
+        }
+        100% {
+          transform: rotate(-9.042deg);
+        }
+      }
+      &[data-aos^="fade"][data-aos^="fade"].aos-animate {
+        animation: 0.6s ease-in 0.6s both s5__item-rotate3;
       }
     }
   }
@@ -1624,6 +1660,8 @@ button {
   }
   // .p-vac-s2__btn
   &__btn {
+    position: relative;
+    z-index: 7;
   }
   // .p-vac-s2__light-decor
   &__light-decor {

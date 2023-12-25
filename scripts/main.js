@@ -87,13 +87,16 @@ AOS.init();
 
         const change = (e) => {
           if (e.button === 0) {
-            first_str = "translateX(6%)";
-            two_str = "translateX(-14%)";
+            // first_str = "translateX(6%)";
+            // two_str = "translateX(-14%)";
+            // three_str = "translateX(-34%)";
+            first_str = "translateX(0%)";
+            two_str = "translateX(-17%)";
             three_str = "translateX(-34%)";
 
             if (screenWidth <= 600) {
-              // first_str = "translateX(%)";
-              two_str = "translateX(-13%)";
+              first_str = "translateX(3%)";
+              two_str = "translateX(-15.5%)";
               three_str = "translateX(-32%)";
             }
             console.log("Click event");

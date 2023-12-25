@@ -1312,7 +1312,6 @@ button {
   transform: rotate(0deg);
 }
 .s5__item:first-child {
-  transform: rotate(3.908deg) !important;
   background-color: #616ff6;
   left: 0;
   bottom: 3.5rem;
@@ -1320,8 +1319,18 @@ button {
 .s5__item:first-child .s5__item-text {
   width: 238rem;
 }
+@keyframes s5__item-rotate1 {
+  0% {
+    transform: translateZ(0);
+  }
+  100% {
+    transform: rotate(3.908deg);
+  }
+}
+.s5__item:first-child[data-aos^=fade][data-aos^=fade].aos-animate {
+  animation: 0.6s ease-in 0.6s both s5__item-rotate1;
+}
 .s5__item:nth-child(2) {
-  transform: rotate(2.763deg) !important;
   background-color: #1c204e;
   top: 6.5rem;
   left: 289rem;
@@ -1329,8 +1338,18 @@ button {
 .s5__item:nth-child(2) .s5__item-text {
   width: 200rem;
 }
+@keyframes s5__item-rotate2 {
+  0% {
+    transform: translateZ(0);
+  }
+  100% {
+    transform: rotate(2.763deg);
+  }
+}
+.s5__item:nth-child(2)[data-aos^=fade][data-aos^=fade].aos-animate {
+  animation: 0.6s ease-in 0.6s both s5__item-rotate2;
+}
 .s5__item:nth-child(3) {
-  transform: rotate(-9.042deg) !important;
   background-color: #21fa90;
   right: 6rem;
   bottom: 2.5rem;
@@ -1338,6 +1357,17 @@ button {
 .s5__item:nth-child(3) .s5__item-text {
   width: 261rem;
   color: #1c204e;
+}
+@keyframes s5__item-rotate3 {
+  0% {
+    transform: translateZ(0);
+  }
+  100% {
+    transform: rotate(-9.042deg);
+  }
+}
+.s5__item:nth-child(3)[data-aos^=fade][data-aos^=fade].aos-animate {
+  animation: 0.6s ease-in 0.6s both s5__item-rotate3;
 }
 .s5__item-text {
   color: #fff;
@@ -2083,6 +2113,10 @@ button {
 .p-vac-s2__item--3 .p-vac-s2__item-text {
   transform: rotate(10.889deg);
 }
+.p-vac-s2__btn {
+  position: relative;
+  z-index: 7;
+}
 .p-vac-s2__light-decor {
   width: 623rem;
   height: 349rem;
@@ -2739,7 +2773,7 @@ button {
   }
   .s5__item:nth-child(2) {
     left: 50%;
-    transform: rotate(2.763deg) translateX(-50%) !important;
+    margin-left: -180rem;
   }
   .s5__item--last {
     left: 50%;
@@ -3106,8 +3140,9 @@ button {
   }
   .p-vac-s3__item-title-wrp--tab {
     width: 1000rem;
-    margin-bottom: 20rem;
-    transform: translateX(6%);
+    padding-top: 5rem;
+    margin-bottom: 15rem;
+    transform: translateX(0%);
     transition: all 600ms ease-in-out;
   }
   .p-vac-s3__item-title-wrp--tab .p-vac-s3__item-title {
@@ -3450,20 +3485,42 @@ button {
     box-sizing: border-box;
     padding: 30rem;
   }
+  @keyframes s5__item-rotate1 {
+    0% {
+      transform: translateZ(0);
+    }
+    100% {
+      transform: rotate(7.154deg);
+    }
+  }
   .s5__item:first-child {
-    transform: rotate(7.154deg) !important;
     padding-top: 19rem;
     padding-bottom: 19rem;
   }
-  .s5__item:nth-child(2) {
-    transform: rotate(2.763deg) !important;
+  @keyframes s5__item-rotate2 {
+    0% {
+      transform: translateZ(0);
+    }
+    100% {
+      transform: rotate(2.763deg);
+    }
+  }
+  .s5__list .s5__item:nth-child(2) {
+    margin-left: 0;
     order: -1;
     z-index: 1;
     padding-top: 25rem;
     padding-bottom: 25rem;
   }
+  @keyframes s5__item-rotate3 {
+    0% {
+      transform: translateZ(0);
+    }
+    100% {
+      transform: rotate(-3.635deg);
+    }
+  }
   .s5__item:nth-child(3) {
-    transform: rotate(-3.635deg) !important;
     padding-top: 16rem;
     padding-bottom: 16rem;
   }
@@ -4079,9 +4136,11 @@ button {
   .p-vac-s3__item-title-swiper {
     width: 300rem;
     padding-bottom: 10rem;
+    overflow: visible;
   }
   .p-vac-s3__item-title-wrp--tab {
     width: 600rem;
+    transform: translateX(3%);
   }
   .p-vac-s3__item-title-wrp--tab .p-vac-s3__item-title {
     font-size: 24rem;
@@ -4280,5 +4339,20 @@ button {
     right: 16rem;
     width: 30rem;
     height: 30rem;
+  }
+  .p-vac-s3__item-title-wrp--tab .p-vac-s3__item-title:first-child {
+    transform: rotate(5.464deg);
+  }
+  .p-vac-s3__item-title-wrp--tab .p-vac-s3__item-title:nth-child(2) {
+    transform: rotate(-7.035deg);
+  }
+  .p-vac-s3__item-title-wrp--tab .p-vac-s3__item-title:nth-child(3) {
+    transform: rotate(0deg);
+  }
+  .p-vac-s3__item-title-wrp--tab .p-vac-s3__item-title:nth-child(4) {
+    transform: rotate(5.464deg);
+  }
+  .p-vac-s3__item-title-wrp--tab .p-vac-s3__item-title:last-child {
+    transform: rotate(-7.035deg);
   }
 }
