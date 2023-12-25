@@ -49,9 +49,7 @@
 .fs__main-title .fs__main-title-animation {
   width: 132rem;
   height: auto;
-  // top: 34rem;
-  // right: 6rem;
-  top: 38rem;
+  top: 32rem;
   right: 6rem;
 }
 
@@ -290,20 +288,20 @@ dotlottie-player.s3__animation {
 }
 
 .s5__item:first-child {
-  transform: rotate(7.154deg);
+  transform: rotate(7.154deg) !important;
   padding-top: 19rem;
   padding-bottom: 19rem;
 }
 
 .s5__item:nth-child(2) {
-  transform: rotate(-2.36deg);
+  transform: rotate(-2.36deg) !important;
   order: -1;
   z-index: 1;
   padding-top: 25rem;
   padding-bottom: 25rem;
 }
 .s5__item:nth-child(3) {
-  transform: rotate(-3.635deg);
+  transform: rotate(-3.635deg) !important;
   padding-top: 16rem;
   padding-bottom: 16rem;
 }
@@ -369,9 +367,9 @@ dotlottie-player.s3__animation {
   margin-bottom: 12rem;
 }
 .s6__title-animation {
-  width: 166rem;
-  top: 19rem;
-  left: -18rem;
+  width: 142rem;
+  top: 27rem;
+  left: 0;
 }
 
 .s6__desc {
@@ -413,8 +411,9 @@ dotlottie-player.s3__animation {
 }
 
 .s6__content-animation {
-  width: 160rem;
-  height: 50rem;
+  width: 135rem;
+  height: auto;
+  top: 22rem;
 }
 
 .s7 {
@@ -599,8 +598,8 @@ dotlottie-player.s3__animation {
 }
 
 .p-serv-s3__title-animation {
-  width: 184rem;
-  top: 29rem;
+  width: 172rem;
+  top: 32rem;
 }
 
 .p-serv-s3__item {
@@ -724,10 +723,10 @@ dotlottie-player.s3__animation {
 }
 
 .p-serv-s4__title-animation {
-  top: 16rem;
-  width: 228rem;
-  left: -25rem;
-  margin-bottom: 30rem;
+  top: 26rem;
+  width: 193rem;
+  left: 4rem;
+  margin-bottom: 0rem;
 }
 
 .p-serv-s4__desc-text-wrp {
@@ -789,7 +788,7 @@ dotlottie-player.s3__animation {
 .p-404-body__main-title-animation {
   width: 114rem;
   top: -40rem;
-  left: -8rem;
+  left: -13rem;
 }
 
 .p-404-body__desc {
@@ -892,8 +891,8 @@ dotlottie-player.s3__animation {
 }
 
 .p-serv .fs__main-title .fs__main-title-animation {
-  top: 3rem;
-  right: 11rem;
+  top: -1rem;
+  right: 12rem;
   width: 118rem;
 }
 
@@ -907,10 +906,10 @@ dotlottie-player.s3__animation {
   margin-bottom: 380rem;
 }
 .p-vac-s1__title-animation {
-  width: 212rem;
+  width: 183rem;
   height: auto;
-  top: 18rem;
-  left: -23rem;
+  top: 27rem;
+  left: 3rem;
 }
 
 .p-vac-s1__end {
@@ -973,8 +972,9 @@ dotlottie-player.s3__animation {
   margin-bottom: 4rem;
 }
 .p-vac-s2__title-animation {
-  width: 216rem;
-  top: 30rem;
+  width: 202rem;
+  height: auto;
+  top: 32rem;
 }
 
 .p-vac-s2__desc {
@@ -1108,10 +1108,11 @@ dotlottie-player.s3__animation {
 }
 
 .p-vac-s4__title-animation {
-  top: 0rem;
+  top: 32rem;
   left: 2rem;
   transform: unset;
-  width: 201rem;
+  width: 195rem;
+  height: auto;
 }
 
 .p-vac-s4__item {
@@ -1243,8 +1244,9 @@ dotlottie-player.s3__animation {
 }
 
 .p-vac-fs__title-animation {
-  width: 191rem;
-  top: -17rem;
+  width: 187rem;
+  top: 31rem;
+  height: auto;
 }
 
 .p-vac-fs__animation-element-wrp {

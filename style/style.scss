@@ -2246,6 +2246,10 @@ button {
   display: none;
 }
 
+.slider-navigation2 {
+  display: none;
+}
+
 @media screen and (max-width: 1000px) {
   html {
     font-size: 0.12999vw;
@@ -2303,6 +2307,9 @@ button {
   }
   .animation-line--mob {
     display: block;
+  }
+  .slider-navigation2 {
+    display: flex;
   }
   @import "_adaptive-mobile";
 }
