@@ -4357,12 +4357,3 @@ button {
     transform: rotate(-7.035deg);
   }
 }
-[data-aos^=fade][data-aos^=fade] {
-  opacity: 1 !important;
-  transition-property: opacity, transform;
-}
-
-[data-aos^=fade][data-aos^=fade].aos-animate {
-  opacity: 1;
-  transform: translateZ(0);
-}
