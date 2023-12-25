@@ -49,7 +49,9 @@
 .fs__main-title .fs__main-title-animation {
   width: 132rem;
   height: auto;
-  top: 34rem;
+  // top: 34rem;
+  // right: 6rem;
+  top: 38rem;
   right: 6rem;
 }
 
@@ -127,6 +129,8 @@
 
 .s3__title .s3__title-animation {
   width: 145rem;
+  position: relative;
+  top: -5rem;
 }
 .s3__desc br {
   display: none;

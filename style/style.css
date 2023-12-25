@@ -1321,7 +1321,7 @@ button {
   width: 238rem;
 }
 .s5__item:nth-child(2) {
-  transform: rotate(2.763deg) !important;
+  transform: rotate(2.763deg) translateX(-50%) !important;
   background-color: #1c204e;
   top: 6.5rem;
   left: 289rem;
@@ -2548,6 +2548,14 @@ button {
   height: 100%;
 }
 
+.animation-line--tab {
+  display: none;
+}
+
+.animation-line--mob {
+  display: none;
+}
+
 @media screen and (max-width: 1000px) {
   html {
     font-size: 0.12999vw;
@@ -2568,6 +2576,12 @@ button {
   }
   .p-vac-s3__item-title-wrp--tab {
     display: flex;
+  }
+  .animation-line--web {
+    display: none;
+  }
+  .animation-line--tab {
+    display: block;
   }
   .big-title {
     font-size: 65rem;
@@ -2616,7 +2630,7 @@ button {
     height: 94rem;
     left: unset;
     top: 82rem;
-    right: 7rem;
+    right: 18rem;
   }
   .fs__main-title br {
     display: none;
@@ -2674,6 +2688,9 @@ button {
     width: 195rem;
     height: auto;
     transform: unset;
+    position: relative;
+    top: -2rem;
+    left: 2rem;
   }
   .s3__title {
     margin-bottom: 12rem;
@@ -2725,9 +2742,9 @@ button {
     transform: translateX(-50%);
   }
   .s5__main-title-animation {
-    width: 332rem;
-    left: 88rem;
-    top: 62rem;
+    width: 317rem;
+    left: 99rem;
+    top: 65rem;
     height: auto;
   }
   .s5__item-text {
@@ -2760,9 +2777,9 @@ button {
   }
   .s6__title-animation {
     height: auto;
-    top: 38rem;
-    left: -34rem;
-    width: 323rem;
+    top: 51rem;
+    left: 5rem;
+    width: 281rem;
   }
   .s6__title-wrp {
     align-items: flex-start;
@@ -2803,9 +2820,9 @@ button {
   }
   .p-serv .fs__main-title-animation {
     width: 256rem;
-    height: 94rem;
+    height: auto;
     top: 8rem;
-    right: 30rem;
+    right: 33rem;
   }
   .p-serv .fs__desc {
     max-width: 620rem;
@@ -2845,8 +2862,8 @@ button {
     bottom: -142rem;
   }
   .p-serv-s3__title-animation {
-    width: 401rem;
-    top: 64rem;
+    width: 380rem;
+    top: 66rem;
   }
   .p-serv-s3__item {
     margin-right: 16rem;
@@ -2880,8 +2897,9 @@ button {
     max-width: 444rem;
   }
   .p-serv-s4__title-animation {
-    top: 32rem;
-    width: 461rem;
+    top: 50rem;
+    width: 388rem;
+    left: 6rem;
   }
   .p-serv-s4__desc {
     font-size: 40rem;
@@ -2908,7 +2926,7 @@ button {
   }
   .p-404-body__main-title-animation {
     width: 250rem;
-    top: -5rem;
+    top: -6rem;
     left: -30rem;
   }
   .p-404-body__desc {
@@ -2928,8 +2946,8 @@ button {
     margin-top: 50rem;
   }
   .p-vac-fs__title-animation {
-    width: 391rem;
-    top: 73rem;
+    width: 400rem;
+    top: 74rem;
   }
   .p-vac-fs__animation-element-wrp--3 {
     top: 302rem;
@@ -2997,10 +3015,10 @@ button {
     margin-bottom: 30rem;
   }
   .p-vac-s1__title-animation {
-    width: 412rem;
+    width: 374rem;
     height: auto;
-    top: 34rem;
-    left: -45rem;
+    top: 52rem;
+    left: 0;
   }
   .p-vac-s1__text-item {
     margin-bottom: 16rem;
@@ -3040,8 +3058,8 @@ button {
     margin-bottom: 12rem;
   }
   .p-vac-s2__title-animation {
-    width: 458rem;
-    top: 64rem;
+    width: 440rem;
+    top: 66rem;
     left: 50%;
     height: auto;
   }
@@ -3134,10 +3152,11 @@ button {
     margin-bottom: 50rem;
   }
   .p-vac-s4__title-animation {
-    top: -36rem;
+    top: 65rem;
     left: 50%;
     transform: translateX(-50%);
     width: 428rem;
+    height: auto;
   }
   .p-vac-s4__accordion-title {
     min-height: unset;
@@ -3177,6 +3196,12 @@ button {
     max-width: 360rem !important;
     padding-left: 16rem;
     padding-right: 16rem;
+  }
+  .animation-line--tab {
+    display: none;
+  }
+  .animation-line--mob {
+    display: block;
   }
   .big-title {
     font-size: 30rem;
@@ -3221,7 +3246,7 @@ button {
   .fs__main-title .fs__main-title-animation {
     width: 132rem;
     height: auto;
-    top: 34rem;
+    top: 38rem;
     right: 6rem;
   }
   .main-btn {
@@ -3285,6 +3310,8 @@ button {
   }
   .s3__title .s3__title-animation {
     width: 145rem;
+    position: relative;
+    top: -5rem;
   }
   .s3__desc br {
     display: none;
