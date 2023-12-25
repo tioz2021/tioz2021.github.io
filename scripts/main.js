@@ -1,5 +1,5 @@
 // init animation
-new WOW().init();
+// new WOW().init();
 
 // init aos
 AOS.init();
