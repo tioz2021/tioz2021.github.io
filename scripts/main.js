@@ -394,7 +394,28 @@ AOS.init();
   const textarea = document.querySelector("textarea");
   if (textarea) textarea.addEventListener("input", autoResize);
   function autoResize() {
-    this.style.height = "auto"; // Сбросим высоту, чтобы получить новую высоту после ввода текста
-    this.style.height = this.scrollHeight + 12 + "rem"; // Установим высоту
+    const textarea = this;
+    // var charLimitMessage = document.getElementById("charLimitMessage");
+    var maxLength = textarea.getAttribute("maxlength");
+    var currentLength = textarea.value.length;
+
+    if (currentLength > maxLength) {
+      // charLimitMessage.textContent = "Превышен лимит символов (максимум 5000).";
+      textarea.value = textarea.value.substring(0, maxLength);
+      textarea.style.height = "auto";
+      textarea.style.height =
+        textarea.scrollHeight +
+        textarea.offsetHeight -
+        textarea.clientHeight +
+        "rem";
+    } else {
+      // charLimitMessage.textContent = "";
+      textarea.style.height = "auto";
+      textarea.style.height =
+        textarea.scrollHeight +
+        textarea.offsetHeight -
+        textarea.clientHeight +
+        "rem";
+    }
   }
 })();

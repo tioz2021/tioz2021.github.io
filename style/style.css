@@ -4012,7 +4012,7 @@ button {
     margin-bottom: 50rem;
   }
   .main-form textarea.main-form__input {
-    height: 54rem;
+    min-height: 54rem;
   }
   .p-vac-inst-body {
     margin-bottom: 80rem;
