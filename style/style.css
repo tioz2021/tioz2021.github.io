@@ -2595,14 +2595,39 @@ button {
   display: none;
 }
 
+.s2__list--mob {
+  display: none;
+}
+
 @media screen and (max-width: 1600px) {
   html {
-    font-size: 0.06408vw;
+    font-size: 0.06308vw;
+  }
+  .fs__animation-element-wrp dotlottie-player {
+    transform: scale(1.15);
+  }
+  .p-vac-fs__animation-element-wrp--1 {
+    right: 314rem;
+  }
+  .p-vac-fs__animation-element-wrp--2 {
+    left: 278rem;
+  }
+  .p-vac-fs__animation-element-wrp--3 {
+    right: 281rem;
+  }
+  .p-vac-fs__animation-element-wrp--4 {
+    left: 746rem;
+  }
+  .p-vac-fs__animation-element-wrp--5 {
+    left: 318rem;
   }
 }
 @media screen and (max-width: 1000px) {
   html {
     font-size: 0.12999vw;
+  }
+  .fs__animation-element-wrp dotlottie-player {
+    transform: scale(1.35);
   }
   .container {
     width: 100% !important;
@@ -3222,10 +3247,6 @@ button {
     position: relative;
   }
 }
-.s2__list--mob {
-  display: none;
-}
-
 @media screen and (max-width: 600px) {
   html {
     font-size: 0.27779vw;
