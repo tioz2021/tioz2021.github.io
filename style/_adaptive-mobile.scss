@@ -1262,6 +1262,7 @@ dotlottie-player.s3__animation {
 }
 
 .p-vac-fs {
+  position: relative;
   box-sizing: border-box;
   padding-top: 50rem;
   padding-bottom: 80rem;
@@ -1280,20 +1281,59 @@ dotlottie-player.s3__animation {
 }
 
 .p-vac-fs__animation-element-wrp {
-  display: none;
+  // border: 1px solid red;
+  // display: none;
 }
 .p-vac-fs__animation-element-wrp--1 {
-  display: block;
-  position: static;
   left: unset;
   top: unset;
-  width: 220rem;
-  height: 323rem;
-  transform: matrix(-1, 0, 0, 1, 0, 0) rotate(0deg);
+  right: 32rem;
+  bottom: 50rem;
+  width: 79rem;
+  height: 119rem;
+  transform: matrix(-1, 0, 0, 1, 0, 0) rotate(15deg);
+}
+
+.p-vac-fs__animation-element-wrp--2 {
+  width: 78rem;
+  height: 112rem;
+  left: 32rem;
+  top: 159rem;
+}
+
+.p-vac-fs__animation-element-wrp--3 {
+  width: 90rem;
+  height: 105rem;
+  top: 159rem;
+  right: 46rem;
+}
+.p-vac-fs__animation-element-wrp--3 dotlottie-player {
+  transform: scale(1.3);
+}
+
+.p-vac-fs__animation-element-wrp--4 {
+  width: 90rem;
+  height: 106rem;
+  top: 264rem;
+  left: 50%;
+  transform: translateX(-50%) rotate(-15deg);
+}
+
+.p-vac-fs__animation-element-wrp--5 dotlottie-player {
+  transform: scale(1.35);
+}
+
+.p-vac-fs__animation-element-wrp--5 {
+  width: 103rem;
+  height: 97rem;
+  left: 46rem;
+  bottom: 76rem;
+  top: unset;
 }
 
 .p-vac-fs__container {
-  min-height: unset;
+  min-height: 460rem;
+  // min-height: unset;
 }
 
 .p-vac-fs__light-decor {

@@ -2288,6 +2288,12 @@ button {
   display: none;
 }
 
+@media screen and (max-width: 1600px) {
+  html {
+    font-size: 0.06408vw;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   html {
     font-size: 0.12999vw;
