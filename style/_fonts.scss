@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'CampOpti-Caps_Cyrillic';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+    src: local("CampOpti-Caps_Cyrillic"),
+    url("../fonts/campopti_caps_cyrillic_medium.woff2") format("woff2"),
+    url("../fonts/campopti_caps_cyrillic_medium.woff2") format("woff");
+}
+
+@font-face {
+  font-family: 'Neo Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+    src: local("Neo Sans Pro"),
+    url("../fonts/NeoSansPro-Regular.woff2") format("woff2"),
+    url("../fonts/NeoSansPro-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Neo Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+    src: local("Neo Sans Pro"),
+    url("../fonts/NeoSansPro-Bold.woff2") format("woff2"),
+    url("../fonts/NeoSansPro-Bold.woff") format("woff");
+}

@@ -1,0 +1,230 @@
+@media screen and (max-width: 1500px){
+  html{
+    // 1366 1px = 1rem
+    font-size: 0.07321vw;
+  }
+
+  .block-1__container{
+    padding-top: 215rem;
+  }
+
+  .h1-title{
+    width: 1246rem;
+    height: 145rem;
+    margin-bottom: 16rem;
+  }
+
+  .block-1__img{
+    width: 636rem;
+    height: 743rem;
+  }
+
+  .block-1{
+    height: 882rem;
+  }
+
+  .block-1 .title-text{
+    margin-bottom: 60rem;
+  }
+
+  .warning-block{
+    width: 623rem;
+    height: 188rem;
+  }
+
+  .warning-block__text{
+    width: 469rem;
+  }
+
+  .block-2__title-div-decor{
+    display: none;
+  }
+
+  .block-2__title-div .def-text{
+    max-width: 420rem;
+  }
+
+  .block-2__title-div{
+    margin-bottom: 65rem;
+    align-items: center;
+  }
+
+  .block-2__icon{
+    width: 163rem;
+    height: 162rem;
+  }
+  .block-2__item:nth-child(2) .block-2__icon{
+    width: 173rem;
+    // height: 181rem;
+
+    height: 162rem;
+  }
+
+  .block-2__item:nth-child(3) .block-2__icon{
+    width: 164rem;
+    // height: 211rem;
+
+    height: 162rem;
+  }
+
+  .block-2__item{
+    padding-top: 95rem;
+    // border: 1px solid red;
+  }
+
+  .block-2__top-icon{
+    right: 16rem;
+  }
+
+  .block-2__item--active{
+    background-image: url('../img/block-2-active-bg-mini-web.svg');
+  }
+
+  .block-2__list-wrp{
+    background-image: url('../img/block-2-bg-lines-mini-web.svg');
+  }
+  
+  .block-2__list-decor-foot{
+    bottom: -85rem;
+  }
+
+  .block-3__img-wrp{
+    width: 569rem;
+    height: 238rem;
+  }
+
+  .block-3__title{
+    max-width: unset;
+  }
+  .block-3 .top-wrp .wrp{
+    width: 650rem;
+  }
+  .block-3 .top-wrp{
+    margin-bottom: 80rem;
+  }
+
+  .block-3__item{
+    height: 290rem;
+    padding-top: 45rem;
+  }
+
+  .block-3__list-wrp{
+    background-image: url('../img/block-3-list-bg-mini-web.svg');
+  }
+
+  .block-3__number-img-wrp{
+    margin-bottom: 24rem;
+  }
+
+  .block-3__item:first-child .block-3__def-text{
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -ms-line-clamp: 1;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    display: -webkit-box;
+    display: box;
+    word-wrap: break-word;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+  }
+
+  .footer .wrp{
+    background-image: url('../img/footer-bg-mini-web.svg');
+  }
+
+  .footer__start{
+    background-image: url('../img/footer-mini-bg--mini-web.svg');
+  }
+
+  .block-5{
+    height: 787rem;
+  }
+  .block-5__bg-img-wrp{
+    width: 1366rem;
+    height: 787rem;
+
+    background-image: url('../img/block-5-bg-mini-web.png');
+  }
+  .block-5__box-img-wrp{
+    width: 402rem;
+    height: 705rem;
+    
+    left: 112rem;
+    background-image: url('../img/block-5-tel-box.png');
+  }
+  
+  .block-5__title{
+    max-width: unset;
+  }
+  
+  .block-5__end{
+    max-width: 625rem;
+    padding: 0;
+  }
+
+
+  .block-4{
+    width: 100%;
+    height: unset;
+
+    background: unset;
+
+    // background-image: url('../img/block-4-bg.svg');
+    // background-position: center center;
+    // background-size: contain;
+    // background-repeat: no-repeat;
+    // position: relative;
+
+    display: flex;
+    justify-content: center;
+  }
+  
+  .block-4__container{
+    width: 1246rem;
+    height: 1084rem;
+    max-width: unset;
+
+    padding-top: 190rem;
+    display: block;
+
+    // background-color: gray;
+
+    background-image: url('../img/block-4-bg-mini-web.svg');
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  .block-4__start{
+    width: 100%;
+    max-width: unset;
+    margin-bottom: 98rem;
+    padding-top: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .block-4__title{
+    margin-bottom: 0;
+  }
+
+  .block-4__end{
+    padding: 0;
+    width: 100%;
+  }
+
+  .block-4__decor-bottom{
+    right: 45rem;
+  }
+
+  .block-4__decor-top-arrow{
+    transform: matrix(0, -1, -1, 0, 0, 0) rotate(-90deg);
+  }
+
+  .block-3__soc-list{
+    width: 100%;
+    margin-left: -10rem;
+  }
+}

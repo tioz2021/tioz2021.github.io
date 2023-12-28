@@ -1,0 +1,268 @@
+// tablet 768px
+@media screen and (max-width: 900px){
+  html{
+    // 768px 0.13305vw 1px = 1rem ??????? 0.13021vw
+    font-size: 0.13021vw;
+  }
+
+  .header__container{
+    padding-left: 45rem;
+    padding-right: 45rem;
+  }
+
+  .block-1__container{
+    padding-top: 513rem;
+    padding-bottom: 44rem;
+    padding-left: 45rem;
+    padding-right: 45rem;
+  }
+
+  .h1-title{
+    width: 678rem;
+    // height: 56rem;
+    height: 78rem;
+    z-index: 2;
+    margin-bottom: 0;
+  }
+
+  .h1-title .img-wrp{
+    object-fit: cover;
+  }
+
+  .block-1__img{
+    width: 674rem;
+    height: 786rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .block-1{
+    height: 878rem;
+    background-size: cover;
+  }
+
+  .warning-block{
+    z-index: 2;
+  }
+  .block-1 .title-text{
+    position: relative;
+    z-index: 2;
+    margin-bottom: 24rem;
+
+    font-size: 30rem;
+    line-height: 40rem;
+  }
+
+  .warning-block{
+    width: 676rem;
+    height: 188.5rem;
+  }
+
+  .auto-slider__item{
+    width: 360rem !important;
+    background-size: cover;
+  }
+
+  .block-2__title-div{
+    margin-bottom: 50rem;
+    padding-left: 50rem;
+    padding-right: 50rem;
+  }
+
+  .block-2__title-div .wrp{
+    display: none;
+  }
+
+  .block-2__list-wrp{
+    background-image: url('../img/block-2-bg-lines-tablet.svg');
+  }
+
+  .block-2__item--active{
+    background-image: url('../img/block-2-active-bg-tablet.svg');
+  }
+
+  .block-2__decor-2,
+  .block-2__decor-3,
+  .block-2__list-decor-foot{
+    display: none;
+  }
+
+  .block-2__list{
+    transform: translate3d(-673px, 0px, 0px);
+  }
+
+  .block-3 .top-wrp{
+    flex-wrap: wrap;
+  }
+
+  .block-3 .top-wrp .wrp{
+    order: 1;
+    margin-bottom: 80rem;
+  }
+
+  .block-3__img-wrp{
+    order: 2;
+    width: 678rem;
+    height: 282rem;
+  }
+  .block-3 .top-wrp{
+    margin-bottom: 60rem;
+  }
+
+  .block-3__list-wrp{
+    background-image: url('../img/block-3-list-bg-tablet.svg');
+
+    width: 724rem;
+    height: 817rem;
+
+    padding: 0;
+    padding-top: 16rem;
+    padding-left: 61rem;
+
+    margin-bottom: 128rem;
+  }
+
+  .block-3__list{
+    flex-wrap: wrap;
+  }
+
+  .block-3__item{
+    width: 646rem;
+    height: 240rem;
+    padding-top: 60rem;
+    padding-bottom: 60rem;
+    margin-bottom: 32rem;
+  }
+
+  .block-3__number-img-wrp{
+    margin-right: 66rem;
+    margin-bottom: 0;
+  }
+
+  .block-4{
+    margin-bottom: 195rem;
+  }
+
+  .block-4__container{
+    width: 677rem;
+    height: 1186rem;
+    padding-left: 60rem;
+
+    background-image: url('../img/block-4-bg-tablet.svg');
+  }
+
+  .block-4__start{
+    margin-bottom: 60rem;
+  }
+
+  .block-4__start .small-text{
+    display: none;
+  }
+
+  .block-4__decor-top-arrow{
+    width: 557rem;
+  }
+
+  .block-4__decor-title{
+    left: 26rem;
+  }
+
+  .block-4__decor-top{
+    left: 80rem;
+  }
+
+  .block-4__decor-bottom-arrow{
+    bottom: 30rem;
+    left: 120rem;
+    width: 557.5rem;
+  }
+
+  .block-4__decor-bottom{
+    right: 40rem;
+  }
+
+  .block-4__decor-img--shadow{
+    width: 677rem;
+    height: 60rem;
+  }
+
+  .accordion{
+    padding-top: 13rem;
+    padding-bottom: 13rem;
+  }
+
+  .accordion .active .accordion__body-text{
+    height: 140rem;
+    font-size: 16rem;
+    line-height: 20rem;
+  }
+
+  .accordion__icon-active{
+    width: 16rem;
+    height: 16rem;
+  }
+
+  .accordion__def-text{
+    max-width: 449rem;
+  }
+
+  .block-5{
+    height: 917rem;
+  }
+
+  .block-5__bg-img-wrp{
+    width: 768rem;
+    height: 443rem;
+  }
+
+  .block-5__start{
+    top: unset;
+    bottom: 0;
+  }
+
+  .block-5__box-img-wrp{
+    width: 225rem;
+    height: 396rem;
+    left: 64rem;
+  }
+
+  .block-5__container{
+    padding-left: 45rem;
+    padding-right: 45rem;
+  }
+
+  .block-5__end{
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .footer__container{
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .footer__start{
+    background-image: url('../img/footer-mini-bg-tablet.svg');
+  }
+
+  .footer .wrp{
+    flex-wrap: wrap;
+    background-image: url('../img/footer-bg-tablet.svg');
+  }
+
+  .footer__link-wrp{
+    margin: 0;
+    margin-top: 24rem;
+  }
+
+  .auto-slider__list-item-inside{
+    font-size: 17rem;
+  }
+
+  .accordion .active:last-child.active .accordion__body-text{
+    padding-top: 10rem;
+  }
+  .accordion .active .accordion__body-text{
+    padding-bottom: 10rem;
+  }
+}

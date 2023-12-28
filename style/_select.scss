@@ -1,0 +1,111 @@
+.select-container {
+  position: relative;
+  width: 45rem;
+}
+
+.select-container .img-wrp{
+  width: 12rem;
+  height: 12rem;
+
+  position: absolute;
+  top: 6rem;
+  right: 4rem;
+  transition: transform 250ms ease-in-out;
+  cursor: pointer;
+}
+
+.select-container.active{
+  .img-wrp{
+    transform: rotate(-180deg);
+    transition: transform 250ms ease-in-out;
+  }
+}
+
+.select-container .select {
+  position: relative;
+  //background: radial-gradient(42.35% 43.55% at 93.85% 97.2%, rgba(68, 209, 240, 0.4) 0%, rgba(75, 132, 218, 0.136) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, linear-gradient(48.61deg, rgba(2, 101, 165, 0.2) 41.99%, rgba(0, 255, 102, 0.2) 81.09%), linear-gradient(180deg, #018197 0%, #22CF48 100%);
+  height: 25rem;
+
+  box-sizing: border-box;
+  padding-left: 8rem;
+
+  background-image: url('../img/select-bg.svg');
+  background-position: center center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.select-container .select input {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: none;
+  outline: none;
+  border: none;
+  color: #fff;
+
+  padding: 0;
+  cursor: pointer;
+
+  // margin-top: -4rem;
+
+}
+
+.select-container .select input::placeholder{
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16rem;
+  line-height: 22rem;
+  
+}
+
+.select-container .option-container {
+  position: absolute;
+  left: 9rem;
+  width: 36rem;
+  margin-top: -2rem;
+  top: 100%;
+  height: 0;
+  overflow-y: hidden;
+  transition: 0.4s;
+  background: radial-gradient(42.35% 43.55% at 93.85% 97.2%, rgba(68, 209, 240, 0.4) 0%, rgba(75, 132, 218, 0.136) 100%), linear-gradient(48.61deg, rgba(2, 101, 165, 0.2) 41.99%, rgba(0, 255, 102, 0.2) 81.09%), linear-gradient(180deg, #018197 0%, #22CF48 100%);
+}
+
+.select-container.active .option-container {
+  height: 75rem;
+  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+
+.select-container .option-container::-webkit-scrollbar {
+  border-left: 1rem solid rgba(0, 0, 0, 0.2);
+  width: 10rem;
+}
+
+.select-container .option-container::-webkit-scrollbar-thumb {
+  background: #0f0e11;
+}
+
+.select-container .option-container .option {
+  position: relative;
+  padding-left: 0;
+  height: 25rem;
+  cursor: pointer;
+
+  box-sizing: border-box;
+  padding-left: 6rem;
+}
+
+.select-container .option-container .option.selected {
+  background: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+.select-container .option-container .option:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.select-container .option-container .option label {
+  cursor: pointer;
+}

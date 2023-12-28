@@ -1,0 +1,89 @@
+// default styles
+@import '_normalize.scss';
+@import '_reset.scss';
+@import '_fonts.scss';
+
+// components
+@import '_select.scss';
+@import '_accordion.scss';
+
+// main styles
+@import '_content.scss';
+
+// adaptive 1920-1500 (1360 wrapper font-size: 0.07321vw )
+@import '_media-web2.scss';
+
+// adaptive 1500-900 (768 wrapper font-size: 0.13305vw )
+@import '_media-tablets.scss';
+
+// adaptive 500> 0 (360px wrapper 0.27800vw 1px = 1rem ??????? 0.17056vw )
+@import '_media-mobile.scss';
+
+// animation glitch
+@import '_glitch.scss';
+
+.block-conf{
+
+  width: 90%;
+  margin: 0 auto;
+  background: 
+    radial-gradient(42.35% 43.55% at 93.85% 97.2%, rgba(68, 209, 240, 0.4) 0%, rgba(75, 132, 218, 0.136) 100%),
+    linear-gradient(48.61deg, rgba(2, 101, 165, 0.2) 41.99%, rgba(0, 255, 102, 0.2) 81.09%),
+    linear-gradient(180deg, #c3c3c3 0%, #000 100%);
+  border-radius: 44rem;
+
+  box-sizing: border-box;
+  padding-left: 65rem;
+  padding-right: 65rem;
+  padding-top: 50rem;
+  padding-bottom: 50rem;
+  margin-top: 180rem;
+  margin-bottom: 100rem;
+
+  &__container{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  i.small-text{
+    display: block;
+    margin-bottom: 25rem;
+  }
+
+  p.small-text{
+    margin-bottom: 50rem;
+  }
+
+  p.small-text:last-child{
+    margin-bottom: 0;
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+  .block-conf{
+    width: 100%;
+
+    padding-left: 15rem;
+    padding-right: 15rem;
+    padding-top: 50rem;
+    padding-bottom: 50rem;
+
+    text-align: center;
+
+    i.small-text{
+      display: block;
+      margin-bottom: 12.5rem;
+    }
+  
+    p.small-text{
+      margin-bottom: 25rem;
+    }
+
+    &__container{
+      width: 100%;
+      margin: 0 auto;
+    }
+
+  }
+}

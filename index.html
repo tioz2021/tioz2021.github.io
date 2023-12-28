@@ -1,650 +1,983 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=`, initial-scale=1.0">
+  <title>Neo Vpn</title>
 
-	<!-- slider SwiperJs -->
-	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-  
-  <!-- jQueryUI -->
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="style/style.css">
 
-	<!-- style -->
-	<link rel="stylesheet" href="css/style.min.css">
+  <!-- swiper slide css -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
 
 </head>
 <body>
-	<div class="wrapper">
+  <div class="main-wrapper">
+    <header class="header">
+      <div class="container header__container">
+        <div class="logo-wrp img-wrp">
+          <img src="img/logo.svg" alt="logo">
+        </div>
 
-		<header class="header">
-			<div class="header__container container">
+        <nav>
+          <div class="wrp">
+            <ul>
+              <li><a class="u-small-text to-form1" href="#">тарифы</a></li>
+              <li><a class="u-small-text to-form2" href="#">Схема работы</a></li>
+              <li><a class="u-small-text to-form3" href="#">faq</a></li>
+              <li><a class="u-small-text to-form4" href="#">контакты</a></li>
+            </ul>
+          </div>
+          <div class="select-container">
+            <div class="select">
+              <input class="u-small-text" type="text" id="input" placeholder="RU" onfocus="this.blur();">
+              <div class="img-wrp">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 4.5L6 7.5L9 4.5" stroke="white" stroke-linecap="square" stroke-linejoin="round"/>
+                </svg>          
+              </div>
+            </div>
+            <div class="option-container">
+              <div class="option">
+                <label class="u-small-text">RU</label>
+              </div>
+              <div class="option">
+                <label class="u-small-text">EN</label>
+              </div>
+              <div class="option">
+                <label class="u-small-text">GR</label>
+              </div>
+            </div>
+          </div>
+          <div class="img-wrp hamburger-wrp">
+            <button class="hamburger"></button>
+          </div>
+            
+        </nav>
+      </div>
 
-				<div class="mobile">
-					<div class="gmbruger">
-						<svg width="25" height="17" viewBox="0 0 25 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<rect y="14" width="25" height="3" rx="1.5" fill="#65906C"/>
-							<rect y="7" width="25" height="3" rx="1.5" fill="#65906C"/>
-							<rect width="25" height="3" rx="1.5" fill="#65906C"/>
-						</svg>
-					</div>
-					<span>МЕНЮ</span>
-				</div>		
+    </header>
 
-				<a href="index.html" class="header__logo logo">Logos</a>
+    <main>
+      <section class="block-1">
+        <div class="container block-1__container">
+          <h1 class="h1-title img-wrp">
+            <img src="img/h1-text.svg" alt="h1-text">
+            <div class="glitch glitch--h1-title"></div>
+          </h1>
+          <h2 class="title-text">мистер андерсон</h2>
+          <div class="warning-block">
+            <div class="warning-block__icon img-wrp">
+              <svg viewBox="0 0 70 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.17238 56.728H61.8283L66.3444 48.7643L39.4627 3.27344H30.538L3.65625 48.7643L8.17238 56.728Z" fill="white"/>
+                <mask id="path-2-inside-1_1_456" fill="white">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.17238 56.728H61.8283L66.3444 48.7643L39.4627 3.27344H30.538L3.65625 48.7643L8.17238 56.728ZM38.1722 14.9453H31.8281V36.5453H38.1722V14.9453ZM31.8281 44.0742H38.1722V49.0924H31.8281V44.0742Z"/>
+                </mask>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.17238 56.728H61.8283L66.3444 48.7643L39.4627 3.27344H30.538L3.65625 48.7643L8.17238 56.728ZM38.1722 14.9453H31.8281V36.5453H38.1722V14.9453ZM31.8281 44.0742H38.1722V49.0924H31.8281V44.0742Z" fill="url(#paint0_linear_1_456)"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.17238 56.728H61.8283L66.3444 48.7643L39.4627 3.27344H30.538L3.65625 48.7643L8.17238 56.728ZM38.1722 14.9453H31.8281V36.5453H38.1722V14.9453ZM31.8281 44.0742H38.1722V49.0924H31.8281V44.0742Z" fill="url(#paint1_linear_1_456)" fill-opacity="0.2"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.17238 56.728H61.8283L66.3444 48.7643L39.4627 3.27344H30.538L3.65625 48.7643L8.17238 56.728ZM38.1722 14.9453H31.8281V36.5453H38.1722V14.9453ZM31.8281 44.0742H38.1722V49.0924H31.8281V44.0742Z" fill="url(#paint2_radial_1_456)" fill-opacity="0.4"/>
+                <path d="M61.8283 56.728V57.728H62.4108L62.6982 57.2213L61.8283 56.728ZM8.17238 56.728L7.30252 57.2213L7.58987 57.728H8.17238V56.728ZM66.3444 48.7643L67.2143 49.2576L67.4999 48.754L67.2053 48.2556L66.3444 48.7643ZM39.4627 3.27344L40.3236 2.7647L40.0333 2.27344H39.4627V3.27344ZM30.538 3.27344V2.27344H29.9673L29.677 2.7647L30.538 3.27344ZM3.65625 48.7643L2.79533 48.2556L2.5008 48.754L2.78639 49.2576L3.65625 48.7643ZM31.8281 14.9453V13.9453H30.8281V14.9453H31.8281ZM38.1722 14.9453H39.1722V13.9453H38.1722V14.9453ZM31.8281 36.5453H30.8281V37.5453H31.8281V36.5453ZM38.1722 36.5453V37.5453H39.1722V36.5453H38.1722ZM38.1722 44.0742H39.1722V43.0742H38.1722V44.0742ZM31.8281 44.0742V43.0742H30.8281V44.0742H31.8281ZM38.1722 49.0924V50.0924H39.1722V49.0924H38.1722ZM31.8281 49.0924H30.8281V50.0924H31.8281V49.0924ZM61.8283 55.728H8.17238V57.728H61.8283V55.728ZM65.4746 48.2711L60.9584 56.2347L62.6982 57.2213L67.2143 49.2576L65.4746 48.2711ZM38.6018 3.78218L65.4835 49.2731L67.2053 48.2556L40.3236 2.7647L38.6018 3.78218ZM30.538 4.27344H39.4627V2.27344H30.538V4.27344ZM4.51717 49.2731L31.3989 3.78218L29.677 2.7647L2.79533 48.2556L4.51717 49.2731ZM9.04224 56.2347L4.52611 48.2711L2.78639 49.2576L7.30252 57.2213L9.04224 56.2347ZM31.8281 15.9453H38.1722V13.9453H31.8281V15.9453ZM32.8281 36.5453V14.9453H30.8281V36.5453H32.8281ZM38.1722 35.5453H31.8281V37.5453H38.1722V35.5453ZM37.1722 14.9453V36.5453H39.1722V14.9453H37.1722ZM38.1722 43.0742H31.8281V45.0742H38.1722V43.0742ZM39.1722 49.0924V44.0742H37.1722V49.0924H39.1722ZM31.8281 50.0924H38.1722V48.0924H31.8281V50.0924ZM30.8281 44.0742V49.0924H32.8281V44.0742H30.8281Z" fill="url(#paint3_linear_1_456)" mask="url(#path-2-inside-1_1_456)"/>
+                <path d="M61.8283 56.728V57.728H62.4108L62.6982 57.2213L61.8283 56.728ZM8.17238 56.728L7.30252 57.2213L7.58987 57.728H8.17238V56.728ZM66.3444 48.7643L67.2143 49.2576L67.4999 48.754L67.2053 48.2556L66.3444 48.7643ZM39.4627 3.27344L40.3236 2.7647L40.0333 2.27344H39.4627V3.27344ZM30.538 3.27344V2.27344H29.9673L29.677 2.7647L30.538 3.27344ZM3.65625 48.7643L2.79533 48.2556L2.5008 48.754L2.78639 49.2576L3.65625 48.7643ZM31.8281 14.9453V13.9453H30.8281V14.9453H31.8281ZM38.1722 14.9453H39.1722V13.9453H38.1722V14.9453ZM31.8281 36.5453H30.8281V37.5453H31.8281V36.5453ZM38.1722 36.5453V37.5453H39.1722V36.5453H38.1722ZM38.1722 44.0742H39.1722V43.0742H38.1722V44.0742ZM31.8281 44.0742V43.0742H30.8281V44.0742H31.8281ZM38.1722 49.0924V50.0924H39.1722V49.0924H38.1722ZM31.8281 49.0924H30.8281V50.0924H31.8281V49.0924ZM61.8283 55.728H8.17238V57.728H61.8283V55.728ZM65.4746 48.2711L60.9584 56.2347L62.6982 57.2213L67.2143 49.2576L65.4746 48.2711ZM38.6018 3.78218L65.4835 49.2731L67.2053 48.2556L40.3236 2.7647L38.6018 3.78218ZM30.538 4.27344H39.4627V2.27344H30.538V4.27344ZM4.51717 49.2731L31.3989 3.78218L29.677 2.7647L2.79533 48.2556L4.51717 49.2731ZM9.04224 56.2347L4.52611 48.2711L2.78639 49.2576L7.30252 57.2213L9.04224 56.2347ZM31.8281 15.9453H38.1722V13.9453H31.8281V15.9453ZM32.8281 36.5453V14.9453H30.8281V36.5453H32.8281ZM38.1722 35.5453H31.8281V37.5453H38.1722V35.5453ZM37.1722 14.9453V36.5453H39.1722V14.9453H37.1722ZM38.1722 43.0742H31.8281V45.0742H38.1722V43.0742ZM39.1722 49.0924V44.0742H37.1722V49.0924H39.1722ZM31.8281 50.0924H38.1722V48.0924H31.8281V50.0924ZM30.8281 44.0742V49.0924H32.8281V44.0742H30.8281Z" fill="url(#paint4_linear_1_456)" fill-opacity="0.2" mask="url(#path-2-inside-1_1_456)"/>
+                <path d="M61.8283 56.728V57.728H62.4108L62.6982 57.2213L61.8283 56.728ZM8.17238 56.728L7.30252 57.2213L7.58987 57.728H8.17238V56.728ZM66.3444 48.7643L67.2143 49.2576L67.4999 48.754L67.2053 48.2556L66.3444 48.7643ZM39.4627 3.27344L40.3236 2.7647L40.0333 2.27344H39.4627V3.27344ZM30.538 3.27344V2.27344H29.9673L29.677 2.7647L30.538 3.27344ZM3.65625 48.7643L2.79533 48.2556L2.5008 48.754L2.78639 49.2576L3.65625 48.7643ZM31.8281 14.9453V13.9453H30.8281V14.9453H31.8281ZM38.1722 14.9453H39.1722V13.9453H38.1722V14.9453ZM31.8281 36.5453H30.8281V37.5453H31.8281V36.5453ZM38.1722 36.5453V37.5453H39.1722V36.5453H38.1722ZM38.1722 44.0742H39.1722V43.0742H38.1722V44.0742ZM31.8281 44.0742V43.0742H30.8281V44.0742H31.8281ZM38.1722 49.0924V50.0924H39.1722V49.0924H38.1722ZM31.8281 49.0924H30.8281V50.0924H31.8281V49.0924ZM61.8283 55.728H8.17238V57.728H61.8283V55.728ZM65.4746 48.2711L60.9584 56.2347L62.6982 57.2213L67.2143 49.2576L65.4746 48.2711ZM38.6018 3.78218L65.4835 49.2731L67.2053 48.2556L40.3236 2.7647L38.6018 3.78218ZM30.538 4.27344H39.4627V2.27344H30.538V4.27344ZM4.51717 49.2731L31.3989 3.78218L29.677 2.7647L2.79533 48.2556L4.51717 49.2731ZM9.04224 56.2347L4.52611 48.2711L2.78639 49.2576L7.30252 57.2213L9.04224 56.2347ZM31.8281 15.9453H38.1722V13.9453H31.8281V15.9453ZM32.8281 36.5453V14.9453H30.8281V36.5453H32.8281ZM38.1722 35.5453H31.8281V37.5453H38.1722V35.5453ZM37.1722 14.9453V36.5453H39.1722V14.9453H37.1722ZM38.1722 43.0742H31.8281V45.0742H38.1722V43.0742ZM39.1722 49.0924V44.0742H37.1722V49.0924H39.1722ZM31.8281 50.0924H38.1722V48.0924H31.8281V50.0924ZM30.8281 44.0742V49.0924H32.8281V44.0742H30.8281Z" fill="url(#paint5_radial_1_456)" fill-opacity="0.4" mask="url(#path-2-inside-1_1_456)"/>
+                <defs>
+                <linearGradient id="paint0_linear_1_456" x1="35.0003" y1="3.27344" x2="35.0003" y2="56.728" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#018197"/>
+                <stop offset="1" stop-color="#22CF48"/>
+                </linearGradient>
+                <linearGradient id="paint1_linear_1_456" x1="31.8659" y1="36.1029" x2="54.1574" y2="13.0603" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#0265A5"/>
+                <stop offset="1" stop-color="#00FF66"/>
+                </linearGradient>
+                <radialGradient id="paint2_radial_1_456" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(62.4917 55.2306) rotate(-70.5008) scale(24.6983 28.0787)">
+                <stop stop-color="#44D1F0"/>
+                <stop offset="1" stop-color="#4B84DA" stop-opacity="0.34"/>
+                </radialGradient>
+                <linearGradient id="paint3_linear_1_456" x1="35.0003" y1="3.27344" x2="35.0003" y2="56.728" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#018197"/>
+                <stop offset="1" stop-color="#22CF48"/>
+                </linearGradient>
+                <linearGradient id="paint4_linear_1_456" x1="31.8659" y1="36.1029" x2="54.1574" y2="13.0603" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#0265A5"/>
+                <stop offset="1" stop-color="#00FF66"/>
+                </linearGradient>
+                <radialGradient id="paint5_radial_1_456" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(62.4917 55.2306) rotate(-70.5008) scale(24.6983 28.0787)">
+                <stop stop-color="#44D1F0"/>
+                <stop offset="1" stop-color="#4B84DA" stop-opacity="0.34"/>
+                </radialGradient>
+                </defs>
+              </svg>
+            </div>
+            <div class="warning-block__bg"></div>
+            <p class="warning-block__text def-text">
+              Кто-то пытается ограничить твою свободу в сети. Я помогу тебе снять оковы гос-цензуры и слежки!
+            </p>
+          </div>
+  
+          <div class="block-1__img img-wrp">
+            <img src="img/block-1-agent.png" alt="img">
+            <div class="glitch glitch--agent"></div>
+          </div>
+        </div>
+      </section>
 
-				<div class="header__search search">
-					<form action="/">
-						<i class="search__icon-location icon icon-location"></i>
-						<input type="text" placeholder="Введите адрес доставки">
-						<i class="search__icon-search icon icon-search"></i>
-					</form>
-				</div>
+      <section class="block-2">
+        <div class="block-2__container container">
+          <div class="auto-slider auto-swiper">
+            <ul class="auto-slider__list swiper-wrapper">
+              <li class="auto-slider__item swiper-slide">
+                <div class="auto-slider__country-icon img-wrp">
+                  <img src="img/country-icon/austr.svg" alt="country">
+                </div>
+                <h3 class="auto-slider__title def-text">Великобритания</h3>
+                <ul class="auto-slider__list-inside">
+                  <li class="auto-slider__list-item-inside small-text">Скорость до 60 мб/сек</li>
+                  <li class="auto-slider__list-item-inside small-text">Неограниченное время</li>
+                  <li class="auto-slider__list-item-inside small-text">Полная конфиденциальность</li>
+                </ul>
 
-				<div class="header__contact header-contact">
-					<div class="header-contact__icon-wrapper">
-						<i class="header-contact__icon icon icon-calling"></i>
-					</div>
-					<div class="header-contact__text">
-						<span>Контакты:</span>
-						<b>+7 (917) 510-57-59</b>
-					</div>
-				</div>
+                <div class="auto-slider__deocr-icon img-wrp">
+                  <svg width="36" height="16" viewBox="0 0 36 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1_311)">
+                    <path d="M12.199 4.69963L15.6166 7.93989L15.6268 7.93024L18.0098 10.1897L18.0199 10.1993L21.5004 13.4991C24.7038 16.5367 29.8977 16.5367 33.1012 13.4991C36.3049 10.4618 36.3049 5.53717 33.1012 2.49975C29.8977 -0.537676 24.7038 -0.537676 21.5004 2.49975L20.3299 3.60947L22.6501 5.8094L23.8205 4.69963C25.7425 2.87719 28.8589 2.87719 30.7811 4.69963C32.7032 6.52215 32.7032 9.47677 30.7811 11.2993C28.8589 13.1218 25.7425 13.1218 23.8205 11.2993L20.4207 8.07584L20.4103 8.08564L14.5192 2.49975C11.3157 -0.537676 6.12179 -0.537676 2.91827 2.49975C-0.285256 5.53717 -0.285256 10.4618 2.91827 13.4991C6.12179 16.5367 11.3157 16.5367 14.5192 13.4991L15.6894 12.3896L13.3693 10.1897L12.199 11.2993C10.2769 13.1218 7.16056 13.1218 5.23846 11.2993C3.31635 9.47677 3.31635 6.52215 5.23846 4.69963C7.16056 2.87719 10.2769 2.87719 12.199 4.69963Z" fill="url(#paint0_linear_1_311)"/>
+                    <path d="M12.199 4.69963L15.6166 7.93989L15.6268 7.93024L18.0098 10.1897L18.0199 10.1993L21.5004 13.4991C24.7038 16.5367 29.8977 16.5367 33.1012 13.4991C36.3049 10.4618 36.3049 5.53717 33.1012 2.49975C29.8977 -0.537676 24.7038 -0.537676 21.5004 2.49975L20.3299 3.60947L22.6501 5.8094L23.8205 4.69963C25.7425 2.87719 28.8589 2.87719 30.7811 4.69963C32.7032 6.52215 32.7032 9.47677 30.7811 11.2993C28.8589 13.1218 25.7425 13.1218 23.8205 11.2993L20.4207 8.07584L20.4103 8.08564L14.5192 2.49975C11.3157 -0.537676 6.12179 -0.537676 2.91827 2.49975C-0.285256 5.53717 -0.285256 10.4618 2.91827 13.4991C6.12179 16.5367 11.3157 16.5367 14.5192 13.4991L15.6894 12.3896L13.3693 10.1897L12.199 11.2993C10.2769 13.1218 7.16056 13.1218 5.23846 11.2993C3.31635 9.47677 3.31635 6.52215 5.23846 4.69963C7.16056 2.87719 10.2769 2.87719 12.199 4.69963Z" fill="url(#paint1_radial_1_311)" fill-opacity="0.5"/>
+                    <path d="M12.199 4.69963L15.6166 7.93989L15.6268 7.93024L18.0098 10.1897L18.0199 10.1993L21.5004 13.4991C24.7038 16.5367 29.8977 16.5367 33.1012 13.4991C36.3049 10.4618 36.3049 5.53717 33.1012 2.49975C29.8977 -0.537676 24.7038 -0.537676 21.5004 2.49975L20.3299 3.60947L22.6501 5.8094L23.8205 4.69963C25.7425 2.87719 28.8589 2.87719 30.7811 4.69963C32.7032 6.52215 32.7032 9.47677 30.7811 11.2993C28.8589 13.1218 25.7425 13.1218 23.8205 11.2993L20.4207 8.07584L20.4103 8.08564L14.5192 2.49975C11.3157 -0.537676 6.12179 -0.537676 2.91827 2.49975C-0.285256 5.53717 -0.285256 10.4618 2.91827 13.4991C6.12179 16.5367 11.3157 16.5367 14.5192 13.4991L15.6894 12.3896L13.3693 10.1897L12.199 11.2993C10.2769 13.1218 7.16056 13.1218 5.23846 11.2993C3.31635 9.47677 3.31635 6.52215 5.23846 4.69963C7.16056 2.87719 10.2769 2.87719 12.199 4.69963Z" fill="url(#paint2_radial_1_311)" fill-opacity="0.9"/>
+                    </g>
+                    <defs>
+                    <linearGradient id="paint0_linear_1_311" x1="18.0098" y1="0.22168" x2="18.0098" y2="15.7773" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="white" stop-opacity="0.9"/>
+                    <stop offset="1" stop-color="white" stop-opacity="0"/>
+                    </linearGradient>
+                    <radialGradient id="paint1_radial_1_311" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(34.3439 -1.57847) rotate(133.263) scale(23.8333 50.6206)">
+                    <stop stop-color="#55C3E6"/>
+                    <stop offset="0.0001" stop-color="#2B92DC"/>
+                    <stop offset="1" stop-color="white" stop-opacity="0"/>
+                    </radialGradient>
+                    <radialGradient id="paint2_radial_1_311" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(2.36537 1.11197) rotate(26.0214) scale(34.6832 50.1772)">
+                    <stop stop-color="#66C195"/>
+                    <stop offset="1" stop-color="white" stop-opacity="0"/>
+                    </radialGradient>
+                    <clipPath id="clip0_1_311">
+                    <rect width="36" height="16" fill="white" transform="translate(0 -0.000976562)"/>
+                    </clipPath>
+                    </defs>
+                  </svg> 
+                </div>
+              </li>
+              <li class="auto-slider__item swiper-slide">
+                <div class="auto-slider__country-icon img-wrp">
+                  <img src="img/country-icon/germ.svg" alt="country">
+                </div>
+                <h3 class="auto-slider__title def-text">Германия</h3>
+                <ul class="auto-slider__list-inside">
+                  <li class="auto-slider__list-item-inside small-text">Скорость до 60 мб/сек</li>
+                  <li class="auto-slider__list-item-inside small-text">Неограниченное время</li>
+                  <li class="auto-slider__list-item-inside small-text">Полная конфиденциальность</li>
+                </ul>
+                
+                <div class="auto-slider__deocr-icon img-wrp">
+                  <svg width="36" height="16" viewBox="0 0 36 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1_311)">
+                    <path d="M12.199 4.69963L15.6166 7.93989L15.6268 7.93024L18.0098 10.1897L18.0199 10.1993L21.5004 13.4991C24.7038 16.5367 29.8977 16.5367 33.1012 13.4991C36.3049 10.4618 36.3049 5.53717 33.1012 2.49975C29.8977 -0.537676 24.7038 -0.537676 21.5004 2.49975L20.3299 3.60947L22.6501 5.8094L23.8205 4.69963C25.7425 2.87719 28.8589 2.87719 30.7811 4.69963C32.7032 6.52215 32.7032 9.47677 30.7811 11.2993C28.8589 13.1218 25.7425 13.1218 23.8205 11.2993L20.4207 8.07584L20.4103 8.08564L14.5192 2.49975C11.3157 -0.537676 6.12179 -0.537676 2.91827 2.49975C-0.285256 5.53717 -0.285256 10.4618 2.91827 13.4991C6.12179 16.5367 11.3157 16.5367 14.5192 13.4991L15.6894 12.3896L13.3693 10.1897L12.199 11.2993C10.2769 13.1218 7.16056 13.1218 5.23846 11.2993C3.31635 9.47677 3.31635 6.52215 5.23846 4.69963C7.16056 2.87719 10.2769 2.87719 12.199 4.69963Z" fill="url(#paint0_linear_1_311)"/>
+                    <path d="M12.199 4.69963L15.6166 7.93989L15.6268 7.93024L18.0098 10.1897L18.0199 10.1993L21.5004 13.4991C24.7038 16.5367 29.8977 16.5367 33.1012 13.4991C36.3049 10.4618 36.3049 5.53717 33.1012 2.49975C29.8977 -0.537676 24.7038 -0.537676 21.5004 2.49975L20.3299 3.60947L22.6501 5.8094L23.8205 4.69963C25.7425 2.87719 28.8589 2.87719 30.7811 4.69963C32.7032 6.52215 32.7032 9.47677 30.7811 11.2993C28.8589 13.1218 25.7425 13.1218 23.8205 11.2993L20.4207 8.07584L20.4103 8.08564L14.5192 2.49975C11.3157 -0.537676 6.12179 -0.537676 2.91827 2.49975C-0.285256 5.53717 -0.285256 10.4618 2.91827 13.4991C6.12179 16.5367 11.3157 16.5367 14.5192 13.4991L15.6894 12.3896L13.3693 10.1897L12.199 11.2993C10.2769 13.1218 7.16056 13.1218 5.23846 11.2993C3.31635 9.47677 3.31635 6.52215 5.23846 4.69963C7.16056 2.87719 10.2769 2.87719 12.199 4.69963Z" fill="url(#paint1_radial_1_311)" fill-opacity="0.5"/>
+                    <path d="M12.199 4.69963L15.6166 7.93989L15.6268 7.93024L18.0098 10.1897L18.0199 10.1993L21.5004 13.4991C24.7038 16.5367 29.8977 16.5367 33.1012 13.4991C36.3049 10.4618 36.3049 5.53717 33.1012 2.49975C29.8977 -0.537676 24.7038 -0.537676 21.5004 2.49975L20.3299 3.60947L22.6501 5.8094L23.8205 4.69963C25.7425 2.87719 28.8589 2.87719 30.7811 4.69963C32.7032 6.52215 32.7032 9.47677 30.7811 11.2993C28.8589 13.1218 25.7425 13.1218 23.8205 11.2993L20.4207 8.07584L20.4103 8.08564L14.5192 2.49975C11.3157 -0.537676 6.12179 -0.537676 2.91827 2.49975C-0.285256 5.53717 -0.285256 10.4618 2.91827 13.4991C6.12179 16.5367 11.3157 16.5367 14.5192 13.4991L15.6894 12.3896L13.3693 10.1897L12.199 11.2993C10.2769 13.1218 7.16056 13.1218 5.23846 11.2993C3.31635 9.47677 3.31635 6.52215 5.23846 4.69963C7.16056 2.87719 10.2769 2.87719 12.199 4.69963Z" fill="url(#paint2_radial_1_311)" fill-opacity="0.9"/>
+                    </g>
+                    <defs>
+                    <linearGradient id="paint0_linear_1_311" x1="18.0098" y1="0.22168" x2="18.0098" y2="15.7773" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="white" stop-opacity="0.9"/>
+                    <stop offset="1" stop-color="white" stop-opacity="0"/>
+                    </linearGradient>
+                    <radialGradient id="paint1_radial_1_311" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(34.3439 -1.57847) rotate(133.263) scale(23.8333 50.6206)">
+                    <stop stop-color="#55C3E6"/>
+                    <stop offset="0.0001" stop-color="#2B92DC"/>
+                    <stop offset="1" stop-color="white" stop-opacity="0"/>
+                    </radialGradient>
+                    <radialGradient id="paint2_radial_1_311" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(2.36537 1.11197) rotate(26.0214) scale(34.6832 50.1772)">
+                    <stop stop-color="#66C195"/>
+                    <stop offset="1" stop-color="white" stop-opacity="0"/>
+                    </radialGradient>
+                    <clipPath id="clip0_1_311">
+                    <rect width="36" height="16" fill="white" transform="translate(0 -0.000976562)"/>
+                    </clipPath>
+                    </defs>
+                  </svg> 
+                </div>
+              </li>
+              <li class="auto-slider__item swiper-slide">
+                <div class="auto-slider__country-icon img-wrp">
+                  <img src="img/country-icon/france.svg" alt="country">
+                </div>
+                <h3 class="auto-slider__title def-text">Франция</h3>
+                <ul class="auto-slider__list-inside">
+                  <li class="auto-slider__list-item-inside small-text">Скорость до 60 мб/сек</li>
+                  <li class="auto-slider__list-item-inside small-text">Неограниченное время</li>
+                  <li class="auto-slider__list-item-inside small-text">Полная конфиденциальность</li>
+                </ul>
+                
+                <div class="auto-slider__deocr-icon img-wrp">
+                  <svg width="36" height="16" viewBox="0 0 36 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1_311)">
+                    <path d="M12.199 4.69963L15.6166 7.93989L15.6268 7.93024L18.0098 10.1897L18.0199 10.1993L21.5004 13.4991C24.7038 16.5367 29.8977 16.5367 33.1012 13.4991C36.3049 10.4618 36.3049 5.53717 33.1012 2.49975C29.8977 -0.537676 24.7038 -0.537676 21.5004 2.49975L20.3299 3.60947L22.6501 5.8094L23.8205 4.69963C25.7425 2.87719 28.8589 2.87719 30.7811 4.69963C32.7032 6.52215 32.7032 9.47677 30.7811 11.2993C28.8589 13.1218 25.7425 13.1218 23.8205 11.2993L20.4207 8.07584L20.4103 8.08564L14.5192 2.49975C11.3157 -0.537676 6.12179 -0.537676 2.91827 2.49975C-0.285256 5.53717 -0.285256 10.4618 2.91827 13.4991C6.12179 16.5367 11.3157 16.5367 14.5192 13.4991L15.6894 12.3896L13.3693 10.1897L12.199 11.2993C10.2769 13.1218 7.16056 13.1218 5.23846 11.2993C3.31635 9.47677 3.31635 6.52215 5.23846 4.69963C7.16056 2.87719 10.2769 2.87719 12.199 4.69963Z" fill="url(#paint0_linear_1_311)"/>
+                    <path d="M12.199 4.69963L15.6166 7.93989L15.6268 7.93024L18.0098 10.1897L18.0199 10.1993L21.5004 13.4991C24.7038 16.5367 29.8977 16.5367 33.1012 13.4991C36.3049 10.4618 36.3049 5.53717 33.1012 2.49975C29.8977 -0.537676 24.7038 -0.537676 21.5004 2.49975L20.3299 3.60947L22.6501 5.8094L23.8205 4.69963C25.7425 2.87719 28.8589 2.87719 30.7811 4.69963C32.7032 6.52215 32.7032 9.47677 30.7811 11.2993C28.8589 13.1218 25.7425 13.1218 23.8205 11.2993L20.4207 8.07584L20.4103 8.08564L14.5192 2.49975C11.3157 -0.537676 6.12179 -0.537676 2.91827 2.49975C-0.285256 5.53717 -0.285256 10.4618 2.91827 13.4991C6.12179 16.5367 11.3157 16.5367 14.5192 13.4991L15.6894 12.3896L13.3693 10.1897L12.199 11.2993C10.2769 13.1218 7.16056 13.1218 5.23846 11.2993C3.31635 9.47677 3.31635 6.52215 5.23846 4.69963C7.16056 2.87719 10.2769 2.87719 12.199 4.69963Z" fill="url(#paint1_radial_1_311)" fill-opacity="0.5"/>
+                    <path d="M12.199 4.69963L15.6166 7.93989L15.6268 7.93024L18.0098 10.1897L18.0199 10.1993L21.5004 13.4991C24.7038 16.5367 29.8977 16.5367 33.1012 13.4991C36.3049 10.4618 36.3049 5.53717 33.1012 2.49975C29.8977 -0.537676 24.7038 -0.537676 21.5004 2.49975L20.3299 3.60947L22.6501 5.8094L23.8205 4.69963C25.7425 2.87719 28.8589 2.87719 30.7811 4.69963C32.7032 6.52215 32.7032 9.47677 30.7811 11.2993C28.8589 13.1218 25.7425 13.1218 23.8205 11.2993L20.4207 8.07584L20.4103 8.08564L14.5192 2.49975C11.3157 -0.537676 6.12179 -0.537676 2.91827 2.49975C-0.285256 5.53717 -0.285256 10.4618 2.91827 13.4991C6.12179 16.5367 11.3157 16.5367 14.5192 13.4991L15.6894 12.3896L13.3693 10.1897L12.199 11.2993C10.2769 13.1218 7.16056 13.1218 5.23846 11.2993C3.31635 9.47677 3.31635 6.52215 5.23846 4.69963C7.16056 2.87719 10.2769 2.87719 12.199 4.69963Z" fill="url(#paint2_radial_1_311)" fill-opacity="0.9"/>
+                    </g>
+                    <defs>
+                    <linearGradient id="paint0_linear_1_311" x1="18.0098" y1="0.22168" x2="18.0098" y2="15.7773" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="white" stop-opacity="0.9"/>
+                    <stop offset="1" stop-color="white" stop-opacity="0"/>
+                    </linearGradient>
+                    <radialGradient id="paint1_radial_1_311" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(34.3439 -1.57847) rotate(133.263) scale(23.8333 50.6206)">
+                    <stop stop-color="#55C3E6"/>
+                    <stop offset="0.0001" stop-color="#2B92DC"/>
+                    <stop offset="1" stop-color="white" stop-opacity="0"/>
+                    </radialGradient>
+                    <radialGradient id="paint2_radial_1_311" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(2.36537 1.11197) rotate(26.0214) scale(34.6832 50.1772)">
+                    <stop stop-color="#66C195"/>
+                    <stop offset="1" stop-color="white" stop-opacity="0"/>
+                    </radialGradient>
+                    <clipPath id="clip0_1_311">
+                    <rect width="36" height="16" fill="white" transform="translate(0 -0.000976562)"/>
+                    </clipPath>
+                    </defs>
+                  </svg> 
+                </div>
+              </li>
+              <li class="auto-slider__item swiper-slide">
+                <div class="auto-slider__country-icon img-wrp">
+                  <img src="img/country-icon/rus.svg" alt="country">
+                </div>
+                <h3 class="auto-slider__title def-text">Россия</h3>
+                <ul class="auto-slider__list-inside">
+                  <li class="auto-slider__list-item-inside small-text">Скорость до 60 мб/сек</li>
+                  <li class="auto-slider__list-item-inside small-text">Неограниченное время</li>
+                  <li class="auto-slider__list-item-inside small-text">Полная конфиденциальность</li>
+                </ul>
+                
+                <div class="auto-slider__deocr-icon img-wrp">
+                  <svg width="36" height="16" viewBox="0 0 36 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1_311)">
+                    <path d="M12.199 4.69963L15.6166 7.93989L15.6268 7.93024L18.0098 10.1897L18.0199 10.1993L21.5004 13.4991C24.7038 16.5367 29.8977 16.5367 33.1012 13.4991C36.3049 10.4618 36.3049 5.53717 33.1012 2.49975C29.8977 -0.537676 24.7038 -0.537676 21.5004 2.49975L20.3299 3.60947L22.6501 5.8094L23.8205 4.69963C25.7425 2.87719 28.8589 2.87719 30.7811 4.69963C32.7032 6.52215 32.7032 9.47677 30.7811 11.2993C28.8589 13.1218 25.7425 13.1218 23.8205 11.2993L20.4207 8.07584L20.4103 8.08564L14.5192 2.49975C11.3157 -0.537676 6.12179 -0.537676 2.91827 2.49975C-0.285256 5.53717 -0.285256 10.4618 2.91827 13.4991C6.12179 16.5367 11.3157 16.5367 14.5192 13.4991L15.6894 12.3896L13.3693 10.1897L12.199 11.2993C10.2769 13.1218 7.16056 13.1218 5.23846 11.2993C3.31635 9.47677 3.31635 6.52215 5.23846 4.69963C7.16056 2.87719 10.2769 2.87719 12.199 4.69963Z" fill="url(#paint0_linear_1_311)"/>
+                    <path d="M12.199 4.69963L15.6166 7.93989L15.6268 7.93024L18.0098 10.1897L18.0199 10.1993L21.5004 13.4991C24.7038 16.5367 29.8977 16.5367 33.1012 13.4991C36.3049 10.4618 36.3049 5.53717 33.1012 2.49975C29.8977 -0.537676 24.7038 -0.537676 21.5004 2.49975L20.3299 3.60947L22.6501 5.8094L23.8205 4.69963C25.7425 2.87719 28.8589 2.87719 30.7811 4.69963C32.7032 6.52215 32.7032 9.47677 30.7811 11.2993C28.8589 13.1218 25.7425 13.1218 23.8205 11.2993L20.4207 8.07584L20.4103 8.08564L14.5192 2.49975C11.3157 -0.537676 6.12179 -0.537676 2.91827 2.49975C-0.285256 5.53717 -0.285256 10.4618 2.91827 13.4991C6.12179 16.5367 11.3157 16.5367 14.5192 13.4991L15.6894 12.3896L13.3693 10.1897L12.199 11.2993C10.2769 13.1218 7.16056 13.1218 5.23846 11.2993C3.31635 9.47677 3.31635 6.52215 5.23846 4.69963C7.16056 2.87719 10.2769 2.87719 12.199 4.69963Z" fill="url(#paint1_radial_1_311)" fill-opacity="0.5"/>
+                    <path d="M12.199 4.69963L15.6166 7.93989L15.6268 7.93024L18.0098 10.1897L18.0199 10.1993L21.5004 13.4991C24.7038 16.5367 29.8977 16.5367 33.1012 13.4991C36.3049 10.4618 36.3049 5.53717 33.1012 2.49975C29.8977 -0.537676 24.7038 -0.537676 21.5004 2.49975L20.3299 3.60947L22.6501 5.8094L23.8205 4.69963C25.7425 2.87719 28.8589 2.87719 30.7811 4.69963C32.7032 6.52215 32.7032 9.47677 30.7811 11.2993C28.8589 13.1218 25.7425 13.1218 23.8205 11.2993L20.4207 8.07584L20.4103 8.08564L14.5192 2.49975C11.3157 -0.537676 6.12179 -0.537676 2.91827 2.49975C-0.285256 5.53717 -0.285256 10.4618 2.91827 13.4991C6.12179 16.5367 11.3157 16.5367 14.5192 13.4991L15.6894 12.3896L13.3693 10.1897L12.199 11.2993C10.2769 13.1218 7.16056 13.1218 5.23846 11.2993C3.31635 9.47677 3.31635 6.52215 5.23846 4.69963C7.16056 2.87719 10.2769 2.87719 12.199 4.69963Z" fill="url(#paint2_radial_1_311)" fill-opacity="0.9"/>
+                    </g>
+                    <defs>
+                    <linearGradient id="paint0_linear_1_311" x1="18.0098" y1="0.22168" x2="18.0098" y2="15.7773" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="white" stop-opacity="0.9"/>
+                    <stop offset="1" stop-color="white" stop-opacity="0"/>
+                    </linearGradient>
+                    <radialGradient id="paint1_radial_1_311" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(34.3439 -1.57847) rotate(133.263) scale(23.8333 50.6206)">
+                    <stop stop-color="#55C3E6"/>
+                    <stop offset="0.0001" stop-color="#2B92DC"/>
+                    <stop offset="1" stop-color="white" stop-opacity="0"/>
+                    </radialGradient>
+                    <radialGradient id="paint2_radial_1_311" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(2.36537 1.11197) rotate(26.0214) scale(34.6832 50.1772)">
+                    <stop stop-color="#66C195"/>
+                    <stop offset="1" stop-color="white" stop-opacity="0"/>
+                    </radialGradient>
+                    <clipPath id="clip0_1_311">
+                    <rect width="36" height="16" fill="white" transform="translate(0 -0.000976562)"/>
+                    </clipPath>
+                    </defs>
+                  </svg> 
+                </div>
+              </li>
+              <li class="auto-slider__item swiper-slide">
+                <div class="auto-slider__country-icon img-wrp">
+                  <img src="img/country-icon/liber.svg" alt="country">
+                </div>
+                <h3 class="auto-slider__title def-text">США</h3>
+                <ul class="auto-slider__list-inside">
+                  <li class="auto-slider__list-item-inside small-text">Скорость до 60 мб/сек</li>
+                  <li class="auto-slider__list-item-inside small-text">Неограниченное время</li>
+                  <li class="auto-slider__list-item-inside small-text">Полная конфиденциальность</li>
+                </ul>
+                
+                <div class="auto-slider__deocr-icon img-wrp">
+                  <svg width="36" height="16" viewBox="0 0 36 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1_311)">
+                    <path d="M12.199 4.69963L15.6166 7.93989L15.6268 7.93024L18.0098 10.1897L18.0199 10.1993L21.5004 13.4991C24.7038 16.5367 29.8977 16.5367 33.1012 13.4991C36.3049 10.4618 36.3049 5.53717 33.1012 2.49975C29.8977 -0.537676 24.7038 -0.537676 21.5004 2.49975L20.3299 3.60947L22.6501 5.8094L23.8205 4.69963C25.7425 2.87719 28.8589 2.87719 30.7811 4.69963C32.7032 6.52215 32.7032 9.47677 30.7811 11.2993C28.8589 13.1218 25.7425 13.1218 23.8205 11.2993L20.4207 8.07584L20.4103 8.08564L14.5192 2.49975C11.3157 -0.537676 6.12179 -0.537676 2.91827 2.49975C-0.285256 5.53717 -0.285256 10.4618 2.91827 13.4991C6.12179 16.5367 11.3157 16.5367 14.5192 13.4991L15.6894 12.3896L13.3693 10.1897L12.199 11.2993C10.2769 13.1218 7.16056 13.1218 5.23846 11.2993C3.31635 9.47677 3.31635 6.52215 5.23846 4.69963C7.16056 2.87719 10.2769 2.87719 12.199 4.69963Z" fill="url(#paint0_linear_1_311)"/>
+                    <path d="M12.199 4.69963L15.6166 7.93989L15.6268 7.93024L18.0098 10.1897L18.0199 10.1993L21.5004 13.4991C24.7038 16.5367 29.8977 16.5367 33.1012 13.4991C36.3049 10.4618 36.3049 5.53717 33.1012 2.49975C29.8977 -0.537676 24.7038 -0.537676 21.5004 2.49975L20.3299 3.60947L22.6501 5.8094L23.8205 4.69963C25.7425 2.87719 28.8589 2.87719 30.7811 4.69963C32.7032 6.52215 32.7032 9.47677 30.7811 11.2993C28.8589 13.1218 25.7425 13.1218 23.8205 11.2993L20.4207 8.07584L20.4103 8.08564L14.5192 2.49975C11.3157 -0.537676 6.12179 -0.537676 2.91827 2.49975C-0.285256 5.53717 -0.285256 10.4618 2.91827 13.4991C6.12179 16.5367 11.3157 16.5367 14.5192 13.4991L15.6894 12.3896L13.3693 10.1897L12.199 11.2993C10.2769 13.1218 7.16056 13.1218 5.23846 11.2993C3.31635 9.47677 3.31635 6.52215 5.23846 4.69963C7.16056 2.87719 10.2769 2.87719 12.199 4.69963Z" fill="url(#paint1_radial_1_311)" fill-opacity="0.5"/>
+                    <path d="M12.199 4.69963L15.6166 7.93989L15.6268 7.93024L18.0098 10.1897L18.0199 10.1993L21.5004 13.4991C24.7038 16.5367 29.8977 16.5367 33.1012 13.4991C36.3049 10.4618 36.3049 5.53717 33.1012 2.49975C29.8977 -0.537676 24.7038 -0.537676 21.5004 2.49975L20.3299 3.60947L22.6501 5.8094L23.8205 4.69963C25.7425 2.87719 28.8589 2.87719 30.7811 4.69963C32.7032 6.52215 32.7032 9.47677 30.7811 11.2993C28.8589 13.1218 25.7425 13.1218 23.8205 11.2993L20.4207 8.07584L20.4103 8.08564L14.5192 2.49975C11.3157 -0.537676 6.12179 -0.537676 2.91827 2.49975C-0.285256 5.53717 -0.285256 10.4618 2.91827 13.4991C6.12179 16.5367 11.3157 16.5367 14.5192 13.4991L15.6894 12.3896L13.3693 10.1897L12.199 11.2993C10.2769 13.1218 7.16056 13.1218 5.23846 11.2993C3.31635 9.47677 3.31635 6.52215 5.23846 4.69963C7.16056 2.87719 10.2769 2.87719 12.199 4.69963Z" fill="url(#paint2_radial_1_311)" fill-opacity="0.9"/>
+                    </g>
+                    <defs>
+                    <linearGradient id="paint0_linear_1_311" x1="18.0098" y1="0.22168" x2="18.0098" y2="15.7773" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="white" stop-opacity="0.9"/>
+                    <stop offset="1" stop-color="white" stop-opacity="0"/>
+                    </linearGradient>
+                    <radialGradient id="paint1_radial_1_311" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(34.3439 -1.57847) rotate(133.263) scale(23.8333 50.6206)">
+                    <stop stop-color="#55C3E6"/>
+                    <stop offset="0.0001" stop-color="#2B92DC"/>
+                    <stop offset="1" stop-color="white" stop-opacity="0"/>
+                    </radialGradient>
+                    <radialGradient id="paint2_radial_1_311" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(2.36537 1.11197) rotate(26.0214) scale(34.6832 50.1772)">
+                    <stop stop-color="#66C195"/>
+                    <stop offset="1" stop-color="white" stop-opacity="0"/>
+                    </radialGradient>
+                    <clipPath id="clip0_1_311">
+                    <rect width="36" height="16" fill="white" transform="translate(0 -0.000976562)"/>
+                    </clipPath>
+                    </defs>
+                  </svg> 
+                </div>
+              </li>
+              <li class="auto-slider__item swiper-slide">
+                <div class="auto-slider__country-icon img-wrp">
+                  <img src="img/country-icon/canada.svg" alt="country">
+                </div>
+                <h3 class="auto-slider__title def-text">Канада</h3>
+                <ul class="auto-slider__list-inside">
+                  <li class="auto-slider__list-item-inside small-text">Скорость до 60 мб/сек</li>
+                  <li class="auto-slider__list-item-inside small-text">Неограниченное время</li>
+                  <li class="auto-slider__list-item-inside small-text">Полная конфиденциальность</li>
+                </ul>
+                
+                <div class="auto-slider__deocr-icon img-wrp">
+                  <svg width="36" height="16" viewBox="0 0 36 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1_311)">
+                    <path d="M12.199 4.69963L15.6166 7.93989L15.6268 7.93024L18.0098 10.1897L18.0199 10.1993L21.5004 13.4991C24.7038 16.5367 29.8977 16.5367 33.1012 13.4991C36.3049 10.4618 36.3049 5.53717 33.1012 2.49975C29.8977 -0.537676 24.7038 -0.537676 21.5004 2.49975L20.3299 3.60947L22.6501 5.8094L23.8205 4.69963C25.7425 2.87719 28.8589 2.87719 30.7811 4.69963C32.7032 6.52215 32.7032 9.47677 30.7811 11.2993C28.8589 13.1218 25.7425 13.1218 23.8205 11.2993L20.4207 8.07584L20.4103 8.08564L14.5192 2.49975C11.3157 -0.537676 6.12179 -0.537676 2.91827 2.49975C-0.285256 5.53717 -0.285256 10.4618 2.91827 13.4991C6.12179 16.5367 11.3157 16.5367 14.5192 13.4991L15.6894 12.3896L13.3693 10.1897L12.199 11.2993C10.2769 13.1218 7.16056 13.1218 5.23846 11.2993C3.31635 9.47677 3.31635 6.52215 5.23846 4.69963C7.16056 2.87719 10.2769 2.87719 12.199 4.69963Z" fill="url(#paint0_linear_1_311)"/>
+                    <path d="M12.199 4.69963L15.6166 7.93989L15.6268 7.93024L18.0098 10.1897L18.0199 10.1993L21.5004 13.4991C24.7038 16.5367 29.8977 16.5367 33.1012 13.4991C36.3049 10.4618 36.3049 5.53717 33.1012 2.49975C29.8977 -0.537676 24.7038 -0.537676 21.5004 2.49975L20.3299 3.60947L22.6501 5.8094L23.8205 4.69963C25.7425 2.87719 28.8589 2.87719 30.7811 4.69963C32.7032 6.52215 32.7032 9.47677 30.7811 11.2993C28.8589 13.1218 25.7425 13.1218 23.8205 11.2993L20.4207 8.07584L20.4103 8.08564L14.5192 2.49975C11.3157 -0.537676 6.12179 -0.537676 2.91827 2.49975C-0.285256 5.53717 -0.285256 10.4618 2.91827 13.4991C6.12179 16.5367 11.3157 16.5367 14.5192 13.4991L15.6894 12.3896L13.3693 10.1897L12.199 11.2993C10.2769 13.1218 7.16056 13.1218 5.23846 11.2993C3.31635 9.47677 3.31635 6.52215 5.23846 4.69963C7.16056 2.87719 10.2769 2.87719 12.199 4.69963Z" fill="url(#paint1_radial_1_311)" fill-opacity="0.5"/>
+                    <path d="M12.199 4.69963L15.6166 7.93989L15.6268 7.93024L18.0098 10.1897L18.0199 10.1993L21.5004 13.4991C24.7038 16.5367 29.8977 16.5367 33.1012 13.4991C36.3049 10.4618 36.3049 5.53717 33.1012 2.49975C29.8977 -0.537676 24.7038 -0.537676 21.5004 2.49975L20.3299 3.60947L22.6501 5.8094L23.8205 4.69963C25.7425 2.87719 28.8589 2.87719 30.7811 4.69963C32.7032 6.52215 32.7032 9.47677 30.7811 11.2993C28.8589 13.1218 25.7425 13.1218 23.8205 11.2993L20.4207 8.07584L20.4103 8.08564L14.5192 2.49975C11.3157 -0.537676 6.12179 -0.537676 2.91827 2.49975C-0.285256 5.53717 -0.285256 10.4618 2.91827 13.4991C6.12179 16.5367 11.3157 16.5367 14.5192 13.4991L15.6894 12.3896L13.3693 10.1897L12.199 11.2993C10.2769 13.1218 7.16056 13.1218 5.23846 11.2993C3.31635 9.47677 3.31635 6.52215 5.23846 4.69963C7.16056 2.87719 10.2769 2.87719 12.199 4.69963Z" fill="url(#paint2_radial_1_311)" fill-opacity="0.9"/>
+                    </g>
+                    <defs>
+                    <linearGradient id="paint0_linear_1_311" x1="18.0098" y1="0.22168" x2="18.0098" y2="15.7773" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="white" stop-opacity="0.9"/>
+                    <stop offset="1" stop-color="white" stop-opacity="0"/>
+                    </linearGradient>
+                    <radialGradient id="paint1_radial_1_311" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(34.3439 -1.57847) rotate(133.263) scale(23.8333 50.6206)">
+                    <stop stop-color="#55C3E6"/>
+                    <stop offset="0.0001" stop-color="#2B92DC"/>
+                    <stop offset="1" stop-color="white" stop-opacity="0"/>
+                    </radialGradient>
+                    <radialGradient id="paint2_radial_1_311" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(2.36537 1.11197) rotate(26.0214) scale(34.6832 50.1772)">
+                    <stop stop-color="#66C195"/>
+                    <stop offset="1" stop-color="white" stop-opacity="0"/>
+                    </radialGradient>
+                    <clipPath id="clip0_1_311">
+                    <rect width="36" height="16" fill="white" transform="translate(0 -0.000976562)"/>
+                    </clipPath>
+                    </defs>
+                  </svg> 
+                </div>
+              </li>
+              <li class="auto-slider__item swiper-slide">
+                <div class="auto-slider__country-icon img-wrp">
+                  <img src="img/country-icon/finland.svg" alt="country">
+                </div>
+                <h3 class="auto-slider__title def-text">Финляндия</h3>
+                <ul class="auto-slider__list-inside">
+                  <li class="auto-slider__list-item-inside small-text">Скорость до 60 мб/сек</li>
+                  <li class="auto-slider__list-item-inside small-text">Неограниченное время</li>
+                  <li class="auto-slider__list-item-inside small-text">Полная конфиденциальность</li>
+                </ul>
+                
+                <div class="auto-slider__deocr-icon img-wrp">
+                  <svg width="36" height="16" viewBox="0 0 36 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1_311)">
+                    <path d="M12.199 4.69963L15.6166 7.93989L15.6268 7.93024L18.0098 10.1897L18.0199 10.1993L21.5004 13.4991C24.7038 16.5367 29.8977 16.5367 33.1012 13.4991C36.3049 10.4618 36.3049 5.53717 33.1012 2.49975C29.8977 -0.537676 24.7038 -0.537676 21.5004 2.49975L20.3299 3.60947L22.6501 5.8094L23.8205 4.69963C25.7425 2.87719 28.8589 2.87719 30.7811 4.69963C32.7032 6.52215 32.7032 9.47677 30.7811 11.2993C28.8589 13.1218 25.7425 13.1218 23.8205 11.2993L20.4207 8.07584L20.4103 8.08564L14.5192 2.49975C11.3157 -0.537676 6.12179 -0.537676 2.91827 2.49975C-0.285256 5.53717 -0.285256 10.4618 2.91827 13.4991C6.12179 16.5367 11.3157 16.5367 14.5192 13.4991L15.6894 12.3896L13.3693 10.1897L12.199 11.2993C10.2769 13.1218 7.16056 13.1218 5.23846 11.2993C3.31635 9.47677 3.31635 6.52215 5.23846 4.69963C7.16056 2.87719 10.2769 2.87719 12.199 4.69963Z" fill="url(#paint0_linear_1_311)"/>
+                    <path d="M12.199 4.69963L15.6166 7.93989L15.6268 7.93024L18.0098 10.1897L18.0199 10.1993L21.5004 13.4991C24.7038 16.5367 29.8977 16.5367 33.1012 13.4991C36.3049 10.4618 36.3049 5.53717 33.1012 2.49975C29.8977 -0.537676 24.7038 -0.537676 21.5004 2.49975L20.3299 3.60947L22.6501 5.8094L23.8205 4.69963C25.7425 2.87719 28.8589 2.87719 30.7811 4.69963C32.7032 6.52215 32.7032 9.47677 30.7811 11.2993C28.8589 13.1218 25.7425 13.1218 23.8205 11.2993L20.4207 8.07584L20.4103 8.08564L14.5192 2.49975C11.3157 -0.537676 6.12179 -0.537676 2.91827 2.49975C-0.285256 5.53717 -0.285256 10.4618 2.91827 13.4991C6.12179 16.5367 11.3157 16.5367 14.5192 13.4991L15.6894 12.3896L13.3693 10.1897L12.199 11.2993C10.2769 13.1218 7.16056 13.1218 5.23846 11.2993C3.31635 9.47677 3.31635 6.52215 5.23846 4.69963C7.16056 2.87719 10.2769 2.87719 12.199 4.69963Z" fill="url(#paint1_radial_1_311)" fill-opacity="0.5"/>
+                    <path d="M12.199 4.69963L15.6166 7.93989L15.6268 7.93024L18.0098 10.1897L18.0199 10.1993L21.5004 13.4991C24.7038 16.5367 29.8977 16.5367 33.1012 13.4991C36.3049 10.4618 36.3049 5.53717 33.1012 2.49975C29.8977 -0.537676 24.7038 -0.537676 21.5004 2.49975L20.3299 3.60947L22.6501 5.8094L23.8205 4.69963C25.7425 2.87719 28.8589 2.87719 30.7811 4.69963C32.7032 6.52215 32.7032 9.47677 30.7811 11.2993C28.8589 13.1218 25.7425 13.1218 23.8205 11.2993L20.4207 8.07584L20.4103 8.08564L14.5192 2.49975C11.3157 -0.537676 6.12179 -0.537676 2.91827 2.49975C-0.285256 5.53717 -0.285256 10.4618 2.91827 13.4991C6.12179 16.5367 11.3157 16.5367 14.5192 13.4991L15.6894 12.3896L13.3693 10.1897L12.199 11.2993C10.2769 13.1218 7.16056 13.1218 5.23846 11.2993C3.31635 9.47677 3.31635 6.52215 5.23846 4.69963C7.16056 2.87719 10.2769 2.87719 12.199 4.69963Z" fill="url(#paint2_radial_1_311)" fill-opacity="0.9"/>
+                    </g>
+                    <defs>
+                    <linearGradient id="paint0_linear_1_311" x1="18.0098" y1="0.22168" x2="18.0098" y2="15.7773" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="white" stop-opacity="0.9"/>
+                    <stop offset="1" stop-color="white" stop-opacity="0"/>
+                    </linearGradient>
+                    <radialGradient id="paint1_radial_1_311" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(34.3439 -1.57847) rotate(133.263) scale(23.8333 50.6206)">
+                    <stop stop-color="#55C3E6"/>
+                    <stop offset="0.0001" stop-color="#2B92DC"/>
+                    <stop offset="1" stop-color="white" stop-opacity="0"/>
+                    </radialGradient>
+                    <radialGradient id="paint2_radial_1_311" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(2.36537 1.11197) rotate(26.0214) scale(34.6832 50.1772)">
+                    <stop stop-color="#66C195"/>
+                    <stop offset="1" stop-color="white" stop-opacity="0"/>
+                    </radialGradient>
+                    <clipPath id="clip0_1_311">
+                    <rect width="36" height="16" fill="white" transform="translate(0 -0.000976562)"/>
+                    </clipPath>
+                    </defs>
+                  </svg> 
+                </div>
+              </li>
 
-				<div class="header__basket basket">
-	<!-- style -->
-					<a href="basket-delivery.html" class="header__basket basket__link">
-						<i class="basket__icon icon icon-buy"></i>
-						<span>Корзина</span>
-						<div class="basket__number number">
-							<span>4</span>
-						</div>
-					</a>
-				</div>
+            </ul>
+          </div>
+          
+          <div class="block-2__title-div to-body1">
+            <h2 class="block-2__title title-text">
+              <div class="img-wrp block-2__decor block-2__decor-1"></div>
+              узнай свое предназначения
+            </h2>
+            <div class="wrp">
+              <p class="def-text">
+                Ты можешь выбрать разные уровни маскировки
+                Выбери нужный пакет, который тебе подходит
+              </p>
+              <div class="block-2__title-div-decor"></div>
+            </div>
+          </div>
 
-			</div>
-		</header>
+          <div class="block-2__list-wrp block-2__list-swiper">
+            <ul class="block-2__list swiper-wrapper">
+              <li class="block-2__item swiper-slide">
+                <div class="block-2__icon img-wrp">
+                  <img src="img/block-2-list-icons/icon-1.svg" alt="icon">
+                  <div class="glitch glitch-block-2__list glitch-block-2__list--1"></div>
+                </div>
+                <h3 class="block-2__title-text title-text">triniti</h3>
+                <p class="block-2__def-text def-text">$180 / месяц</p>
+                <ul class="block-2__list-inside">
+                  <li class="block-2__item-inside small-text">5 девайсов </li>
+                  <li class="block-2__item-inside small-text">безлимитный трафик</li>
+                  <li class="block-2__item-inside small-text">скорость 100-150 mb/s</li>
+                  <li class="block-2__item-inside small-text">15 локаций</li>
+                </ul>
+                <a class="btn block-2__btn" href="#"><span class="u-small-text">подключить</span></a>
+                <div class="block-2__list-decor-foot img-wrp">
+                  <svg width="161" height="20" viewBox="0 0 161 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.4" d="M161 19.9995L0.5 19.9995C1.50409 19.999 2.47649 19.648 3.24939 19.007L14.1071 10.0029C21.9031 3.53784 31.7128 -0.000482418 41.8407 -0.000481532L120.116 -0.000474689C130.245 -0.000473804 140.056 3.53842 147.854 10.0045L159.062 19.2999C159.607 19.7516 160.292 19.999 161 19.9995Z" fill="url(#paint0_linear_1_403)"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_1_403" x1="87.5126" y1="-62.0388" x2="87.5126" y2="64.4867" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="white" stop-opacity="0.9"/>
+                    <stop offset="1" stop-color="white" stop-opacity="0"/>
+                    </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+              </li>
+              <li class="block-2__item swiper-slide block-2__item--active">
+                <div class="block-2__icon img-wrp">
+                  <img src="img/block-2-list-icons/icon-2.svg" alt="icon">
+                  <div class="glitch glitch-block-2__list glitch-block-2__list--2"></div>
+                </div>
+                <h3 class="block-2__title-text title-text">neo</h3>
+                <p class="block-2__def-text def-text">$1.99 / месяц</p>
+                <ul class="block-2__list-inside">
+                  <li class="block-2__item-inside small-text">2 девайса</li>
+                  <li class="block-2__item-inside small-text">безлимитный трафик</li>
+                  <li class="block-2__item-inside small-text">скорость 50-100 mb/s</li>
+                  <li class="block-2__item-inside small-text">10 локаций</li>
+                </ul>
+                <a class="btn block-2__btn" href="#"><span class="u-small-text">подключить</span></a>
 
-		<section class="first-display">
-			<div class="first-display__container container">
-				<h1 class="first-display__title">
-					<img src="img/first-display/h1.svg" alt="title">
-					<span>Доставка вкуснейших блюд за 60 минут</span>
-				</h1>
-				<img src="img/first-display/first-display-text.svg" alt="text" class="first-display__text-image">
-				
-			</div>
-		</section>
+                <div class="block-2__top-icon">
+                  <span class="small-text">top</span>
+                </div>
+                <div class="block-2__list-decor-foot img-wrp">
+                  <svg width="161" height="20" viewBox="0 0 161 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.4" d="M161 19.9995L0.5 19.9995C1.50409 19.999 2.47649 19.648 3.24939 19.007L14.1071 10.0029C21.9031 3.53784 31.7128 -0.000482418 41.8407 -0.000481532L120.116 -0.000474689C130.245 -0.000473804 140.056 3.53842 147.854 10.0045L159.062 19.2999C159.607 19.7516 160.292 19.999 161 19.9995Z" fill="url(#paint0_linear_1_403)"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_1_403" x1="87.5126" y1="-62.0388" x2="87.5126" y2="64.4867" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="white" stop-opacity="0.9"/>
+                    <stop offset="1" stop-color="white" stop-opacity="0"/>
+                    </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+              </li>
+              <li class="block-2__item swiper-slide">
+                <div class="block-2__icon img-wrp">
+                  <img src="img/block-2-list-icons/icon-3.svg" alt="icon">
+                  <div class="glitch glitch-block-2__list glitch-block-2__list--3"></div>
+                </div>
+                <h3 class="block-2__title-text title-text">morfius</h3>
+                <p class="block-2__def-text def-text">$200 / месяц</p>
+                <ul class="block-2__list-inside">
+                  <li class="block-2__item-inside small-text">10 девайсов</li>
+                  <li class="block-2__item-inside small-text">безлимитный трафик</li>
+                  <li class="block-2__item-inside small-text">скорость 100-200 mb/s</li>
+                  <li class="block-2__item-inside small-text">20 локаций</li>
+                </ul>
+                <a class="btn block-2__btn" href="#"><span class="u-small-text">подключить</span></a>
+                <div class="block-2__list-decor-foot img-wrp">
+                  <svg width="161" height="20" viewBox="0 0 161 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.4" d="M161 19.9995L0.5 19.9995C1.50409 19.999 2.47649 19.648 3.24939 19.007L14.1071 10.0029C21.9031 3.53784 31.7128 -0.000482418 41.8407 -0.000481532L120.116 -0.000474689C130.245 -0.000473804 140.056 3.53842 147.854 10.0045L159.062 19.2999C159.607 19.7516 160.292 19.999 161 19.9995Z" fill="url(#paint0_linear_1_403)"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_1_403" x1="87.5126" y1="-62.0388" x2="87.5126" y2="64.4867" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="white" stop-opacity="0.9"/>
+                    <stop offset="1" stop-color="white" stop-opacity="0"/>
+                    </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+              </li>
+            </ul>
+            <div class="block-2__slide block-2__slide--left img-wrp">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 18L9 12L15 6" stroke="url(#paint0_linear_1_928)" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15 18L9 12L15 6" stroke="url(#paint1_linear_1_928)" stroke-opacity="0.2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15 18L9 12L15 6" stroke="url(#paint2_radial_1_928)" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <defs>
+                <linearGradient id="paint0_linear_1_928" x1="12" y1="6" x2="12" y2="18" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#018197"/>
+                <stop offset="1" stop-color="#22CF48"/>
+                </linearGradient>
+                <linearGradient id="paint1_linear_1_928" x1="11.7" y1="13.3699" x2="15.3955" y2="11.7412" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#0265A5"/>
+                <stop offset="1" stop-color="#00FF66"/>
+                </linearGradient>
+                <radialGradient id="paint2_radial_1_928" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(14.6313 17.6639) rotate(-81.4147) scale(5.28573 2.81904)">
+                <stop stop-color="#44D1F0"/>
+                <stop offset="1" stop-color="#4B84DA" stop-opacity="0.34"/>
+                </radialGradient>
+                </defs>
+              </svg>
+            </div>
+            <div class="block-2__slide block-2__slide--right img-wrp">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 6L15 12L9 18" stroke="url(#paint0_linear_1_932)" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9 6L15 12L9 18" stroke="url(#paint1_linear_1_932)" stroke-opacity="0.2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9 6L15 12L9 18" stroke="url(#paint2_radial_1_932)" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <defs>
+                <linearGradient id="paint0_linear_1_932" x1="12" y1="18" x2="12" y2="6" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#018197"/>
+                <stop offset="1" stop-color="#22CF48"/>
+                </linearGradient>
+                <linearGradient id="paint1_linear_1_932" x1="12.3" y1="10.6301" x2="8.60447" y2="12.2588" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#0265A5"/>
+                <stop offset="1" stop-color="#00FF66"/>
+                </linearGradient>
+                <radialGradient id="paint2_radial_1_932" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(9.36875 6.33614) rotate(98.5853) scale(5.28573 2.81904)">
+                <stop stop-color="#44D1F0"/>
+                <stop offset="1" stop-color="#4B84DA" stop-opacity="0.34"/>
+                </radialGradient>
+                </defs>
+              </svg>
+            </div>
 
-		<section class="navigation">
-			<div class="navigation__container container">
-				<div class="header__basket navigation__basket basket">
-	<!-- style -->
-					<a href="basket-delivery.html" class="header__basket basket__link">
-						<i class="basket__icon icon icon-buy d-none"></i>
-						<span>Корзина</span>
-						<div class="basket__number number">
-							<span>4</span>
-						</div>
-					</a>
-				</div>
-				<nav class="navigation__swiper swiper">
-					<ul class="navigation__swiper-wrapper swiper-wrapper">
-						<li class="navigation__swiper-slide navigation__swiper-slide--active swiper-slide"><span class="navigation__link navigation__link--1">Холодные закуски</span></li>
-						<li class="navigation__swiper-slide swiper-slide"><span class="navigation__link navigation__link--2">Горячие закуски</span></li>
-						<li class="navigation__swiper-slide swiper-slide"><span href="#" class="navigation__link navigation__link--3">Мясные блюда</span></li>
-						<li class="navigation__swiper-slide swiper-slide"><span href="#" class="navigation__link navigation__link--4">Супы</span></li>
-						<li class="navigation__swiper-slide swiper-slide"><span href="#" class="navigation__link navigation__link--5">Рыбные блюда</span></li>
-						<li class="navigation__swiper-slide swiper-slide"><span href="#" class="navigation__link navigation__link--6">Гриль меню</span></li>
-						<li class="navigation__swiper-slide swiper-slide"><span href="#" class="navigation__link navigation__link--7">Фирменные блюда</span></li>
-						<li class="navigation__swiper-slide swiper-slide"><span href="#" class="navigation__link navigation__link--8">Напитки</span></li>
-					</ul>
-				</nav>
-			</div>
-		</section>
+            <div class="img-wrp block-2__decor block-2__decor-2"></div>
+            <div class="img-wrp block-2__decor block-2__decor-3"></div>
+          </div>
+        </div>
+      </section>
 
-		<section class="product-list product-list--1">
-			<div class="product-list__container container">
-				<h2 class="h2-title product-list__title">ХОЛОДНЫЕ ЗАКУСКИ</h2>
+      <section class="block-3 to-body2">
+        <div class="block-3__container container">
+          <div class="top-wrp">
+            <div class="block-3__img-wrp img-wrp">
+              <img src="img/hands-img.png" alt="img">
+            </div>
+            
+            <div class="wrp">
+              <h2 class="block-3__title title-text">Я покажу тебе, глубока ли кроличья нора</h2>
+              
+              <div class="block-3__title-decor block-3__title-decor-left"></div>
+              <div class="block-3__title-decor block-3__title-decor-bottom"></div>
+            </div>
+          </div>
 
-				<div class="swiper product-list__swiper">
-				  <ul class="swiper-wrapper product-list__swiper-wrapper">
-				    <li class="product-list__swiper-slide swiper-slide">
-				    	<div class="card">
-				    		<div class="card__count">1</div>
-				    		<img src="img/card/card-1.png" class="card__img" alt="card-image">
-				    		<div class="card__center">
-					    		<h3 class="card__title">
-					    			<a href="#">Ягненок</a> <span>Вес: 225 г</span>
-					    		</h3>
-					    		<p class="card__text">
-					    			Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
-					    		</p>
-				    		</div>
-				    		<div class="card__end">
-				    			<button  class="card__btn card__btn--count card__btn--minus">
-				    				<i class="icon card__icon icon-minus"></i>
-				    			</button>
-				    			<p class="card__price"><span data-price="620" >620</span> ₽</p>
-				    			<button class="card__btn card__btn--basket">
-				    				<span>В корзину</span>
-				    				<i class="icon icon-buy"></i>
-				    			</button>
-				    			<button  class="card__btn card__btn--count card__btn--plus">
-				    				<i class="icon card__icon icon-plus"></i>
-				    			</button>
-				    		</div>
-				    	</div>
-				    </li>
-				    <li class="product-list__swiper-slide swiper-slide">
-				    	<div class="card">
-				    		<div class="card__count">1</div>
-				    		<img src="img/card/card-2.png" class="card__img" alt="card-image">
-				    		<div class="card__center">
-					    		<h3 class="card__title">
-					    			<a href="#">Индейка</a> <span>Вес: 225 г</span>
-					    		</h3>
-					    		<p class="card__text">
-					    			Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
-					    		</p>
-				    		</div>
-				    		<div class="card__end">
-				    			<button  class="card__btn card__btn--count card__btn--minus">
-				    				<i class="icon card__icon icon-minus"></i>
-				    			</button>
-				    			<p class="card__price"><span data-price="450">450</span> ₽</p>
-				    			<button class="card__btn card__btn--basket">
-				    				<span>В корзину</span>
-				    				<i class="icon icon-buy"></i>
-				    			</button>
-				    			<button  class="card__btn card__btn--count card__btn--plus">
-				    				<i class="icon card__icon icon-plus"></i>
-				    			</button>
-				    		</div>
-				    	</div>
-				    </li>
-				    <li class="product-list__swiper-slide swiper-slide">
-				    	<div class="card">
-				    		<div class="card__count">1</div>
-				    		<img src="img/card/card-3.png" class="card__img" alt="card-image">
-				    		<div class="card__center">
-					    		<h3 class="card__title">
-					    			<a href="#">Гусь</a> <span>Вес: 225 г</span>
-					    		</h3>
-					    		<p class="card__text">
-					    			Фаршированный яблоками
-					    		</p>
-				    		</div>
-				    		<div class="card__end">
-				    			<button  class="card__btn card__btn--count card__btn--minus">
-				    				<i class="icon card__icon icon-minus"></i>
-				    			</button>
-				    			<p class="card__price"><span data-price="7900">7900</span> ₽</p>
-				    			<button class="card__btn card__btn--basket">
-				    				<span>В корзину</span>
-				    				<i class="icon icon-buy"></i>
-				    			</button>
-				    			<button  class="card__btn card__btn--count card__btn--plus">
-				    				<i class="icon card__icon icon-plus"></i>
-				    			</button>
-				    		</div>
-				    	</div>
-				    </li>
-				    <li class="product-list__swiper-slide swiper-slide">
-				    	<div class="card">
-				    		<div class="card__count">1</div>
-				    		<img src="img/card/card-4.png" class="card__img" alt="card-image">
-				    		<div class="card__center">
-					    		<h3 class="card__title">
-					    			<a href="#">Утка</a> <span>Вес: 225 г</span>
-					    		</h3>
-					    		<p class="card__text">
-					    			Фаршированная рисом, курагой и айвой
-					    		</p>
-				    		</div>
-				    		<div class="card__end">
-				    			<button  class="card__btn card__btn--count card__btn--minus">
-				    				<i class="icon card__icon icon-minus"></i>
-				    			</button>
-				    			<p class="card__price"><span data-price="3230">3230</span> ₽</p>
-				    			<button class="card__btn card__btn--basket">
-				    				<span>В корзину</span>
-				    				<i class="icon icon-buy"></i>
-				    			</button>
-				    			<button  class="card__btn card__btn--count card__btn--plus">
-				    				<i class="icon card__icon icon-plus"></i>
-				    			</button>
-				    		</div>
-				    	</div>
-				    </li>
-				  </ul>
-				</div>
+          <div class="block-3__list-wrp">
+            <ul class="block-3__list">
+              <li class="block-3__item">
+                <div class="block-3__number-img-wrp img-wrp">
+                  <svg width="30" height="47" viewBox="0 0 30 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.22938 4.34C8.86938 3.74 9.58938 3.2 10.3894 2.72C12.3494 1.56 14.2894 0.879999 16.2094 0.679999C18.1694 0.439997 19.9894 0.619998 21.6694 1.22C23.3494 1.82 24.8294 2.8 26.1094 4.16C27.3894 5.52 28.3294 7.2 28.9294 9.2C29.1294 9.76 29.2494 10.32 29.2894 10.88C29.3694 11.4 29.4094 11.96 29.4094 12.56V47H17.4694V11.84L8.58938 20.72L0.249375 11.84L8.22938 4.34Z" fill="url(#paint0_linear_1_237)"/>
+                    <path d="M8.22938 4.34L7.54544 3.61046L7.54452 3.61132L8.22938 4.34ZM10.3894 2.72L9.88005 1.85941L9.87488 1.86251L10.3894 2.72ZM16.2094 0.679999L16.313 1.67462L16.322 1.67368L16.3309 1.67259L16.2094 0.679999ZM21.6694 1.22L21.333 2.16174L21.333 2.16174L21.6694 1.22ZM26.1094 4.16L25.3812 4.84536L26.1094 4.16ZM28.9294 9.2L27.9716 9.48735L27.979 9.51205L27.9876 9.53633L28.9294 9.2ZM29.2894 10.88L28.2919 10.9512L28.2948 10.9918L28.301 11.0321L29.2894 10.88ZM29.4094 47V48H30.4094V47H29.4094ZM17.4694 47H16.4694V48H17.4694V47ZM17.4694 11.84H18.4694V9.42579L16.7623 11.1329L17.4694 11.84ZM8.58938 20.72L7.86045 21.4046L8.56685 22.1567L9.29648 21.4271L8.58938 20.72ZM0.249375 11.84L-0.435476 11.1113L-1.1639 11.7959L-0.479548 12.5246L0.249375 11.84ZM8.91332 5.06954C9.49837 4.52105 10.1609 4.02327 10.9039 3.57749L9.87488 1.86251C9.01785 2.37672 8.24038 2.95895 7.54544 3.61046L8.91332 5.06954ZM10.8987 3.58057C12.7568 2.48091 14.5598 1.85724 16.313 1.67462L16.1058 -0.314619C14.019 -0.0972452 11.942 0.63909 9.88005 1.85942L10.8987 3.58057ZM16.3309 1.67259C18.1532 1.44945 19.8147 1.61949 21.333 2.16174L22.0057 0.278258C20.164 -0.379492 18.1856 -0.569457 16.0878 -0.312587L16.3309 1.67259ZM21.333 2.16174C22.8569 2.70598 24.2044 3.59506 25.3812 4.84536L26.8376 3.47463C25.4543 2.00494 23.8418 0.934013 22.0057 0.278257L21.333 2.16174ZM25.3812 4.84536C26.5428 6.07956 27.4108 7.6183 27.9716 9.48735L29.8872 8.91265C29.2479 6.78169 28.236 4.96044 26.8376 3.47463L25.3812 4.84536ZM27.9876 9.53633C28.1589 10.016 28.2588 10.4869 28.2919 10.9512L30.2868 10.8088C30.24 10.1531 30.0998 9.50404 29.8711 8.86366L27.9876 9.53633ZM28.301 11.0321C28.3723 11.4953 28.4094 12.004 28.4094 12.56H30.4094C30.4094 11.916 30.3665 11.3047 30.2777 10.7279L28.301 11.0321ZM28.4094 12.56V47H30.4094V12.56H28.4094ZM29.4094 46H17.4694V48H29.4094V46ZM18.4694 47V11.84H16.4694V47H18.4694ZM16.7623 11.1329L7.88227 20.0129L9.29648 21.4271L18.1765 12.5471L16.7623 11.1329ZM9.3183 20.0354L0.978298 11.1554L-0.479548 12.5246L7.86045 21.4046L9.3183 20.0354ZM0.934227 12.5687L8.91423 5.06868L7.54452 3.61132L-0.435476 11.1113L0.934227 12.5687Z" fill="url(#paint1_linear_1_237)"/>
+                    <path d="M8.22938 4.34L7.54544 3.61046L7.54452 3.61132L8.22938 4.34ZM10.3894 2.72L9.88005 1.85941L9.87488 1.86251L10.3894 2.72ZM16.2094 0.679999L16.313 1.67462L16.322 1.67368L16.3309 1.67259L16.2094 0.679999ZM21.6694 1.22L21.333 2.16174L21.333 2.16174L21.6694 1.22ZM26.1094 4.16L25.3812 4.84536L26.1094 4.16ZM28.9294 9.2L27.9716 9.48735L27.979 9.51205L27.9876 9.53633L28.9294 9.2ZM29.2894 10.88L28.2919 10.9512L28.2948 10.9918L28.301 11.0321L29.2894 10.88ZM29.4094 47V48H30.4094V47H29.4094ZM17.4694 47H16.4694V48H17.4694V47ZM17.4694 11.84H18.4694V9.42579L16.7623 11.1329L17.4694 11.84ZM8.58938 20.72L7.86045 21.4046L8.56685 22.1567L9.29648 21.4271L8.58938 20.72ZM0.249375 11.84L-0.435476 11.1113L-1.1639 11.7959L-0.479548 12.5246L0.249375 11.84ZM8.91332 5.06954C9.49837 4.52105 10.1609 4.02327 10.9039 3.57749L9.87488 1.86251C9.01785 2.37672 8.24038 2.95895 7.54544 3.61046L8.91332 5.06954ZM10.8987 3.58057C12.7568 2.48091 14.5598 1.85724 16.313 1.67462L16.1058 -0.314619C14.019 -0.0972452 11.942 0.63909 9.88005 1.85942L10.8987 3.58057ZM16.3309 1.67259C18.1532 1.44945 19.8147 1.61949 21.333 2.16174L22.0057 0.278258C20.164 -0.379492 18.1856 -0.569457 16.0878 -0.312587L16.3309 1.67259ZM21.333 2.16174C22.8569 2.70598 24.2044 3.59506 25.3812 4.84536L26.8376 3.47463C25.4543 2.00494 23.8418 0.934013 22.0057 0.278257L21.333 2.16174ZM25.3812 4.84536C26.5428 6.07956 27.4108 7.6183 27.9716 9.48735L29.8872 8.91265C29.2479 6.78169 28.236 4.96044 26.8376 3.47463L25.3812 4.84536ZM27.9876 9.53633C28.1589 10.016 28.2588 10.4869 28.2919 10.9512L30.2868 10.8088C30.24 10.1531 30.0998 9.50404 29.8711 8.86366L27.9876 9.53633ZM28.301 11.0321C28.3723 11.4953 28.4094 12.004 28.4094 12.56H30.4094C30.4094 11.916 30.3665 11.3047 30.2777 10.7279L28.301 11.0321ZM28.4094 12.56V47H30.4094V12.56H28.4094ZM29.4094 46H17.4694V48H29.4094V46ZM18.4694 47V11.84H16.4694V47H18.4694ZM16.7623 11.1329L7.88227 20.0129L9.29648 21.4271L18.1765 12.5471L16.7623 11.1329ZM9.3183 20.0354L0.978298 11.1554L-0.479548 12.5246L7.86045 21.4046L9.3183 20.0354ZM0.934227 12.5687L8.91423 5.06868L7.54452 3.61132L-0.435476 11.1113L0.934227 12.5687Z" fill="url(#paint2_radial_1_237)" fill-opacity="0.5"/>
+                    <path d="M8.22938 4.34L7.54544 3.61046L7.54452 3.61132L8.22938 4.34ZM10.3894 2.72L9.88005 1.85941L9.87488 1.86251L10.3894 2.72ZM16.2094 0.679999L16.313 1.67462L16.322 1.67368L16.3309 1.67259L16.2094 0.679999ZM21.6694 1.22L21.333 2.16174L21.333 2.16174L21.6694 1.22ZM26.1094 4.16L25.3812 4.84536L26.1094 4.16ZM28.9294 9.2L27.9716 9.48735L27.979 9.51205L27.9876 9.53633L28.9294 9.2ZM29.2894 10.88L28.2919 10.9512L28.2948 10.9918L28.301 11.0321L29.2894 10.88ZM29.4094 47V48H30.4094V47H29.4094ZM17.4694 47H16.4694V48H17.4694V47ZM17.4694 11.84H18.4694V9.42579L16.7623 11.1329L17.4694 11.84ZM8.58938 20.72L7.86045 21.4046L8.56685 22.1567L9.29648 21.4271L8.58938 20.72ZM0.249375 11.84L-0.435476 11.1113L-1.1639 11.7959L-0.479548 12.5246L0.249375 11.84ZM8.91332 5.06954C9.49837 4.52105 10.1609 4.02327 10.9039 3.57749L9.87488 1.86251C9.01785 2.37672 8.24038 2.95895 7.54544 3.61046L8.91332 5.06954ZM10.8987 3.58057C12.7568 2.48091 14.5598 1.85724 16.313 1.67462L16.1058 -0.314619C14.019 -0.0972452 11.942 0.63909 9.88005 1.85942L10.8987 3.58057ZM16.3309 1.67259C18.1532 1.44945 19.8147 1.61949 21.333 2.16174L22.0057 0.278258C20.164 -0.379492 18.1856 -0.569457 16.0878 -0.312587L16.3309 1.67259ZM21.333 2.16174C22.8569 2.70598 24.2044 3.59506 25.3812 4.84536L26.8376 3.47463C25.4543 2.00494 23.8418 0.934013 22.0057 0.278257L21.333 2.16174ZM25.3812 4.84536C26.5428 6.07956 27.4108 7.6183 27.9716 9.48735L29.8872 8.91265C29.2479 6.78169 28.236 4.96044 26.8376 3.47463L25.3812 4.84536ZM27.9876 9.53633C28.1589 10.016 28.2588 10.4869 28.2919 10.9512L30.2868 10.8088C30.24 10.1531 30.0998 9.50404 29.8711 8.86366L27.9876 9.53633ZM28.301 11.0321C28.3723 11.4953 28.4094 12.004 28.4094 12.56H30.4094C30.4094 11.916 30.3665 11.3047 30.2777 10.7279L28.301 11.0321ZM28.4094 12.56V47H30.4094V12.56H28.4094ZM29.4094 46H17.4694V48H29.4094V46ZM18.4694 47V11.84H16.4694V47H18.4694ZM16.7623 11.1329L7.88227 20.0129L9.29648 21.4271L18.1765 12.5471L16.7623 11.1329ZM9.3183 20.0354L0.978298 11.1554L-0.479548 12.5246L7.86045 21.4046L9.3183 20.0354ZM0.934227 12.5687L8.91423 5.06868L7.54452 3.61132L-0.435476 11.1113L0.934227 12.5687Z" fill="url(#paint3_radial_1_237)" fill-opacity="0.9"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_1_237" x1="24" y1="-5" x2="24" y2="55" gradientUnits="userSpaceOnUse">
+                    <stop stop-opacity="0.9"/>
+                    <stop offset="1" stop-opacity="0.1"/>
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_1_237" x1="24" y1="-5" x2="24" y2="55" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="white" stop-opacity="0.9"/>
+                    <stop offset="1" stop-color="white" stop-opacity="0"/>
+                    </linearGradient>
+                    <radialGradient id="paint2_radial_1_237" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(38.0054 -11.9434) rotate(101.817) scale(68.3928 58.3396)">
+                    <stop stop-color="#55C3E6"/>
+                    <stop offset="0.0001" stop-color="#2B92DC"/>
+                    <stop offset="1" stop-color="white" stop-opacity="0"/>
+                    </radialGradient>
+                    <radialGradient id="paint3_radial_1_237" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(10.586 -1.56604) rotate(65.5181) scale(64.4872 89.2515)">
+                    <stop stop-color="#66C195"/>
+                    <stop offset="1" stop-color="white" stop-opacity="0"/>
+                    </radialGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="wrp">
+                  <p class="block-3__def-text def-text">Подключись к Телеграм боту</p>
+                  <a class="block-3__btn btn" href="#"><span class="u-small-text">подключить</span></a>
+                </div>
+              </li>
+              <li class="block-3__item">
+                <div class="block-3__number-img-wrp img-wrp">
+                  <svg width="66" height="46" viewBox="0 0 66 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.989375 0.0399981H55.7694C56.8094 0.0399981 57.7494 0.219998 58.5894 0.579998C59.4694 0.899999 60.4294 1.5 61.4694 2.38L62.3694 3.28C63.4494 4.44 64.2894 5.64 64.8894 6.88C65.2894 7.72 65.5494 8.42 65.6694 8.98C65.7894 9.5 65.8494 9.9 65.8494 10.18V16.96C65.8494 18.24 65.5094 19.7 64.8294 21.34C64.3894 22.38 63.8694 23.28 63.2694 24.04C62.7094 24.76 61.9694 25.46 61.0494 26.14C60.8494 26.3 60.6294 26.46 60.3894 26.62C60.1894 26.78 59.9894 26.92 59.7894 27.04C58.9494 27.52 58.2294 27.86 57.6294 28.06C57.0294 28.26 56.4694 28.36 55.9494 28.36H13.2894V34.6L64.8294 34.72V46H1.28938V29.62C1.32938 27.02 1.94938 24.8 3.14938 22.96C4.54938 20.8 6.04938 19.26 7.64938 18.34C9.24938 17.42 11.0294 16.96 12.9894 16.96H53.9094V11.32H0.989375V0.0399981Z" fill="url(#paint0_linear_1_214)"/>
+                    <path d="M0.989375 0.0399981V-0.960002H-0.010625V0.0399981H0.989375ZM58.5894 0.579998L58.1955 1.49914L58.2213 1.5102L58.2476 1.51979L58.5894 0.579998ZM61.4694 2.38L62.1765 1.67289L62.1471 1.64348L62.1153 1.61661L61.4694 2.38ZM62.3694 3.28L63.1013 2.59858L63.0891 2.58552L63.0765 2.57289L62.3694 3.28ZM64.8894 6.88L65.7923 6.45006L65.7895 6.44444L64.8894 6.88ZM65.6694 8.98L64.6916 9.18953L64.6932 9.19721L64.695 9.20486L65.6694 8.98ZM64.8294 21.34L65.7504 21.7297L65.7531 21.723L64.8294 21.34ZM63.2694 24.04L62.4845 23.4203L62.48 23.4261L63.2694 24.04ZM61.0494 26.14L60.455 25.3358L60.4396 25.3472L60.4247 25.3591L61.0494 26.14ZM60.3894 26.62L59.8347 25.788L59.7986 25.812L59.7647 25.8391L60.3894 26.62ZM59.7894 27.04L60.2855 27.9082L60.2948 27.903L60.3039 27.8975L59.7894 27.04ZM57.6294 28.06L57.3132 27.1113H57.3131L57.6294 28.06ZM13.2894 28.36V27.36H12.2894V28.36H13.2894ZM13.2894 34.6H12.2894V35.5977L13.287 35.6L13.2894 34.6ZM64.8294 34.72H65.8294V33.7223L64.8317 33.72L64.8294 34.72ZM64.8294 46V47H65.8294V46H64.8294ZM1.28938 46H0.289375V47H1.28938V46ZM1.28938 29.62L0.289494 29.6046L0.289375 29.6123V29.62H1.28938ZM3.14938 22.96L3.98699 23.5063L3.98853 23.5039L3.14938 22.96ZM53.9094 16.96V17.96H54.9094V16.96H53.9094ZM53.9094 11.32H54.9094V10.32H53.9094V11.32ZM0.989375 11.32H-0.010625V12.32H0.989375V11.32ZM0.989375 1.04H55.7694V-0.960002H0.989375V1.04ZM55.7694 1.04C56.6926 1.04 57.496 1.19936 58.1955 1.49914L58.9833 -0.339147C58.0028 -0.759367 56.9262 -0.960002 55.7694 -0.960002V1.04ZM58.2476 1.51979C58.9784 1.78553 59.8363 2.30807 60.8234 3.14338L62.1153 1.61661C61.0225 0.691924 59.9604 0.0144706 58.9311 -0.359795L58.2476 1.51979ZM60.7623 3.0871L61.6623 3.98711L63.0765 2.57289L62.1765 1.67289L60.7623 3.0871ZM61.6375 3.96142C62.6595 5.0591 63.4387 6.1778 63.9892 7.31556L65.7895 6.44444C65.1401 5.10219 64.2393 3.8209 63.1013 2.59858L61.6375 3.96142ZM63.9865 7.30993C64.371 8.11744 64.5948 8.7379 64.6916 9.18953L66.6472 8.77047C66.504 8.10209 66.2077 7.32256 65.7922 6.45007L63.9865 7.30993ZM64.695 9.20486C64.8103 9.70474 64.8494 10.0159 64.8494 10.18H66.8494C66.8494 9.78412 66.7684 9.29525 66.6438 8.75514L64.695 9.20486ZM64.8494 10.18V16.96H66.8494V10.18H64.8494ZM64.8494 16.96C64.8494 18.0682 64.5535 19.3946 63.9056 20.957L65.7531 21.723C66.4653 20.0054 66.8494 18.4117 66.8494 16.96H64.8494ZM63.9084 20.9504C63.4977 21.9213 63.0208 22.7411 62.4845 23.4204L64.0543 24.6596C64.718 23.8189 65.2811 22.8387 65.7504 21.7296L63.9084 20.9504ZM62.48 23.4261C61.9881 24.0585 61.3194 24.6969 60.455 25.3358L61.6438 26.9442C62.6194 26.2231 63.4306 25.4615 64.0587 24.6539L62.48 23.4261ZM60.4247 25.3591C60.2499 25.499 60.0536 25.642 59.8347 25.788L60.9441 27.452C61.2052 27.278 61.4489 27.101 61.6741 26.9209L60.4247 25.3591ZM59.7647 25.8391C59.5963 25.9738 59.433 26.0877 59.2749 26.1825L60.3039 27.8975C60.5458 27.7523 60.7825 27.5862 61.0141 27.4009L59.7647 25.8391ZM59.2932 26.1718C58.4838 26.6343 57.8271 26.94 57.3132 27.1113L57.9456 29.0087C58.6317 28.78 59.415 28.4057 60.2855 27.9082L59.2932 26.1718ZM57.3131 27.1113C56.7938 27.2844 56.3416 27.36 55.9494 27.36V29.36C56.5972 29.36 57.2649 29.2356 57.9456 29.0087L57.3131 27.1113ZM55.9494 27.36H13.2894V29.36H55.9494V27.36ZM12.2894 28.36V34.6H14.2894V28.36H12.2894ZM13.287 35.6L64.8271 35.72L64.8317 33.72L13.2917 33.6L13.287 35.6ZM63.8294 34.72V46H65.8294V34.72H63.8294ZM64.8294 45H1.28938V47H64.8294V45ZM2.28938 46V29.62H0.289375V46H2.28938ZM2.28926 29.6354C2.32689 27.189 2.90774 25.1611 3.98699 23.5063L2.31176 22.4137C0.991007 24.4389 0.331856 26.851 0.289494 29.6046L2.28926 29.6354ZM3.98853 23.5039C5.33432 21.4275 6.72882 20.0228 8.14785 19.2069L7.1509 17.4731C5.36993 18.4972 3.76443 20.1725 2.31022 22.4161L3.98853 23.5039ZM8.14785 19.2069C9.58674 18.3795 11.1931 17.96 12.9894 17.96V15.96C10.8657 15.96 8.91201 16.4605 7.1509 17.4731L8.14785 19.2069ZM12.9894 17.96H53.9094V15.96H12.9894V17.96ZM54.9094 16.96V11.32H52.9094V16.96H54.9094ZM53.9094 10.32H0.989375V12.32H53.9094V10.32ZM1.98938 11.32V0.0399981H-0.010625V11.32H1.98938Z" fill="url(#paint1_linear_1_214)"/>
+                    <path d="M0.989375 0.0399981V-0.960002H-0.010625V0.0399981H0.989375ZM58.5894 0.579998L58.1955 1.49914L58.2213 1.5102L58.2476 1.51979L58.5894 0.579998ZM61.4694 2.38L62.1765 1.67289L62.1471 1.64348L62.1153 1.61661L61.4694 2.38ZM62.3694 3.28L63.1013 2.59858L63.0891 2.58552L63.0765 2.57289L62.3694 3.28ZM64.8894 6.88L65.7923 6.45006L65.7895 6.44444L64.8894 6.88ZM65.6694 8.98L64.6916 9.18953L64.6932 9.19721L64.695 9.20486L65.6694 8.98ZM64.8294 21.34L65.7504 21.7297L65.7531 21.723L64.8294 21.34ZM63.2694 24.04L62.4845 23.4203L62.48 23.4261L63.2694 24.04ZM61.0494 26.14L60.455 25.3358L60.4396 25.3472L60.4247 25.3591L61.0494 26.14ZM60.3894 26.62L59.8347 25.788L59.7986 25.812L59.7647 25.8391L60.3894 26.62ZM59.7894 27.04L60.2855 27.9082L60.2948 27.903L60.3039 27.8975L59.7894 27.04ZM57.6294 28.06L57.3132 27.1113H57.3131L57.6294 28.06ZM13.2894 28.36V27.36H12.2894V28.36H13.2894ZM13.2894 34.6H12.2894V35.5977L13.287 35.6L13.2894 34.6ZM64.8294 34.72H65.8294V33.7223L64.8317 33.72L64.8294 34.72ZM64.8294 46V47H65.8294V46H64.8294ZM1.28938 46H0.289375V47H1.28938V46ZM1.28938 29.62L0.289494 29.6046L0.289375 29.6123V29.62H1.28938ZM3.14938 22.96L3.98699 23.5063L3.98853 23.5039L3.14938 22.96ZM53.9094 16.96V17.96H54.9094V16.96H53.9094ZM53.9094 11.32H54.9094V10.32H53.9094V11.32ZM0.989375 11.32H-0.010625V12.32H0.989375V11.32ZM0.989375 1.04H55.7694V-0.960002H0.989375V1.04ZM55.7694 1.04C56.6926 1.04 57.496 1.19936 58.1955 1.49914L58.9833 -0.339147C58.0028 -0.759367 56.9262 -0.960002 55.7694 -0.960002V1.04ZM58.2476 1.51979C58.9784 1.78553 59.8363 2.30807 60.8234 3.14338L62.1153 1.61661C61.0225 0.691924 59.9604 0.0144706 58.9311 -0.359795L58.2476 1.51979ZM60.7623 3.0871L61.6623 3.98711L63.0765 2.57289L62.1765 1.67289L60.7623 3.0871ZM61.6375 3.96142C62.6595 5.0591 63.4387 6.1778 63.9892 7.31556L65.7895 6.44444C65.1401 5.10219 64.2393 3.8209 63.1013 2.59858L61.6375 3.96142ZM63.9865 7.30993C64.371 8.11744 64.5948 8.7379 64.6916 9.18953L66.6472 8.77047C66.504 8.10209 66.2077 7.32256 65.7922 6.45007L63.9865 7.30993ZM64.695 9.20486C64.8103 9.70474 64.8494 10.0159 64.8494 10.18H66.8494C66.8494 9.78412 66.7684 9.29525 66.6438 8.75514L64.695 9.20486ZM64.8494 10.18V16.96H66.8494V10.18H64.8494ZM64.8494 16.96C64.8494 18.0682 64.5535 19.3946 63.9056 20.957L65.7531 21.723C66.4653 20.0054 66.8494 18.4117 66.8494 16.96H64.8494ZM63.9084 20.9504C63.4977 21.9213 63.0208 22.7411 62.4845 23.4204L64.0543 24.6596C64.718 23.8189 65.2811 22.8387 65.7504 21.7296L63.9084 20.9504ZM62.48 23.4261C61.9881 24.0585 61.3194 24.6969 60.455 25.3358L61.6438 26.9442C62.6194 26.2231 63.4306 25.4615 64.0587 24.6539L62.48 23.4261ZM60.4247 25.3591C60.2499 25.499 60.0536 25.642 59.8347 25.788L60.9441 27.452C61.2052 27.278 61.4489 27.101 61.6741 26.9209L60.4247 25.3591ZM59.7647 25.8391C59.5963 25.9738 59.433 26.0877 59.2749 26.1825L60.3039 27.8975C60.5458 27.7523 60.7825 27.5862 61.0141 27.4009L59.7647 25.8391ZM59.2932 26.1718C58.4838 26.6343 57.8271 26.94 57.3132 27.1113L57.9456 29.0087C58.6317 28.78 59.415 28.4057 60.2855 27.9082L59.2932 26.1718ZM57.3131 27.1113C56.7938 27.2844 56.3416 27.36 55.9494 27.36V29.36C56.5972 29.36 57.2649 29.2356 57.9456 29.0087L57.3131 27.1113ZM55.9494 27.36H13.2894V29.36H55.9494V27.36ZM12.2894 28.36V34.6H14.2894V28.36H12.2894ZM13.287 35.6L64.8271 35.72L64.8317 33.72L13.2917 33.6L13.287 35.6ZM63.8294 34.72V46H65.8294V34.72H63.8294ZM64.8294 45H1.28938V47H64.8294V45ZM2.28938 46V29.62H0.289375V46H2.28938ZM2.28926 29.6354C2.32689 27.189 2.90774 25.1611 3.98699 23.5063L2.31176 22.4137C0.991007 24.4389 0.331856 26.851 0.289494 29.6046L2.28926 29.6354ZM3.98853 23.5039C5.33432 21.4275 6.72882 20.0228 8.14785 19.2069L7.1509 17.4731C5.36993 18.4972 3.76443 20.1725 2.31022 22.4161L3.98853 23.5039ZM8.14785 19.2069C9.58674 18.3795 11.1931 17.96 12.9894 17.96V15.96C10.8657 15.96 8.91201 16.4605 7.1509 17.4731L8.14785 19.2069ZM12.9894 17.96H53.9094V15.96H12.9894V17.96ZM54.9094 16.96V11.32H52.9094V16.96H54.9094ZM53.9094 10.32H0.989375V12.32H53.9094V10.32ZM1.98938 11.32V0.0399981H-0.010625V11.32H1.98938Z" fill="url(#paint2_radial_1_214)" fill-opacity="0.5"/>
+                    <path d="M0.989375 0.0399981V-0.960002H-0.010625V0.0399981H0.989375ZM58.5894 0.579998L58.1955 1.49914L58.2213 1.5102L58.2476 1.51979L58.5894 0.579998ZM61.4694 2.38L62.1765 1.67289L62.1471 1.64348L62.1153 1.61661L61.4694 2.38ZM62.3694 3.28L63.1013 2.59858L63.0891 2.58552L63.0765 2.57289L62.3694 3.28ZM64.8894 6.88L65.7923 6.45006L65.7895 6.44444L64.8894 6.88ZM65.6694 8.98L64.6916 9.18953L64.6932 9.19721L64.695 9.20486L65.6694 8.98ZM64.8294 21.34L65.7504 21.7297L65.7531 21.723L64.8294 21.34ZM63.2694 24.04L62.4845 23.4203L62.48 23.4261L63.2694 24.04ZM61.0494 26.14L60.455 25.3358L60.4396 25.3472L60.4247 25.3591L61.0494 26.14ZM60.3894 26.62L59.8347 25.788L59.7986 25.812L59.7647 25.8391L60.3894 26.62ZM59.7894 27.04L60.2855 27.9082L60.2948 27.903L60.3039 27.8975L59.7894 27.04ZM57.6294 28.06L57.3132 27.1113H57.3131L57.6294 28.06ZM13.2894 28.36V27.36H12.2894V28.36H13.2894ZM13.2894 34.6H12.2894V35.5977L13.287 35.6L13.2894 34.6ZM64.8294 34.72H65.8294V33.7223L64.8317 33.72L64.8294 34.72ZM64.8294 46V47H65.8294V46H64.8294ZM1.28938 46H0.289375V47H1.28938V46ZM1.28938 29.62L0.289494 29.6046L0.289375 29.6123V29.62H1.28938ZM3.14938 22.96L3.98699 23.5063L3.98853 23.5039L3.14938 22.96ZM53.9094 16.96V17.96H54.9094V16.96H53.9094ZM53.9094 11.32H54.9094V10.32H53.9094V11.32ZM0.989375 11.32H-0.010625V12.32H0.989375V11.32ZM0.989375 1.04H55.7694V-0.960002H0.989375V1.04ZM55.7694 1.04C56.6926 1.04 57.496 1.19936 58.1955 1.49914L58.9833 -0.339147C58.0028 -0.759367 56.9262 -0.960002 55.7694 -0.960002V1.04ZM58.2476 1.51979C58.9784 1.78553 59.8363 2.30807 60.8234 3.14338L62.1153 1.61661C61.0225 0.691924 59.9604 0.0144706 58.9311 -0.359795L58.2476 1.51979ZM60.7623 3.0871L61.6623 3.98711L63.0765 2.57289L62.1765 1.67289L60.7623 3.0871ZM61.6375 3.96142C62.6595 5.0591 63.4387 6.1778 63.9892 7.31556L65.7895 6.44444C65.1401 5.10219 64.2393 3.8209 63.1013 2.59858L61.6375 3.96142ZM63.9865 7.30993C64.371 8.11744 64.5948 8.7379 64.6916 9.18953L66.6472 8.77047C66.504 8.10209 66.2077 7.32256 65.7922 6.45007L63.9865 7.30993ZM64.695 9.20486C64.8103 9.70474 64.8494 10.0159 64.8494 10.18H66.8494C66.8494 9.78412 66.7684 9.29525 66.6438 8.75514L64.695 9.20486ZM64.8494 10.18V16.96H66.8494V10.18H64.8494ZM64.8494 16.96C64.8494 18.0682 64.5535 19.3946 63.9056 20.957L65.7531 21.723C66.4653 20.0054 66.8494 18.4117 66.8494 16.96H64.8494ZM63.9084 20.9504C63.4977 21.9213 63.0208 22.7411 62.4845 23.4204L64.0543 24.6596C64.718 23.8189 65.2811 22.8387 65.7504 21.7296L63.9084 20.9504ZM62.48 23.4261C61.9881 24.0585 61.3194 24.6969 60.455 25.3358L61.6438 26.9442C62.6194 26.2231 63.4306 25.4615 64.0587 24.6539L62.48 23.4261ZM60.4247 25.3591C60.2499 25.499 60.0536 25.642 59.8347 25.788L60.9441 27.452C61.2052 27.278 61.4489 27.101 61.6741 26.9209L60.4247 25.3591ZM59.7647 25.8391C59.5963 25.9738 59.433 26.0877 59.2749 26.1825L60.3039 27.8975C60.5458 27.7523 60.7825 27.5862 61.0141 27.4009L59.7647 25.8391ZM59.2932 26.1718C58.4838 26.6343 57.8271 26.94 57.3132 27.1113L57.9456 29.0087C58.6317 28.78 59.415 28.4057 60.2855 27.9082L59.2932 26.1718ZM57.3131 27.1113C56.7938 27.2844 56.3416 27.36 55.9494 27.36V29.36C56.5972 29.36 57.2649 29.2356 57.9456 29.0087L57.3131 27.1113ZM55.9494 27.36H13.2894V29.36H55.9494V27.36ZM12.2894 28.36V34.6H14.2894V28.36H12.2894ZM13.287 35.6L64.8271 35.72L64.8317 33.72L13.2917 33.6L13.287 35.6ZM63.8294 34.72V46H65.8294V34.72H63.8294ZM64.8294 45H1.28938V47H64.8294V45ZM2.28938 46V29.62H0.289375V46H2.28938ZM2.28926 29.6354C2.32689 27.189 2.90774 25.1611 3.98699 23.5063L2.31176 22.4137C0.991007 24.4389 0.331856 26.851 0.289494 29.6046L2.28926 29.6354ZM3.98853 23.5039C5.33432 21.4275 6.72882 20.0228 8.14785 19.2069L7.1509 17.4731C5.36993 18.4972 3.76443 20.1725 2.31022 22.4161L3.98853 23.5039ZM8.14785 19.2069C9.58674 18.3795 11.1931 17.96 12.9894 17.96V15.96C10.8657 15.96 8.91201 16.4605 7.1509 17.4731L8.14785 19.2069ZM12.9894 17.96H53.9094V15.96H12.9894V17.96ZM54.9094 16.96V11.32H52.9094V16.96H54.9094ZM53.9094 10.32H0.989375V12.32H53.9094V10.32ZM1.98938 11.32V0.0399981H-0.010625V11.32H1.98938Z" fill="url(#paint3_radial_1_214)" fill-opacity="0.9"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_1_214" x1="33.5" y1="-6" x2="33.5" y2="54" gradientUnits="userSpaceOnUse">
+                    <stop stop-opacity="0.9"/>
+                    <stop offset="1" stop-opacity="0.1"/>
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_1_214" x1="33.5" y1="-6" x2="33.5" y2="54" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="white" stop-opacity="0.9"/>
+                    <stop offset="1" stop-color="white" stop-opacity="0"/>
+                    </linearGradient>
+                    <radialGradient id="paint2_radial_1_214" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(65.7124 -12.9434) rotate(115.696) scale(74.2903 123.529)">
+                    <stop stop-color="#55C3E6"/>
+                    <stop offset="0.0001" stop-color="#2B92DC"/>
+                    <stop offset="1" stop-color="white" stop-opacity="0"/>
+                    </radialGradient>
+                    <radialGradient id="paint3_radial_1_214" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(2.64785 -2.56604) rotate(43.6767) scale(84.9844 155.768)">
+                    <stop stop-color="#66C195"/>
+                    <stop offset="1" stop-color="white" stop-opacity="0"/>
+                    </radialGradient>
+                    </defs>
+                    </svg>
+                    
+                </div>
+                <div class="wrp">
+                  <p class="block-3__def-text def-text">Скачай Wireguard </p>
+                  <ul class="block-3__soc-list">
+                    <li class="block-3__soc-item">
+                      <div class="img-wrp">
+                        <svg width="43" height="25" viewBox="0 0 43 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M31.3716 18.044C30.3865 18.044 29.5852 17.2593 29.5852 16.2952C29.5852 15.3312 30.3865 14.547 31.3716 14.547C32.3567 14.547 33.158 15.3312 33.158 16.2952C33.158 17.2593 32.3567 18.044 31.3716 18.044ZM11.6253 18.044C10.6401 18.044 9.83883 17.2593 9.83883 16.2952C9.83883 15.3312 10.6401 14.547 11.6253 14.547C12.6104 14.547 13.4117 15.3312 13.4117 16.2952C13.4117 17.2593 12.6104 18.044 11.6253 18.044ZM32.0123 7.51276L35.5829 1.46128C35.7875 1.11346 35.6658 0.669172 35.3109 0.468306C34.9561 0.268009 34.5015 0.387166 34.2962 0.734423L30.6811 6.86251C27.9165 5.62781 24.8115 4.94011 21.4984 4.94011C18.1853 4.94011 15.0804 5.62781 12.3158 6.86251L8.70064 0.734423C8.49537 0.387166 8.0408 0.268009 7.68595 0.468306C7.3311 0.669172 7.20876 1.11346 7.41401 1.46128L10.9845 7.51276C4.85352 10.776 0.660256 16.8501 0.046814 24.0262H42.95C42.336 16.8501 38.1428 10.776 32.0123 7.51276Z" fill="url(#paint0_linear_1_222)"/>
+                          <path d="M31.3716 18.044C30.3865 18.044 29.5852 17.2593 29.5852 16.2952C29.5852 15.3312 30.3865 14.547 31.3716 14.547C32.3567 14.547 33.158 15.3312 33.158 16.2952C33.158 17.2593 32.3567 18.044 31.3716 18.044ZM11.6253 18.044C10.6401 18.044 9.83883 17.2593 9.83883 16.2952C9.83883 15.3312 10.6401 14.547 11.6253 14.547C12.6104 14.547 13.4117 15.3312 13.4117 16.2952C13.4117 17.2593 12.6104 18.044 11.6253 18.044ZM32.0123 7.51276L35.5829 1.46128C35.7875 1.11346 35.6658 0.669172 35.3109 0.468306C34.9561 0.268009 34.5015 0.387166 34.2962 0.734423L30.6811 6.86251C27.9165 5.62781 24.8115 4.94011 21.4984 4.94011C18.1853 4.94011 15.0804 5.62781 12.3158 6.86251L8.70064 0.734423C8.49537 0.387166 8.0408 0.268009 7.68595 0.468306C7.3311 0.669172 7.20876 1.11346 7.41401 1.46128L10.9845 7.51276C4.85352 10.776 0.660256 16.8501 0.046814 24.0262H42.95C42.336 16.8501 38.1428 10.776 32.0123 7.51276Z" fill="url(#paint1_linear_1_222)" fill-opacity="0.2"/>
+                          <path d="M31.3716 18.044C30.3865 18.044 29.5852 17.2593 29.5852 16.2952C29.5852 15.3312 30.3865 14.547 31.3716 14.547C32.3567 14.547 33.158 15.3312 33.158 16.2952C33.158 17.2593 32.3567 18.044 31.3716 18.044ZM11.6253 18.044C10.6401 18.044 9.83883 17.2593 9.83883 16.2952C9.83883 15.3312 10.6401 14.547 11.6253 14.547C12.6104 14.547 13.4117 15.3312 13.4117 16.2952C13.4117 17.2593 12.6104 18.044 11.6253 18.044ZM32.0123 7.51276L35.5829 1.46128C35.7875 1.11346 35.6658 0.669172 35.3109 0.468306C34.9561 0.268009 34.5015 0.387166 34.2962 0.734423L30.6811 6.86251C27.9165 5.62781 24.8115 4.94011 21.4984 4.94011C18.1853 4.94011 15.0804 5.62781 12.3158 6.86251L8.70064 0.734423C8.49537 0.387166 8.0408 0.268009 7.68595 0.468306C7.3311 0.669172 7.20876 1.11346 7.41401 1.46128L10.9845 7.51276C4.85352 10.776 0.660256 16.8501 0.046814 24.0262H42.95C42.336 16.8501 38.1428 10.776 32.0123 7.51276Z" fill="url(#paint2_radial_1_222)" fill-opacity="0.4"/>
+                          <defs>
+                          <linearGradient id="paint0_linear_1_222" x1="21.4984" y1="0.371094" x2="21.4984" y2="24.0262" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#018197"/>
+                          <stop offset="1" stop-color="#22CF48"/>
+                          </linearGradient>
+                          <linearGradient id="paint1_linear_1_222" x1="19.3533" y1="14.8991" x2="28.2285" y2="0.710651" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#0265A5"/>
+                          <stop offset="1" stop-color="#00FF66"/>
+                          </linearGradient>
+                          <radialGradient id="paint2_radial_1_222" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(40.3133 23.3636) rotate(-61.2932) scale(11.7466 17.8804)">
+                          <stop stop-color="#44D1F0"/>
+                          <stop offset="1" stop-color="#4B84DA" stop-opacity="0.34"/>
+                          </radialGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                    </li>
+                    <li class="block-3__soc-item">
+                      <div class="img-wrp">
+                        <svg width="36" height="18" viewBox="0 0 36 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0.167297 17.7107H3.14431V4.9398H0.167297V17.7107ZM1.64983 3.26502C2.58239 3.26502 3.3117 2.54212 3.3117 1.63854C3.3117 0.72287 2.58239 0 1.64983 0C0.72924 0 -6.10352e-05 0.7229 -6.10352e-05 1.63854C-6.10352e-05 2.54215 0.72924 3.26502 1.64983 3.26502V3.26502ZM13.0561 0.0360556C8.0228 0.0360556 4.86631 3.49387 4.86631 9.02404C4.86631 14.5542 8.02249 18 13.0561 18C18.0775 18 21.234 14.5542 21.234 9.02404C21.234 3.49387 18.0778 0.0360556 13.0561 0.0360556ZM13.0561 2.68665C16.1287 2.68665 18.0894 5.14447 18.0894 9.02398C18.0894 12.8914 16.1287 15.3493 13.0561 15.3493C9.97154 15.3493 8.0228 12.8915 8.0228 9.02398C8.0228 5.14454 9.9716 2.68665 13.0561 2.68665V2.68665ZM22.4898 12.8192C22.6213 16.0241 25.2276 17.9999 29.1969 17.9999C33.3696 17.9999 35.9999 15.9277 35.9999 12.6265C35.9999 10.0361 34.5174 8.5783 31.0144 7.77113L29.0297 7.3133C26.9135 6.80729 26.0408 6.13259 26.0408 4.97598C26.0408 3.53021 27.3559 2.56636 29.3047 2.56636C31.2774 2.56636 32.6283 3.54227 32.7718 5.16875H35.713C35.6412 2.10853 33.1305 0.0361481 29.3287 0.0361481C25.5744 0.0361481 22.9083 2.12046 22.9083 5.20483C22.9083 7.68675 24.4147 9.22893 27.5948 9.96392L29.8305 10.4941C32.0065 11.0121 32.8912 11.735 32.8912 12.988C32.8912 14.4338 31.4446 15.4699 29.3644 15.4699C27.2602 15.4699 25.6701 14.4217 25.4789 12.8193H22.4899L22.4898 12.8192Z" fill="url(#paint0_linear_1_227)"/>
+                          <path d="M0.167297 17.7107H3.14431V4.9398H0.167297V17.7107ZM1.64983 3.26502C2.58239 3.26502 3.3117 2.54212 3.3117 1.63854C3.3117 0.72287 2.58239 0 1.64983 0C0.72924 0 -6.10352e-05 0.7229 -6.10352e-05 1.63854C-6.10352e-05 2.54215 0.72924 3.26502 1.64983 3.26502V3.26502ZM13.0561 0.0360556C8.0228 0.0360556 4.86631 3.49387 4.86631 9.02404C4.86631 14.5542 8.02249 18 13.0561 18C18.0775 18 21.234 14.5542 21.234 9.02404C21.234 3.49387 18.0778 0.0360556 13.0561 0.0360556ZM13.0561 2.68665C16.1287 2.68665 18.0894 5.14447 18.0894 9.02398C18.0894 12.8914 16.1287 15.3493 13.0561 15.3493C9.97154 15.3493 8.0228 12.8915 8.0228 9.02398C8.0228 5.14454 9.9716 2.68665 13.0561 2.68665V2.68665ZM22.4898 12.8192C22.6213 16.0241 25.2276 17.9999 29.1969 17.9999C33.3696 17.9999 35.9999 15.9277 35.9999 12.6265C35.9999 10.0361 34.5174 8.5783 31.0144 7.77113L29.0297 7.3133C26.9135 6.80729 26.0408 6.13259 26.0408 4.97598C26.0408 3.53021 27.3559 2.56636 29.3047 2.56636C31.2774 2.56636 32.6283 3.54227 32.7718 5.16875H35.713C35.6412 2.10853 33.1305 0.0361481 29.3287 0.0361481C25.5744 0.0361481 22.9083 2.12046 22.9083 5.20483C22.9083 7.68675 24.4147 9.22893 27.5948 9.96392L29.8305 10.4941C32.0065 11.0121 32.8912 11.735 32.8912 12.988C32.8912 14.4338 31.4446 15.4699 29.3644 15.4699C27.2602 15.4699 25.6701 14.4217 25.4789 12.8193H22.4899L22.4898 12.8192Z" fill="url(#paint1_linear_1_227)" fill-opacity="0.2"/>
+                          <path d="M0.167297 17.7107H3.14431V4.9398H0.167297V17.7107ZM1.64983 3.26502C2.58239 3.26502 3.3117 2.54212 3.3117 1.63854C3.3117 0.72287 2.58239 0 1.64983 0C0.72924 0 -6.10352e-05 0.7229 -6.10352e-05 1.63854C-6.10352e-05 2.54215 0.72924 3.26502 1.64983 3.26502V3.26502ZM13.0561 0.0360556C8.0228 0.0360556 4.86631 3.49387 4.86631 9.02404C4.86631 14.5542 8.02249 18 13.0561 18C18.0775 18 21.234 14.5542 21.234 9.02404C21.234 3.49387 18.0778 0.0360556 13.0561 0.0360556ZM13.0561 2.68665C16.1287 2.68665 18.0894 5.14447 18.0894 9.02398C18.0894 12.8914 16.1287 15.3493 13.0561 15.3493C9.97154 15.3493 8.0228 12.8915 8.0228 9.02398C8.0228 5.14454 9.9716 2.68665 13.0561 2.68665V2.68665ZM22.4898 12.8192C22.6213 16.0241 25.2276 17.9999 29.1969 17.9999C33.3696 17.9999 35.9999 15.9277 35.9999 12.6265C35.9999 10.0361 34.5174 8.5783 31.0144 7.77113L29.0297 7.3133C26.9135 6.80729 26.0408 6.13259 26.0408 4.97598C26.0408 3.53021 27.3559 2.56636 29.3047 2.56636C31.2774 2.56636 32.6283 3.54227 32.7718 5.16875H35.713C35.6412 2.10853 33.1305 0.0361481 29.3287 0.0361481C25.5744 0.0361481 22.9083 2.12046 22.9083 5.20483C22.9083 7.68675 24.4147 9.22893 27.5948 9.96392L29.8305 10.4941C32.0065 11.0121 32.8912 11.735 32.8912 12.988C32.8912 14.4338 31.4446 15.4699 29.3644 15.4699C27.2602 15.4699 25.6701 14.4217 25.4789 12.8193H22.4899L22.4898 12.8192Z" fill="url(#paint2_radial_1_227)" fill-opacity="0.4"/>
+                          <defs>
+                          <linearGradient id="paint0_linear_1_227" x1="17.9999" y1="0" x2="17.9999" y2="18" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#018197"/>
+                          <stop offset="1" stop-color="#22CF48"/>
+                          </linearGradient>
+                          <linearGradient id="paint1_linear_1_227" x1="16.1999" y1="11.0548" x2="22.6463" y2="-0.309322" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#0265A5"/>
+                          <stop offset="1" stop-color="#00FF66"/>
+                          </linearGradient>
+                          <radialGradient id="paint2_radial_1_227" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(33.7874 17.4958) rotate(-58.8725) scale(9.15839 14.643)">
+                          <stop stop-color="#44D1F0"/>
+                          <stop offset="1" stop-color="#4B84DA" stop-opacity="0.34"/>
+                          </radialGradient>
+                          </defs>
+                        </svg>                        
+                      </div>
+                    </li>
+                    <li class="block-3__soc-item">
+                      <div class="img-wrp">
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M-6.10352e-05 10.9128V5.45638V0H5.47724H10.9545V5.45638V10.9128H5.47724H-6.10352e-05ZM12.0459 5.51514C12.0459 2.54351 12.0712 0.0839446 12.1049 0.0587614C12.1302 0.0251837 14.5992 0 17.5822 0H23.0005V5.45638V10.9128H17.5232H12.0459V5.51514ZM-6.10352e-05 17.5447V23.0011H5.47724H10.9545V17.5447V12.0883H5.47724H-6.10352e-05V17.5447ZM12.0881 22.9591L12.0628 17.5195L12.0459 12.0883H17.5232H23.0005V17.5447V23.0011L17.5485 22.9843L12.0881 22.9591Z" fill="url(#paint0_linear_1_230)"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M-6.10352e-05 10.9128V5.45638V0H5.47724H10.9545V5.45638V10.9128H5.47724H-6.10352e-05ZM12.0459 5.51514C12.0459 2.54351 12.0712 0.0839446 12.1049 0.0587614C12.1302 0.0251837 14.5992 0 17.5822 0H23.0005V5.45638V10.9128H17.5232H12.0459V5.51514ZM-6.10352e-05 17.5447V23.0011H5.47724H10.9545V17.5447V12.0883H5.47724H-6.10352e-05V17.5447ZM12.0881 22.9591L12.0628 17.5195L12.0459 12.0883H17.5232H23.0005V17.5447V23.0011L17.5485 22.9843L12.0881 22.9591Z" fill="url(#paint1_linear_1_230)" fill-opacity="0.2"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M-6.10352e-05 10.9128V5.45638V0H5.47724H10.9545V5.45638V10.9128H5.47724H-6.10352e-05ZM12.0459 5.51514C12.0459 2.54351 12.0712 0.0839446 12.1049 0.0587614C12.1302 0.0251837 14.5992 0 17.5822 0H23.0005V5.45638V10.9128H17.5232H12.0459V5.51514ZM-6.10352e-05 17.5447V23.0011H5.47724H10.9545V17.5447V12.0883H5.47724H-6.10352e-05V17.5447ZM12.0881 22.9591L12.0628 17.5195L12.0459 12.0883H17.5232H23.0005V17.5447V23.0011L17.5485 22.9843L12.0881 22.9591Z" fill="url(#paint2_radial_1_230)" fill-opacity="0.4"/>
+                          <defs>
+                          <linearGradient id="paint0_linear_1_230" x1="11.5002" y1="0" x2="11.5002" y2="23.0011" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#018197"/>
+                          <stop offset="1" stop-color="#22CF48"/>
+                          </linearGradient>
+                          <linearGradient id="paint1_linear_1_230" x1="10.3502" y1="14.1263" x2="19.8714" y2="5.73411" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#0265A5"/>
+                          <stop offset="1" stop-color="#00FF66"/>
+                          </linearGradient>
+                          <radialGradient id="paint2_radial_1_230" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(21.5869 22.3568) rotate(-73.1988) scale(10.4646 10.4625)">
+                          <stop stop-color="#44D1F0"/>
+                          <stop offset="1" stop-color="#4B84DA" stop-opacity="0.34"/>
+                          </radialGradient>
+                          </defs>
+                        </svg>                    
+                      </div>
+                    </li>
+                    <li class="block-3__soc-item">
+                      <div class="img-wrp">
+                        <img src="img/MacOS_logo.svg" alt="icon" >
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="block-3__item">
+                <div class="block-3__number-img-wrp img-wrp">
+                  <svg width="67" height="46" viewBox="0 0 67 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.289375 17.02H53.0894V11.38H0.289375V0.0399981H49.0694C51.5894 0.0399981 53.8494 0.439998 55.8494 1.24C57.8494 2.04 59.5494 3.14 60.9494 4.54C64.7094 8.3 65.7694 12.88 64.1294 18.28C63.9294 19 63.6894 19.68 63.4094 20.32C63.1294 20.92 62.8494 21.46 62.5694 21.94L62.3894 22.3L62.1494 22.72L62.4494 23.02L62.7494 23.32C63.0294 23.72 63.3294 24.22 63.6494 24.82C63.9694 25.42 64.2494 26.12 64.4894 26.92C65.0494 28.6 65.2494 30.36 65.0894 32.2C64.9294 34 64.3894 35.86 63.4694 37.78C62.4694 39.9 61.3294 41.54 60.0494 42.7C58.8094 43.82 57.2094 44.7 55.2494 45.34C53.9694 45.78 52.3094 46 50.2694 46H0.469375V34.3H53.0894V28.9H0.289375V17.02Z" fill="url(#paint0_linear_1_210)"/>
+                    <path d="M0.289375 17.02V16.02H-0.710625V17.02H0.289375ZM53.0894 17.02V18.02H54.0894V17.02H53.0894ZM53.0894 11.38H54.0894V10.38H53.0894V11.38ZM0.289375 11.38H-0.710625V12.38H0.289375V11.38ZM0.289375 0.0399981V-0.960002H-0.710625V0.0399981H0.289375ZM55.8494 1.24L56.2208 0.311521V0.31152L55.8494 1.24ZM60.9494 4.54L60.2423 5.2471V5.2471L60.9494 4.54ZM64.1294 18.28L63.1725 17.9894L63.1691 18.0008L63.1659 18.0124L64.1294 18.28ZM63.4094 20.32L64.3156 20.7429L64.3207 20.7319L64.3255 20.7208L63.4094 20.32ZM62.5694 21.94L61.7056 21.4361L61.6894 21.464L61.675 21.4928L62.5694 21.94ZM62.3894 22.3L63.2576 22.7961L63.2714 22.772L63.2838 22.7472L62.3894 22.3ZM62.1494 22.72L61.2811 22.2239L60.9022 22.887L61.4423 23.4271L62.1494 22.72ZM62.7494 23.32L63.5686 22.7465L63.5184 22.6748L63.4565 22.6129L62.7494 23.32ZM63.6494 24.82L62.767 25.2906L63.6494 24.82ZM64.4894 26.92L63.5315 27.2073L63.5359 27.2219L63.5407 27.2362L64.4894 26.92ZM65.0894 32.2L66.0854 32.2885L66.0856 32.2866L65.0894 32.2ZM63.4694 37.78L62.5675 37.3479L62.5649 37.3534L63.4694 37.78ZM60.0494 42.7L60.7197 43.4421L60.7209 43.441L60.0494 42.7ZM55.2494 45.34L54.939 44.3894L54.9316 44.3918L54.9243 44.3943L55.2494 45.34ZM0.469375 46H-0.530625V47H0.469375V46ZM0.469375 34.3V33.3H-0.530625V34.3H0.469375ZM53.0894 34.3V35.3H54.0894V34.3H53.0894ZM53.0894 28.9H54.0894V27.9H53.0894V28.9ZM0.289375 28.9H-0.710625V29.9H0.289375V28.9ZM0.289375 18.02H53.0894V16.02H0.289375V18.02ZM54.0894 17.02V11.38H52.0894V17.02H54.0894ZM53.0894 10.38H0.289375V12.38H53.0894V10.38ZM1.28938 11.38V0.0399981H-0.710625V11.38H1.28938ZM0.289375 1.04H49.0694V-0.960002H0.289375V1.04ZM49.0694 1.04C51.4834 1.04 53.6144 1.42303 55.478 2.16847L56.2208 0.31152C54.0844 -0.543032 51.6953 -0.960002 49.0694 -0.960002V1.04ZM55.478 2.16847C57.3634 2.92264 58.9462 3.95101 60.2423 5.2471L61.6565 3.83289C60.1526 2.32898 58.3354 1.15735 56.2208 0.311521L55.478 2.16847ZM60.2423 5.2471C62.0077 7.01255 63.1077 8.93594 63.5901 11.0205C64.0734 13.1087 63.9519 15.4233 63.1725 17.9894L65.0862 18.5706C65.9469 15.7367 66.1153 13.0613 65.5386 10.5695C64.9611 8.07406 63.651 5.82745 61.6565 3.83289L60.2423 5.2471ZM63.1659 18.0124C62.9776 18.69 62.7531 19.3253 62.4932 19.9192L64.3255 20.7208C64.6257 20.0347 64.8811 19.31 65.0929 18.5476L63.1659 18.0124ZM62.5032 19.8971C62.2337 20.4745 61.9677 20.9869 61.7056 21.4361L63.4332 22.4439C63.7311 21.9331 64.025 21.3655 64.3156 20.7429L62.5032 19.8971ZM61.675 21.4928L61.495 21.8528L63.2838 22.7472L63.4638 22.3872L61.675 21.4928ZM61.5211 21.8039L61.2811 22.2239L63.0176 23.2161L63.2576 22.7961L61.5211 21.8039ZM61.4423 23.4271L61.7423 23.7271L63.1565 22.3129L62.8565 22.0129L61.4423 23.4271ZM61.7423 23.7271L62.0423 24.0271L63.4565 22.6129L63.1565 22.3129L61.7423 23.7271ZM61.9301 23.8935C62.1801 24.2505 62.4592 24.7135 62.767 25.2906L64.5317 24.3494C64.1995 23.7265 63.8787 23.1895 63.5686 22.7465L61.9301 23.8935ZM62.767 25.2906C63.0498 25.8207 63.3064 26.457 63.5315 27.2073L65.4472 26.6327C65.1923 25.783 64.889 25.0193 64.5317 24.3494L62.767 25.2906ZM63.5407 27.2362C64.0556 28.781 64.2418 30.4035 64.0931 32.1134L66.0856 32.2866C66.2569 30.3165 66.0431 28.419 65.4381 26.6038L63.5407 27.2362ZM64.0933 32.1115C63.9456 33.773 63.4449 35.517 62.5676 37.3479L64.3712 38.2121C65.3339 36.203 65.9131 34.227 66.0854 32.2885L64.0933 32.1115ZM62.5649 37.3534C61.6023 39.3942 60.5322 40.9129 59.3779 41.959L60.7209 43.441C62.1266 42.1671 63.3365 40.4058 64.3738 38.2066L62.5649 37.3534ZM59.3791 41.9579C58.2645 42.9647 56.7961 43.783 54.939 44.3894L55.5598 46.2906C57.6227 45.617 59.3543 44.6753 60.7197 43.4421L59.3791 41.9579ZM54.9243 44.3943C53.7877 44.785 52.249 45 50.2694 45V47C52.3697 47 54.151 46.775 55.5745 46.2857L54.9243 44.3943ZM50.2694 45H0.469375V47H50.2694V45ZM1.46938 46V34.3H-0.530625V46H1.46938ZM0.469375 35.3H53.0894V33.3H0.469375V35.3ZM54.0894 34.3V28.9H52.0894V34.3H54.0894ZM53.0894 27.9H0.289375V29.9H53.0894V27.9ZM1.28938 28.9V17.02H-0.710625V28.9H1.28938Z" fill="url(#paint1_linear_1_210)"/>
+                    <path d="M0.289375 17.02V16.02H-0.710625V17.02H0.289375ZM53.0894 17.02V18.02H54.0894V17.02H53.0894ZM53.0894 11.38H54.0894V10.38H53.0894V11.38ZM0.289375 11.38H-0.710625V12.38H0.289375V11.38ZM0.289375 0.0399981V-0.960002H-0.710625V0.0399981H0.289375ZM55.8494 1.24L56.2208 0.311521V0.31152L55.8494 1.24ZM60.9494 4.54L60.2423 5.2471V5.2471L60.9494 4.54ZM64.1294 18.28L63.1725 17.9894L63.1691 18.0008L63.1659 18.0124L64.1294 18.28ZM63.4094 20.32L64.3156 20.7429L64.3207 20.7319L64.3255 20.7208L63.4094 20.32ZM62.5694 21.94L61.7056 21.4361L61.6894 21.464L61.675 21.4928L62.5694 21.94ZM62.3894 22.3L63.2576 22.7961L63.2714 22.772L63.2838 22.7472L62.3894 22.3ZM62.1494 22.72L61.2811 22.2239L60.9022 22.887L61.4423 23.4271L62.1494 22.72ZM62.7494 23.32L63.5686 22.7465L63.5184 22.6748L63.4565 22.6129L62.7494 23.32ZM63.6494 24.82L62.767 25.2906L63.6494 24.82ZM64.4894 26.92L63.5315 27.2073L63.5359 27.2219L63.5407 27.2362L64.4894 26.92ZM65.0894 32.2L66.0854 32.2885L66.0856 32.2866L65.0894 32.2ZM63.4694 37.78L62.5675 37.3479L62.5649 37.3534L63.4694 37.78ZM60.0494 42.7L60.7197 43.4421L60.7209 43.441L60.0494 42.7ZM55.2494 45.34L54.939 44.3894L54.9316 44.3918L54.9243 44.3943L55.2494 45.34ZM0.469375 46H-0.530625V47H0.469375V46ZM0.469375 34.3V33.3H-0.530625V34.3H0.469375ZM53.0894 34.3V35.3H54.0894V34.3H53.0894ZM53.0894 28.9H54.0894V27.9H53.0894V28.9ZM0.289375 28.9H-0.710625V29.9H0.289375V28.9ZM0.289375 18.02H53.0894V16.02H0.289375V18.02ZM54.0894 17.02V11.38H52.0894V17.02H54.0894ZM53.0894 10.38H0.289375V12.38H53.0894V10.38ZM1.28938 11.38V0.0399981H-0.710625V11.38H1.28938ZM0.289375 1.04H49.0694V-0.960002H0.289375V1.04ZM49.0694 1.04C51.4834 1.04 53.6144 1.42303 55.478 2.16847L56.2208 0.31152C54.0844 -0.543032 51.6953 -0.960002 49.0694 -0.960002V1.04ZM55.478 2.16847C57.3634 2.92264 58.9462 3.95101 60.2423 5.2471L61.6565 3.83289C60.1526 2.32898 58.3354 1.15735 56.2208 0.311521L55.478 2.16847ZM60.2423 5.2471C62.0077 7.01255 63.1077 8.93594 63.5901 11.0205C64.0734 13.1087 63.9519 15.4233 63.1725 17.9894L65.0862 18.5706C65.9469 15.7367 66.1153 13.0613 65.5386 10.5695C64.9611 8.07406 63.651 5.82745 61.6565 3.83289L60.2423 5.2471ZM63.1659 18.0124C62.9776 18.69 62.7531 19.3253 62.4932 19.9192L64.3255 20.7208C64.6257 20.0347 64.8811 19.31 65.0929 18.5476L63.1659 18.0124ZM62.5032 19.8971C62.2337 20.4745 61.9677 20.9869 61.7056 21.4361L63.4332 22.4439C63.7311 21.9331 64.025 21.3655 64.3156 20.7429L62.5032 19.8971ZM61.675 21.4928L61.495 21.8528L63.2838 22.7472L63.4638 22.3872L61.675 21.4928ZM61.5211 21.8039L61.2811 22.2239L63.0176 23.2161L63.2576 22.7961L61.5211 21.8039ZM61.4423 23.4271L61.7423 23.7271L63.1565 22.3129L62.8565 22.0129L61.4423 23.4271ZM61.7423 23.7271L62.0423 24.0271L63.4565 22.6129L63.1565 22.3129L61.7423 23.7271ZM61.9301 23.8935C62.1801 24.2505 62.4592 24.7135 62.767 25.2906L64.5317 24.3494C64.1995 23.7265 63.8787 23.1895 63.5686 22.7465L61.9301 23.8935ZM62.767 25.2906C63.0498 25.8207 63.3064 26.457 63.5315 27.2073L65.4472 26.6327C65.1923 25.783 64.889 25.0193 64.5317 24.3494L62.767 25.2906ZM63.5407 27.2362C64.0556 28.781 64.2418 30.4035 64.0931 32.1134L66.0856 32.2866C66.2569 30.3165 66.0431 28.419 65.4381 26.6038L63.5407 27.2362ZM64.0933 32.1115C63.9456 33.773 63.4449 35.517 62.5676 37.3479L64.3712 38.2121C65.3339 36.203 65.9131 34.227 66.0854 32.2885L64.0933 32.1115ZM62.5649 37.3534C61.6023 39.3942 60.5322 40.9129 59.3779 41.959L60.7209 43.441C62.1266 42.1671 63.3365 40.4058 64.3738 38.2066L62.5649 37.3534ZM59.3791 41.9579C58.2645 42.9647 56.7961 43.783 54.939 44.3894L55.5598 46.2906C57.6227 45.617 59.3543 44.6753 60.7197 43.4421L59.3791 41.9579ZM54.9243 44.3943C53.7877 44.785 52.249 45 50.2694 45V47C52.3697 47 54.151 46.775 55.5745 46.2857L54.9243 44.3943ZM50.2694 45H0.469375V47H50.2694V45ZM1.46938 46V34.3H-0.530625V46H1.46938ZM0.469375 35.3H53.0894V33.3H0.469375V35.3ZM54.0894 34.3V28.9H52.0894V34.3H54.0894ZM53.0894 27.9H0.289375V29.9H53.0894V27.9ZM1.28938 28.9V17.02H-0.710625V28.9H1.28938Z" fill="url(#paint2_radial_1_210)" fill-opacity="0.5"/>
+                    <path d="M0.289375 17.02V16.02H-0.710625V17.02H0.289375ZM53.0894 17.02V18.02H54.0894V17.02H53.0894ZM53.0894 11.38H54.0894V10.38H53.0894V11.38ZM0.289375 11.38H-0.710625V12.38H0.289375V11.38ZM0.289375 0.0399981V-0.960002H-0.710625V0.0399981H0.289375ZM55.8494 1.24L56.2208 0.311521V0.31152L55.8494 1.24ZM60.9494 4.54L60.2423 5.2471V5.2471L60.9494 4.54ZM64.1294 18.28L63.1725 17.9894L63.1691 18.0008L63.1659 18.0124L64.1294 18.28ZM63.4094 20.32L64.3156 20.7429L64.3207 20.7319L64.3255 20.7208L63.4094 20.32ZM62.5694 21.94L61.7056 21.4361L61.6894 21.464L61.675 21.4928L62.5694 21.94ZM62.3894 22.3L63.2576 22.7961L63.2714 22.772L63.2838 22.7472L62.3894 22.3ZM62.1494 22.72L61.2811 22.2239L60.9022 22.887L61.4423 23.4271L62.1494 22.72ZM62.7494 23.32L63.5686 22.7465L63.5184 22.6748L63.4565 22.6129L62.7494 23.32ZM63.6494 24.82L62.767 25.2906L63.6494 24.82ZM64.4894 26.92L63.5315 27.2073L63.5359 27.2219L63.5407 27.2362L64.4894 26.92ZM65.0894 32.2L66.0854 32.2885L66.0856 32.2866L65.0894 32.2ZM63.4694 37.78L62.5675 37.3479L62.5649 37.3534L63.4694 37.78ZM60.0494 42.7L60.7197 43.4421L60.7209 43.441L60.0494 42.7ZM55.2494 45.34L54.939 44.3894L54.9316 44.3918L54.9243 44.3943L55.2494 45.34ZM0.469375 46H-0.530625V47H0.469375V46ZM0.469375 34.3V33.3H-0.530625V34.3H0.469375ZM53.0894 34.3V35.3H54.0894V34.3H53.0894ZM53.0894 28.9H54.0894V27.9H53.0894V28.9ZM0.289375 28.9H-0.710625V29.9H0.289375V28.9ZM0.289375 18.02H53.0894V16.02H0.289375V18.02ZM54.0894 17.02V11.38H52.0894V17.02H54.0894ZM53.0894 10.38H0.289375V12.38H53.0894V10.38ZM1.28938 11.38V0.0399981H-0.710625V11.38H1.28938ZM0.289375 1.04H49.0694V-0.960002H0.289375V1.04ZM49.0694 1.04C51.4834 1.04 53.6144 1.42303 55.478 2.16847L56.2208 0.31152C54.0844 -0.543032 51.6953 -0.960002 49.0694 -0.960002V1.04ZM55.478 2.16847C57.3634 2.92264 58.9462 3.95101 60.2423 5.2471L61.6565 3.83289C60.1526 2.32898 58.3354 1.15735 56.2208 0.311521L55.478 2.16847ZM60.2423 5.2471C62.0077 7.01255 63.1077 8.93594 63.5901 11.0205C64.0734 13.1087 63.9519 15.4233 63.1725 17.9894L65.0862 18.5706C65.9469 15.7367 66.1153 13.0613 65.5386 10.5695C64.9611 8.07406 63.651 5.82745 61.6565 3.83289L60.2423 5.2471ZM63.1659 18.0124C62.9776 18.69 62.7531 19.3253 62.4932 19.9192L64.3255 20.7208C64.6257 20.0347 64.8811 19.31 65.0929 18.5476L63.1659 18.0124ZM62.5032 19.8971C62.2337 20.4745 61.9677 20.9869 61.7056 21.4361L63.4332 22.4439C63.7311 21.9331 64.025 21.3655 64.3156 20.7429L62.5032 19.8971ZM61.675 21.4928L61.495 21.8528L63.2838 22.7472L63.4638 22.3872L61.675 21.4928ZM61.5211 21.8039L61.2811 22.2239L63.0176 23.2161L63.2576 22.7961L61.5211 21.8039ZM61.4423 23.4271L61.7423 23.7271L63.1565 22.3129L62.8565 22.0129L61.4423 23.4271ZM61.7423 23.7271L62.0423 24.0271L63.4565 22.6129L63.1565 22.3129L61.7423 23.7271ZM61.9301 23.8935C62.1801 24.2505 62.4592 24.7135 62.767 25.2906L64.5317 24.3494C64.1995 23.7265 63.8787 23.1895 63.5686 22.7465L61.9301 23.8935ZM62.767 25.2906C63.0498 25.8207 63.3064 26.457 63.5315 27.2073L65.4472 26.6327C65.1923 25.783 64.889 25.0193 64.5317 24.3494L62.767 25.2906ZM63.5407 27.2362C64.0556 28.781 64.2418 30.4035 64.0931 32.1134L66.0856 32.2866C66.2569 30.3165 66.0431 28.419 65.4381 26.6038L63.5407 27.2362ZM64.0933 32.1115C63.9456 33.773 63.4449 35.517 62.5676 37.3479L64.3712 38.2121C65.3339 36.203 65.9131 34.227 66.0854 32.2885L64.0933 32.1115ZM62.5649 37.3534C61.6023 39.3942 60.5322 40.9129 59.3779 41.959L60.7209 43.441C62.1266 42.1671 63.3365 40.4058 64.3738 38.2066L62.5649 37.3534ZM59.3791 41.9579C58.2645 42.9647 56.7961 43.783 54.939 44.3894L55.5598 46.2906C57.6227 45.617 59.3543 44.6753 60.7197 43.4421L59.3791 41.9579ZM54.9243 44.3943C53.7877 44.785 52.249 45 50.2694 45V47C52.3697 47 54.151 46.775 55.5745 46.2857L54.9243 44.3943ZM50.2694 45H0.469375V47H50.2694V45ZM1.46938 46V34.3H-0.530625V46H1.46938ZM0.469375 35.3H53.0894V33.3H0.469375V35.3ZM54.0894 34.3V28.9H52.0894V34.3H54.0894ZM53.0894 27.9H0.289375V29.9H53.0894V27.9ZM1.28938 28.9V17.02H-0.710625V28.9H1.28938Z" fill="url(#paint3_radial_1_210)" fill-opacity="0.9"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_1_210" x1="32.5" y1="-6" x2="32.5" y2="54" gradientUnits="userSpaceOnUse">
+                    <stop stop-opacity="0.9"/>
+                    <stop offset="1" stop-opacity="0.1"/>
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_1_210" x1="32.5" y1="-6" x2="32.5" y2="54" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="white" stop-opacity="0.9"/>
+                    <stop offset="1" stop-color="white" stop-opacity="0"/>
+                    </linearGradient>
+                    <radialGradient id="paint2_radial_1_210" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(64.7124 -12.9434) rotate(115.696) scale(74.2903 123.529)">
+                    <stop stop-color="#55C3E6"/>
+                    <stop offset="0.0001" stop-color="#2B92DC"/>
+                    <stop offset="1" stop-color="white" stop-opacity="0"/>
+                    </radialGradient>
+                    <radialGradient id="paint3_radial_1_210" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1.64785 -2.56604) rotate(43.6767) scale(84.9844 155.768)">
+                    <stop stop-color="#66C195"/>
+                    <stop offset="1" stop-color="white" stop-opacity="0"/>
+                    </radialGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="wrp">
+                  <p class="block-3__def-text def-text">Получите файл настроек wireguard в боте за несколько секунд!</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-			</div>
-		</section>
+      <section class="block-4 to-body3">
+        <div class="block-4__container container">
+          <div class="block-4__start">
+            <h2 class="block-4__title title-text">освободи свой  разум</h2>
+            <p class="small-text">
+              Ты попал сюда потому что кто-то пытается
+              ограничить твою свободу в сети…
+              Я помогу тебе снять оковы гос-цензуры и слежки!
+            </p>
 
-		<section class="product-list product-list--2">
-			<div class="product-list__container container">
-				<h2 class="h2-title product-list__title">ГОРЯЧИЕ ЗАКУСКИ</h2>
+          </div>  
+          <div class="block-4__end">
+            <div class="accordion">
+              <ul class="accordion__list">
+                <li class="accordion__item">
+                  <div class="accordion__title-block">
+                    <p class="accordion__def-text def-text">Существует ли проблема использования незащищенных беспроводных сетей?</p>
+                    <i class="accordion__icon-active"></i>
+                  </div>
+                  <p class="accordion__body-text small-text">
+                    Невероятный фантастический боевик, в котором суперкинематографическое семейство Вачовски наконец-то рассказало нам, как мы живем на самом деле. Итак, способен ли ты выбрать красную таблетку, можно узнать, если посмотреть «Матрицу» онлайн. Эта картина не так проста, как кажется.
+                  </p>
+                </li>
+                <li class="accordion__item">
+                  <div class="accordion__title-block">
+                    <p class="accordion__def-text def-text">
+                      О чем надо позаботиться, пользуясь VPN
+                      с сотовых телефонов или беспроводных устройств?
+                    </p>
+                    <i class="accordion__icon-active"></i>
+                  </div>
+                  <p class="accordion__body-text small-text">
+                    Невероятный фантастический боевик, в котором суперкинематографическое семейство Вачовски наконец-то рассказало нам, как мы живем на самом деле. Итак, способен ли ты выбрать красную таблетку, можно узнать, если посмотреть «Матрицу» онлайн. Эта картина не так проста, как кажется.
+                  </p>
+                </li>
+                <li class="accordion__item">
+                  <div class="accordion__title-block">
+                    <p class="accordion__def-text def-text">
+                      Отнимает ли одиночное клиентское VPN подключение столько же ресурсов?
+                    </p>
+                    <i class="accordion__icon-active"></i>
+                  </div>
+                  <p class="accordion__body-text small-text">
+                    Невероятный фантастический боевик, в котором суперкинематографическое семейство Вачовски наконец-то рассказало нам, как мы живем на самом деле. Итак, способен ли ты выбрать красную таблетку, можно узнать, если посмотреть «Матрицу» онлайн. Эта картина не так проста, как кажется.
+                  </p>
+                </li>
+                <li class="accordion__item">
+                  <div class="accordion__title-block">
+                    <p class="accordion__def-text def-text">
+                      О чем надо позаботиться, пользуясь VPN пр
+                    </p>
+                    <i class="accordion__icon-active"></i>
+                  </div>
+                  <p class="accordion__body-text small-text">
+                    Невероятный фантастический боевик, в котором суперкинематографическое семейство Вачовски наконец-то рассказало нам, как мы живем на самом деле. Итак, способен ли ты выбрать красную таблетку, можно узнать, если посмотреть «Матрицу» онлайн. Эта картина не так проста, как кажется.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
 
-				<div class="swiper product-list__swiper">
-				  <ul class="swiper-wrapper product-list__swiper-wrapper">
-				    <li class="product-list__swiper-slide swiper-slide">
-				    	<div class="card">
-				    		<div class="card__count">1</div>
-				    		<img src="img/card/card-3.png" class="card__img" alt="card-image">
-				    		<div class="card__center">
-					    		<h3 class="card__title">
-					    			<a href="#">Гусь</a> <span>Вес: 225 г</span>
-					    		</h3>
-					    		<p class="card__text">
-					    			Фаршированный яблоками
-					    		</p>
-				    		</div>
-				    		<div class="card__end">
-				    			<button  class="card__btn card__btn--count card__btn--minus">
-				    				<i class="icon card__icon icon-minus"></i>
-				    			</button>
-				    			<p class="card__price"><span data-price="17900">17900</span> ₽</p>
-				    			<button class="card__btn card__btn--basket">
-				    				<span>В корзину</span>
-				    				<i class="icon icon-buy"></i>
-				    			</button>
-				    			<button  class="card__btn card__btn--count card__btn--plus">
-				    				<i class="icon card__icon icon-plus"></i>
-				    			</button>
-				    		</div>
-				    	</div>
-				    </li>
-				    <li class="product-list__swiper-slide swiper-slide">
-				    	<div class="card">
-				    		<div class="card__count">1</div>
-				    		<img src="img/card/card-4.png" class="card__img" alt="card-image">
-				    		<div class="card__center">
-					    		<h3 class="card__title">
-					    			<a href="#">Утка</a> <span>Вес: 225 г</span>
-					    		</h3>
-					    		<p class="card__text">
-					    			Фаршированная рисом, курагой и айвой
-					    		</p>
-				    		</div>
-				    		<div class="card__end">
-				    			<button  class="card__btn card__btn--count card__btn--minus">
-				    				<i class="icon card__icon icon-minus"></i>
-				    			</button>
-				    			<p class="card__price"><span data-price="220">220</span> ₽</p>
-				    			<button class="card__btn card__btn--basket">
-				    				<span>В корзину</span>
-				    				<i class="icon icon-buy"></i>
-				    			</button>
-				    			<button  class="card__btn card__btn--count card__btn--plus">
-				    				<i class="icon card__icon icon-plus"></i>
-				    			</button>
-				    		</div>
-				    	</div>
-				    </li>
-				    <li class="product-list__swiper-slide swiper-slide">
-				    	<div class="card">
-				    		<div class="card__count">1</div>
-				    		<img src="img/card/card-1.png" class="card__img" alt="card-image">
-				    		<div class="card__center">
-					    		<h3 class="card__title">
-					    			<a href="#">Ягненок</a> <span>Вес: 225 г</span>
-					    		</h3>
-					    		<p class="card__text">
-					    			Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
-					    		</p>
-				    		</div>
-				    		<div class="card__end">
-				    			<button  class="card__btn card__btn--count card__btn--minus">
-				    				<i class="icon card__icon icon-minus"></i>
-				    			</button>
-				    			<p class="card__price"><span data-price="620">620</span> ₽</p>
-				    			<button class="card__btn card__btn--basket">
-				    				<span>В корзину</span>
-				    				<i class="icon icon-buy"></i>
-				    			</button>
-				    			<button  class="card__btn card__btn--count card__btn--plus">
-				    				<i class="icon card__icon icon-plus"></i>
-				    			</button>
-				    		</div>
-				    	</div>
-				    </li>
-				    <li class="product-list__swiper-slide swiper-slide">
-				    	<div class="card">
-				    		<div class="card__count">1</div>
-				    		<img src="img/card/card-2.png" class="card__img" alt="card-image">
-				    		<div class="card__center">
-					    		<h3 class="card__title">
-					    			<a href="#">Индейка</a> <span>Вес: 225 г</span>
-					    		</h3>
-					    		<p class="card__text">
-					    			Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
-					    		</p>
-				    		</div>
-				    		<div class="card__end">
-				    			<button  class="card__btn card__btn--count card__btn--minus">
-				    				<i class="icon card__icon icon-minus"></i>
-				    			</button>
-				    			<p class="card__price"><span data-price="450">450</span> ₽</p>
-				    			<button class="card__btn card__btn--basket">
-				    				<span>В корзину</span>
-				    				<i class="icon icon-buy"></i>
-				    			</button>
-				    			<button  class="card__btn card__btn--count card__btn--plus">
-				    				<i class="icon card__icon icon-plus"></i>
-				    			</button>
-				    		</div>
-				    	</div>
-				    </li>
+          <div class="block-4__decor-img block-4__decor-top"></div>
+          <div class="block-4__decor-img block-4__decor-title"></div>
+          <div class="block-4__decor-img block-4__decor-top-arrow"></div>
 
+          
+          <div class="block-4__decor-img block-4__decor-img--shadow"></div>
+          <div class="block-4__decor-img block-4__decor-img--shadow block-4__decor-img--shadow-bottom"></div>
+        </div>
 
-				  </ul>
-				</div>
+        <div class="block-4__decor-img block-4__decor-bottom-arrow"></div>
+        <div class="block-4__decor-img block-4__decor-bottom"></div>
+      </section>
 
-			</div>
-		</section>
+      <section class="block-5 to-body4">
+        <div class="block-5__container container">
+          <div class="block-5__start">
+            <div class="block-5__bg-img-wrp img-wrp">
+              <div class="glitch glitch--cat-bg"></div>
+            </div>
+            <div class="block-5__box-img-wrp img-wrp">
+              <div class="glitch glitch--box"></div>
+            </div>
+          </div>
+          <div class="block-5__end">
+            <h2 class="block-5__title title-text">
+              <div class="block-5__title-decor"></div>
+              Следуй за белым кроликом
+            </h2>
+            <div class="warning-block">
+              <div class="warning-block__icon img-wrp">
+                <svg width="70" height="61" viewBox="0 0 70 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.17238 57.228H61.8283L66.3444 49.2643L39.4627 3.77344H30.538L3.65625 49.2643L8.17238 57.228Z" fill="white"/>
+                  <mask id="path-2-inside-1_1_74" fill="white">
+                  <path d="M8.17238 57.228H61.8283L66.3444 49.2643L39.4627 3.77344H30.538L3.65625 49.2643L8.17238 57.228Z"/>
+                  </mask>
+                  <path d="M8.17238 57.228H61.8283L66.3444 49.2643L39.4627 3.77344H30.538L3.65625 49.2643L8.17238 57.228Z" fill="url(#paint0_linear_1_74)"/>
+                  <path d="M8.17238 57.228H61.8283L66.3444 49.2643L39.4627 3.77344H30.538L3.65625 49.2643L8.17238 57.228Z" fill="url(#paint1_linear_1_74)" fill-opacity="0.2"/>
+                  <path d="M8.17238 57.228H61.8283L66.3444 49.2643L39.4627 3.77344H30.538L3.65625 49.2643L8.17238 57.228Z" fill="url(#paint2_radial_1_74)" fill-opacity="0.4"/>
+                  <path d="M8.17238 57.228L7.30252 57.7213L7.58987 58.228H8.17238V57.228ZM61.8283 57.228V58.228H62.4108L62.6982 57.7213L61.8283 57.228ZM66.3444 49.2643L67.2143 49.7576L67.4999 49.254L67.2053 48.7556L66.3444 49.2643ZM39.4627 3.77344L40.3236 3.2647L40.0333 2.77344H39.4627V3.77344ZM30.538 3.77344V2.77344H29.9673L29.677 3.2647L30.538 3.77344ZM3.65625 49.2643L2.79533 48.7556L2.5008 49.254L2.78639 49.7576L3.65625 49.2643ZM8.17238 58.228H61.8283V56.228H8.17238V58.228ZM62.6982 57.7213L67.2143 49.7576L65.4746 48.7711L60.9584 56.7347L62.6982 57.7213ZM67.2053 48.7556L40.3236 3.2647L38.6018 4.28218L65.4835 49.7731L67.2053 48.7556ZM39.4627 2.77344H30.538V4.77344H39.4627V2.77344ZM29.677 3.2647L2.79533 48.7556L4.51717 49.7731L31.3989 4.28218L29.677 3.2647ZM2.78639 49.7576L7.30252 57.7213L9.04224 56.7347L4.52611 48.7711L2.78639 49.7576Z" fill="url(#paint3_linear_1_74)" mask="url(#path-2-inside-1_1_74)"/>
+                  <path d="M8.17238 57.228L7.30252 57.7213L7.58987 58.228H8.17238V57.228ZM61.8283 57.228V58.228H62.4108L62.6982 57.7213L61.8283 57.228ZM66.3444 49.2643L67.2143 49.7576L67.4999 49.254L67.2053 48.7556L66.3444 49.2643ZM39.4627 3.77344L40.3236 3.2647L40.0333 2.77344H39.4627V3.77344ZM30.538 3.77344V2.77344H29.9673L29.677 3.2647L30.538 3.77344ZM3.65625 49.2643L2.79533 48.7556L2.5008 49.254L2.78639 49.7576L3.65625 49.2643ZM8.17238 58.228H61.8283V56.228H8.17238V58.228ZM62.6982 57.7213L67.2143 49.7576L65.4746 48.7711L60.9584 56.7347L62.6982 57.7213ZM67.2053 48.7556L40.3236 3.2647L38.6018 4.28218L65.4835 49.7731L67.2053 48.7556ZM39.4627 2.77344H30.538V4.77344H39.4627V2.77344ZM29.677 3.2647L2.79533 48.7556L4.51717 49.7731L31.3989 4.28218L29.677 3.2647ZM2.78639 49.7576L7.30252 57.7213L9.04224 56.7347L4.52611 48.7711L2.78639 49.7576Z" fill="url(#paint4_linear_1_74)" fill-opacity="0.2" mask="url(#path-2-inside-1_1_74)"/>
+                  <path d="M8.17238 57.228L7.30252 57.7213L7.58987 58.228H8.17238V57.228ZM61.8283 57.228V58.228H62.4108L62.6982 57.7213L61.8283 57.228ZM66.3444 49.2643L67.2143 49.7576L67.4999 49.254L67.2053 48.7556L66.3444 49.2643ZM39.4627 3.77344L40.3236 3.2647L40.0333 2.77344H39.4627V3.77344ZM30.538 3.77344V2.77344H29.9673L29.677 3.2647L30.538 3.77344ZM3.65625 49.2643L2.79533 48.7556L2.5008 49.254L2.78639 49.7576L3.65625 49.2643ZM8.17238 58.228H61.8283V56.228H8.17238V58.228ZM62.6982 57.7213L67.2143 49.7576L65.4746 48.7711L60.9584 56.7347L62.6982 57.7213ZM67.2053 48.7556L40.3236 3.2647L38.6018 4.28218L65.4835 49.7731L67.2053 48.7556ZM39.4627 2.77344H30.538V4.77344H39.4627V2.77344ZM29.677 3.2647L2.79533 48.7556L4.51717 49.7731L31.3989 4.28218L29.677 3.2647ZM2.78639 49.7576L7.30252 57.7213L9.04224 56.7347L4.52611 48.7711L2.78639 49.7576Z" fill="url(#paint5_radial_1_74)" fill-opacity="0.4" mask="url(#path-2-inside-1_1_74)"/>
+                  <path d="M21 40.874C21 40.999 21 40.999 21 40.874C21 40.999 21 41.124 21 41.124C21.125 41.874 21.375 42.249 22 42.624C22.625 42.999 23.25 42.874 23.875 42.749C24.375 42.624 24.75 42.374 25.25 42.124C25.5 42.499 25.5 42.999 25.375 43.499C25.25 43.874 25.125 44.374 25.125 44.749C25 45.249 25.125 45.624 25.75 45.749C25.875 45.749 25.875 45.749 26 45.749C26.625 45.749 27.25 45.874 28 45.749C30.5 45.624 33 45.624 35.5 45.624C36.625 45.624 37.875 45.624 39 45.624C39.375 45.624 39.875 45.499 40.25 45.499C40.375 45.499 40.5 45.374 40.5 45.249C40.5 44.874 40.5 44.374 40.125 44.249C39.75 43.999 39.375 43.874 39 43.749C37.625 43.374 36.25 43.249 34.75 43.124C33.875 43.124 33 43.124 32.125 43.124C32.125 43.124 32.125 43.124 32.125 42.999C32.25 42.999 32.25 42.999 32.375 42.999C32.75 42.874 33.25 42.874 33.625 42.749C34.75 42.374 35.75 41.874 36.5 40.874C37.5 39.499 37.125 37.499 35.125 36.999C34.625 36.874 34.125 36.874 33.5 36.874C33 36.874 32.5 36.999 32 36.999C32 36.874 32.125 36.874 32.125 36.749C32.375 36.374 32.75 36.124 33.125 35.999C34 35.624 34.875 35.499 35.75 35.624C37.125 35.874 38.125 36.749 38.375 38.124C38.5 38.999 38.375 39.749 38.25 40.624C38.25 40.749 38.25 40.874 38.25 40.999C38.875 41.874 39.5 42.874 40.125 43.624C40.625 44.249 41.25 44.999 41.875 45.624C42 45.749 42.25 45.874 42.5 45.874C43.375 45.874 44.125 45.874 45 45.874C45.25 45.874 45.5 45.749 45.75 45.624C45.875 45.624 45.875 45.499 45.875 45.374C45.875 44.624 45.625 43.999 44.75 43.749C44.375 43.624 43.875 43.624 43.5 43.499C42.875 43.374 42.75 43.249 42.75 42.624C42.625 41.499 42.5 40.374 42.25 39.249C42.125 38.624 42.125 37.999 42.375 37.374C42.5 36.999 42.625 36.624 42.75 36.374C43 35.624 43.125 34.999 43 34.249C43 34.124 42.875 33.874 42.875 33.749C43.125 33.749 43.25 33.749 43.5 33.749C44.375 33.624 45.25 33.499 46 33.124C46.5 32.874 47 32.499 47 31.874C47 31.499 47 30.999 46.875 30.624C46.25 28.749 45.25 27.499 44 26.374C43 25.499 42 25.124 40.75 25.124C40.125 25.124 39.625 25.249 39 25.249C38.75 24.999 38.625 24.749 38.375 24.499C36.875 22.874 35 21.749 32.75 21.249C32.125 21.124 31.375 20.999 30.75 21.124C30.125 21.249 30 21.874 30.375 22.249C30.5 22.499 30.625 22.624 30.75 22.749C31.25 22.999 31.875 23.249 32.375 23.499C32.625 23.624 32.875 23.624 33.125 23.749C33 23.749 33 23.749 32.875 23.624C31.875 23.374 30.75 23.249 29.75 23.499C29.375 23.624 29 23.749 28.625 23.999C28.125 24.374 28.125 24.874 28.875 25.124C29.375 25.249 29.75 25.374 30.25 25.499C31.75 25.874 33.25 26.499 34.625 27.249C34.875 27.499 35.25 27.624 35.625 27.874C35.875 27.874 36 27.999 36.125 28.124C36.25 28.249 36.125 28.499 36.125 28.624C36.125 29.124 35.875 29.374 35.5 29.624C35.25 29.749 35.125 29.874 34.875 29.874C34 29.999 33.25 29.999 32.375 30.124C31.375 30.249 30.375 30.249 29.375 30.374C28.625 30.499 27.75 30.749 27.125 31.249C26.25 31.999 25.375 32.749 24.75 33.749C23.875 34.999 23.25 36.249 23.25 37.749C23.25 38.124 23.25 38.624 23.25 38.999C23.125 38.999 23 38.999 22.875 38.999C22.125 39.124 21.625 39.374 21.25 40.124C21.125 40.374 21.125 40.624 21 40.874ZM41.25 29.499C41.25 28.874 41.75 28.374 42.375 28.374C43 28.374 43.5 28.874 43.5 29.499C43.5 30.124 43 30.624 42.375 30.624C41.75 30.624 41.25 30.124 41.25 29.499Z" fill="white"/>
+                  <defs>
+                  <linearGradient id="paint0_linear_1_74" x1="35.0003" y1="3.77344" x2="35.0003" y2="57.228" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#018197"/>
+                  <stop offset="1" stop-color="#22CF48"/>
+                  </linearGradient>
+                  <linearGradient id="paint1_linear_1_74" x1="31.8659" y1="36.6029" x2="54.1574" y2="13.5603" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#0265A5"/>
+                  <stop offset="1" stop-color="#00FF66"/>
+                  </linearGradient>
+                  <radialGradient id="paint2_radial_1_74" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(62.4917 55.7306) rotate(-70.5008) scale(24.6983 28.0787)">
+                  <stop stop-color="#44D1F0"/>
+                  <stop offset="1" stop-color="#4B84DA" stop-opacity="0.34"/>
+                  </radialGradient>
+                  <linearGradient id="paint3_linear_1_74" x1="35.0003" y1="3.77344" x2="35.0003" y2="57.228" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#018197"/>
+                  <stop offset="1" stop-color="#22CF48"/>
+                  </linearGradient>
+                  <linearGradient id="paint4_linear_1_74" x1="31.8659" y1="36.6029" x2="54.1574" y2="13.5603" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#0265A5"/>
+                  <stop offset="1" stop-color="#00FF66"/>
+                  </linearGradient>
+                  <radialGradient id="paint5_radial_1_74" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(62.4917 55.7306) rotate(-70.5008) scale(24.6983 28.0787)">
+                  <stop stop-color="#44D1F0"/>
+                  <stop offset="1" stop-color="#4B84DA" stop-opacity="0.34"/>
+                  </radialGradient>
+                  </defs>
+                </svg>
+              </div>
+              <div class="warning-block__bg"></div>
+              <p class="warning-block__text def-text">
+                +7 (999) 999-99-99 <br>
+                Info@neovpn.com <br>
+                Латвия, ул. Олива 24 <br>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-		<section class="product-list product-list--3 product-list--last">
-			<div class="product-list__container container">
-				<h2 class="h2-title product-list__title">Мясные блюда</h2>
+    </main>
 
-				<div class="swiper product-list__swiper">
-				  <ul class="swiper-wrapper product-list__swiper-wrapper">
-				    <li class="product-list__swiper-slide swiper-slide">
-				    	<div class="card">
-				    		<div class="card__count">1</div>
-				    		<img src="img/card/card-1.png" class="card__img" alt="card-image">
-				    		<div class="card__center">
-					    		<h3 class="card__title">
-					    			<a href="#">Ягненок</a> <span>Вес: 225 г</span>
-					    		</h3>
-					    		<p class="card__text">
-					    			Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
-					    		</p>
-				    		</div>
-				    		<div class="card__end">
-				    			<button  class="card__btn card__btn--count card__btn--minus">
-				    				<i class="icon card__icon icon-minus"></i>
-				    			</button>
-				    			<p class="card__price"><span data-price="620">620</span> ₽</p>
-				    			<button class="card__btn card__btn--basket">
-				    				<span>В корзину</span>
-				    				<i class="icon icon-buy"></i>
-				    			</button>
-				    			<button  class="card__btn card__btn--count card__btn--plus">
-				    				<i class="icon card__icon icon-plus"></i>
-				    			</button>
-				    		</div>
-				    	</div>
-				    </li>
-				    <li class="product-list__swiper-slide swiper-slide">
-				    	<div class="card">
-				    		<div class="card__count">1</div>
-				    		<img src="img/card/card-2.png" class="card__img" alt="card-image">
-				    		<div class="card__center">
-					    		<h3 class="card__title">
-					    			<a href="#">Индейка</a> <span>Вес: 225 г</span>
-					    		</h3>
-					    		<p class="card__text">
-					    			Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
-					    		</p>
-				    		</div>
-				    		<div class="card__end">
-				    			<button  class="card__btn card__btn--count card__btn--minus">
-				    				<i class="icon card__icon icon-minus"></i>
-				    			</button>
-				    			<p class="card__price"><span data-price="450">450</span> ₽</p>
-				    			<button class="card__btn card__btn--basket">
-				    				<span>В корзину</span>
-				    				<i class="icon icon-buy"></i>
-				    			</button>
-				    			<button  class="card__btn card__btn--count card__btn--plus">
-				    				<i class="icon card__icon icon-plus"></i>
-				    			</button>
-				    		</div>
-				    	</div>
-				    </li>
-				    <li class="product-list__swiper-slide swiper-slide">
-				    	<div class="card">
-				    		<div class="card__count">1</div>
-				    		<img src="img/card/card-3.png" class="card__img" alt="card-image">
-				    		<div class="card__center">
-					    		<h3 class="card__title">
-					    			<a href="#">Гусь</a> <span>Вес: 225 г</span>
-					    		</h3>
-					    		<p class="card__text">
-					    			Фаршированный яблоками
-					    		</p>
-				    		</div>
-				    		<div class="card__end">
-				    			<button  class="card__btn card__btn--count card__btn--minus">
-				    				<i class="icon card__icon icon-minus"></i>
-				    			</button>
-				    			<p class="card__price"><span data-price="7900">7900</span> ₽</p>
-				    			<button class="card__btn card__btn--basket">
-				    				<span>В корзину</span>
-				    				<i class="icon icon-buy"></i>
-				    			</button>
-				    			<button  class="card__btn card__btn--count card__btn--plus">
-				    				<i class="icon card__icon icon-plus"></i>
-				    			</button>
-				    		</div>
-				    	</div>
-				    </li>
-				    <li class="product-list__swiper-slide swiper-slide">
-				    	<div class="card">
-				    		<div class="card__count">1</div>
-				    		<img src="img/card/card-4.png" class="card__img" alt="card-image">
-				    		<div class="card__center">
-					    		<h3 class="card__title">
-					    			<a href="#">Утка</a> <span>Вес: 225 г</span>
-					    		</h3>
-					    		<p class="card__text">
-					    			Фаршированная рисом, курагой и айвой
-					    		</p>
-				    		</div>
-				    		<div class="card__end">
-				    			<button  class="card__btn card__btn--count card__btn--minus">
-				    				<i class="icon card__icon icon-minus"></i>
-				    			</button>
-				    			<p class="card__price"><span data-price="3200">3200</span> ₽</p>
-				    			<button class="card__btn card__btn--basket">
-				    				<span>В корзину</span>
-				    				<i class="icon icon-buy"></i>
-				    			</button>
-				    			<button  class="card__btn card__btn--count card__btn--plus">
-				    				<i class="icon card__icon icon-plus"></i>
-				    			</button>
-				    		</div>
-				    	</div>
-				    </li>
-				  </ul>
-				</div>
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__start">
+          <div class="wrp">
+            <div class="logo-wrp img-wrp">
+              <img src="img/logo.svg" alt="logo">
+            </div>
+            <nav>
+              <ul>
+                <li><a class="u-small-text to-form" href="#">тарифы</a></li>
+                <li><a class="u-small-text to-form" href="#">Схема работы</a></li>
+                <li><a class="u-small-text to-form" href="#">faq</a></li>
+                <li><a class="u-small-text to-form" href="#">контакты</a></li>
+              </ul>    
+            </nav>
+            <div class="footer__link-wrp">
+              <a href="#" class="u-small-text">Политика конфиденциальности</a>
+              <a href="#" class="u-small-text">Пользовательское соглашение</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__end">
+          <span class="u-small-text">
+            NEO VPN © 2022. <br>
+            All Rights Reserved.
+          </span>
 
-			</div>
-		</section>
-
-		<section class="our-cafe">
-			<div class="our-cafe__container container">
-				<div class="our-cafe__left">
-					<h2 class="h2-title our-cafe__title">НАШЕ КАФЕ</h2>
-					<p class="our-cafe__text">
-						Мы расположены в одном из самых живописных мест города — на берегу реки, это ваш оазис в черте города, куда можно сбежать от шумного и пыльного мегаполиса. Мы, действительно уникальные, ведь все продумано до мелочей: проект построен из дикого закарпатского сруба, камин в основном зале ресторана и панорамные окна с видом на реку, уютные беседки на берегу реки и лучшая видовая террасса, шатер с посадкой на 200 человек, сказочный детский домик и бассейн.
-					</p>
-					<a href="#" class="our-cafe__btn">ПОСМОТРЕТЬ МЕНЮ</a>
-				</div>
-				<ul class="our-cafe__right our-cafe__list">
-					<li class="our-cafe__item">
-						<div class="our-cafe__svg-wrapper">
-							<svg width="70" height="62" viewBox="0 0 70 62" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M29.5081 55.2603C27.9714 55.7961 26.3884 56.1358 24.7824 56.2816C25.9247 55.7146 27.0553 54.9836 28.1582 54.0892C28.5982 53.7325 28.6658 53.0866 28.309 52.6465C27.9521 52.2065 27.3061 52.1391 26.8663 52.4958C24.0464 54.7823 21.5155 55.5849 19.4265 55.6738C21.0107 54.1924 22.9224 51.5022 25.1789 46.8863C25.4277 46.3772 25.2168 45.763 24.7079 45.5143C24.199 45.2658 23.5847 45.4764 23.3359 45.9853C19.9683 52.8736 17.3669 55.224 16.2695 55.2237C16.1961 55.2237 16.1292 55.2132 16.0694 55.1928C15.7029 55.0676 15.469 54.4891 15.3622 54.1552C13.5679 48.5501 18.7646 28.8731 25.6338 19.29L30.2611 12.8348C30.5216 12.4711 30.7827 11.9503 30.9962 11.3687L31.1418 10.9717L31.2092 10.9946L31.0815 11.3977C30.8943 11.9885 30.7821 12.5601 30.7656 13.0074L30.4822 20.7492C30.4616 21.3154 30.9037 21.7911 31.4698 21.8119C31.4826 21.8123 31.4953 21.8126 31.5079 21.8126C32.0572 21.8126 32.512 21.3777 32.5323 20.8243L32.773 14.2475L34.2028 18.3875C34.3494 18.812 34.747 19.0787 35.1722 19.0787C35.2832 19.0787 35.3962 19.0605 35.5071 19.0222C36.0426 18.8373 36.3267 18.2534 36.1418 17.7179L36.0912 17.5716L36.0962 17.5801C36.3889 18.065 37.0191 18.2214 37.5043 17.9285C37.9894 17.6359 38.1455 17.0056 37.8528 16.5205L36.3782 14.0763C36.1057 13.6244 36.0228 13.0716 36.1511 12.5597L38.4701 3.29939C38.6258 2.67823 38.4809 2.03887 38.0729 1.54544C37.6648 1.052 37.0652 0.789696 36.4247 0.825801L30.9985 1.13242C30.2455 1.17509 29.5894 1.63064 29.2861 2.32142L26.2751 9.1853C26.0632 9.66834 25.6596 10.0546 25.1676 10.2451L14.5454 14.3585C9.87266 16.168 6.05115 19.2666 3.49359 23.319C1.11915 27.0813 -0.0873536 31.4826 0.0044128 36.0473C0.0961792 40.612 1.47869 44.9614 4.00248 48.625C6.72087 52.5714 10.664 55.5137 15.4057 57.1339C17.9087 57.9892 20.4538 58.417 22.9709 58.4168C25.4243 58.4168 27.8509 58.0102 30.183 57.1971C30.7179 57.0105 31.0003 56.4256 30.8137 55.8907C30.6272 55.3559 30.0428 55.0734 29.5081 55.2603V55.2603ZM31.1506 3.17877L36.4611 2.87872L34.6749 10.0113L29.0034 8.07343L31.1506 3.17877ZM5.69229 47.4616C3.39704 44.1296 2.13952 40.1683 2.05596 36.0063C1.97226 31.8442 3.06949 27.8358 5.22895 24.414C7.54977 20.7367 11.0276 17.921 15.2867 16.2718L23.2562 13.1856L18.9277 16.0198C15.6976 18.1349 12.8628 21.2847 10.7296 25.1286C8.76161 28.6749 7.42054 32.7237 6.85106 36.8378C6.77338 37.399 7.16534 37.9168 7.72647 37.9944C7.7742 38.0011 7.82152 38.0042 7.86843 38.0042C8.37253 38.0042 8.81208 37.6323 8.88319 37.1189C10.0163 28.932 14.2958 21.5047 20.0516 17.7359L27.9151 12.5869L23.9668 18.095C20.7157 22.6304 17.4683 29.9389 15.2802 37.6449C13.3751 44.3543 12.6051 50.1181 13.124 53.5207C12.101 52.6533 11.2323 51.5395 10.529 50.1819C9.29416 47.7987 8.62731 44.7449 8.60064 41.3505C8.59613 40.7841 8.13251 40.3242 7.56687 40.333C7.00041 40.3375 6.54486 40.8003 6.54923 41.3669C6.57768 44.9713 7.26641 48.1475 8.51558 50.7214C7.46061 49.7417 6.51313 48.6532 5.69229 47.4616V47.4616Z" fill="white"/>
-								<path d="M48.1502 17.4775C36.1021 17.4775 26.3002 27.2794 26.3002 39.3277C26.3002 51.3757 36.102 61.1776 48.1502 61.1776C60.1984 61.1776 70.0002 51.3757 70.0002 39.3277C70 27.2794 60.1982 17.4775 48.1502 17.4775V17.4775ZM48.1502 59.1261C37.2333 59.1261 28.3516 50.2446 28.3516 39.3275C28.3516 28.4105 37.2331 19.5288 48.1502 19.5288C59.0672 19.5288 67.9487 28.4105 67.9487 39.3275C67.9487 50.2446 59.0671 59.1261 48.1502 59.1261Z" fill="white"/>
-								<path d="M48.1502 21.6079C38.3796 21.6079 30.4306 29.5569 30.4306 39.3274C30.4306 49.0979 38.3796 57.0468 48.1502 57.0468C57.9208 57.0468 65.8699 49.0979 65.8699 39.3274C65.8699 29.5569 57.9208 21.6079 48.1502 21.6079ZM48.1502 54.9956C39.5107 54.9956 32.482 47.9669 32.482 39.3276C32.482 30.6883 39.5107 23.6595 48.1502 23.6595C56.7896 23.6595 63.8184 30.6883 63.8184 39.3276C63.8184 47.9669 56.7896 54.9956 48.1502 54.9956Z" fill="white"/>
-								<path d="M48.1502 26.635C41.1515 26.635 35.4577 32.3289 35.4577 39.3276C35.4577 46.3262 41.1515 52.0201 48.1502 52.0201C52.843 52.0201 57.1358 49.4399 59.3532 45.2863C59.6201 44.7866 59.4312 44.1653 58.9315 43.8984C58.4316 43.6315 57.8103 43.8205 57.5436 44.3202C55.6835 47.8045 52.0843 49.9689 48.1502 49.9689C42.2828 49.9689 37.5091 45.1954 37.5091 39.3278C37.5091 33.4602 42.2828 28.6866 48.1502 28.6866C54.0178 28.6866 58.7914 33.4602 58.7914 39.3278C58.7914 39.7019 58.7702 40.0882 58.7285 40.4752C58.6678 41.0384 59.0752 41.5441 59.6384 41.605C60.2013 41.6658 60.7073 41.2583 60.7682 40.6951C60.8177 40.2353 60.8428 39.7753 60.8428 39.3279C60.8427 32.3289 55.1488 26.635 48.1502 26.635V26.635Z" fill="white"/>
-								<path d="M40.7704 39.3276C40.7704 43.3969 44.0809 46.7075 48.1502 46.7075C52.2195 46.7075 55.5301 43.3969 55.5301 39.3276C55.5301 35.2583 52.2194 31.9478 48.1502 31.9478C44.0811 31.9478 40.7704 35.2583 40.7704 39.3276ZM53.4787 39.3276C53.4787 42.2657 51.0883 44.6561 48.1502 44.6561C45.2122 44.6561 42.8218 42.2657 42.8218 39.3276C42.8218 36.3896 45.2121 33.9992 48.1502 33.9992C51.0884 33.9992 53.4787 36.3895 53.4787 39.3276Z" fill="white"/>
-							</svg>
-						</div>
-						<span>Свежайшие продукты</span>
-					</li>
-					<li class="our-cafe__item">
-						<div class="our-cafe__svg-wrapper">
-							<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M47.6953 24.7266H33.1389L45.7077 2.62665C46.0172 2.08283 46.0135 1.41495 45.699 0.873872C45.3845 0.332795 44.8055 0 44.1797 0H23.0859C22.3288 0 21.6563 0.48523 21.4178 1.20392L10.8709 32.9613C10.6929 33.4974 10.783 34.086 11.1136 34.5443C11.4441 35.002 11.9742 35.2735 12.539 35.2735H27.4562L17.9535 57.5524C17.6152 58.3457 17.9017 59.2667 18.6305 59.7277C19.3593 60.1887 20.3146 60.0527 20.8864 59.4077L49.0114 27.6499C50.013 26.5183 49.2082 24.7266 47.6953 24.7266ZM25.4388 48.9647L31.734 34.2055C32.2275 33.0483 31.3779 31.7578 30.1172 31.7578H14.9748L24.3544 3.51563H41.1575L28.5892 25.6151C27.9245 26.7838 28.7691 28.2422 30.1172 28.2422H43.7906L25.4388 48.9647Z" fill="white"/>
-							</svg>
-						</div>
-						<span>Быстрая доставка</span>
-					</li>
-					<li class="our-cafe__item">
-						<div class="our-cafe__svg-wrapper">
-							<svg width="61" height="61" viewBox="0 0 61 61" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<g clip-path="url(#clip0_31_25)">
-							<path d="M16.6364 29.1137C16.6364 28.3474 16.0163 27.7273 15.25 27.7273C14.4837 27.7273 13.8636 28.3474 13.8636 29.1137C13.8636 32.7542 17.8792 37.7528 18.3368 38.3119C18.6117 38.645 19.0097 38.8183 19.4104 38.8183C19.719 38.8183 20.0305 38.7153 20.289 38.5041C20.8806 38.018 20.9659 37.1449 20.4812 36.5518C18.9948 34.7404 16.6364 31.1201 16.6364 29.1137Z" fill="white"/>
-							<path d="M45.75 27.7273C44.9837 27.7273 44.3636 28.3474 44.3636 29.1137C44.3636 31.1133 42.0051 34.7377 40.5186 36.5533C40.034 37.1449 40.1205 38.0182 40.7123 38.5041C40.9695 38.7153 41.2809 38.8183 41.5909 38.8183C41.9916 38.8183 42.3883 38.645 42.6632 38.3119C43.1208 37.7528 47.1364 32.7543 47.1364 29.1137C47.1364 28.3474 46.5163 27.7273 45.75 27.7273Z" fill="white"/>
-							<path d="M30.5001 27.7273C29.7337 27.7273 29.1136 28.3474 29.1136 29.1137V37.4319C29.1136 38.1982 29.7337 38.8183 30.5001 38.8183C31.2664 38.8183 31.8865 38.1982 31.8865 37.4319V29.1137C31.8863 28.3474 31.2662 27.7273 30.5001 27.7273Z" fill="white"/>
-							<path d="M45.75 5.5455C44.9099 5.5455 44.0319 5.65663 43.1202 5.82598C40.0668 2.26658 35.5467 0 30.5001 0C25.4534 0 20.9332 2.26658 17.8799 5.82585C16.9681 5.65663 16.0901 5.54537 15.2501 5.54537C6.84106 5.5455 0 12.3866 0 20.7955C0 26.5575 3.24929 31.7956 8.35068 34.3856L8.32365 55.3367C8.32235 56.849 8.90982 58.2706 9.97806 59.3401C11.0476 60.4111 12.4678 61 13.9801 61H47.0254C50.1448 61 52.6819 58.4628 52.6819 55.3435V34.3653C57.7644 31.7686 61.0001 26.5385 61.0001 20.7955C61 12.3866 54.1589 5.5455 45.75 5.5455ZM49.9091 55.3436C49.9091 56.9331 48.6149 58.2274 47.0253 58.2274H13.98C13.2097 58.2274 12.4853 57.9268 11.9397 57.3813C11.3954 56.8357 11.0949 56.1114 11.0962 55.3397L11.1035 49.9091H49.9091V55.3436ZM50.7675 32.2072C50.6943 32.237 50.6253 32.2722 50.5603 32.3142C50.3856 32.4225 50.2421 32.5661 50.1351 32.7312C50.0269 32.8949 49.9537 33.0846 49.9239 33.2876C49.9117 33.3648 49.9077 33.442 49.909 33.5205V47.1363H11.107L11.1248 33.5393C11.1261 33.4635 11.1221 33.3863 11.1113 33.3119C11.0815 33.102 11.0043 32.907 10.8919 32.7378C10.7862 32.5794 10.6482 32.4413 10.4803 32.3357C10.4113 32.2924 10.3381 32.2544 10.2623 32.2232C5.712 30.2334 2.77269 25.7519 2.77269 20.7955C2.77269 13.915 8.36966 8.31819 15.25 8.31819C15.5189 8.31819 15.8027 8.35068 16.0813 8.37265C14.6786 10.8104 13.8636 13.6274 13.8636 16.6364C13.8636 17.4027 14.4837 18.0228 15.25 18.0228C16.0163 18.0228 16.6364 17.4027 16.6364 16.6364C16.6364 8.99235 22.856 2.77269 30.5001 2.77269C38.1441 2.77269 44.3636 8.99235 44.3636 16.6364C44.3636 17.4027 44.9837 18.0228 45.75 18.0228C46.5163 18.0228 47.1364 17.4027 47.1364 16.6364C47.1364 13.6274 46.3214 10.8105 44.9187 8.37265C45.1973 8.35068 45.4811 8.31819 45.75 8.31819C52.6305 8.31819 58.2273 13.9152 58.2273 20.7955C58.2273 25.7344 55.3002 30.2102 50.7675 32.2072Z" fill="white"/>
-							</g>
-							<defs>
-							<clipPath id="clip0_31_25">
-							<rect width="61" height="61" fill="white"/>
-							</clipPath>
-							</defs>
-							</svg>
-						</div>
-						<span>Лучшие повора</span>
-					</li>
-					<li class="our-cafe__item">
-						<div class="our-cafe__svg-wrapper">
-							<svg width="70" height="62" viewBox="0 0 70 62" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M29.5081 55.2603C27.9714 55.7961 26.3884 56.1358 24.7824 56.2816C25.9247 55.7146 27.0553 54.9836 28.1582 54.0892C28.5982 53.7325 28.6658 53.0866 28.309 52.6465C27.9521 52.2065 27.3061 52.1391 26.8663 52.4958C24.0464 54.7823 21.5155 55.5849 19.4265 55.6738C21.0107 54.1924 22.9224 51.5022 25.1789 46.8863C25.4277 46.3772 25.2168 45.763 24.7079 45.5143C24.199 45.2658 23.5847 45.4764 23.3359 45.9853C19.9683 52.8736 17.3669 55.224 16.2695 55.2237C16.1961 55.2237 16.1292 55.2132 16.0694 55.1928C15.7029 55.0676 15.469 54.4891 15.3622 54.1552C13.5679 48.5501 18.7646 28.8731 25.6338 19.29L30.2611 12.8348C30.5216 12.4711 30.7827 11.9503 30.9962 11.3687L31.1418 10.9717L31.2092 10.9946L31.0815 11.3977C30.8943 11.9885 30.7821 12.5601 30.7656 13.0074L30.4822 20.7492C30.4616 21.3154 30.9037 21.7911 31.4698 21.8119C31.4826 21.8123 31.4953 21.8126 31.5079 21.8126C32.0572 21.8126 32.512 21.3777 32.5323 20.8243L32.773 14.2475L34.2028 18.3875C34.3494 18.812 34.747 19.0787 35.1722 19.0787C35.2832 19.0787 35.3962 19.0605 35.5071 19.0222C36.0426 18.8373 36.3267 18.2534 36.1418 17.7179L36.0912 17.5716L36.0962 17.5801C36.3889 18.065 37.0191 18.2214 37.5043 17.9285C37.9894 17.6359 38.1455 17.0056 37.8528 16.5205L36.3782 14.0763C36.1057 13.6244 36.0228 13.0716 36.1511 12.5597L38.4701 3.29939C38.6258 2.67823 38.4809 2.03887 38.0729 1.54544C37.6648 1.052 37.0652 0.789696 36.4247 0.825801L30.9985 1.13242C30.2455 1.17509 29.5894 1.63064 29.2861 2.32142L26.2751 9.1853C26.0632 9.66834 25.6596 10.0546 25.1676 10.2451L14.5454 14.3585C9.87266 16.168 6.05115 19.2666 3.49359 23.319C1.11915 27.0813 -0.0873536 31.4826 0.0044128 36.0473C0.0961792 40.612 1.47869 44.9614 4.00248 48.625C6.72087 52.5714 10.664 55.5137 15.4057 57.1339C17.9087 57.9892 20.4538 58.417 22.9709 58.4168C25.4243 58.4168 27.8509 58.0102 30.183 57.1971C30.7179 57.0105 31.0003 56.4256 30.8137 55.8907C30.6272 55.3559 30.0428 55.0734 29.5081 55.2603V55.2603ZM31.1506 3.17877L36.4611 2.87872L34.6749 10.0113L29.0034 8.07343L31.1506 3.17877ZM5.69229 47.4616C3.39704 44.1296 2.13952 40.1683 2.05596 36.0063C1.97226 31.8442 3.06949 27.8358 5.22895 24.414C7.54977 20.7367 11.0276 17.921 15.2867 16.2718L23.2562 13.1856L18.9277 16.0198C15.6976 18.1349 12.8628 21.2847 10.7296 25.1286C8.76161 28.6749 7.42054 32.7237 6.85106 36.8378C6.77338 37.399 7.16534 37.9168 7.72647 37.9944C7.7742 38.0011 7.82152 38.0042 7.86843 38.0042C8.37253 38.0042 8.81208 37.6323 8.88319 37.1189C10.0163 28.932 14.2958 21.5047 20.0516 17.7359L27.9151 12.5869L23.9668 18.095C20.7157 22.6304 17.4683 29.9389 15.2802 37.6449C13.3751 44.3543 12.6051 50.1181 13.124 53.5207C12.101 52.6533 11.2323 51.5395 10.529 50.1819C9.29416 47.7987 8.62731 44.7449 8.60064 41.3505C8.59613 40.7841 8.13251 40.3242 7.56687 40.333C7.00041 40.3375 6.54486 40.8003 6.54923 41.3669C6.57768 44.9713 7.26641 48.1475 8.51558 50.7214C7.46061 49.7417 6.51313 48.6532 5.69229 47.4616V47.4616Z" fill="white"/>
-								<path d="M48.1502 17.4775C36.1021 17.4775 26.3002 27.2794 26.3002 39.3277C26.3002 51.3757 36.102 61.1776 48.1502 61.1776C60.1984 61.1776 70.0002 51.3757 70.0002 39.3277C70 27.2794 60.1982 17.4775 48.1502 17.4775V17.4775ZM48.1502 59.1261C37.2333 59.1261 28.3516 50.2446 28.3516 39.3275C28.3516 28.4105 37.2331 19.5288 48.1502 19.5288C59.0672 19.5288 67.9487 28.4105 67.9487 39.3275C67.9487 50.2446 59.0671 59.1261 48.1502 59.1261Z" fill="white"/>
-								<path d="M48.1502 21.6079C38.3796 21.6079 30.4306 29.5569 30.4306 39.3274C30.4306 49.0979 38.3796 57.0468 48.1502 57.0468C57.9208 57.0468 65.8699 49.0979 65.8699 39.3274C65.8699 29.5569 57.9208 21.6079 48.1502 21.6079ZM48.1502 54.9956C39.5107 54.9956 32.482 47.9669 32.482 39.3276C32.482 30.6883 39.5107 23.6595 48.1502 23.6595C56.7896 23.6595 63.8184 30.6883 63.8184 39.3276C63.8184 47.9669 56.7896 54.9956 48.1502 54.9956Z" fill="white"/>
-								<path d="M48.1502 26.635C41.1515 26.635 35.4577 32.3289 35.4577 39.3276C35.4577 46.3262 41.1515 52.0201 48.1502 52.0201C52.843 52.0201 57.1358 49.4399 59.3532 45.2863C59.6201 44.7866 59.4312 44.1653 58.9315 43.8984C58.4316 43.6315 57.8103 43.8205 57.5436 44.3202C55.6835 47.8045 52.0843 49.9689 48.1502 49.9689C42.2828 49.9689 37.5091 45.1954 37.5091 39.3278C37.5091 33.4602 42.2828 28.6866 48.1502 28.6866C54.0178 28.6866 58.7914 33.4602 58.7914 39.3278C58.7914 39.7019 58.7702 40.0882 58.7285 40.4752C58.6678 41.0384 59.0752 41.5441 59.6384 41.605C60.2013 41.6658 60.7073 41.2583 60.7682 40.6951C60.8177 40.2353 60.8428 39.7753 60.8428 39.3279C60.8427 32.3289 55.1488 26.635 48.1502 26.635V26.635Z" fill="white"/>
-								<path d="M40.7704 39.3276C40.7704 43.3969 44.0809 46.7075 48.1502 46.7075C52.2195 46.7075 55.5301 43.3969 55.5301 39.3276C55.5301 35.2583 52.2194 31.9478 48.1502 31.9478C44.0811 31.9478 40.7704 35.2583 40.7704 39.3276ZM53.4787 39.3276C53.4787 42.2657 51.0883 44.6561 48.1502 44.6561C45.2122 44.6561 42.8218 42.2657 42.8218 39.3276C42.8218 36.3896 45.2121 33.9992 48.1502 33.9992C51.0884 33.9992 53.4787 36.3895 53.4787 39.3276Z" fill="white"/>
-							</svg>
-						</div>
-						<span>Свежайшие продукты</span>
-					</li>
-				</ul>
-			</div>
-		</section>
-
-		<section class="contacts">
-			<div class="contacts__container container">
-				<div class="contacts-block">
-					<h2 class="h2-title contacts__title">КОНТАКТЫ</h2>
-					<svg width="527" height="1" viewBox="0 0 527 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<line y1="0.5" x2="527" y2="0.5" stroke="url(#paint0_linear_19_325)"/>
-						<defs>
-						<linearGradient id="paint0_linear_19_325" x1="0" y1="1" x2="531.575" y2="1" gradientUnits="userSpaceOnUse">
-						<stop stop-color="white" stop-opacity="0"/>
-						<stop offset="0.479167" stop-color="white" stop-opacity="0.15"/>
-						<stop offset="1" stop-color="white" stop-opacity="0"/>
-						</linearGradient>
-						</defs>
-					</svg>
-
-					<div class="contacts__text">
-						<i class="icon icon-location-green contacts__icon"></i>
-						<p>
-							<span>Наш адрес:</span>
-							МО, городской округ Красногорск, село Ильинкое, 
-							Экспериментальная улица, 10
-						</p>
-					</div>
-					<div class="contacts__text">
-						<i class="icon icon-message-green contacts__icon"></i>
-						<p>
-							<span>Наш почта:</span>
-							auto.wash@gmail.com
-						</p>
-					</div>
-					<svg width="527" height="1" viewBox="0 0 527 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<line y1="0.5" x2="527" y2="0.5" stroke="url(#paint0_linear_19_325)"/>
-						<defs>
-						<linearGradient id="paint0_linear_19_325" x1="0" y1="1" x2="531.575" y2="1" gradientUnits="userSpaceOnUse">
-						<stop stop-color="white" stop-opacity="0"/>
-						<stop offset="0.479167" stop-color="white" stop-opacity="0.15"/>
-						<stop offset="1" stop-color="white" stop-opacity="0"/>
-						</linearGradient>
-						</defs>
-					</svg>
-					<div class="contacts__end">
-						<a href="#" class="contacts__btn">ЗАБРОНИРОВАТЬ СТОЛ</a>
-						<a href="#" class="contacts__btn contacts__btn--way">ПРОЛОЖИТЬ МАРШРУТ</a>
-						<p>
-							<span>+7 (917) 510-57-59</span>
-							Звоните или оставляйте заявку
-						</p>
-					</div>
-
-					<div class="soc">
-						<span>Мы в соц сетях:</span>
-						<ul class="soc__list">
-							<li class="soc__item soc__item--fb">
-								<i class="icon soc__list-icon icon-fb"></i>
-							</li>
-							<li class="soc__item soc__item--vk">
-								<i class="icon soc__list-icon icon-vk"></i>
-							</li>
-							<li class="soc__item soc__item--yt">
-								<i class="icon soc__list-icon icon-yt"></i>
-							</li>
-							<li class="soc__item soc__item--inst">
-								<i class="icon soc__list-icon icon-inst"></i>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="here-wrapper">
-					<div class="here contacts__here">
-						<span>МЫ <br> ЗДЕСЬ!</span>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<footer class="footer">
-			<div class="footer__container container">
-				<button class="arrow-top">
-					<i class="icon icon-arrow-top"></i>
-				</button>
-				<div class="footer__center">
-					<a href="index.html" class="footer__logo logo">Logos</a>
-					<span>
-						© ООО СК «АПШЕРОН» 
-						Все права защищены. 2010-2020
-					</span>
-					<ul>
-						<li><a href="#">Пользовательское соглашение</a></li>
-						<li><a href="#">Карта сайта</a></li>
-						<li><a href="#">Политика конфиденциальности</a></li>
-					</ul>
-				</div>
-				<ul class="footer__menu">
-					<li><a href="#">О ресторане</a></li>
-					<li><a href="#">Условия доставки</a></li>
-					<li><a href="#">Возврат товара</a></li>
-					<li><a href="#">Акции</a></li>
-				</ul>
-
-			</div>
-		</footer>
-
-		<div class="gradiend-down"></div>
-
-	</div>
-
-	<!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-
-	<!-- slider SwiperJs -->
-	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-
-	<!-- jQueryUI -->
-  <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
-
-	<script src="js/scripts.js"></script>
+          <div class="creativdd">
+            <a href="https://mssg.me/creativedd">
+              <span class="creativdd__text">дизайн сайта</span>
+              <div class="creativdd__img-wrp img-wrp">
+                <img src="img/creativdd-logo.svg" alt="creativdd">
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
 </body>
+
+<!-- jQuery -->
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous">
+</script>
+
+<!-- swiper slider js -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<script>
+  var autoSwiper = new Swiper(".auto-swiper", {
+    slidesPerView: "auto",
+    spaceBetween: 15,
+    speed: 750,
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    }
+  });
+
+  var swiper = new Swiper(".block-2__list-swiper", {
+    slidesPerView:1,
+    spaceBetween: 25,
+    on: {
+      init: function () {
+        document.body.offsetWidth <= 900 ? this.slideNext() : null
+      },
+    },
+    breakpoints: {
+      900: {
+        slidesPerView: 3,
+        spaceBetween: 15,
+      },
+    },
+    navigation: {
+      nextEl: ".block-2__slide--right",
+      prevEl: ".block-2__slide--left",
+      prevEl: ".block-2__slide--left",
+    }
+  });
+  
+</script>
+
+<script src="js/script.js"></script>
 </html>
