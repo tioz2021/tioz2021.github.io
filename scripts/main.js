@@ -33,7 +33,7 @@ AOS.init();
       document.body.clientWidth;
 
     // web
-    if (screenWidth >= 1000) {
+    if (screenWidth >= 1025) {
       // Ваш код для выполнения действий при ширине экрана больше 360px
       console.log("Ширина экрана больше 360px.");
       if (document.querySelector(".slider-navigation2"))
@@ -45,7 +45,7 @@ AOS.init();
     }
 
     // tablet
-    if (screenWidth <= 1000) {
+    if (screenWidth <= 1025) {
       const swiper3 = new Swiper(".swiper3", {
         // Optional parameters
         speed: 600,
