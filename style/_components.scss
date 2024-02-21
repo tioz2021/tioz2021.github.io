@@ -1,7 +1,7 @@
 .big-title {
   color: #0a6886;
   text-align: center;
-  font-size: 86rem;
+  font-size: 86px;
   font-weight: 500;
   line-height: 110%;
 }
@@ -86,6 +86,35 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 500ms ease-in-out;
+
+  // .main-btn--blue
+  &--blue {
+    background: var(--theme-1-2);
+    color: var(--bodi-1);
+
+    // .main-btn--blue:hover
+    &:hover {
+      // color: var(--theme-1-1);
+      // background: var(--theme-1-4);
+    }
+  }
+  // .main-btn--light-blue
+  &--light-blue {
+    background: var(--theme-1-4);
+    color: var(--theme-1-1);
+
+    // .main-btn--light-blue:hover
+    &:hover {
+      // background: var(--theme-1-2);
+      // color: var(--bodi-1);
+    }
+  }
+  // .main-btn--white-blue
+  &--white {
+    background: var(--bodi-1);
+    color: var(--theme-1-2);
+  }
 }
 
 .messenger-box {
@@ -194,143 +223,267 @@
   }
 }
 
-.accordion-header {
-  box-sizing: border-box;
-  padding-top: 36px;
-  padding-bottom: 36px;
-  cursor: pointer;
-  // color: #000;
+// .accordion-header {
+//   box-sizing: border-box;
+//   padding-top: 36px;
+//   padding-bottom: 36px;
+//   cursor: pointer;
+//   // color: #000;
+//   display: flex;
+//   align-items: center;
+
+//   // .accordion-header .accordion-item-icon--plus
+//   .accordion-item-icon--plus {
+//     display: block;
+//   }
+//   // .accordion-header .accordion-item-icon--minus
+//   .accordion-item-icon--minus {
+//     display: none;
+//   }
+// }
+
+// /* Стили для активных заголовков */
+// .accordion-header.active {
+//   // background-color: #ddd;
+
+//   // .accordion-header.active .accordion-item-icon--plus
+//   .accordion-item-icon--plus {
+//     display: none;
+//   }
+//   // .accordion-header.active .accordion-item-icon--minus
+//   .accordion-item-icon--minus {
+//     display: block;
+//   }
+// }
+
+// /* Скрываем содержимое аккордеона по умолчанию */
+// .accordion-content {
+//   max-height: 0;
+//   overflow: hidden;
+//   transition: max-height 0.5s ease-in-out;
+//   // color: #000;
+//   box-sizing: border-box;
+//   // margin-top: -20px;
+//   // margin-bottom: 20px;
+//   // padding-top: 0;
+//   // padding-bottom: 0;
+// }
+
+// /* Стили для активного содержимого */
+// .accordion-item.active .accordion-content {
+//   max-height: 1000px; /* Установите высоту, которая соответствует вашему содержимому */
+//   transition: max-height 0.5s ease-in-out;
+//   // padding-top: 22px;
+//   // padding-bottom: 30px;
+// }
+
+// .p-vac-s4 {
+//   // .p-vac-s4__accordion-title
+//   &__accordion-title {
+//     color: #fff;
+//     width: 100%;
+//     min-height: 80px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     margin-bottom: 50px;
+//   }
+//   // .p-vac-s4__accordion
+//   &__accordion {
+//     background: grey;
+//     border-radius: 12px;
+//     border: 1px solid #fff;
+//     box-sizing: border-box;
+//     // padding-top: 30px;
+//     // padding-bottom: 30px;
+//   }
+//   // .p-vac-s4__accordion-item
+//   &__accordion-item {
+//     box-sizing: border-box;
+//     padding-left: 30px;
+//     padding-right: 30px;
+//     padding-top: 30px;
+//     padding-bottom: 22px;
+//     border-bottom: 1px solid #fff;
+//     // .p-vac-s4__accordion-item:last-child
+//     &:last-child {
+//       border: unset;
+//     }
+//     // .p-vac-s4__accordion-item: path
+//     path {
+//       transition: all 300ms ease-in-out;
+//       fill: rgb(236, 237, 253);
+//     }
+//     // .p-vac-s4__accordion-item:hover
+//     &:hover {
+//       // .p-vac-s4__accordion-item:hover path
+//       path {
+//         fill: #21fa90;
+//       }
+//     }
+//   }
+//   // .p-vac-s4__accordion-header
+//   &__accordion-header {
+//     height: 56px;
+//     box-sizing: border-box;
+//     display: flex;
+//     padding-top: 0;
+//     padding-bottom: 8px;
+//     position: relative;
+//   }
+//   // .p-vac-s4__accordion-item-title
+//   &__accordion-item-title {
+//     height: 100%;
+//     display: flex;
+//     align-items: center;
+//     font-weight: 500;
+//     color: #fff;
+//   }
+//   // .p-vac-s4__accordion-item-icon
+//   &__accordion-item-icon {
+//     position: absolute;
+//     top: 50%;
+//     transform: translateY(-50%);
+//     right: 0px;
+
+//     width: 30px;
+//     height: 30px;
+//   }
+//   // .p-vac-s4__accordion-item-icon--plus
+//   &__accordion-item-icon--plus {
+//   }
+//   // .p-vac-s4__accordion-item-icon--active
+//   &__accordion-item-icon--active {
+//   }
+//   // .p-vac-s4__accordion-item-icon--minus
+//   &__accordion-item-icon--minus {
+//   }
+//   // .p-vac-s4__accordion-item-text
+//   &__accordion-item-text {
+//     color: #fff;
+//   }
+// }
+
+.slider-navigation .swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  display: none;
+}
+.slider-navigation .swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  display: none;
+}
+
+.slider-navigation .swiper-button-prev,
+.slider-navigation .swiper-button-next {
+  background-color: var(--theme-1-4);
+  border-radius: 50%;
+}
+
+.swiper-button__icon {
+  width: 24px;
+  height: 24px;
+}
+
+.swiper-button__icon path {
+  stroke: #0a6886;
+  transition: all 400ms ease-in-out;
+}
+
+.slider-navigation .swiper-button {
+  transition: all 400ms ease-in-out;
+}
+.slider-navigation .swiper-button:hover {
+  background-color: var(--theme-1-2);
+}
+.slider-navigation .swiper-button:hover .swiper-button__icon path {
+  stroke: #fff;
+}
+
+.slider-navigation {
   display: flex;
   align-items: center;
-
-  // .accordion-header .accordion-item-icon--plus
-  .accordion-item-icon--plus {
-    display: block;
-  }
-  // .accordion-header .accordion-item-icon--minus
-  .accordion-item-icon--minus {
-    display: none;
-  }
+  justify-content: center;
+}
+.slider-navigation .swiper-button {
+  width: 44px;
+  height: 44px;
+  position: static;
+  margin: 0;
 }
 
-/* Стили для активных заголовков */
-.accordion-header.active {
-  // background-color: #ddd;
+.slider-navigation .swiper-button:first-child {
+  margin-right: 24px;
+}
 
-  // .accordion-header.active .accordion-item-icon--plus
-  .accordion-item-icon--plus {
-    display: none;
+.accordion {
+  width: 100%;
+  margin-bottom: 60px;
+
+  // .accordion__item
+  &__item {
+    box-sizing: border-box;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-bottom: 8px;
+    border-radius: 12px;
+    cursor: pointer;
+    background: var(--theme-1-4);
+
+    // .accordion__item.active .accordion__content
+    &.active .accordion__content {
+      max-height: 1000px;
+      transition: max-height 0.5s ease-in-out;
+    }
+
+    // .accordion__item:last-child
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
-  // .accordion-header.active .accordion-item-icon--minus
-  .accordion-item-icon--minus {
-    display: block;
-  }
-}
-
-/* Скрываем содержимое аккордеона по умолчанию */
-.accordion-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s ease-in-out;
-  // color: #000;
-  box-sizing: border-box;
-  // margin-top: -20px;
-  // margin-bottom: 20px;
-  // padding-top: 0;
-  // padding-bottom: 0;
-}
-
-/* Стили для активного содержимого */
-.accordion-item.active .accordion-content {
-  max-height: 1000px; /* Установите высоту, которая соответствует вашему содержимому */
-  transition: max-height 0.5s ease-in-out;
-  // padding-top: 22px;
-  // padding-bottom: 30px;
-}
-
-.p-vac-s4 {
-  // .p-vac-s4__accordion-title
-  &__accordion-title {
-    color: #fff;
-    width: 100%;
-    min-height: 80px;
+  // .accordion__header
+  &__header {
+    box-sizing: border-box;
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-bottom: 50px;
-  }
-  // .p-vac-s4__accordion
-  &__accordion {
-    background: grey;
-    border-radius: 12px;
-    border: 1px solid #fff;
-    box-sizing: border-box;
-    // padding-top: 30px;
-    // padding-bottom: 30px;
-  }
-  // .p-vac-s4__accordion-item
-  &__accordion-item {
-    box-sizing: border-box;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 30px;
-    padding-bottom: 22px;
-    border-bottom: 1px solid #fff;
-    // .p-vac-s4__accordion-item:last-child
-    &:last-child {
-      border: unset;
-    }
-    // .p-vac-s4__accordion-item: path
-    path {
-      transition: all 300ms ease-in-out;
-      fill: rgb(236, 237, 253);
-    }
-    // .p-vac-s4__accordion-item:hover
-    &:hover {
-      // .p-vac-s4__accordion-item:hover path
-      path {
-        fill: #21fa90;
+    justify-content: space-between;
+    transition: all 500ms ease-in-out;
+
+    // .accordion__header.active
+    &.active {
+      padding-bottom: 16px;
+
+      // .accordion__header.active .accordion__icon
+      .accordion__icon {
+        transform: rotate(180deg);
       }
     }
   }
-  // .p-vac-s4__accordion-header
-  &__accordion-header {
-    height: 56px;
-    box-sizing: border-box;
-    display: flex;
-    padding-top: 0;
-    padding-bottom: 8px;
-    position: relative;
-  }
-  // .p-vac-s4__accordion-item-title
-  &__accordion-item-title {
-    height: 100%;
+  // .accordion__title
+  &__title {
+    min-height: 34px;
     display: flex;
     align-items: center;
-    font-weight: 500;
-    color: #fff;
+    color: #215c6e;
   }
-  // .p-vac-s4__accordion-item-icon
-  &__accordion-item-icon {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 0px;
+  // .accordion__icon
+  &__icon {
+    width: 24px;
+    height: 24px;
+    transform: rotate(0deg);
+    will-change: transform;
+    transition: all 500ms ease-in-out;
+  }
+  // .accordion__content
+  &__content {
+    color: var(--theme-1-1);
+    overflow: hidden;
+    box-sizing: border-box;
 
-    width: 30px;
-    height: 30px;
-  }
-  // .p-vac-s4__accordion-item-icon--plus
-  &__accordion-item-icon--plus {
-  }
-  // .p-vac-s4__accordion-item-icon--active
-  &__accordion-item-icon--active {
-  }
-  // .p-vac-s4__accordion-item-icon--minus
-  &__accordion-item-icon--minus {
-  }
-  // .p-vac-s4__accordion-item-text
-  &__accordion-item-text {
-    color: #fff;
+    transition: max-height 0.5s ease-in-out;
+    max-height: 0;
+
+    will-change: transform;
   }
 }

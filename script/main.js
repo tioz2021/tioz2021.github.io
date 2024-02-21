@@ -38,17 +38,44 @@
       el: ".swiper-pagination--three",
     },
   });
+
+  const s3__slider = new Swiper(".s3__slider", {
+    spaceBetween: 24,
+    slidesPerView: 3,
+    speed: 600,
+    loop: true,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: ".s3__swiper-button-next",
+      prevEl: ".s3__swiper-button-prev",
+    },
+  });
+
+  const s5__slider = new Swiper(".s5__slider", {
+    spaceBetween: 24,
+    slidesPerView: 3,
+    speed: 600,
+    loop: true,
+    watchSlidesProgress: true,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: ".s5__swiper-button-next",
+      prevEl: ".s5__swiper-button-prev",
+    },
+  });
 })();
 
 // acardion
 (() => {
   // Получаем все элементы аккордеона
-  const accordionItems = document.querySelectorAll(".accordion-item");
+  const accordionItems = document.querySelectorAll(".accordion__item");
 
   // Добавляем обработчик события для каждого элемента аккордеона
   accordionItems.forEach((item) => {
-    const header = item.querySelector(".accordion-header");
-    const content = item.querySelector(".accordion-content");
+    const header = item.querySelector(".accordion__header");
+    const content = item.querySelector(".accordion__content");
 
     header.addEventListener("click", () => {
       // Переключаем класс 'active' для заголовка текущего элемента
@@ -58,15 +85,15 @@
       accordionItems.forEach((otherItem) => {
         if (otherItem !== item) {
           otherItem
-            .querySelector(".accordion-header")
+            .querySelector(".accordion__header")
             .classList.remove("active");
-          otherItem.querySelector(".accordion-content").style.maxHeight = "0";
+          otherItem.querySelector(".accordion__content").style.maxHeight = "0";
         }
       });
 
       // Устанавливаем максимальную высоту для текущего элемента в rem
       if (header.classList.contains("active")) {
-        // Получаем высоту текста внутри .accordion-content и устанавливаем в rem
+        // Получаем высоту текста внутри .accordion__content и устанавливаем в rem
         const textHeight = content.scrollHeight;
         content.style.maxHeight = `${textHeight}px`;
       } else {
