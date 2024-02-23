@@ -2,48 +2,151 @@
 (() => {
   const s2__slider_one = new Swiper(".swiper--one", {
     spaceBetween: 50,
-    speed: 600,
-    loop: true,
+    speed: 800,
+
+    // simulateTouch: false,
+
+    // ---- phone
+    // loop: true,
+    // grabCursor: true,
+    // simulateTouch: true,
 
     // If we need pagination
     pagination: {
       el: ".swiper-pagination--one",
+      // clickable: true,
+    },
+    scrollbar: {
+      el: ".s2__slider-swiper-scrollbar--one",
     },
 
-    // Navigation arrows
-    // navigation: {
-    //   nextEl: ".swiper-button-next",
-    //   prevEl: ".swiper-button-prev",
-    // },
+    effect: "creative",
+    creativeEffect: {
+      prev: {
+        // shadow: true,
+        translate: ["-120%", 0, -500],
+        opacity: 0,
+      },
+      next: {
+        // shadow: true,
+        translate: ["120%", 0, -500],
+        opacity: 1,
+      },
+    },
   });
-
   const s2__slider_two = new Swiper(".swiper--two", {
     spaceBetween: 50,
-    speed: 600,
-    loop: true,
+    speed: 500,
+
+    simulateTouch: false,
+
+    // ---- phone
+    // loop: true,
+    // grabCursor: true,
+    // simulateTouch: true,
 
     // If we need pagination
     pagination: {
       el: ".swiper-pagination--two",
+      // clickable: true,
+    },
+    scrollbar: {
+      el: ".s2__slider-swiper-scrollbar--two",
+    },
+
+    effect: "creative",
+    creativeEffect: {
+      prev: {
+        // shadow: true,
+        // translate: ["-120%", 0, -500],
+        opacity: 0,
+      },
+      next: {
+        // shadow: true,
+        // translate: ["120%", 0, -500],
+        opacity: 1,
+      },
     },
   });
 
   const s2__slider_three = new Swiper(".swiper--three", {
     spaceBetween: 50,
-    speed: 600,
-    loop: true,
+    speed: 500,
+
+    simulateTouch: false,
+
+    // ---- phone
+    // loop: true,
+    // grabCursor: true,
+    // simulateTouch: true,
 
     // If we need pagination
     pagination: {
       el: ".swiper-pagination--three",
+      clickable: true,
+    },
+    scrollbar: {
+      el: ".s2__slider-swiper-scrollbar--three",
+    },
+
+    effect: "creative",
+    creativeEffect: {
+      prev: {
+        // shadow: true,
+        // translate: ["-120%", 0, -500],
+        opacity: 0,
+      },
+      next: {
+        // shadow: true,
+        // translate: ["120%", 0, -500],
+        opacity: 1,
+      },
     },
   });
+
+  const switchSlide = (event, slider, list) => {
+    const listArray = Array.from(list);
+
+    const index = listArray.indexOf(event.currentTarget);
+
+    list.forEach((e) => e.classList.remove("s2__slider-list-item--active"));
+    event.target.classList.add("s2__slider-list-item--active");
+
+    slider.slideTo(index, 800);
+  };
+
+  if (s2__slider_one && s2__slider_two && s2__slider_three) {
+    listOne = document.querySelectorAll(".s2__slider-list--one li");
+
+    listOne.forEach((e) =>
+      e.addEventListener("click", (event) =>
+        switchSlide(event, s2__slider_one, listOne)
+      )
+    );
+
+    listTwo = document.querySelectorAll(".s2__slider-list--two li");
+
+    listTwo.forEach((e) =>
+      e.addEventListener("click", (event) =>
+        switchSlide(event, s2__slider_two, listTwo)
+      )
+    );
+
+    listThree = document.querySelectorAll(".s2__slider-list--three li");
+
+    listThree.forEach((e) =>
+      e.addEventListener("click", (event) =>
+        switchSlide(event, s2__slider_three, listThree)
+      )
+    );
+  }
 
   const s3__slider = new Swiper(".s3__slider", {
     spaceBetween: 24,
     slidesPerView: 3,
     speed: 600,
     loop: true,
+    grabCursor: true,
 
     // Navigation arrows
     navigation: {
@@ -58,6 +161,7 @@
     speed: 600,
     loop: true,
     watchSlidesProgress: true,
+    grabCursor: true,
 
     // Navigation arrows
     navigation: {
@@ -88,6 +192,8 @@
             .querySelector(".accordion__header")
             .classList.remove("active");
           otherItem.querySelector(".accordion__content").style.maxHeight = "0";
+          otherItem.querySelector(".accordion__content").style.paddingBottom =
+            "0px";
         }
       });
 
@@ -95,9 +201,52 @@
       if (header.classList.contains("active")) {
         // Получаем высоту текста внутри .accordion__content и устанавливаем в rem
         const textHeight = content.scrollHeight;
-        content.style.maxHeight = `${textHeight}px`;
+        content.style.maxHeight = `${textHeight + 24}px`;
+        content.style.paddingBottom = "24px";
       } else {
         content.style.maxHeight = "0";
+        content.style.paddingBottom = "0px";
+      }
+    });
+  });
+})();
+
+// popup
+(() => {
+  document.addEventListener("DOMContentLoaded", function () {
+    var iframe = document.querySelector("iframe");
+    if (iframe) iframeSrc = iframe.src;
+
+    const openBtn = document.getElementById("openBtn");
+    if (!openBtn) {
+      return false;
+    }
+    const popup = document.getElementById("popup");
+    const popupContent = document.querySelector(".popup-content");
+    const closeBtn = document.getElementById("closeBtn");
+
+    openBtn.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.add("open");
+      popupContent.classList.add("open");
+      iframe.src = iframeSrc;
+    });
+
+    closeBtn.addEventListener("click", function () {
+      popup.classList.remove("open");
+      popupContent.classList.remove("open");
+      iframe.src = "";
+    });
+
+    document.addEventListener("click", function (event) {
+      // Закрываем popup, если клик произошел вне его области
+      if (
+        !popupContent.contains(event.target) &&
+        !openBtn.contains(event.target)
+      ) {
+        popup.classList.remove("open");
+        popupContent.classList.remove("open");
+        iframe.src = "";
       }
     });
   });
