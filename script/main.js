@@ -140,10 +140,16 @@
 
   const s3__slider = new Swiper(".s3__slider", {
     spaceBetween: 24,
-    slidesPerView: 3,
+    slidesPerView: 2,
     speed: 600,
     loop: true,
     grabCursor: true,
+
+    breakpoints: {
+      1600: {
+        slidesPerView: 3,
+      },
+    },
 
     // Navigation arrows
     navigation: {
@@ -190,7 +196,7 @@
             .classList.remove("active");
           otherItem.querySelector(".accordion__content").style.maxHeight = "0";
           otherItem.querySelector(".accordion__content").style.paddingBottom =
-            "0px";
+            "0rem";
         }
       });
 
@@ -198,11 +204,11 @@
       if (header.classList.contains("active")) {
         // Получаем высоту текста внутри .accordion__content и устанавливаем в rem
         const textHeight = content.scrollHeight;
-        content.style.maxHeight = `${textHeight + 24}px`;
-        content.style.paddingBottom = "24px";
+        content.style.maxHeight = `${textHeight + 24}rem`;
+        content.style.paddingBottom = "24rem";
       } else {
         content.style.maxHeight = "0";
-        content.style.paddingBottom = "0px";
+        content.style.paddingBottom = "0rem";
       }
     });
   });
