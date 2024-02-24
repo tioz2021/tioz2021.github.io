@@ -2,11 +2,10 @@
 (() => {
   const s2__slider_one = new Swiper(".swiper--one", {
     spaceBetween: 50,
-    speed: 800,
-
-    // simulateTouch: false,
+    simulateTouch: false,
 
     // ---- phone
+    // speed: 800,
     // loop: true,
     // grabCursor: true,
     // simulateTouch: true,
@@ -36,11 +35,10 @@
   });
   const s2__slider_two = new Swiper(".swiper--two", {
     spaceBetween: 50,
-    speed: 500,
-
     simulateTouch: false,
 
     // ---- phone
+    // speed: 800,
     // loop: true,
     // grabCursor: true,
     // simulateTouch: true,
@@ -58,12 +56,12 @@
     creativeEffect: {
       prev: {
         // shadow: true,
-        // translate: ["-120%", 0, -500],
+        translate: ["-120%", 0, -500],
         opacity: 0,
       },
       next: {
         // shadow: true,
-        // translate: ["120%", 0, -500],
+        translate: ["120%", 0, -500],
         opacity: 1,
       },
     },
@@ -71,11 +69,10 @@
 
   const s2__slider_three = new Swiper(".swiper--three", {
     spaceBetween: 50,
-    speed: 500,
-
     simulateTouch: false,
 
     // ---- phone
+    // speed: 800,
     // loop: true,
     // grabCursor: true,
     // simulateTouch: true,
@@ -93,12 +90,12 @@
     creativeEffect: {
       prev: {
         // shadow: true,
-        // translate: ["-120%", 0, -500],
+        translate: ["-120%", 0, -500],
         opacity: 0,
       },
       next: {
         // shadow: true,
-        // translate: ["120%", 0, -500],
+        translate: ["120%", 0, -500],
         opacity: 1,
       },
     },
@@ -112,7 +109,7 @@
     list.forEach((e) => e.classList.remove("s2__slider-list-item--active"));
     event.target.classList.add("s2__slider-list-item--active");
 
-    slider.slideTo(index, 800);
+    slider.slideTo(index, 1000);
   };
 
   if (s2__slider_one && s2__slider_two && s2__slider_three) {
@@ -250,4 +247,35 @@
       }
     });
   });
+})();
+
+// auto change height on textarea
+(() => {
+  const textarea = document.querySelector("textarea");
+  if (textarea) textarea.addEventListener("input", autoResize);
+  function autoResize() {
+    const textarea = this;
+    // var charLimitMessage = document.getElementById("charLimitMessage");
+    var maxLength = textarea.getAttribute("maxlength");
+    var currentLength = textarea.value.length;
+
+    if (currentLength > maxLength) {
+      // charLimitMessage.textContent = "Превышен лимит символов (максимум 5000).";
+      textarea.value = textarea.value.substring(0, maxLength);
+      textarea.style.height = "auto";
+      textarea.style.height =
+        textarea.scrollHeight +
+        textarea.offsetHeight -
+        textarea.clientHeight +
+        "rem";
+    } else {
+      // charLimitMessage.textContent = "";
+      textarea.style.height = "auto";
+      textarea.style.height =
+        textarea.scrollHeight +
+        textarea.offsetHeight -
+        textarea.clientHeight +
+        "rem";
+    }
+  }
 })();
