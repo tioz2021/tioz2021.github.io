@@ -49,6 +49,12 @@ input {
 @import "_main.scss";
 
 @media screen and (max-width: 1300px) {
+  html {
+    font-size: 0.077vw;
+  }
+}
+
+@media screen and (max-width: 1600px) {
   .tape-box {
     max-width: 1200rem;
   }
@@ -63,7 +69,6 @@ input {
   }
   .s4__item {
     width: 314rem;
-    // height: 290rem;
     height: 252rem;
     padding-left: 24rem;
     padding-right: 24rem;
@@ -82,7 +87,7 @@ input {
   }
 }
 
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 2550px) {
   html {
     font-size: 0.03908vw;
   }

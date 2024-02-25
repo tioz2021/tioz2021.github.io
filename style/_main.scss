@@ -89,11 +89,13 @@
 
     // .s1__404mod .s1__decor--1
     .s1__decor--1 {
-      top: 369rem;
+      // top: 369rem;
+      top: 209rem;
     }
     // .s1__404mod .s1__decor--2
     .s1__decor--2 {
-      top: 319rem;
+      // top: 319rem;
+      top: 219rem;
     }
   }
 
@@ -106,6 +108,7 @@
     max-width: 1500rem;
     flex-direction: column;
     align-items: center;
+    position: relative;
   }
   // .s1__title
   &__title {
@@ -161,15 +164,19 @@
   &__decor--1 {
     width: 683rem;
     height: 232rem;
-    left: 69rem;
-    bottom: 195rem;
+    // left: 69rem;
+    // bottom: 195rem;
+    left: -134rem;
+    bottom: 296rem;
   }
   // .s1__decor--2
   &__decor--2 {
     width: 867rem;
     height: 242rem;
-    right: 159rem;
-    bottom: 235rem;
+    // right: 159rem;
+    // bottom: 235rem;
+    right: -69rem;
+    bottom: 330rem;
   }
 }
 
