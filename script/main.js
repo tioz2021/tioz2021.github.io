@@ -285,3 +285,45 @@
     }
   }
 })();
+
+// s2 title animation
+() => {};
+
+const draw = (block) => {
+  if (!block) return;
+
+  const blockRect = block.getBoundingClientRect();
+  const blockTop = blockRect.top;
+  const blockHeight = block.clientHeight;
+  const viewportHeight = window.innerHeight;
+  const scrollTop = Math.max(
+    0,
+    viewportHeight - blockTop - viewportHeight / 1.15
+  );
+  const scrollHeight = Math.max(0, blockHeight - viewportHeight);
+  console.log(scrollHeight);
+
+  let scrollPercentage = Math.min(1, scrollTop / scrollHeight);
+  // if (scrollPercentage > 0.98) {
+  //   scrollPercentage = 0.98;
+  // }
+
+  const body_text = block.parentNode.querySelector(".key-features__wrapper");
+  const conatiner = block.parentNode;
+  block.style.setProperty("--scroll-percentage", scrollPercentage);
+  body_text.style.setProperty("--scroll-percentage", scrollPercentage);
+  conatiner.style.setProperty("--scroll-percentage", scrollPercentage);
+};
+
+const m_bodies = [
+  document.querySelector(".key-features__badge1"),
+
+  document.querySelector(".key-features__badge2"),
+  document.querySelector(".key-features__badge3"),
+];
+
+m_bodies.forEach((body) => {
+  draw(body);
+  document.addEventListener("scroll", () => draw(body));
+  window.addEventListener("resize", () => draw(body));
+});

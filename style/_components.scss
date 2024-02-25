@@ -950,3 +950,83 @@
     height: 24rem;
   }
 }
+
+.key-features {
+  // .key-features__badge
+  &__badge {
+    position: relative;
+    height: 150vh;
+  }
+  // .key-features__badge-inner
+  &__badge-inner {
+    align-items: center;
+    display: flex;
+    height: calc(100vh);
+    justify-content: center;
+    left: 0;
+    // overflow: hidden;
+    position: sticky;
+    // top: 7.2rem;
+  }
+  // .key-features__text-wrp
+  &__text-wrp {
+    display: flex;
+    justify-content: center;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+
+    border-radius: calc(36rem - 30rem * var(--scroll-percentage, 0));
+    height: calc(100% - (100% - 44rem) * var(--scroll-percentage, 0));
+    width: calc(
+      100% + 12rem - (100% + 12rem - 233rem) * var(--scroll-percentage, 0)
+    );
+
+    background: var(--theme-2-2);
+    align-items: center;
+  }
+  // .key-features__text
+  &__text {
+    border-radius: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    // margin-bottom: 16rem;
+    color: var(--bodi-1);
+
+    transform: scale(calc(4.2 - var(--scroll-percentage, 0) * 3.09));
+  }
+  // .key-features__wrapper
+  &__wrapper {
+  }
+  // .key-features__info
+  &__info {
+    // margin-top: calc(-50vh + 47rem);
+    margin-top: calc(-50vh + -48vh);
+
+    overflow: hidden;
+    padding-bottom: 8rem;
+    transform: translateY(calc(50vh - 50vh * var(--scroll-percentage, 0)));
+    will-change: transform, opacity, scroll-position;
+    transition: all 50ms ease;
+  }
+  // .key-features__info-inner
+  &__info-inner {
+    opacity: calc(-2 + var(--scroll-percentage, 0) * 3);
+    transform: scale(calc(2 - var(--scroll-percentage, 0) * 1));
+    // transform: scale(calc(2 - var(--scroll-percentage, 0) * 2.18));
+    // scale(calc(2 - var(--scroll-percentage, 0) * 2.18
+
+    transform-origin: top center;
+    transition: all 50ms ease;
+    // transition: all 150ms ease-in-out;
+
+    // height: 500px;
+    // background: red;
+  }
+}

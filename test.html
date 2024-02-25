@@ -9,11 +9,7 @@
 <body>
 
 	<style>
-		.circle {
-			/* aspect-ratio: 1/1; */
-			/* border-radius: 50%; */
-				/* Берём процент масштабирования из ЦСС-переменной --scroll-percentage */
-			/* transform: translate(-50%, -50%) scale(var(--scroll-percentage, 0)); */
+		.key-features__text-wrp {
 			display: flex;
 			justify-content: center;
 
@@ -25,22 +21,16 @@
 			white-space: nowrap;
 
 			border-radius: 6px;
-			/* border-radius: calc(6px - 5.4px*var(--scroll-percentage, 0)); */
-			/* transition: all 200ms ease-in-out; */
 			height: calc(100% - (100% - 44px)*var(--scroll-percentage, 0));
 			width: calc(100% + 12px - (100% + 12px - 233px)*var(--scroll-percentage, 0));
 
 			background: #ffdabb;
 			align-items: center;
 		}
-		.circle-text{
+		.key-features__text{
 			text-align: center;
 			color: var(--bodi-1);
-			transform: scale(calc(5.70 - var(--scroll-percentage, 0)*3.09));
-			/* transform: scale(calc(2.79 - var(--scroll-percentage, 0)*3.09)); */
-		}
-		.test{
-			min-height: 10000px;
+			transform: scale(calc(5.20 - var(--scroll-percentage, 0)*3.09));
 		}
 
 		.key-features__badge {
@@ -66,19 +56,19 @@
 
 		.key-features__info {
 			margin-top: calc(-50vh + 47px);
-    overflow: hidden;
-    padding-bottom: 8px;
-    transform: translateY(calc(50vh - 50vh*var(--scroll-percentage, 0)));
-    will-change: transform,opacity,scroll-position;
-    transition: all 150ms ease;
+			overflow: hidden;
+			padding-bottom: 8px;
+			transform: translateY(calc(50vh - 50vh*var(--scroll-percentage, 0)));
+			will-change: transform,opacity,scroll-position;
+			transition: all 150ms ease;
 		}
 
 		.key-features__info-inner{
 			opacity: calc(-2 + var(--scroll-percentage, 0)*3);
-    transform: scale(calc(2 - var(--scroll-percentage, 0)*1));
-    transform-origin: top center;
+			transform: scale(calc(2 - var(--scroll-percentage, 0)*1));
+			transform-origin: top center;
 
-		height: 500px;
+			height: 500px;
 			background-color: blue;
 		}
 
@@ -89,8 +79,8 @@
 			background-color: grey;
 		}
 
-		.key-features2{
-			border: 1px solid red;
+		.test{
+			min-height: 10000px;
 		}
 
 	</style>
@@ -101,8 +91,8 @@
 		<div class="key-features s2__content--one">
 			<div class="key-features__badge key-features__badge1">
 				<div class="key-features__badge-inner">
-					<div class="circle">
-						<div class="circle-text def-text">
+					<div class="key-features__text-wrp">
+						<div class="key-features__text def-text">
 							test
 						</div>
 					</div>

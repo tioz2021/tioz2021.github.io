@@ -1175,6 +1175,57 @@ template {
   height: 24rem;
 }
 
+.key-features__badge {
+  position: relative;
+  height: 150vh;
+}
+.key-features__badge-inner {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  left: 0;
+  position: sticky;
+}
+.key-features__text-wrp {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  border-radius: calc(36rem - 30rem * var(--scroll-percentage, 0));
+  height: calc(100% - (100% - 44rem) * var(--scroll-percentage, 0));
+  width: calc(100% + 12rem - (100% + 12rem - 233rem) * var(--scroll-percentage, 0));
+  background: var(--theme-2-2);
+  align-items: center;
+}
+.key-features__text {
+  border-radius: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  color: var(--bodi-1);
+  transform: scale(calc(4.2 - var(--scroll-percentage, 0) * 3.09));
+}
+.key-features__info {
+  margin-top: -98vh;
+  overflow: hidden;
+  padding-bottom: 8rem;
+  transform: translateY(calc(50vh - 50vh * var(--scroll-percentage, 0)));
+  will-change: transform, opacity, scroll-position;
+  transition: all 50ms ease;
+}
+.key-features__info-inner {
+  opacity: calc(-2 + var(--scroll-percentage, 0) * 3);
+  transform: scale(calc(2 - var(--scroll-percentage, 0) * 1));
+  transform-origin: top center;
+  transition: all 50ms ease;
+}
+
 html {
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -3555,4 +3606,29 @@ input {
     width: 484rem !important;
     margin-right: 20rem !important;
   }
+}
+.s2__content {
+  padding: 0;
+  padding-bottom: 60rem;
+}
+
+.s2__title {
+  box-sizing: border-box;
+  padding-left: 24rem;
+  padding-right: 24rem;
+  max-width: 976rem;
+  margin: 0 auto;
+  margin-bottom: 16rem;
+}
+
+.s2__content--one {
+  background-color: rgba(252, 244, 253, calc(1 * var(--scroll-percentage)));
+}
+
+.s2__content--two {
+  background-color: rgba(237, 248, 251, calc(1 * var(--scroll-percentage)));
+}
+
+.s2__content--two .key-features__text-wrp {
+  background: var(--theme-1-2);
 }

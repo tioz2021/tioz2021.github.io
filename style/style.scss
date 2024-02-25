@@ -104,3 +104,48 @@ input {
     margin-right: 20rem !important;
   }
 }
+
+// fixing and animation
+
+.s2__content--one .key-features__text-wrp {
+  // background: var(--theme-2-2);
+}
+
+.s2__animatin-object--one {
+  // background-color: unset;
+}
+
+.s2__content {
+  // position: relative;
+  // overflow: visible;
+  // min-height: 880px;
+  // padding-top: 60rem;
+  // padding-left: 24rem;
+  // padding-right: 24rem;
+  padding: 0;
+  padding-bottom: 60rem;
+}
+
+.s2__title {
+  box-sizing: border-box;
+  padding-left: 24rem;
+  padding-right: 24rem;
+  max-width: 976rem;
+  margin: 0 auto;
+  margin-bottom: 16rem;
+}
+
+.s2__content {
+}
+
+.s2__content--one {
+  background-color: rgba(252, 244, 253, calc(1 * var(--scroll-percentage)));
+  // background-color: unset;
+}
+
+.s2__content--two {
+  background-color: rgba(237, 248, 251, calc(1 * var(--scroll-percentage)));
+}
+.s2__content--two .key-features__text-wrp {
+  background: var(--theme-1-2);
+}
