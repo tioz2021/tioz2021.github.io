@@ -85,6 +85,9 @@ input {
     width: 1200rem;
     height: 163rem;
   }
+  .marquee-infinite__item {
+    width: 33%;
+  }
 }
 
 @media screen and (min-width: 2550px) {
@@ -148,4 +151,16 @@ input {
 }
 .s2__content--two .key-features__text-wrp {
   background: var(--theme-1-2);
+}
+
+.s2__content--three {
+  background-color: rgba(247, 255, 228, calc(1 * var(--scroll-percentage)));
+}
+.s2__content--three .key-features__text-wrp {
+  background: var(--theme-3-2);
+}
+
+.s3__slide-icon--three-dop {
+  transition: all 3500ms ease;
+  transform: rotate(0deg);
 }

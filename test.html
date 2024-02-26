@@ -9,248 +9,100 @@
 <body>
 
 	<style>
-		.key-features__text-wrp {
-			display: flex;
-			justify-content: center;
-
-			position: absolute;
-			left: 50%;
-			top: 50%;
-			z-index: -1;
-			transform: translate(-50%,-50%);
-			white-space: nowrap;
-
-			border-radius: 6px;
-			height: calc(100% - (100% - 44px)*var(--scroll-percentage, 0));
-			width: calc(100% + 12px - (100% + 12px - 233px)*var(--scroll-percentage, 0));
-
-			background: #ffdabb;
-			align-items: center;
-		}
-		.key-features__text{
+		p{
 			text-align: center;
-			color: var(--bodi-1);
-			transform: scale(calc(5.20 - var(--scroll-percentage, 0)*3.09));
 		}
-
-		.key-features__badge {
-			margin-top: 1000px;
-			position: relative;
-			height: 150vh;
-		}
-		.key-features__badge-inner{
-			align-items: center;
-			display: flex;
-			height: calc(100vh - 7.2px);
-			justify-content: center;
-			left: 0;
+		.marquee-text{
+			margin: 30px auto;
+			border: 1px solid grey;
+			max-width: 80%;
 			overflow: hidden;
-			position: sticky;
-			top: 7.2px;
 		}
-
-
-		.key-features__wrapper{
-
-		}
-
-		.key-features__info {
-			margin-top: calc(-50vh + 47px);
-			overflow: hidden;
-			padding-bottom: 8px;
-			transform: translateY(calc(50vh - 50vh*var(--scroll-percentage, 0)));
-			will-change: transform,opacity,scroll-position;
-			transition: all 150ms ease;
-		}
-
-		.key-features__info-inner{
-			opacity: calc(-2 + var(--scroll-percentage, 0)*3);
-			transform: scale(calc(2 - var(--scroll-percentage, 0)*1));
-			transform-origin: top center;
-
-			height: 500px;
-			background-color: blue;
-		}
-
-		.box{
-			height: 500px;
-			margin-bottom: 150px;
+		.marquee-text div{
 			width: 100%;
-			background-color: grey;
+			animation: marquee-text 5s linear infinite;
+		}
+		@keyframes marquee-text {
+			0%{
+				transform: translateX(100%);
+			}
+			100%{
+				transform: translateX(-100%);
+			}
 		}
 
-		.test{
-			min-height: 10000px;
+		.marquee-infinite{
+			margin: 30px auto;
+			border: 1px solid grey;
+			max-width: 60%;
+			overflow: hidden;
+		}
+		.marquee-infinite__container{
+			width: 200%;
+			display: flex;
+			animation: marquee-infinite 5s linear infinite;
 		}
 
+		.marquee-infinite p{
+			width: 100%;
+			white-space: nowrap;
+		}
+		@keyframes marquee-infinite {
+			0%{
+				transform: translateX(0%);
+			}
+			100%{
+				transform: translateX(-50%);
+			}
+		}
+
+		.marquee-infinite__wrp{
+			width: 100%;
+			display: flex;
+			justify-content: space-around;
+		}
+		.marquee-infinite__item{
+			display: block;
+			background-color: red;
+			width: 20%;
+			height: 100px;
+		}
 	</style>
 
-	<div class="test">
-		<div class="box"></div>
-
-		<div class="key-features s2__content--one">
-			<div class="key-features__badge key-features__badge1">
-				<div class="key-features__badge-inner">
-					<div class="key-features__text-wrp">
-						<div class="key-features__text def-text">
-							test
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="key-features__wrapper key-features__wrapper1">
-				<div class="key-features__info">
-					<div class="key-features__info-inner">
-
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="box"></div>
-
-		<div class="key-features s2__content--two">
-			<div class="key-features__badge key-features__badge2">
-				<div class="key-features__badge-inner">
-					<div class="circle-text def-text">
-						test
-					</div>
-				</div>
-			</div>
-			<div class="key-features__wrapper key-features__wrapper2">
-				<div class="key-features__info">
-					<div class="key-features__info-inner">
-
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="box"></div>
-
-		<div class="key-features s2__content--three">
-			<div class="key-features__badge key-features__badge3">
-				<div class="key-features__badge-inner">
-					<div class="circle-text def-text">
-						test
-					</div>
-				</div>
-			</div>
-			<div class="key-features__wrapper key-features__wrapper3">
-				<div class="key-features__info">
-					<div class="key-features__info-inner">
-
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- <div class="key-features__wrapper">
-			<div class="key-features__info">
-
-			</div>
-		</div> -->
-
+<p>V1</p>
+<div class="marquee-text">
+	<div>
+		<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, accusantium?</p>
 	</div>
+</div>
 
-	<script>
+<p>V2</p>
+<div class="marquee-infinite">
+	<div>
+		<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, accusantium?</p>
+		<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, accusantium?</p>
+	</div>
+</div>
 
-
-			// /* Функция-помощник вернёт процент прокрутки от высоты страницы */
-			// const getDocumentScrollPercentage = (step, offset) => {
-			// 	const viewportHeight = window.innerHeight; // Высота видимой области браузера
-			// 	const scrollTop = Math.max(document.documentElement.scrollTop + document.body.scrollTop - (0.5 * viewportHeight), 0); // Вычитаем отступ в 80% высоты видимой области браузера
-			// 	const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-			// 	let scrollPercentage = scrollTop / scrollHeight;
-			// 	const desiredStep = step; // Желаемый шаг скролла
-
-			// 	if((scrollPercentage * desiredStep * 100) > 1){return 1}
-			// 	return (scrollPercentage * desiredStep * 100);
-			// };
-
-			// const m_body = document.querySelector(".key-features__badge");
-			// const m_content = document.querySelector(".key-features__wrapper")
-			// /* Получаем процент прокрутки и прокидываем в ЦСС-переменную */
-			// const draw = () => {
-			// 	m_body.style.setProperty('--scroll-percentage', getDocumentScrollPercentage(0.17, 70));
-			// 	m_content.style.setProperty('--scroll-percentage', getDocumentScrollPercentage(0.2, 70));
-			// }
-
-			// /* Задаём функцию draw как обработчик события прокрутки scroll. Обратите внимание: мы передаём функцию, а не вызываем её, поэтому не draw(), а draw, без скобочек */
-			// document.addEventListener('scroll', draw)
-
-			// /* Важно поддержать изменение размера окна и запустить функцию один раз при загрузке страницы, чтобы в этих случаях анимация обновилась с учётом актуального процента прокрутки */
-			// window.addEventListener('resize', draw)
-			// draw()
-	</script>
-
+<p>V3</p>
+<div class="marquee-infinite">
+	<div class="marquee-infinite__container">
+		<div class="marquee-infinite__wrp">
+			<div class="marquee-infinite__item"></div>
+			<div class="marquee-infinite__item"></div>
+			<div class="marquee-infinite__item"></div>
+			<div class="marquee-infinite__item"></div>
+		</div>
+		<div class="marquee-infinite__wrp">
+			<div class="marquee-infinite__item"></div>
+			<div class="marquee-infinite__item"></div>
+			<div class="marquee-infinite__item"></div>
+			<div class="marquee-infinite__item"></div>
+		</div>
+	</div>
+</div>
 
 <link href="lib/aos/aos.css" rel="stylesheet">
 <script src="lib/aos/aos.js"></script>
-<style>
-/* [data-aos^="fade"][data-aos^="fade"].aos-animate {
-  opacity: 0.5 !important;
-} */
-</style>
-
-<script>
-  // AOS.init();
-
-	// const m_body = document.querySelector(".key-features__badge1");
-	// const getDocumentScrollPercentage = (step) => {
-	// 	const viewportHeight = window.innerHeight; // Высота видимой области браузера
-	// 	const scrollTop = Math.max(document.documentElement.scrollTop + document.body.scrollTop - (0.5 * viewportHeight), 0); // Вычитаем отступ в 80% высоты видимой области браузера
-	// 	const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-	// 	let scrollPercentage = scrollTop / scrollHeight;
-	// 	const desiredStep = step; // Желаемый шаг скролла
-
-	// 	if((scrollPercentage * desiredStep * 100) > 1){return 1}
-	// 	return (scrollPercentage * desiredStep * 100);
-	// };
-	// /* Получаем процент прокрутки и прокидываем в ЦСС-переменную */
-	// const draw = () => {
-	// 	m_body.style.setProperty('--scroll-percentage', getDocumentScrollPercentage(0.17));
-	// }
-
-
-	// /* Задаём функцию draw как обработчик события прокрутки scroll. Обратите внимание: мы передаём функцию, а не вызываем её, поэтому не draw(), а draw, без скобочек */
-	// document.addEventListener('scroll', draw)
-
-	// /* Важно поддержать изменение размера окна и запустить функцию один раз при загрузке страницы, чтобы в этих случаях анимация обновилась с учётом актуального процента прокрутки */
-	// window.addEventListener('resize', draw)
-	// draw()
-
-const draw = (block) => {
-	if (!block) return;
-
-	const blockRect = block.getBoundingClientRect();
-	const blockTop = blockRect.top;
-	const blockHeight = block.clientHeight;
-	const viewportHeight = window.innerHeight;
-	const scrollTop = Math.max(0, viewportHeight - blockTop - (viewportHeight / 1.05));
-	const scrollHeight = Math.max(0, blockHeight - viewportHeight);
-	console.log(scrollHeight)
-
-	let scrollPercentage = Math.min(1, scrollTop / scrollHeight);
-
-	// console.log("Scroll percentage:", scrollPercentage);
-
-	let body_text = block.parentNode.querySelector(".key-features__wrapper");
-	block.style.setProperty('--scroll-percentage', scrollPercentage);
-	body_text.style.setProperty('--scroll-percentage', scrollPercentage);
-}
-
-const m_bodies = [
-	document.querySelector(".key-features__badge1"),
-
-	document.querySelector(".key-features__badge2"),
-	document.querySelector(".key-features__badge3")
-];
-
-m_bodies.forEach(body => {
-	draw(body);
-	document.addEventListener('scroll', () => draw(body));
-	window.addEventListener('resize', () => draw(body));
-});
-</script>
 </body>
 </html>
