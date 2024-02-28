@@ -1205,6 +1205,7 @@
   }
   // .case__title
   &__title {
+    font-weight: 500;
     color: var(--bodi-2);
     margin-bottom: 8rem;
   }
@@ -2217,6 +2218,13 @@
     left: 0;
     width: 160rem;
     height: 170rem;
+  }
+  // .service2-slide3__decor5
+  &__decor5 {
+    width: 31rem;
+    height: 41rem;
+    bottom: 19rem;
+    left: 193rem;
   }
   // .service2-slide3__decor-smile
   &__decor-smile {

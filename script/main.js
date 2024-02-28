@@ -1,14 +1,12 @@
 // sliders and change animation
 (() => {
   const s2__slider_one = new Swiper(".swiper--one", {
-    spaceBetween: 50,
-    simulateTouch: false,
-
     // ---- phone
-    // speed: 800,
-    // loop: true,
-    // grabCursor: true,
-    // simulateTouch: true,
+    speed: 800,
+    spaceBetween: 50,
+    loop: true,
+    grabCursor: true,
+    simulateTouch: true,
 
     // If we need pagination
     pagination: {
@@ -32,16 +30,20 @@
         opacity: 1,
       },
     },
+
+    breakpoints: {
+      600: {
+        simulateTouch: false,
+      },
+    },
   });
   const s2__slider_two = new Swiper(".swiper--two", {
-    spaceBetween: 50,
-    simulateTouch: false,
-
     // ---- phone
-    // speed: 800,
-    // loop: true,
-    // grabCursor: true,
-    // simulateTouch: true,
+    speed: 800,
+    spaceBetween: 50,
+    loop: true,
+    grabCursor: true,
+    simulateTouch: true,
 
     // If we need pagination
     pagination: {
@@ -65,17 +67,21 @@
         opacity: 1,
       },
     },
+
+    breakpoints: {
+      600: {
+        simulateTouch: false,
+      },
+    },
   });
 
   const s2__slider_three = new Swiper(".swiper--three", {
-    spaceBetween: 50,
-    simulateTouch: false,
-
     // ---- phone
-    // speed: 800,
-    // loop: true,
-    // grabCursor: true,
-    // simulateTouch: true,
+    speed: 800,
+    spaceBetween: 50,
+    loop: true,
+    grabCursor: true,
+    simulateTouch: true,
 
     // If we need pagination
     pagination: {
@@ -97,6 +103,12 @@
         // shadow: true,
         translate: ["120%", 0, -500],
         opacity: 1,
+      },
+    },
+
+    breakpoints: {
+      600: {
+        simulateTouch: false,
       },
     },
   });
@@ -139,8 +151,8 @@
   }
 
   const s3__slider = new Swiper(".s3__slider", {
+    slidesPerView: 1,
     spaceBetween: 24,
-    slidesPerView: 2,
     speed: 600,
     loop: true,
     grabCursor: true,
@@ -148,6 +160,11 @@
     breakpoints: {
       1600: {
         slidesPerView: 3,
+        spaceBetween: 24,
+      },
+      1200: {
+        slidesPerView: 2,
+        spaceBetween: 24,
       },
     },
 
@@ -159,12 +176,24 @@
   });
 
   const s5__slider = new Swiper(".s5__slider", {
-    spaceBetween: 24,
-    slidesPerView: 3,
     speed: 600,
+    grabCursor: true,
+
+    slidesPerView: 1,
+    spaceBetween: 24,
     loop: true,
     watchSlidesProgress: true,
-    grabCursor: true,
+    centeredSlides: true,
+
+    breakpoints: {
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 24,
+        loop: true,
+        centeredSlides: false,
+        watchSlidesProgress: false,
+      },
+    },
 
     // Navigation arrows
     navigation: {
