@@ -1604,3 +1604,9 @@
   width: 16rem;
   height: 16rem;
 }
+
+.footer__item:nth-child(3)
+  .footer__item-list-item:nth-child(1)
+  .footer__item-icon {
+  margin-left: -1rem;
+}
