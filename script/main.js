@@ -329,7 +329,6 @@
       viewportHeight - blockTop - viewportHeight / 1.2
     );
     const scrollHeight = Math.max(0, blockHeight - viewportHeight);
-    console.log(scrollHeight);
 
     let scrollPercentage = Math.min(1, scrollTop / scrollHeight);
     // if (scrollPercentage > 0.98) {
@@ -360,6 +359,35 @@
 // dop
 (() => {
   AOS.init();
+
+  // Флаг для отслеживания выполнения действия
+  var isActionExecuted = false;
+
+  window.addEventListener("scroll", function () {
+    // Получаем текущую прокрутку страницы
+    var scrollPosition =
+      window.pageYOffset || document.documentElement.scrollTop;
+
+    // Проверяем, достигла ли прокрутка 200 пикселей и действие еще не выполнено
+    if (scrollPosition >= 100 && !isActionExecuted) {
+      // Добавляем класс "anim" к элементу с классом "message-box"
+      document.querySelector(".message-box").classList.add("anim");
+
+      // Устанавливаем флаг в true, чтобы предотвратить повторное выполнение действия
+      isActionExecuted = true;
+    }
+  });
+
+  const parent = document.querySelector(".parent");
+  const child = parent.querySelector(".child");
+
+  parent.addEventListener("animationend", () => {
+    setTimeout(() => {
+      // Код для изменения стиля дочернего элемента
+      parent.style.background = "#1777ff";
+      child.style.color = "#fff"; // Например, изменение цвета текста
+    }, 250);
+  });
 
   const btnRotate = document.querySelectorAll(".s3__slide-btn--three");
 
