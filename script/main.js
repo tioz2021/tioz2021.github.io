@@ -386,8 +386,8 @@
         // Если блок стал видимым и находится в зоне видимости больше 1 секунды
         if (
           entry.isIntersecting &&
-          entry.intersectionRatio >= 0.1 &&
-          entry.time >= 25
+          entry.intersectionRatio >= 0.5 &&
+          entry.time >= 100
         ) {
           // Запускаем анимацию или выполняем нужные действия
           entry.target.classList.add("anim");
@@ -397,8 +397,8 @@
         }
       });
     },
-    { threshold: 1, delay: 25 }
-  ); // Устанавливаем порог пересечения 100% и задержку 50 миллисекунд
+    { threshold: 1, delay: 100 }
+  ); // Устанавливаем порог пересечения 100% и задержку 1 секунда
 
   // Список селекторов для анимации
   const selectors = [

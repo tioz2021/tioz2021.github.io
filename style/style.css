@@ -2312,6 +2312,7 @@ input {
 }
 .service1-slide1__decor-icon {
   position: absolute;
+  z-index: 3 !important;
 }
 .service1-slide1__decor-icon--1 {
   width: 85rem;
@@ -2548,6 +2549,7 @@ input {
 }
 .service1-slide3__decor {
   position: absolute;
+  z-index: 3 !important;
 }
 .service1-slide3__decor1 {
   left: 56rem;
@@ -2810,6 +2812,7 @@ input {
 }
 .service1-slide5__decor {
   position: absolute;
+  z-index: 3 !important;
 }
 .service1-slide5__decor1 {
   width: 8rem;
@@ -2968,6 +2971,7 @@ input {
 }
 .service2-slide1__decor {
   position: absolute;
+  z-index: 3 !important;
 }
 .service2-slide1__decor1 {
   bottom: 12rem;
@@ -3351,6 +3355,7 @@ input {
 }
 .service3-slide1__decor {
   position: absolute;
+  z-index: 3 !important;
 }
 .service3-slide1__decor1 {
   top: 10rem;
@@ -3838,6 +3843,7 @@ input {
 }
 .service3-slide5__decor {
   position: absolute;
+  z-index: 3 !important;
 }
 .service3-slide5__decor1 {
   bottom: 42rem;
