@@ -361,21 +361,71 @@
   AOS.init();
 
   // Флаг для отслеживания выполнения действия
-  var isActionExecuted = false;
+  // var isActionExecuted = false;
 
-  window.addEventListener("scroll", function () {
-    // Получаем текущую прокрутку страницы
-    var scrollPosition =
-      window.pageYOffset || document.documentElement.scrollTop;
+  // window.addEventListener("scroll", function () {
+  //   // Получаем текущую прокрутку страницы
+  //   var scrollPosition =
+  //     window.pageYOffset || document.documentElement.scrollTop;
 
-    // Проверяем, достигла ли прокрутка 200 пикселей и действие еще не выполнено
-    if (scrollPosition >= 100 && !isActionExecuted) {
-      // Добавляем класс "anim" к элементу с классом "message-box"
-      document.querySelector(".message-box").classList.add("anim");
+  //   // Проверяем, достигла ли прокрутка 200 пикселей и действие еще не выполнено
+  //   if (scrollPosition >= 100 && !isActionExecuted) {
+  //     // Добавляем класс "anim" к элементу с классом "message-box"
+  //     document.querySelector(".message-box").classList.add("anim");
 
-      // Устанавливаем флаг в true, чтобы предотвратить повторное выполнение действия
-      isActionExecuted = true;
-    }
+  //     // Устанавливаем флаг в true, чтобы предотвратить повторное выполнение действия
+  //     isActionExecuted = true;
+  //   }
+  // });
+
+  // Создаем новый экземпляр Intersection Observer
+  const observer = new IntersectionObserver(
+    (entries) => {
+      // Перебираем все записи (entries)
+      entries.forEach((entry) => {
+        // Если блок стал видимым и находится в зоне видимости больше 1 секунды
+        if (
+          entry.isIntersecting &&
+          entry.intersectionRatio >= 0.1 &&
+          entry.time >= 25
+        ) {
+          // Запускаем анимацию или выполняем нужные действия
+          entry.target.classList.add("anim");
+
+          // После того, как анимация выполнена, можно отключить наблюдение, если оно больше не нужно
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 1, delay: 25 }
+  ); // Устанавливаем порог пересечения 100% и задержку 50 миллисекунд
+
+  // Список селекторов для анимации
+  const selectors = [
+    ".service1-slide1",
+    ".service1-slide2",
+    ".service1-slide3",
+    ".service1-slide4",
+    ".service1-slide5",
+
+    ".service2-slide1",
+    ".service2-slide2",
+    ".service2-slide3",
+    ".service2-slide4",
+
+    ".service3-slide1",
+    ".service3-slide2",
+    ".service3-slide3",
+    ".service3-slide4",
+    ".service3-slide5",
+  ];
+
+  // Проходимся по списку селекторов
+  selectors.forEach((selector) => {
+    // Находим блок для текущего селектора
+    const blockToAnimate = document.querySelector(selector);
+    // Начинаем наблюдение за блоком
+    observer.observe(blockToAnimate);
   });
 
   const parent = document.querySelector(".parent");

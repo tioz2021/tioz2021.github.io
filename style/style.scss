@@ -98,6 +98,8 @@ input {
 
 .service3-slide2__text--icon-mob {
   display: none;
+  position: relative;
+  z-index: 2;
 }
 
 @media screen and (min-width: 2550px) {
@@ -220,104 +222,8 @@ input {
   @import "_adaptive-mob";
 }
 
+@import "_animation.scss";
+
 .message-box__end-start {
   overflow: hidden;
-}
-
-.anim .message-box__chat-item {
-  animation-name: myFadeLeft;
-}
-
-.anim .myFadeIn {
-  animation-name: myFadeIn;
-}
-
-.message-box__chat-item {
-  opacity: 0;
-  background-color: #fff;
-  transition: all 1000ms ease-in-out;
-  transform-origin: 100%;
-  will-change: transform, opacity;
-  // animation-name: myFadeLeft;
-  // animation-duration: 500ms;
-  // animation-timing-function: ease-in-out;
-  // animation-delay: 100ms;
-  // animation-direction: normal;
-  // animation-fill-mode: forwards;
-  // animation-play-state: running;
-  transform: translate3d(-200rem, 0, 0) scale(0.95);
-  animation: myFadeLeftDisabled 750ms ease-in-out 100ms normal forwards running;
-}
-.message-box__chat-item:nth-child(1) {
-  animation-delay: 100ms;
-}
-
-.message-box__chat-item:nth-child(2) {
-  animation-delay: 250ms;
-}
-
-.message-box__chat-item:nth-child(3) {
-  animation-delay: 400ms;
-}
-
-.message-box__chat-item:nth-child(4) {
-  animation-delay: 550ms;
-}
-
-.message-box__chat-item:nth-child(5) {
-  margin-top: -1rem;
-  animation-delay: 700ms;
-}
-
-// my animation
-@keyframes myFadeLeft {
-  0% {
-    opacity: 0;
-    transform: translate3d(-200rem, 0, 0) scale(0.95);
-  }
-  100% {
-    opacity: 1;
-    transform: translate3d(0rem, 0, 0) scale(1);
-  }
-}
-
-.myFadeIn {
-  opacity: 0;
-  transform: scale(0.95);
-  transform-origin: 100%;
-  will-change: transform, opacity;
-  // transition: all 1000ms ease-in-out;
-  animation: myFadeInDisabled 750ms ease-in-out 100ms normal forwards running;
-}
-.myFadeIn1 {
-  animation-delay: 1900ms;
-}
-.myFadeIn2 {
-  animation-delay: 2050ms;
-}
-.myFadeIn3 {
-  animation-delay: 2200ms;
-}
-.myFadeIn4 {
-  animation-delay: 2350ms;
-}
-.myFadeIn5 {
-  animation-delay: 2500ms;
-}
-.myFadeIn6 {
-  animation-delay: 2650ms;
-}
-.myFadeIn7 {
-  animation-delay: 2800ms;
-}
-
-@keyframes myFadeIn {
-  0% {
-    opacity: 0;
-    transform: scale(0.95);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
 }
