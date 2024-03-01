@@ -599,6 +599,7 @@ template {
   display: block;
   position: relative;
 }
+.img-wrp lottie-player,
 .img-wrp img,
 .img-wrp svg {
   width: 100%;
@@ -5834,8 +5835,7 @@ input {
   animation: myFadeIn_zoom_disable 450ms ease-in-out 100ms normal forwards running;
 }
 
-.service2-slide2__box,
-.service2-slide2__decor {
+.service2-slide2__box {
   opacity: 0;
   transform: scale(0.4, 0.4);
   will-change: transform, opacity;
@@ -5874,8 +5874,7 @@ input {
   animation: myFadeIn_zoom_disable 450ms ease-in-out 100ms normal forwards running;
 }
 
-.service3-slide2__text-wrp,
-.service3-slide2__decor-line {
+.service3-slide2__text-wrp {
   opacity: 0;
   transform: scale(0.4, 0.4);
   will-change: transform, opacity;
@@ -5964,10 +5963,6 @@ input {
 }
 .anim .service3-slide2__text-wrp4 {
   animation-delay: 1000ms;
-}
-.anim .service3-slide2__decor-line {
-  animation-name: myFadeIn_zoom_line;
-  animation-delay: 1200ms;
 }
 .anim .service3-slide1__text-wrp {
   animation-name: myFadeIn_zoom;
@@ -6094,10 +6089,6 @@ input {
 }
 .anim .service2-slide2__box2 {
   animation-delay: 550ms;
-}
-.anim .service2-slide2__decor {
-  animation-name: myFadeIn_zoom;
-  animation-delay: 750ms;
 }
 .anim .service2-slide1__text-wrp {
   animation-name: myFadeIn_zoom;
@@ -6262,4 +6253,16 @@ input {
 
 .message-box__end-start {
   overflow: hidden;
+}
+
+.lottie-s3__slide-icon--one {
+  transform: translate(-50%, -50%) scale(1.5) !important;
+}
+
+.lottie-s3__slide-icon--two {
+  transform: translate(-50%, -50%) scale(1.2) !important;
+}
+
+.lottie-s3__slide-icon--three {
+  transform: translate(-50%, -50%) scale(1.2) !important;
 }

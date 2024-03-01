@@ -225,8 +225,7 @@
     running;
 }
 // service2-slide2
-.service2-slide2__box,
-.service2-slide2__decor {
+.service2-slide2__box {
   opacity: 0;
   transform: scale(0.4, 0.4);
   will-change: transform, opacity;
@@ -271,8 +270,7 @@
 }
 
 // service3-slide2
-.service3-slide2__text-wrp,
-.service3-slide2__decor-line {
+.service3-slide2__text-wrp {
   opacity: 0;
   transform: scale(0.4, 0.4);
   will-change: transform, opacity;
@@ -385,10 +383,10 @@
     animation-delay: 1000ms;
   }
 
-  .service3-slide2__decor-line {
-    animation-name: myFadeIn_zoom_line;
-    animation-delay: 1200ms;
-  }
+  // .service3-slide2__decor-line {
+  //   animation-name: myFadeIn_zoom_line;
+  //   animation-delay: 1200ms;
+  // }
 
   // service3-slide1
   .service3-slide1__text-wrp {
@@ -527,10 +525,10 @@
   .service2-slide2__box2 {
     animation-delay: 550ms;
   }
-  .service2-slide2__decor {
-    animation-name: myFadeIn_zoom;
-    animation-delay: 750ms;
-  }
+  // .service2-slide2__decor {
+  //   animation-name: myFadeIn_zoom;
+  //   animation-delay: 750ms;
+  // }
 
   // service2-slide1
   .service2-slide1__text-wrp {

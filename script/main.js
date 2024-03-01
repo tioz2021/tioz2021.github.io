@@ -360,29 +360,12 @@
 (() => {
   AOS.init();
 
-  // Флаг для отслеживания выполнения действия
-  // var isActionExecuted = false;
-
-  // window.addEventListener("scroll", function () {
-  //   // Получаем текущую прокрутку страницы
-  //   var scrollPosition =
-  //     window.pageYOffset || document.documentElement.scrollTop;
-
-  //   // Проверяем, достигла ли прокрутка 200 пикселей и действие еще не выполнено
-  //   if (scrollPosition >= 100 && !isActionExecuted) {
-  //     // Добавляем класс "anim" к элементу с классом "message-box"
-  //     document.querySelector(".message-box").classList.add("anim");
-
-  //     // Устанавливаем флаг в true, чтобы предотвратить повторное выполнение действия
-  //     isActionExecuted = true;
-  //   }
-  // });
-
   // Создаем новый экземпляр Intersection Observer
   const observer = new IntersectionObserver(
     (entries) => {
       // Перебираем все записи (entries)
       entries.forEach((entry) => {
+        // console.log(entry.target);
         // Если блок стал видимым и находится в зоне видимости больше 1 секунды
         if (
           entry.isIntersecting &&
@@ -391,6 +374,18 @@
         ) {
           // Запускаем анимацию или выполняем нужные действия
           entry.target.classList.add("anim");
+
+          if (entry.target.classList.contains("service2-slide2") == true) {
+            setTimeout(() => {
+              document.querySelector(".lottie-arrow").play();
+            }, 750);
+          }
+
+          if (entry.target.classList.contains("service3-slide2") == true) {
+            setTimeout(() => {
+              document.querySelector(".lottie-line-web").play();
+            }, 750);
+          }
 
           // После того, как анимация выполнена, можно отключить наблюдение, если оно больше не нужно
           observer.unobserve(entry.target);
@@ -439,26 +434,65 @@
     }, 250);
   });
 
-  const btnRotate = document.querySelectorAll(".s3__slide-btn--three");
+  const btn1 = document.querySelectorAll(".s3__slide-btn--one");
+  const btn2 = document.querySelectorAll(".s3__slide-btn--three");
+  const btn3 = document.querySelectorAll(".s3__slide-btn--two");
 
-  if (btnRotate)
-    btnRotate.forEach((e) =>
+  if (btn1)
+    btn1.forEach((e) =>
       e.addEventListener("mouseenter", () => {
-        targetRotate = e.parentNode.parentNode.querySelector(
-          ".s3__slide-icon--three-dop"
-        );
-
-        targetRotate.style.transform = "rotate(360deg)";
+        btn_target = e.parentNode.parentNode.querySelector("lottie-player");
+        btn_target.play();
       })
     );
 
-  if (btnRotate)
-    btnRotate.forEach((e) =>
+  if (btn1)
+    btn1.forEach((e) =>
       e.addEventListener("mouseleave", () => {
-        targetRotate = e.parentNode.parentNode.querySelector(
-          ".s3__slide-icon--three-dop"
-        );
-        targetRotate.style.transform = "rotate(90deg)";
+        btn_target = e.parentNode.parentNode.querySelector("lottie-player");
+        btn_target.stop();
       })
     );
+
+  if (btn2)
+    btn2.forEach((e) =>
+      e.addEventListener("mouseenter", () => {
+        btn_target = e.parentNode.parentNode.querySelector("lottie-player");
+        btn_target.play();
+      })
+    );
+
+  if (btn2)
+    btn2.forEach((e) =>
+      e.addEventListener("mouseleave", () => {
+        btn_target = e.parentNode.parentNode.querySelector("lottie-player");
+        btn_target.stop();
+      })
+    );
+
+  if (btn3)
+    btn3.forEach((e) =>
+      e.addEventListener("mouseenter", () => {
+        btn_target = e.parentNode.parentNode.querySelector("lottie-player");
+        btn_target.play();
+      })
+    );
+
+  if (btn3)
+    btn3.forEach((e) =>
+      e.addEventListener("mouseleave", () => {
+        btn_target = e.parentNode.parentNode.querySelector("lottie-player");
+        btn_target.stop();
+      })
+    );
+
+  // if (btnRotate)
+  //   btnRotate.forEach((e) =>
+  //     e.addEventListener("mouseleave", () => {
+  //       targetRotate = e.parentNode.parentNode.querySelector(
+  //         ".s3__slide-icon--three-dop"
+  //       );
+  //       targetRotate.style.transform = "rotate(90deg)";
+  //     })
+  //   );
 })();
