@@ -878,6 +878,7 @@ template {
   border-radius: 50%;
 }
 .message-box__center {
+  border-bottom: 1rem solid var(--dop-1);
   display: flex;
   align-items: center;
   box-sizing: border-box;
@@ -1012,7 +1013,9 @@ template {
   color: #b6b6b6;
 }
 .message-box__chat-add-btn {
-  width: 100%;
+  width: 206rem;
+  margin: 0 auto;
+  margin-bottom: 12rem;
   height: 24rem;
   border: 1rem solid #e6e6e6;
   border-radius: 4rem;
@@ -1021,7 +1024,6 @@ template {
   line-height: 120%;
   color: var(--bodi-2);
   margin-top: auto;
-  margin-bottom: 0;
 }
 .message-box__chat-add-btn-icon {
   width: 8rem;
@@ -1029,7 +1031,7 @@ template {
   margin-right: 8rem;
 }
 .message-box__end-chat-body-wrp {
-  width: 100%;
+  width: 766rem;
   background: var(--theme-1-4);
   border-radius: 0 0 12rem 0;
   box-sizing: border-box;
@@ -1461,7 +1463,8 @@ input {
 }
 
 .s2 {
-  margin-top: 203rem;
+  padding-top: 100rem;
+  margin-top: 103rem;
   margin-bottom: 120rem;
 }
 .s2__container {
@@ -1882,11 +1885,14 @@ input {
   box-sizing: border-box;
   border-radius: 100%;
   background-color: var(--theme-1-2);
+  z-index: 2;
+  overflow: hidden;
   border: 8rem solid var(--theme-1-4);
 }
 .s4__item-icon-wrp svg {
   width: 24rem;
   height: 24rem;
+  z-index: 3;
 }
 .s4__item-title {
   color: var(--theme-1-1);
@@ -4358,7 +4364,8 @@ input {
     bottom: 122rem;
   }
   .s2 {
-    margin-top: 110rem;
+    margin-top: 50rem;
+    padding-top: 60rem;
     margin-bottom: 60rem;
   }
   .s2__container {
@@ -5625,6 +5632,9 @@ input {
   .footer__item:nth-child(3) .footer__item-list-item:nth-child(1) .footer__item-icon {
     margin-left: -1rem;
   }
+  .message-box__chat-add-btn {
+    width: 304rem;
+  }
 }
 .anim .message-box__chat-item {
   animation-name: myFadeLeft;
@@ -6070,7 +6080,8 @@ input {
   animation-delay: 950ms;
 }
 .anim .service2-slide3__decor-smile {
-  animation-name: myFadeIn_zoom;
+  animation-name: myFadeIn_zoom_left;
+  animation-duration: 600ms;
 }
 .anim .service2-slide3__decor-smile1 {
   animation-delay: 1050ms;
@@ -6249,6 +6260,10 @@ input {
 .anim .service1-slide1__decor-icon--8 {
   animation-delay: 2050ms;
   animation-duration: 450ms;
+}
+
+html:not(.no-js) [data-aos^=zoom][data-aos^=zoom].aos-animate {
+  border-width: 8rem !important;
 }
 
 .message-box__end-start {

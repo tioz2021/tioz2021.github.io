@@ -156,7 +156,8 @@
 }
 
 .s2 {
-  margin-top: 110rem;
+  margin-top: 50rem;
+  padding-top: 60rem;
   margin-bottom: 60rem;
 }
 
@@ -1609,4 +1610,7 @@
   .footer__item-list-item:nth-child(1)
   .footer__item-icon {
   margin-left: -1rem;
+}
+.message-box__chat-add-btn {
+  width: 304rem;
 }

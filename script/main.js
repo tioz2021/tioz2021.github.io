@@ -485,14 +485,4 @@
         btn_target.stop();
       })
     );
-
-  // if (btnRotate)
-  //   btnRotate.forEach((e) =>
-  //     e.addEventListener("mouseleave", () => {
-  //       targetRotate = e.parentNode.parentNode.querySelector(
-  //         ".s3__slide-icon--three-dop"
-  //       );
-  //       targetRotate.style.transform = "rotate(90deg)";
-  //     })
-  //   );
 })();

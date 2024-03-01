@@ -586,6 +586,7 @@
   }
   // .message-box__center
   &__center {
+    border-bottom: 1rem solid var(--dop-1);
     display: flex;
     align-items: center;
     box-sizing: border-box;
@@ -680,6 +681,7 @@
   }
   // .message-box__end-start
   &__end-start {
+    // border-top: 1rem solid #e6e6e6;
     width: 230rem;
     box-sizing: border-box;
     // padding: 12rem;
@@ -762,7 +764,11 @@
   }
   // .message-box__chat-add-btn
   &__chat-add-btn {
-    width: 100%;
+    width: 206rem;
+    margin: 0 auto;
+    margin-bottom: 12rem;
+
+    // width: 100%;
     height: 24rem;
     border: 1rem solid #e6e6e6;
     border-radius: 4rem;
@@ -773,7 +779,7 @@
     color: var(--bodi-2);
 
     margin-top: auto;
-    margin-bottom: 0;
+    // margin-bottom: 0;
   }
   // .message-box__chat-add-btn-icon
   &__chat-add-btn-icon {
@@ -783,8 +789,8 @@
   }
   // .message-box__end-chat-body-wrp
   &__end-chat-body-wrp {
-    // width: 762rem;
-    width: 100%;
+    width: 766rem;
+    // width: 100%;
     background: var(--theme-1-4);
     border-radius: 0 0 12rem 0;
 

@@ -504,7 +504,8 @@
   }
 
   .service2-slide3__decor-smile {
-    animation-name: myFadeIn_zoom;
+    animation-name: myFadeIn_zoom_left;
+    animation-duration: 600ms;
   }
   .service2-slide3__decor-smile1 {
     animation-delay: 1050ms;
@@ -711,4 +712,10 @@
     animation-delay: 2050ms;
     animation-duration: 450ms;
   }
+}
+
+.s4__item-icon-wrp {
+}
+html:not(.no-js) [data-aos^="zoom"][data-aos^="zoom"].aos-animate {
+  border-width: 8rem !important;
 }

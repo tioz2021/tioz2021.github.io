@@ -181,7 +181,9 @@
 }
 
 .s2 {
-  margin-top: 203rem;
+  padding-top: 100rem;
+  margin-top: 103rem;
+
   margin-bottom: 120rem;
   // .s2__container
   &__container {
@@ -798,12 +800,15 @@
     box-sizing: border-box;
     border-radius: 100%;
     background-color: var(--theme-1-2);
+    z-index: 2;
+    overflow: hidden;
     border: 8rem solid var(--theme-1-4);
 
     // .s4__item-icon-wrp svg
     svg {
       width: 24rem;
       height: 24rem;
+      z-index: 3;
     }
   }
   // .s4__item-title
