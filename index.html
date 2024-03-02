@@ -40,13 +40,13 @@
 			<nav class="header__nav">
 				<ul class="header__nav-list">
 					<li class="header__nav-list-item">
-						<a class="header__nav-list-link ul-small-text" href="#">Возможности</a>
+						<a class="header__nav-list-link ul-small-text" href="#s2">Возможности</a>
 					</li>
 					<li class="header__nav-list-item">
-						<a class="header__nav-list-link ul-small-text" href="#">Преимущества</a>
+						<a class="header__nav-list-link ul-small-text" href="#s4">Преимущества</a>
 					</li>
 					<li class="header__nav-list-item">
-						<a class="header__nav-list-link ul-small-text" href="#s2">Кейсы</a>
+						<a class="header__nav-list-link ul-small-text" href="#s3">Кейсы</a>
 					</li>
 				</ul>
 			</nav>
@@ -70,7 +70,7 @@
 				</div>
 				<div class="s1__btn-wrp">
 					<a class="s1__btn main-btn main-btn--blue small-text text-medium" href="#">Попробовать бесплатно</a>
-					<a class="s1__btn main-btn main-btn--white small-text text-medium" href="#">
+					<a id="openBtn" class="s1__btn main-btn main-btn--white small-text text-medium" href="#">
 						<div class="s1__btn-icon img-wrp">
 							<svg width="11" height="14" viewBox="0 0 11 14" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M10.5 6.13397C11.1667 6.51888 11.1667 7.48112 10.5 7.86602L1.5 13.0622C0.833332 13.4471 3.43203e-07 12.966 3.76852e-07 12.1962L8.31114e-07 1.80385C8.64763e-07 1.03405 0.833334 0.552922 1.5 0.937822L10.5 6.13397Z" fill="#2AB9E6"/>
@@ -885,7 +885,7 @@
 		<section class="s2" id="s2">
 
 			<div class="s2__container container">
-				<div class="key-features s2__content s2__content--one">
+				<div class="key-features s2__content s2__content--one" id="s2__slide-one">
 					<div class="key-features__badge key-features__badge1">
 						<div class="key-features__badge-inner">
 							<div class="key-features__text-wrp">
@@ -1342,7 +1342,7 @@
 					</div>
 				</div>
 
-				<div class="key-features s2__content s2__content--two">
+				<div class="key-features s2__content s2__content--two" id="s2__slide-two">
 					<div class="key-features__badge key-features__badge2">
 						<div class="key-features__badge-inner">
 							<div class="key-features__text-wrp">
@@ -1833,7 +1833,7 @@
 					</div>
 				</div>
 
-				<div class="s2__content s2__content--three">
+				<div class="s2__content s2__content--three" id="s2__slide-three">
 					<div class="key-features__badge key-features__badge3">
 						<div class="key-features__badge-inner">
 							<div class="key-features__text-wrp">
@@ -2350,7 +2350,7 @@
 			</div>
 		</section>
 
-		<section class="s3">
+		<section class="s3" id="s3">
 			<div class="s3__container container">
 				<div class="s3__title def-title">Кейсы Postlab</div>
 				<div class="s3__slider swiper swiper-container">
@@ -2564,7 +2564,7 @@
 			</div>
 		</section>
 
-		<section class="s4">
+		<section class="s4" id="s4">
 			<div class="s4__container container">
 				<div class="s4__title def-title">Почему стоит выбрать PostLab</div>
 				<ul class="s4__list">
@@ -3009,6 +3009,21 @@
 			</div>
 		</div>
 	</footer>
+
+	<div id="popup" class="popup">
+		<div class="popup__content popup-content open">
+			<iframe src="https://www.youtube.com/embed/MceCA3jgzFA?si=iOGZgDmFQ_x8yLCM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+			<button id="closeBtn" class="closeBtn">
+				<div class="closeBtn-icon-wrp img-wrp">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M18 6L6 18" stroke="#2AB9E6" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M6 6L18 18" stroke="#2AB9E6" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+				</div>
+			</button>
+		</div>
+	</div>
 
 	<!-- <lottie-player class="test" src="lottie/19.json" background="transparent" speed="1" loop></lottie-player> -->
 

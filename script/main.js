@@ -420,28 +420,32 @@
     // Находим блок для текущего селектора
     const blockToAnimate = document.querySelector(selector);
     // Начинаем наблюдение за блоком
+    if (!blockToAnimate) return;
     observer.observe(blockToAnimate);
   });
 
   const parent = document.querySelector(".parent");
-  const child = parent.querySelector(".child");
 
-  parent.addEventListener("animationend", () => {
-    setTimeout(() => {
-      // Код для изменения стиля дочернего элемента
-      parent.style.background = "#1777ff";
-      child.style.color = "#fff"; // Например, изменение цвета текста
-    }, 250);
-  });
+  if (parent) {
+    const child = parent.querySelector(".child");
 
-  const btn1 = document.querySelectorAll(".s3__slide-btn--one");
-  const btn2 = document.querySelectorAll(".s3__slide-btn--three");
-  const btn3 = document.querySelectorAll(".s3__slide-btn--two");
+    parent.addEventListener("animationend", () => {
+      setTimeout(() => {
+        // Код для изменения стиля дочернего элемента
+        parent.style.background = "#1777ff";
+        child.style.color = "#fff"; // Например, изменение цвета текста
+      }, 250);
+    });
+  }
+
+  const btn1 = document.querySelectorAll(".s3__swiper-slide--one");
+  const btn2 = document.querySelectorAll(".s3__swiper-slide--three");
+  const btn3 = document.querySelectorAll(".s3__swiper-slide--two");
 
   if (btn1)
     btn1.forEach((e) =>
       e.addEventListener("mouseenter", () => {
-        btn_target = e.parentNode.parentNode.querySelector("lottie-player");
+        btn_target = e.querySelector("lottie-player");
         btn_target.play();
       })
     );
@@ -449,7 +453,7 @@
   if (btn1)
     btn1.forEach((e) =>
       e.addEventListener("mouseleave", () => {
-        btn_target = e.parentNode.parentNode.querySelector("lottie-player");
+        btn_target = e.querySelector("lottie-player");
         btn_target.stop();
       })
     );
@@ -457,7 +461,7 @@
   if (btn2)
     btn2.forEach((e) =>
       e.addEventListener("mouseenter", () => {
-        btn_target = e.parentNode.parentNode.querySelector("lottie-player");
+        btn_target = e.querySelector("lottie-player");
         btn_target.play();
       })
     );
@@ -465,7 +469,7 @@
   if (btn2)
     btn2.forEach((e) =>
       e.addEventListener("mouseleave", () => {
-        btn_target = e.parentNode.parentNode.querySelector("lottie-player");
+        btn_target = e.querySelector("lottie-player");
         btn_target.stop();
       })
     );
@@ -473,7 +477,7 @@
   if (btn3)
     btn3.forEach((e) =>
       e.addEventListener("mouseenter", () => {
-        btn_target = e.parentNode.parentNode.querySelector("lottie-player");
+        btn_target = e.querySelector("lottie-player");
         btn_target.play();
       })
     );
@@ -481,7 +485,7 @@
   if (btn3)
     btn3.forEach((e) =>
       e.addEventListener("mouseleave", () => {
-        btn_target = e.parentNode.parentNode.querySelector("lottie-player");
+        btn_target = e.querySelector("lottie-player");
         btn_target.stop();
       })
     );

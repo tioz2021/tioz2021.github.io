@@ -139,20 +139,32 @@
   // border: 1rem solid red;
   // z-index: 123;
 
+  // width: 308rem;
+  // height: 104rem;
+  // left: -71rem;
+  // bottom: 570rem;
+
   width: 308rem;
   height: 104rem;
   left: -71rem;
-  bottom: 570rem;
+  bottom: unset;
+  /* z-index: 3; */
+  top: 220rem;
 }
 
 .s1__decor--2 {
   // border: 1rem solid red;
   // z-index: 123;
 
+  // width: 308rem;
+  // height: 86rem;
+  // right: -67rem;
+  // bottom: 122rem;
+
   width: 308rem;
   height: 86rem;
-  right: -67rem;
-  bottom: 122rem;
+  right: -111rem;
+  bottom: 104rem;
 }
 
 .s2 {
@@ -1613,4 +1625,49 @@
 }
 .message-box__chat-add-btn {
   width: 304rem;
+}
+
+.s1__404mod .s1__decor--1 {
+  // top: 222rem;
+  // left: -85rem;
+  top: -36rem;
+  left: -85rem;
+  bottom: unset;
+}
+.s1__404mod .s1__decor--2 {
+  top: 466rem;
+  right: -112rem;
+
+  // top: 726rem;
+  // right: -112rem;
+}
+
+.s1__404mod .message-box__form {
+  display: none;
+}
+
+.s1__404mod .message-box__center-text-wrp {
+  display: block;
+}
+
+.s1__404mod .message-box__end-start {
+  display: none;
+}
+
+.s1__404mod .message-box__end-chat-body-wrp {
+  display: block;
+}
+
+.s1__404mod .myFadeIn1 {
+  animation-delay: 500ms;
+}
+
+.s1__404mod .myFadeIn2 {
+  animation-delay: 600ms;
+}
+.s1__404mod .myFadeIn3 {
+  animation-delay: 700ms;
+}
+.s1__404mod .myFadeIn4 {
+  animation-delay: 800ms;
 }
