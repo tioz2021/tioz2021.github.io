@@ -1,0 +1,130 @@
+// reset.css
+@import '_reset.scss';
+
+// normalize.css
+@import '_normalize.scss';
+
+html{
+	//transition: font-size 500ms ease;
+  font-size: 0.05208vw;
+	scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Ubuntu', 'Arial', sans-serif;
+  background: #F5F5F5;
+}
+
+
+// fonts
+@import '_fonts.scss';
+
+// var
+@import '_var.scss';
+
+// mixin-s
+@import '_mixins.scss';
+
+// components
+@import '_components.scss';
+
+// main-web 1920 - 1600 font-size: 0.05208vw;
+@import '_main-web.scss';
+
+// mini-web 1600 - 900 font-size: 0.07208vw;
+@media screen and (max-width: 1600px){
+	html{
+		font-size: 0.07208vw;
+	}
+}
+
+// tablet 1140 - 580 font-size: font-size: 0.13020vw;
+@media screen and (max-width: 900px){
+	html{
+		font-size: 0.13020vw;
+	}
+	@import '_components-tablet.scss';
+	@import '_main-tablet.scss';
+}
+
+// mobile 540 - 0 font-size: 0.27778vw;
+@media screen and (max-width: 540px){
+	html{
+		font-size: 0.27778vw;
+	}
+	@import '_components-mobile.scss';
+	@import '_main-mobile.scss';
+
+	.footer{
+		// display: none;
+	}
+}
+
+.block-2__img-icons img:nth-child(1) {
+  animation-name: block2__anim1;
+  animation-duration: 2s;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	transform: translateY(0px);
+}
+.block-2__img-icons img:nth-child(2) {
+  animation-name: block2__anim1;
+  animation-duration: 2.2s;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	transform: translateY(0px);
+}
+.block-2__img-icons img:nth-child(3) {
+  animation-name: block2__anim1;
+  animation-duration: 1.6s;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	transform: translateY(0px);
+}
+.block-2__img-icons img:nth-child(4) {
+  animation-name: block2__anim1;
+  animation-duration: 1.4s;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	transform: translateY(0px);
+}
+.block-2__img-icons img:nth-child(5) {
+  animation-name: block2__anim1;
+  animation-duration: 2.3s;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	transform: translateY(0px);
+}
+
+// .block-3__link{
+// 	animation-name: block2__anim1;
+//   animation-duration: 2.3s;
+// 	animation-delay: 0s;
+// 	animation-iteration-count: infinite;
+// 	animation-direction: alternate-reverse;
+// 	transform: translateY(0px);
+// }
+
+// animation
+@keyframes block2__anim1 {
+  0% {
+		transform: translateY(0px);
+	}
+  // 25%  {
+	// 	transform: translateY(10px);
+	// }
+	// 50%  {
+	// 	transform: translateY(20px);
+	// }
+	// 75%  {
+	// 	transform: translateY(10px);
+	// }
+  100% {
+		transform: translateY(20px);
+	}
+}

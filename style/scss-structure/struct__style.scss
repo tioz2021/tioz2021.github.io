@@ -1,0 +1,654 @@
+html{
+  //font-size: 0.05208vw;
+}
+
+section,
+header,
+footer{
+}
+
+a{
+
+	//a:hoover
+  &:hover{
+  }
+}
+
+.header{
+
+	// .header__container
+  &__container{
+  }
+
+  // .header__logo
+  &__logo{
+  }
+
+  // .cabinet-nav
+  &__cabinet-nav{
+  }
+
+}
+
+.fs{
+
+  &::before{
+  }
+
+  // .fs__container
+  &__container{
+  }
+
+  // .fs .start
+  .start{
+  }
+
+  // .fs .end
+  .end{
+  }
+
+  // .fs__title
+  &__title{
+  }
+
+  // .fs__sub-title
+  &__sub-title{
+  }
+
+  // .fs__form
+  &__form{
+
+  }
+
+  // .fs__img
+  &__img{
+  }
+}
+
+.block-2{
+
+  // .block-2__container
+  &__container{
+
+  }
+
+  // .block-2__list
+  &__list{
+
+		// .block-2__list-item
+    &-item{
+
+			// .block-2__list-item:last-child
+			&:last-child{
+				
+			}
+    }
+
+    // .block-2__list-number
+    &-number{
+    }
+
+    // .block-2__list .wrp
+    .wrp{
+
+    }
+
+    // .block-2__list-title
+    &-title{
+    }
+
+    // .block-2__list-text
+    &-text{
+    }
+  }
+
+  // .block-2__baner
+  &__baner{
+
+		// .block-2__baner .start
+    .start{
+    }
+
+    // .block-2__baner .end
+    .end{
+    }
+
+  }
+
+  // .block-2__img
+  &__img{
+  }
+
+  // .block-2__title
+  &__title{
+  }
+
+  // .block-2__sub-title
+  &__sub-title{
+  }
+
+  // .block-2__text
+  &__text{
+  }
+
+  // .block-2__btn
+  &__btn{
+  }
+
+  // .block-2__pay-list
+  &__pay-list{
+
+    // .block-2__pay-list li
+    li{
+    }
+
+    // .block-2__pay-list li:nth-child(1)
+    li:nth-child(1){
+    }
+
+    // .block-2__pay-list li:nth-child(2)
+    li:nth-child(2){
+    }
+
+    // .block-2__pay-list li:nth-child(3)
+    li:nth-child(3){
+    }
+
+    // .block-2__pay-list li:nth-child(4)
+    li:nth-child(4){
+    }
+
+    // .block-2__pay-list li:nth-child(5)
+    li:nth-child(5){
+    }
+
+    // .block-2__pay-list li:nth-child(6)
+    li:nth-child(6){
+    }
+  }
+}
+
+.block-3{
+
+  // .block-3__container
+  &__container{
+  }
+
+  // .block-3 .start
+  .start{
+  }
+
+  // .block-3__title
+  &__title{
+  }
+
+  // .block-3__sub-title
+  &__sub-title{
+  }
+
+  // .block-3__link
+  &__link{
+
+    // .block-3__link span
+    span{
+    }
+
+    // .block-3__link .icon
+    .icon{
+    }
+
+    // .block-3__link:hover
+    &:hover{
+
+      // .block-3__link:hover span
+      span{
+      }
+    }
+  }
+
+  // .block-3 .end
+  .end{
+  }
+
+  // .block-3__slider
+  &__slider{
+
+		// .slider-buttons-wrapper
+    &-wrapper{
+    }
+
+    // .slider-buttons-slide
+    &-slide{
+    }
+
+    // .slider-buttons-slide:nth-child(2)
+    &-slide:nth-child(2){
+    }
+
+    // .slider-buttons-slide:nth-child(3)
+    &-slide:nth-child(3){
+
+      // .slider-buttons-slide:nth-child(3) .slider-buttons-title
+      .slider-buttons-title{
+      }
+
+      // .slider-buttons-slide:nth-child(3) .def-text
+      .def-text{
+      }
+    }
+
+    // .slider-buttons .wrp
+    .wrp{
+    }
+
+    // .slider-buttons-title
+    &-title{
+    }
+
+    // .slider-buttons-btn
+    &-btn{
+      
+    }
+
+    // .slider-buttons-list
+    &-list{
+  
+    }
+
+    // .slider-buttons-item
+    &-item{
+
+			&::after{
+      }
+    }
+
+    // .slider-buttons-item-text
+    &-item-text{
+  
+    }
+
+    // .slider-buttons-pagination
+    &-pagination{
+    }
+
+    // .slider-buttons .swiper-pagination-bullet
+    .swiper-pagination-bullet{
+    }
+
+    // .slider-buttons .swiper-pagination-bullet-active
+    .swiper-pagination-bullet-active{
+    }
+
+    // .slider-buttons-navigation
+    &-navigation{
+    }
+  }
+	
+  // .block-3 .block-3__slider-slide:last-child
+  .block-3__slider-slide:last-child{
+
+    // .block-3 .block-3__slider-slide:last-child .block-3__slider-title
+    .block-3__slider-title{
+    }
+  }
+}
+
+.block-4{
+
+  // .block-4__container
+  &__container{
+  }
+
+  // .block-4 .start
+  .start{
+  }
+
+  // .block-4__title
+  &__title{
+
+		// .block-4__title span
+    span{
+    }
+  }
+
+  // .block-4 .avas
+  .avas{
+
+  }
+
+  // .block-4__slider
+  &__slider{
+
+		// .block-4__slider-wrapper
+    &-wrapper{
+
+    }
+
+    // .block-4__slider-slide
+    &-slide{
+    } 
+
+    // .block-4__slider-text
+    &-text{
+    }
+
+    // .block-4__slider-active-slide-decoration
+    &-active-slide-decoration{
+    }
+
+    // .block-4__slider-active-bg
+    &-active-bg{
+    }
+
+  }
+
+  // .block-4 .user-block
+  .user-block{
+  }
+
+  // .block-4 .slider-buttons
+  .slider-buttons{
+  }
+
+  // .block-4 .slider-buttons-button
+  .slider-buttons-button{
+
+		// .block-4 .slider-buttons-button:hover
+    &:hover{
+    }
+
+    // .block-4 .slider-buttons-button path
+    path{
+    }
+  }
+
+  //.block-4 .swiper-slide-active
+  .swiper-slide-active{
+
+		.block-4__slider-active-bg{
+    }
+
+    //.block-4 .swiper-slide-active .block-4__slider-active-slide-decoration
+    .block-4__slider-active-slide-decoration{
+    }
+
+    //.block-4 .swiper-slide-active .block-4__slider-text
+    .block-4__slider-text{
+    }
+
+    //.block-4 .swiper-slide-active  .user-block
+    .user-block{
+    }
+  }
+
+  // .block-4 .swiper-slide-prev
+  .swiper-slide-prev{
+
+    // .block-4 .swiper-slide-prev .block-4__slider-text
+    .block-4__slider-text{
+    }
+  }
+
+  // .block-4__side-decoration
+  &__side-decoration{
+
+    // .block-4__side-decoration--left
+    &--left{
+    }
+
+    // .block-4__side-decoration--right
+    &--right{
+    }
+  }
+
+	// block-4__slider-slide .wrp
+	.wrp{
+
+		// block-4__slider-slide .wrp .avas
+		.avas{
+			
+		}
+	}
+
+}
+
+.block-5{
+
+	// .block-5__container
+  &__container{
+
+  }
+
+  //.block-5 .start
+  .start{
+  }
+
+  // .block-5__title
+  &__title{
+
+  }
+
+  // block-5 .title-form
+  .title-form{
+
+  }
+
+  //.block-5 .center
+  .center{
+  }
+
+  //.block-5 .end
+  .end{
+  }
+
+  // .block-5__text-block
+  &__text-block{
+  }
+
+  // .block-5__h3
+  &__h3{
+  }
+
+  // .block-5__text
+  &__text{
+
+  }
+}
+
+.block-6{
+
+	// .block-6::before
+  &::before{
+  }
+
+  // .block-6__container
+  &__container{
+  }
+
+  // .block-6 .start
+  .start{
+  }
+
+  // .block-6__img-wrp
+  &__img-wrp{
+  }
+
+  // .block-6 .end
+  .end{
+  }
+
+  // .block-6__title
+  &__title{
+  }
+}
+
+.footer{
+
+  // .footer__container
+  &__container{
+  }
+  
+  // .footer__content
+  &__content{
+
+		// .footer__content-start
+    &-start{
+    }
+
+    // .footer__content-center
+    &-center{
+    }
+
+    // .footer__content-end
+    &-end{
+
+      // .footer__content-end .start
+      .start{
+
+      }
+
+      // .footer__content-end .end
+      .end{
+      }
+    }
+  }
+
+  // .footer__logo
+  &__logo{
+  }
+
+  // .footer__nav
+  &__nav{
+
+  }
+
+  // .footer__list
+  &__list{
+
+		// .footer__list li
+    li{
+
+			// .footer__list li:last-child
+      &:last-child{
+      }
+    }
+
+    // .footer__list a
+    a{
+
+			// .footer__list a:hover
+      &:hover{
+      }
+    }
+  }
+
+  // .footer__link-list
+  &__link-list{
+
+    // .footer__link-list li
+    li{
+
+			// .footer__link-list li:last-child
+      &:last-child{
+      }
+    }
+
+    // .footer__link-list a
+    a{
+
+			// .footer__link-list a:hover
+      &:hover{
+      }
+    }
+  }
+
+  // .footer__form-wrp
+  &__form-wrp{
+
+    // .footer__form-wrp .title-form
+    .title-form{
+    }
+
+    // .footer__form-wrp .title-form__input
+    .title-form__input{
+    }
+
+    // .footer__form-wrp .title-form__input::placeholder
+    .title-form__input::placeholder{
+    }
+
+  }
+
+  // .footer__text-address
+  &__text-address{
+  }
+
+  // .footer__contacts-links
+  &__contacts-links{
+
+  }
+
+  // .footer__social-btn
+  &__social-btn{
+  }
+
+  // .footer__description
+  &__description{
+
+		// .footer__description span
+    span{
+    }
+
+    // .footer__description age
+    .age{
+
+    }
+  }
+
+  // .footer__links
+  &__links{
+
+		// .footer__links li
+    li{
+    }
+
+    // .footer__links a
+    a{
+
+      // .footer__links a:hover
+      &:hover{
+      }
+    }
+  }
+
+  // .footer__foot-text
+  &__foot-text{
+
+		// .footer__foot-text span
+    span{
+    }
+
+    // .footer__foot-text a
+    a{
+
+      // .footer__foot-text a:hover
+      &:hover{
+      }
+    }
+  }
+}
+
+.form-page-block{
+
+	// .form-page-block__img-wrp
+	&__img-wrp{
+	}
+
+	// .form-page-block__container
+	&__container{
+	}
+
+	// .form-page-block::after
+	&::after{
+	}
+}

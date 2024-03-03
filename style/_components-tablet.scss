@@ -1,0 +1,758 @@
+.logo{
+
+  // .logo a
+  a{
+  }
+}
+.u-small-text{
+}
+
+.small-text{
+}
+
+.def-text{
+}
+
+.str-text{
+}
+
+.title-text{
+}
+
+.container{
+	max-width: 768rem;
+	// max-width: 858rem;
+}
+
+.img-wrp{
+
+}
+
+.btn{
+  // .btn:after .btn::after
+  &::after{
+  }
+  
+  // .btn span
+  span{
+  }
+
+  // .btn:hover
+  &:hover{
+
+    &::after{
+    }
+  }
+
+}
+
+.main-navigation{
+
+  // .main-navigation__list
+  &__list{
+  }
+
+  // .main-navigation__item
+  &__item{
+  }
+
+  // .main-navigation__item:last-child
+  &__item:last-child{
+  }
+
+  // .main-navigation__link
+  &__link{
+
+    &:hover{
+    }
+  }
+}
+
+.cabinet-nav{
+
+  // .cabinet-nav__icon
+  &__icon{
+  }
+
+  // .cavinet-nav__link
+  &__link{
+  }
+
+  // .cavinet-nav__link path
+  path{
+  }
+
+  // .cabinet-nav:hover
+  &:hover{
+
+    // .cabinet-nav:hover path
+    path{
+    }
+
+    // .cabinet-nav:hover .cabinet-nav__link
+    .cabinet-nav__link{
+    }
+  }
+}
+
+
+.slider-buttons{
+
+  // .block-3__slider-button
+  &-button{
+
+    // .block-3__slider-button .img-wrp
+    .img-wrp{
+
+    }
+
+    // .block-3__slider-button:hover path
+    path{
+    }
+
+    // .block-3__slider-button:hover
+    &:hover{
+
+      // .block-3__slider-button:hover path
+      path{
+      }
+    }
+  }
+
+  // .block-3__slider-button-prev
+  &-button-prev{
+  }
+
+  // .block-3__slider-button-next
+  &-button-next{
+  }
+}
+
+.avas{
+	// position: absolute;
+	// opacity: .3;
+
+	visibility: visible !important;
+	opacity: 1 !important;
+
+  // .avas__link
+  &__link{
+		width: 50rem;
+		height: 50rem;
+
+    // .avas__link:hover
+    &:hover{
+			// background-color: $color-body1;
+    }
+
+    // .avas__link-img
+    &-img{
+    }
+  }
+
+  // .avas__list
+  &__list{
+  }
+
+  // .avas__item
+  &__item{
+
+    // .avas__item:hover
+    &:hover{
+
+      // .avas__item:hover .img-wrp
+      .img-wrp{
+				// transform: scale(1);
+      }
+    }
+  }
+
+  // .avas__item:nth-child(1)
+  &__item:nth-child(1){
+  }
+
+  // .avas__item:nth-child(2)
+  &__item:nth-child(2){
+  }
+
+  // .avas__item:nth-child(3)
+  &__item:nth-child(3){
+  }
+
+  // .avas__item:nth-child(4)
+  &__item:nth-child(4){
+  }
+
+  // .avas__img-wrp
+  &__img-wrp{
+		width: 50rem;
+		height: 50rem;
+  }
+
+  // .user-block:hover
+  &:hover{
+
+    // .user-block:hover .avas__item
+    .avas__item{
+    }
+  }
+}
+
+.user-block{
+
+  // .user-block__photo
+  &__photo{
+  }
+
+  // .user-block__text
+  &__text{
+  }
+
+  // .user-block strong
+  strong{
+  }
+
+  // .user-block span
+  span{
+  }
+}
+
+.title-form{
+
+
+  // .title-form:hover
+  &:hover{
+
+    // .title-form:hover .title-form__input::placeholder
+    .title-form__input::placeholder{
+    
+    }
+  }
+
+  // .title-form__input-wrp
+  &__input-wrp{
+
+  }
+
+  // .title-form__input
+  &__input{
+
+    // .title-form__input::placeholder
+    &::placeholder{
+    }
+
+  }
+  
+  // .title-form__img-wrp
+  &__img-wrp{
+
+  }
+}
+
+.option-select{
+	height: 914rem;
+	background-image: url('../image/option-select-tablet-bg.svg');
+
+	// .option-select__radio
+  &__radio{
+  }
+
+  // .option-select__item
+  &__item{
+
+    // .option-select__item:first-child
+    &:first-child{
+    }
+
+    // .option-select__item:first-child
+    &:last-child{
+    }
+    
+    // .option-select__item.active
+    &.active{
+
+      // .option-select__item.active .option-select__btn
+      .option-select__btn{
+      }
+    }
+  }
+
+  // .option-select__btn
+  &__btn{
+  }
+
+  // .option-select__text-bodys
+  &__text-bodys{
+		width: 250%;
+
+    // .option-select__text-bodys.active
+    &.active{
+			transform: translateX(-47%);
+
+      // .option-select__text-bodys.active .option-select__decoration-text
+      .option-select__decoration-text{
+
+      }
+
+      // .option-select__text-bodys.active .option-select__decoration-text--1
+      .option-select__decoration-text--1{
+
+      }
+
+      // .option-select__text-bodys.active .option-select__decoration-text--1
+      .option-select__decoration-text--2{
+
+      }
+    }
+  }
+
+  // .option-select__text-body
+  &__text-body{
+		width: 40%;
+		padding-left: 60rem;
+		padding-right: 60rem;
+
+    // .option-select__text-body.active
+    &.active{
+      
+    }
+  }
+
+  // .option-select__text
+  &__text{
+
+  }
+
+  // .option-select__decoration-text
+  &__decoration-text{
+		left: 50%;
+		transform: translateX(-50%);
+
+    // .option-select__decoration-text--1
+    &--1{
+			width: 460rem;
+			height: 476rem;
+			bottom: -226rem;
+    }
+    
+    // .option-select__decoration-text--2
+    &--2{
+			width: 413rem;
+			height: 425rem;
+			bottom: -175rem;
+    }
+
+    // .option-select__decoration-text img
+    img{
+
+    }
+  }
+}
+
+.social-btn{
+  width: 176rem;
+	height: 80rem;
+	// margin-bottom: 77rem;
+	margin-bottom: 77rem;
+
+  // .social-btn__item
+  &__item{
+		width: 80rem;
+		height: 80rem;
+
+    // .social-btn__item:hover
+    &:hover{
+    }
+  }
+
+  // .social-btn__btn
+  &__btn{
+  
+  }
+
+}
+
+.age{
+  
+}
+
+.contacts-links{
+
+  // .contacts-links__item
+  &__item{
+		margin-bottom: 25rem;
+
+    // .contacts-links__item
+    &:hover{
+
+      // .contacts-links__item .contacts-links__text
+      .contacts-links__text{
+      }
+    }
+
+    // .contacts-links__item:last-child
+    &:last-child{
+  
+    }
+    
+    // .contacts-links__item--phone
+    &--phone{
+      
+    }
+    // .contacts-links__item--email
+    &--email{
+
+      // .contacts-links__item--email .contacts-links__img-wrp
+      .contacts-links__img-wrp{
+  
+      }
+    }
+  }
+
+  // .contacts-links__img-wrp
+  &__img-wrp{
+  
+  }
+
+  // .contacts-links__text
+  &__text{
+  
+  }
+}
+
+.range-input{
+	& {
+	
+	}
+	
+	/*Range black ⚫ thumb*/
+	&::-webkit-slider-thumb {
+	
+	}
+	
+	/*On hover change colour of black thumb into green 🟢 and scale size*/
+	&::-webkit-slider-thumb:hover {
+	
+	}
+	
+	&:active::-webkit-slider-thumb {
+	
+	}
+	
+}
+/*Range current value*/
+.range-slider__value {
+	
+}
+
+.range-slider__value:after {
+	
+}
+
+.main-form{  
+  width: 100%;
+
+  // .main-form form
+  form{
+
+  }
+
+  // .main-form__start
+  &__start{
+
+    // .main-form__start-list
+    &-list{
+    
+      // .main-form__start-list li
+      li{
+    
+        // .main-form__start-list li:first-child
+        &:first-child{
+    
+        }
+
+        // .main-form__start-list li.active
+        &.active{
+    
+        }
+      }
+    }
+
+    // .main-form__start-text
+    &-text{
+
+    }
+
+    // .main-form__start-title
+    &-title {
+    
+    }
+
+    // .main-form__start-text-steps
+    &-text-steps{
+    
+    }
+
+    // .main-form__start-text-step-wrp
+    &-text-step-wrp{
+    
+    }
+
+    // .main-form__start-text-step
+    &-text-step{
+
+      // .main-form__start-text-step--first
+      &--first{
+
+      }
+    }
+  }
+
+  // .main-form__navigation
+  &__navigation{    
+
+    // .main-form__navigation--btn
+    &-btn{
+      
+      // .main-form__navigation-btn svg
+      svg{
+      }
+      // .main-form__navigation-btn--back
+      &--back{
+
+      }
+
+      // .main-form__navigation-btn--close
+      &--close{
+
+      }
+    }
+  }
+
+  // .main-form__center
+  &__center{
+
+  }
+
+  // .main-form__inputs-range-wrp
+  &__inputs-range-wrp{
+
+  }
+
+  // .main-form__input-range
+  &__input-range{
+
+		// .main-form__input-range-input
+		&-input{
+		
+		}
+
+		// .main-form__input-range:last-child
+		&:last-child{
+		
+		}
+
+    // .main-form__input-range-top
+    &-top{
+		
+      // .main-form__input-range-top-text
+      &-text{
+		
+      }
+      
+      // .main-form__input-range-top-value
+      &-value{
+		
+        // .main-form__input-range-top-value strong
+        strong{
+		
+        }
+      }
+    }
+
+    // .main__form-input-range-input
+    &-input{
+
+    }
+  }
+
+  // .main-form__step
+  &__step{
+		width: 620rem;
+    // .main__form-step--1
+    &--1{
+    }
+
+    // .main__form-step--2
+    &--2{
+		
+    }
+
+    // .main__form-step--3
+    &--3{
+
+    }   
+  }
+
+  // .main-form__inputs
+  &__inputs{
+
+		// .main-form__inputs:last-child
+		&:last-child{
+		
+		}
+
+    // .main-form__inputs-wrp
+    &-wrp{
+    
+    }
+
+    // .main-form__inputs-date
+    &-date{
+
+      // .main-form__inputs-date-wrp
+      &-wrp{
+				width: 49%;
+				max-width: 289rem;
+				// .main-form__inputs-date-wrp .main-form__input
+				.main-form__input{
+					width: 100%;
+				}
+
+				// .main-form__inputs-date-wrp span
+				span{
+			
+				}
+      }
+
+      // .main-form__inputs-date__img-wrp
+      &__img-wrp{
+      
+      }
+
+      // .main-form__inputs-date-text
+      &-text{
+			
+      }
+    }
+  }
+
+	// .main-form__input .main-form__input{
+	&__input{
+		width: 49%;
+		max-width: 289rem;
+		// .main-form__input::placeholder
+		&::placeholder{
+		
+		}
+
+		// .main-form__input--sity
+		&--sity{
+			width: 100%;
+			max-width: unset;
+		}
+
+		// .main-form__input--pas-sity
+		&--pas-sity{
+			width: 100%;
+			max-width: unset;
+		}
+
+		// .main-form__input--pas-snils
+		&--pas-snils{
+			width: 100%;
+			max-width: unset;
+		}
+
+		// .main-form__input--fact-addres-number-apart
+		&--fact-addres-number-apart{
+		}
+
+		// .main-form__input--fact-addres-region
+		&--fact-addres-region{
+			width: 100%;
+			max-width: unset;
+		}
+
+		// .main-form__input--fact-addres-sity
+		&--fact-addres-sity{
+			width: 100%;
+			max-width: unset;
+		}
+
+		// .main-form__input--fact-addres-streat
+		&--fact-addres-streat{
+			width: 100%;
+			max-width: unset;
+		}
+
+		// .main-form__input--pas-date
+		&--pas-date{
+		}
+		
+		// .main-form__input--date
+		&--date{
+		}
+	}
+  
+  // .main-form__end
+  &__end{
+  }
+
+  // .main-form__license
+  &__license{
+
+		// .main-form__license a
+    a{
+
+			// .main-form__license a:hover
+			&:hover{
+			}
+    }
+  }
+
+  // .main-form__date
+  &__date{
+
+    // .main-form__date-item
+    &-item{
+
+			// .main-form__date-item--price
+			&--price{
+
+				// .main-form__date-item--price .main-form__date-text
+				.main-form__date-text{
+				}
+			}
+
+			// .main-form__date-item--time
+			&--time{
+
+				// .main-form__date-item--price .main-form__date-text
+				.main-form__date-text{
+				}
+			}
+    }
+
+    // .main-form__date-img-wrp
+    &-img-wrp{
+    }
+
+    // .main-form__date-text
+    &-text{
+    }
+
+    // .main-form__date-date
+    &-date{
+
+      // .main-form__date-date span
+      span{
+
+      }
+    }
+  }
+
+  // .main-form__btn
+  &__btn{
+  }
+}
