@@ -378,7 +378,7 @@
           if (entry.target.classList.contains("service2-slide2") == true) {
             setTimeout(() => {
               document.querySelector(".lottie-arrow").play();
-            }, 750);
+            }, 500);
           }
 
           if (entry.target.classList.contains("service3-slide2") == true) {

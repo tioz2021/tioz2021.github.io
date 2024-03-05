@@ -27,7 +27,7 @@
 }
 
 .message-box__chat-item:nth-child(2) {
-  animation-delay: 450ms;
+  animation-delay: 225ms;
 }
 
 .message-box__chat-item:nth-child(3) {
@@ -73,7 +73,7 @@
   animation-delay: 2200ms;
 }
 .myFadeIn4 {
-  animation-delay: 2450ms;
+  animation-delay: 2225ms;
 }
 .myFadeIn5 {
   animation-delay: 2500ms;
@@ -157,14 +157,14 @@
   opacity: 0;
   transform: scale(0.4, 0.4);
   will-change: transform, opacity;
-  animation: myFadeIn_zoom_disable 450ms ease-in-out 100ms normal forwards
+  animation: myFadeIn_zoom_disable 325ms ease-in-out 100ms normal forwards
     running;
 }
 .service1-slide1__decor-icon {
   opacity: 0;
   transform: scale(0.4, 0.4);
   will-change: transform, opacity;
-  animation: myFadeIn_zoom_disable 450ms ease-in-out 100ms normal forwards
+  animation: myFadeIn_zoom_disable 325ms ease-in-out 100ms normal forwards
     running;
 }
 
@@ -173,7 +173,7 @@
   opacity: 0;
   transform: scale(0.4, 0.4);
   will-change: transform, opacity;
-  animation: myFadeIn_zoom_disable 450ms ease-in-out 100ms normal forwards
+  animation: myFadeIn_zoom_disable 325ms ease-in-out 100ms normal forwards
     running;
 }
 .service1-slide2.anim {
@@ -187,7 +187,7 @@
   opacity: 0;
   transform: scale(0.4, 0.4);
   will-change: transform, opacity;
-  animation: myFadeIn_zoom_disable 450ms ease-in-out 100ms normal forwards
+  animation: myFadeIn_zoom_disable 325ms ease-in-out 100ms normal forwards
     running;
 }
 
@@ -198,7 +198,7 @@
   opacity: 0;
   transform: scale(0.4, 0.4);
   will-change: transform, opacity;
-  animation: myFadeIn_zoom_disable 450ms ease-in-out 100ms normal forwards
+  animation: myFadeIn_zoom_disable 325ms ease-in-out 100ms normal forwards
     running;
 }
 // service1-slide5
@@ -207,7 +207,7 @@
   opacity: 0;
   transform: scale(0.4, 0.4);
   will-change: transform, opacity;
-  animation: myFadeIn_zoom_disable 450ms ease-in-out 100ms normal forwards
+  animation: myFadeIn_zoom_disable 325ms ease-in-out 100ms normal forwards
     running;
 }
 .service1-slide5__decor10 {
@@ -221,7 +221,7 @@
   opacity: 0;
   transform: scale(0.4, 0.4);
   will-change: transform, opacity;
-  animation: myFadeIn_zoom_disable 450ms ease-in-out 100ms normal forwards
+  animation: myFadeIn_zoom_disable 325ms ease-in-out 100ms normal forwards
     running;
 }
 // service2-slide2
@@ -229,7 +229,7 @@
   opacity: 0;
   transform: scale(0.4, 0.4);
   will-change: transform, opacity;
-  animation: myFadeIn_zoom_disable 450ms ease-in-out 100ms normal forwards
+  animation: myFadeIn_zoom_disable 325ms ease-in-out 100ms normal forwards
     running;
 }
 
@@ -239,7 +239,7 @@
   opacity: 0;
   transform: scale(0.4, 0.4);
   will-change: transform, opacity;
-  animation: myFadeIn_zoom_disable 450ms ease-in-out 100ms normal forwards
+  animation: myFadeIn_zoom_disable 325ms ease-in-out 100ms normal forwards
     running;
 }
 .service2-slide3__decor3 {
@@ -255,7 +255,7 @@
   opacity: 0;
   transform: scale(0.4, 0.4);
   will-change: transform, opacity;
-  animation: myFadeIn_zoom_disable 450ms ease-in-out 100ms normal forwards
+  animation: myFadeIn_zoom_disable 325ms ease-in-out 100ms normal forwards
     running;
 }
 
@@ -265,7 +265,7 @@
   opacity: 0;
   transform: scale(0.4, 0.4);
   will-change: transform, opacity;
-  animation: myFadeIn_zoom_disable 450ms ease-in-out 100ms normal forwards
+  animation: myFadeIn_zoom_disable 325ms ease-in-out 100ms normal forwards
     running;
 }
 
@@ -274,7 +274,7 @@
   opacity: 0;
   transform: scale(0.4, 0.4);
   will-change: transform, opacity;
-  animation: myFadeIn_zoom_disable 450ms ease-in-out 100ms normal forwards
+  animation: myFadeIn_zoom_disable 325ms ease-in-out 100ms normal forwards
     running;
 }
 
@@ -283,7 +283,7 @@
   opacity: 0;
   transform: scale(0.4, 0.4);
   will-change: transform, opacity;
-  animation: myFadeIn_zoom_disable 450ms ease-in-out 100ms normal forwards
+  animation: myFadeIn_zoom_disable 325ms ease-in-out 100ms normal forwards
     running;
 }
 
@@ -293,7 +293,7 @@
   opacity: 0;
   transform: scale(0.4, 0.4);
   will-change: transform, opacity;
-  animation: myFadeIn_zoom_disable 450ms ease-in-out 100ms normal forwards
+  animation: myFadeIn_zoom_disable 325ms ease-in-out 100ms normal forwards
     running;
 }
 
@@ -303,7 +303,7 @@
   opacity: 0;
   transform: scale(0.4, 0.4);
   will-change: transform, opacity;
-  animation: myFadeIn_zoom_disable 450ms ease-in-out 100ms normal forwards
+  animation: myFadeIn_zoom_disable 325ms ease-in-out 100ms normal forwards
     running;
 }
 
@@ -317,17 +317,17 @@
   }
 
   .service3-slide5__decor3 {
-    animation-delay: 400ms;
+    animation-delay: 325ms;
   }
   .service3-slide5__decor4 {
-    animation-delay: 600ms;
+    animation-delay: 425ms;
   }
 
   .service3-slide5__decor1 {
-    animation-delay: 800ms;
+    animation-delay: 525ms;
   }
   .service3-slide5__decor2 {
-    animation-delay: 1000ms;
+    animation-delay: 625ms;
   }
 
   // service3-slide4
@@ -339,10 +339,10 @@
   }
 
   .service3-slide4__decor1 {
-    animation-delay: 400ms;
+    animation-delay: 300ms;
   }
   .service3-slide4__decor2 {
-    animation-delay: 600ms;
+    animation-delay: 500ms;
   }
 
   // service3-slide3
@@ -351,16 +351,16 @@
   }
 
   .service3-slide3__decor3 {
-    animation-delay: 400ms;
+    animation-delay: 300ms;
   }
   .service3-slide3__decor4 {
-    animation-delay: 500ms;
+    animation-delay: 400ms;
   }
   .service3-slide3__decor1 {
-    animation-delay: 600ms;
+    animation-delay: 500ms;
   }
   .service3-slide3__decor2 {
-    animation-delay: 700ms;
+    animation-delay: 600ms;
   }
 
   // service3-slide2
@@ -371,16 +371,16 @@
   // }
 
   .service3-slide2__text-wrp1 {
-    animation-delay: 400ms;
+    animation-delay: 300ms;
   }
   .service3-slide2__text-wrp2 {
-    animation-delay: 800ms;
-  }
-  .service3-slide2__text-wrp3 {
     animation-delay: 600ms;
   }
+  .service3-slide2__text-wrp3 {
+    animation-delay: 400ms;
+  }
   .service3-slide2__text-wrp4 {
-    animation-delay: 1000ms;
+    animation-delay: 800ms;
   }
 
   // .service3-slide2__decor-line {
@@ -397,16 +397,16 @@
   }
 
   .service3-slide1__decor1 {
-    animation-delay: 400ms;
+    animation-delay: 325ms;
   }
   .service3-slide1__decor2 {
-    animation-delay: 500ms;
+    animation-delay: 425ms;
   }
   .service3-slide1__decor3 {
-    animation-delay: 550ms;
+    animation-delay: 525ms;
   }
   .service3-slide1__decor4 {
-    animation-delay: 600ms;
+    animation-delay: 625ms;
   }
   .service3-slide1__decor5 {
     animation-delay: 650ms;
@@ -433,19 +433,19 @@
   }
 
   .service2-slide4__main-decor2 {
-    animation-delay: 400ms;
+    animation-delay: 325ms;
   }
   .service2-slide4__main-decor3 {
-    animation-delay: 500ms;
+    animation-delay: 425ms;
   }
   .service2-slide4__main-decor1 {
-    animation-delay: 600ms;
+    animation-delay: 525ms;
   }
   .service2-slide4__decor {
     animation-name: myFadeIn_zoom;
   }
   .service2-slide4__decor11 {
-    animation-delay: 750ms;
+    animation-delay: 625ms;
   }
 
   .service2-slide4__decor6 {
@@ -458,20 +458,20 @@
     animation-delay: 625ms;
   }
   .service2-slide4__decor10 {
-    animation-delay: 650ms;
+    animation-delay: 550ms;
   }
 
   .service2-slide4__decor1 {
-    animation-delay: 800ms;
+    animation-delay: 600ms;
   }
   .service2-slide4__decor2 {
-    animation-delay: 850ms;
+    animation-delay: 700ms;
   }
   .service2-slide4__decor3 {
-    animation-delay: 900ms;
+    animation-delay: 800ms;
   }
   .service2-slide4__decor4 {
-    animation-delay: 950ms;
+    animation-delay: 900ms;
   }
   .service2-slide4__decor5 {
     animation-delay: 1000ms;
@@ -486,50 +486,46 @@
   }
   .service2-slide3__decor4 {
     animation-name: myFadeIn_zoom_left;
-    animation-duration: 350ms;
+    animation-duration: 325ms;
   }
   .service2-slide3__decor3 {
     animation-name: myFadeIn_zoom_right;
-    animation-duration: 350ms;
-    animation-delay: 600ms;
+    animation-duration: 325ms;
+    animation-delay: 425ms;
   }
   .service2-slide3__decor1 {
-    animation-delay: 750ms;
+    animation-delay: 525ms;
   }
   .service2-slide3__decor2 {
-    animation-delay: 850ms;
+    animation-delay: 625ms;
   }
   .service2-slide3__decor5 {
-    animation-delay: 950ms;
+    animation-delay: 725ms;
   }
 
   .service2-slide3__decor-smile {
     animation-name: myFadeIn_zoom_left;
-    animation-duration: 600ms;
+    animation-duration: 325ms;
   }
   .service2-slide3__decor-smile1 {
-    animation-delay: 1050ms;
+    animation-delay: 925ms;
   }
   .service2-slide3__decor-smile2 {
-    animation-delay: 1150ms;
+    animation-delay: 1025ms;
   }
   .service2-slide3__decor-smile3 {
-    animation-delay: 1250ms;
+    animation-delay: 1125ms;
   }
   .service2-slide3__decor-smile4 {
-    animation-delay: 1350ms;
+    animation-delay: 1225ms;
   }
   // service2-slide2
   .service2-slide2__box {
     animation-name: myFadeIn_zoom;
   }
   .service2-slide2__box2 {
-    animation-delay: 550ms;
+    animation-delay: 325ms;
   }
-  // .service2-slide2__decor {
-  //   animation-name: myFadeIn_zoom;
-  //   animation-delay: 750ms;
-  // }
 
   // service2-slide1
   .service2-slide1__text-wrp {
@@ -537,11 +533,11 @@
   }
 
   .service2-slide1__text-wrp2 {
-    animation-delay: 550ms;
+    animation-delay: 325ms;
   }
   .service2-slide1__text-blue {
     animation-name: myFadeIn_zoom;
-    animation-delay: 750ms;
+    animation-delay: 425ms;
   }
 
   .service2-slide1__decor {
@@ -549,27 +545,27 @@
   }
 
   .service2-slide1__decor1 {
-    animation-delay: 950ms;
+    animation-delay: 525ms;
   }
   .service2-slide1__decor7 {
-    animation-delay: 1050ms;
+    animation-delay: 625ms;
   }
 
   .service2-slide1__decor4 {
-    animation-delay: 1150ms;
+    animation-delay: 725ms;
   }
   .service2-slide1__decor2 {
-    animation-delay: 1250ms;
+    animation-delay: 825ms;
   }
   .service2-slide1__decor3 {
-    animation-delay: 1350ms;
+    animation-delay: 925ms;
   }
 
   .service2-slide1__decor5 {
-    animation-delay: 1450ms;
+    animation-delay: 1025ms;
   }
   .service2-slide1__decor6 {
-    animation-delay: 1550ms;
+    animation-delay: 1125ms;
   }
 
   // service1-slide5
@@ -581,33 +577,33 @@
   }
   .service1-slide5__decor10 {
     animation-name: myFadeIn_zoom_up;
-    animation-delay: 350ms;
-    animation-duration: 450ms;
+    animation-delay: 225ms;
+    animation-duration: 225ms;
   }
 
   .service1-slide5__decor2 {
-    animation-delay: 600ms;
+    animation-delay: 325ms;
   }
   .service1-slide5__decor7 {
-    animation-delay: 700ms;
+    animation-delay: 425ms;
   }
   .service1-slide5__decor3 {
-    animation-delay: 800ms;
+    animation-delay: 525ms;
   }
   .service1-slide5__decor4 {
-    animation-delay: 900ms;
+    animation-delay: 625ms;
   }
   .service1-slide5__decor5 {
-    animation-delay: 1000ms;
+    animation-delay: 725ms;
   }
   .service1-slide5__decor1 {
-    animation-delay: 1100ms;
+    animation-delay: 825ms;
   }
   .service1-slide5__decor8 {
-    animation-delay: 1200ms;
+    animation-delay: 925ms;
   }
   .service1-slide5__decor9 {
-    animation-delay: 1300ms;
+    animation-delay: 1025ms;
   }
 
   // service1-slide4
@@ -620,28 +616,28 @@
   }
 
   .service1-slide4__text-wrp3 {
-    animation-delay: 300ms;
+    animation-delay: 250ms;
   }
 
   .service1-slide4__decor-main {
     animation-name: myFadeIn_zoom;
-    animation-delay: 450ms;
+    animation-delay: 350ms;
   }
 
   .service1-slide4__decor {
     animation-name: myFadeIn_zoom;
   }
   .service1-slide4__decor1 {
-    animation-delay: 500ms;
+    animation-delay: 450ms;
   }
   .service1-slide4__decor2 {
-    animation-delay: 650ms;
+    animation-delay: 550ms;
   }
   .service1-slide4__decor3 {
-    animation-delay: 800ms;
+    animation-delay: 650ms;
   }
   .service1-slide4__decor4 {
-    animation-delay: 950ms;
+    animation-delay: 750ms;
   }
 
   // service1-slide3
@@ -656,16 +652,16 @@
     animation-name: myFadeIn_zoom;
   }
   .service1-slide3__decor1 {
-    animation-delay: 500ms;
+    animation-delay: 250ms;
   }
   .service1-slide3__decor3 {
-    animation-delay: 750ms;
+    animation-delay: 350ms;
   }
   .service1-slide3__decor2 {
-    animation-delay: 900ms;
+    animation-delay: 450ms;
   }
   .service1-slide3__decor4 {
-    animation-delay: 1050ms;
+    animation-delay: 550ms;
   }
 
   // service1-slide1
@@ -677,40 +673,40 @@
   }
   // decor
   .service1-slide1__decor-icon--1 {
-    animation-delay: 500ms;
+    animation-delay: 225ms;
   }
   .service1-slide1__decor-icon--2 {
-    animation-delay: 750ms;
+    animation-delay: 325ms;
   }
   .service1-slide1__decor-icon--3 {
-    animation-delay: 900ms;
+    animation-delay: 425ms;
   }
   .service1-slide1__decor-icon--9 {
-    animation-delay: 1050ms;
+    animation-delay: 525ms;
   }
   .service1-slide1__decor-icon--10 {
-    animation-delay: 1200ms;
+    animation-delay: 625ms;
   }
   // dot
   .service1-slide1__decor-icon--4 {
-    animation-delay: 1450ms;
-    animation-duration: 450ms;
+    animation-delay: 725ms;
+    animation-duration: 200ms;
   }
   .service1-slide1__decor-icon--5 {
-    animation-delay: 1500ms;
-    animation-duration: 450ms;
+    animation-delay: 825ms;
+    animation-duration: 200ms;
   }
   .service1-slide1__decor-icon--6 {
-    animation-delay: 1750ms;
-    animation-duration: 450ms;
+    animation-delay: 925ms;
+    animation-duration: 200ms;
   }
   .service1-slide1__decor-icon--7 {
-    animation-delay: 1900ms;
-    animation-duration: 450ms;
+    animation-delay: 1025ms;
+    animation-duration: 200ms;
   }
   .service1-slide1__decor-icon--8 {
-    animation-delay: 2050ms;
-    animation-duration: 450ms;
+    animation-delay: 1125ms;
+    animation-duration: 200ms;
   }
 }
 
