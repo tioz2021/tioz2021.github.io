@@ -369,7 +369,7 @@
         // Если блок стал видимым и находится в зоне видимости больше 1 секунды
         if (
           entry.isIntersecting &&
-          entry.intersectionRatio >= 0.5 &&
+          entry.intersectionRatio >= 0.1 &&
           entry.time >= 100
         ) {
           // Запускаем анимацию или выполняем нужные действия
@@ -384,7 +384,7 @@
           if (entry.target.classList.contains("service3-slide2") == true) {
             setTimeout(() => {
               document.querySelector(".lottie-line-web").play();
-            }, 750);
+            }, 500);
           }
 
           // После того, как анимация выполнена, можно отключить наблюдение, если оно больше не нужно

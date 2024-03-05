@@ -5690,7 +5690,7 @@ input {
   transform-origin: 100%;
   will-change: transform, opacity;
   transform: translate3d(-200rem, 0, 0) scale(0.95);
-  animation: myFadeLeftDisabled 750ms ease-in-out 100ms normal forwards running;
+  animation: myFadeLeftDisabled 750ms ease-in-out 1ms normal forwards running;
 }
 
 .message-box__chat-item:nth-child(1) {
@@ -5729,7 +5729,7 @@ input {
   transform: scale(0.95);
   transform-origin: 100%;
   will-change: transform, opacity;
-  animation: myFadeInDisabled 750ms ease-in-out 100ms normal forwards running;
+  animation: myFadeInDisabled 750ms ease-in-out 1ms normal forwards running;
 }
 
 .myFadeIn1 {
@@ -5824,21 +5824,21 @@ input {
   opacity: 0;
   transform: scale(0.4, 0.4);
   will-change: transform, opacity;
-  animation: myFadeIn_zoom_disable 325ms ease-in-out 100ms normal forwards running;
+  animation: myFadeIn_zoom_disable 325ms ease-in-out 1ms normal forwards running;
 }
 
 .service1-slide1__decor-icon {
   opacity: 0;
   transform: scale(0.4, 0.4);
   will-change: transform, opacity;
-  animation: myFadeIn_zoom_disable 325ms ease-in-out 100ms normal forwards running;
+  animation: myFadeIn_zoom_disable 325ms ease-in-out 1ms normal forwards running;
 }
 
 .service1-slide2 {
   opacity: 0;
   transform: scale(0.4, 0.4);
   will-change: transform, opacity;
-  animation: myFadeIn_zoom_disable 325ms ease-in-out 100ms normal forwards running;
+  animation: myFadeIn_zoom_disable 325ms ease-in-out 1ms normal forwards running;
 }
 
 .service1-slide2.anim {
@@ -5851,7 +5851,7 @@ input {
   opacity: 0;
   transform: scale(0.4, 0.4);
   will-change: transform, opacity;
-  animation: myFadeIn_zoom_disable 325ms ease-in-out 100ms normal forwards running;
+  animation: myFadeIn_zoom_disable 325ms ease-in-out 1ms normal forwards running;
 }
 
 .service1-slide4__text-wrp,
@@ -5860,7 +5860,7 @@ input {
   opacity: 0;
   transform: scale(0.4, 0.4);
   will-change: transform, opacity;
-  animation: myFadeIn_zoom_disable 325ms ease-in-out 100ms normal forwards running;
+  animation: myFadeIn_zoom_disable 325ms ease-in-out 1ms normal forwards running;
 }
 
 .service1-slide5__text-wrp,
@@ -5868,7 +5868,7 @@ input {
   opacity: 0;
   transform: scale(0.4, 0.4);
   will-change: transform, opacity;
-  animation: myFadeIn_zoom_disable 325ms ease-in-out 100ms normal forwards running;
+  animation: myFadeIn_zoom_disable 325ms ease-in-out 1ms normal forwards running;
 }
 
 .service1-slide5__decor10 {
@@ -5881,14 +5881,14 @@ input {
   opacity: 0;
   transform: scale(0.4, 0.4);
   will-change: transform, opacity;
-  animation: myFadeIn_zoom_disable 325ms ease-in-out 100ms normal forwards running;
+  animation: myFadeIn_zoom_disable 325ms ease-in-out 1ms normal forwards running;
 }
 
 .service2-slide2__box {
   opacity: 0;
   transform: scale(0.4, 0.4);
   will-change: transform, opacity;
-  animation: myFadeIn_zoom_disable 325ms ease-in-out 100ms normal forwards running;
+  animation: myFadeIn_zoom_disable 325ms ease-in-out 1ms normal forwards running;
 }
 
 .service2-slide3__decor,
@@ -5896,7 +5896,7 @@ input {
   opacity: 0;
   transform: scale(0.4, 0.4);
   will-change: transform, opacity;
-  animation: myFadeIn_zoom_disable 325ms ease-in-out 100ms normal forwards running;
+  animation: myFadeIn_zoom_disable 325ms ease-in-out 1ms normal forwards running;
 }
 
 .service2-slide3__decor3 {
@@ -5912,7 +5912,7 @@ input {
   opacity: 0;
   transform: scale(0.4, 0.4);
   will-change: transform, opacity;
-  animation: myFadeIn_zoom_disable 325ms ease-in-out 100ms normal forwards running;
+  animation: myFadeIn_zoom_disable 325ms ease-in-out 1ms normal forwards running;
 }
 
 .service3-slide1__text-wrp,
@@ -5920,21 +5920,21 @@ input {
   opacity: 0;
   transform: scale(0.4, 0.4);
   will-change: transform, opacity;
-  animation: myFadeIn_zoom_disable 325ms ease-in-out 100ms normal forwards running;
+  animation: myFadeIn_zoom_disable 325ms ease-in-out 1ms normal forwards running;
 }
 
 .service3-slide2__text-wrp {
   opacity: 0;
   transform: scale(0.4, 0.4);
   will-change: transform, opacity;
-  animation: myFadeIn_zoom_disable 325ms ease-in-out 100ms normal forwards running;
+  animation: myFadeIn_zoom_disable 325ms ease-in-out 1ms normal forwards running;
 }
 
 .service3-slide3__decor {
   opacity: 0;
   transform: scale(0.4, 0.4);
   will-change: transform, opacity;
-  animation: myFadeIn_zoom_disable 325ms ease-in-out 100ms normal forwards running;
+  animation: myFadeIn_zoom_disable 325ms ease-in-out 1ms normal forwards running;
 }
 
 .service3-slide4__form,
@@ -5942,7 +5942,7 @@ input {
   opacity: 0;
   transform: scale(0.4, 0.4);
   will-change: transform, opacity;
-  animation: myFadeIn_zoom_disable 325ms ease-in-out 100ms normal forwards running;
+  animation: myFadeIn_zoom_disable 325ms ease-in-out 1ms normal forwards running;
 }
 
 .service3-slide5__body,
@@ -5950,7 +5950,7 @@ input {
   opacity: 0;
   transform: scale(0.4, 0.4);
   will-change: transform, opacity;
-  animation: myFadeIn_zoom_disable 325ms ease-in-out 100ms normal forwards running;
+  animation: myFadeIn_zoom_disable 325ms ease-in-out 1ms normal forwards running;
 }
 
 .anim .service3-slide5__body {

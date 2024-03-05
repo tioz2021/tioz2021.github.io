@@ -20,7 +20,7 @@
   // animation-fill-mode: forwards;
   // animation-play-state: running;
   transform: translate3d(-200rem, 0, 0) scale(0.95);
-  animation: myFadeLeftDisabled 750ms ease-in-out 100ms normal forwards running;
+  animation: myFadeLeftDisabled 750ms ease-in-out 1ms normal forwards running;
 }
 .message-box__chat-item:nth-child(1) {
   animation-delay: 100ms;
@@ -61,7 +61,7 @@
   transform-origin: 100%;
   will-change: transform, opacity;
   // transition: all 1000ms ease-in-out;
-  animation: myFadeInDisabled 750ms ease-in-out 100ms normal forwards running;
+  animation: myFadeInDisabled 750ms ease-in-out 1ms normal forwards running;
 }
 .myFadeIn1 {
   animation-delay: 1900ms;
@@ -157,15 +157,13 @@
   opacity: 0;
   transform: scale(0.4, 0.4);
   will-change: transform, opacity;
-  animation: myFadeIn_zoom_disable 325ms ease-in-out 100ms normal forwards
-    running;
+  animation: myFadeIn_zoom_disable 325ms ease-in-out 1ms normal forwards running;
 }
 .service1-slide1__decor-icon {
   opacity: 0;
   transform: scale(0.4, 0.4);
   will-change: transform, opacity;
-  animation: myFadeIn_zoom_disable 325ms ease-in-out 100ms normal forwards
-    running;
+  animation: myFadeIn_zoom_disable 325ms ease-in-out 1ms normal forwards running;
 }
 
 // service1-slide2
@@ -173,8 +171,7 @@
   opacity: 0;
   transform: scale(0.4, 0.4);
   will-change: transform, opacity;
-  animation: myFadeIn_zoom_disable 325ms ease-in-out 100ms normal forwards
-    running;
+  animation: myFadeIn_zoom_disable 325ms ease-in-out 1ms normal forwards running;
 }
 .service1-slide2.anim {
   animation-name: myFadeIn_zoom;
@@ -187,8 +184,7 @@
   opacity: 0;
   transform: scale(0.4, 0.4);
   will-change: transform, opacity;
-  animation: myFadeIn_zoom_disable 325ms ease-in-out 100ms normal forwards
-    running;
+  animation: myFadeIn_zoom_disable 325ms ease-in-out 1ms normal forwards running;
 }
 
 // service1-slide4
@@ -198,8 +194,7 @@
   opacity: 0;
   transform: scale(0.4, 0.4);
   will-change: transform, opacity;
-  animation: myFadeIn_zoom_disable 325ms ease-in-out 100ms normal forwards
-    running;
+  animation: myFadeIn_zoom_disable 325ms ease-in-out 1ms normal forwards running;
 }
 // service1-slide5
 .service1-slide5__text-wrp,
@@ -207,8 +202,7 @@
   opacity: 0;
   transform: scale(0.4, 0.4);
   will-change: transform, opacity;
-  animation: myFadeIn_zoom_disable 325ms ease-in-out 100ms normal forwards
-    running;
+  animation: myFadeIn_zoom_disable 325ms ease-in-out 1ms normal forwards running;
 }
 .service1-slide5__decor10 {
   transform: translateY(100%);
@@ -221,16 +215,14 @@
   opacity: 0;
   transform: scale(0.4, 0.4);
   will-change: transform, opacity;
-  animation: myFadeIn_zoom_disable 325ms ease-in-out 100ms normal forwards
-    running;
+  animation: myFadeIn_zoom_disable 325ms ease-in-out 1ms normal forwards running;
 }
 // service2-slide2
 .service2-slide2__box {
   opacity: 0;
   transform: scale(0.4, 0.4);
   will-change: transform, opacity;
-  animation: myFadeIn_zoom_disable 325ms ease-in-out 100ms normal forwards
-    running;
+  animation: myFadeIn_zoom_disable 325ms ease-in-out 1ms normal forwards running;
 }
 
 // service2-slide3
@@ -239,8 +231,7 @@
   opacity: 0;
   transform: scale(0.4, 0.4);
   will-change: transform, opacity;
-  animation: myFadeIn_zoom_disable 325ms ease-in-out 100ms normal forwards
-    running;
+  animation: myFadeIn_zoom_disable 325ms ease-in-out 1ms normal forwards running;
 }
 .service2-slide3__decor3 {
   transform: scale(0.4, 0.4) translateX(-100%);
@@ -255,8 +246,7 @@
   opacity: 0;
   transform: scale(0.4, 0.4);
   will-change: transform, opacity;
-  animation: myFadeIn_zoom_disable 325ms ease-in-out 100ms normal forwards
-    running;
+  animation: myFadeIn_zoom_disable 325ms ease-in-out 1ms normal forwards running;
 }
 
 // service3-slide1
@@ -265,8 +255,7 @@
   opacity: 0;
   transform: scale(0.4, 0.4);
   will-change: transform, opacity;
-  animation: myFadeIn_zoom_disable 325ms ease-in-out 100ms normal forwards
-    running;
+  animation: myFadeIn_zoom_disable 325ms ease-in-out 1ms normal forwards running;
 }
 
 // service3-slide2
@@ -274,8 +263,7 @@
   opacity: 0;
   transform: scale(0.4, 0.4);
   will-change: transform, opacity;
-  animation: myFadeIn_zoom_disable 325ms ease-in-out 100ms normal forwards
-    running;
+  animation: myFadeIn_zoom_disable 325ms ease-in-out 1ms normal forwards running;
 }
 
 // service3-slide3
@@ -283,8 +271,7 @@
   opacity: 0;
   transform: scale(0.4, 0.4);
   will-change: transform, opacity;
-  animation: myFadeIn_zoom_disable 325ms ease-in-out 100ms normal forwards
-    running;
+  animation: myFadeIn_zoom_disable 325ms ease-in-out 1ms normal forwards running;
 }
 
 // service3-slide4
@@ -293,8 +280,7 @@
   opacity: 0;
   transform: scale(0.4, 0.4);
   will-change: transform, opacity;
-  animation: myFadeIn_zoom_disable 325ms ease-in-out 100ms normal forwards
-    running;
+  animation: myFadeIn_zoom_disable 325ms ease-in-out 1ms normal forwards running;
 }
 
 // service3-slide5
@@ -303,8 +289,7 @@
   opacity: 0;
   transform: scale(0.4, 0.4);
   will-change: transform, opacity;
-  animation: myFadeIn_zoom_disable 325ms ease-in-out 100ms normal forwards
-    running;
+  animation: myFadeIn_zoom_disable 325ms ease-in-out 1ms normal forwards running;
 }
 
 .anim {
