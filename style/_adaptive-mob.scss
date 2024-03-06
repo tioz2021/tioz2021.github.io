@@ -791,11 +791,17 @@
 
 .service2-slide2__decor {
   transform: matrix(1, 0, 0, -1, 0, 0);
-  width: 87rem;
-  height: 18rem;
+  // width: 87rem;
+  // height: 18rem;
+  // position: absolute;
+  // top: 26rem;
+  // left: 81rem;
+
+  width: 120rem;
+  height: 40rem;
   position: absolute;
-  top: 26rem;
-  left: 81rem;
+  top: 14rem;
+  left: 64rem;
 }
 
 .service2-slide3 {
