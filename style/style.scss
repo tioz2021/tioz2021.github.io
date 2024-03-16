@@ -16,19 +16,34 @@
 // components
 @import "_components";
 
+// text-component
+@import "_text-component";
+
 // animation
-@import "_animation.scss";
+@import "_animation";
 
 html {
   overflow-x: hidden;
   scroll-behavior: smooth;
   // font-size: 0.05208vw;
-  font-size: 1px;
+  // font-size: 1px;
 }
 
 body {
   overflow-x: hidden;
   font-family: var(--font-family);
+
+  min-height: 10000px;
+
+  // body::-webkit-scrollbar
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  // body::-webkit-scrollbar-horizontal
+  &::-webkit-scrollbar-horizontal {
+    display: none;
+  }
 }
 
 a {

@@ -1,16 +1,16 @@
-@mixin text-overflow($line-clamp) {
-  -ms-text-overflow: ellipsis;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  -ms-line-clamp: $line-clamp;
-  -webkit-line-clamp: $line-clamp;
-  line-clamp: $line-clamp;
-  display: -webkit-box;
-  display: box;
-  word-wrap: break-word;
-  -webkit-box-orient: vertical;
-  box-orient: vertical;
-}
+// @mixin text-overflow($line-clamp) {
+//   -ms-text-overflow: ellipsis;
+//   text-overflow: ellipsis;
+//   overflow: hidden;
+//   -ms-line-clamp: $line-clamp;
+//   -webkit-line-clamp: $line-clamp;
+//   line-clamp: $line-clamp;
+//   display: -webkit-box;
+//   display: box;
+//   word-wrap: break-word;
+//   -webkit-box-orient: vertical;
+//   box-orient: vertical;
+// }
 
 @mixin bg-def-set($position, $size) {
   background-position: $position;
