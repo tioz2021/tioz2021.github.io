@@ -517,12 +517,75 @@ template {
      object-fit: contain;
 }
 
+.main-btn {
+  width: 200px;
+  height: 44px;
+  border-radius: 40px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-btn__text {
+  color: var(--bodi-2-1);
+  position: relative;
+  z-index: 2;
+}
+.main-btn__bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.logo {
+  width: 84px;
+  height: 24px;
+}
+.card-box {
+  width: 800px;
+  height: 414px;
+  background-color: grey;
+}
+.pre-title {
+  position: relative;
+  box-sizing: border-box;
+  width: 296px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pre-title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 80px;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(216, 236, 248, 0), rgba(184, 216, 254, 0.32));
+}
+.pre-title::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 80px;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(216, 236, 248, 0), rgba(184, 216, 254, 0.32));
+  transform: rotate(180deg);
+}
 .big-title {
   font-weight: 400;
   font-size: 60px;
   line-height: 120%;
   text-align: center;
   color: var(--bodi-2-1);
+  letter-spacing: 1px;
 }
 
 .def-title {
@@ -531,6 +594,7 @@ template {
   line-height: 120%;
   text-align: center;
   color: var(--bodi-2-1);
+  letter-spacing: 1px;
 }
 
 .str-text {
@@ -539,6 +603,7 @@ template {
   line-height: 130%;
   text-align: center;
   color: var(--bodi-2-1);
+  letter-spacing: 1px;
 }
 
 .def-text {
@@ -547,6 +612,7 @@ template {
   line-height: 130%;
   text-align: center;
   color: var(--bodi-2-2);
+  letter-spacing: 1px;
 }
 
 .small-text {
@@ -571,6 +637,7 @@ html {
 }
 
 body {
+  background: var(--bodi-2);
   overflow-x: hidden;
   font-family: var(--font-family);
   min-height: 10000px;
@@ -597,6 +664,129 @@ button {
 
 input {
   outline: unset;
+}
+
+.header {
+  margin-top: 24px;
+  margin-bottom: 44px;
+  height: 36px;
+}
+.header__container {
+  height: 100%;
+  max-width: 800px;
+  align-items: center;
+}
+.header__logo {
+  margin-right: 145px;
+}
+.header__nav {
+  width: 342px;
+}
+.header__nav-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.header__nav-link {
+  color: var(--bodi-2-2);
+}
+.header__btn {
+  width: 140px;
+  height: 36px;
+  margin-left: auto;
+  margin-right: 0;
+}
+.header__btn span {
+  color: var(--bodi-2-2);
+}
+
+.s1__container {
+  flex-direction: column;
+  align-items: center;
+}
+.s1__text-wrp {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+.s1__pre-title {
+  margin-bottom: 24px;
+}
+.s1__title {
+  width: 400px;
+  height: 122px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.s1__title-icon {
+  width: 100%;
+  height: 100%;
+}
+.s1__title-light {
+  display: none;
+}
+.s1__title-desk {
+  margin-bottom: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 68px;
+}
+.s1__text {
+  margin-bottom: 16px;
+  max-width: 372px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 46px;
+}
+.s1__btn {
+  position: relative;
+  margin-bottom: 6px;
+}
+.s1__btn::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--bodi-2);
+  border-radius: 40px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) scale(0.99, 0.95);
+}
+.s1__decoration {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.s1__decoration--one {
+  width: 1920px;
+  height: 916px;
+}
+.s1__decoration--two {
+  width: 1200px;
+  height: 1076px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.s1__decoration--three {
+  width: 800px;
+  height: 458px;
+  top: 205px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.s1__decoration--four {
+  width: 628px;
+  height: 423px;
+  top: 91px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 @media screen and (max-width: 1200px) {
