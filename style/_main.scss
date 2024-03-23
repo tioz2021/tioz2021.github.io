@@ -123,25 +123,7 @@
   &__btn {
     position: relative;
     margin-bottom: 6px;
-
-    // .s1__btn::after
-    &::after {
-      content: "";
-      display: block;
-      width: 100%;
-      height: 100%;
-      background: var(--bodi-2);
-      border-radius: 40px;
-
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%) scale(0.99, 0.95);
-    }
-
-    // .s1__btn .main-btn__bg
-    .main-btn__bg {
-    }
+    background: var(--bodi-2);
   }
   // .s1__card-box
   &__card-box {

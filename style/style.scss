@@ -22,6 +22,13 @@
 // animation
 @import "_animation";
 
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
 html {
   overflow-x: hidden;
   scroll-behavior: smooth;

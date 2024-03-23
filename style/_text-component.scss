@@ -46,6 +46,11 @@
 }
 
 .ul-small-text {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 130%;
+  text-align: center;
+  color: var(--bodi-2-2);
 }
 
 .text-medium {
@@ -54,4 +59,19 @@
 
 .text-regular {
   font-weight: 400;
+}
+
+.title-wrp {
+  // .title-wrp__pre-title
+  &__pre-title {
+  }
+  // .title-wrp__pre-title-text
+  &__pre-title-text {
+  }
+  // .title-wrp__text
+  &__text {
+  }
+  // .title-wrp__desk
+  &__desk {
+  }
 }
