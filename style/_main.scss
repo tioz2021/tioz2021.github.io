@@ -3,6 +3,8 @@
   margin-bottom: 44px;
 
   height: 36px;
+  position: relative;
+  z-index: 3;
 
   // .header__container
   &__container {
@@ -53,6 +55,16 @@
 }
 
 .s1 {
+  // height: 912px;
+  // margin-top: -104px;
+  // box-sizing: border-box;
+  // padding-top: 104px;
+
+  margin-top: -104px;
+  box-sizing: border-box;
+  height: 1076px;
+  padding-top: 104px;
+
   // .s1__container
   &__container {
     // position: relative;
@@ -67,6 +79,8 @@
     align-items: center;
     position: relative;
     z-index: 2;
+
+    // margin-bottom: 36px;
   }
   // .s1__pre-title
   &__pre-title {
@@ -116,7 +130,7 @@
   // .s1__text
   &__text {
     margin-bottom: 16px;
-    max-width: 372px;
+    max-width: 366px;
     @include text-min-h(46px);
   }
   // .s1__btn
@@ -124,6 +138,12 @@
     position: relative;
     margin-bottom: 6px;
     background: var(--bodi-2);
+    box-shadow: unset;
+
+    // .s1__btn .small-text
+    .small-text {
+      letter-spacing: 0.7px;
+    }
   }
   // .s1__card-box
   &__card-box {
@@ -142,6 +162,7 @@
   &__decoration--one {
     width: 1920px;
     height: 916px;
+    // display: none;
     // border: 1px solid red;
   }
   // .s1__decoration--two
@@ -150,7 +171,7 @@
     height: 1076px;
     left: 50%;
     transform: translateX(-50%);
-    // border: 1px solid red;
+    border: 1px solid red;
   }
   // .s1__decoration--three
   &__decoration--three {
@@ -179,4 +200,7 @@
     transform: translateX(-50%);
     // // border: 1px solid red;
   }
+}
+
+.s2 {
 }
