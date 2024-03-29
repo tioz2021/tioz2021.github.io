@@ -62,7 +62,9 @@
 
   margin-top: -104px;
   box-sizing: border-box;
-  height: 1076px;
+  // height: 1076px;
+
+  height: 200vh;
   padding-top: 104px;
 
   // .s1__container
@@ -73,12 +75,13 @@
   }
   // .s1__text-wrp
   &__text-wrp {
+    // opacity: 0;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-    z-index: 2;
+    z-index: 5;
 
     // margin-bottom: 36px;
   }
@@ -147,6 +150,7 @@
   }
   // .s1__card-box
   &__card-box {
+    // opacity: 0;
   }
 
   // .s1__decorations
@@ -159,45 +163,57 @@
     left: 0;
   }
   // .s1__decoration--one
+  // start
   &__decoration--one {
     width: 1920px;
     height: 916px;
-    // display: none;
-    // border: 1px solid red;
+    z-index: 1;
   }
   // .s1__decoration--two
   &__decoration--two {
+    // line
     width: 1200px;
     height: 1076px;
     left: 50%;
     transform: translateX(-50%);
-    border: 1px solid red;
+    z-index: 2;
   }
   // .s1__decoration--three
   &__decoration--three {
-    // width: 968px;
-    // height: 626px;
+    // light
+    border-radius: 147px;
+    width: 628px;
+    height: 423px;
+    filter: blur(300px);
+    background: #93abf8;
+    // opacity: 0.15;
+    opacity: 0.3;
+
+    z-index: 3;
+    top: 91px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid red;
+  }
+
+  // .s1__decoration--four
+  &__decoration--four {
+    // light line
+    // display: none;
+    // border-radius: 147px;
+    // width: 628px;
+    // height: 423px;
+    // filter: blur(300px);
+    // background: #93abf8;
+    // opacity: 0.15;
+
     width: 800px;
     height: 458px;
 
     top: 205px;
     left: 50%;
     transform: translateX(-50%);
-    // border: 1px solid red;
-  }
-
-  // .s1__decoration--four
-  &__decoration--four {
-    // border-radius: 147px;
-    width: 628px;
-    height: 423px;
-    // filter: blur(300px);
-    // background: #93abf8;
-    // opacity: 0.15;
-
-    top: 91px;
-    left: 50%;
-    transform: translateX(-50%);
+    z-index: 4;
     // // border: 1px solid red;
   }
 }

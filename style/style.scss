@@ -74,7 +74,20 @@ input {
 }
 
 .card_card__VgpBR {
-  // --line-color: #212941 !important;
+  --line-color: #95afff !important;
+}
+
+.card_card-hero__pjFbO {
+  backdrop-filter: blur(110px) !important;
+  background: rgba(34, 40, 65, 0.3) !important;
+  border: 0.5px solid var(--dop-decor-bg) !important;
+  box-shadow: unset !important;
+}
+
+.card_card-hero__pjFbO:before {
+  --dot-color: #fff;
+  --dot-size: 2px;
+  inset: 17px;
 }
 
 // main 1920v
