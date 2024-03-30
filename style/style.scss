@@ -13,11 +13,11 @@
 // fonts
 @import "_fonts";
 
-// components
-@import "_components";
-
 // text-component
 @import "_text-component";
+
+// components
+@import "_components";
 
 // animation
 @import "_animation";
@@ -80,6 +80,7 @@ input {
 .card_card-hero__pjFbO {
   backdrop-filter: blur(110px) !important;
   background: rgba(34, 40, 65, 0.3) !important;
+  background: unset !important;
   border: 0.5px solid var(--dop-decor-bg) !important;
   box-shadow: unset !important;
 }
