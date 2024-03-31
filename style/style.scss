@@ -37,11 +37,12 @@ html {
 }
 
 body {
+  position: static !important;
   // background-color: rgba(0, 0, 0, 0.5);
   background: var(--bodi-2);
 
   overflow-x: hidden;
-  font-family: var(--font-family);
+  font-family: var(--font-family) !important;
 
   min-height: 10000px;
 
@@ -89,6 +90,10 @@ input {
   --dot-color: #fff;
   --dot-size: 2px;
   inset: 17px;
+}
+
+.last-slide-reached {
+  pointer-events: none;
 }
 
 // main 1920v

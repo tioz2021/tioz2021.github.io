@@ -810,7 +810,7 @@ template {
   height: 378px;
   bottom: -2px;
   left: 50%;
-  transform: translateX(-50%) translateY(0%) translateZ(0px) rotateY(0deg);
+  margin-left: -151px;
   z-index: 3;
   border-radius: 24px;
 }
@@ -1006,12 +1006,16 @@ template {
   transform: rotate(180deg);
 }
 .scroll-section {
+  position: relative;
   box-sizing: border-box;
   padding-top: 225px;
+  padding-bottom: 65px;
 }
 .scroll-section__container {
   flex-direction: column;
   align-items: center;
+  position: relative;
+  z-index: 2;
 }
 .scroll-section__title {
   display: flex;
@@ -1032,9 +1036,167 @@ template {
 .scroll-section__title-desk {
   max-width: 400px;
 }
-.scroll-section__list {
-  margin-bottom: 60px;
+.scroll-section__list-wrp {
+  width: 800px;
+  height: 359px;
+  position: relative;
+  margin-bottom: 86px;
 }
+.scroll-section__list-bg {
+  width: 800px;
+  height: 422px;
+  position: absolute;
+  top: -55px;
+  left: 0;
+}
+.scroll-section__list-bg-line {
+  width: 800px;
+  height: 258px;
+  position: absolute;
+  top: 85px;
+  left: 0;
+}
+.scroll-section__bg-light {
+  border-radius: 147px;
+  width: 736px;
+  height: 324px;
+  filter: blur(400px);
+  background: rgba(147, 171, 248, 0.35);
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.scroll-section__list {
+  position: relative;
+  z-index: 2;
+}
+.scroll-section__item {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.scroll-section__item:nth-child(1) {
+  width: 112px;
+  top: 80px;
+  left: 140px;
+}
+.scroll-section__item:nth-child(1) .scroll-section__icon {
+  width: 112px;
+  height: 112px;
+}
+.scroll-section__item:nth-child(1) .scroll-section__text {
+  margin-top: 12px;
+}
+.scroll-section__item:nth-child(2) {
+  width: 200px;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.scroll-section__item:nth-child(2) .scroll-section__icon {
+  width: 200px;
+  height: 200px;
+}
+.scroll-section__item:nth-child(2) .scroll-section__text {
+  margin-top: 6px;
+}
+.scroll-section__item:nth-child(3) {
+  width: 112px;
+  top: 80px;
+  right: 140px;
+}
+.scroll-section__item:nth-child(3) .scroll-section__icon {
+  width: 112px;
+  height: 112px;
+}
+.scroll-section__item:nth-child(3) .scroll-section__text {
+  margin-top: 13px;
+}
+.scroll-section__item:nth-child(4) {
+  width: 197px;
+  left: 141px;
+  top: 247px;
+}
+.scroll-section__item:nth-child(4) .scroll-section__icon {
+  width: 197px;
+  height: 102px;
+  transform: scale(1.07);
+}
+.scroll-section__item:nth-child(4) .scroll-section__text {
+  margin-top: 18px;
+}
+.scroll-section__item:nth-child(5) {
+  width: 112px;
+  top: 245px;
+  left: 386px;
+}
+.scroll-section__item:nth-child(5) .scroll-section__icon {
+  width: 112px;
+  height: 112px;
+}
+.scroll-section__item:nth-child(5) .scroll-section__text {
+  margin-top: 12px;
+}
+.scroll-section__item:nth-child(6) {
+  width: 112px;
+  top: 245px;
+  right: 140px;
+}
+.scroll-section__item:nth-child(6) .scroll-section__icon {
+  width: 112px;
+  height: 112px;
+}
+.scroll-section__item:nth-child(6) .scroll-section__text {
+  margin-top: 12px;
+}
+.scroll-section__text {
+  display: inline-block;
+  box-sizing: border-box;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 8px;
+  height: 16px;
+  background: linear-gradient(180deg, #131827 0%, #0d101f 100%);
+}
+.scroll-section .scroll-section__swiper {
+  border: 1px solid red;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.scroll-section__slider {
+  width: 800px;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+}
+.scroll-section__slider-title {
+  width: 550px;
+  margin-bottom: 26px;
+}
+.scroll-section__slider-text {
+  width: 400px;
+  margin-bottom: 40px;
+}
+.scroll-section__btn {
+  margin-bottom: 35px;
+}
+.scroll-section__slider-navigation {
+  width: 144px;
+  height: 16px;
+}
+.scroll-section__bg {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1576px;
+}
+
 @keyframes glowing-button_line-anim__NqYIB {
   to {
     --angle: 360deg;
@@ -1059,9 +1221,10 @@ html {
 }
 
 body {
+  position: static !important;
   background: var(--bodi-2);
   overflow-x: hidden;
-  font-family: var(--font-family);
+  font-family: var(--font-family) !important;
   min-height: 10000px;
 }
 body::-webkit-scrollbar {
@@ -1107,6 +1270,10 @@ input {
   inset: 17px;
 }
 
+.last-slide-reached {
+  pointer-events: none;
+}
+
 .header {
   margin-top: 24px;
   margin-bottom: 44px;
@@ -1146,8 +1313,10 @@ input {
 .s1 {
   margin-top: -104px;
   box-sizing: border-box;
-  height: 200vh;
+  height: 2000px;
   padding-top: 104px;
+  position: relative;
+  z-index: 3;
 }
 .s1__container {
   flex-direction: column;
@@ -1186,7 +1355,7 @@ input {
 }
 .s1__text {
   margin-bottom: 16px;
-  max-width: 366px;
+  max-width: 375px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1238,6 +1407,13 @@ input {
   left: 50%;
   transform: translateX(-50%);
   z-index: 4;
+}
+
+.s2 {
+  margin-top: -1090px;
+  margin-bottom: 3000px;
+  height: 1450px;
+  transform: translateY(0px);
 }
 
 @media screen and (max-width: 1200px) {
