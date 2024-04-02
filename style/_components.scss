@@ -663,9 +663,9 @@
 
 .scroll-section {
   position: relative;
-  box-sizing: border-box;
-  padding-top: 225px;
-  padding-bottom: 65px;
+  // box-sizing: border-box;
+  // padding-top: 225px;
+  // padding-bottom: 65px;
 
   // .scroll-section__container
   &__container {
@@ -673,6 +673,13 @@
     align-items: center;
     position: relative;
     z-index: 2;
+
+    height: calc(100% + 65px);
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 225px;
+    padding-bottom: 65px;
+    transform: translateY(0px);
   }
   // .scroll-section__title
   &__title {

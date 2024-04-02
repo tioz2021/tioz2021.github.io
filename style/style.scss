@@ -44,7 +44,7 @@ body {
   overflow-x: hidden;
   font-family: var(--font-family) !important;
 
-  min-height: 10000px;
+  min-height: 10000px !important;
 
   // body::-webkit-scrollbar
   &::-webkit-scrollbar {
@@ -55,6 +55,11 @@ body {
   &::-webkit-scrollbar-horizontal {
     display: none;
   }
+}
+
+.scroll-ctonainer {
+  position: relative;
+  min-height: 14948px;
 }
 
 a {
@@ -94,6 +99,51 @@ input {
 
 .last-slide-reached {
   pointer-events: none;
+}
+
+.scrolling-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.scrolling-block {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scale(1);
+  opacity: 1;
+  will-change: transform;
+  // filter: blur(0px);
+
+  // transition: all 250ms ease-in-out;
+
+  // animation: swiperFixed 1s linear 0 1 forwards;
+  // animation: swiperFixed_dis 500ms ease-in-out 0ms normal forwards running;
+}
+
+.scrolling-block.fixed {
+  position: fixed;
+}
+
+.swiper-wrapper {
+  // transition-duration: 0ms !important;
+}
+
+.swiper-slide {
+}
+
+.swiper-slide-active {
+}
+
+@keyframes swiperFixed {
+  0% {
+    opacity: 0.8;
+    // filter: blur(100px);
+  }
+  100% {
+    opacity: 1;
+    // filter: blur(0px);
+  }
 }
 
 // main 1920v
