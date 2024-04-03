@@ -44,7 +44,7 @@ body {
   overflow-x: hidden;
   font-family: var(--font-family) !important;
 
-  min-height: 10000px !important;
+  // min-height: 10000px !important;
 
   // body::-webkit-scrollbar
   &::-webkit-scrollbar {
@@ -175,4 +175,61 @@ input {
     max-width: 360px;
   }
   @import "_adaptive-mob";
+}
+
+.s3 {
+  // margin-top: 480px;
+  margin-top: 880px;
+  margin-bottom: 160px;
+}
+
+.s3 .container {
+  background-color: grey;
+  height: 825px;
+}
+
+.s4 {
+  // margin-bottom: 1450px;
+  margin-bottom: 1850px;
+}
+
+.s4 .container {
+  background-color: grey;
+  height: 1220px;
+}
+
+.s6 {
+  margin-bottom: 160px;
+}
+
+.s6 .container {
+  background-color: grey;
+  height: 661px;
+}
+
+.s7 {
+  margin-bottom: 81px;
+}
+
+.s7 .container {
+  background-color: grey;
+  height: 553px;
+}
+
+.s9 {
+  margin-bottom: 120px;
+}
+
+.s9 .container {
+  background-color: grey;
+  height: 1167px;
+}
+
+.s10 {
+  margin-bottom: 160px;
+}
+
+.s10 .container {
+  background-color: grey;
+  height: 1139px;
 }

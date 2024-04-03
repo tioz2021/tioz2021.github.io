@@ -223,11 +223,116 @@
 }
 
 .s2 {
-  height: 1450px;
-  top: 888px;
+  // height: 1450px;
+  // top: 888px;
+  top: 910px;
 
   // margin-bottom: 3000px;
   // height: 1293px;
   // margin-top: -1090px;
   // position: relative;
+}
+
+.s5 {
+  // top: 4693px;
+
+  top: 5093px;
+
+  // width: 100%;
+  // height: 500px;
+  // background-color: grey;
+  // position: absolute;
+  // left: 50%;
+  // transform: translateX(-50%);
+}
+
+.s5 .scroll-section__list-bg {
+  width: 790px;
+  height: 389px;
+  top: -23px;
+}
+
+.s5 .scroll-section__list-bg-line {
+  // display: none;
+  height: 323px;
+  top: 4px;
+}
+
+.s5 .scroll-section__list {
+}
+
+.s5 .scroll-section__item:nth-child(1) {
+  width: 97px;
+  top: 27px;
+  left: 103px;
+}
+.s5 .scroll-section__item:nth-child(1) .scroll-section__icon {
+  width: 97px;
+  height: 80px;
+}
+.s5 .scroll-section__item:nth-child(1) .scroll-section__text {
+  margin-top: 10px;
+}
+.s5 .scroll-section__item:nth-child(2) {
+  width: 158px;
+  top: 38px;
+}
+.s5 .scroll-section__item:nth-child(2) .scroll-section__icon {
+  width: 158px;
+  height: 158px;
+  // margin-bottom: 7px;
+}
+.s5 .scroll-section__item:nth-child(2) .scroll-section__text {
+  margin-top: 13px;
+}
+.s5 .scroll-section__item:nth-child(3) {
+  width: 97px;
+  top: 27px;
+  right: 104px;
+}
+.s5 .scroll-section__item:nth-child(3) .scroll-section__icon {
+  width: 97px;
+  height: 80px;
+}
+.s5 .scroll-section__item:nth-child(3) .scroll-section__text {
+  margin-top: 10px;
+}
+
+.s5 .scroll-section__item:nth-child(4) {
+  width: 136px;
+  left: 160px;
+  top: 243px;
+}
+.s5 .scroll-section__item:nth-child(4) .scroll-section__icon {
+  width: 136px;
+  height: 114px;
+  transform: unset;
+}
+.s5 .scroll-section__item:nth-child(4) .scroll-section__text {
+  margin-top: 13px;
+}
+
+.s5 .scroll-section__item:nth-child(5) {
+  width: 112px;
+  left: 344px;
+}
+.s5 .scroll-section__item:nth-child(5) .scroll-section__icon {
+  width: 112px;
+  height: 112px;
+}
+
+.s5 .scroll-section__item:nth-child(6) {
+  right: 184px;
+}
+
+.s5 .scroll-section__item:nth-child(6) .scroll-section__text {
+  width: 127px;
+}
+
+.scroll-section .scroll-section__swiper2 {
+  height: 285px;
+}
+
+.s5 .scroll-section__bg {
+  height: 1496px;
 }

@@ -1,9 +1,19 @@
 // Включаем Swiper
-let swiperContainer = document.querySelector(".scroll-section__swiper");
+let swiperContainer = document.querySelector(".scroll-section__swiper1");
+let swiperContainer2 = document.querySelector(".scroll-section__swiper2");
+
 var swiper = new Swiper(swiperContainer, {
-  // direction: "horizontal",
-  // slidesPerView: 1,
-  // spaceBetween: 30,
+  effect: "fade",
+  fadeEffect: {
+    crossFade: true,
+  },
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+var swiper2 = new Swiper(swiperContainer2, {
   effect: "fade",
   fadeEffect: {
     crossFade: true,
@@ -15,184 +25,103 @@ var swiper = new Swiper(swiperContainer, {
   },
 });
 
+let swiper_def_slider_element = document.querySelector(
+  ".slider-section__swiper1"
+);
+let swiper_def_slider_element2 = document.querySelector(
+  ".slider-section__swiper2"
+);
+var swiper_def_slider = new Swiper(swiper_def_slider_element, {
+  effect: "fade",
+  fadeEffect: {
+    crossFade: true,
+  },
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: ".slider-section__swiper-button-next",
+    prevEl: ".slider-section__swiper-button-prev",
+  },
+});
+var swiper_def_slider2 = new Swiper(swiper_def_slider_element2, {
+  effect: "fade",
+  fadeEffect: {
+    crossFade: true,
+  },
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: ".slider-section__swiper-button-next",
+    prevEl: ".slider-section__swiper-button-prev",
+  },
+});
+
 // s2 auto scroll
 (() => {
-  // const srcoller = document.querySelector(".scroller");
-  // const scrollerContainer = document.querySelector(".scroller-content");
-  // i = 0;
-  // srcoller.addEventListener("wheel", function (event) {
-  //   if (event.deltaY > 0) {
-  //     // Прокрутка вниз
-  //     i += 100;
-  //     console.log("Прокрутка вниз");
-  //   } else if (event.deltaY < 0) {
-  //     // Прокрутка вверх
-  //     i -= 100;
-  //     console.log("Прокрутка вверх");
-  //   }
-  //   scrollerContainer.style.transform = `translate3d(0px, -${i}px, 0px)`;
-  // });
-  // window.addEventListener("scroll", function () {
-  //   const scrollTop = window.scrollY;
-  //   console.log(scrollTop);
-  //   const scrollContainer = document.querySelector(".scroll-container");
-  //   const scrollContainerOffset = scrollContainer.offsetTop;
-  //   const scrollContainerHeight = scrollContainer.offsetHeight;
-  //   if (
-  //     scrollTop >= scrollContainerOffset &&
-  //     scrollTop <= scrollContainerOffset + scrollContainerHeight
-  //   ) {
-  //     scrollContainer.classList.add("fixed-scroll");
-  //   } else {
-  //     scrollContainer.classList.remove("fixed-scroll");
-  //   }
-  // });
-  // window.addEventListener("scroll", function () {
-  //   const scrollTop = window.scrollY;
-  //   console.log(scrollTop);
-  //   if (scrollTop >= 1450 && scrollTop <= 1550) {
-  //     document.documentElement.scrollTop = 1450; // Останавливаем прокрутку на 1450px
-  //     // swiper.slideTo(2, 1000);
-  //   }
-  // });
-  // function test() {
-  // console.log("?");
-  // const scrollTop = window.scrollY;
-  // document.querySelector(".scroller").style.top = `${scrollTop}px`;
-  // const mOffsetTop = parseInt(document.querySelector(".scroller").style.top);
-  // const s2 = document.querySelector(".s2");
-  // console.log(mOffsetTop);
-  // 1400
-  // if (mOffsetTop >= 1400 && mOffsetTop <= 2500) {
-  // s2.style.transform = `translateY(${mOffsetTop - 1400}px)`;
-  // swiper.slideTo(1, 1000);
-  // if (mOffsetTop > 1499 && mOffsetTop < 1599) {
-  //   // swiper.slideTo(2, 1000);
-  // } else if (mOffsetTop > 1599 && mOffsetTop < 1699) {
-  //   // swiper.slideTo(3, 1000);
-  // }
-  // }
-  // if (mOffsetTop >= 1455) {
-  //   // document.documentElement.style.overflow = "hidden";
-  // } else if (mOffsetTop <= 1450) {
-  // }
-  // document.documentElement.style.overflow = "auto";
-  // console.log(scrollTop);
-  // console.log(parseInt(document.body.style.top));
-  // if(document.body.style.top == "1450px")
-  // 1455
-  // if (scrollTop >= 1455) {
-  //   document.documentElement.style.overflow = "hidden";
-  // }
-  // if (scrollTop >= 1455) {
-  //   // s2.style.transform = "translateY(100px)";
-  //   swiper.slideTo(2, 1000);
-  // } else if (scrollTop >= 1550) {
-  //   swiper.slideTo(3, 1000);
-  // } else if (scrollTop < 1450) {
-  //   swiper.slideTo(1, 1000);
-  // }
-  // }
-  // function test(event) {
-  //   const scrollTop = window.scrollY;
-  //   window.document.body.style.top = `${scrollTop}px`;
-  //   const mOffsetTop = parseInt(window.document.body.style.top);
-  //   const s2 = document.querySelector(".s2");
-  //   console.log(mOffsetTop);
-  //   // 1400
-  //   if (mOffsetTop >= 1400 && mOffsetTop <= 1700) {
-  //     s2.style.transform = `translateY(${mOffsetTop - 1400}px)`;
-  //     swiper.slideTo(0, 1000);
-  //     if (mOffsetTop >= 1500) {
-  //       swiper.slideTo(1, 1000);
-  //     }
-  //     if (mOffsetTop >= 1600) {
-  //       swiper.slideTo(2, 1000);
-  //     }
-  //   }
-  // }
-  // window.addEventListener("scroll", test);
-  // function test(event) {
-  //   const scrollTop = window.scrollY;
-  //   window.document.body.style.top = `${scrollTop}px`;
-  //   const mOffsetTop = parseInt(window.document.body.style.top);
-  //   const s2 = document.querySelector(".s2");
-  //   // Плавное движение блока s2
-  //   if (mOffsetTop >= 1400 && mOffsetTop <= 1700) {
-  //     const translateY = Math.max(0, Math.min(mOffsetTop - 1400, 300)); // Ограничение значения translateY от 0 до 300
-  //     s2.style.transition = "transform 0.3s ease"; // Добавляем плавный переход
-  //     s2.style.transform = `translateY(${translateY}px)`; // Применяем значение translateY
-  //   }
-  //   // Плавное переключение слайдов в Swiper
-  //   // if (mOffsetTop >= 1500) {
-  //   //   swiper.slideTo(1, 1000);
-  //   // } else if (mOffsetTop >= 1600) {
-  //   //   swiper.slideTo(2, 1000);
-  //   // } else {
-  //   //   swiper.slideTo(0, 1000);
-  //   // }
-  // }
-  window.addEventListener("scroll", function () {
-    const scrollingBlock = document.querySelector(".scrolling-block");
-    const container = document.querySelector(".scroll-container");
-    const containerRect = container.getBoundingClientRect();
+  function scroll_slider_block() {
+    const scrollingBlock = document.querySelector(".s2.scrolling-block");
+    const scrollingBlock2 = document.querySelector(".s5.scrolling-block");
+    // const container = document.querySelector(".scroll-container");
+    // const containerRect = container.getBoundingClientRect();
     const scrollTop = window.scrollY || window.pageYOffset;
 
-    console.log(scrollTop);
+    // console.log(scrollTop);
 
+    // s2 scroller 1
     if (scrollTop >= 1400 && scrollTop <= 1800) {
       if (scrollingBlock.classList.contains("fixed") == false) {
         console.log("fixed");
         scrollingBlock.classList.add("fixed");
-        scrollingBlock.style.top = "-512px";
+        scrollingBlock.style.top = "-497px";
       }
     } else if (scrollTop <= 1400) {
       if (scrollingBlock.classList.contains("fixed") == true) {
         scrollingBlock.classList.remove("fixed");
-        scrollingBlock.style.top = "888px";
+        scrollingBlock.style.top = "910px";
       }
-
     } else if (scrollTop >= 1800) {
       if (scrollingBlock.classList.contains("fixed") == true) {
         scrollingBlock.classList.remove("fixed");
-        scrollingBlock.style.top = "1288px";
+        scrollingBlock.style.top = "1310px";
       }
     }
-
     if (scrollTop >= 1401 && scrollTop <= 1500) swiper.slideTo(0, 1000);
     else if (scrollTop >= 1501 && scrollTop <= 1600) swiper.slideTo(1, 1000);
     else if (scrollTop >= 1601 && scrollTop <= 1700) swiper.slideTo(2, 1000);
 
-    // if (scrollTop >= 1400 && scrollTop <= 1800) {
-    //   // scrollingBlock.style.position = "fixed";
-    //   // scrollingBlock.style.top = "-497px";
-    //   // scrollingBlock.style.top = `${scrollTop - 1400 + 888}px`;
-    //   // scrollingBlock.style.top = "-495px";
-    //   // scrollingBlock.style.top = "unset";
-    //   // scrollingBlock.style.bottom = "0px";
-    //   scrollingBlock.style.transform = `translate(-50%, ${scrollTop - 1400}px)`;
-    // } else {
-    //   // scrollingBlock.style.position = "absolute";
-    //   // scrollingBlock.style.top = "1288px";
-    //   // scrollingBlock.style.bottom = "unset";
-    // }
+    // s5 scroller 2
+    // 5300
+    if (scrollTop >= 5700 && scrollTop <= 6100) {
+      if (scrollingBlock2.classList.contains("fixed") == false) {
+        console.log("fixed");
+        scrollingBlock2.classList.add("fixed");
+        scrollingBlock2.style.top = "-608px";
+      }
+    } else if (scrollTop <= 5700) {
+      if (scrollingBlock2.classList.contains("fixed") == true) {
+        scrollingBlock2.classList.remove("fixed");
+        scrollingBlock2.style.top = "5093px";
+      }
+    } else if (scrollTop >= 6100) {
+      if (scrollingBlock2.classList.contains("fixed") == true) {
+        scrollingBlock2.classList.remove("fixed");
+        scrollingBlock2.style.top = "5493px";
+      }
+    }
+    if (scrollTop >= 5701 && scrollTop <= 5800) swiper2.slideTo(0, 1000);
+    else if (scrollTop >= 5801 && scrollTop <= 5900) swiper2.slideTo(1, 1000);
+    else if (scrollTop >= 5901 && scrollTop <= 6000) swiper2.slideTo(2, 1000);
+  }
 
-    // if (scrollTop <= 1400) {
-    //   // scrollingBlock.style.position = "absolute";
-    //   scrollingBlock.style.transform = `translate(-50%, 0px)`;
-    //   // scrollingBlock.style.bottom = "unset";
-    // }
-
-    // if (scrollTop >= 1800) {
-    //   // scrollingBlock.style.position = "absolute";
-    //   // scrollingBlock.style.top = "1288px";
-    //   // scrollingBlock.style.bottom = "unset";
-    //   // scrollingBlock.style.marginTop = "-697px";
-    //   // scrollingBlock.style.position = "static";
-    // }
-
-    //
-  });
+  window.addEventListener("scroll", scroll_slider_block);
 })();
 
 // 3d s1
