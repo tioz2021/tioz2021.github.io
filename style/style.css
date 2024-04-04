@@ -705,17 +705,18 @@ template {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 59px;
-  height: 62px;
+  width: 60px;
+  height: 60px;
 }
 .card-box__icon-star-light {
   position: absolute;
   left: 50%;
   top: 50%;
+  z-index: -1;
   transform: translate(-50%, -50%);
   width: 112px;
   height: 33px;
-  filter: blur(39px);
+  filter: blur(40px);
   background: linear-gradient(90deg, #fff 0%, #9cb2f9 21.42%, #abbdf5 52%, #8da7f9 78.48%, #fff 100%);
 }
 .card-box__item-bg {
@@ -1513,7 +1514,7 @@ input {
   margin-bottom: 44px;
   height: 36px;
   position: relative;
-  z-index: 3;
+  z-index: 4;
 }
 .header__container {
   height: 100%;
@@ -1769,7 +1770,7 @@ input {
 }
 
 .s4 {
-  margin-bottom: 1850px;
+  margin-bottom: 1905px;
 }
 
 .s4 .container {
@@ -1805,7 +1806,7 @@ input {
 }
 
 .s10 {
-  margin-bottom: 160px;
+  margin-bottom: 10px;
 }
 
 .s10 .container {

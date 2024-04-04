@@ -230,6 +230,7 @@
   &__icon-star-wrp {
     width: 112px;
     height: 62px;
+
     position: absolute;
     // top: 20px;
     top: 5px;
@@ -244,18 +245,19 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 59px;
-    height: 62px;
+    width: 60px;
+    height: 60px;
   }
   // .card-box__icon-star-light
   &__icon-star-light {
     position: absolute;
     left: 50%;
     top: 50%;
+    z-index: -1;
     transform: translate(-50%, -50%);
     width: 112px;
     height: 33px;
-    filter: blur(39px);
+    filter: blur(40px);
     background: linear-gradient(
       90deg,
       #fff 0%,
