@@ -1311,6 +1311,7 @@ template {
   letter-spacing: normal;
 }
 .slider-section__swiper {
+  overflow: visible !important;
   width: 609px;
 }
 .slider-section .swiper-wrapper {
@@ -1600,7 +1601,6 @@ input {
   position: relative;
   margin-bottom: 6px;
   background: var(--bodi-2);
-  box-shadow: unset;
 }
 .s1__btn .small-text {
   letter-spacing: 0.7px;

@@ -1107,6 +1107,7 @@
   }
   // .slider-section__swiper
   &__swiper {
+    overflow: visible !important;
     width: 609px;
   }
   // .slider-section__swiper1
