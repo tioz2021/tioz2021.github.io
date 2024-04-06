@@ -1,10 +1,47 @@
-// manrope 300
+// Nunito 400 Regular
 @font-face {
-  font-family: "fonts";
-  src: url("../fonts/font/ttf/font.ttf");
-  src: local("font-font "), local("font font "),
-    url("../fonts/font/woff/font-font.woff") format("woff"),
-    url("../fonts/font/woff2/font-font.woff2") format("woff2");
+  font-family: "Nunito";
+  src: url("../fonts/Nunito/ttf/Nunito-Regular.ttf");
+  src: local("Nunito Regular"), local("Nunito-Regular"),
+    url("../fonts/Nunito/eot/Nunito-Regular.eot") format("eot"),
+    url("../fonts/Nunito/woff/Nunito-Regular.woff") format("woff"),
+    url("../fonts/Nunito/woff2/Nunito-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+// Nunito 500 Medium
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/Nunito/ttf/Nunito-Medium.ttf");
+  src: local("Nunito Medium"), local("Nunito-Medium"),
+    url("../fonts/Nunito/eot/Nunito-Medium.eot") format("eot"),
+    url("../fonts/Nunito/woff/Nunito-Medium.woff") format("woff"),
+    url("../fonts/Nunito/woff2/Nunito-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+// Nunito 600 SemiBold
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/Nunito/ttf/Nunito-SemiBold.ttf");
+  src: local("Nunito SemiBold"), local("Nunito-SemiBold"),
+    url("../fonts/Nunito/eot/Nunito-SemiBold.eot") format("eot"),
+    url("../fonts/Nunito/woff/Nunito-SemiBold.woff") format("woff"),
+    url("../fonts/Nunito/woff2/Nunito-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+// EFN Pastele 400 Regular
+@font-face {
+  font-family: "EFN Pastele";
+  src: url("../fonts/efnpastele.ttf");
+  src: local("EFN Pastele"), local("EFN Pastele Regular"),
+    url("../fonts/efnpastele.eot") format("eot"),
+    url("../fonts/efnpastele.woff") format("woff"),
+    url("../fonts/efnpastele.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
