@@ -1,0 +1,101 @@
+// reset style
+@import "_reset";
+
+// normalize style
+@import "_normalize";
+
+// mixin
+@import "_mixin";
+
+// variables
+@import "_var";
+
+// fonts
+@import "_fonts";
+
+// text-component
+@import "_text-component";
+
+// components
+@import "_components";
+
+// animation
+@import "_animation";
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  // font-size: 0.05208vw;
+  // font-size: 1px;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: var(--font-family);
+
+  // min-height: 10000px !important;
+
+  // body::-webkit-scrollbar
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  // body::-webkit-scrollbar-horizontal
+  &::-webkit-scrollbar-horizontal {
+    display: none;
+  }
+}
+
+a {
+  text-decoration: unset;
+  cursor: pointer;
+}
+
+button {
+  background: unset;
+  border: unset;
+  padding: 0;
+  outline: unset;
+  cursor: pointer;
+}
+
+input {
+  outline: unset;
+}
+// main 1920v
+@import "_main.scss";
+
+@media screen and (max-width: 1600px) {
+}
+
+// 768
+@media screen and (max-width: 1200px) {
+  html {
+    // font-size: 0.132vw;
+  }
+
+  .container {
+    max-width: 768px;
+  }
+
+  @import "_adaptive-tab";
+}
+
+// 360
+@media screen and (max-width: 600px) {
+  html {
+    // font-size: 0.278vw;
+  }
+
+  .container {
+    max-width: 360px;
+  }
+  @import "_adaptive-mob";
+}

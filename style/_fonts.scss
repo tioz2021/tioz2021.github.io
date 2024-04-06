@@ -1,0 +1,10 @@
+// manrope 300
+@font-face {
+  font-family: "fonts";
+  src: url("../fonts/font/ttf/font.ttf");
+  src: local("font-font "), local("font font "),
+    url("../fonts/font/woff/font-font.woff") format("woff"),
+    url("../fonts/font/woff2/font-font.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
