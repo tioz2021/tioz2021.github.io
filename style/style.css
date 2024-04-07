@@ -1404,8 +1404,8 @@ template {
 }
 
 .logo-video {
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -1423,6 +1423,32 @@ template {
     mask-position: 0 -15px, 15px -45px;
   }
 }
+.s1__decorations {
+  opacity: 0;
+  animation-name: m_opacity;
+  animation-duration: 1.5s;
+  animation-delay: 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.logo-video {
+  opacity: 1;
+  animation-name: m_opacity;
+  animation-duration: 1.5s;
+  animation-direction: reverse;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes m_opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 * {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -1437,7 +1463,7 @@ html {
 
 body {
   position: static !important;
-  background: var(--bodi-2);
+  background: var(--bodi-2) !important;
   overflow-x: hidden;
   font-family: var(--font-family) !important;
 }
@@ -1588,14 +1614,13 @@ input {
   width: 100%;
   height: 100%;
 }
-.s1__title-icon svg {
-  z-index: 2;
-}
 .s1__title-light {
   display: none;
 }
 .s1__title-desk {
   margin-bottom: 26px;
+  position: relative;
+  z-index: 4;
   display: flex;
   justify-content: center;
   align-items: center;

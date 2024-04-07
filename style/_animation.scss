@@ -10,3 +10,31 @@
     mask-position: 0 -15px, 15px -45px;
   }
 }
+
+.s1__decorations {
+  opacity: 0;
+  animation-name: m_opacity;
+  animation-duration: 1.5s;
+  animation-delay: 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.logo-video {
+  // display: none;
+  opacity: 1;
+  animation-name: m_opacity;
+  animation-duration: 1.5s;
+  // animation-delay: 3s;
+  animation-direction: reverse;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes m_opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
