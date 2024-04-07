@@ -1403,6 +1403,15 @@ template {
   transform: translate(-50%, -50%);
 }
 
+.logo-video {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 @keyframes glowing-button_line-anim__NqYIB {
   to {
     --angle: 360deg;
@@ -1578,6 +1587,9 @@ input {
 .s1__title-icon {
   width: 100%;
   height: 100%;
+}
+.s1__title-icon svg {
+  z-index: 2;
 }
 .s1__title-light {
   display: none;
