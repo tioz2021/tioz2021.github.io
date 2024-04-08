@@ -1,11 +1,13 @@
 .container {
-  // max-width: 1200px;
+  max-width: 1800px;
   width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
   padding-left: 0px;
   padding-right: 0px;
   display: flex;
+
+  // border: 1px solid red;
 }
 
 .img-wrp {
@@ -33,5 +35,14 @@
 .logo {
   // .logo__svg
   &__svg {
+  }
+}
+
+.list {
+  // .list__item
+  &__item {
+  }
+  // .list__item-link
+  &__item-link {
   }
 }

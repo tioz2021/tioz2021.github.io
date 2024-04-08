@@ -1,15 +1,51 @@
 .big-title {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 90%;
+  text-align: center;
+  color: var(--bodi1-1);
+
+  display: flex;
+  flex-direction: column;
+
+  // .big-title span
+  span {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 90px;
+  }
 }
+
 .def-title {
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 120%;
+  text-align: center;
+  color: var(--bodi1-1);
 }
 
 .small-title {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 110%;
+  text-align: center;
+  color: var(--bodi1-1);
 }
 
 .str-text {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 120%;
+  color: var(--bodi1-1);
 }
 
 .def-text {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  color: var(--bodi1-2);
 }
 
 .small-text {
