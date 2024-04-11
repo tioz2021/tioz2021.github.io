@@ -39,6 +39,7 @@ html {
 body {
   overflow-x: hidden;
   font-family: var(--font-family);
+  background: var(--bodi1-1);
 
   // body::-webkit-scrollbar
   &::-webkit-scrollbar {

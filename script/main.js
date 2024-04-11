@@ -11,6 +11,47 @@
   });
 })();
 
+(() => {
+  document.addEventListener("DOMContentLoaded", function () {
+    const selectBox = document.querySelector(".select-box");
+    const dropdown = document.querySelector(".dropdown");
+    const options = document.querySelectorAll(".option");
+    const selectedCount = document.querySelector(".selected-count");
+    const selectedItemsInput = document.getElementById("selectedItems");
+
+    // toggler
+    selectBox.addEventListener("click", function () {
+      dropdown.style.display =
+        dropdown.style.display === "none" ? "block" : "none";
+    });
+
+    options.forEach(function (option) {
+      option.addEventListener("click", function () {
+        options.forEach(function (opt) {
+          opt.classList.remove("selected");
+        });
+        this.classList.add("selected");
+        updateSelectedCount();
+        updateSelectedItems();
+      });
+    });
+
+    function updateSelectedCount() {
+      const selectedOption = document.querySelector(".option.selected");
+      const selectedText = selectedOption
+        ? selectedOption.textContent
+        : "Ничего не выбрано";
+      selectedCount.textContent = selectedText;
+    }
+
+    function updateSelectedItems() {
+      const selectedOption = document.querySelector(".option.selected");
+      const selectedText = selectedOption ? selectedOption.textContent : "";
+      selectedItemsInput.value = selectedText;
+    }
+  });
+})();
+
 // auto change height on textarea
 // (() => {
 //   const textarea = document.querySelector("textarea");

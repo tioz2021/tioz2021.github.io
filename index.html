@@ -824,15 +824,31 @@
 					</div>
 					<div class="s5__form-wrp">
 
-						<div class="s5__form main-form">
+						<form accept="/" class="s5__form main-form">
 							<div class="main-form__fields">
 								<input type="text" class="main-form__input str-text" placeholder="*Ваше имя">
 								<input type="text" class="main-form__input str-text" placeholder="*Ваш телефон">
 								<input type="text" class="main-form__input str-text" placeholder="*Ваш e-mail">
-								<input type="text" class="main-form__input str-text" placeholder="Выберите тему обращения">
+								<!-- <input type="text" class="main-form__input str-text" placeholder="Выберите тему обращения"> -->
 								<!-- cstom selection -->
+								<div class="custom-select">
+									<input type="hidden" id="selectedItems" name="selectedItems">
+									<div class="select-box main-form__input str-text">
+										<span class="selected-items"><span class="selected-count">Выберите тему обращения</span></span>
+										<div class="dropdown" style="display: none;">
+											<div class="options">
+												<div class="option str-text" data-value="1">Тема не выбрана</div>
+												<div class="option str-text" data-value="2">Тема 1</div>
+												<div class="option str-text" data-value="3">Тема 2</div>
+												<div class="option str-text" data-value="4">Тема 3</div>
+												<div class="option str-text" data-value="5">Тема 4</div>
+												<div class="option str-text" data-value="6">Тема 5</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
 								<textarea class="main-form__input main-form__input--textarea str-text" name="" id=""  maxlength="1000" type="text" placeholder="*Ваше сообщения" style=""></textarea>
-								<!-- <textarea class="main-form__input def-text" maxlength="1000" type="text" placeholder="*Ваше сообщения" style=""></textarea> -->
 							</div>
 							<div class="main-form__options">
 								<div class="main-form__btn main-btn">
@@ -844,7 +860,7 @@
 									с <a class="main-form__police-link" href="#">политики конфиденциальности</a>
 								</div>
 							</div>
-						</div>
+						</form>
 
 						<div class="s5__form-wrp-decor-img img-wrp">
 							<svg width="299" height="844" viewBox="0 0 299 844" fill="none" xmlns="http://www.w3.org/2000/svg">
