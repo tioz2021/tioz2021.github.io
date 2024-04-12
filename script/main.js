@@ -52,6 +52,51 @@
   });
 })();
 
+(() => {
+  document.addEventListener("DOMContentLoaded", function () {
+    let popup = "";
+    const openBtn = document.querySelector(".openBtn");
+
+    if (openBtn.classList.contains("openBtn1")) {
+      popup = document.querySelector(".popup1");
+    } else if (openBtn.classList.contains("openBtn2")) {
+      popup = document.querySelector(".popup2");
+    } else {
+      popup = document.querySelector(".popup-form");
+    }
+
+    if (!openBtn) {
+      return false;
+    }
+
+    const popupContent = popup.querySelector(".popup-content");
+    const closeBtn = popup.querySelectorAll(".closeBtn");
+
+    openBtn.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.add("open");
+      popupContent.classList.add("open");
+    });
+
+    closeBtn.forEach((e) => {
+      e.addEventListener("click", function () {
+        popup.classList.remove("open");
+        popupContent.classList.remove("open");
+      });
+    });
+
+    document.addEventListener("click", function (event) {
+      if (
+        !popupContent.contains(event.target) &&
+        !openBtn.contains(event.target)
+      ) {
+        popup.classList.remove("open");
+        popupContent.classList.remove("open");
+      }
+    });
+  });
+})();
+
 // auto change height on textarea
 // (() => {
 //   const textarea = document.querySelector("textarea");
