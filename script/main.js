@@ -13,42 +13,49 @@
 
 (() => {
   document.addEventListener("DOMContentLoaded", function () {
-    const selectBox = document.querySelector(".select-box");
-    const dropdown = document.querySelector(".dropdown");
-    const options = document.querySelectorAll(".option");
-    const selectedCount = document.querySelector(".selected-count");
-    const selectedItemsInput = document.getElementById("selectedItems");
+    const selectBox = document.querySelectorAll(".select-box");
 
-    // toggler
-    selectBox.addEventListener("click", function () {
-      dropdown.style.display =
-        dropdown.style.display === "none" ? "block" : "none";
-    });
+    selectBox.forEach((e) => {
+      const dropdown = e.querySelector(".dropdown");
+      const options = e.querySelectorAll(".option");
+      const selectedCount = e.querySelector(".selected-count");
+      // const selectedItemsInput = document.getElementById("selectedItemsMainForm");
 
-    options.forEach(function (option) {
-      option.addEventListener("click", function () {
-        options.forEach(function (opt) {
-          opt.classList.remove("selected");
-        });
-        this.classList.add("selected");
-        updateSelectedCount();
-        updateSelectedItems();
+      // toggler
+      e.addEventListener("click", function () {
+        dropdown.classList.toggle("dropdown-active");
       });
+      // e.addEventListener("click", function () {
+      //   dropdown.style.display =
+      //     dropdown.style.display === "none" ? "block" : "none";
+      // });
+
+      options.forEach(function (option) {
+        option.addEventListener("click", function () {
+          console.log(option);
+          options.forEach(function (opt) {
+            opt.classList.remove("selected");
+          });
+          this.classList.add("selected");
+          updateSelectedCount();
+          updateSelectedItems();
+        });
+      });
+
+      function updateSelectedCount() {
+        const selectedOption = e.querySelector(".option.selected");
+        const selectedText = selectedOption
+          ? selectedOption.textContent
+          : "Ничего не выбрано";
+        selectedCount.textContent = selectedText;
+      }
+
+      function updateSelectedItems() {
+        const selectedOption = e.querySelector(".option.selected");
+        const selectedText = selectedOption ? selectedOption.textContent : "";
+        // selectedItemsInput.value = selectedText;
+      }
     });
-
-    function updateSelectedCount() {
-      const selectedOption = document.querySelector(".option.selected");
-      const selectedText = selectedOption
-        ? selectedOption.textContent
-        : "Ничего не выбрано";
-      selectedCount.textContent = selectedText;
-    }
-
-    function updateSelectedItems() {
-      const selectedOption = document.querySelector(".option.selected");
-      const selectedText = selectedOption ? selectedOption.textContent : "";
-      selectedItemsInput.value = selectedText;
-    }
   });
 })();
 
@@ -57,16 +64,16 @@
     let popup = "";
     const openBtn = document.querySelector(".openBtn");
 
+    if (!openBtn) {
+      return false;
+    }
+
     if (openBtn.classList.contains("openBtn1")) {
       popup = document.querySelector(".popup1");
     } else if (openBtn.classList.contains("openBtn2")) {
       popup = document.querySelector(".popup2");
     } else {
       popup = document.querySelector(".popup-form");
-    }
-
-    if (!openBtn) {
-      return false;
     }
 
     const popupContent = popup.querySelector(".popup-content");
