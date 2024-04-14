@@ -184,6 +184,22 @@
   }
   // .list__item-link
   &__item-link {
+    transition: color 250ms ease-in-out;
+
+    // .list__item-link svg path
+    svg path {
+      transition: fill 250ms ease-in-out;
+    }
+
+    // .list__item-link:hover
+    &:hover {
+      color: var(--bodi-2);
+
+      // .list__item-link:hover svg path
+      svg path {
+        fill: var(--bodi-2);
+      }
+    }
   }
 }
 

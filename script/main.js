@@ -11,6 +11,7 @@
   });
 })();
 
+// box selected
 (() => {
   document.addEventListener("DOMContentLoaded", function () {
     const selectBox = document.querySelectorAll(".select-box");
@@ -59,49 +60,143 @@
   });
 })();
 
+// toggled popups
 (() => {
   document.addEventListener("DOMContentLoaded", function () {
-    let popup = "";
-    const openBtn = document.querySelector(".openBtn");
+    const openBtns = document.querySelectorAll(".openBtn");
 
-    if (!openBtn) {
-      return false;
-    }
+    openBtns.forEach((openBtn) => {
+      openBtn.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        let popup = "";
+        if (openBtn.classList.contains("openBtn1")) {
+          popup = document.querySelector(".popup1");
+        } else if (openBtn.classList.contains("openBtn2")) {
+          popup = document.querySelector(".popup2");
+        } else {
+          popup = document.querySelector(".popup-form");
+        }
+        const popupContent = popup.querySelector(".popup-content");
 
-    if (openBtn.classList.contains("openBtn1")) {
-      popup = document.querySelector(".popup1");
-    } else if (openBtn.classList.contains("openBtn2")) {
-      popup = document.querySelector(".popup2");
-    } else {
-      popup = document.querySelector(".popup-form");
-    }
+        // Закрываем все открытые попапы
+        const allPopups = document.querySelectorAll(".popup");
+        allPopups.forEach((popup) => {
+          popup.classList.remove("open");
+          popup.querySelector(".popup-content").classList.remove("open");
+        });
 
-    const popupContent = popup.querySelector(".popup-content");
-    const closeBtn = popup.querySelectorAll(".closeBtn");
+        popup.classList.add("open");
+        popupContent.classList.add("open");
 
-    openBtn.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      popup.classList.add("open");
-      popupContent.classList.add("open");
-    });
-
-    closeBtn.forEach((e) => {
-      e.addEventListener("click", function () {
-        popup.classList.remove("open");
-        popupContent.classList.remove("open");
+        const closeBtn = popup.querySelectorAll(".closeBtn");
+        closeBtn.forEach((e) => {
+          e.addEventListener("click", function () {
+            popup.classList.remove("open");
+            popupContent.classList.remove("open");
+          });
+        });
       });
     });
 
     document.addEventListener("click", function (event) {
-      if (
-        !popupContent.contains(event.target) &&
-        !openBtn.contains(event.target)
-      ) {
-        popup.classList.remove("open");
-        popupContent.classList.remove("open");
-      }
+      const openBtnsArray = Array.from(openBtns); // Конвертируем NodeList в массив
+      const allPopups = document.querySelectorAll(".popup");
+      allPopups.forEach((popup) => {
+        const popupContent = popup.querySelector(".popup-content");
+        if (
+          !popupContent.contains(event.target) &&
+          !openBtnsArray.some((openBtn) => openBtn.contains(event.target))
+        ) {
+          popup.classList.remove("open");
+          popupContent.classList.remove("open");
+        }
+      });
     });
   });
+})();
+
+// (() => {
+//   document.addEventListener("DOMContentLoaded", function () {
+//     let popup = "";
+//     const openBtn = document.querySelector(".openBtn");
+
+//     if (!openBtn) {
+//       return false;
+//     }
+
+//     if (openBtn.classList.contains("openBtn1")) {
+//       popup = document.querySelector(".popup1");
+//     } else if (openBtn.classList.contains("openBtn2")) {
+//       popup = document.querySelector(".popup2");
+//     } else {
+//       popup = document.querySelector(".popup-form");
+//     }
+
+//     const popupContent = popup.querySelector(".popup-content");
+//     const closeBtn = popup.querySelectorAll(".closeBtn");
+
+//     openBtn.addEventListener("click", function (evt) {
+//       evt.preventDefault();
+//       popup.classList.add("open");
+//       popupContent.classList.add("open");
+//     });
+
+//     closeBtn.forEach((e) => {
+//       e.addEventListener("click", function () {
+//         popup.classList.remove("open");
+//         popupContent.classList.remove("open");
+//       });
+//     });
+
+//     document.addEventListener("click", function (event) {
+//       if (
+//         !popupContent.contains(event.target) &&
+//         !openBtn.contains(event.target)
+//       ) {
+//         popup.classList.remove("open");
+//         popupContent.classList.remove("open");
+//       }
+//     });
+//   });
+// })();
+
+// toggled cardHeader
+(() => {
+  const lists = document.querySelectorAll(".card-header__bottom-list");
+  const btns = document.querySelectorAll(".open-header-list");
+  const header = document.querySelector(".card-header__container"); // Получаем блок card-header
+
+  function toggledHeader() {
+    const targetIndex = Array.from(btns).indexOf(this);
+    const targetList = lists[targetIndex];
+
+    if (targetList.classList.contains("card-header__bottom-list--active")) {
+      targetList.classList.remove("card-header__bottom-list--active");
+      return;
+    }
+
+    lists.forEach((list) =>
+      list.classList.remove("card-header__bottom-list--active")
+    );
+    targetList.classList.add("card-header__bottom-list--active");
+  }
+
+  function closeAllLists() {
+    lists.forEach((list) =>
+      list.classList.remove("card-header__bottom-list--active")
+    );
+  }
+
+  if (btns) {
+    btns.forEach((btn) => {
+      btn.addEventListener("click", toggledHeader);
+    });
+  }
+
+  // Добавляем обработчик события для блока card-header
+  if (header) {
+    header.addEventListener("mouseleave", closeAllLists);
+  }
 })();
 
 // auto change height on textarea

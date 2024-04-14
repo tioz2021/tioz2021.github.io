@@ -671,6 +671,19 @@ template {
           text-decoration-skip-ink: none;
 }
 
+.list__item-link {
+  transition: color 250ms ease-in-out;
+}
+.list__item-link svg path {
+  transition: fill 250ms ease-in-out;
+}
+.list__item-link:hover {
+  color: var(--bodi-2);
+}
+.list__item-link:hover svg path {
+  fill: var(--bodi-2);
+}
+
 .swiper .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
@@ -972,6 +985,8 @@ input {
   background: var(--bodi1-1);
   padding-left: 60px;
   padding-right: 60px;
+  padding-top: 12px;
+  padding-bottom: 16px;
   align-items: center;
 }
 .header__logo {
@@ -1045,7 +1060,9 @@ input {
   z-index: 2;
 }
 .s1__tvr-list {
-  margin-top: 344px;
+  box-sizing: border-box;
+  padding-top: 44px;
+  margin-top: 300px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -1589,6 +1606,166 @@ input {
   top: 29px;
   right: -60px;
 }
+.card-box {
+  position: relative;
+  box-sizing: border-box;
+  padding-top: 212px;
+  padding-bottom: 142px;
+  background: var(--bodi-2);
+}
+.card-box__container {
+  flex-direction: row;
+  align-items: center;
+}
+.card-box__img {
+  position: relative;
+  z-index: 2;
+  width: 882px;
+  height: 600px;
+}
+.card-box__info {
+  position: relative;
+  z-index: 2;
+  width: 882px;
+}
+.card-box__list {
+  width: 736px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+.card-box__list-item-icon {
+  width: 128px;
+  height: 128px;
+}
+.card-box__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60px;
+  justify-content: unset;
+  margin-bottom: 12px;
+}
+.card-box__text-list-item {
+  margin-bottom: 4px;
+}
+.card-box__text-list-item-text-number {
+  font-weight: 400;
+  color: var(--bodi1-1);
+}
+.card-box__text-list-item-text {
+  font-weight: 400;
+  color: var(--bodi1-1);
+}
+.card-box__decoration-img {
+  position: absolute;
+}
+.card-box__decoration-img--one {
+  width: 942px;
+  height: 353px;
+  left: 0;
+  top: 176px;
+}
+.card-box__decoration-img--two {
+  width: 1758px;
+  height: 514px;
+  right: 0;
+  top: 366px;
+}
+
+.card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  z-index: 3;
+}
+.card-header__container {
+  width: 1676px;
+  flex-wrap: wrap;
+  margin-left: 0;
+}
+.card-header__top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.card-header__list {
+  width: auto;
+}
+.card-header__list .list__item {
+  margin-right: 24px;
+}
+.card-header__list .list__item-link {
+  display: flex;
+  align-items: center;
+}
+.card-header__arrow-bottom {
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
+  margin-top: 2px;
+}
+.card-header__returnBtn {
+  width: 116px;
+  height: 116px;
+  background-color: #169da0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  will-change: transform;
+  transition: transform 250ms ease-in-out;
+  transform: scale(1);
+}
+.card-header__returnBtn:hover {
+  transform: scale(1.05);
+}
+.card-header__returnBtn-icon-wrp {
+  width: 60px;
+  height: 60px;
+}
+.card-header__bottom-list {
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 174px;
+  overflow: hidden;
+  transition: all 500ms ease-in-out;
+  height: 0;
+  padding-top: 0;
+}
+.card-header__bottom-list--active {
+  padding-top: 10px;
+  height: 218px;
+}
+.card-header__bottom-list-item {
+  height: 44px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+}
+.card-header__bottom-list-item:last-child {
+  margin-bottom: 28px;
+}
+.card-header__bottom-list-item.active .card-header__bottom-list-link, .card-header__bottom-list-item:hover .card-header__bottom-list-link {
+  color: var(--bodi-2);
+}
+.card-header__bottom-list-item.active .card-header__bottom-list-icon svg path, .card-header__bottom-list-item:hover .card-header__bottom-list-icon svg path {
+  fill: var(--bodi-2);
+}
+.card-header__bottom-list-icon {
+  width: 36px;
+  height: 36px;
+  margin-right: 8px;
+}
+.card-header__bottom-list-icon svg path {
+  transition: fill 250ms ease-in-out;
+}
+.card-header__bottom-list-link {
+  color: var(--bodi1-2);
+  transition: color 250ms ease-in-out;
+}
+
 @media screen and (max-width: 1200px) {
   .container {
     max-width: 768px;
