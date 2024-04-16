@@ -12,6 +12,8 @@
 
   function scroll_slider_block() {
     const scrollingBlock = document.querySelector(".s3");
+    if (!scrollingBlock) return;
+
     const scrollTop = window.scrollY || window.pageYOffset;
 
     console.log(scrollTop);

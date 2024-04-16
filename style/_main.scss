@@ -851,8 +851,8 @@
 .card-box {
   position: relative;
   box-sizing: border-box;
-  padding-top: 212rem;
-  padding-bottom: 142rem;
+  padding-top: 197rem;
+  padding-bottom: 197rem;
   background: var(--bodi-2);
 
   // .card-box__container
@@ -863,9 +863,12 @@
   // .card-box__img
   &__img {
     position: relative;
+    top: 56rem;
     z-index: 2;
     width: 882rem;
     height: 600rem;
+
+    margin-right: 37rem;
   }
   // .card-box__info
   &__info {
