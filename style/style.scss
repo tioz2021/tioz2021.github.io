@@ -32,8 +32,8 @@
 html {
   overflow-x: hidden;
   scroll-behavior: smooth;
-  // font-size: 0.05208vw;
-  // font-size: 1px;
+  font-size: 0.05208vw;
+  // font-size: 1rem;
 }
 
 body {
@@ -81,7 +81,7 @@ input {
   }
 
   .container {
-    max-width: 768px;
+    max-width: 768rem;
   }
 
   @import "_adaptive-tab";
@@ -94,7 +94,7 @@ input {
   }
 
   .container {
-    max-width: 360px;
+    max-width: 360rem;
   }
   @import "_adaptive-mob";
 }

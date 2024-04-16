@@ -1,7 +1,7 @@
 .big-title {
   font-family: var(--second-family);
   font-weight: 400;
-  font-size: 100px;
+  font-size: 100rem;
   line-height: 90%;
   text-align: center;
   color: var(--bodi1-1);
@@ -13,13 +13,13 @@
   span {
     font-family: var(--font-family);
     font-weight: 600;
-    font-size: 90px;
+    font-size: 90rem;
   }
 }
 
 .def-title {
   font-weight: 500;
-  font-size: 44px;
+  font-size: 44rem;
   line-height: 120%;
   text-align: center;
   color: var(--bodi1-1);
@@ -28,7 +28,7 @@
 .small-title {
   font-family: var(--second-family);
   font-weight: 400;
-  font-size: 34px;
+  font-size: 34rem;
   line-height: 110%;
   text-align: center;
   color: var(--bodi1-1);
@@ -36,14 +36,14 @@
 
 .str-text {
   font-weight: 500;
-  font-size: 32px;
+  font-size: 32rem;
   line-height: 120%;
   color: var(--bodi1-1);
 }
 
 .def-text {
   font-weight: 600;
-  font-size: 24px;
+  font-size: 24rem;
   line-height: 120%;
   color: var(--bodi1-2);
 }
@@ -51,7 +51,7 @@
 .small-text {
   font-family: var(--font-family);
   font-weight: 400;
-  font-size: 20px;
+  font-size: 20rem;
   line-height: 100%;
   color: var(--bodi1-1);
 }

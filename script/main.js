@@ -20,17 +20,17 @@
     if (scrollTop >= 5350 && scrollTop <= 5650) {
       if (scrollingBlock.classList.contains("fixed") == false) {
         scrollingBlock.classList.add("fixed");
-        scrollingBlock.style.top = "-1412px";
+        scrollingBlock.style.top = "-1412rem";
       }
     } else if (scrollTop <= 5350) {
       if (scrollingBlock.classList.contains("fixed") == true) {
         scrollingBlock.classList.remove("fixed");
-        scrollingBlock.style.top = "3949px";
+        scrollingBlock.style.top = "3949rem";
       }
     } else if (scrollTop >= 5650) {
       if (scrollingBlock.classList.contains("fixed") == true) {
         scrollingBlock.classList.remove("fixed");
-        scrollingBlock.style.top = "4249px";
+        scrollingBlock.style.top = "4249rem";
       }
     }
     if (scrollTop >= 5351 && scrollTop <= 5450) s3_swiper.slideTo(0, 1000);
@@ -54,6 +54,8 @@
       // toggler
       e.addEventListener("click", function () {
         dropdown.classList.toggle("dropdown-active");
+        dropdown.parentNode.classList.toggle("disabled-border");
+        console.log(dropdown.parentNode);
       });
       // e.addEventListener("click", function () {
       //   dropdown.style.display =
