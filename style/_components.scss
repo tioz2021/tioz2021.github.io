@@ -45,8 +45,18 @@
 
   // .main-btn span
   span {
+    will-change: transform;
+    transition: transform 500ms ease-in-out;
+    transform: scale(1);
     line-height: 100%;
     color: var(--bodi-1);
+  }
+
+  // .main-btn span
+  &:hover {
+    span {
+      transform: scale(1.15);
+    }
   }
 }
 
@@ -169,10 +179,22 @@
     color: var(--bodi1-1);
     text-decoration: underline;
     text-decoration-skip-ink: none;
+
+    opacity: 1;
+    transition: opacity 250ms ease-in-out;
+
+    &:hover {
+      opacity: 0.7;
+    }
   }
 }
 
 .logo {
+  // .logo lottie-player
+  lottie-player {
+    transform: translate(-50%, -50%) scale(1.25);
+  }
+
   // .logo__svg
   &__svg {
   }
@@ -259,6 +281,7 @@
   box-sizing: border-box;
   padding: 24px;
   top: 68px;
+  z-index: 2;
 
   display: none;
 }
