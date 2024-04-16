@@ -9,6 +9,35 @@
       el: ".swiper-pagination",
     },
   });
+
+  function scroll_slider_block() {
+    const scrollingBlock = document.querySelector(".s3");
+    const scrollTop = window.scrollY || window.pageYOffset;
+
+    console.log(scrollTop);
+
+    // s2 scroller 1
+    if (scrollTop >= 5350 && scrollTop <= 5650) {
+      if (scrollingBlock.classList.contains("fixed") == false) {
+        scrollingBlock.classList.add("fixed");
+        scrollingBlock.style.top = "-1412px";
+      }
+    } else if (scrollTop <= 5350) {
+      if (scrollingBlock.classList.contains("fixed") == true) {
+        scrollingBlock.classList.remove("fixed");
+        scrollingBlock.style.top = "3949px";
+      }
+    } else if (scrollTop >= 5650) {
+      if (scrollingBlock.classList.contains("fixed") == true) {
+        scrollingBlock.classList.remove("fixed");
+        scrollingBlock.style.top = "4249px";
+      }
+    }
+    if (scrollTop >= 5351 && scrollTop <= 5450) s3_swiper.slideTo(0, 1000);
+    else if (scrollTop >= 5451 && scrollTop <= 5550) s3_swiper.slideTo(1, 1000);
+  }
+
+  window.addEventListener("scroll", scroll_slider_block);
 })();
 
 // box selected

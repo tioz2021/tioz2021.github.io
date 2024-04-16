@@ -597,6 +597,11 @@ template {
   transform: scale(1.15);
 }
 
+.fixed {
+  position: fixed !important;
+  z-index: 10;
+}
+
 .main-form {
   width: 760px;
   box-sizing: border-box;
@@ -1149,7 +1154,7 @@ input {
 .s2 {
   box-sizing: border-box;
   padding-top: 184px;
-  padding-bottom: 160px;
+  padding-bottom: 189px;
   position: relative;
   background: var(--bodi-2);
 }
@@ -1277,11 +1282,19 @@ input {
 }
 
 .s3 {
-  position: relative;
+  width: 100%;
+  top: 3949px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   box-sizing: border-box;
   padding-top: 160px;
   background: var(--bodi-1);
-  margin-bottom: 120px;
+}
+.s3--fake {
+  width: 100%;
+  height: 2317px;
+  margin-bottom: 512px;
 }
 .s3__container {
   max-width: 1920px;
@@ -1331,7 +1344,7 @@ input {
   width: 1499px;
   height: 540px;
   position: absolute;
-  top: 1235px;
+  top: 1212px;
   z-index: 3;
 }
 .s3__main-title-img--center {
@@ -1339,11 +1352,12 @@ input {
   z-index: 2;
   width: 320px;
   height: 310px;
+  margin-left: -27px;
 }
 .s3__white-bg-wrp {
   width: 100%;
   border-radius: 1000px 1000px 0 0;
-  margin-top: -65px;
+  margin-top: -76px;
   background: var(--bodi1-1);
   box-sizing: border-box;
   padding-top: 308px;
@@ -1357,14 +1371,14 @@ input {
   height: 179px;
   position: absolute;
   left: 122px;
-  top: 1819px;
+  top: 1797px;
 }
 .s3__main-title-img--right {
   width: 200px;
   height: 200px;
   position: absolute;
   right: 162px;
-  top: 1819px;
+  top: 1788px;
 }
 .s3__swiper {
   width: 882px;
@@ -1406,7 +1420,7 @@ input {
   margin-bottom: 44px;
 }
 .s3__slide-text--last {
-  margin-bottom: 56px;
+  margin-bottom: 40px;
 }
 .s3__slide-title--green {
   color: var(--bodi-2);
@@ -1425,18 +1439,18 @@ input {
   width: 534px;
   height: 726px;
   position: absolute;
-  top: 758px;
-  left: 69px;
+  top: 703px;
+  left: 57px;
 }
 .s3__decor--left lottie-player {
-  transform: translate(-50%, -50%) scale(1.2);
+  transform: translate(-50%, -50%) scale(1.3);
 }
 .s3__decor--right {
   width: 390px;
   height: 730px;
   position: absolute;
-  top: 705px;
-  right: 115px;
+  top: 628px;
+  right: 69px;
 }
 .s3__decor--right lottie-player {
   transform: translate(-50%, -50%) scale(1.2);

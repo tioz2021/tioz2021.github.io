@@ -60,6 +60,11 @@
   }
 }
 
+.fixed {
+  position: fixed !important;
+  z-index: 10;
+}
+
 .s5 {
   // .s5__form
   &__form {
