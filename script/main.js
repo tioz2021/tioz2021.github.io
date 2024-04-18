@@ -5,11 +5,11 @@
 
   // preloader
   document.addEventListener("DOMContentLoaded", function () {
-    setTimeout(() => {
-      if (document.querySelector(".preloader"))
-        document.querySelector(".preloader").classList.add("disabled");
-      // document.querySelector(".main-wrp").classList.add("active");
-    }, 2250);
+    // setTimeout(() => {
+    //   if (document.querySelector(".preloader"))
+    //     document.querySelector(".preloader").classList.add("disabled");
+    //   // document.querySelector(".main-wrp").classList.add("active");
+    // }, 2250);
 
     // card lottie animation timing
     if (

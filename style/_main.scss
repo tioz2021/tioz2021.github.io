@@ -115,7 +115,7 @@
     width: 560rem;
     height: 758rem;
     position: absolute;
-    top: 234rem;
+    top: 243rem;
     right: 308rem;
     z-index: 2;
 
@@ -156,6 +156,15 @@
       }
     }
   }
+
+  // .s1__tvr-list-item-link
+  &__tvr-list-item-link {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   // .s1__tvr-list-img
   &__tvr-list-img {
     width: 270rem;

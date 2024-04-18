@@ -69,6 +69,18 @@ input {
   outline: unset;
 }
 
+.svg-web {
+  display: block;
+}
+
+.svg-tab {
+  display: none;
+}
+
+.s3__main-title-tab {
+  display: none;
+}
+
 // main 1920v
 @import "_main.scss";
 
@@ -78,11 +90,53 @@ input {
 // 768
 @media screen and (max-width: 1200px) {
   html {
-    // font-size: 0.132vw;
+    font-size: 0.132vw;
   }
 
   .container {
+    padding-left: 44rem;
+    padding-right: 44rem;
     max-width: 768rem;
+  }
+
+  .svg-web {
+    display: none;
+  }
+
+  .svg-tab {
+    display: block;
+  }
+
+  .big-title {
+    font-size: 80rem;
+    line-height: 100%;
+
+    // .big-title span
+    span {
+      font-size: 70rem;
+    }
+  }
+
+  .def-title {
+    font-size: 32rem;
+  }
+
+  .str-text {
+    font-size: 26rem;
+  }
+
+  .def-text {
+    font-weight: 600;
+    font-size: 20rem;
+    line-height: 120%;
+  }
+
+  .small-text {
+    font-size: 16rem;
+  }
+
+  .s3__main-title-tab {
+    display: flex;
   }
 
   @import "_adaptive-tab";
