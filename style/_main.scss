@@ -420,7 +420,7 @@
   }
 
   width: 100%;
-  top: 3949rem;
+  top: 3948rem;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -500,7 +500,7 @@
   &__white-bg-wrp {
     width: 100%;
     border-radius: 1000rem 1000rem 0 0;
-    margin-top: -76rem;
+    margin-top: -75rem;
     background: var(--bodi1-1);
     box-sizing: border-box;
     // padding-top: 120rem;
@@ -947,6 +947,8 @@
   padding-bottom: 197rem;
   background: var(--bodi-2);
 
+  min-height: 100vh;
+
   // .card-box__container
   &__container {
     flex-direction: row;
@@ -996,17 +998,21 @@
   }
   // .card-box__text-list-item
   &__text-list-item {
+    display: flex;
     margin-bottom: 4rem;
   }
   // .card-box__text-list-item-text-number
   &__text-list-item-text-number {
     font-weight: 400;
     color: var(--bodi1-1);
+    width: 20rem;
+    margin-right: 10rem;
   }
   // .card-box__text-list-item-text
   &__text-list-item-text {
     font-weight: 400;
     color: var(--bodi1-1);
+    width: 850rem;
   }
   // .card-box__decoration-img
   &__decoration-img {

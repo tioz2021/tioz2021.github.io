@@ -1,7 +1,9 @@
 // other
 (() => {
   // init AOS
-  AOS.init();
+  AOS.init({
+    once: true, // Глобально устанавливаем опцию once для всех анимаций
+  });
 
   // preloader
   document.addEventListener("DOMContentLoaded", function () {
