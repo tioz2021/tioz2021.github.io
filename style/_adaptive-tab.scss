@@ -369,6 +369,11 @@
   margin-bottom: 16rem;
 }
 
+.s4__title i {
+  display: block;
+  width: 100%;
+}
+
 .s4__main-img {
   width: 678rem;
   height: 332rem;
@@ -854,4 +859,8 @@
   width: 635rem;
   height: 237rem;
   top: 801rem;
+}
+
+.dropdown {
+  border-radius: 12rem;
 }

@@ -77,6 +77,10 @@ input {
   display: none;
 }
 
+.svg-mob {
+  display: none;
+}
+
 .s3__main-title-tab {
   display: none;
 }
@@ -145,11 +149,41 @@ input {
 // 360
 @media screen and (max-width: 600px) {
   html {
-    // font-size: 0.278vw;
+    font-size: 0.278vw;
   }
 
   .container {
     max-width: 360rem;
+    padding-left: 14rem;
+    padding-right: 14rem;
   }
+
+  .big-title {
+    font-size: 40rem;
+
+    // .big-title span
+    span {
+      font-size: 36rem;
+    }
+  }
+  .def-title {
+    font-size: 20rem;
+  }
+
+  .small-title {
+    font-size: 20rem;
+  }
+
+  .str-text {
+    font-size: 16rem;
+  }
+  .def-text {
+    font-size: 12rem;
+  }
+
+  .svg-mob {
+    display: block !important;
+  }
+
   @import "_adaptive-mob";
 }

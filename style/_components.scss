@@ -313,6 +313,8 @@
 
 .swiper .s3__swiper-pagination {
   bottom: var(--swiper-pagination-bottom, 0rem) !important;
+  left: 50% !important;
+  transform: translateX(-50%);
 }
 
 .custom-select {
