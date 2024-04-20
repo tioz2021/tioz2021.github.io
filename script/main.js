@@ -266,8 +266,9 @@
             }, 850);
           }
 
-          if (entry.target.classList.contains("s3__main-title-img") == true) {
-            entry.target.classList.add("anim");
+          if (entry.target.classList.contains("s3__main-text") == true) {
+            // entry.target.classList.add("anim");
+            document.querySelector(".s3__main-title-img").classList.add("anim");
             setTimeout(() => {
               document.querySelector(".s3__decor--left lottie-player").play();
             }, 150);
@@ -304,7 +305,7 @@
   // Список селекторов для анимации
   const selectors = [
     ".s2__main-img--center",
-    ".s3__main-title-img",
+    ".s3__main-text",
     ".footer__decoration-box .wrp",
   ];
 
