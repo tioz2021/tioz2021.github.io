@@ -1128,6 +1128,14 @@
     height: 16rem;
     margin-left: 8rem;
     margin-top: 2rem;
+
+    transform: rotate(0deg);
+    transition: transform 500ms ease-in-out;
+
+    // .card-header__arrow-bottom
+    &.active {
+      transform: rotate(180deg);
+    }
   }
 
   // .card-header__returnBtn
@@ -1351,4 +1359,10 @@
 
 .footer404 .footer__body-top-decoration {
   display: none;
+}
+
+.footer404 .footer__decoration-box-text {
+  margin-left: -31rem;
+  position: relative;
+  top: -6rem;
 }

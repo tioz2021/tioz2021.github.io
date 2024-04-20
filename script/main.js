@@ -207,12 +207,21 @@
   const btns = document.querySelectorAll(".open-header-list");
   const header = document.querySelector(".card-header__container"); // Получаем блок card-header
 
+  const decor1 = document.querySelector(
+    ".open-header-list1 .card-header__arrow-bottom"
+  );
+  const decor2 = document.querySelector(
+    ".open-header-list2 .card-header__arrow-bottom"
+  );
+
   function toggledHeader() {
     const targetIndex = Array.from(btns).indexOf(this);
     const targetList = lists[targetIndex];
 
     if (targetList.classList.contains("card-header__bottom-list--active")) {
       targetList.classList.remove("card-header__bottom-list--active");
+      decor1.classList.remove("active");
+      decor2.classList.remove("active");
       return;
     }
 
@@ -220,12 +229,23 @@
       list.classList.remove("card-header__bottom-list--active")
     );
     targetList.classList.add("card-header__bottom-list--active");
+
+    if (lists[0].classList.contains("card-header__bottom-list--active")) {
+      decor1.classList.add("active");
+      decor2.classList.remove("active");
+    }
+    if (lists[1].classList.contains("card-header__bottom-list--active")) {
+      decor2.classList.add("active");
+      decor1.classList.remove("active");
+    }
   }
 
   function closeAllLists() {
     lists.forEach((list) =>
       list.classList.remove("card-header__bottom-list--active")
     );
+    decor1.classList.remove("active");
+    decor2.classList.remove("active");
   }
 
   if (btns) {
