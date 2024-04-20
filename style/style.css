@@ -810,6 +810,7 @@ template {
 }
 
 .popup {
+  overflow-x: hidden;
   opacity: 0;
   visibility: hidden;
   position: fixed;
@@ -825,7 +826,6 @@ template {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow-y: scroll;
   overflow-y: scroll;
   /* Скрыть полосу прокрутки */
   scrollbar-width: none; /* для Firefox */

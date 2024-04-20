@@ -377,6 +377,7 @@
 }
 
 .popup {
+  overflow-x: hidden;
   opacity: 0;
   visibility: hidden;
   position: fixed;
@@ -396,7 +397,6 @@
 
   overflow-y: scroll;
 
-  overflow-y: scroll;
   /* Скрыть полосу прокрутки */
   scrollbar-width: none; /* для Firefox */
   -ms-overflow-style: none; /* для Internet Explorer и Edge */
