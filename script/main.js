@@ -266,7 +266,7 @@
             }, 850);
           }
 
-          if (entry.target.classList.contains("s3__main-text") == true) {
+          if (entry.target.classList.contains("s3__last-text") == true) {
             // entry.target.classList.add("anim");
             document.querySelector(".s3__main-title-img").classList.add("anim");
             setTimeout(() => {
@@ -305,7 +305,7 @@
   // Список селекторов для анимации
   const selectors = [
     ".s2__main-img--center",
-    ".s3__main-text",
+    ".s3__last-text",
     ".footer__decoration-box .wrp",
   ];
 
