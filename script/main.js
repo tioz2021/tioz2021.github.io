@@ -13,12 +13,12 @@
         if (document.querySelector(".preloader"))
           document.querySelector(".preloader").classList.add("disabled");
         // document.querySelector(".main-wrp").classList.add("active");
-      }, 1000);
+      }, 1300);
       setTimeout(() => {
         if (document.querySelector(".preloader"))
           document.querySelector(".preloader").style.zIndex = "-1";
         // document.querySelector(".main-wrp").classList.add("active");
-      }, 2000);
+      }, 1800);
 
       // fs main page animation timing
       if (document.querySelector(".s1__decoration-bg lottie-player")) {
@@ -26,13 +26,13 @@
           document
             .querySelector(".s1__decoration-bg--left lottie-player")
             .play();
-        }, 1225);
+        }, 1625);
 
         setTimeout(() => {
           document
             .querySelector(".s1__decoration-bg--right lottie-player")
             .play();
-        }, 1625);
+        }, 2025);
       }
     }
 
