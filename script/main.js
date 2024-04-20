@@ -8,12 +8,16 @@
   // preloader
   document.addEventListener("DOMContentLoaded", function () {
     if (document.querySelector(".preloader")) {
-      document.querySelector(".preloader").classList.add("disabled");
+      setTimeout(() => {
+        if (document.querySelector(".preloader"))
+          document.querySelector(".preloader").classList.add("disabled");
+        // document.querySelector(".main-wrp").classList.add("active");
+      }, 1000);
       setTimeout(() => {
         if (document.querySelector(".preloader"))
           document.querySelector(".preloader").style.zIndex = "-1";
         // document.querySelector(".main-wrp").classList.add("active");
-      }, 2250);
+      }, 2000);
 
       // fs main page animation timing
       if (document.querySelector(".s1__decoration-bg lottie-player")) {
