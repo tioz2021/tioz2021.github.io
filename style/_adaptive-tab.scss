@@ -111,7 +111,10 @@
 }
 
 .s1__decoration-bottom-bg {
-  display: none;
+  // display: none;
+  width: 768rem;
+  height: 24rem;
+  top: 1130rem;
 }
 
 .s1__decoration-bg--left {
@@ -212,7 +215,7 @@
   width: 100%;
   height: 24rem;
   position: absolute;
-  top: 0;
+  top: -2rem;
 }
 
 .s3--fake {

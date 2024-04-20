@@ -241,13 +241,13 @@
 
 .s3__tab-title .s3__tab-title-text1 {
   font-weight: 600;
-  font-size: 36px;
+  font-size: 36rem;
   line-height: 100%;
   text-align: center;
 }
 .s3__tab-title .s3__tab-title-text2 {
   font-weight: 400;
-  font-size: 40px;
+  font-size: 40rem;
   line-height: 90%;
 }
 .s3__tab-title .s3__tab-title-text3 {
@@ -825,4 +825,13 @@
   height: 116rem;
   top: 455rem;
   // display: none;
+}
+
+.s1__decoration-bottom-bg .svg-tab {
+  display: none;
+}
+.s1__decoration-bottom-bg {
+  top: 660rem;
+  width: 360rem;
+  height: 16rem;
 }
