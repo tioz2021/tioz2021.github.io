@@ -546,6 +546,9 @@ template {
   font-weight: 400;
 }
 
+.main-wrp {
+  margin-top: -1rem;
+}
 .preloader {
   position: fixed;
   top: 0;
@@ -2874,6 +2877,10 @@ input {
   .s3__slide-desk br {
     display: block;
   }
+  .preloader__logo {
+    width: 240rem;
+    height: 168rem;
+  }
 }
 @media screen and (max-width: 600px) {
   html {
@@ -3586,5 +3593,9 @@ input {
   }
   .s3 {
     margin-bottom: 60rem;
+  }
+  .preloader__logo {
+    width: 120rem;
+    height: 78rem;
   }
 }
