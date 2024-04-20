@@ -24,23 +24,42 @@
 }
 
 .s1__list-item:nth-child(1) {
-  animation: m_zoom_in 550ms ease-in-out 2350ms normal forwards running;
+  animation: m_zoom_in 550ms ease-in-out 1225ms normal forwards running;
 }
 .s1__list-item:nth-child(2) {
-  animation: m_zoom_in 550ms ease-in-out 2450ms normal forwards running;
+  animation: m_zoom_in 550ms ease-in-out 1325ms normal forwards running;
 }
 .s1__list-item:nth-child(3) {
-  animation: m_zoom_in 550ms ease-in-out 2550ms normal forwards running;
+  animation: m_zoom_in 550ms ease-in-out 1425ms normal forwards running;
 }
 .s1__list-item:nth-child(4) {
-  animation: m_zoom_in 550ms ease-in-out 2650ms normal forwards running;
+  animation: m_zoom_in 550ms ease-in-out 1525ms normal forwards running;
 }
 .s1__list-item:nth-child(5) {
-  animation: m_zoom_in 550ms ease-in-out 2750ms normal forwards running;
+  animation: m_zoom_in 550ms ease-in-out 1625ms normal forwards running;
 }
 .s1__list-item:nth-child(6) {
-  animation: m_zoom_in 550ms ease-in-out 2850ms normal forwards running;
+  animation: m_zoom_in 550ms ease-in-out 1725ms normal forwards running;
 }
+
+// .s1__list-item:nth-child(1) {
+//   animation: m_zoom_in 550ms ease-in-out 2350ms normal forwards running;
+// }
+// .s1__list-item:nth-child(2) {
+//   animation: m_zoom_in 550ms ease-in-out 2450ms normal forwards running;
+// }
+// .s1__list-item:nth-child(3) {
+//   animation: m_zoom_in 550ms ease-in-out 2550ms normal forwards running;
+// }
+// .s1__list-item:nth-child(4) {
+//   animation: m_zoom_in 550ms ease-in-out 2650ms normal forwards running;
+// }
+// .s1__list-item:nth-child(5) {
+//   animation: m_zoom_in 550ms ease-in-out 2750ms normal forwards running;
+// }
+// .s1__list-item:nth-child(6) {
+//   animation: m_zoom_in 550ms ease-in-out 2850ms normal forwards running;
+// }
 
 @keyframes m_zoom_in {
   0% {

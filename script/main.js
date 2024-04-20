@@ -7,11 +7,29 @@
 
   // preloader
   document.addEventListener("DOMContentLoaded", function () {
-    // setTimeout(() => {
-    //   if (document.querySelector(".preloader"))
-    //     document.querySelector(".preloader").classList.add("disabled");
-    //   // document.querySelector(".main-wrp").classList.add("active");
-    // }, 2250);
+    if (document.querySelector(".preloader")) {
+      document.querySelector(".preloader").classList.add("disabled");
+      setTimeout(() => {
+        if (document.querySelector(".preloader"))
+          document.querySelector(".preloader").style.zIndex = "-1";
+        // document.querySelector(".main-wrp").classList.add("active");
+      }, 2250);
+
+      // fs main page animation timing
+      if (document.querySelector(".s1__decoration-bg lottie-player")) {
+        setTimeout(() => {
+          document
+            .querySelector(".s1__decoration-bg--left lottie-player")
+            .play();
+        }, 1225);
+
+        setTimeout(() => {
+          document
+            .querySelector(".s1__decoration-bg--right lottie-player")
+            .play();
+        }, 1625);
+      }
+    }
 
     // card lottie animation timing
     if (
@@ -26,19 +44,6 @@
           .querySelector(".card-box__decoration-img--two lottie-player")
           .play();
       }, 1000);
-    }
-
-    // fs main page animation timing
-    if (document.querySelector(".s1__decoration-bg lottie-player")) {
-      setTimeout(() => {
-        document.querySelector(".s1__decoration-bg--left lottie-player").play();
-      }, 2350);
-
-      setTimeout(() => {
-        document
-          .querySelector(".s1__decoration-bg--right lottie-player")
-          .play();
-      }, 2850);
     }
   });
 })();
