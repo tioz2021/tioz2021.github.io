@@ -872,11 +872,16 @@
 .s3 {
   margin-bottom: 120rem;
 }
-.s3__slide-desk br {
-  display: block;
-}
 
 .preloader__logo {
   width: 240rem;
   height: 168rem;
+}
+
+.s1__decoration-bottom-bg2 {
+  display: none;
+}
+
+.popup__decor--two lottie-player {
+  transform: translate(-50%, -50%) scale(1.1);
 }

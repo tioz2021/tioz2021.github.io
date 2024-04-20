@@ -477,7 +477,11 @@
   cursor: pointer;
   background-color: var(--bodi2-1);
   border-radius: 50%;
-  transition: all 250ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+.popup .closeBtn svg path {
+  transition: stroke 500ms ease-in-out;
 }
 
 .popup .popup__content-btn {
@@ -489,7 +493,12 @@
 }
 
 .popup .closeBtn:hover {
-  transform: scale(1.025);
+  background-color: var(--bodi1-1);
+
+  // .popup .closeBtn:hover svg path
+  svg path {
+    stroke: var(--bodi2-1);
+  }
 }
 .popup .closeBtn-icon-wrp {
   width: 60rem;
@@ -504,12 +513,22 @@
   height: 353rem;
   top: 0;
   left: 0;
+
+  // .popup__decor--one lottie-player
+  lottie-player {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
 }
 .popup__decor--two {
   width: 1758rem;
   height: 514rem;
   bottom: 60rem;
   right: 0;
+
+  // .popup__decor--two lottie-player
+  lottie-player {
+    transform: translate(-50%, -50%) scale(1.4);
+  }
 }
 
 .popup2 {

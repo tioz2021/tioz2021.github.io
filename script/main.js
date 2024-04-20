@@ -3,6 +3,7 @@
   // init AOS
   AOS.init({
     once: true, // Глобально устанавливаем опцию once для всех анимаций
+    duration: 800,
   });
 
   // preloader
@@ -54,112 +55,18 @@
 
 // slider?
 (() => {
-  var s3_swiper = new Swiper(".s3__swiper", {
-    slidesPerView: 1,
-    spaceBetween: 10,
-    loop: true,
-    effect: "fade",
-    grabCursor: true,
-
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  });
-
-  s3_swiper.disable();
-
-  function scroll_slider_block() {
-    const scrollingBlock = document.querySelector(".s3");
-    if (!scrollingBlock) return;
-
-    const scrollTop = window.scrollY || window.pageYOffset;
-
-    // console.log(scrollTop);
-
-    // s2 scroller 1
-    if (scrollTop >= 5350 && scrollTop <= 5650) {
-      if (scrollingBlock.classList.contains("fixed") == false) {
-        // scrollingBlock.classList.add("fixed");
-        // scrollingBlock.style.top = "-1412rem";
-      }
-    } else if (scrollTop <= 5350) {
-      if (scrollingBlock.classList.contains("fixed") == true) {
-        // scrollingBlock.classList.remove("fixed");
-        // scrollingBlock.style.top = "3949rem";
-      }
-    } else if (scrollTop >= 5650) {
-      if (scrollingBlock.classList.contains("fixed") == true) {
-        // scrollingBlock.classList.remove("fixed");
-        // scrollingBlock.style.top = "4249rem";
-      }
-    }
-    // if (scrollTop >= 5351 && scrollTop <= 5450) s3_swiper.slideTo(0, 1000);
-    // else if (scrollTop >= 5451 && scrollTop <= 5550) s3_swiper.slideTo(1, 1000);
-  }
-
-  window.addEventListener("scroll", scroll_slider_block);
-
-  // const scrollingBlock = document.querySelector(".s3__swiper-pagination");
-  // const elementChanged = document.querySelector(".s3");
-
-  // function scroll_slider_block() {
-  //   if (!scrollingBlock || !elementChanged) return;
-
-  //   const observer = new IntersectionObserver((entries) => {
-  //     entries.forEach((entry) => {
-  //       if (
-  //         entry.isIntersecting &&
-  //         !elementChanged.classList.contains("fixed")
-  //       ) {
-  //         const pos = window.scrollY;
-  //         console.log("fixed");
-  //         // Блок попал в область видимости и еще не зафиксирован
-  //         elementChanged.classList.add("fixed");
-  //         // elementChanged.style.top = "-1412rem";
-  //         elementChanged.style.top = "-1451rem";
-
-  //         const scrollCallbackTop = () => {
-  //           if (window.scrollY <= pos - 400) {
-  //             console.log("unFixed top?");
-
-  //             elementChanged.classList.remove("fixed");
-  //             elementChanged.style.top = "3949rem";
-
-  //             window.removeEventListener("scroll", scrollCallbackTop);
-  //           }
-  //         };
-
-  //         const scrollCallbackBot = () => {
-  //           if (window.scrollY >= pos + 400) {
-  //             console.log("unFixed bot?");
-
-  //             elementChanged.classList.remove("fixed");
-  //             elementChanged.style.top = "4249rem";
-
-  //             window.removeEventListener("scroll", scrollCallbackBot);
-  //           }
-  //         };
-
-  //         // if (window.scrollY >= pos + 400) {
-  //         //   console.log("unFixed bot?");
-  //         //   // elementChanged.style.top = "3949rem";
-  //         //   // elementChanged.classList.remove("fixed");
-  //         //   // window.removeEventListener("scroll", scrollCallback);
-  //         // }
-
-  //         // Добавляем обработчик прокрутки
-  //         window.addEventListener("scroll", scrollCallbackTop);
-  //         window.addEventListener("scroll", scrollCallbackBot);
-  //       }
-  //     });
-  //   });
-
-  //   observer.observe(scrollingBlock);
-  // }
-
-  // // Вызываем функцию при загрузке страницы
-  // window.addEventListener("load", scroll_slider_block);
+  // var s3_swiper = new Swiper(".s3__swiper", {
+  //   slidesPerView: 1,
+  //   spaceBetween: 10,
+  //   loop: true,
+  //   effect: "fade",
+  //   grabCursor: true,
+  //   pagination: {
+  //     el: ".swiper-pagination",
+  //     clickable: true,
+  //   },
+  // });
+  // if (s3_swiper) s3_swiper.disable();
 })();
 
 // box selected
@@ -240,6 +147,19 @@
 
         popup.classList.add("open");
         popupContent.classList.add("open");
+
+        // play animation popup1
+        setTimeout(() => {
+          document
+            .querySelector(".popup1 .popup__decor--one lottie-player")
+            .play();
+        }, 150);
+        setTimeout(() => {
+          document
+            .querySelector(".popup1 .popup__decor--two lottie-player")
+            .play();
+        }, 250);
+        // END play animation popup1
 
         const closeBtn = popup.querySelectorAll(".closeBtn");
         closeBtn.forEach((e) => {
@@ -346,6 +266,19 @@
           if (entry.target.classList.contains("wrp") == true) {
             entry.target.classList.add("anim");
           }
+
+          // if (entry.target.classList.contains("popup2") == true) {
+          //   setTimeout(() => {
+          //     document
+          //       .querySelector(".popup2 .popup__decor--one lottie-player")
+          //       .play();
+          //   }, 150);
+          //   setTimeout(() => {
+          //     document
+          //       .querySelector(".popup2 .popup__decor--two lottie-player")
+          //       .play();
+          //   }, 250);
+          // }
 
           // После того, как анимация выполнена, можно отключить наблюдение, если оно больше не нужно
           observer.unobserve(entry.target);

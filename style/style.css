@@ -903,7 +903,11 @@ template {
   cursor: pointer;
   background-color: var(--bodi2-1);
   border-radius: 50%;
-  transition: all 250ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+.popup .closeBtn svg path {
+  transition: stroke 500ms ease-in-out;
 }
 
 .popup .popup__content-btn {
@@ -915,7 +919,10 @@ template {
 }
 
 .popup .closeBtn:hover {
-  transform: scale(1.025);
+  background-color: var(--bodi1-1);
+}
+.popup .closeBtn:hover svg path {
+  stroke: var(--bodi2-1);
 }
 
 .popup .closeBtn-icon-wrp {
@@ -934,12 +941,18 @@ template {
   top: 0;
   left: 0;
 }
+.popup__decor--one lottie-player {
+  transform: translate(-50%, -50%) scale(1.2);
+}
 
 .popup__decor--two {
   width: 1758rem;
   height: 514rem;
   bottom: 60rem;
   right: 0;
+}
+.popup__decor--two lottie-player {
+  transform: translate(-50%, -50%) scale(1.4);
 }
 
 .popup2 {
@@ -1265,7 +1278,7 @@ input {
   height: 55rem;
 }
 .s1__tvr-list-text.aos-animate {
-  opacity: 0.5 !important;
+  opacity: 0.7 !important;
 }
 .s1__decoration-text {
   width: 271rem;
@@ -1273,6 +1286,7 @@ input {
   top: 706rem;
   right: 59rem;
   text-align: left;
+  z-index: 2;
 }
 .s1__decoration-bg {
   width: 1920rem;
@@ -1304,11 +1318,16 @@ input {
 }
 .s1__decoration-bottom-bg {
   width: 1920rem;
-  height: 24rem;
+  height: 26rem;
   position: absolute;
   top: 952rem;
   left: 0;
   z-index: 1;
+}
+.s1__decoration-bottom-bg2 {
+  bottom: -184rem;
+  top: unset;
+  transform: rotate(180deg);
 }
 
 .s2 {
@@ -1770,7 +1789,7 @@ input {
 }
 .footer__body-top-decoration {
   width: 100%;
-  height: 24rem;
+  height: 26rem;
   position: absolute;
   top: -24rem;
   left: 50%;
@@ -1843,6 +1862,8 @@ input {
   max-width: 232rem;
   margin-bottom: 98rem;
   margin-left: -6rem;
+  position: relative;
+  top: 6rem;
 }
 .footer__decoration-box-decor-icon {
   position: absolute;
@@ -1979,12 +2000,16 @@ input {
   justify-content: center;
   align-items: center;
   border-radius: 100%;
-  will-change: transform;
-  transition: transform 250ms ease-in-out;
-  transform: scale(1);
+  transition: all 500ms ease-in-out;
+}
+.card-header__returnBtn svg path {
+  transition: all 500ms ease-in-out;
 }
 .card-header__returnBtn:hover {
-  transform: scale(1.05);
+  background-color: var(--bodi1-1);
+}
+.card-header__returnBtn:hover svg path {
+  stroke: var(--bodi2-1);
 }
 .card-header__returnBtn-icon-wrp {
   width: 60rem;
@@ -2874,12 +2899,15 @@ input {
   .s3 {
     margin-bottom: 120rem;
   }
-  .s3__slide-desk br {
-    display: block;
-  }
   .preloader__logo {
     width: 240rem;
     height: 168rem;
+  }
+  .s1__decoration-bottom-bg2 {
+    display: none;
+  }
+  .popup__decor--two lottie-player {
+    transform: translate(-50%, -50%) scale(1.1);
   }
 }
 @media screen and (max-width: 600px) {
@@ -3597,5 +3625,11 @@ input {
   .preloader__logo {
     width: 120rem;
     height: 78rem;
+  }
+  .s3__slide-desk br {
+    display: block;
+  }
+  .s4__title-wrp {
+    margin-bottom: 24rem;
   }
 }
