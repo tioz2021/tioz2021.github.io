@@ -149,16 +149,29 @@
         popupContent.classList.add("open");
 
         // play animation popup1
-        setTimeout(() => {
-          document
-            .querySelector(".popup1 .popup__decor--one lottie-player")
-            .play();
-        }, 150);
-        setTimeout(() => {
-          document
-            .querySelector(".popup1 .popup__decor--two lottie-player")
-            .play();
-        }, 250);
+        if (openBtn.classList.contains("openBtn1")) {
+          setTimeout(() => {
+            document
+              .querySelector(".popup1 .popup__decor--one lottie-player")
+              .play();
+          }, 150);
+          setTimeout(() => {
+            document
+              .querySelector(".popup1 .popup__decor--two lottie-player")
+              .play();
+          }, 250);
+        } else if (openBtn.classList.contains("openBtn2")) {
+          setTimeout(() => {
+            document
+              .querySelector(".popup2 .popup__decor--one lottie-player")
+              .play();
+          }, 150);
+          setTimeout(() => {
+            document
+              .querySelector(".popup2 .popup__decor--two lottie-player")
+              .play();
+          }, 250);
+        }
         // END play animation popup1
 
         const closeBtn = popup.querySelectorAll(".closeBtn");

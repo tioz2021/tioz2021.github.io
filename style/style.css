@@ -915,7 +915,7 @@ template {
   width: 270rem;
   height: 80rem;
   border-radius: 24rem;
-  background: var(--bodi-2);
+  background: var(--bodi-2) !important;
 }
 
 .popup .closeBtn:hover {
@@ -960,7 +960,7 @@ template {
 }
 
 .popup2 .closeBtn {
-  background-color: var(--bodi2-2);
+  background-color: var(--bodi2-2) !important;
 }
 
 .popup-form {
@@ -2155,7 +2155,7 @@ input {
   display: none;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   html {
     font-size: 0.132vw;
   }

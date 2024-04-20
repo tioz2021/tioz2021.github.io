@@ -489,7 +489,7 @@
   width: 270rem;
   height: 80rem;
   border-radius: 24rem;
-  background: var(--bodi-2);
+  background: var(--bodi-2) !important;
 }
 
 .popup .closeBtn:hover {
@@ -536,7 +536,7 @@
 }
 
 .popup2 .closeBtn {
-  background-color: var(--bodi2-2);
+  background-color: var(--bodi2-2) !important;
 }
 
 .popup-form {
