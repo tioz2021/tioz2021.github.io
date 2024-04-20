@@ -96,6 +96,14 @@ input {
   display: block;
 }
 
+.s3__swiper-pagination {
+  display: none !important;
+}
+
+.s3__slide-desk br {
+  display: none;
+}
+
 // main 1920v
 @import "_main.scss";
 

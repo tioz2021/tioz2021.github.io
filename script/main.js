@@ -55,11 +55,15 @@
     spaceBetween: 10,
     loop: true,
     effect: "fade",
+    grabCursor: true,
 
     pagination: {
       el: ".swiper-pagination",
+      clickable: true,
     },
   });
+
+  s3_swiper.disable();
 
   function scroll_slider_block() {
     const scrollingBlock = document.querySelector(".s3");

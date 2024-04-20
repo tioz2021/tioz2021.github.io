@@ -300,7 +300,8 @@
 }
 
 .s3__slide-text--last {
-  margin-bottom: 32rem;
+  // margin-bottom: 32rem;
+  margin-bottom: 0;
 }
 
 .swiper .swiper-pagination-bullet {
@@ -834,4 +835,8 @@
   top: 660rem;
   width: 360rem;
   height: 16rem;
+}
+
+.s3 {
+  margin-bottom: 60rem;
 }
