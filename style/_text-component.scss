@@ -62,16 +62,27 @@
 }
 
 .title-wrp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 120px;
+
   // .title-wrp__pre-title
   &__pre-title {
+    margin-bottom: 24px;
   }
   // .title-wrp__pre-title-text
   &__pre-title-text {
   }
   // .title-wrp__text
   &__text {
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   // .title-wrp__desk
   &__desk {
+    max-width: 400px;
   }
 }
