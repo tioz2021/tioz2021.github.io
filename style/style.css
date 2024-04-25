@@ -997,6 +997,87 @@ template {
   background-color: #e6f4f3;
 }
 
+.main-form__fields-validation {
+  box-sizing: border-box;
+  padding: 8rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12rem;
+  line-height: 120%;
+  color: var(--bodi1-1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12rem;
+  background: var(--bodi2-2);
+  position: absolute;
+  opacity: 1;
+  transition: opacity 500ms ease-in-out;
+}
+
+.main-form__fields-validation.active {
+  opacity: 1;
+}
+
+.main-form__fields-validation--name {
+  top: 150rem;
+}
+
+.main-form__fields-validation--phone {
+  top: 256rem;
+}
+
+.main-form__fields-validation--mail {
+  top: 356rem;
+}
+
+.main-form__fields-validation--mess {
+  top: 645rem;
+}
+
+.main-form__fields-validation--name {
+  top: 109rem;
+}
+
+.main-form__fields-validation--phone {
+  top: 193rem;
+}
+
+.main-form__fields-validation--mail {
+  top: 278rem;
+}
+
+.main-form__fields-validation--mess {
+  top: 543rem;
+}
+
+.main-form__fields-validation {
+  padding: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  min-height: unset;
+  font-size: 8rem;
+  border-radius: 8rem;
+}
+
+.main-form__fields-validation--name {
+  top: 56rem;
+}
+
+.main-form__fields-validation--phone {
+  top: 102rem;
+}
+
+.main-form__fields-validation--mail {
+  top: 149rem;
+}
+
+.main-form__fields-validation--mess {
+  top: 334rem;
+}
+
 .card-box__list-item,
 .s1__list-item {
   opacity: 0;
