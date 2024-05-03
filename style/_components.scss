@@ -1268,3 +1268,35 @@
   top: 50%;
   transform: translate(-50%, -50%);
 }
+
+.user-box {
+  width: 176px;
+  height: 44px;
+  position: relative;
+  box-sizing: border-box;
+  padding-left: 56px;
+
+  display: flex;
+  flex-direction: column;
+
+  // .user-box__img
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 100%;
+    width: 44px;
+    height: 44px;
+  }
+  // .user-box__title
+  &__title {
+    margin-bottom: 2px;
+    color: var(--bodi-2-2);
+    text-align: left;
+  }
+  // .user-box__text
+  &__text {
+    color: var(--bodi-2-3);
+    text-align: left;
+  }
+}
