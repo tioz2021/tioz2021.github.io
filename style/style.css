@@ -575,8 +575,8 @@ template {
   width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
-  padding-left: 0rem;
-  padding-right: 0rem;
+  padding-left: 0px;
+  padding-right: 0px;
   display: flex;
 }
 
@@ -1457,6 +1457,80 @@ template {
 .user-box__text {
   color: var(--bodi-2-3);
   text-align: left;
+}
+
+.accordion {
+  width: 100%;
+  margin-bottom: 60px;
+}
+.accordion__item {
+  box-sizing: border-box;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-bottom: -1px;
+  border-radius: 12px;
+  cursor: pointer;
+  background: var(--theme-1-4);
+  position: relative;
+}
+.accordion__item.active .accordion__content {
+  max-height: 200px;
+}
+.accordion__item:last-child {
+  margin-bottom: 0;
+}
+.accordion__header {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 48px;
+  position: relative;
+}
+.accordion__header.active {
+  padding-bottom: 16px;
+}
+.accordion__header.active .accordion__icon {
+  transform: rotate(180deg);
+}
+.accordion__title {
+  min-height: 34px;
+  display: flex;
+  align-items: center;
+  color: var(--bodi-2-1);
+}
+.accordion__icon {
+  width: 36px;
+  height: 35px;
+  transform: rotate(0deg);
+  will-change: transform;
+  transition: all 500ms ease-in-out;
+}
+.accordion__content {
+  color: var(--bodi-2-1);
+  overflow: hidden;
+  box-sizing: border-box;
+  padding-bottom: 0;
+  will-change: max-height, padding-bottom;
+  transition: all 500ms ease-in-out;
+  max-height: 0;
+}
+.accordion-left-decor {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.accordion-line-decor {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
 }
 
 @keyframes glowing-button_line-anim__NqYIB {
@@ -2747,6 +2821,125 @@ input {
 .s13 {
   margin-top: 0;
   padding-top: 163px;
+}
+
+.s14 {
+  margin-bottom: 97px;
+}
+
+.s14__container {
+  max-width: 800px;
+  flex-direction: column;
+}
+
+.s14__title {
+  margin-bottom: 48px;
+}
+
+.footer {
+  position: relative;
+}
+.footer__container {
+  max-width: 800px;
+  position: relative;
+  flex-direction: column;
+}
+.footer__start {
+  margin-bottom: 120px;
+}
+.footer__title {
+  margin-bottom: 72px;
+  color: var(--bodi-2-1);
+}
+.footer__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__item {
+  position: relative;
+  border: 0.5px solid var(--dop-decor-bg);
+  border-radius: 24px;
+  width: 388px;
+  height: 320px;
+  -webkit-backdrop-filter: blur(110px);
+          backdrop-filter: blur(110px);
+  background: rgba(19, 24, 39, 0.3);
+}
+.footer__item-logo {
+  width: 387px;
+  height: 220px;
+}
+.footer__item-title {
+  color: var(--bodi-2-1);
+  margin-bottom: 11px;
+  margin-top: -5px;
+}
+.footer__item-text {
+  color: var(--bodi-2-2);
+}
+.footer__item-bg {
+  position: absolute;
+  z-index: -1;
+  width: 388px;
+  height: 320px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.footer__end {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 44px;
+}
+.footer__end-title {
+  width: 84px;
+  height: 24px;
+  margin-bottom: 36px;
+}
+.footer__end-link-list {
+  width: 342px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 39px;
+}
+.footer__end-link {
+  color: var(--bodi-2-2);
+}
+.footer__btn {
+  width: 200px;
+  height: 44px;
+  margin-bottom: 89px;
+}
+.footer__end-polici-link {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: underline;
+  color: var(--bodi-2-2);
+}
+.footer__end-polici-text {
+  color: var(--bodi-2-3);
+}
+.footer__line-bg {
+  width: 1200px;
+  height: 981px;
+  position: absolute;
+  top: -74px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+.footer__block-bg {
+  width: 1400px;
+  height: 1000px;
+  position: absolute;
+  top: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
 }
 
 @media screen and (max-width: 1200px) {
