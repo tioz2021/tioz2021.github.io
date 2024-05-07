@@ -69,6 +69,9 @@ var swiper_def_slider2 = new Swiper(swiper_def_slider_element2, {
   function scroll_slider_block() {
     const scrollingBlock = document.querySelector(".s2.scrolling-block");
     const scrollingBlock2 = document.querySelector(".s5.scrolling-block");
+    
+    if(!scrollingBlock || !scrollingBlock2) return;
+
     // const container = document.querySelector(".scroll-container");
     // const containerRect = container.getBoundingClientRect();
     const scrollTop = window.scrollY || window.pageYOffset;
@@ -135,7 +138,7 @@ var swiper_def_slider2 = new Swiper(swiper_def_slider_element2, {
   // let prevOffsetX = 0;
   // let prevOffsetY = 0;
 
-  container.addEventListener("mousemove", moveBlock);
+  if(container) container.addEventListener("mousemove", moveBlock);
   // container.addEventListener("mouseleave", savePosition);
 
   function moveBlock(e) {
