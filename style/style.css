@@ -1570,13 +1570,6 @@ template {
     opacity: 1;
   }
 }
-* {
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  scroll-behavior: smooth;
-}
-
 html {
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -1804,6 +1797,7 @@ input {
 
 .s2 {
   top: 910px;
+  z-index: 2;
 }
 
 .s5 {
@@ -1912,7 +1906,7 @@ input {
   box-sizing: border-box;
   padding-bottom: 65px;
   margin-bottom: 155px;
-  margin-top: 488px;
+  padding-top: 488px;
 }
 .s3__container {
   position: relative;
@@ -2167,6 +2161,7 @@ input {
   width: 1586px;
   height: 909px;
   top: 531px;
+  z-index: -1;
 }
 
 .list-progress {
@@ -2836,6 +2831,7 @@ input {
 }
 
 .footer {
+  overflow: hidden;
   position: relative;
 }
 .footer__container {
@@ -3408,7 +3404,7 @@ input {
 .other-page .s7__decoration-window {
   width: 800px;
   height: 553px;
-  top: -78px;
+  top: 0;
 }
 
 .other-page .s7__title {
@@ -3539,6 +3535,22 @@ input {
 
 .s11 .slider-section__swiper-button-prev {
   top: var(--swiper-navigation-top-offset, 46%) !important;
+}
+
+.s4__last-text:nth-child(1)::before {
+  left: 30px;
+}
+
+.s4__last-text:nth-child(2)::before {
+  left: 37px;
+}
+
+.s4__last-text:nth-child(3)::before {
+  left: -1px;
+}
+
+.s4__last-text:nth-child(4)::before {
+  left: 1px;
 }
 
 @media screen and (max-width: 1200px) {

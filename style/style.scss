@@ -23,10 +23,10 @@
 @import "_animation";
 
 * {
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  scroll-behavior: smooth;
+  // box-sizing: border-box;
+  // -webkit-font-smoothing: antialiased;
+  // text-rendering: optimizeLegibility;
+  // scroll-behavior: smooth;
 }
 
 html {
@@ -40,6 +40,7 @@ body {
   position: static !important;
   // background-color: rgba(0, 0, 0, 0.5);
   background: var(--bodi-2) !important;
+  // background-color: grey !important;
 
   overflow-x: hidden;
   font-family: var(--font-family) !important;

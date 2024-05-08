@@ -66,65 +66,65 @@ var swiper_def_slider2 = new Swiper(swiper_def_slider_element2, {
 
 // s2 auto scroll
 (() => {
-  function scroll_slider_block() {
-    const scrollingBlock = document.querySelector(".s2.scrolling-block");
-    const scrollingBlock2 = document.querySelector(".s5.scrolling-block");
+  // function scroll_slider_block() {
+  //   const scrollingBlock = document.querySelector(".s2.scrolling-block");
+  //   const scrollingBlock2 = document.querySelector(".s5.scrolling-block");
     
-    if(!scrollingBlock || !scrollingBlock2) return;
+  //   if(!scrollingBlock || !scrollingBlock2) return;
 
-    // const container = document.querySelector(".scroll-container");
-    // const containerRect = container.getBoundingClientRect();
-    const scrollTop = window.scrollY || window.pageYOffset;
+  //   // const container = document.querySelector(".scroll-container");
+  //   // const containerRect = container.getBoundingClientRect();
+  //   const scrollTop = window.scrollY || window.pageYOffset;
 
-    // console.log(scrollTop);
+  //   // console.log(scrollTop);
 
-    // s2 scroller 1
-    if (scrollTop >= 1400 && scrollTop <= 1800) {
-      if (scrollingBlock.classList.contains("fixed") == false) {
-        console.log("fixed");
-        // scrollingBlock.classList.add("fixed");
-        // scrollingBlock.style.top = "-497px";
-      }
-    } else if (scrollTop <= 1400) {
-      if (scrollingBlock.classList.contains("fixed") == true) {
-        // scrollingBlock.classList.remove("fixed");
-        // scrollingBlock.style.top = "910px";
-      }
-    } else if (scrollTop >= 1800) {
-      if (scrollingBlock.classList.contains("fixed") == true) {
-        // scrollingBlock.classList.remove("fixed");
-        // scrollingBlock.style.top = "1310px";
-      }
-    }
-    // if (scrollTop >= 1401 && scrollTop <= 1500) swiper.slideTo(0, 1000);
-    // else if (scrollTop >= 1501 && scrollTop <= 1600) swiper.slideTo(1, 1000);
-    // else if (scrollTop >= 1601 && scrollTop <= 1700) swiper.slideTo(2, 1000);
+  //   // s2 scroller 1
+  //   if (scrollTop >= 1400 && scrollTop <= 1800) {
+  //     if (scrollingBlock.classList.contains("fixed") == false) {
+  //       console.log("fixed");
+  //       // scrollingBlock.classList.add("fixed");
+  //       // scrollingBlock.style.top = "-497px";
+  //     }
+  //   } else if (scrollTop <= 1400) {
+  //     if (scrollingBlock.classList.contains("fixed") == true) {
+  //       // scrollingBlock.classList.remove("fixed");
+  //       // scrollingBlock.style.top = "910px";
+  //     }
+  //   } else if (scrollTop >= 1800) {
+  //     if (scrollingBlock.classList.contains("fixed") == true) {
+  //       // scrollingBlock.classList.remove("fixed");
+  //       // scrollingBlock.style.top = "1310px";
+  //     }
+  //   }
+  //   // if (scrollTop >= 1401 && scrollTop <= 1500) swiper.slideTo(0, 1000);
+  //   // else if (scrollTop >= 1501 && scrollTop <= 1600) swiper.slideTo(1, 1000);
+  //   // else if (scrollTop >= 1601 && scrollTop <= 1700) swiper.slideTo(2, 1000);
 
-    // s5 scroller 2
-    // 5300
-    if (scrollTop >= 5500 && scrollTop <= 5900) {
-      if (scrollingBlock2.classList.contains("fixed") == false) {
-        console.log("fixed");
-        // scrollingBlock2.classList.add("fixed");
-        // scrollingBlock2.style.top = "-409px";
-      }
-    } else if (scrollTop <= 5500) {
-      if (scrollingBlock2.classList.contains("fixed") == true) {
-        // scrollingBlock2.classList.remove("fixed");
-        // scrollingBlock2.style.top = "5093px";
-      }
-    } else if (scrollTop >= 5900) {
-      if (scrollingBlock2.classList.contains("fixed") == true) {
-        // scrollingBlock2.classList.remove("fixed");
-        // scrollingBlock2.style.top = "5493px";
-      }
-    }
-    // if (scrollTop >= 5501 && scrollTop <= 5600) swiper2.slideTo(0, 1000);
-    // else if (scrollTop >= 5601 && scrollTop <= 5700) swiper2.slideTo(1, 1000);
-    // else if (scrollTop >= 5701 && scrollTop <= 5800) swiper2.slideTo(2, 1000);
-  }
+  //   // s5 scroller 2
+  //   // 5300
+  //   if (scrollTop >= 5500 && scrollTop <= 5900) {
+  //     if (scrollingBlock2.classList.contains("fixed") == false) {
+  //       console.log("fixed");
+  //       // scrollingBlock2.classList.add("fixed");
+  //       // scrollingBlock2.style.top = "-409px";
+  //     }
+  //   } else if (scrollTop <= 5500) {
+  //     if (scrollingBlock2.classList.contains("fixed") == true) {
+  //       // scrollingBlock2.classList.remove("fixed");
+  //       // scrollingBlock2.style.top = "5093px";
+  //     }
+  //   } else if (scrollTop >= 5900) {
+  //     if (scrollingBlock2.classList.contains("fixed") == true) {
+  //       // scrollingBlock2.classList.remove("fixed");
+  //       // scrollingBlock2.style.top = "5493px";
+  //     }
+  //   }
+  //   // if (scrollTop >= 5501 && scrollTop <= 5600) swiper2.slideTo(0, 1000);
+  //   // else if (scrollTop >= 5601 && scrollTop <= 5700) swiper2.slideTo(1, 1000);
+  //   // else if (scrollTop >= 5701 && scrollTop <= 5800) swiper2.slideTo(2, 1000);
+  // }
 
-  window.addEventListener("scroll", scroll_slider_block);
+  // window.addEventListener("scroll", scroll_slider_block);
 })();
 
 // 3d s1

@@ -233,6 +233,7 @@
   // height: 1450px;
   // top: 888px;
   top: 910px;
+  z-index: 2;
 
   // margin-bottom: 3000px;
   // height: 1293px;
@@ -353,7 +354,7 @@
 
   // ?
   // margin-top: 880px;
-  margin-top: 488px;
+  padding-top: 488px;
 
   // .s3__container
   &__container {
@@ -676,6 +677,7 @@
     width: 1586px;
     height: 909px;
     top: 531px;
+    z-index: -1;
   }
 }
 
@@ -1504,6 +1506,7 @@
 }
 
 .footer {
+  overflow: hidden;
   position: relative;
 
   // .footer__container
@@ -2260,7 +2263,7 @@
 .other-page .s7__decoration-window {
   width: 800px;
   height: 553px;
-  top: -78px;
+  top: 0;
 }
 
 .other-page .s7__title {
@@ -2455,4 +2458,17 @@
 
 .s11 .slider-section__swiper-button-prev{
   top: var(--swiper-navigation-top-offset, 46%) !important;
+}
+
+.s4__last-text:nth-child(1)::before{
+  left: 30px;
+}
+.s4__last-text:nth-child(2)::before{
+  left: 37px;
+}
+.s4__last-text:nth-child(3)::before{
+  left: -1px;
+}
+.s4__last-text:nth-child(4)::before{
+  left: 1px;
 }
