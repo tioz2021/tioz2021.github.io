@@ -1354,6 +1354,7 @@
     // .accordion__header.active
     &.active {
       padding-bottom: 16px;
+      // padding-bottom: 40px;
 
       // .accordion__header.active .accordion__icon
       .accordion__icon {
@@ -1378,7 +1379,6 @@
   }
   // .accordion__content
   &__content {
-    color: var(--bodi-2-1);
     overflow: hidden;
     box-sizing: border-box;
     padding-bottom: 0;
@@ -1386,6 +1386,8 @@
     will-change: max-height, padding-bottom;
     transition: all 500ms ease-in-out;
     max-height: 0;
+    text-align: left;
+    color: var(--bodi-2-2);
   }
 
   // .accordion-left-decor
