@@ -164,6 +164,106 @@ var swiper_def_slider2 = new Swiper(swiper_def_slider_element2, {
   // }
 })();
 
+// 3d s13
+(() => {
+  const wrapper1 = document.querySelector(".s7");
+  const wrapper2 = document.querySelector(".s13");
+  function globalMove(wrapper) {
+    const block = wrapper.querySelector(".window");
+    const container = wrapper;
+    const container_blocks = wrapper.querySelectorAll(".s7__item");
+    const container_centered = wrapper.querySelector(".s7__item-main");
+    let offsetX = 0;
+    let offsetY = 0;
+  
+    if(container) container.addEventListener("mousemove", moveBlock);
+    function moveBlock(e) {
+      const mouseX = e.clientX;
+      const mouseY = e.clientY;
+      const blockRect = block.getBoundingClientRect();
+      const distanceX = mouseX - blockRect.left - blockRect.width / 2;
+      const distanceY = mouseY - blockRect.top - blockRect.height / 2;
+  
+      offsetX = distanceX * -0.0035;
+      offsetY = distanceY * -0.0035;
+      block.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+  
+      offsetX_blocks = distanceX * 0.0025;
+      offsetY_blocks = distanceY * 0.0025;
+      container_blocks.forEach(e => {
+        e.style.transform = `translate(${offsetX_blocks}px, ${offsetY_blocks}px)`;
+      });
+      
+      offsetX_center = distanceX * 0.0115;
+      offsetY_center = distanceY * 0.0115;
+      container_centered.style.transform = `translate(${offsetX_center}px, ${offsetY_center}px)`;
+    }
+  }
+  if(wrapper1) globalMove(wrapper1);
+  if(wrapper2) globalMove(wrapper2);
+})();
+
+document.querySelectorAll(".list-progress__item-wrp").forEach(container => {
+  const block = container.querySelector(".list-progress__item-icon");
+  let offsetX = 0;
+  let offsetY = 0;
+
+  // Добавляем transition при загрузке страницы
+  block.style.transition = 'transform 0.3s ease';
+
+  if (container) container.addEventListener("mousemove", moveBlock);
+  container.addEventListener("mouseleave", returnToOriginalPosition);
+
+  function moveBlock(e) {
+    const mouseX = e.clientX;
+    const mouseY = e.clientY;
+    const blockRect = block.getBoundingClientRect();
+    const distanceX = mouseX - blockRect.left - blockRect.width / 2;
+    const distanceY = mouseY - blockRect.top - blockRect.height / 2;
+
+    offsetX = distanceX * 0.3511;
+    offsetY = distanceY * 0.3511;
+    
+    requestAnimationFrame(() => {
+      block.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+    });
+  }
+
+  function returnToOriginalPosition() {
+    block.style.transform = `translate(0, 0)`;
+  }
+});
+
+// svg blur ( svg-blur-hover-wrp, svg-blur, blur )
+(() => {
+  document.querySelectorAll(".svg-blur-hover-wrp").forEach(wrapper => {
+    const blurElement = wrapper.querySelectorAll(".blur");
+    let timeoutId;
+
+    wrapper.addEventListener("mouseenter", function() {
+      clearTimeout(timeoutId);
+      animateOpacity();
+    });
+    
+    wrapper.addEventListener("mouseleave", function() {
+      clearTimeout(timeoutId);
+      blurElement.forEach(e => e.style.opacity = "0.1");
+      // blurElement.style.opacity = "0.1";
+    });
+    
+    function animateOpacity() {
+      blurElement.forEach(e => e.style.opacity = "0.3");
+      // blurElement.style.opacity = "0.1";
+      timeoutId = setTimeout(() => {
+        blurElement.forEach(e => e.style.opacity = "0.1");
+        timeoutId = setTimeout(animateOpacity, 2000);
+      }, 2000);
+    }
+  });
+
+}) ();
+
+
 // Функция для генерации случайных чисел в заданном диапазоне
 (() => {
   function getRandom(min, max) {

@@ -1409,3 +1409,23 @@
     height: 1px;
   }
 }
+
+.svg-blur{
+  position: relative;
+  
+  // .svg-blur .blur
+  .blur{
+    // content: '';
+    width: 132px;
+    height: 118px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+    background: linear-gradient(360deg, #eee 0%, #c8dcf5 51%, #cbd5e2 100%);
+    filter: blur(44px);
+    opacity: 0.1;
+    transition: opacity 2000ms ease-in-out;
+  }
+}
