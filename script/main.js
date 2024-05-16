@@ -1,71 +1,71 @@
-// Включаем Swiper
-let swiperContainer = document.querySelector(".scroll-section__swiper1");
-let swiperContainer2 = document.querySelector(".scroll-section__swiper2");
-
-var swiper = new Swiper(swiperContainer, {
-  effect: "fade",
-  fadeEffect: {
-    crossFade: true,
-  },
-
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
-var swiper2 = new Swiper(swiperContainer2, {
-  effect: "fade",
-  fadeEffect: {
-    crossFade: true,
-  },
-
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
-
-let swiper_def_slider_element = document.querySelector(
-  ".slider-section__swiper1"
-);
-let swiper_def_slider_element2 = document.querySelector(
-  ".slider-section__swiper2"
-);
-var swiper_def_slider = new Swiper(swiper_def_slider_element, {
-  effect: "fade",
-  fadeEffect: {
-    crossFade: true,
-  },
-
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-
-  navigation: {
-    nextEl: ".slider-section__swiper-button-next",
-    prevEl: ".slider-section__swiper-button-prev",
-  },
-});
-var swiper_def_slider2 = new Swiper(swiper_def_slider_element2, {
-  effect: "fade",
-  fadeEffect: {
-    crossFade: true,
-  },
-
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-
-  navigation: {
-    nextEl: ".slider-section__swiper-button-next",
-    prevEl: ".slider-section__swiper-button-prev",
-  },
-});
-
-// s2 auto scroll
+// sliders
 (() => {
+  // Включаем Swiper
+  let swiperContainer = document.querySelector(".scroll-section__swiper1");
+  let swiperContainer2 = document.querySelector(".scroll-section__swiper2");
+  
+  var swiper = new Swiper(swiperContainer, {
+    effect: "fade",
+    fadeEffect: {
+      crossFade: true,
+    },
+  
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+  var swiper2 = new Swiper(swiperContainer2, {
+    effect: "fade",
+    fadeEffect: {
+      crossFade: true,
+    },
+  
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+  
+  let swiper_def_slider_element = document.querySelector(
+    ".slider-section__swiper1"
+  );
+  let swiper_def_slider_element2 = document.querySelector(
+    ".slider-section__swiper2"
+  );
+  var swiper_def_slider = new Swiper(swiper_def_slider_element, {
+    effect: "fade",
+    fadeEffect: {
+      crossFade: true,
+    },
+  
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  
+    navigation: {
+      nextEl: ".slider-section__swiper-button-next",
+      prevEl: ".slider-section__swiper-button-prev",
+    },
+  });
+  var swiper_def_slider2 = new Swiper(swiper_def_slider_element2, {
+    effect: "fade",
+    fadeEffect: {
+      crossFade: true,
+    },
+  
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  
+    navigation: {
+      nextEl: ".slider-section__swiper-button-next",
+      prevEl: ".slider-section__swiper-button-prev",
+    },
+  });
+
   // function scroll_slider_block() {
   //   const scrollingBlock = document.querySelector(".s2.scrolling-block");
   //   const scrollingBlock2 = document.querySelector(".s5.scrolling-block");
@@ -119,7 +119,7 @@ var swiper_def_slider2 = new Swiper(swiper_def_slider_element2, {
   //   // else if (scrollTop >= 5701 && scrollTop <= 5800) swiper2.slideTo(2, 1000);
   // }
   // window.addEventListener("scroll", scroll_slider_block);
-})();
+}) ();
 
 // 3d s1
 (() => {
@@ -129,11 +129,7 @@ var swiper_def_slider2 = new Swiper(swiper_def_slider_element2, {
   let offsetX = 0;
   let offsetY = 0;
 
-  // let prevOffsetX = 0;
-  // let prevOffsetY = 0;
-
   if (container) container.addEventListener("mousemove", moveBlock);
-  // container.addEventListener("mouseleave", savePosition);
 
   function moveBlock(e) {
     const mouseX = e.clientX;
@@ -150,12 +146,6 @@ var swiper_def_slider2 = new Swiper(swiper_def_slider_element2, {
     offsetY_center = distanceY * 0.0095;
     container_centered.style.transform = `translate(${offsetX_center}px, ${offsetY_center}px)`;
   }
-
-  // function savePosition() {
-  //   prevOffsetX += offsetX;
-  //   prevOffsetY += offsetY;
-  //   block.style.transform = `translate(${prevOffsetX}px, ${prevOffsetY}px)`;
-  // }
 })();
 
 // 3d s13
@@ -197,36 +187,39 @@ var swiper_def_slider2 = new Swiper(swiper_def_slider_element2, {
   if (wrapper2) globalMove(wrapper2);
 })();
 
-document.querySelectorAll(".list-progress__item-wrp").forEach((container) => {
-  const block = container.querySelector(".list-progress__item-icon");
-  let offsetX = 0;
-  let offsetY = 0;
-
-  // Добавляем transition при загрузке страницы
-  block.style.transition = "transform 0.3s ease";
-
-  if (container) container.addEventListener("mousemove", moveBlock);
-  container.addEventListener("mouseleave", returnToOriginalPosition);
-
-  function moveBlock(e) {
-    const mouseX = e.clientX;
-    const mouseY = e.clientY;
-    const blockRect = block.getBoundingClientRect();
-    const distanceX = mouseX - blockRect.left - blockRect.width / 2;
-    const distanceY = mouseY - blockRect.top - blockRect.height / 2;
-
-    offsetX = distanceX * 0.3511;
-    offsetY = distanceY * 0.3511;
-
-    requestAnimationFrame(() => {
-      block.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
-    });
-  }
-
-  function returnToOriginalPosition() {
-    block.style.transform = `translate(0, 0)`;
-  }
-});
+// line-progress
+(() => {
+  document.querySelectorAll(".list-progress__item-wrp").forEach((container) => {
+    const block = container.querySelector(".list-progress__item-icon");
+    let offsetX = 0;
+    let offsetY = 0;
+  
+    // Добавляем transition при загрузке страницы
+    block.style.transition = "transform 0.3s ease";
+  
+    if (container) container.addEventListener("mousemove", moveBlock);
+    container.addEventListener("mouseleave", returnToOriginalPosition);
+  
+    function moveBlock(e) {
+      const mouseX = e.clientX;
+      const mouseY = e.clientY;
+      const blockRect = block.getBoundingClientRect();
+      const distanceX = mouseX - blockRect.left - blockRect.width / 2;
+      const distanceY = mouseY - blockRect.top - blockRect.height / 2;
+  
+      offsetX = distanceX * 0.3511;
+      offsetY = distanceY * 0.3511;
+  
+      requestAnimationFrame(() => {
+        block.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+      });
+    }
+  
+    function returnToOriginalPosition() {
+      block.style.transform = `translate(0, 0)`;
+    }
+  });
+}) ();
 
 // svg blur ( svg-blur-hover-wrp, svg-blur, blur )
 (() => {
