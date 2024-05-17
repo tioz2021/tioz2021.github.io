@@ -3,13 +3,13 @@
   // Включаем Swiper
   let swiperContainer = document.querySelector(".scroll-section__swiper1");
   let swiperContainer2 = document.querySelector(".scroll-section__swiper2");
-  
+
   var swiper = new Swiper(swiperContainer, {
     effect: "fade",
     fadeEffect: {
       crossFade: true,
     },
-  
+
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -20,13 +20,13 @@
     fadeEffect: {
       crossFade: true,
     },
-  
+
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
     },
   });
-  
+
   let swiper_def_slider_element = document.querySelector(
     ".slider-section__swiper1"
   );
@@ -38,12 +38,12 @@
     fadeEffect: {
       crossFade: true,
     },
-  
+
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
     },
-  
+
     navigation: {
       nextEl: ".slider-section__swiper-button-next",
       prevEl: ".slider-section__swiper-button-prev",
@@ -54,12 +54,12 @@
     fadeEffect: {
       crossFade: true,
     },
-  
+
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
     },
-  
+
     navigation: {
       nextEl: ".slider-section__swiper-button-next",
       prevEl: ".slider-section__swiper-button-prev",
@@ -119,7 +119,7 @@
   //   // else if (scrollTop >= 5701 && scrollTop <= 5800) swiper2.slideTo(2, 1000);
   // }
   // window.addEventListener("scroll", scroll_slider_block);
-}) ();
+})();
 
 // 3d s1
 (() => {
@@ -193,33 +193,33 @@
     const block = container.querySelector(".list-progress__item-icon");
     let offsetX = 0;
     let offsetY = 0;
-  
+
     // Добавляем transition при загрузке страницы
     block.style.transition = "transform 0.3s ease";
-  
+
     if (container) container.addEventListener("mousemove", moveBlock);
     container.addEventListener("mouseleave", returnToOriginalPosition);
-  
+
     function moveBlock(e) {
       const mouseX = e.clientX;
       const mouseY = e.clientY;
       const blockRect = block.getBoundingClientRect();
       const distanceX = mouseX - blockRect.left - blockRect.width / 2;
       const distanceY = mouseY - blockRect.top - blockRect.height / 2;
-  
+
       offsetX = distanceX * 0.3511;
       offsetY = distanceY * 0.3511;
-  
+
       requestAnimationFrame(() => {
         block.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
       });
     }
-  
+
     function returnToOriginalPosition() {
       block.style.transform = `translate(0, 0)`;
     }
   });
-}) ();
+})();
 
 // svg blur ( svg-blur-hover-wrp, svg-blur, blur )
 (() => {
@@ -239,12 +239,12 @@
     });
 
     function animateOpacity() {
-      blurElement.forEach((e) => (e.style.opacity = "0.3"));
+      blurElement.forEach((e) => (e.style.opacity = "0.135"));
       // blurElement.style.opacity = "0.1";
       timeoutId = setTimeout(() => {
         blurElement.forEach((e) => (e.style.opacity = "0.1"));
-        timeoutId = setTimeout(animateOpacity, 2000);
-      }, 2000);
+        timeoutId = setTimeout(animateOpacity, 1000);
+      }, 1000);
     }
   });
 })();
@@ -343,7 +343,6 @@
               elm[0].play();
               elm[1].play();
             }, 300);
-
           }
           if (entry.target.classList.contains("s2__pre-title") == true) {
             text_elm.classList.add("anim");
@@ -380,7 +379,9 @@
           if (entry.target.classList.contains("s6__pre-title--one") == true) {
             text_elm.classList.add("anim");
             setTimeout(() => {
-              let elm = document.querySelectorAll(".s6__pre-title--one lottie-player");
+              let elm = document.querySelectorAll(
+                ".s6__pre-title--one lottie-player"
+              );
               elm[0].play();
               elm[1].play();
             }, 300);
@@ -388,7 +389,9 @@
           if (entry.target.classList.contains("s7__pre-title--one") == true) {
             text_elm.classList.add("anim");
             setTimeout(() => {
-              let elm = document.querySelectorAll(".s7__pre-title--one lottie-player");
+              let elm = document.querySelectorAll(
+                ".s7__pre-title--one lottie-player"
+              );
               elm[0].play();
               elm[1].play();
             }, 300);
@@ -396,7 +399,9 @@
           if (entry.target.classList.contains("s7__pre-title--two") == true) {
             text_elm.classList.add("anim");
             setTimeout(() => {
-              let elm = document.querySelectorAll(".s7__pre-title--two lottie-player");
+              let elm = document.querySelectorAll(
+                ".s7__pre-title--two lottie-player"
+              );
               elm[0].play();
               elm[1].play();
             }, 300);
@@ -420,7 +425,9 @@
           if (entry.target.classList.contains("s6__pre-title--two") == true) {
             text_elm.classList.add("anim");
             setTimeout(() => {
-              let elm = document.querySelectorAll(".s6__pre-title--two lottie-player");
+              let elm = document.querySelectorAll(
+                ".s6__pre-title--two lottie-player"
+              );
               elm[0].play();
               elm[1].play();
             }, 300);
@@ -446,7 +453,9 @@
           if (entry.target.classList.contains("pas1__pre-title") == true) {
             text_elm.classList.add("anim");
             setTimeout(() => {
-              let elm = document.querySelectorAll(".pas1__pre-title lottie-player");
+              let elm = document.querySelectorAll(
+                ".pas1__pre-title lottie-player"
+              );
               elm[0].play();
               elm[1].play();
             }, 300);
@@ -454,7 +463,9 @@
           if (entry.target.classList.contains("other-page-s7-title") == true) {
             text_elm.classList.add("anim");
             setTimeout(() => {
-              let elm = document.querySelectorAll(".other-page-s7-title lottie-player");
+              let elm = document.querySelectorAll(
+                ".other-page-s7-title lottie-player"
+              );
               elm[0].play();
               elm[1].play();
             }, 300);
@@ -464,7 +475,9 @@
           if (entry.target.classList.contains("phwks1__pre-title") == true) {
             text_elm.classList.add("anim");
             setTimeout(() => {
-              let elm = document.querySelectorAll(".phwks1__pre-title lottie-player");
+              let elm = document.querySelectorAll(
+                ".phwks1__pre-title lottie-player"
+              );
               elm[0].play();
               elm[1].play();
             }, 300);
@@ -474,7 +487,9 @@
           if (entry.target.classList.contains("qas1__pre-title") == true) {
             text_elm.classList.add("anim");
             setTimeout(() => {
-              let elm = document.querySelectorAll(".qas1__pre-title lottie-player");
+              let elm = document.querySelectorAll(
+                ".qas1__pre-title lottie-player"
+              );
               elm[0].play();
               elm[1].play();
             }, 300);
@@ -484,7 +499,9 @@
           if (entry.target.classList.contains("phws1__pre-title") == true) {
             text_elm.classList.add("anim");
             setTimeout(() => {
-              let elm = document.querySelectorAll(".phws1__pre-title lottie-player");
+              let elm = document.querySelectorAll(
+                ".phws1__pre-title lottie-player"
+              );
               elm[0].play();
               elm[1].play();
             }, 300);
@@ -494,7 +511,9 @@
           if (entry.target.classList.contains("pb1__pre-title") == true) {
             text_elm.classList.add("anim");
             setTimeout(() => {
-              let elm = document.querySelectorAll(".pb1__pre-title lottie-player");
+              let elm = document.querySelectorAll(
+                ".pb1__pre-title lottie-player"
+              );
               elm[0].play();
               elm[1].play();
             }, 300);
@@ -504,15 +523,21 @@
           if (entry.target.classList.contains("pps1__pre-title--one") == true) {
             text_elm.classList.add("anim");
             setTimeout(() => {
-              let elm = document.querySelectorAll(".pps1__pre-title--one lottie-player");
+              let elm = document.querySelectorAll(
+                ".pps1__pre-title--one lottie-player"
+              );
               elm[0].play();
               elm[1].play();
             }, 300);
           }
-          if (entry.target.classList.contains("pps1__pre-title--last") == true) {
+          if (
+            entry.target.classList.contains("pps1__pre-title--last") == true
+          ) {
             text_elm.classList.add("anim");
             setTimeout(() => {
-              let elm = document.querySelectorAll(".pps1__pre-title--last lottie-player");
+              let elm = document.querySelectorAll(
+                ".pps1__pre-title--last lottie-player"
+              );
               elm[0].play();
               elm[1].play();
             }, 300);
@@ -522,7 +547,9 @@
           if (entry.target.classList.contains("pre-title-404") == true) {
             text_elm.classList.add("anim");
             setTimeout(() => {
-              let elm = document.querySelectorAll(".pre-title-404 lottie-player");
+              let elm = document.querySelectorAll(
+                ".pre-title-404 lottie-player"
+              );
               elm[0].play();
               elm[1].play();
             }, 300);
@@ -573,7 +600,7 @@
     ".pps1__pre-title--last",
 
     // 404
-    ".pre-title-404"
+    ".pre-title-404",
   ];
 
   // Проходимся по списку селекторов
@@ -584,4 +611,68 @@
     if (!blockToAnimate) return;
     observer.observe(blockToAnimate);
   });
+})();
+
+// Number animation
+(() => {
+  // Функция для анимации чисел во всех элементах с классом "animatedNumber"
+  function animateNumbers() {
+    // Получаем все элементы с классом "animatedNumber"
+    var elements = document.querySelectorAll(".animatedNumber");
+    var element2 = document.querySelector(".animatedNumberTwo");
+    var element3 = document.querySelector(".animatedNumberFloat");
+    element2_number = 8;
+
+    // 4.9 - 5.0
+    function updateNumber3(element) {
+      if(element.textContent == 4.9) 
+        element.textContent = "5.0";
+      else {
+        element.textContent = 4.9;
+      }
+
+      var randomInterval = Math.floor(Math.random() * 1000) + 1000;
+      setTimeout(function () {
+        updateNumber3(element);
+      }, randomInterval);
+    }
+    updateNumber3(element3);
+
+    // 8 - 10
+    function updateNumber2(element) {
+      element.textContent = element2_number;
+      element2_number++;
+      if(element2_number == 11) element2_number = 8;
+
+      var randomInterval = Math.floor(Math.random() * 500) + 500;
+      setTimeout(function () {
+        updateNumber2(element);
+      }, randomInterval);
+    }
+    updateNumber2(element2);
+
+    // Функция для обновления числа в указанном элементе
+    function updateNumber(element) {
+      // Генерируем случайное число от 0 до 9
+      var randomNumber = Math.floor(Math.random() * 10);
+      // Обновляем текстовое содержимое элемента
+      element.textContent = randomNumber;
+
+      // Генерируем случайный интервал для следующего обновления (от 1000 до 2000 миллисекунд)
+      var randomInterval = Math.floor(Math.random() * 500) + 500;
+
+      // Запускаем обновление числа через случайный интервал
+      setTimeout(function () {
+        updateNumber(element);
+      }, randomInterval);
+    }
+
+    // Запускаем обновление числа для каждого элемента
+    for (var i = 0; i < elements.length; i++) {
+      updateNumber(elements[i]);
+    }
+  }
+
+  // Запускаем анимацию после загрузки страницы
+  window.onload = animateNumbers;
 })();
