@@ -623,10 +623,11 @@
     var element3 = document.querySelector(".animatedNumberFloat");
     element2_number = 8;
 
+    // if (!elements || !element2 || !element3) return;
+
     // 4.9 - 5.0
     function updateNumber3(element) {
-      if(element.textContent == 4.9) 
-        element.textContent = "5.0";
+      if (element.textContent == 4.9) element.textContent = "5.0";
       else {
         element.textContent = 4.9;
       }
@@ -642,7 +643,7 @@
     function updateNumber2(element) {
       element.textContent = element2_number;
       element2_number++;
-      if(element2_number == 11) element2_number = 8;
+      if (element2_number == 11) element2_number = 8;
 
       var randomInterval = Math.floor(Math.random() * 500) + 500;
       setTimeout(function () {
@@ -676,3 +677,39 @@
   // Запускаем анимацию после загрузки страницы
   window.onload = animateNumbers;
 })();
+
+// typing profit
+(() => {
+  document.addEventListener("DOMContentLoaded", function() {
+    var textWrp = document.querySelector('.typingEffect')
+    if(!textWrp) return;
+    var text = textWrp.getElementsByTagName('span');
+    var index = 0;
+    var typingSpeed = 200; // Скорость печати (в миллисекундах)
+    var eraseSpeed = 100; // Скорость стирания (в миллисекундах)
+    var pauseBetweenCycles = 1000; // Пауза между циклами (в миллисекундах)
+  
+    function type() {
+      if (index < text.length) {
+        text[index].style.display = 'inline';
+        index++;
+        setTimeout(type, typingSpeed); // Задержка перед отображением следующей буквы
+      } else {
+        setTimeout(erase, pauseBetweenCycles); // Пауза перед стиранием слова
+      }
+    }
+    
+    function erase() {
+      if (index > 0) {
+        index--;
+        text[index].style.display = 'none';
+        setTimeout(erase, eraseSpeed); // Задержка перед исчезновением предыдущей буквы
+      } else {
+        index = 0;
+        type(); // Начать новый цикл печати после стирания
+      }
+    }
+  
+    type(); // Начать первый цикл печати
+  });
+}) ();

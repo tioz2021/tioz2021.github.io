@@ -1591,6 +1591,64 @@ template {
     opacity: 1;
   }
 }
+@keyframes fadeInOut {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+.s9__svg-item1 path {
+  animation: fadeInOut 3s infinite;
+}
+
+@keyframes fadeInOut2 {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+.opacity-svg {
+  animation: fadeInOut2 3s infinite;
+}
+
+.shake-animation {
+  animation: shake 1.3s ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  10%, 90% {
+    transform: translate(-2px, 0);
+  }
+  20%, 80% {
+    transform: translate(2px, 0);
+  }
+  30%, 70% {
+    transform: translate(-2px, 0);
+  }
+  40%, 60% {
+    transform: translate(2px, 0);
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  51%, 100% {
+    transform: translate(0, 0);
+  }
+}
 html {
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -3786,6 +3844,12 @@ input {
   overflow-y: scroll;
   padding-right: 20px;
 }
+.win-box__text::-webkit-scrollbar {
+  display: none;
+}
+.win-box__text::-webkit-scrollbar-horizontal {
+  display: none;
+}
 .win-box__text span {
   display: block;
   margin-bottom: 20px;
@@ -4001,6 +4065,101 @@ input {
 
 .scroll-section__item-icon-text--float {
   top: 47px;
+}
+
+.img-wrp .s2__lottie-icon1 {
+  width: 62px;
+}
+
+.img-wrp .s2__lottie-icon2 {
+  width: 76px;
+}
+
+.img-wrp .s2__lottie-icon3 {
+  width: 59px;
+  z-index: 1;
+}
+
+.img-wrp .s5__lottie-icon1 {
+  z-index: 1;
+}
+
+.img-wrp .s5__lottie-icon2 {
+  width: 45px;
+  z-index: 1;
+}
+
+.img-wrp .s5__lottie-icon3 {
+  width: 60px;
+  z-index: 1;
+}
+
+.img-wrp .s9__svg-item-lottie-1 {
+  z-index: 1;
+  width: 106px;
+  left: 61px;
+  transform: translate(-50%, -50%) scale(1.5);
+  top: 29px;
+}
+
+.img-wrp .s9__svg-item-lottie-2 {
+  z-index: 1;
+  width: 104px;
+  height: 110px;
+  top: 27.3px;
+  left: 41.5px;
+}
+
+.img-wrp .s9__svg-item-lottie-3 {
+  z-index: 1;
+  width: 153px;
+  height: 153px;
+  top: 221px;
+  left: 122px;
+}
+
+.img-wrp .s9__svg-item-lottie-4 {
+  z-index: 1;
+  transform: translate(-50%, -50%) scale(1.45);
+  left: 64px;
+  top: 28px;
+}
+
+.img-wrp .question-lottie1 {
+  z-index: 1;
+}
+
+.dashboard-work-active .dashboard-work-lights--smooth {
+  inset: 36px;
+  filter: blur(36px);
+  opacity: 0.2;
+}
+
+.dashboard-work-active .dashboard-work-lights--smooth div {
+  width: 35px;
+  height: 35px;
+}
+
+.page-question-answer .dashboard-work-lights--smooth {
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.page-question-answer .scroll-section__item-icon-text {
+  font-size: 2px;
+}
+
+.page-question-answer .scroll-section__item-icon-text span {
+  display: none;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 130%;
+  text-align: center;
+  background: linear-gradient(360deg, #eee 0%, #c8dcf5 51%, #cbd5e2 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @media screen and (max-width: 1200px) {

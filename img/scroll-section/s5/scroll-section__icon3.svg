@@ -9,21 +9,21 @@
 										<circle cx="76.5" cy="65.5" r="1.75" fill="url(#paint9_linear_2805_2509)" stroke="url(#paint10_linear_2805_2509)" stroke-width="0.5"/>
 										<circle cx="19.5" cy="65.5" r="1.75" fill="url(#paint11_linear_2805_2509)" stroke="url(#paint12_linear_2805_2509)" stroke-width="0.5"/>
 										<rect x="21.25" y="24.25" width="53.5" height="12.5" rx="1.75" fill="url(#paint13_linear_2805_2509)" stroke="url(#paint14_linear_2805_2509)" stroke-width="0.5"/>
-										<circle cx="26.5" cy="30.5" r="1.5" fill="url(#paint15_linear_2805_2509)"/>
-										<circle cx="33.5" cy="30.5" r="1.5" fill="url(#paint16_linear_2805_2509)"/>
-										<circle cx="40.5" cy="30.5" r="1.5" fill="url(#paint17_linear_2805_2509)"/>
-										<circle cx="47.5" cy="30.5" r="1.5" fill="url(#paint18_linear_2805_2509)"/>
-										<circle cx="54.5" cy="30.5" r="1.5" fill="url(#paint19_linear_2805_2509)"/>
-										<circle cx="61.5" cy="30.5" r="1.5" fill="url(#paint20_linear_2805_2509)"/>
-										<circle cx="68.5" cy="30.5" r="1.5" fill="url(#paint21_linear_2805_2509)"/>
+										<!-- <circle cx="26.5" cy="30.5" r="1.5" fill="url(#paint15_linear_2805_2509)"/> -->
+										<!-- <circle cx="33.5" cy="30.5" r="1.5" fill="url(#paint16_linear_2805_2509)"/> -->
+										<!-- <circle cx="40.5" cy="30.5" r="1.5" fill="url(#paint17_linear_2805_2509)"/> -->
+										<!-- <circle cx="47.5" cy="30.5" r="1.5" fill="url(#paint18_linear_2805_2509)"/> -->
+										<!-- <circle cx="54.5" cy="30.5" r="1.5" fill="url(#paint19_linear_2805_2509)"/> -->
+										<!-- <circle cx="61.5" cy="30.5" r="1.5" fill="url(#paint20_linear_2805_2509)"/> -->
+										<!-- <circle cx="68.5" cy="30.5" r="1.5" fill="url(#paint21_linear_2805_2509)"/> -->
 										<rect x="21.25" y="43.25" width="53.5" height="12.5" rx="1.75" fill="url(#paint22_linear_2805_2509)" stroke="url(#paint23_linear_2805_2509)" stroke-width="0.5"/>
-										<circle cx="26.5" cy="49.5" r="1.5" fill="url(#paint24_linear_2805_2509)"/>
-										<circle cx="33.5" cy="49.5" r="1.5" fill="url(#paint25_linear_2805_2509)"/>
-										<circle cx="40.5" cy="49.5" r="1.5" fill="url(#paint26_linear_2805_2509)"/>
-										<circle cx="47.5" cy="49.5" r="1.5" fill="url(#paint27_linear_2805_2509)"/>
-										<circle cx="54.5" cy="49.5" r="1.5" fill="url(#paint28_linear_2805_2509)"/>
-										<circle cx="61.5" cy="49.5" r="1.5" fill="url(#paint29_linear_2805_2509)"/>
-										<circle cx="68.5" cy="49.5" r="1.5" fill="url(#paint30_linear_2805_2509)"/>
+										<!-- <circle cx="26.5" cy="49.5" r="1.5" fill="url(#paint24_linear_2805_2509)"/> -->
+										<!-- <circle cx="33.5" cy="49.5" r="1.5" fill="url(#paint25_linear_2805_2509)"/> -->
+										<!-- <circle cx="40.5" cy="49.5" r="1.5" fill="url(#paint26_linear_2805_2509)"/> -->
+										<!-- <circle cx="47.5" cy="49.5" r="1.5" fill="url(#paint27_linear_2805_2509)"/> -->
+										<!-- <circle cx="54.5" cy="49.5" r="1.5" fill="url(#paint28_linear_2805_2509)"/> -->
+										<!-- <circle cx="61.5" cy="49.5" r="1.5" fill="url(#paint29_linear_2805_2509)"/> -->
+										<!-- <circle cx="68.5" cy="49.5" r="1.5" fill="url(#paint30_linear_2805_2509)"/> -->
 										<defs>
 										<linearGradient id="paint0_linear_2805_2509" x1="48" y1="31.0952" x2="48" y2="55.7857" gradientUnits="userSpaceOnUse">
 										<stop stop-color="#9CBCED"/>

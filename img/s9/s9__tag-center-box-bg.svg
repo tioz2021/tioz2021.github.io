@@ -334,7 +334,7 @@
 							<path d="M78 220.5V224.5C78 228.09 75.0899 231 71.5 231V231C67.9101 231 65 228.09 65 224.5V220.5" stroke="url(#paint19_linear_2694_9106)" stroke-width="0.5"/>
 							</g>
 							<rect x="65.25" y="210.25" width="12.5" height="20.5" rx="6.25" stroke="url(#paint20_linear_2694_9106)" stroke-width="0.5"/>
-							<circle cx="71.5" cy="220.5" r="1.5" fill="url(#paint21_linear_2694_9106)"/>
+							<!-- <circle cx="71.5" cy="220.5" r="1.5" fill="url(#paint21_linear_2694_9106)"/> -->
 							<g opacity="0.1" filter="url(#filter4_f_2694_9106)">
 							<ellipse cx="1.5" cy="0.5" rx="1.5" ry="0.5" transform="matrix(1 0 0 -1 70 231)" fill="url(#paint22_linear_2694_9106)"/>
 							</g>
@@ -343,7 +343,7 @@
 							<path d="M95 220.5V224.5C95 228.09 92.0899 231 88.5 231V231C84.9101 231 82 228.09 82 224.5V220.5" stroke="url(#paint23_linear_2694_9106)" stroke-width="0.5"/>
 							</g>
 							<rect x="82.25" y="210.25" width="12.5" height="20.5" rx="6.25" stroke="url(#paint24_linear_2694_9106)" stroke-width="0.5"/>
-							<circle cx="88.5" cy="220.5" r="1.5" fill="url(#paint25_linear_2694_9106)"/>
+							<!-- <circle cx="88.5" cy="220.5" r="1.5" fill="url(#paint25_linear_2694_9106)"/> -->
 							<g opacity="0.1" filter="url(#filter6_f_2694_9106)">
 							<ellipse cx="1.5" cy="0.5" rx="1.5" ry="0.5" transform="matrix(1 0 0 -1 87 231)" fill="url(#paint26_linear_2694_9106)"/>
 							</g>
@@ -352,7 +352,7 @@
 							<path d="M112 220.5V224.5C112 228.09 109.09 231 105.5 231V231C101.91 231 99 228.09 99 224.5V220.5" stroke="url(#paint27_linear_2694_9106)" stroke-width="0.5"/>
 							</g>
 							<rect x="99.25" y="210.25" width="12.5" height="20.5" rx="6.25" stroke="url(#paint28_linear_2694_9106)" stroke-width="0.5"/>
-							<circle cx="105.5" cy="220.5" r="1.5" fill="url(#paint29_linear_2694_9106)"/>
+							<!-- <circle cx="105.5" cy="220.5" r="1.5" fill="url(#paint29_linear_2694_9106)"/> -->
 							<g opacity="0.1" filter="url(#filter8_f_2694_9106)">
 							<ellipse cx="1.5" cy="0.5" rx="1.5" ry="0.5" transform="matrix(1 0 0 -1 104 231)" fill="url(#paint30_linear_2694_9106)"/>
 							</g>
@@ -361,7 +361,7 @@
 							<path d="M129 220.5V224.5C129 228.09 126.09 231 122.5 231V231C118.91 231 116 228.09 116 224.5V220.5" stroke="url(#paint31_linear_2694_9106)" stroke-width="0.5"/>
 							</g>
 							<rect x="116.25" y="210.25" width="12.5" height="20.5" rx="6.25" stroke="url(#paint32_linear_2694_9106)" stroke-width="0.5"/>
-							<circle cx="122.5" cy="220.5" r="1.5" fill="url(#paint33_linear_2694_9106)"/>
+							<!-- <circle cx="122.5" cy="220.5" r="1.5" fill="url(#paint33_linear_2694_9106)"/> -->
 							<g opacity="0.1" filter="url(#filter10_f_2694_9106)">
 							<ellipse cx="1.5" cy="0.5" rx="1.5" ry="0.5" transform="matrix(1 0 0 -1 121 231)" fill="url(#paint34_linear_2694_9106)"/>
 							</g>
@@ -370,7 +370,7 @@
 							<path d="M146 220.5V224.5C146 228.09 143.09 231 139.5 231V231C135.91 231 133 228.09 133 224.5V220.5" stroke="url(#paint35_linear_2694_9106)" stroke-width="0.5"/>
 							</g>
 							<rect x="133.25" y="210.25" width="12.5" height="20.5" rx="6.25" stroke="url(#paint36_linear_2694_9106)" stroke-width="0.5"/>
-							<circle cx="139.5" cy="220.5" r="1.5" fill="url(#paint37_linear_2694_9106)"/>
+							<!-- <circle cx="139.5" cy="220.5" r="1.5" fill="url(#paint37_linear_2694_9106)"/> -->
 							<g opacity="0.1" filter="url(#filter12_f_2694_9106)">
 							<ellipse cx="1.5" cy="0.5" rx="1.5" ry="0.5" transform="matrix(1 0 0 -1 138 231)" fill="url(#paint38_linear_2694_9106)"/>
 							</g>
@@ -379,7 +379,7 @@
 							<path d="M163 220.5V224.5C163 228.09 160.09 231 156.5 231V231C152.91 231 150 228.09 150 224.5V220.5" stroke="url(#paint39_linear_2694_9106)" stroke-width="0.5"/>
 							</g>
 							<rect x="150.25" y="210.25" width="12.5" height="20.5" rx="6.25" stroke="url(#paint40_linear_2694_9106)" stroke-width="0.5"/>
-							<circle cx="156.5" cy="220.5" r="1.5" fill="url(#paint41_linear_2694_9106)"/>
+							<!-- <circle cx="156.5" cy="220.5" r="1.5" fill="url(#paint41_linear_2694_9106)"/> -->
 							<g opacity="0.1" filter="url(#filter14_f_2694_9106)">
 							<ellipse cx="1.5" cy="0.5" rx="1.5" ry="0.5" transform="matrix(1 0 0 -1 155 231)" fill="url(#paint42_linear_2694_9106)"/>
 							</g>
@@ -388,7 +388,7 @@
 							<path d="M180 220.5V224.5C180 228.09 177.09 231 173.5 231V231C169.91 231 167 228.09 167 224.5V220.5" stroke="url(#paint43_linear_2694_9106)" stroke-width="0.5"/>
 							</g>
 							<rect x="167.25" y="210.25" width="12.5" height="20.5" rx="6.25" stroke="url(#paint44_linear_2694_9106)" stroke-width="0.5"/>
-							<circle cx="173.5" cy="220.5" r="1.5" fill="url(#paint45_linear_2694_9106)"/>
+							<!-- <circle cx="173.5" cy="220.5" r="1.5" fill="url(#paint45_linear_2694_9106)"/> -->
 							<g opacity="0.1" filter="url(#filter16_f_2694_9106)">
 							<ellipse cx="1.5" cy="0.5" rx="1.5" ry="0.5" transform="matrix(1 0 0 -1 172 231)" fill="url(#paint46_linear_2694_9106)"/>
 							</g>
