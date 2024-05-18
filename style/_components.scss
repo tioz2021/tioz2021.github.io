@@ -873,13 +873,14 @@
   }
   // .scroll-section__text
   &__text {
+    width: auto;
     display: inline-block;
     box-sizing: border-box;
     padding-left: 8px;
     padding-right: 8px;
     border-radius: 8px;
     height: 16px;
-    background: linear-gradient(180deg, #131827 0%, #0d101f 100%);
+    // background: linear-gradient(180deg, #131827 0%, #0d101f 100%);
     // @include text-min-h()
   }
   // .scroll-section .scroll-section__swiper
