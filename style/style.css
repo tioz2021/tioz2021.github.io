@@ -1622,7 +1622,7 @@ template {
 }
 
 .shake-animation {
-  animation: shake 1.3s ease-in-out;
+  animation: shake 1.5s ease-in-out;
   animation-iteration-count: infinite;
 }
 
@@ -1631,16 +1631,16 @@ template {
     transform: translate(0, 0);
   }
   10%, 90% {
-    transform: translate(-2px, 0);
+    transform: translate(-1px, 0);
   }
   20%, 80% {
-    transform: translate(2px, 0);
+    transform: translate(1px, 0);
   }
   30%, 70% {
-    transform: translate(-2px, 0);
+    transform: translate(-1px, 0);
   }
   40%, 60% {
-    transform: translate(2px, 0);
+    transform: translate(1px, 0);
   }
   50% {
     transform: translate(0, 0);
@@ -2203,6 +2203,7 @@ input {
 }
 .s4__btn {
   margin-bottom: 24px;
+  z-index: 2;
 }
 .s4__last-text-wrp {
   display: flex;
