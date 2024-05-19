@@ -11,25 +11,6 @@
   }
 }
 
-.s1__decorations {
-  opacity: 0;
-  animation-name: m_opacity;
-  animation-duration: 1.5s;
-  animation-delay: 1.5s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
-.logo-video {
-  // display: none;
-  opacity: 1;
-  animation-name: m_opacity;
-  animation-duration: 1.5s;
-  // animation-delay: 3s;
-  animation-direction: reverse;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
-
 @keyframes m_opacity {
   0% {
     opacity: 0;
@@ -85,4 +66,156 @@
   40%, 60% { transform: translate(1px, 0); }
   50% { transform: translate(0, 0); }
   51%, 100% { transform: translate(0, 0); }
+}
+
+
+
+// FS
+.s1__title{
+  opacity: 0;
+  animation-name: m_opacity;
+  animation-duration: 1.5s;
+  animation-delay: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.logo-video {
+  // display: none;
+  opacity: 0;
+  animation-name: m_opacity;
+  animation-duration: 1.5s;
+  animation-delay: 0.5s;
+  animation-direction: reverse;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.header{
+  opacity: 0;
+  animation-name: m_opacity;
+  animation-duration: 1.5s;
+  animation-delay: 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.s1__pre-title{
+  opacity: 0;
+  animation-name: m_opacity;
+  animation-duration: 1.5s;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.s1__title-desk{
+  opacity: 0;
+  animation-name: m_opacity;
+  animation-duration: 1.5s;
+  animation-delay: 2.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.s1__text{
+  opacity: 0;
+  animation-name: m_opacity;
+  animation-duration: 1.5s;
+  animation-delay: 2.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.s1__btn{
+  opacity: 0;
+  animation-name: m_opacity;
+  animation-duration: 1.5s;
+  animation-delay: 2.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.s1__card-box{
+  opacity: 0;
+  animation-name: m_opacity;
+  animation-duration: 1.5s;
+  animation-delay: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.s1__decorations {
+  opacity: 0;
+  animation-name: m_opacity;
+  animation-duration: 1.5s;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.s1__card-box{
+  display: flex;
+  justify-content: center;
+  transition: all 1500ms ease-in-out;
+}
+.s1__card-box.disabled{
+  transform: translateY(100px);
+}
+.s1__card-box.active{
+  transform: translateY(0px);
+}
+
+.card-box__item-wrp:nth-child(3){
+  transition: all 1500ms ease-in-out;
+}
+.card-box__item-wrp:nth-child(3).disabled{
+  left: 50%;
+  transform: translateX(-50%) translateY(0%) translateZ(0px) rotateY(0deg);
+}
+.card-box__item-wrp:nth-child(3).active{
+  left: 94px;
+  transform: translateX(0px) translateY(0%) translateZ(-58px) rotateY(-10deg);
+}
+
+.card-box__item-wrp:nth-child(5){
+  transition: all 1500ms ease-in-out;
+}
+.card-box__item-wrp:nth-child(5).disabled{
+  right: 50%;
+  transform: translateX(50%) translateY(0%) translateZ(0px) rotateY(0deg);
+}
+.card-box__item-wrp:nth-child(5).active{
+  right: 94px;
+  transform: translateX(0px) translateY(0%) translateZ(-58px) rotateY(10deg);
+  transition: all 1500ms ease-in-out;
+}
+
+.card-box__item-wrp:nth-child(2){
+  transition: all 1750ms ease-in-out;
+}
+.card-box__item-wrp:nth-child(2).disabled{
+  left: 50%;
+  transform: translateX(-50%) translateY(0%) translateZ(0px) rotateY(0deg);
+}
+.card-box__item-wrp:nth-child(2).active{
+  left: -30px;
+  transform: translateX(0px) translateY(0%) translateZ(-54px) rotateY(-10deg);
+}
+
+.card-box__item-wrp:nth-child(6){
+  transition: all 1750ms ease-in-out;
+}
+.card-box__item-wrp:nth-child(6).disabled{
+  right: 50%;
+  transform: translateX(50%) translateY(0%) translateZ(0px) rotateY(0deg);
+}
+.card-box__item-wrp:nth-child(6).active{
+  left: auto;
+  right: -30px;
+  transform: translateX(0px) translateY(0%) translateZ(-54px) rotateY(10deg);
+}
+
+
+.card-box__item-wrp:nth-child(4){
+  transition: left 1250ms ease-in-out;
+}
+.card-box__item-wrp:nth-child(4).disabled{
+}
+.card-box__item-wrp:nth-child(4).active{
+  // left: 50%;
+  // margin-left: -151px;
 }

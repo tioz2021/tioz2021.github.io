@@ -123,29 +123,31 @@
 
 // 3d s1
 (() => {
-  const block = document.querySelector(".block");
-  const container = document.querySelector(".s1");
-  const container_centered = document.querySelector(".center-block");
-  let offsetX = 0;
-  let offsetY = 0;
-
-  if (container) container.addEventListener("mousemove", moveBlock);
-
-  function moveBlock(e) {
-    const mouseX = e.clientX;
-    const mouseY = e.clientY;
-    const blockRect = block.getBoundingClientRect();
-    const distanceX = mouseX - blockRect.left - blockRect.width / 2;
-    const distanceY = mouseY - blockRect.top - blockRect.height / 2;
-
-    offsetX = distanceX * 0.0055;
-    offsetY = distanceY * 0.0055;
-    block.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
-
-    offsetX_center = distanceX * 0.0095;
-    offsetY_center = distanceY * 0.0095;
-    container_centered.style.transform = `translate(${offsetX_center}px, ${offsetY_center}px)`;
-  }
+  setTimeout(() => {
+    const block = document.querySelector(".block");
+    const container = document.querySelector(".s1");
+    const container_centered = document.querySelector(".center-block");
+    let offsetX = 0;
+    let offsetY = 0;
+  
+    if (container) container.addEventListener("mousemove", moveBlock);
+  
+    function moveBlock(e) {
+      const mouseX = e.clientX;
+      const mouseY = e.clientY;
+      const blockRect = block.getBoundingClientRect();
+      const distanceX = mouseX - blockRect.left - blockRect.width / 2;
+      const distanceY = mouseY - blockRect.top - blockRect.height / 2;
+  
+      offsetX = distanceX * 0.0055;
+      offsetY = distanceY * 0.0055;
+      block.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+  
+      offsetX_center = distanceX * 0.0095;
+      offsetY_center = distanceY * 0.0095;
+      container_centered.style.transform = `translate(${offsetX_center}px, ${offsetY_center}px)`;
+    }
+  }, 5000)
 })();
 
 // 3d s13
@@ -712,4 +714,23 @@
   
     type(); // Начать первый цикл печати
   });
+}) ();
+
+
+// card animation start
+(() => {
+  const items = document.querySelectorAll(".card-box__item-wrp");
+  const wrp = document.querySelector(".s1__card-box");
+  if(items) items.forEach(e => {
+    setTimeout(() => {
+      e.classList.remove("disabled");
+      e.classList.add("active");
+
+      wrp.classList.remove("disabled");
+      wrp.classList.add("active");
+      setTimeout(() => {
+        wrp.style.transition = "unset";
+      }, 1500)
+    }, 3500);
+  })
 }) ();
