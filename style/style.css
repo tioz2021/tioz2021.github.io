@@ -497,7 +497,6 @@ template {
   line-height: 120%;
   text-align: center;
   color: var(--bodi-2-1);
-  letter-spacing: 1px;
 }
 
 .def-title {
@@ -506,7 +505,6 @@ template {
   line-height: 120%;
   text-align: center;
   color: var(--bodi-2-1);
-  letter-spacing: 1px;
 }
 
 .str-text {
@@ -515,7 +513,6 @@ template {
   line-height: 130%;
   text-align: center;
   color: var(--bodi-2-1);
-  letter-spacing: 1px;
 }
 
 .def-text {
@@ -524,7 +521,6 @@ template {
   line-height: 130%;
   text-align: center;
   color: var(--bodi-2-2);
-  letter-spacing: 1px;
 }
 
 .small-text {
@@ -1836,8 +1832,8 @@ input {
 .card_card-hero__pjFbO {
   -webkit-backdrop-filter: blur(110px) !important;
           backdrop-filter: blur(110px) !important;
+  background: unset !important;
   border: 0.5px solid var(--dop-decor-bg) !important;
-  background: radial-gradient(190.21% 87.4% at 50% 23.53%, rgb(9, 14, 29) 0%, rgb(19, 24, 39) 100%) !important;
 }
 
 .card_card-hero__pjFbO:before {
@@ -4299,6 +4295,15 @@ input {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.card-box__item-bg {
+  z-index: 2;
+}
+
+.card-box__item-body {
+  z-index: 3;
+  position: relative;
 }
 
 @media screen and (max-width: 1200px) {
