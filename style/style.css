@@ -1832,7 +1832,6 @@ input {
 .card_card-hero__pjFbO {
   -webkit-backdrop-filter: blur(110px) !important;
           backdrop-filter: blur(110px) !important;
-  background: unset !important;
   border: 0.5px solid var(--dop-decor-bg) !important;
 }
 
