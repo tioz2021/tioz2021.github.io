@@ -603,6 +603,7 @@
     padding-left: 28px;
     padding-right: 28px;
     // padding-bottom: 36px;
+    border-radius: 24px;
   }
   // .s4__list-item-icon
   &__list-item-icon {
@@ -3133,9 +3134,16 @@ position: relative;
 
 
 .card-box__item-bg{
-  z-index: 2;
+  // z-index: 2;
 }
 .card-box__item-body{
   z-index: 3;
   position: relative;
+}
+
+.card-box__item-wrp:nth-child(2) .card-box__item-bg{
+  transform: translate(-50%, -50%) scale(1.4);
+}
+.card-box__item-wrp:nth-child(6) .card-box__item-bg{
+  transform: translate(-50%, -50%) scale(1.4);
 }
