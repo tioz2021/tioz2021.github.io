@@ -1658,6 +1658,16 @@ template {
   animation-fill-mode: forwards;
 }
 
+.logo-video2 {
+  animation-name: unset;
+  opacity: 1;
+  -webkit-mask-image: radial-gradient(closest-side at 50% 50%, #000 -35%, transparent 100%);
+          mask-image: radial-gradient(closest-side at 50% 50%, #000 -35%, transparent 100%);
+  mix-blend-mode: color-dodge;
+  pointer-events: none;
+  filter: saturate(0.7);
+}
+
 .header {
   opacity: 0;
   animation-name: m_opacity;
@@ -2008,7 +2018,7 @@ input {
   filter: blur(300px);
   background: #93abf8;
   opacity: 0.15;
-  z-index: 3;
+  z-index: -1;
   top: 91px;
   left: 50%;
   transform: translateX(-50%);
