@@ -241,7 +241,7 @@
     });
 
     function animateOpacity() {
-      blurElement.forEach((e) => (e.style.opacity = "0.135"));
+      blurElement.forEach((e) => (e.style.opacity = "0.2"));
       // blurElement.style.opacity = "0.1";
       timeoutId = setTimeout(() => {
         blurElement.forEach((e) => (e.style.opacity = "0.1"));
@@ -733,4 +733,9 @@
       }, 1500)
     }, 3500);
   })
+
+  const video = document.querySelector(".logo-video1");
+  setTimeout(() => {
+    video.classList.add("active");
+  }, 2000);
 }) ();
