@@ -81,13 +81,6 @@
 }
 .logo-video {
   // display: none;
-  opacity: 0;
-  animation-name: m_opacity;
-  animation-duration: 1.5s;
-  animation-delay: 0.5s;
-  animation-direction: reverse;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
 
   // mask-image: radial-gradient(closest-side at 50% 50%, #000 -35%, transparent 95%);
   // pointer-events: none;
@@ -96,19 +89,21 @@
   // mask-image: radial-gradient(closest-side at 50% 50%, #000 -35%, transparent 100%);
 }
 
-.logo-video1.active{
-  opacity: 1;
-  animation-name: none;
-  mix-blend-mode: color-dodge;
-  filter: saturate(.7);
-  mask-image: radial-gradient(closest-side at 50% 50%, #070917 -35%, transparent 0%);
+.logo-video1{
+  opacity: 0;
+  animation-name: m_opacity;
+  animation-duration: 1.5s;
+  animation-delay: 0.5s;
+  animation-direction: reverse;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 .logo-video2{
-  animation-name: unset;
+  // display: none;
   opacity: 1;
-  mask-image: radial-gradient(closest-side at 50% 50%, #000 -35%, transparent 100%);
-  mix-blend-mode: lighten;
+  mask-image: radial-gradient(closest-side at 50% 50%, red -35%, transparent 95%);
+  mix-blend-mode: color-dodge;
   filter: saturate(.7);
 }
 

@@ -734,8 +734,8 @@
     }, 3500);
   })
 
-  const video = document.querySelector(".logo-video1");
-  setTimeout(() => {
-    video.classList.add("active");
-  }, 2000);
+  // const video = document.querySelector(".logo-video1");
+  // setTimeout(() => {
+  //   video.classList.add("active");
+  // }, 2000);
 }) ();
