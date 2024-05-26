@@ -397,11 +397,10 @@
   }
   // .s3__list-item
   &__list-item {
-    // border: 1px solid grey;
     width: 352px;
     min-height: 500px;
+    display: flex !important;
 
-    display: flex;
     flex-direction: column;
     align-items: center;
 
@@ -3165,5 +3164,28 @@ position: relative;
   display: none;
 }
 .card-box__item-wrp:nth-child(6) .card_card-hero__pjFbO:before{
+  display: none;
+}
+
+.s3_tab-swiper{
+  width: 100%;
+}
+
+
+.s3 .s3__list-item{
+  width: 352px;
+  // min-height: 500px !important;
+  // display: flex !important;
+}
+
+.s3 .swiper .slider-navigation{
+  display: none;
+}
+
+.s3 .slider-section__swiper-button-next{
+  display: none;
+}
+
+.s3 .slider-section__swiper-button-prev{
   display: none;
 }

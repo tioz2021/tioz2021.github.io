@@ -66,6 +66,32 @@
     },
   });
 
+  function initializeSwiper() {
+    if (window.innerWidth < 1200) {
+      var swiper = new Swiper(".s3_tab-swiper", {
+        pagination: {
+          el: ".scroll-section__slider-navigation",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".slider-section__swiper-button-next",
+          prevEl: ".slider-section__swiper-button-prev",
+        },
+
+        slidesPerView: 1,
+        spaceBetween: 10,
+      });
+    }
+  }
+
+  // Инициализация при загрузке страницы
+  initializeSwiper();
+
+  // Инициализация при изменении размера окна
+  window.addEventListener("resize", function () {
+    initializeSwiper();
+  });
+
   // function scroll_slider_block() {
   //   const scrollingBlock = document.querySelector(".s2.scrolling-block");
   //   const scrollingBlock2 = document.querySelector(".s5.scrolling-block");
@@ -129,25 +155,25 @@
     const container_centered = document.querySelector(".center-block");
     let offsetX = 0;
     let offsetY = 0;
-  
+
     if (container) container.addEventListener("mousemove", moveBlock);
-  
+
     function moveBlock(e) {
       const mouseX = e.clientX;
       const mouseY = e.clientY;
       const blockRect = block.getBoundingClientRect();
       const distanceX = mouseX - blockRect.left - blockRect.width / 2;
       const distanceY = mouseY - blockRect.top - blockRect.height / 2;
-  
+
       offsetX = distanceX * 0.0055;
       offsetY = distanceY * 0.0055;
       block.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
-  
+
       offsetX_center = distanceX * 0.0095;
       offsetY_center = distanceY * 0.0095;
       container_centered.style.transform = `translate(${offsetX_center}px, ${offsetY_center}px)`;
     }
-  }, 5000)
+  }, 5000);
 })();
 
 // 3d s13
@@ -155,7 +181,7 @@
   const wrapper1 = document.querySelector(".s7");
   const wrapper2 = document.querySelector(".s13");
   function globalMove(wrapper) {
-    const block = wrapper.querySelector(".window");
+    const block = wrapper.querySelector(".window111111");
     const container = wrapper;
     const container_blocks = wrapper.querySelectorAll(".s7__item");
     const container_centered = wrapper.querySelector(".s7__item-main");
@@ -191,36 +217,38 @@
 
 // line-progress
 (() => {
-  document.querySelectorAll(".list-progress__item-wrp").forEach((container) => {
-    const block = container.querySelector(".list-progress__item-icon");
-    let offsetX = 0;
-    let offsetY = 0;
+  document
+    .querySelectorAll(".list-progress__item-wrp123")
+    .forEach((container) => {
+      const block = container.querySelector(".list-progress__item-icon");
+      let offsetX = 0;
+      let offsetY = 0;
 
-    // Добавляем transition при загрузке страницы
-    block.style.transition = "transform 0.3s ease";
+      // Добавляем transition при загрузке страницы
+      block.style.transition = "transform 0.3s ease";
 
-    if (container) container.addEventListener("mousemove", moveBlock);
-    container.addEventListener("mouseleave", returnToOriginalPosition);
+      if (container) container.addEventListener("mousemove", moveBlock);
+      container.addEventListener("mouseleave", returnToOriginalPosition);
 
-    function moveBlock(e) {
-      const mouseX = e.clientX;
-      const mouseY = e.clientY;
-      const blockRect = block.getBoundingClientRect();
-      const distanceX = mouseX - blockRect.left - blockRect.width / 2;
-      const distanceY = mouseY - blockRect.top - blockRect.height / 2;
+      function moveBlock(e) {
+        const mouseX = e.clientX;
+        const mouseY = e.clientY;
+        const blockRect = block.getBoundingClientRect();
+        const distanceX = mouseX - blockRect.left - blockRect.width / 2;
+        const distanceY = mouseY - blockRect.top - blockRect.height / 2;
 
-      offsetX = distanceX * 0.3511;
-      offsetY = distanceY * 0.3511;
+        offsetX = distanceX * 0.3511;
+        offsetY = distanceY * 0.3511;
 
-      requestAnimationFrame(() => {
-        block.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
-      });
-    }
+        requestAnimationFrame(() => {
+          block.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+        });
+      }
 
-    function returnToOriginalPosition() {
-      block.style.transform = `translate(0, 0)`;
-    }
-  });
+      function returnToOriginalPosition() {
+        block.style.transform = `translate(0, 0)`;
+      }
+    });
 })();
 
 // svg blur ( svg-blur-hover-wrp, svg-blur, blur )
@@ -682,60 +710,89 @@
 
 // typing profit
 (() => {
-  document.addEventListener("DOMContentLoaded", function() {
-    var textWrp = document.querySelector('.typingEffect')
-    if(!textWrp) return;
-    var text = textWrp.getElementsByTagName('span');
+  document.addEventListener("DOMContentLoaded", function () {
+    var textWrp = document.querySelector(".typingEffect");
+    if (!textWrp) return;
+    var text = textWrp.getElementsByTagName("span");
     var index = 0;
     var typingSpeed = 200; // Скорость печати (в миллисекундах)
     var eraseSpeed = 100; // Скорость стирания (в миллисекундах)
     var pauseBetweenCycles = 1000; // Пауза между циклами (в миллисекундах)
-  
+
     function type() {
       if (index < text.length) {
-        text[index].style.display = 'inline';
+        text[index].style.display = "inline";
         index++;
         setTimeout(type, typingSpeed); // Задержка перед отображением следующей буквы
       } else {
         setTimeout(erase, pauseBetweenCycles); // Пауза перед стиранием слова
       }
     }
-    
+
     function erase() {
       if (index > 0) {
         index--;
-        text[index].style.display = 'none';
+        text[index].style.display = "none";
         setTimeout(erase, eraseSpeed); // Задержка перед исчезновением предыдущей буквы
       } else {
         index = 0;
         type(); // Начать новый цикл печати после стирания
       }
     }
-  
+
     type(); // Начать первый цикл печати
   });
-}) ();
-
+})();
 
 // card animation start
 (() => {
   const items = document.querySelectorAll(".card-box__item-wrp");
   const wrp = document.querySelector(".s1__card-box");
-  if(items) items.forEach(e => {
-    setTimeout(() => {
-      e.classList.remove("disabled");
-      e.classList.add("active");
-
-      wrp.classList.remove("disabled");
-      wrp.classList.add("active");
+  if (items)
+    items.forEach((e) => {
       setTimeout(() => {
-        wrp.style.transition = "unset";
-      }, 1500)
-    }, 3500);
-  })
+        e.classList.remove("disabled");
+        e.classList.add("active");
+
+        wrp.classList.remove("disabled");
+        wrp.classList.add("active");
+        setTimeout(() => {
+          wrp.style.transition = "unset";
+        }, 1500);
+      }, 3500);
+    });
 
   // const video = document.querySelector(".logo-video1");
   // setTimeout(() => {
   //   video.classList.add("active");
   // }, 2000);
-}) ();
+})();
+
+// s4 tab|mob auto scroller
+(() => {
+  document.addEventListener("DOMContentLoaded", () => {
+    const items = document.querySelectorAll(".s4__list-item");
+    let currentIndex = 0;
+    let previousIndex = items.length - 1;
+
+    function showNextItem() {
+      // Скрыть текущий элемент, переместив его влево
+      items[previousIndex].classList.remove("previous");
+      items[currentIndex].classList.remove("active");
+      items[currentIndex].classList.add("previous");
+
+      // Рассчитать индекс следующего элемента
+      previousIndex = currentIndex;
+      currentIndex = (currentIndex + 1) % items.length;
+
+      // Показать следующий элемент, переместив его из правой части
+      items[currentIndex].classList.add("active");
+    }
+
+    // Изначально показать первый элемент
+    items[currentIndex].classList.add("active");
+
+    // Установить интервал для автоматического переключения элементов
+    setInterval(showNextItem, 6000);
+  });
+})();
