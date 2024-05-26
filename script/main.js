@@ -181,7 +181,7 @@
   const wrapper1 = document.querySelector(".s7");
   const wrapper2 = document.querySelector(".s13");
   function globalMove(wrapper) {
-    const block = wrapper.querySelector(".window111111");
+    const block = wrapper.querySelector(".window");
     const container = wrapper;
     const container_blocks = wrapper.querySelectorAll(".s7__item");
     const container_centered = wrapper.querySelector(".s7__item-main");

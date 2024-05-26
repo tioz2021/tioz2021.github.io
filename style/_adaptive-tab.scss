@@ -272,7 +272,7 @@
   margin-bottom: 13px;
 }
 .list-progress__item:nth-child(3) .list-progress__text{
-  margin-left: -10px;
+  margin-left: -26px;
 }
 
 .list-progress__item:nth-child(5) .list-progress__item-wrp{
@@ -614,4 +614,259 @@
 }
 .s8 .swiper .slider-navigation{
   bottom: 15px !important;
+}
+
+
+.s9__tag-center-box-bg{
+  // display: none;
+  width: 465px;
+  height: 236px;
+  top: 384px;
+}
+.s9__tag-bg{
+  // display: none;
+  width: 608px;
+  height: 268px;
+  top: 375px;
+}
+.s9__tag-line{
+  // display: none;
+  width: 524px;
+  height: 276px;
+  top: 365px;
+}
+.s9__main-box-bg{
+  // display: none;
+  width: 768px;
+  height: 1388px;
+  top: 50.5%;
+}
+.s9__tag-blur-bg{
+  // display: none;
+  border-radius: 147px;
+  width: 560px;
+  height: 250px;
+  filter: blur(400px);
+  background: rgba(147, 171, 248, 0.15);
+  top: 384px;
+}
+.s9{
+  min-height: unset;
+  padding-top: 190px;
+}
+.s9__pre-title{
+  margin-bottom: 25px;
+}
+.s9__title-text br{
+  display: none;
+}
+.s9__title-text{
+  max-width: 500px;
+  margin-bottom: 28px;
+}
+.s9__title{
+  margin-bottom: 473px;
+}
+
+.s9__tag1{
+  top: 358px;
+  left: 204px;
+}
+.s9__tag2{
+  top: 358px;
+  right: 202px;
+}
+.s9__tag3{
+  top: 632px;
+  left: 176px;
+}
+.s9__tag4 {
+  top: 632px;
+  left: 353px;
+}
+.s9__tag5 {
+  top: 632px;
+  left: 533px;
+}
+.s9__svg-item1{
+  width: 92px;
+  height: 41px;
+  right: 199px;
+  top: 532px;
+}
+.s9__svg-item2{
+  width: 98px;
+  height: 43px;
+  right: 336px;
+  top: 546px;
+}
+.img-wrp .s9__svg-item-lottie-4{
+  transform: translate(-50%, -50%) scale(1.43);
+  left: 49px;
+  top: 21px;
+}
+.s9__svg-item3{
+  width: 101px;
+  height: 43px;
+  left: 225px;
+  top: 433px;
+}
+.img-wrp .s9__svg-item-lottie-1{
+  width: 107px;
+  left: 49px;
+  transform: translate(-50%, -50%) scale(1.53);
+  top: 20px;
+}
+.s9__svg-item4{
+  width: 156px;
+  height: 187px;
+  left: 305px;
+  top: 410px;
+}
+
+.s9__svg-item5{
+  width: 64px;
+  height: 42px;
+  right: 245px;
+  top: 432px;
+}
+.img-wrp .s9__svg-item-lottie-2{
+  width: 88px;
+  height: 51px;
+  top: 21.3px;
+  left: 31.5px;
+}
+
+.s9{
+  padding-bottom: 240px;
+}
+
+.s10 .s6__title-text{
+  max-width: 600px;
+}
+
+.s10 .s6__title-text br{
+  display: none;
+}
+
+.s10__list--mod{
+  margin-bottom: 48px;
+}
+
+.s10 .s9__end-title br{
+  display: none;
+}
+
+.s10 .list-progress__item{
+  width: 33%;
+}
+
+.s10 .list-progress__text br{
+  display: none;
+}
+
+.s10 .list-progress__item .list-progress__text{
+  max-width: 170px;
+}
+.list-progress__item:nth-child(1) .list-progress__text{
+  margin-left: -65px;
+}
+.list-progress__item:nth-child(1) .list-progress__item-wrp{
+  margin-left: -62px;
+  margin-top: 1px;
+}
+.list-progress__item:nth-child(3) .list-progress__item-wrp{
+  margin-left: -23px;
+}
+.list-progress__item:nth-child(5) .list-progress__item-wrp{
+  margin-left: 32px;
+  margin-top: -1px;
+}
+.list-progress__item:nth-child(5) .list-progress__text{
+  margin-left: 29px;
+}
+.s10 .list-progress__item-decoration{
+  width: 146px;
+  top: 40.5px;  
+}
+.s10 .list-progress__item-decoration-line{
+  width: 100%;
+}
+.s10 .list-progress__item-decoration:nth-child(2){
+  left: 139px;
+}
+.s10 .list-progress__item-decoration:nth-child(4){
+  left: 393px;
+}
+
+.s11{
+  margin-top: -140px;
+  margin-bottom: 82px;
+}
+.s11__pre-title{
+  margin-bottom: 25px;
+}
+
+.s11 .slider-section__title-text{
+  margin-bottom: 30px;
+}
+
+.s11 .slider-section__title{
+  margin-bottom: 124px;
+}
+.s11 .slider-section__bg-main{
+  bottom: 36px;
+}
+
+.s12__decor-bg{
+  // display: none;
+  width: 681px;
+  height: 712px;
+  top: 234px;
+}
+.s12__pre-title{
+  margin-bottom: 24px;
+}
+.s12__list{
+  flex-direction: column;
+
+}
+
+.s12__item{
+  margin-right: 0;
+}
+.s12__item:nth-child(1){
+  margin-bottom: 107px;
+}
+
+.s13{
+  margin-top: -40px;
+  margin-bottom: 188px;
+}
+.s14{
+  margin-bottom: 58px;
+}
+
+.footer .cta-box{
+  width: 328px;
+  height: 320px; 
+}
+.footer__item-bg{
+  width: 328px;
+  height: 320px;
+}
+.footer__item-logo{
+  width: 387px;
+  height: 220px;
+}
+
+.footer__item:nth-child(2) .footer__item-logo{
+  width: 387px;
+  height: 204px;
+}
+.footer__item:nth-child(2) .footer__item-title{
+  margin-top: 8px;
+}
+.footer__start{
+  margin-bottom: 114px;
 }
