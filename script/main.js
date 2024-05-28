@@ -149,70 +149,74 @@
 
 // 3d s1
 (() => {
-  setTimeout(() => {
-    const block = document.querySelector(".block");
-    const container = document.querySelector(".s1");
-    const container_centered = document.querySelector(".center-block");
-    let offsetX = 0;
-    let offsetY = 0;
+  if (window.innerWidth > 1200) {
+    setTimeout(() => {
+      const block = document.querySelector(".block");
+      const container = document.querySelector(".s1");
+      const container_centered = document.querySelector(".center-block");
+      let offsetX = 0;
+      let offsetY = 0;
 
-    if (container) container.addEventListener("mousemove", moveBlock);
+      if (container) container.addEventListener("mousemove", moveBlock);
 
-    function moveBlock(e) {
-      const mouseX = e.clientX;
-      const mouseY = e.clientY;
-      const blockRect = block.getBoundingClientRect();
-      const distanceX = mouseX - blockRect.left - blockRect.width / 2;
-      const distanceY = mouseY - blockRect.top - blockRect.height / 2;
+      function moveBlock(e) {
+        const mouseX = e.clientX;
+        const mouseY = e.clientY;
+        const blockRect = block.getBoundingClientRect();
+        const distanceX = mouseX - blockRect.left - blockRect.width / 2;
+        const distanceY = mouseY - blockRect.top - blockRect.height / 2;
 
-      offsetX = distanceX * 0.0055;
-      offsetY = distanceY * 0.0055;
-      block.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+        offsetX = distanceX * 0.0055;
+        offsetY = distanceY * 0.0055;
+        block.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
 
-      offsetX_center = distanceX * 0.0095;
-      offsetY_center = distanceY * 0.0095;
-      container_centered.style.transform = `translate(${offsetX_center}px, ${offsetY_center}px)`;
-    }
-  }, 5000);
+        offsetX_center = distanceX * 0.0095;
+        offsetY_center = distanceY * 0.0095;
+        container_centered.style.transform = `translate(${offsetX_center}px, ${offsetY_center}px)`;
+      }
+    }, 5000);
+  }
 })();
 
 // 3d s13
 (() => {
-  const wrapper1 = document.querySelector(".s7");
-  const wrapper2 = document.querySelector(".s13");
-  function globalMove(wrapper) {
-    const block = wrapper.querySelector(".window");
-    const container = wrapper;
-    const container_blocks = wrapper.querySelectorAll(".s7__item");
-    const container_centered = wrapper.querySelector(".s7__item-main");
-    let offsetX = 0;
-    let offsetY = 0;
-
-    if (container) container.addEventListener("mousemove", moveBlock);
-    function moveBlock(e) {
-      const mouseX = e.clientX;
-      const mouseY = e.clientY;
-      const blockRect = block.getBoundingClientRect();
-      const distanceX = mouseX - blockRect.left - blockRect.width / 2;
-      const distanceY = mouseY - blockRect.top - blockRect.height / 2;
-
-      offsetX = distanceX * -0.0035;
-      offsetY = distanceY * -0.0035;
-      block.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
-
-      offsetX_blocks = distanceX * 0.0025;
-      offsetY_blocks = distanceY * 0.0025;
-      container_blocks.forEach((e) => {
-        e.style.transform = `translate(${offsetX_blocks}px, ${offsetY_blocks}px)`;
-      });
-
-      offsetX_center = distanceX * 0.0115;
-      offsetY_center = distanceY * 0.0115;
-      container_centered.style.transform = `translate(${offsetX_center}px, ${offsetY_center}px)`;
+  if (window.innerWidth > 1200) {
+    const wrapper1 = document.querySelector(".s7");
+    const wrapper2 = document.querySelector(".s13");
+    function globalMove(wrapper) {
+      const block = wrapper.querySelector(".window");
+      const container = wrapper;
+      const container_blocks = wrapper.querySelectorAll(".s7__item");
+      const container_centered = wrapper.querySelector(".s7__item-main");
+      let offsetX = 0;
+      let offsetY = 0;
+  
+      if (container) container.addEventListener("mousemove", moveBlock);
+      function moveBlock(e) {
+        const mouseX = e.clientX;
+        const mouseY = e.clientY;
+        const blockRect = block.getBoundingClientRect();
+        const distanceX = mouseX - blockRect.left - blockRect.width / 2;
+        const distanceY = mouseY - blockRect.top - blockRect.height / 2;
+  
+        offsetX = distanceX * -0.0035;
+        offsetY = distanceY * -0.0035;
+        block.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+  
+        offsetX_blocks = distanceX * 0.0025;
+        offsetY_blocks = distanceY * 0.0025;
+        container_blocks.forEach((e) => {
+          e.style.transform = `translate(${offsetX_blocks}px, ${offsetY_blocks}px)`;
+        });
+  
+        offsetX_center = distanceX * 0.0115;
+        offsetY_center = distanceY * 0.0115;
+        container_centered.style.transform = `translate(${offsetX_center}px, ${offsetY_center}px)`;
+      }
     }
+    if (wrapper1) globalMove(wrapper1);
+    if (wrapper2) globalMove(wrapper2);
   }
-  if (wrapper1) globalMove(wrapper1);
-  if (wrapper2) globalMove(wrapper2);
 })();
 
 // line-progress

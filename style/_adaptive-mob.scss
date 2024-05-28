@@ -1,0 +1,249 @@
+.header{
+  height: unset;
+  margin-top: 17px;
+  margin-bottom: 38px;
+}
+.header__container{
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.header__logo{
+  order: 1;
+  width: 58px;
+  height: 16px;
+  margin-right: 0;
+  margin-bottom: 13px;
+}
+.header__btn{
+  width: 104px;
+  height: 24px;
+  order: 2;
+  margin: 0;
+  margin-bottom: 13px;
+}
+.header__nav{
+  width: 312px;
+  order: 3;
+  margin: 0 auto;
+}
+
+.s1{
+  margin-top: 0;
+  padding-top: 0;
+}
+.s1__pre-title{
+  margin-bottom: 15px;
+}
+.s1__title {
+  width: 276px;
+  height: 82px;
+  margin-bottom: 11px;
+}
+.s1__title-desk{
+  margin-bottom: 15px;
+}
+.s1__text{
+  max-width: 234px;
+  margin-bottom: 19px;
+}
+.card-box{
+  width: 328px;
+  height: 231px;
+}
+.card-box__icon-star-wrp{
+  // display: none;
+  width: 66px;
+  height: 36px;
+  top: 3px;
+}
+.card-box__icon-star{
+  width: 66px;
+  height: 36px;
+}
+.card-box__item-wrp:nth-child(2){
+  display: none;
+}
+.card-box__item-wrp:nth-child(6){
+  display: none;
+}
+.card-box__item-wrp:nth-child(4){
+  display: block;
+  width: 176px;
+  height: 211px;
+  border-radius: 14px;
+}
+.card-box__item{
+  border: unset !important;
+  border-radius: 14px !important;
+}
+.card-box__item-bg{
+  transform: translate(-50%, -50%) scale(1);
+}
+.card-box__item-body{
+  padding: 8px;
+}
+.card_card-hero__pjFbO:before{
+  --dot-size: 2px !important;
+  inset: 8px !important;
+}
+
+.card-box__item-icon{
+  border-radius: 7px;
+  width: 148px;
+  height: 105px;
+  margin-top: 6px;
+}
+.card-box__item-wrp:nth-child(4){
+  margin-left: 0;
+  transform: translateX(-50%);
+}
+.s1__text-wrp{
+  margin-bottom: 8px;
+}
+.card-box__item-decor-pannel{
+  width: 148px;
+  margin-top: 9px;
+  margin-bottom: 13px;
+  padding-bottom: 3px;
+}
+.card-box__item-decor-pannel-btn-list{
+  width: 44px;
+}
+.card-box__item-decor-pannel-btn{
+  width: 12px !important;
+  height: 12px !important;
+}
+.card-box__item-teg-bg{
+  width: 150px;
+  height: 16px;
+}
+.card-box__item-teg-text{
+  font-size: 10px;
+  top: 0.5px;
+  left: 64px;
+}
+.card-box__item-text{
+  font-size: 10px;
+}
+
+.card-box__item-wrp:nth-child(3){
+  width: 146px;
+  height: 191px;
+}
+.card-box__item-wrp:nth-child(3).active{
+  left: 0;
+  border-radius: 7px;
+}
+.card-box__item-wrp:nth-child(5).active{
+  right: -13px;
+  top: 37px;
+  height: 190px;
+  border-radius: 7px;
+}
+.card-box__item-wrp:nth-child(5){
+  width: 146px;
+  height: 185px;
+}
+
+.card-box__item-wrp:nth-child(4){
+  // display: none;
+}
+.card-box__item-wrp:nth-child(5) .card-box__item-bg{
+  transform: translate(-50%, -50%) scale(2);
+  // border-radius: 7px;
+  // border-radius: 7px;
+  // fill: rgba(19, 24, 39, 0.3);
+  // stroke-width: 0.50px;
+  // stroke: var(--dop-decor-bg);
+  // backdrop-filter: blur(64.42857360839844px);
+}
+.card-box__item-wrp:nth-child(3) .card-box__item-bg{
+  transform: translate(-50%, -50%) scale(2);
+  // border-radius: 7px;
+  // fill: rgba(19, 24, 39, 0.3);
+  // stroke-width: 0.50px;
+  // stroke: var(--dop-decor-bg);
+  // backdrop-filter: blur(64.42857360839844px);
+  // border-radius: 7px;
+}
+.card-box__item-wrp:nth-child(3){
+  bottom: 3px;
+  left: -13px !important;
+}
+.card-box__item-wrp:nth-child(5) .card-box__item{
+  border-radius: 14px !important;
+}
+.card-box__item-wrp:nth-child(3) .card-box__item{
+  border-radius: 14px !important;
+}
+.logo-video{
+  width: 276px;
+  height: 276px;
+}
+.main-btn__text{
+  font-size: 11px;
+}
+.header__nav-link{
+  font-size: 12px;
+}
+.card-box__item-wrp:nth-child(3) .card-box__item-body{
+  padding-top: 19px;
+  padding-left: 14px;
+  padding-right: 13px;
+  padding-bottom: 0;
+}
+.card-box__item-wrp:nth-child(3) .card-box__item-icon{
+  width: 119px;
+  height: 82px;
+}
+.card-box__item-wrp:nth-child(3) .card-box__item-text{
+  margin-bottom: 13px;
+  margin-left: -32px;
+}
+
+.card-box__item-wrp:nth-child(3) .card_card-hero__pjFbO:before{
+  inset: 11px !important;
+}
+.card-box__item-wrp:nth-child(5) .card_card-hero__pjFbO:before{
+  inset: 11px !important;
+}
+.card-box__item-wrp:nth-child(5) .card-box__item-icon{
+  width: 119px;
+  height: 82px;
+}
+.card-box__item-wrp:nth-child(5) .card-box__item-body{
+  padding-top: 10.5px;
+  padding-left: 20px;
+  padding-right: 19px;
+}
+.card-box__item-wrp:nth-child(5) .card-box__item-text{
+  margin-bottom: 3px;
+  margin-right: -36px;
+}
+.s1__decoration--one{
+  width: 1920px;
+  height: 916px;
+  top: -100px;
+}
+.s1__decoration--two{
+  width: 360px;
+  height: 403px;
+  top: -27px;
+}
+.s1__decoration--four{
+  width: 360px;
+  height: 448px; 
+}
+
+.scroll-section__container{
+  padding-top: 81px;
+}
+.scroll-section__title-text{
+  min-height: unset;
+}
+.title-wrp__pre-title{
+  margin-bottom: 12px;
+}
+.scroll-section__title-desk{
+  max-width: 289px;
+}

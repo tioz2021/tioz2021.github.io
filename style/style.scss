@@ -175,9 +175,12 @@ input {
 @import "_main.scss";
 
 .svg-web{
-  display: block;
+  display: block !important;
 }
 .svg-tab{
+  display: none;
+}
+.svg-mob{
   display: none;
 }
 
@@ -195,7 +198,7 @@ input {
 // 768
 @media screen and (max-width: 1200px) {
   .svg-tab{
-    display: block;
+    display: block !important;
   }
   .svg-web{
     display: none;
@@ -231,8 +234,38 @@ input {
     // font-size: 0.278vw;
   }
 
+  .svg-mob{
+    display: block !important;
+  }
+
   .container {
     max-width: 360px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .main-btn{
+    border-radius: 22px;
+    width: 176px;
+    height: 36px;
+  }
+  .main-btn__text{
+    font-size: 10px;
+  }
+  .str-text{
+    font-size: 18px;
+  }
+  .def-text{
+    font-size: 14px;
+  }
+  .small-text{
+    font-size: 8px;
+  }
+  .pre-title span{
+    font-size: 12px;
+  }
+  .big-title{
+    font-size: 24px;
   }
   @import "_adaptive-mob";
 }
+

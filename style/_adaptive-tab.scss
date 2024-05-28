@@ -768,21 +768,21 @@
 .s10 .list-progress__item .list-progress__text{
   max-width: 170px;
 }
-.list-progress__item:nth-child(1) .list-progress__text{
+.s10 .list-progress__item:nth-child(1) .list-progress__text{
   margin-left: -65px;
 }
-.list-progress__item:nth-child(1) .list-progress__item-wrp{
+.s10 .list-progress__item:nth-child(1) .list-progress__item-wrp{
   margin-left: -62px;
   margin-top: 1px;
 }
-.list-progress__item:nth-child(3) .list-progress__item-wrp{
+.s10 .list-progress__item:nth-child(3) .list-progress__item-wrp{
   margin-left: -23px;
 }
-.list-progress__item:nth-child(5) .list-progress__item-wrp{
+.s10 .list-progress__item:nth-child(5) .list-progress__item-wrp{
   margin-left: 32px;
   margin-top: -1px;
 }
-.list-progress__item:nth-child(5) .list-progress__text{
+.s10 .list-progress__item:nth-child(5) .list-progress__text{
   margin-left: 29px;
 }
 .s10 .list-progress__item-decoration{
@@ -869,4 +869,12 @@
 }
 .footer__start{
   margin-bottom: 114px;
+}
+
+
+.img-wrp .s9__svg-item-lottie-3{
+  top: 167px;
+  left: 93.5px;
+  width: 116px;
+  height: 47px;
 }
