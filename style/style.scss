@@ -185,10 +185,14 @@ input {
 }
 
 .text-web{
-  display: block;
+  display: block !important;
 }
 
 .text-tab{
+  display: none;
+}
+
+.text-mob{
   display: none;
 }
 
@@ -207,7 +211,7 @@ input {
     display: none;
   }
   .text-tab{
-    display: block;
+    display: block !important;
   }
   
   html {
@@ -234,7 +238,16 @@ input {
     // font-size: 0.278vw;
   }
 
+  .svg-web{
+    display: none;
+  }
+  .svg-tab{
+    display: none;
+  }
   .svg-mob{
+    display: block !important;
+  }
+  .text-mob{
     display: block !important;
   }
 
@@ -249,7 +262,8 @@ input {
     height: 36px;
   }
   .main-btn__text{
-    font-size: 10px;
+    font-size: 12px;
+    font-weight: 500;
   }
   .str-text{
     font-size: 18px;
@@ -265,6 +279,9 @@ input {
   }
   .big-title{
     font-size: 24px;
+  }
+  .def-title{
+    font-size: 22px;
   }
   @import "_adaptive-mob";
 }
