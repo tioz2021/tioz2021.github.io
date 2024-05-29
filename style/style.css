@@ -5268,6 +5268,9 @@ input {
   .footer__item-bg .svg-web {
     display: none !important;
   }
+  .s7__item-main-bg-mask {
+    display: none !important;
+  }
 }
 @media screen and (max-width: 720px) {
   .svg-web {
