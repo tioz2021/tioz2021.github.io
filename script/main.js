@@ -773,30 +773,30 @@
 })();
 
 // s4 tab|mob auto scroller
-// (() => {
-//   document.addEventListener("DOMContentLoaded", () => {
-//     const items = document.querySelectorAll(".s4__list-item");
-//     let currentIndex = 0;
-//     let previousIndex = items.length - 1;
+(() => {
+  document.addEventListener("DOMContentLoaded", () => {
+    const items = document.querySelectorAll(".s4__list-item");
+    let currentIndex = 0;
+    let previousIndex = items.length - 1;
 
-//     function showNextItem() {
-//       // Скрыть текущий элемент, переместив его влево
-//       items[previousIndex].classList.remove("previous");
-//       items[currentIndex].classList.remove("active");
-//       items[currentIndex].classList.add("previous");
+    function showNextItem() {
+      // Скрыть текущий элемент, переместив его влево
+      items[previousIndex].classList.remove("previous");
+      items[currentIndex].classList.remove("active");
+      items[currentIndex].classList.add("previous");
 
-//       // Рассчитать индекс следующего элемента
-//       previousIndex = currentIndex;
-//       currentIndex = (currentIndex + 1) % items.length;
+      // Рассчитать индекс следующего элемента
+      previousIndex = currentIndex;
+      currentIndex = (currentIndex + 1) % items.length;
 
-//       // Показать следующий элемент, переместив его из правой части
-//       items[currentIndex].classList.add("active");
-//     }
+      // Показать следующий элемент, переместив его из правой части
+      items[currentIndex].classList.add("active");
+    }
 
-//     // Изначально показать первый элемент
-//     items[currentIndex].classList.add("active");
+    // Изначально показать первый элемент
+    items[currentIndex].classList.add("active");
 
-//     // Установить интервал для автоматического переключения элементов
-//     setInterval(showNextItem, 6000);
-//   });
-// })();
+    // Установить интервал для автоматического переключения элементов
+    setInterval(showNextItem, 6000);
+  });
+})();
