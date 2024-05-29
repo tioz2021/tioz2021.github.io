@@ -5265,6 +5265,9 @@ input {
   .s11 .slider-section__slider-title {
     margin-bottom: 9px;
   }
+  .footer__item-bg .svg-web {
+    display: none !important;
+  }
 }
 @media screen and (max-width: 720px) {
   .svg-web {
