@@ -709,7 +709,7 @@
   }
 
   // Запускаем анимацию после загрузки страницы
-  // window.onload = animateNumbers;
+  window.onload = animateNumbers;
 })();
 
 // typing profit
