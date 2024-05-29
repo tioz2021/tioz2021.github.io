@@ -5272,7 +5272,7 @@ input {
     display: none !important;
   }
 }
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 720px) {
   .svg-web {
     display: none;
   }
