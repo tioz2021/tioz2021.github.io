@@ -4228,6 +4228,7 @@ input {
   transform: translateX(-50%);
   z-index: 2;
   top: 52px;
+  will-change: transform;
   display: flex;
 }
 .s4__list-item-text span {
