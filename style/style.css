@@ -1854,6 +1854,7 @@ body::-webkit-scrollbar-horizontal {
 .scroll-ctonainer {
   position: relative;
   min-height: 14948px;
+  overflow-x: hidden;
 }
 
 a {
@@ -4445,6 +4446,9 @@ input {
   }
   .text-tab {
     display: block !important;
+  }
+  .star-bg {
+    display: none !important;
   }
   .container {
     max-width: 768px;

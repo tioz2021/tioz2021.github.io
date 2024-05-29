@@ -70,12 +70,12 @@
     if (window.innerWidth < 1200) {
       var swiper = new Swiper(".s3_tab-swiper", {
         pagination: {
-          el: ".s3_tab-swiper .scroll-section__slider-navigation",
+          el: ".s3 .scroll-section__slider-navigation",
           clickable: true,
         },
         navigation: {
-          nextEl: ".s3_tab-swiper .slider-section__swiper-button-next",
-          prevEl: ".s3_tab-swiper .slider-section__swiper-button-prev",
+          nextEl: ".s3 .slider-section__swiper-button-next",
+          prevEl: ".s3 .slider-section__swiper-button-prev",
         },
 
         slidesPerView: 1,
