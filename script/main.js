@@ -222,7 +222,7 @@
 // line-progress
 (() => {
   document
-    .querySelectorAll(".list-progress__item-wrp123")
+    .querySelectorAll(".list-progress__item-wrp")
     .forEach((container) => {
       const block = container.querySelector(".list-progress__item-icon");
       let offsetX = 0;
