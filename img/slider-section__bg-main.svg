@@ -1,0 +1,41 @@
+					<svg width="1200" height="375" viewBox="0 0 1200 375" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M800 1L800 374" stroke="#212941" stroke-width="0.5"/>
+						<path d="M400 1L400 374" stroke="#212941" stroke-width="0.5"/>
+						<line x1="2.18557e-08" y1="0.75" x2="1200" y2="0.750105" stroke="url(#paint0_linear_2694_10157)" stroke-width="0.5"/>
+						<line x1="2.18557e-08" y1="313.75" x2="1200" y2="313.75" stroke="url(#paint1_linear_2694_10157)" stroke-width="0.5"/>
+						<line x1="2.18557e-08" y1="373.75" x2="1200" y2="373.75" stroke="url(#paint2_linear_2694_10157)" stroke-width="0.5"/>
+						<rect x="400" y="1" width="400" height="373" fill="url(#paint3_radial_2694_10157)"/>
+						<circle cx="400" cy="0.75" r="0.75" fill="white"/>
+						<circle cx="400" cy="313.75" r="0.75" fill="white"/>
+						<circle cx="400" cy="373.75" r="0.75" fill="white"/>
+						<circle cx="800" cy="0.75" r="0.75" fill="white"/>
+						<circle cx="800" cy="313.75" r="0.75" fill="white"/>
+						<circle cx="800" cy="373.75" r="0.75" fill="white"/>
+						<defs>
+						<linearGradient id="paint0_linear_2694_10157" x1="1200" y1="1.00005" x2="0" y2="1.00013" gradientUnits="userSpaceOnUse">
+						<stop stop-color="#212A41" stop-opacity="0"/>
+						<stop offset="0.242142" stop-color="#212A41" stop-opacity="0.6"/>
+						<stop offset="0.499974" stop-color="#212A41"/>
+						<stop offset="0.762142" stop-color="#212A41" stop-opacity="0.6"/>
+						<stop offset="1" stop-color="#212A41" stop-opacity="0"/>
+						</linearGradient>
+						<linearGradient id="paint1_linear_2694_10157" x1="1200" y1="314" x2="0" y2="314" gradientUnits="userSpaceOnUse">
+						<stop stop-color="#212A41" stop-opacity="0"/>
+						<stop offset="0.242142" stop-color="#212A41" stop-opacity="0.6"/>
+						<stop offset="0.499974" stop-color="#212A41"/>
+						<stop offset="0.762142" stop-color="#212A41" stop-opacity="0.6"/>
+						<stop offset="1" stop-color="#212A41" stop-opacity="0"/>
+						</linearGradient>
+						<linearGradient id="paint2_linear_2694_10157" x1="1200" y1="374" x2="0" y2="374" gradientUnits="userSpaceOnUse">
+						<stop stop-color="#212A41" stop-opacity="0"/>
+						<stop offset="0.242142" stop-color="#212A41" stop-opacity="0.6"/>
+						<stop offset="0.499974" stop-color="#212A41"/>
+						<stop offset="0.762142" stop-color="#212A41" stop-opacity="0.6"/>
+						<stop offset="1" stop-color="#212A41" stop-opacity="0"/>
+						</linearGradient>
+						<radialGradient id="paint3_radial_2694_10157" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(605.401 177.968) rotate(-91.5473) scale(200.002 440.757)">
+						<stop stop-color="#0A1023"/>
+						<stop offset="1" stop-color="#131827" stop-opacity="0"/>
+						</radialGradient>
+						</defs>
+					</svg>
