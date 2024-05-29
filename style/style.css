@@ -6324,6 +6324,9 @@ input {
     width: 360px;
     height: 447px;
   }
+  .slider-section__bg-light .svg-mob {
+    display: none !important;
+  }
   .slider-section__bg-light .svg-web {
     display: none !important;
   }
