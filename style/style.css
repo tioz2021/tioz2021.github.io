@@ -4447,6 +4447,9 @@ input {
   .text-tab {
     display: block !important;
   }
+  .main-btn::before {
+    content: unset;
+  }
   .container {
     max-width: 768px;
     padding-left: 44px;

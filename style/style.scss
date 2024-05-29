@@ -218,7 +218,11 @@ input {
   .text-tab{
     display: block !important;
   }
-    
+  
+  .main-btn::before{
+    content: unset;
+  }
+  
   html {
     // font-size: 0.132vw;
   }
