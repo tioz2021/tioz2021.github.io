@@ -4446,9 +4446,6 @@ input {
   .text-tab {
     display: block !important;
   }
-  .star-bg {
-    display: none;
-  }
   .container {
     max-width: 768px;
     padding-left: 44px;
