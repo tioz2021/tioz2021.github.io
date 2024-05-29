@@ -40,13 +40,13 @@
     },
 
     pagination: {
-      el: ".swiper-pagination",
+      el: ".slider-section__swiper1 .swiper-pagination",
       clickable: true,
     },
 
     navigation: {
-      nextEl: ".slider-section__swiper-button-next",
-      prevEl: ".slider-section__swiper-button-prev",
+      nextEl: ".slider-section__swiper1 .slider-section__swiper-button-next",
+      prevEl: ".slider-section__swiper1 .slider-section__swiper-button-prev",
     },
   });
   var swiper_def_slider2 = new Swiper(swiper_def_slider_element2, {
@@ -56,13 +56,13 @@
     },
 
     pagination: {
-      el: ".swiper-pagination",
+      el: ".slider-section__swiper2 .swiper-pagination",
       clickable: true,
     },
 
     navigation: {
-      nextEl: ".slider-section__swiper-button-next",
-      prevEl: ".slider-section__swiper-button-prev",
+      nextEl: ".slider-section__swiper2 .slider-section__swiper-button-next",
+      prevEl: ".slider-section__swiper2 .slider-section__swiper-button-prev",
     },
   });
 
@@ -70,12 +70,12 @@
     if (window.innerWidth < 1200) {
       var swiper = new Swiper(".s3_tab-swiper", {
         pagination: {
-          el: ".scroll-section__slider-navigation",
+          el: ".s3_tab-swiper .scroll-section__slider-navigation",
           clickable: true,
         },
         navigation: {
-          nextEl: ".slider-section__swiper-button-next",
-          prevEl: ".slider-section__swiper-button-prev",
+          nextEl: ".s3_tab-swiper .slider-section__swiper-button-next",
+          prevEl: ".s3_tab-swiper .slider-section__swiper-button-prev",
         },
 
         slidesPerView: 1,
