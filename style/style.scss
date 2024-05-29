@@ -201,6 +201,10 @@ input {
   display: none;
 }
 
+.s4__decoration-light-mob{
+  display: none;
+}
+
 @media screen and (max-width: 1600px) {
 }
 
@@ -237,7 +241,7 @@ input {
   .big-title{
     font-size: 50px;
   }
-
+  
   @import "_adaptive-tab";
 }
 
@@ -291,6 +295,10 @@ input {
   }
   .def-title{
     font-size: 22px;
+  }
+
+  .s4__decoration-light-mob{
+    display: block;
   }
   @import "_adaptive-mob";
 }

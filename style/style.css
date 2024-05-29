@@ -4435,6 +4435,10 @@ input {
   display: none;
 }
 
+.s4__decoration-light-mob {
+  display: none;
+}
+
 @media screen and (max-width: 1200px) {
   .svg-tab {
     display: block !important;
@@ -5317,6 +5321,9 @@ input {
   .def-title {
     font-size: 22px;
   }
+  .s4__decoration-light-mob {
+    display: block;
+  }
   .header {
     height: unset;
     margin-top: 17px;
@@ -5467,7 +5474,7 @@ input {
   }
   .card-box__item-wrp:nth-child(3) {
     bottom: 3px;
-    left: -13px !important;
+    left: -13px;
   }
   .card-box__item-wrp:nth-child(5) .card-box__item {
     border-radius: 14px !important;
