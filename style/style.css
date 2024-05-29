@@ -6507,6 +6507,9 @@ input {
   .s10__list--mod {
     margin-bottom: 39px;
   }
+  .s6__decor-bg .svg-mob {
+    display: none !important;
+  }
   .s6__decor-bg .svg-web {
     display: none !important;
   }
