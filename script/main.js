@@ -776,6 +776,7 @@
 (() => {
   document.addEventListener("DOMContentLoaded", () => {
     const items = document.querySelectorAll(".s4__list-item");
+
     let currentIndex = 0;
     let previousIndex = items.length - 1;
 
@@ -799,4 +800,5 @@
     // Установить интервал для автоматического переключения элементов
     setInterval(showNextItem, 6000);
   });
+
 })();

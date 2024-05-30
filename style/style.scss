@@ -205,6 +205,50 @@ input {
   display: none;
 }
 
+.other-page .s7__item-main-line{
+  display: block;
+}
+.s7__item{
+  overflow: hidden;
+}
+
+.win-box__text span{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+}
+
+.s8{
+  margin-top: -267px;
+}
+.s14{
+  margin-top: -16px;
+}
+
+.footer{
+  box-sizing: border-box;
+  padding-top: 50px;
+  margin-top: -50px;
+}
+
+.win-box__text-mob-title{
+  display: none;
+  text-align: center;
+  color: var(--bodi-2-1);
+}
+
+.win-box__mobile-btn-wrp{
+  display: none;
+}
+
+.page-how-work-swiper{
+  width: 100%;
+}
+
+.top-mobile-navigation{
+  display: none;
+}
+
 @media screen and (max-width: 1600px) {
 }
 
