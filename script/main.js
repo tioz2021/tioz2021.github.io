@@ -221,38 +221,50 @@
 
 // line-progress
 (() => {
-  document
-    .querySelectorAll(".list-progress__item-wrp")
-    .forEach((container) => {
-      const block = container.querySelector(".list-progress__item-icon");
-      let offsetX = 0;
-      let offsetY = 0;
-
-      // Добавляем transition при загрузке страницы
-      block.style.transition = "transform 0.3s ease";
-
-      if (container) container.addEventListener("mousemove", moveBlock);
-      container.addEventListener("mouseleave", returnToOriginalPosition);
-
-      function moveBlock(e) {
-        const mouseX = e.clientX;
-        const mouseY = e.clientY;
-        const blockRect = block.getBoundingClientRect();
-        const distanceX = mouseX - blockRect.left - blockRect.width / 2;
-        const distanceY = mouseY - blockRect.top - blockRect.height / 2;
-
-        offsetX = distanceX * 0.3511;
-        offsetY = distanceY * 0.3511;
-
-        requestAnimationFrame(() => {
-          block.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+    function initializeSwiper() {
+      if (window.innerWidth > 1200) {
+        document
+        .querySelectorAll(".list-progress__item-wrp")
+        .forEach((container) => {
+          const block = container.querySelector(".list-progress__item-icon");
+          let offsetX = 0;
+          let offsetY = 0;
+    
+          // Добавляем transition при загрузке страницы
+          block.style.transition = "transform 0.3s ease";
+    
+          if (container) container.addEventListener("mousemove", moveBlock);
+          container.addEventListener("mouseleave", returnToOriginalPosition);
+    
+          function moveBlock(e) {
+            const mouseX = e.clientX;
+            const mouseY = e.clientY;
+            const blockRect = block.getBoundingClientRect();
+            const distanceX = mouseX - blockRect.left - blockRect.width / 2;
+            const distanceY = mouseY - blockRect.top - blockRect.height / 2;
+    
+            offsetX = distanceX * 0.3511;
+            offsetY = distanceY * 0.3511;
+    
+            requestAnimationFrame(() => {
+              block.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+            });
+          }
+    
+          function returnToOriginalPosition() {
+            block.style.transform = `translate(0, 0)`;
+          }
         });
       }
-
-      function returnToOriginalPosition() {
-        block.style.transform = `translate(0, 0)`;
-      }
-    });
+    }
+  
+    // Инициализация при загрузке страницы
+    initializeSwiper();
+      
+    // // Инициализация при изменении размера окна
+    // window.addEventListener("resize", function () {
+    //   initializeSwiper();
+    // });
 })();
 
 // svg blur ( svg-blur-hover-wrp, svg-blur, blur )

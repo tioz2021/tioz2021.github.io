@@ -257,3 +257,24 @@
   animation-iteration-count: infinite;
   animation-fill-mode: forwards; 
 }
+
+@keyframes m_scale {
+  0% {
+    transform: translate(-50%, -50%) scale(1.03);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.03);
+  }
+}
+.card-box__icon-star{
+  will-change: transform;
+  transform: translate(-50%, -50%) scale(1);
+  animation-name: m_scale;
+  animation-duration: 5s;
+  // animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards; 
+}
