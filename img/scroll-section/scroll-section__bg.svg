@@ -14,10 +14,10 @@
 						<circle cx="1515.25" cy="545.75" r="0.75" fill="white"/>
 						<circle cx="1515.25" cy="1456.75" r="0.75" fill="white"/>
 						<circle cx="1515.25" cy="163.75" r="0.75" fill="white"/>
-						<line x1="370.177" y1="129.823" x2="394.177" y2="153.823" stroke="#212941" stroke-width="0.5"/>
-						<line x1="369.823" y1="153.823" x2="393.823" y2="129.823" stroke="#212941" stroke-width="0.5"/>
-						<line x1="1525.18" y1="129.823" x2="1549.18" y2="153.823" stroke="#212941" stroke-width="0.5"/>
-						<line x1="1524.82" y1="153.823" x2="1548.82" y2="129.823" stroke="#212941" stroke-width="0.5"/>
+						<line x1="370.177" y1="129.823" x2="394.177" y2="153.823" stroke="#323F5F" stroke-width="0.5"/>
+						<line x1="369.823" y1="153.823" x2="393.823" y2="129.823" stroke="#323F5F" stroke-width="0.5"/>
+						<line x1="1525.18" y1="129.823" x2="1549.18" y2="153.823" stroke="#323F5F" stroke-width="0.5"/>
+						<line x1="1524.82" y1="153.823" x2="1548.82" y2="129.823" stroke="#323F5F" stroke-width="0.5"/>
 						<defs>
 						<radialGradient id="paint0_radial_2694_20167" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(959.5 468) rotate(-61.5248) scale(1086.53 1491.78)">
 						<stop stop-color="#090E1D"/>

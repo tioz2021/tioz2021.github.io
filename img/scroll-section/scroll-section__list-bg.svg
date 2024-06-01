@@ -228,7 +228,7 @@
 <rect x="620" y="60" width="2" height="8" transform="rotate(90 620 60)" fill="url(#paint225_linear_2694_20264)"/>
 <rect x="612" y="63" width="2" height="2" fill="url(#paint226_linear_2694_20264)"/>
 <rect x="618" y="63" width="2" height="2" fill="url(#paint227_linear_2694_20264)"/>
-<path d="M616 65L616 73.5C616 74.6046 616.895 75.5 618 75.5L641.5 75.5L647 69.5L666 69.5" stroke="#212941" stroke-width="0.5"/>
+<path d="M616 65L616 73.5C616 74.6046 616.895 75.5 618 75.5L641.5 75.5L647 69.5L666 69.5" stroke="#323F5F" stroke-width="0.5"/>
 <rect x="672" y="74" width="2" height="8" transform="rotate(180 672 74)" fill="url(#paint228_linear_2694_20264)"/>
 <rect x="669" y="66" width="2" height="2" transform="rotate(90 669 66)" fill="url(#paint229_linear_2694_20264)"/>
 <rect x="669" y="72" width="2" height="2" transform="rotate(90 669 72)" fill="url(#paint230_linear_2694_20264)"/>
@@ -237,14 +237,14 @@
 <rect x="670" y="80" width="2" height="14" transform="rotate(-180 670 80)" fill="url(#paint233_linear_2694_20264)"/>
 <rect x="606" y="63" width="2" height="2" fill="url(#paint234_linear_2694_20264)"/>
 <rect x="612" y="63" width="2" height="2" fill="url(#paint235_linear_2694_20264)"/>
-<path d="M610 65L610 80C610 81.1046 610.895 82 612 82L644.5 82L650 76L666 76" stroke="#212941" stroke-width="0.5"/>
+<path d="M610 65L610 80C610 81.1046 610.895 82 612 82L644.5 82L650 76L666 76" stroke="#323F5F" stroke-width="0.5"/>
 <rect x="672" y="80" width="2" height="8" transform="rotate(180 672 80)" fill="url(#paint236_linear_2694_20264)"/>
 <rect x="669" y="72" width="2" height="2" transform="rotate(90 669 72)" fill="url(#paint237_linear_2694_20264)"/>
 <rect x="669" y="78" width="2" height="2" transform="rotate(90 669 78)" fill="url(#paint238_linear_2694_20264)"/>
 <rect width="2" height="8" transform="matrix(-4.37114e-08 -1 -1 4.37114e-08 747 419)" fill="url(#paint239_linear_2694_20264)"/>
 <rect width="2" height="2" transform="matrix(1 0 0 -1 739 416)" fill="url(#paint240_linear_2694_20264)"/>
 <rect width="2" height="2" transform="matrix(1 0 0 -1 745 416)" fill="url(#paint241_linear_2694_20264)"/>
-<path d="M743 414L743 405.5C743 404.395 743.895 403.5 745 403.5L768.5 403.5L774 409.5L793 409.5" stroke="#212941" stroke-width="0.5"/>
+<path d="M743 414L743 405.5C743 404.395 743.895 403.5 745 403.5L768.5 403.5L774 409.5L793 409.5" stroke="#323F5F" stroke-width="0.5"/>
 <rect width="2" height="8" transform="matrix(-1 -8.74228e-08 -8.74228e-08 1 799 405)" fill="url(#paint242_linear_2694_20264)"/>
 <rect width="2" height="2" transform="matrix(1.31134e-07 -1 -1 -1.31134e-07 796 413)" fill="url(#paint243_linear_2694_20264)"/>
 <rect width="2" height="2" transform="matrix(1.31134e-07 -1 -1 -1.31134e-07 796 407)" fill="url(#paint244_linear_2694_20264)"/>
@@ -253,7 +253,7 @@
 <rect width="2" height="14" transform="matrix(-1 8.74228e-08 8.74228e-08 1 797 399)" fill="url(#paint247_linear_2694_20264)"/>
 <rect width="2" height="2" transform="matrix(1 0 0 -1 733 416)" fill="url(#paint248_linear_2694_20264)"/>
 <rect width="2" height="2" transform="matrix(1 0 0 -1 739 416)" fill="url(#paint249_linear_2694_20264)"/>
-<path d="M737 414L737 399C737 397.895 737.895 397 739 397L771.5 397L777 403L793 403" stroke="#212941" stroke-width="0.5"/>
+<path d="M737 414L737 399C737 397.895 737.895 397 739 397L771.5 397L777 403L793 403" stroke="#323F5F" stroke-width="0.5"/>
 <rect width="2" height="8" transform="matrix(-1 -8.74228e-08 -8.74228e-08 1 799 399)" fill="url(#paint250_linear_2694_20264)"/>
 <rect width="2" height="2" transform="matrix(1.31134e-07 -1 -1 -1.31134e-07 796 407)" fill="url(#paint251_linear_2694_20264)"/>
 <rect width="2" height="2" transform="matrix(1.31134e-07 -1 -1 -1.31134e-07 796 401)" fill="url(#paint252_linear_2694_20264)"/>
@@ -498,13 +498,13 @@
 <rect x="34" y="92" width="2.5" height="8" transform="rotate(90 34 92)" fill="url(#paint466_linear_2694_20264)"/>
 <rect x="34" y="96" width="2.5" height="8" transform="rotate(90 34 96)" fill="url(#paint467_linear_2694_20264)"/>
 </g>
-<rect x="721.25" y="92.25" width="30.5" height="30.5" stroke="#212941" stroke-width="0.5"/>
+<rect x="721.25" y="92.25" width="30.5" height="30.5" stroke="#323F5F" stroke-width="0.5"/>
 <rect x="723" y="94" width="27" height="27" fill="#191E36"/>
 <rect x="723" y="88" width="2.5" height="2.5" fill="url(#paint468_linear_2694_20264)"/>
 <rect x="723" y="124" width="2.5" height="2.5" fill="url(#paint469_linear_2694_20264)"/>
 <rect x="747" y="88" width="2.5" height="2.5" fill="url(#paint470_linear_2694_20264)"/>
 <rect x="747" y="124" width="2.5" height="2.5" fill="url(#paint471_linear_2694_20264)"/>
-<rect x="85.25" y="311.75" width="30.5" height="22.5" transform="rotate(-90 85.25 311.75)" stroke="#212941" stroke-width="0.5"/>
+<rect x="85.25" y="311.75" width="30.5" height="22.5" transform="rotate(-90 85.25 311.75)" stroke="#323F5F" stroke-width="0.5"/>
 <rect x="87" y="310" width="27" height="19" transform="rotate(-90 87 310)" fill="#191E36"/>
 <rect x="81.25" y="309.75" width="2.5" height="2.5" transform="rotate(-90 81.25 309.75)" fill="url(#paint472_linear_2694_20264)"/>
 <rect x="109" y="309.75" width="2.5" height="2.5" transform="rotate(-90 109 309.75)" fill="url(#paint473_linear_2694_20264)"/>

@@ -475,7 +475,7 @@
 							</g>
 							</g>
 							<rect x="22.25" y="22.25" width="567.5" height="267.5" rx="10.75" stroke="url(#paint100_linear_2694_9106)" stroke-width="0.5"/>
-							<rect x="0.25" y="0.25" width="611.5" height="311.5" rx="7.75" stroke="#212941" stroke-width="0.5"/>
+							<rect x="0.25" y="0.25" width="611.5" height="311.5" rx="7.75" stroke="#323F5F" stroke-width="0.5"/>
 							<defs>
 							<filter id="filter0_f_2694_9106" x="10" y="11" width="310" height="159" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 							<feFlood flood-opacity="0" result="BackgroundImageFix"/>

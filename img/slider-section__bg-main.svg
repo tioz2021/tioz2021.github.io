@@ -1,6 +1,6 @@
 					<svg width="1200" height="375" viewBox="0 0 1200 375" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M800 1L800 374" stroke="#212941" stroke-width="0.5"/>
-						<path d="M400 1L400 374" stroke="#212941" stroke-width="0.5"/>
+						<path d="M800 1L800 374" stroke="#323F5F" stroke-width="0.5"/>
+						<path d="M400 1L400 374" stroke="#323F5F" stroke-width="0.5"/>
 						<line x1="2.18557e-08" y1="0.75" x2="1200" y2="0.750105" stroke="url(#paint0_linear_2694_10157)" stroke-width="0.5"/>
 						<line x1="2.18557e-08" y1="313.75" x2="1200" y2="313.75" stroke="url(#paint1_linear_2694_10157)" stroke-width="0.5"/>
 						<line x1="2.18557e-08" y1="373.75" x2="1200" y2="373.75" stroke="url(#paint2_linear_2694_10157)" stroke-width="0.5"/>

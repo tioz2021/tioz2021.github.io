@@ -58,7 +58,7 @@
 								<line x1="701.75" y1="233" x2="701.75" y2="153" stroke="url(#paint67_linear_2805_1880)" stroke-width="0.5"/>
 								<line x1="705.75" y1="233" x2="705.75" y2="153" stroke="url(#paint68_linear_2805_1880)" stroke-width="0.5"/>
 								<line x1="709.75" y1="233" x2="709.75" y2="153" stroke="url(#paint69_linear_2805_1880)" stroke-width="0.5"/>
-								<rect x="114" y="278.75" width="30.5" height="22.5" transform="rotate(-90 114 278.75)" stroke="#212941" stroke-width="0.5"/>
+								<rect x="114" y="278.75" width="30.5" height="22.5" transform="rotate(-90 114 278.75)" stroke="#323F5F" stroke-width="0.5"/>
 								<rect x="115.75" y="277" width="27" height="19" transform="rotate(-90 115.75 277)" fill="#191E36"/>
 								<rect x="110" y="276.75" width="2.5" height="2.5" transform="rotate(-90 110 276.75)" fill="url(#paint70_linear_2805_1880)"/>
 								<rect x="137.75" y="276.75" width="2.5" height="2.5" transform="rotate(-90 137.75 276.75)" fill="url(#paint71_linear_2805_1880)"/>
@@ -263,7 +263,7 @@
 								<rect width="2" height="8" transform="matrix(4.37114e-08 1 1 -4.37114e-08 119 365)" fill="url(#paint250_linear_2805_1880)"/>
 								<rect width="2" height="2" transform="matrix(-1 0 0 1 127 368)" fill="url(#paint251_linear_2805_1880)"/>
 								<rect width="2" height="2" transform="matrix(-1 0 0 1 121 368)" fill="url(#paint252_linear_2805_1880)"/>
-								<path d="M123 370L123 378.5C123 379.605 122.105 380.5 121 380.5L97.5 380.5L92 374.5L73 374.5" stroke="#212941" stroke-width="0.5"/>
+								<path d="M123 370L123 378.5C123 379.605 122.105 380.5 121 380.5L97.5 380.5L92 374.5L73 374.5" stroke="#323F5F" stroke-width="0.5"/>
 								<rect width="2" height="8" transform="matrix(1 8.74228e-08 8.74228e-08 -1 67 379)" fill="url(#paint253_linear_2805_1880)"/>
 								<rect width="2" height="2" transform="matrix(-1.31134e-07 1 1 1.31134e-07 70 371)" fill="url(#paint254_linear_2805_1880)"/>
 								<rect width="2" height="2" transform="matrix(-1.31134e-07 1 1 1.31134e-07 70 377)" fill="url(#paint255_linear_2805_1880)"/>
@@ -272,7 +272,7 @@
 								<rect width="2" height="14" transform="matrix(1 -8.74228e-08 -8.74228e-08 -1 69 385)" fill="url(#paint258_linear_2805_1880)"/>
 								<rect width="2" height="2" transform="matrix(-1 0 0 1 133 368)" fill="url(#paint259_linear_2805_1880)"/>
 								<rect width="2" height="2" transform="matrix(-1 0 0 1 127 368)" fill="url(#paint260_linear_2805_1880)"/>
-								<path d="M129 370L129 385C129 386.105 128.105 387 127 387L94.5 387L89 381L73 381" stroke="#212941" stroke-width="0.5"/>
+								<path d="M129 370L129 385C129 386.105 128.105 387 127 387L94.5 387L89 381L73 381" stroke="#323F5F" stroke-width="0.5"/>
 								<rect width="2" height="8" transform="matrix(1 8.74228e-08 8.74228e-08 -1 67 385)" fill="url(#paint261_linear_2805_1880)"/>
 								<rect width="2" height="2" transform="matrix(-1.31134e-07 1 1 1.31134e-07 70 377)" fill="url(#paint262_linear_2805_1880)"/>
 								<rect width="2" height="2" transform="matrix(-1.31134e-07 1 1 1.31134e-07 70 383)" fill="url(#paint263_linear_2805_1880)"/>
@@ -349,7 +349,7 @@
 								<rect x="312" y="345" width="2" height="2" fill="url(#paint316_linear_2805_1880)"/>
 								<rect x="316" y="345" width="2" height="2" fill="url(#paint317_linear_2805_1880)"/>
 								</g>
-								<rect x="186.75" y="217.25" width="30.5" height="22.5" transform="rotate(180 186.75 217.25)" stroke="#212941" stroke-width="0.5"/>
+								<rect x="186.75" y="217.25" width="30.5" height="22.5" transform="rotate(180 186.75 217.25)" stroke="#323F5F" stroke-width="0.5"/>
 								<rect x="185" y="215.5" width="27" height="19" transform="rotate(180 185 215.5)" fill="#191E36"/>
 								<rect x="184.75" y="221.25" width="2.5" height="2.5" transform="rotate(180 184.75 221.25)" fill="url(#paint318_linear_2805_1880)"/>
 								<rect x="184.75" y="193.5" width="2.5" height="2.5" transform="rotate(180 184.75 193.5)" fill="url(#paint319_linear_2805_1880)"/>
@@ -447,7 +447,7 @@
 								<rect width="2" height="8" transform="matrix(1 0 0 -1 614 189)" fill="url(#paint401_linear_2805_1880)"/>
 								<rect width="2" height="2" transform="matrix(-4.37114e-08 1 1 4.37114e-08 617 181)" fill="url(#paint402_linear_2805_1880)"/>
 								<rect width="2" height="2" transform="matrix(-4.37114e-08 1 1 4.37114e-08 617 187)" fill="url(#paint403_linear_2805_1880)"/>
-								<path d="M619 185L627.5 185C628.605 185 629.5 185.895 629.5 187L629.5 210.5L623.5 216L623.5 235" stroke="#212941" stroke-width="0.5"/>
+								<path d="M619 185L627.5 185C628.605 185 629.5 185.895 629.5 187L629.5 210.5L623.5 216L623.5 235" stroke="#323F5F" stroke-width="0.5"/>
 								<rect width="2" height="8" transform="matrix(1.31134e-07 -1 -1 -1.31134e-07 628 241)" fill="url(#paint404_linear_2805_1880)"/>
 								<rect width="2" height="2" transform="matrix(1 1.74846e-07 1.74846e-07 -1 620 238)" fill="url(#paint405_linear_2805_1880)"/>
 								<rect width="2" height="2" transform="matrix(1 1.74846e-07 1.74846e-07 -1 626 238)" fill="url(#paint406_linear_2805_1880)"/>
@@ -456,7 +456,7 @@
 								<rect width="2" height="14" transform="matrix(-4.37114e-08 -1 -1 4.37114e-08 634 239)" fill="url(#paint409_linear_2805_1880)"/>
 								<rect width="2" height="2" transform="matrix(-4.37114e-08 1 1 4.37114e-08 617 175)" fill="url(#paint410_linear_2805_1880)"/>
 								<rect width="2" height="2" transform="matrix(-4.37114e-08 1 1 4.37114e-08 617 181)" fill="url(#paint411_linear_2805_1880)"/>
-								<path d="M619 179L634 179C635.105 179 636 179.895 636 181L636 213.5L630 219L630 235" stroke="#212941" stroke-width="0.5"/>
+								<path d="M619 179L634 179C635.105 179 636 179.895 636 181L636 213.5L630 219L630 235" stroke="#323F5F" stroke-width="0.5"/>
 								<rect width="2" height="8" transform="matrix(1.31134e-07 -1 -1 -1.31134e-07 634 241)" fill="url(#paint412_linear_2805_1880)"/>
 								<rect width="2" height="2" transform="matrix(1 1.74846e-07 1.74846e-07 -1 626 238)" fill="url(#paint413_linear_2805_1880)"/>
 								<rect width="2" height="2" transform="matrix(1 1.74846e-07 1.74846e-07 -1 632 238)" fill="url(#paint414_linear_2805_1880)"/>

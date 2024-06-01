@@ -228,7 +228,7 @@
 <rect x="471.164" y="60" width="1.52001" height="6.08002" transform="rotate(90 471.164 60)" fill="url(#paint225_linear_2751_157369)"/>
 <rect x="465.082" y="62.2852" width="1.52001" height="1.52001" fill="url(#paint226_linear_2751_157369)"/>
 <rect x="469.645" y="62.2852" width="1.52001" height="1.52001" fill="url(#paint227_linear_2751_157369)"/>
-<path d="M468.125 63.8047L468.125 69.7896C468.125 70.8942 469.02 71.7896 470.125 71.7896L487.504 71.7896L491.684 67.2268L506.124 67.2268" stroke="#212941" stroke-width="0.5"/>
+<path d="M468.125 63.8047L468.125 69.7896C468.125 70.8942 469.02 71.7896 470.125 71.7896L487.504 71.7896L491.684 67.2268L506.124 67.2268" stroke="#323F5F" stroke-width="0.5"/>
 <rect x="510.688" y="70.6367" width="1.52001" height="6.08375" transform="rotate(180 510.688 70.6367)" fill="url(#paint228_linear_2751_157369)"/>
 <rect x="508.406" y="64.5508" width="1.52001" height="1.52001" transform="rotate(90 508.406 64.5508)" fill="url(#paint229_linear_2751_157369)"/>
 <rect x="508.406" y="69.1133" width="1.52001" height="1.52001" transform="rotate(90 508.406 69.1133)" fill="url(#paint230_linear_2751_157369)"/>
@@ -237,14 +237,14 @@
 <rect x="509.172" y="75.207" width="1.52001" height="10.6466" transform="rotate(-180 509.172 75.207)" fill="url(#paint233_linear_2751_157369)"/>
 <rect x="460.527" y="62.2852" width="1.52001" height="1.52001" fill="url(#paint234_linear_2751_157369)"/>
 <rect x="465.082" y="62.2852" width="1.52001" height="1.52001" fill="url(#paint235_linear_2751_157369)"/>
-<path d="M463.574 63.8047L463.574 74.7327C463.574 75.8372 464.47 76.7327 465.574 76.7327L489.793 76.7327L493.973 72.1698L506.133 72.1698" stroke="#212941" stroke-width="0.5"/>
+<path d="M463.574 63.8047L463.574 74.7327C463.574 75.8372 464.47 76.7327 465.574 76.7327L489.793 76.7327L493.973 72.1698L506.133 72.1698" stroke="#323F5F" stroke-width="0.5"/>
 <rect x="510.688" y="75.2109" width="1.52001" height="6.08375" transform="rotate(180 510.688 75.2109)" fill="url(#paint236_linear_2751_157369)"/>
 <rect x="508.406" y="69.125" width="1.52001" height="1.52001" transform="rotate(90 508.406 69.125)" fill="url(#paint237_linear_2751_157369)"/>
 <rect x="508.406" y="73.6875" width="1.52001" height="1.52001" transform="rotate(90 508.406 73.6875)" fill="url(#paint238_linear_2751_157369)"/>
 <rect width="1.45345" height="6.06133" transform="matrix(-4.36814e-08 -1 -1 4.37414e-08 567.602 333)" fill="url(#paint239_linear_2751_157369)"/>
 <rect width="1.51533" height="1.45345" transform="matrix(1 -1.78711e-09 1.86067e-09 -1 561.539 330.816)" fill="url(#paint240_linear_2751_157369)"/>
 <rect width="1.51533" height="1.45345" transform="matrix(1 -1.78711e-09 1.86067e-09 -1 566.094 330.816)" fill="url(#paint241_linear_2751_157369)"/>
-<path d="M564.57 329.363L564.57 323.728C564.57 322.623 565.466 321.728 566.57 321.728L583.89 321.728L588.057 326.091L602.452 326.091" stroke="#212941" stroke-width="0.5"/>
+<path d="M564.57 329.363L564.57 323.728C564.57 322.623 565.466 321.728 566.57 321.728L583.89 321.728L588.057 326.091L602.452 326.091" stroke="#323F5F" stroke-width="0.5"/>
 <rect width="1.51533" height="5.81737" transform="matrix(-1 -8.17371e-08 -9.33634e-08 1 607 322.828)" fill="url(#paint242_linear_2751_157369)"/>
 <rect width="1.45345" height="1.51533" transform="matrix(1.38483e-07 -1 -1 -1.24079e-07 604.727 328.648)" fill="url(#paint243_linear_2751_157369)"/>
 <rect width="1.45345" height="1.51533" transform="matrix(1.38483e-07 -1 -1 -1.24079e-07 604.727 324.293)" fill="url(#paint244_linear_2751_157369)"/>
@@ -253,7 +253,7 @@
 <rect width="1.51533" height="10.1804" transform="matrix(-1 8.56967e-08 8.92224e-08 1 605.492 318.457)" fill="url(#paint247_linear_2751_157369)"/>
 <rect width="1.51533" height="1.45345" transform="matrix(1 -1.78798e-09 1.86162e-09 -1 557.004 330.816)" fill="url(#paint248_linear_2751_157369)"/>
 <rect width="1.51533" height="1.45345" transform="matrix(1 -1.78798e-09 1.86162e-09 -1 561.547 330.816)" fill="url(#paint249_linear_2751_157369)"/>
-<path d="M560.031 329.363L560.031 319.001C560.031 317.897 560.927 317.001 562.031 317.001L586.17 317.001L590.337 321.364L602.459 321.364" stroke="#212941" stroke-width="0.5"/>
+<path d="M560.031 329.363L560.031 319.001C560.031 317.897 560.927 317.001 562.031 317.001L586.17 317.001L590.337 321.364L602.459 321.364" stroke="#323F5F" stroke-width="0.5"/>
 <rect width="1.51533" height="5.81737" transform="matrix(-1 -8.17371e-08 -9.33634e-08 1 607 318.461)" fill="url(#paint250_linear_2751_157369)"/>
 <rect width="1.45345" height="1.51533" transform="matrix(1.38483e-07 -1 -1 -1.24079e-07 604.727 324.281)" fill="url(#paint251_linear_2751_157369)"/>
 <rect width="1.45345" height="1.51533" transform="matrix(1.38483e-07 -1 -1 -1.24079e-07 604.727 319.918)" fill="url(#paint252_linear_2751_157369)"/>
@@ -498,13 +498,13 @@
 <rect x="25.832" y="84.3359" width="1.90117" height="6.08002" transform="rotate(90 25.832 84.3359)" fill="url(#paint466_linear_2751_157369)"/>
 <rect x="25.832" y="87.375" width="1.90117" height="6.08002" transform="rotate(90 25.832 87.375)" fill="url(#paint467_linear_2751_157369)"/>
 </g>
-<rect x="548.188" y="84.582" width="23.0601" height="23.0745" stroke="#212941" stroke-width="0.5"/>
+<rect x="548.188" y="84.582" width="23.0601" height="23.0745" stroke="#323F5F" stroke-width="0.5"/>
 <rect x="549.465" y="85.8594" width="20.5201" height="20.5326" fill="#191E36"/>
 <rect x="549.465" y="81.2969" width="1.90001" height="1.90117" fill="url(#paint468_linear_2751_157369)"/>
 <rect x="549.465" y="108.668" width="1.90001" height="1.90117" fill="url(#paint469_linear_2751_157369)"/>
 <rect x="567.691" y="81.2969" width="1.90001" height="1.90117" fill="url(#paint470_linear_2751_157369)"/>
 <rect x="567.691" y="108.668" width="1.90001" height="1.90117" fill="url(#paint471_linear_2751_157369)"/>
-<rect x="64.8477" y="251.387" width="23.0745" height="16.9801" transform="rotate(-90 64.8477 251.387)" stroke="#212941" stroke-width="0.5"/>
+<rect x="64.8477" y="251.387" width="23.0745" height="16.9801" transform="rotate(-90 64.8477 251.387)" stroke="#323F5F" stroke-width="0.5"/>
 <rect x="66.1211" y="250.109" width="20.5326" height="14.4401" transform="rotate(-90 66.1211 250.109)" fill="#191E36"/>
 <rect x="61.75" y="249.918" width="1.90117" height="1.90001" transform="rotate(-90 61.75 249.918)" fill="url(#paint472_linear_2751_157369)"/>
 <rect x="82.8359" y="249.918" width="1.90117" height="1.90001" transform="rotate(-90 82.8359 249.918)" fill="url(#paint473_linear_2751_157369)"/>

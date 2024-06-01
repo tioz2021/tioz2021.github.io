@@ -6,10 +6,10 @@
 								<line x1="320.25" y1="-1.01249e-08" x2="320.25" y2="403" stroke="url(#paint4_linear_6693_147)" stroke-width="0.5"/>
 								<line x1="1.79217e-08" y1="47.75" x2="360" y2="47.75" stroke="url(#paint5_linear_6693_147)" stroke-width="0.5"/>
 								<line x1="1.79217e-08" y1="148.75" x2="360" y2="148.75" stroke="url(#paint6_linear_6693_147)" stroke-width="0.5"/>
-								<line x1="20.1768" y1="27.8232" x2="36.1768" y2="43.8232" stroke="#212941" stroke-width="0.5"/>
-								<line x1="19.8232" y1="43.8232" x2="35.8232" y2="27.8232" stroke="#212941" stroke-width="0.5"/>
-								<line x1="324.177" y1="27.8232" x2="340.177" y2="43.8232" stroke="#212941" stroke-width="0.5"/>
-								<line x1="323.823" y1="43.8232" x2="339.823" y2="27.8232" stroke="#212941" stroke-width="0.5"/>
+								<line x1="20.1768" y1="27.8232" x2="36.1768" y2="43.8232" stroke="#323F5F" stroke-width="0.5"/>
+								<line x1="19.8232" y1="43.8232" x2="35.8232" y2="27.8232" stroke="#323F5F" stroke-width="0.5"/>
+								<line x1="324.177" y1="27.8232" x2="340.177" y2="43.8232" stroke="#323F5F" stroke-width="0.5"/>
+								<line x1="323.823" y1="43.8232" x2="339.823" y2="27.8232" stroke="#323F5F" stroke-width="0.5"/>
 								<circle cx="40.25" cy="23.75" r="0.75" fill="white"/>
 								<circle cx="320.25" cy="23.75" r="0.75" fill="white"/>
 								<circle cx="40.25" cy="47.75" r="0.75" fill="white"/>

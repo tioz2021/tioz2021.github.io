@@ -31,7 +31,7 @@
 										<path d="M23.5 69.5C25.7091 69.5 27.5 67.7091 27.5 65.5C27.5 63.2909 25.7091 61.5 23.5 61.5C21.2909 61.5 19.5 63.2909 19.5 65.5C19.5 67.7091 21.2909 69.5 23.5 69.5Z" stroke="#8B9FCE" stroke-linecap="round" stroke-linejoin="round"/>
 										<path d="M28.4992 70.4992L26.3242 68.3242" stroke="#8B9FCE" stroke-linecap="round" stroke-linejoin="round"/>
 										<rect x="6.5" y="6.5" width="123" height="101" rx="6.5" stroke="url(#paint10_linear_2805_3301)"/>
-										<path d="M0.25 8C0.25 3.71979 3.71979 0.25 8 0.25H128C132.28 0.25 135.75 3.71979 135.75 8V106C135.75 110.28 132.28 113.75 128 113.75H8C3.71979 113.75 0.25 110.28 0.25 106V8Z" stroke="#212941" stroke-width="0.5"/>
+										<path d="M0.25 8C0.25 3.71979 3.71979 0.25 8 0.25H128C132.28 0.25 135.75 3.71979 135.75 8V106C135.75 110.28 132.28 113.75 128 113.75H8C3.71979 113.75 0.25 110.28 0.25 106V8Z" stroke="#323F5F" stroke-width="0.5"/>
 										<defs>
 										<filter id="filter0_f_2805_3301" x="30.4453" y="4.6875" width="76" height="70.3711" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 										<feFlood flood-opacity="0" result="BackgroundImageFix"/>

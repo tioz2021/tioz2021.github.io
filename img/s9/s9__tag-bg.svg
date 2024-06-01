@@ -29,13 +29,13 @@
 							<line x1="791.75" y1="355" x2="791.75" y2="243" stroke="url(#paint19_linear_2694_9521)" stroke-width="0.5"/>
 							<line x1="795.75" y1="355" x2="795.75" y2="243" stroke="url(#paint20_linear_2694_9521)" stroke-width="0.5"/>
 							<line x1="799.75" y1="355" x2="799.75" y2="243" stroke="url(#paint21_linear_2694_9521)" stroke-width="0.5"/>
-							<rect x="769.25" y="126.25" width="30.5" height="30.5" stroke="#212941" stroke-width="0.5"/>
+							<rect x="769.25" y="126.25" width="30.5" height="30.5" stroke="#323F5F" stroke-width="0.5"/>
 							<rect x="771" y="128" width="27" height="27" fill="#191E36"/>
 							<rect x="771" y="122" width="2.5" height="2.5" fill="url(#paint22_linear_2694_9521)"/>
 							<rect x="771" y="158" width="2.5" height="2.5" fill="url(#paint23_linear_2694_9521)"/>
 							<rect x="795" y="122" width="2.5" height="2.5" fill="url(#paint24_linear_2694_9521)"/>
 							<rect x="795" y="158" width="2.5" height="2.5" fill="url(#paint25_linear_2694_9521)"/>
-							<rect x="45.5" y="272.25" width="30.5" height="30.5" transform="rotate(90 45.5 272.25)" stroke="#212941" stroke-width="0.5"/>
+							<rect x="45.5" y="272.25" width="30.5" height="30.5" transform="rotate(90 45.5 272.25)" stroke="#323F5F" stroke-width="0.5"/>
 							<rect x="43.75" y="274" width="27" height="27" transform="rotate(90 43.75 274)" fill="#191E36"/>
 							<rect x="49.75" y="274" width="2.5" height="2.5" transform="rotate(90 49.75 274)" fill="url(#paint26_linear_2694_9521)"/>
 							<rect x="13.75" y="274" width="2.5" height="2.5" transform="rotate(90 13.75 274)" fill="url(#paint27_linear_2694_9521)"/>
@@ -151,7 +151,7 @@
 							<rect width="2" height="8" transform="matrix(-1 8.74228e-08 8.74228e-08 1 23 197)" fill="url(#paint123_linear_2694_9521)"/>
 							<rect width="2" height="2" transform="matrix(-4.37114e-08 -1 -1 4.37114e-08 20 205)" fill="url(#paint124_linear_2694_9521)"/>
 							<rect width="2" height="2" transform="matrix(-4.37114e-08 -1 -1 4.37114e-08 20 199)" fill="url(#paint125_linear_2694_9521)"/>
-							<path d="M18 201L9.5 201C8.39543 201 7.5 200.105 7.5 199L7.5 175.5L13.5 170L13.5 151" stroke="#212941" stroke-width="0.5"/>
+							<path d="M18 201L9.5 201C8.39543 201 7.5 200.105 7.5 199L7.5 175.5L13.5 170L13.5 151" stroke="#323F5F" stroke-width="0.5"/>
 							<rect width="2" height="8" transform="matrix(-4.37114e-08 1 1 4.37114e-08 9 145)" fill="url(#paint126_linear_2694_9521)"/>
 							<rect width="2" height="2" transform="matrix(-1 -8.74228e-08 -8.74228e-08 1 17 148)" fill="url(#paint127_linear_2694_9521)"/>
 							<rect width="2" height="2" transform="matrix(-1 -8.74228e-08 -8.74228e-08 1 11 148)" fill="url(#paint128_linear_2694_9521)"/>
@@ -160,14 +160,14 @@
 							<rect width="2" height="14" transform="matrix(1.31134e-07 1 1 -1.31134e-07 3 147)" fill="url(#paint131_linear_2694_9521)"/>
 							<rect width="2" height="2" transform="matrix(-4.37114e-08 -1 -1 4.37114e-08 20 211)" fill="url(#paint132_linear_2694_9521)"/>
 							<rect width="2" height="2" transform="matrix(-4.37114e-08 -1 -1 4.37114e-08 20 205)" fill="url(#paint133_linear_2694_9521)"/>
-							<path d="M18 207L3 207C1.89543 207 1 206.105 1 205L0.999997 172.5L7 167L7 151" stroke="#212941" stroke-width="0.5"/>
+							<path d="M18 207L3 207C1.89543 207 1 206.105 1 205L0.999997 172.5L7 167L7 151" stroke="#323F5F" stroke-width="0.5"/>
 							<rect width="2" height="8" transform="matrix(-4.37114e-08 1 1 4.37114e-08 3 145)" fill="url(#paint134_linear_2694_9521)"/>
 							<rect width="2" height="2" transform="matrix(-1 -8.74228e-08 -8.74228e-08 1 11 148)" fill="url(#paint135_linear_2694_9521)"/>
 							<rect width="2" height="2" transform="matrix(-1 -8.74228e-08 -8.74228e-08 1 5 148)" fill="url(#paint136_linear_2694_9521)"/>
 							<rect width="2" height="8" transform="matrix(1 1.74846e-07 1.74846e-07 -1 777 33)" fill="url(#paint137_linear_2694_9521)"/>
 							<rect width="2" height="2" transform="matrix(-2.18557e-07 1 1 2.18557e-07 780 25)" fill="url(#paint138_linear_2694_9521)"/>
 							<rect width="2" height="2" transform="matrix(-2.18557e-07 1 1 2.18557e-07 780 31)" fill="url(#paint139_linear_2694_9521)"/>
-							<path d="M782 29L790.5 29C791.605 29 792.5 29.8954 792.5 31L792.5 54.5L786.5 60L786.5 79" stroke="#212941" stroke-width="0.5"/>
+							<path d="M782 29L790.5 29C791.605 29 792.5 29.8954 792.5 31L792.5 54.5L786.5 60L786.5 79" stroke="#323F5F" stroke-width="0.5"/>
 							<rect width="2" height="8" transform="matrix(3.0598e-07 -1 -1 -3.0598e-07 791 85)" fill="url(#paint140_linear_2694_9521)"/>
 							<rect width="2" height="2" transform="matrix(1 3.49691e-07 3.49691e-07 -1 783 82)" fill="url(#paint141_linear_2694_9521)"/>
 							<rect width="2" height="2" transform="matrix(1 3.49691e-07 3.49691e-07 -1 789 82)" fill="url(#paint142_linear_2694_9521)"/>
@@ -176,7 +176,7 @@
 							<rect width="2" height="14" transform="matrix(1.31134e-07 -1 -1 -1.31134e-07 797 83)" fill="url(#paint145_linear_2694_9521)"/>
 							<rect width="2" height="2" transform="matrix(-2.18557e-07 1 1 2.18557e-07 780 19)" fill="url(#paint146_linear_2694_9521)"/>
 							<rect width="2" height="2" transform="matrix(-2.18557e-07 1 1 2.18557e-07 780 25)" fill="url(#paint147_linear_2694_9521)"/>
-							<path d="M782 23L797 23C798.105 23 799 23.8954 799 25L799 57.5L793 63L793 79" stroke="#212941" stroke-width="0.5"/>
+							<path d="M782 23L797 23C798.105 23 799 23.8954 799 25L799 57.5L793 63L793 79" stroke="#323F5F" stroke-width="0.5"/>
 							<rect width="2" height="8" transform="matrix(3.0598e-07 -1 -1 -3.0598e-07 797 85)" fill="url(#paint148_linear_2694_9521)"/>
 							<rect width="2" height="2" transform="matrix(1 3.49691e-07 3.49691e-07 -1 789 82)" fill="url(#paint149_linear_2694_9521)"/>
 							<rect width="2" height="2" transform="matrix(1 3.49691e-07 3.49691e-07 -1 795 82)" fill="url(#paint150_linear_2694_9521)"/>
