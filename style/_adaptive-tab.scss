@@ -1350,3 +1350,10 @@ height: 276px;
 .win-box__text::before{
   left: 50%;
 }
+
+.page404 .card-box__item-wrp:nth-child(6){
+  display: none;
+}
+.page404 .card-box__item-wrp:nth-child(2){
+  display: none;
+}

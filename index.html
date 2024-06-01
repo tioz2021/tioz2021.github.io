@@ -365,7 +365,7 @@
 								</div>
 							</div>
 						</div>
-						<a href="#" class="scroll-section__btn main-btn small-text">
+						<a href="#" class="scroll-section__btn main-btn small-text" id="openBtn">
 							<span class="main-btn__text small-text">Смотреть обзор</span>
 							<div class="main-btn__effect"></div>
 							<div class="main-btn__icon img-wrp">
@@ -604,6 +604,7 @@
 							<div class="list-progress__item-wrp">
 								<div class="list-progress__item-icon img-wrp">
 									<img loading="lazy" src="img/line-progress/list-progress__item-icon.svg" alt="svg">
+									<div class="blur"></div>
 								</div>
 							</div>
 							<div class="list-progress__text def-text">
@@ -625,6 +626,7 @@
 							<div class="list-progress__item-wrp">
 								<div class="list-progress__item-icon img-wrp">
 									<img loading="lazy" src="img/line-progress/list-progress__item-icon2.svg" alt="svg">
+									<div class="blur"></div>
 								</div>
 							</div>
 							<div class="list-progress__text def-text">
@@ -647,6 +649,7 @@
 							<div class="list-progress__item-wrp">
 								<div class="list-progress__item-icon img-wrp">
 									<img loading="lazy" src="img/line-progress/list-progress__item-icon3.svg" alt="svg">
+									<div class="blur"></div>
 								</div>
 							</div>
 							<div class="list-progress__text def-text">
@@ -669,6 +672,7 @@
 							<div class="list-progress__item-wrp">
 								<div class="list-progress__item-icon img-wrp">
 									<img loading="lazy" src="img/line-progress/list-progress__item-icon4.svg" alt="svg">
+									<div class="blur"></div>
 								</div>
 							</div>
 							<div class="list-progress__text def-text">
@@ -1537,6 +1541,7 @@
 							<div class="list-progress__item-wrp">
 								<div class="list-progress__item-icon img-wrp">
 									<img loading="lazy" src="img/line-progress/s10/list-progress__item-icon1.svg" alt="svg">
+									<div class="blur"></div>
 								</div>
 							</div>
 							<div class="list-progress__text def-text">
@@ -1553,6 +1558,7 @@
 							<div class="list-progress__item-wrp">
 								<div class="list-progress__item-icon img-wrp">
 									<img loading="lazy" src="img/line-progress/s10/list-progress__item-icon2.svg" alt="svg">
+									<div class="blur"></div>
 								</div>
 							</div>
 							<div class="list-progress__text def-text">
@@ -1569,6 +1575,7 @@
 							<div class="list-progress__item-wrp">
 								<div class="list-progress__item-icon img-wrp">
 									<img loading="lazy" src="img/line-progress/s10/list-progress__item-icon3.svg" alt="svg">
+									<div class="blur"></div>
 								</div>
 							</div>
 							<div class="list-progress__text def-text">
@@ -2063,11 +2070,18 @@
 		</footer>
 	</div>
 
-
-	<div id="popup" class="popup" style="display: none;">
-		<div class="popup__content popup-content open">
+	<!-- id="openBtn" -->
+	<!-- id="closeBtn" -->
+	<div id="popup" class="popup">
+		<div class="popup__content popup-content">
+			<iframe id="youtube-video" width="100%" height="100%" src="https://www.youtube.com/embed/4xDzrJKXOOY?si=kJ4QlngfEmRnx4j4&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 			<button id="closeBtn" class="closeBtn">
 				<div class="closeBtn-icon-wrp img-wrp">
+					<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<circle cx="18" cy="18" r="18" fill="#323F5F"/>
+						<path d="M24 12L12 24" stroke="#BAD0EC" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M12 12L24 24" stroke="#BAD0EC" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>						
 				</div>
 			</button>
 		</div>

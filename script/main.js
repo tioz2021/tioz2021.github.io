@@ -92,59 +92,60 @@
     initializeSwiper();
   });
 
-  // function scroll_slider_block() {
-  //   const scrollingBlock = document.querySelector(".s2.scrolling-block");
-  //   const scrollingBlock2 = document.querySelector(".s5.scrolling-block");
-  //   if(!scrollingBlock || !scrollingBlock2) return;
-  //   // const container = document.querySelector(".scroll-container");
-  //   // const containerRect = container.getBoundingClientRect();
-  //   const scrollTop = window.scrollY || window.pageYOffset;
-  //   // console.log(scrollTop);
-  //   // s2 scroller 1
-  //   if (scrollTop >= 1400 && scrollTop <= 1800) {
-  //     if (scrollingBlock.classList.contains("fixed") == false) {
-  //       console.log("fixed");
-  //       // scrollingBlock.classList.add("fixed");
-  //       // scrollingBlock.style.top = "-497px";
-  //     }
-  //   } else if (scrollTop <= 1400) {
-  //     if (scrollingBlock.classList.contains("fixed") == true) {
-  //       // scrollingBlock.classList.remove("fixed");
-  //       // scrollingBlock.style.top = "910px";
-  //     }
-  //   } else if (scrollTop >= 1800) {
-  //     if (scrollingBlock.classList.contains("fixed") == true) {
-  //       // scrollingBlock.classList.remove("fixed");
-  //       // scrollingBlock.style.top = "1310px";
-  //     }
-  //   }
-  //   // if (scrollTop >= 1401 && scrollTop <= 1500) swiper.slideTo(0, 1000);
-  //   // else if (scrollTop >= 1501 && scrollTop <= 1600) swiper.slideTo(1, 1000);
-  //   // else if (scrollTop >= 1601 && scrollTop <= 1700) swiper.slideTo(2, 1000);
-  //   // s5 scroller 2
-  //   // 5300
-  //   if (scrollTop >= 5500 && scrollTop <= 5900) {
-  //     if (scrollingBlock2.classList.contains("fixed") == false) {
-  //       console.log("fixed");
-  //       // scrollingBlock2.classList.add("fixed");
-  //       // scrollingBlock2.style.top = "-409px";
-  //     }
-  //   } else if (scrollTop <= 5500) {
-  //     if (scrollingBlock2.classList.contains("fixed") == true) {
-  //       // scrollingBlock2.classList.remove("fixed");
-  //       // scrollingBlock2.style.top = "5093px";
-  //     }
-  //   } else if (scrollTop >= 5900) {
-  //     if (scrollingBlock2.classList.contains("fixed") == true) {
-  //       // scrollingBlock2.classList.remove("fixed");
-  //       // scrollingBlock2.style.top = "5493px";
-  //     }
-  //   }
-  //   // if (scrollTop >= 5501 && scrollTop <= 5600) swiper2.slideTo(0, 1000);
-  //   // else if (scrollTop >= 5601 && scrollTop <= 5700) swiper2.slideTo(1, 1000);
-  //   // else if (scrollTop >= 5701 && scrollTop <= 5800) swiper2.slideTo(2, 1000);
-  // }
-  // window.addEventListener("scroll", scroll_slider_block);
+  function scroll_slider_block() {
+    const scrollingBlock = document.querySelector(".s2.scrolling-block");
+    const scrollingBlock2 = document.querySelector(".s5.scrolling-block");
+    if(!scrollingBlock || !scrollingBlock2) return;
+    // const container = document.querySelector(".scroll-container");
+    // const containerRect = container.getBoundingClientRect();
+    const scrollTop = window.scrollY || window.pageYOffset;
+    // console.log(scrollTop);
+    // s2 scroller 1
+    if (scrollTop >= 1400 && scrollTop <= 1800) {
+      if (scrollingBlock.classList.contains("fixed") == false) {
+        // console.log("fixed");
+        // scrollingBlock.classList.add("fixed");
+        // scrollingBlock.style.top = "-497px";
+      }
+    } else if (scrollTop <= 1400) {
+      if (scrollingBlock.classList.contains("fixed") == true) {
+        // scrollingBlock.classList.remove("fixed");
+        // scrollingBlock.style.top = "910px";
+      }
+    } else if (scrollTop >= 1800) {
+      if (scrollingBlock.classList.contains("fixed") == true) {
+        // scrollingBlock.classList.remove("fixed");
+        // scrollingBlock.style.top = "1310px";
+      }
+    }
+    // if (scrollTop >= 1401 && scrollTop <= 1500) swiper.slideTo(0, 1000);
+    // else if (scrollTop >= 1501 && scrollTop <= 1600) swiper.slideTo(1, 1000);
+    // else if (scrollTop >= 1601 && scrollTop <= 1700) swiper.slideTo(2, 1000);
+
+    // s5 scroller 2
+    // 5300
+    if (scrollTop >= 5500 && scrollTop <= 5900) {
+      if (scrollingBlock2.classList.contains("fixed") == false) {
+        console.log("fixed");
+        // scrollingBlock2.classList.add("fixed");
+        // scrollingBlock2.style.top = "-409px";
+      }
+    } else if (scrollTop <= 5500) {
+      if (scrollingBlock2.classList.contains("fixed") == true) {
+        // scrollingBlock2.classList.remove("fixed");
+        // scrollingBlock2.style.top = "5093px";
+      }
+    } else if (scrollTop >= 5900) {
+      if (scrollingBlock2.classList.contains("fixed") == true) {
+        // scrollingBlock2.classList.remove("fixed");
+        // scrollingBlock2.style.top = "5493px";
+      }
+    }
+    // if (scrollTop >= 5501 && scrollTop <= 5600) swiper2.slideTo(0, 1000);
+    // else if (scrollTop >= 5601 && scrollTop <= 5700) swiper2.slideTo(1, 1000);
+    // else if (scrollTop >= 5701 && scrollTop <= 5800) swiper2.slideTo(2, 1000);
+  }
+  window.addEventListener("scroll", scroll_slider_block);
 })();
 
 // 3d s1
@@ -813,4 +814,88 @@
     setInterval(showNextItem, 6000);
   });
 
+})();
+
+// s6 | s10 animation 
+(() => {
+
+  function activateItemsCyclically(items, interval) {
+    let currentIndex = 0;
+  
+    function activateNextItem() {
+      // Удаляем класс active у всех элементов
+      items.forEach(e => e.classList.remove("active"));
+      
+      // Добавляем класс active к текущему элементу
+      items[currentIndex].classList.add("active");
+      
+      // Переходим к следующему элементу, возвращаемся к первому, если дошли до конца
+      currentIndex = (currentIndex + 1) % items.length;
+    }
+  
+    // Активируем первый элемент сразу
+    activateNextItem();
+  
+    // Запускаем цикл с указанным интервалом
+    setInterval(activateNextItem, interval);
+  }
+  
+  // Для блока .s4
+  const items1 = document.querySelectorAll(".s4 .list-progress__item .blur");
+  activateItemsCyclically(items1, 2000);
+  
+  // Для блока .s10
+  const items2 = document.querySelectorAll(".s10 .list-progress__item .blur");
+  activateItemsCyclically(items2, 2000);
+}) ();
+
+// popup
+(() => {
+  document.addEventListener("DOMContentLoaded", function () {
+
+    const openBtn = document.getElementById("openBtn");
+    if (!openBtn) {
+      return false;
+    }
+    const popup = document.getElementById("popup");
+    const popupContent = document.querySelector(".popup-content");
+    const closeBtn = document.getElementById("closeBtn");
+
+    openBtn.addEventListener("click", function () {
+      event.preventDefault();
+      popup.classList.add("open");
+      popupContent.classList.add("open");
+    });
+
+    closeBtn.addEventListener("click", function () {
+      popup.classList.remove("open");
+      popupContent.classList.remove("open");
+
+      var iframe = document.getElementById('youtube-video');
+      var iframeSrc = iframe.src;
+      iframe.src = '';
+      setTimeout(() => {
+        iframe.src = iframeSrc;
+      }, 100);
+    });
+
+    document.addEventListener("click", function (event) {
+      // Закрываем popup, если клик произошел вне его области
+      if (
+        !popupContent.contains(event.target) &&
+        !openBtn.contains(event.target)
+      ) {
+        popup.classList.remove("open");
+        popupContent.classList.remove("open");
+
+        var iframe = document.getElementById('youtube-video');
+        var iframeSrc = iframe.src;
+        iframe.src = '';
+        setTimeout(() => {
+          iframe.src = iframeSrc;
+        }, 100);
+
+      }
+    });
+  });
 })();
