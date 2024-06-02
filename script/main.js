@@ -819,7 +819,7 @@
 
 // s6 | s10 animation 
 (() => {
-  // if (window.innerWidth > 1200) {
+  if (window.innerWidth > 1200) {
   function activateItemsCyclically(items, interval) {
     let currentIndex = 0;
   
@@ -848,7 +848,7 @@
   // Для блока .s10
   const items2 = document.querySelectorAll(".s10 .list-progress__item .blur");
   activateItemsCyclically(items2, 2000);
-  // }
+  }
 }) ();
 
 // popup
