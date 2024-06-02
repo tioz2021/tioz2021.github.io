@@ -819,35 +819,36 @@
 
 // s6 | s10 animation 
 (() => {
-
-  function activateItemsCyclically(items, interval) {
-    let currentIndex = 0;
-  
-    function activateNextItem() {
-      // Удаляем класс active у всех элементов
-      items.forEach(e => e.classList.remove("active"));
-      
-      // Добавляем класс active к текущему элементу
-      items[currentIndex].classList.add("active");
-      
-      // Переходим к следующему элементу, возвращаемся к первому, если дошли до конца
-      currentIndex = (currentIndex + 1) % items.length;
+  if (window.innerWidth > 1200) {
+    function activateItemsCyclically(items, interval) {
+      let currentIndex = 0;
+    
+      function activateNextItem() {
+        // Удаляем класс active у всех элементов
+        items.forEach(e => e.classList.remove("active"));
+        
+        // Добавляем класс active к текущему элементу
+        items[currentIndex].classList.add("active");
+        
+        // Переходим к следующему элементу, возвращаемся к первому, если дошли до конца
+        currentIndex = (currentIndex + 1) % items.length;
+      }
+    
+      // Активируем первый элемент сразу
+      activateNextItem();
+    
+      // Запускаем цикл с указанным интервалом
+      setInterval(activateNextItem, interval);
     }
-  
-    // Активируем первый элемент сразу
-    activateNextItem();
-  
-    // Запускаем цикл с указанным интервалом
-    setInterval(activateNextItem, interval);
+    
+    // Для блока .s4
+    const items1 = document.querySelectorAll(".s4 .list-progress__item .blur");
+    activateItemsCyclically(items1, 2000);
+    
+    // Для блока .s10
+    const items2 = document.querySelectorAll(".s10 .list-progress__item .blur");
+    activateItemsCyclically(items2, 2000);
   }
-  
-  // Для блока .s4
-  const items1 = document.querySelectorAll(".s4 .list-progress__item .blur");
-  activateItemsCyclically(items1, 2000);
-  
-  // Для блока .s10
-  const items2 = document.querySelectorAll(".s10 .list-progress__item .blur");
-  activateItemsCyclically(items2, 2000);
 }) ();
 
 // popup
