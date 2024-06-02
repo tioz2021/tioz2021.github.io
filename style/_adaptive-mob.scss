@@ -1105,6 +1105,7 @@
 
 .slider-section__bg-light-dop{
   // display: none;
+  top: 0;
   width: 360px;
   height: 447px;
 }
@@ -1306,6 +1307,12 @@
 }
 .s6__decor-list .svg-tab{
   display: none !important;
+}
+
+.s6__decor-bg{
+  top: 120px;
+  width: 360px;
+  height: 447px;
 }
 
 .s6__list-item-icon-mod{
