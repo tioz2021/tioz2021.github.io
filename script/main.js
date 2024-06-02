@@ -223,45 +223,40 @@
 
 // line-progress
 (() => {
-    function initializeSwiper() {
-      if (window.innerWidth > 1200) {
-        document
-        .querySelectorAll(".list-progress__item-wrp")
-        .forEach((container) => {
-          const block = container.querySelector(".list-progress__item-icon");
-          let offsetX = 0;
-          let offsetY = 0;
-    
-          // Добавляем transition при загрузке страницы
-          block.style.transition = "transform 0.3s ease";
-    
-          if (container) container.addEventListener("mousemove", moveBlock);
-          container.addEventListener("mouseleave", returnToOriginalPosition);
-    
-          function moveBlock(e) {
-            const mouseX = e.clientX;
-            const mouseY = e.clientY;
-            const blockRect = block.getBoundingClientRect();
-            const distanceX = mouseX - blockRect.left - blockRect.width / 2;
-            const distanceY = mouseY - blockRect.top - blockRect.height / 2;
-    
-            offsetX = distanceX * 0.3511;
-            offsetY = distanceY * 0.3511;
-    
-            requestAnimationFrame(() => {
-              block.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
-            });
-          }
-    
-          function returnToOriginalPosition() {
-            block.style.transform = `translate(0, 0)`;
-          }
+  if (window.innerWidth > 1200) {
+    document
+    .querySelectorAll(".list-progress__item-wrp")
+    .forEach((container) => {
+      const block = container.querySelector(".list-progress__item-icon");
+      let offsetX = 0;
+      let offsetY = 0;
+
+      // Добавляем transition при загрузке страницы
+      block.style.transition = "transform 0.3s ease";
+
+      if (container) container.addEventListener("mousemove", moveBlock);
+      container.addEventListener("mouseleave", returnToOriginalPosition);
+
+      function moveBlock(e) {
+        const mouseX = e.clientX;
+        const mouseY = e.clientY;
+        const blockRect = block.getBoundingClientRect();
+        const distanceX = mouseX - blockRect.left - blockRect.width / 2;
+        const distanceY = mouseY - blockRect.top - blockRect.height / 2;
+
+        offsetX = distanceX * 0.3511;
+        offsetY = distanceY * 0.3511;
+
+        requestAnimationFrame(() => {
+          block.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
         });
       }
-    }
-  
-    // Инициализация при загрузке страницы
-    initializeSwiper();
+
+      function returnToOriginalPosition() {
+        block.style.transform = `translate(0, 0)`;
+      }
+    });
+  }
       
     // // Инициализация при изменении размера окна
     // window.addEventListener("resize", function () {
@@ -298,33 +293,33 @@
 })();
 
 // Функция для генерации случайных чисел в заданном диапазоне
-(() => {
-  function getRandom(min, max) {
-    return Math.random() * (max - min) + min;
-  }
+// (() => {
+//   function getRandom(min, max) {
+//     return Math.random() * (max - min) + min;
+//   }
 
-  // Генерация SVG звезд
-  let svg =
-    '<svg width="1920" height="916" viewBox="0 0 1920 916" fill="none" xmlns="http://www.w3.org/2000/svg">';
+//   // Генерация SVG звезд
+//   let svg =
+//     '<svg width="1920" height="916" viewBox="0 0 1920 916" fill="none" xmlns="http://www.w3.org/2000/svg">';
 
-  for (let i = 0; i < 500; i++) {
-    let cx = getRandom(0, 1920);
-    let cy = getRandom(0, 916);
+//   for (let i = 0; i < 500; i++) {
+//     let cx = getRandom(0, 1920);
+//     let cy = getRandom(0, 916);
 
-    svg += `<circle cx="${cx}" cy="${cy}" r="0.5" fill="#8B9FCE">
-							 <animate attributeName="cy" dur="${getRandom(6, 12)}s" values="${cy}; ${
-      cy - getRandom(50, 150)
-    }" repeatCount="indefinite" />
-							 <animate attributeName="opacity" dur="${getRandom(
-                 6,
-                 12
-               )}s" values="1; 0" repeatCount="indefinite" />
-						</circle>`;
-  }
+//     svg += `<circle cx="${cx}" cy="${cy}" r="0.5" fill="#8B9FCE">
+// 							 <animate attributeName="cy" dur="${getRandom(6, 12)}s" values="${cy}; ${
+//       cy - getRandom(50, 150)
+//     }" repeatCount="indefinite" />
+// 							 <animate attributeName="opacity" dur="${getRandom(
+//                  6,
+//                  12
+//                )}s" values="1; 0" repeatCount="indefinite" />
+// 						</circle>`;
+//   }
 
-  svg += "</svg>";
-  // console.log(svg);
-})();
+//   svg += "</svg>";
+//   // console.log(svg);
+// })();
 
 // acardion
 (() => {
