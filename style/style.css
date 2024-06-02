@@ -8173,18 +8173,4 @@ input {
   .page-post .s13 {
     z-index: -1;
   }
-  .title-wrp::after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 147px;
-    width: 280px;
-    height: 104px;
-    filter: blur(160px);
-    background: #93abf8;
-    opacity: 0.3;
-  }
 }/*# sourceMappingURL=style.css.map */
