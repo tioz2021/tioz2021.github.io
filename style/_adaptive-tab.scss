@@ -1380,3 +1380,24 @@
 .page404 .card-box__item-wrp:nth-child(2){
   display: none;
 }
+
+
+.title-wrp{
+  position: relative;
+
+}
+
+.title-wrp::after{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 147px;
+  width: 464px;
+  height: 204px;
+  // filter: blur(260px);
+  filter: blur(160px);
+  background: rgba(147, 171, 248, 0.15);
+}

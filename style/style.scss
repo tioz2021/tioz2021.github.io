@@ -399,6 +399,17 @@ input {
   z-index: 2;
 }
 
+.s3__star-bg{
+  z-index: -1;
+}
+.s3__light-decor1{
+  z-index: -1;
+}
+
+.scroll-section__bg{
+  z-index: -1;
+}
+
 // 
 
 @media screen and (max-width: 1600px) {
