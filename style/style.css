@@ -3646,6 +3646,7 @@ input {
 .pb1 {
   position: relative;
   margin-top: 79px;
+  z-index: 3;
 }
 .pb1__container {
   width: 800px;
