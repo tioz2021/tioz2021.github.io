@@ -8176,17 +8176,7 @@ input {
     z-index: -1;
   }
   .title-wrp::after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    filter: blur(90);
-    background: rgba(147, 171, 248, 0.15);
-    border-radius: 79px;
-    width: 360px;
-    height: 164px;
+    display: none;
   }
   .pps1__top-menu-line .svg-web {
     display: none !important;
