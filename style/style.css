@@ -2002,6 +2002,12 @@ template {
   animation-fill-mode: forwards;
 }
 
+* {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
 html {
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -7145,9 +7151,6 @@ input {
     width: 360px;
     height: 447px;
   }
-  .slider-section__bg-light .svg-mob {
-    display: none !important;
-  }
   .slider-section__bg-light .svg-web {
     display: none !important;
   }
@@ -7327,9 +7330,6 @@ input {
   }
   .s10__list--mod {
     margin-bottom: 39px;
-  }
-  .s6__decor-bg .svg-mob {
-    display: none !important;
   }
   .s6__decor-bg .svg-web {
     display: none !important;
