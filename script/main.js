@@ -69,6 +69,7 @@
   function initializeSwiper() {
     if (window.innerWidth < 1200) {
       var swiper = new Swiper(".s3_tab-swiper", {
+        initialSlide: 1, // This will make the second slide active
         pagination: {
           el: ".s3 .scroll-section__slider-navigation",
           clickable: true,

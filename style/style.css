@@ -1545,7 +1545,7 @@ template {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 1px;
+  height: 2px;
 }
 
 .svg-blur {
@@ -3440,6 +3440,9 @@ input {
   margin-bottom: 73px;
 }
 .pps1__pre-title {
+  text-decoration: underline;
+}
+.pps1__pre-title-text {
   text-decoration: underline;
 }
 .pps1__title-text {
@@ -5710,11 +5713,9 @@ input {
     margin-bottom: 42px;
   }
   .pas1__text2 {
-    min-height: 236px;
     margin-bottom: 44px;
   }
   .pas1__bold-text2 {
-    max-width: 637px;
     margin-bottom: 26px;
   }
   .pas1__text3 {
@@ -6028,6 +6029,13 @@ input {
   }
   .pas1__text-bg-block {
     min-height: unset;
+  }
+  .pas1__text-bg-block .svg-web {
+    display: none !important;
+  }
+  .pas1__text-bg-block .pps1__text-bg {
+    width: 680px;
+    height: 280px;
   }
   .pps1__text-bg {
     width: 680px;
@@ -6536,8 +6544,8 @@ input {
     margin-bottom: 12px;
   }
   .svg-blur .blur {
-    width: 68px;
-    height: 56px;
+    width: 34px;
+    height: 27px;
     border-radius: 100%;
     fill: linear-gradient(360deg, #eee 0%, #c8dcf5 51%, #cbd5e2 100%);
     filter: blur(16px);
@@ -7330,7 +7338,7 @@ input {
     margin-top: 5px;
   }
   .s10 .list-progress__item .list-progress__text {
-    max-width: 140px;
+    max-width: 160px;
     margin-top: 5px;
   }
   .s10 .list-progress .list-progress__item:nth-child(3) {
@@ -7919,8 +7927,11 @@ input {
     width: 159px;
   }
   .phws1__list {
-    width: 294px;
+    width: 100%;
     height: 30px;
+    box-sizing: border-box;
+    padding-left: 14px;
+    padding-right: 14px;
     margin-bottom: 24px;
   }
   .phws1__item {
@@ -7945,6 +7956,10 @@ input {
   }
   .phws1__line-bg {
     width: 328px;
+    height: 2px;
+  }
+  .phws1__line-bg .svg-web {
+    display: none !important;
   }
   .pb1 {
     margin-top: 45px;
@@ -8089,5 +8104,43 @@ input {
     width: 24px;
     height: 24px;
     top: -36px;
+  }
+  .pas1__text-bg-block .svg-tab {
+    display: none !important;
+  }
+  .pas1__text-bg-block .pps1__text-bg {
+    width: 100%;
+    height: 100%;
+  }
+  .page-about .pps1__top-menu-ppl-info {
+    margin-top: 12px;
+  }
+  .page-about .pps1__text {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 22px;
+    padding-right: 22px;
+    height: 202px;
+  }
+  .swiper .swiper-pagination-bullet-active::before {
+    width: 8px;
+    height: 8px;
+    filter: blur(4px);
+  }
+  .s11 .slider-section__swiper-button-prev {
+    top: var(--swiper-navigation-top-offset, 43%) !important;
+    left: -10px;
+  }
+  .pb1__item-end-time {
+    font-size: 10px;
+  }
+  .pps1__last-block-date {
+    font-size: 10px;
+  }
+  .pps1__last-block-wiever-counter {
+    font-size: 10px;
+  }
+  .page-post .s13 {
+    z-index: -1;
   }
 }/*# sourceMappingURL=style.css.map */
