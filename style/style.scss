@@ -362,8 +362,16 @@ input {
 }
 
 .main-btn--white .main-btn__effect{
-  display: none;
+  // display: none;
   // transition: background 0.5s ease;
+}
+
+.main-btn--white{
+  --duration: 16s;
+  --line-opacity: .8;
+  --line-width: 2px;
+  --line-color: #576A95;
+  // --line-color: red;
 }
 
 .main-btn--white{
@@ -371,23 +379,23 @@ input {
 }
 .main-btn--white:hover {
 }
-.main-btn--white::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  // background-color: red;
-  opacity: 0;
-  background: linear-gradient(4deg, #c5d0ff 0%, #9da7cf 51%, #8594c0 100%);
-  transition: opacity 500ms ease-in-out;
-}
+// .main-btn--white::after {
+//   content: "";
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   width: 100%;
+//   height: 100%;
+//   // background-color: red;
+//   opacity: 0;
+//   background: linear-gradient(4deg, #c5d0ff 0%, #9da7cf 51%, #8594c0 100%);
+//   transition: opacity 500ms ease-in-out;
+// }
 
-.main-btn--white:hover::after {
-  opacity: 1;
-}
+// .main-btn--white:hover::after {
+//   opacity: 1;
+// }
 
 .s7{
   position: relative;
