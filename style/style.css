@@ -4843,6 +4843,15 @@ input {
   opacity: 0.3;
 }
 
+.scroll-section__bg-light {
+  filter: blur(280px);
+}
+
+.s9__tag-blur-bg {
+  filter: blur(280px);
+  top: 412px;
+}
+
 @media screen and (max-width: 1200px) {
   .svg-blur .blur {
     width: 24px !important;
@@ -4867,21 +4876,21 @@ input {
     border-radius: 147px;
     width: 560px;
     height: 250px;
-    filter: blur(400px);
+    filter: blur(200px);
     background: rgba(147, 171, 248, 0.15);
   }
   .s9__tag-blur-bg {
     border-radius: 147px;
     width: 560px;
     height: 250px;
-    filter: blur(400px);
+    filter: blur(200px);
     background: rgba(147, 171, 248, 0.15);
     top: 384px;
   }
   .card-box__icon-star-light {
     width: 112px;
     height: 32px;
-    filter: blur(40px);
+    filter: blur(30px);
     background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(156, 178, 249, 0.4) 21.42%, #abbdf5 52%, rgba(141, 167, 249, 0.4) 78.48%, rgba(255, 255, 255, 0) 100%);
   }
   .svg-tab {
@@ -6124,7 +6133,7 @@ input {
     border-radius: 79px;
     width: 360px;
     height: 164px;
-    filter: blur(216.1449890137px);
+    filter: blur(166.1449890137px);
     background: rgba(147, 171, 248, 0.15);
   }
   .card-box__icon-star-light {
