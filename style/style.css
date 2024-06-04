@@ -4893,6 +4893,10 @@ input {
     filter: blur(30px);
     background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(156, 178, 249, 0.4) 21.42%, #abbdf5 52%, rgba(141, 167, 249, 0.4) 78.48%, rgba(255, 255, 255, 0) 100%);
   }
+  .phws1__bg {
+    width: 768px;
+    height: 622px;
+  }
   .svg-tab {
     display: block !important;
   }
@@ -6145,6 +6149,9 @@ input {
   .phws1__bg {
     width: 360px;
     height: 448px;
+  }
+  .phws1__title {
+    margin-bottom: 24px;
   }
   .svg-web {
     display: none;
