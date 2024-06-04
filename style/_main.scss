@@ -519,6 +519,7 @@
     background: #93abf8;
     opacity: 0.1;
     top: 187px;
+    z-index: -1;
   }
   // .s3__list-bg
   &__list-bg {
@@ -2928,11 +2929,11 @@
 }
 
 .s10 .s6__list-item:nth-child(3) .blur {
-  border-radius: 100%;
-  background: linear-gradient(360deg, #c8d9fa 0%, #c8dcf5 51%, #d0e1f5 100%);
-  filter: blur(24px);
-  width: 86px;
-  height: 77px;
+  // border-radius: 100%;
+  // background: linear-gradient(360deg, #c8d9fa 0%, #c8dcf5 51%, #d0e1f5 100%);
+  filter: blur(24px) !important;
+  width: 24px !important;
+  height: 24px !important;
 }
 
 .window {

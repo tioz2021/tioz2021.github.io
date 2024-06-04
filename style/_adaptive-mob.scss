@@ -10,7 +10,8 @@
 .header__logo{
   order: 1;
   width: 58px;
-  height: 16px;
+  // height: 16px;
+  height: 18px;
   margin-right: 0;
   margin-bottom: 13px;
 }
@@ -467,15 +468,6 @@
   height: 24px;
   margin-bottom: 12px;
 }
-.svg-blur .blur{
-  // width: 68px;
-  // height: 56px;
-  width: 34px;
-  height: 27px;
-  border-radius: 100%;
-  fill: linear-gradient(360deg, #eee 0%, #c8dcf5 51%, #cbd5e2 100%);
-  filter: blur(16px);
-}
 .s3__list-item-title{
   margin-bottom: 8px;
 }
@@ -808,6 +800,11 @@
 }
 .s5 .scroll-section__bg-light{
   // display: none;
+  border-radius: 79px;
+  width: 360px;
+  height: 164px;
+  filter: blur(216.14498901367188px);
+  background: rgba(147, 171, 248, 0.15);
 }
 .s5 .scroll-section__list-bg-line{
   // display: none;
@@ -857,6 +854,7 @@
   filter: unset;
   background: unset;
   opacity: 1;
+  top: 63px;
 }
 .s6__decor-list{
   width: 329px;
@@ -1663,17 +1661,17 @@
   line-height: 130%;
 }
 .pps1__ppl-icon{
-  width: 24px;
-  height: 24px;
+  width: 36px;
+  height: 36px;
   margin-right: 7px;
 }
 .pps1__ppl-name{
-  font-size: 10px;
-  margin-bottom: 2px;
-  margin-top: -3px;
+  font-size: 12px;
+  margin-bottom: 1px;
+  // margin-top: -3px;
 }
 .pps1__ppl-text{
-  font-size: 10px;
+  font-size: 12px;
 }
 .pas1 .pps1__top-menu-ppl-info{
   margin-top: 34px;
@@ -1805,7 +1803,8 @@
   display: flex;
 }
 .win-box__center{
-  margin-bottom: 12px;
+  // margin-bottom: 12px;
+  margin-bottom: 24px;
 }
 .win-box__mobile-btn-wrp{
   margin: 0 auto;
@@ -1818,6 +1817,7 @@
 }
 
 .win-box__text::before{
+  display: none;
   bottom: -1px;
   width: 93%;
 }
@@ -2050,7 +2050,7 @@
   height: 16px;
 }
 .pb1__item-end-wiever-number{
-  font-size: 10px;
+  font-size: 12px;
   position: relative;
   left: 6px;
 }
@@ -2226,40 +2226,29 @@
 }
 
 .pb1__item-end-time{
-  font-size: 10px;
+  font-size: 12px;
 }
 .pps1__last-block-date{
-  font-size: 10px;
+  font-size: 12px;
 }
 .pps1__last-block-wiever-counter{
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .page-post .s13{
   z-index: -1;
 }
 
-.title-wrp::after{
-  display: none;
-  // content: "";
-  // position: absolute;
-  // z-index: -1;
-  // left: 50%;
-  // top: 50%;
-  // transform: translate(-50%, -50%);
-  // // border-radius: 147px;
-  // // width: 280px;
-  // // height: 104px;
-  // // filter: blur(160px);
-  // // background: #93abf8;
-  // // opacity: 0.3;
-  // filter: blur(90);
-  // background: rgba(147, 171, 248, 0.15);
-  // border-radius: 79px;
-  // width: 360px;
-  // height: 164px;
+.pps1__top-menu-line .svg-web{
+  display: none !important;
 }
 
-.pps1__top-menu-line .svg-web{
+.pb1__bg-light{
+  width: 360px;
+  height: 448px;
+  top: -44px;
+}
+.pb1__bg-light .svg-web,
+.pb1__bg-light .svg-tab{
   display: none !important;
 }

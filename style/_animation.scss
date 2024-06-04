@@ -260,13 +260,13 @@
 
 @keyframes m_scale {
   0% {
-    transform: translate(-50%, -50%) scale(1.03);
+    transform: translate(-50%, -50%) scale(1.05);
   }
   50% {
     transform: translate(-50%, -50%) scale(1);
   }
   100% {
-    transform: translate(-50%, -50%) scale(1.03);
+    transform: translate(-50%, -50%) scale(1.05);
   }
 }
 .card-box__icon-star{
