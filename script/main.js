@@ -104,21 +104,21 @@
     // s2 scroller 1
     if (scrollTop >= 1700 && scrollTop <= 2100) {
       if (scrollingBlock.classList.contains("fixed") == false) {
-        console.log("fixed");
-        scrollingBlock.classList.add("fixed");
-        scrollingBlock.style.top = "unset";
-        scrollingBlock.style.bottom = "0px"
+        // console.log("fixed");
+        // scrollingBlock.classList.add("fixed");
+        // scrollingBlock.style.top = "unset";
+        // scrollingBlock.style.bottom = "0px"
       }
     } else if (scrollTop <= 1700) {
       if (scrollingBlock.classList.contains("fixed") == true) {
-        scrollingBlock.classList.remove("fixed");
-        scrollingBlock.style.top = "910px";
-        scrollingBlock.style.bottom = "unset"
+        // scrollingBlock.classList.remove("fixed");
+        // scrollingBlock.style.top = "910px";
+        // scrollingBlock.style.bottom = "unset"
       }
     } else if (scrollTop >= 2100) {
       if (scrollingBlock.classList.contains("fixed") == true) {
-        scrollingBlock.classList.remove("fixed");
-        scrollingBlock.style.top = "1310px";
+        // scrollingBlock.classList.remove("fixed");
+        // scrollingBlock.style.top = "1310px";
       }
     }
     // if (scrollTop >= 1401 && scrollTop <= 1500) swiper.slideTo(0, 1000);

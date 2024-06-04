@@ -417,20 +417,25 @@ input {
   border-radius: 100%;
   background: linear-gradient(360deg, #eee 0%, #c8dcf5 51%, #cbd5e2 100%);
 
+  // width: 44px;
+  // height: 30px;
+  // filter: blur(25px);
+  // opacity: 0.4;
+
   width: 44px;
   height: 30px;
-  filter: blur(25px);
-  opacity: 0.4;
+  filter: blur(16px);
+  opacity: 0.3;
 }
 
 .s1{
-  margin-bottom: 400px;
+  // margin-bottom: 400px;
 }
 .s5{
-  top: 5084px;
+  // top: 5084px;
 }
 .s4{
-  margin-bottom: 1734px;
+  // margin-bottom: 1734px;
 }
 // 
 
@@ -484,18 +489,18 @@ input {
     top: 384px;
   }
 
-  .s4__decoration-light{
-    transform: translateX(-50%) scale(2);
-  }
-  .s6__decor-bg{
-    transform: translateX(-50%) scale(2);
-  }
-  .slider-section__bg-light{
-    transform: translateX(-50%) scale(2);
-  }
-  .s7__decoration-shadow{
-    transform: translateX(-50%) scale(2);
-  }
+  // .s4__decoration-light{
+  //   transform: translateX(-50%) scale(2);
+  // }
+  // .s6__decor-bg{
+  //   transform: translateX(-50%) scale(2);
+  // }
+  // .slider-section__bg-light{
+  //   transform: translateX(-50%) scale(2);
+  // }
+  // .s7__decoration-shadow{
+  //   transform: translateX(-50%) scale(2);
+  // }
 
   // fix blur tab
 
@@ -557,6 +562,13 @@ input {
     border-radius: 79px;
     width: 360px;
     height: 164px;
+  }
+  .scroll-section__bg-light{
+    border-radius: 79px;
+    width: 360px;
+    height: 164px;
+    filter: blur(216.14498901367188px);
+    background: rgba(147, 171, 248, 0.15);
   }
 
   // fix blur mob
