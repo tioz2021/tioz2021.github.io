@@ -411,7 +411,7 @@ input {
   width: 44px !important;
   height: 30px !important;
   filter: blur(16px) !important;
-  opacity: 0.3 !important;
+  opacity: 0.3;
 }
 
 .slider-section__slide-icon::after{
