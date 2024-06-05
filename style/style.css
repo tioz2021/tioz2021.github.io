@@ -1553,16 +1553,12 @@ template {
   position: relative;
 }
 .svg-blur .blur {
-  width: 132px;
-  height: 118px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
   border-radius: 100%;
   background: linear-gradient(360deg, #eee 0%, #c8dcf5 51%, #cbd5e2 100%);
-  filter: blur(44px);
-  opacity: 0.1;
+  width: 44px;
+  height: 30px;
+  filter: blur(16px);
+  opacity: 0.3;
   transition: opacity 1000ms ease-in-out;
 }
 
@@ -4871,12 +4867,6 @@ input {
 }
 
 @media screen and (max-width: 1200px) {
-  .svg-blur .blur {
-    width: 24px !important;
-    height: 15px !important;
-    filter: blur(15px) !important;
-    opacity: 0.2;
-  }
   .title-wrp::after {
     content: "";
     position: absolute;
@@ -6158,13 +6148,6 @@ input {
   .s1 .s1__title-icon-video-mask {
     width: 276px;
     height: 276px;
-  }
-  .svg-blur .blur {
-    width: 34px;
-    height: 27px;
-    border-radius: 100%;
-    background: linear-gradient(360deg, #eee 0%, #c8dcf5 51%, #cbd5e2 100%);
-    filter: blur(16px);
   }
   .title-wrp::after {
     filter: blur(90);
