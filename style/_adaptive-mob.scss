@@ -1,0 +1,40 @@
+.header{
+  padding-top: 13px;
+  padding-bottom: 24px;
+  margin-bottom: -8px;
+}
+.header__logo{
+  order: -1;
+  width: 349px;
+  height: 63px;
+  margin-bottom: 23px;
+}
+.header__menu{
+  margin-top: -36px;
+}
+.header__menu-item{
+  font-size: 16px;
+}
+.header__container{
+  flex-wrap: wrap;
+}
+.header__close{
+  width: 16px;
+  height: 16px;
+  margin-top: 0;
+  position: relative;
+  top: -17px;
+}
+.header__prev{
+  margin-top: 0;
+}
+.header__menu-item:first-child{
+  margin-right: 16px;
+}
+.header__container::after{
+  width: 328px;
+  bottom: 1px;
+}
+.ms__list-item{
+  margin-bottom: 24px;
+}

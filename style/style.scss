@@ -76,26 +76,32 @@ input {
 }
 
 // 768
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
   html {
     // font-size: 0.132vw;
   }
 
   .container {
     max-width: 768px;
+    padding-left: 44px;
+    padding-right: 44px;
+    border: unset;
+    position: relative;
   }
 
   @import "_adaptive-tab";
 }
 
 // 360
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 780px) {
   html {
     // font-size: 0.278vw;
   }
 
   .container {
     max-width: 360px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
   @import "_adaptive-mob";
 }

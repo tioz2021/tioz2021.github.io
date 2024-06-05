@@ -1,0 +1,33 @@
+.header__menu{
+  margin-right: 64px;
+  margin-top: -41px;
+}
+
+.header__container::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  width: 679px;
+  height: 1px;
+  opacity: .3;
+}
+
+.ms__list-item{
+  width: 328px;
+  // height: 549px;
+  margin-right: 24px;
+}
+
+.ms__list-item:nth-child(2n){
+  margin-right: 0;
+}
+.ms__img{
+  margin-left: 15px;
+  margin-top: 5px;
+}
+.ms__list-item-hover-items{
+  display: none;
+}
