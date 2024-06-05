@@ -4337,6 +4337,7 @@ input {
 }
 
 .s10 .s6__list-item:nth-child(3) .blur {
+  filter: blur(8px) !important;
   width: 16px !important;
   height: 16px !important;
 }
