@@ -1439,6 +1439,7 @@ template {
 }
 
 .logo-video {
+  opacity: 0;
   width: 400px;
   height: 400px;
   position: absolute;

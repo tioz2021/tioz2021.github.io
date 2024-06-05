@@ -2119,6 +2119,33 @@
 			link2.href = 'style/2.css';
 			document.head.appendChild(link2);
 		}
+
+    document.addEventListener('DOMContentLoaded', function() {
+        var video = document.querySelector('.logo-video1');
+				var video2 = document.querySelector('.logo-video2');
+        if (video) {
+            video.muted = true;
+            video.play().then(function() {
+                // Видео успешно запущено, ничего не делаем.
+            }).catch(function(error) {
+                console.log('Автоматическое воспроизведение видео заблокировано:', error);
+                // Если видео не запускается, скрываем его.
+                video.style.display = 'none';
+            });
+        }
+
+        if (video2) {
+            video2.muted = true;
+            video2.play().then(function() {
+                // Видео успешно запущено, ничего не делаем.
+            }).catch(function(error) {
+                console.log('Автоматическое воспроизведение видео заблокировано:', error);
+                // Если видео не запускается, скрываем его.
+                video2.style.display = 'none';
+            });
+        }
+    });
+</script>
 	</script>
 
 	<!-- script -->
