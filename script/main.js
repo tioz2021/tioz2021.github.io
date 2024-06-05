@@ -279,15 +279,15 @@
 
     wrapper.addEventListener("mouseleave", function () {
       clearTimeout(timeoutId);
-      blurElement.forEach((e) => (e.style.opacity = "0.2"));
+      blurElement.forEach((e) => (e.style.opacity = "0.3"));
       // blurElement.style.opacity = "0.1";
     });
 
     function animateOpacity() {
-      blurElement.forEach((e) => (e.style.opacity = "0.4"));
+      blurElement.forEach((e) => (e.style.opacity = "0.6"));
       // blurElement.style.opacity = "0.1";
       timeoutId = setTimeout(() => {
-        blurElement.forEach((e) => (e.style.opacity = "0.2"));
+        blurElement.forEach((e) => (e.style.opacity = "0.3"));
         timeoutId = setTimeout(animateOpacity, 1000);
       }, 1000);
     }

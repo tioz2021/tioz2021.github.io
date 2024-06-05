@@ -1821,6 +1821,16 @@ template {
   animation-fill-mode: forwards;
 }
 
+.s1__title-icon-video-mask {
+  opacity: 0;
+  animation-name: m_opacity;
+  animation-duration: 1.5s;
+  animation-delay: 0.5s;
+  animation-direction: reverse;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
 .logo-video2 {
   opacity: 1;
   -webkit-mask-image: radial-gradient(closest-side at 50% 50%, red -35%, transparent 95%);
@@ -4327,7 +4337,6 @@ input {
 }
 
 .s10 .s6__list-item:nth-child(3) .blur {
-  filter: blur(24px) !important;
   width: 24px !important;
   height: 24px !important;
 }
@@ -4823,11 +4832,14 @@ input {
   z-index: -1;
 }
 
-.svg-blur .blur {
+.s6 .svg-blur .blur,
+.s10 .svg-blur .blur {
+  border-radius: 100% !important;
+  background: linear-gradient(360deg, #eee 0%, #c8dcf5 51%, #cbd5e2 100%) !important;
   width: 44px !important;
   height: 30px !important;
-  filter: blur(25px) !important;
-  opacity: 0.2;
+  filter: blur(16px) !important;
+  opacity: 0.3 !important;
 }
 
 .slider-section__slide-icon::after {
@@ -4851,6 +4863,11 @@ input {
 .s9__tag-blur-bg {
   filter: blur(280px);
   top: 412px;
+}
+
+.s1 .s1__title-icon-video-mask {
+  width: 400px;
+  height: 400px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -6138,6 +6155,10 @@ input {
   }
 }
 @media screen and (max-width: 720px) {
+  .s1 .s1__title-icon-video-mask {
+    width: 276px;
+    height: 276px;
+  }
   .svg-blur .blur {
     width: 34px;
     height: 27px;

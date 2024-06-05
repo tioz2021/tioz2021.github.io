@@ -400,11 +400,18 @@ input {
   z-index: -1;
 }
 
-.svg-blur .blur{
+.s6 .svg-blur .blur,
+.s10 .svg-blur .blur{
+  // width: 44px !important;
+  // height: 30px !important;
+  // filter: blur(25px) !important;
+  // opacity: 0.2;
+  border-radius: 100% !important;
+  background: linear-gradient(360deg, #eee 0%, #c8dcf5 51%, #cbd5e2 100%) !important; 
   width: 44px !important;
   height: 30px !important;
-  filter: blur(25px) !important;
-  opacity: 0.2;
+  filter: blur(16px) !important;
+  opacity: 0.3 !important;
 }
 
 .slider-section__slide-icon::after{
@@ -452,7 +459,9 @@ input {
 // }
 // 
 
-@media screen and (max-width: 1600px) {
+.s1 .s1__title-icon-video-mask{
+  width: 400px;
+  height: 400px;
 }
 
 // 768
@@ -590,6 +599,10 @@ input {
 
 // 360
 @media screen and (max-width: 720px) {
+  .s1 .s1__title-icon-video-mask{
+    width: 276px;
+    height: 276px;
+  }
   // fix blur mob
   .svg-blur .blur{
     // width: 68px;
