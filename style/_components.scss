@@ -307,6 +307,8 @@
     // background: linear-gradient(180deg, #141826 0%, #070917 100%);
     // background-clip: content-box;
 
+    will-change: transform;
+
     // .card-box__item-wrp:nth-child(2)
     &:nth-child(2) {
       width: 217px;

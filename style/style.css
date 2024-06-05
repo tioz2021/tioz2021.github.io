@@ -762,6 +762,7 @@ template {
   z-index: 1;
   box-sizing: border-box;
   overflow: hidden;
+  will-change: transform;
 }
 .card-box__item-wrp:nth-child(2) {
   width: 217px;
@@ -4900,6 +4901,21 @@ input {
     width: 768px;
     height: 622px;
   }
+  .pps1__icon {
+    width: 680px;
+    height: 430px;
+  }
+  .pps1__icon .svg-web {
+    display: none !important;
+  }
+  .pps1__ligting {
+    transform: translateX(-50%);
+    width: 768px;
+    height: 662px;
+  }
+  .pps1__ligting .svg-web {
+    display: none !important;
+  }
   .svg-tab {
     display: block !important;
   }
@@ -6151,6 +6167,20 @@ input {
   .phws1__bg {
     width: 360px;
     height: 448px;
+  }
+  .pps1__icon {
+    width: 328px;
+    height: 209px;
+  }
+  .pps1__icon .svg-tab {
+    display: none !important;
+  }
+  .pps1__ligting {
+    width: 360px;
+    height: 320px;
+  }
+  .pps1__ligting .svg-tab {
+    display: none !important;
   }
   .phws1__title {
     margin-bottom: 24px;
