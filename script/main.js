@@ -284,7 +284,7 @@
     });
 
     function animateOpacity() {
-      blurElement.forEach((e) => (e.style.opacity = "0.6"));
+      blurElement.forEach((e) => (e.style.opacity = "0.5"));
       // blurElement.style.opacity = "0.1";
       timeoutId = setTimeout(() => {
         blurElement.forEach((e) => (e.style.opacity = "0.3"));
