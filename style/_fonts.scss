@@ -1,0 +1,21 @@
+// Mulish 400
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/Mulish-Regular.ttf");
+  src: local("Mulish-Regular "), local("Mulish Regular"),
+    url("../fonts/Mulish-Regular.woff") format("woff"),
+    url("../fonts/Mulish-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+// Vivaldi 400
+@font-face {
+  font-family: "Vivaldi";
+  src: url("../fonts/Vivaldi.TTF");
+  src: local("Vivaldi-Regular "), local("Vivaldi Regular"),
+    url("../fonts/Vivaldi.woff") format("woff"),
+    url("../fonts/Vivaldi.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
