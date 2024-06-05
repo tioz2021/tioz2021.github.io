@@ -100,8 +100,8 @@
     // const container = document.querySelector(".scroll-container");
     // const containerRect = container.getBoundingClientRect();
     const scrollTop = window.scrollY || window.pageYOffset;
-    // console.log(scrollTop);
-    console.log(innerHeight)
+    console.log(scrollTop);
+    // console.log(innerHeight)
     
     // 910<height
     if(window.innerWidth > 1200 && window.innerHeight < 910){
@@ -199,8 +199,6 @@
       else if (scrollTop >= 5701 && scrollTop <= 5800) swiper2.slideTo(2, 1000);
     }
   }
-
-  
 
   window.addEventListener("scroll", scroll_slider_block);
 })();
