@@ -102,52 +102,55 @@
     const scrollTop = window.scrollY || window.pageYOffset;
     console.log(scrollTop);
     // s2 scroller 1
-    if (scrollTop >= 1700 && scrollTop <= 2100) {
-      if (scrollingBlock.classList.contains("fixed") == false) {
-        // console.log("fixed");
-        // scrollingBlock.classList.add("fixed");
-        // scrollingBlock.style.top = "unset";
-        // scrollingBlock.style.bottom = "0px"
+    if(window.innerWidth > 1200){
+      if (scrollTop >= 1400 && scrollTop <= 1800) {
+        if (scrollingBlock.classList.contains("fixed") == false) {
+          console.log("fixed");
+          scrollingBlock.classList.add("fixed");
+          scrollingBlock.style.top = "-497px";
+          // scrollingBlock.style.bottom = "0px"
+        }
+      } else if (scrollTop <= 1400) {
+        if (scrollingBlock.classList.contains("fixed") == true) {
+          scrollingBlock.classList.remove("fixed");
+          scrollingBlock.style.top = "910px";
+          scrollingBlock.style.bottom = "unset"
+        }
+      } else if (scrollTop >= 1800) {
+        if (scrollingBlock.classList.contains("fixed") == true) {
+          scrollingBlock.classList.remove("fixed");
+          scrollingBlock.style.top = "1310px";
+        }
       }
-    } else if (scrollTop <= 1700) {
-      if (scrollingBlock.classList.contains("fixed") == true) {
-        // scrollingBlock.classList.remove("fixed");
-        // scrollingBlock.style.top = "910px";
-        // scrollingBlock.style.bottom = "unset"
+      if (scrollTop >= 1401 && scrollTop <= 1500) swiper.slideTo(0, 1000);
+      else if (scrollTop >= 1501 && scrollTop <= 1600) swiper.slideTo(1, 1000);
+      else if (scrollTop >= 1601 && scrollTop <= 1700) swiper.slideTo(2, 1000);
+  
+      // s5 scroller 2
+      5300
+      if (scrollTop >= 5500 && scrollTop <= 5900) {
+        if (scrollingBlock2.classList.contains("fixed") == false) {
+          console.log("fixed");
+          scrollingBlock2.classList.add("fixed");
+          scrollingBlock2.style.top = "-409px";
+        }
+      } else if (scrollTop <= 5500) {
+        if (scrollingBlock2.classList.contains("fixed") == true) {
+          scrollingBlock2.classList.remove("fixed");
+          scrollingBlock2.style.top = "5093px";
+        }
+      } else if (scrollTop >= 5900) {
+        if (scrollingBlock2.classList.contains("fixed") == true) {
+          scrollingBlock2.classList.remove("fixed");
+          scrollingBlock2.style.top = "5493px";
+        }
       }
-    } else if (scrollTop >= 2100) {
-      if (scrollingBlock.classList.contains("fixed") == true) {
-        // scrollingBlock.classList.remove("fixed");
-        // scrollingBlock.style.top = "1310px";
-      }
+      if (scrollTop >= 5501 && scrollTop <= 5600) swiper2.slideTo(0, 1000);
+      else if (scrollTop >= 5601 && scrollTop <= 5700) swiper2.slideTo(1, 1000);
+      else if (scrollTop >= 5701 && scrollTop <= 5800) swiper2.slideTo(2, 1000);
     }
-    // if (scrollTop >= 1401 && scrollTop <= 1500) swiper.slideTo(0, 1000);
-    // else if (scrollTop >= 1501 && scrollTop <= 1600) swiper.slideTo(1, 1000);
-    // else if (scrollTop >= 1601 && scrollTop <= 1700) swiper.slideTo(2, 1000);
-
-    // s5 scroller 2
-    // 5300
-    // if (scrollTop >= 5500 && scrollTop <= 5900) {
-    //   if (scrollingBlock2.classList.contains("fixed") == false) {
-    //     console.log("fixed");
-    //     scrollingBlock2.classList.add("fixed");
-    //     scrollingBlock2.style.top = "-409px";
-    //   }
-    // } else if (scrollTop <= 5500) {
-    //   if (scrollingBlock2.classList.contains("fixed") == true) {
-    //     scrollingBlock2.classList.remove("fixed");
-    //     scrollingBlock2.style.top = "5093px";
-    //   }
-    // } else if (scrollTop >= 5900) {
-    //   if (scrollingBlock2.classList.contains("fixed") == true) {
-    //     scrollingBlock2.classList.remove("fixed");
-    //     scrollingBlock2.style.top = "5493px";
-    //   }
-    // }
-    // if (scrollTop >= 5501 && scrollTop <= 5600) swiper2.slideTo(0, 1000);
-    // else if (scrollTop >= 5601 && scrollTop <= 5700) swiper2.slideTo(1, 1000);
-    // else if (scrollTop >= 5701 && scrollTop <= 5800) swiper2.slideTo(2, 1000);
   }
+
   window.addEventListener("scroll", scroll_slider_block);
 })();
 

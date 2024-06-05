@@ -4867,12 +4867,30 @@ input {
   top: 412px;
 }
 
+.s1 {
+  margin-bottom: 400px;
+}
+
+.s5 {
+  top: 5084px;
+}
+
+.s4 {
+  margin-bottom: 1734px;
+}
+
 .s1 .s1__title-icon-video-mask {
   width: 400px;
   height: 400px;
 }
 
 @media screen and (max-width: 1200px) {
+  .s2 {
+    top: unset !important;
+  }
+  .list-progress__item-decoration:nth-child(6) {
+    display: none;
+  }
   .title-wrp::after {
     content: "";
     position: absolute;

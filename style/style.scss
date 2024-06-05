@@ -444,13 +444,13 @@ input {
 }
 
 .s1{
-  // margin-bottom: 400px;
+  margin-bottom: 400px;
 }
 .s5{
-  // top: 5084px;
+  top: 5084px;
 }
 .s4{
-  // margin-bottom: 1734px;
+  margin-bottom: 1734px;
 }
 
 // .pps1__ligting .svg-tab,
@@ -466,6 +466,12 @@ input {
 
 // 768
 @media screen and (max-width: 1200px) {
+  .s2{
+    top: unset !important;
+  }
+  .list-progress__item-decoration:nth-child(6){
+    display: none;
+  }
   // fix blur tab
   .svg-blur .blur{
     // width: 25px;
