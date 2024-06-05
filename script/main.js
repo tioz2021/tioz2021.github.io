@@ -69,6 +69,7 @@
   function openSwipers() {
     // console.log("h");
     
+    // max value active slider ?
     const nameElm = this.querySelector(".ms__title");
     const nameText = nameElm.textContent;
     const swiperWrpElm = this.parentNode;
@@ -79,15 +80,29 @@
     const elements = Array.from(swiperWrpElm.children);
     if (this.classList.contains('ms__list-item')) {
       const index = elements.indexOf(this);
-      console.log('Clicked element index:', index);
+      // active number slider
+      console.log('Clicked element index:', elements.length);
 
-      // open slider
       if(swiperWrpElm.classList.contains("ms__list--vip")){
+        // open slider
         swipers[0].classList.add("active");
-        swiper.slideTo(index, 1000, false);
+        // active item
+        swiper.slideTo(index, 10, false);
+        // add max number and active number
+        const activeNumElm = document.querySelector(".ms-swiper__list-vip .ms-swiper__nav-num1");
+        const maxNumElm = document.querySelector(".ms-swiper__list-vip .ms-swiper__nav-num2");
+        activeNumElm.textContent = index+1;
+        maxNumElm.textContent = elements.length;
       } else {
+        // open slider
         swipers[1].classList.add("active");
-        swiper2.slideTo(index, 1000, false);
+        // active item
+        swiper2.slideTo(index, 10, false);
+        // add max number and active number
+        const activeNumElm = document.querySelector(".ms-swiper__list-premium .ms-swiper__nav-num1");
+        const maxNumElm = document.querySelector(".ms-swiper__list-premium .ms-swiper__nav-num2");
+        activeNumElm.textContent = index+1;
+        maxNumElm.textContent = elements.length;
       }
     }
 
@@ -111,8 +126,15 @@
 
   prevBtn.onclick = function() {
     // back to list
-    lists[0].classList.add("active");
+    if(swipers[0].classList.contains("active")){
+      console.log("vip")
+      lists[0].classList.add("active");
+    } else if(swipers[1].classList.contains("active")){
+      console.log("prem")
+      lists[1].classList.add("active");
+    }
 
+    
     // hidden Swipers
     swiperWrp.classList.remove("active");
     swipers[0].classList.remove("active");
@@ -126,6 +148,30 @@
     prevBtn.classList.remove("active");
     closeBtn.classList.add("active");
   }
+
+  // листание слайдов
+  const vipPrevBtn = document.querySelector(".ms-swiper__list-vip .swiper-slide-btn-prev");
+  const vipNextBtn = document.querySelector(".ms-swiper__list-vip .swiper-slide-btn-next");
+  const vipNumberElm = document.querySelector(".ms-swiper__list-vip .ms-swiper__nav-num1");
+  
+  const premPrevBtn = document.querySelector(".ms-swiper__list-premium .swiper-slide-btn-prev");
+  const premNextBtn = document.querySelector(".ms-swiper__list-premium .swiper-slide-btn-next");
+  const premNumberElm = document.querySelector(".ms-swiper__list-premium .ms-swiper__nav-num1");
+
+  function changeNumberVip() {
+    vipNumberElm.textContent = swiper.activeIndex+1;
+  }
+
+  function changeNumberPrem() {
+    premNumberElm.textContent = swiper2.activeIndex+1;
+  }
+
+  vipPrevBtn.addEventListener("click", changeNumberVip);
+  vipNextBtn.addEventListener("click", changeNumberVip);
+
+  premPrevBtn.addEventListener("click", changeNumberPrem);
+  premNextBtn.addEventListener("click", changeNumberPrem);
+
 })();
 
 (() => {
