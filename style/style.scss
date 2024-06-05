@@ -443,6 +443,8 @@ input {
   top: 412px;
 }
 
+// document.querySelector(".s1").style.marginBottom = "700px";
+// @media scree
 .s1{
   margin-bottom: 400px;
 }
@@ -451,6 +453,17 @@ input {
 }
 .s4{
   margin-bottom: 1734px;
+}
+@media screen and (max-height: 945px){
+  .s1{
+    // margin-bottom: 700px;
+  } 
+  .s5{
+    // top: 5384px;
+  }
+  .s4{
+    // margin-bottom: 2034px;
+  }
 }
 
 // .pps1__ligting .svg-tab,

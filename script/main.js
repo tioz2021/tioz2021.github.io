@@ -100,9 +100,58 @@
     // const container = document.querySelector(".scroll-container");
     // const containerRect = container.getBoundingClientRect();
     const scrollTop = window.scrollY || window.pageYOffset;
-    console.log(scrollTop);
-    // s2 scroller 1
-    if(window.innerWidth > 1200){
+    // console.log(scrollTop);
+    console.log(innerHeight)
+    
+    // 910<height
+    if(window.innerWidth > 1200 && window.innerHeight < 910){
+      if (scrollTop >= 1700 && scrollTop <= 2100) {
+        if (scrollingBlock.classList.contains("fixed") == false) {
+          console.log("fixed");
+          scrollingBlock.classList.add("fixed");
+          scrollingBlock.style.top = "-797px";
+        }
+      } else if (scrollTop <= 1700) {
+        if (scrollingBlock.classList.contains("fixed") == true) {
+          scrollingBlock.classList.remove("fixed");
+          scrollingBlock.style.top = "910px";
+        }
+      } else if (scrollTop >= 2100) {
+        if (scrollingBlock.classList.contains("fixed") == true) {
+          scrollingBlock.classList.remove("fixed");
+          scrollingBlock.style.top = "1310px";
+        }
+      }
+      if (scrollTop >= 1701 && scrollTop <= 1800) swiper.slideTo(0, 1000);
+      else if (scrollTop >= 1801 && scrollTop <= 1900) swiper.slideTo(1, 1000);
+      else if (scrollTop >= 1901 && scrollTop <= 2000) swiper.slideTo(2, 1000);
+
+      // s5 scroller 2
+      if (scrollTop >= 5800 && scrollTop <= 6200) {
+        if (scrollingBlock2.classList.contains("fixed") == false) {
+          console.log("fixed");
+          scrollingBlock2.classList.add("fixed");
+          scrollingBlock2.style.top = "-697px";
+        }
+      } else if (scrollTop <= 5800) {
+        if (scrollingBlock2.classList.contains("fixed") == true) {
+          scrollingBlock2.classList.remove("fixed");
+          scrollingBlock2.style.top = "5084px";
+        }
+      } else if (scrollTop >= 6200) {
+        if (scrollingBlock2.classList.contains("fixed") == true) {
+          scrollingBlock2.classList.remove("fixed");
+          scrollingBlock2.style.top = "5493px";
+        }
+      }
+      if (scrollTop >= 5801 && scrollTop <= 5900) swiper2.slideTo(0, 1000);
+      else if (scrollTop >= 5901 && scrollTop <= 6000) swiper2.slideTo(1, 1000);
+      else if (scrollTop >= 6001 && scrollTop <= 6100) swiper2.slideTo(2, 1000);
+    }
+
+    // big height
+    if(window.innerWidth > 1200 && window.innerHeight >= 910){
+      // s2 scroller 1
       if (scrollTop >= 1400 && scrollTop <= 1800) {
         if (scrollingBlock.classList.contains("fixed") == false) {
           console.log("fixed");
@@ -127,7 +176,7 @@
       else if (scrollTop >= 1601 && scrollTop <= 1700) swiper.slideTo(2, 1000);
   
       // s5 scroller 2
-      5300
+      // 5300
       if (scrollTop >= 5500 && scrollTop <= 5900) {
         if (scrollingBlock2.classList.contains("fixed") == false) {
           console.log("fixed");
@@ -150,6 +199,8 @@
       else if (scrollTop >= 5701 && scrollTop <= 5800) swiper2.slideTo(2, 1000);
     }
   }
+
+  
 
   window.addEventListener("scroll", scroll_slider_block);
 })();
