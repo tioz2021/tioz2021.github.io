@@ -753,11 +753,13 @@ input {
   position: absolute !important;
   left: -250%;
   opacity: 0;
+  height: 0;
 }
 .ms-swiper__list.active {
   position: relative !important;
   left: unset;
   opacity: 1;
+  height: auto;
 }
 .ms-swiper__title {
   font-family: var(--second-family);
@@ -904,7 +906,7 @@ input {
     display: none;
   }
 }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 767px) {
   .container {
     max-width: 360px;
     padding-left: 16px;

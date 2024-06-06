@@ -329,6 +329,7 @@
     position: absolute !important;
     left: -250%;
     opacity: 0;
+    height: 0;
     // display: none !important;
 
     // .ms-swiper__list.active
@@ -337,6 +338,7 @@
       position: relative !important;
       left: unset;
       opacity: 1;
+      height: auto;
     }
   }
 
