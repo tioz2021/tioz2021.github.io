@@ -69,8 +69,30 @@ button {
 input {
   outline: unset;
 }
+
 // main 1920v
 @import "_main.scss";
+
+.ms__list-item-hover-items{
+  top: 45%;
+}
+.ms__prc{
+  top: 91px;
+}
+.header{
+  margin-bottom: 52px;
+}
+
+.swiper{
+  overflow: visible !important;
+}
+.swiper-slide{
+  opacity: 0 !important;
+}
+
+.swiper-slide-active{
+  opacity: 1 !important;
+}
 
 @media screen and (max-width: 1600px) {
 }

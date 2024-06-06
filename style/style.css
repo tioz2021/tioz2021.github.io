@@ -618,10 +618,13 @@ input {
   position: absolute;
   left: -250%;
   opacity: 0;
+  transition: opacity 300ms ease-in-out;
 }
 .ms__list.active {
   position: static;
   left: unset;
+}
+.ms__list.active-effect {
   opacity: 1;
 }
 .ms__list-item {
@@ -735,12 +738,10 @@ input {
   margin-top: -9px;
   position: absolute;
   left: -250%;
-  opacity: 0;
 }
 .ms-swiper.active {
   position: relative;
   left: unset;
-  opacity: 1;
 }
 .ms-swiper__container {
   display: block;
@@ -754,12 +755,15 @@ input {
   left: -250%;
   opacity: 0;
   height: 0;
+  transition: opacity 300ms ease-in-out;
 }
 .ms-swiper__list.active {
   position: relative !important;
   left: unset;
-  opacity: 1;
   height: auto;
+}
+.ms-swiper__list.active-effect {
+  opacity: 1;
 }
 .ms-swiper__title {
   font-family: var(--second-family);
@@ -866,6 +870,30 @@ input {
 
 .swiper-slide-btn-next {
   margin-left: auto;
+}
+
+.ms__list-item-hover-items {
+  top: 45%;
+}
+
+.ms__prc {
+  top: 91px;
+}
+
+.header {
+  margin-bottom: 52px;
+}
+
+.swiper {
+  overflow: visible !important;
+}
+
+.swiper-slide {
+  opacity: 0 !important;
+}
+
+.swiper-slide-active {
+  opacity: 1 !important;
 }
 
 @media screen and (max-width: 1300px) {

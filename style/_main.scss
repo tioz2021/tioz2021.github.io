@@ -145,15 +145,16 @@
     position: absolute;
     left: -250%;
     opacity: 0;
-    // transition: opacity 1500ms ease-in-out;
-    // visibility: hidden;
+    transition: opacity 300ms ease-in-out;
 
     // .ms__list.active
     &.active{
       position: static;
       left: unset;
+      // opacity: 1;
+    }
+    &.active-effect{
       opacity: 1;
-      // visibility: visible;
     }
   }
   
@@ -304,13 +305,18 @@
   // display: none;
   position: absolute;
   left: -250%;
-  opacity: 0;
+  // opacity: 0;
+  // transition: opacity 300ms ease-in-out;
 
   // .ms-swiper.active
   &.active{
     position: relative;
     left: unset;
-    opacity: 1;
+    // opacity: 1;
+  }
+  // .ms-swiper.active-effect
+  &.active-effect{
+    // opacity: 1;
   }
 
   // .ms-swiper__container
@@ -330,15 +336,18 @@
     left: -250%;
     opacity: 0;
     height: 0;
-    // display: none !important;
-
+    transition: opacity 300ms ease-in-out;
+    
     // .ms-swiper__list.active
     &.active{
       // display: block !important;
       position: relative !important;
       left: unset;
-      opacity: 1;
       height: auto;
+    }
+    // .ms-swiper__list.active-effect
+    &.active-effect{
+      opacity: 1;
     }
   }
 

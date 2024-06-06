@@ -9,12 +9,30 @@
 
   if(headerMenuBtns[0]) headerMenuBtns[0].onclick = function(){
     if(header.classList.contains("mod-box")){
-      lists[0].classList.add("active");
-      lists[1].classList.remove("active");
+      lists[1].classList.remove("active-effect");
+      setTimeout(() => {
+        lists[1].classList.remove("active");
+      }, 300);
+
+      setTimeout(() => {
+        lists[0].classList.add("active");
+        lists[0].classList.add("active-effect");
+      }, 400);
+
     } else {
       swiperWrp.classList.add("active");
-      swipers[0].classList.add("active");
-      swipers[1].classList.remove("active");
+      
+      swipers[1].classList.remove("active-effect");
+      setTimeout(() => {
+        swipers[1].classList.remove("active");
+      }, 300);
+      setTimeout(() => {
+        swipers[0].classList.add("active");
+        swipers[0].classList.add("active-effect");
+      }, 400);
+
+      // swipers[0].classList.add("active");
+      // swipers[1].classList.remove("active");
     }
 
     // change active effect
@@ -23,12 +41,27 @@
   }
   if(headerMenuBtns[1]) headerMenuBtns[1].onclick = function(){
     if(header.classList.contains("mod-box")){
-      lists[1].classList.add("active");
-      lists[0].classList.remove("active");
+      lists[0].classList.remove("active-effect");
+      setTimeout(() => {
+        lists[0].classList.remove("active");
+      }, 300);
+
+      setTimeout(() => {
+        lists[1].classList.add("active");
+        lists[1].classList.add("active-effect");
+      }, 400);
     } else {
       swiperWrp.classList.add("active");
-      swipers[1].classList.add("active");
-      swipers[0].classList.remove("active");
+      swipers[0].classList.remove("active-effect");
+      setTimeout(() => {
+        swipers[0].classList.remove("active");
+      }, 300);
+      setTimeout(() => {
+        swipers[1].classList.add("active");
+        swipers[1].classList.add("active-effect");
+      }, 400);
+      // swipers[1].classList.add("active");
+      // swipers[0].classList.remove("active");
     }
 
     // change active effect
@@ -39,7 +72,25 @@
   if (window.innerWidth > 1200) {
     // swiper init
     const swiper = new Swiper('.ms-swiper__list-vip', {
-      spaceBetween: 30,
+      // spaceBetween: 0,
+      speed: 750,
+      slidesPerView: 1,
+      allowTouchMove: false,
+
+      effect: "creative",
+      creativeEffect: {
+        prev: {
+          // shadow: true,
+          translate: ["-120%", 0, -500],
+          opacity: 0,
+        },
+        next: {
+          // shadow: true,
+          translate: ["120%", 0, -500],
+          opacity: 1,
+        },
+      },
+
       // Navigation arrows
       navigation: {
         nextEl: '.ms-swiper__list-vip .swiper-slide-btn-next',
@@ -48,7 +99,25 @@
     });
 
     const swiper2 = new Swiper('.ms-swiper__list-premium', {
-      spaceBetween: 30,
+      // spaceBetween: 500,
+      speed: 750,
+      slidesPerView: 1,
+      allowTouchMove: false,
+
+      effect: "creative",
+      creativeEffect: {
+        prev: {
+          // shadow: true,
+          translate: ["-120%", 0, -500],
+          opacity: 0,
+        },
+        next: {
+          // shadow: true,
+          translate: ["120%", 0, -500],
+          opacity: 1,
+        },
+      },
+
       // Navigation arrows
       navigation: {
         nextEl: '.ms-swiper__list-premium .swiper-slide-btn-next',
@@ -80,8 +149,17 @@
         console.log('Clicked element index:', elements.length);
 
         if(swiperWrpElm.classList.contains("ms__list--vip")){
+        
           // open slider
-          swipers[0].classList.add("active");
+          lists[0].classList.remove("active-effect");
+          setTimeout(() => {
+            lists[0].classList.remove("active");
+          }, 300);
+          setTimeout(() => {
+            swipers[0].classList.add("active");
+            swipers[0].classList.add("active-effect");
+          }, 400);
+
           // active item
           swiper.slideTo(index, 10, false);
           // add max number and active number
@@ -91,7 +169,15 @@
           maxNumElm.textContent = elements.length;
         } else {
           // open slider
-          swipers[1].classList.add("active");
+          lists[1].classList.remove("active-effect");
+          setTimeout(() => {
+            lists[1].classList.remove("active");
+          }, 300);
+          setTimeout(() => {
+            swipers[1].classList.add("active");
+            swipers[1].classList.add("active-effect");
+          }, 400);
+
           // active item
           swiper2.slideTo(index, 10, false);
           // add max number and active number
@@ -101,10 +187,6 @@
           maxNumElm.textContent = elements.length;
         }
       }
-
-      // hidden all list
-      lists[0].classList.remove("active");
-      lists[1].classList.remove("active");
 
       // open swipers Block
       swiperWrp.classList.add("active");
@@ -123,18 +205,30 @@
     prevBtn.onclick = function() {
       // back to list
       if(swipers[0].classList.contains("active")){
-        console.log("vip")
-        lists[0].classList.add("active");
+        swipers[0].classList.remove("active-effect");
+        setTimeout(() => {
+          swipers[0].classList.remove("active");
+        }, 300);
+        setTimeout(() => {
+          lists[0].classList.add("active");
+          lists[0].classList.add("active-effect");
+        }, 400);
+
       } else if(swipers[1].classList.contains("active")){
-        console.log("prem")
-        lists[1].classList.add("active");
+        swipers[1].classList.remove("active-effect");
+        setTimeout(() => {
+          swipers[1].classList.remove("active");
+        }, 300);
+        setTimeout(() => {
+          lists[1].classList.add("active");
+          lists[1].classList.add("active-effect");
+        }, 400);
       }
 
-      
       // hidden Swipers
       swiperWrp.classList.remove("active");
-      swipers[0].classList.remove("active");
-      swipers[1].classList.remove("active");
+      // swipers[0].classList.remove("active");
+      // swipers[1].classList.remove("active");
 
       // change Header wiev mod
       header.classList.add("mod-box");
