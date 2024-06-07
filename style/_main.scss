@@ -337,7 +337,7 @@
     opacity: 0;
     height: 0;
     transition: opacity 300ms ease-in-out;
-    
+
     // .ms-swiper__list.active
     &.active{
       // display: block !important;
@@ -409,6 +409,7 @@
     height: 660px;
     position: relative;
     top: -53px;
+    // top: -13px;
     left: 10px;
   }
   // .ms-swiper__bg-img
@@ -419,6 +420,7 @@
     left: 50%;
     transform: translateX(-50%);
     bottom: -105px;
+    // bottom: -145px;
     z-index: -1;
   }
 
