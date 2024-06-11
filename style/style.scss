@@ -287,9 +287,9 @@ input {
   content: "";
   position: absolute;
   border-radius: 12px;
-  width: 36px;
-  height: 36px;
-  filter: blur(44px);
+  width: 46px;
+  height: 46px;
+  filter: blur(34px);
   background: linear-gradient(360deg, #9cbced 0%, #9cc3f2 51%, #82b4f0 100%);
   opacity: 0;
   top: 50%;
@@ -446,14 +446,19 @@ input {
 // document.querySelector(".s1").style.marginBottom = "700px";
 // @media scree
 .s1{
-  margin-bottom: 400px;
+  // margin-bottom: 400px;
+  margin-bottom: 1000px;
 }
 .s5{
-  top: 5084px;
+  top: 5684px;
 }
 .s4{
-  margin-bottom: 1734px;
+  // margin-bottom: 1734px;
+  margin-bottom: 2334px;
 }
+
+
+
 @media screen and (max-height: 945px){
   .s1{
     // margin-bottom: 700px;
