@@ -5,9 +5,25 @@
   let swiperContainer2 = document.querySelector(".scroll-section__swiper2");
 
   var swiper = new Swiper(swiperContainer, {
-    effect: "fade",
+    // effect: "fade",
     fadeEffect: {
       crossFade: true,
+    },
+
+    speed: 750,
+    slidesPerView: 1,
+    effect: "creative",
+    creativeEffect: {
+      prev: {
+        // shadow: true,
+        translate: ["-120%", 0, -500],
+        opacity: 0,
+      },
+      next: {
+        // shadow: true,
+        translate: ["120%", 0, -500],
+        opacity: 1,
+      },
     },
 
     pagination: {
@@ -16,7 +32,24 @@
     },
   });
   var swiper2 = new Swiper(swiperContainer2, {
-    effect: "fade",
+    // effect: "fade",
+
+    speed: 750,
+    slidesPerView: 1,
+    effect: "creative",
+    creativeEffect: {
+      prev: {
+        // shadow: true,
+        translate: ["-120%", 0, -500],
+        opacity: 0,
+      },
+      next: {
+        // shadow: true,
+        translate: ["120%", 0, -500],
+        opacity: 1,
+      },
+    },
+
     fadeEffect: {
       crossFade: true,
     },

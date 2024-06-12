@@ -457,6 +457,20 @@ input {
   margin-bottom: 2334px;
 }
 
+.scroll-section .swiper {
+  overflow: visible !important;
+}
+
+.scroll-section .swiper-slide {
+  opacity: 0 !important;
+  overflow: visible !important;
+}
+
+.scroll-section .swiper-slide-active {
+  opacity: 1 !important;
+}
+
+
 
 
 @media screen and (max-height: 945px){

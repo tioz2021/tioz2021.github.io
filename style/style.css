@@ -4879,6 +4879,19 @@ input {
   margin-bottom: 2334px;
 }
 
+.scroll-section .swiper {
+  overflow: visible !important;
+}
+
+.scroll-section .swiper-slide {
+  opacity: 0 !important;
+  overflow: visible !important;
+}
+
+.scroll-section .swiper-slide-active {
+  opacity: 1 !important;
+}
+
 .s1 .s1__title-icon-video-mask {
   width: 400px;
   height: 400px;
