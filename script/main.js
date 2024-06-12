@@ -753,7 +753,9 @@
     var element3 = document.querySelector(".animatedNumberFloat");
     element2_number = 8;
 
-    // if (!elements || !element2 || !element3) return;
+    if (!elements.length) {
+      return false;
+    }
 
     // 4.9 - 5.0
     function updateNumber3(element) {
@@ -872,6 +874,9 @@
 (() => {
   document.addEventListener("DOMContentLoaded", () => {
     const items = document.querySelectorAll(".s4__list-item");
+    if (!items.length) {
+      return false;
+    }
 
     let currentIndex = 0;
     let previousIndex = items.length - 1;
@@ -902,34 +907,34 @@
 // s6 | s10 animation 
 (() => {
   if (window.innerWidth > 1200) {
-  function activateItemsCyclically(items, interval) {
-    let currentIndex = 0;
-  
-    function activateNextItem() {
-      // Удаляем класс active у всех элементов
-      items.forEach(e => e.classList.remove("active"));
-      
-      // Добавляем класс active к текущему элементу
-      items[currentIndex].classList.add("active");
-      
-      // Переходим к следующему элементу, возвращаемся к первому, если дошли до конца
-      currentIndex = (currentIndex + 1) % items.length;
+    function activateItemsCyclically(items, interval) {
+      let currentIndex = 0;
+    
+      function activateNextItem() {
+        // Удаляем класс active у всех элементов
+        items.forEach(e => e.classList.remove("active"));
+        
+        // Добавляем класс active к текущему элементу
+        items[currentIndex].classList.add("active");
+        
+        // Переходим к следующему элементу, возвращаемся к первому, если дошли до конца
+        currentIndex = (currentIndex + 1) % items.length;
+      }
+    
+      // Активируем первый элемент сразу
+      activateNextItem();
+    
+      // Запускаем цикл с указанным интервалом
+      setInterval(activateNextItem, interval);
     }
-  
-    // Активируем первый элемент сразу
-    activateNextItem();
-  
-    // Запускаем цикл с указанным интервалом
-    setInterval(activateNextItem, interval);
-  }
-  
-  // Для блока .s4
-  const items1 = document.querySelectorAll(".s4 .list-progress__item .blur");
-  activateItemsCyclically(items1, 2000);
-  
-  // Для блока .s10
-  const items2 = document.querySelectorAll(".s10 .list-progress__item .blur");
-  activateItemsCyclically(items2, 2000);
+    
+    // Для блока .s4
+    const items1 = document.querySelectorAll(".s4 .list-progress__item .blur");
+    if(items1[0]) activateItemsCyclically(items1, 2000);
+    
+    // Для блока .s10
+    const items2 = document.querySelectorAll(".s10 .list-progress__item .blur");
+    if(items2[0]) activateItemsCyclically(items2, 2000);
   }
 }) ();
 
@@ -983,3 +988,220 @@
     });
   });
 })();
+
+// page-how-works functional
+(() => {
+  const btns = document.querySelectorAll(".phws1__item");
+  const desk_box = document.querySelectorAll(".phws1__body");
+  const accordion = document.querySelectorAll(".s14-modifi");
+
+  const f = evt => {
+    btns.forEach(e => e.classList.remove("active"))
+    evt.target.classList.add("active");
+
+    if(evt.target.classList.contains("phws1__item1")){
+      desk_box.forEach(e => e.classList.remove("active-effect"))
+      setTimeout(() => {
+        desk_box.forEach(e => e.classList.remove("active"))
+      }, 600)
+      setTimeout(() => {
+        desk_box[0].classList.add("active");
+        desk_box[0].classList.add("active-effect");
+      }, 600)
+
+      
+      accordion.forEach(e => e.classList.remove("active-effect"))
+      setTimeout(() => {
+        accordion.forEach(e => e.classList.remove("active"))
+      }, 600)
+      setTimeout(() => {
+        accordion[0].classList.add("active");
+        accordion[0].classList.add("active-effect");
+      }, 600)
+
+    } else if(evt.target.classList.contains("phws1__item2")){
+      desk_box.forEach(e => e.classList.remove("active-effect"))
+      setTimeout(() => {
+        desk_box.forEach(e => e.classList.remove("active"))
+      }, 600)
+      setTimeout(() => {
+        desk_box[1].classList.add("active");
+        desk_box[1].classList.add("active-effect");
+      }, 600)
+
+      accordion.forEach(e => e.classList.remove("active-effect"))
+      setTimeout(() => {
+        accordion.forEach(e => e.classList.remove("active"))
+      }, 600)
+      setTimeout(() => {
+        accordion[1].classList.add("active");
+        accordion[1].classList.add("active-effect");
+      }, 600)
+    } else {
+      desk_box.forEach(e => e.classList.remove("active-effect"))
+      setTimeout(() => {
+        desk_box.forEach(e => e.classList.remove("active"))
+      }, 600)
+      setTimeout(() => {
+        desk_box[2].classList.add("active");
+        desk_box[2].classList.add("active-effect");
+      }, 600)
+
+      accordion.forEach(e => e.classList.remove("active-effect"))
+      setTimeout(() => {
+        accordion.forEach(e => e.classList.remove("active"))
+      }, 600)
+      setTimeout(() => {
+        accordion[2].classList.add("active");
+        accordion[2].classList.add("active-effect");
+      }, 600)
+    }
+
+  }
+
+  if(btns) btns.forEach(e => e.addEventListener("click", f))
+})();
+
+// page-how-work functional
+(() => {
+  const btns = document.querySelectorAll(".win-box__top-menu-item");
+  const elements = document.querySelectorAll(".win-box__center");
+  const text_links = document.querySelectorAll(".win-box__left-list-item");
+
+  // main nav
+  const main_nav = evt => {
+    const active_link = evt.target;
+    btns.forEach(e => e.classList.remove("active"));
+    active_link.classList.add("active");
+    
+    if(active_link.classList.contains("win-box__top-menu-item1")){ 
+      // video
+      let video_link = elements[0].querySelector(".video_link");
+      if(video_link) document.querySelector("iframe").src = video_link.textContent;
+
+      // body
+      elements.forEach(e => e.classList.remove("active-effect"))
+      setTimeout(() => {
+        elements.forEach(e => e.classList.remove("active"))
+      }, 400)
+      setTimeout(() => {
+        elements[0].classList.add("active");
+        elements[0].classList.add("active-effect");
+      }, 400)
+    } 
+    
+    else if(active_link.classList.contains("win-box__top-menu-item2")){
+      // video
+      let video_link = elements[1].querySelector(".video_link");
+      if(video_link) document.querySelector("iframe").src = video_link.textContent;
+
+      elements.forEach(e => e.classList.remove("active-effect"))
+      setTimeout(() => {
+        elements.forEach(e => e.classList.remove("active"))
+      }, 400)
+      setTimeout(() => {
+        elements[1].classList.add("active");
+        elements[1].classList.add("active-effect");
+      }, 400)
+    }
+    
+    else if(active_link.classList.contains("win-box__top-menu-item3")){
+      // video
+      let video_link = elements[2].querySelector(".video_link");
+      if(video_link) document.querySelector("iframe").src = video_link.textContent;
+
+      elements.forEach(e => e.classList.remove("active-effect"))
+      setTimeout(() => {
+        elements.forEach(e => e.classList.remove("active"))
+      }, 400)
+      setTimeout(() => {
+        elements[2].classList.add("active");
+        elements[2].classList.add("active-effect");
+      }, 400)
+    }
+    
+    else if(active_link.classList.contains("win-box__top-menu-item4")){
+      // video
+      let video_link = elements[3].querySelector(".video_link");
+      if(video_link) document.querySelector("iframe").src = video_link.textContent;
+
+      elements.forEach(e => e.classList.remove("active-effect"))
+      setTimeout(() => {
+        elements.forEach(e => e.classList.remove("active"))
+      }, 400)
+      setTimeout(() => {
+        elements[3].classList.add("active");
+        elements[3].classList.add("active-effect");
+      }, 400)
+    }
+    
+    else if(active_link.classList.contains("win-box__top-menu-item5")){
+      // video
+      let video_link = elements[4].querySelector(".video_link");
+      if(video_link) document.querySelector("iframe").src = video_link.textContent;
+
+      elements.forEach(e => e.classList.remove("active-effect"))
+      setTimeout(() => {
+        elements.forEach(e => e.classList.remove("active"))
+      }, 400)
+      setTimeout(() => {
+        elements[4].classList.add("active");
+        elements[4].classList.add("active-effect");
+      }, 400)
+    }
+
+    else{
+      // video
+      let video_link = elements[5].querySelector(".video_link");
+      if(video_link) document.querySelector("iframe").src = video_link.textContent;
+
+      elements.forEach(e => e.classList.remove("active-effect"))
+      setTimeout(() => {
+        elements.forEach(e => e.classList.remove("active"))
+      }, 400)
+      setTimeout(() => {
+        elements[5].classList.add("active");
+        elements[5].classList.add("active-effect");
+      }, 400)
+    }
+    
+  }
+
+  // inside text nav
+  const text_nav = evt => {
+    const elm = evt.target;
+    const box = elm.parentNode.parentNode.parentNode;
+    const texts = box.querySelectorAll(".win-box__text");
+
+    text_links.forEach(e => e.classList.remove("active"));
+    elm.classList.add("active");
+
+    // console.log(texts[4])
+
+    if(elm.classList.contains("win-box__left-list-item1")){
+      texts.forEach(e => e.classList.remove("active"));
+      texts[0].classList.add("active");
+    }
+    else if(elm.classList.contains("win-box__left-list-item2")){
+      texts.forEach(e => e.classList.remove("active"));
+      texts[1].classList.add("active");
+    }
+    else if(elm.classList.contains("win-box__left-list-item3")){
+      texts.forEach(e => e.classList.remove("active"));
+      texts[2].classList.add("active");
+    }
+    else if(elm.classList.contains("win-box__left-list-item4")){
+      texts.forEach(e => e.classList.remove("active"));
+      texts[3].classList.add("active");
+    }
+    else if(elm.classList.contains("win-box__left-list-item5")){
+      texts.forEach(e => e.classList.remove("active"));
+      texts[4].classList.add("active");
+    }
+
+  }
+
+
+  btns.forEach(e => e.addEventListener("click", main_nav));
+  text_links.forEach(e => e.addEventListener("click", text_nav));
+}) ();
