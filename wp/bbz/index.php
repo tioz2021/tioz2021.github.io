@@ -1,10 +1,16 @@
+<?php
+/*
+Template Name: Home
+*/
+?>
+
 <?php  get_header($name); ?>
 
 	<header class="header">
 		<div class="header__container container">
 			<div class="header__logo logo img-wrp">
-				<a href="index.html">
-					<img src="img/header__logo-svg.svg" alt="svg" loading="lazy">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+					<img src="<?php bloginfo('template_url'); ?>/assets/img/header__logo-svg.svg" alt="svg" loading="lazy">
 				</a>
 			</div>
 
@@ -41,26 +47,26 @@
 				<div class="s1__text-wrp">
 					<div class="s1__pre-title pre-title">
 						<div class="pre-title-lp img-wrp">
-							<lottie-player class="" src="lottie/web/left.json" background="transparent" speed="1"></lottie-player>
+							<lottie-player class="" src="<?php bloginfo('template_url'); ?>/assets/lottie/web/left.json" background="transparent" speed="1"></lottie-player>
 						</div>
 						<span class="s1__pre-title-text small-text">Продвижение WB</span>
 						<div class="pre-title-lp img-wrp">
-							<lottie-player class="" src="lottie/web/right.json" background="transparent" speed="1"></lottie-player>
+							<lottie-player class="" src="<?php bloginfo('template_url'); ?>/assets/lottie/web/right.json" background="transparent" speed="1"></lottie-player>
 						</div>
 					</div>
 					<div class="s1__title">
 						<div class="s1__title-icon img-wrp">
-							<img src="img/s1__title-icon.svg" alt="svg" loading="lazy">
-							<img class="s1__title-icon-video-mask" src="video/video-mask.svg" alt="svg">
+							<img src="<?php bloginfo('template_url'); ?>/assets/img/s1__title-icon.svg" alt="svg" loading="lazy">
+							<img class="s1__title-icon-video-mask" src="<?php bloginfo('template_url'); ?>/assets/video/video-mask.svg" alt="svg">
 							<video class="logo-video logo-video1" autoplay muted playsinline>
-								<source src="video/logo_video2.mp4" type="video/mp4">
+								<source src="<?php bloginfo('template_url'); ?>/assets/video/logo_video2.mp4" type="video/mp4">
 							</video>
 							<video class="logo-video logo-video2" autoplay muted playsinline loop>
-								<source src="video/logo_video.mp4" type="video/mp4">
+								<source src="<?php bloginfo('template_url'); ?>/assets/video/logo_video.mp4" type="video/mp4">
 							</video>
 						</div>
 						<div class="s1__title-light img-wrp">
-							<img src="img/s1__title-light.svg" alt="svg" loading="lazy">
+							<img src="<?php bloginfo('template_url'); ?>/assets/img/s1__title-light.svg" alt="svg" loading="lazy">
 						</div>
 					</div>
 
@@ -82,7 +88,7 @@
 				<div class="s1__card-box card-box block disabled">
 					<div class="s1__card-box-icon-star-wrp card-box__icon-star-wrp">
 						<div class="card-box__icon-star img-wrp">
-							<img src="img/card-box__icon-star.svg" alt="svg" loading="lazy">
+							<img src="<?php bloginfo('template_url'); ?>/assets/img/card-box__icon-star.svg" alt="svg" loading="lazy">
 						</div>
 						<div class="card-box__icon-star-light"></div>
 					</div>
@@ -90,13 +96,13 @@
 					<div class="card-box__item-wrp disabled">
 						<div class="card-box__item card_card__VgpBR card_card-hero__pjFbO hero__card">
 							<div class="card-box__item-bg img-wrp">
-								<img loading="lazy" src="img/s1/test-bg1.png" alt="img">
+								<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/s1/test-bg1.png" alt="img">
 							</div>
 							<div class="card_effect__3CjsY"></div>
 
 							<div class="card-box__item-body">
 								<div class="card-box__item-icon img-wrp">
-									<img loading="lazy" src="img/s1/test-icon1.png" alt="img">
+									<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/s1/test-icon1.png" alt="img">
 								</div>
 								<div class="card-box__item-text def-text">Мобильный телефон</div>
 							</div>
@@ -107,15 +113,15 @@
 					<div class="card-box__item-wrp disabled">
 						<div class="card-box__item card_card__VgpBR card_card-hero__pjFbO hero__card">
 							<div class="card-box__item-bg img-wrp">
-								<img loading="lazy" class="svg-web svg-tab" src="img/s1/test-bg2.png" alt="img">
-								<img loading="lazy" class="svg-mob" src="img/mob/s1-cart1-bg.png" alt="img">
+								<img loading="lazy" class="svg-web svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/s1/test-bg2.png" alt="img">
+								<img loading="lazy" class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/mob/s1-cart1-bg.png" alt="img">
 							</div>
 							<div class="card_effect__3CjsY"></div>
 
 							<div class="card-box__item-body">
 								<div class="card-box__item-icon img-wrp">
-									<img loading="lazy" class="svg-web svg-tab" src="img/s1/test-icon2.png" alt="img">
-									<img loading="lazy" class="svg-mob" src="img/mob/test-icon2.svg" alt="svg">
+									<img loading="lazy" class="svg-web svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/s1/test-icon2.png" alt="img">
+									<img loading="lazy" class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/mob/test-icon2.svg" alt="svg">
 								</div>
 								<div class="card-box__item-text def-text">Електровелосипед</div>
 							</div>
@@ -126,34 +132,34 @@
 						<div
 							class="card-box__item card_card__VgpBR card_card-hero__pjFbO card_card-animated__5dDBc card_card-animated-loop__6iL1V">
 							<div class="card-box__item-bg img-wrp">
-								<img loading="lazy" class="svg-web svg-tab" src="img/s1/test-bg3.png" alt="img">
-								<img loading="lazy" class="svg-mob" src="img/mob/s1-cart2-bg.png" alt="img">
+								<img loading="lazy" class="svg-web svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/s1/test-bg3.png" alt="img">
+								<img loading="lazy" class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/mob/s1-cart2-bg.png" alt="img">
 							</div>
 							<div class="card_effect__3CjsY"></div>
 
 							<div class="card-box__item-body">
 								<div class="card-box__item-icon img-wrp">
-									<!-- <img loading="lazy" src="img/s1/card-box__item-icon.svg" alt="svg"> -->
-									<img loading="lazy" class="svg-web svg-tab" src="img/s1/test-icon3.png" alt="img">
-									<img loading="lazy" class="svg-mob" src="img/mob/test-icon3.svg" alt="svg">
+									<!-- <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/s1/card-box__item-icon.svg" alt="svg"> -->
+									<img loading="lazy" class="svg-web svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/s1/test-icon3.png" alt="img">
+									<img loading="lazy" class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/mob/test-icon3.svg" alt="svg">
 								</div>
 								<div class="card-box__item-decor-pannel">
 									<div class="card-box__item-decor-pannel-text small-text">164448655</div>
 									<div class="card-box__item-decor-pannel-btn-list">
 										<div class="card-box__item-decor-pannel-btn card-box__item-decor-pannel-btn--one img-wrp">
-											<img src="img/card-box__item-decor-pannel-btn--one.svg" alt="svg" loading="lazy">
+											<img src="<?php bloginfo('template_url'); ?>/assets/img/card-box__item-decor-pannel-btn--one.svg" alt="svg" loading="lazy">
 										</div>
 										<div class="card-box__item-decor-pannel-btn card-box__item-decor-pannel-btn--two img-wrp">
-											<img src="img/card-box__item-decor-pannel-btn--two.svg" alt="svg" loading="lazy">
+											<img src="<?php bloginfo('template_url'); ?>/assets/img/card-box__item-decor-pannel-btn--two.svg" alt="svg" loading="lazy">
 										</div>
 										<div class="card-box__item-decor-pannel-btn card-box__item-decor-pannel-btn--three img-wrp">
-											<img src="img/card-box__item-decor-pannel-btn--three.svg" alt="svg" loading="lazy">
+											<img src="<?php bloginfo('template_url'); ?>/assets/img/card-box__item-decor-pannel-btn--three.svg" alt="svg" loading="lazy">
 										</div>
 									</div>
 								</div>
 								<div class="card-box__item-teg-wrp">
 									<div class="card-box__item-teg-bg img-wrp">
-										<img src="img/card-box__item-teg-bg.svg" alt="svg" loading="lazy">
+										<img src="<?php bloginfo('template_url'); ?>/assets/img/card-box__item-teg-bg.svg" alt="svg" loading="lazy">
 									</div>
 									<div class="card-box__item-teg-text">Top 1 </div>
 								</div>
@@ -165,15 +171,15 @@
 					<div class="card-box__item-wrp disabled">
 						<div class="card-box__item card_card__VgpBR card_card-hero__pjFbO hero__card">
 							<div class="card-box__item-bg img-wrp">
-								<img loading="lazy" class="svg-web svg-tab" src="img/s1/test-bg4.png" alt="img">
-								<img loading="lazy" class="svg-mob" src="img/mob/s1-cart3-bg.png" alt="img">
+								<img loading="lazy" class="svg-web svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/s1/test-bg4.png" alt="img">
+								<img loading="lazy" class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/mob/s1-cart3-bg.png" alt="img">
 							</div>
 							<div class="card_effect__3CjsY"></div>
 
 							<div class="card-box__item-body">
 								<div class="card-box__item-icon img-wrp">
-									<img loading="lazy" class="svg-web svg-tab" src="img/s1/test-icon4.png" alt="img">
-									<img loading="lazy" class="svg-mob" src="img/mob/test-icon4.svg" alt="img">
+									<img loading="lazy" class="svg-web svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/s1/test-icon4.png" alt="img">
+									<img loading="lazy" class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/mob/test-icon4.svg" alt="img">
 								</div>
 								<div class="card-box__item-text def-text">Спортивный лифчик</div>
 							</div>
@@ -183,13 +189,13 @@
 					<div class="card-box__item-wrp disabled">
 						<div class="card-box__item card_card__VgpBR card_card-hero__pjFbO hero__card">
 							<div class="card-box__item-bg img-wrp">
-								<img loading="lazy" src="img/s1/test-bg5.png" alt="img">
+								<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/s1/test-bg5.png" alt="img">
 							</div>
 							<div class="card_effect__3CjsY"></div>
 
 							<div class="card-box__item-body">
 								<div class="card-box__item-icon img-wrp">
-									<img loading="lazy" src="img/s1/test-icon5.png" alt="img">
+									<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/s1/test-icon5.png" alt="img">
 								</div>
 								<div class="card-box__item-text def-text">Вакуумные наушники</div>
 							</div>
@@ -200,19 +206,18 @@
 				<div class="s1__decorations">
 					<div class="s1__decoration s1__decoration--one star-bg img-wrp">
 						<picture>
-							<source media="(min-width: 1200px)" srcset="img/star-bg.svg">
-							<img loading="lazy" src="img/star-bg-static.svg" alt="star-svg-bg">
+							<source media="(min-width: 1200px)" srcset="<?php bloginfo('template_url'); ?>/assets/img/star-bg.svg">
+							<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/star-bg-static.svg" alt="star-svg-bg">
 						</picture>
-						<!-- <img loading="lazy" src="img/star-bg-static.svg" alt="star-svg-bg"> -->
 					</div>
 					<div class="s1__decoration s1__decoration--two img-wrp">
-						<img class="svg-web svg-tab" src="img/s1__decoration--two-web-tab.svg" alt="svg" loading="lazy">
-						<img class="svg-mob" src="img/s1__decoration--two-mob.svg" alt="svg" loading="lazy">	
+						<img class="svg-web svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/s1__decoration--two-web-tab.svg" alt="svg" loading="lazy">
+						<img class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/s1__decoration--two-mob.svg" alt="svg" loading="lazy">	
 					</div>
 					<div class="s1__decoration s1__decoration--three img-wrp"></div>
 					<div class="s1__decoration s1__decoration--four img-wrp">
-						<img class="svg-web svg-tab" src="img/s1__decoration--four-web-tab.svg" alt="svg" loading="lazy">
-						<img class="svg-mob" src="img/s1__decoration--four-mob.svg" alt="svg" loading="lazy">
+						<img class="svg-web svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/s1__decoration--four-web-tab.svg" alt="svg" loading="lazy">
+						<img class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/s1__decoration--four-mob.svg" alt="svg" loading="lazy">
 					</div>
 				</div>
 			</div>
@@ -223,11 +228,11 @@
 				<div class="scroll-section__title title-wrp">
 					<div class="scroll-section__pre-title title-wrp__pre-title pre-title s2__pre-title">
 						<div class="pre-title-lp img-wrp">
-							<lottie-player class="" src="lottie/web/left.json" background="transparent" speed="1"></lottie-player>
+							<lottie-player class="" src="<?php bloginfo('template_url'); ?>/assets/lottie/web/left.json" background="transparent" speed="1"></lottie-player>
 						</div>
 						<span class="scroll-section__pre-title-text title-wrp__pre-title-text small-text">Эффективность</span>
 						<div class="pre-title-lp img-wrp">
-							<lottie-player class="" src="lottie/web/right.json" background="transparent" speed="1"></lottie-player>
+							<lottie-player class="" src="<?php bloginfo('template_url'); ?>/assets/lottie/web/right.json" background="transparent" speed="1"></lottie-player>
 						</div>
 					</div>
 					<div class="scroll-section__title-text title-wrp__text big-title">
@@ -243,8 +248,8 @@
 					<ul class="scroll-section__list">
 						<li class="scroll-section__item">
 							<div class="scroll-section__icon img-wrp">
-								<img loading="lazy" src="img/scroll-section/scroll-section__icon.svg" alt="svg">
-								<lottie-player class="s2__lottie-icon1" src="lottie/s2/1.json" background="transparent" speed="1" autoplay loop></lottie-player>
+								<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/scroll-section/scroll-section__icon.svg" alt="svg">
+								<lottie-player class="s2__lottie-icon1" src="<?php bloginfo('template_url'); ?>/assets/lottie/s2/1.json" background="transparent" speed="1" autoplay loop></lottie-player>
 							</div>
 							<div class="scroll-section__text ul-small-text main-btn">
 								<div class="main-btn__text ul-small-text textMt05">Самовыкуп</div>
@@ -257,7 +262,7 @@
 									<div></div>
 									<div></div>
 								</div>
-								<img loading="lazy" src="img/scroll-section/scroll-section__icon2.svg" alt="svg">
+								<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/scroll-section/scroll-section__icon2.svg" alt="svg">
 							</div>
 							<div class="scroll-section__text ul-small-text main-btn">
 								<div class="main-btn__text ul-small-text textMt15">BBZ</div>
@@ -266,8 +271,8 @@
 						</li>
 						<li class="scroll-section__item">
 							<div class="scroll-section__icon img-wrp">
-								<lottie-player class="s2__lottie-icon3" src="lottie/s2/3.json" background="transparent" speed="1" autoplay loop></lottie-player>
-								<img loading="lazy" src="img/scroll-section/scroll-section__icon3.svg" alt="svg">
+								<lottie-player class="s2__lottie-icon3" src="<?php bloginfo('template_url'); ?>/assets/lottie/s2/3.json" background="transparent" speed="1" autoplay loop></lottie-player>
+								<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/scroll-section/scroll-section__icon3.svg" alt="svg">
 							</div>
 							<div class="scroll-section__text ul-small-text main-btn">
 								<div class="main-btn__text ul-small-text textMt05 text-web text-tab">Накрутка рейтинга</div>
@@ -277,7 +282,7 @@
 						</li>
 						<li class="scroll-section__item">
 							<div class="scroll-section__icon img-wrp">
-								<img loading="lazy" src="img/scroll-section/scroll-section__icon4.svg" alt="svg">
+								<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/scroll-section/scroll-section__icon4.svg" alt="svg">
 							</div>
 							<div class="scroll-section__text ul-small-text main-btn">
 								<div class="main-btn__text ul-small-text textMt10">WB аккаунт</div>
@@ -286,8 +291,8 @@
 						</li>
 						<li class="scroll-section__item">
 							<div class="scroll-section__icon img-wrp">
-								<img loading="lazy" src="img/scroll-section/scroll-section__icon5.svg" alt="svg">
-								<lottie-player class="s2__lottie-icon2" src="lottie/s2/2.json" background="transparent" speed="1" autoplay loop></lottie-player>
+								<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/scroll-section/scroll-section__icon5.svg" alt="svg">
+								<lottie-player class="s2__lottie-icon2" src="<?php bloginfo('template_url'); ?>/assets/lottie/s2/2.json" background="transparent" speed="1" autoplay loop></lottie-player>
 							</div>
 							<div class="scroll-section__text ul-small-text main-btn">
 								<div class="main-btn__text ul-small-text textMt10">Статистика</div>
@@ -298,7 +303,7 @@
 							<div class="scroll-section__item-icon-wrp">
 								<span class="scroll-section__item-icon-text scroll-section__item-icon-text--float animatedNumberFloat">4.9</span>
 								<div class="scroll-section__icon img-wrp">
-									<img loading="lazy" src="img/scroll-section/scroll-section__icon6.svg" alt="svg">
+									<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/scroll-section/scroll-section__icon6.svg" alt="svg">
 								</div>
 							</div>
 							<div class="scroll-section__text ul-small-text main-btn">
@@ -309,14 +314,14 @@
 					</ul>
 
 					<div class="scroll-section__list-bg img-wrp">
-						<img loading="lazy" class="svg-web" src="img/scroll-section/scroll-section__list-bg.svg" alt="svg">
-						<img loading="lazy" class="svg-tab" src="img/tab/s2-bg-decor.svg" alt="svg">
+						<img loading="lazy" class="svg-web" src="<?php bloginfo('template_url'); ?>/assets/img/scroll-section/scroll-section__list-bg.svg" alt="svg">
+						<img loading="lazy" class="svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/tab/s2-bg-decor.svg" alt="svg">
 					</div>
 
 					<div class="scroll-section__list-bg-line img-wrp">
-						<img class="svg-web svg-tab" src="img/scroll-section__list-bg-line-web-tab.svg" alt="svg" loading="lazy">
-						<img class="svg-mob" src="img/scroll-section__list-bg-line-mob.svg" alt="svg" loading="lazy">
-						<lottie-player src="lottie/chang-slider-animation.json" background="transparent" speed="0.5" autoplay loop></lottie-player>
+						<img class="svg-web svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/scroll-section__list-bg-line-web-tab.svg" alt="svg" loading="lazy">
+						<img class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/scroll-section__list-bg-line-mob.svg" alt="svg" loading="lazy">
+						<lottie-player src="<?php bloginfo('template_url'); ?>/assets/lottie/chang-slider-animation.json" background="transparent" speed="0.5" autoplay loop></lottie-player>
 					</div>
 
 					<div class="scroll-section__bg-light"></div>
@@ -357,7 +362,7 @@
 						<span class="main-btn__text small-text">Смотреть обзор</span>
 						<div class="main-btn__effect"></div>
 						<div class="main-btn__icon img-wrp">
-							<img src="img/main-btn__icon.svg" alt="svg" loading="lazy">
+							<img src="<?php bloginfo('template_url'); ?>/assets/img/main-btn__icon.svg" alt="svg" loading="lazy">
 						</div>
 					</a>
 
@@ -366,8 +371,8 @@
 
 			</div>
 			<div class="scroll-section__bg img-wrp">
-				<img loading="lazy" class="svg-web" src="img/scroll-section/scroll-section__bg.svg" alt="svg">
-				<img loading="lazy" class="svg-tab" src="img/tab/s2-table-bg.svg" alt="svg">
+				<img loading="lazy" class="svg-web" src="<?php bloginfo('template_url'); ?>/assets/img/scroll-section/scroll-section__bg.svg" alt="svg">
+				<img loading="lazy" class="svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/tab/s2-table-bg.svg" alt="svg">
 			</div>
 		</section>
 
@@ -376,11 +381,11 @@
 				<div class="s3__title title-wrp">
 					<div class="s3__pre-title title-wrp__pre-title pre-title">
 						<div class="pre-title-lp img-wrp">
-							<lottie-player class="" src="lottie/web/left.json" background="transparent" speed="1"></lottie-player>
+							<lottie-player class="" src="<?php bloginfo('template_url'); ?>/assets/lottie/web/left.json" background="transparent" speed="1"></lottie-player>
 						</div>
 						<span class="s3__pre-title-text title-wrp__pre-title-text small-text">Пакеты</span>
 						<div class="pre-title-lp img-wrp">
-							<lottie-player class="" src="lottie/web/right.json" background="transparent" speed="1"></lottie-player>
+							<lottie-player class="" src="<?php bloginfo('template_url'); ?>/assets/lottie/web/right.json" background="transparent" speed="1"></lottie-player>
 						</div>
 					</div>
 					<div class="s3__title-text title-wrp__text big-title">
@@ -396,7 +401,7 @@
 					<ul class="s3__list swiper-wrapper">
 						<li class="s3__list-item svg-blur-hover-wrp swiper-slide">
 							<div class="s3__list-item-icon img-wrp svg-blur">
-								<img src="img/s3__list-item-icon.svg" alt="svg" loading="lazy">
+								<img src="<?php bloginfo('template_url'); ?>/assets/img/s3__list-item-icon.svg" alt="svg" loading="lazy">
 								<div class="blur"></div>
 							</div>
 							<div class="s3__list-item-title str-text">Тест Драйв</div>
@@ -408,7 +413,7 @@
 							<ul class="s3__list-inside">
 								<li class="s3__list-inside-item">
 									<div class="s3__list-inside-item-icon img-wrp">
-										<img loading="lazy" src="img/ok.svg" alt="img">
+										<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/ok.svg" alt="img">
 									</div>
 									<div class="s3__list-inside-item-text def-text">Полный функционал на 7 дней</div>
 								</li>
@@ -422,7 +427,7 @@
 
 						<li class="s3__list-item svg-blur-hover-wrp swiper-slide">
 							<div class="s3__list-item-icon img-wrp svg-blur">
-								<img src="img/s3__list-item-icon2.svg" alt="svg" loading="lazy">
+								<img src="<?php bloginfo('template_url'); ?>/assets/img/s3__list-item-icon2.svg" alt="svg" loading="lazy">
 								<div class="blur"></div>
 							</div>
 							<div class="s3__list-item-title str-text">Подписка</div>
@@ -436,37 +441,37 @@
 							<ul class="s3__list-inside">
 								<li class="s3__list-inside-item">
 									<div class="s3__list-inside-item-icon img-wrp">
-										<img loading="lazy" src="img/ok.svg" alt="img">
+										<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/ok.svg" alt="img">
 									</div>
 									<div class="s3__list-inside-item-text def-text">Автооплата</div>
 								</li>
 								<li class="s3__list-inside-item">
 									<div class="s3__list-inside-item-icon img-wrp">
-										<img loading="lazy" src="img/ok.svg" alt="img">
+										<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/ok.svg" alt="img">
 									</div>
 									<div class="s3__list-inside-item-text def-text">До 200 выкупов в день</div>
 								</li>
 								<li class="s3__list-inside-item">
 									<div class="s3__list-inside-item-icon img-wrp">
-										<img loading="lazy" src="img/ok.svg" alt="img">
+										<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/ok.svg" alt="img">
 									</div>
 									<div class="s3__list-inside-item-text def-text">Лайки и Дизлайки на отзывы</div>
 								</li>
 								<li class="s3__list-inside-item">
 									<div class="s3__list-inside-item-icon img-wrp">
-										<img loading="lazy" src="img/ok.svg" alt="img">
+										<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/ok.svg" alt="img">
 									</div>
 									<div class="s3__list-inside-item-text def-text">Авто перекрытие негатива</div>
 								</li>
 								<li class="s3__list-inside-item">
 									<div class="s3__list-inside-item-icon img-wrp">
-										<img loading="lazy" src="img/ok.svg" alt="img">
+										<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/ok.svg" alt="img">
 									</div>
 									<div class="s3__list-inside-item-text def-text">Автоответчик на отзывы</div>
 								</li>
 								<li class="s3__list-inside-item">
 									<div class="s3__list-inside-item-icon img-wrp">
-										<img loading="lazy" src="img/ok.svg" alt="img">
+										<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/ok.svg" alt="img">
 									</div>
 									<div class="s3__list-inside-item-text def-text">Мониторинг позиций по 5 гео</div>
 								</li>
@@ -480,7 +485,7 @@
 
 						<li class="s3__list-item svg-blur-hover-wrp swiper-slide">
 							<div class="s3__list-item-icon img-wrp svg-blur">
-								<img src="img/s3__list-item-icon3.svg" alt="svg" loading="lazy">
+								<img src="<?php bloginfo('template_url'); ?>/assets/img/s3__list-item-icon3.svg" alt="svg" loading="lazy">
 								<div class="blur"></div>
 							</div>
 							<div class="s3__list-item-title str-text">Для агентств</div>
@@ -492,25 +497,25 @@
 							<ul class="s3__list-inside">
 								<li class="s3__list-inside-item">
 									<div class="s3__list-inside-item-icon img-wrp">
-										<img loading="lazy" src="img/ok.svg" alt="img">
+										<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/ok.svg" alt="img">
 									</div>
 									<div class="s3__list-inside-item-text def-text">До 1000 выкупов за один день</div>
 								</li>
 								<li class="s3__list-inside-item">
 									<div class="s3__list-inside-item-icon img-wrp">
-										<img loading="lazy" src="img/ok.svg" alt="img">
+										<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/ok.svg" alt="img">
 									</div>
 									<div class="s3__list-inside-item-text def-text">Менеджмент ваших клиентов</div>
 								</li>
 								<li class="s3__list-inside-item">
 									<div class="s3__list-inside-item-icon img-wrp">
-										<img loading="lazy" src="img/ok.svg" alt="img">
+										<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/ok.svg" alt="img">
 									</div>
 									<div class="s3__list-inside-item-text def-text">Тг отчётность для клиентов </div>
 								</li>
 								<li class="s3__list-inside-item">
 									<div class="s3__list-inside-item-icon img-wrp">
-										<img loading="lazy" src="img/ok.svg" alt="img">
+										<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/ok.svg" alt="img">
 									</div>
 									<div class="s3__list-inside-item-text def-text">Приоритетная поддержка</div>
 								</li>
@@ -528,39 +533,38 @@
 
 				<div class="slider-section__swiper-button-next swiper-button-next img-wrp">
 					<div class="slider-section__swiper-arrow img-wrp">
-						<img src="img/slider-section__swiper-arrow-next.svg" alt="svg" loading="lazy">
+						<img src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__swiper-arrow-next.svg" alt="svg" loading="lazy">
 					</div>
 					<div class="slider-section__swiper-bg img-wrp">
-						<img src="img/slider-section__swiper-bg.svg" alt="svg" loading="lazy">
+						<img src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__swiper-bg.svg" alt="svg" loading="lazy">
 					</div>
 				</div>
 				<div class="slider-section__swiper-button-prev swiper-button-prev img-wrp">
 					<div class="slider-section__swiper-arrow img-wrp">
-						<img src="img/slider-section__swiper-arrow-prev.svg" alt="svg" loading="lazy">
+						<img src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__swiper-arrow-prev.svg" alt="svg" loading="lazy">
 					</div>
 					<div class="slider-section__swiper-bg img-wrp">
-						<img src="img/slider-section__swiper-bg.svg" alt="svg" loading="lazy">
+						<img src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__swiper-bg.svg" alt="svg" loading="lazy">
 					</div>
 				</div>
 
 				<div class="s3__light-decor s3__light-decor1 img-wrp">
-					<img class="svg-web svg-tab" src="img/s3__light-decor1.svg" alt="svg" loading="lazy">
-					<img src="img/s3__light-decor1-mob.svg" alt="svg" loading="lazy">
+					<img class="svg-web svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/s3__light-decor1.svg" alt="svg" loading="lazy">
+					<img src="<?php bloginfo('template_url'); ?>/assets/img/s3__light-decor1-mob.svg" alt="svg" loading="lazy">
 				</div>
 				<div class="s3__light-decor s3__light-decor2 img-wrp">
-					<img src="img/s3__light-decor2.svg" alt="svg" loading="lazy">
+					<img src="<?php bloginfo('template_url'); ?>/assets/img/s3__light-decor2.svg" alt="svg" loading="lazy">
 				</div>
 				<div class="s3__list-bg list-bg img-wrp">
-					<img class="svg-web" src="img/s3__list-bg-tab.svg" alt="svg" loading="lazy">
-					<img class="svg-tab" src="img/s3__list-bg-tab2.svg" alt="svg" loading="lazy">
-					<img class="svg-mob" src="img/s3__list-bg-tab3.svg" alt="svg" loading="lazy">					
+					<img class="svg-web" src="<?php bloginfo('template_url'); ?>/assets/img/s3__list-bg-tab.svg" alt="svg" loading="lazy">
+					<img class="svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/s3__list-bg-tab2.svg" alt="svg" loading="lazy">
+					<img class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/s3__list-bg-tab3.svg" alt="svg" loading="lazy">					
 				</div>
 				<div class="s3__star-bg star-bg img-wrp">
 					<picture>
-						<source media="(min-width: 1200px)" srcset="img/star-bg.svg">
-						<img loading="lazy" src="img/star-bg-static.svg" alt="star-svg-bg">
+						<source media="(min-width: 1200px)" srcset="<?php bloginfo('template_url'); ?>/assets/img/star-bg.svg">
+						<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/star-bg-static.svg" alt="star-svg-bg">
 					</picture>
-					<!-- <img loading="lazy" src="img/star-bg-static.svg" alt="star-svg-bg"> -->
 				</div>
 
 			</div>
@@ -571,11 +575,11 @@
 				<div class="s4__title title-wrp">
 					<div class="s4__pre-title title-wrp__pre-title pre-title">
 						<div class="pre-title-lp img-wrp">
-							<lottie-player class="" src="lottie/web/left.json" background="transparent" speed="1"></lottie-player>
+							<lottie-player class="" src="<?php bloginfo('template_url'); ?>/assets/lottie/web/left.json" background="transparent" speed="1"></lottie-player>
 						</div>
 						<span class="s4__pre-title-text title-wrp__pre-title-text small-text">Целевые решения</span>
 						<div class="pre-title-lp img-wrp">
-							<lottie-player class="" src="lottie/web/right.json" background="transparent" speed="1"></lottie-player>
+							<lottie-player class="" src="<?php bloginfo('template_url'); ?>/assets/lottie/web/right.json" background="transparent" speed="1"></lottie-player>
 						</div>
 					</div>
 					<div class="s4__title-text title-wrp__text big-title">
@@ -591,7 +595,7 @@
 					<div class="list-progress__item">
 						<div class="list-progress__item-wrp">
 							<div class="list-progress__item-icon img-wrp">
-								<img loading="lazy" src="img/line-progress/list-progress__item-icon.svg" alt="svg">
+								<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/line-progress/list-progress__item-icon.svg" alt="svg">
 								<div class="blur"></div>
 							</div>
 						</div>
@@ -613,7 +617,7 @@
 					<div class="list-progress__item">
 						<div class="list-progress__item-wrp">
 							<div class="list-progress__item-icon img-wrp">
-								<img loading="lazy" src="img/line-progress/list-progress__item-icon2.svg" alt="svg">
+								<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/line-progress/list-progress__item-icon2.svg" alt="svg">
 								<div class="blur"></div>
 							</div>
 						</div>
@@ -636,7 +640,7 @@
 					<div class="list-progress__item">
 						<div class="list-progress__item-wrp">
 							<div class="list-progress__item-icon img-wrp">
-								<img loading="lazy" src="img/line-progress/list-progress__item-icon3.svg" alt="svg">
+								<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/line-progress/list-progress__item-icon3.svg" alt="svg">
 								<div class="blur"></div>
 							</div>
 						</div>
@@ -659,7 +663,7 @@
 					<div class="list-progress__item">
 						<div class="list-progress__item-wrp">
 							<div class="list-progress__item-icon img-wrp">
-								<img loading="lazy" src="img/line-progress/list-progress__item-icon4.svg" alt="svg">
+								<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/line-progress/list-progress__item-icon4.svg" alt="svg">
 								<div class="blur"></div>
 							</div>
 						</div>
@@ -712,13 +716,13 @@
 								<span class="animatedNumber">0</span>
 							</div>
 							<div class="s4__list-item-icon img-wrp">
-								<img loading="lazy" class="svg-web svg-tab" src="img/s4/s4__list-item-icon.svg" alt="svg">
-								<img loading="lazy" class="svg-mob" src="img/mob/s4__list-item-icon1.svg" alt="svg">
+								<img loading="lazy" class="svg-web svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/s4/s4__list-item-icon.svg" alt="svg">
+								<img loading="lazy" class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/mob/s4__list-item-icon1.svg" alt="svg">
 							</div>
 						</div>
 						<div class="s4__list-item-bg img-wrp">
-							<img loading="lazy" class="svg-web svg-tab" src="img/s4-item-bg.png" alt="img">
-							<img loading="lazy" class="svg-mob" src="img/mob/s4-list-bg.png" alt="img">
+							<img loading="lazy" class="svg-web svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/s4-item-bg.png" alt="img">
+							<img loading="lazy" class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/mob/s4-list-bg.png" alt="img">
 						</div>
 						<div class="s4__list-text def-text">
 							100 выкупов — <span>12 000 <small>₽</small></span>
@@ -755,13 +759,13 @@
 								<span class="animatedNumber">0</span>
 							</div>
 							<div class="s4__list-item-icon img-wrp">
-								<img loading="lazy" class="svg-web svg-tab" src="img/s4/s4__list-item-icon2.svg" alt="svg">
-								<img loading="lazy" class="svg-mob" src="img/mob/s4__list-item-icon2.svg" alt="svg">
+								<img loading="lazy" class="svg-web svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/s4/s4__list-item-icon2.svg" alt="svg">
+								<img loading="lazy" class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/mob/s4__list-item-icon2.svg" alt="svg">
 							</div>
 						</div>
 						<div class="s4__list-item-bg img-wrp">
-							<img loading="lazy" class="svg-web svg-tab" src="img/s4-item-bg.png" alt="img">
-							<img loading="lazy" class="svg-mob" src="img/mob/s4-list-bg.png" alt="img">
+							<img loading="lazy" class="svg-web svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/s4-item-bg.png" alt="img">
+							<img loading="lazy" class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/mob/s4-list-bg.png" alt="img">
 						</div>
 						<div class="s4__list-text def-text">
 							100 выкупов — <span>12 000 <small>₽</small></span>
@@ -798,13 +802,13 @@
 								<span class="animatedNumber">0</span>
 							</div>
 							<div class="s4__list-item-icon img-wrp">
-								<img loading="lazy" class="svg-web svg-tab" src="img/s4/s4__list-item-icon3.svg" alt="svg">
-								<img loading="lazy" class="svg-mob" src="img/mob/s4__list-item-icon3.svg" alt="svg">
+								<img loading="lazy" class="svg-web svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/s4/s4__list-item-icon3.svg" alt="svg">
+								<img loading="lazy" class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/mob/s4__list-item-icon3.svg" alt="svg">
 							</div>
 						</div>
 						<div class="s4__list-item-bg img-wrp">
-							<img loading="lazy" class="svg-web svg-tab" src="img/s4-item-bg.png" alt="img">
-							<img loading="lazy" class="svg-mob" src="img/mob/s4-list-bg.png" alt="img">
+							<img loading="lazy" class="svg-web svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/s4-item-bg.png" alt="img">
+							<img loading="lazy" class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/mob/s4-list-bg.png" alt="img">
 						</div>
 						<div class="s4__list-text def-text">
 							100 выкупов — <span>12 000 <small>₽</small></span>
@@ -828,11 +832,11 @@
 				</div>
 
 				<div class="s4__decoration-light s4__decoration-light1 img-wrp">
-					<img src="img/s4__decoration-light1.svg" alt="svg" loading="lazy">
+					<img src="<?php bloginfo('template_url'); ?>/assets/img/s4__decoration-light1.svg" alt="svg" loading="lazy">
 				</div>
 				<div class="s4__decoration-light s4__decoration-light2 img-wrp">
-					<img class="off" src="img/s4__decoration-light2.svg" alt="svg" loading="lazy">
-					<img class="s4__decoration-light-mob" src="img/s4__decoration-light-mob.svg" alt="svg" loading="lazy">
+					<img class="off" src="<?php bloginfo('template_url'); ?>/assets/img/s4__decoration-light2.svg" alt="svg" loading="lazy">
+					<img class="s4__decoration-light-mob" src="<?php bloginfo('template_url'); ?>/assets/img/s4__decoration-light-mob.svg" alt="svg" loading="lazy">
 				</div>
 			</div>
 		</section>
@@ -842,11 +846,11 @@
 				<div class="scroll-section__title title-wrp">
 					<div class="scroll-section__pre-title title-wrp__pre-title pre-title s5__pre-title">
 						<div class="pre-title-lp img-wrp">
-							<lottie-player class="" src="lottie/web/left.json" background="transparent" speed="1"></lottie-player>
+							<lottie-player class="" src="<?php bloginfo('template_url'); ?>/assets/lottie/web/left.json" background="transparent" speed="1"></lottie-player>
 						</div>
 						<span class="scroll-section__pre-title-text title-wrp__pre-title-text small-text">Какая выгода</span>
 						<div class="pre-title-lp img-wrp">
-							<lottie-player class="" src="lottie/web/right.json" background="transparent" speed="1"></lottie-player>
+							<lottie-player class="" src="<?php bloginfo('template_url'); ?>/assets/lottie/web/right.json" background="transparent" speed="1"></lottie-player>
 						</div>
 					</div>
 					<div class="scroll-section__title-text title-wrp__text big-title">
@@ -863,8 +867,8 @@
 					<ul class="scroll-section__list">
 						<li class="scroll-section__item">
 							<div class="scroll-section__icon img-wrp">
-								<lottie-player class="s5__lottie-icon1" src="lottie/s5/1.json" background="transparent" speed="1" autoplay loop></lottie-player>
-								<img loading="lazy" src="img/scroll-section/s5/scroll-section__icon.svg" alt="svg">
+								<lottie-player class="s5__lottie-icon1" src="<?php bloginfo('template_url'); ?>/assets/lottie/s5/1.json" background="transparent" speed="1" autoplay loop></lottie-player>
+								<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/scroll-section/s5/scroll-section__icon.svg" alt="svg">
 							</div>
 							<div class="scroll-section__text ul-small-text main-btn">
 								<div class="main-btn__text ul-small-text textMt10">Продвижения</div>
@@ -873,8 +877,8 @@
 						</il>
 						<li class="scroll-section__item">
 							<div class="scroll-section__icon img-wrp">
-								<lottie-player class="s5__lottie-icon2" src="lottie/s5/2.json" background="transparent" speed="1" autoplay loop></lottie-player>
-								<img loading="lazy" src="img/scroll-section/s5/scroll-section__icon2.svg" alt="svg">
+								<lottie-player class="s5__lottie-icon2" src="<?php bloginfo('template_url'); ?>/assets/lottie/s5/2.json" background="transparent" speed="1" autoplay loop></lottie-player>
+								<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/scroll-section/s5/scroll-section__icon2.svg" alt="svg">
 							</div>
 							<div class="scroll-section__text ul-small-text main-btn">
 								<div class="main-btn__text ul-small-text textMt10">Алгоритм BBZ</div>
@@ -883,8 +887,8 @@
 						</li>
 						<li class="scroll-section__item">
 							<div class="scroll-section__icon img-wrp">
-								<lottie-player class="s5__lottie-icon3" src="lottie/s5/3.json" background="transparent" speed="1" autoplay loop></lottie-player>
-								<img loading="lazy" src="img/scroll-section/s5/scroll-section__icon3.svg" alt="svg">
+								<lottie-player class="s5__lottie-icon3" src="<?php bloginfo('template_url'); ?>/assets/lottie/s5/3.json" background="transparent" speed="1" autoplay loop></lottie-player>
+								<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/scroll-section/s5/scroll-section__icon3.svg" alt="svg">
 							</div>
 							<div class="scroll-section__text ul-small-text main-btn">
 								<div class="main-btn__text ul-small-text textMt05">Оптимизация</div>
@@ -893,7 +897,7 @@
 						</li>
 						<li class="scroll-section__item">
 							<div class="scroll-section__icon img-wrp">
-								<img loading="lazy" src="img/scroll-section/s5/scroll-section__icon4.svg" alt="svg">
+								<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/scroll-section/s5/scroll-section__icon4.svg" alt="svg">
 							</div>
 							<div class="scroll-section__text ul-small-text main-btn">
 								<div class="main-btn__text ul-small-text textMt05">Вывод в топ</div>
@@ -906,7 +910,7 @@
 									<span class="animatedNumberTwo">0</span>x
 								</div>
 								<div class="scroll-section__icon img-wrp">
-									<img loading="lazy" src="img/scroll-section/s5/scroll-section__icon5.svg" alt="svg">
+									<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/scroll-section/s5/scroll-section__icon5.svg" alt="svg">
 								</div>
 							</div>
 							<div class="scroll-section__text ul-small-text main-btn">
@@ -916,7 +920,7 @@
 						</li>
 						<li class="scroll-section__item">
 							<div class="scroll-section__icon img-wrp">
-								<img src="img/scroll-section__icon.svg" alt="svg" loading="lazy">
+								<img src="<?php bloginfo('template_url'); ?>/assets/img/scroll-section__icon.svg" alt="svg" loading="lazy">
 							</div>
 							<div class="scroll-section__text ul-small-text main-btn">
 								<div class="main-btn__text ul-small-text textMt05 wrp-text-web-tab">Органический трафик</div>
@@ -927,11 +931,11 @@
 					</ul>
 
 					<div class="scroll-section__list-bg img-wrp">
-						<img loading="lazy" src="img/scroll-section/s5/scroll-section__list-bg.svg" alt="svg">
+						<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/scroll-section/s5/scroll-section__list-bg.svg" alt="svg">
 					</div>
 
 					<div class="scroll-section__list-bg-line img-wrp">
-						<lottie-player class="" src="lottie/s5-line.json" background="transparent" speed="0.5" autoplay loop></lottie-player>
+						<lottie-player class="" src="<?php bloginfo('template_url'); ?>/assets/lottie/s5-line.json" background="transparent" speed="0.5" autoplay loop></lottie-player>
 					</div>
 
 					<div class="scroll-section__bg-light"></div>
@@ -973,8 +977,8 @@
 
 			</div>
 			<div class="scroll-section__bg img-wrp">
-				<img loading="lazy" class="svg-web" src="img/scroll-section/s5/scroll-section__bg.svg" alt="svg">
-				<img class="svg-tab" src="img/scroll-section__bg-tab.svg" alt="svg" loading="lazy">
+				<img loading="lazy" class="svg-web" src="<?php bloginfo('template_url'); ?>/assets/img/scroll-section/s5/scroll-section__bg.svg" alt="svg">
+				<img class="svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/scroll-section__bg-tab.svg" alt="svg" loading="lazy">
 			</div>
 		</section>
 
@@ -983,11 +987,11 @@
 				<div class="s6__title title-wrp">
 					<div class="s6__pre-title title-wrp__pre-title pre-title s6__pre-title--one">
 						<div class="pre-title-lp img-wrp">
-							<lottie-player class="" src="lottie/web/left.json" background="transparent" speed="1"></lottie-player>
+							<lottie-player class="" src="<?php bloginfo('template_url'); ?>/assets/lottie/web/left.json" background="transparent" speed="1"></lottie-player>
 						</div>
 						<span class="s6__pre-title-text title-wrp__pre-title-text small-text">Приимущества</span>
 						<div class="pre-title-lp img-wrp">
-							<lottie-player class="" src="lottie/web/right.json" background="transparent" speed="1"></lottie-player>
+							<lottie-player class="" src="<?php bloginfo('template_url'); ?>/assets/lottie/web/right.json" background="transparent" speed="1"></lottie-player>
 						</div>
 					</div>
 					<div class="s6__title-text title-wrp__text big-title">
@@ -1003,7 +1007,7 @@
 				<ul class="s6__list svg-blur-hover-wrp">
 					<li class="s6__list-item">
 						<div class="s6__list-item-icon img-wrp svg-blur">
-							<img src="img/s6__list-item-icon.svg" alt="svg" loading="lazy">
+							<img src="<?php bloginfo('template_url'); ?>/assets/img/s6__list-item-icon.svg" alt="svg" loading="lazy">
 							<div class="blur"></div>
 						</div>
 						<div class="s6__list-item-title str-text">Тест Драйв</div>
@@ -1016,7 +1020,7 @@
 					</li>
 					<li class="s6__list-item">
 						<div class="s6__list-item-icon img-wrp svg-blur">
-							<img src="img/s6__list-item-icon2.svg" alt="svg" loading="lazy">
+							<img src="<?php bloginfo('template_url'); ?>/assets/img/s6__list-item-icon2.svg" alt="svg" loading="lazy">
 							<div class="blur"></div>
 						</div>
 						<div class="s6__list-item-title str-text">В вашем Телеграм</div>
@@ -1028,7 +1032,7 @@
 					</li>
 					<li class="s6__list-item">
 						<div class="s6__list-item-icon img-wrp svg-blur">
-							<img src="img/s6__list-item-icon3.svg" alt="svg" loading="lazy">
+							<img src="<?php bloginfo('template_url'); ?>/assets/img/s6__list-item-icon3.svg" alt="svg" loading="lazy">
 							<div class="blur"></div>
 						</div>
 						<div class="s6__list-item-title str-text">Безлимитность</div>
@@ -1042,14 +1046,14 @@
 				</ul>
 
 				<div class="s6__decor s6__decor-bg img-wrp">
-					<img class="svg-web" src="img/s6__decor-bg-web.svg" alt="svg" loading="lazy">
-					<img class="svg-tab" src="img/s6__decor-bg-tab.svg" alt="svg" loading="lazy">
-					<img class="svg-mob" src="img/s6__decor-bg-mob.svg" alt="svg" loading="lazy">
+					<img class="svg-web" src="<?php bloginfo('template_url'); ?>/assets/img/s6__decor-bg-web.svg" alt="svg" loading="lazy">
+					<img class="svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/s6__decor-bg-tab.svg" alt="svg" loading="lazy">
+					<img class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/s6__decor-bg-mob.svg" alt="svg" loading="lazy">
 				</div>
 				<div class="s6__decor s6__decor-list img-wrp">
-					<img class="svg-web" src="img/s6__decor-list-web.svg" alt="svg" loading="lazy">
-					<img class="svg-tab" src="img/s6__decor-list-tab.svg" alt="svg" loading="lazy">
-					<img class="svg-mob" src="img/s6__decor-list-mob.svg" alt="svg" loading="lazy">
+					<img class="svg-web" src="<?php bloginfo('template_url'); ?>/assets/img/s6__decor-list-web.svg" alt="svg" loading="lazy">
+					<img class="svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/s6__decor-list-tab.svg" alt="svg" loading="lazy">
+					<img class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/s6__decor-list-mob.svg" alt="svg" loading="lazy">
 				</div>
 			</div>
 		</section>
@@ -1058,21 +1062,21 @@
 			<div class="s7__container container">
 				<div class="window">
 					<div class="window-bg img-wrp">
-						<img loading="lazy" class="svg-web" src="img/window-box/window-bg.svg" alt="svg">
-						<img class="svg-tab" src="img/window-bg-tab.svg" alt="svg" loading="lazy">
-						<img class="svg-mob" src="img/window-bg-mob.svg" alt="svg" loading="lazy">
+						<img loading="lazy" class="svg-web" src="<?php bloginfo('template_url'); ?>/assets/img/window-box/window-bg.svg" alt="svg">
+						<img class="svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/window-bg-tab.svg" alt="svg" loading="lazy">
+						<img class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/window-bg-mob.svg" alt="svg" loading="lazy">
 					</div>
 					<div class="s7__title title-wrp">
 						<div class="s7__title-icon-logo img-wrp">
-							<img loading="lazy" src="img/window-box/s7__title-icon-logo.svg" alt="svg">
+							<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/window-box/s7__title-icon-logo.svg" alt="svg">
 						</div>
 						<div class="s7__pre-title title-wrp__pre-title pre-title s7__pre-title--one">
 							<div class="pre-title-lp img-wrp">
-								<lottie-player class="" src="lottie/web/left.json" background="transparent" speed="1"></lottie-player>
+								<lottie-player class="" src="<?php bloginfo('template_url'); ?>/assets/lottie/web/left.json" background="transparent" speed="1"></lottie-player>
 							</div>
 								<span class="s7__pre-title-text title-wrp__pre-title-text small-text">Протестируйте BBZ</span>
 							<div class="pre-title-lp img-wrp">
-								<lottie-player class="" src="lottie/web/right.json" background="transparent" speed="1"></lottie-player>
+								<lottie-player class="" src="<?php bloginfo('template_url'); ?>/assets/lottie/web/right.json" background="transparent" speed="1"></lottie-player>
 							</div>
 						</div>
 						<div class="s7__title-cicle-list">
@@ -1083,7 +1087,7 @@
 					</div>
 					<div class="s7__item-main">
 						<div class="s7__item-main-icon img-wrp">
-							<img src="img/s7__item-main-icon.svg" alt="svg" loading="lazy">
+							<img src="<?php bloginfo('template_url'); ?>/assets/img/s7__item-main-icon.svg" alt="svg" loading="lazy">
 						</div>
 						<div class="s7__item-main-title def-title">
 							Повысьте продажи
@@ -1096,15 +1100,15 @@
 						</a>
 
 						<div class="s7__item-main-bg-mask img-wrp">
-							<img src="img/s7__item-main-bg-mask.svg" alt="svg" loading="lazy">
+							<img src="<?php bloginfo('template_url'); ?>/assets/img/s7__item-main-bg-mask.svg" alt="svg" loading="lazy">
 						</div>
 						<div class="s7__item-main-line img-wrp">
-							<img src="img/s7__item-main-line.svg" alt="svg" loading="lazy">
+							<img src="<?php bloginfo('template_url'); ?>/assets/img/s7__item-main-line.svg" alt="svg" loading="lazy">
 						</div>
 					</div>
 					<div class="s7__item s7__item1 s7__item--big">
 						<div class="s7__item-icon img-wrp">
-							<img src="img/s7__item-icon.svg" alt="svg" loading="lazy">
+							<img src="<?php bloginfo('template_url'); ?>/assets/img/s7__item-icon.svg" alt="svg" loading="lazy">
 						</div>
 						<div class="s7__item-title def-text">
 							<div class="wrp-text-web-tab">
@@ -1116,12 +1120,12 @@
 							</div>
 						</div>
 						<div class="s7__item-bg img-wrp">
-							<img loading="lazy" src="img/window-box/s7__item-bg.svg" alt="svg">
+							<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/window-box/s7__item-bg.svg" alt="svg">
 						</div>
 					</div>
 					<div class="s7__item s7__item2 s7__item--small">
 						<div class="s7__item-icon img-wrp">
-							<img src="img/s7__item-icon2.svg" alt="svg" loading="lazy">
+							<img src="<?php bloginfo('template_url'); ?>/assets/img/s7__item-icon2.svg" alt="svg" loading="lazy">
 						</div>
 						<div class="s7__item-title def-text">
 							<div class="wrp-text-web-tab">
@@ -1132,13 +1136,13 @@
 							</div>
 						</div>
 						<div class="s7__item-line img-wrp">
-							<img src="img/s7__item-line3.svg" alt="svg" loading="lazy">
+							<img src="<?php bloginfo('template_url'); ?>/assets/img/s7__item-line3.svg" alt="svg" loading="lazy">
 						</div>
 					</div>
 					<div class="s7__item s7__item3 s7__item--small">
 						<div class="s7__item-icon img-wrp">
-							<img class="svg-web svg-tab" src="img/s7__item-icon3.svg" alt="svg" loading="lazy">
-							<img class="svg-mob" src="img/s7__item-icon3-mob.svg" alt="svg" loading="lazy">			
+							<img class="svg-web svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/s7__item-icon3.svg" alt="svg" loading="lazy">
+							<img class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/s7__item-icon3-mob.svg" alt="svg" loading="lazy">			
 						</div>
 						<div class="s7__item-title def-text">
 							<div class="wrp-text-web-tab">
@@ -1149,12 +1153,12 @@
 							</div>
 						</div>
 						<div class="s7__item-line img-wrp">
-							<img src="img/s7__item-line4.svg" alt="svg" loading="lazy">
+							<img src="<?php bloginfo('template_url'); ?>/assets/img/s7__item-line4.svg" alt="svg" loading="lazy">
 						</div>
 					</div>
 					<div class="s7__item s7__item4 s7__item--big">
 						<div class="s7__item-icon img-wrp">
-							<img loading="lazy" src="img/procent.svg" alt="svg" />
+							<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/procent.svg" alt="svg" />
 						</div>
 						<div class="s7__item-title def-text">
 							<div class="s7__item-title def-text">
@@ -1172,31 +1176,30 @@
 							</div>
 						</div>
 						<div class="s7__item-bg img-wrp">
-							<img loading="lazy" src="img/window-box/s7__item-bg.svg" alt="svg">
+							<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/window-box/s7__item-bg.svg" alt="svg">
 						</div>
 					</div>
 
 					<div class="s7__decoration-window img-wrp">
-						<img class="svg-web" src="img/s7__decoration-window-web.svg" alt="svg" loading="lazy">
-						<img class="svg-tab" src="img/s7__decoration-window-tab.svg" alt="svg" loading="lazy">
-						<img class="svg-mob" src="img/s7__decoration-window-mob.svg" alt="svg" loading="lazy">
+						<img class="svg-web" src="<?php bloginfo('template_url'); ?>/assets/img/s7__decoration-window-web.svg" alt="svg" loading="lazy">
+						<img class="svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/s7__decoration-window-tab.svg" alt="svg" loading="lazy">
+						<img class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/s7__decoration-window-mob.svg" alt="svg" loading="lazy">
 					</div>
 				</div>
 
 				<div class="s7__decoration-shadow img-wrp">
-					<img class="svg-web" src="img/s7__decoration-shadow-web.svg" alt="svg" loading="lazy">
-					<img class="svg-tab" src="img/s7__decoration-shadow-tab.svg" alt="svg" loading="lazy">
+					<img class="svg-web" src="<?php bloginfo('template_url'); ?>/assets/img/s7__decoration-shadow-web.svg" alt="svg" loading="lazy">
+					<img class="svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/s7__decoration-shadow-tab.svg" alt="svg" loading="lazy">
 				</div>
 				<div class="s7__decoration-lines img-wrp">
-					<img class="svg-web svg-tab" src="img/s7__decoration-lines-web-tab.svg" alt="svg" loading="lazy">
-					<img class="svg-mob" src="img/s7__decoration-lines-mob.svg" alt="svg" loading="lazy">
+					<img class="svg-web svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/s7__decoration-lines-web-tab.svg" alt="svg" loading="lazy">
+					<img class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/s7__decoration-lines-mob.svg" alt="svg" loading="lazy">
 				</div>
 				<div class="s7__decoration-star s1__decoration s1__decoration--one star-bg img-wrp">
 					<picture>
-						<source media="(min-width: 1200px)" srcset="img/star-bg.svg">
-						<img loading="lazy" src="img/star-bg-static.svg" alt="star-svg-bg">
+						<source media="(min-width: 1200px)" srcset="<?php bloginfo('template_url'); ?>/assets/img/star-bg.svg">
+						<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/star-bg-static.svg" alt="star-svg-bg">
 					</picture>						
-					<!-- <img loading="lazy" src="img/star-bg-static.svg" alt="star-svg-bg"> -->
 				</div>
 			</div>
 		</section>
@@ -1206,11 +1209,11 @@
 				<div class="slider-section__title title-wrp">
 					<div class="slider-section__pre-title title-wrp__pre-title pre-title s8__pre-title">
 						<div class="pre-title-lp img-wrp">
-							<lottie-player class="" src="lottie/web/left.json" background="transparent" speed="1"></lottie-player>
+							<lottie-player class="" src="<?php bloginfo('template_url'); ?>/assets/lottie/web/left.json" background="transparent" speed="1"></lottie-player>
 						</div>
 						<span class="slider-section__pre-title-text title-wrp__pre-title-text small-text">Возможности</span>
 						<div class="pre-title-lp img-wrp">
-							<lottie-player class="" src="lottie/web/right.json" background="transparent" speed="1"></lottie-player>
+							<lottie-player class="" src="<?php bloginfo('template_url'); ?>/assets/lottie/web/right.json" background="transparent" speed="1"></lottie-player>
 						</div>
 					</div>
 					<div class="slider-section__title-text title-wrp__text big-title">
@@ -1226,7 +1229,7 @@
 					<div class="swiper-wrapper">
 						<div class="swiper-slide slider-section__slider">
 							<div class="slider-section__slide-icon img-wrp">
-								<img src="img/slider-section__slide-icon.svg" alt="svg" loading="lazy">
+								<img src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__slide-icon.svg" alt="svg" loading="lazy">
 							</div>
 							<div class="slider-section__slider-title str-text">
 								Авто-выкупы
@@ -1237,7 +1240,7 @@
 						</div>
 						<div class="swiper-slide slider-section__slider">
 							<div class="slider-section__slide-icon img-wrp">
-								<img src="img/slider-section__slide-icon2.svg" alt="svg" loading="lazy">
+								<img src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__slide-icon2.svg" alt="svg" loading="lazy">
 							</div>
 							<div class="slider-section__slider-title str-text">
 								Функция нагуливания поведеньческих факторов
@@ -1248,7 +1251,7 @@
 						</div>
 						<div class="swiper-slide slider-section__slider">
 							<div class="slider-section__slide-icon img-wrp">
-								<img src="img/slider-section__slide-icon.svg" alt="svg" loading="lazy">
+								<img src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__slide-icon.svg" alt="svg" loading="lazy">
 							</div>
 							<div class="slider-section__slider-title str-text">
 								Авто-выкупы
@@ -1259,7 +1262,7 @@
 						</div>
 						<div class="swiper-slide slider-section__slider">
 							<div class="slider-section__slide-icon img-wrp">
-								<img src="img/slider-section__slide-icon2.svg" alt="svg" loading="lazy">
+								<img src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__slide-icon2.svg" alt="svg" loading="lazy">
 							</div>
 							<div class="slider-section__slider-title str-text">
 								Функция нагуливания поведеньческих факторов
@@ -1270,7 +1273,7 @@
 						</div>
 						<div class="swiper-slide slider-section__slider">
 							<div class="slider-section__slide-icon img-wrp">
-								<img src="img/slider-section__slide-icon.svg" alt="svg" loading="lazy">
+								<img src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__slide-icon.svg" alt="svg" loading="lazy">
 							</div>
 							<div class="slider-section__slider-title str-text">
 								Авто-выкупы
@@ -1281,7 +1284,7 @@
 						</div>
 						<div class="swiper-slide slider-section__slider">
 							<div class="slider-section__slide-icon img-wrp">
-								<img src="img/slider-section__slide-icon3.svg" alt="svg" loading="lazy">
+								<img src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__slide-icon3.svg" alt="svg" loading="lazy">
 							</div>
 							<div class="slider-section__slider-title str-text">
 								Функция нагуливания поведеньческих факторов
@@ -1292,7 +1295,7 @@
 						</div>
 						<div class="swiper-slide slider-section__slider">
 							<div class="slider-section__slide-icon img-wrp">
-								<img src="img/slider-section__slide-icon.svg" alt="svg" loading="lazy">
+								<img src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__slide-icon.svg" alt="svg" loading="lazy">
 							</div>
 							<div class="slider-section__slider-title str-text">
 								Авто-выкупы
@@ -1306,18 +1309,18 @@
 
 					<div class="slider-section__swiper-button-next swiper-button-next img-wrp">
 						<div class="slider-section__swiper-arrow img-wrp">
-							<img src="img/slider-section__swiper-arrow-next.svg" alt="svg" loading="lazy">
+							<img src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__swiper-arrow-next.svg" alt="svg" loading="lazy">
 						</div>
 						<div class="slider-section__swiper-bg img-wrp">
-							<img src="img/slider-section__swiper-bg.svg" alt="svg" loading="lazy">
+							<img src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__swiper-bg.svg" alt="svg" loading="lazy">
 						</div>
 					</div>
 					<div class="slider-section__swiper-button-prev swiper-button-prev img-wrp">
 						<div class="slider-section__swiper-arrow img-wrp">
-							<img src="img/slider-section__swiper-arrow-prev.svg" alt="svg" loading="lazy">
+							<img src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__swiper-arrow-prev.svg" alt="svg" loading="lazy">
 						</div>
 						<div class="slider-section__swiper-bg img-wrp">
-							<img src="img/slider-section__swiper-bg.svg" alt="svg" loading="lazy">
+							<img src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__swiper-bg.svg" alt="svg" loading="lazy">
 						</div>
 					</div>
 
@@ -1325,18 +1328,18 @@
 			</div>
 
 			<div class="slider-section__bg-main img-wrp">
-				<img class="svg-web svg-tab" src="img/slider-section__bg-main.svg" alt="svg" loading="lazy">
-				<img class="svg-mob" src="img/slider-section__bg-main-mob.svg" alt="svg" loading="lazy">
+				<img class="svg-web svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__bg-main.svg" alt="svg" loading="lazy">
+				<img class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__bg-main-mob.svg" alt="svg" loading="lazy">
 			</div>
 
 			<div class="slider-section__bg-light img-wrp">
-				<img class="svg-web svg-tab" src="img/slider-section__bg-light.svg" alt="svg" loading="lazy">
-				<img class="svg-mob" src="img/slider-section__bg-light-mob.svg" alt="svg" loading="lazy">
+				<img class="svg-web svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__bg-light.svg" alt="svg" loading="lazy">
+				<img class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__bg-light-mob.svg" alt="svg" loading="lazy">
 			</div>
 
 			<div class="slider-section__bg-light-dop img-wrp">
-				<img class="svg-web svg-tab" src="img/slider-section__bg-light-dop.svg" alt="svg" loading="lazy">
-				<img class="svg-mob" src="img/slider-section__bg-light-dop-mob.svg" alt="svg" loading="lazy">
+				<img class="svg-web svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__bg-light-dop.svg" alt="svg" loading="lazy">
+				<img class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__bg-light-dop-mob.svg" alt="svg" loading="lazy">
 			</div>
 		</section>
 
@@ -1345,11 +1348,11 @@
 				<div class="s9__title title-wrp">
 					<div class="s9__pre-title title-wrp__pre-title pre-title">
 						<div class="pre-title-lp img-wrp">
-							<lottie-player class="" src="lottie/web/left.json" background="transparent" speed="1"></lottie-player>
+							<lottie-player class="" src="<?php bloginfo('template_url'); ?>/assets/lottie/web/left.json" background="transparent" speed="1"></lottie-player>
 						</div>
 						<span class="s9__pre-title-text title-wrp__pre-title-text small-text">Оттображения бота</span>
 						<div class="pre-title-lp img-wrp">
-							<lottie-player class="" src="lottie/web/right.json" background="transparent" speed="1"></lottie-player>
+							<lottie-player class="" src="<?php bloginfo('template_url'); ?>/assets/lottie/web/right.json" background="transparent" speed="1"></lottie-player>
 						</div>
 					</div>
 					<div class="s9__title-text title-wrp__text big-title">
@@ -1385,17 +1388,17 @@
 
 
 				<div class="s9__svg-item s9__svg-item1 img-wrp">
-					<img src="img/s9__svg-item1.svg" alt="svg" loading="lazy">
+					<img src="<?php bloginfo('template_url'); ?>/assets/img/s9__svg-item1.svg" alt="svg" loading="lazy">
 				</div>
 
 				<div class="s9__svg-item s9__svg-item2 img-wrp">
-					<lottie-player class="s9__svg-item-lottie-4" src="lottie/s9/4.json" background="transparent" speed="1" autoplay loop></lottie-player>
-					<img loading="lazy" src="img/s9/s9__svg-item2.svg" alt="svg">
+					<lottie-player class="s9__svg-item-lottie-4" src="<?php bloginfo('template_url'); ?>/assets/lottie/s9/4.json" background="transparent" speed="1" autoplay loop></lottie-player>
+					<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/s9/s9__svg-item2.svg" alt="svg">
 				</div>
 
 				<div class="s9__svg-item s9__svg-item3 img-wrp">
-					<lottie-player class="s9__svg-item-lottie-1" src="lottie/s9/1.json" background="transparent" speed="1" autoplay loop></lottie-player>
-					<img loading="lazy" src="img/s9/s9__svg-item3.svg" alt="svg">
+					<lottie-player class="s9__svg-item-lottie-1" src="<?php bloginfo('template_url'); ?>/assets/lottie/s9/1.json" background="transparent" speed="1" autoplay loop></lottie-player>
+					<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/s9/s9__svg-item3.svg" alt="svg">
 				</div>
 
 				<div class="s9__svg-item s9__svg-item4 img-wrp dashboard-work-active">
@@ -1403,22 +1406,22 @@
 						<div></div>
 						<div></div>
 					</div>
-					<img loading="lazy" src="img/s9/s9__svg-item4.svg" alt="svg">
+					<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/s9/s9__svg-item4.svg" alt="svg">
 				</div>
 				<div class="s9__svg-item s9__svg-item5 img-wrp">
-					<lottie-player class="s9__svg-item-lottie-2" src="lottie/s9/2.json" background="transparent" speed="1" autoplay loop></lottie-player>
-					<img loading="lazy" src="img/s9/s9__svg-item5.svg" alt="svg">
+					<lottie-player class="s9__svg-item-lottie-2" src="<?php bloginfo('template_url'); ?>/assets/lottie/s9/2.json" background="transparent" speed="1" autoplay loop></lottie-player>
+					<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/s9/s9__svg-item5.svg" alt="svg">
 				</div>
 
 				<div class="s9__tag-bg img-wrp">
-					<img loading="lazy" src="img/s9/s9__tag-bg.svg" alt="svg">
+					<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/s9/s9__tag-bg.svg" alt="svg">
 				</div>
 				<div class="s9__tag-center-box-bg img-wrp">
-					<lottie-player class="s9__svg-item-lottie-3" src="lottie/s9/3.json" background="transparent" speed="1" autoplay loop></lottie-player>
-					<img loading="lazy" src="img/s9/s9__tag-center-box-bg.svg" alt="svg">
+					<lottie-player class="s9__svg-item-lottie-3" src="<?php bloginfo('template_url'); ?>/assets/lottie/s9/3.json" background="transparent" speed="1" autoplay loop></lottie-player>
+					<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/s9/s9__tag-center-box-bg.svg" alt="svg">
 				</div>
 				<div class="s9__tag-line img-wrp">
-					<lottie-player class="" src="lottie/s9-line.json" background="transparent" speed="0.5" autoplay loop></lottie-player>
+					<lottie-player class="" src="<?php bloginfo('template_url'); ?>/assets/lottie/s9-line.json" background="transparent" speed="0.5" autoplay loop></lottie-player>
 				</div>
 				<div class="s9__tag-blur-bg"></div>
 
@@ -1436,8 +1439,8 @@
 				</div>
 
 				<div class="s9__main-box-bg img-wrp">
-					<img loading="lazy" class="svg-web" src="img/s9/s9__main-box-bg.svg" alt="svg">
-					<img class="svg-tab" src="img/s9__main-box-bg-tab.svg" alt="svg" loading="lazy">
+					<img loading="lazy" class="svg-web" src="<?php bloginfo('template_url'); ?>/assets/img/s9/s9__main-box-bg.svg" alt="svg">
+					<img class="svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/s9__main-box-bg-tab.svg" alt="svg" loading="lazy">
 				</div>
 			</div>
 		</section>
@@ -1447,11 +1450,11 @@
 				<div class="s6__title title-wrp">
 					<div class="s6__pre-title title-wrp__pre-title pre-title s6__pre-title--two">
 						<div class="pre-title-lp img-wrp">
-							<lottie-player class="" src="lottie/web/left.json" background="transparent" speed="1"></lottie-player>
+							<lottie-player class="" src="<?php bloginfo('template_url'); ?>/assets/lottie/web/left.json" background="transparent" speed="1"></lottie-player>
 						</div>
 						<span class="s6__pre-title-text title-wrp__pre-title-text small-text">Задаём тренды</span>
 						<div class="pre-title-lp img-wrp">
-							<lottie-player class="" src="lottie/web/right.json" background="transparent" speed="1"></lottie-player>
+							<lottie-player class="" src="<?php bloginfo('template_url'); ?>/assets/lottie/web/right.json" background="transparent" speed="1"></lottie-player>
 						</div>
 					</div>
 					<div class="s6__title-text title-wrp__text big-title">
@@ -1467,7 +1470,7 @@
 				<ul class="s6__list s10__list--mod svg-blur-hover-wrp">
 					<li class="s6__list-item">
 						<div class="s6__list-item-icon img-wrp svg-blur">
-							<img src="img/s10__list-item-icon1.svg" alt="svg" loading="lazy">
+							<img src="<?php bloginfo('template_url'); ?>/assets/img/s10__list-item-icon1.svg" alt="svg" loading="lazy">
 							<div class="blur"></div>
 						</div>
 						<div class="s6__list-item-title s10__list-item-title--mod str-text">Актуальность</div>
@@ -1479,7 +1482,7 @@
 					</li>
 					<li class="s6__list-item">
 						<div class="s6__list-item-icon img-wrp svg-blur">
-							<img src="img/s10__list-item-icon2.svg" alt="svg" loading="lazy">
+							<img src="<?php bloginfo('template_url'); ?>/assets/img/s10__list-item-icon2.svg" alt="svg" loading="lazy">
 							<div class="blur"></div>
 						</div>
 						<div class="s6__list-item-title s10__list-item-title--mod str-text">Уникальные опции</div>
@@ -1491,7 +1494,7 @@
 					</li>
 					<li class="s6__list-item">
 						<div class="s6__list-item-icon s6__list-item-icon-mod img-wrp svg-blur">
-							<img src="img/s10__list-item-icon3.svg" alt="svg" loading="lazy">
+							<img src="<?php bloginfo('template_url'); ?>/assets/img/s10__list-item-icon3.svg" alt="svg" loading="lazy">
 							<div class="blur"></div>
 						</div>
 						<div class="s6__list-item-title s10__list-item-title--mod str-text">Тайные техники</div>
@@ -1505,14 +1508,14 @@
 				</ul>
 
 				<div class="s6__decor s6__decor-bg img-wrp">
-					<img class="svg-web" src="img/s6__decor-bg-web.svg" alt="svg" loading="lazy">
-					<img class="svg-tab" src="img/s6__decor-bg-tab.svg" alt="svg" loading="lazy">
-					<img class="svg-mob" src="img/s6__decor-bg-mob.svg" alt="svg" loading="lazy">
+					<img class="svg-web" src="<?php bloginfo('template_url'); ?>/assets/img/s6__decor-bg-web.svg" alt="svg" loading="lazy">
+					<img class="svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/s6__decor-bg-tab.svg" alt="svg" loading="lazy">
+					<img class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/s6__decor-bg-mob.svg" alt="svg" loading="lazy">
 				</div>
 				<div class="s6__decor s6__decor-list img-wrp">
-					<img class="svg-web" src="img/s6__decor-list-web.svg" alt="svg" loading="lazy">
-					<img class="svg-tab" src="img/s6__decor-list-tab.svg" alt="svg" loading="lazy">
-					<img class="svg-mob" src="img/s6__decor-list-mob.svg" alt="svg" loading="lazy">
+					<img class="svg-web" src="<?php bloginfo('template_url'); ?>/assets/img/s6__decor-list-web.svg" alt="svg" loading="lazy">
+					<img class="svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/s6__decor-list-tab.svg" alt="svg" loading="lazy">
+					<img class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/s6__decor-list-mob.svg" alt="svg" loading="lazy">
 				</div>
 
 				<div class="s9__end-title def-title">
@@ -1528,7 +1531,7 @@
 					<div class="list-progress__item">
 						<div class="list-progress__item-wrp">
 							<div class="list-progress__item-icon img-wrp">
-								<img loading="lazy" src="img/line-progress/s10/list-progress__item-icon1.svg" alt="svg">
+								<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/line-progress/s10/list-progress__item-icon1.svg" alt="svg">
 								<div class="blur"></div>
 							</div>
 						</div>
@@ -1545,7 +1548,7 @@
 					<div class="list-progress__item">
 						<div class="list-progress__item-wrp">
 							<div class="list-progress__item-icon img-wrp">
-								<img loading="lazy" src="img/line-progress/s10/list-progress__item-icon2.svg" alt="svg">
+								<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/line-progress/s10/list-progress__item-icon2.svg" alt="svg">
 								<div class="blur"></div>
 							</div>
 						</div>
@@ -1562,7 +1565,7 @@
 					<div class="list-progress__item">
 						<div class="list-progress__item-wrp">
 							<div class="list-progress__item-icon img-wrp">
-								<img loading="lazy" src="img/line-progress/s10/list-progress__item-icon3.svg" alt="svg">
+								<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/line-progress/s10/list-progress__item-icon3.svg" alt="svg">
 								<div class="blur"></div>
 							</div>
 						</div>
@@ -1581,11 +1584,11 @@
 				<div class="slider-section__title title-wrp">
 					<div class="slider-section__pre-title title-wrp__pre-title pre-title s11__pre-title">
 						<div class="pre-title-lp img-wrp">
-							<lottie-player class="" src="lottie/web/left.json" background="transparent" speed="1"></lottie-player>
+							<lottie-player class="" src="<?php bloginfo('template_url'); ?>/assets/lottie/web/left.json" background="transparent" speed="1"></lottie-player>
 						</div>
 						<span class="slider-section__pre-title-text title-wrp__pre-title-text small-text">Безопасность</span>
 						<div class="pre-title-lp img-wrp">
-							<lottie-player class="" src="lottie/web/right.json" background="transparent" speed="1"></lottie-player>
+							<lottie-player class="" src="<?php bloginfo('template_url'); ?>/assets/lottie/web/right.json" background="transparent" speed="1"></lottie-player>
 						</div>
 					</div>
 					<div class="slider-section__title-text title-wrp__text big-title">
@@ -1602,7 +1605,7 @@
 					<div class="swiper-wrapper">
 						<div class="swiper-slide slider-section__slider">
 							<div class="slider-section__slide-icon img-wrp">
-								<img src="img/slider-section__slide-icon.svg" alt="svg" loading="lazy">
+								<img src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__slide-icon.svg" alt="svg" loading="lazy">
 							</div>
 							<div class="slider-section__slider-title str-text">
 								Функция нагуливания поведеньческих факторов
@@ -1613,7 +1616,7 @@
 						</div>
 						<div class="swiper-slide slider-section__slider">
 							<div class="slider-section__slide-icon img-wrp">
-								<img src="img/slider-section__slide-icon2.svg" alt="svg" loading="lazy">
+								<img src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__slide-icon2.svg" alt="svg" loading="lazy">
 							</div>
 							<div class="slider-section__slider-title str-text">
 								Авто-выкупы
@@ -1624,7 +1627,7 @@
 						</div>
 						<div class="swiper-slide slider-section__slider">
 							<div class="slider-section__slide-icon img-wrp">
-								<img src="img/slider-section__slide-icon.svg" alt="svg" loading="lazy">
+								<img src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__slide-icon.svg" alt="svg" loading="lazy">
 							</div>
 							<div class="slider-section__slider-title str-text">
 								Функция нагуливания поведеньческих факторов
@@ -1635,7 +1638,7 @@
 						</div>
 						<div class="swiper-slide slider-section__slider">
 							<div class="slider-section__slide-icon img-wrp">
-								<img src="img/slider-section__slide-icon2.svg" alt="svg" loading="lazy">
+								<img src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__slide-icon2.svg" alt="svg" loading="lazy">
 							</div>
 							<div class="slider-section__slider-title str-text">
 								Функция нагуливания поведеньческих факторов
@@ -1646,7 +1649,7 @@
 						</div>
 						<div class="swiper-slide slider-section__slider">
 							<div class="slider-section__slide-icon img-wrp">
-								<img src="img/slider-section__slide-icon.svg" alt="svg" loading="lazy">
+								<img src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__slide-icon.svg" alt="svg" loading="lazy">
 							</div>
 							<div class="slider-section__slider-title str-text">
 								Авто-выкупы
@@ -1657,7 +1660,7 @@
 						</div>
 						<div class="swiper-slide slider-section__slider">
 							<div class="slider-section__slide-icon img-wrp">
-								<img src="img/slider-section__slide-icon2.svg" alt="svg" loading="lazy">
+								<img src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__slide-icon2.svg" alt="svg" loading="lazy">
 							</div>
 							<div class="slider-section__slider-title str-text">
 								Функция нагуливания поведеньческих факторов
@@ -1668,7 +1671,7 @@
 						</div>
 						<div class="swiper-slide slider-section__slider">
 							<div class="slider-section__slide-icon img-wrp">
-								<img src="img/slider-section__slide-icon.svg" alt="svg" loading="lazy">
+								<img src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__slide-icon.svg" alt="svg" loading="lazy">
 							</div>
 							<div class="slider-section__slider-title str-text">
 								Авто-выкупы
@@ -1682,18 +1685,18 @@
 
 					<div class="slider-section__swiper-button-next swiper-button-next img-wrp">
 						<div class="slider-section__swiper-arrow img-wrp">
-							<img src="img/slider-section__swiper-arrow-next.svg" alt="svg" loading="lazy">
+							<img src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__swiper-arrow-next.svg" alt="svg" loading="lazy">
 						</div>
 						<div class="slider-section__swiper-bg img-wrp">
-							<img src="img/slider-section__swiper-bg.svg" alt="svg" loading="lazy">
+							<img src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__swiper-bg.svg" alt="svg" loading="lazy">
 						</div>
 					</div>
 					<div class="slider-section__swiper-button-prev swiper-button-prev img-wrp">
 						<div class="slider-section__swiper-arrow img-wrp">
-							<img src="img/slider-section__swiper-arrow-prev.svg" alt="svg" loading="lazy">
+							<img src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__swiper-arrow-prev.svg" alt="svg" loading="lazy">
 						</div>
 						<div class="slider-section__swiper-bg img-wrp">
-							<img src="img/slider-section__swiper-bg.svg" alt="svg" loading="lazy">
+							<img src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__swiper-bg.svg" alt="svg" loading="lazy">
 						</div>
 					</div>
 
@@ -1701,19 +1704,19 @@
 			</div>
 
 			<div class="slider-section__bg-main img-wrp">
-				<img class="svg-web svg-tab" src="img/slider-section__bg-mains11.svg" alt="svg" loading="lazy">				
-				<img class="svg-mob" src="img/slider-section__bg-main-mob11.svg" alt="svg" loading="lazy">
+				<img class="svg-web svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__bg-mains11.svg" alt="svg" loading="lazy">				
+				<img class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__bg-main-mob11.svg" alt="svg" loading="lazy">
 				
 			</div>
 
 			<div class="slider-section__bg-light img-wrp">
-				<img class="svg-web svg-tab" src="img/slider-section__bg-light.svg" alt="svg" loading="lazy">
-				<img class="svg-mob" src="img/slider-section__bg-light-mob.svg" alt="svg" loading="lazy">
+				<img class="svg-web svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__bg-light.svg" alt="svg" loading="lazy">
+				<img class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__bg-light-mob.svg" alt="svg" loading="lazy">
 			</div>
 
 			<div class="slider-section__bg-light-dop img-wrp">
-				<img class="svg-web svg-tab" src="img/slider-section__bg-light-dop.svg" alt="svg" loading="lazy">
-				<img class="svg-mob" src="img/slider-section__bg-light-dop-mob.svg" alt="svg" loading="lazy">
+				<img class="svg-web svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__bg-light-dop.svg" alt="svg" loading="lazy">
+				<img class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__bg-light-dop-mob.svg" alt="svg" loading="lazy">
 			</div>
 		</section>
 
@@ -1722,11 +1725,11 @@
 				<div class="s12__title title-wrp">
 					<div class="s12__pre-title title-wrp__pre-title pre-title">
 						<div class="pre-title-lp img-wrp">
-							<lottie-player class="" src="lottie/web/left.json" background="transparent" speed="1"></lottie-player>
+							<lottie-player class="" src="<?php bloginfo('template_url'); ?>/assets/lottie/web/left.json" background="transparent" speed="1"></lottie-player>
 						</div>
 						<span class="s12__pre-title-text title-wrp__pre-title-text small-text">Отзывы</span>
 						<div class="pre-title-lp img-wrp">
-							<lottie-player class="" src="lottie/web/right.json" background="transparent" speed="1"></lottie-player>
+							<lottie-player class="" src="<?php bloginfo('template_url'); ?>/assets/lottie/web/right.json" background="transparent" speed="1"></lottie-player>
 						</div>
 					</div>
 					<div class="s12__title-text title-wrp__text big-title">
@@ -1738,7 +1741,7 @@
 				<ul class="s12__list">
 					<li class="s12__item">
 						<div class="s12__item-title img-wrp">
-							<img src="img/s12__item-title.svg" alt="svg" loading="lazy">
+							<img src="<?php bloginfo('template_url'); ?>/assets/img/s12__item-title.svg" alt="svg" loading="lazy">
 						</div>
 						<div class="s12__item-text def-text">
 							Мы сами торгуем на Вайлдберриз.
@@ -1748,7 +1751,7 @@
 						</div>
 						<div class="user-box">
 							<div class="user-box__img img-wrp">
-								<img loading="lazy" src="img/user.png" alt="img">
+								<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/user.png" alt="img">
 							</div>
 							<div class="user-box__title small-text">Олег Петров</div>
 							<div class="user-box__text small-text">Владелец магазина</div>
@@ -1756,7 +1759,7 @@
 					</li>
 					<li class="s12__item">
 						<div class="s12__item-title img-wrp">
-							<img src="img/s12__item-title2.svg" alt="svg" loading="lazy">
+							<img src="<?php bloginfo('template_url'); ?>/assets/img/s12__item-title2.svg" alt="svg" loading="lazy">
 						</div>
 						<div class="s12__item-text def-text">
 							Мы сами торгуем на Вайлдберриз.
@@ -1766,7 +1769,7 @@
 						</div>
 						<div class="user-box">
 							<div class="user-box__img img-wrp">
-								<img loading="lazy" src="img/user.png" alt="img">
+								<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/user.png" alt="img">
 							</div>
 							<div class="user-box__title small-text">Олег Петров</div>
 							<div class="user-box__text small-text">Владелец магазина</div>
@@ -1780,9 +1783,9 @@
 				</a>
 
 				<div class="s12__decor-bg img-wrp">
-					<img class="svg-web" src="img/s12__decor-bg-web.svg" alt="svg" loading="lazy">
-					<img class="svg-tab" src="img/s12__decor-bg-tab.svg" alt="svg" loading="lazy">
-					<img class="svg-mob" src="img/s12__decor-bg-mob.svg" alt="svg" loading="lazy">
+					<img class="svg-web" src="<?php bloginfo('template_url'); ?>/assets/img/s12__decor-bg-web.svg" alt="svg" loading="lazy">
+					<img class="svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/s12__decor-bg-tab.svg" alt="svg" loading="lazy">
+					<img class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/s12__decor-bg-mob.svg" alt="svg" loading="lazy">
 				</div>
 			</div>
 		</section>
@@ -1791,21 +1794,21 @@
 			<div class="s7__container container">
 				<div class="window">
 					<div class="window-bg img-wrp">
-						<img loading="lazy" class="svg-web" src="img/window-box/window-bg.svg" alt="svg">
-						<img class="svg-tab" src="img/window-bg-tab.svg" alt="svg" loading="lazy">
-						<img class="svg-mob" src="img/window-bg-mob.svg" alt="svg" loading="lazy">
+						<img loading="lazy" class="svg-web" src="<?php bloginfo('template_url'); ?>/assets/img/window-box/window-bg.svg" alt="svg">
+						<img class="svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/window-bg-tab.svg" alt="svg" loading="lazy">
+						<img class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/window-bg-mob.svg" alt="svg" loading="lazy">
 					</div>
 					<div class="s7__title title-wrp">
 						<div class="s7__title-icon-logo img-wrp">
-							<img loading="lazy" src="img/window-box/s7__title-icon-logo.svg" alt="svg">
+							<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/window-box/s7__title-icon-logo.svg" alt="svg">
 						</div>
 						<div class="s7__pre-title title-wrp__pre-title pre-title s7__pre-title--two">
 							<div class="pre-title-lp img-wrp">
-								<lottie-player class="" src="lottie/web/left.json" background="transparent" speed="1"></lottie-player>
+								<lottie-player class="" src="<?php bloginfo('template_url'); ?>/assets/lottie/web/left.json" background="transparent" speed="1"></lottie-player>
 							</div>
 								<span class="s7__pre-title-text title-wrp__pre-title-text small-text">Протестируйте BBZ</span>
 							<div class="pre-title-lp img-wrp">
-								<lottie-player class="" src="lottie/web/right.json" background="transparent" speed="1"></lottie-player>
+								<lottie-player class="" src="<?php bloginfo('template_url'); ?>/assets/lottie/web/right.json" background="transparent" speed="1"></lottie-player>
 							</div>
 						</div>
 						<div class="s7__title-cicle-list">
@@ -1816,7 +1819,7 @@
 					</div>
 					<div class="s7__item-main">
 						<div class="s7__item-main-icon img-wrp">
-							<img src="img/s7__item-main-icon.svg" alt="svg" loading="lazy">
+							<img src="<?php bloginfo('template_url'); ?>/assets/img/s7__item-main-icon.svg" alt="svg" loading="lazy">
 						</div>
 						<div class="s7__item-main-title def-title">
 							Повысьте продажи
@@ -1829,15 +1832,15 @@
 						</a>
 
 						<div class="s7__item-main-bg-mask img-wrp">
-							<img src="img/s7__item-main-bg-mask.svg" alt="svg" loading="lazy">
+							<img src="<?php bloginfo('template_url'); ?>/assets/img/s7__item-main-bg-mask.svg" alt="svg" loading="lazy">
 						</div>
 						<div class="s7__item-main-line img-wrp">
-							<img src="img/s7__item-main-line.svg" alt="svg" loading="lazy">
+							<img src="<?php bloginfo('template_url'); ?>/assets/img/s7__item-main-line.svg" alt="svg" loading="lazy">
 						</div>
 					</div>
 					<div class="s7__item s7__item1 s7__item--big">
 						<div class="s7__item-icon img-wrp">
-							<img src="img/s7__item-icon.svg" alt="svg" loading="lazy">
+							<img src="<?php bloginfo('template_url'); ?>/assets/img/s7__item-icon.svg" alt="svg" loading="lazy">
 						</div>
 						<div class="s7__item-title def-text">
 							<div class="wrp-text-web-tab">
@@ -1849,12 +1852,12 @@
 							</div>
 						</div>
 						<div class="s7__item-bg img-wrp">
-							<img loading="lazy" src="img/window-box/s7__item-bg.svg" alt="svg">
+							<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/window-box/s7__item-bg.svg" alt="svg">
 						</div>
 					</div>
 					<div class="s7__item s7__item2 s7__item--small">
 						<div class="s7__item-icon img-wrp">
-							<img src="img/s7__item-icon2.svg" alt="svg" loading="lazy">
+							<img src="<?php bloginfo('template_url'); ?>/assets/img/s7__item-icon2.svg" alt="svg" loading="lazy">
 						</div>
 						<div class="s7__item-title def-text">
 							<div class="wrp-text-web-tab">
@@ -1865,13 +1868,13 @@
 							</div>
 						</div>
 						<div class="s7__item-line img-wrp">
-							<img src="img/s7__item-line3.svg" alt="svg" loading="lazy">
+							<img src="<?php bloginfo('template_url'); ?>/assets/img/s7__item-line3.svg" alt="svg" loading="lazy">
 						</div>
 					</div>
 					<div class="s7__item s7__item3 s7__item--small">
 						<div class="s7__item-icon img-wrp">
-							<img class="svg-web svg-tab" src="img/s7__item-icon3.svg" alt="svg" loading="lazy">
-							<img class="svg-mob" src="img/s7__item-icon3-mob.svg" alt="svg" loading="lazy">			
+							<img class="svg-web svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/s7__item-icon3.svg" alt="svg" loading="lazy">
+							<img class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/s7__item-icon3-mob.svg" alt="svg" loading="lazy">			
 						</div>
 						<div class="s7__item-title def-text">
 							<div class="wrp-text-web-tab">
@@ -1882,12 +1885,12 @@
 							</div>
 						</div>
 						<div class="s7__item-line img-wrp">
-							<img src="img/s7__item-line4.svg" alt="svg" loading="lazy">
+							<img src="<?php bloginfo('template_url'); ?>/assets/img/s7__item-line4.svg" alt="svg" loading="lazy">
 						</div>
 					</div>
 					<div class="s7__item s7__item4 s7__item--big">
 						<div class="s7__item-icon img-wrp">
-							<img loading="lazy" src="img/procent.svg" alt="svg" />
+							<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/procent.svg" alt="svg" />
 						</div>
 						<div class="s7__item-title def-text">
 							<div class="s7__item-title def-text">
@@ -1905,31 +1908,30 @@
 							</div>
 						</div>
 						<div class="s7__item-bg img-wrp">
-							<img loading="lazy" src="img/window-box/s7__item-bg.svg" alt="svg">
+							<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/window-box/s7__item-bg.svg" alt="svg">
 						</div>
 					</div>
 
 					<div class="s7__decoration-window img-wrp">
-						<img class="svg-web" src="img/s7__decoration-window-web.svg" alt="svg" loading="lazy">
-						<img class="svg-tab" src="img/s7__decoration-window-tab.svg" alt="svg" loading="lazy">
-						<img class="svg-mob" src="img/s7__decoration-window-mob.svg" alt="svg" loading="lazy">
+						<img class="svg-web" src="<?php bloginfo('template_url'); ?>/assets/img/s7__decoration-window-web.svg" alt="svg" loading="lazy">
+						<img class="svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/s7__decoration-window-tab.svg" alt="svg" loading="lazy">
+						<img class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/s7__decoration-window-mob.svg" alt="svg" loading="lazy">
 					</div>
 				</div>
 
 				<div class="s7__decoration-shadow img-wrp">
-					<img class="svg-web" src="img/s7__decoration-shadow-web.svg" alt="svg" loading="lazy">
-					<img class="svg-tab" src="img/s7__decoration-shadow-tab.svg" alt="svg" loading="lazy">
+					<img class="svg-web" src="<?php bloginfo('template_url'); ?>/assets/img/s7__decoration-shadow-web.svg" alt="svg" loading="lazy">
+					<img class="svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/s7__decoration-shadow-tab.svg" alt="svg" loading="lazy">
 				</div>
 				<div class="s7__decoration-lines img-wrp">
-					<img class="svg-web svg-tab" src="img/s7__decoration-lines-web-tab.svg" alt="svg" loading="lazy">
-					<img class="svg-mob" src="img/s7__decoration-lines-mob.svg" alt="svg" loading="lazy">
+					<img class="svg-web svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/s7__decoration-lines-web-tab.svg" alt="svg" loading="lazy">
+					<img class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/s7__decoration-lines-mob.svg" alt="svg" loading="lazy">
 				</div>
 				<div class="s7__decoration-star s1__decoration s1__decoration--one star-bg img-wrp">
 					<picture>
-						<source media="(min-width: 1200px)" srcset="img/star-bg.svg">
-						<img loading="lazy" src="img/star-bg-static.svg" alt="star-svg-bg">
+						<source media="(min-width: 1200px)" srcset="<?php bloginfo('template_url'); ?>/assets/img/star-bg.svg">
+						<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/star-bg-static.svg" alt="star-svg-bg">
 					</picture>						
-					<!-- <img loading="lazy" src="img/star-bg-static.svg" alt="star-svg-bg"> -->
 				</div>
 			</div>
 		</section>
@@ -1948,15 +1950,15 @@
 							</div>
 							<div class="accordion__title str-text">Если нет компьютера</div>
 							<div class="accordion__icon img-wrp">
-								<img src="img/accordion__icon.svg" alt="svg" loading="lazy">
+								<img src="<?php bloginfo('template_url'); ?>/assets/img/accordion__icon.svg" alt="svg" loading="lazy">
 							</div>
 						</div>
 						<div class="accordion__content def-text">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. Volutpat odio facilisis mauris sit amet massa. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Mi eget mauris pharetra et. Non tellus orci ac auctor augue. Elit at imperdiet dui accumsan sit. Ornare arcu dui vivamus arcu felis. Egestas integer eget aliquet nibh praesent. In hac habitasse platea dictumst quisque sagittis purus. Pulvinar elementum integer enim neque volutpat ac.
 						</div>
 						<div class="accordion-line-decor img-wrp">
-							<img class="svg-web svg-tab" src="img/accordion-line-decor.svg" alt="svg" loading="lazy">
-							<img class="svg-mob" src="img/accordion-line-decor-mob.svg" alt="svg" loading="lazy">
+							<img class="svg-web svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/accordion-line-decor.svg" alt="svg" loading="lazy">
+							<img class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/accordion-line-decor-mob.svg" alt="svg" loading="lazy">
 						</div>
 					</div>
 					<div class="accordion__item">
@@ -1969,15 +1971,15 @@
 							</div>
 							<div class="accordion__title str-text">Сколько можно сделать выкупов и отзывов</div>
 							<div class="accordion__icon img-wrp">
-								<img src="img/accordion__icon2.svg" alt="svg" loading="lazy">
+								<img src="<?php bloginfo('template_url'); ?>/assets/img/accordion__icon2.svg" alt="svg" loading="lazy">
 							</div>
 						</div>
 						<div class="accordion__content def-text">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. Volutpat odio facilisis mauris sit amet massa. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Mi eget mauris pharetra et. Non tellus orci ac auctor augue. Elit at imperdiet dui accumsan sit. Ornare arcu dui vivamus arcu felis. Egestas integer eget aliquet nibh praesent. In hac habitasse platea dictumst quisque sagittis purus. Pulvinar elementum integer enim neque volutpat ac.
 						</div>
 						<div class="accordion-line-decor img-wrp">
-							<img src="img/accordion-line-decor2.svg" alt="svg" loading="lazy">
-							<img class="svg-mob" src="img/accordion-line-decor-mob.svg" alt="svg" loading="lazy">
+							<img src="<?php bloginfo('template_url'); ?>/assets/img/accordion-line-decor2.svg" alt="svg" loading="lazy">
+							<img class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/accordion-line-decor-mob.svg" alt="svg" loading="lazy">
 						</div>
 					</div>
 				</div>
@@ -1985,41 +1987,33 @@
 		</section>
 	</main>
 
-  <script>
-		if (window.innerWidth >= 1200) {
-			var link2 = document.createElement('link');
-			link2.rel = 'stylesheet';
-			link2.href = '/assets/style/2.css';
-			document.head.appendChild(link2);
-		}
+<?php  get_footer($name); ?>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var video = document.querySelector('.logo-video1');
+    var video2 = document.querySelector('.logo-video2');
+    if (video) {
+      video.muted = true;
+      video.play().then(function() {
+      // Видео успешно запущено, ничего не делаем.
+      }).catch(function(error) {
+        console.log('Автоматическое воспроизведение видео заблокировано:', error);
+        // Если видео не запускается, скрываем его.
+        video.style.display = 'none';
+      });
+    }
 
-    document.addEventListener('DOMContentLoaded', function() {
-        var video = document.querySelector('.logo-video1');
-				var video2 = document.querySelector('.logo-video2');
-        if (video) {
-            video.muted = true;
-            video.play().then(function() {
-                // Видео успешно запущено, ничего не делаем.
-            }).catch(function(error) {
-                console.log('Автоматическое воспроизведение видео заблокировано:', error);
-                // Если видео не запускается, скрываем его.
-                video.style.display = 'none';
-            });
-        }
-
-        if (video2) {
-            video2.muted = true;
-            video2.play().then(function() {
-                // Видео успешно запущено, ничего не делаем.
-            }).catch(function(error) {
-                console.log('Автоматическое воспроизведение видео заблокировано:', error);
-                // Если видео не запускается, скрываем его.
-                video2.style.display = 'none';
-            });
-        }
-    });
-  </script>
-
-  <?php  get_footer($name); ?>
+    if (video2) {
+      video2.muted = true;
+      video2.play().then(function() {
+      // Видео успешно запущено, ничего не делаем.
+      }).catch(function(error) {
+        console.log('Автоматическое воспроизведение видео заблокировано:', error);
+        // Если видео не запускается, скрываем его.
+        video2.style.display = 'none';
+      });
+    }
+  });
+</script>
 </body>
 </html>

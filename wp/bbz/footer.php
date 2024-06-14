@@ -5,31 +5,31 @@
 				<div class="footer__list">
 					<div class="footer__item cta-box">
 						<div class="footer__item-logo img-wrp">
-							<img class="svg-web" src="img/footer__item-logo-wb.svg" alt="svg" loading="lazy">
-							<img class="svg-tab" src="img/footer__item-logo-tab.svg" alt="svg" loading="lazy">
-							<img class="svg-mob" src="img/footer__item-logo-mob.svg" alt="svg" loading="lazy">
+							<img class="svg-web" src="<?php bloginfo('template_url'); ?>/assets/img/footer__item-logo-wb.svg" alt="svg" loading="lazy">
+							<img class="svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/footer__item-logo-tab.svg" alt="svg" loading="lazy">
+							<img class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/footer__item-logo-mob.svg" alt="svg" loading="lazy">
 						</div>
 						<div class="footer__item-title str-text">Обзор програмы</div>
 						<div class="footer__item-text def-text">Краткий обзор программы</div>
 						<div class="footer__item-bg img-wrp">
-							<img class="svg-web" src="img/footer__item-bg-web.svg" alt="svg" loading="lazy">
-							<img class="svg-tab" src="img/footer__item-bg-tab.svg" alt="svg" loading="lazy">
-							<img class="svg-mob" src="img/footer__item-bg-mob.svg" alt="svg" loading="lazy">
+							<img class="svg-web" src="<?php bloginfo('template_url'); ?>/assets/img/footer__item-bg-web.svg" alt="svg" loading="lazy">
+							<img class="svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/footer__item-bg-tab.svg" alt="svg" loading="lazy">
+							<img class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/footer__item-bg-mob.svg" alt="svg" loading="lazy">
 						</div>
 					</div>
 
 					<div class="footer__item cta-box">
 						<div class="footer__item-logo img-wrp">
-							<img class="svg-web" src="img/footer__item-logo-web2.svg" alt="svg" loading="lazy">
-							<img class="svg-tab" src="img/footer__item-logo-tab2.svg" alt="svg" loading="lazy">
-							<img class="svg-mob" src="img/footer__item-logo-mob2.svg" alt="svg" loading="lazy">						
+							<img class="svg-web" src="<?php bloginfo('template_url'); ?>/assets/img/footer__item-logo-web2.svg" alt="svg" loading="lazy">
+							<img class="svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/footer__item-logo-tab2.svg" alt="svg" loading="lazy">
+							<img class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/footer__item-logo-mob2.svg" alt="svg" loading="lazy">						
 						</div>
 						<div class="footer__item-title str-text">Написать в телеграм</div>
 						<div class="footer__item-text def-text">Быстро ответим на все вопросы</div>
 						<div class="footer__item-bg img-wrp">
-							<img class="svg-web" src="img/footer__item-bg-web2.svg" alt="svg" loading="lazy">
-							<img class="svg-tab" src="img/footer__item-bg-tab2.svg" alt="svg" loading="lazy">
-							<img class="svg-mob" src="img/footer__item-bg-mob2.svg" alt="svg" loading="lazy">
+							<img class="svg-web" src="<?php bloginfo('template_url'); ?>/assets/img/footer__item-bg-web2.svg" alt="svg" loading="lazy">
+							<img class="svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/footer__item-bg-tab2.svg" alt="svg" loading="lazy">
+							<img class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/footer__item-bg-mob2.svg" alt="svg" loading="lazy">
 						</div>
 					</div>
 				</div>
@@ -38,7 +38,7 @@
 			<div class="footer__end">
 				<div class="footer__end-title img-wrp">
 					<a href="index.html">
-						<img src="img/footer__end-title.svg" alt="svg" loading="lazy">
+						<img src="<?php bloginfo('template_url'); ?>/assets/img/footer__end-title.svg" alt="svg" loading="lazy">
 					</a>
 				</div>
 				<ul class="footer__end-link-list">
@@ -61,12 +61,12 @@
 			</div>
 
 			<div class="footer__line-bg img-wrp">
-				<img class="svg-web svg-tab" src="img/footer__line-bg.svg" alt="svg" loading="lazy">
-				<img class="svg-mob" src="img/footer__line-bg-mob.svg" alt="svg" loading="lazy">
+				<img class="svg-web svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/footer__line-bg.svg" alt="svg" loading="lazy">
+				<img class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/footer__line-bg-mob.svg" alt="svg" loading="lazy">
 			</div>
 
 			<div class="footer__block-bg img-wrp">
-				<img src="img/footer__block-bg.svg" alt="svg" loading="lazy">
+				<img src="<?php bloginfo('template_url'); ?>/assets/img/footer__block-bg.svg" alt="svg" loading="lazy">
 			</div>
 		</div>
 	</footer>

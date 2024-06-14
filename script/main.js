@@ -133,14 +133,14 @@
     // const container = document.querySelector(".scroll-container");
     // const containerRect = container.getBoundingClientRect();
     const scrollTop = window.scrollY || window.pageYOffset;
-    console.log(scrollTop);
+    // console.log(scrollTop);
     // console.log(innerHeight)
     
     // 910<height
     if(window.innerWidth > 1200 && window.innerHeight < 910){
       if (scrollTop >= 1700 && scrollTop <= 2700) {
         if (scrollingBlock.classList.contains("fixed") == false) {
-          console.log("fixed");
+          // console.log("fixed");
           scrollingBlock.classList.add("fixed");
           scrollingBlock.style.top = "-797px";
         }
@@ -162,7 +162,7 @@
       // s5 scroller 2
       if (scrollTop >= 6400 && scrollTop <= 7400) {
         if (scrollingBlock2.classList.contains("fixed") == false) {
-          console.log("fixed");
+          // console.log("fixed");
           scrollingBlock2.classList.add("fixed");
           scrollingBlock2.style.top = "-697px";
         }
@@ -187,7 +187,7 @@
       // s2 scroller 1
       if (scrollTop >= 1400 && scrollTop <= 2400) {
         if (scrollingBlock.classList.contains("fixed") == false) {
-          console.log("fixed");
+          // console.log("fixed");
           scrollingBlock.classList.add("fixed");
           scrollingBlock.style.top = "-497px";
           // scrollingBlock.style.bottom = "0px"
@@ -212,7 +212,7 @@
       // 5300
       if (scrollTop >= 6100 && scrollTop <= 7100) {
         if (scrollingBlock2.classList.contains("fixed") == false) {
-          console.log("fixed");
+          // console.log("fixed");
           scrollingBlock2.classList.add("fixed");
           scrollingBlock2.style.top = "-409px";
         }
