@@ -7,7 +7,7 @@
 	<title>BBZ</title>
 
 	<!-- style -->
-	<link rel="stylesheet" href="style/style.css">
+	<?php wp_head(); ?>
 
 </head>
 

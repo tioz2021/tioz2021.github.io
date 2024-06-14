@@ -1985,9 +1985,7 @@
 		</section>
 	</main>
 
-  <?php  get_footer($name); ?>
-
-	<script>
+  <script>
 		if (window.innerWidth >= 1200) {
 			var link2 = document.createElement('link');
 			link2.rel = 'stylesheet';
@@ -2022,8 +2020,6 @@
     });
   </script>
 
-	<!-- script -->
-	<script src="script/main.js"></script>
+  <?php  get_footer($name); ?>
 </body>
-
 </html>

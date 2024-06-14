@@ -97,12 +97,4 @@
 		</div>
 	</div>
 
-	<!-- other style -->
-	<link rel="stylesheet" href="style/1.css">
-
-	<!-- swiper js -->
-	<link rel="stylesheet" href="lib/swiperjs/swiper.css">
-	<script src="lib/swiperjs/swiper.min.js"></script>
-
-	<!-- lottie cdn -->
-	<script src="lib/lottie/lottie-player.min.js"></script>
+<?php wp_footer(); ?>
