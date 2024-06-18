@@ -1064,6 +1064,8 @@
 
 // page-how-work functional
 (() => {
+
+  // web
   const btns = document.querySelectorAll(".win-box__top-menu-item");
   const elements = document.querySelectorAll(".win-box__center");
   const text_links = document.querySelectorAll(".win-box__left-list-item");
@@ -1198,10 +1200,40 @@
       texts.forEach(e => e.classList.remove("active"));
       texts[4].classList.add("active");
     }
-
   }
 
+  // mob
+  const menuItem = document.querySelectorAll(".win-box__top-menu-mobile li");
+  
+  const mf = evt => {
+    const m_this = evt.target;
+    const numItem = parseInt(m_this.textContent);
+    const container = m_this.parentNode.parentNode.parentNode.parentNode
+    const items = container.querySelectorAll(".swiper-slide-active .win-box__center");
 
-  btns.forEach(e => e.addEventListener("click", main_nav));
-  text_links.forEach(e => e.addEventListener("click", text_nav));
+    if(numItem == 1){
+      items.forEach(e => e.classList.remove("active"));
+      items[0].classList.add("active");
+    } else if(numItem == 2){
+      items.forEach(e => e.classList.remove("active"));
+      items[1].classList.add("active");
+    } else if(numItem == 3){
+      items.forEach(e => e.classList.remove("active"));
+      items[2].classList.add("active");
+    } else if(numItem == 4){
+      items.forEach(e => e.classList.remove("active"));
+      items[3].classList.add("active");
+    } else if(numItem == 5){
+      items.forEach(e => e.classList.remove("active"));
+      items[4].classList.add("active");
+    }
+  }
+
+  // changer
+  if (window.innerWidth > 1200) {
+    btns.forEach(e => e.addEventListener("click", main_nav));
+    text_links.forEach(e => e.addEventListener("click", text_nav));
+  } else {      
+    menuItem.forEach(e => e.addEventListener("click", mf))
+  }
 }) ();

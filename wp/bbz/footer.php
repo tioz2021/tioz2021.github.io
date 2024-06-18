@@ -37,16 +37,27 @@
 
 			<div class="footer__end">
 				<div class="footer__end-title img-wrp">
-					<a href="index.html">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 						<img src="<?php bloginfo('template_url'); ?>/assets/img/footer__end-title.svg" alt="svg" loading="lazy">
 					</a>
 				</div>
+
 				<ul class="footer__end-link-list">
-					<li class="footer__end-link-list-item"><a href="page-about.html" class="footer__end-link">О BBZ</a></li>
-					<li class="footer__end-link-list-item"><a href="page-how-work.html" class="footer__end-link">Как работает</a></li>
-					<li class="footer__end-link-list-item"><a href="page-question-answer.html" class="footer__end-link">FAQ</a></li>
-					<li class="footer__end-link-list-item"><a href="page-how-works.html" class="footer__end-link">Применение</a></li>
-					<li class="footer__end-link-list-item"><a href="page-blog.html" class="footer__end-link">Блог</a></li>
+					<?php
+					global $wp;
+					$menu_items = wp_get_nav_menu_items('main');
+					$current_url = home_url(add_query_arg(array(), $wp->request));
+					
+					if ($menu_items) {
+						foreach ($menu_items as $menu_item) {
+							$class = 'footer__end-link small-text';
+							if (rtrim($menu_item->url, '/') === rtrim($current_url, '/')) {
+								$class .= ' active';
+							}
+							echo '<li class="footer__end-link-list-item"><a class="' . $class . '" href="' . $menu_item->url . '">' . $menu_item->title . '</a></li>';
+						}
+					}
+					?>
 				</ul>
 
 				<a href="#" class="footer__btn main-btn">

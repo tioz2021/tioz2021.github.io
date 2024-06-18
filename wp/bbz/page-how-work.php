@@ -1,57 +1,35 @@
-<!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BBZ</title>
-
-    <!-- style -->
-    <link rel="stylesheet" href="style/style.css" />
-  </head>
-
-  <body>
+<?php
+/*
+Template Name: Page How Work
+*/
+?>
+<?php  get_header($name); ?>
     <div class="scroll-container other-page page-how-work phwk">
       <header class="header">
         <div class="header__container container">
           <div class="header__logo logo img-wrp">
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-              <img src="img/header__logo-svg.svg" alt="svg" loading="lazy">
+              <img src="<?php bloginfo('template_url'); ?>/assets/img/header__logo-svg.svg" alt="svg" loading="lazy">
             </a>
           </div>
 
           <nav class="header__nav main-nav">
             <ul class="header__nav-list">
-              <li class="header__nav-item">
-                <a href="page-about.html" class="header__nav-link small-text"
-                  >О BBZ</a
-                >
-              </li>
-              <li class="header__nav-item">
-                <a
-                  href="page-how-work.html"
-                  class="header__nav-link small-text active"
-                  >Как работает</a
-                >
-              </li>
-              <li class="header__nav-item">
-                <a
-                  href="page-question-answer.html"
-                  class="header__nav-link small-text"
-                  >FAQ</a
-                >
-              </li>
-              <li class="header__nav-item">
-                <a
-                  href="page-how-works.html"
-                  class="header__nav-link small-text"
-                  >Применение</a
-                >
-              </li>
-              <li class="header__nav-item">
-                <a href="page-blog.html" class="header__nav-link small-text"
-                  >Блог</a
-                >
-              </li>
+              <?php
+              global $wp;
+              $menu_items = wp_get_nav_menu_items('main');
+              $current_url = home_url(add_query_arg(array(), $wp->request));
+              
+              if ($menu_items) {
+                foreach ($menu_items as $menu_item) {
+                  $class = 'header__nav-link small-text';
+                  if (rtrim($menu_item->url, '/') === rtrim($current_url, '/')) {
+                    $class .= ' active';
+                  }
+                  echo '<li class="header__nav-item"><a class="' . $class . '" href="' . $menu_item->url . '">' . $menu_item->title . '</a></li>';
+                }
+              }
+              ?>
             </ul>
           </nav>
 
@@ -70,7 +48,7 @@
                 <div class="pre-title-lp img-wrp">
                   <lottie-player
                     class=""
-                    src="lottie/web/left.json"
+                    src="<?php bloginfo('template_url'); ?>/assets/lottie//web/left.json"
                     background="transparent"
                     speed="1"
                   ></lottie-player>
@@ -82,7 +60,7 @@
                 <div class="pre-title-lp img-wrp">
                   <lottie-player
                     class=""
-                    src="lottie/web/right.json"
+                    src="<?php bloginfo('template_url'); ?>/assets/lottie//web/right.json"
                     background="transparent"
                     speed="1"
                   ></lottie-player>
@@ -104,14 +82,14 @@
               >
                 <div class="slider-section__swiper-arrow img-wrp">
                   <img
-                    src="img/slider-section__swiper-arrow-prev.svg"
+                    src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__swiper-arrow-prev.svg"
                     alt="svg"
                     loading="lazy"
                   />
                 </div>
                 <div class="slider-section__swiper-bg img-wrp">
                   <img
-                    src="img/slider-section__swiper-bg.svg"
+                    src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__swiper-bg.svg"
                     alt="svg"
                     loading="lazy"
                   />
@@ -126,14 +104,14 @@
               >
                 <div class="slider-section__swiper-arrow img-wrp">
                   <img
-                    src="img/slider-section__swiper-arrow-next.svg"
+                    src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__swiper-arrow-next.svg"
                     alt="svg"
                     loading="lazy"
                   />
                 </div>
                 <div class="slider-section__swiper-bg img-wrp">
                   <img
-                    src="img/slider-section__swiper-bg.svg"
+                    src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__swiper-bg.svg"
                     alt="svg"
                     loading="lazy"
                   />
@@ -143,7 +121,7 @@
 
             <div class="win-box__top win-box__top--global">
               <div class="win-box__top-icon img-wrp">
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="img/win-box__top-icon.svg" alt="svg" loading="lazy"></a>
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php bloginfo('template_url'); ?>/assets/img/win-box__top-icon.svg" alt="svg" loading="lazy"></a>
               </div>
               <ul class="win-box__top-menu">
                 <li class="win-box__top-menu-item win-box__top-menu-item1 def-text active">Выкупы</li>
@@ -2510,7 +2488,7 @@
                       >
                         <div class="main-btn__icon img-wrp">
                           <img
-                            src="img/main-btn__icon.svg"
+                            src="<?php bloginfo('template_url'); ?>/assets/img/main-btn__icon.svg"
                             alt="svg"
                             loading="lazy"
                           />
@@ -2835,7 +2813,7 @@
                       <a href="#" class="win-box__mobile-btn main-btn small-text openBtn">
                         <div class="mobile-video-hidden" style="display: none;">https://www.youtube.com/embed/BoQq8Zk22pg?si=8TuYWMBB2skNj1GC</div>
                         <div class="main-btn__icon img-wrp">
-                          <img src="img/main-btn__icon.svg" alt="svg" loading="lazy" />
+                          <img src="<?php bloginfo('template_url'); ?>/assets/img/main-btn__icon.svg" alt="svg" loading="lazy" />
                         </div>
                         <span class="main-btn__text small-text">Видео</span>
                         <div class="main-btn__effect"></div>
@@ -3155,7 +3133,7 @@
                       <a href="#" class="win-box__mobile-btn main-btn small-text openBtn">
                         <div class="mobile-video-hidden" style="display: none;">https://www.youtube.com/embed/BoQq8Zk22pg?si=8TuYWMBB2skNj1GC</div>
                         <div class="main-btn__icon img-wrp">
-                          <img src="img/main-btn__icon.svg" alt="svg" loading="lazy" />
+                          <img src="<?php bloginfo('template_url'); ?>/assets/img/main-btn__icon.svg" alt="svg" loading="lazy" />
                         </div>
                         <span class="main-btn__text small-text">Видео</span>
                         <div class="main-btn__effect"></div>
@@ -3475,7 +3453,7 @@
                       <a href="#" class="win-box__mobile-btn main-btn small-text openBtn">
                         <div class="mobile-video-hidden" style="display: none;">https://www.youtube.com/embed/BoQq8Zk22pg?si=8TuYWMBB2skNj1GC</div>
                         <div class="main-btn__icon img-wrp">
-                          <img src="img/main-btn__icon.svg" alt="svg" loading="lazy" />
+                          <img src="<?php bloginfo('template_url'); ?>/assets/img/main-btn__icon.svg" alt="svg" loading="lazy" />
                         </div>
                         <span class="main-btn__text small-text">Видео</span>
                         <div class="main-btn__effect"></div>
@@ -3795,7 +3773,7 @@
                       <a href="#" class="win-box__mobile-btn main-btn small-text openBtn">
                         <div class="mobile-video-hidden" style="display: none;">https://www.youtube.com/embed/BoQq8Zk22pg?si=8TuYWMBB2skNj1GC</div>
                         <div class="main-btn__icon img-wrp">
-                          <img src="img/main-btn__icon.svg" alt="svg" loading="lazy" />
+                          <img src="<?php bloginfo('template_url'); ?>/assets/img/main-btn__icon.svg" alt="svg" loading="lazy" />
                         </div>
                         <span class="main-btn__text small-text">Видео</span>
                         <div class="main-btn__effect"></div>
@@ -4115,7 +4093,7 @@
                       <a href="#" class="win-box__mobile-btn main-btn small-text openBtn">
                         <div class="mobile-video-hidden" style="display: none;">https://www.youtube.com/embed/BoQq8Zk22pg?si=8TuYWMBB2skNj1GC</div>
                         <div class="main-btn__icon img-wrp">
-                          <img src="img/main-btn__icon.svg" alt="svg" loading="lazy" />
+                          <img src="<?php bloginfo('template_url'); ?>/assets/img/main-btn__icon.svg" alt="svg" loading="lazy" />
                         </div>
                         <span class="main-btn__text small-text">Видео</span>
                         <div class="main-btn__effect"></div>
@@ -4435,7 +4413,7 @@
                       <a href="#" class="win-box__mobile-btn main-btn small-text openBtn">
                         <div class="mobile-video-hidden" style="display: none;">https://www.youtube.com/embed/4xDzrJKXOOY?si=kJ4QlngfEmRnx4j4&amp;controls=0</div>
                         <div class="main-btn__icon img-wrp">
-                          <img src="img/main-btn__icon.svg" alt="svg" loading="lazy" />
+                          <img src="<?php bloginfo('template_url'); ?>/assets/img/main-btn__icon.svg" alt="svg" loading="lazy" />
                         </div>
                         <span class="main-btn__text small-text">Видео</span>
                         <div class="main-btn__effect"></div>
@@ -4682,176 +4660,6 @@
         </section>
       </main>
 
-      <footer class="footer">
-        <div class="footer__container container">
-          <div class="footer__start">
-            <div class="footer__title def-title">Всегда на связи</div>
-            <div class="footer__list">
-              <div class="footer__item cta-box">
-                <div class="footer__item-logo img-wrp">
-                  <img
-                    class="svg-web"
-                    src="img/footer__item-logo-wb.svg"
-                    alt="svg"
-                    loading="lazy"
-                  />
-                  <img
-                    class="svg-tab"
-                    src="img/footer__item-logo-tab.svg"
-                    alt="svg"
-                    loading="lazy"
-                  />
-                  <img
-                    class="svg-mob"
-                    src="img/footer__item-logo-mob.svg"
-                    alt="svg"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="footer__item-title str-text">Обзор програмы</div>
-                <div class="footer__item-text def-text">
-                  Краткий обзор программы
-                </div>
-                <div class="footer__item-bg img-wrp">
-                  <img
-                    class="svg-web"
-                    src="img/footer__item-bg-web.svg"
-                    alt="svg"
-                    loading="lazy"
-                  />
-                  <img
-                    class="svg-tab"
-                    src="img/footer__item-bg-tab.svg"
-                    alt="svg"
-                    loading="lazy"
-                  />
-                  <img
-                    class="svg-mob"
-                    src="img/footer__item-bg-mob.svg"
-                    alt="svg"
-                    loading="lazy"
-                  />
-                </div>
-              </div>
-
-              <div class="footer__item cta-box">
-                <div class="footer__item-logo img-wrp">
-                  <img
-                    class="svg-web"
-                    src="img/footer__item-logo-web2.svg"
-                    alt="svg"
-                    loading="lazy"
-                  />
-                  <img
-                    class="svg-tab"
-                    src="img/footer__item-logo-tab2.svg"
-                    alt="svg"
-                    loading="lazy"
-                  />
-                  <img
-                    class="svg-mob"
-                    src="img/footer__item-logo-mob2.svg"
-                    alt="svg"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="footer__item-title str-text">
-                  Написать в телеграм
-                </div>
-                <div class="footer__item-text def-text">
-                  Быстро ответим на все вопросы
-                </div>
-                <div class="footer__item-bg img-wrp">
-                  <img
-                    class="svg-web"
-                    src="img/footer__item-bg-web2.svg"
-                    alt="svg"
-                    loading="lazy"
-                  />
-                  <img
-                    class="svg-tab"
-                    src="img/footer__item-bg-tab2.svg"
-                    alt="svg"
-                    loading="lazy"
-                  />
-                  <img
-                    class="svg-mob"
-                    src="img/footer__item-bg-mob2.svg"
-                    alt="svg"
-                    loading="lazy"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="footer__end">
-            <div class="footer__end-title img-wrp">
-              <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-                <img src="img/footer__end-title.svg" alt="svg" loading="lazy" />
-              </a>
-            </div>
-            <ul class="footer__end-link-list">
-              <li class="footer__end-link-list-item">
-                <a href="page-about.html" class="footer__end-link">О BBZ</a>
-              </li>
-              <li class="footer__end-link-list-item">
-                <a href="page-how-work.html" class="footer__end-link"
-                  >Как работает</a
-                >
-              </li>
-              <li class="footer__end-link-list-item">
-                <a href="page-question-answer.html" class="footer__end-link"
-                  >FAQ</a
-                >
-              </li>
-              <li class="footer__end-link-list-item">
-                <a href="page-how-works.html" class="footer__end-link"
-                  >Применение</a
-                >
-              </li>
-              <li class="footer__end-link-list-item">
-                <a href="page-blog.html" class="footer__end-link">Блог</a>
-              </li>
-            </ul>
-
-            <a href="#" class="footer__btn main-btn">
-              <span class="main-btn__text small-text"
-                >Приоборести лицензию</span
-              >
-              <div class="main-btn__effect"></div>
-            </a>
-
-            <div class="footer__end-polici-wrp">
-              <a href="#" class="footer__end-polici-link small-text">
-                Политика конфиденциальности</a
-              >
-              <div class="footer__end-polici-text small-text">
-                BBZ 2024 © Все права защищены
-              </div>
-            </div>
-          </div>
-
-          <div class="footer__line-bg img-wrp">
-            <img
-              class="svg-web svg-tab"
-              src="img/footer__line-bg.svg"
-              alt="svg"
-              loading="lazy"
-            />
-            <img
-              class="svg-mob"
-              src="img/footer__line-bg-mob.svg"
-              alt="svg"
-              loading="lazy"
-            />
-          </div>
-
-          <div class="footer__block-bg img-wrp">
-            <img src="img/footer__block-bg.svg" alt="svg" loading="lazy" />
-          </div>
-        </div>
-      </footer>
     </div>
 
 		<div id="popup" class="popup">
@@ -4869,162 +4677,144 @@
 			</div>
 		</div>
 
-    <!-- other style -->
-    <link rel="stylesheet" href="style/1.css" />
+<?php  get_footer($name); ?>
 
-    <!-- swiper js -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+<script>
+  function initializeSwiper() {
+    if (window.innerWidth < 1200) {
+      const pageHowWorkSwiperElm = document.querySelector(
+        ".page-how-work-swiper"
+      );
+      var pageHowWorkSwiper = new Swiper(pageHowWorkSwiperElm, {
+        allowTouchMove: false, // Отключение свайпа
 
-    <!-- <script src="lib/swiperjs/swiper.min.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        pagination: {
+          el: ".page-how-work .scroll-section__slider-navigation",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".page-how-work .slider-section__swiper-button-next",
+          prevEl: ".page-how-work .slider-section__swiper-button-prev",
+        },
 
-    <!-- lottie cdn -->
-    <script src="lib/lottie/lottie-player.js"></script>
-
-    <script>
-      function initializeSwiper() {
-        if (window.innerWidth < 1200) {
-          const pageHowWorkSwiperElm = document.querySelector(
-            ".page-how-work-swiper"
-          );
-          var pageHowWorkSwiper = new Swiper(pageHowWorkSwiperElm, {
-            allowTouchMove: false, // Отключение свайпа
-
-            pagination: {
-              el: ".page-how-work .scroll-section__slider-navigation",
-              clickable: true,
-            },
-            navigation: {
-              nextEl: ".page-how-work .slider-section__swiper-button-next",
-              prevEl: ".page-how-work .slider-section__swiper-button-prev",
-            },
-
-            slidesPerView: 1,
-            spaceBetween: 10,
-          });
-        }
-      }
-      // Инициализация при загрузке страницы
-      initializeSwiper();
-
-      // Инициализация при изменении размера окна
-      window.addEventListener("resize", function () {
-        initializeSwiper();
+        slidesPerView: 1,
+        spaceBetween: 10,
       });
-    </script>
+    }
+  }
+  // Инициализация при загрузке страницы
+  initializeSwiper();
 
-    <script>
-      if (window.innerWidth >= 1200) {
-        var link2 = document.createElement("link");
-        link2.rel = "stylesheet";
-        link2.href = "style/2.css";
-        document.head.appendChild(link2);
+  // Инициализация при изменении размера окна
+  window.addEventListener("resize", function () {
+    initializeSwiper();
+  });
+
+  if (window.innerWidth >= 1200) {
+    var link2 = document.createElement("link");
+    link2.rel = "stylesheet";
+    link2.href = "style/2.css";
+    document.head.appendChild(link2);
+  }
+
+  // slider number changer
+  const btnPrev = document.querySelector(
+    ".slider-section__swiper-button-prev"
+  );
+  const btnNext = document.querySelector(
+    ".slider-section__swiper-button-next"
+  );
+  const slide = document.querySelectorAll(".swiper-wrapper .swiper-slide");
+  const container_num = document.querySelector(
+    ".top-mobile-navigation-text i"
+  );
+
+  // swiper-slide-active
+  function change() {
+    i = 1;
+    slide.forEach((e) => {
+      if (e.classList.contains("swiper-slide-active")) {
+        container_num.textContent = i;
       }
+      i++;
+    });
+  }
 
-      // slider number changer
-      const btnPrev = document.querySelector(
-        ".slider-section__swiper-button-prev"
-      );
-      const btnNext = document.querySelector(
-        ".slider-section__swiper-button-next"
-      );
-      const slide = document.querySelectorAll(".swiper-wrapper .swiper-slide");
-      const container_num = document.querySelector(
-        ".top-mobile-navigation-text i"
-      );
+  btnPrev.addEventListener("click", change);
+  btnNext.addEventListener("click", change);
 
-      // swiper-slide-active
-      function change() {
-        i = 1;
-        slide.forEach((e) => {
-          if (e.classList.contains("swiper-slide-active")) {
-            container_num.textContent = i;
-          }
-          i++;
-        });
+  // video
+  document.addEventListener("DOMContentLoaded", function () {
+  const openBtns = document.querySelectorAll(".openBtn");
+  if (!openBtns) {
+    return false;
+  }
+  const popup = document.getElementById("popup");
+  const popupContent = document.querySelector(".popup-content");
+  const closeBtn = document.getElementById("closeBtn");
+
+  openBtns.forEach(function (openBtn) {
+    openBtn.addEventListener("click", function (event) {
+      event.preventDefault();
+      if (window.innerWidth < 720) {
+        var iframe = document.getElementById("youtube-video");
+        var iframeSrc = iframe.src;            
+        // mobile-video-hidden
+        iframeSrc = this.querySelector(".mobile-video-hidden").textContent;
+        iframe.src = iframeSrc;
       }
+      popup.classList.add("open");
+      popupContent.classList.add("open");
+    });
+  });
 
-      btnPrev.addEventListener("click", change);
-      btnNext.addEventListener("click", change);
+  closeBtn.addEventListener("click", function () {
+    popup.classList.remove("open");
+    popupContent.classList.remove("open");
 
-			// video
-			document.addEventListener("DOMContentLoaded", function () {
-			const openBtns = document.querySelectorAll(".openBtn");
-			if (!openBtns) {
-				return false;
-			}
-			const popup = document.getElementById("popup");
-			const popupContent = document.querySelector(".popup-content");
-			const closeBtn = document.getElementById("closeBtn");
+    var iframe = document.getElementById("youtube-video");
+    var iframeSrc = iframe.src;
+    iframe.src = "";
+    setTimeout(() => {
+      iframe.src = iframeSrc;
+    }, 100);
+  });
 
-			openBtns.forEach(function (openBtn) {
-				openBtn.addEventListener("click", function (event) {
-					event.preventDefault();
-          if (window.innerWidth < 720) {
-            var iframe = document.getElementById("youtube-video");
-            var iframeSrc = iframe.src;            
-            // mobile-video-hidden
-            iframeSrc = this.querySelector(".mobile-video-hidden").textContent;
-            iframe.src = iframeSrc;
-          }
-					popup.classList.add("open");
-					popupContent.classList.add("open");
-				});
-			});
+  document.addEventListener("click", function (event) {
+    // Закрываем popup, если клик произошел вне его области
+    if (
+      !popupContent.contains(event.target) &&
+      // web
+      !openBtns[0].contains(event.target) &&
+      !openBtns[1].contains(event.target) &&
+      !openBtns[2].contains(event.target) &&
+      !openBtns[3].contains(event.target) &&
+      !openBtns[4].contains(event.target) &&
+      !openBtns[5].contains(event.target) &&
 
-			closeBtn.addEventListener("click", function () {
-				popup.classList.remove("open");
-				popupContent.classList.remove("open");
+      // mob
+      !openBtns[6].contains(event.target) &&
+      !openBtns[7].contains(event.target) &&
+      !openBtns[8].contains(event.target) &&
+      !openBtns[9].contains(event.target) &&
+      !openBtns[10].contains(event.target) &&
+      !openBtns[11].contains(event.target) &&
+      !openBtns[12].contains(event.target)
+    ) {
+      popup.classList.remove("open");
+      popupContent.classList.remove("open");
 
-				var iframe = document.getElementById("youtube-video");
-				var iframeSrc = iframe.src;
-				iframe.src = "";
-				setTimeout(() => {
-					iframe.src = iframeSrc;
-				}, 100);
-			});
+      var iframe = document.getElementById("youtube-video");
+      var iframeSrc = iframe.src;
+      iframe.src = "";
+      setTimeout(() => {
+        iframe.src = iframeSrc;
+      }, 100);
+    }
+  });
 
-			document.addEventListener("click", function (event) {
-				// Закрываем popup, если клик произошел вне его области
-				if (
-					!popupContent.contains(event.target) &&
-          // web
-					!openBtns[0].contains(event.target) &&
-					!openBtns[1].contains(event.target) &&
-          !openBtns[2].contains(event.target) &&
-          !openBtns[3].contains(event.target) &&
-          !openBtns[4].contains(event.target) &&
-          !openBtns[5].contains(event.target) &&
+});
+</script>
 
-          // mob
-          !openBtns[6].contains(event.target) &&
-          !openBtns[7].contains(event.target) &&
-          !openBtns[8].contains(event.target) &&
-          !openBtns[9].contains(event.target) &&
-          !openBtns[10].contains(event.target) &&
-          !openBtns[11].contains(event.target) &&
-          !openBtns[12].contains(event.target)
-				) {
-					popup.classList.remove("open");
-					popupContent.classList.remove("open");
-
-					var iframe = document.getElementById("youtube-video");
-					var iframeSrc = iframe.src;
-					iframe.src = "";
-					setTimeout(() => {
-						iframe.src = iframeSrc;
-					}, 100);
-				}
-			});
-
-		});
-
-    </script>
-
-    <!-- script -->
-    <script src="script/main.js"></script>
-  </body>
+</body>
 </html>

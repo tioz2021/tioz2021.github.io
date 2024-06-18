@@ -14,28 +14,28 @@ Template Name: 404
 		<header class="header">
 			<div class="header__container container">
 				<div class="header__logo logo img-wrp">
-					<a href="index.html">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 						<img src="<?php bloginfo('template_url'); ?>/assets/img/header__logo-svg.svg" alt="svg" loading="lazy">
 					</a>
 				</div>
 
 				<nav class="header__nav main-nav">
 					<ul class="header__nav-list">
-						<li class="header__nav-item">
-							<a href="#" class="header__nav-link small-text">О BBZ</a>
-						</li>
-						<li class="header__nav-item">
-							<a href="#" class="header__nav-link small-text">Как работает</a>
-						</li>
-						<li class="header__nav-item">
-							<a href="#" class="header__nav-link small-text">FAQ</a>
-						</li>
-						<li class="header__nav-item">
-							<a href="#" class="header__nav-link small-text">Применение</a>
-						</li>
-						<li class="header__nav-item">
-							<a href="#" class="header__nav-link small-text">Блог</a>
-						</li>
+						<?php
+						global $wp;
+						$menu_items = wp_get_nav_menu_items('main');
+						$current_url = home_url(add_query_arg(array(), $wp->request));
+						
+						if ($menu_items) {
+							foreach ($menu_items as $menu_item) {
+								$class = 'header__nav-link small-text';
+								if (rtrim($menu_item->url, '/') === rtrim($current_url, '/')) {
+									$class .= ' active';
+								}
+								echo '<li class="header__nav-item"><a class="' . $class . '" href="' . $menu_item->url . '">' . $menu_item->title . '</a></li>';
+							}
+						}
+						?>
 					</ul>
 				</nav>
 
@@ -68,7 +68,7 @@ Template Name: 404
 							Возможно, вы перешли по ссылке, в которой была допущена ошибка, или ресурс был удален.
 						</div>
 
-						<a href="index.html" class="s1__btn main-btn">
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="s1__btn main-btn">
 							<span class="main-btn__text small-text">На главною</span>
 							<div class="main-btn__effect"></div>
 						</a>

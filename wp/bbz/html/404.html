@@ -15,7 +15,7 @@
 		<header class="header">
 			<div class="header__container container">
 				<div class="header__logo logo img-wrp">
-					<a href="index.html">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 						<img src="img/header__logo-svg.svg" alt="svg" loading="lazy">
 					</a>
 				</div>
@@ -69,7 +69,7 @@
 							Возможно, вы перешли по ссылке, в которой была допущена ошибка, или ресурс был удален.
 						</div>
 
-						<a href="index.html" class="s1__btn main-btn">
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="s1__btn main-btn">
 							<span class="main-btn__text small-text">На главною</span>
 							<div class="main-btn__effect"></div>
 						</a>
@@ -2255,7 +2255,7 @@
 
 				<div class="footer__end">
 					<div class="footer__end-title img-wrp">
-						<a href="index.html">
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 							<img src="img/footer__end-title.svg" alt="svg" loading="lazy">
 						</a>
 					</div>

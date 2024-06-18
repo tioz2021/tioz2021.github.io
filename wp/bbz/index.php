@@ -16,23 +16,24 @@ Template Name: Home
 
 			<nav class="header__nav main-nav">
 				<ul class="header__nav-list">
-					<li class="header__nav-item">
-						<a href="page-about.html" class="header__nav-link small-text">О BBZ</a>
-					</li>
-					<li class="header__nav-item">
-						<a href="page-how-work.html" class="header__nav-link small-text">Как работает</a>
-					</li>
-					<li class="header__nav-item">
-						<a href="page-question-answer.html" class="header__nav-link small-text">FAQ</a>
-					</li>
-					<li class="header__nav-item">
-						<a href="page-how-works.html" class="header__nav-link small-text">Применение</a>
-					</li>
-					<li class="header__nav-item">
-						<a href="page-blog.html" class="header__nav-link small-text">Блог</a>
-					</li>
+					<?php
+					global $wp;
+					$menu_items = wp_get_nav_menu_items('main');
+					$current_url = home_url(add_query_arg(array(), $wp->request));
+					
+					if ($menu_items) {
+						foreach ($menu_items as $menu_item) {
+							$class = 'header__nav-link small-text';
+							if (rtrim($menu_item->url, '/') === rtrim($current_url, '/')) {
+								$class .= ' active';
+							}
+							echo '<li class="header__nav-item"><a class="' . $class . '" href="' . $menu_item->url . '">' . $menu_item->title . '</a></li>';
+						}
+					}
+					?>
 				</ul>
 			</nav>
+
 
 			<a href="#" class="header__btn main-btn small-text">
 				<span class="main-btn__text small-text">Купить лицензию</span>

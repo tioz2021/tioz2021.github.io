@@ -496,7 +496,7 @@ input {
   transition: opacity 300ms ease-in-out;
 }
 .win-box__center.active{
-  position: static;
+  position: relative;
   left: unset;
 }
 .win-box__center.active-effect{
@@ -794,6 +794,35 @@ input {
   .s4__decoration-light-mob{
     display: block;
   }
+
+  .swiper-slide-main{
+    display: none;
+  }
+  .swiper-slide-active{
+    z-index: 4;
+  }
+  .win-box__text{
+    margin-top: 70px;
+  }
+  .win-box__center{
+    transition: unset;
+  }
+  .win-box__center.active{
+    opacity: 1;
+  }
+
+  // test fix
+  .win-box{
+    padding-top: 10px;
+  }
+  .win-box__top--global{
+    top: 37px;
+    margin-top: -37px;
+  }
+  .win-box__text{
+    margin-top: 40px;
+  }
+
   @import "_adaptive-mob";
 }
 
