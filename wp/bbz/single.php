@@ -48,36 +48,48 @@ Template Name: Page Post
 							<div class="pre-title-lp img-wrp">
 								<lottie-player class="" src="<?php bloginfo('template_url'); ?>/assets/lottie/web/left.json" background="transparent" speed="1"></lottie-player>
 							</div>
-							<a href="page-blog.html" class="pps1__pre-title-text title-wrp__pre-title-text small-text">Назад в блог</a>
+							<a href="<?php echo home_url('/page-blog'); ?>" class="pps1__pre-title-text title-wrp__pre-title-text small-text">Назад в блог</a>
 							<div class="pre-title-lp img-wrp">
 								<lottie-player class="" src="<?php bloginfo('template_url'); ?>/assets/lottie/web/right.json" background="transparent" speed="1"></lottie-player>
 							</div>
 						</div>
 						<div class="pps1__title-text title-wrp__text big-title">
-							Быстрое продвижение <br>
-							в ТОП выдачи Wildberries
+							<?php the_title(); ?>
 						</div>
 					</div>
 
 					<div class="pps1__icon img-wrp">
-						<img class="svg-web" src="<?php bloginfo('template_url'); ?>/assets/img/pps1__icon.svg" alt="svg" loading="lazy">
-						<img class="svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/pps1__icon-tab.svg" alt="svg" loading="lazy">
-						<img class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/pps1__icon-mob.svg" alt="svg" loading="lazy">
-					</div>	
+						<?php if (has_post_thumbnail()) : ?>
+							<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" loading="lazy">
+						<?php else : ?>
+							<img class="svg-web" src="<?php bloginfo('template_url'); ?>/assets/img/pps1__icon.svg" alt="svg" loading="lazy">
+							<img class="svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/pps1__icon-tab.svg" alt="svg" loading="lazy">
+							<img class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/pps1__icon-mob.svg" alt="svg" loading="lazy">
+						<?php endif; ?>
+					</div>
 
 					<div class="pps1__top-menu">
 						<div class="pps1__top-menu-ppl-info">
 							<div class="pps1__ppl-icon img-wrp">
-								<img src="<?php bloginfo('template_url'); ?>/assets/img/user2.png" alt="img">
+							<?php
+									$current_page = get_post();
+									$page_id = $current_page->ID;
+									$pod = pods('post', $page_id);
+									$image_field = $pod->field('blog_avatar');
+									if (!empty($image_field)) {
+										$image_url = wp_get_attachment_url($image_field['ID']);
+										echo '<img src="' . $image_url . '" alt="icon">';
+									}
+								?>
 							</div>
 							<div class="pps1__top-menu-text-wrp">
-								<div class="pps1__ppl-name def-text">Дмитрий Шевцов</div>
-								<div class="pps1__ppl-text small-text">Основатель BBZ</div>
+								<div class="pps1__ppl-name def-text"><?php echo get_post_meta(get_the_ID(), 'blog_user_name', true);?></div>
+								<div class="pps1__ppl-text small-text"><?php echo get_post_meta(get_the_ID(), 'blog_user_status', true);?></div>
 							</div>
 						</div>
 						<ul class="pps1__top-menu-soc-list">
 							<li class="pps1__top-menu-soc-item">
-								<a href="#" class="pps1__top-menu-soc-link img-wrp">
+								<a href="<?php echo get_post_meta(get_the_ID(), 'blog_user_link_tw', true);?>" target="_blank" class="pps1__top-menu-soc-link img-wrp">
 									<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<g filter="url(#filter0_b_2728_6343)">
 										<circle cx="18" cy="18" r="18" fill="url(#paint0_linear_2728_6343)"/>
@@ -110,7 +122,7 @@ Template Name: Page Post
 								</a>
 							</li>
 							<li class="pps1__top-menu-soc-item">
-								<a href="#" class="pps1__top-menu-soc-link img-wrp">
+								<a href="<?php echo get_post_meta(get_the_ID(), 'blog_user_link_vk', true);?>" target="_blank" class="pps1__top-menu-soc-link img-wrp">
 									<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<g filter="url(#filter0_b_2728_6340)">
 										<circle cx="18" cy="18" r="18" fill="url(#paint0_linear_2728_6340)"/>
@@ -138,7 +150,7 @@ Template Name: Page Post
 								</a>
 							</li>
 							<li class="pps1__top-menu-soc-item">
-								<a href="#" class="pps1__top-menu-soc-link img-wrp">
+								<a href="<?php echo get_post_meta(get_the_ID(), 'blog_user_link_tg', true);?>" target="_blank" class="pps1__top-menu-soc-link img-wrp">
 									<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<g filter="url(#filter0_b_2728_6337)">
 										<circle cx="18" cy="18" r="18" fill="url(#paint0_linear_2728_6337)"/>
@@ -175,9 +187,9 @@ Template Name: Page Post
 
 					<div class="pps1__nav">
 						<div class="pps1__nav-title def-text">Содержание</div>
-						<a href="#" class="pps1__nav-link def-text">Обзор програмы</a>
-						<a href="#" class="pps1__nav-link def-text">Обзор програмы</a>
-						<a href="#" class="pps1__nav-link def-text">Обзор програмы</a>
+						<a href="<?php get_permalink(); ?>#blog_title1" class="pps1__nav-link def-text"><?php echo get_post_meta(get_the_ID(), 'blog_title1', true);?></a>
+						<a href="<?php get_permalink(); ?>#blog_title2" class="pps1__nav-link def-text"><?php echo get_post_meta(get_the_ID(), 'blog_title2', true);?></a>
+						<a href="<?php get_permalink(); ?>#blog_title3" class="pps1__nav-link def-text"><?php echo get_post_meta(get_the_ID(), 'blog_title3', true);?></a>
 
 						<div class="pps1__text-bg img-wrp">
 							<svg class="svg-web" width="800" height="208" viewBox="0 0 800 208" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -254,63 +266,39 @@ Template Name: Page Post
 					</div>
 
 					<div class="pps1__text def-text">
-						Все этапы пройдены. Оля отыскала перспективную нишу. Нашла интересный товар и поставщика. Сделала дизайн упаковки. Вот уже завтра доделываются правки в инфографике. А товар будет принят на ВБ через два дня.
-						<br>
-						Оля рассчитала всё в притык. И деньги на самовыкупы должны были придти с продаж. Но в те ниши, куда она зашла первыми товарами, набежало много продавцов с идентичным товаром. И обрушили там цены. В итоге суммы, на которую Оля расчитывала вначале, у неё нет.
-						<br>
-						Но есть BBZ. Месячная подписка не ограничивает в количестве выкупов. И так как Оле нужно сделать 300 выкупов, — это уже экономия на самой услуге приблизительно в 2-4 раза. В зависимости от сервиса.
-						<br>
-						Забирать товар Оля решает сама. Но потом договаривается с другим пользователем BBZ из своего города делать это вместе. Что сильно сокращает расходы на курьера и высвобождает время.
-						<br>
-						Оля определяет место по одному не самому высокочастотному запросу. Которое даст ей приличные органические продажи. Начинает делать самовыкупы. Уже через неделю берёт это место. При этом сформировав первоначальное кол-во отзывов для доверия. Товар начинают покупать. Оля снижает количество выкупов по этому запросу и подключает основной запрос. Деньги выходят с Вайлдбериз и она сразу пускает их в дело.
-						<br>
-						Через две недели товар уже продаётся так, как Оля и не смела мечтать. В течении месяца она подтягивала небольшим количеством выкупов все целевые запросы и заняла по ним хорошие места.
-						<br>
-						<span>
-							Через два месяца не смотря на то, что Оля повышала цену. Товар заканчивается на площадке. Ещё раньше Оля заняла денег и уже заказала следующую партию. Но она будет на сайте не ранее чем через месяц.
-						</span>
+						<?php echo get_post_meta(get_the_ID(), 'blog_text_main', true);?>
 					</div>
 
 					<div class="pps1__img img-wrp">
-						<img src="<?php bloginfo('template_url'); ?>/assets/img/blog-img.png" alt="img">
+						<?php
+							$current_page = get_post();
+							$page_id = $current_page->ID;
+							$pod = pods('post', $page_id);
+							$image_field = $pod->field('blog_img2');
+							if (!empty($image_field)) {
+								$image_url = wp_get_attachment_url($image_field['ID']);
+								echo '<img src="' . $image_url . '" alt="icon">';
+							}
+						?>
 					</div>
 
-					<div class="pps1__text-title def-title">Обзор програмы</div>
+					<div class="pps1__text-title def-title" id="blog_title1" ><?php echo get_post_meta(get_the_ID(), 'blog_title1', true);?></div>
 
 					<div class="pps1__text pps1__text2 def-text">
-						Все этапы пройдены. Оля отыскала перспективную нишу. Нашла интересный товар и поставщика. Сделала дизайн упаковки. Вот уже завтра доделываются правки в инфографике. А товар будет принят на ВБ через два дня.
-						<br>
-						Оля рассчитала всё в притык. И деньги на самовыкупы должны были придти с продаж. Но в те ниши, куда она зашла первыми товарами, набежало много продавцов с идентичным товаром. И обрушили там цены. В итоге суммы, на которую Оля расчитывала вначале, у неё нет.
-						<br>
-						Но есть BBZ. Месячная подписка не ограничивает в количестве выкупов. И так как Оле нужно сделать 300 выкупов, — это уже экономия на самой услуге приблизительно в 2-4 раза. В зависимости от 
-						<a href="#">сервиса.</a>
-						<br>
-						Забирать товар Оля решает сама. Но потом договаривается с другим пользователем BBZ из своего города делать это вместе. Что сильно сокращает расходы на курьера и высвобождает время.
-						<br>
-						Оля определяет место по одному не самому высокочастотному запросу. Которое даст ей приличные органические продажи. Начинает делать самовыкупы. Уже через неделю берёт это место. При этом сформировав первоначальное кол-во отзывов для доверия. Товар начинают покупать. Оля снижает количество выкупов по этому запросу и подключает основной запрос. Деньги выходят с Вайлдбериз и она сразу пускает их в дело.
-						<br>
-						Через две недели товар уже продаётся так, как Оля и не смела мечтать. В течении месяца она подтягивала небольшим количеством выкупов все целевые запросы и заняла по ним хорошие места.
-						<br>
-						Через два месяца не смотря на то, что Оля повышала цену. Товар заканчивается на площадке. Ещё раньше Оля заняла денег и уже заказала следующую партию. Но она будет на сайте не ранее чем через месяц.
+						<?php echo get_post_meta(get_the_ID(), 'blog_text1', true);?>
 					</div>
 
-					<div class="pps1__text-desk str-text">Подзаголовок</div>
+					<div class="pps1__text-desk str-text"><?php echo get_post_meta(get_the_ID(), 'blog_desk1', true);?></div>
 					<div class="pps1__text pps1__text3 def-text">
-						Все этапы пройдены. Оля отыскала перспективную нишу. Нашла интересный товар и поставщика. Сделала дизайн упаковки. Вот уже завтра доделываются правки в инфографике. А товар будет принят на ВБ через два дня.
-						<br>
-						Оля рассчитала всё в притык. И деньги на самовыкупы должны были придти с продаж. Но в те ниши, куда она зашла первыми товарами, набежало много продавцов с идентичным товаром. И обрушили там цены. В итоге суммы, на которую Оля расчитывала вначале, у неё нет.
-						<br>
-						Но есть BBZ. Месячная подписка не ограничивает в количестве выкупов. И так как Оле нужно сделать 300 выкупов, — это уже экономия на самой услуге приблизительно в 2-4 раза. В зависимости от сервиса.
-						<br>
-						Забирать товар Оля решает сама. Но потом договаривается с другим пользователем BBZ из своего города делать это вместе. Что сильно сокращает расходы на курьера и высвобождает время.					
+						<?php echo get_post_meta(get_the_ID(), 'blog_desk1_text1', true);?>
 					</div>
 
 					<div class="pps1__text pps1__text4 def-text">
-						Все этапы пройдены. Оля отыскала перспективную нишу. Нашла интересный товар и поставщика. Сделала дизайн упаковки. Вот уже завтра доделываются правки в инфографике. А товар будет принят на ВБ через два дня.
+						<?php echo get_post_meta(get_the_ID(), 'blog_desk1_text2', true);?>
 					</div>
 
 					<div class="pps1__text pps1__text-bg-block str-text">
-						Через два месяца не смотря на то, что Оля повышала цену. Товар заканчивается на площадке. Ещё раньше Оля заняла денег и уже заказала следующую партию. Но она будет на сайте не ранее чем через месяц.
+						<?php echo get_post_meta(get_the_ID(), 'blog_desk1_important_text', true);?>
 						<div class="pps1__text-bg img-wrp">
 							<svg class="svg-web" width="800" height="190" viewBox="0 0 800 190" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<g filter="url(#filter0_b_2728_6329)">
@@ -384,52 +372,26 @@ Template Name: Page Post
 						</div>
 					</div>
 
-					<div class="pps1__text-title pps1__text-title2 def-title">Обзор програмы</div>
+					<div class="pps1__text-title pps1__text-title2 def-title" id="blog_title2"><?php echo get_post_meta(get_the_ID(), 'blog_title2', true);?></div>
 
 					<div class="pps1__text pps1__text5 def-text">
-						Все этапы пройдены. Оля отыскала перспективную нишу. Нашла интересный товар и поставщика. Сделала дизайн упаковки. Вот уже завтра доделываются правки в инфографике. А товар будет принят на ВБ через два дня.
-						<br>
-						Оля рассчитала всё в притык. И деньги на самовыкупы должны были придти с продаж. Но в те ниши, куда она зашла первыми товарами, набежало много продавцов с идентичным товаром. И обрушили там цены. В итоге суммы, на которую Оля расчитывала вначале, у неё нет.
-						<br>
-						Но есть BBZ. Месячная подписка не ограничивает в количестве выкупов. И так как Оле нужно сделать 300 выкупов, — это уже экономия на самой услуге приблизительно в 2-4 раза. В зависимости от 
-						<a href="#">сервиса.</a>
-						<br>
-						Забирать товар Оля решает сама. Но потом договаривается с другим пользователем BBZ из своего города делать это вместе. Что сильно сокращает расходы на курьера и высвобождает время.
-						<br>
-						Оля определяет место по одному не самому высокочастотному запросу. Которое даст ей приличные органические продажи. Начинает делать самовыкупы. Уже через неделю берёт это место. При этом сформировав первоначальное кол-во отзывов для доверия. Товар начинают покупать. Оля снижает количество выкупов по этому запросу и подключает основной запрос. Деньги выходят с Вайлдбериз и она сразу пускает их в дело.
-						<br>
-						Через две недели товар уже продаётся так, как Оля и не смела мечтать. В течении месяца она подтягивала небольшим количеством выкупов все целевые запросы и заняла по ним хорошие места.
-						<br>
-						Через два месяца не смотря на то, что Оля повышала цену. Товар заканчивается на площадке. Ещё раньше Оля заняла денег и уже заказала следующую партию. Но она будет на сайте не ранее чем через месяц.
+						<?php echo get_post_meta(get_the_ID(), 'blog_text2', true);?>
 					</div>
 
-					<div class="pps1__text-title pps1__text-title3 def-title">Обзор програмы</div>
+					<div class="pps1__text-title pps1__text-title3 def-title" id="blog_title3"><?php echo get_post_meta(get_the_ID(), 'blog_title3', true);?></div>
 
 					<div class="pps1__text pps1__text5 def-text">
-						Все этапы пройдены. Оля отыскала перспективную нишу. Нашла интересный товар и поставщика. Сделала дизайн упаковки. Вот уже завтра доделываются правки в инфографике. А товар будет принят на ВБ через два дня.
-						<br>
-						Оля рассчитала всё в притык. И деньги на самовыкупы должны были придти с продаж. Но в те ниши, куда она зашла первыми товарами, набежало много продавцов с идентичным товаром. И обрушили там цены. В итоге суммы, на которую Оля расчитывала вначале, у неё нет.
-						<br>
-						Но есть BBZ. Месячная подписка не ограничивает в количестве выкупов. И так как Оле нужно сделать 300 выкупов, — это уже экономия на самой услуге приблизительно в 2-4 раза. В зависимости от 
-						<a href="#">сервиса.</a>
-						<br>
-						Забирать товар Оля решает сама. Но потом договаривается с другим пользователем BBZ из своего города делать это вместе. Что сильно сокращает расходы на курьера и высвобождает время.
-						<br>
-						Оля определяет место по одному не самому высокочастотному запросу. Которое даст ей приличные органические продажи. Начинает делать самовыкупы. Уже через неделю берёт это место. При этом сформировав первоначальное кол-во отзывов для доверия. Товар начинают покупать. Оля снижает количество выкупов по этому запросу и подключает основной запрос. Деньги выходят с Вайлдбериз и она сразу пускает их в дело.
-						<br>
-						Через две недели товар уже продаётся так, как Оля и не смела мечтать. В течении месяца она подтягивала небольшим количеством выкупов все целевые запросы и заняла по ним хорошие места.
-						<br>
-						Через два месяца не смотря на то, что Оля повышала цену. Товар заканчивается на площадке. Ещё раньше Оля заняла денег и уже заказала следующую партию. Но она будет на сайте не ранее чем через месяц.
+						<?php echo get_post_meta(get_the_ID(), 'blog_text3', true);?>
 					</div>
 
 					 <div class="pps1__last-block">
-						<div class="pps1__last-block-date small-text">10.10.2024</div>
+						<div class="pps1__last-block-date small-text"><?php echo date('d.m.Y'); ?></div>
 						<div class="pps1__title title-wrp">
 							<div class="pps1__pre-title title-wrp__pre-title pre-title pps1__pre-title--last">
 								<div class="pre-title-lp img-wrp">
 									<lottie-player class="" src="<?php bloginfo('template_url'); ?>/assets/lottie/web/left.json" background="transparent" speed="1"></lottie-player>
 								</div>
-								<a href="page-blog.html" class="pps1__pre-title-text title-wrp__pre-title-text small-text">Назад в блог</a>
+								<a href="<?php echo home_url('/page-blog'); ?>" class="pps1__pre-title-text title-wrp__pre-title-text small-text">Назад в блог</a>
 								<div class="pre-title-lp img-wrp">
 									<lottie-player class="" src="<?php bloginfo('template_url'); ?>/assets/lottie/web/right.json" background="transparent" speed="1"></lottie-player>
 								</div>
@@ -453,7 +415,11 @@ Template Name: Page Post
 									</defs>
 								</svg>									
 							</div>
-							<span class="pps1__last-block-wiever-counter small-text">14545</span>
+							<span class="pps1__last-block-wiever-counter small-text">
+								<?php if (function_exists('pvc_get_post_views')) : ?>
+									<?php echo pvc_get_post_views(get_the_ID()); ?>
+								<?php endif; ?>
+							</span>
 						</div>
 
 						<div class="pps1__last-line img-wrp">
@@ -595,8 +561,7 @@ Template Name: Page Post
 								</linearGradient>
 							</defs>
 						</svg>
-					</div>
-					
+					</div>				
 				</div>
 			</section>
 

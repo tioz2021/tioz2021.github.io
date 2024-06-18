@@ -1823,6 +1823,9 @@
     align-items: center;
 
     margin-bottom: 44px;
+
+    border: 1px solid;
+    border-image: linear-gradient(90deg, #9cbced 0%, #9cc3f2 51%, #82b4f0 100%); 
   }
 
   // .pps1__nav-title
@@ -2086,6 +2089,12 @@
     color: var(--bodi-2-1);
     margin-bottom: 8px;
     text-align: left;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   // .pb1__item-text
@@ -2093,6 +2102,12 @@
     color: var(--bodi-2-2);
     margin-bottom: 29px;
     text-align: left;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   // .pb1__item-end
@@ -2110,7 +2125,8 @@
 
   // .pb1__item-end-wiever-wrp
   &__item-end-wiever-wrp {
-    width: 63px;
+    // width: 63px;
+    width: auto;
     display: flex;
     align-items: center;
   }
@@ -3248,4 +3264,5 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: -1;
+  display: none !important;
 }

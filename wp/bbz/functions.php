@@ -13,4 +13,7 @@ function bbz_assets() {
 
 add_action( 'wp_enqueue_scripts', 'bbz_assets' );
 
+// добавляем каринки в записях
+add_theme_support( 'post-thumbnails' );
+
 show_admin_bar(false);

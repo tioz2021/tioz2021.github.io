@@ -63,6 +63,73 @@ Template Name: Page Blog
 					</div>
 
 					<ul class="pb1__list">
+						<?php
+							$my_posts = get_posts( [
+								'numberposts' => -1,
+								'category'    => 0,
+								'orderby'     => 'date',
+								'order'       => 'DESC',
+								'include'     => array(),
+								'exclude'     => array(),
+								'meta_key'    => '',
+								'meta_value'  =>'',
+								'post_type'   => 'post',
+								'suppress_filters' => true, 
+							] );
+							
+							foreach( $my_posts as $post ){
+							setup_postdata( $post );
+								?>
+									<li class="pb1__item">
+										<a href="<?php the_permalink(); ?>">
+											<div class="pb1__item-icon img-wrp">
+												<?php if (has_post_thumbnail()) : ?>
+													<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" loading="lazy">
+												<?php else : ?>
+													<img src="<?php bloginfo('template_url'); ?>/assets/img/pb1__item-icon.svg" alt="default thumbnail" loading="lazy">
+												<?php endif; ?>
+											</div>
+											<div class="pb1__item-info">
+												<div class="pb1__item-title str-text"><?php the_title(); ?></div>
+												<div class="pb1__item-text def-text">
+													<?php echo get_post_meta(get_the_ID(), 'blog_text_main', true);?>
+												</div>
+												<div class="pb1__item-end">
+													<div class="pb1__item-end-time small-text"><?php echo date('d.m.Y'); ?></div>
+													<div class="pb1__item-end-wiever-wrp">
+														<div class="pb1__item-end-wiever-icon img-wrp">
+															<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M12 6C8.17879 6 4.71351 8.10432 2.15649 11.5223C1.94784 11.8023 1.94784 12.1935 2.15649 12.4736C4.71351 15.8957 8.17879 18 12 18C15.8212 18 19.2865 15.8957 21.8435 12.4777C22.0522 12.1977 22.0522 11.8065 21.8435 11.5264C19.2865 8.10432 15.8212 6 12 6ZM12.2741 16.2251C9.73755 16.3857 7.64284 14.2814 7.80239 11.7241C7.93331 9.61565 9.63118 7.90666 11.7259 7.77488C14.2625 7.61428 16.3572 9.7186 16.1976 12.2759C16.0626 14.3802 14.3647 16.0892 12.2741 16.2251ZM12.1473 14.2732C10.7808 14.3596 9.65163 13.2272 9.74164 11.8518C9.81119 10.7152 10.7276 9.79684 11.8568 9.72272C13.2233 9.63624 14.3525 10.7687 14.2625 12.1441C14.1888 13.2848 13.2724 14.2032 12.1473 14.2732Z" fill="url(#paint0_linear_2726_20106)"/>
+																<path d="M12.2899 16.4746L12.2903 16.4746C14.5076 16.3305 16.3041 14.5204 16.4471 12.2919L16.4471 12.2915C16.6159 9.58569 14.3986 7.35516 11.7101 7.52538C9.48837 7.6652 7.69152 9.47567 7.55287 11.7086C7.3841 14.4144 9.60146 16.6448 12.2899 16.4746ZM12.1318 14.0236L12.1315 14.0237C10.9163 14.1006 9.91089 13.0938 9.99111 11.8681L9.99117 11.867C10.053 10.856 10.8696 10.0382 11.8729 9.9722C13.0879 9.89549 14.0932 10.9021 14.013 12.1278L14.013 12.128C13.9473 13.1448 13.1296 13.9616 12.1318 14.0236ZM2.35687 11.6718C4.8799 8.29939 8.27742 6.25 12 6.25C15.7225 6.25 19.12 8.29935 21.643 11.6758C21.7857 11.8672 21.7857 12.1369 21.643 12.3283C19.12 15.7007 15.7225 17.75 12 17.75C8.2774 17.75 4.87986 15.7006 2.35684 12.324C2.21438 12.1327 2.21439 11.8631 2.35687 11.6718Z" stroke="url(#paint1_linear_2726_20106)" stroke-width="0.5"/>
+																<defs>
+																<linearGradient id="paint0_linear_2726_20106" x1="12" y1="6" x2="12" y2="18" gradientUnits="userSpaceOnUse">
+																<stop stop-color="#354261"/>
+																<stop offset="1" stop-color="#343C50"/>
+																</linearGradient>
+																<linearGradient id="paint1_linear_2726_20106" x1="12" y1="6" x2="10.1167" y2="17.5099" gradientUnits="userSpaceOnUse">
+																<stop stop-color="#AEC4FA"/>
+																<stop offset="1" stop-color="#7E90BA"/>
+																</linearGradient>
+																</defs>
+															</svg>												
+														</div>
+														<div class="pb1__item-end-wiever-number small-text">
+															<?php if (function_exists('pvc_get_post_views')) : ?>
+																<?php echo pvc_get_post_views(get_the_ID()); ?>
+															<?php endif; ?>
+														</div>
+													</div>
+												</div>
+											</div>
+										</a>
+									</li>
+								<?php
+							}
+							
+							wp_reset_postdata(); // reset $post
+						?>
+
+						<!--
 						<li class="pb1__item">
 							<a href="page-post.html">
 								<div class="pb1__item-icon img-wrp">
@@ -322,43 +389,7 @@ Template Name: Page Blog
 								</div>
 							</a>
 						</li>
-						<li class="pb1__item">
-							<a href="page-post.html">
-								<div class="pb1__item-icon img-wrp">
-									<img src="<?php bloginfo('template_url'); ?>/assets/img/pb1__item-icon.svg" alt="svg" loading="lazy">
-								</div>
-								<div class="pb1__item-info">
-									<div class="pb1__item-title str-text">Названия  статьи </div>
-									<div class="pb1__item-text def-text">
-										Все этапы пройдены. Оля отыскала
-										перспективную нишу.Нашла интересный
-										товар и поставщика. Сделала дизайн 
-									</div>
-									<div class="pb1__item-end">
-										<div class="pb1__item-end-time small-text">1 день назад</div>
-										<div class="pb1__item-end-wiever-wrp">
-											<div class="pb1__item-end-wiever-icon img-wrp">
-												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M12 6C8.17879 6 4.71351 8.10432 2.15649 11.5223C1.94784 11.8023 1.94784 12.1935 2.15649 12.4736C4.71351 15.8957 8.17879 18 12 18C15.8212 18 19.2865 15.8957 21.8435 12.4777C22.0522 12.1977 22.0522 11.8065 21.8435 11.5264C19.2865 8.10432 15.8212 6 12 6ZM12.2741 16.2251C9.73755 16.3857 7.64284 14.2814 7.80239 11.7241C7.93331 9.61565 9.63118 7.90666 11.7259 7.77488C14.2625 7.61428 16.3572 9.7186 16.1976 12.2759C16.0626 14.3802 14.3647 16.0892 12.2741 16.2251ZM12.1473 14.2732C10.7808 14.3596 9.65163 13.2272 9.74164 11.8518C9.81119 10.7152 10.7276 9.79684 11.8568 9.72272C13.2233 9.63624 14.3525 10.7687 14.2625 12.1441C14.1888 13.2848 13.2724 14.2032 12.1473 14.2732Z" fill="url(#paint0_linear_2726_20106)"/>
-													<path d="M12.2899 16.4746L12.2903 16.4746C14.5076 16.3305 16.3041 14.5204 16.4471 12.2919L16.4471 12.2915C16.6159 9.58569 14.3986 7.35516 11.7101 7.52538C9.48837 7.6652 7.69152 9.47567 7.55287 11.7086C7.3841 14.4144 9.60146 16.6448 12.2899 16.4746ZM12.1318 14.0236L12.1315 14.0237C10.9163 14.1006 9.91089 13.0938 9.99111 11.8681L9.99117 11.867C10.053 10.856 10.8696 10.0382 11.8729 9.9722C13.0879 9.89549 14.0932 10.9021 14.013 12.1278L14.013 12.128C13.9473 13.1448 13.1296 13.9616 12.1318 14.0236ZM2.35687 11.6718C4.8799 8.29939 8.27742 6.25 12 6.25C15.7225 6.25 19.12 8.29935 21.643 11.6758C21.7857 11.8672 21.7857 12.1369 21.643 12.3283C19.12 15.7007 15.7225 17.75 12 17.75C8.2774 17.75 4.87986 15.7006 2.35684 12.324C2.21438 12.1327 2.21439 11.8631 2.35687 11.6718Z" stroke="url(#paint1_linear_2726_20106)" stroke-width="0.5"/>
-													<defs>
-													<linearGradient id="paint0_linear_2726_20106" x1="12" y1="6" x2="12" y2="18" gradientUnits="userSpaceOnUse">
-													<stop stop-color="#354261"/>
-													<stop offset="1" stop-color="#343C50"/>
-													</linearGradient>
-													<linearGradient id="paint1_linear_2726_20106" x1="12" y1="6" x2="10.1167" y2="17.5099" gradientUnits="userSpaceOnUse">
-													<stop stop-color="#AEC4FA"/>
-													<stop offset="1" stop-color="#7E90BA"/>
-													</linearGradient>
-													</defs>
-												</svg>												
-											</div>
-											<div class="pb1__item-end-wiever-number small-text">14545</div>
-										</div>
-									</div>
-								</div>
-							</a>
-						</li>
+						-->
 					</ul>
 
 					<div class="pb1__bg-light img-wrp">
