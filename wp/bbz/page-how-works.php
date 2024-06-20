@@ -56,20 +56,42 @@ Template Name: How Works
 							</div>
 						</div>
 						<div class="phws1__title-text title-wrp__text big-title">
-							Бывает разное <br>
-							bbz всегда готов помочь.
+							<?php echo get_post_meta(get_the_ID(), 'how_works_title', true);?>
 						</div>
 						<div class="phws1__title-desk title-wrp__desk def-text">
-							Рассмотрим примеры разных ситуаций и их <br>
-							решения при помощи BBZ
+							<?php echo get_post_meta(get_the_ID(), 'how_works_desk', true);?>
 						</div>
 					</div>
 	
 					<div class="phws1__list-wrp"></div>
 					<div class="phws1__list">
-						<div class="phws1__item phws1__item1 def-text active">Начало на WB</div>
-						<div class="phws1__item phws1__item2 def-text">Плохо идут продажы</div>
-						<div class="phws1__item phws1__item3 def-text">Бан  отзывов</div>
+						<div class="phws1__item phws1__item1 def-text active">
+							<?php
+								$current_page = get_post();
+								$page_id = $current_page->ID;
+								$pod = pods('page', $page_id);
+								$field = $pod->field('how_works_menu_name');
+								echo $field[0];
+							?>
+						</div>
+						<div class="phws1__item phws1__item2 def-text">
+						<?php
+								$current_page = get_post();
+								$page_id = $current_page->ID;
+								$pod = pods('page', $page_id);
+								$field = $pod->field('how_works_menu_name');
+								echo $field[1];
+							?>
+						</div>
+						<div class="phws1__item phws1__item3 def-text">
+						<?php
+								$current_page = get_post();
+								$page_id = $current_page->ID;
+								$pod = pods('page', $page_id);
+								$field = $pod->field('how_works_menu_name');
+								echo $field[2];
+							?>
+						</div>
 						<div class="phws1__line-bg img-wrp">
 							<svg class="svg-web svg-tab" width="800" height="1" viewBox="0 0 800 1" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<line x1="2.18557e-08" y1="0.75" x2="800" y2="0.75007" stroke="url(#paint0_linear_2722_3980)" stroke-width="0.5"/>
@@ -102,26 +124,71 @@ Template Name: How Works
 	
 					<div class="phws1__body phws1__body1 active active-effect">
 						<div class="phws1__body-icon img-wrp">
-							<img src="<?php bloginfo('template_url'); ?>/assets/img/phws1__body-icon.svg" alt="svg" loading="lazy">
+							<?php
+								$current_page = get_post();
+								$page_id = $current_page->ID;
+								$pod = pods('page', $page_id);
+								$image_field = $pod->field('how_works_menu_one_icon');
+								if (!empty($image_field)) {
+									$image_url = wp_get_attachment_url($image_field[0]['ID']);
+									echo '<img src="' . $image_url . '" alt="icon" loading="lazy">';
+								}
+							?>
 						</div>
 						<div class="phws1__body-text small-text">
-							1 Оля начала торговать на площадке недавно Она ещё учится, совершает ошибки. Для неё всё в новинку. Волнуется, переживает, перепроверяет всё по нескольку раз. С трепетом и радостью относится к первым заказам. И верит, и надеется, что всё будет хорошо!
+							<?php
+								$current_page = get_post();
+								$page_id = $current_page->ID;
+								$pod = pods('page', $page_id);
+								$field = $pod->field('how_works_menu_one_text');
+								echo $field[0];
+							?>
 						</div>
 					</div>
 					<div class="phws1__body phws1__body2">
 						<div class="phws1__body-icon img-wrp">
-							<img src="<?php bloginfo('template_url'); ?>/assets/img/phws1__body-icon.svg" alt="svg" loading="lazy">
+							<?php
+								$current_page = get_post();
+								$page_id = $current_page->ID;
+								$pod = pods('page', $page_id);
+								$image_field = $pod->field('how_works_menu_one_icon');
+								if (!empty($image_field)) {
+									$image_url = wp_get_attachment_url($image_field[1]['ID']);
+									echo '<img src="' . $image_url . '" alt="icon" loading="lazy">';
+								}
+							?>
 						</div>
 						<div class="phws1__body-text small-text">
-							2 Оля начала торговать на площадке недавно Она ещё учится, совершает ошибки. Для неё всё в новинку. Волнуется, переживает, перепроверяет всё по нескольку раз. С трепетом и радостью относится к первым заказам. И верит, и надеется, что всё будет хорошо!
+							<?php
+								$current_page = get_post();
+								$page_id = $current_page->ID;
+								$pod = pods('page', $page_id);
+								$field = $pod->field('how_works_menu_one_text');
+								echo $field[1];
+							?>
 						</div>
 					</div>
 					<div class="phws1__body phws1__body3">
 						<div class="phws1__body-icon img-wrp">
-							<img src="<?php bloginfo('template_url'); ?>/assets/img/phws1__body-icon.svg" alt="svg" loading="lazy">
+							<?php
+								$current_page = get_post();
+								$page_id = $current_page->ID;
+								$pod = pods('page', $page_id);
+								$image_field = $pod->field('how_works_menu_one_icon');
+								if (!empty($image_field)) {
+									$image_url = wp_get_attachment_url($image_field[2]['ID']);
+									echo '<img src="' . $image_url . '" alt="icon" loading="lazy">';
+								}
+							?>
 						</div>
 						<div class="phws1__body-text small-text">
-							3 Оля начала торговать на площадке недавно Она ещё учится, совершает ошибки. Для неё всё в новинку. Волнуется, переживает, перепроверяет всё по нескольку раз. С трепетом и радостью относится к первым заказам. И верит, и надеется, что всё будет хорошо!
+							<?php
+								$current_page = get_post();
+								$page_id = $current_page->ID;
+								$pod = pods('page', $page_id);
+								$field = $pod->field('how_works_menu_one_text');
+								echo $field[2];
+							?>
 						</div>
 					</div>
 
@@ -175,522 +242,95 @@ Template Name: How Works
 			<section class="s14 s14-modifi s14_1 active active-effect">
 				<div class="s14__container container">
 					<div class="accordion">
-						<div class="accordion__item">
-							<div class="accordion__header">
-								<div class="accordion-left-decor img-wrp">
-									<svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<line x1="1.17678" y1="0.823223" x2="25.1768" y2="24.8232" stroke="#323F5F" stroke-width="0.5"/>
-										<line x1="0.823223" y1="24.8232" x2="24.8232" y2="0.823222" stroke="#323F5F" stroke-width="0.5"/>
-									</svg>
-								</div>
-								<div class="accordion__title str-text">Оля завозит первый товар под собственным брендом</div>
-								<div class="accordion__icon img-wrp">
-									<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<g filter="url(#filter0_b_2694_6402)">
-										<path d="M0.249998 18C0.249999 8.19695 8.19695 0.250001 18 0.250002C27.8031 0.250003 35.75 8.19695 35.75 18C35.75 27.8031 27.8031 35.75 18 35.75C8.19694 35.75 0.249997 27.8031 0.249998 18Z" stroke="url(#paint0_linear_2694_6402)" stroke-width="0.5"/>
-										</g>
-										<path d="M12 15L18 21L24 15" stroke="url(#paint1_linear_2694_6402)" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
-										<defs>
-										<filter id="filter0_b_2694_6402" x="-110" y="-110" width="256" height="256" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-										<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-										<feGaussianBlur in="BackgroundImageFix" stdDeviation="55"/>
-										<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2694_6402"/>
-										<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2694_6402" result="shape"/>
-										</filter>
-										<linearGradient id="paint0_linear_2694_6402" x1="18" y1="36" x2="18" y2="2.24109e-06" gradientUnits="userSpaceOnUse">
-										<stop stop-color="#212941"/>
-										<stop offset="0.469183" stop-color="#2C3A65"/>
-										<stop offset="1" stop-color="#272C3D"/>
-										</linearGradient>
-										<linearGradient id="paint1_linear_2694_6402" x1="18" y1="17.2143" x2="18" y2="19.3929" gradientUnits="userSpaceOnUse">
-										<stop stop-color="#EEEEEE"/>
-										<stop offset="0.51" stop-color="#C8DCF5"/>
-										<stop offset="1" stop-color="#CBD5E2"/>
-										</linearGradient>
-										</defs>
-									</svg>
-								</div>
-							</div>
-							<div class="accordion__content def-text">
-								Все этапы пройдены. Оля отыскала перспективную нишу. Нашла интересный товар и поставщика. Сделала дизайн упаковки. Вот уже завтра доделываются правки в инфографике. А товар будет принят на ВБ через два дня.
-								<br>
-								Оля рассчитала всё в притык. И деньги на самовыкупы должны были придти с продаж. Но в те ниши, куда она зашла первыми товарами, набежало много продавцов с идентичным товаром. И обрушили там цены. В итоге суммы, на которую Оля расчитывала вначале, у неё нет.
-								<br>
-								Но есть BBZ. Месячная подписка не ограничивает в количестве выкупов. И так как Оле нужно сделать 300 выкупов, — это уже экономия на самой услуге приблизительно в 2-4 раза. В зависимости от сервиса.
-								<br>
-								Забирать товар Оля решает сама. Но потом договаривается с другим пользователем BBZ из своего города делать это вместе. Что сильно сокращает расходы на курьера и высвобождает время.
-								<br>
-								Оля определяет место по одному не самому высокочастотному запросу. Которое даст ей приличные органические продажи. Начинает делать самовыкупы. Уже через неделю берёт это место. При этом сформировав первоначальное кол-во отзывов для доверия. Товар начинают покупать. Оля снижает количество выкупов по этому запросу и подключает основной запрос. Деньги выходят с Вайлдбериз и она сразу пускает их в дело.
-								<br>
-								Через две недели товар уже продаётся так, как Оля и не смела мечтать. В течении месяца она подтягивала небольшим количеством выкупов все целевые запросы и заняла по ним хорошие места.
-								<br>
-								Через два месяца не смотря на то, что Оля повышала цену. Товар заканчивается на площадке. Ещё раньше Оля заняла денег и уже заказала следующую партию. Но она будет на сайте не ранее чем через месяц.
-							</div>
-							<div class="accordion-line-decor img-wrp">
-								<img class="svg-web svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/accordion-line-decor.svg" alt="svg" loading="lazy">
-								<img class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/accordion-line-decor-mob.svg" alt="svg" loading="lazy">
-							</div>
-						</div>
-						<div class="accordion__item">
-							<div class="accordion__header">
-								<div class="accordion-left-decor img-wrp">
-									<svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<line x1="1.17678" y1="0.823223" x2="25.1768" y2="24.8232" stroke="#323F5F" stroke-width="0.5"/>
-										<line x1="0.823223" y1="24.8232" x2="24.8232" y2="0.823222" stroke="#323F5F" stroke-width="0.5"/>
-									</svg>
-								</div>
-								<div class="accordion__title str-text">Оля завозит первый товар под собственным брендом</div>
-								<div class="accordion__icon img-wrp">
-									<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<g filter="url(#filter0_b_2694_6402)">
-										<path d="M0.249998 18C0.249999 8.19695 8.19695 0.250001 18 0.250002C27.8031 0.250003 35.75 8.19695 35.75 18C35.75 27.8031 27.8031 35.75 18 35.75C8.19694 35.75 0.249997 27.8031 0.249998 18Z" stroke="url(#paint0_linear_2694_6402)" stroke-width="0.5"/>
-										</g>
-										<path d="M12 15L18 21L24 15" stroke="url(#paint1_linear_2694_6402)" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
-										<defs>
-										<filter id="filter0_b_2694_6402" x="-110" y="-110" width="256" height="256" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-										<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-										<feGaussianBlur in="BackgroundImageFix" stdDeviation="55"/>
-										<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2694_6402"/>
-										<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2694_6402" result="shape"/>
-										</filter>
-										<linearGradient id="paint0_linear_2694_6402" x1="18" y1="36" x2="18" y2="2.24109e-06" gradientUnits="userSpaceOnUse">
-										<stop stop-color="#212941"/>
-										<stop offset="0.469183" stop-color="#2C3A65"/>
-										<stop offset="1" stop-color="#272C3D"/>
-										</linearGradient>
-										<linearGradient id="paint1_linear_2694_6402" x1="18" y1="17.2143" x2="18" y2="19.3929" gradientUnits="userSpaceOnUse">
-										<stop stop-color="#EEEEEE"/>
-										<stop offset="0.51" stop-color="#C8DCF5"/>
-										<stop offset="1" stop-color="#CBD5E2"/>
-										</linearGradient>
-										</defs>
-									</svg>
-								</div>
-							</div>
-							<div class="accordion__content def-text">
-								Все этапы пройдены. Оля отыскала перспективную нишу. Нашла интересный товар и поставщика. Сделала дизайн упаковки. Вот уже завтра доделываются правки в инфографике. А товар будет принят на ВБ через два дня.
-								<br>
-								Оля рассчитала всё в притык. И деньги на самовыкупы должны были придти с продаж. Но в те ниши, куда она зашла первыми товарами, набежало много продавцов с идентичным товаром. И обрушили там цены. В итоге суммы, на которую Оля расчитывала вначале, у неё нет.
-								<br>
-								Но есть BBZ. Месячная подписка не ограничивает в количестве выкупов. И так как Оле нужно сделать 300 выкупов, — это уже экономия на самой услуге приблизительно в 2-4 раза. В зависимости от сервиса.
-								<br>
-								Забирать товар Оля решает сама. Но потом договаривается с другим пользователем BBZ из своего города делать это вместе. Что сильно сокращает расходы на курьера и высвобождает время.
-								<br>
-								Оля определяет место по одному не самому высокочастотному запросу. Которое даст ей приличные органические продажи. Начинает делать самовыкупы. Уже через неделю берёт это место. При этом сформировав первоначальное кол-во отзывов для доверия. Товар начинают покупать. Оля снижает количество выкупов по этому запросу и подключает основной запрос. Деньги выходят с Вайлдбериз и она сразу пускает их в дело.
-								<br>
-								Через две недели товар уже продаётся так, как Оля и не смела мечтать. В течении месяца она подтягивала небольшим количеством выкупов все целевые запросы и заняла по ним хорошие места.
-								<br>
-								Через два месяца не смотря на то, что Оля повышала цену. Товар заканчивается на площадке. Ещё раньше Оля заняла денег и уже заказала следующую партию. Но она будет на сайте не ранее чем через месяц.
-							</div>
-							<div class="accordion-line-decor img-wrp">
-								<img class="svg-web svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/accordion-line-decor.svg" alt="svg" loading="lazy">
-								<img class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/accordion-line-decor-mob.svg" alt="svg" loading="lazy">
-							</div>
-						</div>
-						<div class="accordion__item">
-							<div class="accordion__header">
-								<div class="accordion-left-decor img-wrp">
-									<svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<line x1="1.17678" y1="0.823223" x2="25.1768" y2="24.8232" stroke="#323F5F" stroke-width="0.5"/>
-										<line x1="0.823223" y1="24.8232" x2="24.8232" y2="0.823222" stroke="#323F5F" stroke-width="0.5"/>
-									</svg>
-								</div>
-								<div class="accordion__title str-text">Оля завозит первый товар под собственным брендом</div>
-								<div class="accordion__icon img-wrp">
-									<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<g filter="url(#filter0_b_2694_6402)">
-										<path d="M0.249998 18C0.249999 8.19695 8.19695 0.250001 18 0.250002C27.8031 0.250003 35.75 8.19695 35.75 18C35.75 27.8031 27.8031 35.75 18 35.75C8.19694 35.75 0.249997 27.8031 0.249998 18Z" stroke="url(#paint0_linear_2694_6402)" stroke-width="0.5"/>
-										</g>
-										<path d="M12 15L18 21L24 15" stroke="url(#paint1_linear_2694_6402)" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
-										<defs>
-										<filter id="filter0_b_2694_6402" x="-110" y="-110" width="256" height="256" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-										<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-										<feGaussianBlur in="BackgroundImageFix" stdDeviation="55"/>
-										<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2694_6402"/>
-										<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2694_6402" result="shape"/>
-										</filter>
-										<linearGradient id="paint0_linear_2694_6402" x1="18" y1="36" x2="18" y2="2.24109e-06" gradientUnits="userSpaceOnUse">
-										<stop stop-color="#212941"/>
-										<stop offset="0.469183" stop-color="#2C3A65"/>
-										<stop offset="1" stop-color="#272C3D"/>
-										</linearGradient>
-										<linearGradient id="paint1_linear_2694_6402" x1="18" y1="17.2143" x2="18" y2="19.3929" gradientUnits="userSpaceOnUse">
-										<stop stop-color="#EEEEEE"/>
-										<stop offset="0.51" stop-color="#C8DCF5"/>
-										<stop offset="1" stop-color="#CBD5E2"/>
-										</linearGradient>
-										</defs>
-									</svg>
-								</div>
-							</div>
-							<div class="accordion__content def-text">
-								Все этапы пройдены. Оля отыскала перспективную нишу. Нашла интересный товар и поставщика. Сделала дизайн упаковки. Вот уже завтра доделываются правки в инфографике. А товар будет принят на ВБ через два дня.
-								<br>
-								Оля рассчитала всё в притык. И деньги на самовыкупы должны были придти с продаж. Но в те ниши, куда она зашла первыми товарами, набежало много продавцов с идентичным товаром. И обрушили там цены. В итоге суммы, на которую Оля расчитывала вначале, у неё нет.
-								<br>
-								Но есть BBZ. Месячная подписка не ограничивает в количестве выкупов. И так как Оле нужно сделать 300 выкупов, — это уже экономия на самой услуге приблизительно в 2-4 раза. В зависимости от сервиса.
-								<br>
-								Забирать товар Оля решает сама. Но потом договаривается с другим пользователем BBZ из своего города делать это вместе. Что сильно сокращает расходы на курьера и высвобождает время.
-								<br>
-								Оля определяет место по одному не самому высокочастотному запросу. Которое даст ей приличные органические продажи. Начинает делать самовыкупы. Уже через неделю берёт это место. При этом сформировав первоначальное кол-во отзывов для доверия. Товар начинают покупать. Оля снижает количество выкупов по этому запросу и подключает основной запрос. Деньги выходят с Вайлдбериз и она сразу пускает их в дело.
-								<br>
-								Через две недели товар уже продаётся так, как Оля и не смела мечтать. В течении месяца она подтягивала небольшим количеством выкупов все целевые запросы и заняла по ним хорошие места.
-								<br>
-								Через два месяца не смотря на то, что Оля повышала цену. Товар заканчивается на площадке. Ещё раньше Оля заняла денег и уже заказала следующую партию. Но она будет на сайте не ранее чем через месяц.
-							</div>
-							<div class="accordion-line-decor img-wrp">
-								<img class="svg-web svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/accordion-line-decor.svg" alt="svg" loading="lazy">
-								<img class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/accordion-line-decor-mob.svg" alt="svg" loading="lazy">
-							</div>
-						</div>
+						<?php
+							$current_page = get_post();
+							$page_id = $current_page->ID;
+							$pod = pods('page', $page_id);
+							$field1 = $pod->field('how_works_menu_one_question_title');
+							$field2 = $pod->field('how_works_menu_one_question_text');
+							$index = 0;
+							if (!empty($field1)) { 
+								foreach ($field1 as $item) {
+									echo '<div class="accordion__item">';
+									echo '<div class="accordion__header">';
+									echo '<div class="accordion-left-decor img-wrp">';
+									echo '<svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="1.17678" y1="0.823223" x2="25.1768" y2="24.8232" stroke="#323F5F" stroke-width="0.5"/><line x1="0.823223" y1="24.8232" x2="24.8232" y2="0.823222" stroke="#323F5F" stroke-width="0.5"/></svg></div>';
+									echo '<div class="accordion__title str-text">'. $field1[$index] .'</div>';
+									echo '<div class="accordion__icon img-wrp">';
+									echo '<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(#filter0_b_2694_6402)"><path d="M0.249998 18C0.249999 8.19695 8.19695 0.250001 18 0.250002C27.8031 0.250003 35.75 8.19695 35.75 18C35.75 27.8031 27.8031 35.75 18 35.75C8.19694 35.75 0.249997 27.8031 0.249998 18Z" stroke="url(#paint0_linear_2694_6402)" stroke-width="0.5"/></g><path d="M12 15L18 21L24 15" stroke="url(#paint1_linear_2694_6402)" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/><defs><filter id="filter0_b_2694_6402" x="-110" y="-110" width="256" height="256" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feGaussianBlur in="BackgroundImageFix" stdDeviation="55"/><feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2694_6402"/><feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2694_6402" result="shape"/></filter><linearGradient id="paint0_linear_2694_6402" x1="18" y1="36" x2="18" y2="2.24109e-06" gradientUnits="userSpaceOnUse"><stop stop-color="#212941"/><stop offset="0.469183" stop-color="#2C3A65"/><stop offset="1" stop-color="#272C3D"/></linearGradient><linearGradient id="paint1_linear_2694_6402" x1="18" y1="17.2143" x2="18" y2="19.3929" gradientUnits="userSpaceOnUse"><stop stop-color="#EEEEEE"/><stop offset="0.51" stop-color="#C8DCF5"/><stop offset="1" stop-color="#CBD5E2"/></linearGradient></defs></svg></div></div>';
+									echo '<div class="accordion__content def-text">' . $field2[$index] . '</div>';
+									echo '<div class="accordion-line-decor img-wrp">';
+									echo '<img class="svg-web svg-tab" src="' . get_template_directory_uri() . '/assets/img/accordion-line-decor.svg" alt="svg" loading="lazy">';
+									echo '<img class="svg-mob" src="' . get_template_directory_uri() . '/assets/img/accordion-line-decor-mob.svg" alt="svg" loading="lazy">';
+									echo '</div></div>';
+									$index++;
+								}
+							}
+							?>
 					</div>
 				</div>
 			</section>
 			<section class="s14 s14-modifi s14_2">
 				<div class="s14__container container">
+				<div class="s14__container container">
 					<div class="accordion">
-						<div class="accordion__item">
-							<div class="accordion__header">
-								<div class="accordion-left-decor img-wrp">
-									<svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<line x1="1.17678" y1="0.823223" x2="25.1768" y2="24.8232" stroke="#323F5F" stroke-width="0.5"/>
-										<line x1="0.823223" y1="24.8232" x2="24.8232" y2="0.823222" stroke="#323F5F" stroke-width="0.5"/>
-									</svg>
-								</div>
-								<div class="accordion__title str-text">Оля завозит первый товар под собственным брендом</div>
-								<div class="accordion__icon img-wrp">
-									<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<g filter="url(#filter0_b_2694_6402)">
-										<path d="M0.249998 18C0.249999 8.19695 8.19695 0.250001 18 0.250002C27.8031 0.250003 35.75 8.19695 35.75 18C35.75 27.8031 27.8031 35.75 18 35.75C8.19694 35.75 0.249997 27.8031 0.249998 18Z" stroke="url(#paint0_linear_2694_6402)" stroke-width="0.5"/>
-										</g>
-										<path d="M12 15L18 21L24 15" stroke="url(#paint1_linear_2694_6402)" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
-										<defs>
-										<filter id="filter0_b_2694_6402" x="-110" y="-110" width="256" height="256" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-										<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-										<feGaussianBlur in="BackgroundImageFix" stdDeviation="55"/>
-										<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2694_6402"/>
-										<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2694_6402" result="shape"/>
-										</filter>
-										<linearGradient id="paint0_linear_2694_6402" x1="18" y1="36" x2="18" y2="2.24109e-06" gradientUnits="userSpaceOnUse">
-										<stop stop-color="#212941"/>
-										<stop offset="0.469183" stop-color="#2C3A65"/>
-										<stop offset="1" stop-color="#272C3D"/>
-										</linearGradient>
-										<linearGradient id="paint1_linear_2694_6402" x1="18" y1="17.2143" x2="18" y2="19.3929" gradientUnits="userSpaceOnUse">
-										<stop stop-color="#EEEEEE"/>
-										<stop offset="0.51" stop-color="#C8DCF5"/>
-										<stop offset="1" stop-color="#CBD5E2"/>
-										</linearGradient>
-										</defs>
-									</svg>
-								</div>
-							</div>
-							<div class="accordion__content def-text">
-								Все этапы пройдены. Оля отыскала перспективную нишу. Нашла интересный товар и поставщика. Сделала дизайн упаковки. Вот уже завтра доделываются правки в инфографике. А товар будет принят на ВБ через два дня.
-								<br>
-								Оля рассчитала всё в притык. И деньги на самовыкупы должны были придти с продаж. Но в те ниши, куда она зашла первыми товарами, набежало много продавцов с идентичным товаром. И обрушили там цены. В итоге суммы, на которую Оля расчитывала вначале, у неё нет.
-								<br>
-								Но есть BBZ. Месячная подписка не ограничивает в количестве выкупов. И так как Оле нужно сделать 300 выкупов, — это уже экономия на самой услуге приблизительно в 2-4 раза. В зависимости от сервиса.
-								<br>
-								Забирать товар Оля решает сама. Но потом договаривается с другим пользователем BBZ из своего города делать это вместе. Что сильно сокращает расходы на курьера и высвобождает время.
-								<br>
-								Оля определяет место по одному не самому высокочастотному запросу. Которое даст ей приличные органические продажи. Начинает делать самовыкупы. Уже через неделю берёт это место. При этом сформировав первоначальное кол-во отзывов для доверия. Товар начинают покупать. Оля снижает количество выкупов по этому запросу и подключает основной запрос. Деньги выходят с Вайлдбериз и она сразу пускает их в дело.
-								<br>
-								Через две недели товар уже продаётся так, как Оля и не смела мечтать. В течении месяца она подтягивала небольшим количеством выкупов все целевые запросы и заняла по ним хорошие места.
-								<br>
-								Через два месяца не смотря на то, что Оля повышала цену. Товар заканчивается на площадке. Ещё раньше Оля заняла денег и уже заказала следующую партию. Но она будет на сайте не ранее чем через месяц.
-							</div>
-							<div class="accordion-line-decor img-wrp">
-								<img class="svg-web svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/accordion-line-decor.svg" alt="svg" loading="lazy">
-								<img class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/accordion-line-decor-mob.svg" alt="svg" loading="lazy">
-							</div>
-						</div>
-						<div class="accordion__item">
-							<div class="accordion__header">
-								<div class="accordion-left-decor img-wrp">
-									<svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<line x1="1.17678" y1="0.823223" x2="25.1768" y2="24.8232" stroke="#323F5F" stroke-width="0.5"/>
-										<line x1="0.823223" y1="24.8232" x2="24.8232" y2="0.823222" stroke="#323F5F" stroke-width="0.5"/>
-									</svg>
-								</div>
-								<div class="accordion__title str-text">Оля завозит первый товар под собственным брендом</div>
-								<div class="accordion__icon img-wrp">
-									<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<g filter="url(#filter0_b_2694_6402)">
-										<path d="M0.249998 18C0.249999 8.19695 8.19695 0.250001 18 0.250002C27.8031 0.250003 35.75 8.19695 35.75 18C35.75 27.8031 27.8031 35.75 18 35.75C8.19694 35.75 0.249997 27.8031 0.249998 18Z" stroke="url(#paint0_linear_2694_6402)" stroke-width="0.5"/>
-										</g>
-										<path d="M12 15L18 21L24 15" stroke="url(#paint1_linear_2694_6402)" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
-										<defs>
-										<filter id="filter0_b_2694_6402" x="-110" y="-110" width="256" height="256" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-										<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-										<feGaussianBlur in="BackgroundImageFix" stdDeviation="55"/>
-										<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2694_6402"/>
-										<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2694_6402" result="shape"/>
-										</filter>
-										<linearGradient id="paint0_linear_2694_6402" x1="18" y1="36" x2="18" y2="2.24109e-06" gradientUnits="userSpaceOnUse">
-										<stop stop-color="#212941"/>
-										<stop offset="0.469183" stop-color="#2C3A65"/>
-										<stop offset="1" stop-color="#272C3D"/>
-										</linearGradient>
-										<linearGradient id="paint1_linear_2694_6402" x1="18" y1="17.2143" x2="18" y2="19.3929" gradientUnits="userSpaceOnUse">
-										<stop stop-color="#EEEEEE"/>
-										<stop offset="0.51" stop-color="#C8DCF5"/>
-										<stop offset="1" stop-color="#CBD5E2"/>
-										</linearGradient>
-										</defs>
-									</svg>
-								</div>
-							</div>
-							<div class="accordion__content def-text">
-								Все этапы пройдены. Оля отыскала перспективную нишу. Нашла интересный товар и поставщика. Сделала дизайн упаковки. Вот уже завтра доделываются правки в инфографике. А товар будет принят на ВБ через два дня.
-								<br>
-								Оля рассчитала всё в притык. И деньги на самовыкупы должны были придти с продаж. Но в те ниши, куда она зашла первыми товарами, набежало много продавцов с идентичным товаром. И обрушили там цены. В итоге суммы, на которую Оля расчитывала вначале, у неё нет.
-								<br>
-								Но есть BBZ. Месячная подписка не ограничивает в количестве выкупов. И так как Оле нужно сделать 300 выкупов, — это уже экономия на самой услуге приблизительно в 2-4 раза. В зависимости от сервиса.
-								<br>
-								Забирать товар Оля решает сама. Но потом договаривается с другим пользователем BBZ из своего города делать это вместе. Что сильно сокращает расходы на курьера и высвобождает время.
-								<br>
-								Оля определяет место по одному не самому высокочастотному запросу. Которое даст ей приличные органические продажи. Начинает делать самовыкупы. Уже через неделю берёт это место. При этом сформировав первоначальное кол-во отзывов для доверия. Товар начинают покупать. Оля снижает количество выкупов по этому запросу и подключает основной запрос. Деньги выходят с Вайлдбериз и она сразу пускает их в дело.
-								<br>
-								Через две недели товар уже продаётся так, как Оля и не смела мечтать. В течении месяца она подтягивала небольшим количеством выкупов все целевые запросы и заняла по ним хорошие места.
-								<br>
-								Через два месяца не смотря на то, что Оля повышала цену. Товар заканчивается на площадке. Ещё раньше Оля заняла денег и уже заказала следующую партию. Но она будет на сайте не ранее чем через месяц.
-							</div>
-							<div class="accordion-line-decor img-wrp">
-								<img class="svg-web svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/accordion-line-decor.svg" alt="svg" loading="lazy">
-								<img class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/accordion-line-decor-mob.svg" alt="svg" loading="lazy">
-							</div>
-						</div>
-						<div class="accordion__item">
-							<div class="accordion__header">
-								<div class="accordion-left-decor img-wrp">
-									<svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<line x1="1.17678" y1="0.823223" x2="25.1768" y2="24.8232" stroke="#323F5F" stroke-width="0.5"/>
-										<line x1="0.823223" y1="24.8232" x2="24.8232" y2="0.823222" stroke="#323F5F" stroke-width="0.5"/>
-									</svg>
-								</div>
-								<div class="accordion__title str-text">Оля завозит первый товар под собственным брендом</div>
-								<div class="accordion__icon img-wrp">
-									<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<g filter="url(#filter0_b_2694_6402)">
-										<path d="M0.249998 18C0.249999 8.19695 8.19695 0.250001 18 0.250002C27.8031 0.250003 35.75 8.19695 35.75 18C35.75 27.8031 27.8031 35.75 18 35.75C8.19694 35.75 0.249997 27.8031 0.249998 18Z" stroke="url(#paint0_linear_2694_6402)" stroke-width="0.5"/>
-										</g>
-										<path d="M12 15L18 21L24 15" stroke="url(#paint1_linear_2694_6402)" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
-										<defs>
-										<filter id="filter0_b_2694_6402" x="-110" y="-110" width="256" height="256" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-										<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-										<feGaussianBlur in="BackgroundImageFix" stdDeviation="55"/>
-										<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2694_6402"/>
-										<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2694_6402" result="shape"/>
-										</filter>
-										<linearGradient id="paint0_linear_2694_6402" x1="18" y1="36" x2="18" y2="2.24109e-06" gradientUnits="userSpaceOnUse">
-										<stop stop-color="#212941"/>
-										<stop offset="0.469183" stop-color="#2C3A65"/>
-										<stop offset="1" stop-color="#272C3D"/>
-										</linearGradient>
-										<linearGradient id="paint1_linear_2694_6402" x1="18" y1="17.2143" x2="18" y2="19.3929" gradientUnits="userSpaceOnUse">
-										<stop stop-color="#EEEEEE"/>
-										<stop offset="0.51" stop-color="#C8DCF5"/>
-										<stop offset="1" stop-color="#CBD5E2"/>
-										</linearGradient>
-										</defs>
-									</svg>
-								</div>
-							</div>
-							<div class="accordion__content def-text">
-								Все этапы пройдены. Оля отыскала перспективную нишу. Нашла интересный товар и поставщика. Сделала дизайн упаковки. Вот уже завтра доделываются правки в инфографике. А товар будет принят на ВБ через два дня.
-								<br>
-								Оля рассчитала всё в притык. И деньги на самовыкупы должны были придти с продаж. Но в те ниши, куда она зашла первыми товарами, набежало много продавцов с идентичным товаром. И обрушили там цены. В итоге суммы, на которую Оля расчитывала вначале, у неё нет.
-								<br>
-								Но есть BBZ. Месячная подписка не ограничивает в количестве выкупов. И так как Оле нужно сделать 300 выкупов, — это уже экономия на самой услуге приблизительно в 2-4 раза. В зависимости от сервиса.
-								<br>
-								Забирать товар Оля решает сама. Но потом договаривается с другим пользователем BBZ из своего города делать это вместе. Что сильно сокращает расходы на курьера и высвобождает время.
-								<br>
-								Оля определяет место по одному не самому высокочастотному запросу. Которое даст ей приличные органические продажи. Начинает делать самовыкупы. Уже через неделю берёт это место. При этом сформировав первоначальное кол-во отзывов для доверия. Товар начинают покупать. Оля снижает количество выкупов по этому запросу и подключает основной запрос. Деньги выходят с Вайлдбериз и она сразу пускает их в дело.
-								<br>
-								Через две недели товар уже продаётся так, как Оля и не смела мечтать. В течении месяца она подтягивала небольшим количеством выкупов все целевые запросы и заняла по ним хорошие места.
-								<br>
-								Через два месяца не смотря на то, что Оля повышала цену. Товар заканчивается на площадке. Ещё раньше Оля заняла денег и уже заказала следующую партию. Но она будет на сайте не ранее чем через месяц.
-							</div>
-							<div class="accordion-line-decor img-wrp">
-								<img class="svg-web svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/accordion-line-decor.svg" alt="svg" loading="lazy">
-								<img class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/accordion-line-decor-mob.svg" alt="svg" loading="lazy">
-							</div>
-						</div>
+						<?php
+							$current_page = get_post();
+							$page_id = $current_page->ID;
+							$pod = pods('page', $page_id);
+							$field1 = $pod->field('how_works_menu_two_question_title');
+							$field2 = $pod->field('how_works_menu_two_question_text');
+							$index = 0;
+							if (!empty($field1)) { 
+								foreach ($field1 as $item) {
+									echo '<div class="accordion__item">';
+									echo '<div class="accordion__header">';
+									echo '<div class="accordion-left-decor img-wrp">';
+									echo '<svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="1.17678" y1="0.823223" x2="25.1768" y2="24.8232" stroke="#323F5F" stroke-width="0.5"/><line x1="0.823223" y1="24.8232" x2="24.8232" y2="0.823222" stroke="#323F5F" stroke-width="0.5"/></svg></div>';
+									echo '<div class="accordion__title str-text">'. $field1[$index] .'</div>';
+									echo '<div class="accordion__icon img-wrp">';
+									echo '<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(#filter0_b_2694_6402)"><path d="M0.249998 18C0.249999 8.19695 8.19695 0.250001 18 0.250002C27.8031 0.250003 35.75 8.19695 35.75 18C35.75 27.8031 27.8031 35.75 18 35.75C8.19694 35.75 0.249997 27.8031 0.249998 18Z" stroke="url(#paint0_linear_2694_6402)" stroke-width="0.5"/></g><path d="M12 15L18 21L24 15" stroke="url(#paint1_linear_2694_6402)" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/><defs><filter id="filter0_b_2694_6402" x="-110" y="-110" width="256" height="256" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feGaussianBlur in="BackgroundImageFix" stdDeviation="55"/><feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2694_6402"/><feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2694_6402" result="shape"/></filter><linearGradient id="paint0_linear_2694_6402" x1="18" y1="36" x2="18" y2="2.24109e-06" gradientUnits="userSpaceOnUse"><stop stop-color="#212941"/><stop offset="0.469183" stop-color="#2C3A65"/><stop offset="1" stop-color="#272C3D"/></linearGradient><linearGradient id="paint1_linear_2694_6402" x1="18" y1="17.2143" x2="18" y2="19.3929" gradientUnits="userSpaceOnUse"><stop stop-color="#EEEEEE"/><stop offset="0.51" stop-color="#C8DCF5"/><stop offset="1" stop-color="#CBD5E2"/></linearGradient></defs></svg></div></div>';
+									echo '<div class="accordion__content def-text">' . $field2[$index] . '</div>';
+									echo '<div class="accordion-line-decor img-wrp">';
+									echo '<img class="svg-web svg-tab" src="' . get_template_directory_uri() . '/assets/img/accordion-line-decor.svg" alt="svg" loading="lazy">';
+									echo '<img class="svg-mob" src="' . get_template_directory_uri() . '/assets/img/accordion-line-decor-mob.svg" alt="svg" loading="lazy">';
+									echo '</div></div>';
+									$index++;
+								}
+							}
+							?>
 					</div>
+				</div>
 				</div>
 			</section>
 			<section class="s14 s14-modifi s14_3">
 				<div class="s14__container container">
-					<div class="accordion">
-						<div class="accordion__item">
-							<div class="accordion__header">
-								<div class="accordion-left-decor img-wrp">
-									<svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<line x1="1.17678" y1="0.823223" x2="25.1768" y2="24.8232" stroke="#323F5F" stroke-width="0.5"/>
-										<line x1="0.823223" y1="24.8232" x2="24.8232" y2="0.823222" stroke="#323F5F" stroke-width="0.5"/>
-									</svg>
-								</div>
-								<div class="accordion__title str-text">Оля завозит первый товар под собственным брендом</div>
-								<div class="accordion__icon img-wrp">
-									<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<g filter="url(#filter0_b_2694_6402)">
-										<path d="M0.249998 18C0.249999 8.19695 8.19695 0.250001 18 0.250002C27.8031 0.250003 35.75 8.19695 35.75 18C35.75 27.8031 27.8031 35.75 18 35.75C8.19694 35.75 0.249997 27.8031 0.249998 18Z" stroke="url(#paint0_linear_2694_6402)" stroke-width="0.5"/>
-										</g>
-										<path d="M12 15L18 21L24 15" stroke="url(#paint1_linear_2694_6402)" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
-										<defs>
-										<filter id="filter0_b_2694_6402" x="-110" y="-110" width="256" height="256" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-										<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-										<feGaussianBlur in="BackgroundImageFix" stdDeviation="55"/>
-										<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2694_6402"/>
-										<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2694_6402" result="shape"/>
-										</filter>
-										<linearGradient id="paint0_linear_2694_6402" x1="18" y1="36" x2="18" y2="2.24109e-06" gradientUnits="userSpaceOnUse">
-										<stop stop-color="#212941"/>
-										<stop offset="0.469183" stop-color="#2C3A65"/>
-										<stop offset="1" stop-color="#272C3D"/>
-										</linearGradient>
-										<linearGradient id="paint1_linear_2694_6402" x1="18" y1="17.2143" x2="18" y2="19.3929" gradientUnits="userSpaceOnUse">
-										<stop stop-color="#EEEEEE"/>
-										<stop offset="0.51" stop-color="#C8DCF5"/>
-										<stop offset="1" stop-color="#CBD5E2"/>
-										</linearGradient>
-										</defs>
-									</svg>
-								</div>
-							</div>
-							<div class="accordion__content def-text">
-								Все этапы пройдены. Оля отыскала перспективную нишу. Нашла интересный товар и поставщика. Сделала дизайн упаковки. Вот уже завтра доделываются правки в инфографике. А товар будет принят на ВБ через два дня.
-								<br>
-								Оля рассчитала всё в притык. И деньги на самовыкупы должны были придти с продаж. Но в те ниши, куда она зашла первыми товарами, набежало много продавцов с идентичным товаром. И обрушили там цены. В итоге суммы, на которую Оля расчитывала вначале, у неё нет.
-								<br>
-								Но есть BBZ. Месячная подписка не ограничивает в количестве выкупов. И так как Оле нужно сделать 300 выкупов, — это уже экономия на самой услуге приблизительно в 2-4 раза. В зависимости от сервиса.
-								<br>
-								Забирать товар Оля решает сама. Но потом договаривается с другим пользователем BBZ из своего города делать это вместе. Что сильно сокращает расходы на курьера и высвобождает время.
-								<br>
-								Оля определяет место по одному не самому высокочастотному запросу. Которое даст ей приличные органические продажи. Начинает делать самовыкупы. Уже через неделю берёт это место. При этом сформировав первоначальное кол-во отзывов для доверия. Товар начинают покупать. Оля снижает количество выкупов по этому запросу и подключает основной запрос. Деньги выходят с Вайлдбериз и она сразу пускает их в дело.
-								<br>
-								Через две недели товар уже продаётся так, как Оля и не смела мечтать. В течении месяца она подтягивала небольшим количеством выкупов все целевые запросы и заняла по ним хорошие места.
-								<br>
-								Через два месяца не смотря на то, что Оля повышала цену. Товар заканчивается на площадке. Ещё раньше Оля заняла денег и уже заказала следующую партию. Но она будет на сайте не ранее чем через месяц.
-							</div>
-							<div class="accordion-line-decor img-wrp">
-								<img class="svg-web svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/accordion-line-decor.svg" alt="svg" loading="lazy">
-								<img class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/accordion-line-decor-mob.svg" alt="svg" loading="lazy">
-							</div>
-						</div>
-						<div class="accordion__item">
-							<div class="accordion__header">
-								<div class="accordion-left-decor img-wrp">
-									<svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<line x1="1.17678" y1="0.823223" x2="25.1768" y2="24.8232" stroke="#323F5F" stroke-width="0.5"/>
-										<line x1="0.823223" y1="24.8232" x2="24.8232" y2="0.823222" stroke="#323F5F" stroke-width="0.5"/>
-									</svg>
-								</div>
-								<div class="accordion__title str-text">Оля завозит первый товар под собственным брендом</div>
-								<div class="accordion__icon img-wrp">
-									<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<g filter="url(#filter0_b_2694_6402)">
-										<path d="M0.249998 18C0.249999 8.19695 8.19695 0.250001 18 0.250002C27.8031 0.250003 35.75 8.19695 35.75 18C35.75 27.8031 27.8031 35.75 18 35.75C8.19694 35.75 0.249997 27.8031 0.249998 18Z" stroke="url(#paint0_linear_2694_6402)" stroke-width="0.5"/>
-										</g>
-										<path d="M12 15L18 21L24 15" stroke="url(#paint1_linear_2694_6402)" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
-										<defs>
-										<filter id="filter0_b_2694_6402" x="-110" y="-110" width="256" height="256" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-										<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-										<feGaussianBlur in="BackgroundImageFix" stdDeviation="55"/>
-										<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2694_6402"/>
-										<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2694_6402" result="shape"/>
-										</filter>
-										<linearGradient id="paint0_linear_2694_6402" x1="18" y1="36" x2="18" y2="2.24109e-06" gradientUnits="userSpaceOnUse">
-										<stop stop-color="#212941"/>
-										<stop offset="0.469183" stop-color="#2C3A65"/>
-										<stop offset="1" stop-color="#272C3D"/>
-										</linearGradient>
-										<linearGradient id="paint1_linear_2694_6402" x1="18" y1="17.2143" x2="18" y2="19.3929" gradientUnits="userSpaceOnUse">
-										<stop stop-color="#EEEEEE"/>
-										<stop offset="0.51" stop-color="#C8DCF5"/>
-										<stop offset="1" stop-color="#CBD5E2"/>
-										</linearGradient>
-										</defs>
-									</svg>
-								</div>
-							</div>
-							<div class="accordion__content def-text">
-								Все этапы пройдены. Оля отыскала перспективную нишу. Нашла интересный товар и поставщика. Сделала дизайн упаковки. Вот уже завтра доделываются правки в инфографике. А товар будет принят на ВБ через два дня.
-								<br>
-								Оля рассчитала всё в притык. И деньги на самовыкупы должны были придти с продаж. Но в те ниши, куда она зашла первыми товарами, набежало много продавцов с идентичным товаром. И обрушили там цены. В итоге суммы, на которую Оля расчитывала вначале, у неё нет.
-								<br>
-								Но есть BBZ. Месячная подписка не ограничивает в количестве выкупов. И так как Оле нужно сделать 300 выкупов, — это уже экономия на самой услуге приблизительно в 2-4 раза. В зависимости от сервиса.
-								<br>
-								Забирать товар Оля решает сама. Но потом договаривается с другим пользователем BBZ из своего города делать это вместе. Что сильно сокращает расходы на курьера и высвобождает время.
-								<br>
-								Оля определяет место по одному не самому высокочастотному запросу. Которое даст ей приличные органические продажи. Начинает делать самовыкупы. Уже через неделю берёт это место. При этом сформировав первоначальное кол-во отзывов для доверия. Товар начинают покупать. Оля снижает количество выкупов по этому запросу и подключает основной запрос. Деньги выходят с Вайлдбериз и она сразу пускает их в дело.
-								<br>
-								Через две недели товар уже продаётся так, как Оля и не смела мечтать. В течении месяца она подтягивала небольшим количеством выкупов все целевые запросы и заняла по ним хорошие места.
-								<br>
-								Через два месяца не смотря на то, что Оля повышала цену. Товар заканчивается на площадке. Ещё раньше Оля заняла денег и уже заказала следующую партию. Но она будет на сайте не ранее чем через месяц.
-							</div>
-							<div class="accordion-line-decor img-wrp">
-								<img class="svg-web svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/accordion-line-decor.svg" alt="svg" loading="lazy">
-								<img class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/accordion-line-decor-mob.svg" alt="svg" loading="lazy">
-							</div>
-						</div>
-						<div class="accordion__item">
-							<div class="accordion__header">
-								<div class="accordion-left-decor img-wrp">
-									<svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<line x1="1.17678" y1="0.823223" x2="25.1768" y2="24.8232" stroke="#323F5F" stroke-width="0.5"/>
-										<line x1="0.823223" y1="24.8232" x2="24.8232" y2="0.823222" stroke="#323F5F" stroke-width="0.5"/>
-									</svg>
-								</div>
-								<div class="accordion__title str-text">Оля завозит первый товар под собственным брендом</div>
-								<div class="accordion__icon img-wrp">
-									<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<g filter="url(#filter0_b_2694_6402)">
-										<path d="M0.249998 18C0.249999 8.19695 8.19695 0.250001 18 0.250002C27.8031 0.250003 35.75 8.19695 35.75 18C35.75 27.8031 27.8031 35.75 18 35.75C8.19694 35.75 0.249997 27.8031 0.249998 18Z" stroke="url(#paint0_linear_2694_6402)" stroke-width="0.5"/>
-										</g>
-										<path d="M12 15L18 21L24 15" stroke="url(#paint1_linear_2694_6402)" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
-										<defs>
-										<filter id="filter0_b_2694_6402" x="-110" y="-110" width="256" height="256" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-										<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-										<feGaussianBlur in="BackgroundImageFix" stdDeviation="55"/>
-										<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2694_6402"/>
-										<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2694_6402" result="shape"/>
-										</filter>
-										<linearGradient id="paint0_linear_2694_6402" x1="18" y1="36" x2="18" y2="2.24109e-06" gradientUnits="userSpaceOnUse">
-										<stop stop-color="#212941"/>
-										<stop offset="0.469183" stop-color="#2C3A65"/>
-										<stop offset="1" stop-color="#272C3D"/>
-										</linearGradient>
-										<linearGradient id="paint1_linear_2694_6402" x1="18" y1="17.2143" x2="18" y2="19.3929" gradientUnits="userSpaceOnUse">
-										<stop stop-color="#EEEEEE"/>
-										<stop offset="0.51" stop-color="#C8DCF5"/>
-										<stop offset="1" stop-color="#CBD5E2"/>
-										</linearGradient>
-										</defs>
-									</svg>
-								</div>
-							</div>
-							<div class="accordion__content def-text">
-								Все этапы пройдены. Оля отыскала перспективную нишу. Нашла интересный товар и поставщика. Сделала дизайн упаковки. Вот уже завтра доделываются правки в инфографике. А товар будет принят на ВБ через два дня.
-								<br>
-								Оля рассчитала всё в притык. И деньги на самовыкупы должны были придти с продаж. Но в те ниши, куда она зашла первыми товарами, набежало много продавцов с идентичным товаром. И обрушили там цены. В итоге суммы, на которую Оля расчитывала вначале, у неё нет.
-								<br>
-								Но есть BBZ. Месячная подписка не ограничивает в количестве выкупов. И так как Оле нужно сделать 300 выкупов, — это уже экономия на самой услуге приблизительно в 2-4 раза. В зависимости от сервиса.
-								<br>
-								Забирать товар Оля решает сама. Но потом договаривается с другим пользователем BBZ из своего города делать это вместе. Что сильно сокращает расходы на курьера и высвобождает время.
-								<br>
-								Оля определяет место по одному не самому высокочастотному запросу. Которое даст ей приличные органические продажи. Начинает делать самовыкупы. Уже через неделю берёт это место. При этом сформировав первоначальное кол-во отзывов для доверия. Товар начинают покупать. Оля снижает количество выкупов по этому запросу и подключает основной запрос. Деньги выходят с Вайлдбериз и она сразу пускает их в дело.
-								<br>
-								Через две недели товар уже продаётся так, как Оля и не смела мечтать. В течении месяца она подтягивала небольшим количеством выкупов все целевые запросы и заняла по ним хорошие места.
-								<br>
-								Через два месяца не смотря на то, что Оля повышала цену. Товар заканчивается на площадке. Ещё раньше Оля заняла денег и уже заказала следующую партию. Но она будет на сайте не ранее чем через месяц.
-							</div>
-							<div class="accordion-line-decor img-wrp">
-								<img class="svg-web svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/accordion-line-decor.svg" alt="svg" loading="lazy">
-								<img class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/accordion-line-decor-mob.svg" alt="svg" loading="lazy">
-							</div>
-						</div>
+				<div class="accordion">
+						<?php
+							$current_page = get_post();
+							$page_id = $current_page->ID;
+							$pod = pods('page', $page_id);
+							$field1 = $pod->field('how_works_menu_three_question_title');
+							$field2 = $pod->field('how_works_menu_three_question_text');
+							$index = 0;
+							if (!empty($field1)) { 
+								foreach ($field1 as $item) {
+									echo '<div class="accordion__item">';
+									echo '<div class="accordion__header">';
+									echo '<div class="accordion-left-decor img-wrp">';
+									echo '<svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="1.17678" y1="0.823223" x2="25.1768" y2="24.8232" stroke="#323F5F" stroke-width="0.5"/><line x1="0.823223" y1="24.8232" x2="24.8232" y2="0.823222" stroke="#323F5F" stroke-width="0.5"/></svg></div>';
+									echo '<div class="accordion__title str-text">'. $field1[$index] .'</div>';
+									echo '<div class="accordion__icon img-wrp">';
+									echo '<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(#filter0_b_2694_6402)"><path d="M0.249998 18C0.249999 8.19695 8.19695 0.250001 18 0.250002C27.8031 0.250003 35.75 8.19695 35.75 18C35.75 27.8031 27.8031 35.75 18 35.75C8.19694 35.75 0.249997 27.8031 0.249998 18Z" stroke="url(#paint0_linear_2694_6402)" stroke-width="0.5"/></g><path d="M12 15L18 21L24 15" stroke="url(#paint1_linear_2694_6402)" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/><defs><filter id="filter0_b_2694_6402" x="-110" y="-110" width="256" height="256" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feGaussianBlur in="BackgroundImageFix" stdDeviation="55"/><feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2694_6402"/><feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2694_6402" result="shape"/></filter><linearGradient id="paint0_linear_2694_6402" x1="18" y1="36" x2="18" y2="2.24109e-06" gradientUnits="userSpaceOnUse"><stop stop-color="#212941"/><stop offset="0.469183" stop-color="#2C3A65"/><stop offset="1" stop-color="#272C3D"/></linearGradient><linearGradient id="paint1_linear_2694_6402" x1="18" y1="17.2143" x2="18" y2="19.3929" gradientUnits="userSpaceOnUse"><stop stop-color="#EEEEEE"/><stop offset="0.51" stop-color="#C8DCF5"/><stop offset="1" stop-color="#CBD5E2"/></linearGradient></defs></svg></div></div>';
+									echo '<div class="accordion__content def-text">' . $field2[$index] . '</div>';
+									echo '<div class="accordion-line-decor img-wrp">';
+									echo '<img class="svg-web svg-tab" src="' . get_template_directory_uri() . '/assets/img/accordion-line-decor.svg" alt="svg" loading="lazy">';
+									echo '<img class="svg-mob" src="' . get_template_directory_uri() . '/assets/img/accordion-line-decor-mob.svg" alt="svg" loading="lazy">';
+									echo '</div></div>';
+									$index++;
+								}
+							}
+							?>
 					</div>
 				</div>
 			</section>
