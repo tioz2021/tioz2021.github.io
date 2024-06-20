@@ -191,17 +191,125 @@ Template Name: Page Post
 						<a href="<?php get_permalink(); ?>#blog_title2" class="pps1__nav-link def-text"><?php echo get_post_meta(get_the_ID(), 'blog_title2', true);?></a>
 						<a href="<?php get_permalink(); ?>#blog_title3" class="pps1__nav-link def-text"><?php echo get_post_meta(get_the_ID(), 'blog_title3', true);?></a>
 					</div>
-					
-					<div class="post-content">
+
+					<div class="pps1__text def-text">
+						<?php echo get_post_meta(get_the_ID(), 'blog_text_main', true);?>
+					</div>
+
+					<div class="pps1__img img-wrp">
 						<?php
-							// Получаем контент записи
-							$content = get_the_content(null, false, $post_id);
-							
-							// Выводим контент
-							echo apply_filters('the_content', $content);
+							$current_page = get_post();
+							$page_id = $current_page->ID;
+							$pod = pods('post', $page_id);
+							$image_field = $pod->field('blog_img2');
+							if (!empty($image_field)) {
+								$image_url = wp_get_attachment_url($image_field['ID']);
+								echo '<img src="' . $image_url . '" alt="icon">';
+							}
 						?>
 					</div>
 
+					<div class="pps1__text-title def-title" id="blog_title1" ><?php echo get_post_meta(get_the_ID(), 'blog_title1', true);?></div>
+
+					<div class="pps1__text pps1__text2 def-text">
+						<?php echo get_post_meta(get_the_ID(), 'blog_text1', true);?>
+					</div>
+
+					<div class="pps1__text-desk str-text"><?php echo get_post_meta(get_the_ID(), 'blog_desk1', true);?></div>
+					<div class="pps1__text pps1__text3 def-text">
+						<?php echo get_post_meta(get_the_ID(), 'blog_desk1_text1', true);?>
+					</div>
+
+					<div class="pps1__text pps1__text4 def-text">
+						<?php echo get_post_meta(get_the_ID(), 'blog_desk1_text2', true);?>
+					</div>
+
+					<div class="pps1__text pps1__text-bg-block str-text">
+						<?php echo get_post_meta(get_the_ID(), 'blog_desk1_important_text', true);?>
+						<div class="pps1__text-bg img-wrp">
+							<svg class="svg-web" width="800" height="190" viewBox="0 0 800 190" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g filter="url(#filter0_b_2728_6329)">
+								<rect width="800" height="190" rx="24" fill="url(#paint0_linear_2728_6329)"/>
+								<rect x="0.25" y="0.25" width="799.5" height="189.5" rx="23.75" stroke="url(#paint1_linear_2728_6329)" stroke-width="0.5"/>
+								</g>
+								<defs>
+								<filter id="filter0_b_2728_6329" x="-110" y="-110" width="1020" height="410" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+								<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+								<feGaussianBlur in="BackgroundImageFix" stdDeviation="55"/>
+								<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2728_6329"/>
+								<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2728_6329" result="shape"/>
+								</filter>
+								<linearGradient id="paint0_linear_2728_6329" x1="400" y1="0" x2="400" y2="190" gradientUnits="userSpaceOnUse">
+								<stop stop-color="#131829"/>
+								<stop offset="1" stop-color="#0C0E1A"/>
+								</linearGradient>
+								<linearGradient id="paint1_linear_2728_6329" x1="400" y1="0" x2="400" y2="190" gradientUnits="userSpaceOnUse">
+								<stop stop-color="#212941"/>
+								<stop offset="0.469183" stop-color="#2C3A65"/>
+								<stop offset="1" stop-color="#272C3D"/>
+								</linearGradient>
+								</defs>
+							</svg>	
+							<svg class="svg-tab" width="680" height="190" viewBox="0 0 680 190" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g filter="url(#filter0_b_2748_110881)">
+								<rect width="680" height="190" rx="24" fill="url(#paint0_linear_2748_110881)"/>
+								<rect x="0.25" y="0.25" width="679.5" height="189.5" rx="23.75" stroke="url(#paint1_linear_2748_110881)" stroke-width="0.5"/>
+								</g>
+								<defs>
+								<filter id="filter0_b_2748_110881" x="-110" y="-110" width="900" height="410" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+								<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+								<feGaussianBlur in="BackgroundImageFix" stdDeviation="55"/>
+								<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2748_110881"/>
+								<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2748_110881" result="shape"/>
+								</filter>
+								<linearGradient id="paint0_linear_2748_110881" x1="340" y1="0" x2="340" y2="190" gradientUnits="userSpaceOnUse">
+								<stop stop-color="#131829"/>
+								<stop offset="1" stop-color="#0C0E1A"/>
+								</linearGradient>
+								<linearGradient id="paint1_linear_2748_110881" x1="340" y1="0" x2="340" y2="190" gradientUnits="userSpaceOnUse">
+								<stop stop-color="#212941"/>
+								<stop offset="0.469183" stop-color="#2C3A65"/>
+								<stop offset="1" stop-color="#272C3D"/>
+								</linearGradient>
+								</defs>
+							</svg>			
+							<svg class="svg-mob" width="328" height="154" viewBox="0 0 328 154" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g filter="url(#filter0_b_2788_23165)">
+								<rect width="328" height="154" rx="12" fill="url(#paint0_linear_2788_23165)"/>
+								<rect x="0.25" y="0.25" width="327.5" height="153.5" rx="11.75" stroke="url(#paint1_linear_2788_23165)" stroke-width="0.5"/>
+								</g>
+								<defs>
+								<filter id="filter0_b_2788_23165" x="-110" y="-110" width="548" height="374" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+								<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+								<feGaussianBlur in="BackgroundImageFix" stdDeviation="55"/>
+								<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2788_23165"/>
+								<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2788_23165" result="shape"/>
+								</filter>
+								<linearGradient id="paint0_linear_2788_23165" x1="164" y1="0" x2="164" y2="154" gradientUnits="userSpaceOnUse">
+								<stop stop-color="#131829"/>
+								<stop offset="1" stop-color="#0C0E1A"/>
+								</linearGradient>
+								<linearGradient id="paint1_linear_2788_23165" x1="164" y1="0" x2="164" y2="154" gradientUnits="userSpaceOnUse">
+								<stop stop-color="#212941"/>
+								<stop offset="0.469183" stop-color="#2C3A65"/>
+								<stop offset="1" stop-color="#272C3D"/>
+								</linearGradient>
+								</defs>
+							</svg>														
+						</div>
+					</div>
+
+					<div class="pps1__text-title pps1__text-title2 def-title" id="blog_title2"><?php echo get_post_meta(get_the_ID(), 'blog_title2', true);?></div>
+
+					<div class="pps1__text pps1__text5 def-text">
+						<?php echo get_post_meta(get_the_ID(), 'blog_text2', true);?>
+					</div>
+
+					<div class="pps1__text-title pps1__text-title3 def-title" id="blog_title3"><?php echo get_post_meta(get_the_ID(), 'blog_title3', true);?></div>
+
+					<div class="pps1__text pps1__text5 def-text">
+						<?php echo get_post_meta(get_the_ID(), 'blog_text3', true);?>
+					</div>
 
 					 <div class="pps1__last-block">
 						<div class="pps1__last-block-date small-text"><?php echo date('d.m.Y'); ?></div>
