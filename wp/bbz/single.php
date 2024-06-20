@@ -187,9 +187,6 @@ Template Name: Page Post
 
 					<div class="pps1__nav">
 						<div class="pps1__nav-title def-text">Содержание</div>
-						<a href="<?php get_permalink(); ?>#blog_title1" class="pps1__nav-link def-text"><?php echo get_post_meta(get_the_ID(), 'blog_title1', true);?></a>
-						<a href="<?php get_permalink(); ?>#blog_title2" class="pps1__nav-link def-text"><?php echo get_post_meta(get_the_ID(), 'blog_title2', true);?></a>
-						<a href="<?php get_permalink(); ?>#blog_title3" class="pps1__nav-link def-text"><?php echo get_post_meta(get_the_ID(), 'blog_title3', true);?></a>
 					</div>
 					
 					<div class="post-content">
@@ -573,6 +570,39 @@ Template Name: Page Post
 			</section>
 		</main>
 	</div>
+
+<!-- blog menu links -->
+<script>
+	// Получаем коллекцию элементов menuItems
+	const menuItems = document.querySelectorAll('h2.wp-block-heading');
+	menuItems.forEach((element, index) => {
+	});
+
+	// Получаем элемент bodyForItems, в который будем добавлять новые элементы
+	const bodyForItems = document.querySelector('.pps1__nav');
+	
+	// Перебираем menuItems и создаем новые элементы <a> для каждого из них
+	menuItems.forEach((element, index) => {
+		// Создаем новый элемент <a>
+		const newLink = document.createElement('a');
+		
+		// Устанавливаем атрибут href с id текущего элемента menuItems
+		newLink.href = `#${element.id}`;
+		// добавляем нужные классы 
+		newLink.classList.add("pps1__nav-link");
+		newLink.classList.add("def-text");
+		// добавляем уникальный id нашим ссылкам
+		element.id = `id-${index}`;
+		
+		// Устанавливаем текстовое содержимое с текстом текущего элемента menuItems
+		newLink.textContent = element.textContent;
+		// добавляем href новым линкам
+		newLink.href = `#${element.id}`;
+		
+		// Добавляем новый элемент <a> в bodyForItems
+		bodyForItems.appendChild(newLink);
+	});
+</script>
 
 <?php  get_footer($name); ?>
 </body>
