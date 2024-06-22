@@ -1599,15 +1599,21 @@ template {
   width: 184px;
   height: 24px;
   align-items: center;
-  justify-content: space-between;
 }
 .win-box__top-menu-mobile li {
   position: relative;
   width: 24px;
   height: 24px;
-  display: flex;
   justify-content: center;
   align-items: center;
+  display: none;
+  margin-right: 16px;
+}
+.win-box__top-menu-mobile li:last-child {
+  margin-right: 0;
+}
+.win-box__top-menu-mobile li.active {
+  display: flex;
 }
 .win-box__top-menu-mobile-text {
   font-weight: 400;
@@ -4249,6 +4255,8 @@ input {
   border-bottom-left-radius: 30px;
   position: relative;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
 }
 .win-box__left-list {
   margin-bottom: 296px;
@@ -4268,6 +4276,8 @@ input {
 }
 .win-box__btn {
   width: 152px;
+  margin-top: auto;
+  margin-bottom: 0;
 }
 .win-box__text {
   width: 599px;

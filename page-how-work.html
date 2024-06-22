@@ -118,7 +118,7 @@
                 </div>
               </div>
               <div class="top-mobile-navigation-text">
-                Выкупы
+                <em>Выкупы</em>
                 <span>(урок <i>1</i> из 6)</span>
               </div>
               <div
@@ -4935,6 +4935,8 @@
       const container_num = document.querySelector(
         ".top-mobile-navigation-text i"
       );
+      const container_text_wrp = document.querySelector(".top-mobile-navigation-text em");
+      const container_texts = document.querySelectorAll(".win-box__top-menu-item");
 
       // swiper-slide-active
       function change() {
@@ -4942,9 +4944,25 @@
         slide.forEach((e) => {
           if (e.classList.contains("swiper-slide-active")) {
             container_num.textContent = i;
+            if(container_texts[i-1].classList.contains(`win-box__top-menu-item${i}`)){
+              container_text_wrp.textContent = container_texts[i-1].textContent;  
+            }
           }
           i++;
         });
+
+        // mobile lists
+        if (window.innerWidth < 1200) {
+          const items = document.querySelectorAll(".win-box__top-menu-mobile-text");
+          const win_box_center = document.querySelectorAll(".swiper-slide-active .win-box__center");
+          items.forEach(e => e.classList.remove("active"));
+
+          for (let i = 0; i < win_box_center.length; i++) {
+            if (items[i]) {
+              items[i].classList.add("active");
+            }
+          }
+        }
       }
 
       btnPrev.addEventListener("click", change);
@@ -5019,7 +5037,6 @@
 					}, 100);
 				}
 			});
-
 		});
 
     </script>

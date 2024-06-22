@@ -2819,6 +2819,9 @@
 
     position: relative;
     z-index: 2;
+
+    display: flex;
+    flex-direction: column;
   }
 
   // .win-box__left-list
@@ -2848,6 +2851,9 @@
   // .win-box__btn
   &__btn {
     width: 152px;
+
+    margin-top: auto;
+    margin-bottom: 0;
   }
 
   // .win-box__text

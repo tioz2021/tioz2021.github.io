@@ -1487,16 +1487,27 @@
     width: 184px;
     height: 24px;
     align-items: center;
-    justify-content: space-between;
+    // justify-content: space-between;
 
     // .win-box__top-menu-mobile li
     li{
       position: relative;
       width: 24px;
       height: 24px;
-      display: flex;
       justify-content: center;
       align-items: center;
+      display: none;
+      margin-right: 16px;
+
+      // .win-box__top-menu-mobile li:last-child
+      &:last-child{
+        margin-right: 0;
+      }
+
+      // .win-box__top-menu-mobile li.active
+      &.active{
+        display: flex;
+      }
     }
   }
 

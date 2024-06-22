@@ -344,11 +344,6 @@
       }
     });
   }
-      
-    // // Инициализация при изменении размера окна
-    // window.addEventListener("resize", function () {
-    //   initializeSwiper();
-    // });
 })();
 
 // svg blur ( svg-blur-hover-wrp, svg-blur, blur )
@@ -1177,9 +1172,7 @@
 
     text_links.forEach(e => e.classList.remove("active"));
     elm.classList.add("active");
-
-    // console.log(texts[4])
-
+    
     if(elm.classList.contains("win-box__left-list-item1")){
       texts.forEach(e => e.classList.remove("active"));
       texts[0].classList.add("active");
@@ -1210,7 +1203,7 @@
     const numItem = parseInt(m_this.textContent);
     const container = m_this.parentNode.parentNode.parentNode.parentNode
     const items = container.querySelectorAll(".swiper-slide-active .win-box__center");
-
+    
     if(numItem == 1){
       items.forEach(e => e.classList.remove("active"));
       items[0].classList.add("active");
@@ -1230,10 +1223,13 @@
   }
 
   // changer
-  if (window.innerWidth > 1200) {
-    btns.forEach(e => e.addEventListener("click", main_nav));
-    text_links.forEach(e => e.addEventListener("click", text_nav));
-  } else {      
-    menuItem.forEach(e => e.addEventListener("click", mf))
-  }
+  document.addEventListener("DOMContentLoaded", function () {
+    if (window.innerWidth > 1200) {
+      btns.forEach(e => e.addEventListener("click", main_nav));
+      text_links.forEach(e => e.addEventListener("click", text_nav));
+    } else {      
+      menuItem.forEach(e => e.addEventListener("click", mf))
+    }
+  });
+
 }) ();
