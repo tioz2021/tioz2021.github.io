@@ -3,7 +3,20 @@
 			<div class="footer__start">
 				<div class="footer__title def-title">Всегда на связи</div>
 				<div class="footer__list">
-					<div class="footer__item cta-box">
+					<?php
+						// Получаем ID главной страницы
+						$front_page_id = get_option('page_on_front');
+						// Получаем объект поста главной страницы
+						$front_page = get_post($front_page_id);
+						// Получаем значение поля 'my_field' на главной странице
+						$front_page_text = get_post_meta($front_page->ID, 'tg_link', true);
+
+						// Используем значение поля 'my_field'
+						if (!empty($front_page_text)) {
+								echo '<a class="footer__item cta-box" target="_blank" href="' . $front_page_text . '">';
+						}
+					?>
+					<!-- <a href="#" class="footer__item cta-box"> -->
 						<div class="footer__item-logo img-wrp">
 							<img class="svg-web" src="<?php bloginfo('template_url'); ?>/assets/img/footer__item-logo-wb.svg" alt="svg" loading="lazy">
 							<img class="svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/footer__item-logo-tab.svg" alt="svg" loading="lazy">
@@ -16,9 +29,22 @@
 							<img class="svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/footer__item-bg-tab.svg" alt="svg" loading="lazy">
 							<img class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/footer__item-bg-mob.svg" alt="svg" loading="lazy">
 						</div>
-					</div>
+					</a>
 
-					<div class="footer__item cta-box">
+					<?php
+						// Получаем ID главной страницы
+						$front_page_id = get_option('page_on_front');
+						// Получаем объект поста главной страницы
+						$front_page = get_post($front_page_id);
+						// Получаем значение поля 'my_field' на главной странице
+						$front_page_text = get_post_meta($front_page->ID, 'tg_link', true);
+
+						// Используем значение поля 'my_field'
+						if (!empty($front_page_text)) {
+								echo '<a class="footer__item cta-box" target="_blank" href="' . $front_page_text . '">';
+						}
+					?>
+					<!-- <a href="#" class="footer__item cta-box"> -->
 						<div class="footer__item-logo img-wrp">
 							<img class="svg-web" src="<?php bloginfo('template_url'); ?>/assets/img/footer__item-logo-web2.svg" alt="svg" loading="lazy">
 							<img class="svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/footer__item-logo-tab2.svg" alt="svg" loading="lazy">
@@ -31,7 +57,8 @@
 							<img class="svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/footer__item-bg-tab2.svg" alt="svg" loading="lazy">
 							<img class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/footer__item-bg-mob2.svg" alt="svg" loading="lazy">
 						</div>
-					</div>
+					</a>
+					
 				</div>
 			</div>
 
@@ -60,13 +87,39 @@
 					?>
 				</ul>
 
-				<a href="#" class="footer__btn main-btn">
+				<?php
+					// Получаем ID главной страницы
+					$front_page_id = get_option('page_on_front');
+					// Получаем объект поста главной страницы
+					$front_page = get_post($front_page_id);
+					// Получаем значение поля 'my_field' на главной странице
+					$front_page_text = get_post_meta($front_page->ID, 'tg_link', true);
+
+					// Используем значение поля 'my_field'
+					if (!empty($front_page_text)) {
+							echo '<a class="footer__btn main-btn" target="_blank" href="' . $front_page_text . '">';
+					}
+				?>
+				<!-- <a href="#" class="footer__btn main-btn"> -->
 					<span class="main-btn__text small-text">Приоборести лицензию</span>
 					<div class="main-btn__effect"></div>
 				</a>
 
 				<div class="footer__end-polici-wrp">
-					<a href="#" class="footer__end-polici-link small-text"> Политика конфиденциальности</a>
+					<?php
+						// Получаем ID главной страницы
+						$front_page_id = get_option('page_on_front');
+						// Получаем объект поста главной страницы
+						$front_page = get_post($front_page_id);
+						// Получаем значение поля 'my_field' на главной странице
+						$front_page_text = get_post_meta($front_page->ID, 'tg_link', true);
+
+						// Используем значение поля 'my_field'
+						if (!empty($front_page_text)) {
+								echo '<a class="footer__end-polici-link small-text" target="_blank" href="' . $front_page_text . '"> Политика конфиденциальности</a>';
+						}
+					?>
+					<!-- <a href="#" class="footer__end-polici-link small-text"> Политика конфиденциальности</a> -->
 					<div class="footer__end-polici-text small-text">BBZ 2024 © Все права защищены</div>
 				</div>
 			</div>

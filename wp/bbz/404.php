@@ -39,7 +39,20 @@ Template Name: 404
 					</ul>
 				</nav>
 
-				<a href="#" class="header__btn main-btn small-text">
+				<?php
+					// Получаем ID главной страницы
+					$front_page_id = get_option('page_on_front');
+					// Получаем объект поста главной страницы
+					$front_page = get_post($front_page_id);
+					// Получаем значение поля 'my_field' на главной странице
+					$front_page_text = get_post_meta($front_page->ID, 'tg_link', true);
+
+					// Используем значение поля 'my_field'
+					if (!empty($front_page_text)) {
+							echo '<a class="header__btn main-btn small-text" target="_blank" href="' . $front_page_text . '">';
+					}
+				?>
+				<!-- <a href="#" class="header__btn main-btn small-text"> -->
 					<span class="main-btn__text small-text">Купить лицензию</span>
 					<div class="main-btn__effect"></div>
 				</a>

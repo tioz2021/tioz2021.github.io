@@ -36,7 +36,20 @@ Template Name: Page About
 
 
 
-				<a href="#" class="header__btn main-btn small-text">
+				<?php
+					// Получаем ID главной страницы
+					$front_page_id = get_option('page_on_front');
+					// Получаем объект поста главной страницы
+					$front_page = get_post($front_page_id);
+					// Получаем значение поля 'my_field' на главной странице
+					$front_page_text = get_post_meta($front_page->ID, 'tg_link', true);
+
+					// Используем значение поля 'my_field'
+					if (!empty($front_page_text)) {
+							echo '<a class="header__btn main-btn small-text" target="_blank" href="' . $front_page_text . '">';
+					}
+				?>
+				<!-- <a href="#" class="header__btn main-btn small-text"> -->
 					<span class="main-btn__text small-text">Купить лицензию</span>
 					<div class="main-btn__effect"></div>
 				</a>
@@ -57,12 +70,10 @@ Template Name: Page About
 							</div>
 						</div>
 						<div class="pas1__title-text title-wrp__text big-title">
-							BBZ это программа для <br>
-							самовыкупов
+							<?php echo get_post_meta(get_the_ID(), 'about_title', true);?>
 						</div>
 						<div class="pas1__title-desk title-wrp__desk def-text">
-							Самовыкупы - мощный инструмент повышения <br>
-							продаж на Wildberries!
+							<?php echo get_post_meta(get_the_ID(), 'about_desk_text', true);?>
 						</div>
 					</div>
 
@@ -154,17 +165,23 @@ Template Name: Page About
 					</div>
 
 					<div class="pps1__text pas1__text-bg-block str-text">
-						Через два месяца не смотря на то, что Оля повышала цену. <br>
-						Товар заканчивается на площадке. Ещё раньше Оля заняла денег и уже заказала следующую партию.
-						Но она будет на сайте не ранее чем через месяц.
-
+						<?php echo get_post_meta(get_the_ID(), 'about_first_text', true);?>
 						<div class="pps1__top-menu-ppl-info">
 							<div class="pps1__ppl-icon img-wrp">
-								<img src="<?php bloginfo('template_url'); ?>/assets/img/user2.png" alt="img">
+								<?php
+									$current_page = get_post();
+									$page_id = $current_page->ID;
+									$pod = pods('page', $page_id);
+									$image_field = $pod->field('about_user_img');
+									if (!empty($image_field)) {
+										$image_url = wp_get_attachment_url($image_field['ID']);
+										echo '<img src="' . $image_url . '" alt="icon">';
+									}
+								?>
 							</div>
 							<div class="pps1__top-menu-text-wrp">
-								<div class="pps1__ppl-name def-text">Дмитрий Шевцов</div>
-								<div class="pps1__ppl-text small-text">Основатель BBZ</div>
+								<div class="pps1__ppl-name def-text"><?php echo get_post_meta(get_the_ID(), 'about_user_name', true);?></div>
+								<div class="pps1__ppl-text small-text"><?php echo get_post_meta(get_the_ID(), 'about_user_status', true);?></div>
 							</div>
 						</div>
 
@@ -242,25 +259,23 @@ Template Name: Page About
 					</div>
 
 					<div class="pas1__bold-text pas1__bold-text1 str-text">
-						BBZ это софт для продвижения карточек товаров на Вайлдберриз с помощью самовыкупов на Вайлдберриз. С её помощью вы создадите свою собственную армию покупателей на Wildberries
-						и сможете делать любые действия этими покупателями без ограничений.
+						<?php echo get_post_meta(get_the_ID(), 'about_text_strong1', true);?>
 					</div>
 					<div class="pas1__text pas1__text1 def-text">
-						Боты, — это аккаунты покупателей вайлбериз. Такие аккаунты зарегистрированы на разные телефонные номера с эмуляцией разных устройств. Для Wildberries это обычные пользователи маркетплейса. При этом с разными отпечатками устройств и систем, IP адресами и поведеньческими факторами. BuyBotZen, — это программа позволяющая создавать покупателей и управлять ими. Вы сможете создавать уникальных покупателей на вайлдберриз и давать им задания: покупать товар, оставлять отзывы, лайкать комментарии, задавать вопросы.
+						<?php echo get_post_meta(get_the_ID(), 'about_text_def1', true);?>
 					</div>
 					<div class="pas1__text pas1__text2 def-text">
-						Самовыкупы собственного товара поднимут его в поисковой выдаче. И потенциальные покупатели будут видеть его чаще. Социальное подтверждение подтолкнёт покупателя, сделать выбор в пользу вашего товара. Социальное подтверждение на WB это четыре фактора: хороший рейтинг и количество отзывов, позитивные последние отзывы, привлекательные фото покупателей, закрывающие возражения и создающие ажиотаж вопросы-ответы. В итоге товар продаётся чаще. Вы получаете больше прибыли.
-						Если вы хотите продвигать свои товары при помощи самовыкупов и экономить при этом время и деньги — BBZ это ваш выбор. В BBZ также есть автоответчик и удобный мониторинг всех ключевых показателей товара. В том числе позиции по 6 гео.						
+						<?php echo get_post_meta(get_the_ID(), 'about_text_def2', true);?>
 					</div>
 
 					<div class="pas1__bold-text pas1__bold-text2 str-text">
-						Мы сами торгуем на Вайлдберриз своими брендами. И знаем какие конкретно задачи необходимо выполнять продавцу для успешной торговли. И знаем какие НЕ нужно.
+						<?php echo get_post_meta(get_the_ID(), 'about_text_strong2', true);?>
 					</div>
 					<div class="pas1__text pas1__text3 def-text">
-						У нас нет лайков на товары и бренды. Потому-что это никак не влияет на продажи. За то у нас есть модуль «Фото покупателей». Который сам расставляет фото покупателей в нужном вам порядке. Для этого он лайкает нужные комментарии в нужном порядке и необходимое количество раз. У нас есть алгоритм выкупа товара, который даёт больший рост позиций. При этом это совершенно обычные действия, доступные любому пользователю. Есть возможность зайти в любой аккаунт вручную. Чтобы заново оплатить товар с баланса если он потерялся а потом нашёлся. Или уже третью неделю находится на сортировке — отменить его. И опять же использовать деньги с баланса. Мы знаем как это муторно писать отзывы, особенно когда это несколько сотен. Поэтому есть модуль переписывания отзывов конкурентов через нейросеть. Но при этом нет модуля создания описания. Так как хоть и всего 5% покупателей его прочтут. Те, кто прочтёт — купят если оно будет написано просто, честно и доступно.
+						<?php echo get_post_meta(get_the_ID(), 'about_text_def3', true);?>
 					</div>
 					<div class="pas1__text pas1__text4 def-text">
-						Если у вас нет базовых знаний ПК и эксель, возможно BBZ вам не подойдёт. Так как на начальном этапе необходимо произвести установку и настройку программы. А задания и настройки задаются через эксель таблицы. Вначале нужно зарегистрироваться в сервисе получения смс кодов и купить прокси. Мы можем установить и сделать первичную настройку программы для вас. Но и самостоятельная настройка довольно проста, у нас есть подробная пошаговая инструкция. Тех-поддержка всегда готова подключится к вашему компьютеру и помочь. Управлять придётся не много. В основном только на этапе запуска товара. BBZ дешевле, чем сервисы, но требует чуть больше дополнительного внимания на запуске. Потом наоборот, он требует его меньше. Во время использования нужно будет включать компьютер, если BBZ стоит не на сервере.
+						<?php echo get_post_meta(get_the_ID(), 'about_text_def4', true);?>
 					</div>
 
 				</div>
@@ -344,7 +359,19 @@ Template Name: Page About
 							</div>
 							<div class="s7__item-main-text def-text">за 7 дней</div>
 	
-							<a href="#" class="s7__btn main-btn main-btn--white">
+							<?php
+								// Получаем ID главной страницы
+								$front_page_id = get_option('page_on_front');
+								// Получаем объект поста главной страницы
+								$front_page = get_post($front_page_id);
+								// Получаем значение поля 'my_field' на главной странице
+								$front_page_text = get_post_meta($front_page->ID, 'tg_link', true);
+
+								// Используем значение поля 'my_field'
+								if (!empty($front_page_text)) {
+										echo '<a class="s7__btn main-btn main-btn--white" target="_blank" href="' . $front_page_text . '">';
+								}
+							?>
 								<span class="main-btn__text small-text">Тестировать бесплатно</span>
 								<div class="main-btn__effect"></div>
 							</a>
