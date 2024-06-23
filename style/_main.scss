@@ -854,11 +854,11 @@
 
     // .s6__list-item:last-child .s6__list-item-icon
     &:last-child .s6__list-item-icon {
-      width: 55px;
-      height: 32px;
-      margin-bottom: 35px;
-      position: relative;
-      top: 12px;
+      // width: 55px;
+      // height: 32px;
+      // margin-bottom: 35px;
+      // position: relative;
+      // top: 12px;
     }
   }
   // .s6__list-item-icon
@@ -2984,9 +2984,9 @@
 .s10 .s6__list-item:nth-child(3) .blur {
   // border-radius: 100%;
   // background: linear-gradient(360deg, #c8d9fa 0%, #c8dcf5 51%, #d0e1f5 100%);
-  filter: blur(8px) !important;
-  width: 16px !important;
-  height: 16px !important;
+  // filter: blur(8px) !important;
+  // width: 16px !important;
+  // height: 16px !important;
 }
 
 .window {

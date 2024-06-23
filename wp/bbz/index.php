@@ -35,7 +35,20 @@ Template Name: Home
 			</nav>
 
 
-			<a href="#" class="header__btn main-btn small-text">
+			<?php
+				// Получаем ID главной страницы
+				$front_page_id = get_option('page_on_front');
+				// Получаем объект поста главной страницы
+				$front_page = get_post($front_page_id);
+				// Получаем значение поля 'my_field' на главной странице
+				$front_page_text = get_post_meta($front_page->ID, 'tg_link', true);
+
+				// Используем значение поля 'my_field'
+				if (!empty($front_page_text)) {
+						echo '<a class="header__btn main-btn small-text" target="_blank" href="' . $front_page_text . '">';
+				}
+			?>
+			<!-- <a href="#" class="header__btn main-btn small-text"> -->
 				<span class="main-btn__text small-text">Купить лицензию</span>
 				<div class="main-btn__effect"></div>
 			</a>
@@ -72,15 +85,27 @@ Template Name: Home
 					</div>
 
 					<div class="s1__title-desk title-desk str-text">
-						Безлимитные выкупы <br>
-						и отзывы за 8000р в месяц
+						<?php echo get_post_meta(get_the_ID(), 'index_title', true);?>
 					</div>
 
 					<div class="s1__text def-text">
-						Узнайте почему 90% юзеров решают купить подписку после бесплатного теста?
+						<?php echo get_post_meta(get_the_ID(), 'index_desk', true);?>
 					</div>
 
-					<a href="#" class="s1__btn main-btn">
+					<?php
+						// Получаем ID главной страницы
+						$front_page_id = get_option('page_on_front');
+						// Получаем объект поста главной страницы
+						$front_page = get_post($front_page_id);
+						// Получаем значение поля 'my_field' на главной странице
+						$front_page_text = get_post_meta($front_page->ID, 'tg_link', true);
+
+						// Используем значение поля 'my_field'
+						if (!empty($front_page_text)) {
+								echo '<a class="s1__btn main-btn" target="_blank" href="' . $front_page_text . '">';
+						}
+					?>
+					<!-- <a href="#" class="s1__btn main-btn"> -->
 						<span class="main-btn__text small-text">Тестировать бесплатно</span>
 						<div class="main-btn__effect"></div>
 					</a>
@@ -237,11 +262,10 @@ Template Name: Home
 						</div>
 					</div>
 					<div class="scroll-section__title-text title-wrp__text big-title">
-						Управляйте позициями <br>
-						и рейтингом
+						<?php echo get_post_meta(get_the_ID(), 'index_s2_title', true);?>
 					</div>
 					<div class="scroll-section__title-desk title-wrp__desk def-text">
-						Самовыкупы - мощный инструмент повышения продаж на Wildberries!
+						<?php echo get_post_meta(get_the_ID(), 'index_s2_desk', true);?>
 					</div>
 				</div>
 
@@ -330,35 +354,29 @@ Template Name: Home
 
 				<div class="swiper scroll-section__swiper scroll-section__swiper1">
 					<div class="swiper-wrapper">
-						<div class="swiper-slide scroll-section__slider">
-							<div class="scroll-section__slider-title def-title">
-								Быстрое продвижение <br>
-								в ТОП выдачи Wildberrie1
-							</div>
-							<div class="scroll-section__slider-text def-text">
-								Позиции товара начнут расти после первых заказов. Нужное место достигается за 10-14 дн.
-								BBZ использует самые эффективные для продвижения поведеньческие факторы.
-							</div>
-						</div>
-						<div class="swiper-slide scroll-section__slider">
-							<div class="scroll-section__slider-title def-title">
-								Главный инструмент <br>
-								50-70% влияния
-							</div>
-							<div class="scroll-section__slider-text def-text">
-								Позиции артикула в поиске по запросу в первую очередь зависят от того. Как много человек покупает этот товар, найдя его по этому запросу. Люди голосуют за этот товар в выдаче деньгами.
-							</div>
-						</div>
-						<div class="swiper-slide scroll-section__slider">
-							<div class="scroll-section__slider-title def-title">
-								Функция <br>
-								факторов
-							</div>
-							<div class="scroll-section__slider-text def-text">
-								Анонимность, максимальная имитация человека, гибкие способы оплаты, автооплата по сбп и картам, быстрое продвижение в поисковой выдаче.
-							</div>
-						</div>
+						<?php
+							$current_page = get_post();
+							$page_id = $current_page->ID;
+							$pod = pods('page', $page_id);
+							$field1 = $pod->field('index_s2_slider_title');
+							$field2 = $pod->field('index_s2_slider_text');
+							$index = 0;
+							if (!empty($field1)) { 
+								foreach ($field1 as $item) {
+									echo '<div class="swiper-slide scroll-section__slider">';
+									echo '<div class="scroll-section__slider-title def-title">';
+									echo $field1[$index];
+									echo '</div>';
+									echo '<div class="scroll-section__slider-text def-text">';
+									echo $field2[$index];
+									echo '</div>';
+									echo '</div>';
+									$index++;
+								}
+							}
+						?>
 					</div>
+
 					<a href="#" class="scroll-section__btn main-btn small-text" id="openBtn">
 						<span class="main-btn__text small-text">Смотреть обзор</span>
 						<div class="main-btn__effect"></div>
@@ -390,11 +408,10 @@ Template Name: Home
 						</div>
 					</div>
 					<div class="s3__title-text title-wrp__text big-title">
-						Сколько это стоит
+						<?php echo get_post_meta(get_the_ID(), 'index_s3_title', true);?>
 					</div>
 					<div class="s3__title-desk title-wrp__desk def-text">
-						Приобретите лицензию и получите <br>
-						все преимущества бота
+						<?php echo get_post_meta(get_the_ID(), 'index_s3_desk', true);?>
 					</div>
 				</div>
 
@@ -402,25 +419,59 @@ Template Name: Home
 					<ul class="s3__list swiper-wrapper">
 						<li class="s3__list-item svg-blur-hover-wrp swiper-slide">
 							<div class="s3__list-item-icon img-wrp svg-blur">
-								<img src="<?php bloginfo('template_url'); ?>/assets/img/s3__list-item-icon.svg" alt="svg" loading="lazy">
+								<?php
+									$current_page = get_post();
+									$page_id = $current_page->ID;
+									$pod = pods('page', $page_id);
+									$image_field = $pod->field('index_s3_list_icon1');
+									if (!empty($image_field)) {
+										$image_url = wp_get_attachment_url($image_field['ID']);
+										echo '<img src="' . $image_url . '" alt="svg" loading="lazy">';
+									}
+								?>
 								<div class="blur"></div>
 							</div>
-							<div class="s3__list-item-title str-text">Тест Драйв</div>
-							<div class="s3__list-item-price def-text">1000 <span>₽<span></div>
+							<div class="s3__list-item-title str-text"><?php echo get_post_meta(get_the_ID(), 'index_s3_list_title1', true);?></div>
+							<div class="s3__list-item-price def-text"><?php echo get_post_meta(get_the_ID(), 'index_s3_list_price1', true);?> <span>₽<span></div>
 							<div class="s3__list-item-bullets">
 								<span class="s3__list-item-bullet-text small-text">7 дней</span>
 							</div>
 
 							<ul class="s3__list-inside">
-								<li class="s3__list-inside-item">
-									<div class="s3__list-inside-item-icon img-wrp">
-										<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/ok.svg" alt="img">
-									</div>
-									<div class="s3__list-inside-item-text def-text">Полный функционал на 7 дней</div>
-								</li>
+								<?php
+									$current_page = get_post();
+									$page_id = $current_page->ID;
+									$pod = pods('page', $page_id);
+									$field1 = $pod->field('index_s3_list_list1');
+									$index = 0;
+									if (!empty($field1)) { 
+										foreach ($field1 as $item) {
+											echo '<li class="s3__list-inside-item">';
+											echo '<div class="s3__list-inside-item-icon img-wrp">';
+											echo '<img loading="lazy" src="' . get_template_directory_uri() . '/assets/img/ok.svg" alt="img">';
+											echo '</div>';
+											echo '<div class="s3__list-inside-item-text def-text">' . $field1[$index] . '</div>';
+											echo '</li>';
+											$index++;
+										}
+									}
+								?>
 							</ul>
 
-							<a href="#" class="s3__btn main-btn small-text">
+							<?php
+								// Получаем ID главной страницы
+								$front_page_id = get_option('page_on_front');
+								// Получаем объект поста главной страницы
+								$front_page = get_post($front_page_id);
+								// Получаем значение поля 'my_field' на главной странице
+								$front_page_text = get_post_meta($front_page->ID, 'tg_link', true);
+
+								// Используем значение поля 'my_field'
+								if (!empty($front_page_text)) {
+										echo '<a class="s3__btn main-btn small-text" target="_blank" href="' . $front_page_text . '">';
+								}
+							?>
+							<!-- <a href="#" class="s3__btn main-btn small-text"> -->
 								<span class="main-btn__text small-text">Взять тест-драйв</span>
 								<div class="main-btn__effect"></div>
 							</a>
@@ -428,57 +479,60 @@ Template Name: Home
 
 						<li class="s3__list-item svg-blur-hover-wrp swiper-slide">
 							<div class="s3__list-item-icon img-wrp svg-blur">
-								<img src="<?php bloginfo('template_url'); ?>/assets/img/s3__list-item-icon2.svg" alt="svg" loading="lazy">
+								<?php
+									$current_page = get_post();
+									$page_id = $current_page->ID;
+									$pod = pods('page', $page_id);
+									$image_field = $pod->field('index_s3_list_icon2');
+									if (!empty($image_field)) {
+										$image_url = wp_get_attachment_url($image_field['ID']);
+										echo '<img src="' . $image_url . '" alt="svg" loading="lazy">';
+									}
+								?>
 								<div class="blur"></div>
 							</div>
-							<div class="s3__list-item-title str-text">Подписка</div>
-							<div class="s3__list-item-price def-text">9 500 <span>₽<span></div>
+							<div class="s3__list-item-title str-text"><?php echo get_post_meta(get_the_ID(), 'index_s3_list_title2', true);?></div>
+							<div class="s3__list-item-price def-text"><?php echo get_post_meta(get_the_ID(), 'index_s3_list_price2', true);?> <span>₽<span></div>
 							<div class="s3__list-item-bullets">
-								<span class="s3__list-item-bullet-text small-text">30 дней</span>
-								<span class="s3__list-item-bullet-text small-text active">60 дней</span>
+							<span class="s3__list-item-bullet-text small-text active">30 дней</span>
 								<span class="s3__list-item-bullet-text small-text">90 дней</span>
 							</div>
 
 							<ul class="s3__list-inside">
-								<li class="s3__list-inside-item">
-									<div class="s3__list-inside-item-icon img-wrp">
-										<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/ok.svg" alt="img">
-									</div>
-									<div class="s3__list-inside-item-text def-text">Автооплата</div>
-								</li>
-								<li class="s3__list-inside-item">
-									<div class="s3__list-inside-item-icon img-wrp">
-										<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/ok.svg" alt="img">
-									</div>
-									<div class="s3__list-inside-item-text def-text">До 200 выкупов в день</div>
-								</li>
-								<li class="s3__list-inside-item">
-									<div class="s3__list-inside-item-icon img-wrp">
-										<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/ok.svg" alt="img">
-									</div>
-									<div class="s3__list-inside-item-text def-text">Лайки и Дизлайки на отзывы</div>
-								</li>
-								<li class="s3__list-inside-item">
-									<div class="s3__list-inside-item-icon img-wrp">
-										<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/ok.svg" alt="img">
-									</div>
-									<div class="s3__list-inside-item-text def-text">Авто перекрытие негатива</div>
-								</li>
-								<li class="s3__list-inside-item">
-									<div class="s3__list-inside-item-icon img-wrp">
-										<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/ok.svg" alt="img">
-									</div>
-									<div class="s3__list-inside-item-text def-text">Автоответчик на отзывы</div>
-								</li>
-								<li class="s3__list-inside-item">
-									<div class="s3__list-inside-item-icon img-wrp">
-										<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/ok.svg" alt="img">
-									</div>
-									<div class="s3__list-inside-item-text def-text">Мониторинг позиций по 5 гео</div>
-								</li>
+								<?php
+									$current_page = get_post();
+									$page_id = $current_page->ID;
+									$pod = pods('page', $page_id);
+									$field1 = $pod->field('index_s3_list_list2');
+									$index = 0;
+									if (!empty($field1)) { 
+										foreach ($field1 as $item) {
+											echo '<li class="s3__list-inside-item">';
+											echo '<div class="s3__list-inside-item-icon img-wrp">';
+											echo '<img loading="lazy" src="' . get_template_directory_uri() . '/assets/img/ok.svg" alt="img">';
+											echo '</div>';
+											echo '<div class="s3__list-inside-item-text def-text">' . $field1[$index] . '</div>';
+											echo '</li>';
+											$index++;
+										}
+									}
+								?>
 							</ul>
 
-							<a href="#" class="s3__btn main-btn small-text">
+							<?php
+								// Получаем ID главной страницы
+								$front_page_id = get_option('page_on_front');
+								// Получаем объект поста главной страницы
+								$front_page = get_post($front_page_id);
+								// Получаем значение поля 'my_field' на главной странице
+								$front_page_text = get_post_meta($front_page->ID, 'tg_link', true);
+
+								// Используем значение поля 'my_field'
+								if (!empty($front_page_text)) {
+										echo '<a class="s3__btn main-btn small-text" target="_blank" href="' . $front_page_text . '">';
+								}
+							?>
+							<!-- <a href="#" class="s3__btn main-btn small-text"> -->
 								<span class="main-btn__text small-text">Приоборести лицензию</span>
 								<div class="main-btn__effect"></div>
 							</a>
@@ -486,43 +540,59 @@ Template Name: Home
 
 						<li class="s3__list-item svg-blur-hover-wrp swiper-slide">
 							<div class="s3__list-item-icon img-wrp svg-blur">
-								<img src="<?php bloginfo('template_url'); ?>/assets/img/s3__list-item-icon3.svg" alt="svg" loading="lazy">
+								<?php
+									$current_page = get_post();
+									$page_id = $current_page->ID;
+									$pod = pods('page', $page_id);
+									$image_field = $pod->field('index_s3_list_icon3');
+									if (!empty($image_field)) {
+										$image_url = wp_get_attachment_url($image_field['ID']);
+										echo '<img src="' . $image_url . '" alt="svg" loading="lazy">';
+									}
+								?>
 								<div class="blur"></div>
 							</div>
-							<div class="s3__list-item-title str-text">Для агентств</div>
-							<div class="s3__list-item-price def-text">1000 <span>₽<span></div>
+							<div class="s3__list-item-title str-text"><?php echo get_post_meta(get_the_ID(), 'index_s3_list_title3', true);?></div>
+							<div class="s3__list-item-price def-text"><?php echo get_post_meta(get_the_ID(), 'index_s3_list_price3', true);?> <span>₽<span></div>
 							<div class="s3__list-item-bullets">
 								<span class="s3__list-item-bullet-text small-text">1 мес</span>
 							</div>
 
 							<ul class="s3__list-inside">
-								<li class="s3__list-inside-item">
-									<div class="s3__list-inside-item-icon img-wrp">
-										<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/ok.svg" alt="img">
-									</div>
-									<div class="s3__list-inside-item-text def-text">До 1000 выкупов за один день</div>
-								</li>
-								<li class="s3__list-inside-item">
-									<div class="s3__list-inside-item-icon img-wrp">
-										<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/ok.svg" alt="img">
-									</div>
-									<div class="s3__list-inside-item-text def-text">Менеджмент ваших клиентов</div>
-								</li>
-								<li class="s3__list-inside-item">
-									<div class="s3__list-inside-item-icon img-wrp">
-										<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/ok.svg" alt="img">
-									</div>
-									<div class="s3__list-inside-item-text def-text">Тг отчётность для клиентов </div>
-								</li>
-								<li class="s3__list-inside-item">
-									<div class="s3__list-inside-item-icon img-wrp">
-										<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/ok.svg" alt="img">
-									</div>
-									<div class="s3__list-inside-item-text def-text">Приоритетная поддержка</div>
-								</li>
+								<?php
+									$current_page = get_post();
+									$page_id = $current_page->ID;
+									$pod = pods('page', $page_id);
+									$field1 = $pod->field('index_s3_list_list3');
+									$index = 0;
+									if (!empty($field1)) { 
+										foreach ($field1 as $item) {
+											echo '<li class="s3__list-inside-item">';
+											echo '<div class="s3__list-inside-item-icon img-wrp">';
+											echo '<img loading="lazy" src="' . get_template_directory_uri() . '/assets/img/ok.svg" alt="img">';
+											echo '</div>';
+											echo '<div class="s3__list-inside-item-text def-text">' . $field1[$index] . '</div>';
+											echo '</li>';
+											$index++;
+										}
+									}
+								?>
 							</ul>
 
-							<a href="#" class="s3__btn main-btn small-text">
+							<?php
+								// Получаем ID главной страницы
+								$front_page_id = get_option('page_on_front');
+								// Получаем объект поста главной страницы
+								$front_page = get_post($front_page_id);
+								// Получаем значение поля 'my_field' на главной странице
+								$front_page_text = get_post_meta($front_page->ID, 'tg_link', true);
+
+								// Используем значение поля 'my_field'
+								if (!empty($front_page_text)) {
+										echo '<a class="s3__btn main-btn small-text" target="_blank" href="' . $front_page_text . '">';
+								}
+							?>
+							<!-- <a href="#" class="s3__btn main-btn small-text"> -->
 								<span class="main-btn__text small-text">Приоборести лицензию</span>
 								<div class="main-btn__effect"></div>
 							</a>
@@ -584,11 +654,10 @@ Template Name: Home
 						</div>
 					</div>
 					<div class="s4__title-text title-wrp__text big-title">
-						Самовыкупы под ключ
+						<?php echo get_post_meta(get_the_ID(), 'index_s4_title', true);?>
 					</div>
 					<div class="s4__title-desk title-wrp__desk def-text">
-						Мы позаботимся о вашем продвижении <br>
-						на Wildberries
+						<?php echo get_post_meta(get_the_ID(), 'index_s4_desk', true);?>
 					</div>
 				</div>
 
@@ -596,17 +665,37 @@ Template Name: Home
 					<div class="list-progress__item">
 						<div class="list-progress__item-wrp">
 							<div class="list-progress__item-icon img-wrp">
-								<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/line-progress/list-progress__item-icon.svg" alt="svg">
+								<?php
+									$current_page = get_post();
+									$page_id = $current_page->ID;
+									$pod = pods('page', $page_id);
+									$image_field = $pod->field('index_s4_icons');
+									if (!empty($image_field)) {
+										$image_url = wp_get_attachment_url($image_field[0]['ID']);
+										echo '<img src="' . $image_url . '" alt="icon"> loading="lazy"';
+									}
+								?>
 								<div class="blur"></div>
 							</div>
 						</div>
 						<div class="list-progress__text def-text">
 							<div class="wrp-text-web-tab">
-								Разработаем личною <br>
-								стратегию продвижения
+								<?php
+									$current_page = get_post();
+									$page_id = $current_page->ID;
+									$pod = pods('page', $page_id);
+									$field = $pod->field('index_s4_titles');
+									echo $field[0];
+								?>
 							</div>
 							<div class="wrp-text-mob">
-								Личноя стратегия продвижения
+								<?php
+									$current_page = get_post();
+									$page_id = $current_page->ID;
+									$pod = pods('page', $page_id);
+									$field = $pod->field('index_s4_titles_mob');
+									echo $field[0];
+								?>
 							</div>
 						</div>
 					</div>
@@ -618,17 +707,37 @@ Template Name: Home
 					<div class="list-progress__item">
 						<div class="list-progress__item-wrp">
 							<div class="list-progress__item-icon img-wrp">
-								<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/line-progress/list-progress__item-icon2.svg" alt="svg">
+								<?php
+									$current_page = get_post();
+									$page_id = $current_page->ID;
+									$pod = pods('page', $page_id);
+									$image_field = $pod->field('index_s4_icons');
+									if (!empty($image_field)) {
+										$image_url = wp_get_attachment_url($image_field[1]['ID']);
+										echo '<img src="' . $image_url . '" alt="icon"> loading="lazy"';
+									}
+								?>
 								<div class="blur"></div>
 							</div>
 						</div>
 						<div class="list-progress__text def-text">
 							<div class="wrp-text-web-tab">
-								Выкупим ваш товар <br>
-								на Wildberries
+								<?php
+									$current_page = get_post();
+									$page_id = $current_page->ID;
+									$pod = pods('page', $page_id);
+									$field = $pod->field('index_s4_titles');
+									echo $field[1];
+								?>
 							</div>
 							<div class="wrp-text-mob">
-								Выкупим ваш товар <br> на WB
+								<?php
+									$current_page = get_post();
+									$page_id = $current_page->ID;
+									$pod = pods('page', $page_id);
+									$field = $pod->field('index_s4_titles_mob');
+									echo $field[1];
+								?>
 							</div>
 						</div>
 					</div>
@@ -637,22 +746,40 @@ Template Name: Home
 						<div class="list-progress__item-decoration-object"></div>
 					</div>
 					
-
 					<div class="list-progress__item">
 						<div class="list-progress__item-wrp">
 							<div class="list-progress__item-icon img-wrp">
-								<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/line-progress/list-progress__item-icon3.svg" alt="svg">
+								<?php
+									$current_page = get_post();
+									$page_id = $current_page->ID;
+									$pod = pods('page', $page_id);
+									$image_field = $pod->field('index_s4_icons');
+									if (!empty($image_field)) {
+										$image_url = wp_get_attachment_url($image_field[2]['ID']);
+										echo '<img src="' . $image_url . '" alt="icon"> loading="lazy"';
+									}
+								?>
 								<div class="blur"></div>
 							</div>
 						</div>
 						<div class="list-progress__text def-text">
 							<div class="wrp-text-web-tab">
-								Заберём товар <br>
-								с пунка выдачи заказов
+								<?php
+									$current_page = get_post();
+									$page_id = $current_page->ID;
+									$pod = pods('page', $page_id);
+									$field = $pod->field('index_s4_titles');
+									echo $field[2];
+								?>
 							</div>
 							<div class="wrp-text-mob">
-								Заберём товар <br>
-								с пунка выдачи
+								<?php
+									$current_page = get_post();
+									$page_id = $current_page->ID;
+									$pod = pods('page', $page_id);
+									$field = $pod->field('index_s4_titles_mob');
+									echo $field[2];
+								?>
 							</div>
 						</div>
 					</div>
@@ -664,29 +791,47 @@ Template Name: Home
 					<div class="list-progress__item">
 						<div class="list-progress__item-wrp">
 							<div class="list-progress__item-icon img-wrp">
-								<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/line-progress/list-progress__item-icon4.svg" alt="svg">
+								<?php
+									$current_page = get_post();
+									$page_id = $current_page->ID;
+									$pod = pods('page', $page_id);
+									$image_field = $pod->field('index_s4_icons');
+									if (!empty($image_field)) {
+										$image_url = wp_get_attachment_url($image_field[3]['ID']);
+										echo '<img src="' . $image_url . '" alt="icon"> loading="lazy"';
+									}
+								?>
 								<div class="blur"></div>
 							</div>
 						</div>
 						<div class="list-progress__text def-text">
 							<div class="wrp-text-web-tab">
-								Перепакуем, отправим <br>
-								обратно на Wildberries
+								<?php
+									$current_page = get_post();
+									$page_id = $current_page->ID;
+									$pod = pods('page', $page_id);
+									$field = $pod->field('index_s4_titles');
+									echo $field[3];
+								?>
 							</div>
 							<div class="wrp-text-mob">
-								Перепакуем,<br> отправим на WB
+								<?php
+									$current_page = get_post();
+									$page_id = $current_page->ID;
+									$pod = pods('page', $page_id);
+									$field = $pod->field('index_s4_titles_mob');
+									echo $field[3];
+								?>
 							</div>
 						</div>
 					</div>
-
 				</div>
 
 				<div class="s4__last-title def-title">
-					Сделаем нужное количество самовыкупов
+					<?php echo get_post_meta(get_the_ID(), 'index_s4_title_desk', true);?>
 				</div>
 				<div class="s4__last-desk def-text">
-					Отзывы на каждый выкуп. Прохождение 99%. <br>
-					Отчёты в телеграм по выкупам и отзывам
+					<?php echo get_post_meta(get_the_ID(), 'index_s4_desk_text', true);?>
 				</div>
 
 				<ul class="s4__list">
@@ -726,10 +871,14 @@ Template Name: Home
 							<img loading="lazy" class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/mob/s4-list-bg.png" alt="img">
 						</div>
 						<div class="s4__list-text def-text">
-							100 выкупов — <span>12 000 <small>₽</small></span>
+							<?php echo get_post_meta(get_the_ID(), 'index_s4_count_ran1', true);?>
+							<em>&nbsp;—&nbsp;</em> 
+							<span><?php echo get_post_meta(get_the_ID(), 'index_s4_count_price1', true);?><small>₽</small></span>
 						</div>
 						<div class="s4__list-text def-text">
-							200 выкупов — <span>20 000 <small>₽</small></span>
+							<?php echo get_post_meta(get_the_ID(), 'index_s4_count_ran2', true);?>
+							<em>&nbsp;—&nbsp;</em> 
+							<span><?php echo get_post_meta(get_the_ID(), 'index_s4_count_price2', true);?><small>₽</small></span>
 						</div>
 					</li>
 
@@ -769,10 +918,14 @@ Template Name: Home
 							<img loading="lazy" class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/mob/s4-list-bg.png" alt="img">
 						</div>
 						<div class="s4__list-text def-text">
-							100 выкупов — <span>12 000 <small>₽</small></span>
+							<?php echo get_post_meta(get_the_ID(), 'index_s4_count_ran3', true);?>
+							<em>&nbsp;—&nbsp;</em> 
+							<span><?php echo get_post_meta(get_the_ID(), 'index_s4_count_price3', true);?><small>₽</small></span>
 						</div>
 						<div class="s4__list-text def-text">
-							200 выкупов — <span>20 000 <small>₽</small></span>
+							<?php echo get_post_meta(get_the_ID(), 'index_s4_count_ran4', true);?>
+							<em>&nbsp;—&nbsp;</em> 
+							<span><?php echo get_post_meta(get_the_ID(), 'index_s4_count_price4', true);?><small>₽</small></span>
 						</div>
 					</li>
 
@@ -812,24 +965,50 @@ Template Name: Home
 							<img loading="lazy" class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/mob/s4-list-bg.png" alt="img">
 						</div>
 						<div class="s4__list-text def-text">
-							100 выкупов — <span>12 000 <small>₽</small></span>
+							<?php echo get_post_meta(get_the_ID(), 'index_s4_count_ran5', true);?>
+							<em>&nbsp;—&nbsp;</em> 
+							<span><?php echo get_post_meta(get_the_ID(), 'index_s4_count_price5', true);?><small>₽</small></span>
 						</div>
 						<div class="s4__list-text def-text">
-							200 выкупов — <span>20 000 <small>₽</small></span>
+							<?php echo get_post_meta(get_the_ID(), 'index_s4_count_ran6', true);?>
+							<em>&nbsp;—&nbsp;</em> 
+							<span><?php echo get_post_meta(get_the_ID(), 'index_s4_count_price6', true);?><small>₽</small></span>
 						</div>
 					</li>
 				</ul>
 
-				<a href="#" class="s4__btn main-btn small-text">
+				<?php
+					// Получаем ID главной страницы
+					$front_page_id = get_option('page_on_front');
+					// Получаем объект поста главной страницы
+					$front_page = get_post($front_page_id);
+					// Получаем значение поля 'my_field' на главной странице
+					$front_page_text = get_post_meta($front_page->ID, 'tg_link', true);
+
+					// Используем значение поля 'my_field'
+					if (!empty($front_page_text)) {
+							echo '<a class="s4__btn main-btn small-text" target="_blank" href="' . $front_page_text . '">';
+					}
+				?>
+				<!-- <a href="#" class="s4__btn main-btn small-text"> -->
 					<span class="main-btn__text small-text">Приоборести лицензию</span>
 					<div class="main-btn__effect"></div>
 				</a>
 
 				<div class="s4__last-text-wrp small-text">
-					<span class="s4__last-text">Цены услуг фулфилмента — по запросу</span>
-					<span class="s4__last-text">Цена за забор одного адреса — 100₽</span>
-					<span class="s4__last-text">Возможность оплаты за товары по безналу - +6%.</span>
-					<span class="s4__last-text">При переводе на карту — дополнительных % нет.</span>
+					<?php
+						$current_page = get_post();
+						$page_id = $current_page->ID;
+						$pod = pods('page', $page_id);
+						$field1 = $pod->field('index_s4_text_list');
+						$index = 0;
+						if (!empty($field1)) { 
+							foreach ($field1 as $item) {
+								echo '<span class="s4__last-text">' . $field1[$index] . '</span>';
+								$index++;
+							}
+						}
+						?>
 				</div>
 
 				<div class="s4__decoration-light s4__decoration-light1 img-wrp">
@@ -855,12 +1034,10 @@ Template Name: Home
 						</div>
 					</div>
 					<div class="scroll-section__title-text title-wrp__text big-title">
-						Лучший способ <br>
-						продвижения товаров
+						<?php echo get_post_meta(get_the_ID(), 'index_s5_title', true);?>
 					</div>
 					<div class="scroll-section__title-desk title-wrp__desk def-text">
-						Самовыкупы остаются самым эффективным
-						и выгодным способом повышения продаж
+						<?php echo get_post_meta(get_the_ID(), 'index_s5_desk', true);?>
 					</div>
 				</div>
 
@@ -944,33 +1121,27 @@ Template Name: Home
 
 				<div class="swiper scroll-section__swiper scroll-section__swiper2">
 					<div class="swiper-wrapper">
-						<div class="swiper-slide scroll-section__slider">
-							<div class="scroll-section__slider-title def-title">
-								Главный инструмент <br>
-								50-70% влияния
-							</div>
-							<div class="scroll-section__slider-text def-text">
-								Позиции артикула в поиске по запросу в первую очередь зависят от того. Как много человек покупает этот товар, найдя его по этому запросу. Люди голосуют за этот товар в выдаче деньгами.
-							</div>
-						</div>
-						<div class="swiper-slide scroll-section__slider">
-							<div class="scroll-section__slider-title def-title">
-								Главный инструмент <br>
-								50-70% влияния2
-							</div>
-							<div class="scroll-section__slider-text def-text">
-								Позиции артикула в поиске по запросу в первую очередь зависят от того. Как много человек покупает этот товар, найдя его по этому запросу. Люди голосуют за этот товар в выдаче деньгами.
-							</div>
-						</div>
-						<div class="swiper-slide scroll-section__slider">
-							<div class="scroll-section__slider-title def-title">
-								Функция <br>
-								факторов
-							</div>
-							<div class="scroll-section__slider-text def-text">
-								Анонимность, максимальная имитация человека, гибкие способы оплаты, автооплата по сбп и картам, быстрое продвижение в поисковой выдаче.
-							</div>
-						</div>
+						<?php
+							$current_page = get_post();
+							$page_id = $current_page->ID;
+							$pod = pods('page', $page_id);
+							$field1 = $pod->field('index_s5_slider_title');
+							$field2 = $pod->field('index_s5_slider_text');
+							$index = 0;
+							if (!empty($field1)) { 
+								foreach ($field1 as $item) {
+									echo '<div class="swiper-slide scroll-section__slider">';
+									echo '<div class="scroll-section__slider-title def-title">';
+									echo $field1[$index];
+									echo '</div>';
+									echo '<div class="scroll-section__slider-text def-text">';
+									echo $field2[$index];
+									echo '</div>';
+									echo '</div>';
+									$index++;
+								}
+							}
+						?>
 					</div>
 
 					<div class="scroll-section__slider-navigation slider-navigation swiper-pagination"></div>
@@ -996,54 +1167,36 @@ Template Name: Home
 						</div>
 					</div>
 					<div class="s6__title-text title-wrp__text big-title">
-						Почему вам нужен <br>
-						именно BuyBotZen
+						<?php echo get_post_meta(get_the_ID(), 'index_s6_title', true);?>
 					</div>
 					<div class="s6__title-desk title-wrp__desk def-text">
-						Мы  любим BuyBotZen потому что, <br>
-						"он наш сыночек."
+						<?php echo get_post_meta(get_the_ID(), 'index_s6_desk', true);?>
 					</div>
 				</div>
 
 				<ul class="s6__list svg-blur-hover-wrp">
-					<li class="s6__list-item">
-						<div class="s6__list-item-icon img-wrp svg-blur">
-							<img src="<?php bloginfo('template_url'); ?>/assets/img/s6__list-item-icon.svg" alt="svg" loading="lazy">
-							<div class="blur"></div>
-						</div>
-						<div class="s6__list-item-title str-text">Тест Драйв</div>
-						<div class="s6__list-item-text def-text">
-							BBZ изначально спроектирован так, чтобы
-							нужно было взаимодействовать с ним как можно меньше.
-							Весь процесс работы автоматизирован и удобно организован.
-							Настройте программу, всё остальное она сделает сама.
-						</div>
-					</li>
-					<li class="s6__list-item">
-						<div class="s6__list-item-icon img-wrp svg-blur">
-							<img src="<?php bloginfo('template_url'); ?>/assets/img/s6__list-item-icon2.svg" alt="svg" loading="lazy">
-							<div class="blur"></div>
-						</div>
-						<div class="s6__list-item-title str-text">В вашем Телеграм</div>
-						<div class="s6__list-item-text def-text">
-							Бот пришлёт план на день. Расскажет, как
-							проходит выполнение. Отчитается в конце дня.
-							Вся информация о выкупах, отзывах, авто-перекрытии приходит в удобном виде в телеграм.
-						</div>
-					</li>
-					<li class="s6__list-item">
-						<div class="s6__list-item-icon img-wrp svg-blur">
-							<img src="<?php bloginfo('template_url'); ?>/assets/img/s6__list-item-icon3.svg" alt="svg" loading="lazy">
-							<div class="blur"></div>
-						</div>
-						<div class="s6__list-item-title str-text">Безлимитность</div>
-						<div class="s6__list-item-text def-text">
-							Никто не любит ограниения.
-							В BuyBotZen нет пакетов выкупов.
-							В течении подписки вы можете делать столько выкупов, сколько нужно.
-							К каждому выкупу можно оставлять отзывы.
-						</div>
-					</li>
+					<?php
+						$current_page = get_post();
+						$page_id = $current_page->ID;
+						$pod = pods('page', $page_id);
+						$field1 = $pod->field('index_s6_icons');
+						$field2 = $pod->field('index_s6_titles');
+						$field3 = $pod->field('index_s6_texts');
+						$index = 0;
+						if (!empty($field1)) { 
+							foreach ($field1 as $item) {
+								echo '<li class="s6__list-item">';
+								echo '<div class="s6__list-item-icon img-wrp svg-blur">';
+								echo '<img src="'. wp_get_attachment_url($field1[$index]['ID']) .'" alt="svg" loading="lazy">';
+								echo '<div class="blur"></div>';
+								echo '</div>';
+								echo '<div class="s6__list-item-title str-text">'. $field2[$index] .'</div>';
+								echo '<div class="s6__list-item-text def-text">' . $field3[$index] . '</div>';
+								echo '</li>';
+								$index++;
+							}
+						}
+					?>
 				</ul>
 
 				<div class="s6__decor s6__decor-bg img-wrp">
@@ -1218,93 +1371,36 @@ Template Name: Home
 						</div>
 					</div>
 					<div class="slider-section__title-text title-wrp__text big-title">
-						8 функциональных <br>
-						модулей - один софт
+						<?php echo get_post_meta(get_the_ID(), 'index_s8_title', true);?>
 					</div>
 					<div class="slider-section__title-desk title-wrp__desk def-text">
-						Всё что нужно для автоматизации продвижения товаров - в одном софте
+						<?php echo get_post_meta(get_the_ID(), 'index_s8_desk', true);?>
 					</div>
 				</div>
 
 				<div class="swiper slider-section__swiper slider-section__swiper1">
 					<div class="swiper-wrapper">
-						<div class="swiper-slide slider-section__slider">
-							<div class="slider-section__slide-icon img-wrp">
-								<img src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__slide-icon.svg" alt="svg" loading="lazy">
-							</div>
-							<div class="slider-section__slider-title str-text">
-								Авто-выкупы
-							</div>
-							<div class="slider-section__slider-text def-text">
-								Анонимность, максимальная имитация человека, гибкие способы оплаты, автооплата по сбп и картам, быстрое продвижение в поисковой выдаче.
-							</div>
-						</div>
-						<div class="swiper-slide slider-section__slider">
-							<div class="slider-section__slide-icon img-wrp">
-								<img src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__slide-icon2.svg" alt="svg" loading="lazy">
-							</div>
-							<div class="slider-section__slider-title str-text">
-								Функция нагуливания поведеньческих факторов
-							</div>
-							<div class="slider-section__slider-text def-text">
-								Анонимность, максимальная имитация человека, гибкие способы оплаты, автооплата по сбп и картам, быстрое продвижение в поисковой выдаче.
-							</div>
-						</div>
-						<div class="swiper-slide slider-section__slider">
-							<div class="slider-section__slide-icon img-wrp">
-								<img src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__slide-icon.svg" alt="svg" loading="lazy">
-							</div>
-							<div class="slider-section__slider-title str-text">
-								Авто-выкупы
-							</div>
-							<div class="slider-section__slider-text def-text">
-								Анонимность, максимальная имитация человека, гибкие способы оплаты, автооплата по сбп и картам, быстрое продвижение в поисковой выдаче.
-							</div>
-						</div>
-						<div class="swiper-slide slider-section__slider">
-							<div class="slider-section__slide-icon img-wrp">
-								<img src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__slide-icon2.svg" alt="svg" loading="lazy">
-							</div>
-							<div class="slider-section__slider-title str-text">
-								Функция нагуливания поведеньческих факторов
-							</div>
-							<div class="slider-section__slider-text def-text">
-								Анонимность, максимальная имитация человека, гибкие способы оплаты, автооплата по сбп и картам, быстрое продвижение в поисковой выдаче.
-							</div>
-						</div>
-						<div class="swiper-slide slider-section__slider">
-							<div class="slider-section__slide-icon img-wrp">
-								<img src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__slide-icon.svg" alt="svg" loading="lazy">
-							</div>
-							<div class="slider-section__slider-title str-text">
-								Авто-выкупы
-							</div>
-							<div class="slider-section__slider-text def-text">
-								Анонимность, максимальная имитация человека, гибкие способы оплаты, автооплата по сбп и картам, быстрое продвижение в поисковой выдаче.
-							</div>
-						</div>
-						<div class="swiper-slide slider-section__slider">
-							<div class="slider-section__slide-icon img-wrp">
-								<img src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__slide-icon3.svg" alt="svg" loading="lazy">
-							</div>
-							<div class="slider-section__slider-title str-text">
-								Функция нагуливания поведеньческих факторов
-							</div>
-							<div class="slider-section__slider-text def-text">
-								Анонимность, максимальная имитация человека, гибкие способы оплаты, автооплата по сбп и картам, быстрое продвижение в поисковой выдаче.
-							</div>
-						</div>
-						<div class="swiper-slide slider-section__slider">
-							<div class="slider-section__slide-icon img-wrp">
-								<img src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__slide-icon.svg" alt="svg" loading="lazy">
-							</div>
-							<div class="slider-section__slider-title str-text">
-								Авто-выкупы
-							</div>
-							<div class="slider-section__slider-text def-text">
-								Анонимность, максимальная имитация человека, гибкие способы оплаты, автооплата по сбп и картам, быстрое продвижение в поисковой выдаче.
-							</div>
-						</div>
+						<?php
+							$current_page = get_post();
+							$page_id = $current_page->ID;
+							$pod = pods('page', $page_id);
+							$field1 = $pod->field('index_s8_list_icon');
+							$field2 = $pod->field('index_s8_list_titles');
+							$field3 = $pod->field('index_s8_list_texts');
+							$index = 0;
+							if (!empty($field1)) { 
+								foreach ($field1 as $item) {
+									echo '<div class="swiper-slide slider-section__slider">';
+									echo '<div class="slider-section__slide-icon img-wrp">';
+									echo '<img src="'. wp_get_attachment_url($field1[$index]['ID']) .'" alt="svg" loading="lazy">';
+									echo '</div>';
+									echo '<div class="slider-section__slider-title str-text">'. $field2[$index] .'</div>';
+									echo '<div class="slider-section__slider-text def-text">' . $field3[$index] . '</div>';
+									echo '</div>';
+									$index++;
+								}
+							}
+						?>
 					</div>
 					<div class="slider-section__slider-navigation slider-navigation swiper-pagination"></div>
 
@@ -1357,12 +1453,10 @@ Template Name: Home
 						</div>
 					</div>
 					<div class="s9__title-text title-wrp__text big-title">
-						Полная имитация живого <br>
-						человека
+						<?php echo get_post_meta(get_the_ID(), 'index_s9_title', true);?>
 					</div>
 					<div class="s9__title-desk title-wrp__desk def-text">
-						Делать самовыкупы безопасно и правильно <br>
-						- с удовольствием
+						<?php echo get_post_meta(get_the_ID(), 'index_s9_desk', true);?>
 					</div>
 				</div>
 
@@ -1427,16 +1521,13 @@ Template Name: Home
 				<div class="s9__tag-blur-bg"></div>
 
 				<div class="s9__end-title def-title">
-					Эмуляция 90% самых <br>
-					популярных устройств
+					<?php echo get_post_meta(get_the_ID(), 'index_s9_title_desk', true);?>
 				</div>
 				<div class="s9__end-desk def-text">
-					Мобильные. 35% IOS и 55% Android <br>
-					10% — десктоп
+					<?php echo get_post_meta(get_the_ID(), 'index_s9_title_text', true);?>
 				</div>
 				<div class="s9__end-last-text small-text">
-					Данные взяты из статистики внутренней рекламы. <br>
-					Значит именно такое соотношение пользователей на WB.
+					<?php echo get_post_meta(get_the_ID(), 'index_s9_text', true);?>
 				</div>
 
 				<div class="s9__main-box-bg img-wrp">
@@ -1459,53 +1550,36 @@ Template Name: Home
 						</div>
 					</div>
 					<div class="s6__title-text title-wrp__text big-title">
-						Ломаем рамки привычных <br>
-						шаблонов
+						<?php echo get_post_meta(get_the_ID(), 'index_s10_title', true);?>
 					</div>
 					<div class="s6__title-desk title-wrp__desk def-text">
-						BBZ программа, которая проверена <br>
-						и протестирована практиками
+						<?php echo get_post_meta(get_the_ID(), 'index_s10_desk', true);?>
 					</div>
 				</div>
 
 				<ul class="s6__list s10__list--mod svg-blur-hover-wrp">
-					<li class="s6__list-item">
-						<div class="s6__list-item-icon img-wrp svg-blur">
-							<img src="<?php bloginfo('template_url'); ?>/assets/img/s10__list-item-icon1.svg" alt="svg" loading="lazy">
-							<div class="blur"></div>
-						</div>
-						<div class="s6__list-item-title s10__list-item-title--mod str-text">Актуальность</div>
-						<div class="s6__list-item-text def-text">
-							Мы сами торгуем на Вайлдберриз. Постоянно тестируем различные подходы.
-							Тесно общаемся с клиентами и вместе находим более эффективные решения,
-							которые действительно работают именно в данный момент.
-						</div>
-					</li>
-					<li class="s6__list-item">
-						<div class="s6__list-item-icon img-wrp svg-blur">
-							<img src="<?php bloginfo('template_url'); ?>/assets/img/s10__list-item-icon2.svg" alt="svg" loading="lazy">
-							<div class="blur"></div>
-						</div>
-						<div class="s6__list-item-title s10__list-item-title--mod str-text">Уникальные опции</div>
-						<div class="s6__list-item-text def-text">
-							Многие селлеры выбирают BBZ, потому что
-							только здесь есть возможности, необходимые для их бизнеса.
-							Многие опции были добавлены по запросу наших клиентов.
-						</div>
-					</li>
-					<li class="s6__list-item">
-						<div class="s6__list-item-icon s6__list-item-icon-mod img-wrp svg-blur">
-							<img src="<?php bloginfo('template_url'); ?>/assets/img/s10__list-item-icon3.svg" alt="svg" loading="lazy">
-							<div class="blur"></div>
-						</div>
-						<div class="s6__list-item-title s10__list-item-title--mod str-text">Тайные техники</div>
-						<div class="s6__list-item-text def-text">
-							Объясним, как работает алгоритм ранжирования на Вб.
-							Посоветуем стратегию продвижения под ваши условия.
-							Покажем, как делать меньше выкупов и получать
-							больший рост позиций.
-						</div>
-					</li>
+					<?php
+						$current_page = get_post();
+						$page_id = $current_page->ID;
+						$pod = pods('page', $page_id);
+						$field1 = $pod->field('index_s10_icons');
+						$field2 = $pod->field('index_s10_titles');
+						$field3 = $pod->field('index_s10_list_texts');
+						$index = 0;
+						if (!empty($field1)) { 
+							foreach ($field1 as $item) {
+								echo '<li class="s6__list-item">';
+								echo '<div class="s6__list-item-icon img-wrp svg-blur">';
+								echo '<img src="'. wp_get_attachment_url($field1[$index]['ID']) .'" alt="svg" loading="lazy">';
+								echo '<div class="blur"></div>';
+								echo '</div>';
+								echo '<div class="s6__list-item-title str-text">'. $field2[$index] .'</div>';
+								echo '<div class="s6__list-item-text def-text">' . $field3[$index] . '</div>';
+								echo '</li>';
+								$index++;
+							}
+						}
+					?>
 				</ul>
 
 				<div class="s6__decor s6__decor-bg img-wrp">
@@ -1520,25 +1594,39 @@ Template Name: Home
 				</div>
 
 				<div class="s9__end-title def-title">
-					Получите полный автоматический <br>
-					функционал
+					<?php echo get_post_meta(get_the_ID(), 'index_s10_title_desk', true);?>
 				</div>
 				<div class="s9__end-desk def-text">
-					Самовыкупы с BBZ - это просто, <br>
-					как раз, два, три!
+					<?php echo get_post_meta(get_the_ID(), 'index_s10_desk_text', true);?>
 				</div>
+
+				
 
 				<div class="list-progress">
 					<div class="list-progress__item">
 						<div class="list-progress__item-wrp">
 							<div class="list-progress__item-icon img-wrp">
-								<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/line-progress/s10/list-progress__item-icon1.svg" alt="svg">
+								<?php
+									$current_page = get_post();
+									$page_id = $current_page->ID;
+									$pod = pods('page', $page_id);
+									$image_field = $pod->field('index_s10_list_icons');
+									if (!empty($image_field)) {
+										$image_url = wp_get_attachment_url($image_field[0]['ID']);
+										echo '<img src="' . $image_url . '" alt="icon"> loading="lazy"';
+									}
+								?>
 								<div class="blur"></div>
 							</div>
 						</div>
 						<div class="list-progress__text def-text">
-							Составьте план выкупов и <br>
-							напишите тексты отзывов
+							<?php
+								$current_page = get_post();
+								$page_id = $current_page->ID;
+								$pod = pods('page', $page_id);
+								$field = $pod->field('index_s10_list_text');
+								echo $field[0];
+							?>
 						</div>
 					</div>
 					<div class="list-progress__item-decoration">
@@ -1549,13 +1637,27 @@ Template Name: Home
 					<div class="list-progress__item">
 						<div class="list-progress__item-wrp">
 							<div class="list-progress__item-icon img-wrp">
-								<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/line-progress/s10/list-progress__item-icon2.svg" alt="svg">
+								<?php
+									$current_page = get_post();
+									$page_id = $current_page->ID;
+									$pod = pods('page', $page_id);
+									$image_field = $pod->field('index_s10_list_icons');
+									if (!empty($image_field)) {
+										$image_url = wp_get_attachment_url($image_field[1]['ID']);
+										echo '<img src="' . $image_url . '" alt="icon"> loading="lazy"';
+									}
+								?>
 								<div class="blur"></div>
 							</div>
 						</div>
 						<div class="list-progress__text def-text">
-							Коды придут автоматически <br>
-							- заберите товары
+							<?php
+								$current_page = get_post();
+								$page_id = $current_page->ID;
+								$pod = pods('page', $page_id);
+								$field = $pod->field('index_s10_list_text');
+								echo $field[1];
+							?>
 						</div>
 					</div>
 					<div class="list-progress__item-decoration">
@@ -1566,16 +1668,29 @@ Template Name: Home
 					<div class="list-progress__item">
 						<div class="list-progress__item-wrp">
 							<div class="list-progress__item-icon img-wrp">
-								<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/line-progress/s10/list-progress__item-icon3.svg" alt="svg">
+								<?php
+									$current_page = get_post();
+									$page_id = $current_page->ID;
+									$pod = pods('page', $page_id);
+									$image_field = $pod->field('index_s10_list_icons');
+									if (!empty($image_field)) {
+										$image_url = wp_get_attachment_url($image_field[2]['ID']);
+										echo '<img src="' . $image_url . '" alt="icon"> loading="lazy"';
+									}
+								?>
 								<div class="blur"></div>
 							</div>
 						</div>
 						<div class="list-progress__text def-text">
-							Бот оставит отзывы по плану <br>
-							и перекроет негатив
+							<?php
+								$current_page = get_post();
+								$page_id = $current_page->ID;
+								$pod = pods('page', $page_id);
+								$field = $pod->field('index_s10_list_text');
+								echo $field[2];
+							?>
 						</div>
 					</div>
-
 				</div>
 			</div>
 		</section>
@@ -1593,94 +1708,36 @@ Template Name: Home
 						</div>
 					</div>
 					<div class="slider-section__title-text title-wrp__text big-title">
-						Максимальная <br>
-						безопасность
+						<?php echo get_post_meta(get_the_ID(), 'index_s11_title', true);?>
 					</div>
 					<div class="slider-section__title-desk title-wrp__desk def-text">
-						Безопасный алгоритм работы! <br>
-						Наши клиенты не получают штрафы.
+						<?php echo get_post_meta(get_the_ID(), 'index_s11_desk', true);?>
 					</div>
 				</div>
 
 				<div class="swiper slider-section__swiper slider-section__swiper2">
 					<div class="swiper-wrapper">
-						<div class="swiper-slide slider-section__slider">
-							<div class="slider-section__slide-icon img-wrp">
-								<img src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__slide-icon.svg" alt="svg" loading="lazy">
-							</div>
-							<div class="slider-section__slider-title str-text">
-								Функция нагуливания поведеньческих факторов
-							</div>
-							<div class="slider-section__slider-text def-text">
-								Анонимность, максимальная имитация человека, гибкие способы оплаты, автооплата по сбп и картам, быстрое продвижение в поисковой выдаче.
-							</div>
-						</div>
-						<div class="swiper-slide slider-section__slider">
-							<div class="slider-section__slide-icon img-wrp">
-								<img src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__slide-icon2.svg" alt="svg" loading="lazy">
-							</div>
-							<div class="slider-section__slider-title str-text">
-								Авто-выкупы
-							</div>
-							<div class="slider-section__slider-text def-text">
-								Анонимность, максимальная имитация человека, гибкие способы оплаты, автооплата по сбп и картам, быстрое продвижение в поисковой выдаче.
-							</div>
-						</div>
-						<div class="swiper-slide slider-section__slider">
-							<div class="slider-section__slide-icon img-wrp">
-								<img src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__slide-icon.svg" alt="svg" loading="lazy">
-							</div>
-							<div class="slider-section__slider-title str-text">
-								Функция нагуливания поведеньческих факторов
-							</div>
-							<div class="slider-section__slider-text def-text">
-								Анонимность, максимальная имитация человека, гибкие способы оплаты, автооплата по сбп и картам, быстрое продвижение в поисковой выдаче.
-							</div>
-						</div>
-						<div class="swiper-slide slider-section__slider">
-							<div class="slider-section__slide-icon img-wrp">
-								<img src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__slide-icon2.svg" alt="svg" loading="lazy">
-							</div>
-							<div class="slider-section__slider-title str-text">
-								Функция нагуливания поведеньческих факторов
-							</div>
-							<div class="slider-section__slider-text def-text">
-								Анонимность, максимальная имитация человека, гибкие способы оплаты, автооплата по сбп и картам, быстрое продвижение в поисковой выдаче.
-							</div>
-						</div>
-						<div class="swiper-slide slider-section__slider">
-							<div class="slider-section__slide-icon img-wrp">
-								<img src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__slide-icon.svg" alt="svg" loading="lazy">
-							</div>
-							<div class="slider-section__slider-title str-text">
-								Авто-выкупы
-							</div>
-							<div class="slider-section__slider-text def-text">
-								Анонимность, максимальная имитация человека, гибкие способы оплаты, автооплата по сбп и картам, быстрое продвижение в поисковой выдаче.
-							</div>
-						</div>
-						<div class="swiper-slide slider-section__slider">
-							<div class="slider-section__slide-icon img-wrp">
-								<img src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__slide-icon2.svg" alt="svg" loading="lazy">
-							</div>
-							<div class="slider-section__slider-title str-text">
-								Функция нагуливания поведеньческих факторов
-							</div>
-							<div class="slider-section__slider-text def-text">
-								Анонимность, максимальная имитация человека, гибкие способы оплаты, автооплата по сбп и картам, быстрое продвижение в поисковой выдаче.
-							</div>
-						</div>
-						<div class="swiper-slide slider-section__slider">
-							<div class="slider-section__slide-icon img-wrp">
-								<img src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__slide-icon.svg" alt="svg" loading="lazy">
-							</div>
-							<div class="slider-section__slider-title str-text">
-								Авто-выкупы
-							</div>
-							<div class="slider-section__slider-text def-text">
-								Анонимность, максимальная имитация человека, гибкие способы оплаты, автооплата по сбп и картам, быстрое продвижение в поисковой выдаче.
-							</div>
-						</div>
+						<?php
+							$current_page = get_post();
+							$page_id = $current_page->ID;
+							$pod = pods('page', $page_id);
+							$field1 = $pod->field('index_s11_list_icons');
+							$field2 = $pod->field('index_s11_list_title');
+							$field3 = $pod->field('index_s11_list_text');
+							$index = 0;
+							if (!empty($field1)) { 
+								foreach ($field1 as $item) {
+									echo '<div class="swiper-slide slider-section__slider">';
+									echo '<div class="slider-section__slide-icon img-wrp">';
+									echo '<img src="'. wp_get_attachment_url($field1[$index]['ID']) .'" alt="svg" loading="lazy">';
+									echo '</div>';
+									echo '<div class="slider-section__slider-title str-text">'. $field2[$index] .'</div>';
+									echo '<div class="slider-section__slider-text def-text">' . $field3[$index] . '</div>';
+									echo '</div>';
+									$index++;
+								}
+							}
+						?>
 					</div>
 					<div class="slider-section__slider-navigation slider-navigation swiper-pagination"></div>
 
@@ -1734,51 +1791,57 @@ Template Name: Home
 						</div>
 					</div>
 					<div class="s12__title-text title-wrp__text big-title">
-						Что говорят о нас <br>
-						наши клиенты
+						<?php echo get_post_meta(get_the_ID(), 'index_s12_title', true);?>
 					</div>
 				</div>
 
 				<ul class="s12__list">
-					<li class="s12__item">
-						<div class="s12__item-title img-wrp">
-							<img src="<?php bloginfo('template_url'); ?>/assets/img/s12__item-title.svg" alt="svg" loading="lazy">
-						</div>
-						<div class="s12__item-text def-text">
-							Мы сами торгуем на Вайлдберриз.
-							Постоянно тестируем различные подходы.
-							Тесно общаемся с клиентами и вместе находим более эффективные решения,
-							которые действительно работают именно в данный момент.
-						</div>
-						<div class="user-box">
-							<div class="user-box__img img-wrp">
-								<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/user.png" alt="img">
-							</div>
-							<div class="user-box__title small-text">Олег Петров</div>
-							<div class="user-box__text small-text">Владелец магазина</div>
-						</div>
-					</li>
-					<li class="s12__item">
-						<div class="s12__item-title img-wrp">
-							<img src="<?php bloginfo('template_url'); ?>/assets/img/s12__item-title2.svg" alt="svg" loading="lazy">
-						</div>
-						<div class="s12__item-text def-text">
-							Мы сами торгуем на Вайлдберриз.
-							Постоянно тестируем различные подходы.
-							Тесно общаемся с клиентами и вместе находим более эффективные решения,
-							которые действительно работают именно в данный момент.
-						</div>
-						<div class="user-box">
-							<div class="user-box__img img-wrp">
-								<img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/img/user.png" alt="img">
-							</div>
-							<div class="user-box__title small-text">Олег Петров</div>
-							<div class="user-box__text small-text">Владелец магазина</div>
-						</div>
-					</li>
+					<?php
+						$current_page = get_post();
+						$page_id = $current_page->ID;
+						$pod = pods('page', $page_id);
+						$field1 = $pod->field('index_s12_list_title_icon');
+						$field2 = $pod->field('index_s12_list_text');
+						$field3 = $pod->field('index_s12_list_user_icon');
+						$field4 = $pod->field('index_s12_list_user_name');
+						$field5 = $pod->field('index_s12_list_user_status');
+						$index = 0;
+						if (!empty($field1)) { 
+							foreach ($field1 as $item) {
+								echo '<li class="s12__item">';
+								echo '<div class="s12__item-title img-wrp">';
+								echo '<img src="' . wp_get_attachment_url($field1[$index]['ID']) . '" alt="icon">';
+								echo '</div>';
+								echo '<div class="s12__item-text def-text">'. $field2[$index] .'</div>';
+								echo '<div class="user-box">';
+								echo '<div class="user-box__img img-wrp">';
+								echo '<img src="' . wp_get_attachment_url($field3[$index]['ID']) . '" alt="icon">';
+								echo '</div>';
+								echo '<div class="user-box__title small-text">'. $field4[$index] .'</div>';
+								echo '<div class="user-box__text small-text">'. $field5[$index] .'</div>';
+								echo '</div>';
+								echo '</li>';
+								$index++;
+							}
+						}
+					?>
+
 				</ul>
 
-				<a href="#" class="s12__btn main-btn">
+				<?php
+					// Получаем ID главной страницы
+					$front_page_id = get_option('page_on_front');
+					// Получаем объект поста главной страницы
+					$front_page = get_post($front_page_id);
+					// Получаем значение поля 'my_field' на главной странице
+					$front_page_text = get_post_meta($front_page->ID, 'tg_link', true);
+
+					// Используем значение поля 'my_field'
+					if (!empty($front_page_text)) {
+							echo '<a class="s12__btn main-btn" target="_blank" href="' . $front_page_text . '">';
+					}
+				?>
+				<!-- <a href="#" class="s12__btn main-btn"> -->
 					<span class="main-btn__text small-text">Все отзывы в телеграм</span>
 					<div class="main-btn__effect"></div>
 				</a>
@@ -1941,48 +2004,31 @@ Template Name: Home
 			<div class="s14__container container">
 				<div class="s14__title def-title">База знаний</div>
 				<div class="accordion">
-					<div class="accordion__item">
-						<div class="accordion__header">
-							<div class="accordion-left-decor img-wrp">
-								<svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<line x1="1.17678" y1="0.823223" x2="25.1768" y2="24.8232" stroke="#323F5F" stroke-width="0.5"/>
-									<line x1="0.823223" y1="24.8232" x2="24.8232" y2="0.823222" stroke="#323F5F" stroke-width="0.5"/>
-								</svg>
-							</div>
-							<div class="accordion__title str-text">Если нет компьютера</div>
-							<div class="accordion__icon img-wrp">
-								<img src="<?php bloginfo('template_url'); ?>/assets/img/accordion__icon.svg" alt="svg" loading="lazy">
-							</div>
-						</div>
-						<div class="accordion__content def-text">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. Volutpat odio facilisis mauris sit amet massa. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Mi eget mauris pharetra et. Non tellus orci ac auctor augue. Elit at imperdiet dui accumsan sit. Ornare arcu dui vivamus arcu felis. Egestas integer eget aliquet nibh praesent. In hac habitasse platea dictumst quisque sagittis purus. Pulvinar elementum integer enim neque volutpat ac.
-						</div>
-						<div class="accordion-line-decor img-wrp">
-							<img class="svg-web svg-tab" src="<?php bloginfo('template_url'); ?>/assets/img/accordion-line-decor.svg" alt="svg" loading="lazy">
-							<img class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/accordion-line-decor-mob.svg" alt="svg" loading="lazy">
-						</div>
-					</div>
-					<div class="accordion__item">
-						<div class="accordion__header">
-							<div class="accordion-left-decor img-wrp">
-								<svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<line x1="1.17678" y1="0.823223" x2="25.1768" y2="24.8232" stroke="#323F5F" stroke-width="0.5"/>
-									<line x1="0.823223" y1="24.8232" x2="24.8232" y2="0.823222" stroke="#323F5F" stroke-width="0.5"/>
-								</svg>
-							</div>
-							<div class="accordion__title str-text">Сколько можно сделать выкупов и отзывов</div>
-							<div class="accordion__icon img-wrp">
-								<img src="<?php bloginfo('template_url'); ?>/assets/img/accordion__icon2.svg" alt="svg" loading="lazy">
-							</div>
-						</div>
-						<div class="accordion__content def-text">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. Volutpat odio facilisis mauris sit amet massa. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Mi eget mauris pharetra et. Non tellus orci ac auctor augue. Elit at imperdiet dui accumsan sit. Ornare arcu dui vivamus arcu felis. Egestas integer eget aliquet nibh praesent. In hac habitasse platea dictumst quisque sagittis purus. Pulvinar elementum integer enim neque volutpat ac.
-						</div>
-						<div class="accordion-line-decor img-wrp">
-							<img src="<?php bloginfo('template_url'); ?>/assets/img/accordion-line-decor2.svg" alt="svg" loading="lazy">
-							<img class="svg-mob" src="<?php bloginfo('template_url'); ?>/assets/img/accordion-line-decor-mob.svg" alt="svg" loading="lazy">
-						</div>
-					</div>
+					<?php
+						$current_page = get_post();
+						$page_id = $current_page->ID;
+						$pod = pods('page', $page_id);
+						$field1 = $pod->field('index_s14_list_title');
+						$field2 = $pod->field('index_s14_list_text');
+						$index = 0;
+						if (!empty($field1)) { 
+							foreach ($field1 as $item) {
+								echo '<div class="accordion__item">';
+								echo '<div class="accordion__header">';
+								echo '<div class="accordion-left-decor img-wrp">';
+								echo '<svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="1.17678" y1="0.823223" x2="25.1768" y2="24.8232" stroke="#323F5F" stroke-width="0.5"/><line x1="0.823223" y1="24.8232" x2="24.8232" y2="0.823222" stroke="#323F5F" stroke-width="0.5"/></svg></div>';
+								echo '<div class="accordion__title str-text">'. $field1[$index] .'</div>';
+								echo '<div class="accordion__icon img-wrp">';
+								echo '<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(#filter0_b_2694_6402)"><path d="M0.249998 18C0.249999 8.19695 8.19695 0.250001 18 0.250002C27.8031 0.250003 35.75 8.19695 35.75 18C35.75 27.8031 27.8031 35.75 18 35.75C8.19694 35.75 0.249997 27.8031 0.249998 18Z" stroke="url(#paint0_linear_2694_6402)" stroke-width="0.5"/></g><path d="M12 15L18 21L24 15" stroke="url(#paint1_linear_2694_6402)" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/><defs><filter id="filter0_b_2694_6402" x="-110" y="-110" width="256" height="256" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feGaussianBlur in="BackgroundImageFix" stdDeviation="55"/><feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2694_6402"/><feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2694_6402" result="shape"/></filter><linearGradient id="paint0_linear_2694_6402" x1="18" y1="36" x2="18" y2="2.24109e-06" gradientUnits="userSpaceOnUse"><stop stop-color="#212941"/><stop offset="0.469183" stop-color="#2C3A65"/><stop offset="1" stop-color="#272C3D"/></linearGradient><linearGradient id="paint1_linear_2694_6402" x1="18" y1="17.2143" x2="18" y2="19.3929" gradientUnits="userSpaceOnUse"><stop stop-color="#EEEEEE"/><stop offset="0.51" stop-color="#C8DCF5"/><stop offset="1" stop-color="#CBD5E2"/></linearGradient></defs></svg></div></div>';
+								echo '<div class="accordion__content def-text">' . $field2[$index] . '</div>';
+								echo '<div class="accordion-line-decor img-wrp">';
+								echo '<img class="svg-web svg-tab" src="' . get_template_directory_uri() . '/assets/img/accordion-line-decor.svg" alt="svg" loading="lazy">';
+								echo '<img class="svg-mob" src="' . get_template_directory_uri() . '/assets/img/accordion-line-decor-mob.svg" alt="svg" loading="lazy">';
+								echo '</div></div>';
+								$index++;
+							}
+						}
+					?>
 				</div>
 			</div>
 		</section>

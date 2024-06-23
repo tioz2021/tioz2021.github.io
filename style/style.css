@@ -2769,13 +2769,6 @@ input {
   flex-direction: column;
   align-items: center;
 }
-.s6__list-item:last-child .s6__list-item-icon {
-  width: 55px;
-  height: 32px;
-  margin-bottom: 35px;
-  position: relative;
-  top: 12px;
-}
 .s6__list-item-icon {
   width: 44px;
   height: 44px;
@@ -4378,12 +4371,6 @@ input {
   filter: blur(44px);
   width: 132px;
   height: 118px;
-}
-
-.s10 .s6__list-item:nth-child(3) .blur {
-  filter: blur(8px) !important;
-  width: 16px !important;
-  height: 16px !important;
 }
 
 .window {
@@ -7304,12 +7291,6 @@ input {
   }
   .s6__list-item {
     margin-bottom: -1px;
-  }
-  .s6__list-item:last-child .s6__list-item-icon {
-    width: 30px;
-    height: 24px;
-    margin-bottom: 10px;
-    top: 0px;
   }
   .s6 .svg-web {
     display: none !important;

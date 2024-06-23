@@ -140,7 +140,7 @@
 			<iframe id="youtube-video"
 				width="100%"
 				height="100%"
-				src="https://www.youtube.com/embed/4xDzrJKXOOY?si=kJ4QlngfEmRnx4j4&controls=0"
+				src="<?php echo get_post_meta(get_the_ID(), 'index_s2_video', true);?>"
 				title="YouTube video player"
 				frameborder="0"
 				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
