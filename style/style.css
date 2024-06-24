@@ -4993,6 +4993,13 @@ input {
   height: auto;
 }
 
+.post-content .wp-block-preformatted {
+  display: ruby-text;
+}
+
+.post-content {
+  width: 100%;
+}
 .post-content a {
   text-decoration: underline;
   -webkit-text-decoration-skip-ink: none;

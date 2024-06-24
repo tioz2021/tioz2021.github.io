@@ -556,8 +556,12 @@ input {
   height: auto;
 }
 
+.post-content .wp-block-preformatted{
+  display: ruby-text;
+}
 // wp blog web
 .post-content{
+  width: 100%;
 
   // .post-content a
   a{
