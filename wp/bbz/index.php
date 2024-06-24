@@ -672,7 +672,7 @@ Template Name: Home
 									$image_field = $pod->field('index_s4_icons');
 									if (!empty($image_field)) {
 										$image_url = wp_get_attachment_url($image_field[0]['ID']);
-										echo '<img src="' . $image_url . '" alt="icon"> loading="lazy"';
+										echo '<img src="' . $image_url . '" alt="icon" loading="lazy">';
 									}
 								?>
 								<div class="blur"></div>
@@ -714,7 +714,7 @@ Template Name: Home
 									$image_field = $pod->field('index_s4_icons');
 									if (!empty($image_field)) {
 										$image_url = wp_get_attachment_url($image_field[1]['ID']);
-										echo '<img src="' . $image_url . '" alt="icon"> loading="lazy"';
+										echo '<img src="' . $image_url . '" alt="icon" loading="lazy">';
 									}
 								?>
 								<div class="blur"></div>
@@ -756,7 +756,7 @@ Template Name: Home
 									$image_field = $pod->field('index_s4_icons');
 									if (!empty($image_field)) {
 										$image_url = wp_get_attachment_url($image_field[2]['ID']);
-										echo '<img src="' . $image_url . '" alt="icon"> loading="lazy"';
+										echo '<img src="' . $image_url . '" alt="icon" loading="lazy">';
 									}
 								?>
 								<div class="blur"></div>
@@ -798,7 +798,7 @@ Template Name: Home
 									$image_field = $pod->field('index_s4_icons');
 									if (!empty($image_field)) {
 										$image_url = wp_get_attachment_url($image_field[3]['ID']);
-										echo '<img src="' . $image_url . '" alt="icon"> loading="lazy"';
+										echo '<img src="' . $image_url . '" alt="icon" loading="lazy">';
 									}
 								?>
 								<div class="blur"></div>
@@ -1613,7 +1613,7 @@ Template Name: Home
 									$image_field = $pod->field('index_s10_list_icons');
 									if (!empty($image_field)) {
 										$image_url = wp_get_attachment_url($image_field[0]['ID']);
-										echo '<img src="' . $image_url . '" alt="icon"> loading="lazy"';
+										echo '<img src="' . $image_url . '" alt="icon" loading="lazy">';
 									}
 								?>
 								<div class="blur"></div>
@@ -1644,7 +1644,7 @@ Template Name: Home
 									$image_field = $pod->field('index_s10_list_icons');
 									if (!empty($image_field)) {
 										$image_url = wp_get_attachment_url($image_field[1]['ID']);
-										echo '<img src="' . $image_url . '" alt="icon"> loading="lazy"';
+										echo '<img src="' . $image_url . '" alt="icon" loading="lazy">';
 									}
 								?>
 								<div class="blur"></div>
@@ -1675,7 +1675,7 @@ Template Name: Home
 									$image_field = $pod->field('index_s10_list_icons');
 									if (!empty($image_field)) {
 										$image_url = wp_get_attachment_url($image_field[2]['ID']);
-										echo '<img src="' . $image_url . '" alt="icon"> loading="lazy"';
+										echo '<img src="' . $image_url . '" alt="icon" loading="lazy">';
 									}
 								?>
 								<div class="blur"></div>

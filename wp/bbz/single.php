@@ -101,95 +101,112 @@ Template Name: Page Post
 							</div>
 						</div>
 						<ul class="pps1__top-menu-soc-list">
-							<li class="pps1__top-menu-soc-item">
-								<a href="<?php echo get_post_meta(get_the_ID(), 'blog_user_link_tw', true);?>" target="_blank" class="pps1__top-menu-soc-link img-wrp">
-									<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<g filter="url(#filter0_b_2728_6343)">
-										<circle cx="18" cy="18" r="18" fill="url(#paint0_linear_2728_6343)"/>
-										<circle cx="18" cy="18" r="17.75" stroke="url(#paint1_linear_2728_6343)" stroke-width="0.5"/>
-										</g>
-										<g clip-path="url(#clip0_2728_6343)">
-										<path d="M19.1209 17.0812L23.4921 12H22.4563L18.6607 16.4119L15.6293 12H12.1328L16.717 18.6716L12.1328 24H13.1687L17.1769 19.3409L20.3783 24H23.8748L19.1206 17.0812H19.1209ZM17.7021 18.7304L17.2376 18.066L13.542 12.7798H15.133L18.1155 17.046L18.5799 17.7103L22.4567 23.2557H20.8657L17.7021 18.7306V18.7304Z" fill="#BAD0EC"/>
-										</g>
-										<defs>
-										<filter id="filter0_b_2728_6343" x="-110" y="-110" width="256" height="256" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-										<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-										<feGaussianBlur in="BackgroundImageFix" stdDeviation="55"/>
-										<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2728_6343"/>
-										<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2728_6343" result="shape"/>
-										</filter>
-										<linearGradient id="paint0_linear_2728_6343" x1="18" y1="0" x2="18" y2="36" gradientUnits="userSpaceOnUse">
-										<stop stop-color="#131829"/>
-										<stop offset="1" stop-color="#0C0E1A"/>
-										</linearGradient>
-										<linearGradient id="paint1_linear_2728_6343" x1="18" y1="0" x2="18" y2="36" gradientUnits="userSpaceOnUse">
-										<stop stop-color="#212941"/>
-										<stop offset="0.469183" stop-color="#2C3A65"/>
-										<stop offset="1" stop-color="#272C3D"/>
-										</linearGradient>
-										<clipPath id="clip0_2728_6343">
-										<rect width="12" height="12" fill="white" transform="translate(12 12)"/>
-										</clipPath>
-										</defs>
-									</svg>									
-								</a>
-							</li>
-							<li class="pps1__top-menu-soc-item">
-								<a href="<?php echo get_post_meta(get_the_ID(), 'blog_user_link_vk', true);?>" target="_blank" class="pps1__top-menu-soc-link img-wrp">
-									<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<g filter="url(#filter0_b_2728_6340)">
-										<circle cx="18" cy="18" r="18" fill="url(#paint0_linear_2728_6340)"/>
-										<circle cx="18" cy="18" r="17.75" stroke="url(#paint1_linear_2728_6340)" stroke-width="0.5"/>
-										</g>
-										<path d="M25.8607 21.0753C25.8607 21.0137 25.801 21.0137 25.801 20.9521C25.5623 20.4589 25.0251 19.8425 24.309 19.1644C23.9509 18.8562 23.7718 18.6096 23.6525 18.4863C23.4734 18.2397 23.4734 18.0548 23.5331 17.8082C23.5928 17.6233 23.8315 17.3151 24.2493 16.7603C24.488 16.4521 24.6074 16.2671 24.7864 16.0822C25.6816 14.8493 26.0994 14.0479 25.98 13.6781L25.9204 13.6164C25.8607 13.5548 25.801 13.4932 25.6816 13.4932C25.5623 13.4315 25.3832 13.4315 25.2042 13.4932H22.9363C22.8766 13.4932 22.8766 13.4932 22.7572 13.4932C22.6976 13.4932 22.6379 13.4932 22.6379 13.4932H22.5782H22.5185L22.4588 13.5548C22.3991 13.6164 22.3991 13.6164 22.3991 13.6781C22.1604 14.3562 21.862 14.911 21.5636 15.5274C21.3846 15.8356 21.2055 16.1438 21.0265 16.3904C20.8474 16.637 20.7281 16.8219 20.6087 16.9452C20.4893 17.0685 20.37 17.1301 20.3103 17.2534C20.2506 17.3151 20.1313 17.3767 20.1313 17.3151C20.0716 17.3151 20.0119 17.3151 20.0119 17.2534C19.9522 17.1918 19.8925 17.1301 19.8328 17.0685C19.7732 17.0068 19.7732 16.8836 19.7135 16.7603C19.7135 16.637 19.7135 16.5137 19.7135 16.4521C19.7135 16.3904 19.7135 16.2055 19.7135 16.0822C19.7135 15.8973 19.7135 15.774 19.7135 15.7123C19.7135 15.5274 19.7135 15.2808 19.7135 15.0342C19.7135 14.7877 19.7135 14.6027 19.7135 14.4794C19.7135 14.3562 19.7135 14.1712 19.7135 14.0479C19.7135 13.863 19.7135 13.7397 19.7135 13.6781C19.7135 13.6164 19.6538 13.4931 19.6538 13.4315C19.5941 13.3699 19.5344 13.3082 19.4748 13.2466C19.4151 13.1849 19.2957 13.1849 19.236 13.1233C18.9376 13.0616 18.5795 13 18.1618 13C17.2069 13 16.5504 13.0616 16.3116 13.1849C16.1923 13.2466 16.0729 13.3082 16.0132 13.4315C15.8939 13.5548 15.8939 13.6164 15.9536 13.6164C16.252 13.6781 16.4907 13.8014 16.6101 13.9863L16.6697 14.1096C16.7294 14.1712 16.7294 14.2945 16.7891 14.4794C16.8488 14.6644 16.8488 14.8493 16.8488 15.0959C16.8488 15.4658 16.8488 15.8356 16.8488 16.0822C16.8488 16.3904 16.7891 16.5753 16.7891 16.7603C16.7891 16.9452 16.7294 17.0685 16.6697 17.1301C16.6101 17.2534 16.6101 17.3151 16.5504 17.3151C16.5504 17.3151 16.5504 17.3767 16.4907 17.3767C16.431 17.3767 16.3713 17.4384 16.252 17.4384C16.1923 17.4384 16.0729 17.3767 16.0132 17.3151C15.8939 17.2534 15.7745 17.1301 15.7148 17.0069C15.5955 16.8836 15.4761 16.6986 15.3567 16.4521C15.2374 16.2055 15.0583 15.9589 14.939 15.589L14.8196 15.3425C14.7599 15.2192 14.6406 14.9726 14.5212 14.6644C14.4018 14.3562 14.2825 14.1096 14.1631 13.8014C14.1034 13.6781 14.0438 13.6164 13.9841 13.5548H13.9244C13.9244 13.5548 13.8647 13.4932 13.805 13.4932C13.7453 13.4932 13.6857 13.4315 13.626 13.4315H11.4775C11.2387 13.4315 11.1194 13.4931 11.0597 13.5548L11 13.6164C11 13.6164 11 13.6781 11 13.7397C11 13.8014 11 13.863 11.0597 13.9863C11.3581 14.726 11.7162 15.4658 12.0743 16.2055C12.4324 16.8836 12.7904 17.5 13.0292 17.9315C13.3276 18.363 13.5663 18.7945 13.8647 19.1644C14.1631 19.5343 14.3422 19.7808 14.4018 19.9041C14.5212 20.0274 14.5809 20.089 14.6406 20.1507L14.8196 20.3356C14.939 20.4589 15.118 20.6438 15.3567 20.8288C15.5955 21.0137 15.8939 21.1986 16.1923 21.3836C16.4907 21.5685 16.8488 21.6918 17.2069 21.8151C17.6246 21.9384 17.9827 22 18.3408 21.9384H19.236C19.4151 21.9384 19.5344 21.8767 19.6538 21.7534L19.7135 21.6918C19.7135 21.6301 19.7732 21.6301 19.7732 21.5685C19.7732 21.5069 19.7732 21.4452 19.7732 21.3219C19.7732 21.0753 19.7732 20.8904 19.8328 20.7055C19.8925 20.5206 19.8925 20.3973 19.9522 20.274C20.0119 20.1507 20.0716 20.089 20.1313 20.0274C20.1909 19.9658 20.2506 19.9041 20.2506 19.9041H20.3103C20.4297 19.8425 20.6087 19.9041 20.7281 20.0274C20.9071 20.1507 21.0862 20.3356 21.2055 20.5206C21.3249 20.7055 21.5039 20.8904 21.7427 21.137C21.9814 21.3836 22.1604 21.5685 22.2798 21.6301L22.4588 21.7534C22.5782 21.8151 22.6976 21.8767 22.8766 21.9384C23.0556 22 23.175 22 23.2944 22L25.3235 21.9384C25.5026 21.9384 25.6816 21.8767 25.801 21.8151C25.9204 21.7534 25.98 21.6918 25.98 21.5685C25.98 21.5069 25.98 21.3836 25.98 21.3219C25.8607 21.1986 25.8607 21.137 25.8607 21.0753Z" fill="#BAD0EC"/>
-										<defs>
-										<filter id="filter0_b_2728_6340" x="-110" y="-110" width="256" height="256" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-										<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-										<feGaussianBlur in="BackgroundImageFix" stdDeviation="55"/>
-										<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2728_6340"/>
-										<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2728_6340" result="shape"/>
-										</filter>
-										<linearGradient id="paint0_linear_2728_6340" x1="18" y1="0" x2="18" y2="36" gradientUnits="userSpaceOnUse">
-										<stop stop-color="#131829"/>
-										<stop offset="1" stop-color="#0C0E1A"/>
-										</linearGradient>
-										<linearGradient id="paint1_linear_2728_6340" x1="18" y1="0" x2="18" y2="36" gradientUnits="userSpaceOnUse">
-										<stop stop-color="#212941"/>
-										<stop offset="0.469183" stop-color="#2C3A65"/>
-										<stop offset="1" stop-color="#272C3D"/>
-										</linearGradient>
-										</defs>
-									</svg>									
-								</a>
-							</li>
-							<li class="pps1__top-menu-soc-item">
-								<a href="<?php echo get_post_meta(get_the_ID(), 'blog_user_link_tg', true);?>" target="_blank" class="pps1__top-menu-soc-link img-wrp">
-									<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<g filter="url(#filter0_b_2728_6337)">
-										<circle cx="18" cy="18" r="18" fill="url(#paint0_linear_2728_6337)"/>
-										<circle cx="18" cy="18" r="17.75" stroke="url(#paint1_linear_2728_6337)" stroke-width="0.5"/>
-										</g>
-										<path d="M11.2455 16.7599L14.4642 17.9392L15.7189 21.906C15.7734 22.174 16.1008 22.2276 16.319 22.0668L18.1192 20.6194C18.2829 20.4586 18.5557 20.4586 18.7739 20.6194L21.9925 22.9244C22.2108 23.0853 22.5381 22.978 22.5926 22.71L24.993 11.453C25.0475 11.185 24.7748 10.917 24.502 11.0242L11.2455 16.063C10.9182 16.1703 10.9182 16.6527 11.2455 16.7599ZM15.5552 17.3496L21.8834 13.5436C21.9925 13.49 22.1016 13.6508 21.9925 13.7044L16.81 18.4753C16.6463 18.6361 16.4826 18.8505 16.4826 19.1185L16.319 20.405C16.319 20.5658 16.0462 20.6194 15.9917 20.405L15.337 18.0464C15.1733 17.7784 15.2825 17.4568 15.5552 17.3496Z" fill="#BAD0EC"/>
-										<defs>
-										<filter id="filter0_b_2728_6337" x="-110" y="-110" width="256" height="256" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-										<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-										<feGaussianBlur in="BackgroundImageFix" stdDeviation="55"/>
-										<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2728_6337"/>
-										<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2728_6337" result="shape"/>
-										</filter>
-										<linearGradient id="paint0_linear_2728_6337" x1="18" y1="0" x2="18" y2="36" gradientUnits="userSpaceOnUse">
-										<stop stop-color="#131829"/>
-										<stop offset="1" stop-color="#0C0E1A"/>
-										</linearGradient>
-										<linearGradient id="paint1_linear_2728_6337" x1="18" y1="0" x2="18" y2="36" gradientUnits="userSpaceOnUse">
-										<stop stop-color="#212941"/>
-										<stop offset="0.469183" stop-color="#2C3A65"/>
-										<stop offset="1" stop-color="#272C3D"/>
-										</linearGradient>
-										</defs>
-									</svg>														
-								</a>
-							</li>
+							<?php
+								$blog_user_link_tw = get_post_meta(get_the_ID(), 'blog_user_link_tw', true);
+								if (!empty($blog_user_link_tw)) {
+										echo '<li class="pps1__top-menu-soc-item">
+														<a href="' . esc_url($blog_user_link_tw) . '" target="_blank" class="pps1__top-menu-soc-link img-wrp">
+																<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<g filter="url(#filter0_b_2728_6343)">
+																				<circle cx="18" cy="18" r="18" fill="url(#paint0_linear_2728_6343)"/>
+																				<circle cx="18" cy="18" r="17.75" stroke="url(#paint1_linear_2728_6343)" stroke-width="0.5"/>
+																		</g>
+																		<g clip-path="url(#clip0_2728_6343)">
+																				<path d="M19.1209 17.0812L23.4921 12H22.4563L18.6607 16.4119L15.6293 12H12.1328L16.717 18.6716L12.1328 24H13.1687L17.1769 19.3409L20.3783 24H23.8748L19.1206 17.0812H19.1209ZM17.7021 18.7304L17.2376 18.066L13.542 12.7798H15.133L18.1155 17.046L18.5799 17.7103L22.4567 23.2557H20.8657L17.7021 18.7306V18.7304Z" fill="#BAD0EC"/>
+																		</g>
+																		<defs>
+																				<filter id="filter0_b_2728_6343" x="-110" y="-110" width="256" height="256" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+																						<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+																						<feGaussianBlur in="BackgroundImageFix" stdDeviation="55"/>
+																						<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2728_6343"/>
+																						<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2728_6343" result="shape"/>
+																				</filter>
+																				<linearGradient id="paint0_linear_2728_6343" x1="18" y1="0" x2="18" y2="36" gradientUnits="userSpaceOnUse">
+																						<stop stop-color="#131829"/>
+																						<stop offset="1" stop-color="#0C0E1A"/>
+																				</linearGradient>
+																				<linearGradient id="paint1_linear_2728_6343" x1="18" y1="0" x2="18" y2="36" gradientUnits="userSpaceOnUse">
+																						<stop stop-color="#212941"/>
+																						<stop offset="0.469183" stop-color="#2C3A65"/>
+																						<stop offset="1" stop-color="#272C3D"/>
+																				</linearGradient>
+																				<clipPath id="clip0_2728_6343">
+																						<rect width="12" height="12" fill="white" transform="translate(12 12)"/>
+																				</clipPath>
+																		</defs>
+																</svg>									
+														</a>
+													</li>';
+								}
+							?>
+
+							<?php
+								$blog_user_link_vk = get_post_meta(get_the_ID(), 'blog_user_link_vk', true);
+								if (!empty($blog_user_link_vk)) {
+										echo '<li class="pps1__top-menu-soc-item">
+														<a href="' . esc_url($blog_user_link_vk) . '" target="_blank" class="pps1__top-menu-soc-link img-wrp">
+															<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<g filter="url(#filter0_b_2728_6340)">
+																<circle cx="18" cy="18" r="18" fill="url(#paint0_linear_2728_6340)"/>
+																<circle cx="18" cy="18" r="17.75" stroke="url(#paint1_linear_2728_6340)" stroke-width="0.5"/>
+																</g>
+																<path d="M25.8607 21.0753C25.8607 21.0137 25.801 21.0137 25.801 20.9521C25.5623 20.4589 25.0251 19.8425 24.309 19.1644C23.9509 18.8562 23.7718 18.6096 23.6525 18.4863C23.4734 18.2397 23.4734 18.0548 23.5331 17.8082C23.5928 17.6233 23.8315 17.3151 24.2493 16.7603C24.488 16.4521 24.6074 16.2671 24.7864 16.0822C25.6816 14.8493 26.0994 14.0479 25.98 13.6781L25.9204 13.6164C25.8607 13.5548 25.801 13.4932 25.6816 13.4932C25.5623 13.4315 25.3832 13.4315 25.2042 13.4932H22.9363C22.8766 13.4932 22.8766 13.4932 22.7572 13.4932C22.6976 13.4932 22.6379 13.4932 22.6379 13.4932H22.5782H22.5185L22.4588 13.5548C22.3991 13.6164 22.3991 13.6164 22.3991 13.6781C22.1604 14.3562 21.862 14.911 21.5636 15.5274C21.3846 15.8356 21.2055 16.1438 21.0265 16.3904C20.8474 16.637 20.7281 16.8219 20.6087 16.9452C20.4893 17.0685 20.37 17.1301 20.3103 17.2534C20.2506 17.3151 20.1313 17.3767 20.1313 17.3151C20.0716 17.3151 20.0119 17.3151 20.0119 17.2534C19.9522 17.1918 19.8925 17.1301 19.8328 17.0685C19.7732 17.0068 19.7732 16.8836 19.7135 16.7603C19.7135 16.637 19.7135 16.5137 19.7135 16.4521C19.7135 16.3904 19.7135 16.2055 19.7135 16.0822C19.7135 15.8973 19.7135 15.774 19.7135 15.7123C19.7135 15.5274 19.7135 15.2808 19.7135 15.0342C19.7135 14.7877 19.7135 14.6027 19.7135 14.4794C19.7135 14.3562 19.7135 14.1712 19.7135 14.0479C19.7135 13.863 19.7135 13.7397 19.7135 13.6781C19.7135 13.6164 19.6538 13.4931 19.6538 13.4315C19.5941 13.3699 19.5344 13.3082 19.4748 13.2466C19.4151 13.1849 19.2957 13.1849 19.236 13.1233C18.9376 13.0616 18.5795 13 18.1618 13C17.2069 13 16.5504 13.0616 16.3116 13.1849C16.1923 13.2466 16.0729 13.3082 16.0132 13.4315C15.8939 13.5548 15.8939 13.6164 15.9536 13.6164C16.252 13.6781 16.4907 13.8014 16.6101 13.9863L16.6697 14.1096C16.7294 14.1712 16.7294 14.2945 16.7891 14.4794C16.8488 14.6644 16.8488 14.8493 16.8488 15.0959C16.8488 15.4658 16.8488 15.8356 16.8488 16.0822C16.8488 16.3904 16.7891 16.5753 16.7891 16.7603C16.7891 16.9452 16.7294 17.0685 16.6697 17.1301C16.6101 17.2534 16.6101 17.3151 16.5504 17.3151C16.5504 17.3151 16.5504 17.3767 16.4907 17.3767C16.431 17.3767 16.3713 17.4384 16.252 17.4384C16.1923 17.4384 16.0729 17.3767 16.0132 17.3151C15.8939 17.2534 15.7745 17.1301 15.7148 17.0069C15.5955 16.8836 15.4761 16.6986 15.3567 16.4521C15.2374 16.2055 15.0583 15.9589 14.939 15.589L14.8196 15.3425C14.7599 15.2192 14.6406 14.9726 14.5212 14.6644C14.4018 14.3562 14.2825 14.1096 14.1631 13.8014C14.1034 13.6781 14.0438 13.6164 13.9841 13.5548H13.9244C13.9244 13.5548 13.8647 13.4932 13.805 13.4932C13.7453 13.4932 13.6857 13.4315 13.626 13.4315H11.4775C11.2387 13.4315 11.1194 13.4931 11.0597 13.5548L11 13.6164C11 13.6164 11 13.6781 11 13.7397C11 13.8014 11 13.863 11.0597 13.9863C11.3581 14.726 11.7162 15.4658 12.0743 16.2055C12.4324 16.8836 12.7904 17.5 13.0292 17.9315C13.3276 18.363 13.5663 18.7945 13.8647 19.1644C14.1631 19.5343 14.3422 19.7808 14.4018 19.9041C14.5212 20.0274 14.5809 20.089 14.6406 20.1507L14.8196 20.3356C14.939 20.4589 15.118 20.6438 15.3567 20.8288C15.5955 21.0137 15.8939 21.1986 16.1923 21.3836C16.4907 21.5685 16.8488 21.6918 17.2069 21.8151C17.6246 21.9384 17.9827 22 18.3408 21.9384H19.236C19.4151 21.9384 19.5344 21.8767 19.6538 21.7534L19.7135 21.6918C19.7135 21.6301 19.7732 21.6301 19.7732 21.5685C19.7732 21.5069 19.7732 21.4452 19.7732 21.3219C19.7732 21.0753 19.7732 20.8904 19.8328 20.7055C19.8925 20.5206 19.8925 20.3973 19.9522 20.274C20.0119 20.1507 20.0716 20.089 20.1313 20.0274C20.1909 19.9658 20.2506 19.9041 20.2506 19.9041H20.3103C20.4297 19.8425 20.6087 19.9041 20.7281 20.0274C20.9071 20.1507 21.0862 20.3356 21.2055 20.5206C21.3249 20.7055 21.5039 20.8904 21.7427 21.137C21.9814 21.3836 22.1604 21.5685 22.2798 21.6301L22.4588 21.7534C22.5782 21.8151 22.6976 21.8767 22.8766 21.9384C23.0556 22 23.175 22 23.2944 22L25.3235 21.9384C25.5026 21.9384 25.6816 21.8767 25.801 21.8151C25.9204 21.7534 25.98 21.6918 25.98 21.5685C25.98 21.5069 25.98 21.3836 25.98 21.3219C25.8607 21.1986 25.8607 21.137 25.8607 21.0753Z" fill="#BAD0EC"/>
+																<defs>
+																<filter id="filter0_b_2728_6340" x="-110" y="-110" width="256" height="256" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+																<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+																<feGaussianBlur in="BackgroundImageFix" stdDeviation="55"/>
+																<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2728_6340"/>
+																<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2728_6340" result="shape"/>
+																</filter>
+																<linearGradient id="paint0_linear_2728_6340" x1="18" y1="0" x2="18" y2="36" gradientUnits="userSpaceOnUse">
+																<stop stop-color="#131829"/>
+																<stop offset="1" stop-color="#0C0E1A"/>
+																</linearGradient>
+																<linearGradient id="paint1_linear_2728_6340" x1="18" y1="0" x2="18" y2="36" gradientUnits="userSpaceOnUse">
+																<stop stop-color="#212941"/>
+																<stop offset="0.469183" stop-color="#2C3A65"/>
+																<stop offset="1" stop-color="#272C3D"/>
+																</linearGradient>
+																</defs>
+															</svg>								
+														</a>
+													</li>';
+								}
+							?>
+
+							<?php
+								$blog_user_link_tg = get_post_meta(get_the_ID(), 'blog_user_link_tg', true);
+								if (!empty($blog_user_link_tg)) {
+										echo '<li class="pps1__top-menu-soc-item">
+														<a href="' . esc_url($blog_user_link_tg) . '" target="_blank" class="pps1__top-menu-soc-link img-wrp">
+															<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<g filter="url(#filter0_b_2728_6337)">
+																<circle cx="18" cy="18" r="18" fill="url(#paint0_linear_2728_6337)"/>
+																<circle cx="18" cy="18" r="17.75" stroke="url(#paint1_linear_2728_6337)" stroke-width="0.5"/>
+																</g>
+																<path d="M11.2455 16.7599L14.4642 17.9392L15.7189 21.906C15.7734 22.174 16.1008 22.2276 16.319 22.0668L18.1192 20.6194C18.2829 20.4586 18.5557 20.4586 18.7739 20.6194L21.9925 22.9244C22.2108 23.0853 22.5381 22.978 22.5926 22.71L24.993 11.453C25.0475 11.185 24.7748 10.917 24.502 11.0242L11.2455 16.063C10.9182 16.1703 10.9182 16.6527 11.2455 16.7599ZM15.5552 17.3496L21.8834 13.5436C21.9925 13.49 22.1016 13.6508 21.9925 13.7044L16.81 18.4753C16.6463 18.6361 16.4826 18.8505 16.4826 19.1185L16.319 20.405C16.319 20.5658 16.0462 20.6194 15.9917 20.405L15.337 18.0464C15.1733 17.7784 15.2825 17.4568 15.5552 17.3496Z" fill="#BAD0EC"/>
+																<defs>
+																<filter id="filter0_b_2728_6337" x="-110" y="-110" width="256" height="256" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+																<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+																<feGaussianBlur in="BackgroundImageFix" stdDeviation="55"/>
+																<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2728_6337"/>
+																<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2728_6337" result="shape"/>
+																</filter>
+																<linearGradient id="paint0_linear_2728_6337" x1="18" y1="0" x2="18" y2="36" gradientUnits="userSpaceOnUse">
+																<stop stop-color="#131829"/>
+																<stop offset="1" stop-color="#0C0E1A"/>
+																</linearGradient>
+																<linearGradient id="paint1_linear_2728_6337" x1="18" y1="0" x2="18" y2="36" gradientUnits="userSpaceOnUse">
+																<stop stop-color="#212941"/>
+																<stop offset="0.469183" stop-color="#2C3A65"/>
+																<stop offset="1" stop-color="#272C3D"/>
+																</linearGradient>
+																</defs>
+															</svg>						
+														</a>
+													</li>';
+								}
+							?>
 						</ul>
 
 						<div class="pps1__top-menu-line img-wrp">
