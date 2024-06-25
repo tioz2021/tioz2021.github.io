@@ -552,9 +552,6 @@ input {
 .pps1__text-bg-block{
   height: auto;
 }
-.pps1__nav{
-  height: auto;
-}
 
 .post-content .wp-block-preformatted{
   display: ruby-text;
@@ -685,6 +682,12 @@ input {
   margin-right: 0;
 }
 
+.pps1__nav{
+  height: auto !important;
+  aspect-ratio: unset !important;
+  border-radius: 24px !important;
+  align-items: center !important;
+}
 
 // 768
 @media screen and (max-width: 1200px) {
@@ -972,7 +975,6 @@ input {
   .win-box__text{
     margin-top: 40px;
   }
-
   @import "_adaptive-mob";
 }
 

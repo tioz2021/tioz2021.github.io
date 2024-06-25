@@ -2067,6 +2067,10 @@
     height: 240px;
     border: 0.5px solid var(--dop-decor-bg);
     border-radius: 12px 12px 0 0;
+    // .pb1__item-icon img
+    img{
+      object-fit: cover;
+    }
   }
 
   // .pb1__item-info

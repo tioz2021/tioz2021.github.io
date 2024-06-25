@@ -215,7 +215,7 @@ Template Name: Page Post
 						</div>
 					</div>
 
-					<div class="pps1__nav">
+					<div class="pps1__nav cta-box">
 						<div class="pps1__nav-title def-text">Содержание</div>
 					</div>
 					
