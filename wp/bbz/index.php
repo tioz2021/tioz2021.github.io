@@ -404,6 +404,22 @@ Template Name: Home
 							}
 						?>
 					</div>
+					<div class="slider-section__swiper-button-next swiper-button-next img-wrp">
+						<div class="slider-section__swiper-arrow img-wrp">
+							<img src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__swiper-arrow-next.svg" alt="svg" loading="lazy">
+						</div>
+						<div class="slider-section__swiper-bg img-wrp">
+							<img src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__swiper-bg.svg" alt="svg" loading="lazy">
+						</div>
+					</div>
+					<div class="slider-section__swiper-button-prev swiper-button-prev img-wrp">
+						<div class="slider-section__swiper-arrow img-wrp">
+							<img src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__swiper-arrow-prev.svg" alt="svg" loading="lazy">
+						</div>
+						<div class="slider-section__swiper-bg img-wrp">
+							<img src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__swiper-bg.svg" alt="svg" loading="lazy">
+						</div>
+					</div>
 
 					<a href="#" class="scroll-section__btn main-btn small-text" id="openBtn">
 						<span class="main-btn__text small-text">Смотреть обзор</span>
@@ -1171,8 +1187,23 @@ Template Name: Home
 							}
 						?>
 					</div>
-
 					<div class="scroll-section__slider-navigation slider-navigation swiper-pagination"></div>
+
+					<div class="slider-section__swiper-button-next swiper-button-next img-wrp">
+						<div class="slider-section__swiper-arrow img-wrp">
+							<img src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__swiper-arrow-next.svg" alt="svg" loading="lazy">
+						</div>
+						<div class="slider-section__swiper-bg img-wrp">
+							<img src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__swiper-bg.svg" alt="svg" loading="lazy">
+						</div>
+					</div>
+					<div class="slider-section__swiper-button-prev swiper-button-prev img-wrp">
+						<div class="slider-section__swiper-arrow img-wrp">
+							<img src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__swiper-arrow-prev.svg" alt="svg" loading="lazy">
+						</div>
+						<div class="slider-section__swiper-bg img-wrp">
+							<img src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__swiper-bg.svg" alt="svg" loading="lazy">
+						</div>
 				</div>
 
 			</div>

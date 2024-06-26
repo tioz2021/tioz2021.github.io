@@ -1,72 +1,116 @@
-// sliders opt
 (() => {
-  // Функция для инициализации слайдеров
-  function initSwiper(container, paginationSelector, navigationSelectors, config = {}) {
-    return new Swiper(container, {
-      effect: "fade",
-      fadeEffect: {
-        crossFade: true,
-      },
-      pagination: {
-        el: paginationSelector,
-        clickable: true,
-      },
-      navigation: navigationSelectors,
-      ...config,
-    });
-  }
+  // Включаем Swiper
+  let swiperContainer = document.querySelector(".scroll-section__swiper1");
+  let swiperContainer2 = document.querySelector(".scroll-section__swiper2");
 
-  // Инициализация слайдеров
-  const swiperConfig = {
+  var swiper = new Swiper(swiperContainer, {
+    // effect: "fade",
+    fadeEffect: {
+      crossFade: true,
+    },
+    navigation: {
+      nextEl: ".s2 .slider-section__swiper-button-next",
+      prevEl: ".s2 .slider-section__swiper-button-prev",
+    },
+
     speed: 750,
     slidesPerView: 1,
     effect: "creative",
     creativeEffect: {
       prev: {
+        // shadow: true,
         translate: ["-120%", 0, -500],
         opacity: 0,
       },
       next: {
+        // shadow: true,
         translate: ["120%", 0, -500],
         opacity: 1,
       },
     },
-  };
 
-  const swiper1 = initSwiper(".scroll-section__swiper1", ".swiper-pagination", {}, swiperConfig);
-  const swiper2 = initSwiper(".scroll-section__swiper2", ".swiper-pagination", {}, swiperConfig);
-  
-  const defaultSwiperConfig = {
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+  var swiper2 = new Swiper(swiperContainer2, {
+    // effect: "fade",
+
+    navigation: {
+      nextEl: ".s5 .slider-section__swiper-button-next",
+      prevEl: ".s5 .slider-section__swiper-button-prev",
+    },
+
+    speed: 750,
+    slidesPerView: 1,
+    effect: "creative",
+    creativeEffect: {
+      prev: {
+        // shadow: true,
+        translate: ["-120%", 0, -500],
+        opacity: 0,
+      },
+      next: {
+        // shadow: true,
+        translate: ["120%", 0, -500],
+        opacity: 1,
+      },
+    },
+
     fadeEffect: {
       crossFade: true,
     },
-  };
 
-  const swiperDef1 = initSwiper(
-    ".slider-section__swiper1",
-    ".slider-section__swiper1 .swiper-pagination",
-    {
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+
+  let swiper_def_slider_element = document.querySelector(
+    ".slider-section__swiper1"
+  );
+  let swiper_def_slider_element2 = document.querySelector(
+    ".slider-section__swiper2"
+  );
+  var swiper_def_slider = new Swiper(swiper_def_slider_element, {
+    effect: "fade",
+    fadeEffect: {
+      crossFade: true,
+    },
+
+    pagination: {
+      el: ".slider-section__swiper1 .swiper-pagination",
+      clickable: true,
+    },
+
+    navigation: {
       nextEl: ".slider-section__swiper1 .slider-section__swiper-button-next",
       prevEl: ".slider-section__swiper1 .slider-section__swiper-button-prev",
     },
-    defaultSwiperConfig
-  );
-  
-  const swiperDef2 = initSwiper(
-    ".slider-section__swiper2",
-    ".slider-section__swiper2 .swiper-pagination",
-    {
+  });
+  var swiper_def_slider2 = new Swiper(swiper_def_slider_element2, {
+    effect: "fade",
+    fadeEffect: {
+      crossFade: true,
+    },
+
+    pagination: {
+      el: ".slider-section__swiper2 .swiper-pagination",
+      clickable: true,
+    },
+
+    navigation: {
       nextEl: ".slider-section__swiper2 .slider-section__swiper-button-next",
       prevEl: ".slider-section__swiper2 .slider-section__swiper-button-prev",
     },
-    defaultSwiperConfig
-  );
+  });
 
-  // Функция для инициализации мобильного слайдера
   function initializeSwiper() {
     if (window.innerWidth < 1200) {
-      new Swiper(".s3_tab-swiper", {
-        initialSlide: 1,
+      var swiper = new Swiper(".s3_tab-swiper", {
+        initialSlide: 1, // This will make the second slide active
         pagination: {
           el: ".s3 .scroll-section__slider-navigation",
           clickable: true,
@@ -75,76 +119,125 @@
           nextEl: ".s3 .slider-section__swiper-button-next",
           prevEl: ".s3 .slider-section__swiper-button-prev",
         },
+
         slidesPerView: 1,
         spaceBetween: 10,
       });
     }
   }
 
-  // Инициализация при загрузке страницы и изменении размера окна
+  // Инициализация при загрузке страницы
   initializeSwiper();
-  window.addEventListener("resize", initializeSwiper);
 
-  // Функция для обработки прокрутки
-  function scrollSliderBlock() {
+  // Инициализация при изменении размера окна
+  window.addEventListener("resize", function () {
+    initializeSwiper();
+  });
+
+  function scroll_slider_block() {
     const scrollingBlock = document.querySelector(".s2.scrolling-block");
     const scrollingBlock2 = document.querySelector(".s5.scrolling-block");
-    if (!scrollingBlock || !scrollingBlock2) return;
-    
+    if(!scrollingBlock || !scrollingBlock2) return;
     const scrollTop = window.scrollY || window.pageYOffset;
-    const windowWidth = window.innerWidth;
-    const windowHeight = window.innerHeight;
     
-    // Конфигурация для разного разрешения экрана
-    const config = [
-      {
-        condition: windowWidth > 1200 && windowHeight < 910,
-        ranges: [
-          { start: 1700, end: 2700, fixedClass: "fixed", topFixed: "-797px", topStart: "910px", topEnd: "1910px", slideRanges: [1701, 2000, 2301, 2600] },
-          { start: 6400, end: 7400, fixedClass: "fixed", topFixed: "-697px", topStart: "5684px", topEnd: "6684px", slideRanges: [6401, 6700, 7001, 7300] }
-        ]
-      },
-      {
-        condition: windowWidth > 1200 && windowHeight >= 910,
-        ranges: [
-          { start: 1400, end: 2400, fixedClass: "fixed", topFixed: "-497px", topStart: "910px", topEnd: "1910px", slideRanges: [1401, 1700, 2001, 2300] },
-          { start: 6100, end: 7100, fixedClass: "fixed", topFixed: "-409px", topStart: "5684px", topEnd: "6684px", slideRanges: [6101, 6400, 6701, 7000] }
-        ]
+    // 910<height
+    if(window.innerWidth > 1200 && window.innerHeight < 910){
+      if (scrollTop >= 1700 && scrollTop <= 2700) {
+        if (scrollingBlock.classList.contains("fixed") == false) {
+          // console.log("fixed");
+          scrollingBlock.classList.add("fixed");
+          scrollingBlock.style.top = "-797px";
+        }
+      } else if (scrollTop <= 1700) {
+        if (scrollingBlock.classList.contains("fixed") == true) {
+          scrollingBlock.classList.remove("fixed");
+          scrollingBlock.style.top = "910px";
+        }
+      } else if (scrollTop >= 2700) {
+        if (scrollingBlock.classList.contains("fixed") == true) {
+          scrollingBlock.classList.remove("fixed");
+          scrollingBlock.style.top = "1910px";
+        }
       }
-    ];
-    
-    config.forEach(({ condition, ranges }) => {
-      if (condition) {
-        ranges.forEach(({ start, end, fixedClass, topFixed, topStart, topEnd, slideRanges }) => {
-          const block = (start >= 6000) ? scrollingBlock2 : scrollingBlock;
-          const swiper = (start >= 6000) ? swiper2 : swiper1;
+      if (scrollTop >= 1701 && scrollTop <= 2000) swiper.slideTo(0, 1000);
+      else if (scrollTop >= 2001 && scrollTop <= 2300) swiper.slideTo(1, 1000);
+      else if (scrollTop >= 2301 && scrollTop <= 2600) swiper.slideTo(2, 1000);
 
-          if (scrollTop >= start && scrollTop <= end) {
-            if (!block.classList.contains(fixedClass)) {
-              block.classList.add(fixedClass);
-              block.style.top = topFixed;
-            }
-          } else if (scrollTop < start) {
-            if (block.classList.contains(fixedClass)) {
-              block.classList.remove(fixedClass);
-              block.style.top = topStart;
-            }
-          } else if (scrollTop > end) {
-            if (block.classList.contains(fixedClass)) {
-              block.classList.remove(fixedClass);
-              block.style.top = topEnd;
-            }
-          }
-
-          slideRanges.forEach((range, index) => {
-            if (scrollTop >= range && scrollTop <= slideRanges[index + 1]) swiper.slideTo(index, 1000);
-          });
-        });
+      // s5 scroller 2
+      if (scrollTop >= 6400 && scrollTop <= 7400) {
+        if (scrollingBlock2.classList.contains("fixed") == false) {
+          // console.log("fixed");
+          scrollingBlock2.classList.add("fixed");
+          scrollingBlock2.style.top = "-697px";
+        }
+      } else if (scrollTop <= 6400) {
+        if (scrollingBlock2.classList.contains("fixed") == true) {
+          scrollingBlock2.classList.remove("fixed");
+          scrollingBlock2.style.top = "5684px";
+        }
+      } else if (scrollTop >= 7400) {
+        if (scrollingBlock2.classList.contains("fixed") == true) {
+          scrollingBlock2.classList.remove("fixed");
+          scrollingBlock2.style.top = "6684px";
+        }
       }
-    });
+      if (scrollTop >= 6401 && scrollTop <= 6700) swiper2.slideTo(0, 1000);
+      else if (scrollTop >= 6701 && scrollTop <= 7000) swiper2.slideTo(1, 1000);
+      else if (scrollTop >= 7001 && scrollTop <= 7300) swiper2.slideTo(2, 1000);
+    }
+
+    // big height
+    if(window.innerWidth > 1200 && window.innerHeight >= 910){
+      // s2 scroller 1
+      if (scrollTop >= 1400 && scrollTop <= 2400) {
+        if (scrollingBlock.classList.contains("fixed") == false) {
+          // console.log("fixed");
+          scrollingBlock.classList.add("fixed");
+          scrollingBlock.style.top = "-497px";
+          // scrollingBlock.style.bottom = "0px"
+        }
+      } else if (scrollTop <= 1400) {
+        if (scrollingBlock.classList.contains("fixed") == true) {
+          scrollingBlock.classList.remove("fixed");
+          scrollingBlock.style.top = "910px";
+          scrollingBlock.style.bottom = "unset"
+        }
+      } else if (scrollTop >= 2400) {
+        if (scrollingBlock.classList.contains("fixed") == true) {
+          scrollingBlock.classList.remove("fixed");
+          scrollingBlock.style.top = "1910px";
+        }
+      }
+      if (scrollTop >= 1401 && scrollTop <= 1700) swiper.slideTo(0, 1000);
+      else if (scrollTop >= 1701 && scrollTop <= 2000) swiper.slideTo(1, 1000);
+      else if (scrollTop >= 2001 && scrollTop <= 2300) swiper.slideTo(2, 1000);
+  
+      // s5 scroller 2
+      // 5300
+      if (scrollTop >= 6100 && scrollTop <= 7100) {
+        if (scrollingBlock2.classList.contains("fixed") == false) {
+          // console.log("fixed");
+          scrollingBlock2.classList.add("fixed");
+          scrollingBlock2.style.top = "-409px";
+        }
+      } else if (scrollTop <= 6100) {
+        if (scrollingBlock2.classList.contains("fixed") == true) {
+          scrollingBlock2.classList.remove("fixed");
+          scrollingBlock2.style.top = "5684px";
+        }
+      } else if (scrollTop >= 7100) {
+        if (scrollingBlock2.classList.contains("fixed") == true) {
+          scrollingBlock2.classList.remove("fixed");
+          scrollingBlock2.style.top = "6684px";
+        }
+      }
+      if (scrollTop >= 6101 && scrollTop <= 6400) swiper2.slideTo(0, 1000);
+      else if (scrollTop >= 6401 && scrollTop <= 6700) swiper2.slideTo(1, 1000);
+      else if (scrollTop >= 6701 && scrollTop <= 7000) swiper2.slideTo(2, 1000);
+    }
   }
 
-  window.addEventListener("scroll", scrollSliderBlock);
+  window.addEventListener("scroll", scroll_slider_block);
 })();
 
 // 3d s1
