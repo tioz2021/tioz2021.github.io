@@ -2024,12 +2024,6 @@ template {
   animation-fill-mode: forwards;
 }
 
-* {
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  scroll-behavior: smooth;
-}
-
 html {
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -6409,6 +6403,9 @@ input {
   }
 }
 @media screen and (max-width: 720px) {
+  .title-wrp::after {
+    display: none;
+  }
   .pps1__icon {
     border-radius: 12px;
   }

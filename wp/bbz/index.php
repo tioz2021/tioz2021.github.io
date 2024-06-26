@@ -6,6 +6,35 @@ Template Name: Home
 
 <?php  get_header($name); ?>
 
+<!-- logo video -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var video = document.querySelector('.logo-video1');
+    var video2 = document.querySelector('.logo-video2');
+    if (video) {
+      video.muted = true;
+      video.play().then(function() {
+      // Видео успешно запущено, ничего не делаем.
+      }).catch(function(error) {
+        console.log('Автоматическое воспроизведение видео заблокировано:', error);
+        // Если видео не запускается, скрываем его.
+        video.style.display = 'none';
+      });
+    }
+
+    if (video2) {
+      video2.muted = true;
+      video2.play().then(function() {
+      // Видео успешно запущено, ничего не делаем.
+      }).catch(function(error) {
+        console.log('Автоматическое воспроизведение видео заблокировано:', error);
+        // Если видео не запускается, скрываем его.
+        video2.style.display = 'none';
+      });
+    }
+  });
+</script>
+
 	<header class="header">
 		<div class="header__container container">
 			<div class="header__logo logo img-wrp">
@@ -48,7 +77,6 @@ Template Name: Home
 						echo '<a class="header__btn main-btn small-text" target="_blank" href="' . $front_page_text . '">';
 				}
 			?>
-			<!-- <a href="#" class="header__btn main-btn small-text"> -->
 				<span class="main-btn__text small-text">Купить лицензию</span>
 				<div class="main-btn__effect"></div>
 			</a>
@@ -2035,32 +2063,5 @@ Template Name: Home
 	</main>
 
 <?php  get_footer($name); ?>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var video = document.querySelector('.logo-video1');
-    var video2 = document.querySelector('.logo-video2');
-    if (video) {
-      video.muted = true;
-      video.play().then(function() {
-      // Видео успешно запущено, ничего не делаем.
-      }).catch(function(error) {
-        console.log('Автоматическое воспроизведение видео заблокировано:', error);
-        // Если видео не запускается, скрываем его.
-        video.style.display = 'none';
-      });
-    }
-
-    if (video2) {
-      video2.muted = true;
-      video2.play().then(function() {
-      // Видео успешно запущено, ничего не делаем.
-      }).catch(function(error) {
-        console.log('Автоматическое воспроизведение видео заблокировано:', error);
-        // Если видео не запускается, скрываем его.
-        video2.style.display = 'none';
-      });
-    }
-  });
-</script>
 </body>
 </html>

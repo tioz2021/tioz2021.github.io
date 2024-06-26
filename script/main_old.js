@@ -1,72 +1,108 @@
-// sliders opt
+// sliders
 (() => {
-  // Функция для инициализации слайдеров
-  function initSwiper(container, paginationSelector, navigationSelectors, config = {}) {
-    return new Swiper(container, {
-      effect: "fade",
-      fadeEffect: {
-        crossFade: true,
-      },
-      pagination: {
-        el: paginationSelector,
-        clickable: true,
-      },
-      navigation: navigationSelectors,
-      ...config,
-    });
-  }
+  // Включаем Swiper
+  let swiperContainer = document.querySelector(".scroll-section__swiper1");
+  let swiperContainer2 = document.querySelector(".scroll-section__swiper2");
 
-  // Инициализация слайдеров
-  const swiperConfig = {
+  var swiper = new Swiper(swiperContainer, {
+    // effect: "fade",
+    fadeEffect: {
+      crossFade: true,
+    },
+
     speed: 750,
     slidesPerView: 1,
     effect: "creative",
     creativeEffect: {
       prev: {
+        // shadow: true,
         translate: ["-120%", 0, -500],
         opacity: 0,
       },
       next: {
+        // shadow: true,
         translate: ["120%", 0, -500],
         opacity: 1,
       },
     },
-  };
 
-  const swiper1 = initSwiper(".scroll-section__swiper1", ".swiper-pagination", {}, swiperConfig);
-  const swiper2 = initSwiper(".scroll-section__swiper2", ".swiper-pagination", {}, swiperConfig);
-  
-  const defaultSwiperConfig = {
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+  var swiper2 = new Swiper(swiperContainer2, {
+    // effect: "fade",
+
+    speed: 750,
+    slidesPerView: 1,
+    effect: "creative",
+    creativeEffect: {
+      prev: {
+        // shadow: true,
+        translate: ["-120%", 0, -500],
+        opacity: 0,
+      },
+      next: {
+        // shadow: true,
+        translate: ["120%", 0, -500],
+        opacity: 1,
+      },
+    },
+
     fadeEffect: {
       crossFade: true,
     },
-  };
 
-  const swiperDef1 = initSwiper(
-    ".slider-section__swiper1",
-    ".slider-section__swiper1 .swiper-pagination",
-    {
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+
+  let swiper_def_slider_element = document.querySelector(
+    ".slider-section__swiper1"
+  );
+  let swiper_def_slider_element2 = document.querySelector(
+    ".slider-section__swiper2"
+  );
+  var swiper_def_slider = new Swiper(swiper_def_slider_element, {
+    effect: "fade",
+    fadeEffect: {
+      crossFade: true,
+    },
+
+    pagination: {
+      el: ".slider-section__swiper1 .swiper-pagination",
+      clickable: true,
+    },
+
+    navigation: {
       nextEl: ".slider-section__swiper1 .slider-section__swiper-button-next",
       prevEl: ".slider-section__swiper1 .slider-section__swiper-button-prev",
     },
-    defaultSwiperConfig
-  );
-  
-  const swiperDef2 = initSwiper(
-    ".slider-section__swiper2",
-    ".slider-section__swiper2 .swiper-pagination",
-    {
+  });
+  var swiper_def_slider2 = new Swiper(swiper_def_slider_element2, {
+    effect: "fade",
+    fadeEffect: {
+      crossFade: true,
+    },
+
+    pagination: {
+      el: ".slider-section__swiper2 .swiper-pagination",
+      clickable: true,
+    },
+
+    navigation: {
       nextEl: ".slider-section__swiper2 .slider-section__swiper-button-next",
       prevEl: ".slider-section__swiper2 .slider-section__swiper-button-prev",
     },
-    defaultSwiperConfig
-  );
+  });
 
-  // Функция для инициализации мобильного слайдера
   function initializeSwiper() {
     if (window.innerWidth < 1200) {
-      new Swiper(".s3_tab-swiper", {
-        initialSlide: 1,
+      var swiper = new Swiper(".s3_tab-swiper", {
+        initialSlide: 1, // This will make the second slide active
         pagination: {
           el: ".s3 .scroll-section__slider-navigation",
           clickable: true,
@@ -75,76 +111,125 @@
           nextEl: ".s3 .slider-section__swiper-button-next",
           prevEl: ".s3 .slider-section__swiper-button-prev",
         },
+
         slidesPerView: 1,
         spaceBetween: 10,
       });
     }
   }
 
-  // Инициализация при загрузке страницы и изменении размера окна
+  // Инициализация при загрузке страницы
   initializeSwiper();
-  window.addEventListener("resize", initializeSwiper);
 
-  // Функция для обработки прокрутки
-  function scrollSliderBlock() {
+  // Инициализация при изменении размера окна
+  window.addEventListener("resize", function () {
+    initializeSwiper();
+  });
+
+  function scroll_slider_block() {
     const scrollingBlock = document.querySelector(".s2.scrolling-block");
     const scrollingBlock2 = document.querySelector(".s5.scrolling-block");
-    if (!scrollingBlock || !scrollingBlock2) return;
-    
+    if(!scrollingBlock || !scrollingBlock2) return;
     const scrollTop = window.scrollY || window.pageYOffset;
-    const windowWidth = window.innerWidth;
-    const windowHeight = window.innerHeight;
     
-    // Конфигурация для разного разрешения экрана
-    const config = [
-      {
-        condition: windowWidth > 1200 && windowHeight < 910,
-        ranges: [
-          { start: 1700, end: 2700, fixedClass: "fixed", topFixed: "-797px", topStart: "910px", topEnd: "1910px", slideRanges: [1701, 2000, 2301, 2600] },
-          { start: 6400, end: 7400, fixedClass: "fixed", topFixed: "-697px", topStart: "5684px", topEnd: "6684px", slideRanges: [6401, 6700, 7001, 7300] }
-        ]
-      },
-      {
-        condition: windowWidth > 1200 && windowHeight >= 910,
-        ranges: [
-          { start: 1400, end: 2400, fixedClass: "fixed", topFixed: "-497px", topStart: "910px", topEnd: "1910px", slideRanges: [1401, 1700, 2001, 2300] },
-          { start: 6100, end: 7100, fixedClass: "fixed", topFixed: "-409px", topStart: "5684px", topEnd: "6684px", slideRanges: [6101, 6400, 6701, 7000] }
-        ]
+    // 910<height
+    if(window.innerWidth > 1200 && window.innerHeight < 910){
+      if (scrollTop >= 1700 && scrollTop <= 2700) {
+        if (scrollingBlock.classList.contains("fixed") == false) {
+          // console.log("fixed");
+          scrollingBlock.classList.add("fixed");
+          scrollingBlock.style.top = "-797px";
+        }
+      } else if (scrollTop <= 1700) {
+        if (scrollingBlock.classList.contains("fixed") == true) {
+          scrollingBlock.classList.remove("fixed");
+          scrollingBlock.style.top = "910px";
+        }
+      } else if (scrollTop >= 2700) {
+        if (scrollingBlock.classList.contains("fixed") == true) {
+          scrollingBlock.classList.remove("fixed");
+          scrollingBlock.style.top = "1910px";
+        }
       }
-    ];
-    
-    config.forEach(({ condition, ranges }) => {
-      if (condition) {
-        ranges.forEach(({ start, end, fixedClass, topFixed, topStart, topEnd, slideRanges }) => {
-          const block = (start >= 6000) ? scrollingBlock2 : scrollingBlock;
-          const swiper = (start >= 6000) ? swiper2 : swiper1;
+      if (scrollTop >= 1701 && scrollTop <= 2000) swiper.slideTo(0, 1000);
+      else if (scrollTop >= 2001 && scrollTop <= 2300) swiper.slideTo(1, 1000);
+      else if (scrollTop >= 2301 && scrollTop <= 2600) swiper.slideTo(2, 1000);
 
-          if (scrollTop >= start && scrollTop <= end) {
-            if (!block.classList.contains(fixedClass)) {
-              block.classList.add(fixedClass);
-              block.style.top = topFixed;
-            }
-          } else if (scrollTop < start) {
-            if (block.classList.contains(fixedClass)) {
-              block.classList.remove(fixedClass);
-              block.style.top = topStart;
-            }
-          } else if (scrollTop > end) {
-            if (block.classList.contains(fixedClass)) {
-              block.classList.remove(fixedClass);
-              block.style.top = topEnd;
-            }
-          }
-
-          slideRanges.forEach((range, index) => {
-            if (scrollTop >= range && scrollTop <= slideRanges[index + 1]) swiper.slideTo(index, 1000);
-          });
-        });
+      // s5 scroller 2
+      if (scrollTop >= 6400 && scrollTop <= 7400) {
+        if (scrollingBlock2.classList.contains("fixed") == false) {
+          // console.log("fixed");
+          scrollingBlock2.classList.add("fixed");
+          scrollingBlock2.style.top = "-697px";
+        }
+      } else if (scrollTop <= 6400) {
+        if (scrollingBlock2.classList.contains("fixed") == true) {
+          scrollingBlock2.classList.remove("fixed");
+          scrollingBlock2.style.top = "5684px";
+        }
+      } else if (scrollTop >= 7400) {
+        if (scrollingBlock2.classList.contains("fixed") == true) {
+          scrollingBlock2.classList.remove("fixed");
+          scrollingBlock2.style.top = "6684px";
+        }
       }
-    });
+      if (scrollTop >= 6401 && scrollTop <= 6700) swiper2.slideTo(0, 1000);
+      else if (scrollTop >= 6701 && scrollTop <= 7000) swiper2.slideTo(1, 1000);
+      else if (scrollTop >= 7001 && scrollTop <= 7300) swiper2.slideTo(2, 1000);
+    }
+
+    // big height
+    if(window.innerWidth > 1200 && window.innerHeight >= 910){
+      // s2 scroller 1
+      if (scrollTop >= 1400 && scrollTop <= 2400) {
+        if (scrollingBlock.classList.contains("fixed") == false) {
+          // console.log("fixed");
+          scrollingBlock.classList.add("fixed");
+          scrollingBlock.style.top = "-497px";
+          // scrollingBlock.style.bottom = "0px"
+        }
+      } else if (scrollTop <= 1400) {
+        if (scrollingBlock.classList.contains("fixed") == true) {
+          scrollingBlock.classList.remove("fixed");
+          scrollingBlock.style.top = "910px";
+          scrollingBlock.style.bottom = "unset"
+        }
+      } else if (scrollTop >= 2400) {
+        if (scrollingBlock.classList.contains("fixed") == true) {
+          scrollingBlock.classList.remove("fixed");
+          scrollingBlock.style.top = "1910px";
+        }
+      }
+      if (scrollTop >= 1401 && scrollTop <= 1700) swiper.slideTo(0, 1000);
+      else if (scrollTop >= 1701 && scrollTop <= 2000) swiper.slideTo(1, 1000);
+      else if (scrollTop >= 2001 && scrollTop <= 2300) swiper.slideTo(2, 1000);
+  
+      // s5 scroller 2
+      // 5300
+      if (scrollTop >= 6100 && scrollTop <= 7100) {
+        if (scrollingBlock2.classList.contains("fixed") == false) {
+          // console.log("fixed");
+          scrollingBlock2.classList.add("fixed");
+          scrollingBlock2.style.top = "-409px";
+        }
+      } else if (scrollTop <= 6100) {
+        if (scrollingBlock2.classList.contains("fixed") == true) {
+          scrollingBlock2.classList.remove("fixed");
+          scrollingBlock2.style.top = "5684px";
+        }
+      } else if (scrollTop >= 7100) {
+        if (scrollingBlock2.classList.contains("fixed") == true) {
+          scrollingBlock2.classList.remove("fixed");
+          scrollingBlock2.style.top = "6684px";
+        }
+      }
+      if (scrollTop >= 6101 && scrollTop <= 6400) swiper2.slideTo(0, 1000);
+      else if (scrollTop >= 6401 && scrollTop <= 6700) swiper2.slideTo(1, 1000);
+      else if (scrollTop >= 6701 && scrollTop <= 7000) swiper2.slideTo(2, 1000);
+    }
   }
 
-  window.addEventListener("scroll", scrollSliderBlock);
+  window.addEventListener("scroll", scroll_slider_block);
 })();
 
 // 3d s1
@@ -271,10 +356,12 @@
     wrapper.addEventListener("mouseleave", function () {
       clearTimeout(timeoutId);
       blurElement.forEach((e) => (e.style.opacity = "0.3"));
+      // blurElement.style.opacity = "0.1";
     });
 
     function animateOpacity() {
       blurElement.forEach((e) => (e.style.opacity = "0.5"));
+      // blurElement.style.opacity = "0.1";
       timeoutId = setTimeout(() => {
         blurElement.forEach((e) => (e.style.opacity = "0.3"));
         timeoutId = setTimeout(animateOpacity, 1000);
@@ -282,6 +369,35 @@
     }
   });
 })();
+
+// Функция для генерации случайных чисел в заданном диапазоне
+// (() => {
+//   function getRandom(min, max) {
+//     return Math.random() * (max - min) + min;
+//   }
+
+//   // Генерация SVG звезд
+//   let svg =
+//     '<svg width="1920" height="916" viewBox="0 0 1920 916" fill="none" xmlns="http://www.w3.org/2000/svg">';
+
+//   for (let i = 0; i < 500; i++) {
+//     let cx = getRandom(0, 1920);
+//     let cy = getRandom(0, 916);
+
+//     svg += `<circle cx="${cx}" cy="${cy}" r="0.5" fill="#8B9FCE">
+// 							 <animate attributeName="cy" dur="${getRandom(6, 12)}s" values="${cy}; ${
+//       cy - getRandom(50, 150)
+//     }" repeatCount="indefinite" />
+// 							 <animate attributeName="opacity" dur="${getRandom(
+//                  6,
+//                  12
+//                )}s" values="1; 0" repeatCount="indefinite" />
+// 						</circle>`;
+//   }
+
+//   svg += "</svg>";
+//   // console.log(svg);
+// })();
 
 // acardion
 (() => {
@@ -323,34 +439,252 @@
   });
 })();
 
-// animation opt
+// animation
 (() => {
+  // Создаем новый экземпляр Intersection Observer
   const observer = new IntersectionObserver(
     (entries) => {
+      // Перебираем все записи (entries)
       entries.forEach((entry) => {
-        if (entry.isIntersecting && entry.intersectionRatio >= 0.1 && entry.time >= 100) {
-          const textElm = entry.target.querySelector(".small-text");
-          if (!textElm) return;
+        // console.log(entry.target);
+        // Если блок стал видимым и находится в зоне видимости больше 1 секунды
+        if (
+          entry.isIntersecting &&
+          entry.intersectionRatio >= 0.1 &&
+          entry.time >= 100
+        ) {
+          let text_elm = entry.target.querySelector(".small-text");
+          // Запускаем анимацию или выполняем нужные действия
+          // entry.target.classList.add("anim");
 
-          textElm.classList.add("anim");
-
-          const classPrefix = entry.target.className.match(/(\w+?)(__pre-title|--pre-title--\w+)/);
-          if (!classPrefix) return;
-
-          const lottieElements = document.querySelectorAll(`.${classPrefix[1]} lottie-player`);
-          if (lottieElements.length > 0) {
+          if (entry.target.classList.contains("s1__pre-title") == true) {
+            text_elm.classList.add("anim");
             setTimeout(() => {
-              lottieElements.forEach((elm) => elm.play());
+              let elm = document.querySelectorAll(".s1 lottie-player");
+              elm[0].play();
+              elm[1].play();
+            }, 300);
+          }
+          if (entry.target.classList.contains("s2__pre-title") == true) {
+            text_elm.classList.add("anim");
+            setTimeout(() => {
+              let elm = document.querySelectorAll(".s2 lottie-player");
+              elm[0].play();
+              elm[1].play();
+            }, 300);
+          }
+          if (entry.target.classList.contains("s3__pre-title") == true) {
+            text_elm.classList.add("anim");
+            setTimeout(() => {
+              let elm = document.querySelectorAll(".s3 lottie-player");
+              elm[0].play();
+              elm[1].play();
+            }, 300);
+          }
+          if (entry.target.classList.contains("s4__pre-title") == true) {
+            text_elm.classList.add("anim");
+            setTimeout(() => {
+              let elm = document.querySelectorAll(".s4 lottie-player");
+              elm[0].play();
+              elm[1].play();
+            }, 300);
+          }
+          if (entry.target.classList.contains("s5__pre-title") == true) {
+            text_elm.classList.add("anim");
+            setTimeout(() => {
+              let elm = document.querySelectorAll(".s5 lottie-player");
+              elm[0].play();
+              elm[1].play();
+            }, 300);
+          }
+          if (entry.target.classList.contains("s6__pre-title--one") == true) {
+            text_elm.classList.add("anim");
+            setTimeout(() => {
+              let elm = document.querySelectorAll(
+                ".s6__pre-title--one lottie-player"
+              );
+              elm[0].play();
+              elm[1].play();
+            }, 300);
+          }
+          if (entry.target.classList.contains("s7__pre-title--one") == true) {
+            text_elm.classList.add("anim");
+            setTimeout(() => {
+              let elm = document.querySelectorAll(
+                ".s7__pre-title--one lottie-player"
+              );
+              elm[0].play();
+              elm[1].play();
+            }, 300);
+          }
+          if (entry.target.classList.contains("s7__pre-title--two") == true) {
+            text_elm.classList.add("anim");
+            setTimeout(() => {
+              let elm = document.querySelectorAll(
+                ".s7__pre-title--two lottie-player"
+              );
+              elm[0].play();
+              elm[1].play();
+            }, 300);
+          }
+          if (entry.target.classList.contains("s8__pre-title") == true) {
+            text_elm.classList.add("anim");
+            setTimeout(() => {
+              let elm = document.querySelectorAll(".s8 lottie-player");
+              elm[0].play();
+              elm[1].play();
+            }, 300);
+          }
+          if (entry.target.classList.contains("s9__pre-title") == true) {
+            text_elm.classList.add("anim");
+            setTimeout(() => {
+              let elm = document.querySelectorAll(".s9 lottie-player");
+              elm[0].play();
+              elm[1].play();
+            }, 300);
+          }
+          if (entry.target.classList.contains("s6__pre-title--two") == true) {
+            text_elm.classList.add("anim");
+            setTimeout(() => {
+              let elm = document.querySelectorAll(
+                ".s6__pre-title--two lottie-player"
+              );
+              elm[0].play();
+              elm[1].play();
+            }, 300);
+          }
+          if (entry.target.classList.contains("s11__pre-title") == true) {
+            text_elm.classList.add("anim");
+            setTimeout(() => {
+              let elm = document.querySelectorAll(".s11 lottie-player");
+              elm[0].play();
+              elm[1].play();
+            }, 300);
+          }
+          if (entry.target.classList.contains("s12__pre-title") == true) {
+            text_elm.classList.add("anim");
+            setTimeout(() => {
+              let elm = document.querySelectorAll(".s12 lottie-player");
+              elm[0].play();
+              elm[1].play();
             }, 300);
           }
 
+          // page about
+          if (entry.target.classList.contains("pas1__pre-title") == true) {
+            text_elm.classList.add("anim");
+            setTimeout(() => {
+              let elm = document.querySelectorAll(
+                ".pas1__pre-title lottie-player"
+              );
+              elm[0].play();
+              elm[1].play();
+            }, 300);
+          }
+          if (entry.target.classList.contains("other-page-s7-title") == true) {
+            text_elm.classList.add("anim");
+            setTimeout(() => {
+              let elm = document.querySelectorAll(
+                ".other-page-s7-title lottie-player"
+              );
+              elm[0].play();
+              elm[1].play();
+            }, 300);
+          }
+
+          // page how to works
+          if (entry.target.classList.contains("phwks1__pre-title") == true) {
+            text_elm.classList.add("anim");
+            setTimeout(() => {
+              let elm = document.querySelectorAll(
+                ".phwks1__pre-title lottie-player"
+              );
+              elm[0].play();
+              elm[1].play();
+            }, 300);
+          }
+
+          // page question answer
+          if (entry.target.classList.contains("qas1__pre-title") == true) {
+            text_elm.classList.add("anim");
+            setTimeout(() => {
+              let elm = document.querySelectorAll(
+                ".qas1__pre-title lottie-player"
+              );
+              elm[0].play();
+              elm[1].play();
+            }, 300);
+          }
+
+          // page how to work
+          if (entry.target.classList.contains("phws1__pre-title") == true) {
+            text_elm.classList.add("anim");
+            setTimeout(() => {
+              let elm = document.querySelectorAll(
+                ".phws1__pre-title lottie-player"
+              );
+              elm[0].play();
+              elm[1].play();
+            }, 300);
+          }
+
+          // page blog
+          if (entry.target.classList.contains("pb1__pre-title") == true) {
+            text_elm.classList.add("anim");
+            setTimeout(() => {
+              let elm = document.querySelectorAll(
+                ".pb1__pre-title lottie-player"
+              );
+              elm[0].play();
+              elm[1].play();
+            }, 300);
+          }
+
+          // page post
+          if (entry.target.classList.contains("pps1__pre-title--one") == true) {
+            text_elm.classList.add("anim");
+            setTimeout(() => {
+              let elm = document.querySelectorAll(
+                ".pps1__pre-title--one lottie-player"
+              );
+              elm[0].play();
+              elm[1].play();
+            }, 300);
+          }
+          if (
+            entry.target.classList.contains("pps1__pre-title--last") == true
+          ) {
+            text_elm.classList.add("anim");
+            setTimeout(() => {
+              let elm = document.querySelectorAll(
+                ".pps1__pre-title--last lottie-player"
+              );
+              elm[0].play();
+              elm[1].play();
+            }, 300);
+          }
+
+          // 404
+          if (entry.target.classList.contains("pre-title-404") == true) {
+            text_elm.classList.add("anim");
+            setTimeout(() => {
+              let elm = document.querySelectorAll(
+                ".pre-title-404 lottie-player"
+              );
+              elm[0].play();
+              elm[1].play();
+            }, 300);
+          }
+
+          // После того, как анимация выполнена, можно отключить наблюдение, если оно больше не нужно
           observer.unobserve(entry.target);
         }
       });
     },
     { threshold: 1, delay: 100 }
-  );
+  ); // Устанавливаем порог пересечения 100% и задержку 1 секунда
 
+  // Список селекторов для анимации
   const selectors = [
     ".s1__pre-title",
     ".s2__pre-title",
@@ -365,20 +699,38 @@
     ".s6__pre-title--two",
     ".s11__pre-title",
     ".s12__pre-title",
+
+    // page about
     ".pas1__pre-title",
     ".other-page-s7-title",
+
+    // page how to works
     ".phwks1__pre-title",
+
+    // page question answer
     ".qas1__pre-title",
+
+    // page how to work
     ".phws1__pre-title",
+
+    // page blog
     ".pb1__pre-title",
+
+    // page post
     ".pps1__pre-title--one",
     ".pps1__pre-title--last",
+
+    // 404
     ".pre-title-404",
   ];
 
+  // Проходимся по списку селекторов
   selectors.forEach((selector) => {
+    // Находим блок для текущего селектора
     const blockToAnimate = document.querySelector(selector);
-    if (blockToAnimate) observer.observe(blockToAnimate);
+    // Начинаем наблюдение за блоком
+    if (!blockToAnimate) return;
+    observer.observe(blockToAnimate);
   });
 })();
 
@@ -502,6 +854,11 @@
         }, 1500);
       }, 3500);
     });
+
+  // const video = document.querySelector(".logo-video1");
+  // setTimeout(() => {
+  //   video.classList.add("active");
+  // }, 2000);
 })();
 
 // s4 tab|mob auto scroller
@@ -623,38 +980,77 @@
   });
 })();
 
-// page-how-works functional opt
+// page-how-works functional
 (() => {
   const btns = document.querySelectorAll(".phws1__item");
-  const deskBox = document.querySelectorAll(".phws1__body");
+  const desk_box = document.querySelectorAll(".phws1__body");
   const accordion = document.querySelectorAll(".s14-modifi");
 
-  const toggleActiveClasses = (elements, index) => {
-    elements.forEach(e => e.classList.remove("active-effect"));
-    setTimeout(() => {
-      elements.forEach(e => e.classList.remove("active"));
-      elements[index].classList.add("active");
-      elements[index].classList.add("active-effect");
-    }, 600);
-  };
-
-  const handleClick = evt => {
-    btns.forEach(e => e.classList.remove("active"));
+  const f = evt => {
+    btns.forEach(e => e.classList.remove("active"))
     evt.target.classList.add("active");
 
-    if (evt.target.classList.contains("phws1__item1")) {
-      toggleActiveClasses(deskBox, 0);
-      toggleActiveClasses(accordion, 0);
-    } else if (evt.target.classList.contains("phws1__item2")) {
-      toggleActiveClasses(deskBox, 1);
-      toggleActiveClasses(accordion, 1);
-    } else {
-      toggleActiveClasses(deskBox, 2);
-      toggleActiveClasses(accordion, 2);
-    }
-  };
+    if(evt.target.classList.contains("phws1__item1")){
+      desk_box.forEach(e => e.classList.remove("active-effect"))
+      setTimeout(() => {
+        desk_box.forEach(e => e.classList.remove("active"))
+      }, 600)
+      setTimeout(() => {
+        desk_box[0].classList.add("active");
+        desk_box[0].classList.add("active-effect");
+      }, 600)
 
-  if (btns) btns.forEach(e => e.addEventListener("click", handleClick));
+      
+      accordion.forEach(e => e.classList.remove("active-effect"))
+      setTimeout(() => {
+        accordion.forEach(e => e.classList.remove("active"))
+      }, 600)
+      setTimeout(() => {
+        accordion[0].classList.add("active");
+        accordion[0].classList.add("active-effect");
+      }, 600)
+
+    } else if(evt.target.classList.contains("phws1__item2")){
+      desk_box.forEach(e => e.classList.remove("active-effect"))
+      setTimeout(() => {
+        desk_box.forEach(e => e.classList.remove("active"))
+      }, 600)
+      setTimeout(() => {
+        desk_box[1].classList.add("active");
+        desk_box[1].classList.add("active-effect");
+      }, 600)
+
+      accordion.forEach(e => e.classList.remove("active-effect"))
+      setTimeout(() => {
+        accordion.forEach(e => e.classList.remove("active"))
+      }, 600)
+      setTimeout(() => {
+        accordion[1].classList.add("active");
+        accordion[1].classList.add("active-effect");
+      }, 600)
+    } else {
+      desk_box.forEach(e => e.classList.remove("active-effect"))
+      setTimeout(() => {
+        desk_box.forEach(e => e.classList.remove("active"))
+      }, 600)
+      setTimeout(() => {
+        desk_box[2].classList.add("active");
+        desk_box[2].classList.add("active-effect");
+      }, 600)
+
+      accordion.forEach(e => e.classList.remove("active-effect"))
+      setTimeout(() => {
+        accordion.forEach(e => e.classList.remove("active"))
+      }, 600)
+      setTimeout(() => {
+        accordion[2].classList.add("active");
+        accordion[2].classList.add("active-effect");
+      }, 600)
+    }
+
+  }
+
+  if(btns) btns.forEach(e => e.addEventListener("click", f))
 })();
 
 // page-how-work functional
