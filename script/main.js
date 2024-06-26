@@ -30,9 +30,6 @@
         swipers[0].classList.add("active");
         swipers[0].classList.add("active-effect");
       }, 400);
-
-      // swipers[0].classList.add("active");
-      // swipers[1].classList.remove("active");
     }
 
     // change active effect
@@ -60,8 +57,6 @@
         swipers[1].classList.add("active");
         swipers[1].classList.add("active-effect");
       }, 400);
-      // swipers[1].classList.add("active");
-      // swipers[0].classList.remove("active");
     }
 
     // change active effect
@@ -132,7 +127,6 @@
     
     // const sliderBox = document.querySelector
     function openSwipers() {
-      // console.log("h");
       
       // max value active slider ?
       const nameElm = this.querySelector(".ms__title");
@@ -227,8 +221,6 @@
 
       // hidden Swipers
       swiperWrp.classList.remove("active");
-      // swipers[0].classList.remove("active");
-      // swipers[1].classList.remove("active");
 
       // change Header wiev mod
       header.classList.add("mod-box");
@@ -256,10 +248,27 @@
       premNumberElm.textContent = swiper2.activeIndex+1;
     }
 
-    vipPrevBtn.addEventListener("click", changeNumberVip);
-    vipNextBtn.addEventListener("click", changeNumberVip);
+    if(vipPrevBtn) vipPrevBtn.addEventListener("click", changeNumberVip);
+    if(vipNextBtn) vipNextBtn.addEventListener("click", changeNumberVip);
 
-    premPrevBtn.addEventListener("click", changeNumberPrem);
-    premNextBtn.addEventListener("click", changeNumberPrem);
+    if(premPrevBtn) premPrevBtn.addEventListener("click", changeNumberPrem);
+    if(premNextBtn) premNextBtn.addEventListener("click", changeNumberPrem);
   }
 })();
+
+// new-page functions
+(() => {
+
+  const npItems = document.querySelectorAll(".np__item");
+  if(!npItems.length){
+    return false;
+  }
+
+  const active = e => {
+    console.log(npItems.length);
+    npItems.forEach(e => e.classList.remove("active"));
+    e.target.classList.add("active");
+  }
+
+  npItems.forEach(e => e.addEventListener("click", active));
+}) ();
