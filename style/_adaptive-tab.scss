@@ -136,3 +136,34 @@
 .np{
   margin-bottom: 31px;
 }
+
+.popup__content{
+  width: 700px;
+  height: 400px;
+}
+
+.jn-tar__list{
+  flex-wrap: wrap;
+}
+.jn-tar__item{
+  width: 100%;
+}
+
+.jn-tar__item{
+  margin-bottom: 30px;
+  height: auto;
+}
+
+.jn-tar__item:last-child{
+  margin-bottom: 0;
+}
+
+.jn-tar__wrp{
+  width: 456px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.jn-tar__item-btn1{
+  margin-bottom: 0;
+}

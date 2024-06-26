@@ -109,6 +109,15 @@ input {
   margin-left: 10px;
 }
 
+.jn-tar__item-btn, .main-btn{
+  transition: all 500ms ease;
+}
+.jn-tar__item-btn:hover,
+.main-btn:hover{
+  -webkit-box-shadow: 0 4px 25px rgba(255, 255, 255, .4);
+  box-shadow: 0 4px 25px rgba(255, 255, 255, .4);
+}
+
 @media screen and (max-width: 1600px) {
 }
 
