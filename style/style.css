@@ -1407,6 +1407,22 @@ input {
   .jn-tar__item-btn1 {
     margin-bottom: 0;
   }
+  .mod-box2 .header__logo {
+    width: 206px;
+    height: 70px;
+    margin-top: 0;
+    top: -3px;
+    left: 49px;
+  }
+  .mod-box2 .header__menu {
+    margin-top: -17px;
+  }
+  .mod-box2 .header__close {
+    margin-top: -16px;
+  }
+  .mod-box2 .header__container::after {
+    margin-bottom: -3px;
+  }
 }
 @media screen and (max-width: 767px) {
   .container {
@@ -1424,6 +1440,8 @@ input {
     width: 349px;
     height: 63px;
     margin-bottom: 23px;
+    top: -3px;
+    left: -7px;
   }
   .header__menu {
     margin-top: -36px;
@@ -1562,5 +1580,13 @@ input {
     line-height: 35px;
     text-align: center;
     margin-bottom: 30px;
+  }
+  .mod-box2 .header__logo {
+    order: -1;
+    width: 349px;
+    height: 63px;
+    margin-bottom: 23px;
+    top: unset;
+    left: unset;
   }
 }/*# sourceMappingURL=style.css.map */

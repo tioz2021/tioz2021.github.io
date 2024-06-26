@@ -167,3 +167,23 @@
 .jn-tar__item-btn1{
   margin-bottom: 0;
 }
+
+// tab
+.mod-box2{
+  .header__logo{
+    width: 206px;
+    height: 70px;
+    margin-top: 0;
+    top: -3px;
+    left: 49px;
+  }
+  .header__menu{
+    margin-top: -17px;
+  }
+  .header__close{
+    margin-top: -16px;
+  }
+  .header__container::after{
+    margin-bottom: -3px;
+  }
+}
