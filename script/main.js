@@ -418,32 +418,250 @@
 
 // animation opt
 (() => {
+  // Создаем новый экземпляр Intersection Observer
   const observer = new IntersectionObserver(
     (entries) => {
+      // Перебираем все записи (entries)
       entries.forEach((entry) => {
-        if (entry.isIntersecting && entry.intersectionRatio >= 0.1 && entry.time >= 100) {
-          const textElm = entry.target.querySelector(".small-text");
-          if (!textElm) return;
+        // console.log(entry.target);
+        // Если блок стал видимым и находится в зоне видимости больше 1 секунды
+        if (
+          entry.isIntersecting &&
+          entry.intersectionRatio >= 0.1 &&
+          entry.time >= 100
+        ) {
+          let text_elm = entry.target.querySelector(".small-text");
+          // Запускаем анимацию или выполняем нужные действия
+          // entry.target.classList.add("anim");
 
-          textElm.classList.add("anim");
-
-          const classPrefix = entry.target.className.match(/(\w+?)(__pre-title|--pre-title--\w+)/);
-          if (!classPrefix) return;
-
-          const lottieElements = document.querySelectorAll(`.${classPrefix[1]} lottie-player`);
-          if (lottieElements.length > 0) {
+          if (entry.target.classList.contains("s1__pre-title") == true) {
+            text_elm.classList.add("anim");
             setTimeout(() => {
-              lottieElements.forEach((elm) => elm.play());
+              let elm = document.querySelectorAll(".s1 lottie-player");
+              elm[0].play();
+              elm[1].play();
+            }, 300);
+          }
+          if (entry.target.classList.contains("s2__pre-title") == true) {
+            text_elm.classList.add("anim");
+            setTimeout(() => {
+              let elm = document.querySelectorAll(".s2 lottie-player");
+              elm[0].play();
+              elm[1].play();
+            }, 300);
+          }
+          if (entry.target.classList.contains("s3__pre-title") == true) {
+            text_elm.classList.add("anim");
+            setTimeout(() => {
+              let elm = document.querySelectorAll(".s3 lottie-player");
+              elm[0].play();
+              elm[1].play();
+            }, 300);
+          }
+          if (entry.target.classList.contains("s4__pre-title") == true) {
+            text_elm.classList.add("anim");
+            setTimeout(() => {
+              let elm = document.querySelectorAll(".s4 lottie-player");
+              elm[0].play();
+              elm[1].play();
+            }, 300);
+          }
+          if (entry.target.classList.contains("s5__pre-title") == true) {
+            text_elm.classList.add("anim");
+            setTimeout(() => {
+              let elm = document.querySelectorAll(".s5 lottie-player");
+              elm[0].play();
+              elm[1].play();
+            }, 300);
+          }
+          if (entry.target.classList.contains("s6__pre-title--one") == true) {
+            text_elm.classList.add("anim");
+            setTimeout(() => {
+              let elm = document.querySelectorAll(
+                ".s6__pre-title--one lottie-player"
+              );
+              elm[0].play();
+              elm[1].play();
+            }, 300);
+          }
+          if (entry.target.classList.contains("s7__pre-title--one") == true) {
+            text_elm.classList.add("anim");
+            setTimeout(() => {
+              let elm = document.querySelectorAll(
+                ".s7__pre-title--one lottie-player"
+              );
+              elm[0].play();
+              elm[1].play();
+            }, 300);
+          }
+          if (entry.target.classList.contains("s7__pre-title--two") == true) {
+            text_elm.classList.add("anim");
+            setTimeout(() => {
+              let elm = document.querySelectorAll(
+                ".s7__pre-title--two lottie-player"
+              );
+              elm[0].play();
+              elm[1].play();
+            }, 300);
+          }
+          if (entry.target.classList.contains("s8__pre-title") == true) {
+            text_elm.classList.add("anim");
+            setTimeout(() => {
+              let elm = document.querySelectorAll(".s8 lottie-player");
+              elm[0].play();
+              elm[1].play();
+            }, 300);
+          }
+          if (entry.target.classList.contains("s9__pre-title") == true) {
+            text_elm.classList.add("anim");
+            setTimeout(() => {
+              let elm = document.querySelectorAll(".s9 lottie-player");
+              elm[0].play();
+              elm[1].play();
+            }, 300);
+          }
+          if (entry.target.classList.contains("s6__pre-title--two") == true) {
+            text_elm.classList.add("anim");
+            setTimeout(() => {
+              let elm = document.querySelectorAll(
+                ".s6__pre-title--two lottie-player"
+              );
+              elm[0].play();
+              elm[1].play();
+            }, 300);
+          }
+          if (entry.target.classList.contains("s11__pre-title") == true) {
+            text_elm.classList.add("anim");
+            setTimeout(() => {
+              let elm = document.querySelectorAll(".s11 lottie-player");
+              elm[0].play();
+              elm[1].play();
+            }, 300);
+          }
+          if (entry.target.classList.contains("s12__pre-title") == true) {
+            text_elm.classList.add("anim");
+            setTimeout(() => {
+              let elm = document.querySelectorAll(".s12 lottie-player");
+              elm[0].play();
+              elm[1].play();
             }, 300);
           }
 
+          // page about
+          if (entry.target.classList.contains("pas1__pre-title") == true) {
+            text_elm.classList.add("anim");
+            setTimeout(() => {
+              let elm = document.querySelectorAll(
+                ".pas1__pre-title lottie-player"
+              );
+              elm[0].play();
+              elm[1].play();
+            }, 300);
+          }
+          if (entry.target.classList.contains("other-page-s7-title") == true) {
+            text_elm.classList.add("anim");
+            setTimeout(() => {
+              let elm = document.querySelectorAll(
+                ".other-page-s7-title lottie-player"
+              );
+              elm[0].play();
+              elm[1].play();
+            }, 300);
+          }
+
+          // page how to works
+          if (entry.target.classList.contains("phwks1__pre-title") == true) {
+            text_elm.classList.add("anim");
+            setTimeout(() => {
+              let elm = document.querySelectorAll(
+                ".phwks1__pre-title lottie-player"
+              );
+              elm[0].play();
+              elm[1].play();
+            }, 300);
+          }
+
+          // page question answer
+          if (entry.target.classList.contains("qas1__pre-title") == true) {
+            text_elm.classList.add("anim");
+            setTimeout(() => {
+              let elm = document.querySelectorAll(
+                ".qas1__pre-title lottie-player"
+              );
+              elm[0].play();
+              elm[1].play();
+            }, 300);
+          }
+
+          // page how to work
+          if (entry.target.classList.contains("phws1__pre-title") == true) {
+            text_elm.classList.add("anim");
+            setTimeout(() => {
+              let elm = document.querySelectorAll(
+                ".phws1__pre-title lottie-player"
+              );
+              elm[0].play();
+              elm[1].play();
+            }, 300);
+          }
+
+          // page blog
+          if (entry.target.classList.contains("pb1__pre-title") == true) {
+            text_elm.classList.add("anim");
+            setTimeout(() => {
+              let elm = document.querySelectorAll(
+                ".pb1__pre-title lottie-player"
+              );
+              elm[0].play();
+              elm[1].play();
+            }, 300);
+          }
+
+          // page post
+          if (entry.target.classList.contains("pps1__pre-title--one") == true) {
+            text_elm.classList.add("anim");
+            setTimeout(() => {
+              let elm = document.querySelectorAll(
+                ".pps1__pre-title--one lottie-player"
+              );
+              elm[0].play();
+              elm[1].play();
+            }, 300);
+          }
+          if (
+            entry.target.classList.contains("pps1__pre-title--last") == true
+          ) {
+            text_elm.classList.add("anim");
+            setTimeout(() => {
+              let elm = document.querySelectorAll(
+                ".pps1__pre-title--last lottie-player"
+              );
+              elm[0].play();
+              elm[1].play();
+            }, 300);
+          }
+
+          // 404
+          if (entry.target.classList.contains("pre-title-404") == true) {
+            text_elm.classList.add("anim");
+            setTimeout(() => {
+              let elm = document.querySelectorAll(
+                ".pre-title-404 lottie-player"
+              );
+              elm[0].play();
+              elm[1].play();
+            }, 300);
+          }
+
+          // После того, как анимация выполнена, можно отключить наблюдение, если оно больше не нужно
           observer.unobserve(entry.target);
         }
       });
     },
     { threshold: 1, delay: 100 }
-  );
+  ); // Устанавливаем порог пересечения 100% и задержку 1 секунда
 
+  // Список селекторов для анимации
   const selectors = [
     ".s1__pre-title",
     ".s2__pre-title",
@@ -458,20 +676,38 @@
     ".s6__pre-title--two",
     ".s11__pre-title",
     ".s12__pre-title",
+
+    // page about
     ".pas1__pre-title",
     ".other-page-s7-title",
+
+    // page how to works
     ".phwks1__pre-title",
+
+    // page question answer
     ".qas1__pre-title",
+
+    // page how to work
     ".phws1__pre-title",
+
+    // page blog
     ".pb1__pre-title",
+
+    // page post
     ".pps1__pre-title--one",
     ".pps1__pre-title--last",
+
+    // 404
     ".pre-title-404",
   ];
 
+  // Проходимся по списку селекторов
   selectors.forEach((selector) => {
+    // Находим блок для текущего селектора
     const blockToAnimate = document.querySelector(selector);
-    if (blockToAnimate) observer.observe(blockToAnimate);
+    // Начинаем наблюдение за блоком
+    if (!blockToAnimate) return;
+    observer.observe(blockToAnimate);
   });
 })();
 
