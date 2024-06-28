@@ -920,7 +920,8 @@
   }
   // .scroll-section__slider-title
   &__slider-title {
-    width: 550px;
+    // width: 550px;
+    width: 650px;
     // margin-bottom: 30px;
     margin-bottom: 26px;
   }
@@ -1110,11 +1111,13 @@
   // .slider-section__title-text
   &__title-text {
     margin-bottom: 29px;
+    min-height: 144px;
   }
   // .slider-section__title-desk
   &__title-desk {
     max-width: 400px;
     letter-spacing: normal;
+    min-height: 42px;
   }
   // .slider-section__swiper
   &__swiper {
