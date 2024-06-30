@@ -1472,6 +1472,10 @@ template {
   height: 44px;
   overflow: hidden;
 }
+.user-box__img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .user-box__title {
   margin-bottom: 2px;
   color: var(--bodi-2-2);
