@@ -616,14 +616,21 @@
   // .np__end
   &__end {
     width: 550px;
-    position: relative;
     top: -5px;
 
-    display: none;
+    position: absolute;
+    left: -250%;
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
 
-    // .np__end.active
+    // .ms__list.active
     &.active{
-      display: block;
+      position: static;
+      left: unset;
+      // opacity: 1;
+    }
+    &.active-effect{
+      opacity: 1;
     }
   }
 

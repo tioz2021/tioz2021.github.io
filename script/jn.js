@@ -258,7 +258,6 @@
 
 // new-page functions
 (() => {
-
   const npItems = document.querySelectorAll(".np__item");
   const contentBlock = document.querySelectorAll(".np__end");
 
@@ -268,19 +267,26 @@
 
   const active = e => {    
     // Удаляем класс active у всех элементов
-    npItems.forEach(item => item.classList.remove("active"));
-    contentBlock.forEach(block => block.classList.remove("active"));
-  
-    // Добавляем класс active к целевому элементу
-    e.target.classList.add("active");
-  
-    // Получаем индекс целевого элемента
-    const index = Array.from(npItems).indexOf(e.target);
-  
-    // Добавляем класс active к соответствующему элементу contentBlock
-    if (index !== -1) {
-      contentBlock[index].classList.add("active");
-    }
+    setTimeout(() => {
+      console.log("300");
+      npItems.forEach(item => item.classList.remove("active"));
+      contentBlock.forEach(block => block.classList.remove("active"));
+    }, 300);
+
+    setTimeout(() => {
+      console.log("400");
+      // Получаем индекс целевого элемента
+      const index = Array.from(npItems).indexOf(e.target);
+
+      // Добавляем класс active к соответствующему элементу contentBlock
+      if (index !== -1) {
+        contentBlock[index].classList.add("active");
+      }
+      
+      // Добавляем класс active к целевому элементу
+      e.target.classList.add("active");
+    }, 400);
+
   }
   
   // Пример добавления обработчика события для элементов npItem
