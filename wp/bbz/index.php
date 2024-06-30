@@ -1927,7 +1927,6 @@ Template Name: Home
 							echo '<a class="s12__btn main-btn" target="_blank" href="' . $front_page_text . '">';
 					}
 				?>
-				<!-- <a href="#" class="s12__btn main-btn"> -->
 					<span class="main-btn__text small-text">Все отзывы в телеграм</span>
 					<div class="main-btn__effect"></div>
 				</a>
