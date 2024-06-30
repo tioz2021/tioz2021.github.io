@@ -1244,7 +1244,7 @@ template {
   display: flex;
   align-items: center;
   justify-content: center;
-  bottom: 15px !important;
+  bottom: 45px !important;
 }
 
 .swiper .slider-navigation::after {
@@ -1372,7 +1372,10 @@ template {
   max-width: 355px;
 }
 .swiper .slider-section__slider-navigation {
-  width: 284px !important;
+  width: auto !important;
+  box-sizing: border-box;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 .slider-section__bg-main {
   width: 1200px;
@@ -1454,6 +1457,7 @@ template {
   width: 176px;
   height: 44px;
   position: relative;
+  bottom: -14px;
   box-sizing: border-box;
   padding-left: 56px;
   display: flex;
@@ -3259,8 +3263,9 @@ input {
   display: flex;
   box-sizing: border-box;
   padding-left: 35px;
+  padding-right: 35px;
   box-sizing: border-box;
-  padding-bottom: 105px;
+  padding-bottom: 144px;
 }
 .s12__item {
   width: 528px;
@@ -3279,8 +3284,25 @@ input {
   margin-bottom: 44px;
 }
 .s12__item-text {
+  position: relative;
+  top: -7px;
   text-align: left;
-  margin-bottom: 42px;
+  margin-bottom: 24px;
+  height: 190px;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -ms-line-clamp: 9;
+  -webkit-line-clamp: 9;
+  line-clamp: 9;
+  display: -webkit-box;
+  display: box;
+  word-wrap: break-word;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+}
+.s12__btn {
+  z-index: 4;
 }
 .s12__decor-bg {
   position: absolute;
@@ -5151,15 +5173,19 @@ input {
 .last-swiper .swiper-button-prev {
   margin: unset !important;
   top: unset !important;
-  bottom: -44px;
-  left: 400px;
+  bottom: 30px;
+  left: 435px;
 }
 
 .last-swiper .swiper-button-next {
   margin: unset !important;
   top: unset !important;
-  bottom: -44px;
-  right: 400px;
+  bottom: 30px;
+  right: 435px;
+}
+
+.last-swiper .swiper-wrapper {
+  margin-bottom: 40px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -5388,9 +5414,6 @@ input {
   }
   .scroll-section__btn {
     bottom: 57px;
-  }
-  .swiper .slider-navigation {
-    bottom: 4px !important;
   }
   .s3 {
     padding-top: 124px;
@@ -5981,10 +6004,12 @@ input {
     margin-bottom: 24px;
   }
   .s12__list {
+    padding-right: 35px;
     flex-direction: column;
   }
   .s12__item {
     margin-right: 0;
+    width: 100%;
   }
   .s12__item:nth-child(1) {
     margin-bottom: 107px;
@@ -6473,28 +6498,15 @@ input {
   }
 }
 @media screen and (max-width: 720px) {
-  .s12__item-text {
-    -ms-text-overflow: ellipsis;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    -ms-line-clamp: 6;
-    -webkit-line-clamp: 6;
-    line-clamp: 6;
-    display: -webkit-box;
-    display: box;
-    word-wrap: break-word;
-    -webkit-box-orient: vertical;
-    box-orient: vertical;
-  }
   .last-swiper .swiper-button-prev {
-    bottom: -32px;
-    left: 35px;
+    bottom: 11px;
+    left: 76px;
     width: 24px !important;
     height: 24px !important;
   }
   .last-swiper .swiper-button-next {
-    bottom: -32px;
-    right: 35px;
+    bottom: 11px;
+    right: 76px;
   }
   .scroll-section .slider-section__swiper-button-next {
     right: 62px !important;
@@ -7027,8 +7039,7 @@ input {
     margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 3px) !important;
   }
   .swiper .slider-navigation {
-    width: 84px !important;
-    bottom: 42px !important;
+    bottom: 16px !important;
   }
   .scroll-section__bg {
     display: none;
@@ -7929,14 +7940,15 @@ input {
   }
   .s12__list {
     padding-left: 25px;
-    padding-bottom: 49px;
+    padding-right: 25px;
+    padding-bottom: 72px;
   }
   .s12__item-title {
     margin-bottom: 16px;
   }
   .s12__item {
     width: 100%;
-    height: auto;
+    height: 196px;
   }
   .user-box__img {
     width: 24px;
@@ -7956,7 +7968,11 @@ input {
     padding-left: 31px;
   }
   .s12__item-text {
-    margin-bottom: 16px;
+    height: 82%;
+    -ms-line-clamp: 9;
+    -webkit-line-clamp: 9;
+    line-clamp: 9;
+    margin-bottom: 2px;
   }
   .s12__item:nth-child(1) {
     margin-bottom: 40px;
@@ -8701,5 +8717,8 @@ input {
   }
   .slider-section__slider-text {
     font-size: 14px;
+  }
+  .last-swiper .swiper-wrapper {
+    margin-bottom: 16px;
   }
 }/*# sourceMappingURL=style.css.map */

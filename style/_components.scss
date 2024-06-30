@@ -972,7 +972,7 @@
   justify-content: center;
 
   // border: 1px solid grey;
-  bottom: 15px !important;
+  bottom: 45px !important;
 }
 
 .swiper .slider-navigation::after {
@@ -1156,7 +1156,10 @@
   }
   // .swiper .slider-section__slider-navigation
   .swiper &__slider-navigation {
-    width: 284px !important;
+    width: auto !important;
+    box-sizing: border-box;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   // .slider-section__swiper-button-next
@@ -1287,6 +1290,7 @@
   width: 176px;
   height: 44px;
   position: relative;
+  bottom: -14px;
   box-sizing: border-box;
   padding-left: 56px;
 

@@ -1860,15 +1860,14 @@ Template Name: Home
 						$current_page = get_post();
 						$page_id = $current_page->ID;
 						$pod = pods('page', $page_id);
-						$field1 = $pod->field('index_s12_list_title_icon');
 						$field2 = $pod->field('index_s12_list_text');
 						$field3 = $pod->field('index_s12_list_user_icon');
 						$field4 = $pod->field('index_s12_list_user_name');
 						$field5 = $pod->field('index_s12_list_user_status');
 
-						if (!empty($field1)) {
-							$count = count($field1); // Определяем количество элементов
-							$chunks = array_chunk($field1, 2); // Разбиваем массив $field1 на группы по 2 элемента
+						if (!empty($field2)) {
+							$count = count($field2); // Определяем количество элементов
+							$chunks = array_chunk($field2, 2); // Разбиваем массив $field2 на группы по 2 элемента
 
 							for ($i = 0; $i < $count; $i += 2) {
 								echo '
@@ -1878,9 +1877,6 @@ Template Name: Home
 									for ($j = $i; $j < $i + 2 && $j < $count; $j++) {
 										// Выводим элементы $field1 в списке <ul>
 										echo '<li class="s12__item">';
-										echo '<div class="s12__item-title img-wrp">';
-										echo '<img src="' . wp_get_attachment_url($field1[$j]['ID']) . '" alt="icon">';
-										echo '</div>';
 										echo '<div class="s12__item-text def-text">'. $field2[$j] .'</div>';
 										echo '<div class="user-box">';
 										echo '<div class="user-box__img img-wrp">';
@@ -1899,6 +1895,7 @@ Template Name: Home
 						?>
 					</div>
 
+					<div class="slider-section__slider-navigation slider-navigation swiper-pagination"></div>
 					<div class="slider-section__swiper-button-next swiper-button-next img-wrp">
 						<div class="slider-section__swiper-arrow img-wrp">
 							<img src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__swiper-arrow-next.svg" alt="svg" loading="lazy">

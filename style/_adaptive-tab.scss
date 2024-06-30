@@ -137,9 +137,6 @@
 .scroll-section__btn{
   bottom: 57px;
 }
-.swiper .slider-navigation{
-  bottom: 4px !important;
-}
 
 .s3{
   padding-top: 124px;
@@ -821,11 +818,13 @@
   margin-bottom: 24px;
 }
 .s12__list{
+  padding-right: 35px;
   flex-direction: column;
 }
 
 .s12__item{
   margin-right: 0;
+  width: 100%;
 }
 .s12__item:nth-child(1){
   margin-bottom: 107px;
