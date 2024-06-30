@@ -1854,7 +1854,8 @@ Template Name: Home
 					</div>
 				</div>
 
-				<ul class="s12__list">
+				<div class="swiper last-swiper">
+					<div class="swiper-wrapper">
 					<?php
 						$current_page = get_post();
 						$page_id = $current_page->ID;
@@ -1864,28 +1865,57 @@ Template Name: Home
 						$field3 = $pod->field('index_s12_list_user_icon');
 						$field4 = $pod->field('index_s12_list_user_name');
 						$field5 = $pod->field('index_s12_list_user_status');
-						$index = 0;
-						if (!empty($field1)) { 
-							foreach ($field1 as $item) {
-								echo '<li class="s12__item">';
-								echo '<div class="s12__item-title img-wrp">';
-								echo '<img src="' . wp_get_attachment_url($field1[$index]['ID']) . '" alt="icon">';
-								echo '</div>';
-								echo '<div class="s12__item-text def-text">'. $field2[$index] .'</div>';
-								echo '<div class="user-box">';
-								echo '<div class="user-box__img img-wrp">';
-								echo '<img src="' . wp_get_attachment_url($field3[$index]['ID']) . '" alt="icon">';
-								echo '</div>';
-								echo '<div class="user-box__title small-text">'. $field4[$index] .'</div>';
-								echo '<div class="user-box__text small-text">'. $field5[$index] .'</div>';
-								echo '</div>';
-								echo '</li>';
-								$index++;
+
+						if (!empty($field1)) {
+							$count = count($field1); // Определяем количество элементов
+							$chunks = array_chunk($field1, 2); // Разбиваем массив $field1 на группы по 2 элемента
+
+							for ($i = 0; $i < $count; $i += 2) {
+								echo '
+								<div class="swiper-slide">
+									<ul class="s12__list">';
+									// Для каждой группы по 2 элемента
+									for ($j = $i; $j < $i + 2 && $j < $count; $j++) {
+										// Выводим элементы $field1 в списке <ul>
+										echo '<li class="s12__item">';
+										echo '<div class="s12__item-title img-wrp">';
+										echo '<img src="' . wp_get_attachment_url($field1[$j]['ID']) . '" alt="icon">';
+										echo '</div>';
+										echo '<div class="s12__item-text def-text">'. $field2[$j] .'</div>';
+										echo '<div class="user-box">';
+										echo '<div class="user-box__img img-wrp">';
+										echo '<img src="' . wp_get_attachment_url($field3[$j]['ID']) . '" alt="icon">';
+										echo '</div>';
+										echo '<div class="user-box__title small-text">'. $field4[$j] .'</div>';
+										echo '<div class="user-box__text small-text">'. $field5[$j] .'</div>';
+										echo '</div>';
+										echo '</li>';
+									}
+
+									echo '  </ul>
+												</div>';
 							}
 						}
-					?>
+						?>
+					</div>
 
-				</ul>
+					<div class="slider-section__swiper-button-next swiper-button-next img-wrp">
+						<div class="slider-section__swiper-arrow img-wrp">
+							<img src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__swiper-arrow-next.svg" alt="svg" loading="lazy">
+						</div>
+						<div class="slider-section__swiper-bg img-wrp">
+							<img src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__swiper-bg.svg" alt="svg" loading="lazy">
+						</div>
+					</div>
+					<div class="slider-section__swiper-button-prev swiper-button-prev img-wrp">
+						<div class="slider-section__swiper-arrow img-wrp">
+							<img src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__swiper-arrow-prev.svg" alt="svg" loading="lazy">
+						</div>
+						<div class="slider-section__swiper-bg img-wrp">
+							<img src="<?php bloginfo('template_url'); ?>/assets/img/slider-section__swiper-bg.svg" alt="svg" loading="lazy">
+						</div>
+					</div>
+				</div>
 
 				<?php
 					// Получаем ID главной страницы

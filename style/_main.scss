@@ -1471,7 +1471,9 @@
     display: flex;
     box-sizing: border-box;
     padding-left: 35px;
-    margin-bottom: 105px;
+    // margin-bottom: 105px;
+    box-sizing: border-box;
+    padding-bottom: 105px;
   }
   // .s12__item
   &__item {

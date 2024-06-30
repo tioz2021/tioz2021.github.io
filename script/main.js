@@ -2,6 +2,67 @@
   // Включаем Swiper
   let swiperContainer = document.querySelector(".scroll-section__swiper1");
   let swiperContainer2 = document.querySelector(".scroll-section__swiper2");
+  let lastSwiper = document.querySelector(".last-swiper");
+
+  var swiper = new Swiper(lastSwiper, {
+    speed: 750,
+    slidesPerView: 1,
+
+    navigation: {
+      nextEl: ".last-swiper .slider-section__swiper-button-next",
+      prevEl: ".last-swiper .slider-section__swiper-button-prev",
+    },
+    effect: "creative",
+    creativeEffect: {
+      prev: {
+        // shadow: true,
+        translate: ["-120%", 0, -500],
+        opacity: 0,
+      },
+      next: {
+        // shadow: true,
+        translate: ["120%", 0, -500],
+        opacity: 1,
+      },
+    },
+
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+
+  var swiper = new Swiper(swiperContainer, {
+    // effect: "fade",
+    fadeEffect: {
+      crossFade: true,
+    },
+    navigation: {
+      nextEl: ".s2 .slider-section__swiper-button-next",
+      prevEl: ".s2 .slider-section__swiper-button-prev",
+    },
+
+    speed: 750,
+    slidesPerView: 1,
+    effect: "creative",
+    creativeEffect: {
+      prev: {
+        // shadow: true,
+        translate: ["-120%", 0, -500],
+        opacity: 0,
+      },
+      next: {
+        // shadow: true,
+        translate: ["120%", 0, -500],
+        opacity: 1,
+      },
+    },
+
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
 
   var swiper = new Swiper(swiperContainer, {
     // effect: "fade",
