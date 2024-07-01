@@ -536,10 +536,11 @@ Template Name: Home
 								<div class="blur"></div>
 							</div>
 							<div class="s3__list-item-title str-text"><?php echo get_post_meta(get_the_ID(), 'index_s3_list_title2', true);?></div>
-							<div class="s3__list-item-price def-text"><?php echo get_post_meta(get_the_ID(), 'index_s3_list_price2', true);?> <span>₽<span></div>
-							<div class="s3__list-item-bullets">
-							<span class="s3__list-item-bullet-text small-text active">30 дней</span>
-								<span class="s3__list-item-bullet-text small-text">90 дней</span>
+							<div class="s3__list-item-price s3__list-item-price-changed def-text active"><?php echo get_post_meta(get_the_ID(), 'index_s3_list_price2', true);?> <span>₽<span></div>
+							<div class="s3__list-item-price s3__list-item-price-changed def-text"><?php echo get_post_meta(get_the_ID(), 'index_s3_list_price90', true);?> <span>₽<span></div>
+							<div class="s3__list-item-bullets s3__list-item-bullets-cnahged">
+								<span class="s3__list-item-bullet-text s3__list-item-bullet-text30 small-text active">30 дней</span>
+								<span class="s3__list-item-bullet-text s3__list-item-bullet-text90 small-text">90 дней</span>
 							</div>
 
 							<ul class="s3__list-inside">
@@ -573,7 +574,7 @@ Template Name: Home
 
 								// Используем значение поля 'my_field'
 								if (!empty($front_page_text)) {
-										echo '<a class="s3__btn main-btn small-text" target="_blank" href="' . $front_page_text . '">';
+										echo '<a class="s3__btn main-btn small-text" target="_blank" style="opacity: 0;" href="' . $front_page_text . '">';
 								}
 							?>
 							<!-- <a href="#" class="s3__btn main-btn small-text"> -->

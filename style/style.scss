@@ -739,6 +739,11 @@ input {
   margin-bottom: 40px;
 }
 
+
+.s12 .swiper .slider-navigation{
+  bottom: 45px !important;
+}
+
 // 768
 @media screen and (max-width: 1200px) {
   .last-swiper .swiper-button-prev{
@@ -1071,5 +1076,8 @@ input {
     margin-top: 40px;
   }
   @import "_adaptive-mob";
+  .s2 .swiper .slider-navigation{
+    bottom: 42px !important;
+  }
 }
 
