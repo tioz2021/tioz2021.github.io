@@ -719,7 +719,7 @@
     background: #1b0626;
 
     width: 410px;
-    height: 456px;
+    // height: 456px;
     box-sizing: border-box;
     padding-left: 36px;
     padding-right: 34px;
@@ -748,7 +748,7 @@
     color: #fff;
     margin-bottom: 24px;
 
-    @include text-overflow(4);
+    @include text-overflow(16);
   }
 
   // .jn-tar__item-price
@@ -780,11 +780,11 @@
   }
 }
 
-.jn-tar__item:nth-child(2) .jn-tar__icon{
+.jn-tar__item:nth-child(3) .jn-tar__icon{
   width: 129px;
   height: 80px;
 }
-.jn-tar__item:nth-child(3) .jn-tar__icon{
+.jn-tar__item:nth-child(1) .jn-tar__icon{
   width: 215px;
   height: 80px;
 }
