@@ -426,12 +426,10 @@
   &__list-item-price {
     @include text-min-h(26px);
     margin-bottom: 4px;
-    
-    display: none;
 
     // .s3__list-item-price.active
     &.active{
-      display: flex;
+      display: flex !important;
     }
 
     // .s3__list-item-price span
@@ -3302,4 +3300,9 @@
   transform: translate(-50%, -50%);
   z-index: -1;
   display: none !important;
+}
+
+
+.s3__list-item-price-changed{
+  display: none;
 }

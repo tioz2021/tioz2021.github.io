@@ -2435,10 +2435,9 @@ input {
   align-items: center;
   min-height: 26px;
   margin-bottom: 4px;
-  display: none;
 }
 .s3__list-item-price.active {
-  display: flex;
+  display: flex !important;
 }
 .s3__list-item-price span {
   position: relative;
@@ -4687,6 +4686,10 @@ input {
   transform: translate(-50%, -50%);
   z-index: -1;
   display: none !important;
+}
+
+.s3__list-item-price-changed {
+  display: none;
 }
 
 .svg-web {
