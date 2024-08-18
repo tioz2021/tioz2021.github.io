@@ -498,6 +498,56 @@ template {
   font-weight: 400;
   font-style: normal;
 }
+.big-title {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 120px;
+  line-height: 120%;
+  text-align: center;
+  color: var(--bodi-dark-1);
+}
+
+.def-title {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 120%;
+  text-align: center;
+  color: var(--bodi-dark-1);
+}
+.def-title span {
+  color: var(--bodi-all-1);
+}
+
+.small-title {
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 120%;
+  color: var(--bodi-dark-1);
+}
+
+.str-text {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 120%;
+  color: var(--bodi-dark-1);
+}
+
+.def-text {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: var(--bodi-dark-1);
+}
+
+.small-text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  color: var(--bodi-dark-2);
+}
+
 .text-medium {
   font-weight: 500;
 }
