@@ -501,7 +501,7 @@ template {
 .big-title {
   font-family: var(--second-family);
   font-weight: 400;
-  font-size: 120px;
+  font-size: 128px;
   line-height: 120%;
   text-align: center;
   color: var(--bodi-dark-1);
@@ -639,7 +639,7 @@ template {
 
 .logo {
   width: 198px;
-  height: 60px;
+  height: 75px;
 }
 .soc-list {
   width: 76px;
@@ -725,6 +725,9 @@ input {
   padding-top: 24px;
   justify-content: space-between;
 }
+.header__logo {
+  margin-top: -15px;
+}
 .header__nav {
   width: 464px;
   height: 60px;
@@ -732,6 +735,7 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: -18px;
 }
 .header__nav::after {
   content: "";
@@ -770,6 +774,99 @@ input {
 .header__nav-link {
   color: var(--bodi-dark-1);
 }
+.s1 {
+  height: 1216px;
+  padding-top: 122px;
+  margin-bottom: 120px;
+  position: relative;
+}
+.s1__container {
+  flex-direction: column;
+  align-items: center;
+}
+.s1__title {
+  width: 100%;
+  margin-bottom: 40px;
+}
+.s1__decor-box {
+  width: 100%;
+  height: 612px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.s1__decor-men {
+  position: absolute;
+  left: 50%;
+  top: -12px;
+  transform: translateX(-50%);
+  width: 664px;
+  height: 612px;
+  z-index: 3;
+}
+.s1__decor-gif {
+  width: 100%;
+  height: 559px;
+  position: absolute;
+  z-index: 2;
+  top: 41px;
+}
+.s1__decor-bg-mask {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 600px;
+  top: 0;
+  left: 0;
+}
+.s1__text-item {
+  border-radius: 24px;
+  width: 432px;
+  height: 210px;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.03), 0 13px 13px 0 rgba(0, 0, 0, 0.05), 0 -2px 6px 0 rgba(0, 0, 0, 0.04);
+  background: var(--bodi--white-1);
+  padding: 32px;
+  position: absolute;
+  z-index: 3;
+}
+.s1__text-item--first {
+  top: 293px;
+  left: 211px;
+}
+.s1__text-item--last {
+  bottom: 332px;
+  right: 212px;
+}
+.s1__text-item-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.s1__text-item-icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+}
+.s1__btn {
+  margin-bottom: 24px;
+}
+.s1__end-btn {
+  display: flex;
+  align-items: center;
+}
+.s1__end-btn-icon {
+  width: 44px;
+  height: 32px;
+  margin-right: 11px;
+}
+.s1__bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
 @media screen and (max-width: 1200px) {
   .container {
     max-width: 768px;
