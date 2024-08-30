@@ -224,3 +224,137 @@
     z-index: -1;
   }
 }
+
+
+.s2 {
+  margin-bottom: 160px;
+
+  // .s2__container
+  &__container {
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  // .s2__title
+  &__title {
+    width: 100%;
+    margin-bottom: 74px;
+  }
+
+  // .s2__list
+  &__list {
+    width: 100%;
+    display: flex;
+  }
+
+  // .s2__item
+  &__item {
+    border-radius: 12px;
+    width: 379px;
+    height: 564px;
+    box-shadow: 0 6px 19px 0 rgba(29, 52, 135, 0.1);
+    background: #f5f5f5;
+    position: relative;
+    padding-top: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+    overflow: hidden;
+
+    // .s2__item::after
+    &::after{
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: -24px;
+      transform: translateX(-50%);
+      border-radius: 10px 10px 0 0;
+      width: 411px;
+      height: 146px;
+      backdrop-filter: blur(30px);
+      filter: blur(30px);
+      background: linear-gradient(180deg, rgba(52, 97, 255, 0.7) 0%, rgba(52, 97, 255, 0) 100%);
+      opacity: 0.6;
+      z-index: 1;
+    }
+
+    // .s2__item:nth-child(1)
+    &:nth-child(1){
+      z-index: 2;
+      left: 60px;
+      // .s2__item:nth-child(1) .s2__item-img
+      .s2__item-img{
+        width: 459px;
+        height: 399px;
+        top: 77px;
+        left: -75px;
+      }
+    }
+
+    // .s2__item:nth-child(2)
+    &:nth-child(2){
+      z-index: 1;
+      top: 61px;
+      left: 38px;
+      // .s2__item:nth-child(2) .s2__item-img
+      .s2__item-img{
+        width: 384px;
+        height: 436px;
+        top: 124px;
+        left: -6px;
+      }
+    }
+
+    // .s2__item:nth-child(3)
+    &:nth-child(3){
+      z-index: 2;
+      left: 11px;
+      // .s2__item:nth-child(3) .s2__item-img
+      .s2__item-img{
+        width: 386px;
+        height: 400px;
+        top: 96px;
+        left: -3px;
+      }
+    }
+
+    // .s2__item:nth-child(4)
+    &:nth-child(4){
+      z-index: 2;
+      top: 61px;
+      left: -10px;
+      // .s2__item:nth-child(4) .s2__item-img
+      .s2__item-img{
+        width: 423px;
+        height: 391px;
+        top: 173px;
+        left: -25px;
+      }
+    }
+
+    // .s2__item:nth-child(5)
+    &:nth-child(5){
+      z-index: 1;
+      left: -35px;
+      // .s2__item:nth-child(5) .s2__item-img
+      .s2__item-img{
+        width: 364px;
+        height: 411px;
+        top: 73px;
+        left: 14px;
+      }
+    }
+  }
+
+  // .s2__item-title
+  &__item-title {
+    position: relative;
+    z-index: 2;
+  }
+
+  // .s2__item-img
+  &__item-img {
+    position: absolute;
+    z-index: 2;
+  }
+}
