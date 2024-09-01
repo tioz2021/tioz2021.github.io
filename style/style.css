@@ -689,6 +689,7 @@ html {
 body {
   overflow-x: hidden;
   font-family: var(--font-family);
+  min-height: 10000px !important;
 }
 body::-webkit-scrollbar {
   display: none;
@@ -868,7 +869,7 @@ input {
 }
 
 .s2 {
-  margin-bottom: 160px;
+  margin-bottom: 220px;
 }
 .s2__container {
   flex-direction: column;
@@ -937,10 +938,10 @@ input {
   left: 11px;
 }
 .s2__item:nth-child(3) .s2__item-img {
-  width: 386px;
-  height: 400px;
-  top: 96px;
-  left: -3px;
+  width: 379px;
+  height: 444px;
+  top: 75px;
+  left: 1px;
 }
 .s2__item:nth-child(4) {
   z-index: 2;
@@ -970,6 +971,217 @@ input {
 .s2__item-img {
   position: absolute;
   z-index: 2;
+}
+
+.s3 {
+  margin-bottom: 120px;
+}
+.s3__container {
+  position: relative;
+  height: 1280px;
+  padding-top: 120px;
+  flex-direction: column;
+  align-items: center;
+}
+.s3__title {
+  width: 1496px;
+  color: var(--bodi--white-1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.s3__title-row {
+  display: flex;
+  align-items: center;
+}
+.s3__title-row:first-child {
+  margin-top: -5px;
+}
+.s3__title-row:nth-child(2) {
+  margin-left: 89px;
+  width: 100%;
+}
+.s3__title-row:last-child {
+  margin-top: -16px;
+  font-style: italic;
+}
+.s3__title-icon--first {
+  width: 140px;
+  height: 85px;
+  top: 6px;
+  left: 21px;
+}
+.s3__title-icon--two {
+  width: 168px;
+  height: 96px;
+  top: 10px;
+  left: -15px;
+}
+.s3__title span {
+  color: var(--bodi-all-2);
+}
+.s3__text-item {
+  position: absolute;
+}
+.s3 .s1__text-item--first {
+  top: 510px;
+  left: 213px;
+  height: 186px;
+  padding: 31px;
+}
+.s3 .s1__text-item--last {
+  bottom: 300px;
+  right: 212px;
+  height: 163px;
+}
+.s3__decoration-box {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 694px;
+  align-items: flex-end;
+  padding-bottom: 15px;
+}
+.s3__decoration-icon {
+  position: absolute;
+}
+.s3__decoration-icon--left-hand {
+  width: 834px;
+  height: 502px;
+  top: 73px;
+  left: 116px;
+  z-index: 3;
+}
+.s3__decoration-icon--center-item {
+  width: 437px;
+  height: 438px;
+  top: 67px;
+  left: 681px;
+  z-index: 2;
+}
+.s3__decoration-icon--right-hand {
+  width: 849px;
+  height: 407px;
+  top: 111px;
+  right: 123px;
+  z-index: 1;
+}
+.s3__decoration-icon--1 {
+  width: 86px;
+  height: 89px;
+  top: -25px;
+  right: 486px;
+}
+.s3__decoration-icon--2 {
+  width: 71px;
+  height: 76px;
+  top: -41px;
+  left: 345px;
+}
+.s3__decoration-icon--3 {
+  top: -23px;
+  right: 324px;
+  width: 44px;
+  height: 44px;
+}
+.s3__decoration-icon--4 {
+  width: 35px;
+  height: 35px;
+  bottom: 2px;
+  left: 186px;
+}
+.s3__decoration-icon--5 {
+  right: 201px;
+  bottom: 68px;
+  width: 70px;
+  height: 70px;
+}
+.s3__decoration-icon--6 {
+  width: 129px;
+  height: 129px;
+  right: 588px;
+  bottom: 72px;
+}
+.s3__decoration-icon--7 {
+  width: 36px;
+  height: 36px;
+  bottom: 0px;
+  right: 565px;
+}
+.s3__decoration-icon--8 {
+  width: 66px;
+  height: 66px;
+  bottom: 29px;
+  right: 425px;
+}
+.s3__decoration-icon--9 {
+  width: 70px;
+  height: 70px;
+  bottom: 86px;
+  left: 316px;
+}
+.s3__decoration-icon--10 {
+  width: 85px;
+  height: 85px;
+  bottom: -4px;
+  left: 567px;
+}
+.s3__decoration-icon--11 {
+  width: 59px;
+  height: 59px;
+  bottom: 138px;
+  left: 710px;
+}
+.s3__decoration-icon--12 {
+  width: 66px;
+  height: 66px;
+  left: 473px;
+  bottom: 110px;
+}
+.s3__decoration-icon--13 {
+  width: 70px;
+  height: 70px;
+  left: 293px;
+  top: 274px;
+}
+.s3__decoration-icon--14 {
+  width: 85px;
+  height: 85px;
+  top: 282px;
+  left: 127px;
+}
+.s3__decoration-icon--15 {
+  width: 59px;
+  height: 59px;
+  top: 56px;
+  left: 611px;
+}
+.s3__decoration-icon--16 {
+  width: 44px;
+  height: 44px;
+  right: 363px;
+  top: 130px;
+}
+.s3__decoration-icon--17 {
+  width: 36px;
+  height: 36px;
+  left: 1100px;
+  top: 68px;
+}
+.s3__decoration-icon--18 {
+  width: 66px;
+  height: 66px;
+  top: 96px;
+  right: 232px;
+}
+.s3__decoration-bg {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
 }
 
 @media screen and (max-width: 1200px) {
