@@ -159,3 +159,149 @@
 }
 .icon-arrow-down {
 }
+
+
+.main-form {
+  width: 888px;
+  height: 618px;
+  background: var(--bodi--white-1);
+  border-radius: 24px;
+  margin-bottom: 318px;
+
+  // .main-form__container
+  &__container {
+    width: 100%;
+    height: 100%;
+    padding: 44px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  // .main-form__input
+  &__input {
+    width: 100%;
+    border: 1px solid var(--bodi-dark-2);
+    border-radius: 12px;
+    background: var(--bodi--white-1);
+    height: 60px;
+    margin-bottom: 24px;
+    padding: 16px;
+
+    // input::placeholder
+    &::placeholder{
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 120%;
+      color: var(--bodi-dark-2);
+    }
+  }
+
+  // .main-form__input--textarea
+  &__input--textarea {
+    width: 100%;
+    height: 204px;
+    resize: none;
+    margin-bottom: 32px;
+  }
+
+  // .main-form__cbox-text
+  &__cbox-text {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 22px;
+
+    // .main-form__cbox-text a
+    a{
+      text-decoration: underline;
+      text-decoration-skip-ink: none;
+      color: var(--bodi-all-1);
+    }
+  }
+
+  // .main-form__input-wrp
+  &__input-wrp{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    // .main-form__input-wrp input
+    input{
+      width: 388px;
+    }
+  }
+
+  // .main-form__cbox-text .main-btn__icon
+  .main-btn__icon{
+    width: 24px;
+    height: 21px;
+    margin-left: 9px;
+    margin-top: 2px;
+  }
+
+}
+
+/* Скрываем стандартный чекбокс */
+.custom-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+/* Стиль для кастомного чекбокса */
+.custom-checkbox span {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #888;
+  border-radius: 3px; /* Скругленные углы */
+  background-color: white;
+  vertical-align: middle;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.2s;
+  margin-right: 6px;
+}
+
+/* Стили для активного состояния (чекнутый) */
+.custom-checkbox input[type="checkbox"]:checked + span {
+  // background-color: #4CAF50; /* Цвет заливки, если чекбокс активен */
+  // border-color: #4CAF50;
+}
+
+/* Отображение галочки */
+.custom-checkbox input[type="checkbox"]:checked + span::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 2px;
+  width: 8px;
+  height: 8px;
+  background-color: #000;
+}
+
+
+
+.eter-list {
+  position: absolute;
+  bottom: 339px;
+  height: 130px;  
+  width: 100%;
+  background: var(--bodi-all-2);
+
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  // display: none;
+
+  // .eter-list__item
+  &__item {
+    width: 349px;
+    height: 82px;
+    margin-right: 13px;
+  }
+}
