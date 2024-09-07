@@ -2008,6 +2008,117 @@ input {
   height: 100%;
 }
 
+.ss4 {
+  margin-bottom: 120px;
+}
+.ss4__container {
+  flex-direction: column;
+  align-items: center;
+}
+.ss4__title {
+  width: 1190px;
+  margin-bottom: 79px;
+}
+.ss4__wrp {
+  width: 100%;
+  min-height: 1173px;
+  margin-bottom: 64px;
+  position: relative;
+}
+.ss4__list {
+  position: relative;
+  width: 100%;
+  min-height: 1173px;
+  height: 100%;
+}
+.ss4__list-item {
+  position: absolute;
+  width: 584px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ss4__list-item:nth-child(1) {
+  left: 306px;
+  top: 58px;
+}
+.ss4__list-item:nth-child(2) {
+  left: 1064px;
+  top: 58px;
+}
+.ss4__list-item:nth-child(3) {
+  left: 0px;
+  top: 436px;
+}
+.ss4__list-item:nth-child(3) .ss4__list-item-text {
+  max-width: unset;
+}
+.ss4__list-item:nth-child(4) {
+  left: 1216px;
+  top: 436px;
+}
+.ss4__list-item:nth-child(4) .ss4__list-item-text {
+  max-width: unset;
+}
+.ss4__list-item:nth-child(5) {
+  left: 304px;
+  top: 820px;
+}
+.ss4__list-item:nth-child(5) .ss4__list-item-text {
+  max-width: unset;
+}
+.ss4__list-item:nth-child(6) {
+  left: 1064px;
+  top: 820px;
+}
+.ss4__list-item:nth-child(6) .ss4__list-item-text {
+  max-width: unset;
+}
+.ss4__list-item-number {
+  font-family: var(--second-family);
+  font-weight: 600;
+  color: var(--bodi-all-1);
+  margin-bottom: 16px;
+}
+.ss4__list-item-title {
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.ss4__list-item-text {
+  color: var(--bodi-dark-2);
+  font-weight: 500;
+  text-align: center;
+  max-width: 459px;
+}
+.ss4__btn {
+  margin-left: 10px;
+  margin-bottom: 22px;
+}
+.ss4__end-btn {
+  margin-left: 10px;
+}
+.ss4__center-decor-way {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1886px;
+  height: 1173px;
+}
+.ss4__center-img {
+  width: 584px;
+  height: 543px;
+  position: absolute;
+  left: 50%;
+  top: 143px;
+  transform: translateX(-50%);
+}
+.ss4 .main-btn__icon {
+  width: 24px;
+  height: 24px;
+}
+
 @media screen and (max-width: 1200px) {
   .container {
     max-width: 768px;
