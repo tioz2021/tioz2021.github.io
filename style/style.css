@@ -2119,6 +2119,10 @@ input {
   height: 24px;
 }
 
+.page-service .s4 {
+  margin-bottom: 100px;
+}
+
 @media screen and (max-width: 1200px) {
   .container {
     max-width: 768px;
