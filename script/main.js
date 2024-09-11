@@ -101,7 +101,7 @@
             .classList.remove("active");
           otherItem.querySelector(".accordion__content").style.maxHeight = "0";
           otherItem.querySelector(".accordion__content").style.paddingBottom =
-            "0px";
+            "0rem";
         }
       });
 
@@ -109,14 +109,14 @@
       if (header.classList.contains("active")) {
         // Получаем высоту текста внутри .accordion__content и устанавливаем в rem
         const textHeight = content.scrollHeight;
-        content.style.maxHeight = `${textHeight + 24}px`;
-        content.style.paddingBottom = "24px";
+        content.style.maxHeight = `${textHeight + 24}rem`;
+        content.style.paddingBottom = "24rem";
 
-        // x.style.paddingBottom = "0px";
+        // x.style.paddingBottom = "0rem";
 
       } else {
         content.style.maxHeight = "0";
-        content.style.paddingBottom = "0px";
+        content.style.paddingBottom = "0rem";
       }
     });
   });
