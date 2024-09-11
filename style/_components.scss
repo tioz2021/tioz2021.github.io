@@ -31,6 +31,10 @@
   }
 }
 
+.active-effect{
+  opacity: 1 !important;
+}
+
 .main-btn {
   border-radius: 40px;
   width: 280px;
@@ -42,6 +46,12 @@
 
   position: relative;
 
+  // .main-btn span
+  span{
+    position: relative;
+    z-index: 3;
+  }
+
   // .main-btn__icon
   &__icon{
     // templ
@@ -50,6 +60,22 @@
     margin-left: 12px;
 
     margin-top: 3px;
+
+    position: relative;
+    z-index: 3;
+  }
+
+  // .main-btn::after
+  &::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    z-index: 2;
   }
 
   // .main-btn .blure
@@ -64,14 +90,35 @@
 
     filter: blur(24px);
     opacity: 0.6;
-    z-index: -1;
+    z-index: 1;
 
     transition: opacity 500ms ease-in-out;
   }
 
+  // .main-btn--white
+  &--white{
+    // .main-btn--green::after
+    &::after{
+      background: var(--bodi--white-1);
+    }
+
+    // .main-btn--green span
+    span{
+      color: var(--bodi-all-1);
+    }
+
+    // .main-btn--green .blure
+    .blure{
+      background: var(--bodi--white-1);
+    }
+  }
+
   // .main-btn--green
   &--green{
-    background: var(--bodi-all-2);
+    // .main-btn--green::after
+    &::after{
+      background: var(--bodi-all-2);    
+    }
 
     // .main-btn--green span
     span{
@@ -86,7 +133,11 @@
 
   // .main-btn--blue
   &--blue{
-    background: var(--bodi-all-1);
+    
+    // .main-btn--blue::after
+    &::after{
+      background: var(--bodi-all-1);
+    }
 
     // .main-btn--blue span
     span{
@@ -130,6 +181,21 @@
   &__item {
     width: 32px;
     height: 32px;
+    cursor: pointer;
+
+    // .soc-list__item circle
+    circle{
+      transition: all 500ms ease-in-out;
+    }
+
+    // .soc-list__item:hover
+    &:hover{
+      // .soc-list__item:hover circle
+      circle{
+        fill: var(--bodi-all-1);
+        opacity: 1;
+      }
+    }
   }
 }
 .main-selector {
@@ -155,6 +221,7 @@
   &__icon {
     width: 24px;
     height: 24px;
+    top: 2px;
   }
 }
 .icon-arrow-down {
@@ -181,9 +248,9 @@
   // .main-form__input
   &__input {
     width: 100%;
-    border: 1px solid var(--bodi-dark-2);
     border-radius: 12px;
     background: var(--bodi--white-1);
+    border: 1px solid var(--bodi-dark-2);
     height: 60px;
     margin-bottom: 24px;
     padding: 16px;
@@ -198,12 +265,76 @@
     }
   }
 
+  // .main-form .textarea-wrp
+  .textarea-wrp{
+    width: 100%;
+    height: 204px;
+    border: 1px solid var(--bodi-dark-2);
+    border-radius: 12px;
+    background: var(--bodi--white-1);
+    margin-bottom: 32px;
+    padding: 16px;
+    padding-right: 8px;
+    position: relative;
+  }
+
+  // .main-form .textarea-error
+  .textarea-error{
+    display: none;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: right;
+    color: #d70404;
+    position: absolute;
+    right: 0;
+    bottom: -26px;
+
+    // .main-form .textarea-error.active
+    &.active{
+      display: block;
+    }
+  }
+
+
   // .main-form__input--textarea
   &__input--textarea {
     width: 100%;
-    height: 204px;
     resize: none;
-    margin-bottom: 32px;
+    border: unset;
+    padding: 0;
+    height: 100%;
+    padding-right: 8px;
+    outline: none;
+    
+    /* Стилизация полосы прокрутки */
+    &::-webkit-scrollbar {
+      border-radius: 8px;
+      width: 8px;
+    }
+
+    /* Стилизация трека (фона скроллбара) */
+    &::-webkit-scrollbar-track {
+      background: #f1f1f1; /* Цвет фона трека */
+      border-radius: 10px; /* Скругление углов трека */
+      background-color: unset;
+      opacity: 0;
+    }
+
+    /* Стилизация ползунка (ползунок скроллбара) */
+    &::-webkit-scrollbar-thumb {
+      border-radius: 8px;
+      width: 8px;
+      height: 60px;
+      background: var(--bodi--white-2);
+      opacity: 0.6;
+    }
+
+    /* Стилизация при наведении на ползунок */
+    &::-webkit-scrollbar-thumb:hover {
+      opacity: 1;
+    }
   }
 
   // .main-form__cbox-text
@@ -213,12 +344,18 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 22px;
+    cursor: pointer;
 
     // .main-form__cbox-text a
     a{
       text-decoration: underline;
       text-decoration-skip-ink: none;
       color: var(--bodi-all-1);
+
+      // .main-form__cbox-text a:hover
+      &:hover{
+        text-decoration: unset;
+      }
     }
   }
 
@@ -241,6 +378,10 @@
     margin-top: 2px;
   }
 
+  // .main-form .error
+  .error{
+    border: 1px solid #d70404;
+  }
 }
 
 /* Скрываем стандартный чекбокс */
@@ -306,10 +447,99 @@
   }
 }
 
-.acordion{
+.accordion {
   border-radius: 24px;
   width: 888px;
-  height: 596px;
+  min-height: 596px;
   background: var(--bodi--white-1);
   margin-bottom: 318px;
+  padding: 60px;
+
+  // .accordion__item
+  &__item {
+    box-sizing: border-box;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 23px;
+    cursor: pointer;
+    position: relative;
+
+    border-bottom: 1px solid rgba(40, 37, 37, 0.6);
+
+    // .accordion__item:hover
+    &:hover {
+      // transform: scale(1.015);
+    }
+
+    // .accordion__item.active .accordion__content
+    &.active .accordion__content {
+      max-height: 200px;
+    }
+
+    // .accordion__item:last-child
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  // .accordion__header
+  &__header {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    transition: all 500ms ease-in-out;
+    padding-bottom: 32.5px;
+    position: relative;
+
+    // .accordion__header.active
+    &.active {
+      padding-bottom: 16px;
+      // .accordion__header.active .accordion__icon
+      .accordion__icon {
+        opacity: 0;
+      }
+
+      // .accordion__icon--active
+      .accordion__icon--active{
+        opacity: 1;
+      }
+    }
+  }
+  // .accordion__title
+  &__title {
+    display: flex;
+    color: var(--bodi-dark-1);
+    transition: all 500ms ease-in-out;
+  }
+  // .accordion__icon
+  &__icon {
+    width: 44px;
+    height: 44px;
+    transform: rotate(0deg);
+    will-change: transform;
+    transition: all 500ms ease-in-out;
+    position: absolute;
+    right: 0;
+    top: 4px;
+  }
+
+  // .accordion__icon--active
+  &__icon--active{
+    opacity: 0;
+  }
+
+  // .accordion__content
+  &__content {
+    overflow: hidden;
+    box-sizing: border-box;
+    padding-bottom: 0;
+
+    will-change: max-height, padding-bottom;
+    transition: all 500ms ease-in-out;
+    max-height: 0;
+    text-align: left;
+
+    font-size: 26px;
+    line-height: 120%;
+    color: var(--bodi-dark-1);
+  }
 }
