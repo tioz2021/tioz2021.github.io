@@ -574,6 +574,7 @@ template {
   display: block;
   position: relative;
 }
+.img-wrp video,
 .img-wrp lottie-player,
 .img-wrp img,
 .img-wrp svg {
@@ -969,6 +970,24 @@ template {
 }
 
 @keyframes t_anim {}
+.marquee {
+  overflow: hidden;
+  width: 100%;
+}
+
+.marquee-content {
+  display: flex;
+  animation: marquee 20s linear infinite; /* Анимация с бесконечным повтором */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%); /* Двигаем влево на половину длины */
+  }
+}
 * {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -1117,11 +1136,11 @@ input {
   z-index: 3;
 }
 .s1__decor-gif {
-  width: 100%;
-  height: 559rem;
+  width: 1850rem;
+  height: 612rem;
   position: absolute;
   z-index: 2;
-  top: 41rem;
+  top: -8rem;
 }
 .s1__decor-bg-mask {
   position: absolute;
@@ -1177,6 +1196,7 @@ input {
   width: 44rem;
   height: 32rem;
   margin-right: 11rem;
+  transform: scale(1.2);
 }
 .s1__bg {
   width: 100%;
@@ -1396,6 +1416,7 @@ input {
   height: 89rem;
   top: -25rem;
   right: 486rem;
+  transform: scale(2.5);
 }
 .s3__decoration-icon--2 {
   width: 71rem;
@@ -1438,6 +1459,7 @@ input {
   height: 66rem;
   bottom: 29rem;
   right: 425rem;
+  transform: scale(2.5);
 }
 .s3__decoration-icon--9 {
   width: 70rem;
@@ -1462,6 +1484,7 @@ input {
   height: 66rem;
   left: 473rem;
   bottom: 110rem;
+  transform: scale(2.5);
 }
 .s3__decoration-icon--13 {
   width: 70rem;
@@ -1498,6 +1521,7 @@ input {
   height: 66rem;
   top: 96rem;
   right: 232rem;
+  transform: scale(2.5);
 }
 .s3__decoration-bg {
   position: absolute;
@@ -1653,6 +1677,9 @@ input {
   width: 432rem;
   height: 302rem;
   margin-bottom: 32rem;
+}
+.s5__item-icon {
+  transform: scale(1.2);
 }
 .s5__item-text {
   text-align: center;
@@ -2250,6 +2277,16 @@ input {
 .ss3__center-img {
   width: 1193rem;
   height: 727rem;
+  transform: scale(1.48);
+  top: -17px;
+  left: 12px;
+}
+.ss3__center-dop-decoration-icon {
+  width: 138px;
+  height: 138px;
+  position: absolute;
+  top: 438rem;
+  right: 639rem;
 }
 .ss3__bg {
   position: absolute;
@@ -2363,9 +2400,9 @@ input {
   width: 584rem;
   height: 543rem;
   position: absolute;
-  left: 50%;
-  top: 143rem;
-  transform: translateX(-50%);
+  left: 48%;
+  top: 147rem;
+  transform: translateX(-50%) scale(1.2);
 }
 .ss4 .main-btn__icon {
   width: 24rem;
@@ -2547,8 +2584,9 @@ input {
   height: 360rem;
   position: relative;
   top: 27rem;
-  left: -21rem;
+  left: -2rem;
   margin-bottom: 49rem;
+  transform: scale(1.2);
 }
 .aus2__item:nth-child(2) .aus2__text {
   position: relative;

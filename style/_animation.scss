@@ -4,3 +4,24 @@
   100% {
   }
 }
+
+.marquee {
+  overflow: hidden;
+  width: 100%;
+}
+.marquee-content {
+  display: flex;
+  animation: marquee 20s linear infinite; /* Анимация с бесконечным повтором */
+}
+
+.marquee-list-item {
+}
+
+@keyframes marquee {
+  0% {
+      transform: translateX(-50%);
+  }
+  100% {
+      transform: translateX(0%); /* Двигаем влево на половину длины */
+  }
+}
