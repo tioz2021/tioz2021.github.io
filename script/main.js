@@ -1,3 +1,87 @@
+// animation
+AOS.init();
+
+// animation opt
+(() => {
+  // Создаем новый экземпляр Intersection Observer
+  const observer = new IntersectionObserver(
+    (entries) => {
+      // Перебираем все записи (entries)
+      entries.forEach((entry) => {
+        // Если блок стал видимым и находится в зоне видимости больше 1 секунды
+        if (
+          entry.isIntersecting &&
+          entry.intersectionRatio >= 0.1 &&
+          entry.time >= 100
+        ) {
+          // let text_elm = entry.target.querySelector(".small-text");
+          // Запускаем анимацию или выполняем нужные действия
+
+          if (entry.target.classList.contains("s1__end-btn") == true) {
+            // text_elm.classList.add("anim");
+            setTimeout(() => {
+              let elm = document.querySelector(".s1__end-btn-icon lottie-player");
+              elm.play();
+              // elm[1].play();
+            }, 150);
+          }
+
+          if (entry.target.classList.contains("s7__end-btn") == true) {
+            setTimeout(() => {
+              let elm = document.querySelector(".s7__end-btn-icon lottie-player");
+              elm.play();
+              // elm[1].play();
+            }, 150);
+          }
+
+          if (entry.target.classList.contains("ss4__list") == true) {
+            setTimeout(() => {
+              let elm = document.querySelector(".ss4__center-img .start");
+              let elm2 = document.querySelector(".ss4__center-img .loop");
+              elm.play();
+              setTimeout(() => {
+                elm.style.display = "none";
+                elm2.style.display = "block";
+                elm2.play();
+              }, 2000)
+            }, 150);
+          }
+
+          if (entry.target.classList.contains("ss4__end-btn") == true) {
+            setTimeout(() => {
+              let elm = document.querySelector(".ss4__end-btn lottie-player");
+              elm.play();
+              // elm[1].play();
+            }, 150);
+          }
+
+          // После того, как анимация выполнена, можно отключить наблюдение, если оно больше не нужно
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 1, delay: 100 }
+  ); // Устанавливаем порог пересечения 100% и задержку 1 секунда
+
+  // Список селекторов для анимации
+  const selectors = [
+    ".s1__end-btn",
+    ".s7__end-btn",
+    ".ss4__list",
+    ".ss4__end-btn",
+  ];
+
+  // Проходимся по списку селекторов
+  selectors.forEach((selector) => {
+    // Находим блок для текущего селектора
+    const blockToAnimate = document.querySelector(selector);
+    // Начинаем наблюдение за блоком
+    if (!blockToAnimate) return;
+    observer.observe(blockToAnimate);
+  });
+})();
+
+
 // s6 changer
 (() => {
   const btns = document.querySelectorAll('.ppl-viewer__bottom-item');

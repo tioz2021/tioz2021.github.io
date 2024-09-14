@@ -25,3 +25,17 @@
       transform: translateX(0%); /* Двигаем влево на половину длины */
   }
 }
+
+.s3__decoration-icon--left-hand,
+.s3__decoration-icon--right-hand {
+  animation: hand-anim 2s linear infinite alternate-reverse;
+}
+
+@keyframes hand-anim {
+  0% {
+    transform: translateY(3%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
