@@ -929,6 +929,17 @@ template {
   padding-bottom: 32.5rem;
   position: relative;
 }
+.accordion__header path {
+  transition: all 500ms ease-in-out;
+}
+.accordion__header:hover .accordion__title {
+  color: var(--bodi-all-1);
+}
+.accordion__header:hover path {
+  transition: all 500ms ease-in-out;
+  fill: var(--bodi-all-1);
+  opacity: 1;
+}
 .accordion__header.active {
   padding-bottom: 16rem;
 }
@@ -970,6 +981,14 @@ template {
 }
 
 @keyframes t_anim {}
+.animate__delay-1s {
+  --animate-delay: 0.2s;
+}
+
+.animate__delay-2s {
+  --animate-delay: 0.4s;
+}
+
 .marquee {
   overflow: hidden;
   width: 100%;
@@ -1746,11 +1765,6 @@ input {
   padding-top: 60rem;
   padding-left: 152rem;
   padding-right: 121rem;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0;
 }
 .ppl-viewer__main-container-body {
   width: 100%;
@@ -1808,6 +1822,8 @@ input {
 }
 .ppl-viewer__main-container-end {
   position: relative;
+  width: 584rem;
+  height: 600rem;
 }
 .ppl-viewer__main-ppl {
   width: 584rem;
@@ -1821,28 +1837,47 @@ input {
 .ppl-viewer__main-container-end-decoration-icon--1 {
   width: 60rem;
   height: 63rem;
-  top: 263rem;
   left: 30rem;
+  transform: scale(1.5);
+  top: 500rem;
+  transition: all 1000ms ease-in-out;
+}
+.ppl-viewer__main-container-end-decoration-icon--1.active {
+  top: 263rem;
 }
 .ppl-viewer__main-container-end-decoration-icon--2 {
   width: 120rem;
   height: 120rem;
   right: 30rem;
-  top: 239rem;
+  top: 500rem;
   z-index: 1;
+  transform: scale(1.5);
+  transition: all 1000ms ease-in-out;
+}
+.ppl-viewer__main-container-end-decoration-icon--2.active {
+  top: 239rem;
 }
 .ppl-viewer__main-container-end-decoration-icon--3 {
   width: 86rem;
   height: 86rem;
   left: -32rem;
-  bottom: 32rem;
+  bottom: -100rem;
   z-index: 1;
+  transition: all 1000ms ease-in-out;
+}
+.ppl-viewer__main-container-end-decoration-icon--3.active {
+  bottom: 32rem;
 }
 .ppl-viewer__main-container-end-decoration-icon--4 {
   width: 86rem;
   height: 86rem;
-  top: 104rem;
+  top: 500rem;
   right: 115rem;
+  transform: scale(1.5);
+  transition: all 1000ms ease-in-out;
+}
+.ppl-viewer__main-container-end-decoration-icon--4.active {
+  top: 104rem;
 }
 .ppl-viewer__bottom-container {
   width: 100%;
@@ -1860,13 +1895,13 @@ input {
   cursor: pointer;
   transition: all 250ms ease-in-out;
 }
-.ppl-viewer__bottom-item:hover {
+.ppl-viewer__bottom-item.active, .ppl-viewer__bottom-item:hover {
   background: var(--bodi-all-1);
 }
-.ppl-viewer__bottom-item:hover .ppl-viewer__bottom-item-title {
+.ppl-viewer__bottom-item.active .ppl-viewer__bottom-item-title, .ppl-viewer__bottom-item:hover .ppl-viewer__bottom-item-title {
   color: var(--bodi--white-1);
 }
-.ppl-viewer__bottom-item:hover .ppl-viewer__bottom-item-text {
+.ppl-viewer__bottom-item.active .ppl-viewer__bottom-item-text, .ppl-viewer__bottom-item:hover .ppl-viewer__bottom-item-text {
   color: var(--bodi--white-2);
 }
 .ppl-viewer__bottom-item-img {
@@ -2124,7 +2159,17 @@ input {
   justify-content: space-between;
   opacity: 0;
   position: absolute;
-  bottom: 0;
+  top: 84rem;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: opacity 500ms ease-in-out;
+}
+.ss2__navigation-body-wrp {
+  width: 100%;
+  height: 500rem;
+  overflow: hidden;
+  position: absolute;
+  top: 45rem;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -2135,6 +2180,14 @@ input {
   height: 332rem;
   padding: 32rem;
   padding-top: 24rem;
+  opacity: 0;
+  bottom: -500rem;
+  transition: all 500ms ease-in-out;
+}
+.ss2__navigation-item.active {
+  transition: all 500ms ease-in-out;
+  bottom: 0;
+  opacity: 1;
 }
 .ss2__navigation-item-icon {
   width: 80rem;
@@ -2997,6 +3050,34 @@ input {
   height: 100%;
   top: 0;
   left: 0;
+}
+
+.ppl-viewer-wrp {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 29rem;
+}
+
+.ppl-viewer-cont {
+  width: 410%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transform: translateX(0%);
+  transition: transform 1000ms ease-in-out;
+}
+
+.ppl-viewer__main-container {
+  width: 1496rem;
+}
+
+.ppl-viewer__main-container--2 .ppl-viewer__main-ppl {
+  margin-left: -50rem;
+}
+
+.ppl-viewer__main-container--4 .ppl-viewer__main-ppl {
+  margin-left: -30rem;
 }
 
 @media screen and (max-width: 1200px) {

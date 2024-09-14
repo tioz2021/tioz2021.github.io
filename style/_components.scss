@@ -493,6 +493,25 @@
     padding-bottom: 32.5rem;
     position: relative;
 
+    // .accordion__header path
+    path{
+      transition: all 500ms ease-in-out;
+    }
+
+    // .accordion__header:hover
+    &:hover{
+      // .accordion__header:hover .accordion__title
+      .accordion__title{
+        color: var(--bodi-all-1);
+      }
+      // .accordion__header:hover path
+      path{
+        transition: all 500ms ease-in-out;
+        fill: var(--bodi-all-1);
+        opacity: 1;
+      }
+    }
+
     // .accordion__header.active
     &.active {
       padding-bottom: 16rem;

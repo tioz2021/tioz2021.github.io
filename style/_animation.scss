@@ -5,6 +5,13 @@
   }
 }
 
+.animate__delay-1s{
+  --animate-delay: 0.2s;
+}
+.animate__delay-2s{
+  --animate-delay: 0.4s;
+}
+
 .marquee {
   overflow: hidden;
   width: 100%;

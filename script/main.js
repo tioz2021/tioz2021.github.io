@@ -34,7 +34,7 @@ AOS.init();
             }, 150);
           }
 
-          if (entry.target.classList.contains("ss4__list") == true) {
+          if (entry.target.classList.contains("ss4__list-item") == true) {
             setTimeout(() => {
               let elm = document.querySelector(".ss4__center-img .start");
               let elm2 = document.querySelector(".ss4__center-img .loop");
@@ -46,6 +46,20 @@ AOS.init();
               }, 2000)
             }, 150);
           }
+
+          if (entry.target.classList.contains("ss2") == true) {
+            let childItems = document.querySelector(".ss2__navigation-body--1").querySelectorAll(".ss2__navigation-item");
+            setTimeout(() => {
+              childItems[0].classList.add("active");
+            }, 100);
+            setTimeout(() => {
+              childItems[1].classList.add("active");
+            }, 150);
+            setTimeout(() => {
+              childItems[2].classList.add("active");
+            }, 250);
+          }
+
 
           if (entry.target.classList.contains("ss4__end-btn") == true) {
             setTimeout(() => {
@@ -67,8 +81,9 @@ AOS.init();
   const selectors = [
     ".s1__end-btn",
     ".s7__end-btn",
-    ".ss4__list",
+    ".ss4__list-item",
     ".ss4__end-btn",
+    ".ss2",
   ];
 
   // Проходимся по списку селекторов
@@ -86,27 +101,62 @@ AOS.init();
 (() => {
   const btns = document.querySelectorAll('.ppl-viewer__bottom-item');
   const items = document.querySelectorAll('.ppl-viewer__main-container');
+  const cont = document.querySelector(".ppl-viewer-cont");
+  const allIcons = document.querySelectorAll(".ppl-viewer__main-container-end-decoration-icon");
+
   function funk(){
     const item = this;
     
     // items.forEach(e => e.classList.remove("active"));
     if(item.classList.contains("ppl-viewer__bottom-item--1")){
-      items.forEach(e => e.classList.remove("active-effect"));
-      // setTimeout(() => {
-        items[1].classList.add("active-effect");
-      // }, 200);
+      console.log("active 1");
+      cont.style.transform = "translateX(-25.2%)";
+
+      btns.forEach(e => e.classList.remove("active"));
+      btns[0].classList.add("active");
+
+      allIcons.forEach(e => e.classList.remove("active"));
+      let icon1 = items[1].querySelector(".ppl-viewer__main-container-end-decoration-icon--1");
+      icon1.classList.add("active");
+      let icon2 = items[1].querySelector(".ppl-viewer__main-container-end-decoration-icon--2");
+      icon2.classList.add("active");
+      let icon3 = items[1].querySelector(".ppl-viewer__main-container-end-decoration-icon--3");
+      icon3.classList.add("active");
+      let icon4 = items[1].querySelector(".ppl-viewer__main-container-end-decoration-icon--4");
+      icon4.classList.add("active");
     }
     else if(item.classList.contains("ppl-viewer__bottom-item--2")){
-      items.forEach(e => e.classList.remove("active-effect"));
-      // setTimeout(() => {
-        items[2].classList.add("active-effect");
-      // }, 200);
+      console.log("active 2");
+      cont.style.transform = "translateX(-50.4%)";
+
+      btns.forEach(e => e.classList.remove("active"));
+      btns[1].classList.add("active");
+
+      allIcons.forEach(e => e.classList.remove("active"));
+      let icon1 = items[2].querySelector(".ppl-viewer__main-container-end-decoration-icon--1");
+      icon1.classList.add("active");
+      let icon2 = items[2].querySelector(".ppl-viewer__main-container-end-decoration-icon--2");
+      icon2.classList.add("active");
+      let icon3 = items[2].querySelector(".ppl-viewer__main-container-end-decoration-icon--3");
+      icon3.classList.add("active");
+      let icon4 = items[2].querySelector(".ppl-viewer__main-container-end-decoration-icon--4");
+      icon4.classList.add("active");
     }
     else if(item.classList.contains("ppl-viewer__bottom-item--3")){
-      items.forEach(e => e.classList.remove("active-effect"));
-      // setTimeout(() => {
-        items[3].classList.add("active-effect");
-      // }, 200);
+      cont.style.transform = "translateX(-75.6%)";
+
+      btns.forEach(e => e.classList.remove("active"));
+      btns[2].classList.add("active");
+
+      allIcons.forEach(e => e.classList.remove("active"));
+      let icon1 = items[3].querySelector(".ppl-viewer__main-container-end-decoration-icon--1");
+      icon1.classList.add("active");
+      let icon2 = items[3].querySelector(".ppl-viewer__main-container-end-decoration-icon--2");
+      icon2.classList.add("active");
+      let icon3 = items[3].querySelector(".ppl-viewer__main-container-end-decoration-icon--3");
+      icon3.classList.add("active");
+      let icon4 = items[3].querySelector(".ppl-viewer__main-container-end-decoration-icon--4");
+      icon4.classList.add("active");
     }
 
     console.log(item)
@@ -119,6 +169,7 @@ AOS.init();
 (() => {
   const btns = document.querySelectorAll('.ss2__navigation-btn');
   const items = document.querySelectorAll('.ss2__navigation-body');
+  const allChildItems = document.querySelectorAll('.ss2__navigation-item');
   function funk(){
     const item = this;
     
@@ -129,6 +180,18 @@ AOS.init();
       // setTimeout(() => {
         items[0].classList.add("active-effect");
         btns[0].classList.add("active");
+
+        allChildItems.forEach(e => e.classList.remove("active"));
+        let childItems = items[0].querySelectorAll(".ss2__navigation-item");
+        setTimeout(() => {
+          childItems[0].classList.add("active");
+        }, 100);
+        setTimeout(() => {
+          childItems[1].classList.add("active");
+        }, 200);
+        setTimeout(() => {
+          childItems[2].classList.add("active");
+        }, 300);
       // }, 200);
     }
     else if(item.classList.contains("ss2__navigation-btn--2")){
@@ -137,6 +200,18 @@ AOS.init();
       // setTimeout(() => {
         items[1].classList.add("active-effect");
         btns[1].classList.add("active");
+
+        allChildItems.forEach(e => e.classList.remove("active"));
+        let childItems = items[1].querySelectorAll(".ss2__navigation-item");
+        setTimeout(() => {
+          childItems[0].classList.add("active");
+        }, 100);
+        setTimeout(() => {
+          childItems[1].classList.add("active");
+        }, 200);
+        setTimeout(() => {
+          childItems[2].classList.add("active");
+        }, 300);
       // }, 200);
     }
     else if(item.classList.contains("ss2__navigation-btn--3")){
@@ -145,6 +220,18 @@ AOS.init();
       // setTimeout(() => {
         items[2].classList.add("active-effect");
         btns[2].classList.add("active");
+
+        allChildItems.forEach(e => e.classList.remove("active"));
+        let childItems = items[2].querySelectorAll(".ss2__navigation-item");
+        setTimeout(() => {
+          childItems[0].classList.add("active");
+        }, 100);
+        setTimeout(() => {
+          childItems[1].classList.add("active");
+        }, 200);
+        setTimeout(() => {
+          childItems[2].classList.add("active");
+        }, 300);
       // }, 200);
     }
     else if(item.classList.contains("ss2__navigation-btn--4")){
@@ -153,6 +240,18 @@ AOS.init();
       // setTimeout(() => {
         items[3].classList.add("active-effect");
         btns[3].classList.add("active");
+
+        allChildItems.forEach(e => e.classList.remove("active"));
+        let childItems = items[3].querySelectorAll(".ss2__navigation-item");
+        setTimeout(() => {
+          childItems[0].classList.add("active");
+        }, 100);
+        setTimeout(() => {
+          childItems[1].classList.add("active");
+        }, 200);
+        setTimeout(() => {
+          childItems[2].classList.add("active");
+        }, 300);
       // }, 200);
     }
 
