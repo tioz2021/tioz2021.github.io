@@ -78,11 +78,33 @@ input {
 // 768
 @media screen and (max-width: 1200px) {
   html {
-    // font-size: 0.132vw;
+    font-size: 0.132vw;
   }
 
   .container {
     max-width: 768rem;
+    padding-left: 32rem;
+    padding-right: 32rem;
+  }
+
+  .big-title{
+    font-size: 63rem;
+  }
+
+  .def-title{
+    font-size: 52rem;
+  }
+
+  .str-text{
+    font-size: 28rem;
+  }
+
+  .def-text{
+    font-size: 20rem;
+  }
+
+  .small-text{
+    font-size: 18rem;
   }
 
   @import "_adaptive-tab";

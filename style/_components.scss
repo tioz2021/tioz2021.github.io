@@ -565,3 +565,35 @@
     color: var(--bodi-dark-1);
   }
 }
+
+
+.tab-menu{
+  width: 60rem;
+  height: 60rem;
+  position: relative;
+  top: 8rem;
+  // border: 1rem solid red;
+}
+.tab-menu-bg{
+  position: absolute;
+  left: 50%;
+  top: -9rem;
+  transform: translateX(-50%);
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+
+  border-radius: 100%;
+  background: var(--bodi--white-1);
+  box-shadow: 0 5rem 5rem 0 rgba(0, 0, 0, 0.03), 0 13rem 13rem 0 rgba(0, 0, 0, 0.05), 0 -2rem 6rem 0 rgba(0, 0, 0, 0.04);
+}
+
+.tab-menu-lines-img{
+  width: 26rem;
+  height: 18rem;
+  position: absolute;
+  left: 50%;
+  top: 21rem;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
