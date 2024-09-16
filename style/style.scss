@@ -69,6 +69,11 @@ button {
 input {
   outline: unset;
 }
+
+.tab-menu{
+  display: none;
+}
+
 // main 1920v
 @import "_main.scss";
 
@@ -79,6 +84,10 @@ input {
 @media screen and (max-width: 1200px) {
   html {
     font-size: 0.132vw;
+  }
+
+  .tab-menu{
+    display: flex;
   }
 
   .container {

@@ -1,0 +1,42 @@
+<svg width="768" height="956" viewBox="0 0 768 956" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="768" height="956" fill="url(#paint0_linear_2446_9882)" />
+  <mask id="mask0_2446_9882" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="768" height="956">
+    <rect width="768" height="956" fill="url(#paint1_linear_2446_9882)" />
+  </mask>
+  <g mask="url(#mask0_2446_9882)">
+    <g filter="url(#filter0_f_2446_9882)">
+      <ellipse cx="237" cy="896" rx="180" ry="180" transform="rotate(-180 237 896)" fill="white" />
+    </g>
+    <g filter="url(#filter1_f_2446_9882)">
+      <ellipse cx="189" cy="358" rx="180" ry="180" transform="rotate(-180 189 358)" fill="white" />
+    </g>
+    <g filter="url(#filter2_f_2446_9882)">
+      <ellipse cx="757" cy="626" rx="180" ry="180" transform="rotate(-180 757 626)" fill="white" />
+    </g>
+  </g>
+  <defs>
+    <filter id="filter0_f_2446_9882" x="-243" y="416" width="960" height="960" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+      <feGaussianBlur stdDeviation="150" result="effect1_foregroundBlur_2446_9882" />
+    </filter>
+    <filter id="filter1_f_2446_9882" x="-291" y="-122" width="960" height="960" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+      <feGaussianBlur stdDeviation="150" result="effect1_foregroundBlur_2446_9882" />
+    </filter>
+    <filter id="filter2_f_2446_9882" x="277" y="146" width="960" height="960" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+      <feGaussianBlur stdDeviation="150" result="effect1_foregroundBlur_2446_9882" />
+    </filter>
+    <linearGradient id="paint0_linear_2446_9882" x1="384" y1="956" x2="384" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E9ECF1" />
+      <stop offset="1" stop-color="#F5F8FE" />
+    </linearGradient>
+    <linearGradient id="paint1_linear_2446_9882" x1="384" y1="956" x2="384" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E9ECF1" />
+      <stop offset="1" stop-color="#F5F8FE" />
+    </linearGradient>
+  </defs>
+</svg>
