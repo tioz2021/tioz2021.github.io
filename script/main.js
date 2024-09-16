@@ -292,13 +292,13 @@ AOS.init();
       if (header.classList.contains("active")) {
         // Получаем высоту текста внутри .accordion__content и устанавливаем в rem
         const textHeight = content.scrollHeight;
-        content.style.maxHeight = `${textHeight + 24}rem`;
+        content.style.maxHeight = `${textHeight + 94}rem`;
         content.style.paddingBottom = "24rem";
 
         // x.style.paddingBottom = "0rem";
 
       } else {
-        content.style.maxHeight = "0";
+        content.style.maxHeight = "0rem";
         content.style.paddingBottom = "0rem";
       }
     });
