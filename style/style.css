@@ -1102,6 +1102,10 @@ input {
   display: none;
 }
 
+.s2 .eter-list {
+  display: none;
+}
+
 .header {
   width: 100%;
   position: absolute;
@@ -3124,6 +3128,9 @@ input {
 @media screen and (max-width: 1200px) {
   html {
     font-size: 0.132vw;
+  }
+  .s2 .eter-list {
+    display: flex;
   }
   .tab-menu {
     display: flex;

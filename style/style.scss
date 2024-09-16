@@ -74,6 +74,10 @@ input {
   display: none;
 }
 
+.s2 .eter-list{
+  display: none;
+}
+
 // main 1920v
 @import "_main.scss";
 
@@ -85,6 +89,11 @@ input {
   html {
     font-size: 0.132vw;
   }
+
+  .s2 .eter-list{
+    display: flex;
+  }
+  
 
   .tab-menu{
     display: flex;
