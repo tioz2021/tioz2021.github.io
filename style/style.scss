@@ -90,6 +90,7 @@ input {
   .ppl-viewer__bottom-container{
     opacity: 0;
   }
+
   html {
     font-size: 0.132vw;
   }
@@ -136,14 +137,52 @@ input {
   @import "_adaptive-tab";
 }
 
+.s3__title-row br{
+  display: none;
+}
+
+.s4 .eter-list{
+  display: none !important;
+}
+
+.s4__slide-logos{
+  display: flex;
+}
+
 // 360
 @media screen and (max-width: 600px) {
   html {
-    // font-size: 0.278vw;
+    font-size: 0.278vw;
+  }
+
+  .s4__slide-logos{
+    display: none;
+  }
+
+  .s3__title-row br{
+    display: block;
   }
 
   .container {
     max-width: 360rem;
+    padding-left: 16rem;
+    padding-right: 16rem;
+  }
+
+  .big-title{
+    font-size: 44rem;
+  }
+  .def-title{
+    font-size: 32rem;
+  }
+  .str-text{
+    font-size: 22rem;
+  }
+  .def-text{
+    font-size: 18rem;
+  }
+  .small-text{
+    font-size: 14rem;
   }
   @import "_adaptive-mob";
 }
