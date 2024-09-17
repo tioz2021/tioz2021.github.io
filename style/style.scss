@@ -144,7 +144,6 @@ input {
 .s4 .eter-list{
   display: none !important;
 }
-
 .s4__slide-logos{
   display: flex;
 }
@@ -175,6 +174,9 @@ input {
   .def-title{
     font-size: 32rem;
   }
+  .small-title{
+    font-size: 22rem;
+  }
   .str-text{
     font-size: 22rem;
   }
@@ -186,3 +188,4 @@ input {
   }
   @import "_adaptive-mob";
 }
+
