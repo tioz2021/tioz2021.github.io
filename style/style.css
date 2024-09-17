@@ -3126,6 +3126,10 @@ input {
 }
 
 @media screen and (max-width: 1200px) {
+  .ppl-viewer-cont,
+  .ppl-viewer__bottom-container {
+    opacity: 0;
+  }
   html {
     font-size: 0.132vw;
   }
