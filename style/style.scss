@@ -78,6 +78,10 @@ input {
   display: none;
 }
 
+.aus4__title-row--mob{
+  display: none;
+}
+
 // main 1920v
 @import "_main.scss";
 
@@ -185,6 +189,12 @@ input {
   }
   .small-text{
     font-size: 14rem;
+  }
+  .aus4__title-row--hdn{
+    display: none;
+  }
+  .aus4__title-row--mob{
+    display: flex;
   }
   @import "_adaptive-mob";
 }
