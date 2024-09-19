@@ -12,7 +12,7 @@
 	<!-- other style -->
 </head>
 
-<body>
+<body class="bp">
 	<header class="header">
 		<div class="header__container container">
 			<a href="index.html" class="header__logo logo img-wrp">
@@ -208,9 +208,9 @@
 
 		</main>
 
-		<footer class="footer about-us-footer">
+		<footer class="footer">
 			<div class="footer__container container">
-				<div class="footer__title def-title">Остались вопросы?</div>
+				<div class="footer__title def-title">Отправить резюме для: UA manager (junior)</div>
 
 				<div class="main-form" id="form-scroll">
 					<div class="main-form__container">
@@ -227,8 +227,10 @@
 						<label class="main-form__cbox-text small-text custom-checkbox" for="main-cbox">
 							<input type="checkbox" id="main-cbox" class="input--checkbox">
 							<span></span>
-							Я даю согласие на обработку 
-							<a href="#">персональных данных</a>
+							<div class="wrp">
+								Я даю согласие на обработку 
+								<a href="#">персональных данных</a>
+							</div>
 						</label>
 
 						<button type="button" class="main-btn main-btn--blue">
@@ -506,7 +508,7 @@
 							</svg>
 						</a>
 						<div class="footer__end-wrp-start-nav">
-							<a href="index.html" class="footer__end-wrp-start-nav-link def-text">Агенство</a>
+							<a href="index.html" class="footer__end-wrp-start-nav-link footer__end-wrp-start-nav-link--active def-text">Агенство</a>
 							<a href="service.html" class="footer__end-wrp-start-nav-link def-text">Услуги</a>
 							<a href="about-us.html" class="footer__end-wrp-start-nav-link def-text">Вакансии</a>
 						</div>
@@ -548,40 +550,10 @@
 			</div>
 
 			<div class="footer__bg">
-				<svg width="1920" height="1638" viewBox="0 0 1920 1638" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<rect x="1920" y="1638" width="1920" height="1638" transform="rotate(-180 1920 1638)" fill="url(#paint0_linear_2358_531)" />
-					<mask id="mask0_2358_531" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1920" height="1638">
-						<rect x="1920" y="1638" width="1920" height="1638" transform="rotate(-180 1920 1638)" fill="url(#paint1_linear_2358_531)" />
-					</mask>
-					<g mask="url(#mask0_2358_531)">
-						<g filter="url(#filter0_f_2358_531)">
-							<circle cx="1756" cy="974" r="250" transform="rotate(-180 1756 974)" fill="white" />
-						</g>
-						<g filter="url(#filter1_f_2358_531)">
-							<circle cx="114" cy="282" r="250" transform="rotate(-180 114 282)" fill="white" />
-						</g>
-					</g>
-					<defs>
-						<filter id="filter0_f_2358_531" x="1006" y="224" width="1500" height="1500" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-							<feFlood flood-opacity="0" result="BackgroundImageFix" />
-							<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-							<feGaussianBlur stdDeviation="250" result="effect1_foregroundBlur_2358_531" />
-						</filter>
-						<filter id="filter1_f_2358_531" x="-636" y="-468" width="1500" height="1500" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-							<feFlood flood-opacity="0" result="BackgroundImageFix" />
-							<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-							<feGaussianBlur stdDeviation="250" result="effect1_foregroundBlur_2358_531" />
-						</filter>
-						<linearGradient id="paint0_linear_2358_531" x1="2880" y1="3276" x2="2880" y2="1638" gradientUnits="userSpaceOnUse">
-							<stop stop-color="#E9ECF1" />
-							<stop offset="1" stop-color="#E6E8EC" />
-						</linearGradient>
-						<linearGradient id="paint1_linear_2358_531" x1="2880" y1="3276" x2="2880" y2="1638" gradientUnits="userSpaceOnUse">
-							<stop stop-color="#E9ECF1" />
-							<stop offset="1" stop-color="#E9ECF1" />
-						</linearGradient>
-					</defs>
-				</svg>
+				<picture>
+					<source srcset="img/tab/footer-bg.svg" media="(max-width: 1200px)">
+					<img src="img/footer__bg.svg" alt="img">
+				</picture>
 			</div>
 		</footer>
 	</div>
