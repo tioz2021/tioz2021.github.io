@@ -82,12 +82,16 @@ input {
   display: none;
 }
 
-.header__nav--mobile{
-  display: none;
-}
 
 // main 1920v
 @import "_main.scss";
+
+.header__nav--mobile{
+  display: none;
+}
+.header__nav--mobile-bg{
+  display: none;
+}
 
 @media screen and (max-width: 1600px) {
 }
@@ -97,6 +101,9 @@ input {
   .ppl-viewer-cont,
   .ppl-viewer__bottom-container{
     opacity: 0;
+  }
+  .header__nav--mobile-bg{
+    display: block;
   }
 
   html {

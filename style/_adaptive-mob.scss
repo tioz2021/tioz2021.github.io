@@ -144,46 +144,86 @@
 .s2 .eter-list{
   top: 30rem;
 }
-.s2__item:nth-child(1) .s2__item-img, .s2__item:nth-child(6) .s2__item-img{
+
+.s2__item:nth-child(1),
+.s2__item:nth-child(6),
+.s2__item:nth-child(11),
+.s2__item:nth-child(16){
+  top: 16rem;
+}
+
+.s2__item:nth-child(1) .s2__item-img,
+.s2__item:nth-child(6) .s2__item-img,
+.s2__item:nth-child(11) .s2__item-img,
+.s2__item:nth-child(16) .s2__item-img{
   width: 189rem;
   height: 162rem;
   top: 66rem;
   left: -15rem;
 }
-.s2__item:nth-child(2), .s2__item:nth-child(7){
-  top: 16rem;
+.s2__item:nth-child(2),
+.s2__item:nth-child(7),
+.s2__item:nth-child(12),
+.s2__item:nth-child(17){
+  // top: 16rem;
   left: -23rem;
 }
-.s2__item:nth-child(2) .s2__item-img, .s2__item:nth-child(7) .s2__item-img{
+.s2__item:nth-child(2) .s2__item-img,
+.s2__item:nth-child(7) .s2__item-img,
+.s2__item:nth-child(12) .s2__item-img,
+.s2__item:nth-child(17) .s2__item-img{
   width: 221rem;
   height: 194rem;
   top: 75rem;
   left: -8rem;
 }
 
-.s2__item:nth-child(3) .s2__item-img, .s2__item:nth-child(8) .s2__item-img{
+.s2__item:nth-child(3),
+.s2__item:nth-child(8),
+.s2__item:nth-child(13),
+.s2__item:nth-child(18){
+  top: 16rem;
+}
+
+.s2__item:nth-child(3) .s2__item-img,
+.s2__item:nth-child(8) .s2__item-img,
+.s2__item:nth-child(13) .s2__item-img,
+.s2__item:nth-child(18) .s2__item-img{
   bottom: 24rem;
   width: 172rem;
   height: 174rem;
 }
-.s2__item:nth-child(4), .s2__item:nth-child(9){
-  top: 16rem;
+.s2__item:nth-child(4),
+.s2__item:nth-child(9),
+.s2__item:nth-child(14),
+.s2__item:nth-child(19){
+  // top: 16rem;
 }
 
-.s2__item:nth-child(4) .s2__item-img, .s2__item:nth-child(9) .s2__item-img{
+.s2__item:nth-child(4) .s2__item-img,
+.s2__item:nth-child(9) .s2__item-img,
+.s2__item:nth-child(14) .s2__item-img,
+.s2__item:nth-child(19) .s2__item-img{
   width: 196rem;
   height: 181rem;
   bottom: -1rem;
   left: 12rem;
 }
 
-.s2__item:nth-child(5) .s2__item-img, .s2__item:nth-child(10) .s2__item-img{
+.s2__item:nth-child(5) .s2__item-img,
+.s2__item:nth-child(10) .s2__item-img,
+.s2__item:nth-child(15) .s2__item-img,
+.s2__item:nth-child(20) .s2__item-img{
   width: 166rem;
   height: 186rem;
   left: 27rem;
   bottom: -24rem;
 }
-.s2__item:nth-child(5), .s2__item:nth-child(10){
+.s2__item:nth-child(5),
+.s2__item:nth-child(10),
+.s2__item:nth-child(15),
+.s2__item:nth-child(20){
+  top: 16rem;
   left: -131rem;
 }
 
@@ -246,97 +286,135 @@
   top: 51rem;
 }
 
-.s3__decoration-icon--1{
+.s3__decoration-icon-wrp--1{
   top: -3rem;
-  right: 9rem;
+  right: 65rem;
+}
+.s3__decoration-icon--1{
   width: 56rem;
   height: 56rem;
   transform: scale(1);
 }
+
+.s3__decoration-icon-wrp--2{
+  top: 38rem;
+  left: 11rem;
+}
 .s3__decoration-icon--2{
   width: 24rem;
   height: 24rem;
-  top: 38rem;
-  left: 11rem;
+}
+
+.s3__decoration-icon-wrp--3{
+  top: 32rem;
+  right: 65rem;
 }
 .s3__decoration-icon--3{
   width: 18rem;
   height: 33rem;
-  top: 32rem;
-  right: 47rem;
 }
 .s3__decoration-icon--3 path{
   stroke: white;
 }
+
+.s3__decoration-icon-wrp--4{
+  bottom: 599rem;
+  left: 301rem;
+}
 .s3__decoration-icon--4{
   width: 24rem;
   height: 24rem;
-  bottom: 574rem;
-  left: 301rem;
 }
-.s3__decoration-icon--5{
+
+.s3__decoration-icon-wrp--5{
   left: 114rem;
   top: 196rem;
+}
+.s3__decoration-icon--5{
   width: 18rem;
   height: 18rem;
+}
+
+.s3__decoration-icon-wrp--6{
+  right: 109rem;
+  bottom: 430rem;
 }
 .s3__decoration-icon--6{
   display: block;
   width: 55rem;
   height: 55rem;
-  right: 54rem;
-  bottom: 375rem;
+}
+
+.s3__decoration-icon-wrp--7{
+  top: 34rem;
+  right: 98rem;
 }
 .s3__decoration-icon--7{
   width: 14rem;
   height: 23rem;
-  top: 34rem;
-  right: 85rem;
+}
+
+.s3__decoration-icon-wrp--8{
+  top: 170rem;
+  right: 309rem;
+  bottom: unset;
 }
 .s3__decoration-icon--8{
   width: 60rem;
   height: 60rem;
-  top: 169rem;
-  right: 249rem;
-  bottom: unset;
   transform: scale(1);
 }
 .s3__decoration-icon--9{
   display: none;
 }
+
+.s3__decoration-icon-wrp--10{
+  bottom: 465rem;
+  left: 234rem;
+}
 .s3__decoration-icon--10{
   width: 41rem;
   height: 41rem;
-  bottom: 424rem;
-  left: 234rem;
+}
+
+.s3__decoration-icon-wrp--11{
+  bottom: 591rem;
+  left: 53rem;
 }
 .s3__decoration-icon--11{
   width: 20rem;
   height: 20rem;
-  bottom: 571rem;
-  left: 53rem;
+}
+
+.s3__decoration-icon-wrp--12{
+  left: 290rem;
+  bottom: 431rem;
 }
 .s3__decoration-icon--12 {
   width: 22rem;
   height: 22rem;
-  left: 290rem;
-  bottom: 408rem;
+}
+
+.s3__decoration-icon-wrp--15{
+  top: 192rem;
+  left: 59rem;
 }
 .s3__decoration-icon--15{
   width: 20rem;
   height: 20rem;
-  top: 192rem;
-  left: 59rem;
 }
 .s3__decoration-icon--16{
   display: none;
+}
+
+.s3__decoration-icon-wrp--17{
+  left: 249rem;
+  top: 209rem;
 }
 .s3__decoration-icon--17{
   display: block;
   width: 13rem;
   height: 13rem;
-  left: 249rem;
-  top: 209rem;
 }
 
 .s3 .s1__text-item{
@@ -1323,4 +1401,26 @@
 .header__nav-link{
   font-size: 22rem;
   font-weight: 500;
+}
+
+.s2__item:nth-child(6){
+  top: 32rem;
+}
+.s2__item:nth-child(7){
+  top: 16rem;
+}
+.s2__item:nth-child(8){
+  top: 32rem;
+}
+.s2__item:nth-child(9){
+  top: 16rem;
+}
+.s2__item:nth-child(10){
+  top: 32rem;
+}
+
+.s2 .marquee-content{
+  // animation: unset;
+  // margin-left: -1100rem;
+  // animation: marqueer 10s linear infinite;
 }
