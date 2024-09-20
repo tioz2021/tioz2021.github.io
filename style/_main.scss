@@ -148,7 +148,8 @@
   &__decor-men {
     position: absolute;
     left: 50%;
-    top: -12rem;
+    // top: -12rem;
+    top: -24rem;
     transform: translateX(-50%);
     width: 664rem;
     height: 612rem;
@@ -1197,10 +1198,7 @@
     transition: all 1000ms ease-in-out;
     // .ppl-viewer__main-container-end-decoration-icon--1.active
     &.active{
-<<<<<<< HEAD
       opacity: 1;
-=======
->>>>>>> bbca131eec7f45a5ba639562426164ca16abd4d3
       top: 267rem;
     }
   }
