@@ -346,3 +346,54 @@ AOS.init();
   if(menuBg) menuBg.addEventListener("click", f);
 
 }) ();
+
+// popup
+(() => {
+  document.addEventListener("DOMContentLoaded", function () {
+
+    const openBtn = document.getElementById("openBtn");
+    if (!openBtn) {
+      return false;
+    }
+    const popup = document.getElementById("popup");
+    const popupContent = document.querySelector(".popup-content");
+    const closeBtn = document.getElementById("closeBtn");
+
+    openBtn.addEventListener("click", function () {
+      event.preventDefault();
+      popup.classList.add("open");
+      popupContent.classList.add("open");
+    });
+
+    closeBtn.addEventListener("click", function () {
+      popup.classList.remove("open");
+      popupContent.classList.remove("open");
+
+      var iframe = document.getElementById('youtube-video');
+      var iframeSrc = iframe.src;
+      iframe.src = '';
+      setTimeout(() => {
+        iframe.src = iframeSrc;
+      }, 100);
+    });
+
+    document.addEventListener("click", function (event) {
+      // Закрываем popup, если клик произошел вне его области
+      if (
+        !popupContent.contains(event.target) &&
+        !openBtn.contains(event.target)
+      ) {
+        popup.classList.remove("open");
+        popupContent.classList.remove("open");
+
+        var iframe = document.getElementById('youtube-video');
+        var iframeSrc = iframe.src;
+        iframe.src = '';
+        setTimeout(() => {
+          iframe.src = iframeSrc;
+        }, 100);
+
+      }
+    });
+  });
+})();
