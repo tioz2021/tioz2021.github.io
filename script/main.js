@@ -328,3 +328,21 @@ AOS.init();
 
   if(buttonSubmit) buttonSubmit.addEventListener("click", funk);
 }) ();
+
+// header menu
+(() => {
+
+  const openMenuBtn = document.querySelector('.tab-menu');
+  const menuBody = document.querySelector(".header__nav--mobile");
+  const menuBg = document.querySelector(".header__nav--mobile-bg");
+
+  function f() {
+    menuBody.classList.toggle("active");
+    menuBg.classList.toggle("active");
+    openMenuBtn.querySelector(".burger").classList.toggle("active");
+  }
+
+  if(openMenuBtn) openMenuBtn.addEventListener("click", f);
+  if(menuBg) menuBg.addEventListener("click", f);
+
+}) ();

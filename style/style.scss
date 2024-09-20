@@ -82,6 +82,10 @@ input {
   display: none;
 }
 
+.header__nav--mobile{
+  display: none;
+}
+
 // main 1920v
 @import "_main.scss";
 
@@ -137,7 +141,6 @@ input {
   .small-text{
     font-size: 18rem;
   }
-
   @import "_adaptive-tab";
 }
 

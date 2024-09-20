@@ -15,6 +15,8 @@
 }
 .header__logo{
   margin-right: 233rem;
+  position: relative;
+  z-index: 22;
 }
 .main-selector{
   margin-right: auto;
@@ -1231,4 +1233,118 @@ textarea::placeholder{
 }
 .page404__container{
   height: 805rem;
+}
+
+.header__nav--mobile{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 21;
+  top: 128rem;
+  left: 50%;
+  margin-left: -352rem;
+  border-radius: 30rem;
+  width: 704rem;
+  height: 359rem;
+  padding: 44rem;
+  box-shadow: 0 5rem 5rem 0 rgba(0, 0, 0, 0.03), 0 13rem 13rem 0 rgba(0, 0, 0, 0.05), 0 -2rem 6rem 0 rgba(0, 0, 0, 0.04);
+  background: var(--bodi--white-1);
+
+  transition: opacity 500ms ease-in-out;
+}
+.header__nav--mobile-bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(360deg, #e9ecf1 0%, #f5f8fe 100%);
+  z-index: 20;
+  transition: opacity 500ms ease-in-out;
+}
+
+.header__nav--mobile,
+.header__nav--mobile-bg {
+    visibility: hidden; /* Элементы невидимы */
+    opacity: 0;
+    transform: translateY(-20rem); /* Смещение вверх */
+    transition: opacity 0.5s ease, transform 0.5s ease, visibility 0s 0.5s; /* Задержка для скрытия */
+}
+
+/* Видимые элементы */
+.header__nav--mobile.active,
+.header__nav--mobile-bg.active {
+    visibility: visible; /* Делаем элементы видимыми */
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease, transform 0.5s ease, visibility 0s; /* Без задержки для видимости */
+}
+
+
+
+.header__nav{
+  justify-content: unset;
+  align-items: unset;
+}
+.header__nav-list{
+  order: -1;
+  height: unset;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 24rem;
+  display: flex;
+  flex-direction: column;
+  align-items: unset;
+}
+.header__nav-item{
+  margin-bottom: 16rem;
+  min-height: 51rem;
+  display: flex;
+  align-items: center;
+}
+.header__nav-item:last-child{
+  margin-bottom: 0;
+}
+
+.header__nav-link{
+  font-size: 36rem;
+}
+.soc-list{
+  width: 144rem;
+  height: 60rem;
+}
+.soc-list__item{
+  width: 60rem;
+  height: 60rem;
+}
+.tab-menu{
+  z-index: 22;
+}
+
+
+.burger {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.line {
+  transition: all 0.3s ease;
+}
+
+.active .line1 {
+  transform: rotate(45deg) translate(3rem, -3rem);
+}
+
+.active .line2 {
+  opacity: 0; /* Прячем среднюю линию */
+}
+
+.active .line3 {
+  transform: rotate(-45deg) translate(-10rem, -1rem);
+}
+.tab-menu-lines-img{
+  width: 30rem;
+  height: 30rem;
 }
