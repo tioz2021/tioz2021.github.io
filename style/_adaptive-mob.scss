@@ -88,6 +88,7 @@
   height: 52rem;
   filter: blur(16rem);
   opacity: 0.6;
+  top: 8rem;
 }
 .s1__text-item--last{
   margin-bottom: 32rem;
@@ -634,6 +635,7 @@
 }
 .footer__container{
   padding-top: 46rem;
+  padding-bottom: 32rem;
 }
 .footer__title{
   font-size: 33rem;
@@ -989,7 +991,8 @@
 }
 
 .page-service .s1__text-item--first{
-  margin-bottom: 32rem;
+  // margin-bottom: 32rem;
+  margin-bottom: 14rem;
 }
 
 
@@ -1423,4 +1426,32 @@
   // animation: unset;
   // margin-left: -1100rem;
   // animation: marqueer 10s linear infinite;
+}
+
+
+.page-service .s1__decor-box{
+  overflow: hidden;
+}
+.page-service .s1__decor-box{
+  height: 240rem;
+  margin-bottom: -27rem;
+}
+.page-service .s1__decor-men{
+  top: 10rem;
+}
+.s2 .marquee-content{
+  animation: marqueer 40s linear infinite;
+}
+
+.accordion__item:nth-child(2) .accordion__icon{
+  top: 13rem;
+}
+.accordion__item:nth-child(3) .accordion__icon{
+  top: 24rem;
+}
+.accordion__item:nth-child(4) .accordion__icon{
+  top: 11rem;
+}
+.accordion__item:nth-child(5) .accordion__icon{
+  top: 22rem;
 }

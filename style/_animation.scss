@@ -25,7 +25,11 @@
 }
 
 .s2 .marquee-content{
-  animation: marqueer 40s linear infinite; /* Анимация с бесконечным повтором */
+  animation: unset;
+  // animation: marqueer 0s linear infinite; /* Анимация с бесконечным повтором */
+}
+.marquee-content--active{
+  animation: marqueer 40s linear infinite !important;
 }
 
 @keyframes marquee {

@@ -69,6 +69,31 @@ AOS.init();
             }, 150);
           }
 
+          if (entry.target.classList.contains("s2__title") == true) {
+            setTimeout(() => {
+              document.querySelector(".s2 .marquee-content").classList.add("marquee-content--active");
+            }, 1500);
+          }
+
+          if (entry.target.classList.contains("s6__title") == true) {
+            setTimeout(() => {
+              console.log("active?");
+              let icons = document.querySelectorAll(".ppl-viewer__main-container--1 .ppl-viewer__main-container-end-decoration-icon");
+              // if (!icons) return;
+
+              icons.forEach(e => e.classList.add("active"));
+
+              setTimeout(() => {
+                icons[0].querySelector("lottie-player").play();
+                icons[3].querySelector("lottie-player").play();
+                icons[1].querySelector("lottie-player").play();
+              }, 1000);
+              setTimeout(() => {
+                icons[2].querySelector("lottie-player").play();
+              }, 1250);
+            }, 150);
+          }
+
           // После того, как анимация выполнена, можно отключить наблюдение, если оно больше не нужно
           observer.unobserve(entry.target);
         }
@@ -84,6 +109,8 @@ AOS.init();
     ".ss4__list-item",
     ".ss4__end-btn",
     ".ss2",
+    ".s6__title",
+    ".s2__title",
   ];
 
   // Проходимся по списку селекторов
@@ -106,14 +133,40 @@ AOS.init();
 
   function funk(){
     const item = this;
-    
-    // items.forEach(e => e.classList.remove("active"));
+
     if(item.classList.contains("ppl-viewer__bottom-item--1")){
       console.log("active 1");
-      cont.style.transform = "translateX(-25.2%)";
+      cont.style.transform = "translateX(0%)";
 
       btns.forEach(e => e.classList.remove("active"));
       btns[0].classList.add("active");
+
+      allIcons.forEach(e => e.classList.remove("active"));
+      let icon1 = items[0].querySelector(".ppl-viewer__main-container-end-decoration-icon--1");
+      icon1.classList.add("active");
+      let icon2 = items[0].querySelector(".ppl-viewer__main-container-end-decoration-icon--2");
+      icon2.classList.add("active");
+      let icon3 = items[0].querySelector(".ppl-viewer__main-container-end-decoration-icon--3");
+      icon3.classList.add("active");
+      let icon4 = items[0].querySelector(".ppl-viewer__main-container-end-decoration-icon--4");
+      icon4.classList.add("active");
+
+      // animate icon
+      setTimeout(() => {
+        icon1.querySelector("lottie-player").play();
+        icon4.querySelector("lottie-player").play();
+        icon2.querySelector("lottie-player").play();
+      }, 1000);
+      setTimeout(() => {
+        icon3.querySelector("lottie-player").play();
+      }, 1250);
+    }
+    else if(item.classList.contains("ppl-viewer__bottom-item--2")){
+      console.log("active 2");
+      cont.style.transform = "translateX(-34.35%)";
+
+      btns.forEach(e => e.classList.remove("active"));
+      btns[1].classList.add("active");
 
       allIcons.forEach(e => e.classList.remove("active"));
       let icon1 = items[1].querySelector(".ppl-viewer__main-container-end-decoration-icon--1");
@@ -124,13 +177,22 @@ AOS.init();
       icon3.classList.add("active");
       let icon4 = items[1].querySelector(".ppl-viewer__main-container-end-decoration-icon--4");
       icon4.classList.add("active");
+
+      // animate icon      
+      setTimeout(() => {
+        icon1.querySelector("lottie-player").play();
+        icon4.querySelector("lottie-player").play();
+        icon2.querySelector("lottie-player").play();
+      }, 1000);
+      setTimeout(() => {
+        icon3.querySelector("lottie-player").play();
+      }, 1250);
     }
-    else if(item.classList.contains("ppl-viewer__bottom-item--2")){
-      console.log("active 2");
-      cont.style.transform = "translateX(-50.4%)";
+    else if(item.classList.contains("ppl-viewer__bottom-item--3")){
+      cont.style.transform = "translateX(-68.75%)";
 
       btns.forEach(e => e.classList.remove("active"));
-      btns[1].classList.add("active");
+      btns[2].classList.add("active");
 
       allIcons.forEach(e => e.classList.remove("active"));
       let icon1 = items[2].querySelector(".ppl-viewer__main-container-end-decoration-icon--1");
@@ -141,22 +203,16 @@ AOS.init();
       icon3.classList.add("active");
       let icon4 = items[2].querySelector(".ppl-viewer__main-container-end-decoration-icon--4");
       icon4.classList.add("active");
-    }
-    else if(item.classList.contains("ppl-viewer__bottom-item--3")){
-      cont.style.transform = "translateX(-75.6%)";
 
-      btns.forEach(e => e.classList.remove("active"));
-      btns[2].classList.add("active");
-
-      allIcons.forEach(e => e.classList.remove("active"));
-      let icon1 = items[3].querySelector(".ppl-viewer__main-container-end-decoration-icon--1");
-      icon1.classList.add("active");
-      let icon2 = items[3].querySelector(".ppl-viewer__main-container-end-decoration-icon--2");
-      icon2.classList.add("active");
-      let icon3 = items[3].querySelector(".ppl-viewer__main-container-end-decoration-icon--3");
-      icon3.classList.add("active");
-      let icon4 = items[3].querySelector(".ppl-viewer__main-container-end-decoration-icon--4");
-      icon4.classList.add("active");
+      // animate icon      
+      setTimeout(() => {
+        icon1.querySelector("lottie-player").play();
+        icon4.querySelector("lottie-player").play();
+        icon2.querySelector("lottie-player").play();
+      }, 1000);
+      setTimeout(() => {
+        icon3.querySelector("lottie-player").play();
+      }, 1250);
     }
 
     console.log(item)
