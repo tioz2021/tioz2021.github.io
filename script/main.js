@@ -177,12 +177,16 @@
               let icons = document.querySelectorAll(".ppl-viewer__main-container--1 .ppl-viewer__main-container-end-decoration-icon");
               // if (!icons) return;
 
+<<<<<<< HEAD
               console.log(icons)
 
+=======
+>>>>>>> bbca131eec7f45a5ba639562426164ca16abd4d3
               icons.forEach(e => e.classList.add("active"));
 
               setTimeout(() => {
                 icons[0].querySelector("lottie-player").play();
+<<<<<<< HEAD
                 icons[4].querySelector("lottie-player").play();
 
                 icons[3].querySelector("lottie-player").play();
@@ -194,6 +198,13 @@
               setTimeout(() => {
                 icons[2].querySelector("lottie-player").play();
                 icons[6].querySelector("lottie-player").play();
+=======
+                icons[3].querySelector("lottie-player").play();
+                icons[1].querySelector("lottie-player").play();
+              }, 1000);
+              setTimeout(() => {
+                icons[2].querySelector("lottie-player").play();
+>>>>>>> bbca131eec7f45a5ba639562426164ca16abd4d3
               }, 1250);
             }, 150);
           }
