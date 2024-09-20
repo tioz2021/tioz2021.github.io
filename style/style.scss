@@ -93,18 +93,35 @@ input {
   display: none;
 }
 
+.swiper{
+  visibility: hidden;
+  display: none !important;
+}
+
+.ppl-viewer__bottom-container--mobile{
+  display: none;
+  visibility: hidden;
+}
+
 @media screen and (max-width: 1600px) {
 }
 
 // 768
 @media screen and (max-width: 1200px) {
-  .ppl-viewer-cont,
-  .ppl-viewer__bottom-container{
-    opacity: 0;
-  }
   .header__nav--mobile-bg{
     display: block;
   }
+  .ppl-viewer{
+    display: none;
+  }
+  .swiper{
+    visibility: visible;
+    display: flex !important;
+  }
+  .ppl-viewer__bottom-container--mobile{
+    display: flex;
+    visibility: visible;
+  }  
 
   html {
     font-size: 0.132vw;

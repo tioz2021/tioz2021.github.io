@@ -1,5 +1,101 @@
-// animation
-AOS.init();
+(() => {
+  // animation
+  AOS.init();
+  
+  const swiper = new Swiper('.swiper', {
+    // loop: true,
+    slidesPerView: 1,
+    spaceBetween: 10,
+    speed: 750,
+  });
+
+  const btns = document.querySelectorAll(".ppl-viewer__bottom-container--mobile .ppl-viewer__bottom-item");
+  function f() {
+    if(this.classList.contains("ppl-viewer__bottom-item--1")){
+      swiper.slideTo(0);
+    }
+    else if(this.classList.contains("ppl-viewer__bottom-item--2")){
+      swiper.slideTo(1);
+    }
+    else if(this.classList.contains("ppl-viewer__bottom-item--3")){
+      swiper.slideTo(2);
+    }
+  }
+
+  if(btns) btns.forEach(e => e.addEventListener("click", f));
+
+
+
+  const line = document.querySelector(".ppl-viewer__bottom-container--mobile");
+  const icons1 = document.querySelectorAll(".swiper .ppl-viewer__main-container--1 .ppl-viewer__main-container-end-decoration-icon");
+  const icons2 = document.querySelectorAll(".swiper .ppl-viewer__main-container--2 .ppl-viewer__main-container-end-decoration-icon");
+  const icons3 = document.querySelectorAll(".swiper .ppl-viewer__main-container--3 .ppl-viewer__main-container-end-decoration-icon");
+
+  // Обработчик события slideChangeTransitionEnd
+  swiper.on('slideChangeTransitionEnd', function () {
+    // Проверяем, если активный слайд 2 (индекс 1)
+    if (swiper.activeIndex === 0) {
+      console.log("1")
+      // line.style.left = "-748rem";
+      line.classList.add("active1");
+      line.classList.remove("active2");
+      line.classList.remove("active3");
+
+      icons1.forEach(e => e.classList.add("active"));
+      icons2.forEach(e => e.classList.remove("active"));
+      icons3.forEach(e => e.classList.remove("active"));
+
+      setTimeout(() => {
+        icons1[0].querySelector("lottie-player").play();
+        icons1[1].querySelector("lottie-player").play();
+      }, 1000);
+      setTimeout(() => {
+        icons1[2].querySelector("lottie-player").play();
+        icons1[3].querySelector("lottie-player").play();
+      }, 1250);
+    }
+    if (swiper.activeIndex === 1) {
+      console.log("2")
+      // line.style.left = "-1069rem";
+      line.classList.remove("active1");
+      line.classList.add("active2");
+      line.classList.remove("active3");
+
+      icons1.forEach(e => e.classList.remove("active"));
+      icons2.forEach(e => e.classList.add("active"));
+      icons3.forEach(e => e.classList.remove("active"));
+
+      setTimeout(() => {
+        icons2[0].querySelector("lottie-player").play();
+        icons2[1].querySelector("lottie-player").play();
+      }, 1000);
+      setTimeout(() => {
+        icons2[2].querySelector("lottie-player").play();
+        icons2[3].querySelector("lottie-player").play();
+      }, 1250);
+    }
+    if (swiper.activeIndex === 2) {
+      console.log("3")
+      // line.style.left = "-1393rem";
+      line.classList.remove("active1");
+      line.classList.remove("active2");
+      line.classList.add("active3");
+
+      icons1.forEach(e => e.classList.remove("active"));
+      icons2.forEach(e => e.classList.remove("active"));
+      icons3.forEach(e => e.classList.add("active"));
+
+      setTimeout(() => {
+        icons3[0].querySelector("lottie-player").play();
+        icons3[1].querySelector("lottie-player").play();
+      }, 1000);
+      setTimeout(() => {
+        icons3[2].querySelector("lottie-player").play();
+        icons3[3].querySelector("lottie-player").play();
+      }, 1250);
+    }
+  });
+}) ();
 
 // animation opt
 (() => {
@@ -81,15 +177,23 @@ AOS.init();
               let icons = document.querySelectorAll(".ppl-viewer__main-container--1 .ppl-viewer__main-container-end-decoration-icon");
               // if (!icons) return;
 
+              console.log(icons)
+
               icons.forEach(e => e.classList.add("active"));
 
               setTimeout(() => {
                 icons[0].querySelector("lottie-player").play();
+                icons[4].querySelector("lottie-player").play();
+
                 icons[3].querySelector("lottie-player").play();
+                icons[7].querySelector("lottie-player").play();
+
                 icons[1].querySelector("lottie-player").play();
+                icons[5].querySelector("lottie-player").play();
               }, 1000);
               setTimeout(() => {
                 icons[2].querySelector("lottie-player").play();
+                icons[6].querySelector("lottie-player").play();
               }, 1250);
             }, 150);
           }
@@ -126,7 +230,7 @@ AOS.init();
 
 // s6 changer
 (() => {
-  const btns = document.querySelectorAll('.ppl-viewer__bottom-item');
+  const btns = document.querySelectorAll('.ppl-viewer__bottom-container--web .ppl-viewer__bottom-item');
   const items = document.querySelectorAll('.ppl-viewer__main-container');
   const cont = document.querySelector(".ppl-viewer-cont");
   const allIcons = document.querySelectorAll(".ppl-viewer__main-container-end-decoration-icon");
@@ -424,13 +528,6 @@ AOS.init();
     closeBtn.addEventListener("click", function () {
       popup.classList.remove("open");
       popupContent.classList.remove("open");
-
-      var iframe = document.getElementById('youtube-video');
-      var iframeSrc = iframe.src;
-      iframe.src = '';
-      setTimeout(() => {
-        iframe.src = iframeSrc;
-      }, 100);
     });
 
     document.addEventListener("click", function (event) {
@@ -441,14 +538,6 @@ AOS.init();
       ) {
         popup.classList.remove("open");
         popupContent.classList.remove("open");
-
-        var iframe = document.getElementById('youtube-video');
-        var iframeSrc = iframe.src;
-        iframe.src = '';
-        setTimeout(() => {
-          iframe.src = iframeSrc;
-        }, 100);
-
       }
     });
   });
