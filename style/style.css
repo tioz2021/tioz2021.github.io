@@ -6421,12 +6421,12 @@ input {
   }
   .main-form .textarea-error {
     font-size: 10rem;
-    bottom: -17rem;
+    bottom: -14rem;
   }
   .popup__content {
-    border-radius: 12px;
-    width: 328px;
-    height: 358px;
+    border-radius: 12rem;
+    width: 328rem;
+    height: 358rem;
     background: linear-gradient(180deg, #3461ff 0%, #204ef4 100%);
     padding-top: 32rem;
     padding-left: 24rem;
@@ -6438,6 +6438,7 @@ input {
     margin-bottom: 12rem;
   }
   .popup__title {
+    font-size: 21rem;
     min-height: 32rem;
     margin-bottom: 8rem;
   }
