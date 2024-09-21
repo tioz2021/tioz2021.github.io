@@ -688,7 +688,7 @@
 }
 .footer .eter-list{
   height: 56rem;
-  bottom: 469rem;
+  bottom: 421rem;
 }
 .footer .eter-list__item{
   width: 124rem;
@@ -1266,10 +1266,12 @@
   font-size: 20rem;
 }
 .accordion__header{
-  padding-bottom: 8rem;
+  // padding-bottom: 8rem;
+  padding-bottom: 9.8rem;
 }
 .accordion__item{
-  margin-bottom: 13rem;
+  // margin-bottom: 13rem;
+  margin-bottom: 10.9rem;
 }
 
 .bp1{
@@ -1385,6 +1387,7 @@
   background: var(--bodi--white-1);
 
   padding: 24rem;
+  top: 88rem;
 }
 
 .header__nav-item{
@@ -1453,7 +1456,7 @@
   top: 11rem;
 }
 .accordion__item:nth-child(5) .accordion__icon{
-  top: 22rem;
+  top: 23rem;
 }
 
 .swiper-wrp{
@@ -1608,4 +1611,43 @@
 .s6__container{
   padding-left: 0;
   padding-right: 0;
+}
+
+.accordion__item:nth-child(1) .accordion__icon{
+  margin-top: -3rem;
+}
+.accordion__item:nth-child(4) .accordion__title{
+  margin-top: -3rem;
+}
+.accordion__item:nth-child(4) .accordion__header{
+  padding-bottom: 12rem;
+}
+
+.main-form .textarea-error{
+  font-size: 10rem;
+  bottom: -17rem;
+}
+
+.popup__content{
+  border-radius: 12px;
+  width: 328px;
+  height: 358px;
+  background: linear-gradient(180deg, #3461ff 0%, #204ef4 100%);
+  padding-top: 32rem;
+  padding-left: 24rem;
+  padding-right: 24rem;
+  padding-bottom: 0;
+}
+.popup__icon{
+  height: 120rem;
+  margin-bottom: 12rem;
+}
+.popup__title{
+  min-height: 32rem;
+  margin-bottom: 8rem;
+}
+.popup__text{
+  font-size: 14rem;
+  max-width: 285rem;
+  margin-bottom: 24rem;
 }

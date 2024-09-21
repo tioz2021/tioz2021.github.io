@@ -712,7 +712,8 @@ textarea::placeholder{
 }
 
 .page-service .s1__text-item--first{
-  margin-bottom: 43rem;
+  // margin-bottom: 43rem;
+  margin-bottom: 11rem;
 }
 
 .page-service .s1{
@@ -1609,7 +1610,7 @@ textarea::placeholder{
 
 .ppl-viewer__bottom-container--mobile{
   left: -762rem;
-  transition: left 1000ms ease-in-out;
+  transition: left 500ms ease-in-out;
 }
 
 .ppl-viewer__bottom-container--mobile.active1{
