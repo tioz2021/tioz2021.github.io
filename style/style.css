@@ -1053,6 +1053,11 @@ template {
     transform: translateX(-50%); /* Двигаем влево на половину длины */
   }
 }
+.s3__decoration-icon--left-hand,
+.s3__decoration-icon--right-hand {
+  animation: hand-anim 2s linear infinite alternate-reverse;
+}
+
 @keyframes hand-anim {
   0% {
     transform: translateY(3%);
@@ -6035,12 +6040,14 @@ input {
   }
   .aus4__item-title {
     font-size: 20rem;
-    margin-bottom: 6rem;
+    margin-bottom: 8rem;
+    max-width: 220rem;
   }
   .aus4__item-icon-bulet {
     width: 8rem;
     height: 8rem;
     margin-right: 8rem;
+    margin-top: -20rem;
   }
   .aus4__item-text-wrp {
     font-size: 14rem;
@@ -6236,9 +6243,6 @@ input {
   }
   .page-service .s1__decor-men {
     top: 10rem;
-  }
-  .s2 .marquee-content {
-    animation: marqueer 40s linear infinite;
   }
   .accordion__item:nth-child(2) .accordion__icon {
     top: 13rem;

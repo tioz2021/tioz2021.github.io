@@ -1220,12 +1220,14 @@
 }
 .aus4__item-title{
   font-size: 20rem;
-  margin-bottom: 6rem;
+  margin-bottom: 8rem;
+  max-width: 220rem;
 }
 .aus4__item-icon-bulet{
   width: 8rem;
   height: 8rem;
   margin-right: 8rem;
+  margin-top: -20rem;
 }
 .aus4__item-text-wrp{
   font-size: 14rem;
@@ -1439,9 +1441,6 @@
 }
 .page-service .s1__decor-men{
   top: 10rem;
-}
-.s2 .marquee-content{
-  animation: marqueer 40s linear infinite;
 }
 
 .accordion__item:nth-child(2) .accordion__icon{
