@@ -91,10 +91,15 @@
     height: 64rem;
 
     filter: blur(24rem);
+    -webkit-filter: blur(24rem); /* Для Safari */
     opacity: 0.6;
     z-index: 1;
 
     transition: opacity 500ms ease-in-out;
+
+    /* Оптимизация рендеринга для Safari */
+    will-change: transform, opacity, filter;
+    backface-visibility: hidden;
   }
 
   // .main-btn--white

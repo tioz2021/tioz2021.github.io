@@ -634,9 +634,13 @@ template {
   width: 264rem;
   height: 64rem;
   filter: blur(24rem);
+  -webkit-filter: blur(24rem); /* Для Safari */
   opacity: 0.6;
   z-index: 1;
   transition: opacity 500ms ease-in-out;
+  /* Оптимизация рендеринга для Safari */
+  will-change: transform, opacity, filter;
+  backface-visibility: hidden;
 }
 .main-btn--white::after {
   background: var(--bodi--white-1);
@@ -4989,7 +4993,8 @@ input {
     border-radius: 40rem;
     width: 192rem;
     height: 52rem;
-    filter: blur(16rem);
+    filter: blur(12rem);
+    -webkit-filter: blur(12rem); /* Для Safari */
     opacity: 0.6;
     top: 8rem;
   }
