@@ -4855,6 +4855,12 @@ input {
   .ppl-viewer__bottom-container--mobile-decor--right {
     right: -1rem;
   }
+  .video-gif {
+    display: block !important;
+  }
+  .rocker-video {
+    display: none;
+  }
 }
 .s3__title-row br {
   display: none;
