@@ -123,16 +123,20 @@
 
 					<div class="s1__decor-box">
 						<div class="s1__decor-men img-wrp">
-							<!-- <picture>
-								<img src="img/gif/1.gif" alt="GIF">
+							<picture>
+								<!-- Загружает GIF, если ширина экрана менее 600px -->
+								<source srcset="img/gif/1.gif" media="(max-width: 600px)">
+								
+								<!-- Видео для устройств с шириной более 600px -->
 								<video class="rocker-video" autoplay muted playsinline loop>
-									<source src="video/3.webm" type="video/webm">
+										<source src="video/3.webm" type="video/webm">
 								</video>
-							</picture> -->
-							<img src="img/gif/1.gif" alt="img">
+						</picture>
+						
+							<!-- <img src="img/gif/1.gif" alt="img">
 							<video class="rocker-video" autoplay muted playsinline loop>
 								<source src="video/3.webm">
-							</video>
+							</video> -->
 						</div>
 						<div class="s1__decor-gif img-wrp">
 							<img src="img/fs-gif.gif" alt="img">
@@ -2706,26 +2710,6 @@
 	<!-- script -->
 	<script src="script/main.js"></script>
 
-	<script>
-		// Функция проверки поддержки видео
-		function supportsVideoType(type) {
-				let videoElement = document.createElement('video');
-				return videoElement.canPlayType(type);
-		}
-
-		// Если поддерживается формат WebM, загружаем видео, иначе загружаем GIF
-		if (supportsVideoType('video/webm')) {
-			document.getElementById('media-container').innerHTML = `
-				<video class="rocker-video" autoplay muted playsinline loop>
-					<source src="video/3.webm" type="video/webm">
-				</video>`;
-		} else {
-			document.getElementById('media-container').innerHTML = `
-				<img src="video/3.gif" alt="GIF">`;
-				videoElement.style.display = "none";
-				videoElement.style.visibility = "hidden";
-		}
-	</script>	
 </body>
 
 </html>
