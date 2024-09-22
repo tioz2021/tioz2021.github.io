@@ -123,20 +123,12 @@
 
 					<div class="s1__decor-box">
 						<div class="s1__decor-men img-wrp">
+							<!-- <img src="img/gif/1.gif" alt="GIF" > -->
 							<picture>
-								<!-- Загружает GIF, если ширина экрана менее 600px -->
-								<source srcset="img/gif/1.gif" media="(max-width: 600px)">
-								
-								<!-- Видео для устройств с шириной более 600px -->
 								<video class="rocker-video" autoplay muted playsinline loop>
-										<source src="video/3.webm" type="video/webm">
+									<source src="video/3.webm" type="video/webm">
 								</video>
-						</picture>
-						
-							<!-- <img src="img/gif/1.gif" alt="img">
-							<video class="rocker-video" autoplay muted playsinline loop>
-								<source src="video/3.webm">
-							</video> -->
+							</picture>
 						</div>
 						<div class="s1__decor-gif img-wrp">
 							<img src="img/fs-gif.gif" alt="img">
@@ -2710,6 +2702,16 @@
 	<!-- script -->
 	<script src="script/main.js"></script>
 
+	<script>
+    // Получаем элемент видео
+    const video = document.getElementById('myVideo');
+    
+    // Пытаемся запустить видео программно
+    video.play().catch(function(error) {
+			// Если автозапуск блокируется, можно обрабатывать ошибку
+			console.error('Автозапуск видео заблокирован:', error);
+    });
+</script>
 </body>
 
 </html>
