@@ -66,6 +66,13 @@ button {
   cursor: pointer;
 }
 
+/* Отключить выделение на всех интерактивных элементах */
+button, a,
+.tab-menu {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
 input {
   outline: unset;
 }
