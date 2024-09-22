@@ -334,96 +334,92 @@
   const btns = document.querySelectorAll('.ss2__navigation-btn');
   const items = document.querySelectorAll('.ss2__navigation-body');
   const allChildItems = document.querySelectorAll('.ss2__navigation-item');
-  function funk(){
+
+  function funk() {
     const item = this;
-    
+
     // items.forEach(e => e.classList.remove("active"));
-    if(item.classList.contains("ss2__navigation-btn--1")){
+    if (item.classList.contains("ss2__navigation-btn--1")) {
       items.forEach(e => e.classList.remove("active-effect"));
       btns.forEach(e => e.classList.remove("active"));
-      // setTimeout(() => {
-        items[0].classList.add("active-effect");
-        btns[0].classList.add("active");
+      items[0].classList.add("active-effect");
+      btns[0].classList.add("active");
 
-        allChildItems.forEach(e => e.classList.remove("active"));
-        let childItems = items[0].querySelectorAll(".ss2__navigation-item");
-        setTimeout(() => {
-          childItems[0].classList.add("active");
-        }, 100);
-        setTimeout(() => {
-          childItems[1].classList.add("active");
-        }, 200);
-        setTimeout(() => {
-          childItems[2].classList.add("active");
-        }, 300);
-      // }, 200);
-    }
-    else if(item.classList.contains("ss2__navigation-btn--2")){
+      allChildItems.forEach(e => e.classList.remove("active"));
+      let childItems = items[0].querySelectorAll(".ss2__navigation-item");
+      setTimeout(() => {
+        childItems[0].classList.add("active");
+      }, 100);
+      setTimeout(() => {
+        childItems[1].classList.add("active");
+      }, 200);
+      setTimeout(() => {
+        childItems[2].classList.add("active");
+      }, 300);
+    } else if (item.classList.contains("ss2__navigation-btn--2")) {
       items.forEach(e => e.classList.remove("active-effect"));
       btns.forEach(e => e.classList.remove("active"));
-      // setTimeout(() => {
-        items[1].classList.add("active-effect");
-        btns[1].classList.add("active");
+      items[1].classList.add("active-effect");
+      btns[1].classList.add("active");
 
-        allChildItems.forEach(e => e.classList.remove("active"));
-        let childItems = items[1].querySelectorAll(".ss2__navigation-item");
-        setTimeout(() => {
-          childItems[0].classList.add("active");
-        }, 100);
-        setTimeout(() => {
-          childItems[1].classList.add("active");
-        }, 200);
-        setTimeout(() => {
-          childItems[2].classList.add("active");
-        }, 300);
-      // }, 200);
-    }
-    else if(item.classList.contains("ss2__navigation-btn--3")){
+      allChildItems.forEach(e => e.classList.remove("active"));
+      let childItems = items[1].querySelectorAll(".ss2__navigation-item");
+      setTimeout(() => {
+        childItems[0].classList.add("active");
+      }, 100);
+      setTimeout(() => {
+        childItems[1].classList.add("active");
+      }, 200);
+      setTimeout(() => {
+        childItems[2].classList.add("active");
+      }, 300);
+    } else if (item.classList.contains("ss2__navigation-btn--3")) {
       items.forEach(e => e.classList.remove("active-effect"));
       btns.forEach(e => e.classList.remove("active"));
-      // setTimeout(() => {
-        items[2].classList.add("active-effect");
-        btns[2].classList.add("active");
+      items[2].classList.add("active-effect");
+      btns[2].classList.add("active");
 
-        allChildItems.forEach(e => e.classList.remove("active"));
-        let childItems = items[2].querySelectorAll(".ss2__navigation-item");
-        setTimeout(() => {
-          childItems[0].classList.add("active");
-        }, 100);
-        setTimeout(() => {
-          childItems[1].classList.add("active");
-        }, 200);
-        setTimeout(() => {
-          childItems[2].classList.add("active");
-        }, 300);
-      // }, 200);
-    }
-    else if(item.classList.contains("ss2__navigation-btn--4")){
+      allChildItems.forEach(e => e.classList.remove("active"));
+      let childItems = items[2].querySelectorAll(".ss2__navigation-item");
+      setTimeout(() => {
+        childItems[0].classList.add("active");
+      }, 100);
+      setTimeout(() => {
+        childItems[1].classList.add("active");
+      }, 200);
+      setTimeout(() => {
+        childItems[2].classList.add("active");
+      }, 300);
+    } else if (item.classList.contains("ss2__navigation-btn--4")) {
       items.forEach(e => e.classList.remove("active-effect"));
       btns.forEach(e => e.classList.remove("active"));
-      // setTimeout(() => {
-        items[3].classList.add("active-effect");
-        btns[3].classList.add("active");
+      items[3].classList.add("active-effect");
+      btns[3].classList.add("active");
 
-        allChildItems.forEach(e => e.classList.remove("active"));
-        let childItems = items[3].querySelectorAll(".ss2__navigation-item");
-        setTimeout(() => {
-          childItems[0].classList.add("active");
-        }, 100);
-        setTimeout(() => {
-          childItems[1].classList.add("active");
-        }, 200);
-        setTimeout(() => {
-          childItems[2].classList.add("active");
-        }, 300);
-      // }, 200);
+      allChildItems.forEach(e => e.classList.remove("active"));
+      let childItems = items[3].querySelectorAll(".ss2__navigation-item");
+      setTimeout(() => {
+        childItems[0].classList.add("active");
+      }, 100);
+      setTimeout(() => {
+        childItems[1].classList.add("active");
+      }, 200);
+      setTimeout(() => {
+        childItems[2].classList.add("active");
+      }, 300);
     }
 
-    console.log(item)
-
+    console.log(item);
   }
-  if(btns) btns.forEach(e => e.addEventListener("click", funk));
-}) ();
+
+  // Добавляем поддержку touchstart для мобильных устройств
+  if (btns) {
+    btns.forEach(e => {
+      e.addEventListener("click", funk);
+      e.addEventListener("touchstart", funk); // Обработка touch-событий
+    });
+  }
+})();
 
 // acardion
 (() => {
