@@ -124,11 +124,9 @@
 					<div class="s1__decor-box">
 						<div class="s1__decor-men img-wrp">
 							<!-- <img src="img/gif/1.gif" alt="GIF" > -->
-							<picture>
-								<video class="rocker-video" autoplay muted playsinline loop>
-									<source src="video/3.webm" type="video/webm">
-								</video>
-							</picture>
+							<video class="rocker-video" autoplay muted playsinline loop>
+								<source src="video/3.webm" type="video/webm">
+							</video>
 						</div>
 						<div class="s1__decor-gif img-wrp">
 							<img src="img/fs-gif.gif" alt="img">
@@ -2704,7 +2702,7 @@
 
 	<script>
     // Получаем элемент видео
-    const video = document.getElementById('myVideo');
+    const video = document.querySelector('video');
     
     // Пытаемся запустить видео программно
     video.play().catch(function(error) {
