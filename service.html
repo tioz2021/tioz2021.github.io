@@ -123,7 +123,7 @@
 
 					<div class="s1__decor-box">
 						<div class="s1__decor-men img-wrp">
-							<!-- <img src="img/gif/1.gif" alt="GIF" > -->
+							<img class="video-gif" src="img/gif/1.gif" alt="GIF" style="display: none;">
 							<video class="rocker-video" autoplay muted playsinline loop>
 								<source src="video/3.webm" type="video/webm">
 								<source src="video/3.mp4" type="video/mp4">
@@ -2702,14 +2702,18 @@
 	<script src="script/main.js"></script>
 
 	<script>
-    // Получаем элемент видео
-    const video = document.querySelector('video');
-    
-    // Пытаемся запустить видео программно
-    video.play().catch(function(error) {
-			// Если автозапуск блокируется, можно обрабатывать ошибку
-			console.error('Автозапуск видео заблокирован:', error);
-    });
+		const video = document.querySelector("video");
+		if (video) {
+				video.muted = true;
+				video.play().then(function() {
+						// Видео успешно запущено, ничего не делаем.
+				}).catch(function(error) {
+						console.log('Автоматическое воспроизведение видео заблокировано:', error);
+						// Если видео не запускается, скрываем его.
+						video.style.display = 'none';
+						document.querySelector(".video-gif").style.display = "block";
+				});
+		}
 </script>
 </body>
 
