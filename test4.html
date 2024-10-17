@@ -13,7 +13,7 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
   />
-  <link rel="stylesheet" href="holdecor-style2.css">
+  <link rel="stylesheet" href="holdecor-style9.css">
 </head>
 <body>
   
@@ -203,26 +203,25 @@
   <script>
     const swiper = new Swiper('.swiper1', {
       // Optional parameters
-      loop: true,
       speed: 1000,
 
       // Отключаем возможность свайпа через зажатие
       simulateTouch: false,
 
-      // effect
-      effect: "creative",
-      creativeEffect: {
+      // Conditional effect based on screen width
+      effect: window.innerWidth > 1300 ? "fade" : "creative",
+
+      // Creative effect for mobile/tablet
+      creativeEffect: window.innerWidth <= 1300 ? {
         prev: {
-          // shadow: true,
           translate: ["-120%", 0, -500],
           opacity: 0,
         },
         next: {
-          // shadow: true,
           translate: ["120%", 0, -500],
           opacity: 1,
         },
-      },
+      } : {},
 
       // If we need pagination
       pagination: {
@@ -235,29 +234,27 @@
         prevEl: '.swiper1 .holdecor__arrow--left',
       }
     });
-
     const swiper2 = new Swiper('.swiper2', {
       // Optional parameters
-      loop: true,
       speed: 1000,
 
       // Отключаем возможность свайпа через зажатие
       simulateTouch: false,
 
-      // effect
-      effect: "creative",
-      creativeEffect: {
+      // Conditional effect based on screen width
+      effect: window.innerWidth > 1300 ? "fade" : "creative",
+
+      // Creative effect for mobile/tablet
+      creativeEffect: window.innerWidth <= 1300 ? {
         prev: {
-          // shadow: true,
           translate: ["-120%", 0, -500],
           opacity: 0,
         },
         next: {
-          // shadow: true,
           translate: ["120%", 0, -500],
           opacity: 1,
         },
-      },
+      } : {},
 
       // If we need pagination
       pagination: {
@@ -269,6 +266,14 @@
         nextEl: '.swiper2 .holdecor__arrow--right',
         prevEl: '.swiper2 .holdecor__arrow--left',
       }
+    });
+
+    // Optional: Update Swiper when resizing window
+    window.addEventListener('resize', function() {
+      swiper.params.effect = window.innerWidth > 1024 ? "fade" : "creative";
+      swiper2.params.effect = window.innerWidth > 1024 ? "fade" : "creative";
+      swiper.update();
+      swiper2.update();
     });
   </script>
 </body>

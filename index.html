@@ -44,7 +44,7 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
   />
-	<link rel="stylesheet" href="holdecor-style2.css">
+	<link rel="stylesheet" href="holdecor-style9.css">
 
 	<style>
 		.page .our_rates .mw{
@@ -1951,27 +1951,27 @@
 								</div>
 								<div class="swiper-slide">
 									<div class="holdecor__img-wrp">
-										<img src="img/holdecor/2.png" alt="img">
-									</div>
-									<div class="holdecor__slider-text">Белые костюмы</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="holdecor__img-wrp">
 										<img src="img/holdecor/3.png" alt="img">
 									</div>
-									<div class="holdecor__slider-text">Черные костюмы</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="holdecor__img-wrp">
-										<img src="img/holdecor/4.png" alt="img">
-									</div>
-									<div class="holdecor__slider-text">Барная Стойка 200 см</div>
+									<div class="holdecor__slider-text">Барная Стойка 150 см</div>
 								</div>
 								<div class="swiper-slide">
 									<div class="holdecor__img-wrp">
 										<img src="img/holdecor/5.png" alt="img">
 									</div>
-									<div class="holdecor__slider-text">Черные костюмы</div>
+									<div class="holdecor__slider-text">Барная Стойка 200 см</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="holdecor__img-wrp">
+										<img src="img/holdecor/7.png" alt="img">
+									</div>
+									<div class="holdecor__slider-text">Барная Стойка 300 см</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="holdecor__img-wrp">
+										<img src="img/holdecor/9.png" alt="img">
+									</div>
+									<div class="holdecor__slider-text">Барная Стойка 400 см</div>
 								</div>
 							</div>
 							<!-- If we need pagination -->
@@ -2022,27 +2022,27 @@
 								<!-- Slides -->
 								<div class="swiper-slide">
 									<div class="holdecor__img-wrp">
+										<img src="img/holdecor/2.png" alt="img">
+									</div>
+									<div class="holdecor__slider-text">Белые костюмы</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="holdecor__img-wrp">
+										<img src="img/holdecor/4.png" alt="img">
+									</div>
+									<div class="holdecor__slider-text">Черные костюмы</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="holdecor__img-wrp">
 										<img src="img/holdecor/6.png" alt="img">
 									</div>
 									<div class="holdecor__slider-text">Черные костюмы</div>
 								</div>
 								<div class="swiper-slide">
 									<div class="holdecor__img-wrp">
-										<img src="img/holdecor/7.png" alt="img">
-									</div>
-									<div class="holdecor__slider-text">Барная Стойка 300 см</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="holdecor__img-wrp">
 										<img src="img/holdecor/8.png" alt="img">
 									</div>
 									<div class="holdecor__slider-text">Чёрно-белые костюмы</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="holdecor__img-wrp">
-										<img src="img/holdecor/9.png" alt="img">
-									</div>
-									<div class="holdecor__slider-text">Барная Стойка 400 см</div>
 								</div>
 								<div class="swiper-slide">
 									<div class="holdecor__img-wrp">
@@ -2940,77 +2940,82 @@
 
 	<!-- swiper.js CDN -->
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-	<script>
-		const swiper = new Swiper('.swiper1', {
-			// Optional parameters
-			loop: true,
-			speed: 1000,
+  <script>
+    const swiper = new Swiper('.swiper1', {
+      // Optional parameters
+      speed: 1000,
 
-			// Отключаем возможность свайпа через зажатие
-			simulateTouch: false,
+      // Отключаем возможность свайпа через зажатие
+      simulateTouch: false,
 
-			// effect
-			effect: "creative",
-			creativeEffect: {
-				prev: {
-					// shadow: true,
-					translate: ["-120%", 0, -500],
-					opacity: 0,
-				},
-				next: {
-					// shadow: true,
-					translate: ["120%", 0, -500],
-					opacity: 1,
-				},
-			},
+      // Conditional effect based on screen width
+      effect: window.innerWidth > 1300 ? "fade" : "creative",
 
-			// If we need pagination
-			pagination: {
-				el: '.swiper-pagination',
-			},
+      // Creative effect for mobile/tablet
+      creativeEffect: window.innerWidth <= 1300 ? {
+        prev: {
+          translate: ["-120%", 0, -500],
+          opacity: 0,
+        },
+        next: {
+          translate: ["120%", 0, -500],
+          opacity: 1,
+        },
+      } : {},
 
-			// Navigation arrows
-			navigation: {
-				nextEl: '.swiper1 .holdecor__arrow--right',
-				prevEl: '.swiper1 .holdecor__arrow--left',
-			}
-		});
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
 
-		const swiper2 = new Swiper('.swiper2', {
-			// Optional parameters
-			loop: true,
-			speed: 1000,
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper1 .holdecor__arrow--right',
+        prevEl: '.swiper1 .holdecor__arrow--left',
+      }
+    });
+    const swiper2 = new Swiper('.swiper2', {
+      // Optional parameters
+      speed: 1000,
 
-			// Отключаем возможность свайпа через зажатие
-			simulateTouch: false,
+      // Отключаем возможность свайпа через зажатие
+      simulateTouch: false,
 
-			// effect
-			effect: "creative",
-			creativeEffect: {
-				prev: {
-					// shadow: true,
-					translate: ["-120%", 0, -500],
-					opacity: 0,
-				},
-				next: {
-					// shadow: true,
-					translate: ["120%", 0, -500],
-					opacity: 1,
-				},
-			},
+      // Conditional effect based on screen width
+      effect: window.innerWidth > 1300 ? "fade" : "creative",
 
-			// If we need pagination
-			pagination: {
-				el: '.swiper-pagination',
-			},
+      // Creative effect for mobile/tablet
+      creativeEffect: window.innerWidth <= 1300 ? {
+        prev: {
+          translate: ["-120%", 0, -500],
+          opacity: 0,
+        },
+        next: {
+          translate: ["120%", 0, -500],
+          opacity: 1,
+        },
+      } : {},
 
-			// Navigation arrows
-			navigation: {
-				nextEl: '.swiper2 .holdecor__arrow--right',
-				prevEl: '.swiper2 .holdecor__arrow--left',
-			}
-		});
-	</script>
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper2 .holdecor__arrow--right',
+        prevEl: '.swiper2 .holdecor__arrow--left',
+      }
+    });
+
+    // Optional: Update Swiper when resizing window
+    window.addEventListener('resize', function() {
+      swiper.params.effect = window.innerWidth > 1024 ? "fade" : "creative";
+      swiper2.params.effect = window.innerWidth > 1024 ? "fade" : "creative";
+      swiper.update();
+      swiper2.update();
+    });
+  </script>
 
 	<!-- new gallery -->
   <script>

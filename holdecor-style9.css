@@ -71,8 +71,9 @@ html{
   height: 455px;
   position: absolute;
   border-radius: 100%;
-  background-color: rgba(255, 112, 228, 0.47);
-  filter: blur(400px);
+  background-color: rgba(255, 112, 228, 1);
+  /* filter: blur(400px); */
+  filter: blur(250px);
 }
 .holdecor__row1 .holdecor__slider-wrp::after{
   top: 53px;
@@ -101,6 +102,7 @@ html{
   height: 380px;
   position: relative;
   margin-bottom: 16px;
+  overflow: hidden;
 }
 
 .holdecor__img-wrp img{
@@ -110,7 +112,7 @@ html{
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .holdecor__slider-text{
@@ -201,7 +203,14 @@ html{
   object-fit: cover;
 }
 
+.holdecor .swiper{
+  overflow: hidden !important;
+}
+
 @media screen and (max-width: 1300px){
+  .holdecor .swiper{
+    overflow: visible !important;
+  }
   .holdecor__container{
     max-width: 768px;
     padding-left: 44px;
@@ -222,6 +231,9 @@ html{
   }
   .holdecor__row2 .holdecor__slider-wrp{
     order: 2;
+  }
+  .holdecor__text-wrp-title{
+    justify-content: center;
   }
 }
 
