@@ -37,7 +37,7 @@
 
 	<link rel="stylesheet" href="css/style-galery15.css">
 
-	<link rel="stylesheet" href="style48.css">
+	<link rel="stylesheet" href="style50.css">
 
 	<!-- holdecor block style -->
   <link
@@ -2960,37 +2960,41 @@
   <script>
 		// jn-fix changer animation 
 		document.addEventListener('DOMContentLoaded', function() {
-		const images = [
-				"img/new/1.png",
-				"img/new/2.png",
-				"img/new/3.png",
-				"img/new/4.png",
-				"img/new/5.png"
-		];
-		let currentIndex = 0;
-		const img1 = document.getElementById('slideshow1');
-		const img2 = document.getElementById('slideshow2');
+    const images = [
+        "img/new/1.png",
+        "img/new/2.png",
+        "img/new/3.png",
+        "img/new/4.png",
+        "img/new/5.png"
+    ];
+    let currentIndex = 0;
+    const img1 = document.getElementById('slideshow1');
+    const img2 = document.getElementById('slideshow2');
+    let isImg1Visible = true;
 
-		function changeImage() {
-				const nextIndex = (currentIndex + 1) % images.length;
-				const currentImg = currentIndex % 2 === 0 ? img1 : img2;
-				const nextImg = currentIndex % 2 === 0 ? img2 : img1;
+    function changeImage() {
+        const nextIndex = (currentIndex + 1) % images.length;
+        const currentImg = isImg1Visible ? img1 : img2;
+        const nextImg = isImg1Visible ? img2 : img1;
 
-				// Обновляем следующее изображение и делаем его видимым
-				nextImg.src = images[nextIndex];
-				nextImg.style.opacity = 1;
+        // Устанавливаем следующее изображение и делаем его видимым
+        nextImg.src = images[nextIndex];
+        nextImg.style.opacity = 1;
 
-				// Делаем текущее изображение невидимым
-				currentImg.style.opacity = 0;
+        // Скрываем текущее изображение
+        currentImg.style.opacity = 0;
 
-				currentIndex = nextIndex;
-		}
+        // Переключаем видимость на следующий img элемент
+        isImg1Visible = !isImg1Visible;
 
-		// Начинаем цикл с задержкой для плавного первого перехода
-		setTimeout(() => {
-				setInterval(changeImage, 3000); // Менять изображение каждые 3 секунды
-		}, 1000); // Задержка 1 секунда для загрузки
-	});
+        // Обновляем индекс текущего изображения
+        currentIndex = nextIndex;
+    }
+
+    // Запускаем цикл смены изображений
+    setInterval(changeImage, 3000); // Смена изображения каждые 3 секунды
+});
+
 	// END
 
     const swiper = new Swiper('.swiper1', {

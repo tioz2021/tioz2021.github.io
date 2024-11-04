@@ -8806,7 +8806,12 @@ picture {
     .page .menu .jn-fix .cont .right_side .img{
         position: relative;
         left: 50%;
-        margin-left: -269px;
+        margin-left: -251px;
         zoom: 0.5;
     }
+}
+
+
+.page{
+    overflow: hidden !important;
 }
