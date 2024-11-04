@@ -37,7 +37,7 @@
 
 	<link rel="stylesheet" href="css/style-galery15.css">
 
-	<link rel="stylesheet" href="style29.css">
+	<link rel="stylesheet" href="style48.css">
 
 	<!-- holdecor block style -->
   <link
@@ -71,7 +71,7 @@
 	<div class="page">
 		<main class="main">
 			<div class="ice_decor">
-				<img src="images/new/ніколас футаж 1.webp?dimko" alt="ice">
+				<img src="images/new/footage1.webp" alt="ice">
 			</div>
 
 			<div class="main_decor_text">
@@ -219,7 +219,7 @@
 			</div>
 
 			<div class="decor rellax" data-rellax-percentage="0" data-rellax-speed="-2">
-				<img loading="lazy" src="images/new/ніколас футаж 2.webp" alt="decor1">
+				<img loading="lazy" src="images/new/footage2.webp" alt="decor1">
 			</div>
 
 			<div class="mw">
@@ -271,7 +271,7 @@
 
 		<section id="what_included" class="what_included">
 			<div class="decor rellax" data-rellax-speed="2" data-rellax-percentage="0">
-				<img loading="lazy" src="images/new/ніколас футаж 3.webp?dimko" alt="decor2">
+				<img loading="lazy" src="images/new/footage3.webp" alt="decor2">
 			</div>
 
 			<div class="decor1 rellax" data-rellax-percentage="0" data-rellax-speed="-1">
@@ -427,10 +427,10 @@
 			</div>
 
 			<div class="decor">
-				<img loading="lazy" src="images/new/ніколас футаж 4.webp" alt="decor3">
+				<img loading="lazy" src="images/new/footage4.webp" alt="decor3">
 			</div>
 
-			<div class="mw">
+			<div class="mw jn-fix">
 				<div class="cont">
 					<div class="left_side">
 						<div class="m_title">
@@ -533,7 +533,24 @@
 
 					<div class="right_side">
 						<div class="img">
-							<img loading="lazy" src="images/menu.webp" alt="menu">
+							<div id="slideshow-container">
+								<img id="slideshow1" loading="lazy" src="img/new/1.png" alt="menu">
+								<img id="slideshow2" loading="lazy" src="img/new/2.png" alt="menu" style="opacity: 0;">
+							</div>
+							<div class="slideshow-shadow">
+								<svg width="699" height="481" viewBox="0 0 699 481" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_f_6542_887)">
+										<path d="M80.3516 303.214L515.729 80.5288L618.419 168.493L189.76 400.618L80.3516 303.214Z" fill="#11041C" />
+									</g>
+									<defs>
+										<filter id="filter0_f_6542_887" x="0.351562" y="0.528809" width="698.07" height="480.089" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+											<feGaussianBlur stdDeviation="40" result="effect1_foregroundBlur_6542_887" />
+										</filter>
+									</defs>
+								</svg>
+							</div>				
 						</div>
 					</div>
 				</div>
@@ -2416,7 +2433,7 @@
 
 		<section id="reviews" class="reviews">
 			<div class="decor1 rellax" data-rellax-speed="-1" data-rellax-percentage="0">
-				<img loading="lazy" src="images/new/ніколас футаж 6.webp" alt="decor5">
+				<img loading="lazy" src="images/new/footage6.webp" alt="decor5">
 			</div>
 
 			<div class="mw">
@@ -2941,6 +2958,41 @@
 	<!-- swiper.js CDN -->
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
+		// jn-fix changer animation 
+		document.addEventListener('DOMContentLoaded', function() {
+		const images = [
+				"img/new/1.png",
+				"img/new/2.png",
+				"img/new/3.png",
+				"img/new/4.png",
+				"img/new/5.png"
+		];
+		let currentIndex = 0;
+		const img1 = document.getElementById('slideshow1');
+		const img2 = document.getElementById('slideshow2');
+
+		function changeImage() {
+				const nextIndex = (currentIndex + 1) % images.length;
+				const currentImg = currentIndex % 2 === 0 ? img1 : img2;
+				const nextImg = currentIndex % 2 === 0 ? img2 : img1;
+
+				// Обновляем следующее изображение и делаем его видимым
+				nextImg.src = images[nextIndex];
+				nextImg.style.opacity = 1;
+
+				// Делаем текущее изображение невидимым
+				currentImg.style.opacity = 0;
+
+				currentIndex = nextIndex;
+		}
+
+		// Начинаем цикл с задержкой для плавного первого перехода
+		setTimeout(() => {
+				setInterval(changeImage, 3000); // Менять изображение каждые 3 секунды
+		}, 1000); // Задержка 1 секунда для загрузки
+	});
+	// END
+
     const swiper = new Swiper('.swiper1', {
       // Optional parameters
       speed: 1000,
