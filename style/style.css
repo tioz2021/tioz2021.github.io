@@ -390,7 +390,7 @@ textarea {
  */
 [type=search] {
   -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
+  outline-offset: -2rem; /* 2 */
 }
 
 /**
@@ -3302,7 +3302,6 @@ input {
   top: -7px;
   text-align: left;
   margin-bottom: 24px;
-  height: 190px;
   -ms-text-overflow: ellipsis;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -6518,6 +6517,9 @@ input {
   .slider-section__title-text {
     min-height: unset;
   }
+  .user-box {
+    bottom: -56px;
+  }
 }
 @media screen and (max-width: 720px) {
   .last-swiper .swiper-button-prev {
@@ -7988,6 +7990,7 @@ input {
     width: 152px;
     height: 30px;
     padding-left: 31px;
+    bottom: 42px;
   }
   .s12__item-text {
     height: 82%;
@@ -8750,85 +8753,3 @@ input {
     bottom: 42px !important;
   }
 }/*# sourceMappingURL=style.css.map */
-
-
-.eter-list {
-  position: absolute;
-  width: 380px;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-}
-.eter-list__item {
-  width: 101px;
-  height: 18px;
-  /* height: 82px; */
-  margin-right: 12px;
-}
-
-.eter-list__item:nth-child(1),
-.eter-list__item:nth-child(5){
-  width: 101px;
-  height: 18px;
-}
-.eter-list__item:nth-child(2),
-.eter-list__item:nth-child(6){
-  width: 56px;
-  height: 18px;
-}
-.eter-list__item:nth-child(3),
-.eter-list__item:nth-child(7){
-  width: 117px;
-  height: 18px;
-}
-.eter-list__item:nth-child(4),
-.eter-list__item:nth-child(8){
-  width: 97px;
-  height: 18px;
-}
-
-.marquee-content {
-  display: flex;
-  animation: marqueer 20s linear infinite; /* Анимация с бесконечным повтором */
-}
-
-@media screen and (max-width: 720px) {
-  .eter-list{
-    width: 260px;
-  }
-}
-
-@keyframes marquee {
-  0% {
-    transform: translateX(-50%);
-  }
-  100% {
-    transform: translateX(0%); /* Двигаем влево на половину длины */
-  }
-}
-@keyframes marqueer {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-50%); /* Двигаем влево на половину длины */
-  }
-}
-
-.card-box__item-decor-pannel-btn-list{
-  width: 36px;
-}
-.card-box__item-decor-pannel-btn-list-icon{
-  width: 16px;
-  height: 16px;
-}
-.card-box__item-decor-pannel-btn-list-text{
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 130%;
-  text-align: right;
-  color: var(--bodi-2-2);
-  opacity: 0.5;
-}
