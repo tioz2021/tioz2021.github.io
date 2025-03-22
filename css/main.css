@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -361,6 +362,10 @@ html {
   font-family: "Inter", sans-serif;
 }
 
+a {
+  text-decoration: unset;
+}
+
 @font-face {
   font-family: "Inter";
   font-style: normal;
@@ -390,10 +395,12 @@ html {
   src: local("Ouvality"), local("Ouvality-Regular"), local("Ouvality Regular"), local("OuvalitySemiBoldRegular"), url("../../fonts/Ouvality.woff2") format("woff2"), url("../../fonts/Ouvality.woff") format("woff"), url("../../fonts/Ouvality.ttf") format("truetype");
 }
 .container {
-  width: 1230px;
+  width: 100%;
+  max-width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  display: flex;
 }
 
 .img-wrp {
@@ -470,14 +477,1465 @@ html {
   color: #2d2c38;
 }
 
-.text-weight-regular {
+.fw400 {
   font-weight: 400;
 }
 
-.text-weight-medium {
+.fw500 {
   font-weight: 500;
 }
 
-.text-uppercase {
+.fw600 {
+  font-weight: 600;
+}
+
+.ttu {
   text-transform: uppercase;
+}
+
+.button-container {
+  display: flex;
+  width: 100%;
+}
+.button-container .button {
+  float: left;
+  position: relative;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+.button-container .button .label {
+  display: inline-block;
+}
+.button-container .button.v1 .left, .button-container .button.v1 .right, .button-container .button.v1 .bottom, .button-container .button.v1 .top {
+  background: linear-gradient(to bottom left, #470083, rgba(71, 0, 131, 0));
+  position: absolute;
+}
+.button-container .button.v1 .left, .button-container .button.v1 .right {
+  height: 45px;
+  width: 1px;
+}
+.button-container .button.v1 .top, .button-container .button.v1 .bottom {
+  height: 1px;
+  width: 30px;
+}
+.button-container .button.v1 .top {
+  top: 0;
+  left: 0;
+}
+.button-container .button.v1 .bottom {
+  bottom: 0;
+  right: 0;
+}
+.button-container .button.v1 .left {
+  transform: rotate(35deg);
+  left: -7px;
+  top: -1px;
+}
+.button-container .button.v1 .right {
+  transform: rotate(35deg);
+  right: -7px;
+  bottom: -1px;
+}
+.button-container .button.v2 .icon:before, .button-container .button.v2 .icon:after {
+  content: "";
+  background: linear-gradient(to bottom left, #470083, rgba(71, 0, 131, 0));
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 1px;
+  transform: rotate(-45deg);
+}
+.button-container .button.v2 .icon:before {
+  left: 0;
+}
+.button-container .button.v2 .icon:after {
+  right: 0;
+}
+.button-container .button.v2:before, .button-container .button.v2:after {
+  content: "";
+  height: 1px;
+  width: 30px;
+  position: absolute;
+  display: block;
+  background: linear-gradient(to bottom left, #470083, rgba(71, 0, 131, 0));
+}
+.button-container .button.v2:before {
+  left: 0;
+}
+.button-container .button.v2:after {
+  right: 0;
+}
+.button-container .button.v3:hover .icon:before, .button-container .button.v3:hover .icon:after {
+  width: 35px;
+}
+.button-container .button.v3:hover .icon span:before, .button-container .button.v3:hover .icon span:after {
+  height: 35px;
+}
+.button-container .button.v3 .label {
+  padding: 10px 22px;
+}
+.button-container .button.v3 .icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: skew(-40deg, 0deg);
+}
+.button-container .button.v3 .icon:before, .button-container .button.v3 .icon:after {
+  content: "";
+  height: 1px;
+  width: 30px;
+  position: absolute;
+  display: block;
+  background: linear-gradient(to bottom left, #470083, rgba(71, 0, 131, 0));
+  transition: width 0.5s;
+}
+.button-container .button.v3 .icon:before {
+  left: 0;
+  top: 0;
+}
+.button-container .button.v3 .icon:after {
+  right: 0;
+  bottom: 0;
+}
+.button-container .button.v3 .icon span:before, .button-container .button.v3 .icon span:after {
+  content: "";
+  background: linear-gradient(to bottom left, #470083, rgba(71, 0, 131, 0));
+  position: absolute;
+  display: block;
+  width: 2px;
+  height: 30px;
+  transition: height 0.5s;
+}
+.button-container .button.v3 .icon span:before {
+  left: 0;
+  top: 0;
+}
+.button-container .button.v3 .icon span:after {
+  right: 0;
+  bottom: 0;
+}
+.button-container .button.v4:hover .icon:before, .button-container .button.v4:hover .icon:after {
+  width: 10px;
+}
+.button-container .button.v4:hover .icon span:before, .button-container .button.v4:hover .icon span:after {
+  height: 10px;
+}
+.button-container .button.v4 .label {
+  padding: 10px 22px;
+}
+.button-container .button.v4 .icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: skew(-40deg, 0deg);
+}
+.button-container .button.v4 .icon:before, .button-container .button.v4 .icon:after {
+  content: "";
+  height: 1px;
+  width: 30px;
+  position: absolute;
+  display: block;
+  transition: width 0.5s;
+}
+.button-container .button.v4 .icon:before {
+  left: 0;
+  top: 0;
+}
+.button-container .button.v4 .icon:after {
+  right: 0;
+  bottom: 0;
+}
+.button-container .button.v4 .icon span:before, .button-container .button.v4 .icon span:after {
+  content: "";
+  background: #f0202f;
+  position: absolute;
+  display: block;
+  width: 2px;
+  height: 30px;
+  transition: height 0.5s;
+}
+.button-container .button.v4 .icon span:before {
+  left: 0;
+  top: 0;
+}
+.button-container .button.v4 .icon span:after {
+  right: 0;
+  bottom: 0;
+}
+.button-container .button.v5:hover .icon {
+  transform: scale(0.8);
+}
+.button-container .button.v5:hover .icon:before, .button-container .button.v5:hover .icon:after {
+  width: 20px;
+}
+.button-container .button.v5:hover .icon span:before, .button-container .button.v5:hover .icon span:after {
+  height: 20px;
+}
+.button-container .button.v5 .label {
+  padding: 10px 22px;
+}
+.button-container .button.v5 .icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: skew(-40deg, 0deg);
+  transition: all 0.5s;
+}
+.button-container .button.v5 .icon:before, .button-container .button.v5 .icon:after {
+  content: "";
+  height: 1px;
+  width: 30px;
+  position: absolute;
+  display: block;
+  background: #f0202f;
+  transition: width 0.5s;
+}
+.button-container .button.v5 .icon:before {
+  left: 0;
+  top: 0;
+}
+.button-container .button.v5 .icon:after {
+  right: 0;
+  bottom: 0;
+}
+.button-container .button.v5 .icon span:before, .button-container .button.v5 .icon span:after {
+  content: "";
+  background: #f0202f;
+  position: absolute;
+  display: block;
+  width: 2px;
+  height: 30px;
+  transition: height 0.5s;
+}
+.button-container .button.v5 .icon span:before {
+  left: 0;
+  top: 0;
+}
+.button-container .button.v5 .icon span:after {
+  right: 0;
+  bottom: 0;
+}
+.button-container .button.v6:hover .icon {
+  transform: scale(0.9);
+}
+.button-container .button.v6:hover .icon:before, .button-container .button.v6:hover .icon:after {
+  width: 100%;
+}
+.button-container .button.v6:hover .icon span:before, .button-container .button.v6:hover .icon span:after {
+  height: 100%;
+}
+.button-container .button.v6 .label {
+  padding: 10px 22px;
+}
+.button-container .button.v6 .icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: skew(-40deg, 0deg);
+  transition: all 0.5s;
+}
+.button-container .button.v6 .icon:before, .button-container .button.v6 .icon:after {
+  content: "";
+  height: 1px;
+  width: 30px;
+  position: absolute;
+  display: block;
+  background: #f0202f;
+  transition: width 0.5s;
+}
+.button-container .button.v6 .icon:before {
+  left: 0;
+  top: 0;
+}
+.button-container .button.v6 .icon:after {
+  right: 0;
+  bottom: 0;
+}
+.button-container .button.v6 .icon span:before, .button-container .button.v6 .icon span:after {
+  content: "";
+  background: #f0202f;
+  position: absolute;
+  display: block;
+  width: 2px;
+  height: 30px;
+  transition: height 0.5s;
+}
+.button-container .button.v6 .icon span:before {
+  left: 0;
+  top: 0;
+}
+.button-container .button.v6 .icon span:after {
+  right: 0;
+  bottom: 0;
+}
+.button-container .button.v7:hover .icon {
+  transform: scale(0.9) skew(-40deg, 0deg);
+}
+.button-container .button.v7:hover .icon:before, .button-container .button.v7:hover .icon:after {
+  width: 100%;
+}
+.button-container .button.v7:hover .icon span:before, .button-container .button.v7:hover .icon span:after {
+  height: 100%;
+}
+.button-container .button.v7 .label {
+  padding: 10px 22px;
+}
+.button-container .button.v7 .icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: skew(-40deg, 0deg);
+  transition: all 0.5s;
+}
+.button-container .button.v7 .icon:before, .button-container .button.v7 .icon:after {
+  content: "";
+  height: 1px;
+  width: 30px;
+  position: absolute;
+  display: block;
+  background: #f0202f;
+  transition: width 0.5s;
+}
+.button-container .button.v7 .icon:before {
+  left: 0;
+  top: 0;
+}
+.button-container .button.v7 .icon:after {
+  right: 0;
+  bottom: 0;
+}
+.button-container .button.v7 .icon span:before, .button-container .button.v7 .icon span:after {
+  content: "";
+  background: #f0202f;
+  position: absolute;
+  display: block;
+  width: 2px;
+  height: 30px;
+  transition: height 0.5s;
+}
+.button-container .button.v7 .icon span:before {
+  left: 0;
+  top: 0;
+}
+.button-container .button.v7 .icon span:after {
+  right: 0;
+  bottom: 0;
+}
+.button-container .button.v8:hover .icon {
+  transform: scale(1.1) skew(-40deg, 0deg);
+}
+.button-container .button.v8:hover .icon:before, .button-container .button.v8:hover .icon:after {
+  width: 100%;
+}
+.button-container .button.v8:hover .icon span:before, .button-container .button.v8:hover .icon span:after {
+  height: 100%;
+}
+.button-container .button.v8 .label {
+  padding: 10px 22px;
+}
+.button-container .button.v8 .icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: skew(-40deg, 0deg);
+  transition: all 0.5s;
+}
+.button-container .button.v8 .icon:before, .button-container .button.v8 .icon:after {
+  content: "";
+  height: 1px;
+  width: 30px;
+  position: absolute;
+  display: block;
+  background: #f0202f;
+  transition: width 0.5s;
+}
+.button-container .button.v8 .icon:before {
+  left: 0;
+  top: 0;
+}
+.button-container .button.v8 .icon:after {
+  right: 0;
+  bottom: 0;
+}
+.button-container .button.v8 .icon span:before, .button-container .button.v8 .icon span:after {
+  content: "";
+  background: #f0202f;
+  position: absolute;
+  display: block;
+  width: 2px;
+  height: 30px;
+  transition: height 0.5s;
+}
+.button-container .button.v8 .icon span:before {
+  left: 0;
+  top: 0;
+}
+.button-container .button.v8 .icon span:after {
+  right: 0;
+  bottom: 0;
+}
+.button-container .button.v9:hover .icon {
+  transform: scale(1.1) skew(-40deg, 0deg);
+}
+.button-container .button.v9:hover .icon:before, .button-container .button.v9:hover .icon:after {
+  width: 100%;
+}
+.button-container .button.v9:hover .icon span:before, .button-container .button.v9:hover .icon span:after {
+  height: 100%;
+}
+.button-container .button.v9 .label {
+  padding: 10px 22px;
+}
+.button-container .button.v9 .icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: skew(-40deg, 0deg);
+  transition: all 0.2s;
+  transition-delay: 0.2s;
+}
+.button-container .button.v9 .icon:before, .button-container .button.v9 .icon:after {
+  content: "";
+  height: 1px;
+  width: 30px;
+  position: absolute;
+  display: block;
+  background: #f0202f;
+  transition: width 0.2s;
+}
+.button-container .button.v9 .icon:before {
+  left: 0;
+  top: 0;
+}
+.button-container .button.v9 .icon:after {
+  right: 0;
+  bottom: 0;
+}
+.button-container .button.v9 .icon span:before, .button-container .button.v9 .icon span:after {
+  content: "";
+  background: #f0202f;
+  position: absolute;
+  display: block;
+  width: 2px;
+  height: 30px;
+  transition: height 0.2s;
+}
+.button-container .button.v9 .icon span:before {
+  left: 0;
+  top: 0;
+}
+.button-container .button.v9 .icon span:after {
+  right: 0;
+  bottom: 0;
+}
+.button-container .button.v10:hover .icon {
+  transform: scale(0.9) skew(0deg, 0deg);
+}
+.button-container .button.v10:hover .icon:before, .button-container .button.v10:hover .icon:after {
+  width: 100%;
+}
+.button-container .button.v10:hover .icon span:before, .button-container .button.v10:hover .icon span:after {
+  height: 100%;
+}
+.button-container .button.v10 .icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: skew(-30deg, 0deg);
+  transition: all 0.2s;
+  transition-delay: 0.2s;
+}
+.button-container .button.v10 .icon:before, .button-container .button.v10 .icon:after {
+  content: "";
+  height: 2px;
+  width: 116px;
+  position: absolute;
+  display: block;
+  background: linear-gradient(to bottom left, #470083, rgba(71, 0, 131, 0));
+  transition: width 0.2s;
+}
+.button-container .button.v10 .icon:before {
+  left: 0;
+  top: 0;
+}
+.button-container .button.v10 .icon:after {
+  right: 0;
+  bottom: 0;
+}
+.button-container .button.v10 .icon span:before, .button-container .button.v10 .icon span:after {
+  content: "";
+  background: linear-gradient(to bottom left, #470083, rgba(71, 0, 131, 0));
+  position: absolute;
+  display: block;
+  width: 2px;
+  height: 50px;
+  transition: height 0.2s;
+}
+.button-container .button.v10 .icon span:before {
+  left: 0;
+  top: 0;
+}
+.button-container .button.v10 .icon span:after {
+  right: 0;
+  bottom: 0;
+}
+.button-container .button.v11:hover .icon {
+  transform: scale(0.9) skew(0deg, 0deg);
+}
+.button-container .button.v11:hover .icon:before, .button-container .button.v11:hover .icon:after {
+  width: 100%;
+}
+.button-container .button.v11:hover .icon span:before, .button-container .button.v11:hover .icon span:after {
+  height: 100%;
+}
+.button-container .button.v11 .label {
+  padding: 10px 22px;
+}
+.button-container .button.v11 .icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: skew(-40deg, 0deg);
+  transition: all 0.2s;
+}
+.button-container .button.v11 .icon:before, .button-container .button.v11 .icon:after {
+  content: "";
+  height: 1px;
+  width: 30px;
+  position: absolute;
+  display: block;
+  background: #f0202f;
+  transition: width 0.2s;
+  transition-delay: 0.2s;
+}
+.button-container .button.v11 .icon:before {
+  left: 0;
+  top: 0;
+}
+.button-container .button.v11 .icon:after {
+  right: 0;
+  bottom: 0;
+}
+.button-container .button.v11 .icon span:before, .button-container .button.v11 .icon span:after {
+  content: "";
+  background: #f0202f;
+  position: absolute;
+  display: block;
+  width: 2px;
+  height: 30px;
+  transition: height 0.2s;
+  transition-delay: 0.2s;
+}
+.button-container .button.v11 .icon span:before {
+  left: 0;
+  top: 0;
+}
+.button-container .button.v11 .icon span:after {
+  right: 0;
+  bottom: 0;
+}
+.button-container .button.v12:hover .icon {
+  transform: scale(0.9) skew(0deg, 0deg);
+}
+.button-container .button.v12:hover .icon:before {
+  width: 0;
+}
+.button-container .button.v12:hover .icon:after {
+  width: 100%;
+}
+.button-container .button.v12:hover .icon span:before, .button-container .button.v12:hover .icon span:after {
+  height: 0;
+}
+.button-container .button.v12 .label {
+  padding: 10px 22px;
+}
+.button-container .button.v12 .icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: skew(-40deg, 0deg);
+  transition: all 0.2s;
+}
+.button-container .button.v12 .icon:before, .button-container .button.v12 .icon:after {
+  content: "";
+  height: 1px;
+  width: 30px;
+  position: absolute;
+  display: block;
+  background: #f0202f;
+  transition: width 0.2s;
+  transition-delay: 0.2s;
+}
+.button-container .button.v12 .icon:before {
+  left: 0;
+  top: 0;
+}
+.button-container .button.v12 .icon:after {
+  right: 0;
+  bottom: 0;
+}
+.button-container .button.v12 .icon span:before, .button-container .button.v12 .icon span:after {
+  content: "";
+  background: #f0202f;
+  position: absolute;
+  display: block;
+  width: 2px;
+  height: 30px;
+  transition: height 0.2s;
+  transition-delay: 0.2s;
+}
+.button-container .button.v12 .icon span:before {
+  left: 0;
+  top: 0;
+}
+.button-container .button.v12 .icon span:after {
+  right: 0;
+  bottom: 0;
+}
+.button-container .button.v12:hover .icon {
+  transform: scale(0.9) skew(0deg, 0deg);
+}
+.button-container .button.v12:hover .icon:before {
+  width: 0;
+}
+.button-container .button.v12:hover .icon:after {
+  width: 50%;
+  right: 25%;
+}
+.button-container .button.v12:hover .icon span:before, .button-container .button.v12:hover .icon span:after {
+  height: 0;
+}
+.button-container .button.v12 .label {
+  padding: 10px 22px;
+}
+.button-container .button.v12 .icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: skew(-40deg, 0deg);
+  transition: all 0.2s;
+}
+.button-container .button.v12 .icon:before, .button-container .button.v12 .icon:after {
+  content: "";
+  height: 1px;
+  width: 30px;
+  position: absolute;
+  display: block;
+  background: #f0202f;
+  transition: all 0.2s;
+  transition-delay: 0.2s;
+}
+.button-container .button.v12 .icon:before {
+  left: 0;
+  top: 0;
+}
+.button-container .button.v12 .icon:after {
+  right: 0;
+  bottom: 0;
+}
+.button-container .button.v12 .icon span:before, .button-container .button.v12 .icon span:after {
+  content: "";
+  background: #f0202f;
+  position: absolute;
+  display: block;
+  width: 2px;
+  height: 30px;
+  transition: all 0.2s;
+  transition-delay: 0.2s;
+}
+.button-container .button.v12 .icon span:before {
+  left: 0;
+  top: 0;
+}
+.button-container .button.v12 .icon span:after {
+  right: 0;
+  bottom: 0;
+}
+.button-container .button.v13:hover .icon {
+  transform: scale(0.9) skew(0deg, 0deg);
+}
+.button-container .button.v13:hover .icon:before, .button-container .button.v13:hover .icon:after {
+  width: 60px;
+}
+.button-container .button.v13:hover .icon:before {
+  left: calc(50% - 30px);
+}
+.button-container .button.v13:hover .icon:after {
+  right: calc(50% - 30px);
+}
+.button-container .button.v13:hover .icon span:before, .button-container .button.v13:hover .icon span:after {
+  height: 0;
+}
+.button-container .button.v13 .label {
+  padding: 10px 22px;
+}
+.button-container .button.v13 .icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: skew(-40deg, 0deg);
+  transition: all 0.2s;
+}
+.button-container .button.v13 .icon:before, .button-container .button.v13 .icon:after {
+  content: "";
+  height: 1px;
+  width: 30px;
+  position: absolute;
+  display: block;
+  background: #f0202f;
+  transition: all 0.2s;
+  transition-delay: 0.4s;
+}
+.button-container .button.v13 .icon:before {
+  left: 0;
+  top: 0;
+}
+.button-container .button.v13 .icon:after {
+  right: 0;
+  bottom: 0;
+}
+.button-container .button.v13 .icon span:before, .button-container .button.v13 .icon span:after {
+  content: "";
+  background: #f0202f;
+  position: absolute;
+  display: block;
+  width: 2px;
+  height: 30px;
+  transition: all 0.2s;
+  transition-delay: 0.2s;
+}
+.button-container .button.v13 .icon span:before {
+  left: 0;
+  top: 0;
+}
+.button-container .button.v13 .icon span:after {
+  right: 0;
+  bottom: 0;
+}
+.button-container .button.v14:hover .icon {
+  transform: scale(0.9) skew(0deg, 0deg);
+}
+.button-container .button.v14:hover .icon:before, .button-container .button.v14:hover .icon:after {
+  width: 60px;
+  transition-delay: 0.4s;
+}
+.button-container .button.v14:hover .icon:before {
+  left: calc(50% - 30px);
+}
+.button-container .button.v14:hover .icon:after {
+  right: calc(50% - 30px);
+}
+.button-container .button.v14:hover .icon span:before, .button-container .button.v14:hover .icon span:after {
+  height: 0;
+  transition-delay: 0s;
+}
+.button-container .button.v14 .label {
+  padding: 10px 22px;
+}
+.button-container .button.v14 .icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: skew(-40deg, 0deg);
+  transition: all 0.2s;
+}
+.button-container .button.v14 .icon:before, .button-container .button.v14 .icon:after {
+  content: "";
+  height: 1px;
+  width: 30px;
+  position: absolute;
+  display: block;
+  background: #f0202f;
+  transition: all 0.2s;
+  transition-delay: 0s;
+}
+.button-container .button.v14 .icon:before {
+  left: 0;
+  top: 0;
+}
+.button-container .button.v14 .icon:after {
+  right: 0;
+  bottom: 0;
+}
+.button-container .button.v14 .icon span:before, .button-container .button.v14 .icon span:after {
+  content: "";
+  background: #f0202f;
+  position: absolute;
+  display: block;
+  width: 2px;
+  height: 30px;
+  transition: all 0.2s;
+  transition-delay: 0.4s;
+}
+.button-container .button.v14 .icon span:before {
+  left: 0;
+  top: 0;
+}
+.button-container .button.v14 .icon span:after {
+  right: 0;
+  bottom: 0;
+}
+.button-container .button.v15:hover .icon {
+  transform: scale(0.9) skew(0deg, 0deg);
+}
+.button-container .button.v15:hover .icon:before, .button-container .button.v15:hover .icon:after {
+  width: 60px;
+}
+.button-container .button.v15:hover .icon:before {
+  left: calc(50% - 30px);
+}
+.button-container .button.v15:hover .icon:after {
+  right: calc(50% - 30px);
+}
+.button-container .button.v15:hover .icon span:before, .button-container .button.v15:hover .icon span:after {
+  height: calc(100% - 20px);
+}
+.button-container .button.v15:hover .icon span:before {
+  top: 10px;
+}
+.button-container .button.v15:hover .icon span:after {
+  bottom: 10px;
+}
+.button-container .button.v15 .label {
+  padding: 10px 22px;
+}
+.button-container .button.v15 .icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: skew(-40deg, 0deg);
+  transition: all 0.2s;
+}
+.button-container .button.v15 .icon:before, .button-container .button.v15 .icon:after {
+  content: "";
+  height: 1px;
+  width: 30px;
+  position: absolute;
+  display: block;
+  background: #f0202f;
+  transition: all 0.2s;
+  transition-delay: 0.2s;
+}
+.button-container .button.v15 .icon:before {
+  left: 0;
+  top: 0;
+}
+.button-container .button.v15 .icon:after {
+  right: 0;
+  bottom: 0;
+}
+.button-container .button.v15 .icon span:before, .button-container .button.v15 .icon span:after {
+  content: "";
+  background: #f0202f;
+  position: absolute;
+  display: block;
+  width: 2px;
+  height: 30px;
+  transition: all 0.2s;
+  transition-delay: 0.2s;
+}
+.button-container .button.v15 .icon span:before {
+  left: 0;
+  top: 0;
+}
+.button-container .button.v15 .icon span:after {
+  right: 0;
+  bottom: 0;
+}
+.button-container .button.v16:hover .icon:before, .button-container .button.v16:hover .icon:after {
+  width: 100%;
+}
+.button-container .button.v16:hover .icon span:before, .button-container .button.v16:hover .icon span:after {
+  height: 100%;
+}
+.button-container .button.v16:hover .icon2 {
+  transform: skew(-40deg, 0deg) scaleX(1);
+  background: #f0202f;
+  z-index: -1;
+}
+.button-container .button.v16 .label {
+  padding: 10px 22px;
+}
+.button-container .button.v16 .icon2 {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: skew(-40deg, 0deg) scaleX(0.2);
+  transition: all 0.2s;
+  transition-delay: 0.2s;
+}
+.button-container .button.v16 .icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: skew(-40deg, 0deg);
+  transition: all 0.2s;
+}
+.button-container .button.v16 .icon:before, .button-container .button.v16 .icon:after {
+  content: "";
+  height: 1px;
+  width: 30px;
+  position: absolute;
+  display: block;
+  background: #f0202f;
+  transition: all 0.2s;
+  transition-delay: 0.2s;
+}
+.button-container .button.v16 .icon:before {
+  left: 0;
+  top: 0;
+}
+.button-container .button.v16 .icon:after {
+  right: 0;
+  bottom: 0;
+}
+.button-container .button.v16 .icon span:before, .button-container .button.v16 .icon span:after {
+  content: "";
+  background: #f0202f;
+  position: absolute;
+  display: block;
+  width: 2px;
+  height: 30px;
+  transition: all 0.2s;
+  transition-delay: 0.2s;
+}
+.button-container .button.v16 .icon span:before {
+  left: 0;
+  top: 0;
+}
+.button-container .button.v16 .icon span:after {
+  right: 0;
+  bottom: 0;
+}
+.button-container .button.v17:hover .icon:before, .button-container .button.v17:hover .icon:after {
+  width: 100%;
+}
+.button-container .button.v17:hover .icon span:before, .button-container .button.v17:hover .icon span:after {
+  height: 100%;
+}
+.button-container .button.v17:hover .icon2 {
+  transform: skew(-40deg, 0deg) scale(1);
+  background: #f0202f;
+  z-index: -1;
+}
+.button-container .button.v17 .label {
+  padding: 10px 22px;
+}
+.button-container .button.v17 .icon2 {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: skew(-40deg, 0deg) scaleX(0.2) scaleY(0.5);
+  transition: all 0.2s;
+  transition-delay: 0.2s;
+}
+.button-container .button.v17 .icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: skew(-40deg, 0deg);
+  transition: all 0.2s;
+}
+.button-container .button.v17 .icon:before, .button-container .button.v17 .icon:after {
+  content: "";
+  height: 1px;
+  width: 30px;
+  position: absolute;
+  display: block;
+  background: #f0202f;
+  transition: all 0.2s;
+  transition-delay: 0.2s;
+}
+.button-container .button.v17 .icon:before {
+  left: 0;
+  top: 0;
+}
+.button-container .button.v17 .icon:after {
+  right: 0;
+  bottom: 0;
+}
+.button-container .button.v17 .icon span:before, .button-container .button.v17 .icon span:after {
+  content: "";
+  background: #f0202f;
+  position: absolute;
+  display: block;
+  width: 2px;
+  height: 30px;
+  transition: all 0.2s;
+  transition-delay: 0.2s;
+}
+.button-container .button.v17 .icon span:before {
+  left: 0;
+  top: 0;
+}
+.button-container .button.v17 .icon span:after {
+  right: 0;
+  bottom: 0;
+}
+.button-container .button.v18:hover .icon {
+  transform: scale(0.9) skew(0deg, 0deg);
+}
+.button-container .button.v18:hover .icon:before, .button-container .button.v18:hover .icon:after {
+  width: 60px;
+  transition-delay: 0.4s;
+}
+.button-container .button.v18:hover .icon:before {
+  left: calc(50% - 30px);
+}
+.button-container .button.v18:hover .icon:after {
+  right: calc(50% - 30px);
+}
+.button-container .button.v18:hover .icon span:before, .button-container .button.v18:hover .icon span:after {
+  height: 0;
+  transition-delay: 0s;
+}
+.button-container .button.v18:hover .icon2 {
+  transform: skew(-40deg, 0deg) scaleX(1);
+  background: #f0202f;
+  z-index: -1;
+  transition-delay: 0.5s;
+}
+.button-container .button.v18 .label {
+  padding: 10px 22px;
+}
+.button-container .button.v18 .icon2 {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: skew(-40deg, 0deg) scaleX(0.2);
+  transition: all 0.2s;
+}
+.button-container .button.v18 .icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: skew(-40deg, 0deg);
+  transition: all 0.2s;
+}
+.button-container .button.v18 .icon:before, .button-container .button.v18 .icon:after {
+  content: "";
+  height: 1px;
+  width: 30px;
+  position: absolute;
+  display: block;
+  background: #f0202f;
+  transition: all 0.2s;
+  transition-delay: 0s;
+}
+.button-container .button.v18 .icon:before {
+  left: 0;
+  top: 0;
+}
+.button-container .button.v18 .icon:after {
+  right: 0;
+  bottom: 0;
+}
+.button-container .button.v18 .icon span:before, .button-container .button.v18 .icon span:after {
+  content: "";
+  background: #f0202f;
+  position: absolute;
+  display: block;
+  width: 2px;
+  height: 30px;
+  transition: all 0.2s;
+  transition-delay: 0.4s;
+}
+.button-container .button.v18 .icon span:before {
+  left: 0;
+  top: 0;
+}
+.button-container .button.v18 .icon span:after {
+  right: 0;
+  bottom: 0;
+}
+.button-container .button.v19 .label {
+  padding: 10px 30px;
+  font-size: 14px;
+  display: inline-block;
+  z-index: 10;
+  position: relative;
+  white-space: nowrap;
+  line-height: 24px;
+  transition: all 0.225s;
+  transition-delay: 0.45s;
+  letter-spacing: 2px;
+}
+.button-container .button.v19.button-start .label {
+  padding: 12px 65px;
+}
+.button-container .button.v19 .icon2 {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.225s;
+  transform: skew(-40deg, 0deg) scaleX(1);
+  background: rgba(240, 32, 47, 0.8);
+  transition-delay: 0.45s;
+}
+.button-container .button.v19 .icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.225s;
+  transform: scale(0.9) skew(0deg, 0deg);
+  transition-delay: 0.15s;
+}
+.button-container .button.v19 .icon:before, .button-container .button.v19 .icon:after {
+  width: 60px;
+  opacity: 0;
+  content: "";
+  height: 1px;
+  position: absolute;
+  display: block;
+  background: #f0202f;
+  transition: all 0.375s;
+  transition-delay: 0.3s;
+}
+.button-container .button.v19 .icon:before {
+  top: 0;
+  left: calc(50% - 30px);
+}
+.button-container .button.v19 .icon:after {
+  bottom: 0;
+  right: calc(50% - 30px);
+}
+.button-container .button.v19 .icon span:before, .button-container .button.v19 .icon span:after {
+  height: 0;
+  transition-delay: 0s;
+  content: "";
+  background: #f0202f;
+  position: absolute;
+  display: block;
+  width: 2px;
+  transition: all 0.225s;
+}
+.button-container .button.v19 .icon span:before {
+  left: 0;
+  top: 0;
+}
+.button-container .button.v19 .icon span:after {
+  right: 0;
+  bottom: 0;
+}
+.button-container .button.v19:hover .icon {
+  transform: skew(-40deg, 0deg);
+}
+.button-container .button.v19:hover .icon:before, .button-container .button.v19:hover .icon:after {
+  transition-delay: 0s;
+  width: 30px;
+  opacity: 1;
+}
+.button-container .button.v19:hover .icon:before {
+  left: 0;
+}
+.button-container .button.v19:hover .icon:after {
+  right: 0;
+}
+.button-container .button.v19:hover .icon span:before, .button-container .button.v19:hover .icon span:after {
+  height: 30px;
+  transition-delay: 0.45s;
+}
+.button-container .button.v19:hover .icon2 {
+  transform: skew(-40deg, 0deg) scaleX(0.2);
+  background: transparent;
+  transition-delay: 0s;
+  opacity: 0;
+}
+.button-container .button.v19.white:hover .label {
+  color: #fff;
+  transition-delay: 0s;
+}
+.button-container .button.v19.white .icon2 {
+  background: #fff;
+}
+.button-container .button.v19.white .icon:before, .button-container .button.v19.white .icon:after {
+  background: #fff;
+}
+.button-container .button.v19.white .icon span:before, .button-container .button.v19.white .icon span:after {
+  background: #fff;
+}
+.button-container .button.v19.labelred .label {
+  color: grey;
+}
+.button-container .button.v19.labelgray .label {
+  color: #1D1D1D;
+}
+.button-container .button.v19.transparent {
+  float: none;
+  display: inline-block;
+  -webkit-transform: translateZ(0px);
+  transform: translateZ(0px);
+}
+.button-container .button.v19.transparent .label {
+  color: #fff;
+  transition-delay: 0s;
+}
+.button-container .button.v19.transparent .icon2 {
+  background: transparent;
+}
+.button-container .button.v19.transparent .icon {
+  transform: scale(1) skew(10deg, 0deg);
+}
+.button-container .button.v19.transparent .icon:before, .button-container .button.v19.transparent .icon:after {
+  background: #fff;
+}
+.button-container .button.v19.transparent .icon span:before, .button-container .button.v19.transparent .icon span:after {
+  background: #fff;
+}
+.button-container .button.v19.transparent:hover .icon {
+  transform: scale(1) skew(-40deg, 0deg);
+}
+
+.button__notification .button.v12 {
+  width: 185px;
+  height: 49px;
+  margin-left: auto;
+  margin-right: 9px;
+}
+.button__notification .button.v12 .icon {
+  transform: skew(-18deg, 0deg);
+  top: -1px;
+}
+.button__notification .button.v12 .icon:before, .button__notification .button.v12 .icon:after {
+  height: 2px;
+  width: 99px;
+  background: linear-gradient(to bottom left, #470083, rgba(71, 0, 131, 0));
+}
+.button__notification .button.v12 .icon span:before, .button__notification .button.v12 .icon span:after {
+  background: linear-gradient(to bottom left, #470083, rgba(71, 0, 131, 0));
+  width: 2px;
+  height: 50px;
+}
+.button__notification .label {
+  padding: 14px 24px;
+}
+.button__notification span {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #470083;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo__icon {
+  margin-right: 12px;
+  width: 50px;
+  height: 60px;
+}
+.logo__text span {
+  color: #4e51f5;
+}
+
+.main-menu {
+  height: 100%;
+  min-width: 410px;
+  margin-left: auto;
+  margin-right: 24px;
+  margin-top: -2px;
+  position: relative;
+}
+.main-menu__list {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-menu__list-underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background-color: #4e51f5;
+  width: 0;
+  transition: all 0.3s ease;
+}
+.main-menu__list-item {
+  cursor: pointer;
+}
+.main-menu__list-link {
+  color: #2d2c38;
+  transition: color 0.3s ease;
+}
+.main-menu__list-link:hover {
+  color: #4e51f5;
+}
+
+.lng-switcher {
+  border-radius: 21px;
+  width: 65px;
+  height: 36px;
+  background: rgba(37, 150, 190, 0.1);
+  padding-left: 4px;
+  padding-right: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.lng-switcher a {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lng-switcher a.active {
+  background-color: #2d2c38;
+  color: #fff;
+}
+
+.header {
+  margin-top: 24px;
+  margin-bottom: 27px;
+  height: 60px;
+}
+.header__container {
+  height: 100%;
+  max-width: 1780px;
+  justify-content: space-between;
+  align-items: center;
+}
+.gradient-text {
+  background: linear-gradient(66deg, #9073a8 0%, #743d99 19.5%, #260046 60%, #a439ff 81.5%, #10001d 100%);
+  background-size: 200% 200%; /* Увеличиваем размер фона */
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: gradientAnimation 5s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.fs {
+  background: rgba(78, 81, 245, 0.1);
+  padding-top: 50px;
+  padding-bottom: 70px;
+  margin-bottom: 150px;
+}
+.fs__container {
+  justify-content: space-between;
+}
+.fs__start {
+  margin-left: 14px;
+  width: 498px;
+  height: 596px;
+}
+.fs__img {
+  width: 100%;
+  height: 100%;
+}
+.fs__end {
+  width: 612px;
+  padding-top: 54px;
+  position: relative;
+  left: -13px;
+}
+.fs__title {
+  margin-bottom: -4px;
+}
+.fs__title span {
+  position: relative;
+  top: -19px;
+  left: -4px;
+}
+.fs__text-wrp {
+  margin-bottom: 42px;
+}
+.fs__text-wrp .gradient-text:nth-child(1) {
+  margin-left: 9px;
+  margin-right: -10px;
+}
+.fs__text-wrp .gradient-text:nth-child(2) {
+  margin-left: 11px;
+}
+.fs__text-wrp .gradient-text:nth-child(3) {
+  margin-left: 4px;
+}
+.fs__text-wrp .gradient-text:nth-child(4) {
+  margin-left: -7px;
 }/*# sourceMappingURL=main.css.map */

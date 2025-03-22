@@ -16,8 +16,14 @@
 
 // components
 @import 'components/buttons';
-@import 'components/header';
 @import 'components/footer';
+
+// box/header
+@import 'components/logo';
+@import 'components/main-menu';
+@import 'components/lng-switcher';
+@import 'components/header';
+
 
 // animation 
 @import 'base/animation';

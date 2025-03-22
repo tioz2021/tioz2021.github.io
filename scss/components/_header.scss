@@ -1,0 +1,25 @@
+.header {
+  margin-top: 24px;
+  margin-bottom: 27px;
+  height: 60px;
+
+  // .header__container
+  &__container {
+    height: 100%;
+    max-width: 1780px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  // .header__logo
+  &__logo {
+  }
+
+  // .header__menu
+  &__menu {
+  }
+
+  // .header__lng-switcher
+  &__lng-switcher {
+  }
+}

@@ -1,0 +1,20 @@
+.logo {
+  display: flex;
+  align-items: center;
+
+  // .logo__icon
+  &__icon {
+    margin-right: 12px;
+    width: 50px;
+    height: 60px;
+  }
+
+  // .logo__text
+  &__text {
+    
+    // .logo__text span
+    span{
+      color: $body-3-color;
+    }
+  }
+}
