@@ -1,0 +1,71 @@
+.heading-extra-large {
+  font-weight: 400;
+  font-size: 150px;
+  text-transform: uppercase;
+  line-height: 120%;
+  color: $body-2-color;
+
+  span {
+    color: $body-4-color;
+  }
+}
+
+.heading-large {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 120%;
+  color: $body-2-color;
+}
+
+.heading-medium-large {
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 120%;
+  color: $body-2-color;
+}
+
+.heading-medium {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 120%;
+  color: $body-2-color;
+}
+
+.heading-small {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  color: $body-2-color;
+}
+
+.text-large {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  color: $body-2-color;
+}
+
+.text-medium {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  color: $body-2-color;
+}
+
+.text-small {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+  color: $body-2-color;
+}
+
+.text-weight-regular{
+  font-weight: 400;
+}
+.text-weight-medium{
+  font-weight: 500;
+}
+.text-uppercase{
+  text-transform: uppercase;
+}
+

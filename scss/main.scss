@@ -7,22 +7,20 @@
 @import 'base/reset';
 @import 'vendors/normalize';
 
-// base/animation
+// base
 @import 'base/base';
+@import 'base/fonts';
+@import 'base/layout';
 @import 'base/typography';
 @import 'base/utilities';
-@import 'base/animation';
 
 // components
 @import 'components/buttons';
 @import 'components/header';
 @import 'components/footer';
 
-// layout
-@import 'layout/grid';
-@import 'layout/header';
-@import 'layout/navigation';
-@import 'layout/footer';
+// animation 
+@import 'base/animation';
 
 // pages
-@import 'pages/home'
+@import 'pages/home';

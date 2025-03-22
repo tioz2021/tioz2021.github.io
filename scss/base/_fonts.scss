@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: 
+		local("Inter"),
+		local("Inter-Regular"),
+		local("Inter Regular"),
+		local("InterRegular"),
+    url('../../fonts/Inter/Inter_18pt-Regular.woff2') format('woff2'),
+    url('../../fonts/Inter/Inter_18pt-Regular.woff') format('woff'),
+    url('../../fonts/Inter/Inter_18pt-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter';
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: 
+		local("Inter"),
+		local("Inter-Medium"),
+		local("Inter Medium"),
+		local("InterMedium"),
+    url('../../fonts/Inter/Inter_18pt-Medium.woff2') format('woff2'),
+    url('../../fonts/Inter/Inter_18pt-Medium.woff') format('woff'),
+    url('../../fonts/Inter/Inter_18pt-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter';
+	font-style: normal;
+	font-weight: 600;
+	font-display: swap;
+	src: 
+		local("Inter"),
+		local("Inter-SemiBold"),
+		local("Inter SemiBold"),
+		local("InterSemiBold"),
+    url('../../fonts/Inter/Inter_18pt-SemiBold.woff2') format('woff2'),
+    url('../../fonts/Inter/Inter_18pt-SemiBold.woff') format('woff'),
+    url('../../fonts/Inter/Inter_18pt-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Ouvality';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: 
+		local("Ouvality"),
+		local("Ouvality-Regular"),
+		local("Ouvality Regular"),
+		local("OuvalitySemiBoldRegular"),
+    url('../../fonts/Ouvality.woff2') format('woff2'),
+    url('../../fonts/Ouvality.woff') format('woff'),
+    url('../../fonts/Ouvality.ttf') format('truetype');
+}
