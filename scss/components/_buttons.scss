@@ -225,7 +225,7 @@
           width: 30px;
           position: absolute;
           display: block;
-          // background: #f0202f;
+          background: #f0202f;
           transition: width 0.5s;
         }
         &:before{
@@ -1682,5 +1682,125 @@
     text-transform: uppercase;
     text-align: center;
     color: $body-4-color;
+  }
+}
+
+.button-address{
+  .button{
+    width: 717px;
+    position: relative;
+  }
+  .button.v6{
+    height: 49px;
+   
+    .icon{
+      top: 3px;
+      transform: skew(-18deg, 0deg);
+
+      &:before{
+        top: -2px;
+      }
+
+      &:before, &:after{
+        height: 2px;
+        width: 99px;
+        background: #4E51F5;
+      }
+      span{
+        &:before, &:after{
+          background: #4E51F5;
+          width: 2px;
+          height: 50px;
+        }
+      }
+    }
+  }
+
+  .button-address__icon{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 14px;
+    left: 205px;
+  }
+
+  .label{
+    padding: 15px 22px !important;
+    margin-left: 29px;
+  }
+
+  span{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: $body-3-color;
+  }
+}
+
+.button-address-mini{
+  .button{
+    width: 347px;
+    margin-left: 4px;
+    position: relative;
+  } 
+  .button-address__icon{
+    top: 12px;
+    left: 95px;
+  }
+  .label{
+    padding: 14px 20px !important;
+    margin-left: 37px;
+  }
+  .button.v6 .icon{
+    top: 1px;
+  }
+}
+
+.button-delete{
+  .button{
+    width: 345px;
+    margin-left: 0px;
+    position: relative;
+  }
+
+  .label{
+    padding: 13px 22px !important;
+    margin-left: 9px;
+    color: $error-color;
+  }
+
+  .button-address__icon{
+    width: 24px;
+    height: 24px;
+    top: 12px;
+    left: 23px;
+  }
+
+  .button.v4{
+    height: 49px;
+   
+    .icon{
+      top: 0px;
+      transform: skew(-18deg, 0deg);
+
+      &:before{
+        top: -2px;
+      }
+
+      &:before, &:after{
+        height: 2px;
+        width: 99px;
+        background: $error-color;
+      }
+      span{
+        &:before, &:after{
+          background: $error-color;
+          width: 2px;
+          height: 50px;
+        }
+      }
+    }
   }
 }
