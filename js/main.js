@@ -114,3 +114,57 @@
     updateSlider(roundedValue);
   }
 }) ();
+
+// discount-slider
+(() => {
+  const budgetText = document.querySelector('.badge-v2 span');
+  const budgedDiamand = document.querySelector('.badge-icon path');
+  document.querySelector('.slider-input-v2').addEventListener('input', function() {
+    const value = parseFloat(this.value);
+    const min = parseFloat(this.min);
+    const max = parseFloat(this.max);
+    const percent = ((value - min) / (max - min)) * 100;
+    
+    // Обновляем прогресс и положение ползунка
+    document.querySelector('.progress-v2').style.width = `${percent}%`;
+    const thumb = document.querySelector('.thumb-v2');
+    thumb.style.left = `${percent}%`;
+    
+    document.querySelector('.value-bubble-v2 span').textContent = `${value.toFixed(1)}%`;
+    
+    console.log('value', value);
+    if(value <= 1.31) {
+      budgetText.textContent = 'Standard';
+      budgedDiamand.style.fill = '#2d2c38';
+    } else if(value >= 1.32 && value <= 2.13) {
+      budgetText.textContent = 'Reliable';
+      budgedDiamand.style.fill = '#4e51f5';
+    } else {
+      budgetText.textContent = 'Brilliant';
+      budgedDiamand.style.fill = '#470083';
+    }
+    // 0.5 1.31%
+    // 1.32% 2.13%
+    // 2.14% 3%
+
+    window.addEventListener('resize', updateBubblePosition);
+    updateBubblePosition();
+  });
+  
+  function updateBubblePosition() {
+    const thumb = document.querySelector('.thumb-v2');
+    const bubble = document.querySelector('.value-bubble-v2');
+    const thumbRect = thumb.getBoundingClientRect();
+
+    const container = document.querySelector('.track-container-v2');
+    const containerRect = container.getBoundingClientRect();
+    
+    let leftPosition = thumbRect.left - containerRect.left;
+    leftPosition = Math.max(0, Math.min(containerRect.width, leftPosition));
+    
+    // bubble.style.left = `${leftPosition}px`;
+    // bubble.style.transform = 'translateX(-50%)';
+  }
+  
+  document.querySelector('.slider-input-v2').dispatchEvent(new Event('input'));
+}) ()

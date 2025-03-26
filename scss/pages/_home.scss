@@ -44,6 +44,13 @@
 
   // .fs__text-wrp
   &__text-wrp {
+    // .fs__text-wrp
+    span{
+      background: linear-gradient(66deg, #9073a8 0%, #743d99 19.5%, #260046 60%, #a439ff 81.5%, #10001d 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
     margin-bottom: 42px;
     .gradient-text:nth-child(1){
       margin-left: 9px;

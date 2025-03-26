@@ -1,3 +1,33 @@
+.shimmer {
+  display: inline-block;
+  -webkit-mask: 
+    linear-gradient(-60deg, #000 30%, #0005, #000 70%) 
+    right/300% 100%;
+  background-repeat: no-repeat;
+  animation: shimmer 5s infinite;
+}
+
+@keyframes shimmer {
+  0% { -webkit-mask-position: right; }
+  40% { -webkit-mask-position: left; }
+  100% { -webkit-mask-position: left; }
+}
+
+.svg-icon-bg-anim{
+  background: linear-gradient(90deg, #fff 0%, #fff 44.5%, #c5c7fc 74%, $body-3-color 100%);
+  background-size: 200% 200%; /* Увеличиваем размер фона */
+  // -webkit-background-clip: text;
+  // background-clip: text;
+  // -webkit-text-fill-color: transparent;
+  // color: transparent;
+  animation: gradientAnimation 5s ease infinite;
+  
+  border-radius: 50%;
+
+  // path{
+  //   fill: $body-1-color;
+  // }
+}
 .gradient-text {
   background: linear-gradient(66deg, #9073a8 0%, #743d99 19.5%, #260046 60%, #a439ff 81.5%, #10001d 100%);
   background-size: 200% 200%; /* Увеличиваем размер фона */

@@ -1984,8 +1984,20 @@ input {
 .main-form__step-wrp:first-child {
   margin-bottom: 46px;
 }
+.main-form__step-wrp-1_1 {
+  margin-bottom: 70px;
+}
 .main-form__step-wrp-1_1 .main-form__stem-number span {
   left: -2px;
+}
+.main-form__step-wrp-step-2 .main-form__step-box-title {
+  margin-bottom: 48px;
+}
+.main-form__step-wrp-step-3 {
+  margin-bottom: 50px;
+}
+.main-form__step-wrp-step-3 .main-form__step-box {
+  min-height: 346px;
 }
 .main-form__step-number-wrp {
   width: 150px;
@@ -2066,6 +2078,9 @@ input {
   font-weight: 500;
   color: #470083;
   margin-left: 5px;
+}
+.main-form__step-end-text {
+  max-width: 868px;
 }
 .main-form__step-bg {
   display: none;
@@ -2305,6 +2320,184 @@ input {
   height: 44px;
 }
 
+.privacy-slider-v2 {
+  margin-bottom: 50px;
+}
+
+.track-container-v2 {
+  position: relative;
+  height: 40px;
+  margin: 25px 0;
+}
+
+.track-v2 {
+  position: absolute;
+  width: 100%;
+  height: 8px;
+  background: #f0f0f0;
+  border-radius: 3px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(90deg, #fff 0%, #fff 44.5%, #c5c7fc 74%, #470083 100%);
+}
+
+.progress-v2 {
+  position: absolute;
+  height: 100%;
+  border-radius: 3px;
+}
+
+.thumb-v2 {
+  position: absolute;
+  top: -10px;
+  transform: translateX(-50%);
+  z-index: 2;
+  transition: left 0.15s ease;
+}
+
+.thumb-v2-icon {
+  width: 36px;
+  height: 36px;
+}
+
+.value-bubble-v2 {
+  position: absolute;
+  top: 37px;
+  left: 50%;
+  transform: translateX(-48%);
+  width: 50px;
+  height: 46px;
+}
+
+.value-bubble-v2 span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-47%, -30%);
+  z-index: 2;
+  color: #fff;
+}
+
+.value-bubble-v2-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.slider-input-v2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.slider-header-v2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.badge__title {
+  box-sizing: border-box;
+  padding: 5px 24px;
+  position: relative;
+  width: 330px;
+  height: 36px;
+}
+
+.badge__title-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.badge-icon-wrp {
+  width: 150px;
+  height: 36px;
+  box-sizing: border-box;
+  padding: 5px 26px;
+  position: relative;
+  left: -16px;
+}
+
+.badge-wrp {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: 12px;
+  top: -5px;
+}
+
+.badge-v2 {
+  position: relative;
+}
+
+.badge-icon {
+  width: 16px;
+  height: 20px;
+  position: absolute;
+  right: 25px;
+  top: 5px;
+  z-index: 2;
+}
+
+.badge-icon path {
+  transition: fill 0.3s ease;
+}
+
+.badge-v2 span {
+  position: relative;
+  z-index: 2;
+}
+
+.badge-v2-bg {
+  position: absolute;
+  width: 150px;
+  height: 36px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slider-body-v2 {
+  position: relative;
+  top: -37px;
+}
+
+.shimmer {
+  display: inline-block;
+  -webkit-mask: linear-gradient(-60deg, #000 30%, rgba(0, 0, 0, 0.3333333333), #000 70%) right/300% 100%;
+  background-repeat: no-repeat;
+  animation: shimmer 5s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    -webkit-mask-position: right;
+  }
+  40% {
+    -webkit-mask-position: left;
+  }
+  100% {
+    -webkit-mask-position: left;
+  }
+}
+.svg-icon-bg-anim {
+  background: linear-gradient(90deg, #fff 0%, #fff 44.5%, #c5c7fc 74%, #4e51f5 100%);
+  background-size: 200% 200%; /* Увеличиваем размер фона */
+  animation: gradientAnimation 5s ease infinite;
+  border-radius: 50%;
+}
+
 .gradient-text {
   background: linear-gradient(66deg, #9073a8 0%, #743d99 19.5%, #260046 60%, #a439ff 81.5%, #10001d 100%);
   background-size: 200% 200%; /* Увеличиваем размер фона */
@@ -2358,6 +2551,12 @@ input {
 }
 .fs__text-wrp {
   margin-bottom: 42px;
+}
+.fs__text-wrp span {
+  background: linear-gradient(66deg, #9073a8 0%, #743d99 19.5%, #260046 60%, #a439ff 81.5%, #10001d 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .fs__text-wrp .gradient-text:nth-child(1) {
   margin-left: 9px;
