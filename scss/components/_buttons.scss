@@ -1,8 +1,8 @@
-.button-container{
+.button-container {
   display: flex;
   width: 100%;
 
-  .container{
+  .container {
     // max-width: 900px;
     // margin: 0 auto;
     // position: relative;
@@ -13,11 +13,11 @@
     // transform: translateX(-50%);
   }
 
-  .button{
+  .button {
     // margin: 20px;
     float: left;
     position: relative;
-    
+
     text-transform: uppercase;
     color: #fff;
     cursor: pointer;
@@ -25,114 +25,145 @@
     justify-content: center;
 
 
-    .label{
+    .label {
       // padding: 10px;
       display: inline-block;
     }
 
     &.v1 {
 
-      .left, .right, .bottom, .top {
+      .left,
+      .right,
+      .bottom,
+      .top {
         // background: #f0202f;
-        background: linear-gradient(
-          to bottom left, /* Направление градиента */
-          #470083,       /* Начальный цвет */
-          rgba(71, 0, 131, 0) /* Конечный цвет с прозрачностью */
-        );
+        background: linear-gradient(to bottom left,
+            /* Направление градиента */
+            #470083,
+            /* Начальный цвет */
+            rgba(71, 0, 131, 0)
+            /* Конечный цвет с прозрачностью */
+          );
         position: absolute;
       }
-      .left, .right {
+
+      .left,
+      .right {
         height: 45px;
         width: 1px;
       }
-      .top, .bottom {
+
+      .top,
+      .bottom {
         height: 1px;
         width: 30px;
       }
+
       .top {
         top: 0;
         left: 0;
       }
+
       .bottom {
         bottom: 0;
         right: 0;
       }
+
       .left {
         transform: rotate(35deg);
         left: -7px;
         top: -1px;
       }
+
       .right {
         transform: rotate(35deg);
         right: -7px;
         bottom: -1px;
       }
     }
-    &.v2{
 
-      .icon{
-        &:before, &:after{
+    &.v2 {
+
+      .icon {
+
+        &:before,
+        &:after {
           content: '';
           // background: #f0202f;
-          background: linear-gradient(
-            to bottom left, /* Направление градиента */
-            #470083,       /* Начальный цвет */
-            rgba(71, 0, 131, 0) /* Конечный цвет с прозрачностью */
-          );
+          background: linear-gradient(to bottom left,
+              /* Направление градиента */
+              #470083,
+              /* Начальный цвет */
+              rgba(71, 0, 131, 0)
+              /* Конечный цвет с прозрачностью */
+            );
           position: absolute;
           display: block;
           width: 40px;
           height: 1px;
           transform: rotate(-45deg);
         }
-        &:before{
+
+        &:before {
           left: 0;
         }
-        &:after{
+
+        &:after {
           right: 0;
         }
       }
-      &:before, &:after{
+
+      &:before,
+      &:after {
         content: '';
         height: 1px;
         width: 30px;
         position: absolute;
         display: block;
         // background: #f0202f;
-        background: linear-gradient(
-          to bottom left, /* Направление градиента */
-          #470083,       /* Начальный цвет */
-          rgba(71, 0, 131, 0) /* Конечный цвет с прозрачностью */
-        );
+        background: linear-gradient(to bottom left,
+            /* Направление градиента */
+            #470083,
+            /* Начальный цвет */
+            rgba(71, 0, 131, 0)
+            /* Конечный цвет с прозрачностью */
+          );
       }
-      &:before{
+
+      &:before {
         left: 0;
       }
-      &:after{
+
+      &:after {
         right: 0;
       }
     }
-    &.v3{
 
-      &:hover{
-        .icon{
-          &:before, &:after{
+    &.v3 {
+
+      &:hover {
+        .icon {
+
+          &:before,
+          &:after {
             width: 35px;
           }
 
           span {
-            &:before, &:after {
+
+            &:before,
+            &:after {
               height: 35px;
             }
           }
         }
       }
 
-      .label{
+      .label {
         padding: 10px 22px;
       }
 
-      .icon{
+      .icon {
         display: block;
         position: absolute;
         top: 0;
@@ -141,76 +172,92 @@
         height: 100%;
         transform: skew(-40deg, 0deg);
 
-        &:before, &:after{
+        &:before,
+        &:after {
           content: '';
           height: 1px;
           width: 30px;
           position: absolute;
           display: block;
           // background: #f0202f;
-          background: linear-gradient(
-            to bottom left, /* Направление градиента */
-            #470083,       /* Начальный цвет */
-            rgba(71, 0, 131, 0) /* Конечный цвет с прозрачностью */
-          );
+          background: linear-gradient(to bottom left,
+              /* Направление градиента */
+              #470083,
+              /* Начальный цвет */
+              rgba(71, 0, 131, 0)
+              /* Конечный цвет с прозрачностью */
+            );
           transition: width 0.5s;
         }
-        &:before{
+
+        &:before {
           left: 0;
           top: 0;
         }
-        &:after{
+
+        &:after {
           right: 0;
           bottom: 0;
         }
-        span{
 
-          &:before, &:after{
+        span {
+
+          &:before,
+          &:after {
             content: '';
             // background: #f0202f;
-            background: linear-gradient(
-              to bottom left, /* Направление градиента */
-              #470083,       /* Начальный цвет */
-              rgba(71, 0, 131, 0) /* Конечный цвет с прозрачностью */
-            );
+            background: linear-gradient(to bottom left,
+                /* Направление градиента */
+                #470083,
+                /* Начальный цвет */
+                rgba(71, 0, 131, 0)
+                /* Конечный цвет с прозрачностью */
+              );
             position: absolute;
             display: block;
             width: 2px;
             height: 30px;
             transition: height 0.5s;
           }
-          &:before{
+
+          &:before {
             left: 0;
             top: 0;
           }
-          &:after{
+
+          &:after {
             right: 0;
             bottom: 0;
           }
         }
       }
     }
-    &.v4{
 
-      &:hover{
-        .icon{
-          &:before, &:after{
+    &.v4 {
+
+      &:hover {
+        .icon {
+
+          &:before,
+          &:after {
             width: 10px;
           }
 
           span {
-            &:before, &:after {
+
+            &:before,
+            &:after {
               height: 10px;
             }
           }
         }
       }
 
-      .label{
+      .label {
         padding: 10px 22px;
       }
 
-      .icon{
+      .icon {
         display: block;
         position: absolute;
         top: 0;
@@ -219,7 +266,8 @@
         height: 100%;
         transform: skew(-40deg, 0deg);
 
-        &:before, &:after{
+        &:before,
+        &:after {
           content: '';
           height: 1px;
           width: 30px;
@@ -228,17 +276,21 @@
           background: #f0202f;
           transition: width 0.5s;
         }
-        &:before{
+
+        &:before {
           left: 0;
           top: 0;
         }
-        &:after{
+
+        &:after {
           right: 0;
           bottom: 0;
         }
-        span{
 
-          &:before, &:after{
+        span {
+
+          &:before,
+          &:after {
             content: '';
             background: #f0202f;
             position: absolute;
@@ -247,40 +299,46 @@
             height: 30px;
             transition: height 0.5s;
           }
-          &:before{
+
+          &:before {
             left: 0;
             top: 0;
           }
-          &:after{
+
+          &:after {
             right: 0;
             bottom: 0;
           }
         }
       }
     }
-    &.v5{
 
-      &:hover{
-        .icon{
+    &.v5 {
+
+      &:hover {
+        .icon {
           transform: scale(0.8);
 
-          &:before, &:after{
+          &:before,
+          &:after {
             width: 20px;
           }
 
           span {
-            &:before, &:after {
+
+            &:before,
+            &:after {
               height: 20px;
             }
           }
         }
       }
 
-      .label{
+      .label {
         padding: 10px 22px;
       }
 
-      .icon{
+      .icon {
         display: block;
         position: absolute;
         top: 0;
@@ -288,9 +346,10 @@
         width: 100%;
         height: 100%;
         transform: skew(-40deg, 0deg);
-        transition:all 0.5s;
+        transition: all 0.5s;
 
-        &:before, &:after{
+        &:before,
+        &:after {
           content: '';
           height: 1px;
           width: 30px;
@@ -299,17 +358,21 @@
           background: #f0202f;
           transition: width 0.5s;
         }
-        &:before{
+
+        &:before {
           left: 0;
           top: 0;
         }
-        &:after{
+
+        &:after {
           right: 0;
           bottom: 0;
         }
-        span{
 
-          &:before, &:after{
+        span {
+
+          &:before,
+          &:after {
             content: '';
             background: #f0202f;
             position: absolute;
@@ -318,40 +381,46 @@
             height: 30px;
             transition: height 0.5s;
           }
-          &:before{
+
+          &:before {
             left: 0;
             top: 0;
           }
-          &:after{
+
+          &:after {
             right: 0;
             bottom: 0;
           }
         }
       }
     }
-    &.v6{
 
-      &:hover{
-        .icon{
+    &.v6 {
+
+      &:hover {
+        .icon {
           transform: scale(0.9);
 
-          &:before, &:after{
+          &:before,
+          &:after {
             width: 100%;
           }
 
           span {
-            &:before, &:after {
+
+            &:before,
+            &:after {
               height: 100%;
             }
           }
         }
       }
 
-      .label{
+      .label {
         padding: 10px 22px;
       }
 
-      .icon{
+      .icon {
         display: block;
         position: absolute;
         top: 0;
@@ -361,7 +430,8 @@
         transform: skew(-40deg, 0deg);
         transition: all 0.5s;
 
-        &:before, &:after{
+        &:before,
+        &:after {
           content: '';
           height: 1px;
           width: 30px;
@@ -370,17 +440,21 @@
           background: #f0202f;
           transition: width 0.5s;
         }
-        &:before{
+
+        &:before {
           left: 0;
           top: 0;
         }
-        &:after{
+
+        &:after {
           right: 0;
           bottom: 0;
         }
-        span{
 
-          &:before, &:after{
+        span {
+
+          &:before,
+          &:after {
             content: '';
             background: #f0202f;
             position: absolute;
@@ -389,40 +463,46 @@
             height: 30px;
             transition: height 0.5s;
           }
-          &:before{
+
+          &:before {
             left: 0;
             top: 0;
           }
-          &:after{
+
+          &:after {
             right: 0;
             bottom: 0;
           }
         }
       }
     }
-    &.v7{
 
-      &:hover{
-        .icon{
+    &.v7 {
+
+      &:hover {
+        .icon {
           transform: scale(0.9) skew(-40deg, 0deg);
 
-          &:before, &:after{
+          &:before,
+          &:after {
             width: 100%;
           }
 
           span {
-            &:before, &:after {
+
+            &:before,
+            &:after {
               height: 100%;
             }
           }
         }
       }
 
-      .label{
+      .label {
         padding: 10px 22px;
       }
 
-      .icon{
+      .icon {
         display: block;
         position: absolute;
         top: 0;
@@ -432,7 +512,8 @@
         transform: skew(-40deg, 0deg);
         transition: all 0.5s;
 
-        &:before, &:after{
+        &:before,
+        &:after {
           content: '';
           height: 1px;
           width: 30px;
@@ -441,17 +522,21 @@
           background: #f0202f;
           transition: width 0.5s;
         }
-        &:before{
+
+        &:before {
           left: 0;
           top: 0;
         }
-        &:after{
+
+        &:after {
           right: 0;
           bottom: 0;
         }
-        span{
 
-          &:before, &:after{
+        span {
+
+          &:before,
+          &:after {
             content: '';
             background: #f0202f;
             position: absolute;
@@ -460,40 +545,46 @@
             height: 30px;
             transition: height 0.5s;
           }
-          &:before{
+
+          &:before {
             left: 0;
             top: 0;
           }
-          &:after{
+
+          &:after {
             right: 0;
             bottom: 0;
           }
         }
       }
     }
-    &.v8{
 
-      &:hover{
-        .icon{
+    &.v8 {
+
+      &:hover {
+        .icon {
           transform: scale(1.1) skew(-40deg, 0deg);
 
-          &:before, &:after{
+          &:before,
+          &:after {
             width: 100%;
           }
 
           span {
-            &:before, &:after {
+
+            &:before,
+            &:after {
               height: 100%;
             }
           }
         }
       }
 
-      .label{
+      .label {
         padding: 10px 22px;
       }
 
-      .icon{
+      .icon {
         display: block;
         position: absolute;
         top: 0;
@@ -503,7 +594,8 @@
         transform: skew(-40deg, 0deg);
         transition: all 0.5s;
 
-        &:before, &:after{
+        &:before,
+        &:after {
           content: '';
           height: 1px;
           width: 30px;
@@ -512,17 +604,21 @@
           background: #f0202f;
           transition: width 0.5s;
         }
-        &:before{
+
+        &:before {
           left: 0;
           top: 0;
         }
-        &:after{
+
+        &:after {
           right: 0;
           bottom: 0;
         }
-        span{
 
-          &:before, &:after{
+        span {
+
+          &:before,
+          &:after {
             content: '';
             background: #f0202f;
             position: absolute;
@@ -531,40 +627,46 @@
             height: 30px;
             transition: height 0.5s;
           }
-          &:before{
+
+          &:before {
             left: 0;
             top: 0;
           }
-          &:after{
+
+          &:after {
             right: 0;
             bottom: 0;
           }
         }
       }
     }
-    &.v9{
 
-      &:hover{
-        .icon{
+    &.v9 {
+
+      &:hover {
+        .icon {
           transform: scale(1.1) skew(-40deg, 0deg);
 
-          &:before, &:after{
+          &:before,
+          &:after {
             width: 100%;
           }
 
           span {
-            &:before, &:after {
+
+            &:before,
+            &:after {
               height: 100%;
             }
           }
         }
       }
 
-      .label{
+      .label {
         padding: 10px 22px;
       }
 
-      .icon{
+      .icon {
         display: block;
         position: absolute;
         top: 0;
@@ -575,7 +677,8 @@
         transition: all 0.2s;
         transition-delay: 0.2s;
 
-        &:before, &:after{
+        &:before,
+        &:after {
           content: '';
           height: 1px;
           width: 30px;
@@ -584,17 +687,21 @@
           background: #f0202f;
           transition: width 0.2s;
         }
-        &:before{
+
+        &:before {
           left: 0;
           top: 0;
         }
-        &:after{
+
+        &:after {
           right: 0;
           bottom: 0;
         }
-        span{
 
-          &:before, &:after{
+        span {
+
+          &:before,
+          &:after {
             content: '';
             background: #f0202f;
             position: absolute;
@@ -603,11 +710,13 @@
             height: 30px;
             transition: height 0.2s;
           }
-          &:before{
+
+          &:before {
             left: 0;
             top: 0;
           }
-          &:after{
+
+          &:after {
             right: 0;
             bottom: 0;
           }
@@ -615,30 +724,33 @@
       }
     }
 
-    &.v10{
+    &.v10 {
 
-      &:hover{
-        .icon{
+      &:hover {
+        .icon {
           transform: scale(0.9) skew(0deg, 0deg);
 
-          &:before, &:after{
+          &:before,
+          &:after {
             width: 100%;
           }
 
           span {
-            &:before, &:after {
+
+            &:before,
+            &:after {
               height: 100%;
             }
           }
         }
       }
 
-      .label{
+      .label {
         // padding: 10px 22px;
         // padding: 13px 24px;
       }
 
-      .icon{
+      .icon {
         display: block;
         position: absolute;
         top: 0;
@@ -649,47 +761,50 @@
         transition: all 0.2s;
         transition-delay: 0.2s;
 
-        &:before, &:after{
+        &:before,
+        &:after {
           content: '';
           height: 2px;
           width: 116px;
           position: absolute;
           display: block;
-          background: linear-gradient(
-            to bottom left,
-            #470083,      
-            rgba(71, 0, 131, 0)
-          );
+          background: linear-gradient(to bottom left,
+              #470083,
+              rgba(71, 0, 131, 0));
           transition: width 0.2s;
         }
-        &:before{
+
+        &:before {
           left: 0;
           top: 0;
         }
-        &:after{
+
+        &:after {
           right: 0;
           bottom: 0;
         }
-        span{
 
-          &:before, &:after{
+        span {
+
+          &:before,
+          &:after {
             content: '';
-            background: linear-gradient(
-              to bottom left,
-              #470083,
-              rgba(71, 0, 131, 0)
-            );
+            background: linear-gradient(to bottom left,
+                #470083,
+                rgba(71, 0, 131, 0));
             position: absolute;
             display: block;
             width: 2px;
             height: 50px;
             transition: height 0.2s;
           }
-          &:before{
+
+          &:before {
             left: 0;
             top: 0;
           }
-          &:after{
+
+          &:after {
             right: 0;
             bottom: 0;
           }
@@ -697,29 +812,32 @@
       }
     }
 
-    &.v11{
+    &.v11 {
 
-      &:hover{
-        .icon{
+      &:hover {
+        .icon {
           transform: scale(0.9) skew(0deg, 0deg);
 
-          &:before, &:after{
+          &:before,
+          &:after {
             width: 100%;
           }
 
           span {
-            &:before, &:after {
+
+            &:before,
+            &:after {
               height: 100%;
             }
           }
         }
       }
 
-      .label{
+      .label {
         padding: 10px 22px;
       }
 
-      .icon{
+      .icon {
         display: block;
         position: absolute;
         top: 0;
@@ -729,7 +847,8 @@
         transform: skew(-40deg, 0deg);
         transition: all 0.2s;
 
-        &:before, &:after{
+        &:before,
+        &:after {
           content: '';
           height: 1px;
           width: 30px;
@@ -739,17 +858,21 @@
           transition: width 0.2s;
           transition-delay: 0.2s;
         }
-        &:before{
+
+        &:before {
           left: 0;
           top: 0;
         }
-        &:after{
+
+        &:after {
           right: 0;
           bottom: 0;
         }
-        span{
 
-          &:before, &:after{
+        span {
+
+          &:before,
+          &:after {
             content: '';
             background: #f0202f;
             position: absolute;
@@ -759,11 +882,13 @@
             transition: height 0.2s;
             transition-delay: 0.2s;
           }
-          &:before{
+
+          &:before {
             left: 0;
             top: 0;
           }
-          &:after{
+
+          &:after {
             right: 0;
             bottom: 0;
           }
@@ -771,32 +896,35 @@
       }
     }
 
-    &.v12{
+    &.v12 {
 
-      &:hover{
-        .icon{
+      &:hover {
+        .icon {
           transform: scale(0.9) skew(0deg, 0deg);
 
-          &:before{
+          &:before {
             width: 0;
           }
-          &:after{
+
+          &:after {
             width: 100%;
           }
 
           span {
-            &:before, &:after {
+
+            &:before,
+            &:after {
               height: 0;
             }
           }
         }
       }
 
-      .label{
+      .label {
         padding: 10px 22px;
       }
 
-      .icon{
+      .icon {
         display: block;
         position: absolute;
         top: 0;
@@ -806,7 +934,8 @@
         transform: skew(-40deg, 0deg);
         transition: all 0.2s;
 
-        &:before, &:after{
+        &:before,
+        &:after {
           content: '';
           height: 1px;
           width: 30px;
@@ -816,17 +945,21 @@
           transition: width 0.2s;
           transition-delay: 0.2s;
         }
-        &:before{
+
+        &:before {
           left: 0;
           top: 0;
         }
-        &:after{
+
+        &:after {
           right: 0;
           bottom: 0;
         }
-        span{
 
-          &:before, &:after{
+        span {
+
+          &:before,
+          &:after {
             content: '';
             background: #f0202f;
             position: absolute;
@@ -836,11 +969,13 @@
             transition: height 0.2s;
             transition-delay: 0.2s;
           }
-          &:before{
+
+          &:before {
             left: 0;
             top: 0;
           }
-          &:after{
+
+          &:after {
             right: 0;
             bottom: 0;
           }
@@ -848,33 +983,36 @@
       }
     }
 
-    &.v12{
+    &.v12 {
 
-      &:hover{
-        .icon{
+      &:hover {
+        .icon {
           transform: scale(0.9) skew(0deg, 0deg);
 
-          &:before{
+          &:before {
             width: 0;
           }
-          &:after{
+
+          &:after {
             width: 50%;
             right: 25%;
           }
 
           span {
-            &:before, &:after {
+
+            &:before,
+            &:after {
               height: 0;
             }
           }
         }
       }
 
-      .label{
+      .label {
         padding: 10px 22px;
       }
 
-      .icon{
+      .icon {
         display: block;
         position: absolute;
         top: 0;
@@ -884,7 +1022,8 @@
         transform: skew(-40deg, 0deg);
         transition: all 0.2s;
 
-        &:before, &:after{
+        &:before,
+        &:after {
           content: '';
           height: 1px;
           width: 30px;
@@ -894,17 +1033,21 @@
           transition: all 0.2s;
           transition-delay: 0.2s;
         }
-        &:before{
+
+        &:before {
           left: 0;
           top: 0;
         }
-        &:after{
+
+        &:after {
           right: 0;
           bottom: 0;
         }
-        span{
 
-          &:before, &:after{
+        span {
+
+          &:before,
+          &:after {
             content: '';
             background: #f0202f;
             position: absolute;
@@ -914,11 +1057,13 @@
             transition: all 0.2s;
             transition-delay: 0.2s;
           }
-          &:before{
+
+          &:before {
             left: 0;
             top: 0;
           }
-          &:after{
+
+          &:after {
             right: 0;
             bottom: 0;
           }
@@ -926,35 +1071,40 @@
       }
     }
 
-    &.v13{
+    &.v13 {
 
-      &:hover{
-        .icon{
+      &:hover {
+        .icon {
           transform: scale(0.9) skew(0deg, 0deg);
 
-          &:before, &:after{
+          &:before,
+          &:after {
             width: 60px;
           }
-          &:before{
+
+          &:before {
             left: calc(50% - 30px);
           }
-          &:after{
+
+          &:after {
             right: calc(50% - 30px);
           }
 
           span {
-            &:before, &:after {
+
+            &:before,
+            &:after {
               height: 0;
             }
           }
         }
       }
 
-      .label{
+      .label {
         padding: 10px 22px;
       }
 
-      .icon{
+      .icon {
         display: block;
         position: absolute;
         top: 0;
@@ -964,7 +1114,8 @@
         transform: skew(-40deg, 0deg);
         transition: all 0.2s;
 
-        &:before, &:after{
+        &:before,
+        &:after {
           content: '';
           height: 1px;
           width: 30px;
@@ -974,17 +1125,21 @@
           transition: all 0.2s;
           transition-delay: 0.4s;
         }
-        &:before{
+
+        &:before {
           left: 0;
           top: 0;
         }
-        &:after{
+
+        &:after {
           right: 0;
           bottom: 0;
         }
-        span{
 
-          &:before, &:after{
+        span {
+
+          &:before,
+          &:after {
             content: '';
             background: #f0202f;
             position: absolute;
@@ -994,11 +1149,13 @@
             transition: all 0.2s;
             transition-delay: 0.2s;
           }
-          &:before{
+
+          &:before {
             left: 0;
             top: 0;
           }
-          &:after{
+
+          &:after {
             right: 0;
             bottom: 0;
           }
@@ -1006,25 +1163,30 @@
       }
     }
 
-    &.v14{
+    &.v14 {
 
-      &:hover{
-        .icon{
+      &:hover {
+        .icon {
           transform: scale(0.9) skew(0deg, 0deg);
 
-          &:before, &:after{
+          &:before,
+          &:after {
             width: 60px;
             transition-delay: 0.4s;
           }
-          &:before{
+
+          &:before {
             left: calc(50% - 30px);
           }
-          &:after{
+
+          &:after {
             right: calc(50% - 30px);
           }
 
           span {
-            &:before, &:after {
+
+            &:before,
+            &:after {
               height: 0;
               transition-delay: 0s;
             }
@@ -1032,11 +1194,11 @@
         }
       }
 
-      .label{
+      .label {
         padding: 10px 22px;
       }
 
-      .icon{
+      .icon {
         display: block;
         position: absolute;
         top: 0;
@@ -1046,7 +1208,8 @@
         transform: skew(-40deg, 0deg);
         transition: all 0.2s;
 
-        &:before, &:after{
+        &:before,
+        &:after {
           content: '';
           height: 1px;
           width: 30px;
@@ -1056,17 +1219,21 @@
           transition: all 0.2s;
           transition-delay: 0s;
         }
-        &:before{
+
+        &:before {
           left: 0;
           top: 0;
         }
-        &:after{
+
+        &:after {
           right: 0;
           bottom: 0;
         }
-        span{
 
-          &:before, &:after{
+        span {
+
+          &:before,
+          &:after {
             content: '';
             background: #f0202f;
             position: absolute;
@@ -1076,11 +1243,13 @@
             transition: all 0.2s;
             transition-delay: 0.4s;
           }
-          &:before{
+
+          &:before {
             left: 0;
             top: 0;
           }
-          &:after{
+
+          &:after {
             right: 0;
             bottom: 0;
           }
@@ -1088,41 +1257,48 @@
       }
     }
 
-    &.v15{
+    &.v15 {
 
-      &:hover{
-        .icon{
+      &:hover {
+        .icon {
           transform: scale(0.9) skew(0deg, 0deg);
 
-          &:before, &:after{
+          &:before,
+          &:after {
             width: 60px;
           }
-          &:before{
+
+          &:before {
             left: calc(50% - 30px);
           }
-          &:after{
+
+          &:after {
             right: calc(50% - 30px);
           }
 
           span {
-            &:before, &:after {
+
+            &:before,
+            &:after {
               height: calc(100% - 20px);
             }
-            &:before{
+
+            &:before {
               top: 10px;
             }
-            &:after{
+
+            &:after {
               bottom: 10px;
             }
           }
         }
       }
 
-      .label{
+      .label {
         padding: 10px 22px;
       }
 
-      .icon{
+      .icon {
         display: block;
         position: absolute;
         top: 0;
@@ -1132,7 +1308,8 @@
         transform: skew(-40deg, 0deg);
         transition: all 0.2s;
 
-        &:before, &:after{
+        &:before,
+        &:after {
           content: '';
           height: 1px;
           width: 30px;
@@ -1142,17 +1319,21 @@
           transition: all 0.2s;
           transition-delay: 0.2s;
         }
-        &:before{
+
+        &:before {
           left: 0;
           top: 0;
         }
-        &:after{
+
+        &:after {
           right: 0;
           bottom: 0;
         }
-        span{
 
-          &:before, &:after{
+        span {
+
+          &:before,
+          &:after {
             content: '';
             background: #f0202f;
             position: absolute;
@@ -1162,11 +1343,13 @@
             transition: all 0.2s;
             transition-delay: 0.2s;
           }
-          &:before{
+
+          &:before {
             left: 0;
             top: 0;
           }
-          &:after{
+
+          &:after {
             right: 0;
             bottom: 0;
           }
@@ -1174,30 +1357,36 @@
       }
     }
 
-    &.v16{
+    &.v16 {
 
-      &:hover{
-        .icon{
-          &:before, &:after{
+      &:hover {
+        .icon {
+
+          &:before,
+          &:after {
             width: 100%;
           }
 
           span {
-            &:before, &:after {
+
+            &:before,
+            &:after {
               height: 100%;
             }
           }
         }
-        .icon2{
+
+        .icon2 {
           transform: skew(-40deg, 0deg) scaleX(1);
           background: #f0202f;
           z-index: -1;
         }
       }
 
-      .label{
+      .label {
         padding: 10px 22px;
       }
+
       .icon2 {
         display: block;
         position: absolute;
@@ -1210,7 +1399,7 @@
         transition-delay: 0.2s;
       }
 
-      .icon{
+      .icon {
         display: block;
         position: absolute;
         top: 0;
@@ -1220,7 +1409,8 @@
         transform: skew(-40deg, 0deg);
         transition: all 0.2s;
 
-        &:before, &:after{
+        &:before,
+        &:after {
           content: '';
           height: 1px;
           width: 30px;
@@ -1230,17 +1420,21 @@
           transition: all 0.2s;
           transition-delay: 0.2s;
         }
-        &:before{
+
+        &:before {
           left: 0;
           top: 0;
         }
-        &:after{
+
+        &:after {
           right: 0;
           bottom: 0;
         }
-        span{
 
-          &:before, &:after{
+        span {
+
+          &:before,
+          &:after {
             content: '';
             background: #f0202f;
             position: absolute;
@@ -1250,11 +1444,13 @@
             transition: all 0.2s;
             transition-delay: 0.2s;
           }
-          &:before{
+
+          &:before {
             left: 0;
             top: 0;
           }
-          &:after{
+
+          &:after {
             right: 0;
             bottom: 0;
           }
@@ -1262,30 +1458,36 @@
       }
     }
 
-    &.v17{
+    &.v17 {
 
-      &:hover{
-        .icon{
-          &:before, &:after{
+      &:hover {
+        .icon {
+
+          &:before,
+          &:after {
             width: 100%;
           }
 
           span {
-            &:before, &:after {
+
+            &:before,
+            &:after {
               height: 100%;
             }
           }
         }
-        .icon2{
+
+        .icon2 {
           transform: skew(-40deg, 0deg) scale(1);
           background: #f0202f;
           z-index: -1;
         }
       }
 
-      .label{
+      .label {
         padding: 10px 22px;
       }
+
       .icon2 {
         display: block;
         position: absolute;
@@ -1298,7 +1500,7 @@
         transition-delay: 0.2s;
       }
 
-      .icon{
+      .icon {
         display: block;
         position: absolute;
         top: 0;
@@ -1308,7 +1510,8 @@
         transform: skew(-40deg, 0deg);
         transition: all 0.2s;
 
-        &:before, &:after{
+        &:before,
+        &:after {
           content: '';
           height: 1px;
           width: 30px;
@@ -1318,17 +1521,21 @@
           transition: all 0.2s;
           transition-delay: 0.2s;
         }
-        &:before{
+
+        &:before {
           left: 0;
           top: 0;
         }
-        &:after{
+
+        &:after {
           right: 0;
           bottom: 0;
         }
-        span{
 
-          &:before, &:after{
+        span {
+
+          &:before,
+          &:after {
             content: '';
             background: #f0202f;
             position: absolute;
@@ -1338,11 +1545,13 @@
             transition: all 0.2s;
             transition-delay: 0.2s;
           }
-          &:before{
+
+          &:before {
             left: 0;
             top: 0;
           }
-          &:after{
+
+          &:after {
             right: 0;
             bottom: 0;
           }
@@ -1350,31 +1559,37 @@
       }
     }
 
-    &.v18{
+    &.v18 {
 
-      &:hover{
-        .icon{
+      &:hover {
+        .icon {
           transform: scale(0.9) skew(0deg, 0deg);
 
-          &:before, &:after{
+          &:before,
+          &:after {
             width: 60px;
             transition-delay: 0.4s;
           }
-          &:before{
+
+          &:before {
             left: calc(50% - 30px);
           }
-          &:after{
+
+          &:after {
             right: calc(50% - 30px);
           }
 
           span {
-            &:before, &:after {
+
+            &:before,
+            &:after {
               height: 0;
               transition-delay: 0s;
             }
           }
         }
-        .icon2{
+
+        .icon2 {
           transform: skew(-40deg, 0deg) scaleX(1);
           background: #f0202f;
           z-index: -1;
@@ -1382,7 +1597,7 @@
         }
       }
 
-      .label{
+      .label {
         padding: 10px 22px;
       }
 
@@ -1397,7 +1612,7 @@
         transition: all 0.2s;
       }
 
-      .icon{
+      .icon {
         display: block;
         position: absolute;
         top: 0;
@@ -1407,7 +1622,8 @@
         transform: skew(-40deg, 0deg);
         transition: all 0.2s;
 
-        &:before, &:after{
+        &:before,
+        &:after {
           content: '';
           height: 1px;
           width: 30px;
@@ -1417,17 +1633,21 @@
           transition: all 0.2s;
           transition-delay: 0s;
         }
-        &:before{
+
+        &:before {
           left: 0;
           top: 0;
         }
-        &:after{
+
+        &:after {
           right: 0;
           bottom: 0;
         }
-        span{
 
-          &:before, &:after{
+        span {
+
+          &:before,
+          &:after {
             content: '';
             background: #f0202f;
             position: absolute;
@@ -1437,11 +1657,13 @@
             transition: all 0.2s;
             transition-delay: 0.4s;
           }
-          &:before{
+
+          &:before {
             left: 0;
             top: 0;
           }
-          &:after{
+
+          &:after {
             right: 0;
             bottom: 0;
           }
@@ -1449,10 +1671,10 @@
       }
     }
 
-    &.v19{
+    &.v19 {
       .label {
         padding: 10px 30px;
-        
+
         font-size: 14px;
         display: inline-block;
         z-index: 10;
@@ -1464,8 +1686,8 @@
         letter-spacing: 2px;
       }
 
-      &.button-start{
-        .label{
+      &.button-start {
+        .label {
           padding: 12px 65px;
         }
       }
@@ -1494,7 +1716,8 @@
         transform: scale(0.9) skew(0deg, 0deg);
         transition-delay: 0.15s;
 
-        &:before, &:after {
+        &:before,
+        &:after {
           width: 60px;
           opacity: 0;
           content: '';
@@ -1505,17 +1728,21 @@
           transition: all 0.375s;
           transition-delay: 0.3s;
         }
+
         &:before {
           top: 0;
           left: calc(50% - 30px);
         }
+
         &:after {
           bottom: 0;
           right: calc(50% - 30px);
         }
+
         span {
 
-          &:before, &:after {
+          &:before,
+          &:after {
             height: 0;
             transition-delay: 0s;
             content: '';
@@ -1525,39 +1752,48 @@
             width: 2px;
             transition: all 0.225s;
           }
+
           &:before {
             left: 0;
             top: 0;
           }
+
           &:after {
             right: 0;
             bottom: 0;
           }
         }
       }
+
       &:hover {
         .icon {
           transform: skew(-40deg, 0deg);
 
-          &:before, &:after {
+          &:before,
+          &:after {
             transition-delay: 0s;
             width: 30px;
             opacity: 1;
           }
+
           &:before {
             left: 0;
           }
+
           &:after {
             right: 0;
           }
 
           span {
-            &:before, &:after {
+
+            &:before,
+            &:after {
               height: 30px;
               transition-delay: 0.45s;
             }
           }
         }
+
         .icon2 {
           transform: skew(-40deg, 0deg) scaleX(0.2);
           background: transparent;
@@ -1566,66 +1802,82 @@
         }
       }
 
-      &.white{
+      &.white {
 
         &:hover {
-          .label{
+          .label {
             color: #fff;
             transition-delay: 0s;
           }
         }
+
         .icon2 {
           background: #fff;
         }
+
         .icon {
 
-          &:before, &:after {
+          &:before,
+          &:after {
             background: #fff;
           }
+
           span {
-            &:before, &:after {
+
+            &:before,
+            &:after {
               background: #fff;
             }
           }
         }
       }
-      &.labelred{
-        .label{
+
+      &.labelred {
+        .label {
           // color: #f0202f;
           color: grey;
-          
+
         }
       }
-      &.labelgray{
-        .label{
+
+      &.labelgray {
+        .label {
           color: #1D1D1D;
         }
       }
-      &.transparent{
+
+      &.transparent {
         float: none;
         display: inline-block;
         -webkit-transform: translateZ(0px);
         transform: translateZ(0px);
 
-        .label{
+        .label {
           color: #fff;
           transition-delay: 0s;
         }
+
         .icon2 {
           background: transparent;
         }
+
         .icon {
           transform: scale(1) skew(10deg, 0deg);
 
-          &:before, &:after {
+          &:before,
+          &:after {
             background: #fff;
           }
+
           span {
-            &:before, &:after {
+
+            &:before,
+            &:after {
               background: #fff;
             }
           }
         }
+
         &:hover {
           .icon {
             transform: scale(1) skew(-40deg, 0deg);
@@ -1637,32 +1889,32 @@
 }
 
 .button__notification {
-  .button.v12{
+  .button.v12 {
     width: 185px;
     height: 49px;
     margin-left: auto;
     margin-right: 9px;
 
-    .icon{
+    .icon {
       transform: skew(-18deg, 0deg);
       top: -1px;
-  
-      &:before, &:after{
+
+      &:before,
+      &:after {
         height: 2px;
         width: 99px;
-        background: linear-gradient(
-          to bottom left,
-          #470083,      
-          rgba(71, 0, 131, 0)
-        );
-      }
-      span{
-        &:before, &:after{
-          background: linear-gradient(
-            to bottom left,
+        background: linear-gradient(to bottom left,
             #470083,
-            rgba(71, 0, 131, 0)
-          );
+            rgba(71, 0, 131, 0));
+      }
+
+      span {
+
+        &:before,
+        &:after {
+          background: linear-gradient(to bottom left,
+              #470083,
+              rgba(71, 0, 131, 0));
           width: 2px;
           height: 50px;
         }
@@ -1670,11 +1922,11 @@
     }
   }
 
-  .label{
+  .label {
     padding: 14px 24px;
   }
 
-  span{
+  span {
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 18px;
@@ -1685,29 +1937,34 @@
   }
 }
 
-.button-address{
-  .button{
+.button-address {
+  .button {
     width: 717px;
     position: relative;
   }
-  .button.v6{
+
+  .button.v6 {
     height: 49px;
-   
-    .icon{
+
+    .icon {
       top: 3px;
       transform: skew(-18deg, 0deg);
 
-      &:before{
+      &:before {
         top: -2px;
       }
 
-      &:before, &:after{
+      &:before,
+      &:after {
         height: 2px;
         width: 99px;
         background: #4E51F5;
       }
-      span{
-        &:before, &:after{
+
+      span {
+
+        &:before,
+        &:after {
           background: #4E51F5;
           width: 2px;
           height: 50px;
@@ -1716,7 +1973,7 @@
     }
   }
 
-  .button-address__icon{
+  .button-address__icon {
     width: 24px;
     height: 24px;
     position: absolute;
@@ -1724,12 +1981,12 @@
     left: 205px;
   }
 
-  .label{
+  .label {
     padding: 15px 22px !important;
     margin-left: 29px;
   }
 
-  span{
+  span {
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 18px;
@@ -1739,63 +1996,70 @@
   }
 }
 
-.button-address-mini{
-  .button{
+.button-address-mini {
+  .button {
     width: 347px;
     margin-left: 4px;
     position: relative;
-  } 
-  .button-address__icon{
+  }
+
+  .button-address__icon {
     top: 12px;
     left: 95px;
   }
-  .label{
+
+  .label {
     padding: 14px 20px !important;
     margin-left: 37px;
   }
-  .button.v6 .icon{
+
+  .button.v6 .icon {
     top: 1px;
   }
 }
 
-.button-delete{
-  .button{
+.button-delete {
+  .button {
     width: 345px;
     margin-left: 0px;
     position: relative;
   }
 
-  .label{
+  .label {
     padding: 13px 22px !important;
     margin-left: 9px;
     color: $error-color;
   }
 
-  .button-address__icon{
+  .button-address__icon {
     width: 24px;
     height: 24px;
     top: 12px;
     left: 23px;
   }
 
-  .button.v4{
+  .button.v4 {
     height: 49px;
-   
-    .icon{
+
+    .icon {
       top: 0px;
       transform: skew(-18deg, 0deg);
 
-      &:before{
+      &:before {
         top: -2px;
       }
 
-      &:before, &:after{
+      &:before,
+      &:after {
         height: 2px;
         width: 99px;
         background: $error-color;
       }
-      span{
-        &:before, &:after{
+
+      span {
+
+        &:before,
+        &:after {
           background: $error-color;
           width: 2px;
           height: 50px;
@@ -1803,4 +2067,26 @@
       }
     }
   }
+}
+
+.footer__btn{
+  width: 296px;
+  height: 51px;
+  margin-left: 9px;
+}
+.footer__btn .button.v12{
+  width: 100%;
+  height: 100%;
+}
+.footer__btn .button.v12 .label{
+  padding: 13px 25px;
+  margin-left: 30px;
+}
+
+.footer__btn .button-icon{
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 61px;
+  top: 13px;
 }

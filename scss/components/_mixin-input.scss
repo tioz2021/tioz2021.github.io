@@ -1,0 +1,43 @@
+.mixin-input {
+  margin-bottom: 36px;
+  position: relative;
+
+  // .mixin-input__input-wrp
+  &__input-wrp {
+    width: 462px;
+    height: 50px;
+    position: relative;
+    
+    // .mixin-input__input-wrp input
+    input{
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      padding-left: 36px;
+      position: relative;
+      z-index: 2;
+      background-color: unset;
+      border: unset;
+    }
+  }
+
+  // .mixin-input__input-bg
+  &__input-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  // .mixin-input__text
+  &__text {
+    position: absolute;
+    right: -18px;
+    color: #470083;
+    transform: rotate(-54deg);
+    top: 18px;
+  }
+}

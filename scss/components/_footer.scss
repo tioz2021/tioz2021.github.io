@@ -1,0 +1,137 @@
+.footer {
+  background-color: rgba(78, 81, 245, 0.06);
+  box-sizing: border-box;
+  padding-top: 50px;
+  padding-bottom: 70px;
+
+  // .footer__container
+  &__container {
+    flex-direction: column;
+  }
+
+  // .footer__start
+  &__start {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    
+    height: 50px;
+  }
+
+  // .footer__logo
+  &__logo {
+    font-family: $second-font;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 120%;
+    color: $body-3-color;
+  }
+
+  // .footer__menu
+  &__menu {
+  }
+
+  // .footer__lng-switcher
+  &__lng-switcher {
+    background-color: rgba(78, 81, 245, 0.06);
+  }
+
+  // .footer__end
+  &__end {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 36px;
+  }
+
+  // .footer__end-box
+  &__end-box{
+    width: 588px;
+    min-height: 286px;
+    background-color: $body-1-color;
+    border: 1px solid rgba(78, 81, 245, 0.6);
+    clip-path: polygon(0 50px, 50px 0, calc(100% - 0px) 0, 100% 50px, 100% calc(100% - 50px), calc(100% - 50px) 100%, 0px 100%, 0 calc(120% - 50px));
+    box-sizing: border-box;
+    padding: 35px;
+    position: relative;
+  }
+
+  // .footer__end-left
+  &__end-left {
+  }
+
+  // .footer__text-wrp
+  &__text-wrp {
+    margin-bottom: 27px;
+  }
+
+  // .footer__text
+  &__text {
+    margin-bottom: 18px;
+  }
+
+  // .footer__link
+  &__link {
+    color: $body-4-color;
+  }
+
+  // .footer__end-right
+  &__end-right {
+
+    // .footer__end-right .footer__text
+    .footer__text {
+      margin-bottom: 29px;
+    }
+  }
+
+  // .footer__24-box
+  &__24-box {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    border-radius: 25px;
+    width: 64px;
+    height: 36px;
+    background: #edeefe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  // .footer__link-str
+  &__link-str {
+    display: block;
+    color: $body-4-color;
+    margin-bottom: 28px;
+  }
+  
+  // .footer__btn
+  &__btn{
+    margin-bottom: 24px;
+  }
+
+  // .footer__link-last
+  &__link-last {
+    margin-bottom: 0;
+  }
+
+  // .footer__desc-text
+  &__desc-text {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #7b7985;
+  }
+
+
+  // .footer a
+  a{
+    transition: color 300ms ease-in-out;
+    
+    // .footer a:hover
+    &:hover{
+      color: $body-3-color;
+    }
+  }
+}

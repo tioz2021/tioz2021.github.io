@@ -1,7 +1,7 @@
 // main menu hover effect
 (() => {
-  const menuItems = document.querySelectorAll('.main-menu__list-item');
-  const underline = document.querySelector('.main-menu__list-underline');
+  const menuItems = document.querySelectorAll('.header__menu .main-menu__list-item');
+  const underline = document.querySelector('.header__menu .main-menu__list-underline');
   
   menuItems.forEach((item) => {
     item.addEventListener('mouseenter', (e) => {
@@ -12,6 +12,21 @@
   
     item.addEventListener('mouseleave', () => {
       underline.style.width = '0';
+    });
+  });
+
+  const menuItems2 = document.querySelectorAll('.footer__menu .main-menu__list-item');
+  const underline2 = document.querySelector('.footer__menu .main-menu__list-underline');
+  
+  menuItems2.forEach((item) => {
+    item.addEventListener('mouseenter', (e) => {
+      const { offsetLeft, offsetWidth } = e.target;
+      underline2.style.left = `${offsetLeft}px`;
+      underline2.style.width = `${offsetWidth}px`;
+    });
+  
+    item.addEventListener('mouseleave', () => {
+      underline2.style.width = '0';
     });
   });
 }) ();
@@ -167,4 +182,19 @@
   }
   
   document.querySelector('.slider-input-v2').dispatchEvent(new Event('input'));
-}) ()
+}) ();
+
+(() => {
+  const btnFlip = document.querySelector('.btn-flip');
+  if(!btnFlip) return;
+  const btnFlipIcon = document.querySelector('.btn-flip .btn-icon');
+
+  btnFlip.addEventListener('mouseenter', (e) => {
+    btnFlipIcon.classList.add('btn-flip-hover1');
+    btnFlipIcon.classList.remove('btn-flip-hover2');
+  });
+  btnFlip.addEventListener('mouseleave', () => {
+    btnFlipIcon.classList.remove('btn-flip-hover1');
+    btnFlipIcon.classList.add('btn-flip-hover2');
+  });
+}) ();

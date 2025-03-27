@@ -1,4 +1,5 @@
 .main-form {
+  margin-bottom: 150px;
 
   // .main-form__container
   &__container {
@@ -29,10 +30,12 @@
     }
     // .main-form__step-wrp-step-2
     &-step-2{
+      margin-bottom: 72px;
       // .main-form__step-wrp-step-2 .main-form__step-box-title
       .main-form__step-box-title{
         margin-bottom: 48px;
       }
+      
     }
 
     // .main-form__step-wrp-step-3
@@ -41,6 +44,12 @@
       // .main-form__step-wrp-step-3 .main-form__step-box
       .main-form__step-box{
         min-height: 346px;
+      }
+      // .main-form__step-wrp-step-3 .main-form__step-box-title
+      .main-form__step-box-title{
+        margin-bottom: 43px;
+        font-size: 40.8px;
+        margin-left: 6px;
       }
     }
   }
@@ -171,7 +180,8 @@
 
     // .main-form__step-end-text
     &-text{
-      max-width: 868px;
+      max-width: 855px;
+      font-size: 18.45px;
     }
   }
 
@@ -195,4 +205,27 @@
   top: -101px;
   right: -100px;
   z-index: 2;
+}
+.main-form__last-btn-wrp{
+  margin-left: 204px;
+  position: relative;
+}
+.main-form__last-btn-icon{
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 13px;
+  left: 80px;
+}
+.main-form__last-btn-wrp a{
+  width: 300px;
+  height: 50px;
+  clip-path: polygon(
+    100% 0%,    /* Верхняя правая точка */
+    5.33% 0%,   /* Верхняя левая точка */
+    0% 100%,    /* Нижняя левая точка */
+    94.67% 100% /* Нижняя правая точка */
+  );
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
