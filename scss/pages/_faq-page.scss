@@ -1,0 +1,19 @@
+.main-faq-page .information-box{
+  margin-bottom: 75px;
+}
+.faq {
+  margin-bottom: 150px;
+
+  // .faq__container
+  &__container {
+    max-width: 800px;
+    flex-direction: column;
+  }
+
+  // .faq__title
+  &__title {
+    margin-bottom: 42px;
+    width: 100%;
+    text-align: center;
+  }
+}

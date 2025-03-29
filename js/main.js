@@ -217,6 +217,7 @@
   accordionItems.forEach((item) => {
     const header = item.querySelector(".accordion__header");
     const content = item.querySelector(".accordion__content");
+    let x = item.querySelector(".accordion__title");
 
     header.addEventListener("click", () => {
       // Переключаем класс 'active' для заголовка текущего элемента
@@ -238,10 +239,13 @@
       if (header.classList.contains("active")) {
         // Получаем высоту текста внутри .accordion__content и устанавливаем в rem
         const textHeight = content.scrollHeight;
-        content.style.maxHeight = `${textHeight + 24}px`;
-        content.style.paddingBottom = "24px";
+        content.style.maxHeight = `${textHeight + 94}px`;
+        content.style.paddingBottom = "12px";
+
+        // x.style.paddingBottom = "0rem";
+
       } else {
-        content.style.maxHeight = "0";
+        content.style.maxHeight = "0px";
         content.style.paddingBottom = "0px";
       }
     });
