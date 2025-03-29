@@ -33,7 +33,10 @@
 
 // custom dropdown
 (() => {
-  document.querySelector('.selector-header').addEventListener('click', function() {
+  const dropdownsBtn = document.querySelector('.selector-header');
+  if (!dropdownsBtn) return;
+
+  dropdownsBtn.addEventListener('click', function() {
     this.parentElement.classList.toggle('active');
     const indicator = this.querySelector('.toggle-indicator');
     indicator.textContent = this.parentElement.classList.contains('active') ? 'ON' : 'OFF';
@@ -57,6 +60,8 @@
   
   let isDragging = false;
   
+  if(!slider) return;
+
   // Инициализация
   updateSlider(0);
   
@@ -134,6 +139,9 @@
 (() => {
   const budgetText = document.querySelector('.badge-v2 span');
   const budgedDiamand = document.querySelector('.badge-icon path');
+  
+  if (!budgetText) return;
+
   document.querySelector('.slider-input-v2').addEventListener('input', function() {
     const value = parseFloat(this.value);
     const min = parseFloat(this.min);
@@ -198,3 +206,44 @@
     btnFlipIcon.classList.add('btn-flip-hover2');
   });
 }) ();
+
+
+// acardion
+(() => {
+  // Получаем все элементы аккордеона
+  const accordionItems = document.querySelectorAll(".accordion__item");
+
+  // Добавляем обработчик события для каждого элемента аккордеона
+  accordionItems.forEach((item) => {
+    const header = item.querySelector(".accordion__header");
+    const content = item.querySelector(".accordion__content");
+
+    header.addEventListener("click", () => {
+      // Переключаем класс 'active' для заголовка текущего элемента
+      header.classList.toggle("active");
+
+      // Закрываем все другие элементы аккордеона
+      accordionItems.forEach((otherItem) => {
+        if (otherItem !== item) {
+          otherItem
+            .querySelector(".accordion__header")
+            .classList.remove("active");
+          otherItem.querySelector(".accordion__content").style.maxHeight = "0";
+          otherItem.querySelector(".accordion__content").style.paddingBottom =
+            "0px";
+        }
+      });
+
+      // Устанавливаем максимальную высоту для текущего элемента в rem
+      if (header.classList.contains("active")) {
+        // Получаем высоту текста внутри .accordion__content и устанавливаем в rem
+        const textHeight = content.scrollHeight;
+        content.style.maxHeight = `${textHeight + 24}px`;
+        content.style.paddingBottom = "24px";
+      } else {
+        content.style.maxHeight = "0";
+        content.style.paddingBottom = "0px";
+      }
+    });
+  });
+})();
