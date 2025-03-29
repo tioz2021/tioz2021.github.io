@@ -31,6 +31,9 @@
 @import 'components/discount-slider';
 @import 'components/mixin-input';
 @import 'components/btn-flip';
+@import 'components/information-box';
+@import 'components/btn-line';
+@import 'components/form-status';
 
 // footer
 @import 'components/footer';
@@ -40,3 +43,4 @@
 
 // pages
 @import 'pages/home';
+@import 'pages/order-page';

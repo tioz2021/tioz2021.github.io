@@ -1,0 +1,39 @@
+.form-status {
+  width: 685px;
+  height: 50px;
+  background-image: url('../../images/icons/mixin-status-bg.svg');
+  background-position: center;
+  background-color: cover;
+
+  position: relative;
+
+  display: flex;
+  box-sizing: border-box;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 24px;
+
+  margin-left: 201px;
+
+  // .form-status__text
+  &__text {
+    margin-right: 34px;
+    font-size: 24.3px;
+  }
+
+  // .form-status__mod-text
+  &__mod-text {
+    font-size: 24.45px;
+    color: $body-3-color;
+  }
+
+  // .form-status__icon
+  &__icon {
+    width: 16px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    transform: translateY(-50%);
+  }
+}

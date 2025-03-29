@@ -1,0 +1,80 @@
+.btn-line {
+  position: relative;
+  width: 297px;
+  height: 48px;
+  margin-bottom: 16px;
+
+  // .btn-line i
+  i{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    background-color: #f4f5ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $body-3-color;
+  }
+
+  // .btn-line a
+  a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  a:before,
+  a:after,
+  span:before,
+  span:after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 16px;
+    background: $body-4-color;
+    // background: linear-gradient(
+    //   to bottom right, /* Направление градиента */
+    //   #470083,        /* Начальный цвет */
+    //   rgba(71, 0, 131, 0) /* Конечный цвет с прозрачностью */
+    // );
+    transition: 1s;
+    mix-blend-mode: hue;
+    z-index: -1;
+  }
+
+  a:before {
+    top: -2px;
+    left: -2px
+  }
+
+  a:after {
+    top: -2px;
+    right: -2px;
+  }
+
+  span:before {
+    bottom: -2px;
+    left: -2px
+  }
+
+  span:after {
+    bottom: -2px;
+    right: -2px
+  }
+
+  a:hover:before,
+  a:hover:after,
+  a:hover span:before,
+  a:hover span:after {
+    width: calc(297px/2);
+    height: calc(48px/2)
+  }
+}

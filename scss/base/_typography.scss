@@ -73,3 +73,16 @@
   text-transform: uppercase;
 }
 
+.under-link{
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
+  color: $body-3-color !important;
+  transition: color 250ms ease-in-out;
+
+  // .under-link:hover
+  &:hover{
+    color: $body-4-color !important;
+  }
+}

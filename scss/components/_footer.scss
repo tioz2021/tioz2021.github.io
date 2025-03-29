@@ -43,6 +43,16 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 36px;
+
+    // .footer__end a
+    a{
+      transition: color 300ms ease-in-out;
+      
+      // .footer__end a:hover
+      &:hover{
+        color: $body-3-color;
+      }
+    }
   }
 
   // .footer__end-box
@@ -123,15 +133,9 @@
     text-align: center;
     color: #7b7985;
   }
+}
 
-
-  // .footer a
-  a{
-    transition: color 300ms ease-in-out;
-    
-    // .footer a:hover
-    &:hover{
-      color: $body-3-color;
-    }
-  }
+.footer .main-menu{
+  min-width: 394px;
+  margin-right: 33px;
 }

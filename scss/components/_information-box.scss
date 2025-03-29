@@ -1,0 +1,23 @@
+.information-box {
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 70px;
+  background-color: rgba(78, 81, 245, 0.06);
+  text-align: center;
+  
+  // .information-box__link
+  &__link {
+    color: $body-3-color;
+  }
+
+  // .information-box__text
+  &__text {
+    color: #778;
+  }
+}
+
+.dot {
+  color: $body-4-color;
+}

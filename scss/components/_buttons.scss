@@ -2090,3 +2090,58 @@
   left: 61px;
   top: 13px;
 }
+
+// copy-btn
+.copy-btn{
+  width: 200px;
+  height: 36px;
+  box-sizing: border-box;
+  padding-left: 28px;
+  margin-bottom: 36px;
+
+  display: flex;
+  align-items: center;
+  background: url('../../images/icons/copy-btn-bg.svg');
+  background-position: center center;
+  background-size: cover;
+
+  cursor: pointer;
+
+  // .copy-btn-icon
+  &-icon{
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+
+  // .copy-btn span
+  span{
+    color: $body-4-color;
+  }
+}
+
+// .default-btn
+.default-btn{
+  width: 300px;
+  height: 50px;
+  clip-path: polygon(
+    100% 0%,    /* Верхняя правая точка */
+    5.33% 0%,   /* Верхняя левая точка */
+    0% 100%,    /* Нижняя левая точка */
+    94.67% 100% /* Нижняя правая точка */
+  );
+  backface-visibility: hidden;
+  background-color: $body-3-color;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 36px;
+
+  // .default-btn span
+  span{
+    color: $body-1-color;
+  }
+}
