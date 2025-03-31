@@ -83,12 +83,13 @@
   &__icon {
     width: 36px;
     height: 36px;
-    transform: rotate(0deg);
+    transform: rotate(0deg) translateY(-42%);
     will-change: transform;
     transition: all 350ms ease-in-out;
     position: absolute;
     right: 0;
-    top: -2px;
+    // top: -2px;
+    top: 42%;
   }
 
   // .accordion__icon--active
