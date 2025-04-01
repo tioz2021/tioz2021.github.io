@@ -3540,4 +3540,76 @@ input {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   color: #470083;
+}
+
+.how-work-page .information-box {
+  margin-bottom: 75px;
+}
+
+.how-work__container {
+  flex-direction: column;
+}
+.how-work__title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 41px;
+}
+.how-work__title span {
+  color: #470083;
+}
+.how-work__list {
+  width: 100%;
+  height: 520px;
+  background: url("../../images/infografic-bg.svg");
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding-top: 62px;
+  margin-bottom: 66px;
+}
+.how-work__item {
+  width: 282px;
+  height: 482px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.how-work__number-wrp {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 34px;
+}
+.how-work__number {
+  color: #470083;
+}
+.how-work__text {
+  font-size: 18.4px;
+}
+.how-work__text span {
+  color: #4e51f5;
+}
+.how-work__end {
+  width: 100%;
+  height: 291px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding-top: 30px;
+  margin-bottom: 155px;
+  background-image: url("../../images/decor-step.svg");
+  background-size: 100% 100%;
+}
+.how-work__end-text {
+  max-width: 582px;
+  font-size: 32.6px;
+}
+.how-work__end-text--first {
+  color: #470083;
+}
+.how-work__end-text--second {
+  color: #4e51f5;
 }/*# sourceMappingURL=main.css.map */
