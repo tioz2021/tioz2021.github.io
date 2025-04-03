@@ -12,57 +12,62 @@
   position: absolute;
   width: 100%;
   height: 8px;
-  background: #f0f0f0;
+  // background: #f0f0f0;
   // border-radius: 3px;
   top: 50%;
   transform: translateY(-50%);
   transition: all 500ms ease-in-out;
-
-  // clip-path: polygon(
-  //   0 50%,       /* Левый угол начинается в середине высоты */
-  //   6px 0,      /* Левый "шип" */
-  //   calc(100% - 6px) 0,  /* Правый "шип" */
-  //   100% 50%,    /* Правый угол возвращается к середине */
-  //   calc(100% - 6px) 100%, /* Правый нижний "шип" */
-  //   6px 100%    /* Левый нижний "шип" */
-  // );
 }
 
-.track-v2::before,
-.track-v2::after {
-  content: '';
-  position: absolute;
-  width: 5px;
+// .track-v2::before,
+// .track-v2::after {
+//   content: '';
+//   position: absolute;
+//   width: 5px;
+//   height: 100%;
+//   background: inherit;
+//   top: 50%;
+//   transform: translateY(-50%);
+// }
+
+// .track-v2::before {
+//   left: -4.95px;
+//   clip-path: polygon(0 50%, 100% 0, 100% 100%);
+// }
+
+// .track-v2::after {
+//   right: -4.95px;
+//   clip-path: polygon(0 0, 100% 50%, 0 100%);
+// }
+
+.track-v2__bg{
+  width: 100%;
   height: 100%;
-  background: inherit;
-  top: 50%;
-  transform: translateY(-50%);
+}
+.track-v2__bg svg path {
+  transition: fill 300ms ease-in-out;
 }
 
-.track-v2::before {
-  left: -4.95px;
-  clip-path: polygon(0 50%, 100% 0, 100% 100%);
-}
 
-.track-v2::after {
-  right: -4.95px;
-  clip-path: polygon(0 0, 100% 50%, 0 100%);
-}
-
-.track-v2.bg1 {
-  // background: linear-gradient(90deg, #9093f9 0%, #9093f9 100%);
-  background-color: #9093f9;
+.track-v2.bg1{
   filter: drop-shadow(0 0 1px #9093f9) drop-shadow(0 0 3px #9093f9)
 }
-.track-v2.bg2 {
-  // background: linear-gradient(90deg, #28b6e1 0%, #28b6e1 100%);
-  background-color: #28b6e1;
+.track-v2.bg1 .track-v2__bg svg path {
+  fill: #9093f9;
+}
+
+.track-v2.bg2{
   filter: drop-shadow(0 0 1px #28b6e1) drop-shadow(0 0 3px #28b6e1)
 }
+.track-v2.bg2 .track-v2__bg svg path {
+  fill: #28b6e1;
+}
+.track-v2.bg3 .track-v2__bg svg path {
+  fill: url(#paint0_linear_10530_1774);
+}
 .track-v2.bg3 {
-  background-color: #c707c2;
   // background: linear-gradient(90deg, #28b6e1 0%, #c707c2 100%);
-  filter: drop-shadow(0 0 1px #c707c2) drop-shadow(0 0 3px #c707c2);
+  filter: drop-shadow(0 0 1px #28b6e1) drop-shadow(0 0 3px #c707c2);
 }
 
 .progress-v2 {

@@ -49,6 +49,12 @@
     display: block;
     font-size: 32.7px;
     margin-bottom: 12px;
+
+    // .news__title-text:hover
+    &:hover{
+      color: $body-3-color;
+      text-decoration: underline;
+    }
   }
 
   // .news__title-desk
@@ -143,6 +149,12 @@
     display: block;
     margin-bottom: 13px;
     font-size: 24.5px;
+
+    // .news__list-item-text:hover
+    &:hover{
+      color: $body-3-color;
+      text-decoration: underline;
+    } 
   }
 
   // .news__btn

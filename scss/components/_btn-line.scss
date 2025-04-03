@@ -70,10 +70,10 @@
     right: -2px
   }
 
-  a:hover:before,
-  a:hover:after,
-  a:hover span:before,
-  a:hover span:after {
+  a.active:before,
+  a.active:after,
+  a.active span:before,
+  a.active span:after {
     width: calc(297px/2);
     height: calc(48px/2)
   }

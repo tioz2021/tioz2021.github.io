@@ -35,5 +35,33 @@
     top: 50%;
     right: 24px;
     transform: translateY(-50%);
+
+    // .form-status__icon svg
+    svg {
+      overflow: visible !important;
+      // .form-status__icon svg path
+       path{
+        animation: strongSvgPulse 3s infinite ease-in-out;
+      }
+    }
+  }
+}
+
+@keyframes strongSvgPulse {
+  0%, 100% { 
+    fill: #4E51F5;
+    filter: drop-shadow(0 0 2px rgba(78, 81, 245, 0.8));
+  }
+  25% {
+    fill: #9093f9;
+    filter: drop-shadow(0 0 4px rgba(144, 147, 249, 0.9));
+  }
+  50% { 
+    fill: #28B6E1;
+    filter: drop-shadow(0 0 6px rgba(40, 182, 225, 1));
+  }
+  75% {
+    fill: #9093f9;
+    filter: drop-shadow(0 0 4px rgba(144, 147, 249, 0.9));
   }
 }

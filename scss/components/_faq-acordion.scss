@@ -28,7 +28,8 @@
 
     // .accordion__item.active .accordion__content
     &.active .accordion__content {
-      max-height: 200px;
+      // max-height: 200px;
+      max-height: none !important; /* Убираем фиксированную высоту */
     }
 
     // .accordion__item:last-child

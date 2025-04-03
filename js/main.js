@@ -292,43 +292,50 @@
 
 // acardion
 (() => {
-  // Получаем все элементы аккордеона
   const accordionItems = document.querySelectorAll(".accordion__item");
 
-  // Добавляем обработчик события для каждого элемента аккордеона
-  accordionItems.forEach((item) => {
+  // Функция для открытия элемента
+  const openAccordionItem = (item) => {
     const header = item.querySelector(".accordion__header");
     const content = item.querySelector(".accordion__content");
-    let x = item.querySelector(".accordion__title");
+    
+    header.classList.add("active");
+    const textHeight = content.scrollHeight;
+    content.style.maxHeight = `${textHeight + 94}px`;
+    content.style.paddingBottom = "12px";
+  };
 
+  // Функция для закрытия всех элементов
+  const closeAllAccordionItems = () => {
+    accordionItems.forEach((item) => {
+      const header = item.querySelector(".accordion__header");
+      const content = item.querySelector(".accordion__content");
+      
+      header.classList.remove("active");
+      content.style.maxHeight = "0";
+      content.style.paddingBottom = "0px";
+    });
+  };
+
+  // Открываем активный по умолчанию элемент при загрузке
+  document.addEventListener("DOMContentLoaded", () => {
+    const defaultActiveItem = document.querySelector(".accordion__item.active");
+    if (defaultActiveItem) {
+      openAccordionItem(defaultActiveItem);
+    }
+  });
+
+  // Обработчики кликов
+  accordionItems.forEach((item) => {
+    const header = item.querySelector(".accordion__header");
+    
     header.addEventListener("click", () => {
-      // Переключаем класс 'active' для заголовка текущего элемента
-      header.classList.toggle("active");
-
-      // Закрываем все другие элементы аккордеона
-      accordionItems.forEach((otherItem) => {
-        if (otherItem !== item) {
-          otherItem
-            .querySelector(".accordion__header")
-            .classList.remove("active");
-          otherItem.querySelector(".accordion__content").style.maxHeight = "0";
-          otherItem.querySelector(".accordion__content").style.paddingBottom =
-            "0px";
-        }
-      });
-
-      // Устанавливаем максимальную высоту для текущего элемента в rem
-      if (header.classList.contains("active")) {
-        // Получаем высоту текста внутри .accordion__content и устанавливаем в rem
-        const textHeight = content.scrollHeight;
-        content.style.maxHeight = `${textHeight + 94}px`;
-        content.style.paddingBottom = "12px";
-
-        // x.style.paddingBottom = "0rem";
-
-      } else {
-        content.style.maxHeight = "0px";
-        content.style.paddingBottom = "0px";
+      const isActive = header.classList.contains("active");
+      
+      closeAllAccordionItems();
+      
+      if (!isActive) {
+        openAccordionItem(item);
       }
     });
   });
@@ -448,15 +455,17 @@
   }
   
   // Остальной код без изменений
-  const slider = new MultiHandleSlider(document.querySelector('.multi-handle-slider'));
-
+  
   const mainBtn = document.querySelector('.main-form__step-buttons-one');
+  if (!mainBtn) return;
   const btnMore = document.querySelector('.main-form__step-buttons-more');
   const addBtn = document.querySelector('.button-add-input');
   const deleteBtn = document.querySelector('.button-remove-input');
   const inputs = document.querySelectorAll('.main-form__step-input-wrp');
   const step1_1 = document.querySelector('.main-form__step-wrp-1_1');
   
+  const slider = new MultiHandleSlider(document.querySelector('.multi-handle-slider'));
+
   let visibleInputs = 1;
   const maxInputs = inputs.length;
 
@@ -509,230 +518,17 @@
   deleteBtn.addEventListener('click', removeInputs);
 })();
 
-// save %
-// (() => {
-//   class MultiHandleSlider {
-//     constructor(container) {
-//       this.container = container;
-//       this.track = container.querySelector('.slider-track');
-//       this.valuesDisplay = container.querySelector('.slider-values');
-//       this.handles = [];
-//       this.values = [100];
-//       this.colors = ['#FFFFFF', '#C5C7FC', '#470083'];
-//     }
-  
-//     setHandles(newCount) {
-//       if (newCount < 1 || newCount > 6) return false;
-      
-//       const currentCount = this.values.length;
-//       const oldValues = [...this.values];
-      
-//       // Сохраняем позиции существующих ползунков
-//       const oldPositions = [0];
-//       this.handles.forEach(handle => {
-//         oldPositions.push(parseFloat(handle.style.left));
-//       });
-//       oldPositions.push(100);
-      
-//       this.track.innerHTML = '';
-//       this.handles = [];
-//       this.values = [];
-      
-//       // Рассчитываем новые значения с сохранением пропорций
-//       if (newCount > currentCount) {
-//         // Добавляем новые ползунки
-//         const newValues = [...oldValues];
-//         const remaining = 100 - oldValues.reduce((a, b) => a + b, 0);
-//         const newSegmentValue = remaining / (newCount - currentCount);
-        
-//         for (let i = currentCount; i < newCount; i++) {
-//           newValues.push(newSegmentValue);
-//         }
-        
-//         // Корректируем сумму до 100%
-//         const sum = newValues.reduce((a, b) => a + b, 0);
-//         if (sum !== 100) {
-//           newValues[0] += 100 - sum;
-//         }
-        
-//         this.values = newValues;
-//       } else {
-//         // Уменьшаем количество ползунков
-//         this.values = oldValues.slice(0, newCount);
-        
-//         // Корректируем сумму до 100%
-//         const sum = this.values.reduce((a, b) => a + b, 0);
-//         if (sum !== 100) {
-//           const scaleFactor = 100 / sum;
-//           this.values = this.values.map(v => v * scaleFactor);
-//         }
-//       }
-      
-//       // Создаем новые ползунки с сохраненными значениями
-//       let accumulated = 0;
-//       for (let i = 0; i < newCount; i++) {
-//         if (i > 0) {
-//           accumulated += this.values[i-1];
-//           const handle = this.createHandle(accumulated, i);
-//           this.track.appendChild(handle);
-//           this.handles.push(handle);
-//         }
-//       }
-      
-//       this.updateVisuals();
-//       return true;
-//     }
-  
-//     createHandle(position, index) {
-//       const handle = document.createElement('div');
-//       handle.className = 'slider-handle';
-//       handle.style.left = `${position}%`;
-//       handle.dataset.index = index;
-      
-//       handle.addEventListener('mousedown', (e) => {
-//         e.preventDefault();
-//         const startX = e.clientX;
-//         const startLeft = parseFloat(handle.style.left);
-//         const handleIndex = parseInt(handle.dataset.index);
-        
-//         const moveHandler = (e) => {
-//           const deltaX = e.clientX - startX;
-//           const percentDelta = (deltaX / this.track.offsetWidth) * 100;
-//           let newLeft = startLeft + percentDelta;
-          
-//           const prevHandle = this.handles[handleIndex - 2];
-//           const nextHandle = this.handles[handleIndex];
-//           const min = prevHandle ? parseFloat(prevHandle.style.left) + 1 : 0;
-//           const max = nextHandle ? parseFloat(nextHandle.style.left) - 1 : 100;
-          
-//           newLeft = Math.max(min, Math.min(max, newLeft));
-//           handle.style.left = `${newLeft}%`;
-          
-//           this.updateValues();
-//           this.updateVisuals();
-//         };
-        
-//         document.addEventListener('mousemove', moveHandler);
-//         document.addEventListener('mouseup', () => {
-//           document.removeEventListener('mousemove', moveHandler);
-//         }, { once: true });
-//       });
-      
-//       return handle;
-//     }
-  
-//     updateValues() {
-//       const positions = [0, ...this.handles.map(h => parseFloat(h.style.left)), 100];
-//       this.values = positions.slice(1).map((pos, i) => pos - positions[i]);
-//       this.updateInputsPercent();
-//     }
-  
-//     updateVisuals() {
-//       let accumulated = 0;
-//       const gradientStops = this.values.map((val, i) => {
-//         accumulated += val;
-//         return `${this.colors[i % this.colors.length]} ${accumulated}%`;
-//       });
-//       this.track.style.background = `linear-gradient(90deg, ${gradientStops.join(', ')})`;
-//       this.updateInputsPercent();
-//     }
-  
-//     updateInputsPercent() {
-//       const inputsPercent = document.querySelectorAll('.main-input__input-end__num');
-//       this.values.forEach((value, index) => {
-//         if (inputsPercent[index]) {
-//           inputsPercent[index].textContent = `${value.toFixed(0)}%`;
-//         }
-//       });
-//     }
-  
-//     getValues() {
-//       return this.values;
-//     }
-//   }
-  
-//   // Инициализация слайдера
-//   const slider = new MultiHandleSlider(document.querySelector('.multi-handle-slider'));
+(() => {
+  const copyBtn = document.querySelector('.copy-btn');
+  const btnLine = document.querySelector('.btn-line a');
+  function active() {
+    btnLine.classList.add('active');
+  }
+  copyBtn.addEventListener('click', active);
 
-//   // Элементы управления
-//   const mainBtn = document.querySelector('.main-form__step-buttons-one');
-//   const btnMore = document.querySelector('.main-form__step-buttons-more');
-//   const addBtn = document.querySelector('.button-add-input');
-//   const deleteBtn = document.querySelector('.button-remove-input');
-//   const inputs = document.querySelectorAll('.main-form__step-input-wrp');
-//   const step1_1 = document.querySelector('.main-form__step-wrp-1_1');
-  
-//   let visibleInputs = 1;
-//   const maxInputs = inputs.length;
-
-//   function updateButtons() {
-//     addBtn.disabled = visibleInputs >= maxInputs;
-//     deleteBtn.disabled = visibleInputs <= 1;
-
-//     // Сохраняем текущие значения перед обновлением
-//     const currentValues = visibleInputs > 1 ? slider.getValues() : [100];
-//     slider.setHandles(visibleInputs);
-    
-//     // Восстанавливаем значения после обновления
-//     if (visibleInputs > 1) {
-//       let sum = currentValues.reduce((a, b) => a + b, 0);
-//       if (sum !== 100) {
-//         currentValues[0] += 100 - sum;
-//       }
-      
-//       // Обновляем позиции ползунков
-//       let accumulated = 0;
-//       for (let i = 1; i < visibleInputs; i++) {
-//         accumulated += currentValues[i-1];
-//         if (slider.handles[i-1]) {
-//           slider.handles[i-1].style.left = `${accumulated}%`;
-//         }
-//       }
-      
-//       slider.values = [...currentValues];
-//       slider.updateVisuals();
-//     }
-    
-//     if (visibleInputs === 1) {
-//       mainBtn.classList.remove('hidden');
-//       btnMore.classList.add('hidden');
-//       step1_1.classList.add('disabled');
-//     } else {
-//       mainBtn.classList.add('hidden');
-//       btnMore.classList.remove('hidden');
-//       step1_1.classList.remove('disabled');
-//     }
-//   }
-
-//   function addFirstInput() {
-//     if (visibleInputs < maxInputs) {
-//       inputs[visibleInputs].classList.remove('disabled');
-//       visibleInputs++;
-//       updateButtons();
-//     }
-//   }
-
-//   function addMoreInputs() {
-//     if (visibleInputs < maxInputs) {
-//       inputs[visibleInputs].classList.remove('disabled');
-//       visibleInputs++;
-//       updateButtons();
-//     }
-//   }
-
-//   function removeInputs() {
-//     if (visibleInputs > 1) {
-//       inputs[visibleInputs - 1].classList.add('disabled');
-//       visibleInputs--;
-//       updateButtons();
-//     }
-//   }
-
-//   // Инициализация
-//   updateButtons();
-
-//   // Назначение обработчиков событий
-//   mainBtn.addEventListener('click', addFirstInput);
-//   addBtn.addEventListener('click', addMoreInputs);
-//   deleteBtn.addEventListener('click', removeInputs);
-// })();
+  const defBtnResult2 = document.querySelector('.default-btn');
+  if (!defBtnResult2) return;
+  defBtnResult2.onclick = function() {
+    this.classList.toggle('active');
+  }
+}) ();
