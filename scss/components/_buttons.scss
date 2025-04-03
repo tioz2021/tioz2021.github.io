@@ -1903,18 +1903,20 @@
       &:after {
         height: 2px;
         width: 99px;
-        background: linear-gradient(to bottom left,
-            #470083,
-            rgba(71, 0, 131, 0));
+        // background: linear-gradient(to bottom left,
+        //     #470083,
+        //     rgba(71, 0, 131, 0));
+        background-color: #470083;
       }
 
       span {
 
         &:before,
         &:after {
-          background: linear-gradient(to bottom left,
-              #470083,
-              rgba(71, 0, 131, 0));
+          // background: linear-gradient(to bottom left,
+          //     #470083,
+          //     rgba(71, 0, 131, 0));
+          background-color: #470083;
           width: 2px;
           height: 50px;
         }

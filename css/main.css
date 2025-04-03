@@ -1794,10 +1794,10 @@ input {
 .button__notification .button.v12 .icon:before, .button__notification .button.v12 .icon:after {
   height: 2px;
   width: 99px;
-  background: linear-gradient(to bottom left, #470083, rgba(71, 0, 131, 0));
+  background-color: #470083;
 }
 .button__notification .button.v12 .icon span:before, .button__notification .button.v12 .icon span:after {
-  background: linear-gradient(to bottom left, #470083, rgba(71, 0, 131, 0));
+  background-color: #470083;
   width: 2px;
   height: 50px;
 }
@@ -2365,6 +2365,27 @@ input {
   font-size: 18.2px;
 }
 
+.main-form .main-form-continue-btn {
+  width: 200px;
+  height: 50px;
+  margin-top: 70px;
+  margin-left: 500px;
+}
+
+.main-form .main-form-continue-btn .button.v12 .icon:before,
+.main-form .main-form-continue-btn .button.v12 .icon:after {
+  background: #4e51f5;
+}
+
+.main-form .main-form-continue-btn .button.v12 .icon span:before,
+.main-form .main-form-continue-btn .button.v12 .icon span:after {
+  background: #4e51f5;
+}
+
+.main-form .main-form-continue-btn span {
+  color: #4e51f5;
+}
+
 .main-input {
   position: relative;
   width: 100%;
@@ -2611,8 +2632,28 @@ input {
 .slider-track {
   height: 6px;
   background-color: #fff;
-  border-radius: 3px;
   position: relative;
+}
+
+.slider-track::before,
+.slider-track::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  background: inherit;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slider-track::before {
+  left: -5px;
+  clip-path: polygon(0 50%, 100% 0, 100% 100%);
+}
+
+.slider-track::after {
+  right: -5px;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
 }
 
 .slider-thumb {
@@ -2667,8 +2708,7 @@ input {
 
 .slider-track {
   height: 8px;
-  background: linear-gradient(90deg, #FFFFFF 0%, #C5C7FC 50%, #470083 100%);
-  border-radius: 4px;
+  background-color: #fff;
   position: relative;
 }
 
@@ -2676,25 +2716,19 @@ input {
   width: 36px;
   height: 44px;
   position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  cursor: ew-resize;
+  top: -38px;
+  transform: translateX(-50%);
+  cursor: pointer;
   z-index: 2;
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 44"><path d="M19 35L4.66 11.09L19 0.62L33.34 11.09L19 35Z" fill="%23F4F5FE" stroke="%234E51F5"/><circle cx="19" cy="42" r="2" fill="%23470083"/></svg>');
+  background-image: url("../../images/icons/slider-handle-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
 
-.slider-values {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-
-.value-label {
-  color: #470083;
-  font-family: monospace;
+.slider-handle:hover {
+  transform: translateX(-50%) scale(1.025);
+  top: -38.5px;
 }
 
 .privacy-slider-v2 {
@@ -2712,24 +2746,60 @@ input {
   width: 100%;
   height: 8px;
   background: #f0f0f0;
-  border-radius: 3px;
   top: 50%;
   transform: translateY(-50%);
-  background: linear-gradient(90deg, #fff 0%, #fff 44.5%, #c5c7fc 74%, #470083 100%);
+  transition: all 500ms ease-in-out;
+}
+
+.track-v2::before,
+.track-v2::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  background: inherit;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.track-v2::before {
+  left: -4.95px;
+  clip-path: polygon(0 50%, 100% 0, 100% 100%);
+}
+
+.track-v2::after {
+  right: -4.95px;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+.track-v2.bg1 {
+  background-color: #9093f9;
+  filter: drop-shadow(0 0 1px #9093f9) drop-shadow(0 0 3px #9093f9);
+}
+
+.track-v2.bg2 {
+  background-color: #28b6e1;
+  filter: drop-shadow(0 0 1px #28b6e1) drop-shadow(0 0 3px #28b6e1);
+}
+
+.track-v2.bg3 {
+  background-color: #c707c2;
+  filter: drop-shadow(0 0 1px #c707c2) drop-shadow(0 0 3px #c707c2);
 }
 
 .progress-v2 {
   position: absolute;
+  left: 0;
+  top: 0;
   height: 100%;
-  border-radius: 3px;
 }
 
 .thumb-v2 {
   position: absolute;
   top: -10px;
+  left: 0;
   transform: translateX(-50%);
   z-index: 2;
-  transition: left 0.15s ease;
 }
 
 .thumb-v2-icon {
@@ -2740,10 +2810,11 @@ input {
 .value-bubble-v2 {
   position: absolute;
   top: 37px;
-  left: 50%;
-  transform: translateX(-48%);
-  width: 50px;
+  left: -16px;
+  transform: none; /* Убираем transform из CSS, так как теперь управляем через JS */
+  width: 70px;
   height: 46px;
+  z-index: 3;
 }
 
 .value-bubble-v2 span {

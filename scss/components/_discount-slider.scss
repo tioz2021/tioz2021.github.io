@@ -13,30 +13,73 @@
   width: 100%;
   height: 8px;
   background: #f0f0f0;
-  border-radius: 3px;
+  // border-radius: 3px;
   top: 50%;
   transform: translateY(-50%);
-  background: linear-gradient(90deg, #fff 0%, #fff 44.5%, #c5c7fc 74%, #470083 100%);
+  transition: all 500ms ease-in-out;
+
+  // clip-path: polygon(
+  //   0 50%,       /* Левый угол начинается в середине высоты */
+  //   6px 0,      /* Левый "шип" */
+  //   calc(100% - 6px) 0,  /* Правый "шип" */
+  //   100% 50%,    /* Правый угол возвращается к середине */
+  //   calc(100% - 6px) 100%, /* Правый нижний "шип" */
+  //   6px 100%    /* Левый нижний "шип" */
+  // );
+}
+
+.track-v2::before,
+.track-v2::after {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  background: inherit;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.track-v2::before {
+  left: -4.95px;
+  clip-path: polygon(0 50%, 100% 0, 100% 100%);
+}
+
+.track-v2::after {
+  right: -4.95px;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+.track-v2.bg1 {
+  // background: linear-gradient(90deg, #9093f9 0%, #9093f9 100%);
+  background-color: #9093f9;
+  filter: drop-shadow(0 0 1px #9093f9) drop-shadow(0 0 3px #9093f9)
+}
+.track-v2.bg2 {
+  // background: linear-gradient(90deg, #28b6e1 0%, #28b6e1 100%);
+  background-color: #28b6e1;
+  filter: drop-shadow(0 0 1px #28b6e1) drop-shadow(0 0 3px #28b6e1)
+}
+.track-v2.bg3 {
+  background-color: #c707c2;
+  // background: linear-gradient(90deg, #28b6e1 0%, #c707c2 100%);
+  filter: drop-shadow(0 0 1px #c707c2) drop-shadow(0 0 3px #c707c2);
 }
 
 .progress-v2 {
   position: absolute;
+  left: 0;
+  top: 0;
   height: 100%;
-  border-radius: 3px;
+  // border-radius: 3px;
 }
 
 .thumb-v2 {
   position: absolute;
-  // width: 24px;
-  // height: 24px;
-  // background: white;
-  // border: 2px solid #4E51F5;
-  // border-radius: 50%;
   top: -10px;
+  left: 0;
   transform: translateX(-50%);
-  // cursor: grab;
   z-index: 2;
-  transition: left 0.15s ease;
+  // transition: left 0.15s ease;
 }
 
 .thumb-v2-icon{
@@ -47,11 +90,16 @@
 .value-bubble-v2 {
   position: absolute;
   top: 37px;
-  left: 50%;
-  transform: translateX(-48%);
-  width: 50px;
+  // left: 0;
+  left: -16px;
+  transform: none; /* Убираем transform из CSS, так как теперь управляем через JS */
+  // width: 50px;
+  // height: 46px;
+  width: 70px;
   height: 46px;
+  z-index: 3;
 }
+
 .value-bubble-v2 span{
   position: absolute;
   top: 50%;

@@ -374,3 +374,21 @@
 .main-form__step-wrp-result-3 .main-form__step-end span{
   font-size: 18.2px;
 }
+
+.main-form .main-form-continue-btn{
+  width: 200px;
+  height: 50px;
+  margin-top: 70px;
+  margin-left: 500px;
+}
+.main-form .main-form-continue-btn .button.v12 .icon:before,
+.main-form .main-form-continue-btn .button.v12 .icon:after{
+  background: $body-3-color;
+}
+.main-form .main-form-continue-btn .button.v12 .icon span:before,
+.main-form .main-form-continue-btn .button.v12 .icon span:after{
+  background: $body-3-color;
+}
+.main-form .main-form-continue-btn span{
+  color: $body-3-color;
+}
