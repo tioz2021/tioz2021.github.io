@@ -2440,6 +2440,49 @@ input {
   right: 0;
   top: 0;
 }
+.main-input--error {
+  display: none;
+  position: absolute;
+  top: -8px;
+  left: 74px;
+  color: #f54e51;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.main-form .hidden {
+  display: none !important;
+}
+
+.main-form__step-button-wrp .wrp {
+  display: flex;
+  width: 100%;
+}
+
+.main-form__step-buttons-more {
+  display: none;
+}
+
+.main-form__step-wrp-1_1.disabled {
+  display: none;
+}
+
+.main-form__step-input-wrp.error .main-input--error {
+  display: block;
+}
+
+.main-form__step-input-wrp.error input {
+  border: 1px solid #f54e51;
+  background: rgba(245, 78, 81, 0.1);
+}
+
+.main-form__step-input-wrp.disabled {
+  display: none;
+}
 
 .custom-time-selector {
   position: relative;
@@ -2465,7 +2508,7 @@ input {
 .custom-time-selector::after {
   content: "";
   position: absolute;
-  bottom: -4px;
+  bottom: -5px;
   right: 5px;
   width: 1px;
   height: 20px;
@@ -2486,7 +2529,6 @@ input {
   align-items: center;
   cursor: pointer;
   background-color: #fff;
-  transition: all 0.3s ease;
 }
 .selector-header__icon {
   width: 24px;
@@ -2506,20 +2548,54 @@ input {
 .selector-options {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease;
+  box-sizing: border-box;
   clip-path: polygon(0% 0%, 100% 0%, 100% 93.4%, 93.4% 100%, 0% 100%);
+  /* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  /* Chrome, Edge, and Safari */
+}
+.selector-options {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(78, 81, 245, 0.3) #ffffff;
+}
+.selector-options::-webkit-scrollbar {
+  width: 8px;
+}
+.selector-options::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+.selector-options::-webkit-scrollbar-thumb {
+  background-color: #8f54a0;
+  border-radius: 0px;
+  border: 0px none #ffffff;
 }
 
 .custom-time-selector.active .selector-options {
+  transition: all 250ms ease-in-out;
   max-height: 200px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 16px;
+}
+
+.custom-time-selector {
+  z-index: 1;
+}
+
+.custom-time-selector.active {
+  z-index: 2;
 }
 
 .option {
-  padding: 10px 16px;
+  padding: 0px 12px;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: color 0.2s ease-in-out;
   color: #2d2c38;
+  min-height: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.option:hover {
+  color: #4e51f5;
 }
 
 .individualize-slider {
@@ -2537,7 +2613,6 @@ input {
   background-color: #fff;
   border-radius: 3px;
   position: relative;
-  pointer-events: none; /* Разрешаем клики "сквозь" трек */
 }
 
 .slider-thumb {
@@ -2581,6 +2656,45 @@ input {
 .slider-track-img {
   width: 30px;
   height: 44px;
+}
+
+/* Стили для мульти-слайдера */
+.multi-handle-slider {
+  width: 100%;
+  margin: 40px 0;
+  position: relative;
+}
+
+.slider-track {
+  height: 8px;
+  background: linear-gradient(90deg, #FFFFFF 0%, #C5C7FC 50%, #470083 100%);
+  border-radius: 4px;
+  position: relative;
+}
+
+.slider-handle {
+  width: 36px;
+  height: 44px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: ew-resize;
+  z-index: 2;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 44"><path d="M19 35L4.66 11.09L19 0.62L33.34 11.09L19 35Z" fill="%23F4F5FE" stroke="%234E51F5"/><circle cx="19" cy="42" r="2" fill="%23470083"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.slider-values {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.value-label {
+  color: #470083;
+  font-family: monospace;
 }
 
 .privacy-slider-v2 {

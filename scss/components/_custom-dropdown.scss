@@ -34,7 +34,7 @@
   &::after{
     content: '';
     position: absolute;
-    bottom: -4px;
+    bottom: -5px;
     right: 5px;
     width: 1px;
     height: 20px;
@@ -57,7 +57,7 @@
   align-items: center;
   cursor: pointer;
   background-color: $body-1-color;
-  transition: all 0.3s ease;
+  // transition: all 0.3s ease;
   
   // .selector-header__icon
   &__icon{
@@ -85,8 +85,9 @@
 .selector-options {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease;
+
   // background: rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
 
   clip-path: polygon(
     0% 0%,
@@ -95,20 +96,57 @@
     93.4% 100%,
     0% 100%
   );
+
+  // overflow-y: auto;
+
+  /* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  & {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(78, 81, 245, .3) #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #8f54a0;
+    border-radius: 0px;
+    border: 0px none #ffffff;
+  }
 }
 
 .custom-time-selector.active .selector-options {
+  transition: all 250ms ease-in-out;
   max-height: 200px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  // border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 16px;
+}
+.custom-time-selector {
+  z-index: 1;
+}
+.custom-time-selector.active {
+  z-index: 2;
 }
 
 .option {
-  padding: 10px 16px;
+  padding: 0px 12px;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: color 0.2s ease-in-out;
   color: $body-2-color;
+  min-height: 24px;
+  display: flex;
+  align-items: center;
 }
 
 .option:hover {
   // background: rgba(255, 255, 255, 0.1);
+  color: $body-3-color;
 }
+

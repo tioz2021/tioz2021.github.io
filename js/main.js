@@ -33,23 +33,79 @@
 
 // custom dropdown
 (() => {
-  const dropdownsBtn = document.querySelector('.selector-header');
-  if (!dropdownsBtn) return;
+  const dropdowns = document.querySelectorAll('.custom-time-selector');
+  if (!dropdowns.length) return;
 
-  dropdownsBtn.addEventListener('click', function() {
-    this.parentElement.classList.toggle('active');
-    const indicator = this.querySelector('.toggle-indicator');
-    indicator.textContent = this.parentElement.classList.contains('active') ? 'ON' : 'OFF';
-  });
-  
-  document.querySelectorAll('.option').forEach(option => {
-    option.addEventListener('click', function() {
-      document.querySelector('.selected-value').textContent = this.textContent;
-      this.parentElement.parentElement.classList.remove('active');
-      document.querySelector('.toggle-indicator').textContent = 'OFF';
+  dropdowns.forEach(dropdown => {
+    const dropdownBtn = dropdown.querySelector('.selector-header');
+    const selectedValue = dropdown.querySelector('.selected-value');
+    const optionsContainer = dropdown.querySelector('.selector-options');
+    const icon = dropdown.querySelector('.selector-header__icon');
+    const allOptions = Array.from(dropdown.querySelectorAll('.option:not(.off-option)'));
+    
+    // Создаем OFF опцию
+    const offOption = document.createElement('div');
+    offOption.className = 'option off-option';
+    offOption.textContent = 'OFF';
+
+    // Функция для обновления списка опций
+    const updateOptions = (selectedText) => {
+      // Очищаем контейнер
+      while (optionsContainer.firstChild) {
+        optionsContainer.removeChild(optionsContainer.firstChild);
+      }
+
+      // Если выбрано не OFF, добавляем OFF в начало
+      if (selectedText !== 'OFF') {
+        optionsContainer.appendChild(offOption);
+      }
+
+      // Добавляем все опции, кроме выбранной
+      allOptions.forEach(opt => {
+        if (opt.textContent !== selectedText) {
+          optionsContainer.appendChild(opt.cloneNode(true));
+        }
+      });
+    };
+
+    dropdownBtn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      // Закрываем все другие открытые dropdown
+      document.querySelectorAll('.custom-time-selector').forEach(d => {
+        if (d !== dropdown) d.classList.remove('active');
+      });
+      // Открываем/закрываем текущий
+      dropdown.classList.toggle('active');
+    });
+
+    // Обработчик для всех опций
+    optionsContainer.addEventListener('click', function(e) {
+      if (e.target.classList.contains('option')) {
+        e.stopPropagation();
+        const selectedText = e.target.textContent;
+        
+        // Обновляем выбранное значение
+        selectedValue.textContent = selectedText;
+        
+        // Управляем иконкой
+        icon.style.display = selectedText === 'OFF' ? 'block' : 'none';
+        
+        // Обновляем список опций
+        updateOptions(selectedText);
+        
+        dropdown.classList.remove('active');
+      }
+    });
+
+    // Инициализация
+    updateOptions('OFF');
+
+    // Закрываем dropdown при клике вне его
+    document.addEventListener('click', function() {
+      dropdown.classList.remove('active');
     });
   });
-}) ();
+})();
 
 // individualize-slider
 (() => {
@@ -250,4 +306,177 @@
       }
     });
   });
+})();
+
+// main forms
+(() => {
+  class MultiHandleSlider {
+    constructor(container) {
+      this.container = container;
+      this.track = container.querySelector('.slider-track');
+      this.valuesDisplay = container.querySelector('.slider-values');
+      this.handles = [];
+      this.values = [100];
+      this.colors = ['#FFFFFF', '#C5C7FC', '#470083'];
+    }
+  
+    setHandles(count) {
+      if (count < 1 || count > 6) return false;
+      
+      this.track.innerHTML = '';
+      this.handles = [];
+      this.values = [];
+      
+      const segmentWidth = 100 / count;
+      for (let i = 0; i < count; i++) {
+        this.values.push(segmentWidth);
+        
+        if (i > 0) {
+          const handle = this.createHandle(i * segmentWidth, i);
+          this.track.appendChild(handle);
+          this.handles.push(handle);
+        }
+      }
+      
+      this.updateVisuals();
+      return true;
+    }
+  
+    createHandle(position, index) {
+      const handle = document.createElement('div');
+      handle.className = 'slider-handle';
+      handle.style.left = `${position}%`;
+      handle.dataset.index = index;
+      
+      handle.addEventListener('mousedown', (e) => {
+        e.preventDefault();
+        const startX = e.clientX;
+        const startLeft = parseFloat(handle.style.left);
+        const handleIndex = parseInt(handle.dataset.index);
+        
+        const moveHandler = (e) => {
+          const deltaX = e.clientX - startX;
+          const percentDelta = (deltaX / this.track.offsetWidth) * 100;
+          let newLeft = startLeft + percentDelta;
+          
+          const prevHandle = this.handles[handleIndex - 2];
+          const nextHandle = this.handles[handleIndex];
+          const min = prevHandle ? parseFloat(prevHandle.style.left) + 1 : 0;
+          const max = nextHandle ? parseFloat(nextHandle.style.left) - 1 : 100;
+          
+          newLeft = Math.max(min, Math.min(max, newLeft));
+          handle.style.left = `${newLeft}%`;
+          
+          this.updateValues();
+          this.updateVisuals();
+        };
+        
+        document.addEventListener('mousemove', moveHandler);
+        document.addEventListener('mouseup', () => {
+          document.removeEventListener('mousemove', moveHandler);
+        }, { once: true });
+      });
+      
+      return handle;
+    }
+  
+    updateValues() {
+      const positions = [0, ...this.handles.map(h => parseFloat(h.style.left)), 100];
+      this.values = positions.slice(1).map((pos, i) => pos - positions[i]);
+      // this.updateValuesDisplay();
+      this.updateInputsPercent();
+    }
+  
+    updateVisuals() {
+      let accumulated = 0;
+      const gradientStops = this.values.map((val, i) => {
+        accumulated += val;
+        return `${this.colors[i % this.colors.length]} ${accumulated}%`;
+      });
+      this.track.style.background = `linear-gradient(90deg, ${gradientStops.join(', ')})`;
+      
+      // this.updateValuesDisplay();
+      this.updateInputsPercent();
+    }
+  
+    // updateValuesDisplay() {
+    //   this.valuesDisplay.innerHTML = this.values
+    //     .map(v => `<div class="value-label">${v.toFixed(1)}%</div>`)
+    //     .join('');
+    // }
+  
+    updateInputsPercent() {
+      const inputsPercent = document.querySelectorAll('.main-input__input-end__num');
+      this.values.forEach((value, index) => {
+        if (inputsPercent[index]) {
+          inputsPercent[index].textContent = `${value.toFixed(0)}%`;
+        }
+      });
+    }
+  
+    getValues() {
+      return this.values;
+    }
+  }
+  
+  // Остальной код без изменений
+  const slider = new MultiHandleSlider(document.querySelector('.multi-handle-slider'));
+
+  const mainBtn = document.querySelector('.main-form__step-buttons-one');
+  const btnMore = document.querySelector('.main-form__step-buttons-more');
+  const addBtn = document.querySelector('.button-add-input');
+  const deleteBtn = document.querySelector('.button-remove-input');
+  const inputs = document.querySelectorAll('.main-form__step-input-wrp');
+  const step1_1 = document.querySelector('.main-form__step-wrp-1_1');
+  
+  let visibleInputs = 1;
+  const maxInputs = inputs.length;
+
+  function updateButtons() {
+    addBtn.disabled = visibleInputs >= maxInputs;
+    deleteBtn.disabled = visibleInputs <= 1;
+
+    slider.setHandles(visibleInputs);
+    slider.updateInputsPercent();
+    
+    if (visibleInputs === 1) {
+      mainBtn.classList.remove('hidden');
+      btnMore.classList.add('hidden');
+      step1_1.classList.add('disabled');
+    } else {
+      mainBtn.classList.add('hidden');
+      btnMore.classList.remove('hidden');
+      step1_1.classList.remove('disabled');
+    }
+  }
+
+  function addFirstInput() {
+    if (visibleInputs < maxInputs) {
+      inputs[visibleInputs].classList.remove('disabled');
+      visibleInputs++;
+      updateButtons();
+    }
+  }
+
+  function addMoreInputs() {
+    if (visibleInputs < maxInputs) {
+      inputs[visibleInputs].classList.remove('disabled');
+      visibleInputs++;
+      updateButtons();
+    }
+  }
+
+  function removeInputs() {
+    if (visibleInputs > 1) {
+      inputs[visibleInputs - 1].classList.add('disabled');
+      visibleInputs--;
+      updateButtons();
+    }
+  }
+
+  updateButtons();
+
+  mainBtn.addEventListener('click', addFirstInput);
+  addBtn.addEventListener('click', addMoreInputs);
+  deleteBtn.addEventListener('click', removeInputs);
 })();

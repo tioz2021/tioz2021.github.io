@@ -13,7 +13,7 @@
   background-color: $body-1-color;
   border-radius: 3px;
   position: relative;
-  pointer-events: none; /* Разрешаем клики "сквозь" трек */
+  // pointer-events: none; 
 }
 
 .slider-thumb {
@@ -65,4 +65,44 @@
 .slider-track-img{
   width: 30px;
   height: 44px;
+}
+
+// new slider
+/* Стили для мульти-слайдера */
+.multi-handle-slider {
+  width: 100%;
+  margin: 40px 0;
+  position: relative;
+}
+
+.slider-track {
+  height: 8px;
+  background: linear-gradient(90deg, #FFFFFF 0%, #C5C7FC 50%, #470083 100%);
+  border-radius: 4px;
+  position: relative;
+}
+
+.slider-handle {
+  width: 36px;
+  height: 44px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: ew-resize;
+  z-index: 2;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 44"><path d="M19 35L4.66 11.09L19 0.62L33.34 11.09L19 35Z" fill="%23F4F5FE" stroke="%234E51F5"/><circle cx="19" cy="42" r="2" fill="%23470083"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.slider-values {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.value-label {
+  color: #470083;
+  font-family: monospace;
 }
