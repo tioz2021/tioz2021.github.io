@@ -1,25 +1,25 @@
 .main-list {
-  // min-height: 410px;
+  // min-height: 410rem;
   box-sizing: border-box;
-  padding-top: 24px;
-  padding-left: 50px;
-  padding-right: 50px;
-  // padding-bottom: 24px;
-  padding-bottom: 7px;
+  padding-top: 24rem;
+  padding-left: 50rem;
+  padding-right: 50rem;
+  // padding-bottom: 24rem;
+  padding-bottom: 7rem;
   background-color: rgba(78, 81, 245, 0.06);
-  border: 1px solid rgba(78, 81, 245, 0.6);
-  clip-path: polygon(0 50px, 50px 0, calc(100% - 0px) 0, 100% 50px, 100% calc(100% - 50px), calc(100% - 50px) 100%, 0px 100%, 0 calc(120% - 50px));
-  margin-bottom: 24px;
+  border: 1rem solid rgba(78, 81, 245, 0.6);
+  clip-path: polygon(0 50rem, 50rem 0, calc(100% - 0rem) 0, 100% 50rem, 100% calc(100% - 50rem), calc(100% - 50rem) 100%, 0rem 100%, 0 calc(120% - 50rem));
+  margin-bottom: 24rem;
 
   // .main-list__item
   &__item {
     position: relative;
-    min-height: 42px;
+    min-height: 42rem;
     box-sizing: border-box;
-    border-bottom: 1px solid #9093f9;
-    padding-bottom: 8px;
-    margin-bottom: 8px;
-    padding-left: 17px;
+    border-bottom: 1rem solid #9093f9;
+    padding-bottom: 8rem;
+    margin-bottom: 8rem;
+    padding-left: 17rem;
 
     // .main-list__item:last-child
     &:last-child{
@@ -31,16 +31,16 @@
   &__dot {
     border-radius: 100%;
     background: linear-gradient(66deg, #9073a8 0%, #743d99 19.5%, #260046 60%, #a439ff 81.5%, #10001d 100%), linear-gradient(81deg, #9073a8 0%, #743d99 19.5%, #260046 60%, #a439ff 81.5%, #10001d 100%);
-    width: 9px;
-    height: 9px;
+    width: 9rem;
+    height: 9rem;
     position: absolute;
-    left: 0px;
+    left: 0rem;
     top: 40%;
     transform: translateY(-50%);
   }
 
   // .main-list__text
   &__text {
-    font-size: 24.5px;
+    font-size: 24.5rem;
   }
 }

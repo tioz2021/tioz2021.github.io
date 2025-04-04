@@ -6,8 +6,8 @@
   menuItems.forEach((item) => {
     item.addEventListener('mouseenter', (e) => {
       const { offsetLeft, offsetWidth } = e.target;
-      underline.style.left = `${offsetLeft}px`;
-      underline.style.width = `${offsetWidth}px`;
+      underline.style.left = `${offsetLeft}rem`;
+      underline.style.width = `${offsetWidth}rem`;
     });
   
     item.addEventListener('mouseleave', () => {
@@ -21,8 +21,8 @@
   menuItems2.forEach((item) => {
     item.addEventListener('mouseenter', (e) => {
       const { offsetLeft, offsetWidth } = e.target;
-      underline2.style.left = `${offsetLeft}px`;
-      underline2.style.width = `${offsetWidth}px`;
+      underline2.style.left = `${offsetLeft}rem`;
+      underline2.style.width = `${offsetWidth}rem`;
     });
   
     item.addEventListener('mouseleave', () => {
@@ -266,7 +266,7 @@
     const bubbleWidth = bubble.offsetWidth;
     const leftPosition = thumbRect.left - containerRect.left - bubbleWidth/2 + thumbRect.width/2;
     
-    // bubble.style.left = `${leftPosition}px`;
+    // bubble.style.left = `${leftPosition}rem`;
   }
 
   // Инициализация
@@ -301,8 +301,8 @@
     
     header.classList.add("active");
     const textHeight = content.scrollHeight;
-    content.style.maxHeight = `${textHeight + 94}px`;
-    content.style.paddingBottom = "12px";
+    content.style.maxHeight = `${textHeight + 94}rem`;
+    content.style.paddingBottom = "12rem";
   };
 
   // Функция для закрытия всех элементов
@@ -313,7 +313,7 @@
       
       header.classList.remove("active");
       content.style.maxHeight = "0";
-      content.style.paddingBottom = "0px";
+      content.style.paddingBottom = "0rem";
     });
   };
 

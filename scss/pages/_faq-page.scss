@@ -1,18 +1,18 @@
 .main-faq-page .information-box{
-  margin-bottom: 75px;
+  margin-bottom: 75rem;
 }
 .faq {
-  margin-bottom: 150px;
+  margin-bottom: 150rem;
 
   // .faq__container
   &__container {
-    max-width: 800px;
+    max-width: 800rem;
     flex-direction: column;
   }
 
   // .faq__title
   &__title {
-    margin-bottom: 42px;
+    margin-bottom: 42rem;
     width: 100%;
     text-align: center;
   }

@@ -3,7 +3,7 @@
   width: 100%;
 
   .container {
-    // max-width: 900px;
+    // max-width: 900rem;
     // margin: 0 auto;
     // position: relative;
     // display: block;
@@ -14,7 +14,7 @@
   }
 
   .button {
-    // margin: 20px;
+    // margin: 20rem;
     float: left;
     position: relative;
 
@@ -26,7 +26,7 @@
 
 
     .label {
-      // padding: 10px;
+      // padding: 10rem;
       display: inline-block;
     }
 
@@ -49,14 +49,14 @@
 
       .left,
       .right {
-        height: 45px;
-        width: 1px;
+        height: 45rem;
+        width: 1rem;
       }
 
       .top,
       .bottom {
-        height: 1px;
-        width: 30px;
+        height: 1rem;
+        width: 30rem;
       }
 
       .top {
@@ -71,14 +71,14 @@
 
       .left {
         transform: rotate(35deg);
-        left: -7px;
-        top: -1px;
+        left: -7rem;
+        top: -1rem;
       }
 
       .right {
         transform: rotate(35deg);
-        right: -7px;
-        bottom: -1px;
+        right: -7rem;
+        bottom: -1rem;
       }
     }
 
@@ -99,8 +99,8 @@
             );
           position: absolute;
           display: block;
-          width: 40px;
-          height: 1px;
+          width: 40rem;
+          height: 1rem;
           transform: rotate(-45deg);
         }
 
@@ -116,8 +116,8 @@
       &:before,
       &:after {
         content: '';
-        height: 1px;
-        width: 30px;
+        height: 1rem;
+        width: 30rem;
         position: absolute;
         display: block;
         // background: #f0202f;
@@ -146,21 +146,21 @@
 
           &:before,
           &:after {
-            width: 35px;
+            width: 35rem;
           }
 
           span {
 
             &:before,
             &:after {
-              height: 35px;
+              height: 35rem;
             }
           }
         }
       }
 
       .label {
-        padding: 10px 22px;
+        padding: 10rem 22rem;
       }
 
       .icon {
@@ -175,8 +175,8 @@
         &:before,
         &:after {
           content: '';
-          height: 1px;
-          width: 30px;
+          height: 1rem;
+          width: 30rem;
           position: absolute;
           display: block;
           // background: #f0202f;
@@ -215,8 +215,8 @@
               );
             position: absolute;
             display: block;
-            width: 2px;
-            height: 30px;
+            width: 2rem;
+            height: 30rem;
             transition: height 0.5s;
           }
 
@@ -240,21 +240,21 @@
 
           &:before,
           &:after {
-            width: 10px;
+            width: 10rem;
           }
 
           span {
 
             &:before,
             &:after {
-              height: 10px;
+              height: 10rem;
             }
           }
         }
       }
 
       .label {
-        padding: 10px 22px;
+        padding: 10rem 22rem;
       }
 
       .icon {
@@ -269,8 +269,8 @@
         &:before,
         &:after {
           content: '';
-          height: 1px;
-          width: 30px;
+          height: 1rem;
+          width: 30rem;
           position: absolute;
           display: block;
           background: #f0202f;
@@ -295,8 +295,8 @@
             background: #f0202f;
             position: absolute;
             display: block;
-            width: 2px;
-            height: 30px;
+            width: 2rem;
+            height: 30rem;
             transition: height 0.5s;
           }
 
@@ -321,21 +321,21 @@
 
           &:before,
           &:after {
-            width: 20px;
+            width: 20rem;
           }
 
           span {
 
             &:before,
             &:after {
-              height: 20px;
+              height: 20rem;
             }
           }
         }
       }
 
       .label {
-        padding: 10px 22px;
+        padding: 10rem 22rem;
       }
 
       .icon {
@@ -351,8 +351,8 @@
         &:before,
         &:after {
           content: '';
-          height: 1px;
-          width: 30px;
+          height: 1rem;
+          width: 30rem;
           position: absolute;
           display: block;
           background: #f0202f;
@@ -377,8 +377,8 @@
             background: #f0202f;
             position: absolute;
             display: block;
-            width: 2px;
-            height: 30px;
+            width: 2rem;
+            height: 30rem;
             transition: height 0.5s;
           }
 
@@ -417,7 +417,7 @@
       }
 
       .label {
-        padding: 10px 22px;
+        padding: 10rem 22rem;
       }
 
       .icon {
@@ -433,8 +433,8 @@
         &:before,
         &:after {
           content: '';
-          height: 1px;
-          width: 30px;
+          height: 1rem;
+          width: 30rem;
           position: absolute;
           display: block;
           background: #f0202f;
@@ -459,8 +459,8 @@
             background: #f0202f;
             position: absolute;
             display: block;
-            width: 2px;
-            height: 30px;
+            width: 2rem;
+            height: 30rem;
             transition: height 0.5s;
           }
 
@@ -499,7 +499,7 @@
       }
 
       .label {
-        padding: 10px 22px;
+        padding: 10rem 22rem;
       }
 
       .icon {
@@ -515,8 +515,8 @@
         &:before,
         &:after {
           content: '';
-          height: 1px;
-          width: 30px;
+          height: 1rem;
+          width: 30rem;
           position: absolute;
           display: block;
           background: #f0202f;
@@ -541,8 +541,8 @@
             background: #f0202f;
             position: absolute;
             display: block;
-            width: 2px;
-            height: 30px;
+            width: 2rem;
+            height: 30rem;
             transition: height 0.5s;
           }
 
@@ -581,7 +581,7 @@
       }
 
       .label {
-        padding: 10px 22px;
+        padding: 10rem 22rem;
       }
 
       .icon {
@@ -597,8 +597,8 @@
         &:before,
         &:after {
           content: '';
-          height: 1px;
-          width: 30px;
+          height: 1rem;
+          width: 30rem;
           position: absolute;
           display: block;
           background: #f0202f;
@@ -623,8 +623,8 @@
             background: #f0202f;
             position: absolute;
             display: block;
-            width: 2px;
-            height: 30px;
+            width: 2rem;
+            height: 30rem;
             transition: height 0.5s;
           }
 
@@ -663,7 +663,7 @@
       }
 
       .label {
-        padding: 10px 22px;
+        padding: 10rem 22rem;
       }
 
       .icon {
@@ -680,8 +680,8 @@
         &:before,
         &:after {
           content: '';
-          height: 1px;
-          width: 30px;
+          height: 1rem;
+          width: 30rem;
           position: absolute;
           display: block;
           background: #f0202f;
@@ -706,8 +706,8 @@
             background: #f0202f;
             position: absolute;
             display: block;
-            width: 2px;
-            height: 30px;
+            width: 2rem;
+            height: 30rem;
             transition: height 0.2s;
           }
 
@@ -746,8 +746,8 @@
       }
 
       .label {
-        // padding: 10px 22px;
-        // padding: 13px 24px;
+        // padding: 10rem 22rem;
+        // padding: 13rem 24rem;
       }
 
       .icon {
@@ -764,8 +764,8 @@
         &:before,
         &:after {
           content: '';
-          height: 2px;
-          width: 116px;
+          height: 2rem;
+          width: 116rem;
           position: absolute;
           display: block;
           background: linear-gradient(to bottom left,
@@ -794,8 +794,8 @@
                 rgba(71, 0, 131, 0));
             position: absolute;
             display: block;
-            width: 2px;
-            height: 50px;
+            width: 2rem;
+            height: 50rem;
             transition: height 0.2s;
           }
 
@@ -834,7 +834,7 @@
       }
 
       .label {
-        padding: 10px 22px;
+        padding: 10rem 22rem;
       }
 
       .icon {
@@ -850,8 +850,8 @@
         &:before,
         &:after {
           content: '';
-          height: 1px;
-          width: 30px;
+          height: 1rem;
+          width: 30rem;
           position: absolute;
           display: block;
           background: #f0202f;
@@ -877,8 +877,8 @@
             background: #f0202f;
             position: absolute;
             display: block;
-            width: 2px;
-            height: 30px;
+            width: 2rem;
+            height: 30rem;
             transition: height 0.2s;
             transition-delay: 0.2s;
           }
@@ -921,7 +921,7 @@
       }
 
       .label {
-        padding: 10px 22px;
+        padding: 10rem 22rem;
       }
 
       .icon {
@@ -937,8 +937,8 @@
         &:before,
         &:after {
           content: '';
-          height: 1px;
-          width: 30px;
+          height: 1rem;
+          width: 30rem;
           position: absolute;
           display: block;
           background: #f0202f;
@@ -964,8 +964,8 @@
             background: #f0202f;
             position: absolute;
             display: block;
-            width: 2px;
-            height: 30px;
+            width: 2rem;
+            height: 30rem;
             transition: height 0.2s;
             transition-delay: 0.2s;
           }
@@ -1009,7 +1009,7 @@
       }
 
       .label {
-        padding: 10px 22px;
+        padding: 10rem 22rem;
       }
 
       .icon {
@@ -1025,8 +1025,8 @@
         &:before,
         &:after {
           content: '';
-          height: 1px;
-          width: 30px;
+          height: 1rem;
+          width: 30rem;
           position: absolute;
           display: block;
           background: #f0202f;
@@ -1052,8 +1052,8 @@
             background: #f0202f;
             position: absolute;
             display: block;
-            width: 2px;
-            height: 30px;
+            width: 2rem;
+            height: 30rem;
             transition: all 0.2s;
             transition-delay: 0.2s;
           }
@@ -1079,15 +1079,15 @@
 
           &:before,
           &:after {
-            width: 60px;
+            width: 60rem;
           }
 
           &:before {
-            left: calc(50% - 30px);
+            left: calc(50% - 30rem);
           }
 
           &:after {
-            right: calc(50% - 30px);
+            right: calc(50% - 30rem);
           }
 
           span {
@@ -1101,7 +1101,7 @@
       }
 
       .label {
-        padding: 10px 22px;
+        padding: 10rem 22rem;
       }
 
       .icon {
@@ -1117,8 +1117,8 @@
         &:before,
         &:after {
           content: '';
-          height: 1px;
-          width: 30px;
+          height: 1rem;
+          width: 30rem;
           position: absolute;
           display: block;
           background: #f0202f;
@@ -1144,8 +1144,8 @@
             background: #f0202f;
             position: absolute;
             display: block;
-            width: 2px;
-            height: 30px;
+            width: 2rem;
+            height: 30rem;
             transition: all 0.2s;
             transition-delay: 0.2s;
           }
@@ -1171,16 +1171,16 @@
 
           &:before,
           &:after {
-            width: 60px;
+            width: 60rem;
             transition-delay: 0.4s;
           }
 
           &:before {
-            left: calc(50% - 30px);
+            left: calc(50% - 30rem);
           }
 
           &:after {
-            right: calc(50% - 30px);
+            right: calc(50% - 30rem);
           }
 
           span {
@@ -1195,7 +1195,7 @@
       }
 
       .label {
-        padding: 10px 22px;
+        padding: 10rem 22rem;
       }
 
       .icon {
@@ -1211,8 +1211,8 @@
         &:before,
         &:after {
           content: '';
-          height: 1px;
-          width: 30px;
+          height: 1rem;
+          width: 30rem;
           position: absolute;
           display: block;
           background: #f0202f;
@@ -1238,8 +1238,8 @@
             background: #f0202f;
             position: absolute;
             display: block;
-            width: 2px;
-            height: 30px;
+            width: 2rem;
+            height: 30rem;
             transition: all 0.2s;
             transition-delay: 0.4s;
           }
@@ -1265,37 +1265,37 @@
 
           &:before,
           &:after {
-            width: 60px;
+            width: 60rem;
           }
 
           &:before {
-            left: calc(50% - 30px);
+            left: calc(50% - 30rem);
           }
 
           &:after {
-            right: calc(50% - 30px);
+            right: calc(50% - 30rem);
           }
 
           span {
 
             &:before,
             &:after {
-              height: calc(100% - 20px);
+              height: calc(100% - 20rem);
             }
 
             &:before {
-              top: 10px;
+              top: 10rem;
             }
 
             &:after {
-              bottom: 10px;
+              bottom: 10rem;
             }
           }
         }
       }
 
       .label {
-        padding: 10px 22px;
+        padding: 10rem 22rem;
       }
 
       .icon {
@@ -1311,8 +1311,8 @@
         &:before,
         &:after {
           content: '';
-          height: 1px;
-          width: 30px;
+          height: 1rem;
+          width: 30rem;
           position: absolute;
           display: block;
           background: #f0202f;
@@ -1338,8 +1338,8 @@
             background: #f0202f;
             position: absolute;
             display: block;
-            width: 2px;
-            height: 30px;
+            width: 2rem;
+            height: 30rem;
             transition: all 0.2s;
             transition-delay: 0.2s;
           }
@@ -1384,7 +1384,7 @@
       }
 
       .label {
-        padding: 10px 22px;
+        padding: 10rem 22rem;
       }
 
       .icon2 {
@@ -1412,8 +1412,8 @@
         &:before,
         &:after {
           content: '';
-          height: 1px;
-          width: 30px;
+          height: 1rem;
+          width: 30rem;
           position: absolute;
           display: block;
           background: #f0202f;
@@ -1439,8 +1439,8 @@
             background: #f0202f;
             position: absolute;
             display: block;
-            width: 2px;
-            height: 30px;
+            width: 2rem;
+            height: 30rem;
             transition: all 0.2s;
             transition-delay: 0.2s;
           }
@@ -1485,7 +1485,7 @@
       }
 
       .label {
-        padding: 10px 22px;
+        padding: 10rem 22rem;
       }
 
       .icon2 {
@@ -1513,8 +1513,8 @@
         &:before,
         &:after {
           content: '';
-          height: 1px;
-          width: 30px;
+          height: 1rem;
+          width: 30rem;
           position: absolute;
           display: block;
           background: #f0202f;
@@ -1540,8 +1540,8 @@
             background: #f0202f;
             position: absolute;
             display: block;
-            width: 2px;
-            height: 30px;
+            width: 2rem;
+            height: 30rem;
             transition: all 0.2s;
             transition-delay: 0.2s;
           }
@@ -1567,16 +1567,16 @@
 
           &:before,
           &:after {
-            width: 60px;
+            width: 60rem;
             transition-delay: 0.4s;
           }
 
           &:before {
-            left: calc(50% - 30px);
+            left: calc(50% - 30rem);
           }
 
           &:after {
-            right: calc(50% - 30px);
+            right: calc(50% - 30rem);
           }
 
           span {
@@ -1598,7 +1598,7 @@
       }
 
       .label {
-        padding: 10px 22px;
+        padding: 10rem 22rem;
       }
 
       .icon2 {
@@ -1625,8 +1625,8 @@
         &:before,
         &:after {
           content: '';
-          height: 1px;
-          width: 30px;
+          height: 1rem;
+          width: 30rem;
           position: absolute;
           display: block;
           background: #f0202f;
@@ -1652,8 +1652,8 @@
             background: #f0202f;
             position: absolute;
             display: block;
-            width: 2px;
-            height: 30px;
+            width: 2rem;
+            height: 30rem;
             transition: all 0.2s;
             transition-delay: 0.4s;
           }
@@ -1673,22 +1673,22 @@
 
     &.v19 {
       .label {
-        padding: 10px 30px;
+        padding: 10rem 30rem;
 
-        font-size: 14px;
+        font-size: 14rem;
         display: inline-block;
         z-index: 10;
         position: relative;
         white-space: nowrap;
-        line-height: 24px;
+        line-height: 24rem;
         transition: all 0.225s;
         transition-delay: 0.45s;
-        letter-spacing: 2px;
+        letter-spacing: 2rem;
       }
 
       &.button-start {
         .label {
-          padding: 12px 65px;
+          padding: 12rem 65rem;
         }
       }
 
@@ -1718,10 +1718,10 @@
 
         &:before,
         &:after {
-          width: 60px;
+          width: 60rem;
           opacity: 0;
           content: '';
-          height: 1px;
+          height: 1rem;
           position: absolute;
           display: block;
           background: #f0202f;
@@ -1731,12 +1731,12 @@
 
         &:before {
           top: 0;
-          left: calc(50% - 30px);
+          left: calc(50% - 30rem);
         }
 
         &:after {
           bottom: 0;
-          right: calc(50% - 30px);
+          right: calc(50% - 30rem);
         }
 
         span {
@@ -1749,7 +1749,7 @@
             background: #f0202f;
             position: absolute;
             display: block;
-            width: 2px;
+            width: 2rem;
             transition: all 0.225s;
           }
 
@@ -1772,7 +1772,7 @@
           &:before,
           &:after {
             transition-delay: 0s;
-            width: 30px;
+            width: 30rem;
             opacity: 1;
           }
 
@@ -1788,7 +1788,7 @@
 
             &:before,
             &:after {
-              height: 30px;
+              height: 30rem;
               transition-delay: 0.45s;
             }
           }
@@ -1849,8 +1849,8 @@
       &.transparent {
         float: none;
         display: inline-block;
-        -webkit-transform: translateZ(0px);
-        transform: translateZ(0px);
+        -webkit-transform: translateZ(0rem);
+        transform: translateZ(0rem);
 
         .label {
           color: #fff;
@@ -1890,19 +1890,19 @@
 
 .button__notification {
   .button.v12 {
-    width: 185px;
-    height: 49px;
+    width: 185rem;
+    height: 49rem;
     margin-left: auto;
-    margin-right: 9px;
+    margin-right: 9rem;
 
     .icon {
       transform: skew(-18deg, 0deg);
-      top: -1px;
+      top: -1rem;
 
       &:before,
       &:after {
-        height: 2px;
-        width: 99px;
+        height: 2rem;
+        width: 99rem;
         // background: linear-gradient(to bottom left,
         //     #470083,
         //     rgba(71, 0, 131, 0));
@@ -1917,21 +1917,21 @@
           //     #470083,
           //     rgba(71, 0, 131, 0));
           background-color: #470083;
-          width: 2px;
-          height: 50px;
+          width: 2rem;
+          height: 50rem;
         }
       }
     }
   }
 
   .label {
-    padding: 14px 24px;
+    padding: 14rem 24rem;
   }
 
   span {
     font-family: var(--font-family);
     font-weight: 500;
-    font-size: 18px;
+    font-size: 18rem;
     line-height: 120%;
     text-transform: uppercase;
     text-align: center;
@@ -1941,25 +1941,25 @@
 
 .button-address {
   .button {
-    width: 717px;
+    width: 717rem;
     position: relative;
   }
 
   .button.v6 {
-    height: 49px;
+    height: 49rem;
 
     .icon {
-      top: 3px;
+      top: 3rem;
       transform: skew(-18deg, 0deg);
 
       &:before {
-        top: -2px;
+        top: -2rem;
       }
 
       &:before,
       &:after {
-        height: 2px;
-        width: 99px;
+        height: 2rem;
+        width: 99rem;
         background: #4E51F5;
       }
 
@@ -1968,30 +1968,30 @@
         &:before,
         &:after {
           background: #4E51F5;
-          width: 2px;
-          height: 50px;
+          width: 2rem;
+          height: 50rem;
         }
       }
     }
   }
 
   .button-address__icon {
-    width: 24px;
-    height: 24px;
+    width: 24rem;
+    height: 24rem;
     position: absolute;
-    top: 14px;
-    left: 205px;
+    top: 14rem;
+    left: 205rem;
   }
 
   .label {
-    padding: 15px 22px !important;
-    margin-left: 29px;
+    padding: 15rem 22rem !important;
+    margin-left: 29rem;
   }
 
   span {
     font-family: var(--font-family);
     font-weight: 500;
-    font-size: 18px;
+    font-size: 18rem;
     line-height: 120%;
     text-transform: uppercase;
     color: $body-3-color;
@@ -2000,61 +2000,61 @@
 
 .button-address-mini {
   .button {
-    width: 347px;
-    margin-left: 4px;
+    width: 347rem;
+    margin-left: 4rem;
     position: relative;
   }
 
   .button-address__icon {
-    top: 12px;
-    left: 95px;
+    top: 12rem;
+    left: 95rem;
   }
 
   .label {
-    padding: 14px 20px !important;
-    margin-left: 37px;
+    padding: 14rem 20rem !important;
+    margin-left: 37rem;
   }
 
   .button.v6 .icon {
-    top: 1px;
+    top: 1rem;
   }
 }
 
 .button-delete {
   .button {
-    width: 345px;
-    margin-left: 0px;
+    width: 345rem;
+    margin-left: 0rem;
     position: relative;
   }
 
   .label {
-    padding: 13px 22px !important;
-    margin-left: 9px;
+    padding: 13rem 22rem !important;
+    margin-left: 9rem;
     color: $error-color;
   }
 
   .button-address__icon {
-    width: 24px;
-    height: 24px;
-    top: 12px;
-    left: 23px;
+    width: 24rem;
+    height: 24rem;
+    top: 12rem;
+    left: 23rem;
   }
 
   .button.v4 {
-    height: 49px;
+    height: 49rem;
 
     .icon {
-      top: 0px;
+      top: 0rem;
       transform: skew(-18deg, 0deg);
 
       &:before {
-        top: -2px;
+        top: -2rem;
       }
 
       &:before,
       &:after {
-        height: 2px;
-        width: 99px;
+        height: 2rem;
+        width: 99rem;
         background: $error-color;
       }
 
@@ -2063,8 +2063,8 @@
         &:before,
         &:after {
           background: $error-color;
-          width: 2px;
-          height: 50px;
+          width: 2rem;
+          height: 50rem;
         }
       }
     }
@@ -2072,34 +2072,34 @@
 }
 
 .footer__btn{
-  width: 296px;
-  height: 51px;
-  margin-left: 9px;
+  width: 296rem;
+  height: 51rem;
+  margin-left: 9rem;
 }
 .footer__btn .button.v12{
   width: 100%;
   height: 100%;
 }
 .footer__btn .button.v12 .label{
-  padding: 13px 25px;
-  margin-left: 30px;
+  padding: 13rem 25rem;
+  margin-left: 30rem;
 }
 
 .footer__btn .button-icon{
   position: absolute;
-  width: 24px;
-  height: 24px;
-  left: 61px;
-  top: 13px;
+  width: 24rem;
+  height: 24rem;
+  left: 61rem;
+  top: 13rem;
 }
 
 // copy-btn
 .copy-btn{
-  width: 200px;
-  height: 36px;
+  width: 200rem;
+  height: 36rem;
   box-sizing: border-box;
-  padding-left: 28px;
-  margin-bottom: 36px;
+  padding-left: 28rem;
+  margin-bottom: 36rem;
 
   display: flex;
   align-items: center;
@@ -2111,9 +2111,9 @@
 
   // .copy-btn-icon
   &-icon{
-    width: 24px;
-    height: 24px;
-    margin-right: 8px;
+    width: 24rem;
+    height: 24rem;
+    margin-right: 8rem;
   }
 
   // .copy-btn span
@@ -2124,8 +2124,8 @@
 
 // .default-btn
 .default-btn{
-  width: 300px;
-  height: 50px;
+  width: 300rem;
+  height: 50rem;
   clip-path: polygon(
     100% 0%,    /* Верхняя правая точка */
     5.33% 0%,   /* Верхняя левая точка */
@@ -2140,7 +2140,7 @@
   align-items: center;
   justify-content: center;
 
-  margin-bottom: 36px;
+  margin-bottom: 36rem;
 
   transition: all 0.2s ease-in-out;
 

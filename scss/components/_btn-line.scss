@@ -1,8 +1,8 @@
 .btn-line {
   position: relative;
-  width: 297px;
-  height: 48px;
-  margin-bottom: 16px;
+  width: 297rem;
+  height: 48rem;
+  margin-bottom: 16rem;
 
   // .btn-line i
   i{
@@ -37,8 +37,8 @@
   span:after {
     content: '';
     position: absolute;
-    width: 50px;
-    height: 16px;
+    width: 50rem;
+    height: 16rem;
     background: $body-4-color;
     // background: linear-gradient(
     //   to bottom right, /* Направление градиента */
@@ -51,30 +51,30 @@
   }
 
   a:before {
-    top: -2px;
-    left: -2px
+    top: -2rem;
+    left: -2rem
   }
 
   a:after {
-    top: -2px;
-    right: -2px;
+    top: -2rem;
+    right: -2rem;
   }
 
   span:before {
-    bottom: -2px;
-    left: -2px
+    bottom: -2rem;
+    left: -2rem
   }
 
   span:after {
-    bottom: -2px;
-    right: -2px
+    bottom: -2rem;
+    right: -2rem
   }
 
   a.active:before,
   a.active:after,
   a.active span:before,
   a.active span:after {
-    width: calc(297px/2);
-    height: calc(48px/2)
+    width: calc(297rem/2);
+    height: calc(48rem/2)
   }
 }

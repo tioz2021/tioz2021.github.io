@@ -1,11 +1,11 @@
 .mixin-input {
-  margin-bottom: 36px;
+  margin-bottom: 36rem;
   position: relative;
 
   // .mixin-input__input-wrp
   &__input-wrp {
-    width: 462px;
-    height: 50px;
+    width: 462rem;
+    height: 50rem;
     position: relative;
     
     // .mixin-input__input-wrp input
@@ -13,7 +13,7 @@
       width: 100%;
       height: 100%;
       box-sizing: border-box;
-      padding-left: 36px;
+      padding-left: 36rem;
       position: relative;
       z-index: 2;
       background-color: unset;
@@ -35,9 +35,9 @@
   // .mixin-input__text
   &__text {
     position: absolute;
-    right: -18px;
+    right: -18rem;
     color: #470083;
     transform: rotate(-54deg);
-    top: 18px;
+    top: 18rem;
   }
 }

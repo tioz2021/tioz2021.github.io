@@ -1,6 +1,6 @@
 .heading-extra-large {
   font-weight: 400;
-  font-size: 150px;
+  font-size: 150rem;
   text-transform: uppercase;
   line-height: 120%;
   color: $body-2-color;
@@ -12,50 +12,50 @@
 
 .heading-large {
   font-weight: 400;
-  font-size: 41px;
+  font-size: 41rem;
   line-height: 120%;
   color: $body-2-color;
 }
 
 .heading-medium-large {
   font-weight: 400;
-  font-size: 38px;
+  font-size: 38rem;
   line-height: 120%;
   color: $body-2-color;
 }
 
 .heading-medium {
   font-weight: 400;
-  // font-size: 32px;
-  font-size: 33px;
+  // font-size: 32rem;
+  font-size: 33rem;
   line-height: 120%;
   color: $body-2-color;
 }
 
 .heading-small {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 24rem;
   line-height: 120%;
   color: $body-2-color;
 }
 
 .text-large {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 18rem;
   line-height: 120%;
   color: $body-2-color;
 }
 
 .text-medium {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 14rem;
   line-height: 120%;
   color: $body-2-color;
 }
 
 .text-small {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 12rem;
   line-height: 120%;
   color: $body-2-color;
 }
@@ -76,8 +76,8 @@
 .under-link{
   text-decoration: underline;
   text-decoration-skip-ink: none;
-  text-underline-offset: 3px;
-  text-decoration-thickness: 2px;
+  text-underline-offset: 3rem;
+  text-decoration-thickness: 2rem;
   color: $body-3-color !important;
   transition: color 250ms ease-in-out;
 

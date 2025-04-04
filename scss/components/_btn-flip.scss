@@ -4,7 +4,7 @@ $speed: 0.5s;
   opacity: 1;
   outline: 0;
   color: $body-1-color;
-  line-height: 50px;
+  line-height: 50rem;
   position: relative;
   text-align: center;
   display: inline-block;
@@ -35,13 +35,13 @@ $speed: 0.5s;
     background: $body-4-color;
     content: attr(data-back);
     transform: translateY(-50%) rotateX(90deg);
-    // padding-left: 7px;
+    // padding-left: 7rem;
 
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px; // Отступ между иконкой и текстом
-    padding-left: 10px;
+    gap: 8rem; // Отступ между иконкой и текстом
+    padding-left: 10rem;
   }
 
   &:before {
@@ -50,11 +50,11 @@ $speed: 0.5s;
     opacity: 1;
     color: $body-1-color;
     display: block;
-    // padding: 0 30px;
-    // padding: 0 113px;
+    // padding: 0 30rem;
+    // padding: 0 113rem;
     padding: 0;
-    // padding-left: 33px;
-    line-height: 50px;
+    // padding-left: 33rem;
+    line-height: 50rem;
     transition: $speed;
     position: relative;
     background: $body-4-color;
@@ -64,20 +64,20 @@ $speed: 0.5s;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 8rem;
 
-    padding-left: 34px;
+    padding-left: 34rem;
   }
 }
 
 .btn-icon {
   display: inline-flex;
-  width: 24px;
-  height: 24px;
+  width: 24rem;
+  height: 24rem;
   position: absolute;
-  top: 13px;
-  // left: 58px;
-  left: 81px;
+  top: 13rem;
+  // left: 58rem;
+  left: 81rem;
   z-index: 2;
   
   svg {

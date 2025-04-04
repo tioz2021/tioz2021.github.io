@@ -1,5 +1,5 @@
 .how-work-page .information-box{
-  margin-bottom: 75px;
+  margin-bottom: 75rem;
 }
 
 .how-work {
@@ -13,7 +13,7 @@
   &__title {
     width: 100%;
     text-align: center;
-    margin-bottom: 41px;
+    margin-bottom: 41rem;
 
     // .how-work__title span
     span {
@@ -24,34 +24,34 @@
   // .how-work__list
   &__list {
     width: 100%;
-    height: 520px;
+    height: 520rem;
     background: url('../../images/infografic-bg.svg');
     background-size: 100% 100%;
 
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
-    padding-top: 62px;
-    margin-bottom: 66px;
+    padding-top: 62rem;
+    margin-bottom: 66rem;
   }
 
   // .how-work__item
   &__item {
-    width: 282px;
-    height: 482px;
+    width: 282rem;
+    height: 482rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 24rem;
+    padding-right: 24rem;
   }
 
   // .how-work__number-wrp
   &__number-wrp {
     width: 100%;
     text-align: center;
-    margin-bottom: 34px;
+    margin-bottom: 34rem;
   }
 
   // .how-work__number
@@ -61,7 +61,7 @@
 
   // .how-work__text
   &__text {
-    font-size: 18.4px;
+    font-size: 18.4rem;
 
     // .how-work__text span
     span{
@@ -72,20 +72,20 @@
   // .how-work__end
   &__end {
     width: 100%;
-    height: 291px;
+    height: 291rem;
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
-    padding-top: 30px;
-    margin-bottom: 155px;
+    padding-top: 30rem;
+    margin-bottom: 155rem;
     background-image: url('../../images/decor-step.svg');
     background-size: 100% 100%;
   }
 
   // .how-work__end-text
   &__end-text {
-    max-width: 582px;
-    font-size: 32.6px;
+    max-width: 582rem;
+    font-size: 32.6rem;
   }
 
   // .how-work__end-text--first

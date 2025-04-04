@@ -1,19 +1,19 @@
 .privacy-slider-v2 {
-  margin-bottom: 50px;
+  margin-bottom: 50rem;
 }
 
 .track-container-v2 {
   position: relative;
-  height: 40px;
-  margin: 25px 0;
+  height: 40rem;
+  margin: 25rem 0;
 }
 
 .track-v2 {
   position: absolute;
   width: 100%;
-  height: 8px;
+  height: 8rem;
   // background: #f0f0f0;
-  // border-radius: 3px;
+  // border-radius: 3rem;
   top: 50%;
   transform: translateY(-50%);
   transition: all 500ms ease-in-out;
@@ -23,7 +23,7 @@
 // .track-v2::after {
 //   content: '';
 //   position: absolute;
-//   width: 5px;
+//   width: 5rem;
 //   height: 100%;
 //   background: inherit;
 //   top: 50%;
@@ -31,12 +31,12 @@
 // }
 
 // .track-v2::before {
-//   left: -4.95px;
+//   left: -4.95rem;
 //   clip-path: polygon(0 50%, 100% 0, 100% 100%);
 // }
 
 // .track-v2::after {
-//   right: -4.95px;
+//   right: -4.95rem;
 //   clip-path: polygon(0 0, 100% 50%, 0 100%);
 // }
 
@@ -50,14 +50,14 @@
 
 
 .track-v2.bg1{
-  filter: drop-shadow(0 0 1px #9093f9) drop-shadow(0 0 3px #9093f9)
+  filter: drop-shadow(0 0 1rem #9093f9) drop-shadow(0 0 3rem #9093f9)
 }
 .track-v2.bg1 .track-v2__bg svg path {
   fill: #9093f9;
 }
 
 .track-v2.bg2{
-  filter: drop-shadow(0 0 1px #28b6e1) drop-shadow(0 0 3px #28b6e1)
+  filter: drop-shadow(0 0 1rem #28b6e1) drop-shadow(0 0 3rem #28b6e1)
 }
 .track-v2.bg2 .track-v2__bg svg path {
   fill: #28b6e1;
@@ -67,7 +67,7 @@
 }
 .track-v2.bg3 {
   // background: linear-gradient(90deg, #28b6e1 0%, #c707c2 100%);
-  filter: drop-shadow(0 0 1px #28b6e1) drop-shadow(0 0 3px #c707c2);
+  filter: drop-shadow(0 0 1rem #28b6e1) drop-shadow(0 0 3rem #c707c2);
 }
 
 .progress-v2 {
@@ -75,12 +75,12 @@
   left: 0;
   top: 0;
   height: 100%;
-  // border-radius: 3px;
+  // border-radius: 3rem;
 }
 
 .thumb-v2 {
   position: absolute;
-  top: -10px;
+  top: -10rem;
   left: 0;
   transform: translateX(-50%);
   z-index: 2;
@@ -88,20 +88,20 @@
 }
 
 .thumb-v2-icon{
-  width: 36px;
-  height: 36px;
+  width: 36rem;
+  height: 36rem;
 }
 
 .value-bubble-v2 {
   position: absolute;
-  top: 37px;
+  top: 37rem;
   // left: 0;
-  left: -16px;
+  left: -16rem;
   transform: none; /* Убираем transform из CSS, так как теперь управляем через JS */
-  // width: 50px;
-  // height: 46px;
-  width: 70px;
-  height: 46px;
+  // width: 50rem;
+  // height: 46rem;
+  width: 70rem;
+  height: 46rem;
   z-index: 3;
 }
 
@@ -137,15 +137,15 @@
 .slider-header-v2 {
   display: flex;
   justify-content: space-between;
-  // margin-bottom: 15px;
+  // margin-bottom: 15rem;
 }
 .badge__title{
   // background-color: rgba(78, 81, 245, .1);
   box-sizing: border-box;
-  padding: 5px 24px;
+  padding: 5rem 24rem;
   position: relative;
-  width: 330px;
-  height: 36px;
+  width: 330rem;
+  height: 36rem;
 
 }
 .badge__title-bg{
@@ -157,21 +157,21 @@
   transform: translate(-50%, -50%);
 }
 .badge-icon-wrp{
-  width: 150px;
-  height: 36px;
+  width: 150rem;
+  height: 36rem;
   box-sizing: border-box;
-  padding: 5px 26px;
+  padding: 5rem 26rem;
   position: relative;
-  left: -16px;
+  left: -16rem;
 }
 .badge-wrp{
-  // width: 465px;
+  // width: 465rem;
   box-sizing: border-box;
   display: flex;
   align-items: center;
   position: relative;
-  left: 12px;
-  top: -5px;
+  left: 12rem;
+  top: -5rem;
 }
 
 .badge-v2{
@@ -179,11 +179,11 @@
 }
 
 .badge-icon{
-  width: 16px;
-  height: 20px;
+  width: 16rem;
+  height: 20rem;
   position: absolute;
-  right: 25px;
-  top: 5px;
+  right: 25rem;
+  top: 5rem;
   z-index: 2;
 }
 
@@ -198,8 +198,8 @@
 
 .badge-v2-bg{
   position: absolute;
-  width: 150px;
-  height: 36px;
+  width: 150rem;
+  height: 36rem;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -207,5 +207,5 @@
 
 .slider-body-v2{
   position: relative;
-  top: -37px;
+  top: -37rem;
 }

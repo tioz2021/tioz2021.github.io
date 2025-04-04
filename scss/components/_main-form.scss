@@ -1,5 +1,5 @@
 .main-form {
-  margin-bottom: 150px;
+  margin-bottom: 150rem;
 
   // .main-form__container
   &__container {
@@ -13,72 +13,72 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 60px;
+    margin-bottom: 60rem;
 
     // .main-form__step-wrp:first-child
     &:first-child{
-      margin-bottom: 46px;
+      margin-bottom: 46rem;
     }
 
     // .main-form__step-wrp-1_1
     &-1_1{
-      margin-bottom: 70px;
+      margin-bottom: 70rem;
       // .main-form__step-wrp-1_1 .main-form__stem-number span
       .main-form__stem-number span{
-        left: -2px;
+        left: -2rem;
       }
     }
     // .main-form__step-wrp-step-2
     &-step-2{
-      margin-bottom: 72px;
+      margin-bottom: 72rem;
       // .main-form__step-wrp-step-2 .main-form__step-box-title
       .main-form__step-box-title{
-        margin-bottom: 48px;
+        margin-bottom: 48rem;
       }
       
     }
 
     // .main-form__step-wrp-step-3
     &-step-3{
-      margin-bottom: 50px;
+      margin-bottom: 50rem;
       // .main-form__step-wrp-step-3 .main-form__step-box
       .main-form__step-box{
-        min-height: 346px;
+        min-height: 346rem;
       }
       // .main-form__step-wrp-step-3 .main-form__step-box-title
       .main-form__step-box-title{
-        margin-bottom: 43px;
-        font-size: 40.8px;
-        margin-left: 6px;
+        margin-bottom: 43rem;
+        font-size: 40.8rem;
+        margin-left: 6rem;
       }
     }
   }
 
   // .main-form__step-number-wrp
   &__step-number-wrp {
-    width: 150px;
-    height: 50px;
+    width: 150rem;
+    height: 50rem;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    left: -1px;
-    top: -2px;
+    left: -1rem;
+    top: -2rem;
   }
 
   // .main-form__stem-number
   &__stem-number {
     position: relative;
     z-index: 2;
-    left: 6px;
-    top: -3px;
+    left: 6rem;
+    top: -3rem;
 
     // .main-form__stem-number span
     span{
       color: $body-4-color;
       position: relative;
-      left: -7px;
-      top: -1px;
+      left: -7rem;
+      top: -1rem;
     }
   }
 
@@ -96,35 +96,35 @@
   // .main-form__step-box
   &__step-box {
     position: relative;
-    width: 1000px;
-    min-height: 393px;
+    width: 1000rem;
+    min-height: 393rem;
     box-sizing: border-box;
-    padding-top: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 70px;
+    padding-top: 50rem;
+    padding-left: 50rem;
+    padding-right: 50rem;
+    padding-bottom: 70rem;
 
     background-color: rgba(78, 81, 245, 0.06);
-    border: 1px solid rgba(78, 81, 245, 0.6);
-    // border: 1px solid red;
+    border: 1rem solid rgba(78, 81, 245, 0.6);
+    // border: 1rem solid red;
     
     /* Основная форма с обрезанными углами */
     clip-path: polygon(
-      0 50px,        /* Левый верхний */
-      50px 0,        /* Левый верхний скос */
-      calc(100% - 0px) 0,  /* Правый верхний */
-      100% 50px,     /* Правый верхний скос */
-      100% calc(100% - 50px), /* Правый нижний */
-      calc(100% - 50px) 100%, /* Правый нижний скос */
-      0px 100%,     /* Левый нижний */
-      0 calc(120% - 50px)  /* Левый нижний скос */
+      0 50rem,        /* Левый верхний */
+      50rem 0,        /* Левый верхний скос */
+      calc(100% - 0rem) 0,  /* Правый верхний */
+      100% 50rem,     /* Правый верхний скос */
+      100% calc(100% - 50rem), /* Правый нижний */
+      calc(100% - 50rem) 100%, /* Правый нижний скос */
+      0rem 100%,     /* Левый нижний */
+      0 calc(120% - 50rem)  /* Левый нижний скос */
     );
 
     // .main-form__step-box-individualize
     &-individualize{
-      padding-top: 36px;
-      padding-bottom: 50px;
-      min-height: 214px;
+      padding-top: 36rem;
+      padding-bottom: 50rem;
+      min-height: 214rem;
       display: flex;
       flex-direction: column;
     }
@@ -132,26 +132,26 @@
 
   // .main-form__step-box-title
   &__step-box-title {
-    margin-bottom: 39px;
+    margin-bottom: 39rem;
   }
 
   // .main-form__step-input-wrp
   &__step-input-wrp {
-    // margin-bottom: 24px;
-    // margin-bottom: 23px;
-    // margin-bottom: 25px;
-    margin-bottom: 26px;
+    // margin-bottom: 24rem;
+    // margin-bottom: 23rem;
+    // margin-bottom: 25rem;
+    margin-bottom: 26rem;
   }
 
   // .main-form__step-button-wrp
   &__step-button-wrp{
-    width: 730px;
+    width: 730rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    margin-left: 19px;
-    margin-bottom: 38px;
+    margin-left: 19rem;
+    margin-bottom: 38rem;
   }
 
   // .main-form__step-button
@@ -165,9 +165,9 @@
 
     // .main-form__step-end-icon
     &-icon{
-      width: 24px;
-      height: 24px;
-      margin-right: 8px;
+      width: 24rem;
+      height: 24rem;
+      margin-right: 8rem;
       
     }
 
@@ -175,13 +175,13 @@
     a{
       font-weight: 500;
       color: $body-4-color;
-      margin-left: 5px;
+      margin-left: 5rem;
     }
 
     // .main-form__step-end-text
     &-text{
-      max-width: 855px;
-      font-size: 18.45px;
+      max-width: 855rem;
+      font-size: 18.45rem;
     }
   }
 
@@ -189,8 +189,8 @@
   &__step-bg {
     display: none;
     position: absolute;
-    width: 1000px;
-    height: 398px;
+    width: 1000rem;
+    height: 398rem;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -200,26 +200,26 @@
 
 .main-form__step-wrp-step-img{
   width: 100%;
-  height: 157px;
+  height: 157rem;
   position: absolute;
-  top: -101px;
-  right: -100px;
+  top: -101rem;
+  right: -100rem;
   z-index: 2;
 }
 .main-form__last-btn-wrp{
-  margin-left: 204px;
+  margin-left: 204rem;
   position: relative;
 }
 .main-form__last-btn-icon{
-  width: 24px;
-  height: 24px;
+  width: 24rem;
+  height: 24rem;
   position: absolute;
-  top: 13px;
-  left: 80px;
+  top: 13rem;
+  left: 80rem;
 }
 .main-form__last-btn-wrp a{
-  width: 300px;
-  height: 50px;
+  width: 300rem;
+  height: 50rem;
   clip-path: polygon(
     100% 0%,    /* Верхняя правая точка */
     5.33% 0%,   /* Верхняя левая точка */
@@ -231,91 +231,91 @@
 }
 
 .main-form__order-info{
-  max-width: 1000px;
+  max-width: 1000rem;
   margin: 0 auto;
 
   // .main-form__order-info .main-form__step-box
   .main-form__step-box{
-    max-width: 800px;
-    min-height: 90px;
-    padding-top: 11px;
-    padding-bottom: 17px;
-    padding-left: 50px;
+    max-width: 800rem;
+    min-height: 90rem;
+    padding-top: 11rem;
+    padding-bottom: 17rem;
+    padding-left: 50rem;
 
-    left: 101px;
-    top: 30px;
+    left: 101rem;
+    top: 30rem;
   }
 }
 
 
 .main-form__step-box-bg{
-  width: 62px;
-  height: 43px;
+  width: 62rem;
+  height: 43rem;
   position: absolute;
-  left: 243px;
-  top: 37px;
+  left: 243rem;
+  top: 37rem;
   z-index: 2;
 }
 .main-form__order{
 
 }
 .main-form__order-text{
-  font-size: 34px;
-  margin-bottom: 4px;
+  font-size: 34rem;
+  margin-bottom: 4rem;
 }
 .main-form__order-text span{
   color: $body-3-color;
 }
 .main-form__order-last-text{
-  font-size: 13px;
+  font-size: 13rem;
 }
 
 .main-form__order-info .main-form__step-number-wrp{
-  left: 99px;
-  top: 5px;
+  left: 99rem;
+  top: 5rem;
 }
 
 
 .main-form__step-end span{
-  max-width: 865px;
-  font-size: 18.4px;
+  max-width: 865rem;
+  font-size: 18.4rem;
 }
 
 .main-form__order-info .main-form__stem-number span{
-  left: -11px;
+  left: -11rem;
   top: 0;
 }
 
 .main-form .main-form__order-info {
-  margin-bottom: 100px;
+  margin-bottom: 100rem;
 }
 
 .main-form__step-wrp-result-1{
-  margin-bottom: 70px;
+  margin-bottom: 70rem;
 }
 .main-form__step-wrp-result-1 .main-form__step-box{
-  min-height: 386px;
+  min-height: 386rem;
 }
 .main-form__step-wrp-result-1 .main-form__step-box-title{
-  margin-bottom: 31px;
+  margin-bottom: 31rem;
 }
 
 .main-form__step-wrp-result-1 .main-form__step-end a{
   margin-left: 0;
 }
 .main-form__step-wrp-result-1 .main-form__step-end-icon{
-  top: 3px;
+  top: 3rem;
 }
 
 .main-form__step-wrp-result-2{
-  margin-bottom: 70px;
+  margin-bottom: 70rem;
 }
 .main-form__step-wrp-result-2 .main-form__step-box-title{
-  margin-bottom: 31px;
+  margin-bottom: 31rem;
 }
 
 .main-form__step-wrp-result-2 .main-form__step-box{
-  min-height: 334px;
+  min-height: 334rem;
 }
 .main-form__step-end span i{
   color: $body-4-color;
@@ -326,9 +326,9 @@
 
 .mixing-input-wrp{
   position: relative;
-  width: 816px; 
-  height: 70px; 
-  margin-bottom: 24px;
+  width: 816rem; 
+  height: 70rem; 
+  margin-bottom: 24rem;
 }
 
 .mixing-input-wrp .mixing-input{
@@ -340,46 +340,46 @@
   background-size: cover;
   border: unset;
   background-color: unset;
-  padding-left: 24px;
-  padding-right: 60px;
+  padding-left: 24rem;
+  padding-right: 60rem;
 }
 
 .mixing-input-wrp .img-wrp{
-  width: 24px;
-  height: 24px;
+  width: 24rem;
+  height: 24rem;
   position: absolute;
-  right: 24px;
+  right: 24rem;
   top: 50%;
   transform: translateY(-50%);
 }
 
 .main-form__step-wrp-result-3{
-  margin-bottom: 70px;
+  margin-bottom: 70rem;
 }
 
 .main-form__step-wrp-result-3 .main-form__step-box-title{
-  margin-bottom: 30px;
+  margin-bottom: 30rem;
 }
 
 .main-form__step-wrp-result-3 .main-form__step-box{
-  padding-bottom: 73px;
+  padding-bottom: 73rem;
 }
 .main-form__step-wrp-result-3 .main-form__stem-number span{
-  left: -10px;
-  top: 2px;
+  left: -10rem;
+  top: 2rem;
 }
 .main-form__step-wrp-result-3 .main-form__step-end-icon{
-  // top: -9px;
+  // top: -9rem;
 }
 .main-form__step-wrp-result-3 .main-form__step-end span{
-  font-size: 18.2px;
+  font-size: 18.2rem;
 }
 
 .main-form .main-form-continue-btn{
-  width: 200px;
-  height: 50px;
-  margin-top: 70px;
-  margin-left: 500px;
+  width: 200rem;
+  height: 50rem;
+  margin-top: 70rem;
+  margin-left: 500rem;
 }
 .main-form .main-form-continue-btn .button.v12 .icon:before,
 .main-form .main-form-continue-btn .button.v12 .icon:after{

@@ -1,8 +1,8 @@
 .footer {
   background-color: rgba(78, 81, 245, 0.06);
   box-sizing: border-box;
-  padding-top: 50px;
-  padding-bottom: 70px;
+  padding-top: 50rem;
+  padding-bottom: 70rem;
 
   // .footer__container
   &__container {
@@ -15,16 +15,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 50rem;
     
-    height: 50px;
+    height: 50rem;
   }
 
   // .footer__logo
   &__logo {
     font-family: $second-font;
     font-weight: 400;
-    font-size: 44px;
+    font-size: 44rem;
     line-height: 120%;
     color: $body-3-color;
   }
@@ -42,7 +42,7 @@
   &__end {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 36px;
+    margin-bottom: 36rem;
 
     // .footer__end a
     a{
@@ -57,13 +57,13 @@
 
   // .footer__end-box
   &__end-box{
-    width: 588px;
-    min-height: 286px;
+    width: 588rem;
+    min-height: 286rem;
     background-color: $body-1-color;
-    border: 1px solid rgba(78, 81, 245, 0.6);
-    clip-path: polygon(0 50px, 50px 0, calc(100% - 0px) 0, 100% 50px, 100% calc(100% - 50px), calc(100% - 50px) 100%, 0px 100%, 0 calc(120% - 50px));
+    border: 1rem solid rgba(78, 81, 245, 0.6);
+    clip-path: polygon(0 50rem, 50rem 0, calc(100% - 0rem) 0, 100% 50rem, 100% calc(100% - 50rem), calc(100% - 50rem) 100%, 0rem 100%, 0 calc(120% - 50rem));
     box-sizing: border-box;
-    padding: 35px;
+    padding: 35rem;
     position: relative;
   }
 
@@ -73,12 +73,12 @@
 
   // .footer__text-wrp
   &__text-wrp {
-    margin-bottom: 27px;
+    margin-bottom: 27rem;
   }
 
   // .footer__text
   &__text {
-    margin-bottom: 18px;
+    margin-bottom: 18rem;
   }
 
   // .footer__link
@@ -91,18 +91,18 @@
 
     // .footer__end-right .footer__text
     .footer__text {
-      margin-bottom: 29px;
+      margin-bottom: 29rem;
     }
   }
 
   // .footer__24-box
   &__24-box {
     position: absolute;
-    top: 12px;
-    right: 12px;
-    border-radius: 25px;
-    width: 64px;
-    height: 36px;
+    top: 12rem;
+    right: 12rem;
+    border-radius: 25rem;
+    width: 64rem;
+    height: 36rem;
     background: #edeefe;
     display: flex;
     align-items: center;
@@ -113,12 +113,12 @@
   &__link-str {
     display: block;
     color: $body-4-color;
-    margin-bottom: 28px;
+    margin-bottom: 28rem;
   }
   
   // .footer__btn
   &__btn{
-    margin-bottom: 24px;
+    margin-bottom: 24rem;
   }
 
   // .footer__link-last
@@ -136,6 +136,6 @@
 }
 
 .footer .main-menu{
-  min-width: 394px;
-  margin-right: 33px;
+  min-width: 394rem;
+  margin-right: 33rem;
 }

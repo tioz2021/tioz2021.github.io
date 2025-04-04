@@ -1,6 +1,6 @@
 .form-status {
-  width: 685px;
-  height: 50px;
+  width: 685rem;
+  height: 50rem;
   background-image: url('../../images/icons/mixin-status-bg.svg');
   background-position: center;
   background-color: cover;
@@ -9,31 +9,31 @@
 
   display: flex;
   box-sizing: border-box;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 24px;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  padding-left: 24rem;
 
-  margin-left: 201px;
+  margin-left: 201rem;
 
   // .form-status__text
   &__text {
-    margin-right: 34px;
-    font-size: 24.3px;
+    margin-right: 34rem;
+    font-size: 24.3rem;
   }
 
   // .form-status__mod-text
   &__mod-text {
-    font-size: 24.45px;
+    font-size: 24.45rem;
     color: $body-3-color;
   }
 
   // .form-status__icon
   &__icon {
-    width: 16px;
-    height: 20px;
+    width: 16rem;
+    height: 20rem;
     position: absolute;
     top: 50%;
-    right: 24px;
+    right: 24rem;
     transform: translateY(-50%);
 
     // .form-status__icon svg
@@ -50,18 +50,18 @@
 @keyframes strongSvgPulse {
   0%, 100% { 
     fill: #4E51F5;
-    filter: drop-shadow(0 0 2px rgba(78, 81, 245, 0.8));
+    filter: drop-shadow(0 0 2rem rgba(78, 81, 245, 0.8));
   }
   25% {
     fill: #9093f9;
-    filter: drop-shadow(0 0 4px rgba(144, 147, 249, 0.9));
+    filter: drop-shadow(0 0 4rem rgba(144, 147, 249, 0.9));
   }
   50% { 
     fill: #28B6E1;
-    filter: drop-shadow(0 0 6px rgba(40, 182, 225, 1));
+    filter: drop-shadow(0 0 6rem rgba(40, 182, 225, 1));
   }
   75% {
     fill: #9093f9;
-    filter: drop-shadow(0 0 4px rgba(144, 147, 249, 0.9));
+    filter: drop-shadow(0 0 4rem rgba(144, 147, 249, 0.9));
   }
 }

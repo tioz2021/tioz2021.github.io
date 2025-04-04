@@ -9,8 +9,8 @@
   &__input-wrp {
     // overflow: hidden;
     position: relative;
-    width: 754px;
-    height: 50px;
+    width: 754rem;
+    height: 50rem;
   }
 
   // .main-input__input-start
@@ -19,8 +19,8 @@
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 50px;
-    height: 50px;
+    width: 50rem;
+    height: 50rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,7 +29,7 @@
     // .main-input__input-start__num
     &__num {
       color: $body-4-color;
-      // margin-left: -8px;
+      // margin-left: -8rem;
     }
   }
 
@@ -49,7 +49,7 @@
     width: 100%;
     height: 100%;
     background-color: rgba(78, 81, 245, 0.1);
-    border: 1px solid $body-3-color;
+    border: 1rem solid $body-3-color;
     clip-path: polygon(
       0% 75.5858%,
       1.6189% 100%,
@@ -61,8 +61,8 @@
       0% 24.4142%
     );
     box-sizing: border-box;
-    padding-left: 64px;
-    padding-right: 76px;
+    padding-left: 64rem;
+    padding-right: 76rem;
   }
 
   // .main-input__input-end
@@ -71,8 +71,8 @@
     right: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 70px;
-    height: 50px;
+    width: 70rem;
+    height: 50rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -80,7 +80,7 @@
     // .main-input__input-end__num
     &__num {
       color: $body-3-color;
-      margin-left: 3px;
+      margin-left: 3rem;
     }
   }
 
@@ -106,15 +106,15 @@
   &--error{
     display: none;
     position: absolute;
-    top: -8px;
-    left: 74px;
+    top: -8rem;
+    left: 74rem;
     color: $error-color;
     background-color: #fff;
     box-sizing: border-box;
-    padding-left: 4px;
-    padding-right: 4px;
-    padding-top: 1px;
-    padding-bottom: 1px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 }
 
@@ -141,7 +141,7 @@
   display: block;
 }
 .main-form__step-input-wrp.error input {
-  border: 1px solid $error-color;
+  border: 1rem solid $error-color;
   background: rgba(245, 78, 81, 0.1);
 }
 
