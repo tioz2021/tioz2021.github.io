@@ -45,7 +45,7 @@
     
     // Создаем OFF опцию
     const offOption = document.createElement('div');
-    offOption.className = 'option off-option';
+    offOption.className = 'option text-large off-option';
     offOption.textContent = 'OFF';
 
     // Функция для обновления списка опций
