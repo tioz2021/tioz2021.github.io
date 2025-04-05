@@ -2,6 +2,11 @@ html{
   font-family: $main-font;
   scroll-behavior: smooth;
   font-size: 0.05208vw;
+  @media screen and (max-width: 1600px) {
+    & {
+      font-size: 0.07208vw;
+    }
+  }
 }
 
 a{

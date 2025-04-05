@@ -1,13 +1,18 @@
 // main menu hover effect
 (() => {
+  // Функция для конвертации px в rem
+  function pxToRem(px) {
+    return px / parseFloat(getComputedStyle(document.documentElement).fontSize);
+  }
+
   const menuItems = document.querySelectorAll('.header__menu .main-menu__list-item');
   const underline = document.querySelector('.header__menu .main-menu__list-underline');
   
   menuItems.forEach((item) => {
     item.addEventListener('mouseenter', (e) => {
       const { offsetLeft, offsetWidth } = e.target;
-      underline.style.left = `${offsetLeft}rem`;
-      underline.style.width = `${offsetWidth}rem`;
+      underline.style.left = `${pxToRem(offsetLeft)}rem`;
+      underline.style.width = `${pxToRem(offsetWidth)}rem`;
     });
   
     item.addEventListener('mouseleave', () => {
@@ -15,21 +20,22 @@
     });
   });
 
+  // Футер
   const menuItems2 = document.querySelectorAll('.footer__menu .main-menu__list-item');
   const underline2 = document.querySelector('.footer__menu .main-menu__list-underline');
   
   menuItems2.forEach((item) => {
     item.addEventListener('mouseenter', (e) => {
       const { offsetLeft, offsetWidth } = e.target;
-      underline2.style.left = `${offsetLeft}rem`;
-      underline2.style.width = `${offsetWidth}rem`;
+      underline2.style.left = `${pxToRem(offsetLeft)}rem`;
+      underline2.style.width = `${pxToRem(offsetWidth)}rem`;
     });
   
     item.addEventListener('mouseleave', () => {
       underline2.style.width = '0';
     });
   });
-}) ();
+})();
 
 // custom dropdown
 (() => {

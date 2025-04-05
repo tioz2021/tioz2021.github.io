@@ -363,6 +363,11 @@ html {
   scroll-behavior: smooth;
   font-size: 0.05208vw;
 }
+@media screen and (max-width: 1600px) {
+  html {
+    font-size: 0.07208vw;
+  }
+}
 
 a {
   text-decoration: unset;
