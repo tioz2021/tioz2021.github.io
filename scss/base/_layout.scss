@@ -7,6 +7,13 @@
   margin: 0 auto;
 
   display: flex;
+
+  @media screen and (max-width: 1600px) {
+    box-sizing: border-box;
+    max-width: 1200rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
 }
 
 .img-wrp{
