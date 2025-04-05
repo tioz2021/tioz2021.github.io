@@ -450,7 +450,7 @@
       const inputsPercent = document.querySelectorAll('.main-input__input-end__num');
       this.values.forEach((value, index) => {
         if (inputsPercent[index]) {
-          inputsPercent[index].textContent = `${value.toFixed(0)}%`;
+          inputsPercent[index].textContent = `${value.toFixed(1)}%`;
         }
       });
     }

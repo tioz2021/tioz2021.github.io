@@ -4,9 +4,19 @@
   padding-bottom: 70rem;
   margin-bottom: 147rem;
 
+  @media screen and (max-width: $bp-tab) {
+    margin-bottom: 70rem;
+  }
+
+
   // .fs__container
   &__container {
     justify-content: space-between;
+
+    @media screen and (max-width: $bp-tab) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   // .fs__start
@@ -14,6 +24,18 @@
     // margin-left: 14rem;
     width: 498rem;
     height: 596rem;
+
+    @media screen and (max-width: $bp-tab) {
+      width: 300rem;
+      height: 360rem;
+      margin-bottom: 24rem;
+    }
+
+    @media screen and (max-width: $bp-mob) {
+      width: 125rem;
+      height: 150rem;
+      margin-bottom: 8rem;
+    }
   }
 
   // .fs__img
@@ -27,7 +49,11 @@
     width: 612rem;
     padding-top: 54rem;
     position: relative;
-    // left: -13rem;
+    
+    @media screen and (max-width: $bp-tab) {
+      width: 100%;
+      padding-top: 0;
+    }
   }
 
   // .fs__title
@@ -39,11 +65,22 @@
       position: relative;
       top: -19rem;
       left: -4rem;
+
+      @media screen and (max-width: $bp-tab) {
+        left: -2rem;
+        top: -20rem;
+      }
     }
   }
 
   // .fs__text-wrp
   &__text-wrp {
+    margin-bottom: 42rem;
+    
+    @media screen and (max-width: $bp-tab) {
+      margin-bottom: 43rem;
+    }
+
     // .fs__text-wrp
     span{
       background: linear-gradient(66deg, #9073a8 0%, #743d99 19.5%, #260046 60%, #a439ff 81.5%, #10001d 100%);
@@ -51,7 +88,6 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-    margin-bottom: 42rem;
     .gradient-text:nth-child(1){
       margin-left: 9rem;
       margin-right: -10rem;
@@ -61,9 +97,21 @@
     }
     .gradient-text:nth-child(3){
       margin-left: 4rem;
+      @media screen and (max-width: $bp-tab) {
+        margin-left: 11rem;
+      }
     }
     .gradient-text:nth-child(4){
       margin-left: -7rem;
+      @media screen and (max-width: $bp-tab) {
+        margin-left: -2rem;
+      }
+    }
+    .gradient-text:nth-child(5){
+      
+      @media screen and (max-width: $bp-tab) {
+        margin-left: -12rem;
+      }
     }
   }
 }

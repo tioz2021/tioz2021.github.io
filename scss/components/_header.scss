@@ -3,6 +3,13 @@
   margin-bottom: 27rem;
   height: 60rem;
 
+  @media screen and (max-width: $bp-tab) {
+    padding-top: 28rem;
+    padding-bottom: 28rem;
+    height: unset;
+    margin: 0;
+  }
+
   // .header__container
   &__container {
     height: 100%;

@@ -7,12 +7,24 @@
   margin: 0 auto;
 
   display: flex;
+  box-sizing: border-box;
 
   @media screen and (max-width: 1600px) {
-    box-sizing: border-box;
     max-width: 1230rem;
     padding-left: 15rem;
     padding-right: 15rem;
+  }
+
+  @media screen and (max-width: $bp-tab) {
+    max-width: 768rem;
+    padding-left: 36rem;
+    padding-right: 36rem;
+  }
+
+  @media screen and (max-width: $bp-mob) {
+    max-width: 360rem;
+    padding-left: 16rem;
+    padding-right: 16rem;
   }
 }
 

@@ -11,6 +11,9 @@
     position: relative;
     width: 754rem;
     height: 50rem;
+    @media screen and (max-width: $bp-tab) {
+      width: 478rem;
+    }
   }
 
   // .main-input__input-start
@@ -26,9 +29,16 @@
     justify-content: center;
     z-index: 1;
 
+    @media screen and (max-width: $bp-tab) {
+      width: 36rem;
+      height: 36rem;
+      left: -23rem;
+    }
+
     // .main-input__input-start__num
     &__num {
       color: $body-4-color;
+      font-weight: 500;
       // margin-left: -8rem;
     }
   }
@@ -42,6 +52,16 @@
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: -1;
+
+    background-image: url('../../images/main-input__input-start-bg.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @media screen and (max-width: $bp-tab) {
+      background-image: url('../../images/main-input__input-start-bg-tab.svg');
+      background-size: 36rem 36rem;
+    }
   }
 
   // .main-input__input
@@ -63,6 +83,18 @@
     box-sizing: border-box;
     padding-left: 64rem;
     padding-right: 76rem;
+
+    @media screen and (max-width: $bp-tab) {
+      clip-path: unset;
+      background-color: unset;
+      background-image: url('../../images/input-bg-tab-default.svg');
+      background-size: 478rem 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      border: unset;
+      padding-left: 26rem;
+      padding-right: 82rem;
+    }
   }
 
   // .main-input__input-end
@@ -77,10 +109,18 @@
     align-items: center;
     justify-content: center;
 
+    @media screen and (max-width: $bp-tab) {
+      right: 0rem;
+    }
+
     // .main-input__input-end__num
     &__num {
       color: $body-3-color;
       margin-left: 3rem;
+
+      @media screen and (max-width: $bp-tab) {
+        margin-left: 0;
+      }
     }
   }
 

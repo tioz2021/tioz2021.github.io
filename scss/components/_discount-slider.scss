@@ -1,5 +1,8 @@
 .privacy-slider-v2 {
   margin-bottom: 50rem;
+  @media screen and (max-width: $bp-tab) {
+    margin-bottom: 38rem;
+  }
 }
 
 .track-container-v2 {

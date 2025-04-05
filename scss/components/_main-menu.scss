@@ -6,6 +6,11 @@
   margin-top: -2rem;
   position: relative;
 
+
+  @media screen and (max-width: $bp-tab) {
+    display: none;
+  }
+
   // .main-menu__list
   &__list {
     height: 100%;

@@ -1943,6 +1943,10 @@
   .button {
     width: 717rem;
     position: relative;
+
+    @media screen and (max-width: $bp-tab) {
+      width: 438rem;
+    }
   }
 
   .button.v6 {
@@ -1981,11 +1985,18 @@
     position: absolute;
     top: 14rem;
     left: 205rem;
+    @media screen and (max-width: $bp-tab) {
+      top: 13rem;
+      left: 67rem;
+    }
   }
 
   .label {
     padding: 15rem 22rem !important;
     margin-left: 29rem;
+    @media screen and (max-width: $bp-tab) {
+     margin-left: 33rem;
+    }
   }
 
   span {
@@ -2038,6 +2049,11 @@
     height: 24rem;
     top: 12rem;
     left: 23rem;
+
+    @media screen and (max-width: $bp-tab) {
+      top: 13rem;
+      left: 67rem;
+    }
   }
 
   .button.v4 {

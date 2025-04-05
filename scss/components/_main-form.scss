@@ -1,5 +1,9 @@
 .main-form {
   margin-bottom: 150rem;
+  
+  @media screen and (max-width: $bp-tab) {
+    margin-bottom: 100rem;
+  }
 
   // .main-form__container
   &__container {
@@ -18,6 +22,9 @@
     // .main-form__step-wrp:first-child
     &:first-child{
       margin-bottom: 46rem;
+      @media screen and (max-width: $bp-tab) {
+        margin-bottom: 49px;
+      }
     }
 
     // .main-form__step-wrp-1_1
@@ -31,9 +38,17 @@
     // .main-form__step-wrp-step-2
     &-step-2{
       margin-bottom: 72rem;
+
+      @media screen and (max-width: $bp-tab) {
+        margin-bottom: 50rem;
+      }
+
       // .main-form__step-wrp-step-2 .main-form__step-box-title
       .main-form__step-box-title{
         margin-bottom: 48rem;
+        @media screen and (max-width: $bp-tab) {
+          margin-bottom: 37rem;
+        }
       }
       
     }
@@ -41,15 +56,28 @@
     // .main-form__step-wrp-step-3
     &-step-3{
       margin-bottom: 50rem;
+      @media screen and (max-width: $bp-tab) {
+        margin-bottom: 37rem;
+      }
+
       // .main-form__step-wrp-step-3 .main-form__step-box
       .main-form__step-box{
         min-height: 346rem;
+
+        @media screen and (max-width: $bp-tab) {
+          padding-left: 19rem;
+        }
       }
       // .main-form__step-wrp-step-3 .main-form__step-box-title
       .main-form__step-box-title{
         margin-bottom: 43rem;
         font-size: 40.8rem;
         margin-left: 6rem;
+
+        @media screen and (max-width: $bp-tab) {
+          margin-left: 15rem;
+          margin-bottom: 30rem;
+        }
       }
     }
   }
@@ -64,6 +92,16 @@
     align-items: center;
     left: -1rem;
     top: -2rem;
+
+    @media screen and (max-width: $bp-tab) {
+      position: absolute;
+      top: 36rem;
+      left: 36rem;
+      // .main-form__step-number-wrp svg path
+      svg path{
+        fill: $body-1-color;
+      }
+    }
   }
 
   // .main-form__stem-number
@@ -79,6 +117,9 @@
       position: relative;
       left: -7rem;
       top: -1rem;
+      @media screen and (max-width: $bp-tab) {
+        left: -10rem;
+      }
     }
   }
 
@@ -120,6 +161,24 @@
       0 calc(120% - 50rem)  /* Левый нижний скос */
     );
 
+    @media screen and (max-width: $bp-tab) {
+      width: 100%;
+      min-height: unset;
+      left: unset;
+      top: unset;
+      padding-top: 98rem;
+      padding-left: 36rem;
+      padding-right: 36rem;
+      padding-bottom: 52rem;
+    }
+
+    @media screen and (max-width: $bp-mob) {
+      padding-top: 68rem;
+      padding-left: 12rem;
+      padding-right: 12rem;
+      padding-bottom: 36rem;
+    }
+
     // .main-form__step-box-individualize
     &-individualize{
       padding-top: 36rem;
@@ -133,6 +192,9 @@
   // .main-form__step-box-title
   &__step-box-title {
     margin-bottom: 39rem;
+    @media screen and (max-width: $bp-tab) {
+      margin-bottom: 28rem;
+    }
   }
 
   // .main-form__step-input-wrp
@@ -141,6 +203,13 @@
     // margin-bottom: 23rem;
     // margin-bottom: 25rem;
     margin-bottom: 26rem;
+
+    @media screen and (max-width: $bp-tab) {
+      margin-bottom: 24rem;
+    }
+    @media screen and (max-width: $bp-mob) {
+      margin-bottom: 16rem;
+    }
   }
 
   // .main-form__step-button-wrp
@@ -152,6 +221,10 @@
 
     margin-left: 19rem;
     margin-bottom: 38rem;
+
+    @media screen and (max-width: $bp-tab) {
+     margin-bottom: 24px;
+    }
   }
 
   // .main-form__step-button
@@ -176,6 +249,9 @@
       font-weight: 500;
       color: $body-4-color;
       margin-left: 5rem;
+      @media screen and (max-width: $bp-tab) {
+       margin-left: -1rem;
+      }
     }
 
     // .main-form__step-end-text
@@ -209,6 +285,10 @@
 .main-form__last-btn-wrp{
   margin-left: 204rem;
   position: relative;
+
+  @media screen and (max-width: $bp-tab) {
+    margin-left: 0;
+  }
 }
 .main-form__last-btn-icon{
   width: 24rem;
@@ -279,6 +359,10 @@
 .main-form__step-end span{
   max-width: 865rem;
   font-size: 18.4rem;
+
+  @media screen and (max-width: $bp-tab) {
+    max-width: 609rem;
+  }
 }
 
 .main-form__order-info .main-form__stem-number span{
@@ -380,6 +464,9 @@
   height: 50rem;
   margin-top: 70rem;
   margin-left: 500rem;
+
+  display: none;
+
 }
 .main-form .main-form-continue-btn .button.v12 .icon:before,
 .main-form .main-form-continue-btn .button.v12 .icon:after{

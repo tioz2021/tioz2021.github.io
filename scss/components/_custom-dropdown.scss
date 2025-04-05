@@ -29,6 +29,10 @@
     height: 20rem;
     background-color: $body-3-color;
     transform: rotate(45deg);
+
+    @media screen and (max-width: $bp-tab) {
+      top: -6rem;
+    }
   }
 
   // .custom-time-selector::after

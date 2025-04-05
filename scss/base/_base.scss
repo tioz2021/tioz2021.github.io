@@ -5,6 +5,14 @@ html{
   @media screen and (max-width: 1600px) {
     font-size: 0.07208vw;
   }
+
+  @media screen and (max-width: $bp-tab) {
+    font-size: 0.13021vw;
+  }
+
+  @media screen and (max-width: $bp-mob) {
+    font-size: 0.278vw;
+  }
 }
 
 a{
