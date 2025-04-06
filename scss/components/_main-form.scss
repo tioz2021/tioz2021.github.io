@@ -206,9 +206,11 @@
 
     @media screen and (max-width: $bp-tab) {
       margin-bottom: 24rem;
+      margin-bottom: 12rem;
     }
     @media screen and (max-width: $bp-mob) {
       margin-bottom: 16rem;
+      
     }
   }
 
@@ -223,7 +225,10 @@
     margin-bottom: 38rem;
 
     @media screen and (max-width: $bp-tab) {
-     margin-bottom: 24px;
+      width: 453rem;
+      margin-bottom: 24rem;
+
+      margin-top: 22rem;
     }
   }
 
@@ -465,8 +470,12 @@
   margin-top: 70rem;
   margin-left: 500rem;
 
-  display: none;
-
+  // display: none;
+  @media screen and (max-width: $bp-tab) {
+    margin-left: 0;
+    margin: 0 auto;
+    margin-top: 70rem;
+  }
 }
 .main-form .main-form-continue-btn .button.v12 .icon:before,
 .main-form .main-form-continue-btn .button.v12 .icon:after{

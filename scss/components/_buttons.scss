@@ -2010,15 +2010,25 @@
 }
 
 .button-address-mini {
+  // .button-address-mini .button
   .button {
     width: 347rem;
     margin-left: 4rem;
     position: relative;
+
+    @media screen and (max-width: $bp-tab) {
+      width: 212rem;
+      margin-left: 0rem;
+    }
   }
 
+  // .button-address-mini .button-address__icon
   .button-address__icon {
-    top: 12rem;
-    left: 95rem;
+    // top: 12rem;
+    // left: 95rem;
+
+    top: 13rem;
+    left: 27rem;
   }
 
   .label {
@@ -2032,18 +2042,31 @@
 }
 
 .button-delete {
+
+  // .button-delete .button
   .button {
     width: 345rem;
     margin-left: 0rem;
     position: relative;
+
+    @media screen and (max-width: $bp-tab) {
+      width: 215rem;
+    }
   }
 
+  // .button-delete .label
   .label {
     padding: 13rem 22rem !important;
     margin-left: 9rem;
     color: $error-color;
+
+    @media screen and (max-width: $bp-tab) {
+      margin-left: -12rem;
+      padding-right: 0 !important;
+    }
   }
 
+  // .button-delete .button-address__icon
   .button-address__icon {
     width: 24rem;
     height: 24rem;
@@ -2051,8 +2074,11 @@
     left: 23rem;
 
     @media screen and (max-width: $bp-tab) {
+      // top: 13rem;
+      // left: 67rem;
+
       top: 13rem;
-      left: 67rem;
+      left: 1rem;
     }
   }
 

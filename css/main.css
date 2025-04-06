@@ -1948,9 +1948,15 @@ input {
   margin-left: 4rem;
   position: relative;
 }
+@media screen and (max-width: 1200px) {
+  .button-address-mini .button {
+    width: 212rem;
+    margin-left: 0rem;
+  }
+}
 .button-address-mini .button-address__icon {
-  top: 12rem;
-  left: 95rem;
+  top: 13rem;
+  left: 27rem;
 }
 .button-address-mini .label {
   padding: 14rem 20rem !important;
@@ -1965,10 +1971,21 @@ input {
   margin-left: 0rem;
   position: relative;
 }
+@media screen and (max-width: 1200px) {
+  .button-delete .button {
+    width: 215rem;
+  }
+}
 .button-delete .label {
   padding: 13rem 22rem !important;
   margin-left: 9rem;
   color: #f54e51;
+}
+@media screen and (max-width: 1200px) {
+  .button-delete .label {
+    margin-left: -12rem;
+    padding-right: 0 !important;
+  }
 }
 .button-delete .button-address__icon {
   width: 24rem;
@@ -1979,7 +1996,7 @@ input {
 @media screen and (max-width: 1200px) {
   .button-delete .button-address__icon {
     top: 13rem;
-    left: 67rem;
+    left: 1rem;
   }
 }
 .button-delete .button.v4 {
@@ -2340,6 +2357,7 @@ input {
 @media screen and (max-width: 1200px) {
   .main-form__step-input-wrp {
     margin-bottom: 24rem;
+    margin-bottom: 12rem;
   }
 }
 @media screen and (max-width: 600px) {
@@ -2357,7 +2375,9 @@ input {
 }
 @media screen and (max-width: 1200px) {
   .main-form__step-button-wrp {
-    margin-bottom: 24px;
+    width: 453rem;
+    margin-bottom: 24rem;
+    margin-top: 22rem;
   }
 }
 .main-form__step-end {
@@ -2584,7 +2604,13 @@ input {
   height: 50rem;
   margin-top: 70rem;
   margin-left: 500rem;
-  display: none;
+}
+@media screen and (max-width: 1200px) {
+  .main-form .main-form-continue-btn {
+    margin-left: 0;
+    margin: 0 auto;
+    margin-top: 70rem;
+  }
 }
 
 .main-form .main-form-continue-btn .button.v12 .icon:before,
@@ -3625,6 +3651,11 @@ input {
   padding-top: 50rem;
   padding-bottom: 70rem;
 }
+@media screen and (max-width: 1200px) {
+  .footer {
+    padding-top: 36rem;
+  }
+}
 .footer__container {
   flex-direction: column;
 }
@@ -3636,12 +3667,22 @@ input {
   margin-bottom: 50rem;
   height: 50rem;
 }
+@media screen and (max-width: 1200px) {
+  .footer__start {
+    margin-bottom: 24rem;
+  }
+}
 .footer__logo {
   font-family: "Ouvality", sans-serif;
   font-weight: 400;
   font-size: 44rem;
   line-height: 120%;
   color: #4e51f5;
+}
+@media screen and (max-width: 1200px) {
+  .footer__menu {
+    display: block;
+  }
 }
 .footer__lng-switcher {
   background-color: rgba(78, 81, 245, 0.06);
@@ -3650,6 +3691,12 @@ input {
   display: flex;
   justify-content: space-between;
   margin-bottom: 36rem;
+}
+@media screen and (max-width: 1200px) {
+  .footer__end {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .footer__end a {
   transition: color 300ms ease-in-out;
@@ -3666,6 +3713,12 @@ input {
   box-sizing: border-box;
   padding: 35rem;
   position: relative;
+}
+@media screen and (max-width: 1200px) {
+  .footer__end-box {
+    width: 100%;
+    margin-bottom: 24rem;
+  }
 }
 .footer__text-wrp {
   margin-bottom: 27rem;
@@ -3691,10 +3744,20 @@ input {
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 1200px) {
+  .footer__24-box {
+    right: 35rem;
+  }
+}
 .footer__link-str {
   display: block;
   color: #470083;
   margin-bottom: 28rem;
+}
+@media screen and (max-width: 1200px) {
+  .footer__link-str {
+    font-size: 24rem;
+  }
 }
 .footer__btn {
   margin-bottom: 24rem;
@@ -3707,6 +3770,11 @@ input {
   width: 100%;
   text-align: center;
   color: #7b7985;
+}
+@media screen and (max-width: 1200px) {
+  .footer__desc-text {
+    margin-top: -23rem;
+  }
 }
 
 .footer .main-menu {
