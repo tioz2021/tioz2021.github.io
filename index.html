@@ -115,7 +115,7 @@
 
 		<section class="main-form">
 			<div class="main-form__container container">
-				<div class="main-form__step-wrp">
+				<div class="main-form__step-wrp main-form__step-wrp-start">
 					<div class="main-form__step-number-wrp">
 						<div class="main-form__stem-number heading-medium">
 							Step 1
@@ -785,9 +785,6 @@
 									<div class="badge__title">
 										<span class="text-large">Prioritizing the Power of privacy:</span>
 										<div class="badge__title-bg img-wrp">
-											<svg width="330" height="36" viewBox="0 0 330 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path opacity="0.1" d="M330 0H16L0 36H314L330 0Z" fill="#4E51F5" />
-											</svg>
 										</div>
 									</div>
 									<div class="badge-icon-wrp">
@@ -799,11 +796,7 @@
 												<path d="M0 6.08365L8 0L16 6.08365L8 20L0 6.08365Z" fill="#2D2C38"/>
 											</svg>											
 										</div>
-										<div class="badge-v2-bg img-wrp">
-											<svg width="150" height="36" viewBox="0 0 150 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M150 0H16L0 36H134L150 0Z" fill="white" />
-											</svg>
-										</div>
+										<div class="badge-v2-bg img-wrp"></div>
 									</div>
 								</div>
 								
@@ -814,11 +807,22 @@
 								<div class="track-container-v2">
 									<div class="track-v2">
 										<div class="track-v2__bg img-wrp">
-											<svg width="900" height="8" viewBox="0 0 900 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg class="track-v2__bg-main" width="900" height="8" viewBox="0 0 900 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path fill-rule="evenodd" clip-rule="evenodd" d="M4.00127 0.000116313C4.00127 0.000116313 4.00127 0.000116313 3.99796 8.72445e-08L895.998 7.8585e-05L899.998 4L895.998 8L3.99796 7.99976L-3.49691e-07 4L4.00127 0.000116313Z" fill="url(#paint0_linear_10530_1774)" />
 												<defs>
 													<linearGradient id="paint0_linear_10530_1774" x1="-3.49688e-07" y1="3.99996" x2="899.998" y2="4.00004" gradientUnits="userSpaceOnUse">
 														<stop stop-color="#28B6E1" />
+														<stop offset="1" stop-color="#C707C2" />
+													</linearGradient>
+												</defs>
+											</svg>
+											<svg class="track-v2__bg-mob" width="296" height="8" viewBox="0 0 296 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M4.00127 0.000116575C4.00127 0.000116575 4.00127 0.000116575 3.99796 3.49513e-07L291.998 7.88472e-05L295.998 4L291.998 8L3.99796 7.99976L-3.49691e-07 4L4.00127 0.000116575Z" fill="url(#paint0_linear_9505_1468)" />
+												<defs>
+													<linearGradient id="paint0_linear_9505_1468" x1="0" y1="4" x2="296" y2="4" gradientUnits="userSpaceOnUse">
+														<stop stop-color="white" />
+														<stop offset="0.445" stop-color="#9093f9" />
+														<stop offset="0.74" stop-color="#28B6E1" />
 														<stop offset="1" stop-color="#C707C2" />
 													</linearGradient>
 												</defs>
@@ -845,17 +849,13 @@
 											</div>
 											<div class="value-bubble-v2">
 												<span class="text-large">1.7</span>
-												<div class="value-bubble-v2-bg img-wrp">
-													<svg width="70" height="46" viewBox="0 0 70 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<rect y="10" width="70" height="36" rx="4" fill="#2D2C38"/>
-														<path d="M34.2191 0.976086C34.6195 0.47568 35.3805 0.475679 35.7809 0.976086L43 10H27L34.2191 0.976086Z" fill="#2D2C38"/>
-													</svg>																																								
+												<div class="value-bubble-v2-bg">																																			
 												</div>
 											</div>
 										</div>
 									</div>
 									<!-- <input type="range" min="0.1" max="3.0" step="0.1" value="1.7" class="slider-input-v2"> -->
-									<input type="range" class="slider-input-v2" min="0.50" max="3.00" step="0.01" value="1.00">
+									<input type="range" class="slider-input-v2" min="0.10" max="3.00" step="0.01" value="1.00">
 								</div>
 							</div>
 

@@ -30,6 +30,10 @@
   font-size: 38rem;
   line-height: 120%;
   color: $body-2-color;
+
+  @media screen and (max-width: $bp-mob) {
+    font-size: 18rem;
+  }
 }
 
 .heading-medium {

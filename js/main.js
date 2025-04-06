@@ -192,7 +192,7 @@
   if (!budgetText || !sliderInput) return;
 
   // Устанавливаем параметры слайдера
-  sliderInput.min = "0.50";
+  sliderInput.min = "0.10";
   sliderInput.max = "3.00";
   sliderInput.step = "0.01";
   sliderInput.value = "1.00";
@@ -530,7 +530,7 @@
   function active() {
     btnLine.classList.add('active');
   }
-  copyBtn.addEventListener('click', active);
+  if(copyBtn) copyBtn.addEventListener('click', active);
 
   const defBtnResult2 = document.querySelector('.default-btn');
   if (!defBtnResult2) return;

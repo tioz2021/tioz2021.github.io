@@ -23,7 +23,11 @@
     &:first-child{
       margin-bottom: 46rem;
       @media screen and (max-width: $bp-tab) {
-        margin-bottom: 49px;
+        margin-bottom: 49rem;
+      }
+
+      @media screen and (max-width: $bp-mob) {
+        margin-bottom: 25rem;
       }
     }
 
@@ -49,6 +53,10 @@
         @media screen and (max-width: $bp-tab) {
           margin-bottom: 37rem;
         }
+
+        @media screen and (max-width: $bp-mob) {
+          margin-bottom: 23rem;
+        }        
       }
       
     }
@@ -102,6 +110,18 @@
         fill: $body-1-color;
       }
     }
+
+    @media screen and (max-width: $bp-mob) {
+      width: 100rem;
+      height: 36rem;
+      top: 24rem;
+      left: 12rem;
+
+      background-image: url('../../images/main-form__step-number-bg-mob.svg');
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
 
   // .main-form__stem-number
@@ -110,6 +130,12 @@
     z-index: 2;
     left: 6rem;
     top: -3rem;
+    
+    @media screen and (max-width: $bp-mob) {
+      font-size: 18rem;
+      left: 2rem;
+      top: -2rem;
+    }
 
     // .main-form__stem-number span
     span{
@@ -119,6 +145,10 @@
       top: -1rem;
       @media screen and (max-width: $bp-tab) {
         left: -10rem;
+      }
+      @media screen and (max-width: $bp-mob) {
+        left: -5rem;
+        top: 0rem;
       }
     }
   }
@@ -132,6 +162,11 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
+
+    // .main-form__step-number-bg svg
+    @media screen and (max-width: $bp-mob) {
+      display: none;
+    }
   }
 
   // .main-form__step-box
@@ -177,6 +212,18 @@
       padding-left: 12rem;
       padding-right: 12rem;
       padding-bottom: 36rem;
+
+      clip-path: polygon(
+        0 24rem,        /* Левый верхний */
+        24rem 0,        /* Левый верхний скос */
+        calc(100% - 0rem) 0,  /* Правый верхний */
+        100% 24rem,     /* Правый верхний скос */
+        100% calc(100% - 24rem), /* Правый нижний */
+        calc(100% - 24rem) 100%, /* Правый нижний скос */
+        0rem 100%,     /* Левый нижний */
+        0 calc(120% - 24rem)  /* Левый нижний скос */
+      );
+      z-index: 2;
     }
 
     // .main-form__step-box-individualize
@@ -195,6 +242,10 @@
     @media screen and (max-width: $bp-tab) {
       margin-bottom: 28rem;
     }
+    @media screen and (max-width: $bp-mob) {
+      margin-bottom: 18rem;
+      // margin-bottom: 50rem;
+    }
   }
 
   // .main-form__step-input-wrp
@@ -209,8 +260,8 @@
       margin-bottom: 12rem;
     }
     @media screen and (max-width: $bp-mob) {
-      margin-bottom: 16rem;
-      
+      // margin-bottom: 16rem;
+      margin-bottom: 12rem;
     }
   }
 
@@ -227,8 +278,15 @@
     @media screen and (max-width: $bp-tab) {
       width: 453rem;
       margin-bottom: 24rem;
-
       margin-top: 22rem;
+    }
+
+    @media screen and (max-width: $bp-mob) {
+      width: 296rem;
+      margin: 0;
+      margin-top: 14rem;
+      margin-left: 3rem;
+      margin-bottom: 16rem;
     }
   }
 
@@ -246,7 +304,12 @@
       width: 24rem;
       height: 24rem;
       margin-right: 8rem;
-      
+
+      @media screen and (max-width: $bp-mob) {
+        width: 16rem;
+        height: 16rem;
+        margin-right: 4rem;
+      }
     }
 
     // .main-form__step-end a
@@ -255,7 +318,10 @@
       color: $body-4-color;
       margin-left: 5rem;
       @media screen and (max-width: $bp-tab) {
-       margin-left: -1rem;
+        margin-left: -1rem;
+      }
+      @media screen and (max-width: $bp-mob) {
+        margin-left: -3rem;
       }
     }
 
@@ -388,6 +454,10 @@
 
   @media screen and (max-width: $bp-tab) {
     max-width: 609rem;
+  }
+
+  @media screen and (max-width: $bp-mob) {
+    font-size: 12.4rem;
   }
 }
 

@@ -8,6 +8,12 @@
     margin-bottom: 70rem;
   }
 
+  @media screen and (max-width: $bp-mob) {
+    padding-top: 36rem;
+    padding-bottom: 49rem;
+    margin-bottom: 50rem;
+  }
+
 
   // .fs__container
   &__container {
@@ -60,6 +66,10 @@
   &__title {
     margin-bottom: -4rem;
 
+    @media screen and (max-width: $bp-mob) {
+      margin-bottom: -11rem;
+    }
+
     // .fs__title span
     span{
       position: relative;
@@ -81,6 +91,11 @@
       margin-bottom: 43rem;
     }
 
+    @media screen and (max-width: $bp-mob) {
+      font-size: 22.5rem;
+      margin-bottom: 40rem;
+    }
+
     // .fs__text-wrp
     span{
       background: linear-gradient(66deg, #9073a8 0%, #743d99 19.5%, #260046 60%, #a439ff 81.5%, #10001d 100%);
@@ -88,9 +103,15 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
+
     .gradient-text:nth-child(1){
       margin-left: 9rem;
       margin-right: -10rem;
+
+      @media screen and (max-width: $bp-mob) {
+        margin-left: 0rem;
+        margin-right: -7rem;
+      }
     }
     .gradient-text:nth-child(2){
       margin-left: 11rem;
@@ -99,6 +120,9 @@
       margin-left: 4rem;
       @media screen and (max-width: $bp-tab) {
         margin-left: 11rem;
+      }
+      @media screen and (max-width: $bp-mob) {
+        margin-left: 0rem;
       }
     }
     .gradient-text:nth-child(4){
@@ -111,6 +135,9 @@
       
       @media screen and (max-width: $bp-tab) {
         margin-left: -12rem;
+      }
+      @media screen and (max-width: $bp-mob) {
+        margin-left: -5rem;
       }
     }
   }

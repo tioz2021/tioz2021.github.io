@@ -1889,11 +1889,18 @@
 }
 
 .button__notification {
+
   .button.v12 {
     width: 185rem;
     height: 49rem;
     margin-left: auto;
     margin-right: 9rem;
+
+    @media screen and (max-width: $bp-mob) {
+      width: 146rem;
+      height: 36rem;
+      margin-right: 5rem;
+    }
 
     .icon {
       transform: skew(-18deg, 0deg);
@@ -1907,10 +1914,13 @@
         //     #470083,
         //     rgba(71, 0, 131, 0));
         background-color: #470083;
+
+        @media screen and (max-width: $bp-mob) {
+          width: 89rem;
+        }
       }
 
       span {
-
         &:before,
         &:after {
           // background: linear-gradient(to bottom left,
@@ -1919,12 +1929,19 @@
           background-color: #470083;
           width: 2rem;
           height: 50rem;
+
+          @media screen and (max-width: $bp-mob) {
+            height: 36rem;
+          }
         }
       }
     }
   }
 
   .label {
+    @media screen and (max-width: $bp-mob) {
+      font-size: 14rem;
+    }
     padding: 14rem 24rem;
   }
 
@@ -1940,6 +1957,7 @@
 }
 
 .button-address {
+
   .button {
     width: 717rem;
     position: relative;
@@ -1947,10 +1965,18 @@
     @media screen and (max-width: $bp-tab) {
       width: 438rem;
     }
+
+    @media screen and (max-width: $bp-mob) {
+      width: 100%;
+    }
   }
 
   .button.v6 {
     height: 49rem;
+
+    @media screen and (max-width: $bp-mob) {
+      height: 36rem;
+    }
 
     .icon {
       top: 3rem;
@@ -1965,15 +1991,22 @@
         height: 2rem;
         width: 99rem;
         background: #4E51F5;
+
+        @media screen and (max-width: $bp-mob) {
+          width: 88rem;
+        }        
       }
 
       span {
-
         &:before,
         &:after {
           background: #4E51F5;
           width: 2rem;
           height: 50rem;
+
+          @media screen and (max-width: $bp-mob) {
+            height: 36rem;
+          }
         }
       }
     }
@@ -1989,13 +2022,26 @@
       top: 13rem;
       left: 67rem;
     }
+
+    @media screen and (max-width: $bp-mob) {
+      width: 16rem;
+      height: 16rem;
+      top: 13rem;
+      left: 33rem;
+    }
   }
 
   .label {
     padding: 15rem 22rem !important;
     margin-left: 29rem;
+
     @media screen and (max-width: $bp-tab) {
-     margin-left: 33rem;
+      margin-left: 33rem;
+    }
+    @media screen and (max-width: $bp-mob) {
+      margin-left: 21rem;
+      font-size: 14rem;
+      padding: 13rem 18rem !important;
     }
   }
 
@@ -2020,6 +2066,11 @@
       width: 212rem;
       margin-left: 0rem;
     }
+
+    @media screen and (max-width: $bp-mob) {
+      width: 140rem;
+      margin-left: 0rem;
+    }
   }
 
   // .button-address-mini .button-address__icon
@@ -2029,11 +2080,22 @@
 
     top: 13rem;
     left: 27rem;
+
+    @media screen and (max-width: $bp-mob) {
+      top: 13rem;
+      left: 14rem;
+    }
   }
 
   .label {
     padding: 14rem 20rem !important;
     margin-left: 37rem;
+    
+    @media screen and (max-width: $bp-mob) {
+      font-size: 12rem;
+      padding: 14rem 8rem !important;
+      margin-left: 13rem;
+    }
   }
 
   .button.v6 .icon {
@@ -2052,6 +2114,10 @@
     @media screen and (max-width: $bp-tab) {
       width: 215rem;
     }
+
+    @media screen and (max-width: $bp-mob) {
+      width: 140rem;
+    }
   }
 
   // .button-delete .label
@@ -2063,6 +2129,10 @@
     @media screen and (max-width: $bp-tab) {
       margin-left: -12rem;
       padding-right: 0 !important;
+    }
+
+    @media screen and (max-width: $bp-mob) {
+      margin-left: -19rem;
     }
   }
 
@@ -2080,10 +2150,23 @@
       top: 13rem;
       left: 1rem;
     }
+
+    @media screen and (max-width: $bp-mob) {
+      width: 16rem;
+      height: 16rem;
+
+      top: 12rem;
+      left: -3rem;
+    }
+
   }
 
   .button.v4 {
     height: 49rem;
+
+    @media screen and (max-width: $bp-mob) {
+      height: 36rem;
+    }
 
     .icon {
       top: 0rem;
@@ -2098,6 +2181,10 @@
         height: 2rem;
         width: 99rem;
         background: $error-color;
+
+        @media screen and (max-width: $bp-mob) {
+          width: 88rem;
+        }
       }
 
       span {
@@ -2107,6 +2194,10 @@
           background: $error-color;
           width: 2rem;
           height: 50rem;
+
+          @media screen and (max-width: $bp-mob) {
+            height: 36rem;
+          }
         }
       }
     }

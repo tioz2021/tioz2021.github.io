@@ -7,6 +7,12 @@
     margin-right: 12rem;
     width: 50rem;
     height: 60rem;
+
+    @media screen and (max-width: $bp-mob) {
+      width: 30rem;
+      height: 36rem;
+      margin-right: 4rem;
+    }
   }
 
   // .logo__text
