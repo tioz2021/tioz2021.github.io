@@ -16,6 +16,10 @@
     align-items: center;
     justify-content: center;
     color: $body-3-color;
+
+    @media screen and (max-width: $bp-tab) {
+      font-size: 24rem;
+    }
   }
 
   // .btn-line a

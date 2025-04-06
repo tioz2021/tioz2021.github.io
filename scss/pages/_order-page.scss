@@ -1,0 +1,5 @@
+.order-page .main-form__order-info .main-form__step-number-wrp svg path{
+  @media screen and (max-width: $bp-tab) {
+    fill: rgb(237, 238, 254);
+  }
+}

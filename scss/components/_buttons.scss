@@ -2151,6 +2151,10 @@
 
   cursor: pointer;
 
+  @media screen and (max-width: $bp-tab) {
+    margin-bottom: 25rem;
+  }
+
   // .copy-btn-icon
   &-icon{
     width: 24rem;
@@ -2185,6 +2189,10 @@
   margin-bottom: 36rem;
 
   transition: all 0.2s ease-in-out;
+
+  @media screen and (max-width: $bp-tab) {
+    margin-bottom: 23rem;
+  }
 
   // .default-btn span
   span{

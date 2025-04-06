@@ -15,6 +15,10 @@
 
   margin-left: 201rem;
 
+  @media screen and (max-width: $bp-tab) {
+    margin-left: 0;
+  }
+
   // .form-status__text
   &__text {
     margin-right: 34rem;

@@ -329,6 +329,13 @@
 
     left: 101rem;
     top: 30rem;
+
+    @media screen and (max-width: $bp-tab) {
+      width: 496rem;
+      left: 200rem;
+      top: 26rem;
+      padding-right: 27rem;
+    }
   }
 }
 
@@ -340,13 +347,22 @@
   left: 243rem;
   top: 37rem;
   z-index: 2;
+
+  @media screen and (max-width: $bp-tab) {
+    left: 143rem;
+    top: 33rem;
+  }
 }
 .main-form__order{
 
 }
 .main-form__order-text{
-  font-size: 34rem;
+  font-size: 33.8rem;
   margin-bottom: 4rem;
+
+  @media screen and (max-width: $bp-tab) {
+    font-size: 34rem;
+  }
 }
 .main-form__order-text span{
   color: $body-3-color;
@@ -358,6 +374,11 @@
 .main-form__order-info .main-form__step-number-wrp{
   left: 99rem;
   top: 5rem;
+
+  @media screen and (max-width: $bp-tab) {
+    left: 0;
+    top: 1rem;
+  }
 }
 
 
@@ -377,10 +398,25 @@
 
 .main-form .main-form__order-info {
   margin-bottom: 100rem;
+
+  @media screen and (max-width: $bp-tab) {
+    margin-bottom: 75rem;
+  }
 }
 
 .main-form__step-wrp-result-1{
   margin-bottom: 70rem;
+
+  @media screen and (max-width: $bp-tab) {
+    margin-bottom: 50rem;
+  }
+
+  // .main-form__step-wrp-result-1 .main-form__step-end span
+  .main-form__step-end span {
+    @media screen and (max-width: $bp-tab) {
+      max-width: 590rem;
+    }
+  }
 }
 .main-form__step-wrp-result-1 .main-form__step-box{
   min-height: 386rem;
@@ -396,8 +432,18 @@
   top: 3rem;
 }
 
-.main-form__step-wrp-result-2{
+.main-form__step-wrp-result-2 {
   margin-bottom: 70rem;
+  @media screen and (max-width: $bp-tab) {
+    margin-bottom: 52rem;
+  }
+
+  // .main-form__step-wrp-result-2 .main-form__step-end span
+  .main-form__step-end span {
+    @media screen and (max-width: $bp-tab) {
+      max-width: 590rem;
+    }
+  }
 }
 .main-form__step-wrp-result-2 .main-form__step-box-title{
   margin-bottom: 31rem;
@@ -418,10 +464,14 @@
   width: 816rem; 
   height: 70rem; 
   margin-bottom: 24rem;
+
+  @media screen and (max-width: $bp-tab) {
+    width: 100%;
+  }
 }
 
 .mixing-input-wrp .mixing-input{
-  width: 100%;
+  width: 624rem;
   height: 100%;
   clip-path: unset;
   background-image: url('../../images/icons/mixin-input-bg.svg');
@@ -431,6 +481,12 @@
   background-color: unset;
   padding-left: 24rem;
   padding-right: 60rem;
+
+  @media screen and (max-width: $bp-tab) {
+    font-size: 24.4rem;
+    padding-left: 16rem;
+    background-image: url('../../images/mixing-input-bg-tab.svg');
+  }
 }
 
 .mixing-input-wrp .img-wrp{
@@ -444,10 +500,32 @@
 
 .main-form__step-wrp-result-3{
   margin-bottom: 70rem;
+  
+  @media screen and (max-width: $bp-tab) {
+    margin-bottom: 49rem;
+  }
+  
+  // .main-form__step-wrp-result-3 .main-form__step-box
+  .main-form__step-box {
+    @media screen and (max-width: $bp-tab) {
+      padding-bottom: 54rem !important;
+    }
+  }
+
+  // .main-form__step-wrp-result-3 .main-form__step-end span
+  .main-form__step-end span {
+    @media screen and (max-width: $bp-tab) {
+      max-width: 590rem;
+    }
+  }
 }
 
 .main-form__step-wrp-result-3 .main-form__step-box-title{
   margin-bottom: 30rem;
+  
+  @media screen and (max-width: $bp-tab) {
+    margin-bottom: 28rem;
+  }
 }
 
 .main-form__step-wrp-result-3 .main-form__step-box{

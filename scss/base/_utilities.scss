@@ -2,4 +2,8 @@
   width: 150rem;
   height: 150rem;
   margin-bottom: 36rem;
+
+  @media screen and (max-width: $bp-tab) {
+    margin-bottom: 23rem;
+  }
 }

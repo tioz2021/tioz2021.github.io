@@ -10,11 +10,22 @@
   // .information-box__link
   &__link {
     color: $body-3-color;
+
+    @media screen and (max-width: $bp-tab) {
+      display: inline-block;  
+      min-height: 44rem;
+    }
   }
 
   // .information-box__text
   &__text {
     color: #778;
+
+    @media screen and (max-width: $bp-tab) {
+      display: inline-block;  
+      min-height: 44rem;
+      margin-left: 6rem;
+    }
   }
 }
 
