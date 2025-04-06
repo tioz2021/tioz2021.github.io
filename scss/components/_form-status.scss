@@ -3,7 +3,8 @@
   height: 50rem;
   background-image: url('../../images/icons/mixin-status-bg.svg');
   background-position: center;
-  background-color: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
 
   position: relative;
 

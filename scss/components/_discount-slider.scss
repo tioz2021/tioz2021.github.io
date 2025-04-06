@@ -6,6 +6,9 @@
   }
   @media screen and (max-width: $bp-mob) {
     margin-bottom: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -193,6 +196,7 @@
 
   @media screen and (max-width: $bp-mob) {
     flex-wrap: wrap;
+    width: 280rem;
   }        
 }
 .badge__title{
@@ -219,6 +223,9 @@
   transform: translate(-50%, -50%);
 
   background-image: url('../../images/badge__title-bg.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
 
   @media screen and (max-width: $bp-mob) {
     background-image: url('../../images/badge__title-bg-mob.svg');
@@ -252,6 +259,7 @@
   @media screen and (max-width: $bp-mob) {
     order: -1;
     margin-bottom: 7rem;
+    left: 0;
   }
 }
 

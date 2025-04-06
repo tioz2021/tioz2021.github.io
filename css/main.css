@@ -362,6 +362,14 @@ html {
   font-family: "Inter", sans-serif;
   scroll-behavior: smooth;
   font-size: 0.05208vw;
+  scrollbar-gutter: stable; /* Резервирует место под скролл */
+  overflow-y: scroll; /* Всегда включает вертикальную прокрутку (но скроллбар скрыт) */
+  /* Скрываем сам скроллбар */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+html::-webkit-scrollbar {
+  display: none; /* Chrome/Safari/Opera */
 }
 @media screen and (max-width: 1600px) {
   html {
@@ -2366,7 +2374,7 @@ input {
 }
 @media screen and (max-width: 600px) {
   .main-form__step-wrp:first-child {
-    margin-bottom: 25rem;
+    margin-bottom: 20rem;
   }
 }
 .main-form__step-wrp-1_1 {
@@ -2375,12 +2383,27 @@ input {
 .main-form__step-wrp-1_1 .main-form__stem-number span {
   left: -2rem;
 }
+@media screen and (max-width: 600px) {
+  .main-form__step-wrp-1_1 .main-form__stem-number span {
+    left: -1rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .main-form__step-wrp-1_1 {
+    margin-bottom: 25rem;
+  }
+}
 .main-form__step-wrp-step-2 {
   margin-bottom: 72rem;
 }
 @media screen and (max-width: 1200px) {
   .main-form__step-wrp-step-2 {
     margin-bottom: 50rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .main-form__step-wrp-step-2 {
+    margin-bottom: 25rem;
   }
 }
 .main-form__step-wrp-step-2 .main-form__step-box-title {
@@ -2542,6 +2565,18 @@ input {
   display: flex;
   flex-direction: column;
 }
+@media screen and (max-width: 600px) {
+  .main-form__step-box-individualize .main-form__step-box-title {
+    margin-bottom: 12rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .main-form__step-box-individualize {
+    padding-top: 68rem;
+    padding-bottom: 36rem;
+    min-height: 188rem;
+  }
+}
 .main-form__step-box-title {
   margin-bottom: 39rem;
 }
@@ -2644,8 +2679,22 @@ input {
   height: 157rem;
   position: absolute;
   top: -101rem;
-  right: -100rem;
+  right: -5rem;
   z-index: 2;
+  background-image: url("../../images/main-form__step-wrp-step-img.svg");
+  background-position: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 600px) {
+  .main-form__step-wrp-step-img {
+    width: 332rem;
+    height: 68rem;
+    right: unset;
+    left: -2rem;
+    top: -43rem;
+    background-image: url("../../images/main-form__step-wrp-step-img-mob.svg");
+  }
 }
 
 .main-form__last-btn-wrp {
@@ -2842,7 +2891,6 @@ input {
 }
 
 .mixing-input-wrp .mixing-input {
-  width: 624rem;
   height: 100%;
   clip-path: unset;
   background-image: url("../../images/icons/mixin-input-bg.svg");
@@ -2855,6 +2903,7 @@ input {
 }
 @media screen and (max-width: 1200px) {
   .mixing-input-wrp .mixing-input {
+    width: 624rem;
     font-size: 24.4rem;
     padding-left: 16rem;
     background-image: url("../../images/mixing-input-bg-tab.svg");
@@ -2959,6 +3008,11 @@ input {
 @media screen and (max-width: 1200px) {
   .main-input__input-wrp {
     width: 478rem;
+    height: 50rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .main-input__input-wrp {
     height: 36rem;
   }
 }
@@ -3034,7 +3088,7 @@ input {
     clip-path: unset;
     background-color: unset;
     background-image: url("../../images/input-bg-tab-default.svg");
-    background-size: 478rem 100%;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     border: unset;
@@ -3049,6 +3103,7 @@ input {
     padding-left: 8rem;
     padding-right: 8rem;
     background-image: url("../../images/input-bg-mob-default.svg");
+    background-size: 100%;
   }
 }
 .main-input__input-end {
@@ -3089,8 +3144,8 @@ input {
 }
 .main-input__input-end-bg {
   position: absolute;
-  right: 0;
-  top: 50%;
+  right: -2rem;
+  top: 51%;
   transform: translateY(-50%);
   width: 100%;
   height: 100%;
@@ -3476,6 +3531,9 @@ input {
 @media screen and (max-width: 600px) {
   .privacy-slider-v2 {
     margin-bottom: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -3636,6 +3694,7 @@ input {
 @media screen and (max-width: 600px) {
   .slider-header-v2 {
     flex-wrap: wrap;
+    width: 280rem;
   }
 }
 
@@ -3663,6 +3722,9 @@ input {
   top: 50%;
   transform: translate(-50%, -50%);
   background-image: url("../../images/badge__title-bg.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
 }
 @media screen and (max-width: 600px) {
   .badge__title-bg {
@@ -3700,6 +3762,7 @@ input {
   .badge-wrp {
     order: -1;
     margin-bottom: 7rem;
+    left: 0;
   }
 }
 
@@ -4007,7 +4070,8 @@ input {
   height: 50rem;
   background-image: url("../../images/icons/mixin-status-bg.svg");
   background-position: center;
-  background-color: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
   position: relative;
   display: flex;
   box-sizing: border-box;
