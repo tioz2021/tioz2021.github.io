@@ -64,6 +64,10 @@
   &__lng-switcher {
     background-color: rgba(78, 81, 245, 0.06);
 
+    @media screen and (max-width: $bp-tab) {
+      margin-left: unset;
+    }
+
     @media screen and (max-width: $bp-mob) {
       position: absolute;
       top: 11rem;

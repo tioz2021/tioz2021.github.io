@@ -1,5 +1,13 @@
 .how-work-page .information-box{
   margin-bottom: 75rem;
+
+  @media screen and (max-width: $bp-tab) {
+    margin-bottom: 70rem;
+  }
+
+  @media screen and (max-width: $bp-mob) {
+    margin-bottom: 36rem;
+  }
 }
 
 .how-work {
@@ -15,6 +23,14 @@
     text-align: center;
     margin-bottom: 41rem;
 
+    @media screen and (max-width: $bp-tab) {
+      margin-bottom: 26rem;
+    }
+  
+    @media screen and (max-width: $bp-mob) {
+      margin-bottom: 28rem;
+    }
+
     // .how-work__title span
     span {
       color: $body-4-color;
@@ -26,13 +42,35 @@
     width: 100%;
     height: 520rem;
     background: url('../../images/infografic-bg.svg');
-    background-size: 100% 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
     padding-top: 62rem;
     margin-bottom: 66rem;
+
+    @media screen and (max-width: $bp-tab) {
+      background: url('../../images/infografic-bg-tab.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 1232rem;
+      flex-wrap: wrap;
+      margin-bottom: 46rem;
+    }
+  
+    @media screen and (max-width: $bp-mob) {
+      height: 978rem;
+      padding-top: 27rem;
+      margin-bottom: 35rem;
+      background: url('../../images/infografic-bg-mob.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
 
   // .how-work__item
@@ -45,6 +83,18 @@
     box-sizing: border-box;
     padding-left: 24rem;
     padding-right: 24rem;
+
+    @media screen and (max-width: $bp-tab) {
+      width: 100%;
+      height: 282rem;
+      padding-left: 24rem;
+      margin-bottom: 24rem;
+    }
+
+    @media screen and (max-width: $bp-mob) {
+      height: 221rem;
+      margin-bottom: 25rem;
+    }
   }
 
   // .how-work__number-wrp
@@ -52,16 +102,37 @@
     width: 100%;
     text-align: center;
     margin-bottom: 34rem;
+
+    @media screen and (max-width: $bp-tab) {
+      margin-bottom: 31rem;
+    }
+
+    @media screen and (max-width: $bp-mob) {
+      margin-bottom: 20rem;
+    }
   }
 
   // .how-work__number
   &__number {
     color: $body-4-color;
+
+    @media screen and (max-width: $bp-mob) {
+      font-size: 18rem;
+    }
   }
 
   // .how-work__text
   &__text {
     font-size: 18.4rem;
+
+    @media screen and (max-width: $bp-tab) {
+      max-width: 532rem;
+    }
+
+    @media screen and (max-width: $bp-mob) {
+      max-width: 264rem;
+      font-size: 14.4rem;
+    }
 
     // .how-work__text span
     span{
@@ -79,18 +150,55 @@
     padding-top: 30rem;
     margin-bottom: 155rem;
     background-image: url('../../images/decor-step.svg');
+    background-repeat: no-repeat;
     background-size: 100% 100%;
+
+    @media screen and (max-width: $bp-tab) {
+      height: 490rem;
+      flex-wrap: wrap;
+      padding: 24rem;
+      padding-top: 29rem;
+      margin-bottom: 100rem;
+      background-image: url('../../images/decor-step-tab.svg');
+      background-size: contain;
+    }
+
+    @media screen and (max-width: $bp-mob) {
+      height: 325rem;
+      padding: 12rem;
+      padding-top: 16rem;
+      margin-bottom: 70rem;
+      background-image: url('../../images/decor-step-mob.svg');
+      background-size: contain;
+    }
   }
 
   // .how-work__end-text
   &__end-text {
     max-width: 582rem;
     font-size: 32.6rem;
+
+    @media screen and (max-width: $bp-tab) {
+      max-width: 100%;
+    }
+
+    @media screen and (max-width: $bp-mob) {
+      font-size: 18rem;
+      max-width: 100%;
+    }
   }
 
   // .how-work__end-text--first
   &__end-text--first {
     color: $body-4-color;
+
+    @media screen and (max-width: $bp-tab) {
+      margin-bottom: 48rem;
+    }
+
+    @media screen and (max-width: $bp-mob) {
+      margin-bottom: 25rem;
+    }
   }
 
   // .how-work__end-text--second
