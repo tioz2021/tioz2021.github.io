@@ -451,7 +451,12 @@
   @media screen and (max-width: $bp-mob) {
     width: 100%;
     height: 36rem;
-    clip-path: unset;
+    clip-path: polygon(
+      100% 0%,    /* Верхняя правая точка */
+      1.73% 0%,   /* Верхняя левая точка */
+      0% 100%,    /* Нижняя левая точка */
+      98.27% 100% /* Нижняя правая точка */
+    );
   }
 }
 
@@ -476,6 +481,15 @@
       top: 26rem;
       padding-right: 27rem;
     }
+
+    @media screen and (max-width: $bp-mob) { 
+      width: 305rem;
+      left: 24rem;
+      top: 15rem;
+      padding-left: 13rem;
+      padding-top: 16rem;
+      padding-bottom: 15rem;
+    }
   }
 }
 
@@ -488,9 +502,23 @@
   top: 37rem;
   z-index: 2;
 
+  background-image: url('../../images/main-form__step-box-bg.svg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
   @media screen and (max-width: $bp-tab) {
     left: 143rem;
     top: 33rem;
+  }
+
+  @media screen and (max-width: $bp-mob) {
+    width: 28rem;
+    height: 39rem;
+    left: -1rem;
+    top: 2rem;
+    z-index: 3;
+    background-image: url('../../images/main-form__step-box-bg-mob.svg');
   }
 }
 .main-form__order{
@@ -503,12 +531,22 @@
   @media screen and (max-width: $bp-tab) {
     font-size: 34rem;
   }
+
+  @media screen and (max-width: $bp-mob) {
+    font-size: 18.95rem;
+    margin-bottom: 7rem;
+  }
 }
 .main-form__order-text span{
   color: $body-3-color;
 }
 .main-form__order-last-text{
   font-size: 13rem;
+
+  @media screen and (max-width: $bp-mob) {
+    max-width: 217rem;
+    font-size: 12rem;
+  }
 }
 
 .main-form__order-info .main-form__step-number-wrp{
@@ -518,6 +556,11 @@
   @media screen and (max-width: $bp-tab) {
     left: 0;
     top: 1rem;
+  }
+
+  @media screen and (max-width: $bp-mob) {
+    left: 1rem;
+    top: -31rem;
   }
 }
 
@@ -539,6 +582,11 @@
 .main-form__order-info .main-form__stem-number span{
   left: -11rem;
   top: 0;
+
+  @media screen and (max-width: $bp-mob) {
+    left: -3rem;
+    top: 1rem;
+  }
 }
 
 .main-form .main-form__order-info {
@@ -546,6 +594,10 @@
 
   @media screen and (max-width: $bp-tab) {
     margin-bottom: 75rem;
+  }
+
+  @media screen and (max-width: $bp-mob) {
+    margin-bottom: 39rem;
   }
 }
 
@@ -556,18 +608,34 @@
     margin-bottom: 50rem;
   }
 
+  @media screen and (max-width: $bp-mob) {
+    margin-bottom: 24rem;
+  }
+
   // .main-form__step-wrp-result-1 .main-form__step-end span
   .main-form__step-end span {
     @media screen and (max-width: $bp-tab) {
       max-width: 590rem;
     }
+
+    @media screen and (max-width: $bp-mob) {
+      max-width: 280rem;
+    }
   }
 }
 .main-form__step-wrp-result-1 .main-form__step-box{
   min-height: 386rem;
+  @media screen and (max-width: $bp-mob) {
+    min-height: unset;
+    padding-bottom: 33rem;
+  }
 }
 .main-form__step-wrp-result-1 .main-form__step-box-title{
   margin-bottom: 31rem;
+
+  @media screen and (max-width: $bp-mob) {
+    margin-bottom: 19rem;
+  }
 }
 
 .main-form__step-wrp-result-1 .main-form__step-end a{
@@ -575,6 +643,10 @@
 }
 .main-form__step-wrp-result-1 .main-form__step-end-icon{
   top: 3rem;
+
+  @media screen and (max-width: $bp-mob) {
+    margin-top: -7rem;
+  }
 }
 
 .main-form__step-wrp-result-2 {
@@ -582,20 +654,35 @@
   @media screen and (max-width: $bp-tab) {
     margin-bottom: 52rem;
   }
+  @media screen and (max-width: $bp-mob) {
+    margin-bottom: 24rem;
+  }
 
   // .main-form__step-wrp-result-2 .main-form__step-end span
   .main-form__step-end span {
     @media screen and (max-width: $bp-tab) {
       max-width: 590rem;
     }
+    @media screen and (max-width: $bp-mob) {
+      max-width: 280rem;
+    }
   }
 }
 .main-form__step-wrp-result-2 .main-form__step-box-title{
   margin-bottom: 31rem;
+
+  @media screen and (max-width: $bp-mob) {
+    margin-bottom: 19rem;
+  }
 }
 
 .main-form__step-wrp-result-2 .main-form__step-box{
   min-height: 334rem;
+
+  @media screen and (max-width: $bp-mob) {
+    min-height: unset;
+    padding-bottom: 33rem;
+  }
 }
 .main-form__step-end span i{
   color: $body-4-color;
@@ -612,6 +699,10 @@
 
   @media screen and (max-width: $bp-tab) {
     width: 100%;
+  }
+  @media screen and (max-width: $bp-mob) {
+    margin-bottom: 12rem;
+    height: auto;
   }
 }
 
@@ -633,6 +724,16 @@
     padding-left: 16rem;
     background-image: url('../../images/mixing-input-bg-tab.svg');
   }
+
+  @media screen and (max-width: $bp-mob) {
+    width: 304rem;
+    height: 36rem;
+    padding-left: 8rem;
+    padding-right: 12rem;
+    font-size: 12rem;
+    margin-bottom: 8rem;
+    background-image: url('../../images/mixing-input-bg-tab-mob.svg');
+  }
 }
 
 .mixing-input-wrp .img-wrp{
@@ -642,6 +743,10 @@
   right: 24rem;
   top: 50%;
   transform: translateY(-50%);
+
+  @media screen and (max-width: $bp-mob) {
+    display: none;
+  }
 }
 
 .main-form__step-wrp-result-3{
@@ -650,11 +755,18 @@
   @media screen and (max-width: $bp-tab) {
     margin-bottom: 49rem;
   }
+
+  @media screen and (max-width: $bp-mob) {
+    margin-bottom: 24rem;
+  }
   
   // .main-form__step-wrp-result-3 .main-form__step-box
   .main-form__step-box {
     @media screen and (max-width: $bp-tab) {
       padding-bottom: 54rem !important;
+    }
+    @media screen and (max-width: $bp-mob) {
+      padding-bottom: 35rem !important;
     }
   }
 
@@ -662,6 +774,10 @@
   .main-form__step-end span {
     @media screen and (max-width: $bp-tab) {
       max-width: 590rem;
+    }
+
+    @media screen and (max-width: $bp-mob) {
+      max-width: 280rem;
     }
   }
 }
@@ -672,6 +788,9 @@
   @media screen and (max-width: $bp-tab) {
     margin-bottom: 28rem;
   }
+  @media screen and (max-width: $bp-mob) {
+    margin-bottom: 18rem;  
+  }
 }
 
 .main-form__step-wrp-result-3 .main-form__step-box{
@@ -680,12 +799,19 @@
 .main-form__step-wrp-result-3 .main-form__stem-number span{
   left: -10rem;
   top: 2rem;
+  @media screen and (max-width: $bp-mob) { 
+    left: -4rem;
+    top: 1rem;
+  }   
 }
 .main-form__step-wrp-result-3 .main-form__step-end-icon{
   // top: -9rem;
 }
 .main-form__step-wrp-result-3 .main-form__step-end span{
   font-size: 18.2rem;
+  @media screen and (max-width: $bp-mob) { 
+    font-size: 12rem;
+  } 
 }
 
 .main-form .main-form-continue-btn{
@@ -716,4 +842,10 @@
 }
 .main-form .main-form-continue-btn span{
   color: $body-3-color;
+}
+
+.main-form__order-info .main-form__step-number-wrp {
+  @media screen and (max-width: $bp-mob) { 
+    background-image: url('../../images/main-form__step-number-bg-mob-grey.svg');
+  } 
 }

@@ -1,0 +1,112 @@
+.mob-menu {
+  margin-left: 24rem;
+  cursor: pointer;
+
+  @media screen and (max-width: $bp-mob) {
+    margin-left: 16rem;
+  }
+
+  // .mob-menu__icon
+  &__icon {
+    width: 50rem;
+    height: 50rem;
+    display: none;
+
+    @media screen and (max-width: $bp-tab) {
+      display: block;
+    }
+
+    @media screen and (max-width: $bp-mob) {
+      width: 36rem;
+      height: 36rem;
+    }
+  }
+
+  // .mob-menu__list
+  &__list {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    transition: top 0.3s ease;
+    z-index: 1000;
+    padding: 20px 0;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+
+    background-color: $body-1-color;
+    box-sizing: border-box;
+    padding-top: 50rem;
+    padding-bottom: 50rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 9;
+
+    // .mob-menu__list-item.active
+    &.active{
+      top: 0;
+    }
+  }
+
+  // .mob-menu__list-item
+  &__list-item {
+    margin-bottom: 36rem;
+
+    // .mob-menu__list-item:last-child
+    &:last-child{
+      margin-bottom: 0;
+    }
+
+    // .mob-menu__list-item a
+    a {
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 120%;
+      text-align: center;
+      color: $body-2-color;
+
+      // .mob-menu__list-item a:hover
+      &:hover{
+        color: $body-4-color;
+      }
+    }
+  }
+}
+
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 8;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.menu-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Анимация иконки бургера */
+// .mob-menu__icon.active svg line:nth-child(2) {
+//   opacity: 0;
+// }
+
+// .mob-menu__icon.active svg line:nth-child(1) {
+//   transform: rotate(45deg);
+//   transform-origin: center;
+// }
+
+// .mob-menu__icon.active svg line:nth-child(3) {
+//   transform: rotate(-45deg);
+//   transform-origin: center;
+// }
+
+// .mob-menu__icon svg line {
+//   transition: all 0.3s ease;
+// }

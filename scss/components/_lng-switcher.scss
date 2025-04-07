@@ -2,13 +2,17 @@
   border-radius: 21rem;
   width: 65rem;
   height: 36rem;
-  background: rgb(37, 150, 190, .1);
+  background: rgba(78, 81, 245, 0.06);
   padding-left: 4rem;
   padding-right: 2rem;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media screen and (max-width: $bp-tab) {
+    margin-left: auto;
+  }
 
   @media screen and (max-width: $bp-mob) {
     width: 48rem;

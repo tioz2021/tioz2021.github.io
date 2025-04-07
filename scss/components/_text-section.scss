@@ -5,8 +5,13 @@
 
   margin-bottom: 74rem;
 
+  @media screen and (max-width: $bp-tab) {
+    margin-bottom: 25rem;
+  }
+
   // .text-section__container
   &__container {
+    flex-direction: column;
   }
 
   // .text-section__title
@@ -14,6 +19,10 @@
     width: 100%;
     text-align: center;
     margin-bottom: 42rem;
+
+    @media screen and (max-width: $bp-mob) {
+      margin-bottom: 25rem;
+    }
 
     // .text-section__title span
     span {
@@ -29,6 +38,11 @@
   &__def-text {
     font-size: 24.6rem;
     margin-bottom: 24rem;
+
+    @media screen and (max-width: $bp-mob) {
+      font-size: 14rem;
+      margin-bottom: 36rem;
+    }
   }
 
   // .text-section strong
@@ -51,5 +65,11 @@
   // .text-section under-link
   .under-link{
 
+  }
+}
+
+.text-section .text-section__def-text{
+  @media screen and (max-width: $bp-mob) {
+    margin-bottom: 8rem;
   }
 }

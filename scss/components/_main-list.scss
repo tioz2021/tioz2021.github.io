@@ -11,6 +11,17 @@
   clip-path: polygon(0 50rem, 50rem 0, calc(100% - 0rem) 0, 100% 50rem, 100% calc(100% - 50rem), calc(100% - 50rem) 100%, 0rem 100%, 0 calc(120% - 50rem));
   margin-bottom: 24rem;
 
+  @media screen and (max-width: $bp-tab) {
+    width: 100%;
+  }
+
+  @media screen and (max-width: $bp-mob) {
+    clip-path: polygon(0 25rem, 25rem 0, calc(100% - 0rem) 0, 100% 25rem, 100% calc(100% - 25rem), calc(100% - 25rem) 100%, 0rem 100%, 0 calc(120% - 25rem));
+    padding-left: 21rem;
+    padding-right: 21rem;
+    margin-bottom: 16rem;
+  }
+
   // .main-list__item
   &__item {
     position: relative;
@@ -20,6 +31,11 @@
     padding-bottom: 8rem;
     margin-bottom: 8rem;
     padding-left: 17rem;
+
+    @media screen and (max-width: $bp-mob) {
+      padding-left: 9rem;
+      min-height: 22rem;
+    }
 
     // .main-list__item:last-child
     &:last-child{
@@ -37,10 +53,19 @@
     left: 0rem;
     top: 40%;
     transform: translateY(-50%);
+
+    @media screen and (max-width: $bp-mob) {
+      width: 5rem;
+      height: 5rem;
+    }
   }
 
   // .main-list__text
   &__text {
     font-size: 24.5rem;
+
+    @media screen and (max-width: $bp-mob) {
+      font-size: 12rem;
+    }
   }
 }

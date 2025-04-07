@@ -20,16 +20,39 @@
     margin-left: 0;
   }
 
+  @media screen and (max-width: $bp-mob) {
+    width: 285rem;
+    height: 24rem;
+    background-image: url('../../images/mixin-status-bg-mob.svg');
+    padding-left: 9rem;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+  }
+
   // .form-status__text
   &__text {
     margin-right: 34rem;
     font-size: 24.3rem;
+
+    @media screen and (max-width: $bp-mob) {
+      font-size: 12rem;
+      margin-right: 14rem;
+
+      // .form-status__text span
+      span{
+        display: none;
+      }
+    }
   }
 
   // .form-status__mod-text
   &__mod-text {
     font-size: 24.45rem;
     color: $body-3-color;
+
+    @media screen and (max-width: $bp-mob) {
+      font-size: 12rem;
+    }
   }
 
   // .form-status__icon
@@ -40,6 +63,12 @@
     top: 50%;
     right: 24rem;
     transform: translateY(-50%);
+
+    @media screen and (max-width: $bp-mob) {
+      width: 10rem;
+      height: 12rem;
+      right: 7rem;
+    }
 
     // .form-status__icon svg
     svg {

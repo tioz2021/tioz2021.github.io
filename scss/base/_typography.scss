@@ -109,6 +109,11 @@
   color: $body-3-color !important;
   transition: color 250ms ease-in-out;
 
+  @media screen and (max-width: $bp-mob) {
+    text-underline-offset: 2rem;
+    text-decoration-thickness: 1rem;
+  }
+
   // .under-link:hover
   &:hover{
     color: $body-4-color !important;

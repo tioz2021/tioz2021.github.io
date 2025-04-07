@@ -17,6 +17,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    box-sizing: border-box;
+
+    @media screen and (max-width: $bp-mob) {
+      padding-bottom: 10rem;
+    }
 
     // .main-menu__list-item-underline
     &-underline {

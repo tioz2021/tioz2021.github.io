@@ -255,3 +255,12 @@
     position: static;
   }
 }
+
+.main-form__step-wrp-start .main-form__step-number-wrp{
+  z-index: 4;
+}
+.main-form__step-wrp-start .main-form__step-box.active{
+  @media screen and (max-width: $bp-mob) {
+    z-index: 5;
+  }
+}

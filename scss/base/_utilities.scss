@@ -6,4 +6,9 @@
   @media screen and (max-width: $bp-tab) {
     margin-bottom: 23rem;
   }
+  @media screen and (max-width: $bp-mob) {
+    width: 84rem;
+    height: 84rem;
+    margin-bottom: 16rem;
+  }
 }

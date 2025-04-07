@@ -78,7 +78,8 @@
     dropdownBtn.addEventListener('click', function(e) {
       e.stopPropagation();
 
-      stepBox.style.zIndex = '3';
+      // stepBox.style.zIndex = '3';
+      stepBox.classList.add('active');
 
       // Закрываем все другие открытые dropdown
       document.querySelectorAll('.custom-time-selector').forEach(d => {
@@ -94,7 +95,8 @@
         e.stopPropagation();
         const selectedText = e.target.textContent;
 
-        stepBox.style.zIndex = '2';
+        // stepBox.style.zIndex = '2';
+        stepBox.classList.remove('active');
         
         // Обновляем выбранное значение
         selectedValue.textContent = selectedText;
@@ -115,7 +117,8 @@
     // Закрываем dropdown при клике вне его
     document.addEventListener('click', function() {
       dropdown.classList.remove('active');
-      stepBox.style.zIndex = '2';
+      // stepBox.style.zIndex = '2';
+      stepBox.classList.remove('active');
     });
   });
 })();
@@ -544,4 +547,38 @@
   defBtnResult2.onclick = function() {
     this.classList.toggle('active');
   }
+}) ();
+
+// mobile-menu
+(() => {
+  document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.getElementById('menuToggle');
+    const menuList = document.querySelector('.mob-menu__list');
+    const menuOverlay = document.querySelector('.menu-overlay');
+    
+    // Открытие/закрытие меню
+    menuToggle.addEventListener('click', function(e) {
+      e.stopPropagation();
+      menuList.classList.toggle('active');
+      menuOverlay.classList.toggle('active');
+      menuToggle.classList.toggle('active');
+    });
+    
+    // Закрытие при клике вне меню
+    menuOverlay.addEventListener('click', function() {
+      menuList.classList.remove('active');
+      menuOverlay.classList.remove('active');
+      menuToggle.classList.remove('active');
+    });
+    
+    // Закрытие при клике на пункт меню (опционально)
+    const menuItems = document.querySelectorAll('.mob-menu__list-link');
+    menuItems.forEach(item => {
+      item.addEventListener('click', function() {
+        menuList.classList.remove('active');
+        menuOverlay.classList.remove('active');
+        menuToggle.classList.remove('active');
+      });
+    });
+  });
 }) ();

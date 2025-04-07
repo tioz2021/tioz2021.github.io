@@ -3,3 +3,38 @@
     fill: rgb(237, 238, 254);
   }
 }
+
+.order-page .information-box{
+  @media screen and (max-width: $bp-mob) {
+    margin-bottom: 66rem;
+  }
+}
+
+.result-info{
+  @media screen and (max-width: $bp-mob) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16rem;
+  }
+}
+
+.mixing-input-copy-btn {
+  display: none;
+  @media screen and (max-width: $bp-mob) { 
+    display: flex;
+  }
+
+  // .mixing-input-copy-btn .copy-btn-icon 
+  .copy-btn-icon {
+    @media screen and (max-width: $bp-mob) { 
+      display: block;
+      position: relative;
+      transform: unset;
+      right: unset;
+      top: unset;
+      width: 16rem;
+      height: 16rem;
+    } 
+  }
+}

@@ -6,6 +6,11 @@
   margin-bottom: 70rem;
   background-color: rgba(78, 81, 245, 0.06);
   text-align: center;
+
+  @media screen and (max-width: $bp-mob) {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
   
   // .information-box__link
   &__link {
@@ -14,6 +19,9 @@
     @media screen and (max-width: $bp-tab) {
       display: inline-block;  
       min-height: 44rem;
+    }
+    @media screen and (max-width: $bp-mob) {
+      min-height: 22rem;
     }
   }
 
@@ -25,6 +33,10 @@
       display: inline-block;  
       min-height: 44rem;
       margin-left: 6rem;
+    }
+    @media screen and (max-width: $bp-mob) {
+      min-height: 22rem;
+      margin-left: 10rem;
     }
   }
 }
