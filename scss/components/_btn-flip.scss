@@ -42,6 +42,10 @@ $speed: 0.5s;
     justify-content: center;
     gap: 8rem; // Отступ между иконкой и текстом
     padding-left: 10rem;
+
+    @media screen and (max-width: $bp-mob) {
+      line-height: 36rem;
+    }
   }
 
   &:before {
@@ -67,6 +71,12 @@ $speed: 0.5s;
     gap: 8rem;
 
     padding-left: 34rem;
+
+    @media screen and (max-width: $bp-mob) {
+      line-height: 36rem;
+      font-size: 14rem;
+      padding-left: 20rem;
+    }
   }
 }
 
@@ -83,6 +93,13 @@ $speed: 0.5s;
   svg {
     width: 100%;
     height: 100%;
+  }
+
+  @media screen and (max-width: $bp-mob) {
+    width: 16rem;
+    height: 16rem;
+    top: 10rem;
+    left: 107rem;
   }
 }
 

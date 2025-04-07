@@ -2082,7 +2082,7 @@
     left: 27rem;
 
     @media screen and (max-width: $bp-mob) {
-      top: 13rem;
+      top: 10rem;
       left: 14rem;
     }
   }
@@ -2093,7 +2093,7 @@
     
     @media screen and (max-width: $bp-mob) {
       font-size: 12rem;
-      padding: 14rem 8rem !important;
+      padding: 11rem 8rem !important;
       margin-left: 13rem;
     }
   }
@@ -2132,7 +2132,8 @@
     }
 
     @media screen and (max-width: $bp-mob) {
-      margin-left: -19rem;
+      margin-left: 3rem;
+      padding: 11rem 0rem !important;
     }
   }
 
@@ -2155,8 +2156,8 @@
       width: 16rem;
       height: 16rem;
 
-      top: 12rem;
-      left: -3rem;
+      top: 10rem;
+      left: -2rem;
     }
 
   }
@@ -2208,6 +2209,10 @@
   width: 296rem;
   height: 51rem;
   margin-left: 9rem;
+
+  @media screen and (max-width: $bp-mob) {
+    margin-bottom: 0;
+  }
 }
 .footer__btn .button.v12{
   width: 100%;
@@ -2216,6 +2221,11 @@
 .footer__btn .button.v12 .label{
   padding: 13rem 25rem;
   margin-left: 30rem;
+
+  @media screen and (max-width: $bp-mob) {
+    padding: 11rem 25rem;
+    margin-left: 24rem;
+  }
 }
 
 .footer__btn .button-icon{
@@ -2224,6 +2234,13 @@
   height: 24rem;
   left: 61rem;
   top: 13rem;
+
+  @media screen and (max-width: $bp-mob) {
+    width: 16rem;
+    height: 16rem;
+    left: 85rem;
+    top: 10rem;
+  }
 }
 
 // copy-btn
@@ -2295,3 +2312,17 @@
     background-color: $body-4-color;
   }
 }
+
+.footer .button__notification .button.v12{
+  @media screen and (max-width: $bp-mob) {
+    margin-left: 0;
+    height: 36rem;
+  }
+}
+
+.main-form-continue-btn .button.v12{
+  @media screen and (max-width: $bp-mob) { 
+    width: 100%;
+  }
+}
+

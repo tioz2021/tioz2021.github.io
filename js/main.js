@@ -48,6 +48,7 @@
     const optionsContainer = dropdown.querySelector('.selector-options');
     const icon = dropdown.querySelector('.selector-header__icon');
     const allOptions = Array.from(dropdown.querySelectorAll('.option:not(.off-option)'));
+    const stepBox = document.querySelector('.main-form__step-box');
     
     // Создаем OFF опцию
     const offOption = document.createElement('div');
@@ -76,6 +77,9 @@
 
     dropdownBtn.addEventListener('click', function(e) {
       e.stopPropagation();
+
+      stepBox.style.zIndex = '3';
+
       // Закрываем все другие открытые dropdown
       document.querySelectorAll('.custom-time-selector').forEach(d => {
         if (d !== dropdown) d.classList.remove('active');
@@ -89,6 +93,8 @@
       if (e.target.classList.contains('option')) {
         e.stopPropagation();
         const selectedText = e.target.textContent;
+
+        stepBox.style.zIndex = '2';
         
         // Обновляем выбранное значение
         selectedValue.textContent = selectedText;
@@ -109,6 +115,7 @@
     // Закрываем dropdown при клике вне его
     document.addEventListener('click', function() {
       dropdown.classList.remove('active');
+      stepBox.style.zIndex = '2';
     });
   });
 })();

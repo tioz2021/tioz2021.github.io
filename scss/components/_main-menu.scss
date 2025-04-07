@@ -40,6 +40,11 @@
     color: $body-2-color;
     transition: color 0.3s ease;
     
+    @media screen and (max-width: $bp-mob) {
+      font-size: 14rem;
+      font-weight: 500;
+    }
+
     // .main-menu__list-link:hover
     &:hover{
       color: $body-3-color;

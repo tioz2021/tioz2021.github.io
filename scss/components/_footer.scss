@@ -8,6 +8,10 @@
    padding-top: 36rem;
   }
 
+  @media screen and (max-width: $bp-mob) {
+    padding-bottom: 36rem;
+  }
+
   // .footer__container
   &__container {
     flex-direction: column;
@@ -26,6 +30,13 @@
     @media screen and (max-width: $bp-tab) {
       margin-bottom: 24rem;
     }
+
+    @media screen and (max-width: $bp-mob) {
+      flex-wrap: wrap;
+      height: unset;
+      position: relative;
+      margin-bottom: 26rem;
+    }
   }
 
   // .footer__logo
@@ -35,6 +46,11 @@
     font-size: 44rem;
     line-height: 120%;
     color: $body-3-color;
+
+    @media screen and (max-width: $bp-mob) {
+      font-size: 36rem;
+      margin-bottom: 18rem;
+    }
   }
 
   // .footer__menu
@@ -47,6 +63,12 @@
   // .footer__lng-switcher
   &__lng-switcher {
     background-color: rgba(78, 81, 245, 0.06);
+
+    @media screen and (max-width: $bp-mob) {
+      position: absolute;
+      top: 11rem;
+      right: -3rem;
+    }
   }
 
   // .footer__end
@@ -60,9 +82,17 @@
       align-items: center;
     }
 
+    @media screen and (max-width: $bp-mob) {
+      margin-bottom: 33rem;
+    }
+
     // .footer__end a
     a{
       transition: color 300ms ease-in-out;
+
+      @media screen and (max-width: $bp-mob) {
+        font-size: 14rem;
+      } 
       
       // .footer__end a:hover
       &:hover{
@@ -86,6 +116,16 @@
       width: 100%;
       margin-bottom: 24rem;
     }
+
+    @media screen and (max-width: $bp-mob) {
+      clip-path: polygon(0 24rem, 24rem 0, calc(100% - 0rem) 0, 100% 24rem, 100% calc(100% - 24rem), calc(100% - 24rem) 100%, 0rem 100%, 0 calc(120% - 24rem));
+      padding-left: 12rem;
+      padding-right: 12rem;
+      padding-top: 24rem;
+      min-height: unset;
+      padding-bottom: 21rem;
+      margin-bottom: 17rem;
+    }
   }
 
   // .footer__end-left
@@ -95,11 +135,20 @@
   // .footer__text-wrp
   &__text-wrp {
     margin-bottom: 27rem;
+
+    @media screen and (max-width: $bp-mob) {
+      margin-bottom: 17rem;
+    }
   }
 
   // .footer__text
   &__text {
     margin-bottom: 18rem;
+
+    @media screen and (max-width: $bp-mob) {
+      font-size: 14rem;
+      margin-bottom: 15rem;
+    }
   }
 
   // .footer__link
@@ -113,6 +162,10 @@
     // .footer__end-right .footer__text
     .footer__text {
       margin-bottom: 29rem;
+
+      @media screen and (max-width: $bp-mob) {
+        margin-bottom: 13rem;
+      }  
     }
   }
 
@@ -132,6 +185,10 @@
     @media screen and (max-width: $bp-tab) {
       right: 35rem;
     }
+
+    @media screen and (max-width: $bp-mob) {
+      display: none;
+    }
   }
 
   // .footer__link-str
@@ -143,16 +200,29 @@
     @media screen and (max-width: $bp-tab) {
       font-size: 24rem;
     }
+
+    @media screen and (max-width: $bp-mob) {
+      margin-bottom: 11rem;
+    }
   }
   
   // .footer__btn
   &__btn{
     margin-bottom: 24rem;
+    
+    @media screen and (max-width: $bp-mob) {
+      margin-left: 5rem;
+      margin-bottom: 0;
+    }
   }
 
   // .footer__link-last
   &__link-last {
     margin-bottom: 0;
+
+    @media screen and (max-width: $bp-mob) {
+      margin-bottom: 4rem;
+    }    
   }
 
   // .footer__desc-text
@@ -165,10 +235,22 @@
     @media screen and (max-width: $bp-tab) {
       margin-top: -23rem;
     }
+    @media screen and (max-width: $bp-tab) {
+      font-size: 14rem;
+    }
   }
 }
 
 .footer .main-menu{
   min-width: 394rem;
   margin-right: 33rem;
+
+  @media screen and (max-width: $bp-mob) {
+    min-width: 100%;
+    margin-right: 0;
+    margin-top: 0;
+    box-sizing: border-box;
+    padding-left: 17rem;
+    padding-right: 17rem;
+  }
 }

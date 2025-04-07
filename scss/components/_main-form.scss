@@ -4,6 +4,9 @@
   @media screen and (max-width: $bp-tab) {
     margin-bottom: 100rem;
   }
+  @media screen and (max-width: $bp-mob) {
+    margin-bottom: 69rem;
+  }
 
   // .main-form__container
   &__container {
@@ -27,10 +30,8 @@
       }
 
       @media screen and (max-width: $bp-mob) {
-        // margin-bottom: 25rem;
-
         margin-bottom: 20rem;
-        // margin-bottom: 16rem;
+        // margin-bottom: 25rem;
       }
     }
 
@@ -81,6 +82,9 @@
       @media screen and (max-width: $bp-tab) {
         margin-bottom: 37rem;
       }
+      @media screen and (max-width: $bp-mob) {
+        margin-bottom: 23rem;
+      }
 
       // .main-form__step-wrp-step-3 .main-form__step-box
       .main-form__step-box{
@@ -88,6 +92,11 @@
 
         @media screen and (max-width: $bp-tab) {
           padding-left: 19rem;
+        }
+        @media screen and (max-width: $bp-mob) {
+          padding-left: 12rem;
+          min-height: unset;
+          padding-bottom: 35rem;
         }
       }
       // .main-form__step-wrp-step-3 .main-form__step-box-title
@@ -99,6 +108,11 @@
         @media screen and (max-width: $bp-tab) {
           margin-left: 15rem;
           margin-bottom: 30rem;
+        }
+        @media screen and (max-width: $bp-mob) {
+          font-size: 22rem;
+          margin-left: 0rem;
+          margin-bottom: 37rem;
         }
       }
     }
@@ -135,6 +149,7 @@
       background-size: 100%;
       background-repeat: no-repeat;
       background-position: center;
+      z-index: 3;
     }
   }
 
@@ -253,6 +268,11 @@
         @media screen and (max-width: $bp-mob) {
           margin-bottom: 12rem;
         }  
+      }
+
+      @media screen and (max-width: $bp-tab) {
+        padding-top: 98rem;
+        padding-bottom: 10rem;
       }
 
       @media screen and (max-width: $bp-mob) {
@@ -386,6 +406,12 @@
   background-size: contain;
   background-repeat: no-repeat;
 
+  @media screen and (max-width: $bp-tab) {
+    width: 707rem;
+    right: -4rem;
+    background-image: url('../../images/main-form__step-wrp-step-img-tab.svg');
+  }
+
   @media screen and (max-width: $bp-mob) {
     width: 332rem;
     height: 68rem;
@@ -421,6 +447,12 @@
   );
   transform: translateZ(0);
   backface-visibility: hidden;
+
+  @media screen and (max-width: $bp-mob) {
+    width: 100%;
+    height: 36rem;
+    clip-path: unset;
+  }
 }
 
 .main-form__order-info{
@@ -500,6 +532,7 @@
 
   @media screen and (max-width: $bp-mob) {
     font-size: 12.4rem;
+    max-width: 280rem;
   }
 }
 
@@ -667,6 +700,11 @@
     margin: 0 auto;
     margin-top: 70rem;
   }
+  @media screen and (max-width: $bp-mob) { 
+    margin-top: 24rem;
+    width: 100%;
+    height: 36rem;
+  } 
 }
 .main-form .main-form-continue-btn .button.v12 .icon:before,
 .main-form .main-form-continue-btn .button.v12 .icon:after{

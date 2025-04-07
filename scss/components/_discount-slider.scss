@@ -71,6 +71,18 @@
       display: none;
     }
   }
+
+  // .track-v2__bg-tab
+  &-tab{
+    display: none;
+    @media screen and (max-width: $bp-tab) {
+      display: block;
+    }
+    @media screen and (max-width: $bp-mob) {
+      display: none;
+    }
+  }
+
   // .track-v2__bg-mob
   &-mob{
     display: none;
