@@ -593,3 +593,82 @@
     });
   });
 }) ();
+
+// copy-btn
+(() => {
+  function copy(selector) {
+    // Получаем элемент по указанному селектору
+    const element = document.querySelector(selector);
+  
+    if (!element) {
+      console.error('Элемент не найден:', selector);
+      return;
+    }
+  
+    let textToCopy;
+  
+    // Определяем, как получить текст в зависимости от типа элемента
+    if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+      // Для input или textarea используем value
+      textToCopy = element.value;
+    } else {
+      // Для остальных элементов используем textContent
+      textToCopy = element.textContent;
+    }
+  
+    // Создаем временный элемент textarea
+    const textarea = document.createElement('textarea');
+    textarea.value = textToCopy;
+    document.body.appendChild(textarea);
+  
+    // Выделяем текст
+    textarea.select();
+    textarea.setSelectionRange(0, 99999); // Для мобильных устройств
+  
+    // Копируем текст
+    try {
+      document.execCommand('copy');
+      console.log('Текст успешно скопирован:', textToCopy);
+    } catch (error) {
+      console.error('Ошибка при копировании:', error);
+    }
+  
+    // Удаляем временный элемент
+    document.body.removeChild(textarea);
+  }
+
+  // При клике на кнопку .copy-btn копируем текст из .btn-line i
+  if (document.querySelector('.copy-btn')) {
+    document.querySelector('.copy-btn').addEventListener('click', () => {
+      copy('.btn-line i'); // Селектор для текста
+    });
+  }
+
+  // При клике на кнопку .mixing-input-btn копируем значение из .mixing-input-wrp .mixing-input
+  if (document.querySelector('.mixing-input-btn')) {
+    document.querySelector('.mixing-input-btn').addEventListener('click', () => {
+      copy('.mixing-input-wrp .mixing-input'); // Селектор для поля ввода
+    });
+
+    document.querySelector('.mixing-input-btn').addEventListener('click', function () {
+      const main = document.querySelector('.mixing-input-btn-main');
+      const ok = document.querySelector('.mixing-input-btn-ok');
+    
+      // Скрываем -main и показываем -ok
+      main.style.opacity = '0';
+      ok.style.display = 'flex'; // Делаем видимым
+      setTimeout(() => {
+        ok.style.opacity = '1'; // Плавное появление
+      }, 10); // Небольшая задержка для корректной анимации
+    
+      // Через 1 секунду возвращаем все обратно
+      setTimeout(() => {
+        ok.style.opacity = '0'; // Скрываем -ok
+        setTimeout(() => {
+          ok.style.display = 'none'; // Полностью убираем из потока
+          main.style.opacity = '1'; // Показываем -main
+        }, 250); // Время анимации исчезновения
+      }, 1000); // Время показа -ok
+    });
+  }
+}) ();
