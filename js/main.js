@@ -366,9 +366,8 @@
       this.valuesDisplay = container.querySelector('.slider-values');
       this.handles = [];
       this.values = [100];
-      // this.colors = ['#FFFFFF', '#C5C7FC', '#C5C7FC'];
-      // this.colors = ['#FFFFFF', '#C5C7FC', '#470083'];
       this.colors = ['#FFFFFF', '#FFFFFF', '#FFFFFF'];
+      this.isTouchDevice = 'ontouchstart' in window;
     }
   
     setHandles(count) {
@@ -399,14 +398,11 @@
       handle.style.left = `${position}%`;
       handle.dataset.index = index;
       
-      handle.addEventListener('mousedown', (e) => {
-        e.preventDefault();
-        const startX = e.clientX;
-        const startLeft = parseFloat(handle.style.left);
-        const handleIndex = parseInt(handle.dataset.index);
-        
+      // Общая функция для обработки перемещения
+      const startDrag = (clientX, startLeft, handleIndex) => {
         const moveHandler = (e) => {
-          const deltaX = e.clientX - startX;
+          const currentX = this.isTouchDevice ? e.touches[0].clientX : e.clientX;
+          const deltaX = currentX - clientX;
           const percentDelta = (deltaX / this.track.offsetWidth) * 100;
           let newLeft = startLeft + percentDelta;
           
@@ -422,11 +418,36 @@
           this.updateVisuals();
         };
         
-        document.addEventListener('mousemove', moveHandler);
-        document.addEventListener('mouseup', () => {
-          document.removeEventListener('mousemove', moveHandler);
-        }, { once: true });
+        const endDrag = () => {
+          if (this.isTouchDevice) {
+            document.removeEventListener('touchmove', moveHandler);
+            document.removeEventListener('touchend', endDrag);
+          } else {
+            document.removeEventListener('mousemove', moveHandler);
+            document.removeEventListener('mouseup', endDrag);
+          }
+        };
+        
+        if (this.isTouchDevice) {
+          document.addEventListener('touchmove', moveHandler, { passive: false });
+          document.addEventListener('touchend', endDrag, { once: true });
+        } else {
+          document.addEventListener('mousemove', moveHandler);
+          document.addEventListener('mouseup', endDrag, { once: true });
+        }
+      };
+      
+      // Обработчики для мыши
+      handle.addEventListener('mousedown', (e) => {
+        e.preventDefault();
+        startDrag(e.clientX, parseFloat(handle.style.left), parseInt(handle.dataset.index));
       });
+      
+      // Обработчики для touch-устройств
+      handle.addEventListener('touchstart', (e) => {
+        e.preventDefault();
+        startDrag(e.touches[0].clientX, parseFloat(handle.style.left), parseInt(handle.dataset.index));
+      }, { passive: false });
       
       return handle;
     }
@@ -434,7 +455,6 @@
     updateValues() {
       const positions = [0, ...this.handles.map(h => parseFloat(h.style.left)), 100];
       this.values = positions.slice(1).map((pos, i) => pos - positions[i]);
-      // this.updateValuesDisplay();
       this.updateInputsPercent();
     }
   
@@ -445,16 +465,8 @@
         return `${this.colors[i % this.colors.length]} ${accumulated}%`;
       });
       this.track.style.background = `linear-gradient(90deg, ${gradientStops.join(', ')})`;
-      
-      // this.updateValuesDisplay();
       this.updateInputsPercent();
     }
-  
-    // updateValuesDisplay() {
-    //   this.valuesDisplay.innerHTML = this.values
-    //     .map(v => `<div class="value-label">${v.toFixed(1)}%</div>`)
-    //     .join('');
-    // }
   
     updateInputsPercent() {
       const inputsPercent = document.querySelectorAll('.main-input__input-end__num');
@@ -468,10 +480,9 @@
     getValues() {
       return this.values;
     }
-  }
+} 
   
   // Остальной код без изменений
-  
   const mainBtn = document.querySelector('.main-form__step-buttons-one');
   if (!mainBtn) return;
   const btnMore = document.querySelector('.main-form__step-buttons-more');

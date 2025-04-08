@@ -1,6 +1,18 @@
-// * {
-//   backface-visibility: visibility;
-// }
+/* Отключает ВСЕ выделения при кликах/тапах */
+* {
+  -webkit-tap-highlight-color: transparent; /* Для мобильных */
+  -webkit-user-select: none;  /* Запрет выделения текста */
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; 
+  outline: none !important; /* На всякий случай */
+}
+
+/* Но разрешаем выделение для полей ввода */
+input, textarea, [contenteditable] {
+  -webkit-user-select: text;
+  user-select: text;
+}
 
 html{
   font-family: $main-font;
