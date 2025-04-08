@@ -672,3 +672,41 @@
     });
   }
 }) ();
+
+// preloader
+(() => {
+  document.addEventListener('DOMContentLoaded', function() {
+    const preloader = document.querySelector('.preloader');
+    const video = document.querySelector('.fs__img video');
+    
+    // Настройка видео
+    if(video) {
+      video.muted = true; // Обязательно для автовоспроизведения
+      video.loop = true;
+      video.playsInline = true;
+    }
+  
+    // Когда вся страница загружена
+    window.addEventListener('load', function() {
+      setTimeout(function() {
+        // Скрываем прелоадер
+        preloader.classList.add('hide');
+        
+        // Пытаемся запустить видео
+        const playPromise = video.play();
+        
+        // Обработка ошибок автовоспроизведения
+        if (playPromise !== undefined) {
+          playPromise.catch(error => {
+            console.log('Автовоспроизведение не сработало:', error);
+            // Показываем кнопку для ручного запуска
+            video.controls = true;
+          });
+        }
+        
+        // Полное удаление прелоадера через 0.5s
+        setTimeout(() => preloader.remove(), 500);
+      }, 1000); // Задержка перед скрытием прелоадера
+    });
+  });
+}) ();
