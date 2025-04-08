@@ -1,8 +1,24 @@
 .main-faq-page .information-box{
   margin-bottom: 75rem;
+
+  @media screen and (max-width: $bp-tab) {
+    margin-bottom: 70rem;
+  }
+
+  @media screen and (max-width: $bp-mob) {
+    margin-bottom: 36rem;
+  }
 }
 .faq {
   margin-bottom: 150rem;
+  
+  @media screen and (max-width: $bp-tab) {
+    margin-bottom: 100rem;
+  }
+
+  @media screen and (max-width: $bp-mob) {
+    margin-bottom: 70rem;
+  }
 
   // .faq__container
   &__container {
