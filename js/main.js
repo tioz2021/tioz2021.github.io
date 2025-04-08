@@ -677,36 +677,58 @@
 (() => {
   document.addEventListener('DOMContentLoaded', function() {
     const preloader = document.querySelector('.preloader');
-    const video = document.querySelector('.fs__img video');
+    const video = document.getElementById('video-element');
+    const fallbackImage = document.getElementById('fallback-image');
     
     // Настройка видео
     if(video) {
       video.muted = true; // Обязательно для автовоспроизведения
       video.loop = true;
       video.playsInline = true;
+      video.setAttribute('webkit-playsinline', ''); // Для старых iOS
     }
   
     // Когда вся страница загружена
     window.addEventListener('load', function() {
-      setTimeout(function() {
+      setTimeout(async function() {
         // Скрываем прелоадер
         preloader.classList.add('hide');
         
-        // Пытаемся запустить видео
-        const playPromise = video.play();
+        if(!video) {
+          showFallbackImage();
+          return;
+        }
         
-        // Обработка ошибок автовоспроизведения
-        if (playPromise !== undefined) {
-          playPromise.catch(error => {
-            console.log('Автовоспроизведение не сработало:', error);
-            // Показываем кнопку для ручного запуска
-            video.controls = true;
-          });
+        try {
+          // Пытаемся запустить видео
+          const playPromise = video.play();
+          
+          if (playPromise !== undefined) {
+            await playPromise.catch(error => {
+              console.log('Автовоспроизведение не сработало:', error);
+              showFallbackImage();
+            });
+          }
+        } catch (error) {
+          console.log('Ошибка воспроизведения видео:', error);
+          showFallbackImage();
         }
         
         // Полное удаление прелоадера через 0.5s
         setTimeout(() => preloader.remove(), 500);
       }, 1000); // Задержка перед скрытием прелоадера
     });
+    
+    function showFallbackImage() {
+      if (fallbackImage) {
+        // Скрываем видео
+        if (video) video.style.display = 'none';
+        // Показываем изображение
+        fallbackImage.style.display = 'block';
+      } else if (video) {
+        // Если нет фолбэка, показываем controls
+        video.controls = true;
+      }
+    }
   });
-}) ();
+})();
