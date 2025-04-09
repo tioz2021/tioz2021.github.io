@@ -13,15 +13,15 @@
   &__input-wrp {
     // overflow: hidden;
     position: relative;
-    width: 754rem;
-    height: 50rem;
+    width: 75.4rem;
+    height: 5.0rem;
 
     @media screen and (max-width: $bp-tab) {
-      width: 478rem;
-      height: 50rem;
+      width: 47.8rem;
+      height: 5.0rem;
     }
     @media screen and (max-width: $bp-mob) {
-      height: 36rem;
+      height: 3.6rem;
     }
   }
 
@@ -31,24 +31,24 @@
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 50rem;
-    height: 50rem;
+    width: 5.0rem;
+    height: 5.0rem;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 1;
 
     @media screen and (max-width: $bp-tab) {
-      width: 36rem;
-      height: 36rem;
-      left: -23rem;
+      width: 3.6rem;
+      height: 3.6rem;
+      left: -2.3rem;
     }
 
     @media screen and (max-width: $bp-mob) {
-      width: 22rem;
-      height: 22rem;
+      width: 2.2rem;
+      height: 2.2rem;
       left: 0;
-      top: -20rem;
+      top: -2.0rem;
     }
 
     // .main-input__input-start__num
@@ -76,12 +76,12 @@
 
     @media screen and (max-width: $bp-tab) {
       background-image: url('../../images/main-input__input-start-bg-tab.svg');
-      background-size: 36rem 36rem;
+      background-size: 3.6rem 3.6rem;
     }
     @media screen and (max-width: $bp-mob) {
       background-image: unset;
       background-color: #fff;
-      border: 1rem solid $body-3-color;
+      border: 0.1rem solid $body-3-color;
     }
 
   }
@@ -91,7 +91,7 @@
     width: 100%;
     height: 100%;
     background-color: rgba(78, 81, 245, 0.1);
-    border: 1rem solid $body-3-color;
+    border: 0.1rem solid $body-3-color;
     clip-path: polygon(
       0% 75.5858%,
       1.6189% 100%,
@@ -103,8 +103,8 @@
       0% 24.4142%
     );
     box-sizing: border-box;
-    padding-left: 64rem;
-    padding-right: 76rem;
+    padding-left: 6.4rem;
+    padding-right: 7.6rem;
 
     @media screen and (max-width: $bp-tab) {
       clip-path: unset;
@@ -114,15 +114,15 @@
       background-position: center;
       background-repeat: no-repeat;
       border: unset;
-      padding-left: 26rem;
-      padding-right: 82rem;
+      padding-left: 2.6rem;
+      padding-right: 8.2rem;
     }
 
     @media screen and (max-width: $bp-mob) {
-      width: 304rem;
-      height: 36rem;
-      padding-left: 8rem;
-      padding-right: 8rem;
+      width: 30.4rem;
+      height: 3.6rem;
+      padding-left: 0.8rem;
+      padding-right: 0.8rem;
       background-image: url('../../images/input-bg-mob-default.svg');
       background-size: 100%;
     }
@@ -134,8 +134,8 @@
     right: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 70rem;
-    height: 50rem;
+    width: 7.0rem;
+    height: 5.0rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -145,19 +145,19 @@
     }
 
     @media screen and (max-width: $bp-mob) {
-      width: 48rem;
-      height: 22rem;
-      top: -20rem;
+      width: 4.8rem;
+      height: 2.2rem;
+      top: -2.0rem;
       right: unset;
-      left: 22rem;
-      border: 1rem solid #4e51f5;
+      left: 2.2rem;
+      border: 0.1rem solid #4e51f5;
       background-color: #fff;
     }
 
     // .main-input__input-end__num
     &__num {
       color: $body-3-color;
-      margin-left: 3rem;
+      margin-left: 0.3rem;
 
       @media screen and (max-width: $bp-tab) {
         margin-left: 0;
@@ -169,7 +169,7 @@
   &__input-end-bg {
     position: absolute;
     // right: 0;
-    right: -2rem;
+    right: -0.2rem;
     // top: 50%;
     top: 51%;
     transform: translateY(-50%);
@@ -193,7 +193,7 @@
       right: unset;
       top: unset;
       order: -1;
-      margin-bottom: 8rem;
+      margin-bottom: 0.8rem;
       margin-left: auto;
     }
   }
@@ -202,15 +202,15 @@
   &--error{
     display: none;
     position: absolute;
-    top: -8rem;
-    left: 74rem;
+    top: -0.8rem;
+    left: 7.4rem;
     color: $error-color;
     background-color: #fff;
     box-sizing: border-box;
-    padding-left: 4rem;
-    padding-right: 4rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
   }
 }
 
@@ -237,7 +237,7 @@
   display: block;
 }
 .main-form__step-input-wrp.error input {
-  border: 1rem solid $error-color;
+  border: 0.1rem solid $error-color;
   background: rgba(245, 78, 81, 0.1);
 }
 

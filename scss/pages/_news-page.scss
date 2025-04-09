@@ -1,22 +1,22 @@
 .main-news-page .information-box{
   box-sizing: border-box;
-  padding-left: 43rem;
-  margin-bottom: 75rem;
+  padding-left: 4.3rem;
+  margin-bottom: 7.5rem;
   @media screen and (max-width: $bp-tab) {
-    margin-bottom: 70px;
-    padding-left: 40rem;
-    padding-right: 40rem;
+    margin-bottom: 7.0rem;
+    padding-left: 4.0rem;
+    padding-right: 4.0rem;
   }
   @media screen and (max-width: $bp-mob) {
-    margin-bottom: 36rem;
-    padding-left: 15rem;
-    padding-right: 15rem;
+    margin-bottom: 3.6rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }
 .main-news-page .information-box__link {
 
   @media screen and (max-width: $bp-tab) {
-    font-size: 29rem;
+    font-size: 2.9rem;
 
     // .main-news-page .information-box__link span
     span {
@@ -25,20 +25,20 @@
   }
 
   @media screen and (max-width: $bp-mob) {
-    font-size: 14rem;
+    font-size: 1.4rem;
   }
 }
 
 .news {
   box-sizing: border-box;
-  padding-bottom: 150rem;
+  padding-bottom: 15.0rem;
 
   @media screen and (max-width: $bp-tab) {
-    padding-bottom: 75rem;
+    padding-bottom: 7.5rem;
   }
 
   @media screen and (max-width: $bp-mob) {
-    padding-bottom: 50rem;
+    padding-bottom: 5.0rem;
   }
 
   // .news__container
@@ -49,14 +49,14 @@
 
   // .news__title
   &__title {
-    margin-bottom: 42rem;
+    margin-bottom: 4.2rem;
 
     @media screen and (max-width: $bp-tab) {
-      margin-bottom: 42rem;
+      margin-bottom: 4.2rem;
     }
 
     @media screen and (max-width: $bp-mob) {
-      margin-bottom: 24rem;
+      margin-bottom: 2.4rem;
     }
 
     // .news__title span
@@ -70,52 +70,52 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50rem;
+    margin-bottom: 5.0rem;
     position: relative;
 
     @media screen and (max-width: $bp-mob) {
-      margin-bottom: 36rem;
+      margin-bottom: 3.6rem;
     }
   }
 
   // .news__main-img-wrp
   &__main-img-wrp {
-    width: 356rem;
-    height: 224rem;
+    width: 35.6rem;
+    height: 22.4rem;
 
     @media screen and (max-width: $bp-tab) {
       position: absolute;
-      width: 336rem;
-      height: 212rem;
+      width: 33.6rem;
+      height: 21.2rem;
     }
 
     @media screen and (max-width: $bp-mob) {
-      width: 156rem;
-      height: 100rem;
+      width: 15.6rem;
+      height: 10.0rem;
     }
   }
 
   // .news__main-box-info
   &__main-box-info {
-    max-width: 801rem;
+    max-width: 80.1rem;
   }
 
   // .news__title-text
   &__title-text {
     display: block;
-    font-size: 32.7rem;
-    margin-bottom: 12rem;
+    font-size: 3.27rem;
+    margin-bottom: 1.2rem;
 
     @media screen and (max-width: $bp-tab) {
-      max-width: 336rem;
+      max-width: 33.6rem;
       margin-left: auto;
-      margin-bottom: 116rem;
+      margin-bottom: 11.6rem;
     }
 
     @media screen and (max-width: $bp-mob) {
-      max-width: 156rem;
-      margin-bottom: 20rem;
-      font-size: 18rem;
+      max-width: 15.6rem;
+      margin-bottom: 2.0rem;
+      font-size: 1.8rem;
     }    
 
     // .news__title-text:hover
@@ -127,19 +127,19 @@
 
   // .news__title-desk
   &__title-desk {
-    max-width: 754rem;
+    max-width: 75.4rem;
     color: rgba(45, 44, 56, .6);
-    margin-bottom: 20rem;
-    font-size: 24.6rem;
+    margin-bottom: 2.0rem;
+    font-size: 2.46rem;
 
     @media screen and (max-width: $bp-tab) {
       max-width: 100%;
-      margin-bottom: 16rem;
+      margin-bottom: 1.6rem;
     }
 
     @media screen and (max-width: $bp-mob) {
-      font-size: 14rem;
-      margin-bottom: 8rem;
+      font-size: 1.4rem;
+      margin-bottom: 0.8rem;
     }
   }
 
@@ -151,48 +151,48 @@
 
   // .news__time-info-icon
   &__time-info-icon {
-    width: 22rem;
-    height: 22rem;
-    margin-right: 9rem;
-    left: 2rem;
-    top: 1rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    margin-right: 0.9rem;
+    left: 0.2rem;
+    top: 0.1rem;
 
     @media screen and (max-width: $bp-mob) {
-      width: 16rem;
-      height: 16rem;
-      margin-right: 4rem;
+      width: 1.6rem;
+      height: 1.6rem;
+      margin-right: 0.4rem;
     }
   }
 
   // .news__time-info-text
   &__time-info-text {
     color: rgba(45, 44, 56, .6);
-    font-size: 18.8rem;
+    font-size: 1.88rem;
 
     @media screen and (max-width: $bp-mob) {
-      font-size: 12rem;
+      font-size: 1.2rem;
     }
   }
 
   // .news__main-box-pin-icon
   &__main-box-pin-icon {
-    width: 20rem;
-    height: 20rem;
+    width: 2.0rem;
+    height: 2.0rem;
     position: absolute;
     top: 0;
     right: 0;
 
     @media screen and (max-width: $bp-tab) {
       right: unset;
-      left: 11rem;
-      top: 11rem;
+      left: 1.1rem;
+      top: 1.1rem;
     }
 
     @media screen and (max-width: $bp-mob) {
-      width: 16rem;
-      height: 16rem;
-      top: 4rem;
-      left: 4rem;
+      width: 1.6rem;
+      height: 1.6rem;
+      top: 0.4rem;
+      left: 0.4rem;
     }
   }
 
@@ -203,17 +203,17 @@
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
-    padding-top: 36rem;
-    padding-bottom: 50rem;
-    margin-bottom: 50rem;
+    padding-top: 3.6rem;
+    padding-bottom: 5.0rem;
+    margin-bottom: 5.0rem;
 
     @media screen and (max-width: $bp-tab) {
       flex-wrap: wrap;
-      padding-bottom: 14rem;
+      padding-bottom: 1.4rem;
     }
 
     @media screen and (max-width: $bp-mob) {
-      padding-bottom: 20rem;
+      padding-bottom: 2.0rem;
     }
 
     // .news__list::after
@@ -232,39 +232,39 @@
 
   // .news__list-item
   &__list-item {
-    width: 273rem;
+    width: 27.3rem;
 
     @media screen and (max-width: $bp-tab) {
-      width: 336rem;
-      margin-bottom: 36rem;
+      width: 33.6rem;
+      margin-bottom: 3.6rem;
     }
 
     @media screen and (max-width: $bp-mob) {
-      width: 156rem;
-      margin-bottom: 16rem;
+      width: 15.6rem;
+      margin-bottom: 1.6rem;
     }
   }
 
   // .news__list-item-title
   &__list-item-title {
     color: rgba(71, 0, 131, .6);
-    margin-bottom: 16rem;
-    font-size: 18.5rem;
+    margin-bottom: 1.6rem;
+    font-size: 1.85rem;
   }
 
   // .news__list-item-img
   &__list-item-img {
     width: 100%;
-    height: 180rem;
-    margin-bottom: 12rem;
+    height: 18.0rem;
+    margin-bottom: 1.2rem;
 
     @media screen and (max-width: $bp-tab) {
-      margin-bottom: 16rem;
+      margin-bottom: 1.6rem;
     }
 
     @media screen and (max-width: $bp-mob) {
-      height: 100rem;
-      margin-bottom: 8rem;
+      height: 10.0rem;
+      margin-bottom: 0.8rem;
     }
 
     // .news__list-item-img img
@@ -276,15 +276,15 @@
   // .news__list-item-text
   &__list-item-text {
     display: block;
-    margin-bottom: 13rem;
-    font-size: 24.5rem;
+    margin-bottom: 1.3rem;
+    font-size: 2.45rem;
 
     @media screen and (max-width: $bp-tab) {
-      margin-bottom: 8rem;
+      margin-bottom: 0.8rem;
     }
 
     @media screen and (max-width: $bp-mob) {
-      font-size: 18rem;
+      font-size: 1.8rem;
     }
 
     // .news__list-item-text:hover
@@ -296,17 +296,17 @@
 
   // .news__btn
   &__btn {
-    width: 348rem;
-    height: 50rem;
+    width: 34.8rem;
+    height: 5.0rem;
 
     @media screen and (max-width: $bp-mob) {
       width: 100%;
-      height: 36rem;
+      height: 3.6rem;
     }
 
     // .news__btn label
     .label{
-      margin-left: 3rem !important;
+      margin-left: 0.3rem !important;
     }
   }
 }

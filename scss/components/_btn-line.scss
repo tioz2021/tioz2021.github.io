@@ -1,12 +1,12 @@
 .btn-line {
   position: relative;
-  width: 297rem;
-  height: 48rem;
-  margin-bottom: 16rem;
+  width: 29.7rem;
+  height: 4.8rem;
+  margin-bottom: 1.6rem;
 
   @media screen and (max-width: $bp-mob) {
-    width: 143rem;
-    height: 32rem;
+    width: 14.3rem;
+    height: 3.2rem;
     margin-bottom: 0;
   }  
 
@@ -24,11 +24,11 @@
     color: $body-3-color;
 
     @media screen and (max-width: $bp-tab) {
-      font-size: 24rem;
+      font-size: 2.4rem;
     }
 
     @media screen and (max-width: $bp-mob) {
-      font-size: 14rem;
+      font-size: 1.4rem;
     }  
   }
 
@@ -51,8 +51,8 @@
   span:after {
     content: '';
     position: absolute;
-    width: 50rem;
-    height: 16rem;
+    width: 5.0rem;
+    height: 1.6rem;
     background: $body-4-color;
     // background: linear-gradient(
     //   to bottom right, /* Направление градиента */
@@ -64,40 +64,40 @@
     z-index: -1;
 
     @media screen and (max-width: $bp-mob) {
-      height: 12rem;
+      height: 1.2rem;
     }
   }
 
   a:before {
-    top: -2rem;
-    left: -2rem
+    top: -0.2rem;
+    left: -0.2rem
   }
 
   a:after {
-    top: -2rem;
-    right: -2rem;
+    top: -0.2rem;
+    right: -0.2rem;
   }
 
   span:before {
-    bottom: -2rem;
-    left: -2rem
+    bottom: -0.2rem;
+    left: -0.2rem
   }
 
   span:after {
-    bottom: -2rem;
-    right: -2rem
+    bottom: -0.2rem;
+    right: -0.2rem
   }
 
   a.active:before,
   a.active:after,
   a.active span:before,
   a.active span:after {
-    width: calc(297rem/2);
-    height: calc(48rem/2);
+    width: calc(29.7rem/2);
+    height: calc(4.8rem/2);
 
     @media screen and (max-width: $bp-mob) {
-      width: calc(143rem/2);
-      height: calc(36rem/2);
+      width: calc(14.3rem/2);
+      height: calc(3.6rem/2);
     }  
   }
 }

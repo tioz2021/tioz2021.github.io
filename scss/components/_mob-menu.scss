@@ -1,15 +1,15 @@
 .mob-menu {
-  margin-left: 24rem;
+  margin-left: 2.4rem;
   cursor: pointer;
 
   @media screen and (max-width: $bp-mob) {
-    margin-left: 16rem;
+    margin-left: 1.6rem;
   }
 
   // .mob-menu__icon
   &__icon {
-    width: 50rem;
-    height: 50rem;
+    width: 5.0rem;
+    height: 5.0rem;
     display: none;
 
     @media screen and (max-width: $bp-tab) {
@@ -17,8 +17,8 @@
     }
 
     @media screen and (max-width: $bp-mob) {
-      width: 36rem;
-      height: 36rem;
+      width: 3.6rem;
+      height: 3.6rem;
     }
   }
 
@@ -31,13 +31,13 @@
     background: white;
     transition: top 0.3s ease;
     z-index: 1000;
-    padding: 20px 0;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    padding: 0.20rem 0;
+    box-shadow: 0 1.0rem 2.0rem rgba(0,0,0,0.1);
 
     background-color: $body-1-color;
     box-sizing: border-box;
-    padding-top: 50rem;
-    padding-bottom: 50rem;
+    padding-top: 5.0rem;
+    padding-bottom: 5.0rem;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -51,7 +51,7 @@
 
   // .mob-menu__list-item
   &__list-item {
-    margin-bottom: 36rem;
+    margin-bottom: 3.6rem;
 
     // .mob-menu__list-item:last-child
     &:last-child{
@@ -61,7 +61,7 @@
     // .mob-menu__list-item a
     a {
       font-weight: 500;
-      font-size: 32px;
+      font-size: 3.2rem;
       line-height: 120%;
       text-align: center;
       color: $body-2-color;

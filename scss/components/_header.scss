@@ -1,24 +1,24 @@
 .header {
-  margin-top: 24rem;
-  margin-bottom: 27rem;
-  height: 60rem;
+  margin-top: 2.4rem;
+  margin-bottom: 2.7rem;
+  height: 6.0rem;
 
   @media screen and (max-width: $bp-tab) {
-    padding-top: 28rem;
-    padding-bottom: 28rem;
+    padding-top: 2.8rem;
+    padding-bottom: 2.8rem;
     height: unset;
     margin: 0;
   }
 
   @media screen and (max-width: $bp-mob) {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
   }
 
   // .header__container
   &__container {
     height: 100%;
-    max-width: 1780rem;
+    max-width: 178.0rem;
     justify-content: space-between;
     align-items: center;
   }

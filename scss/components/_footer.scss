@@ -1,15 +1,15 @@
 .footer {
   background-color: rgba(78, 81, 245, 0.06);
   box-sizing: border-box;
-  padding-top: 50rem;
-  padding-bottom: 70rem;
+  padding-top: 5.0rem;
+  padding-bottom: 7.0rem;
 
   @media screen and (max-width: $bp-tab) {
-   padding-top: 36rem;
+   padding-top: 3.6rem;
   }
 
   @media screen and (max-width: $bp-mob) {
-    padding-bottom: 36rem;
+    padding-bottom: 3.6rem;
   }
 
   // .footer__container
@@ -23,19 +23,19 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 50rem;
+    margin-bottom: 5.0rem;
     
-    height: 50rem;
+    height: 5.0rem;
 
     @media screen and (max-width: $bp-tab) {
-      margin-bottom: 24rem;
+      margin-bottom: 2.4rem;
     }
 
     @media screen and (max-width: $bp-mob) {
       flex-wrap: wrap;
       height: unset;
       position: relative;
-      margin-bottom: 16rem;
+      margin-bottom: 1.6rem;
     }
   }
 
@@ -43,13 +43,13 @@
   &__logo {
     font-family: $second-font;
     font-weight: 400;
-    font-size: 44rem;
+    font-size: 4.4rem;
     line-height: 120%;
     color: $body-3-color;
 
     @media screen and (max-width: $bp-mob) {
-      font-size: 36rem;
-      margin-bottom: 18rem;
+      font-size: 3.6rem;
+      margin-bottom: 1.8rem;
     }
   }
 
@@ -70,8 +70,8 @@
 
     @media screen and (max-width: $bp-mob) {
       position: absolute;
-      top: 11rem;
-      right: -3rem;
+      top: 1.1rem;
+      right: -0.3rem;
     }
   }
 
@@ -79,7 +79,7 @@
   &__end {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 36rem;
+    margin-bottom: 3.6rem;
 
     @media screen and (max-width: $bp-tab) {
       flex-direction: column;
@@ -87,7 +87,7 @@
     }
 
     @media screen and (max-width: $bp-mob) {
-      margin-bottom: 33rem;
+      margin-bottom: 3.3rem;
     }
 
     // .footer__end a
@@ -95,7 +95,7 @@
       transition: color 300ms ease-in-out;
 
       @media screen and (max-width: $bp-mob) {
-        font-size: 14rem;
+        font-size: 1.4rem;
       } 
       
       // .footer__end a:hover
@@ -107,28 +107,28 @@
 
   // .footer__end-box
   &__end-box{
-    width: 588rem;
-    min-height: 286rem;
+    width: 58.8rem;
+    min-height: 28.6rem;
     background-color: $body-1-color;
-    border: 1rem solid rgba(78, 81, 245, 0.6);
-    clip-path: polygon(0 50rem, 50rem 0, calc(100% - 0rem) 0, 100% 50rem, 100% calc(100% - 50rem), calc(100% - 50rem) 100%, 0rem 100%, 0 calc(120% - 50rem));
+    border: 0.1rem solid rgba(78, 81, 245, 0.6);
+    clip-path: polygon(0 5.0rem, 5.0rem 0, calc(100% - 0rem) 0, 100% 5.0rem, 100% calc(100% - 5.0rem), calc(100% - 5.0rem) 100%, 0rem 100%, 0 calc(120% - 5.0rem));
     box-sizing: border-box;
-    padding: 35rem;
+    padding: 3.5rem;
     position: relative;
 
     @media screen and (max-width: $bp-tab) {
       width: 100%;
-      margin-bottom: 24rem;
+      margin-bottom: 2.4rem;
     }
 
     @media screen and (max-width: $bp-mob) {
-      clip-path: polygon(0 24rem, 24rem 0, calc(100% - 0rem) 0, 100% 24rem, 100% calc(100% - 24rem), calc(100% - 24rem) 100%, 0rem 100%, 0 calc(120% - 24rem));
-      padding-left: 12rem;
-      padding-right: 12rem;
-      padding-top: 24rem;
+      clip-path: polygon(0 2.4rem, 2.4rem 0, calc(100% - 0rem) 0, 100% 2.4rem, 100% calc(100% - 2.4rem), calc(100% - 2.4rem) 100%, 0rem 100%, 0 calc(120% - 2.4rem));
+      padding-left: 1.2rem;
+      padding-right: 1.2rem;
+      padding-top: 2.4rem;
       min-height: unset;
-      padding-bottom: 21rem;
-      margin-bottom: 17rem;
+      padding-bottom: 2.1rem;
+      margin-bottom: 1.7rem;
     }
   }
 
@@ -138,20 +138,20 @@
 
   // .footer__text-wrp
   &__text-wrp {
-    margin-bottom: 27rem;
+    margin-bottom: 2.7rem;
 
     @media screen and (max-width: $bp-mob) {
-      margin-bottom: 17rem;
+      margin-bottom: 1.7rem;
     }
   }
 
   // .footer__text
   &__text {
-    margin-bottom: 18rem;
+    margin-bottom: 1.8rem;
 
     @media screen and (max-width: $bp-mob) {
-      font-size: 14rem;
-      margin-bottom: 15rem;
+      font-size: 1.4rem;
+      margin-bottom: 1.5rem;
     }
   }
 
@@ -165,10 +165,10 @@
 
     // .footer__end-right .footer__text
     .footer__text {
-      margin-bottom: 29rem;
+      margin-bottom: 2.9rem;
 
       @media screen and (max-width: $bp-mob) {
-        margin-bottom: 13rem;
+        margin-bottom: 1.3rem;
       }  
     }
   }
@@ -176,18 +176,18 @@
   // .footer__24-box
   &__24-box {
     position: absolute;
-    top: 12rem;
-    right: 12rem;
-    border-radius: 25rem;
-    width: 64rem;
-    height: 36rem;
+    top: 1.2rem;
+    right: 1.2rem;
+    border-radius: 2.5rem;
+    width: 6.4rem;
+    height: 3.6rem;
     background: #edeefe;
     display: flex;
     align-items: center;
     justify-content: center;
 
     @media screen and (max-width: $bp-tab) {
-      right: 35rem;
+      right: 3.5rem;
     }
 
     @media screen and (max-width: $bp-mob) {
@@ -199,23 +199,23 @@
   &__link-str {
     display: block;
     color: $body-4-color;
-    margin-bottom: 28rem;
+    margin-bottom: 2.8rem;
 
     @media screen and (max-width: $bp-tab) {
-      font-size: 24rem;
+      font-size: 2.4rem;
     }
 
     @media screen and (max-width: $bp-mob) {
-      margin-bottom: 11rem;
+      margin-bottom: 1.1rem;
     }
   }
   
   // .footer__btn
   &__btn{
-    margin-bottom: 24rem;
+    margin-bottom: 2.4rem;
     
     @media screen and (max-width: $bp-mob) {
-      margin-left: 5rem;
+      margin-left: 0.5rem;
       margin-bottom: 0;
     }
   }
@@ -225,7 +225,7 @@
     margin-bottom: 0;
 
     @media screen and (max-width: $bp-mob) {
-      margin-bottom: 4rem;
+      margin-bottom: 0.4rem;
     }    
   }
 
@@ -237,24 +237,24 @@
     color: #7b7985;
 
     @media screen and (max-width: $bp-tab) {
-      margin-top: -23rem;
+      margin-top: -2.3rem;
     }
     @media screen and (max-width: $bp-tab) {
-      font-size: 14rem;
+      font-size: 1.4rem;
     }
   }
 }
 
 .footer .main-menu{
-  min-width: 394rem;
-  margin-right: 33rem;
+  min-width: 39.4rem;
+  margin-right: 3.3rem;
 
   @media screen and (max-width: $bp-mob) {
     min-width: 100%;
     margin-right: 0;
     margin-top: 0;
     box-sizing: border-box;
-    padding-left: 17rem;
-    padding-right: 17rem;
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
   }
 }

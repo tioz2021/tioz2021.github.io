@@ -1,26 +1,26 @@
 .custom-time-selector {
   position: relative;
   box-sizing: border-box;
-  width: 130rem;
-  min-height: 49rem;
+  width: 13.0rem;
+  min-height: 4.9rem;
   background: $body-1-color;
   // border: 1rem solid rgba(255, 255, 255, 0.2);
   overflow: hidden;
-  border: 1rem solid $body-3-color;
+  border: 0.1rem solid $body-3-color;
   
   /* Альтернативный вариант с точными пиксельными значениями */
   clip-path: polygon(
-    0 12rem,
-    12rem 0,
+    0 1.2rem,
+    1.2rem 0,
     100% 0,
-    100% calc(100% - 12rem),
-    calc(100% - 12rem) 100%,
+    100% calc(100% - 1.2rem),
+    calc(100% - 1.2rem) 100%,
     0 100%
   );
 
   @media screen and (max-width: $bp-mob) {
-    width: 111rem;
-    min-height: 24rem;
+    width: 11.1rem;
+    min-height: 2.4rem;
     // top: -32rem;
     clip-path: unset;
     position: static;
@@ -32,15 +32,15 @@
     content: '';
     position: absolute;
     // top: -7rem;
-    top: -5rem;
-    left: 6rem;
-    width: 1rem;
-    height: 20rem;
+    top: -0.5rem;
+    left: 0.6rem;
+    width: 0.1rem;
+    height: 2.0rem;
     background-color: $body-3-color;
     transform: rotate(45deg);
 
     @media screen and (max-width: $bp-tab) {
-      top: -6rem;
+      top: -0.6rem;
     }
 
     @media screen and (max-width: $bp-mob) {
@@ -52,10 +52,10 @@
   &::after{
     content: '';
     position: absolute;
-    bottom: -5rem;
-    right: 5rem;
-    width: 1rem;
-    height: 20rem;
+    bottom: -0.5rem;
+    right: 0.5rem;
+    width: 0.1rem;
+    height: 2.0rem;
     background-color: $body-3-color;
     transform: rotate(45deg);
 
@@ -67,12 +67,12 @@
 
 .selector-header {
   width: 100%;
-  height: 48rem;
+  height: 4.8rem;
   box-sizing: border-box;
-  padding-left: 12rem;
-  padding-top: 13rem;
-  padding-bottom: 13rem;
-  padding-right: 12rem;
+  padding-left: 1.2rem;
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+  padding-right: 1.2rem;
 
   display: flex;
   justify-content: space-between;
@@ -83,34 +83,34 @@
 
   @media screen and (max-width: $bp-mob) {
     // height: 24rem;
-    height: 22rem;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    padding-left: 8rem;
-    padding-right: 8rem;
+    height: 2.2rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
   }
   
   // .selector-header__icon
   &__icon{
-    width: 24rem;
-    height: 24rem;
+    width: 2.4rem;
+    height: 2.4rem;
 
     @media screen and (max-width: $bp-mob) {
-      width: 16rem;
-      height: 16rem;
+      width: 1.6rem;
+      height: 1.6rem;
     }
   }
 
   // .selector-header__arrow
   &__arrow{
-    width: 12rem;
-    height: 12rem;
+    width: 1.2rem;
+    height: 1.2rem;
 
     @media screen and (max-width: $bp-mob) {
-      width: 8rem;
-      height: 8rem;
+      width: 0.8rem;
+      height: 0.8rem;
       transform: rotate(-90deg);
-      right: -3rem;
+      right: -0.3rem;
     }
   }
 }
@@ -155,7 +155,7 @@
 
   /* Chrome, Edge, and Safari */
   &::-webkit-scrollbar {
-    width: 8rem;
+    width: 0.8rem;
   }
 
   &::-webkit-scrollbar-track {
@@ -171,9 +171,9 @@
 
 .custom-time-selector.active .selector-options {
   transition: all 250ms ease-in-out;
-  max-height: 200rem;
+  max-height: 20.0rem;
   // border-top: 1rem solid rgba(255, 255, 255, 0.1);
-  padding-bottom: 16rem;
+  padding-bottom: 1.6rem;
 
   @media screen and (max-width: $bp-mob) {
     max-height: unset;
@@ -187,7 +187,7 @@
     height: 100%;
     background: #fff;
     z-index: 999;
-    padding-top: 24rem;
+    padding-top: 2.4rem;
   }
 
 }
@@ -199,18 +199,18 @@
 }
 
 .option {
-  padding: 0rem 12rem;
+  padding: 0rem 1.2rem;
   cursor: pointer;
   transition: color 0.2s ease-in-out;
   color: $body-2-color;
-  min-height: 24rem;
+  min-height: 2.4rem;
   display: flex;
   align-items: center;
 
   @media screen and (max-width: $bp-mob) {
-    padding-left: 16rem;
-    padding-right: 16rem;  
-    font-size: 14rem;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;  
+    font-size: 1.4rem;
   }
 }
 

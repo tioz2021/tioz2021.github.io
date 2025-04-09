@@ -1,16 +1,16 @@
 .mixin-input {
-  margin-bottom: 36rem;
+  margin-bottom: 3.6rem;
   position: relative;
 
   @media screen and (max-width: $bp-mob) {
-    margin-left: -1rem;
-    margin-bottom: 16rem;
+    margin-left: -0.1rem;
+    margin-bottom: 1.6rem;
   }
 
   // .mixin-input__input-wrp
   &__input-wrp {
-    width: 462rem;
-    height: 50rem;
+    width: 46.2rem;
+    height: 5.0rem;
     position: relative;
 
     background-image: url('../../images/mixin-input__input-bg.svg');
@@ -20,7 +20,7 @@
 
     @media screen and (max-width: $bp-mob) {
       width: 100%;   
-      height: 36rem;
+      height: 3.6rem;
 
       background-image: url('../../images/mixin-input__input-bg-mob.svg');
     }
@@ -30,20 +30,20 @@
       width: 100%;
       height: 100%;
       box-sizing: border-box;
-      padding-left: 36rem;
+      padding-left: 3.6rem;
       position: relative;
       z-index: 2;
       background-color: unset;
       border: unset;
 
       @media screen and (max-width: $bp-tab) {
-        font-size: 24rem;
+        font-size: 2.4rem;
       }
 
       @media screen and (max-width: $bp-mob) {
-        padding-left: 8rem;
-        padding-right: 8rem;
-        font-size: 14rem;
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
+        font-size: 1.4rem;
       }
 
     }
@@ -63,16 +63,16 @@
   // .mixin-input__text
   &__text {
     position: absolute;
-    right: -18rem;
+    right: -1.8rem;
     color: #470083;
     transform: rotate(-54deg);
-    top: 18rem;
+    top: 1.8rem;
 
     @media screen and (max-width: $bp-mob) {
       transform: unset;
       right: unset;
       left: 0;
-      top: -20rem;
+      top: -2.0rem;
     }
   }
 }

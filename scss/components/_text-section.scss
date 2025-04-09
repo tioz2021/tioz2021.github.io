@@ -1,12 +1,12 @@
 .text-section {
   width: 100%;
-  max-width: 800rem;
+  max-width: 80.0rem;
   margin: 0 auto;
 
-  margin-bottom: 74rem;
+  margin-bottom: 7.4rem;
 
   @media screen and (max-width: $bp-tab) {
-    margin-bottom: 25rem;
+    margin-bottom: 2.5rem;
   }
 
   // .text-section__container
@@ -18,10 +18,10 @@
   &__title {
     width: 100%;
     text-align: center;
-    margin-bottom: 42rem;
+    margin-bottom: 4.2rem;
 
     @media screen and (max-width: $bp-mob) {
-      margin-bottom: 25rem;
+      margin-bottom: 2.5rem;
     }
 
     // .text-section__title span
@@ -36,12 +36,12 @@
 
   // .text-section__def-text
   &__def-text {
-    font-size: 24.6rem;
-    margin-bottom: 24rem;
+    font-size: 2.46rem;
+    margin-bottom: 2.4rem;
 
     @media screen and (max-width: $bp-mob) {
-      font-size: 14rem;
-      margin-bottom: 36rem;
+      font-size: 1.4rem;
+      margin-bottom: 3.6rem;
     }
   }
 
@@ -70,6 +70,6 @@
 
 .text-section .text-section__def-text{
   @media screen and (max-width: $bp-mob) {
-    margin-bottom: 8rem;
+    margin-bottom: 0.8rem;
   }
 }

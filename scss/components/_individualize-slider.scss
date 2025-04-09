@@ -9,7 +9,7 @@
 }
 
 .slider-track {
-  height: 6rem;
+  height: 0.6rem;
   background-color: $body-1-color;
   // border-radius: 3rem;
   position: relative;
@@ -22,7 +22,7 @@
 .slider-track::after {
   content: '';
   position: absolute;
-  width: 5rem;
+  width: 0.5rem;
   height: 100%;
   background: inherit;
   // background-color: red;
@@ -31,12 +31,12 @@
 }
 
 .slider-track::before {
-  left: -5rem;
+  left: -0.5rem;
   clip-path: polygon(0 50%, 100% 0, 100% 100%);
 }
 
 .slider-track::after {
-  right: -5rem;
+  right: -0.5rem;
   clip-path: polygon(0 0, 100% 50%, 0 100%);
 }
 
@@ -46,7 +46,7 @@
   // background: $body-4-color;
   border-radius: 100%;
   position: absolute;
-  top: -39rem;
+  top: -3.9rem;
   left: 50%;
   transform: translateX(-50%);
   cursor: grab;
@@ -62,15 +62,15 @@
   &:hover{
     svg{
       transition: transform 250ms ease-in-out;
-      transform: scale(1.05) translateY(-2rem);
+      transform: scale(1.05) translateY(-0.2rem);
     }
   }
 }
 
 .slider-value {
   text-align: center;
-  margin-top: 15rem;
-  font-size: 18rem;
+  margin-top: 1.5rem;
+  font-size: 1.8rem;
   color: #4E51F5;
   font-weight: bold;
   display: none;
@@ -87,20 +87,20 @@
 }
 
 .slider-track-img{
-  width: 30rem;
-  height: 44rem;
+  width: 3.0rem;
+  height: 4.4rem;
 }
 
 // new slider
 /* Стили для мульти-слайдера */
 .multi-handle-slider {
   width: 100%;
-  margin: 40rem 0;
+  margin: 4.0rem 0;
   position: relative;
 }
 
 .slider-track {
-  height: 8rem;
+  height: 0.8rem;
   // background: linear-gradient(90deg, #FFFFFF 0%, #C5C7FC 50%, #470083 100%);
   background-color: #fff;
   // border-radius: 4rem;
@@ -108,11 +108,11 @@
 }
 
 .slider-handle {
-  width: 36rem;
-  height: 44rem;
+  width: 3.6rem;
+  height: 4.4rem;
   position: absolute;
   // top: 50%;
-  top: -38rem;
+  top: -3.8rem;
   transform: translateX(-50%);
   // cursor: ew-resize;
   // cursor: grab;
@@ -130,7 +130,7 @@
 
 .slider-handle:hover{
   transform: translateX(-50%) scale(1.025);
-  top: -38.5rem;
+  top: -3.85rem;
 }
 
 .slider-values {

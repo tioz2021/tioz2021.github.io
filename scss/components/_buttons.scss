@@ -37,21 +37,21 @@
 
           &:before,
           &:after {
-            width: 10rem;
+            width: 1.0rem;
           }
 
           span {
 
             &:before,
             &:after {
-              height: 10rem;
+              height: 1.0rem;
             }
           }
         }
       }
 
       .label {
-        padding: 10rem 22rem;
+        padding: 1.0rem 2.2rem;
       }
 
       .icon {
@@ -66,8 +66,8 @@
         &:before,
         &:after {
           content: '';
-          height: 1rem;
-          width: 30rem;
+          height: 0.1rem;
+          width: 3.0rem;
           position: absolute;
           display: block;
           background: #f0202f;
@@ -92,8 +92,8 @@
             background: #f0202f;
             position: absolute;
             display: block;
-            width: 2rem;
-            height: 30rem;
+            width: 0.2rem;
+            height: 3.0rem;
             transition: height 0.5s;
           }
 
@@ -132,7 +132,7 @@
       }
 
       .label {
-        padding: 10rem 22rem;
+        padding: 1.0rem 2.2rem;
       }
 
       .icon {
@@ -148,8 +148,8 @@
         &:before,
         &:after {
           content: '';
-          height: 1rem;
-          width: 30rem;
+          height: 0.1rem;
+          width: 3.0rem;
           position: absolute;
           display: block;
           background: #f0202f;
@@ -174,8 +174,8 @@
             background: #f0202f;
             position: absolute;
             display: block;
-            width: 2rem;
-            height: 30rem;
+            width: 0.2rem;
+            height: 3.0rem;
             transition: height 0.5s;
           }
 
@@ -217,7 +217,7 @@
       }
 
       .label {
-        padding: 10rem 22rem;
+        padding: 1.0rem 2.2rem;
       }
 
       .icon {
@@ -233,8 +233,8 @@
         &:before,
         &:after {
           content: '';
-          height: 1rem;
-          width: 30rem;
+          height: 0.1rem;
+          width: 3.0rem;
           position: absolute;
           display: block;
           background: #f0202f;
@@ -260,8 +260,8 @@
             background: #f0202f;
             position: absolute;
             display: block;
-            width: 2rem;
-            height: 30rem;
+            width: 0.2rem;
+            height: 3.0rem;
             transition: height 0.2s;
             transition-delay: 0.2s;
           }
@@ -305,7 +305,7 @@
       }
 
       .label {
-        padding: 10rem 22rem;
+        padding: 1.0rem 2.2rem;
       }
 
       .icon {
@@ -321,8 +321,8 @@
         &:before,
         &:after {
           content: '';
-          height: 1rem;
-          width: 30rem;
+          height: 0.1rem;
+          width: 3.0rem;
           position: absolute;
           display: block;
           background: #f0202f;
@@ -348,8 +348,8 @@
             background: #f0202f;
             position: absolute;
             display: block;
-            width: 2rem;
-            height: 30rem;
+            width: 0.2rem;
+            height: 3.0rem;
             transition: all 0.2s;
             transition-delay: 0.2s;
           }
@@ -372,32 +372,32 @@
 .button__notification {
 
   .button.v12 {
-    width: 185rem;
-    height: 49rem;
+    width: 18.5rem;
+    height: 4.9rem;
     margin-left: auto;
-    margin-right: 9rem;
+    margin-right: 0.9rem;
 
     @media screen and (max-width: $bp-mob) {
-      width: 146rem;
-      height: 36rem;
-      margin-right: 5rem;
+      width: 14.6rem;
+      height: 3.6rem;
+      margin-right: 0.5rem;
     }
 
     .icon {
       transform: skew(-18deg, 0deg);
-      top: -1rem;
+      top: -0.1rem;
 
       &:before,
       &:after {
-        height: 2rem;
-        width: 99rem;
+        height: 0.2rem;
+        width: 9.9rem;
         // background: linear-gradient(to bottom left,
         //     #470083,
         //     rgba(71, 0, 131, 0));
         background-color: #470083;
 
         @media screen and (max-width: $bp-mob) {
-          width: 89rem;
+          width: 8.9rem;
         }
       }
 
@@ -408,11 +408,11 @@
           //     #470083,
           //     rgba(71, 0, 131, 0));
           background-color: #470083;
-          width: 2rem;
-          height: 50rem;
+          width: 0.2rem;
+          height: 5.0rem;
 
           @media screen and (max-width: $bp-mob) {
-            height: 36rem;
+            height: 3.6rem;
           }
         }
       }
@@ -421,15 +421,15 @@
 
   .label {
     @media screen and (max-width: $bp-mob) {
-      font-size: 14rem;
+      font-size: 1.4rem;
     }
-    padding: 14rem 24rem;
+    padding: 1.4rem 2.4rem;
   }
 
   span {
     font-family: var(--font-family);
     font-weight: 500;
-    font-size: 18rem;
+    font-size: 1.8rem;
     line-height: 120%;
     text-transform: uppercase;
     text-align: center;
@@ -440,11 +440,11 @@
 .button-address {
 
   .button {
-    width: 717rem;
+    width: 71.7rem;
     position: relative;
 
     @media screen and (max-width: $bp-tab) {
-      width: 438rem;
+      width: 43.8rem;
     }
 
     @media screen and (max-width: $bp-mob) {
@@ -453,28 +453,28 @@
   }
 
   .button.v6 {
-    height: 49rem;
+    height: 4.9rem;
 
     @media screen and (max-width: $bp-mob) {
-      height: 36rem;
+      height: 3.6rem;
     }
 
     .icon {
-      top: 3rem;
+      top: 0.3rem;
       transform: skew(-18deg, 0deg);
 
       &:before {
-        top: -2rem;
+        top: -0.2rem;
       }
 
       &:before,
       &:after {
-        height: 2rem;
-        width: 99rem;
+        height: 0.2rem;
+        width: 9.9rem;
         background: #4E51F5;
 
         @media screen and (max-width: $bp-mob) {
-          width: 88rem;
+          width: 8.8rem;
         }        
       }
 
@@ -482,11 +482,11 @@
         &:before,
         &:after {
           background: #4E51F5;
-          width: 2rem;
-          height: 50rem;
+          width: 0.2rem;
+          height: 5.0rem;
 
           @media screen and (max-width: $bp-mob) {
-            height: 36rem;
+            height: 3.6rem;
           }
         }
       }
@@ -494,42 +494,42 @@
   }
 
   .button-address__icon {
-    width: 24rem;
-    height: 24rem;
+    width: 2.4rem;
+    height: 2.4rem;
     position: absolute;
-    top: 14rem;
-    left: 205rem;
+    top: 1.4rem;
+    left: 20.5rem;
     @media screen and (max-width: $bp-tab) {
-      top: 13rem;
-      left: 67rem;
+      top: 1.3rem;
+      left: 6.7rem;
     }
 
     @media screen and (max-width: $bp-mob) {
-      width: 16rem;
-      height: 16rem;
-      top: 13rem;
-      left: 33rem;
+      width: 1.6rem;
+      height: 1.6rem;
+      top: 1.3rem;
+      left: 3.3rem;
     }
   }
 
   .label {
-    padding: 15rem 22rem !important;
-    margin-left: 29rem;
+    padding: 1.5rem 2.2rem !important;
+    margin-left: 2.9rem;
 
     @media screen and (max-width: $bp-tab) {
-      margin-left: 33rem;
+      margin-left: 3.3rem;
     }
     @media screen and (max-width: $bp-mob) {
-      margin-left: 21rem;
-      font-size: 14rem;
-      padding: 13rem 18rem !important;
+      margin-left: 2.1rem;
+      font-size: 1.4rem;
+      padding: 1.3rem 1.8rem !important;
     }
   }
 
   span {
     font-family: var(--font-family);
     font-weight: 500;
-    font-size: 18rem;
+    font-size: 1.8rem;
     line-height: 120%;
     text-transform: uppercase;
     color: $body-3-color;
@@ -539,17 +539,17 @@
 .button-address-mini {
   // .button-address-mini .button
   .button {
-    width: 347rem;
-    margin-left: 4rem;
+    width: 34.7rem;
+    margin-left: 0.4rem;
     position: relative;
 
     @media screen and (max-width: $bp-tab) {
-      width: 212rem;
+      width: 21.2rem;
       margin-left: 0rem;
     }
 
     @media screen and (max-width: $bp-mob) {
-      width: 140rem;
+      width: 14.0rem;
       margin-left: 0rem;
     }
   }
@@ -559,28 +559,28 @@
     // top: 12rem;
     // left: 95rem;
 
-    top: 13rem;
-    left: 27rem;
+    top: 1.3rem;
+    left: 2.7rem;
 
     @media screen and (max-width: $bp-mob) {
-      top: 10rem;
-      left: 14rem;
+      top: 1.0rem;
+      left: 1.4rem;
     }
   }
 
   .label {
-    padding: 14rem 20rem !important;
-    margin-left: 37rem;
+    padding: 1.4rem 2.0rem !important;
+    margin-left: 3.7rem;
     
     @media screen and (max-width: $bp-mob) {
-      font-size: 12rem;
-      padding: 11rem 8rem !important;
-      margin-left: 13rem;
+      font-size: 1.2rem;
+      padding: 1.1rem 0.8rem !important;
+      margin-left: 1.3rem;
     }
   }
 
   .button.v6 .icon {
-    top: 1rem;
+    top: 0.1rem;
   }
 }
 
@@ -588,66 +588,66 @@
 
   // .button-delete .button
   .button {
-    width: 345rem;
+    width: 34.5rem;
     margin-left: 0rem;
     position: relative;
 
     @media screen and (max-width: $bp-tab) {
-      width: 215rem;
+      width: 21.5rem;
     }
 
     @media screen and (max-width: $bp-mob) {
-      width: 140rem;
+      width: 14.0rem;
     }
   }
 
   // .button-delete .label
   .label {
-    padding: 13rem 22rem !important;
-    margin-left: 9rem;
+    padding: 1.3rem 2.2rem !important;
+    margin-left: 0.9rem;
     color: $error-color;
 
     @media screen and (max-width: $bp-tab) {
-      margin-left: -12rem;
+      margin-left: -1.2rem;
       padding-right: 0 !important;
     }
 
     @media screen and (max-width: $bp-mob) {
-      margin-left: 3rem;
-      padding: 11rem 0rem !important;
+      margin-left: 0.3rem;
+      padding: 1.1rem 0rem !important;
     }
   }
 
   // .button-delete .button-address__icon
   .button-address__icon {
-    width: 24rem;
-    height: 24rem;
-    top: 12rem;
-    left: 23rem;
+    width: 2.4rem;
+    height: 2.4rem;
+    top: 1.2rem;
+    left: 2.3rem;
 
     @media screen and (max-width: $bp-tab) {
       // top: 13rem;
       // left: 67rem;
 
-      top: 13rem;
-      left: 1rem;
+      top: 1.3rem;
+      left: 0.1rem;
     }
 
     @media screen and (max-width: $bp-mob) {
-      width: 16rem;
-      height: 16rem;
+      width: 1.6rem;
+      height: 1.6rem;
 
-      top: 10rem;
-      left: -2rem;
+      top: 1.0rem;
+      left: -0.2rem;
     }
 
   }
 
   .button.v4 {
-    height: 49rem;
+    height: 4.9rem;
 
     @media screen and (max-width: $bp-mob) {
-      height: 36rem;
+      height: 3.6rem;
     }
 
     .icon {
@@ -655,17 +655,17 @@
       transform: skew(-18deg, 0deg);
 
       &:before {
-        top: -2rem;
+        top: -0.2rem;
       }
 
       &:before,
       &:after {
-        height: 2rem;
-        width: 99rem;
+        height: 0.2rem;
+        width: 9.9rem;
         background: $error-color;
 
         @media screen and (max-width: $bp-mob) {
-          width: 88rem;
+          width: 8.8rem;
         }
       }
 
@@ -674,11 +674,11 @@
         &:before,
         &:after {
           background: $error-color;
-          width: 2rem;
-          height: 50rem;
+          width: 0.2rem;
+          height: 5.0rem;
 
           @media screen and (max-width: $bp-mob) {
-            height: 36rem;
+            height: 3.6rem;
           }
         }
       }
@@ -687,9 +687,9 @@
 }
 
 .footer__btn{
-  width: 296rem;
-  height: 51rem;
-  margin-left: 9rem;
+  width: 29.6rem;
+  height: 5.1rem;
+  margin-left: 0.9rem;
 
   @media screen and (max-width: $bp-mob) {
     margin-bottom: 0;
@@ -700,37 +700,37 @@
   height: 100%;
 }
 .footer__btn .button.v12 .label{
-  padding: 13rem 25rem;
-  margin-left: 30rem;
+  padding: 1.3rem 2.5rem;
+  margin-left: 3.0rem;
 
   @media screen and (max-width: $bp-mob) {
-    padding: 11rem 25rem;
-    margin-left: 24rem;
+    padding: 1.1rem 2.5rem;
+    margin-left: 2.4rem;
   }
 }
 
 .footer__btn .button-icon{
   position: absolute;
-  width: 24rem;
-  height: 24rem;
-  left: 61rem;
-  top: 13rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  left: 6.1rem;
+  top: 1.3rem;
 
   @media screen and (max-width: $bp-mob) {
-    width: 16rem;
-    height: 16rem;
-    left: 85rem;
-    top: 10rem;
+    width: 1.6rem;
+    height: 1.6rem;
+    left: 8.5rem;
+    top: 1.0rem;
   }
 }
 
 // copy-btn
 .copy-btn{
-  width: 200rem;
-  height: 36rem;
+  width: 20.0rem;
+  height: 3.6rem;
   box-sizing: border-box;
-  padding-left: 28rem;
-  margin-bottom: 36rem;
+  padding-left: 2.8rem;
+  margin-bottom: 3.6rem;
 
   display: flex;
   align-items: center;
@@ -742,13 +742,13 @@
   cursor: pointer;
 
   @media screen and (max-width: $bp-tab) {
-    margin-bottom: 25rem;
+    margin-bottom: 2.5rem;
   }
 
   @media screen and (max-width: $bp-mob) {
-    width: 144rem;
-    height: 36rem;
-    padding-left: 18rem;
+    width: 14.4rem;
+    height: 3.6rem;
+    padding-left: 1.8rem;
     margin-bottom: 0;
 
     background: url('../../images/copy-btn-bg-mob.svg');
@@ -756,14 +756,14 @@
 
   // .copy-btn-icon
   &-icon{
-    width: 24rem;
-    height: 24rem;
-    margin-right: 8rem;
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-right: 0.8rem;
 
     @media screen and (max-width: $bp-mob) {
-      width: 16rem;
-      height: 16rem;
-      margin-right: 4rem;
+      width: 1.6rem;
+      height: 1.6rem;
+      margin-right: 0.4rem;
     }
   }
 
@@ -771,15 +771,15 @@
   span{
     color: $body-4-color;
     @media screen and (max-width: $bp-mob) {
-      font-size: 14rem;
+      font-size: 1.4rem;
     }
   }
 }
 
 // .default-btn
 .default-btn{
-  width: 300rem;
-  height: 50rem;
+  width: 30.0rem;
+  height: 5.0rem;
   clip-path: polygon(
     100% 0%,    /* Верхняя правая точка */
     5.33% 0%,   /* Верхняя левая точка */
@@ -792,24 +792,24 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 36rem;
+  margin-bottom: 3.6rem;
   transition: all 0.2s ease-in-out;
 
   @media screen and (max-width: $bp-tab) {
-    margin-bottom: 23rem;
+    margin-bottom: 2.3rem;
   }
 
   @media screen and (max-width: $bp-mob) {
     clip-path: unset;
     width: 100%;
-    height: 36rem;
+    height: 3.6rem;
     clip-path: polygon(
       100% 0%,    /* Верхняя правая точка */
       0.73% 0%,   /* Верхняя левая точка */
       0% 100%,    /* Нижняя левая точка */
       99.27% 100% /* Нижняя правая точка */
     );
-    margin-bottom: 16rem;
+    margin-bottom: 1.6rem;
   }
 
   // .default-btn span
@@ -817,7 +817,7 @@
     color: $body-1-color;
 
     @media screen and (max-width: $bp-mob) {
-      font-size: 14rem;
+      font-size: 1.4rem;
     }
   }
 
@@ -830,7 +830,7 @@
 .footer .button__notification .button.v12{
   @media screen and (max-width: $bp-mob) {
     margin-left: 0;
-    height: 36rem;
+    height: 3.6rem;
   }
 }
 

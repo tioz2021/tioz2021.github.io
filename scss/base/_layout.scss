@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  max-width: 1200rem;
+  max-width: 120.0rem;
   // max-width: 1230rem;
   // padding-left: 15rem;
   // padding-right: 15rem;
@@ -10,21 +10,21 @@
   box-sizing: border-box;
 
   @media screen and (max-width: 1600px) {
-    max-width: 1230rem;
-    padding-left: 15rem;
-    padding-right: 15rem;
+    max-width: 123.0rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   @media screen and (max-width: $bp-tab) {
-    max-width: 768rem;
-    padding-left: 36rem;
-    padding-right: 36rem;
+    max-width: 76.8rem;
+    padding-left: 3.6rem;
+    padding-right: 3.6rem;
   }
 
   @media screen and (max-width: $bp-mob) {
-    max-width: 360rem;
-    padding-left: 16rem;
-    padding-right: 16rem;
+    max-width: 36.0rem;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
   }
 }
 

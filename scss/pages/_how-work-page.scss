@@ -1,12 +1,12 @@
 .how-work-page .information-box{
-  margin-bottom: 75rem;
+  margin-bottom: 7.5rem;
 
   @media screen and (max-width: $bp-tab) {
-    margin-bottom: 70rem;
+    margin-bottom: 7.0rem;
   }
 
   @media screen and (max-width: $bp-mob) {
-    margin-bottom: 36rem;
+    margin-bottom: 3.6rem;
   }
 }
 
@@ -21,14 +21,14 @@
   &__title {
     width: 100%;
     text-align: center;
-    margin-bottom: 41rem;
+    margin-bottom: 4.1rem;
 
     @media screen and (max-width: $bp-tab) {
-      margin-bottom: 26rem;
+      margin-bottom: 2.6rem;
     }
   
     @media screen and (max-width: $bp-mob) {
-      margin-bottom: 28rem;
+      margin-bottom: 2.8rem;
     }
 
     // .how-work__title span
@@ -40,7 +40,7 @@
   // .how-work__list
   &__list {
     width: 100%;
-    height: 520rem;
+    height: 52.0rem;
     background: url('../../images/infografic-bg.svg');
     background-size: contain;
     background-repeat: no-repeat;
@@ -49,23 +49,23 @@
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
-    padding-top: 62rem;
-    margin-bottom: 66rem;
+    padding-top: 6.2rem;
+    margin-bottom: 6.6rem;
 
     @media screen and (max-width: $bp-tab) {
       background: url('../../images/infografic-bg-tab.svg');
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
-      height: 1232rem;
+      height: 123.2rem;
       flex-wrap: wrap;
-      margin-bottom: 46rem;
+      margin-bottom: 4.6rem;
     }
   
     @media screen and (max-width: $bp-mob) {
-      height: 978rem;
-      padding-top: 27rem;
-      margin-bottom: 35rem;
+      height: 97.8rem;
+      padding-top: 2.7rem;
+      margin-bottom: 3.5rem;
       background: url('../../images/infografic-bg-mob.svg');
       background-size: contain;
       background-repeat: no-repeat;
@@ -75,25 +75,25 @@
 
   // .how-work__item
   &__item {
-    width: 282rem;
-    height: 482rem;
+    width: 28.2rem;
+    height: 48.2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
-    padding-left: 24rem;
-    padding-right: 24rem;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
 
     @media screen and (max-width: $bp-tab) {
       width: 100%;
-      height: 282rem;
-      padding-left: 24rem;
-      margin-bottom: 24rem;
+      height: 28.2rem;
+      padding-left: 2.4rem;
+      margin-bottom: 2.4rem;
     }
 
     @media screen and (max-width: $bp-mob) {
-      height: 221rem;
-      margin-bottom: 25rem;
+      height: 22.1rem;
+      margin-bottom: 2.5rem;
     }
   }
 
@@ -101,14 +101,14 @@
   &__number-wrp {
     width: 100%;
     text-align: center;
-    margin-bottom: 34rem;
+    margin-bottom: 3.4rem;
 
     @media screen and (max-width: $bp-tab) {
-      margin-bottom: 31rem;
+      margin-bottom: 3.1rem;
     }
 
     @media screen and (max-width: $bp-mob) {
-      margin-bottom: 20rem;
+      margin-bottom: 2.0rem;
     }
   }
 
@@ -117,21 +117,21 @@
     color: $body-4-color;
 
     @media screen and (max-width: $bp-mob) {
-      font-size: 18rem;
+      font-size: 1.8rem;
     }
   }
 
   // .how-work__text
   &__text {
-    font-size: 18.4rem;
+    font-size: 1.84rem;
 
     @media screen and (max-width: $bp-tab) {
-      max-width: 532rem;
+      max-width: 53.2rem;
     }
 
     @media screen and (max-width: $bp-mob) {
-      max-width: 264rem;
-      font-size: 14.4rem;
+      max-width: 26.4rem;
+      font-size: 1.44rem;
     }
 
     // .how-work__text span
@@ -143,31 +143,31 @@
   // .how-work__end
   &__end {
     width: 100%;
-    height: 291rem;
+    height: 29.1rem;
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
-    padding-top: 30rem;
-    margin-bottom: 155rem;
+    padding-top: 3.0rem;
+    margin-bottom: 15.5rem;
     background-image: url('../../images/decor-step.svg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
 
     @media screen and (max-width: $bp-tab) {
-      height: 490rem;
+      height: 49.0rem;
       flex-wrap: wrap;
-      padding: 24rem;
-      padding-top: 29rem;
-      margin-bottom: 100rem;
+      padding: 2.4rem;
+      padding-top: 2.9rem;
+      margin-bottom: 10.0rem;
       background-image: url('../../images/decor-step-tab.svg');
       background-size: contain;
     }
 
     @media screen and (max-width: $bp-mob) {
-      height: 325rem;
-      padding: 12rem;
-      padding-top: 16rem;
-      margin-bottom: 70rem;
+      height: 32.5rem;
+      padding: 1.2rem;
+      padding-top: 1.6rem;
+      margin-bottom: 7.0rem;
       background-image: url('../../images/decor-step-mob.svg');
       background-size: contain;
     }
@@ -175,15 +175,15 @@
 
   // .how-work__end-text
   &__end-text {
-    max-width: 582rem;
-    font-size: 32.6rem;
+    max-width: 58.2rem;
+    font-size: 3.26rem;
 
     @media screen and (max-width: $bp-tab) {
       max-width: 100%;
     }
 
     @media screen and (max-width: $bp-mob) {
-      font-size: 18rem;
+      font-size: 1.8rem;
       max-width: 100%;
     }
   }
@@ -193,11 +193,11 @@
     color: $body-4-color;
 
     @media screen and (max-width: $bp-tab) {
-      margin-bottom: 48rem;
+      margin-bottom: 4.8rem;
     }
 
     @media screen and (max-width: $bp-mob) {
-      margin-bottom: 25rem;
+      margin-bottom: 2.5rem;
     }
   }
 
