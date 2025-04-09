@@ -2572,7 +2572,7 @@ input {
 }
 @media screen and (max-width: 1000px) {
   .main-input__input-end__num {
-    margin-left: 0;
+    margin-left: 5rem;
   }
 }
 .main-input__input-end-bg {
@@ -2819,6 +2819,14 @@ input {
     background: #fff;
     z-index: 999;
     padding-top: 24rem;
+    opacity: 1;
+    transition: opacity 300ms ease-in-out;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .selector-options {
+    opacity: 0;
   }
 }
 
@@ -3276,7 +3284,7 @@ input {
 
 .slider-body-v2 {
   position: relative;
-  top: -37rem;
+  top: -30rem;
 }
 
 .mixin-input {
@@ -3967,6 +3975,11 @@ input {
 
 .preloader__content {
   text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .preloader__content {
+    transform: scale(0.6);
+  }
 }
 
 .preloader.hide {

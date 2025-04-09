@@ -15,6 +15,10 @@
 
 .preloader__content {
   text-align: center;
+
+  @media screen and (max-width: $bp-mob) {
+    transform: scale(.6);
+  }
 }
 
 .preloader.hide {

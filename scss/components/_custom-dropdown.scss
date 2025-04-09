@@ -188,8 +188,16 @@
     background: #fff;
     z-index: 999;
     padding-top: 24rem;
+
+    opacity: 1;
+    transition: opacity 300ms ease-in-out;
   }
 
+}
+.selector-options{
+  @media screen and (max-width: $bp-mob) {
+    opacity: 0;
+  }
 }
 .custom-time-selector {
   z-index: 1;
