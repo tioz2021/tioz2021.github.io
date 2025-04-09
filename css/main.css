@@ -1002,7 +1002,8 @@ input {
   .button-address .button-address__icon {
     width: 16rem;
     height: 16rem;
-    top: 13rem;
+    top: 50%;
+    transform: translateY(-50%);
     left: 33rem;
   }
 }
@@ -1054,7 +1055,8 @@ input {
 }
 @media screen and (max-width: 600px) {
   .button-address-mini .button-address__icon {
-    top: 10rem;
+    top: 50%;
+    transform: translateY(-50%);
     left: 14rem;
   }
 }
@@ -1121,7 +1123,7 @@ input {
   .button-delete .button-address__icon {
     width: 16rem;
     height: 16rem;
-    top: 10rem;
+    top: 1rem;
     left: -2rem;
   }
 }

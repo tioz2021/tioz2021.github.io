@@ -524,7 +524,11 @@
     @media screen and (max-width: $bp-mob) {
       width: 16rem;
       height: 16rem;
-      top: 13rem;
+      // top: 13rem;
+      // top: 9rem;
+      top: 50%;
+      transform: translateY(-50%);
+
       left: 33rem;
     }
   }
@@ -582,7 +586,9 @@
     left: 27rem;
 
     @media screen and (max-width: $bp-mob) {
-      top: 10rem;
+      // top: 10rem;
+      top: 50%;
+      transform: translateY(-50%);
       left: 14rem;
     }
   }
@@ -657,7 +663,8 @@
       width: 16rem;
       height: 16rem;
 
-      top: 10rem;
+      // top: 10rem;
+      top: 1rem;
       left: -2rem;
     }
 
