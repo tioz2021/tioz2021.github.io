@@ -680,6 +680,8 @@
     const video = document.getElementById('video-element');
     const fallbackImage = document.getElementById('fallback-image');
     
+    document.body.classList.add('body-no-scroll');
+
     // Настройка видео
     if(video) {
       video.muted = true; // Обязательно для автовоспроизведения
@@ -716,6 +718,7 @@
         
         // Полное удаление прелоадера через 0.5s
         setTimeout(() => preloader.remove(), 500);
+        document.body.classList.remove('body-no-scroll');
       }, 1000); // Задержка перед скрытием прелоадера
     });
     

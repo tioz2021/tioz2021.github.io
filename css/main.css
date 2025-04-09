@@ -2704,7 +2704,7 @@ input {
 .custom-time-selector::before {
   content: "";
   position: absolute;
-  top: -6px;
+  top: -6rem;
   left: 6rem;
   width: 1rem;
   height: 20rem;
@@ -3979,8 +3979,8 @@ input {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw; /* 100% ширины viewport */
+  height: 100vh; /* 100% высоты viewport */
   background: #eeeffe;
   display: flex;
   justify-content: center;
@@ -3988,6 +3988,17 @@ input {
   z-index: 9999;
   opacity: 1;
   transition: opacity 0.5s ease;
+  /* Блокируем скролл */
+  overflow: hidden;
+  touch-action: none; /* Отключаем скролл на тач-устройствах */
+}
+
+/* Класс для блокировки скролла на body */
+.body-no-scroll {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
 }
 
 .preloader__content {
