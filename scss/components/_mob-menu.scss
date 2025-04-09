@@ -25,14 +25,14 @@
   // .mob-menu__list
   &__list {
     position: fixed;
-    top: -100%;
+    top: -150%;
     left: 0;
     width: 100%;
     background: white;
     transition: top 0.3s ease;
     z-index: 1000;
-    padding: 20px 0;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    padding: 20rem 0;
+    box-shadow: 0 10rem 20rem rgba(0,0,0,0.1);
 
     background-color: $body-1-color;
     box-sizing: border-box;
@@ -61,7 +61,7 @@
     // .mob-menu__list-item a
     a {
       font-weight: 500;
-      font-size: 32px;
+      font-size: 32rem;
       line-height: 120%;
       text-align: center;
       color: $body-2-color;

@@ -43,12 +43,12 @@
       height: 36rem;
       left: -23rem;
     }
-
     @media screen and (max-width: $bp-mob) {
       width: 22rem;
       height: 22rem;
-      left: 0;
+      left: -2rem;
       top: -20rem;
+      
     }
 
     // .main-input__input-start__num
@@ -82,6 +82,7 @@
       background-image: unset;
       background-color: #fff;
       border: 1rem solid $body-3-color;
+      display: none;
     }
 
   }
@@ -145,13 +146,18 @@
     }
 
     @media screen and (max-width: $bp-mob) {
-      width: 48rem;
+      // width: 48rem;
+      width: 65rem;
+      // height: 22rem;
       height: 22rem;
       top: -20rem;
       right: unset;
-      left: 22rem;
-      border: 1rem solid #4e51f5;
+      // left: 22rem;
+      left: -1rem;
+      // border: 1rem solid #4e51f5;
+      border: 1px solid #4e51f5;
       background-color: #fff;
+      justify-content: unset;
     }
 
     // .main-input__input-end__num
@@ -162,6 +168,15 @@
       @media screen and (max-width: $bp-tab) {
         // margin-left: 0;
         margin-left: 5rem;
+      }
+      @media screen and (max-width: $bp-mob) {
+        box-sizing: border-box;
+        margin-left: 19rem;
+        padding-left: 2rem;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        border-left: 1px solid $body-3-color;
       }
     }
   }

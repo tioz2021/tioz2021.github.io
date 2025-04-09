@@ -377,29 +377,31 @@ input, textarea, [contenteditable] {
 html {
   font-family: "Inter", sans-serif;
   scroll-behavior: smooth;
-  font-size: 0.05208vw;
+  transform: translateZ(0);
+  backface-visibility: hidden;
   scrollbar-gutter: stable; /* Резервирует место под скролл */
   overflow-y: scroll; /* Всегда включает вертикальную прокрутку (но скроллбар скрыт) */
   /* Скрываем сам скроллбар */
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE/Edge */
+  font-size: calc(0.05208vw + 0.0001px);
 }
 html::-webkit-scrollbar {
   display: none; /* Chrome/Safari/Opera */
 }
 @media screen and (max-width: 1600px) {
   html {
-    font-size: 0.07208vw;
+    font-size: calc(0.07208vw + 0.0001px);
   }
 }
 @media screen and (max-width: 1000px) {
   html {
-    font-size: 0.13021vw;
+    font-size: calc(0.13021vw + 0.0001px);
   }
 }
 @media screen and (max-width: 600px) {
   html {
-    font-size: 0.278vw;
+    font-size: calc(0.278vw + 0.0001px);
   }
 }
 
@@ -642,6 +644,7 @@ input {
   cursor: pointer;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .button-container .button .label {
   display: inline-block;
@@ -653,7 +656,7 @@ input {
   height: 10rem;
 }
 .button-container .button.v4 .label {
-  padding: 10rem 22rem;
+  padding: 0rem 22rem;
 }
 .button-container .button.v4 .icon {
   display: block;
@@ -686,7 +689,7 @@ input {
   background: #f0202f;
   position: absolute;
   display: block;
-  width: 2rem;
+  width: 2px;
   height: 30rem;
   transition: height 0.5s;
 }
@@ -708,7 +711,7 @@ input {
   height: 100%;
 }
 .button-container .button.v6 .label {
-  padding: 10rem 22rem;
+  padding: 0rem 22rem;
 }
 .button-container .button.v6 .icon {
   display: block;
@@ -742,7 +745,7 @@ input {
   background: #f0202f;
   position: absolute;
   display: block;
-  width: 2rem;
+  width: 2px;
   height: 30rem;
   transition: height 0.5s;
 }
@@ -767,7 +770,7 @@ input {
   height: 0;
 }
 .button-container .button.v12 .label {
-  padding: 10rem 22rem;
+  padding: 0rem 22rem;
 }
 .button-container .button.v12 .icon {
   display: block;
@@ -802,7 +805,7 @@ input {
   background: #f0202f;
   position: absolute;
   display: block;
-  width: 2rem;
+  width: 2px;
   height: 30rem;
   transition: height 0.2s;
   transition-delay: 0.2s;
@@ -829,7 +832,7 @@ input {
   height: 0;
 }
 .button-container .button.v12 .label {
-  padding: 10rem 22rem;
+  padding: 0rem 22rem;
 }
 .button-container .button.v12 .icon {
   display: block;
@@ -864,7 +867,7 @@ input {
   background: #f0202f;
   position: absolute;
   display: block;
-  width: 2rem;
+  width: 2px;
   height: 30rem;
   transition: all 0.2s;
   transition-delay: 0.2s;
@@ -896,7 +899,7 @@ input {
   top: -1rem;
 }
 .button__notification .button.v12 .icon:before, .button__notification .button.v12 .icon:after {
-  height: 2rem;
+  height: 2px;
   width: 99rem;
   background-color: #470083;
 }
@@ -907,7 +910,7 @@ input {
 }
 .button__notification .button.v12 .icon span:before, .button__notification .button.v12 .icon span:after {
   background-color: #470083;
-  width: 2rem;
+  width: 2px;
   height: 50rem;
 }
 @media screen and (max-width: 600px) {
@@ -963,7 +966,7 @@ input {
   top: -2rem;
 }
 .button-address .button.v6 .icon:before, .button-address .button.v6 .icon:after {
-  height: 2rem;
+  height: 2px;
   width: 99rem;
   background: #4E51F5;
 }
@@ -974,7 +977,7 @@ input {
 }
 .button-address .button.v6 .icon span:before, .button-address .button.v6 .icon span:after {
   background: #4E51F5;
-  width: 2rem;
+  width: 2px;
   height: 50rem;
 }
 @media screen and (max-width: 600px) {
@@ -1110,7 +1113,7 @@ input {
 }
 @media screen and (max-width: 1000px) {
   .button-delete .button-address__icon {
-    top: 13rem;
+    top: 0rem;
     left: 1rem;
   }
 }
@@ -1138,7 +1141,7 @@ input {
   top: -2rem;
 }
 .button-delete .button.v4 .icon:before, .button-delete .button.v4 .icon:after {
-  height: 2rem;
+  height: 2px;
   width: 99rem;
   background: #f54e51;
 }
@@ -1149,7 +1152,7 @@ input {
 }
 .button-delete .button.v4 .icon span:before, .button-delete .button.v4 .icon span:after {
   background: #f54e51;
-  width: 2rem;
+  width: 2px;
   height: 50rem;
 }
 @media screen and (max-width: 600px) {
@@ -1335,7 +1338,8 @@ input {
 }
 
 .mixing-input-btn-ok {
-  display: none; /* Изначально скрыт */
+  display: none;
+  /* Изначально скрыт */
   opacity: 0;
 }
 
@@ -1511,14 +1515,14 @@ input {
 }
 .mob-menu__list {
   position: fixed;
-  top: -100%;
+  top: -150%;
   left: 0;
   width: 100%;
   background: white;
   transition: top 0.3s ease;
   z-index: 1000;
-  padding: 20px 0;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 20rem 0;
+  box-shadow: 0 10rem 20rem rgba(0, 0, 0, 0.1);
   background-color: #fff;
   box-sizing: border-box;
   padding-top: 50rem;
@@ -1539,7 +1543,7 @@ input {
 }
 .mob-menu__list-item a {
   font-weight: 500;
-  font-size: 32px;
+  font-size: 32rem;
   line-height: 120%;
   text-align: center;
   color: #2d2c38;
@@ -2472,7 +2476,7 @@ input {
   .main-input__input-start {
     width: 22rem;
     height: 22rem;
-    left: 0;
+    left: -2rem;
     top: -20rem;
   }
 }
@@ -2504,6 +2508,7 @@ input {
     background-image: unset;
     background-color: #fff;
     border: 1rem solid #4e51f5;
+    display: none;
   }
 }
 .main-input__input {
@@ -2557,13 +2562,14 @@ input {
 }
 @media screen and (max-width: 600px) {
   .main-input__input-end {
-    width: 48rem;
+    width: 65rem;
     height: 22rem;
     top: -20rem;
     right: unset;
-    left: 22rem;
-    border: 1rem solid #4e51f5;
+    left: -1rem;
+    border: 1px solid #4e51f5;
     background-color: #fff;
+    justify-content: unset;
   }
 }
 .main-input__input-end__num {
@@ -2573,6 +2579,17 @@ input {
 @media screen and (max-width: 1000px) {
   .main-input__input-end__num {
     margin-left: 5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .main-input__input-end__num {
+    box-sizing: border-box;
+    margin-left: 19rem;
+    padding-left: 2rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-left: 1px solid #4e51f5;
   }
 }
 .main-input__input-end-bg {
@@ -2687,7 +2704,7 @@ input {
 .custom-time-selector::before {
   content: "";
   position: absolute;
-  top: -5rem;
+  top: -6px;
   left: 6rem;
   width: 1rem;
   height: 20rem;

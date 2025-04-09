@@ -17,7 +17,8 @@ input, textarea, [contenteditable] {
 html{
   font-family: $main-font;
   scroll-behavior: smooth;
-  font-size: 0.05208vw;
+  transform: translateZ(0);
+  backface-visibility: hidden;
 
   scrollbar-gutter: stable; /* Резервирует место под скролл */
   overflow-y: scroll; /* Всегда включает вертикальную прокрутку (но скроллбар скрыт) */
@@ -29,16 +30,21 @@ html{
     display: none; /* Chrome/Safari/Opera */
   }
 
+  font-size: calc(0.05208vw + 0.0001px);
+
   @media screen and (max-width: 1600px) {
-    font-size: 0.07208vw;
+    font-size: calc(0.07208vw + 0.0001px);
+    // font-size: 0.07208vw;
   }
 
   @media screen and (max-width: $bp-tab) {
-    font-size: 0.13021vw;
+    font-size: calc(0.13021vw + 0.0001px);
+    // font-size: 0.13021vw;
   }
 
   @media screen and (max-width: $bp-mob) {
-    font-size: 0.278vw;
+    // font-size: 0.278vw;
+    font-size: calc(0.278vw + 0.0001px);
   }
 }
 

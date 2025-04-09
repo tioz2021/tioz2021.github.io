@@ -23,13 +23,14 @@
     cursor: pointer;
     display: flex;
     justify-content: center;
+    align-items: center;
 
 
     .label {
       // padding: 10rem;
       display: inline-block;
     }
-    
+
     &.v4 {
 
       &:hover {
@@ -51,7 +52,8 @@
       }
 
       .label {
-        padding: 10rem 22rem;
+        // padding: 10rem 22rem;
+        padding: 0rem 22rem;
       }
 
       .icon {
@@ -92,7 +94,8 @@
             background: #f0202f;
             position: absolute;
             display: block;
-            width: 2rem;
+            // width: 2rem;
+            width: 2px;
             height: 30rem;
             transition: height 0.5s;
           }
@@ -132,7 +135,8 @@
       }
 
       .label {
-        padding: 10rem 22rem;
+        // padding: 10rem 22rem;
+        padding: 0rem 22rem;
       }
 
       .icon {
@@ -174,7 +178,8 @@
             background: #f0202f;
             position: absolute;
             display: block;
-            width: 2rem;
+            // width: 2rem;
+            width: 2px;
             height: 30rem;
             transition: height 0.5s;
           }
@@ -217,7 +222,8 @@
       }
 
       .label {
-        padding: 10rem 22rem;
+        // padding: 10rem 22rem;
+        padding: 0rem 22rem;
       }
 
       .icon {
@@ -260,7 +266,8 @@
             background: #f0202f;
             position: absolute;
             display: block;
-            width: 2rem;
+            // width: 2rem;
+            width: 2px;
             height: 30rem;
             transition: height 0.2s;
             transition-delay: 0.2s;
@@ -305,7 +312,8 @@
       }
 
       .label {
-        padding: 10rem 22rem;
+        // padding: 10rem 22rem;
+        padding: 0rem 22rem;
       }
 
       .icon {
@@ -348,7 +356,8 @@
             background: #f0202f;
             position: absolute;
             display: block;
-            width: 2rem;
+            // width: 2rem;
+            width: 2px;
             height: 30rem;
             transition: all 0.2s;
             transition-delay: 0.2s;
@@ -389,7 +398,8 @@
 
       &:before,
       &:after {
-        height: 2rem;
+        // height: 2rem;
+        height: 2px;
         width: 99rem;
         // background: linear-gradient(to bottom left,
         //     #470083,
@@ -402,13 +412,15 @@
       }
 
       span {
+
         &:before,
         &:after {
           // background: linear-gradient(to bottom left,
           //     #470083,
           //     rgba(71, 0, 131, 0));
           background-color: #470083;
-          width: 2rem;
+          // // width: 2rem;
+          width: 2px;
           height: 50rem;
 
           @media screen and (max-width: $bp-mob) {
@@ -423,6 +435,7 @@
     @media screen and (max-width: $bp-mob) {
       font-size: 14rem;
     }
+
     padding: 14rem 24rem;
   }
 
@@ -469,20 +482,23 @@
 
       &:before,
       &:after {
-        height: 2rem;
+        // height: 2rem;
+        height: 2px;
         width: 99rem;
         background: #4E51F5;
 
         @media screen and (max-width: $bp-mob) {
           width: 88rem;
-        }        
+        }
       }
 
       span {
+
         &:before,
         &:after {
           background: #4E51F5;
-          width: 2rem;
+          // width: 2rem;
+          width: 2px;
           height: 50rem;
 
           @media screen and (max-width: $bp-mob) {
@@ -499,6 +515,7 @@
     position: absolute;
     top: 14rem;
     left: 205rem;
+
     @media screen and (max-width: $bp-tab) {
       top: 13rem;
       left: 67rem;
@@ -519,6 +536,7 @@
     @media screen and (max-width: $bp-tab) {
       margin-left: 33rem;
     }
+
     @media screen and (max-width: $bp-mob) {
       margin-left: 21rem;
       font-size: 14rem;
@@ -537,6 +555,7 @@
 }
 
 .button-address-mini {
+
   // .button-address-mini .button
   .button {
     width: 347rem;
@@ -571,7 +590,7 @@
   .label {
     padding: 14rem 20rem !important;
     margin-left: 37rem;
-    
+
     @media screen and (max-width: $bp-mob) {
       font-size: 12rem;
       padding: 11rem 8rem !important;
@@ -629,7 +648,8 @@
       // top: 13rem;
       // left: 67rem;
 
-      top: 13rem;
+      // top: 13rem;
+      top: 0rem;
       left: 1rem;
     }
 
@@ -660,7 +680,8 @@
 
       &:before,
       &:after {
-        height: 2rem;
+        // height: 2rem;
+        height: 2px;
         width: 99rem;
         background: $error-color;
 
@@ -674,7 +695,8 @@
         &:before,
         &:after {
           background: $error-color;
-          width: 2rem;
+          // width: 2rem;
+          width: 2px;
           height: 50rem;
 
           @media screen and (max-width: $bp-mob) {
@@ -686,7 +708,7 @@
   }
 }
 
-.footer__btn{
+.footer__btn {
   width: 296rem;
   height: 51rem;
   margin-left: 9rem;
@@ -695,11 +717,13 @@
     margin-bottom: 0;
   }
 }
-.footer__btn .button.v12{
+
+.footer__btn .button.v12 {
   width: 100%;
   height: 100%;
 }
-.footer__btn .button.v12 .label{
+
+.footer__btn .button.v12 .label {
   padding: 13rem 25rem;
   margin-left: 30rem;
 
@@ -709,7 +733,7 @@
   }
 }
 
-.footer__btn .button-icon{
+.footer__btn .button-icon {
   position: absolute;
   width: 24rem;
   height: 24rem;
@@ -725,7 +749,7 @@
 }
 
 // copy-btn
-.copy-btn{
+.copy-btn {
   width: 200rem;
   height: 36rem;
   box-sizing: border-box;
@@ -735,7 +759,7 @@
   display: flex;
   align-items: center;
   background: url('../../images/icons/copy-btn-bg.svg');
-  background-repeat: no-repeat !important; 
+  background-repeat: no-repeat !important;
   background-position: center center;
   background-size: contain !important;
 
@@ -755,7 +779,7 @@
   }
 
   // .copy-btn-icon
-  &-icon{
+  &-icon {
     width: 24rem;
     height: 24rem;
     margin-right: 8rem;
@@ -768,8 +792,9 @@
   }
 
   // .copy-btn span
-  span{
+  span {
     color: $body-4-color;
+
     @media screen and (max-width: $bp-mob) {
       font-size: 14rem;
     }
@@ -777,15 +802,18 @@
 }
 
 // .default-btn
-.default-btn{
+.default-btn {
   width: 300rem;
   height: 50rem;
-  clip-path: polygon(
-    100% 0%,    /* Верхняя правая точка */
-    5.33% 0%,   /* Верхняя левая точка */
-    0% 100%,    /* Нижняя левая точка */
-    94.67% 100% /* Нижняя правая точка */
-  );
+  clip-path: polygon(100% 0%,
+      /* Верхняя правая точка */
+      5.33% 0%,
+      /* Верхняя левая точка */
+      0% 100%,
+      /* Нижняя левая точка */
+      94.67% 100%
+      /* Нижняя правая точка */
+    );
   backface-visibility: hidden;
   background-color: $body-3-color;
   cursor: pointer;
@@ -803,17 +831,20 @@
     clip-path: unset;
     width: 100%;
     height: 36rem;
-    clip-path: polygon(
-      100% 0%,    /* Верхняя правая точка */
-      0.73% 0%,   /* Верхняя левая точка */
-      0% 100%,    /* Нижняя левая точка */
-      99.27% 100% /* Нижняя правая точка */
-    );
+    clip-path: polygon(100% 0%,
+        /* Верхняя правая точка */
+        0.73% 0%,
+        /* Верхняя левая точка */
+        0% 100%,
+        /* Нижняя левая точка */
+        99.27% 100%
+        /* Нижняя правая точка */
+      );
     margin-bottom: 16rem;
   }
 
   // .default-btn span
-  span{
+  span {
     color: $body-1-color;
 
     @media screen and (max-width: $bp-mob) {
@@ -822,20 +853,20 @@
   }
 
   // .default-btn.active
-  &.active{
+  &.active {
     background-color: $body-4-color;
   }
 }
 
-.footer .button__notification .button.v12{
+.footer .button__notification .button.v12 {
   @media screen and (max-width: $bp-mob) {
     margin-left: 0;
     height: 36rem;
   }
 }
 
-.main-form-continue-btn .button.v12{
-  @media screen and (max-width: $bp-mob) { 
+.main-form-continue-btn .button.v12 {
+  @media screen and (max-width: $bp-mob) {
     width: 100%;
   }
 }
@@ -843,9 +874,7 @@
 .mixing-input-btn {
   cursor: pointer;
 
-  .mixing-input-btn-main {
-
-  }
+  .mixing-input-btn-main {}
 
   .mixing-input-btn-ok {
     display: none;
@@ -859,6 +888,7 @@
 
   // .mixing-input-btn:hover
   &:hover {
+
     // .mixing-input-btn:hover path
     path {
       opacity: 0.7;
@@ -885,7 +915,8 @@
 }
 
 .mixing-input-btn-ok {
-  display: none; /* Изначально скрыт */
+  display: none;
+  /* Изначально скрыт */
   opacity: 0;
 }
 
