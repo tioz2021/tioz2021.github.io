@@ -582,13 +582,20 @@
     // top: 12rem;
     // left: 95rem;
 
-    top: 13rem;
-    left: 27rem;
+    // top: 13rem;
+    // left: 27rem;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 99rem;
+
+    @media screen and (max-width: $bp-tab) {
+      left: 35rem;
+    }
 
     @media screen and (max-width: $bp-mob) {
       // top: 10rem;
-      top: 50%;
-      transform: translateY(-50%);
+      // top: 50%;
+      // transform: translateY(-50%);
       left: 14rem;
     }
   }
@@ -647,7 +654,8 @@
   .button-address__icon {
     width: 24rem;
     height: 24rem;
-    top: 12rem;
+    // top: 12rem;
+    top: 0rem;
     left: 23rem;
 
     @media screen and (max-width: $bp-tab) {

@@ -1050,13 +1050,17 @@ input {
   }
 }
 .button-address-mini .button-address__icon {
-  top: 13rem;
-  left: 27rem;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 99rem;
+}
+@media screen and (max-width: 1000px) {
+  .button-address-mini .button-address__icon {
+    left: 35rem;
+  }
 }
 @media screen and (max-width: 600px) {
   .button-address-mini .button-address__icon {
-    top: 50%;
-    transform: translateY(-50%);
     left: 14rem;
   }
 }
@@ -1110,7 +1114,7 @@ input {
 .button-delete .button-address__icon {
   width: 24rem;
   height: 24rem;
-  top: 12rem;
+  top: 0rem;
   left: 23rem;
 }
 @media screen and (max-width: 1000px) {
