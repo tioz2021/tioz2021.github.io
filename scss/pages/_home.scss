@@ -1,18 +1,18 @@
 .fs {
   // background: rgba(78, 81, 245, 0.1);
   background-color: #eeeffe;
-  padding-top: 5.0rem;
-  padding-bottom: 7.0rem;
-  margin-bottom: 14.7rem;
+  padding-top: 50rem;
+  padding-bottom: 70rem;
+  margin-bottom: 147rem;
 
   @media screen and (max-width: $bp-tab) {
-    margin-bottom: 7.0rem;
+    margin-bottom: 70rem;
   }
 
   @media screen and (max-width: $bp-mob) {
-    padding-top: 3.6rem;
-    padding-bottom: 4.9rem;
-    margin-bottom: 5.0rem;
+    padding-top: 36rem;
+    padding-bottom: 49rem;
+    margin-bottom: 50rem;
   }
 
 
@@ -29,19 +29,19 @@
   // .fs__start
   &__start {
     // margin-left: 14rem;
-    width: 49.8rem;
-    height: 59.6rem;
+    width: 498rem;
+    height: 596rem;
 
     @media screen and (max-width: $bp-tab) {
-      width: 30.0rem;
-      height: 36.0rem;
-      margin-bottom: 2.4rem;
+      width: 300rem;
+      height: 360rem;
+      margin-bottom: 24rem;
     }
 
     @media screen and (max-width: $bp-mob) {
-      width: 12.5rem;
-      height: 15.0rem;
-      margin-bottom: 0.8rem;
+      width: 125rem;
+      height: 150rem;
+      margin-bottom: 8rem;
     }
   }
 
@@ -53,8 +53,8 @@
 
   // .fs__end
   &__end {
-    width: 61.2rem;
-    padding-top: 5.4rem;
+    width: 612rem;
+    padding-top: 54rem;
     position: relative;
     
     @media screen and (max-width: $bp-tab) {
@@ -65,36 +65,36 @@
 
   // .fs__title
   &__title {
-    margin-bottom: -0.4rem;
+    margin-bottom: -4rem;
 
     @media screen and (max-width: $bp-mob) {
-      margin-bottom: -1.1rem;
+      margin-bottom: -11rem;
     }
 
     // .fs__title span
     span{
       position: relative;
-      top: -1.9rem;
-      left: -0.4rem;
+      top: -19rem;
+      left: -4rem;
 
       @media screen and (max-width: $bp-tab) {
-        left: -0.2rem;
-        top: -2.0rem;
+        left: -2rem;
+        top: -20rem;
       }
     }
   }
 
   // .fs__text-wrp
   &__text-wrp {
-    margin-bottom: 4.2rem;
+    margin-bottom: 42rem;
     
     @media screen and (max-width: $bp-tab) {
-      margin-bottom: 4.3rem;
+      margin-bottom: 43rem;
     }
 
     @media screen and (max-width: $bp-mob) {
-      font-size: 2.25rem;
-      margin-bottom: 4.0rem;
+      font-size: 22.5rem;
+      margin-bottom: 40rem;
     }
 
     // .fs__text-wrp
@@ -106,39 +106,39 @@
     }
 
     .gradient-text:nth-child(1){
-      margin-left: 0.9rem;
-      margin-right: -1.0rem;
+      margin-left: 9rem;
+      margin-right: -10rem;
 
       @media screen and (max-width: $bp-mob) {
         margin-left: 0rem;
-        margin-right: -0.7rem;
+        margin-right: -7rem;
       }
     }
     .gradient-text:nth-child(2){
-      margin-left: 1.1rem;
+      margin-left: 11rem;
     }
     .gradient-text:nth-child(3){
-      margin-left: 0.4rem;
+      margin-left: 4rem;
       @media screen and (max-width: $bp-tab) {
-        margin-left: 1.1rem;
+        margin-left: 11rem;
       }
       @media screen and (max-width: $bp-mob) {
         margin-left: 0rem;
       }
     }
     .gradient-text:nth-child(4){
-      margin-left: -0.7rem;
+      margin-left: -7rem;
       @media screen and (max-width: $bp-tab) {
-        margin-left: -0.2rem;
+        margin-left: -2rem;
       }
     }
     .gradient-text:nth-child(5){
       
       @media screen and (max-width: $bp-tab) {
-        margin-left: -1.2rem;
+        margin-left: -12rem;
       }
       @media screen and (max-width: $bp-mob) {
-        margin-left: -0.5rem;
+        margin-left: -5rem;
       }
     }
   }

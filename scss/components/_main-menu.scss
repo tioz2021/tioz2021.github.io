@@ -1,9 +1,9 @@
 .main-menu {
   height: 100%;
-  min-width: 41.0rem;
+  min-width: 410rem;
   margin-left: auto;
-  margin-right: 2.4rem;
-  margin-top: -0.2rem;
+  margin-right: 24rem;
+  margin-top: -2rem;
   position: relative;
 
 
@@ -20,7 +20,7 @@
     box-sizing: border-box;
 
     @media screen and (max-width: $bp-mob) {
-      padding-bottom: 1.0rem;
+      padding-bottom: 10rem;
     }
 
     // .main-menu__list-item-underline
@@ -28,7 +28,7 @@
       position: absolute;
       bottom: 0;
       left: 0;
-      height: 0.2rem;
+      height: 2rem;
       background-color: $body-3-color;
       width: 0; 
       transition: all 0.3s ease;
@@ -46,7 +46,7 @@
     transition: color 0.3s ease;
     
     @media screen and (max-width: $bp-mob) {
-      font-size: 1.4rem;
+      font-size: 14rem;
       font-weight: 500;
     }
 

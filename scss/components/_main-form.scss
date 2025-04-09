@@ -1,11 +1,11 @@
 .main-form {
-  margin-bottom: 15.0rem;
+  margin-bottom: 150rem;
   
   @media screen and (max-width: $bp-tab) {
-    margin-bottom: 10.0rem;
+    margin-bottom: 100rem;
   }
   @media screen and (max-width: $bp-mob) {
-    margin-bottom: 6.9rem;
+    margin-bottom: 69rem;
   }
 
   // .main-form__container
@@ -20,57 +20,57 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 6.0rem;
+    margin-bottom: 60rem;
 
     // .main-form__step-wrp:first-child
     &:first-child{
-      margin-bottom: 4.6rem;
+      margin-bottom: 46rem;
       @media screen and (max-width: $bp-tab) {
-        margin-bottom: 4.9rem;
+        margin-bottom: 49rem;
       }
 
       @media screen and (max-width: $bp-mob) {
-        margin-bottom: 2.0rem;
+        margin-bottom: 20rem;
         // margin-bottom: 25rem;
       }
     }
 
     // .main-form__step-wrp-1_1
     &-1_1{
-      margin-bottom: 7.0rem;
+      margin-bottom: 70rem;
       // .main-form__step-wrp-1_1 .main-form__stem-number span
       .main-form__stem-number span{
-        left: -0.2rem;
+        left: -2rem;
         @media screen and (max-width: $bp-mob) {
-          left: -0.1rem;
+          left: -1rem;
         }        
       }
 
       @media screen and (max-width: $bp-mob) {
-        margin-bottom: 2.5rem;
+        margin-bottom: 25rem;
       }
     }
     // .main-form__step-wrp-step-2
     &-step-2{
-      margin-bottom: 7.2rem;
+      margin-bottom: 72rem;
 
       @media screen and (max-width: $bp-tab) {
-        margin-bottom: 5.0rem;
+        margin-bottom: 50rem;
       }
 
       @media screen and (max-width: $bp-mob) {
-        margin-bottom: 2.5rem;
+        margin-bottom: 25rem;
       }
 
       // .main-form__step-wrp-step-2 .main-form__step-box-title
       .main-form__step-box-title{
-        margin-bottom: 4.8rem;
+        margin-bottom: 48rem;
         @media screen and (max-width: $bp-tab) {
-          margin-bottom: 3.7rem;
+          margin-bottom: 37rem;
         }
 
         @media screen and (max-width: $bp-mob) {
-          margin-bottom: 2.3rem;
+          margin-bottom: 23rem;
         }        
       }
       
@@ -78,41 +78,41 @@
 
     // .main-form__step-wrp-step-3
     &-step-3{
-      margin-bottom: 5.0rem;
+      margin-bottom: 50rem;
       @media screen and (max-width: $bp-tab) {
-        margin-bottom: 3.7rem;
+        margin-bottom: 37rem;
       }
       @media screen and (max-width: $bp-mob) {
-        margin-bottom: 2.3rem;
+        margin-bottom: 23rem;
       }
 
       // .main-form__step-wrp-step-3 .main-form__step-box
       .main-form__step-box{
-        min-height: 34.6rem;
+        min-height: 346rem;
 
         @media screen and (max-width: $bp-tab) {
-          padding-left: 1.9rem;
+          padding-left: 19rem;
         }
         @media screen and (max-width: $bp-mob) {
-          padding-left: 1.2rem;
+          padding-left: 12rem;
           min-height: unset;
-          padding-bottom: 3.5rem;
+          padding-bottom: 35rem;
         }
       }
       // .main-form__step-wrp-step-3 .main-form__step-box-title
       .main-form__step-box-title{
-        margin-bottom: 4.3rem;
-        font-size: 4.08rem;
-        margin-left: 0.6rem;
+        margin-bottom: 43rem;
+        font-size: 40.8rem;
+        margin-left: 6rem;
 
         @media screen and (max-width: $bp-tab) {
-          margin-left: 1.5rem;
-          margin-bottom: 3.0rem;
+          margin-left: 15rem;
+          margin-bottom: 30rem;
         }
         @media screen and (max-width: $bp-mob) {
-          font-size: 2.2rem;
+          font-size: 22rem;
           margin-left: 0rem;
-          margin-bottom: 3.7rem;
+          margin-bottom: 37rem;
         }
       }
     }
@@ -120,19 +120,19 @@
 
   // .main-form__step-number-wrp
   &__step-number-wrp {
-    width: 15.0rem;
-    height: 5.0rem;
+    width: 150rem;
+    height: 50rem;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    left: -0.1rem;
-    top: -0.2rem;
+    left: -1rem;
+    top: -2rem;
 
     @media screen and (max-width: $bp-tab) {
       position: absolute;
-      top: 3.6rem;
-      left: 3.6rem;
+      top: 36rem;
+      left: 36rem;
       // .main-form__step-number-wrp svg path
       svg path{
         fill: $body-1-color;
@@ -140,10 +140,10 @@
     }
 
     @media screen and (max-width: $bp-mob) {
-      width: 10.0rem;
-      height: 3.6rem;
-      top: 2.4rem;
-      left: 1.2rem;
+      width: 100rem;
+      height: 36rem;
+      top: 24rem;
+      left: 12rem;
 
       background-image: url('../../images/main-form__step-number-bg-mob.svg');
       background-size: 100%;
@@ -157,26 +157,26 @@
   &__stem-number {
     position: relative;
     z-index: 2;
-    left: 0.6rem;
-    top: -0.3rem;
+    left: 6rem;
+    top: -3rem;
     
     @media screen and (max-width: $bp-mob) {
-      font-size: 1.8rem;
-      left: 0.2rem;
-      top: -0.2rem;
+      font-size: 18rem;
+      left: 2rem;
+      top: -2rem;
     }
 
     // .main-form__stem-number span
     span{
       color: $body-4-color;
       position: relative;
-      left: -0.7rem;
-      top: -0.1rem;
+      left: -7rem;
+      top: -1rem;
       @media screen and (max-width: $bp-tab) {
-        left: -1.0rem;
+        left: -10rem;
       }
       @media screen and (max-width: $bp-mob) {
-        left: -0.5rem;
+        left: -5rem;
         top: 0rem;
       }
     }
@@ -201,28 +201,28 @@
   // .main-form__step-box
   &__step-box {
     position: relative;
-    width: 100.0rem;
-    min-height: 39.3rem;
+    width: 1000rem;
+    min-height: 393rem;
     box-sizing: border-box;
-    padding-top: 5.0rem;
-    padding-left: 5.0rem;
-    padding-right: 5.0rem;
-    padding-bottom: 7.0rem;
+    padding-top: 50rem;
+    padding-left: 50rem;
+    padding-right: 50rem;
+    padding-bottom: 70rem;
 
     background-color: rgba(78, 81, 245, 0.06);
-    border: 0.1rem solid rgba(78, 81, 245, 0.6);
+    border: 1rem solid rgba(78, 81, 245, 0.6);
     // border: 1rem solid red;
     
     /* Основная форма с обрезанными углами */
     clip-path: polygon(
-      0 5.0rem,        /* Левый верхний */
-      5.0rem 0,        /* Левый верхний скос */
+      0 50rem,        /* Левый верхний */
+      50rem 0,        /* Левый верхний скос */
       calc(100% - 0rem) 0,  /* Правый верхний */
-      100% 5.0rem,     /* Правый верхний скос */
-      100% calc(100% - 5.0rem), /* Правый нижний */
-      calc(100% - 5.0rem) 100%, /* Правый нижний скос */
+      100% 50rem,     /* Правый верхний скос */
+      100% calc(100% - 50rem), /* Правый нижний */
+      calc(100% - 50rem) 100%, /* Правый нижний скос */
       0rem 100%,     /* Левый нижний */
-      0 calc(120% - 5.0rem)  /* Левый нижний скос */
+      0 calc(120% - 50rem)  /* Левый нижний скос */
     );
 
     @media screen and (max-width: $bp-tab) {
@@ -230,67 +230,67 @@
       min-height: unset;
       left: unset;
       top: unset;
-      padding-top: 9.8rem;
-      padding-left: 3.6rem;
-      padding-right: 3.6rem;
-      padding-bottom: 5.2rem;
+      padding-top: 98rem;
+      padding-left: 36rem;
+      padding-right: 36rem;
+      padding-bottom: 52rem;
     }
 
     @media screen and (max-width: $bp-mob) {
-      padding-top: 6.8rem;
-      padding-left: 1.2rem;
-      padding-right: 1.2rem;
-      padding-bottom: 3.6rem;
+      padding-top: 68rem;
+      padding-left: 12rem;
+      padding-right: 12rem;
+      padding-bottom: 36rem;
 
       clip-path: polygon(
-        0 2.4rem,        /* Левый верхний */
-        2.4rem 0,        /* Левый верхний скос */
+        0 24rem,        /* Левый верхний */
+        24rem 0,        /* Левый верхний скос */
         calc(100% - 0rem) 0,  /* Правый верхний */
-        100% 2.4rem,     /* Правый верхний скос */
-        100% calc(100% - 2.4rem), /* Правый нижний */
-        calc(100% - 2.4rem) 100%, /* Правый нижний скос */
+        100% 24rem,     /* Правый верхний скос */
+        100% calc(100% - 24rem), /* Правый нижний */
+        calc(100% - 24rem) 100%, /* Правый нижний скос */
         0rem 100%,     /* Левый нижний */
-        0 calc(120% - 2.4rem)  /* Левый нижний скос */
+        0 calc(120% - 24rem)  /* Левый нижний скос */
       );
       z-index: 2;
     }
 
     // .main-form__step-box-individualize
     &-individualize{
-      padding-top: 3.6rem;
-      padding-bottom: 5.0rem;
-      min-height: 21.4rem;
+      padding-top: 36rem;
+      padding-bottom: 50rem;
+      min-height: 214rem;
       display: flex;
       flex-direction: column;
 
       // .main-form__step-box-individualize .main-form__step-box-title
       .main-form__step-box-title{
         @media screen and (max-width: $bp-mob) {
-          margin-bottom: 1.2rem;
+          margin-bottom: 12rem;
         }  
       }
 
       @media screen and (max-width: $bp-tab) {
-        padding-top: 9.8rem;
-        padding-bottom: 1.0rem;
+        padding-top: 98rem;
+        padding-bottom: 10rem;
       }
 
       @media screen and (max-width: $bp-mob) {
-        padding-top: 6.8rem;
-        padding-bottom: 3.6rem;
-        min-height: 18.8rem;
+        padding-top: 68rem;
+        padding-bottom: 36rem;
+        min-height: 188rem;
       }
     }
   }
 
   // .main-form__step-box-title
   &__step-box-title {
-    margin-bottom: 3.9rem;
+    margin-bottom: 39rem;
     @media screen and (max-width: $bp-tab) {
-      margin-bottom: 2.8rem;
+      margin-bottom: 28rem;
     }
     @media screen and (max-width: $bp-mob) {
-      margin-bottom: 1.8rem;
+      margin-bottom: 18rem;
     }
   }
 
@@ -299,40 +299,40 @@
     // margin-bottom: 24rem;
     // margin-bottom: 23rem;
     // margin-bottom: 25rem;
-    margin-bottom: 2.6rem;
+    margin-bottom: 26rem;
 
     @media screen and (max-width: $bp-tab) {
-      margin-bottom: 2.4rem;
-      margin-bottom: 1.2rem;
+      margin-bottom: 24rem;
+      margin-bottom: 12rem;
     }
     @media screen and (max-width: $bp-mob) {
       // margin-bottom: 16rem;
-      margin-bottom: 1.2rem;
+      margin-bottom: 12rem;
     }
   }
 
   // .main-form__step-button-wrp
   &__step-button-wrp{
-    width: 73.0rem;
+    width: 730rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    margin-left: 1.9rem;
-    margin-bottom: 3.8rem;
+    margin-left: 19rem;
+    margin-bottom: 38rem;
 
     @media screen and (max-width: $bp-tab) {
-      width: 45.3rem;
-      margin-bottom: 2.4rem;
-      margin-top: 2.2rem;
+      width: 453rem;
+      margin-bottom: 24rem;
+      margin-top: 22rem;
     }
 
     @media screen and (max-width: $bp-mob) {
-      width: 29.6rem;
+      width: 296rem;
       margin: 0;
-      margin-top: 1.4rem;
-      margin-left: 0.3rem;
-      margin-bottom: 1.6rem;
+      margin-top: 14rem;
+      margin-left: 3rem;
+      margin-bottom: 16rem;
     }
   }
 
@@ -347,14 +347,14 @@
 
     // .main-form__step-end-icon
     &-icon{
-      width: 2.4rem;
-      height: 2.4rem;
-      margin-right: 0.8rem;
+      width: 24rem;
+      height: 24rem;
+      margin-right: 8rem;
 
       @media screen and (max-width: $bp-mob) {
-        width: 1.6rem;
-        height: 1.6rem;
-        margin-right: 0.4rem;
+        width: 16rem;
+        height: 16rem;
+        margin-right: 4rem;
       }
     }
 
@@ -362,19 +362,19 @@
     a{
       font-weight: 500;
       color: $body-4-color;
-      margin-left: 0.5rem;
+      margin-left: 5rem;
       @media screen and (max-width: $bp-tab) {
-        margin-left: -0.1rem;
+        margin-left: -1rem;
       }
       @media screen and (max-width: $bp-mob) {
-        margin-left: -0.3rem;
+        margin-left: -3rem;
       }
     }
 
     // .main-form__step-end-text
     &-text{
-      max-width: 85.5rem;
-      font-size: 1.845rem;
+      max-width: 855rem;
+      font-size: 18.45rem;
     }
   }
 
@@ -382,8 +382,8 @@
   &__step-bg {
     display: none;
     position: absolute;
-    width: 100.0rem;
-    height: 39.8rem;
+    width: 1000rem;
+    height: 398rem;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -393,11 +393,11 @@
 
 .main-form__step-wrp-step-img{
   width: 100%;
-  height: 15.7rem;
+  height: 157rem;
   position: absolute;
-  top: -10.1rem;
+  top: -101rem;
   // right: -100rem;
-  right: -0.5rem;
+  right: -5rem;
   z-index: 2;
 
   background-image: url('../../images/main-form__step-wrp-step-img.svg');
@@ -407,22 +407,22 @@
   background-repeat: no-repeat;
 
   @media screen and (max-width: $bp-tab) {
-    width: 70.7rem;
-    right: -0.4rem;
+    width: 707rem;
+    right: -4rem;
     background-image: url('../../images/main-form__step-wrp-step-img-tab.svg');
   }
 
   @media screen and (max-width: $bp-mob) {
-    width: 33.2rem;
-    height: 6.8rem;
+    width: 332rem;
+    height: 68rem;
     right: unset;
-    left: -0.2rem;
-    top: -4.3rem;
+    left: -2rem;
+    top: -43rem;
     background-image: url('../../images/main-form__step-wrp-step-img-mob.svg');
   }
 }
 .main-form__last-btn-wrp{
-  margin-left: 20.4rem;
+  margin-left: 204rem;
   position: relative;
 
   @media screen and (max-width: $bp-tab) {
@@ -430,15 +430,15 @@
   }
 }
 .main-form__last-btn-icon{
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 24rem;
+  height: 24rem;
   position: absolute;
-  top: 1.3rem;
-  left: 8.0rem;
+  top: 13rem;
+  left: 80rem;
 }
 .main-form__last-btn-wrp a{
-  width: 30.0rem;
-  height: 5.0rem;
+  width: 300rem;
+  height: 50rem;
   clip-path: polygon(
     100% 0%,    /* Верхняя правая точка */
     5.33% 0%,   /* Верхняя левая точка */
@@ -450,7 +450,7 @@
 
   @media screen and (max-width: $bp-mob) {
     width: 100%;
-    height: 3.6rem;
+    height: 36rem;
     clip-path: polygon(
       100% 0%,    /* Верхняя правая точка */
       1.73% 0%,   /* Верхняя левая точка */
@@ -461,45 +461,45 @@
 }
 
 .main-form__order-info{
-  max-width: 100.0rem;
+  max-width: 1000rem;
   margin: 0 auto;
 
   // .main-form__order-info .main-form__step-box
   .main-form__step-box{
-    max-width: 80.0rem;
-    min-height: 9.0rem;
-    padding-top: 1.1rem;
-    padding-bottom: 1.7rem;
-    padding-left: 5.0rem;
+    max-width: 800rem;
+    min-height: 90rem;
+    padding-top: 11rem;
+    padding-bottom: 17rem;
+    padding-left: 50rem;
 
-    left: 10.1rem;
-    top: 3.0rem;
+    left: 101rem;
+    top: 30rem;
 
     @media screen and (max-width: $bp-tab) {
-      width: 49.6rem;
-      left: 20.0rem;
-      top: 2.6rem;
-      padding-right: 2.7rem;
+      width: 496rem;
+      left: 200rem;
+      top: 26rem;
+      padding-right: 27rem;
     }
 
     @media screen and (max-width: $bp-mob) { 
-      width: 30.5rem;
-      left: 2.4rem;
-      top: 1.5rem;
-      padding-left: 1.3rem;
-      padding-top: 1.6rem;
-      padding-bottom: 1.5rem;
+      width: 305rem;
+      left: 24rem;
+      top: 15rem;
+      padding-left: 13rem;
+      padding-top: 16rem;
+      padding-bottom: 15rem;
     }
   }
 }
 
 
 .main-form__step-box-bg{
-  width: 6.2rem;
-  height: 4.3rem;
+  width: 62rem;
+  height: 43rem;
   position: absolute;
-  left: 24.3rem;
-  top: 3.7rem;
+  left: 243rem;
+  top: 37rem;
   z-index: 2;
 
   background-image: url('../../images/main-form__step-box-bg.svg');
@@ -508,15 +508,15 @@
   background-repeat: no-repeat;
 
   @media screen and (max-width: $bp-tab) {
-    left: 14.3rem;
-    top: 3.3rem;
+    left: 143rem;
+    top: 33rem;
   }
 
   @media screen and (max-width: $bp-mob) {
-    width: 2.8rem;
-    height: 3.9rem;
-    left: -0.1rem;
-    top: 0.2rem;
+    width: 28rem;
+    height: 39rem;
+    left: -1rem;
+    top: 2rem;
     z-index: 3;
     background-image: url('../../images/main-form__step-box-bg-mob.svg');
   }
@@ -525,116 +525,116 @@
 
 }
 .main-form__order-text{
-  font-size: 3.38rem;
-  margin-bottom: 0.4rem;
+  font-size: 33.8rem;
+  margin-bottom: 4rem;
 
   @media screen and (max-width: $bp-tab) {
-    font-size: 3.4rem;
+    font-size: 34rem;
   }
 
   @media screen and (max-width: $bp-mob) {
-    font-size: 1.895rem;
-    margin-bottom: 0.7rem;
+    font-size: 18.95rem;
+    margin-bottom: 7rem;
   }
 }
 .main-form__order-text span{
   color: $body-3-color;
 }
 .main-form__order-last-text{
-  font-size: 1.3rem;
+  font-size: 13rem;
 
   @media screen and (max-width: $bp-mob) {
-    max-width: 21.7rem;
-    font-size: 1.2rem;
+    max-width: 217rem;
+    font-size: 12rem;
   }
 }
 
 .main-form__order-info .main-form__step-number-wrp{
-  left: 9.9rem;
-  top: 0.5rem;
+  left: 99rem;
+  top: 5rem;
 
   @media screen and (max-width: $bp-tab) {
     left: 0;
-    top: 0.1rem;
+    top: 1rem;
   }
 
   @media screen and (max-width: $bp-mob) {
-    left: 0.1rem;
-    top: -3.1rem;
+    left: 1rem;
+    top: -31rem;
   }
 }
 
 
 .main-form__step-end span{
-  max-width: 86.5rem;
-  font-size: 1.84rem;
+  max-width: 865rem;
+  font-size: 18.4rem;
 
   @media screen and (max-width: $bp-tab) {
-    max-width: 60.9rem;
+    max-width: 609rem;
   }
 
   @media screen and (max-width: $bp-mob) {
-    font-size: 1.24rem;
-    max-width: 28.0rem;
+    font-size: 12.4rem;
+    max-width: 280rem;
   }
 }
 
 .main-form__order-info .main-form__stem-number span{
-  left: -1.1rem;
+  left: -11rem;
   top: 0;
 
   @media screen and (max-width: $bp-mob) {
-    left: -0.3rem;
-    top: 0.1rem;
+    left: -3rem;
+    top: 1rem;
   }
 }
 
 .main-form .main-form__order-info {
-  margin-bottom: 10.0rem;
+  margin-bottom: 100rem;
 
   @media screen and (max-width: $bp-tab) {
-    margin-bottom: 7.5rem;
+    margin-bottom: 75rem;
   }
 
   @media screen and (max-width: $bp-mob) {
-    margin-bottom: 3.9rem;
+    margin-bottom: 39rem;
   }
 }
 
 .main-form__step-wrp-result-1{
-  margin-bottom: 7.0rem;
+  margin-bottom: 70rem;
 
   @media screen and (max-width: $bp-tab) {
-    margin-bottom: 5.0rem;
+    margin-bottom: 50rem;
   }
 
   @media screen and (max-width: $bp-mob) {
-    margin-bottom: 2.4rem;
+    margin-bottom: 24rem;
   }
 
   // .main-form__step-wrp-result-1 .main-form__step-end span
   .main-form__step-end span {
     @media screen and (max-width: $bp-tab) {
-      max-width: 59.0rem;
+      max-width: 590rem;
     }
 
     @media screen and (max-width: $bp-mob) {
-      max-width: 28.0rem;
+      max-width: 280rem;
     }
   }
 }
 .main-form__step-wrp-result-1 .main-form__step-box{
-  min-height: 38.6rem;
+  min-height: 386rem;
   @media screen and (max-width: $bp-mob) {
     min-height: unset;
-    padding-bottom: 3.3rem;
+    padding-bottom: 33rem;
   }
 }
 .main-form__step-wrp-result-1 .main-form__step-box-title{
-  margin-bottom: 3.1rem;
+  margin-bottom: 31rem;
 
   @media screen and (max-width: $bp-mob) {
-    margin-bottom: 1.9rem;
+    margin-bottom: 19rem;
   }
 }
 
@@ -642,46 +642,46 @@
   margin-left: 0;
 }
 .main-form__step-wrp-result-1 .main-form__step-end-icon{
-  top: 0.3rem;
+  top: 3rem;
 
   @media screen and (max-width: $bp-mob) {
-    margin-top: -0.7rem;
+    margin-top: -7rem;
   }
 }
 
 .main-form__step-wrp-result-2 {
-  margin-bottom: 7.0rem;
+  margin-bottom: 70rem;
   @media screen and (max-width: $bp-tab) {
-    margin-bottom: 5.2rem;
+    margin-bottom: 52rem;
   }
   @media screen and (max-width: $bp-mob) {
-    margin-bottom: 2.4rem;
+    margin-bottom: 24rem;
   }
 
   // .main-form__step-wrp-result-2 .main-form__step-end span
   .main-form__step-end span {
     @media screen and (max-width: $bp-tab) {
-      max-width: 59.0rem;
+      max-width: 590rem;
     }
     @media screen and (max-width: $bp-mob) {
-      max-width: 28.0rem;
+      max-width: 280rem;
     }
   }
 }
 .main-form__step-wrp-result-2 .main-form__step-box-title{
-  margin-bottom: 3.1rem;
+  margin-bottom: 31rem;
 
   @media screen and (max-width: $bp-mob) {
-    margin-bottom: 1.9rem;
+    margin-bottom: 19rem;
   }
 }
 
 .main-form__step-wrp-result-2 .main-form__step-box{
-  min-height: 33.4rem;
+  min-height: 334rem;
 
   @media screen and (max-width: $bp-mob) {
     min-height: unset;
-    padding-bottom: 3.3rem;
+    padding-bottom: 33rem;
   }
 }
 .main-form__step-end span i{
@@ -693,15 +693,15 @@
 
 .mixing-input-wrp{
   position: relative;
-  width: 81.6rem; 
-  height: 7.0rem; 
-  margin-bottom: 2.4rem;
+  width: 816rem; 
+  height: 70rem; 
+  margin-bottom: 24rem;
 
   @media screen and (max-width: $bp-tab) {
     width: 100%;
   }
   @media screen and (max-width: $bp-mob) {
-    margin-bottom: 1.2rem;
+    margin-bottom: 12rem;
     height: auto;
   }
 }
@@ -716,32 +716,32 @@
   background-size: 100%;
   border: unset;
   background-color: unset;
-  padding-left: 2.4rem;
-  padding-right: 6.0rem;
+  padding-left: 24rem;
+  padding-right: 60rem;
 
   @media screen and (max-width: $bp-tab) {
-    width: 6.24rem;
-    font-size: 2.44rem;
-    padding-left: 1.6rem;
+    width: 624rem;
+    font-size: 24.4rem;
+    padding-left: 16rem;
     background-image: url('../../images/mixing-input-bg-tab.svg');
   }
 
   @media screen and (max-width: $bp-mob) {
-    width: 30.4rem;
-    height: 3.6rem;
-    padding-left: 0.8rem;
-    padding-right: 1.2rem;
-    font-size: 1.2rem;
-    margin-bottom: 0.8rem;
+    width: 304rem;
+    height: 36rem;
+    padding-left: 8rem;
+    padding-right: 12rem;
+    font-size: 12rem;
+    margin-bottom: 8rem;
     background-image: url('../../images/mixing-input-bg-tab-mob.svg');
   }
 }
 
 .mixing-input-wrp .img-wrp{
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 24rem;
+  height: 24rem;
   position: absolute;
-  right: 2.4rem;
+  right: 24rem;
   top: 50%;
   transform: translateY(-50%);
 
@@ -751,86 +751,86 @@
 }
 
 .main-form__step-wrp-result-3{
-  margin-bottom: 7.0rem;
+  margin-bottom: 70rem;
   
   @media screen and (max-width: $bp-tab) {
-    margin-bottom: 4.9rem;
+    margin-bottom: 49rem;
   }
 
   @media screen and (max-width: $bp-mob) {
-    margin-bottom: 2.4rem;
+    margin-bottom: 24rem;
   }
   
   // .main-form__step-wrp-result-3 .main-form__step-box
   .main-form__step-box {
     @media screen and (max-width: $bp-tab) {
-      padding-bottom: 5.4rem !important;
+      padding-bottom: 54rem !important;
     }
     @media screen and (max-width: $bp-mob) {
-      padding-bottom: 3.5rem !important;
+      padding-bottom: 35rem !important;
     }
   }
 
   // .main-form__step-wrp-result-3 .main-form__step-end span
   .main-form__step-end span {
     @media screen and (max-width: $bp-tab) {
-      max-width: 59.0rem;
+      max-width: 590rem;
     }
 
     @media screen and (max-width: $bp-mob) {
-      max-width: 28.0rem;
+      max-width: 280rem;
     }
   }
 }
 
 .main-form__step-wrp-result-3 .main-form__step-box-title{
-  margin-bottom: 3.0rem;
+  margin-bottom: 30rem;
   
   @media screen and (max-width: $bp-tab) {
-    margin-bottom: 2.8rem;
+    margin-bottom: 28rem;
   }
   @media screen and (max-width: $bp-mob) {
-    margin-bottom: 1.8rem;  
+    margin-bottom: 18rem;  
   }
 }
 
 .main-form__step-wrp-result-3 .main-form__step-box{
-  padding-bottom: 7.3rem;
+  padding-bottom: 73rem;
 }
 .main-form__step-wrp-result-3 .main-form__stem-number span{
-  left: -1.0rem;
-  top: 0.2rem;
+  left: -10rem;
+  top: 2rem;
   @media screen and (max-width: $bp-mob) { 
-    left: -0.4rem;
-    top: 0.1rem;
+    left: -4rem;
+    top: 1rem;
   }   
 }
 .main-form__step-wrp-result-3 .main-form__step-end-icon{
   // top: -9rem;
 }
 .main-form__step-wrp-result-3 .main-form__step-end span{
-  font-size: 1.82rem;
+  font-size: 18.2rem;
   @media screen and (max-width: $bp-mob) { 
-    font-size: 1.2rem;
+    font-size: 12rem;
   } 
 }
 
 .main-form .main-form-continue-btn{
-  width: 20.0rem;
-  height: 5.0rem;
-  margin-top: 7.0rem;
-  margin-left: 50.0rem;
+  width: 200rem;
+  height: 50rem;
+  margin-top: 70rem;
+  margin-left: 500rem;
 
   // display: none;
   @media screen and (max-width: $bp-tab) {
     margin-left: 0;
     margin: 0 auto;
-    margin-top: 7.0rem;
+    margin-top: 70rem;
   }
   @media screen and (max-width: $bp-mob) { 
-    margin-top: 2.4rem;
+    margin-top: 24rem;
     width: 100%;
-    height: 3.6rem;
+    height: 36rem;
   } 
 }
 .main-form .main-form-continue-btn .button.v12 .icon:before,

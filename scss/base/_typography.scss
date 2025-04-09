@@ -1,6 +1,6 @@
 .heading-extra-large {
   font-weight: 400;
-  font-size: 15.0rem;
+  font-size: 150rem;
   text-transform: uppercase;
   line-height: 120%;
   color: $body-2-color;
@@ -10,80 +10,80 @@
   }
 
   @media screen and (max-width: $bp-mob) {
-    font-size: 8.0rem;
+    font-size: 80rem;
   }
 }
 
 .heading-large {
   font-weight: 400;
-  font-size: 4.1rem;
+  font-size: 41rem;
   line-height: 120%;
   color: $body-2-color;
   
   @media screen and (max-width: $bp-mob) {
-    font-size: 2.2rem;
+    font-size: 22rem;
   }
 }
 
 .heading-medium-large {
   font-weight: 400;
-  font-size: 3.8rem;
+  font-size: 38rem;
   line-height: 120%;
   color: $body-2-color;
 
   @media screen and (max-width: $bp-mob) {
-    font-size: 1.8rem;
+    font-size: 18rem;
   }
 }
 
 .heading-medium {
   font-weight: 400;
   // font-size: 32rem;
-  font-size: 3.3rem;
+  font-size: 33rem;
   line-height: 120%;
   color: $body-2-color;
 
   @media screen and (max-width: $bp-mob) {
-    font-size: 1.4rem;
+    font-size: 14rem;
   }
 }
 
 .heading-small {
   font-weight: 400;
-  font-size: 2.4rem;
+  font-size: 24rem;
   line-height: 120%;
   color: $body-2-color;
 
   @media screen and (max-width: $bp-tab) {
-    font-size: 1.8rem; 
+    font-size: 18rem; 
   }
 
   @media screen and (max-width: $bp-mob) {
-    font-size: 1.4rem;
+    font-size: 14rem;
   }
 }
 
 .text-large {
   font-weight: 400;
-  font-size: 1.8rem;
+  font-size: 18rem;
   line-height: 120%;
   color: $body-2-color;
   
   @media screen and (max-width: $bp-mob) {
-    font-size: 1.2rem;
+    font-size: 12rem;
   }
 }
 
 .text-medium {
   font-weight: 400;
-  font-size: 1.4rem;
+  font-size: 14rem;
   line-height: 120%;
   color: $body-2-color;
 }
 
 .text-small {
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 12rem;
   line-height: 120%;
   color: $body-2-color;
 }
@@ -104,14 +104,14 @@
 .under-link{
   text-decoration: underline;
   text-decoration-skip-ink: none;
-  text-underline-offset: 0.3rem;
-  text-decoration-thickness: 0.2rem;
+  text-underline-offset: 3rem;
+  text-decoration-thickness: 2rem;
   color: $body-3-color !important;
   transition: color 250ms ease-in-out;
 
   @media screen and (max-width: $bp-mob) {
-    text-underline-offset: 0.2rem;
-    text-decoration-thickness: 0.1rem;
+    text-underline-offset: 2rem;
+    text-decoration-thickness: 1rem;
   }
 
   // .under-link:hover

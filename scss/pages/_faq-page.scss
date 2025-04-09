@@ -1,34 +1,34 @@
 .main-faq-page .information-box{
-  margin-bottom: 7.5rem;
+  margin-bottom: 75rem;
 
   @media screen and (max-width: $bp-tab) {
-    margin-bottom: 7.0rem;
+    margin-bottom: 70rem;
   }
 
   @media screen and (max-width: $bp-mob) {
-    margin-bottom: 3.6rem;
+    margin-bottom: 36rem;
   }
 }
 .faq {
-  margin-bottom: 15.0rem;
+  margin-bottom: 150rem;
   
   @media screen and (max-width: $bp-tab) {
-    margin-bottom: 10.0rem;
+    margin-bottom: 100rem;
   }
 
   @media screen and (max-width: $bp-mob) {
-    margin-bottom: 7.0rem;
+    margin-bottom: 70rem;
   }
 
   // .faq__container
   &__container {
-    max-width: 80.0rem;
+    max-width: 800rem;
     flex-direction: column;
   }
 
   // .faq__title
   &__title {
-    margin-bottom: 4.2rem;
+    margin-bottom: 42rem;
     width: 100%;
     text-align: center;
   }

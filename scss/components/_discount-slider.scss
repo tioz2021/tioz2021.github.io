@@ -1,11 +1,11 @@
 .privacy-slider-v2 {
-  margin-bottom: 5.0rem;
+  margin-bottom: 50rem;
 
   @media screen and (max-width: $bp-tab) {
-    margin-bottom: 3.8rem;
+    margin-bottom: 38rem;
   }
   @media screen and (max-width: $bp-mob) {
-    margin-bottom: 1.5rem;
+    margin-bottom: 15rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,12 +14,12 @@
 
 .track-container-v2 {
   position: relative;
-  height: 4.0rem;
-  margin: 2.5rem 0;
+  height: 40rem;
+  margin: 25rem 0;
 
   @media screen and (max-width: $bp-mob) {
-    width: 28.0rem;
-    margin-top: 3.2rem;
+    width: 280rem;
+    margin-top: 32rem;
     margin-bottom: 0rem;
     display: flex;
     justify-content: center;
@@ -29,7 +29,7 @@
 .track-v2 {
   position: absolute;
   width: 100%;
-  height: 0.8rem;
+  height: 8rem;
   // background: #f0f0f0;
   // border-radius: 3rem;
   top: 50%;
@@ -37,7 +37,7 @@
   transition: all 500ms ease-in-out;
 
   @media screen and (max-width: $bp-mob) {
-    width: 28.0rem;
+    width: 280rem;
   }
 }
 
@@ -98,14 +98,14 @@
 
 
 .track-v2.bg1{
-  filter: drop-shadow(0 0 0.1rem #9093f9) drop-shadow(0 0 0.3rem #9093f9)
+  filter: drop-shadow(0 0 1rem #9093f9) drop-shadow(0 0 3rem #9093f9)
 }
 .track-v2.bg1 .track-v2__bg svg path {
   fill: #9093f9;
 }
 
 .track-v2.bg2{
-  filter: drop-shadow(0 0 0.1rem #28b6e1) drop-shadow(0 0 0.3rem #28b6e1)
+  filter: drop-shadow(0 0 1rem #28b6e1) drop-shadow(0 0 3rem #28b6e1)
 }
 .track-v2.bg2 .track-v2__bg svg path {
   fill: #28b6e1;
@@ -115,7 +115,7 @@
 }
 .track-v2.bg3 {
   // background: linear-gradient(90deg, #28b6e1 0%, #c707c2 100%);
-  filter: drop-shadow(0 0 0.1rem #28b6e1) drop-shadow(0 0 0.3rem #c707c2);
+  filter: drop-shadow(0 0 1rem #28b6e1) drop-shadow(0 0 3rem #c707c2);
 }
 
 .progress-v2 {
@@ -128,7 +128,7 @@
 
 .thumb-v2 {
   position: absolute;
-  top: -1.0rem;
+  top: -10rem;
   left: 0;
   transform: translateX(-50%);
   z-index: 2;
@@ -136,31 +136,31 @@
 }
 
 .thumb-v2-icon{
-  width: 3.6rem;
-  height: 3.6rem;
+  width: 36rem;
+  height: 36rem;
 
   @media screen and (max-width: $bp-mob) {
-    width: 3.0rem;
-    height: 3.6rem;
+    width: 30rem;
+    height: 36rem;
   }
 }
 
 .value-bubble-v2 {
   position: absolute;
-  top: 3.7rem;
+  top: 37rem;
   // left: 0;
-  left: -1.6rem;
+  left: -16rem;
   transform: none; /* Убираем transform из CSS, так как теперь управляем через JS */
   // width: 50rem;
   // height: 46rem;
-  width: 7.0rem;
-  height: 4.6rem;
+  width: 70rem;
+  height: 46rem;
   z-index: 3;
 
   @media screen and (max-width: $bp-mob) {
-    width: 4.2rem;
-    height: 3.2rem;
-    left: -0.5rem;
+    width: 42rem;
+    height: 32rem;
+    left: -5rem;
   }
 }
 
@@ -209,21 +209,21 @@
 
   @media screen and (max-width: $bp-mob) {
     flex-wrap: wrap;
-    width: 28.0rem;
+    width: 280rem;
   }        
 }
 .badge__title{
   // background-color: rgba(78, 81, 245, .1);
   box-sizing: border-box;
-  padding: 0.5rem 2.4rem;
+  padding: 5rem 24rem;
   position: relative;
-  width: 33.0rem;
-  height: 3.6rem;
+  width: 330rem;
+  height: 36rem;
 
   @media screen and (max-width: $bp-mob) {
-    width: 20.0rem;
-    height: 2.4rem;
-    padding-left: 0.8rem;
+    width: 200rem;
+    height: 24rem;
+    padding-left: 8rem;
     // padding-right: 8rem;
     padding-right: 0rem;
   }
@@ -246,19 +246,19 @@
   }
 }
 .badge-icon-wrp{
-  width: 15.0rem;
-  height: 3.6rem;
+  width: 150rem;
+  height: 36rem;
   box-sizing: border-box;
-  padding: 0.5rem 2.6rem;
+  padding: 5rem 26rem;
   position: relative;
-  left: -1.6rem;
+  left: -16rem;
 
   @media screen and (max-width: $bp-mob) {
-    width: 8.2rem;
-    height: 2.4rem;
-    left: -0.4rem;
-    padding-left: 0.8rem;
-    padding-right: 0.8rem;
+    width: 82rem;
+    height: 24rem;
+    left: -4rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
   }
 }
 .badge-wrp{
@@ -267,12 +267,12 @@
   display: flex;
   align-items: center;
   position: relative;
-  left: 1.2rem;
-  top: -0.5rem;
+  left: 12rem;
+  top: -5rem;
   
   @media screen and (max-width: $bp-mob) {
     order: -1;
-    margin-bottom: 0.7rem;
+    margin-bottom: 7rem;
     left: 0;
   }
 }
@@ -282,18 +282,18 @@
 }
 
 .badge-icon{
-  width: 1.6rem;
-  height: 2.0rem;
+  width: 16rem;
+  height: 20rem;
   position: absolute;
-  right: 2.5rem;
-  top: 0.5rem;
+  right: 25rem;
+  top: 5rem;
   z-index: 2;
 
   @media screen and (max-width: $bp-mob) {
-    width: 1.0rem;
-    height: 1.2rem;
-    right: 0.8rem;
-    top: 0.6rem;
+    width: 10rem;
+    height: 12rem;
+    right: 8rem;
+    top: 6rem;
   }
 }
 
@@ -308,8 +308,8 @@
 
 .badge-v2-bg{
   position: absolute;
-  width: 15.0rem;
-  height: 3.6rem;
+  width: 150rem;
+  height: 36rem;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -327,5 +327,5 @@
 
 .slider-body-v2{
   position: relative;
-  top: -3.7rem;
+  top: -37rem;
 }

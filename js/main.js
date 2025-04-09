@@ -317,8 +317,8 @@
     
     header.classList.add("active");
     const textHeight = content.scrollHeight;
-    content.style.maxHeight = `${textHeight + 9.4}rem`;
-    content.style.paddingBottom = "1.2rem";
+    content.style.maxHeight = `${textHeight + 94}rem`;
+    content.style.paddingBottom = "12rem";
   };
 
   // Функция для закрытия всех элементов
