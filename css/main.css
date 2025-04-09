@@ -2585,7 +2585,7 @@ input {
   .main-input__input-end__num {
     box-sizing: border-box;
     margin-left: 19rem;
-    padding-left: 2rem;
+    padding-left: 3px;
     height: 100%;
     display: flex;
     align-items: center;

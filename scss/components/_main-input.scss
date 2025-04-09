@@ -172,7 +172,8 @@
       @media screen and (max-width: $bp-mob) {
         box-sizing: border-box;
         margin-left: 19rem;
-        padding-left: 2rem;
+        // padding-left: 2rem;
+        padding-left: 3px;
         height: 100%;
         display: flex;
         align-items: center;
