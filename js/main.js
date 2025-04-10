@@ -368,6 +368,7 @@
       this.values = [100];
       this.colors = ['#FFFFFF', '#FFFFFF', '#FFFFFF'];
       this.isTouchDevice = 'ontouchstart' in window;
+      this.MIN_SEGMENT = 0.15; // Минимальное значение сегмента в процентах
     }
 
     setHandles(count) {
@@ -398,7 +399,6 @@
       handle.style.left = `${position}%`;
       handle.dataset.index = index;
 
-      // Общая функция для обработки перемещения
       const startDrag = (clientX, startLeft, handleIndex) => {
         const moveHandler = (e) => {
           const currentX = this.isTouchDevice ? e.touches[0].clientX : e.clientX;
@@ -408,8 +408,14 @@
 
           const prevHandle = this.handles[handleIndex - 2];
           const nextHandle = this.handles[handleIndex];
-          const min = prevHandle ? parseFloat(prevHandle.style.left) + 1 : 0;
-          const max = nextHandle ? parseFloat(nextHandle.style.left) - 1 : 100;
+          
+          const min = prevHandle ? 
+            Math.max(parseFloat(prevHandle.style.left) + this.MIN_SEGMENT, 0) : 
+            0;
+            
+          const max = nextHandle ? 
+            Math.min(parseFloat(nextHandle.style.left) - this.MIN_SEGMENT, 100) : 
+            100;
 
           newLeft = Math.max(min, Math.min(max, newLeft));
           handle.style.left = `${newLeft}%`;
@@ -437,13 +443,11 @@
         }
       };
 
-      // Обработчики для мыши
       handle.addEventListener('mousedown', (e) => {
         e.preventDefault();
         startDrag(e.clientX, parseFloat(handle.style.left), parseInt(handle.dataset.index));
       });
 
-      // Обработчики для touch-устройств
       handle.addEventListener('touchstart', (e) => {
         e.preventDefault();
         startDrag(e.touches[0].clientX, parseFloat(handle.style.left), parseInt(handle.dataset.index));
@@ -454,7 +458,46 @@
 
     updateValues() {
       const positions = [0, ...this.handles.map(h => parseFloat(h.style.left)), 100];
-      this.values = positions.slice(1).map((pos, i) => pos - positions[i]);
+      let segments = positions.slice(1).map((pos, i) => pos - positions[i]);
+      
+      // Проверяем все сегменты на минимальное значение
+      let needsAdjustment = true;
+      while (needsAdjustment) {
+        needsAdjustment = false;
+        
+        // Находим сегменты меньше минимального
+        for (let i = 0; i < segments.length; i++) {
+          if (segments[i] < this.MIN_SEGMENT) {
+            needsAdjustment = true;
+            const diff = this.MIN_SEGMENT - segments[i];
+            
+            // Пытаемся взять разницу у соседних сегментов
+            if (i > 0 && segments[i-1] > this.MIN_SEGMENT) {
+              const available = segments[i-1] - this.MIN_SEGMENT;
+              const transfer = Math.min(diff, available);
+              segments[i-1] -= transfer;
+              segments[i] += transfer;
+            }
+            else if (i < segments.length-1 && segments[i+1] > this.MIN_SEGMENT) {
+              const available = segments[i+1] - this.MIN_SEGMENT;
+              const transfer = Math.min(diff, available);
+              segments[i+1] -= transfer;
+              segments[i] += transfer;
+            }
+          }
+        }
+      }
+      
+      // Обновляем позиции ручек на основе скорректированных значений
+      let accumulated = 0;
+      for (let i = 0; i < this.values.length - 1; i++) {
+        accumulated += segments[i];
+        if (this.handles[i]) {
+          this.handles[i].style.left = `${accumulated}%`;
+        }
+      }
+      
+      this.values = segments;
       this.updateInputsPercent();
     }
 
@@ -482,7 +525,6 @@
     }
   }
 
-  // Остальной код без изменений
   const mainBtn = document.querySelector('.main-form__step-buttons-one');
   if (!mainBtn) return;
   const btnMore = document.querySelector('.main-form__step-buttons-more');
