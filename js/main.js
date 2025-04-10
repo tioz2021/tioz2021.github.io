@@ -719,42 +719,101 @@
 })();
 
 // preloader
+// (() => {
+//   document.addEventListener('DOMContentLoaded', function () {
+//     const preloader = document.querySelector('.preloader');
+//     if (!preloader) return false;
+
+//     const video = document.getElementById('video-element');
+//     const fallbackImage = document.getElementById('fallback-image');
+    
+//     document.body.classList.add('body-no-scroll');
+
+//     // Настройка видео
+//     if (video) {
+//       video.muted = true; // Обязательно для автовоспроизведения
+//       video.loop = true;
+//       video.playsInline = true;
+//       video.setAttribute('webkit-playsinline', ''); // Для старых iOS
+//     }
+
+//     // Когда вся страница загружена
+//     window.addEventListener('load', function () {
+//       setTimeout(async function () {
+//         // Скрываем прелоадер
+//         preloader.classList.add('hide');
+
+//         if (!video) {
+//           showFallbackImage();
+//           return;
+//         }
+
+//         try {
+//           // Пытаемся запустить видео
+//           const playPromise = video.play();
+
+//           if (playPromise !== undefined) {
+//             await playPromise.catch(error => {
+//               console.log('Автовоспроизведение не сработало:', error);
+//               showFallbackImage();
+//             });
+//           }
+//         } catch (error) {
+//           console.log('Ошибка воспроизведения видео:', error);
+//           showFallbackImage();
+//         }
+
+//         // Полное удаление прелоадера через 0.5s
+//         document.body.classList.remove('body-no-scroll');
+//         setTimeout(() => preloader.remove(), 500);
+//       }, 1000); // Задержка перед скрытием прелоадера
+//     });
+
+//     function showFallbackImage() {
+//       if (fallbackImage) {
+//         // Скрываем видео
+//         if (video) video.style.display = 'none';
+//         // Показываем изображение
+//         fallbackImage.style.display = 'block';
+//       } else if (video) {
+//         // Если нет фолбэка, показываем controls
+//         video.controls = true;
+//       }
+//     }
+//   });
+// })();
+
 (() => {
-  document.addEventListener('DOMContentLoaded', function () {
+  document.addEventListener('DOMContentLoaded', function() {
     const preloader = document.querySelector('.preloader');
-    if (!preloader) return false;
+    if (!preloader) return;
 
     const video = document.getElementById('video-element');
     const fallbackImage = document.getElementById('fallback-image');
-
-
-    document.body.classList.add('body-no-scroll');
-
+    
+    // Разблокируем скролл сразу (если нужно)
+    document.body.classList.remove('body-no-scroll');
+    
     // Настройка видео
     if (video) {
-      video.muted = true; // Обязательно для автовоспроизведения
+      video.muted = true;
       video.loop = true;
       video.playsInline = true;
-      video.setAttribute('webkit-playsinline', ''); // Для старых iOS
+      video.setAttribute('webkit-playsinline', '');
+      video.preload = 'auto'; // Оптимальная предзагрузка
     }
 
-    // Когда вся страница загружена
-    window.addEventListener('load', function () {
-      setTimeout(async function () {
-        // Скрываем прелоадер
-        preloader.classList.add('hide');
-
-        if (!video) {
-          showFallbackImage();
-          return;
-        }
-
+    // Показываем контент через 1000мс независимо от загрузки
+    setTimeout(() => {
+      // Скрываем прелоадер
+      preloader.classList.add('hide');
+      
+      // Пытаемся запустить видео, если оно есть
+      if (video) {
         try {
-          // Пытаемся запустить видео
           const playPromise = video.play();
-
           if (playPromise !== undefined) {
-            await playPromise.catch(error => {
+            playPromise.catch(error => {
               console.log('Автовоспроизведение не сработало:', error);
               showFallbackImage();
             });
@@ -763,21 +822,16 @@
           console.log('Ошибка воспроизведения видео:', error);
           showFallbackImage();
         }
-
-        // Полное удаление прелоадера через 0.5s
-        document.body.classList.remove('body-no-scroll');
-        setTimeout(() => preloader.remove(), 500);
-      }, 1000); // Задержка перед скрытием прелоадера
-    });
+      }
+      
+      setTimeout(() => preloader.remove(), 500);
+    }, 1000);
 
     function showFallbackImage() {
-      if (fallbackImage) {
-        // Скрываем видео
-        if (video) video.style.display = 'none';
-        // Показываем изображение
+      if (fallbackImage && video) {
+        video.style.display = 'none';
         fallbackImage.style.display = 'block';
       } else if (video) {
-        // Если нет фолбэка, показываем controls
         video.controls = true;
       }
     }
