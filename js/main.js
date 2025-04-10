@@ -272,15 +272,15 @@
     if (!thumb || !bubble) return;
 
     // Используем getBoundingClientRect для точного позиционирования
-    const thumbRect = thumb.getBoundingClientRect();
+    // const thumbRect = thumb.getBoundingClientRect();
     const container = document.querySelector('.track-container-v2');
     if (!container) return;
 
-    const containerRect = container.getBoundingClientRect();
+    // const containerRect = container.getBoundingClientRect();
 
     // Центрируем пузырек относительно thumb
-    const bubbleWidth = bubble.offsetWidth;
-    const leftPosition = thumbRect.left - containerRect.left - bubbleWidth / 2 + thumbRect.width / 2;
+    // const bubbleWidth = bubble.offsetWidth;
+    // const leftPosition = thumbRect.left - containerRect.left - bubbleWidth / 2 + thumbRect.width / 2;
 
     // bubble.style.left = `${leftPosition}rem`;
   }

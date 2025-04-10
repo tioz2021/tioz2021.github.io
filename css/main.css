@@ -384,14 +384,14 @@ html {
   /* Скрываем сам скроллбар */
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE/Edge */
-  font-size: calc(0.05208vw + 0.0001px);
+  font-size: calc(0.046872vw + 0.0001px);
 }
 html::-webkit-scrollbar {
   display: none; /* Chrome/Safari/Opera */
 }
 @media screen and (max-width: 1600px) {
   html {
-    font-size: calc(0.07208vw + 0.0001px);
+    font-size: calc(0.064872vw + 0.0001px);
   }
 }
 @media screen and (max-width: 1000px) {
@@ -2535,6 +2535,27 @@ input {
   }
 }
 
+.mixing-input-wrp .mixing-input {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.mixing-input-wrp .mixing-input:focus, .mixing-input-wrp .mixing-input:active {
+  border: unset;
+  background-color: unset;
+  background-image: url("../../images/icons/mixin-input-bg-focus.svg");
+}
+@media screen and (max-width: 1000px) {
+  .mixing-input-wrp .mixing-input:focus, .mixing-input-wrp .mixing-input:active {
+    background-image: url("../../images/mixing-input-bg-tab-focus.svg");
+  }
+}
+@media screen and (max-width: 600px) {
+  .mixing-input-wrp .mixing-input:focus, .mixing-input-wrp .mixing-input:active {
+    background-image: url("../../images/mixing-input-bg-tab-mob-focus.svg");
+  }
+}
+
 .main-input {
   position: relative;
   width: 100%;
@@ -2565,7 +2586,7 @@ input {
 }
 .main-input__input-start {
   position: absolute;
-  left: 0;
+  left: 1rem;
   top: 50%;
   transform: translateY(-50%);
   width: 50rem;
@@ -2672,14 +2693,14 @@ input {
 }
 .main-input__input-end {
   position: absolute;
-  top: 0;
+  top: -1rem;
   right: -3rem;
   width: 100rem;
   height: 50rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 2;
+  z-index: 5;
 }
 @media screen and (max-width: 1000px) {
   .main-input__input-end {
@@ -2722,7 +2743,7 @@ input {
 .main-input__input-end-bg {
   position: absolute;
   right: 0rem;
-  top: 51%;
+  top: 52%;
   transform: translateY(-50%);
   width: 100%;
   height: 100%;
@@ -3152,7 +3173,7 @@ input {
 .track-v2 {
   position: absolute;
   width: 100%;
-  height: 8rem;
+  height: 20rem;
   top: 50%;
   transform: translateY(-50%);
   transition: all 500ms ease-in-out;
@@ -3227,7 +3248,7 @@ input {
 
 .thumb-v2 {
   position: absolute;
-  top: -10rem;
+  top: -3rem;
   left: 0;
   transform: translateX(-50%);
   z-index: 2;

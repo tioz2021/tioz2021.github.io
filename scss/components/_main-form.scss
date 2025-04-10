@@ -857,3 +857,24 @@
     background-image: url('../../images/main-form__step-number-bg-mob-grey.svg');
   } 
 }
+
+.mixing-input-wrp .mixing-input {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &:focus, &:active {
+    border: unset;
+    background-color: unset;
+    background-image: url('../../images/icons/mixin-input-bg-focus.svg');
+
+
+    @media screen and (max-width: $bp-tab) { 
+      background-image: url('../../images/mixing-input-bg-tab-focus.svg');
+    } 
+
+    @media screen and (max-width: $bp-mob) { 
+      background-image: url('../../images/mixing-input-bg-tab-mob-focus.svg');
+    }
+  }
+}
