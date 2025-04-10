@@ -2559,7 +2559,7 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1;
+  z-index: 3;
 }
 @media screen and (max-width: 1000px) {
   .main-input__input-start {
@@ -2573,7 +2573,7 @@ input {
     width: 22rem;
     height: 22rem;
     left: -2rem;
-    top: -20rem;
+    top: -19rem;
   }
 }
 .main-input__input-start__num {
@@ -2642,14 +2642,14 @@ input {
 }
 .main-input__input-end {
   position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 70rem;
+  top: 0;
+  right: -3rem;
+  width: 108rem;
   height: 50rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 2;
 }
 @media screen and (max-width: 1000px) {
   .main-input__input-end {
@@ -2658,9 +2658,9 @@ input {
 }
 @media screen and (max-width: 600px) {
   .main-input__input-end {
-    width: 65rem;
+    width: 75rem;
     height: 22rem;
-    top: -20rem;
+    top: -31rem;
     right: unset;
     left: -1rem;
     border: 1px solid #4e51f5;
@@ -2671,6 +2671,7 @@ input {
 .main-input__input-end__num {
   color: #4e51f5;
   margin-left: 3rem;
+  z-index: 4;
 }
 @media screen and (max-width: 1000px) {
   .main-input__input-end__num {
@@ -2681,7 +2682,7 @@ input {
   .main-input__input-end__num {
     box-sizing: border-box;
     margin-left: 19rem;
-    padding-left: 3px;
+    padding-left: 4px;
     height: 100%;
     display: flex;
     align-items: center;
@@ -2690,12 +2691,12 @@ input {
 }
 .main-input__input-end-bg {
   position: absolute;
-  right: -2rem;
+  right: -4rem;
   top: 51%;
   transform: translateY(-50%);
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: 3;
 }
 @media screen and (max-width: 600px) {
   .main-input__input-end-bg {
