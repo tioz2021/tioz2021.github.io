@@ -405,6 +405,10 @@ html::-webkit-scrollbar {
   }
 }
 
+body {
+  position: relative;
+}
+
 a {
   text-decoration: unset;
 }
@@ -2827,7 +2831,7 @@ input {
 
 .custom-time-selector.active .selector-options {
   transition: all 250ms ease-in-out;
-  max-height: 200rem;
+  max-height: 145rem;
   padding-bottom: 16rem;
 }
 @media screen and (max-width: 600px) {
@@ -4021,6 +4025,145 @@ input {
   pointer-events: none;
 }
 
+/* Базовые стили слоя затемнения и модального окна  */
+.overlay {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  visibility: hidden;
+  /* фон затемнения */
+  background-color: rgba(78, 81, 245, 0.6);
+  opacity: 0;
+  position: fixed;
+  /* фиксированное поцизионирование */
+  cursor: default;
+  /* тип курсара */
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  -ms-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*** Формируем стили модального окна ***/
+.popup {
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  visibility: hidden;
+  margin: 0 auto;
+  width: 399rem;
+  min-height: 252rem;
+  /* фиксированное позиционирование, окно стабильно при прокрутке */
+  position: fixed;
+  box-sizing: border-box;
+  padding-top: 36rem;
+  padding-left: 50rem;
+  padding-right: 50rem;
+  padding-bottom: 50rem;
+  background-color: #fff;
+  /* полная прозрачность окна, появление при клике */
+  opacity: 0;
+  /* эффект перехода (появление) */
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+@media screen and (max-width: 600px) {
+  .popup {
+    width: 328rem;
+    min-height: 156rem;
+    padding-top: 24rem;
+    padding-left: 16rem;
+    padding-right: 16rem;
+    padding-bottom: 36rem;
+  }
+}
+
+/* активируем появление окна и затемнение фона */
+.overlay:target + .popup {
+  top: 20%;
+  /* положение окна от верха страницы при появлении */
+  visibility: visible;
+  opacity: 1;
+  /* убираем прозрачность */
+}
+@media screen and (max-width: 1000px) {
+  .overlay:target + .popup {
+    top: 15%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .overlay:target + .popup {
+    top: 15%;
+  }
+}
+
+/* формируем кнопку закрытия */
+.close {
+  position: absolute;
+  top: 12rem;
+  right: 12rem;
+  padding: 0;
+  width: 24rem;
+  height: 24rem;
+  text-align: center;
+  text-decoration: none;
+  /* задаём значения и эффект перехода при наведении */
+  transition: all ease 250ms;
+}
+@media screen and (max-width: 600px) {
+  .close {
+    width: 16rem;
+    height: 16rem;
+    top: 8rem;
+    right: 8rem;
+  }
+}
+.close svg path {
+  transition: all ease 250ms;
+}
+
+.close:hover svg path {
+  stroke: #470083;
+}
+
+.popup-text {
+  text-align: center;
+  margin-bottom: 24rem;
+  font-size: 24rem;
+}
+@media screen and (max-width: 600px) {
+  .popup-text {
+    font-size: 18rem;
+    margin-bottom: 18rem;
+  }
+}
+
+.news-popup-btn {
+  margin: 0 auto;
+  width: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .news-popup-btn .button.v12 {
+    width: 146rem;
+  }
+}
+
 .footer {
   background-color: rgba(78, 81, 245, 0.06);
   box-sizing: border-box;
@@ -4653,7 +4796,7 @@ input {
 }
 @media screen and (max-width: 1000px) {
   .news__main-img-wrp {
-    position: absolute;
+    position: absolute !important;
     width: 336rem;
     height: 212rem;
   }
@@ -4685,10 +4828,6 @@ input {
     margin-bottom: 20rem;
     font-size: 18rem;
   }
-}
-.news__title-text:hover {
-  color: #4e51f5;
-  text-decoration: underline;
 }
 .news__title-desk {
   max-width: 754rem;
@@ -4843,10 +4982,6 @@ input {
     font-size: 18rem;
   }
 }
-.news__list-item-text:hover {
-  color: #4e51f5;
-  text-decoration: underline;
-}
 .news__btn {
   width: 348rem;
   height: 50rem;
@@ -4859,6 +4994,49 @@ input {
 }
 .news__btn .label {
   margin-left: 3rem !important;
+}
+
+.news__main-box:hover .news__main-item-overlay {
+  visibility: visible;
+  opacity: 1;
+}
+
+.news__list-item-img:hover .news__main-item-overlay {
+  visibility: visible;
+  opacity: 1;
+}
+
+.news__main-img-wrp,
+.news__list-item-img {
+  position: relative;
+}
+
+.news__main-item-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(78, 81, 245, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: all ease 0.5s;
+}
+
+.news__main-item-overlay-text {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-underline-offset: 2rem;
+  text-decoration-thickness: 1rem;
+  margin-right: 4rem;
+}
+
+.news__main-item-overlay-text-icon {
+  width: 24rem;
+  height: 24rem;
 }
 
 @media screen and (max-width: 1000px) {

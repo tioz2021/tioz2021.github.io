@@ -7,14 +7,14 @@
 
   const menuItems = document.querySelectorAll('.header__menu .main-menu__list-item');
   const underline = document.querySelector('.header__menu .main-menu__list-underline');
-  
+
   menuItems.forEach((item) => {
     item.addEventListener('mouseenter', (e) => {
       const { offsetLeft, offsetWidth } = e.target;
       underline.style.left = `${pxToRem(offsetLeft)}rem`;
       underline.style.width = `${pxToRem(offsetWidth)}rem`;
     });
-  
+
     item.addEventListener('mouseleave', () => {
       underline.style.width = '0';
     });
@@ -23,14 +23,14 @@
   // Футер
   const menuItems2 = document.querySelectorAll('.footer__menu .main-menu__list-item');
   const underline2 = document.querySelector('.footer__menu .main-menu__list-underline');
-  
+
   menuItems2.forEach((item) => {
     item.addEventListener('mouseenter', (e) => {
       const { offsetLeft, offsetWidth } = e.target;
       underline2.style.left = `${pxToRem(offsetLeft)}rem`;
       underline2.style.width = `${pxToRem(offsetWidth)}rem`;
     });
-  
+
     item.addEventListener('mouseleave', () => {
       underline2.style.width = '0';
     });
@@ -49,7 +49,7 @@
     const icon = dropdown.querySelector('.selector-header__icon');
     const allOptions = Array.from(dropdown.querySelectorAll('.option:not(.off-option)'));
     const stepBox = document.querySelector('.main-form__step-box');
-    
+
     // Создаем OFF опцию
     const offOption = document.createElement('div');
     offOption.className = 'option text-large off-option';
@@ -75,7 +75,7 @@
       });
     };
 
-    dropdownBtn.addEventListener('click', function(e) {
+    dropdownBtn.addEventListener('click', function (e) {
       e.stopPropagation();
 
       // stepBox.style.zIndex = '3';
@@ -90,23 +90,23 @@
     });
 
     // Обработчик для всех опций
-    optionsContainer.addEventListener('click', function(e) {
+    optionsContainer.addEventListener('click', function (e) {
       if (e.target.classList.contains('option')) {
         e.stopPropagation();
         const selectedText = e.target.textContent;
 
         // stepBox.style.zIndex = '2';
         stepBox.classList.remove('active');
-        
+
         // Обновляем выбранное значение
         selectedValue.textContent = selectedText;
-        
+
         // Управляем иконкой
         icon.style.display = selectedText === 'OFF' ? 'block' : 'none';
-        
+
         // Обновляем список опций
         updateOptions(selectedText);
-        
+
         dropdown.classList.remove('active');
       }
     });
@@ -115,7 +115,7 @@
     updateOptions('OFF');
 
     // Закрываем dropdown при клике вне его
-    document.addEventListener('click', function() {
+    document.addEventListener('click', function () {
       dropdown.classList.remove('active');
       // stepBox.style.zIndex = '2';
       stepBox.classList.remove('active');
@@ -129,19 +129,19 @@
   const thumb = document.querySelector('.slider-thumb');
   const valueDisplay = document.querySelector('.slider-value');
   const track = document.querySelector('.slider-track');
-  
+
   let isDragging = false;
-  
-  if(!slider) return;
+
+  if (!slider) return;
 
   // Инициализация
   updateSlider(0);
-  
+
   // Обработчик для инпута
   // slider.addEventListener('input', function() {
   //   updateSlider(this.value);
   // });
-  
+
   // Drag-логика для ползунка
   thumb.addEventListener('mousedown', (e) => {
     isDragging = true;
@@ -151,26 +151,26 @@
       document.removeEventListener('mousemove', handleThumbDrag);
     });
   });
-  
+
   function handleThumbDrag(e) {
     if (!isDragging) return;
-    
+
     const trackRect = track.getBoundingClientRect();
     const position = ((e.clientX - trackRect.left) / trackRect.width) * 200 - 100; // -100..100
     const roundedValue = Math.max(-100, Math.min(100, Math.round(position)));
-    
+
     slider.value = roundedValue;
     updateSlider(roundedValue);
   }
-  
+
   function updateSlider(value) {
     const percent = value;
     const position = (parseInt(value) + 100) / 2;
-    
+
     thumb.style.left = `${position}%`;
     valueDisplay.textContent = `${percent}%`;
   }
-  
+
   // Для мобильных устройств
   thumb.addEventListener('touchstart', (e) => {
     isDragging = true;
@@ -180,25 +180,25 @@
       document.removeEventListener('touchmove', handleTouchDrag);
     });
   });
-  
+
   function handleTouchDrag(e) {
     if (!isDragging) return;
     const touch = e.touches[0];
     const trackRect = track.getBoundingClientRect();
     const position = ((touch.clientX - trackRect.left) / trackRect.width) * 200 - 100;
     const roundedValue = Math.max(-100, Math.min(100, Math.round(position)));
-    
+
     slider.value = roundedValue;
     updateSlider(roundedValue);
   }
-}) ();
+})();
 
 // discount-slider
 (() => {
   const budgetText = document.querySelector('.badge-v2 span');
   const budgedDiamand = document.querySelector('.badge-icon path');
   const sliderInput = document.querySelector('.slider-input-v2');
-  
+
   if (!budgetText || !sliderInput) return;
 
   // Устанавливаем параметры слайдера
@@ -207,14 +207,14 @@
   sliderInput.step = "0.01";
   sliderInput.value = "1.00";
 
-  sliderInput.addEventListener('input', function() {
+  sliderInput.addEventListener('input', function () {
     const value = parseFloat(this.value);
     const min = parseFloat(this.min);
     const max = parseFloat(this.max);
-    
+
     // Расчет позиции (0-100)
     const percent = ((value - min) / (max - min)) * 100;
-    
+
     // Обновляем визуальные элементы
     updateSliderPosition(percent, value);
     updateBudgetCategory(value);
@@ -224,19 +224,19 @@
     const progress = document.querySelector('.progress-v2');
     const thumb = document.querySelector('.thumb-v2');
     const bubbleValue = document.querySelector('.value-bubble-v2 span');
-    
+
     // Обновляем прогресс-бар
     if (progress) progress.style.width = `${percent}%`;
-    
+
     // Обновляем позицию ползунка (используем transform для точности)
     if (thumb) {
       thumb.style.left = `${percent}%`;
       thumb.style.transform = 'translateX(-50%)';
     }
-    
+
     // Обновляем значение в пузырьке
     if (bubbleValue) bubbleValue.textContent = value.toFixed(2) + '%';
-    
+
     // Позиционируем пузырек относительно thumb
     updateBubblePosition();
   }
@@ -277,11 +277,11 @@
     if (!container) return;
 
     const containerRect = container.getBoundingClientRect();
-    
+
     // Центрируем пузырек относительно thumb
     const bubbleWidth = bubble.offsetWidth;
-    const leftPosition = thumbRect.left - containerRect.left - bubbleWidth/2 + thumbRect.width/2;
-    
+    const leftPosition = thumbRect.left - containerRect.left - bubbleWidth / 2 + thumbRect.width / 2;
+
     // bubble.style.left = `${leftPosition}rem`;
   }
 
@@ -293,7 +293,7 @@
 // btn flip
 (() => {
   const btnFlip = document.querySelector('.btn-flip');
-  if(!btnFlip) return;
+  if (!btnFlip) return;
   const btnFlipIcon = document.querySelector('.btn-flip .btn-icon');
 
   btnFlip.addEventListener('mouseenter', (e) => {
@@ -304,7 +304,7 @@
     btnFlipIcon.classList.remove('btn-flip-hover1');
     btnFlipIcon.classList.add('btn-flip-hover2');
   });
-}) ();
+})();
 
 // acardion
 (() => {
@@ -314,7 +314,7 @@
   const openAccordionItem = (item) => {
     const header = item.querySelector(".accordion__header");
     const content = item.querySelector(".accordion__content");
-    
+
     header.classList.add("active");
     const textHeight = content.scrollHeight;
     content.style.maxHeight = `${textHeight + 94}rem`;
@@ -326,7 +326,7 @@
     accordionItems.forEach((item) => {
       const header = item.querySelector(".accordion__header");
       const content = item.querySelector(".accordion__content");
-      
+
       header.classList.remove("active");
       content.style.maxHeight = "0";
       content.style.paddingBottom = "0rem";
@@ -344,12 +344,12 @@
   // Обработчики кликов
   accordionItems.forEach((item) => {
     const header = item.querySelector(".accordion__header");
-    
+
     header.addEventListener("click", () => {
       const isActive = header.classList.contains("active");
-      
+
       closeAllAccordionItems();
-      
+
       if (!isActive) {
         openAccordionItem(item);
       }
@@ -369,35 +369,35 @@
       this.colors = ['#FFFFFF', '#FFFFFF', '#FFFFFF'];
       this.isTouchDevice = 'ontouchstart' in window;
     }
-  
+
     setHandles(count) {
       if (count < 1 || count > 8) return false;
-      
+
       this.track.innerHTML = '';
       this.handles = [];
       this.values = [];
-      
+
       const segmentWidth = 100 / count;
       for (let i = 0; i < count; i++) {
         this.values.push(segmentWidth);
-        
+
         if (i > 0) {
           const handle = this.createHandle(i * segmentWidth, i);
           this.track.appendChild(handle);
           this.handles.push(handle);
         }
       }
-      
+
       this.updateVisuals();
       return true;
     }
-  
+
     createHandle(position, index) {
       const handle = document.createElement('div');
       handle.className = 'slider-handle';
       handle.style.left = `${position}%`;
       handle.dataset.index = index;
-      
+
       // Общая функция для обработки перемещения
       const startDrag = (clientX, startLeft, handleIndex) => {
         const moveHandler = (e) => {
@@ -405,19 +405,19 @@
           const deltaX = currentX - clientX;
           const percentDelta = (deltaX / this.track.offsetWidth) * 100;
           let newLeft = startLeft + percentDelta;
-          
+
           const prevHandle = this.handles[handleIndex - 2];
           const nextHandle = this.handles[handleIndex];
           const min = prevHandle ? parseFloat(prevHandle.style.left) + 1 : 0;
           const max = nextHandle ? parseFloat(nextHandle.style.left) - 1 : 100;
-          
+
           newLeft = Math.max(min, Math.min(max, newLeft));
           handle.style.left = `${newLeft}%`;
-          
+
           this.updateValues();
           this.updateVisuals();
         };
-        
+
         const endDrag = () => {
           if (this.isTouchDevice) {
             document.removeEventListener('touchmove', moveHandler);
@@ -427,7 +427,7 @@
             document.removeEventListener('mouseup', endDrag);
           }
         };
-        
+
         if (this.isTouchDevice) {
           document.addEventListener('touchmove', moveHandler, { passive: false });
           document.addEventListener('touchend', endDrag, { once: true });
@@ -436,28 +436,28 @@
           document.addEventListener('mouseup', endDrag, { once: true });
         }
       };
-      
+
       // Обработчики для мыши
       handle.addEventListener('mousedown', (e) => {
         e.preventDefault();
         startDrag(e.clientX, parseFloat(handle.style.left), parseInt(handle.dataset.index));
       });
-      
+
       // Обработчики для touch-устройств
       handle.addEventListener('touchstart', (e) => {
         e.preventDefault();
         startDrag(e.touches[0].clientX, parseFloat(handle.style.left), parseInt(handle.dataset.index));
       }, { passive: false });
-      
+
       return handle;
     }
-  
+
     updateValues() {
       const positions = [0, ...this.handles.map(h => parseFloat(h.style.left)), 100];
       this.values = positions.slice(1).map((pos, i) => pos - positions[i]);
       this.updateInputsPercent();
     }
-  
+
     updateVisuals() {
       let accumulated = 0;
       const gradientStops = this.values.map((val, i) => {
@@ -467,7 +467,7 @@
       this.track.style.background = `linear-gradient(90deg, ${gradientStops.join(', ')})`;
       this.updateInputsPercent();
     }
-  
+
     updateInputsPercent() {
       const inputsPercent = document.querySelectorAll('.main-input__input-end__num');
       this.values.forEach((value, index) => {
@@ -476,12 +476,12 @@
         }
       });
     }
-  
+
     getValues() {
       return this.values;
     }
-} 
-  
+  }
+
   // Остальной код без изменений
   const mainBtn = document.querySelector('.main-form__step-buttons-one');
   if (!mainBtn) return;
@@ -490,7 +490,7 @@
   const deleteBtn = document.querySelector('.button-remove-input');
   const inputs = document.querySelectorAll('.main-form__step-input-wrp');
   const step1_1 = document.querySelector('.main-form__step-wrp-1_1');
-  
+
   const slider = new MultiHandleSlider(document.querySelector('.multi-handle-slider'));
 
   let visibleInputs = 1;
@@ -502,7 +502,7 @@
 
     slider.setHandles(visibleInputs);
     slider.updateInputsPercent();
-    
+
     if (visibleInputs === 1) {
       mainBtn.classList.remove('hidden');
       btnMore.classList.add('hidden');
@@ -551,62 +551,62 @@
   function active() {
     btnLine.classList.add('active');
   }
-  if(copyBtn) copyBtn.addEventListener('click', active);
+  if (copyBtn) copyBtn.addEventListener('click', active);
 
   const defBtnResult2 = document.querySelector('.default-btn');
   if (!defBtnResult2) return;
-  defBtnResult2.onclick = function() {
+  defBtnResult2.onclick = function () {
     this.classList.toggle('active');
   }
-}) ();
+})();
 
 // mobile-menu
 (() => {
-  document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', function () {
     const menuToggle = document.getElementById('menuToggle');
     const menuList = document.querySelector('.mob-menu__list');
     const menuOverlay = document.querySelector('.menu-overlay');
-    
+
     // Открытие/закрытие меню
-    menuToggle.addEventListener('click', function(e) {
+    menuToggle.addEventListener('click', function (e) {
       e.stopPropagation();
       menuList.classList.toggle('active');
       menuOverlay.classList.toggle('active');
       menuToggle.classList.toggle('active');
     });
-    
+
     // Закрытие при клике вне меню
-    menuOverlay.addEventListener('click', function() {
+    menuOverlay.addEventListener('click', function () {
       menuList.classList.remove('active');
       menuOverlay.classList.remove('active');
       menuToggle.classList.remove('active');
     });
-    
+
     // Закрытие при клике на пункт меню (опционально)
     const menuItems = document.querySelectorAll('.mob-menu__list-link');
     menuItems.forEach(item => {
-      item.addEventListener('click', function() {
+      item.addEventListener('click', function () {
         menuList.classList.remove('active');
         menuOverlay.classList.remove('active');
         menuToggle.classList.remove('active');
       });
     });
   });
-}) ();
+})();
 
 // copy-btn
 (() => {
   function copy(selector) {
     // Получаем элемент по указанному селектору
     const element = document.querySelector(selector);
-  
+
     if (!element) {
       console.error('Элемент не найден:', selector);
       return;
     }
-  
+
     let textToCopy;
-  
+
     // Определяем, как получить текст в зависимости от типа элемента
     if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
       // Для input или textarea используем value
@@ -615,16 +615,16 @@
       // Для остальных элементов используем textContent
       textToCopy = element.textContent;
     }
-  
+
     // Создаем временный элемент textarea
     const textarea = document.createElement('textarea');
     textarea.value = textToCopy;
     document.body.appendChild(textarea);
-  
+
     // Выделяем текст
     textarea.select();
     textarea.setSelectionRange(0, 99999); // Для мобильных устройств
-  
+
     // Копируем текст
     try {
       document.execCommand('copy');
@@ -632,7 +632,7 @@
     } catch (error) {
       console.error('Ошибка при копировании:', error);
     }
-  
+
     // Удаляем временный элемент
     document.body.removeChild(textarea);
   }
@@ -653,14 +653,14 @@
     document.querySelector('.mixing-input-btn').addEventListener('click', function () {
       const main = document.querySelector('.mixing-input-btn-main');
       const ok = document.querySelector('.mixing-input-btn-ok');
-    
+
       // Скрываем -main и показываем -ok
       main.style.opacity = '0';
       ok.style.display = 'flex'; // Делаем видимым
       setTimeout(() => {
         ok.style.opacity = '1'; // Плавное появление
       }, 10); // Небольшая задержка для корректной анимации
-    
+
       // Через 1 секунду возвращаем все обратно
       setTimeout(() => {
         ok.style.opacity = '0'; // Скрываем -ok
@@ -671,43 +671,43 @@
       }, 1000); // Время показа -ok
     });
   }
-}) ();
+})();
 
 // preloader
 (() => {
-  document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', function () {
     const preloader = document.querySelector('.preloader');
-    if(!preloader) return false;
-    
+    if (!preloader) return false;
+
     const video = document.getElementById('video-element');
     const fallbackImage = document.getElementById('fallback-image');
-    
+
 
     document.body.classList.add('body-no-scroll');
 
     // Настройка видео
-    if(video) {
+    if (video) {
       video.muted = true; // Обязательно для автовоспроизведения
       video.loop = true;
       video.playsInline = true;
       video.setAttribute('webkit-playsinline', ''); // Для старых iOS
     }
-  
+
     // Когда вся страница загружена
-    window.addEventListener('load', function() {
-      setTimeout(async function() {
+    window.addEventListener('load', function () {
+      setTimeout(async function () {
         // Скрываем прелоадер
         preloader.classList.add('hide');
-        
-        if(!video) {
+
+        if (!video) {
           showFallbackImage();
           return;
         }
-        
+
         try {
           // Пытаемся запустить видео
           const playPromise = video.play();
-          
+
           if (playPromise !== undefined) {
             await playPromise.catch(error => {
               console.log('Автовоспроизведение не сработало:', error);
@@ -718,13 +718,13 @@
           console.log('Ошибка воспроизведения видео:', error);
           showFallbackImage();
         }
-        
+
         // Полное удаление прелоадера через 0.5s
         document.body.classList.remove('body-no-scroll');
         setTimeout(() => preloader.remove(), 500);
       }, 1000); // Задержка перед скрытием прелоадера
     });
-    
+
     function showFallbackImage() {
       if (fallbackImage) {
         // Скрываем видео
@@ -738,3 +738,6 @@
     }
   });
 })();
+
+// news poupup
+(() => {})();

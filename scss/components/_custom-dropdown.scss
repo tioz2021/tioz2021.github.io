@@ -172,7 +172,8 @@
 
 .custom-time-selector.active .selector-options {
   transition: all 250ms ease-in-out;
-  max-height: 200rem;
+  // max-height: 200rem;
+  max-height: 145rem;
   // border-top: 1rem solid rgba(255, 255, 255, 0.1);
   padding-bottom: 16rem;
 
