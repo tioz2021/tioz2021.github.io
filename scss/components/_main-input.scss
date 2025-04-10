@@ -140,7 +140,7 @@
     // width: 70rem;
     // height: 50rem;
     right: -3rem;
-    width: 108rem;
+    width: 100rem;
     height: 50rem;
     display: flex;
     align-items: center;
@@ -148,7 +148,7 @@
     z-index: 2;
 
     @media screen and (max-width: $bp-tab) {
-      right: 0rem;
+      right: -1rem;
     }
 
     @media screen and (max-width: $bp-mob) {
@@ -171,7 +171,8 @@
     // .main-input__input-end__num
     &__num {
       color: $body-3-color;
-      margin-left: 3rem;
+      // margin-left: 3rem;
+      margin-left: 0;
       z-index: 4;
 
       @media screen and (max-width: $bp-tab) {
@@ -196,7 +197,7 @@
     position: absolute;
     // right: 0;
     // right: -2rem;
-    right: -4rem;
+    right: 0rem;
     // top: 50%;
     top: 51%;
     transform: translateY(-50%);

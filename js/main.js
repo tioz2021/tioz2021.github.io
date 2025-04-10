@@ -792,7 +792,7 @@
     const fallbackImage = document.getElementById('fallback-image');
     
     // Разблокируем скролл сразу (если нужно)
-    document.body.classList.remove('body-no-scroll');
+    document.body.classList.add('body-no-scroll');
     
     // Настройка видео
     if (video) {
@@ -807,6 +807,7 @@
     setTimeout(() => {
       // Скрываем прелоадер
       preloader.classList.add('hide');
+      document.body.classList.remove('body-no-scroll');
       
       // Пытаемся запустить видео, если оно есть
       if (video) {
