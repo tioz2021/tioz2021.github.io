@@ -95,6 +95,9 @@
     width: calc(297rem/2);
     height: calc(48rem/2);
 
+    
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+
     @media screen and (max-width: $bp-mob) {
       width: calc(143rem/2);
       height: calc(36rem/2);

@@ -884,6 +884,88 @@ input {
   right: 0;
   bottom: 0;
 }
+.button-container .button.v18:hover .icon {
+  transform: scale(0.9) skew(0deg, 0deg);
+}
+.button-container .button.v18:hover .icon:before, .button-container .button.v18:hover .icon:after {
+  width: 60rem;
+  transition-delay: 0.4s;
+}
+.button-container .button.v18:hover .icon:before {
+  left: calc(50% - 30rem);
+}
+.button-container .button.v18:hover .icon:after {
+  right: calc(50% - 30rem);
+}
+.button-container .button.v18:hover .icon span:before, .button-container .button.v18:hover .icon span:after {
+  height: 0;
+  transition-delay: 0s;
+}
+.button-container .button.v18:hover .icon2 {
+  transform: skew(-40deg, 0deg) scaleX(1);
+  background: #4e51f5;
+  z-index: -1;
+  transition-delay: 0.5s;
+}
+.button-container .button.v18 .label {
+  padding: 0rem 22rem;
+}
+.button-container .button.v18 .icon2 {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: skew(-40deg, 0deg) scaleX(0.2);
+  transition: all 0.2s;
+}
+.button-container .button.v18 .icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: skew(-40deg, 0deg);
+  transition: all 0.2s;
+}
+.button-container .button.v18 .icon:before, .button-container .button.v18 .icon:after {
+  content: "";
+  height: 2px;
+  width: 30rem;
+  position: absolute;
+  display: block;
+  background: #4e51f5;
+  transition: all 0.2s;
+  transition-delay: 0s;
+}
+.button-container .button.v18 .icon:before {
+  left: 0;
+  top: 0;
+}
+.button-container .button.v18 .icon:after {
+  right: 0;
+  bottom: 0;
+}
+.button-container .button.v18 .icon span:before, .button-container .button.v18 .icon span:after {
+  content: "";
+  background: #4e51f5;
+  position: absolute;
+  display: block;
+  width: 2px;
+  height: 30rem;
+  transition: all 0.2s;
+  transition-delay: 0.4s;
+}
+.button-container .button.v18 .icon span:before {
+  left: 0;
+  top: 0;
+}
+.button-container .button.v18 .icon span:after {
+  right: 0;
+  bottom: 0;
+}
 
 .button__notification .button.v12 {
   width: 185rem;
@@ -993,12 +1075,12 @@ input {
   width: 24rem;
   height: 24rem;
   position: absolute;
-  top: 14rem;
+  top: 50%;
+  transform: translateY(-50%);
   left: 205rem;
 }
 @media screen and (max-width: 1000px) {
   .button-address .button-address__icon {
-    top: 13rem;
     left: 67rem;
   }
 }
@@ -1006,8 +1088,6 @@ input {
   .button-address .button-address__icon {
     width: 16rem;
     height: 16rem;
-    top: 50%;
-    transform: translateY(-50%);
     left: 33rem;
   }
 }
@@ -1309,9 +1389,14 @@ input {
   }
 }
 
+.main-form-continue-btn .button.v18 {
+  width: 200rem;
+  height: 50rem;
+}
 @media screen and (max-width: 600px) {
-  .main-form-continue-btn .button.v12 {
+  .main-form-continue-btn .button.v18 {
     width: 100%;
+    height: 36rem;
   }
 }
 
@@ -2287,11 +2372,12 @@ input {
   background-color: unset;
   padding-left: 24rem;
   padding-right: 60rem;
+  font-size: 28rem;
 }
 @media screen and (max-width: 1000px) {
   .mixing-input-wrp .mixing-input {
     width: 624rem;
-    font-size: 24.4rem;
+    font-size: 21rem;
     padding-left: 16rem;
     background-image: url("../../images/mixing-input-bg-tab.svg");
   }
@@ -2302,7 +2388,7 @@ input {
     height: 36rem;
     padding-left: 8rem;
     padding-right: 12rem;
-    font-size: 12rem;
+    font-size: 11rem;
     margin-bottom: 8rem;
     background-image: url("../../images/mixing-input-bg-tab-mob.svg");
   }
@@ -2415,13 +2501,13 @@ input {
   }
 }
 
-.main-form .main-form-continue-btn .button.v12 .icon:before,
-.main-form .main-form-continue-btn .button.v12 .icon:after {
+.main-form .main-form-continue-btn .button.v18 .icon:before,
+.main-form .main-form-continue-btn .button.v18 .icon:after {
   background: #4e51f5;
 }
 
-.main-form .main-form-continue-btn .button.v12 .icon span:before,
-.main-form .main-form-continue-btn .button.v12 .icon span:after {
+.main-form .main-form-continue-btn .button.v18 .icon span:before,
+.main-form .main-form-continue-btn .button.v18 .icon span:after {
   background: #4e51f5;
 }
 
@@ -3048,7 +3134,7 @@ input {
 
 .track-v2__bg {
   width: 100%;
-  height: 100%;
+  height: 106%;
 }
 @media screen and (max-width: 600px) {
   .track-v2__bg-main {
@@ -3314,6 +3400,14 @@ input {
   top: -30rem;
 }
 
+.thumb-v2-icon {
+  transform: scale(1);
+}
+
+.track-container-v2:hover .thumb-v2-icon {
+  transform: scale(1.045);
+}
+
 .mixin-input {
   margin-bottom: 36rem;
   position: relative;
@@ -3426,6 +3520,8 @@ input {
 @media screen and (max-width: 600px) {
   .btn-flip:after {
     line-height: 36rem;
+    font-size: 14rem;
+    padding-left: 7rem;
   }
 }
 .btn-flip:before {
@@ -3445,13 +3541,12 @@ input {
   align-items: center;
   justify-content: center;
   gap: 8rem;
-  padding-left: 34rem;
+  padding-left: 7rem;
 }
 @media screen and (max-width: 600px) {
   .btn-flip:before {
     line-height: 36rem;
     font-size: 14rem;
-    padding-left: 20rem;
   }
 }
 
@@ -3460,7 +3555,8 @@ input {
   width: 24rem;
   height: 24rem;
   position: absolute;
-  top: 13rem;
+  top: 50%;
+  margin-top: -12rem;
   left: 75rem;
   z-index: 2;
 }
@@ -3472,7 +3568,7 @@ input {
   .btn-icon {
     width: 16rem;
     height: 16rem;
-    top: 10rem;
+    margin-top: -8rem;
     left: 107rem;
   }
 }
@@ -3646,6 +3742,7 @@ input {
 .btn-line a.active span:after {
   width: 148.5rem;
   height: 24rem;
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 @media screen and (max-width: 600px) {
   .btn-line a.active:before,
@@ -3706,7 +3803,7 @@ input {
 }
 @media screen and (max-width: 600px) {
   .form-status__mod-text {
-    font-size: 12rem;
+    font-size: 11rem;
   }
 }
 .form-status__icon {
@@ -3721,7 +3818,7 @@ input {
   .form-status__icon {
     width: 10rem;
     height: 12rem;
-    right: 7rem;
+    right: 10rem;
   }
 }
 .form-status__icon svg {
@@ -4499,6 +4596,7 @@ input {
 .fs__img {
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 .fs__end {
   width: 612rem;

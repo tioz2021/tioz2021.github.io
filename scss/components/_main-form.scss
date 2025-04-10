@@ -719,9 +719,12 @@
   padding-left: 24rem;
   padding-right: 60rem;
 
+  font-size: 28rem;
+
   @media screen and (max-width: $bp-tab) {
     width: 624rem;
-    font-size: 24.4rem;
+    // font-size: 24.4rem;
+    font-size: 21rem;
     padding-left: 16rem;
     background-image: url('../../images/mixing-input-bg-tab.svg');
   }
@@ -731,7 +734,8 @@
     height: 36rem;
     padding-left: 8rem;
     padding-right: 12rem;
-    font-size: 12rem;
+    // font-size: 12rem;
+    font-size: 11rem;
     margin-bottom: 8rem;
     background-image: url('../../images/mixing-input-bg-tab-mob.svg');
   }
@@ -833,12 +837,12 @@
     height: 36rem;
   } 
 }
-.main-form .main-form-continue-btn .button.v12 .icon:before,
-.main-form .main-form-continue-btn .button.v12 .icon:after{
+.main-form .main-form-continue-btn .button.v18 .icon:before,
+.main-form .main-form-continue-btn .button.v18 .icon:after{
   background: $body-3-color;
 }
-.main-form .main-form-continue-btn .button.v12 .icon span:before,
-.main-form .main-form-continue-btn .button.v12 .icon span:after{
+.main-form .main-form-continue-btn .button.v18 .icon span:before,
+.main-form .main-form-continue-btn .button.v18 .icon span:after{
   background: $body-3-color;
 }
 .main-form .main-form-continue-btn span{

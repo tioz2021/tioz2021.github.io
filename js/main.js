@@ -202,7 +202,7 @@
   if (!budgetText || !sliderInput) return;
 
   // Устанавливаем параметры слайдера
-  sliderInput.min = "0.10";
+  sliderInput.min = "0.50";
   sliderInput.max = "3.00";
   sliderInput.step = "0.01";
   sliderInput.value = "1.00";
@@ -242,14 +242,14 @@
   }
 
   function updateBudgetCategory(value) {
-    if (value <= 1.31) {
+    if (value < 1.02) {
       budgetText.textContent = 'Standard';
       budgedDiamand.style.fill = '#9093f9';
       document.querySelector('.thumb-v2-icon circle').style.fill = '#9093f9';
       document.querySelector('.track-v2').classList.add('bg1');
       document.querySelector('.track-v2').classList.remove('bg2');
       document.querySelector('.track-v2').classList.remove('bg3');
-    } else if (value > 1.31 && value <= 2.13) {
+    } else if (value > 1.01 && value <= 2.13) {
       budgetText.textContent = 'Reliable';
       budgedDiamand.style.fill = '#28b6e1';
       document.querySelector('.thumb-v2-icon circle').style.fill = '#28b6e1';
@@ -287,7 +287,7 @@
 
   // Инициализация
   sliderInput.dispatchEvent(new Event('input'));
-  window.addEventListener('resize', updateBubblePosition);
+  // window.addEventListener('resize', updateBubblePosition);
 })();
 
 // btn flip
@@ -472,7 +472,7 @@
       const inputsPercent = document.querySelectorAll('.main-input__input-end__num');
       this.values.forEach((value, index) => {
         if (inputsPercent[index]) {
-          inputsPercent[index].textContent = `${value.toFixed(1)}%`;
+          inputsPercent[index].textContent = `${value.toFixed(2)}%`;
         }
       });
     }
@@ -550,6 +550,9 @@
   const btnLine = document.querySelector('.btn-line a');
   function active() {
     btnLine.classList.add('active');
+    setTimeout(() => {
+      btnLine.classList.remove('active');
+    }, 750)
   }
   if (copyBtn) copyBtn.addEventListener('click', active);
 

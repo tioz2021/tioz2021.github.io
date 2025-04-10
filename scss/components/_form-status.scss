@@ -51,7 +51,8 @@
     color: $body-3-color;
 
     @media screen and (max-width: $bp-mob) {
-      font-size: 12rem;
+      // font-size: 12rem;
+      font-size: 11rem;
     }
   }
 
@@ -67,7 +68,8 @@
     @media screen and (max-width: $bp-mob) {
       width: 10rem;
       height: 12rem;
-      right: 7rem;
+      // right: 7rem;
+      right: 10rem;
     }
 
     // .form-status__icon svg

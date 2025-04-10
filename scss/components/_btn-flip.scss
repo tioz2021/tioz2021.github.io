@@ -45,6 +45,8 @@ $speed: 0.5s;
 
     @media screen and (max-width: $bp-mob) {
       line-height: 36rem;
+      font-size: 14rem;
+      padding-left: 7rem;
     }
   }
 
@@ -70,12 +72,13 @@ $speed: 0.5s;
     justify-content: center;
     gap: 8rem;
 
-    padding-left: 34rem;
+    // padding-left: 34rem;
+    padding-left: 7rem;
 
     @media screen and (max-width: $bp-mob) {
       line-height: 36rem;
       font-size: 14rem;
-      padding-left: 20rem;
+      // padding-left: 20rem;
     }
   }
 }
@@ -85,7 +88,12 @@ $speed: 0.5s;
   width: 24rem;
   height: 24rem;
   position: absolute;
-  top: 13rem;
+  // top: 13rem;
+
+  top: 50%;
+  // transform: translateY(-50%);
+  margin-top: -12rem;
+
   // left: 58rem;
   // left: 81rem;
   left: 75rem;
@@ -100,17 +108,18 @@ $speed: 0.5s;
   @media screen and (max-width: $bp-mob) {
     width: 16rem;
     height: 16rem;
-    top: 10rem;
+    margin-top: -8rem;
+    // top: 10rem;
     left: 107rem;
   }
 }
 
 // Для анимации иконки при перевороте
 .btn-flip-hover1 {
-    animation: iconFlip $speed ease-in-out;
+  animation: iconFlip $speed ease-in-out;
 }
 .btn-flip-hover2 {
-    animation: iconFlipMinus $speed ease-in-out;
+  animation: iconFlipMinus $speed ease-in-out;
 }
 
 
