@@ -419,7 +419,9 @@
         left: 0;
         width: 100%;
         height: 100%;
-        transform: skew(-40deg, 0deg) scaleX(0.2);
+        // transform: skew(-40deg, 0deg) scaleX(0.2);
+        transform: skew(-18deg, 0deg) scaleX(0.2);
+        top: -1rem;
         transition: all 0.2s;
       }
 
@@ -430,18 +432,23 @@
         left: 0;
         width: 100%;
         height: 100%;
-        transform: skew(-40deg, 0deg);
+        // transform: skew(-40deg, 0deg);
+        transform: skew(-18deg, 0deg);
         transition: all 0.2s;
 
         &:before, &:after{
           content: '';
           height: 2px;
-          width: 30rem;
+          width: 99rem;
           position: absolute;
           display: block;
           background: $body-3-color;
           transition: all 0.2s;
           transition-delay: 0s;
+
+          @media screen and (max-width: $bp-mob){
+            width: 89rem;
+          }
         }
         &:before{
           left: 0;
@@ -459,9 +466,13 @@
             position: absolute;
             display: block;
             width: 2px;
-            height: 30rem;
+            height: 50rem;
             transition: all 0.2s;
             transition-delay: 0.4s;
+
+            @media screen and (max-width: $bp-mob){
+              height: 36rem;
+            }
           }
           &:before{
             left: 0;
@@ -986,6 +997,7 @@
   @media screen and (max-width: $bp-mob) {
     width: 100%;
     height: 36rem;
+    width: 296rem !important;
   }
 }
 

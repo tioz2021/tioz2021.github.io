@@ -917,7 +917,8 @@ input {
   left: 0;
   width: 100%;
   height: 100%;
-  transform: skew(-40deg, 0deg) scaleX(0.2);
+  transform: skew(-18deg, 0deg) scaleX(0.2);
+  top: -1rem;
   transition: all 0.2s;
 }
 .button-container .button.v18 .icon {
@@ -927,18 +928,23 @@ input {
   left: 0;
   width: 100%;
   height: 100%;
-  transform: skew(-40deg, 0deg);
+  transform: skew(-18deg, 0deg);
   transition: all 0.2s;
 }
 .button-container .button.v18 .icon:before, .button-container .button.v18 .icon:after {
   content: "";
   height: 2px;
-  width: 30rem;
+  width: 99rem;
   position: absolute;
   display: block;
   background: #4e51f5;
   transition: all 0.2s;
   transition-delay: 0s;
+}
+@media screen and (max-width: 600px) {
+  .button-container .button.v18 .icon:before, .button-container .button.v18 .icon:after {
+    width: 89rem;
+  }
 }
 .button-container .button.v18 .icon:before {
   left: 0;
@@ -954,9 +960,14 @@ input {
   position: absolute;
   display: block;
   width: 2px;
-  height: 30rem;
+  height: 50rem;
   transition: all 0.2s;
   transition-delay: 0.4s;
+}
+@media screen and (max-width: 600px) {
+  .button-container .button.v18 .icon span:before, .button-container .button.v18 .icon span:after {
+    height: 36rem;
+  }
 }
 .button-container .button.v18 .icon span:before {
   left: 0;
@@ -1397,6 +1408,7 @@ input {
   .main-form-continue-btn .button.v18 {
     width: 100%;
     height: 36rem;
+    width: 296rem !important;
   }
 }
 
@@ -2498,6 +2510,8 @@ input {
     margin-top: 24rem;
     width: 100%;
     height: 36rem;
+    display: flex;
+    justify-content: center;
   }
 }
 
