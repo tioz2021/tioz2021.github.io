@@ -108,6 +108,15 @@
     padding-left: 64rem;
     padding-right: 76rem;
 
+    transition: all 0.3s ease-in-out;
+
+    // .main-input__input:focus
+    // .main-input__input:active
+    &:focus, &:active{
+      border: 1rem solid $body-4-color;
+      background-color: rgba(78, 81, 245, 0.2);
+    }
+
     @media screen and (max-width: $bp-tab) {
       clip-path: unset;
       background-color: unset;
@@ -118,6 +127,16 @@
       border: unset;
       padding-left: 26rem;
       padding-right: 82rem;
+
+      // .main-input__input:focus
+      // .main-input__input:active
+      &:focus, &:active {
+        border: unset;
+        background-color: unset;
+        background-image: url('../../images/input-bg-tab-default-focus.svg');
+        // border: 1rem solid $body-4-color;
+        // background-color: #eeeffe;
+      }
     }
 
     @media screen and (max-width: $bp-mob) {
@@ -126,7 +145,16 @@
       padding-left: 8rem;
       padding-right: 8rem;
       background-image: url('../../images/input-bg-mob-default.svg');
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
       background-size: 100%;
+
+      // .main-input__input:focus
+      // .main-input__input:active
+      &:focus, &:active {
+        background-image: url('../../images/input-bg-mob-default-focus.svg');
+      }
     }
   }
 

@@ -2630,6 +2630,11 @@ input {
   box-sizing: border-box;
   padding-left: 64rem;
   padding-right: 76rem;
+  transition: all 0.3s ease-in-out;
+}
+.main-input__input:focus, .main-input__input:active {
+  border: 1rem solid #470083;
+  background-color: rgba(78, 81, 245, 0.2);
 }
 @media screen and (max-width: 1000px) {
   .main-input__input {
@@ -2643,6 +2648,11 @@ input {
     padding-left: 26rem;
     padding-right: 82rem;
   }
+  .main-input__input:focus, .main-input__input:active {
+    border: unset;
+    background-color: unset;
+    background-image: url("../../images/input-bg-tab-default-focus.svg");
+  }
 }
 @media screen and (max-width: 600px) {
   .main-input__input {
@@ -2651,7 +2661,13 @@ input {
     padding-left: 8rem;
     padding-right: 8rem;
     background-image: url("../../images/input-bg-mob-default.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: 100%;
+  }
+  .main-input__input:focus, .main-input__input:active {
+    background-image: url("../../images/input-bg-mob-default-focus.svg");
   }
 }
 .main-input__input-end {
