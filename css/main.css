@@ -5001,7 +5001,7 @@ input {
   opacity: 1;
 }
 
-.news__list-item-img:hover .news__main-item-overlay {
+.news__list-item :hover .news__main-item-overlay {
   visibility: visible;
   opacity: 1;
 }
