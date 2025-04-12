@@ -31,13 +31,13 @@ html{
   }
 
   // font-size: calc(0.05208vw + 0.0001px);
-  font-size: calc(0.046872vw + 0.0001px);
-  // font-size: calc(0.041664vw + 0.0001px); // - 20% ~
+  // font-size: calc(0.046872vw + 0.0001px);
+  font-size: calc(0.041664vw + 0.0001px); // - 20% ~
 
   @media screen and (max-width: 1600px) {
     // font-size: calc(0.07208vw + 0.0001px);
-    font-size: calc(0.064872vw + 0.0001px);
-    // font-size: calc(0.057664vw + 0.0001px); // - 20% ~
+    // font-size: calc(0.064872vw + 0.0001px);
+    font-size: calc(0.057664vw + 0.0001px); // - 20% ~
   }
 
   @media screen and (max-width: $bp-tab) {

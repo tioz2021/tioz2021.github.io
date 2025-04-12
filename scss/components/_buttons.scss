@@ -406,6 +406,10 @@
           z-index: -1;
           transition-delay: 0.5s;
         }
+        .label{
+          transition-delay: 0.5s;
+          color: $body-1-color;
+        }
       }
 
       .label{

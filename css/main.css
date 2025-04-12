@@ -384,14 +384,14 @@ html {
   /* Скрываем сам скроллбар */
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE/Edge */
-  font-size: calc(0.046872vw + 0.0001px);
+  font-size: calc(0.041664vw + 0.0001px);
 }
 html::-webkit-scrollbar {
   display: none; /* Chrome/Safari/Opera */
 }
 @media screen and (max-width: 1600px) {
   html {
-    font-size: calc(0.064872vw + 0.0001px);
+    font-size: calc(0.057664vw + 0.0001px);
   }
 }
 @media screen and (max-width: 1000px) {
@@ -906,6 +906,10 @@ input {
   background: #4e51f5;
   z-index: -1;
   transition-delay: 0.5s;
+}
+.button-container .button.v18:hover .label {
+  transition-delay: 0.5s;
+  color: #fff;
 }
 .button-container .button.v18 .label {
   padding: 0rem 22rem;
@@ -2385,6 +2389,7 @@ input {
   padding-left: 24rem;
   padding-right: 60rem;
   font-size: 28rem;
+  pointer-events: none;
 }
 @media screen and (max-width: 1000px) {
   .mixing-input-wrp .mixing-input {
@@ -2586,7 +2591,7 @@ input {
 }
 .main-input__input-start {
   position: absolute;
-  left: 1rem;
+  left: 0;
   top: 50%;
   transform: translateY(-50%);
   width: 50rem;
@@ -2852,7 +2857,7 @@ input {
 .custom-time-selector::before {
   content: "";
   position: absolute;
-  top: -6rem;
+  top: -7rem;
   left: 6rem;
   width: 1rem;
   height: 20rem;
@@ -3474,16 +3479,11 @@ input {
   width: 462rem;
   height: 50rem;
   position: relative;
-  background-image: url("../../images/mixin-input__input-bg.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 @media screen and (max-width: 600px) {
   .mixin-input__input-wrp {
     width: 100%;
     height: 36rem;
-    background-image: url("../../images/mixin-input__input-bg-mob.svg");
   }
 }
 .mixin-input__input-wrp input {
@@ -3495,6 +3495,14 @@ input {
   z-index: 2;
   background-color: unset;
   border: unset;
+  background-image: url("../../images/mixin-input__input-bg.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 0.3s ease-in-out;
+}
+.mixin-input__input-wrp input:focus, .mixin-input__input-wrp input:active {
+  background-image: url("../../images/mixin-input__input-bg-focus.svg");
 }
 @media screen and (max-width: 1000px) {
   .mixin-input__input-wrp input {
@@ -3506,6 +3514,10 @@ input {
     padding-left: 8rem;
     padding-right: 8rem;
     font-size: 14rem;
+    background-image: url("../../images/mixin-input__input-bg-mob.svg");
+  }
+  .mixin-input__input-wrp input:focus, .mixin-input__input-wrp input:active {
+    background-image: url("../../images/mixin-input__input-bg-mob-focus.svg");
   }
 }
 .mixin-input__input-bg {
@@ -4601,7 +4613,7 @@ input {
   }
 }
 .fs {
-  background-color: #eeeffe;
+  background-color: #ededfd;
   padding-top: 50rem;
   padding-bottom: 70rem;
   margin-bottom: 147rem;

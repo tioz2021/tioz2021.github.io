@@ -721,6 +721,9 @@
 
   font-size: 28rem;
 
+  // user-select: none;
+  pointer-events: none;  
+
   @media screen and (max-width: $bp-tab) {
     width: 624rem;
     // font-size: 24.4rem;
