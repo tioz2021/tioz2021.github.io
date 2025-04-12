@@ -51,6 +51,8 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
+    user-select: none;     /* Нельзя выделить текст */
+    pointer-events: none;  /* Отключает все взаимодействия */
   }
 
   // .fs__end
