@@ -304,6 +304,11 @@
     btnFlipIcon.classList.remove('btn-flip-hover1');
     btnFlipIcon.classList.add('btn-flip-hover2');
   });
+
+  btnFlip.addEventListener('click', (e) => {
+    e.preventDefault();
+    console.log(e.target)
+  });
 })();
 
 // acardion
@@ -603,6 +608,18 @@
   defBtnResult2.onclick = function () {
     this.classList.toggle('active');
   }
+
+  // const defBtnResult3 = document.querySelector('.form-status--mod1');
+  // if (!defBtnResult3) return;
+  // defBtnResult3.onclick = function () {
+  //   this.classList.toggle('active');
+  // }
+  // const defBtnResult4 = document.querySelector('.form-status--mod2');
+  // if (!defBtnResult4) return;
+  // defBtnResult4.onclick = function () {
+  //   this.classList.toggle('active');
+  // }
+
 })();
 
 // mobile-menu
@@ -839,5 +856,33 @@
   });
 })();
 
-// news poupup
-(() => {})();
+// main-form poupup
+(() => {
+// Обработчик клика по кнопкам с классом .button
+document.querySelectorAll('.button').forEach(button => {
+  button.addEventListener('click', function() {
+    const buttonId = this.id;
+    const modalContainer = document.getElementById('modal-container');
+    
+    // Удаляем все классы и добавляем ID кнопки как класс
+    modalContainer.className = '';
+    modalContainer.classList.add(buttonId);
+    
+    // Добавляем класс к body
+    document.body.classList.add('modal-active');
+  });
+});
+
+function close() {
+  // Добавляем класс 'out'
+  document.querySelector('#modal-container').classList.add('out');
+  
+  // Удаляем класс у body
+  document.body.classList.remove('modal-active');
+};
+
+// Обработчик клика по modal-container
+document.querySelector('.modal-background').addEventListener('click', close);
+document.querySelector('.modal-icon-close').addEventListener('click', close);
+
+})();

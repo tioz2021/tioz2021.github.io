@@ -1016,7 +1016,8 @@
 				</div>
 
 				<div class="main-form__last-btn-wrp">
-					<a href="order-page.html" class="btn-flip text-large" data-back="BTC amount" data-front="calculate">
+					<!-- <div id="one" class="button">Unfolding</div> -->
+					<a href="#" id="one" class="btn-flip text-large button" data-back="BTC amount" data-front="calculate">
 						<span class="btn-icon">
 							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path
@@ -1108,11 +1109,57 @@
 		</div>
 	</footer>
 
+	<div id="modal-container">
+		<div class="modal-background"></div>
+
+		<div class="modal">
+			<div class="modal-input-wrp">
+				<div class="modal-text text-large">You sent</div>
+				<input class="modal-input heading-small" type="text" placeholder="Your sent" value="0.349857394">
+				<!-- <div class="mobal-input-wrp-bg img-wrp">
+					<img src="images/mobal-input-wrp-bg.svg" alt="img">
+				</div> -->
+			</div>
+
+			<div class="modal-input-wrp modal-input-wrp-out">
+				<div class="modal-text text-large">You receive:</div>
+				<input class="modal-input heading-small" type="text" placeholder="Your sent" value="0.349857394 btc">
+				<!-- <div class="mobal-input-wrp-bg img-wrp">
+					<img src="images/mobal-input-wrp-bg.svg" alt="img">
+				</div> -->
+			</div>
+
+			<div class="mobal-decor-img img-wrp">
+				<img src="images/mobal-decor-img.svg" alt="img">
+			</div>
+			<div class="modal-icon-close img-wrp">
+				<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M27 9L9 27" stroke="#4E51F5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					<path d="M9 9L27 27" stroke="#4E51F5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+			</div>
+		</div>
+	</div>
+
+
 	<div class="preloader">
 		<div class="preloader__content">
 			<img src="video/loader.gif" alt="Loading...">
 		</div>
 	</div>
+
+	<!-- <div class="content">
+		<h1>Modal Animations</h1>
+		<div class="buttons">
+			<div id="one" class="button">Unfolding</div>
+			<div id="two" class="button">Revealing</div>
+			<div id="three" class="button">Uncovering</div>
+			<div id="four" class="button">Blow Up</div><br>
+			<div id="five" class="button">Meep Meep</div>
+			<div id="six" class="button">Sketch</div>
+			<div id="seven" class="button">Bond</div>
+		</div>
+	</div> -->
 
 	<script src="js/main.js"></script>
 	<!-- <script src="js/main.min.js"></script> -->

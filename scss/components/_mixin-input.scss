@@ -39,6 +39,9 @@
       // .mixin-input__input-wrp:focus
       // .mixin-input__input-wrp:active
       &:focus, &:active {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
         background-image: url('../../images/mixin-input__input-bg-focus.svg');
       }
 
@@ -56,6 +59,9 @@
         // .mixin-input__input-wrp:focus
         // .mixin-input__input-wrp:active
         &:focus, &:active {
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
           background-image: url('../../images/mixin-input__input-bg-mob-focus.svg');
         }
       }

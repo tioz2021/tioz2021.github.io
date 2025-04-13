@@ -1,0 +1,484 @@
+// * {
+//   box-sizing:border-box;
+// }
+
+html,
+body {
+  min-height: 100%;
+  height: 100%;
+
+  &.modal-active {
+    overflow: hidden;
+  }
+}
+
+#modal-container {
+  position: fixed;
+  display: table;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  z-index: 99;
+  backface-visibility: hidden;
+
+  &.one {
+    transform: scaleY(.01) scaleX(0);
+    animation: unfoldIn 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+
+    .modal {
+      transform: scale(0);
+      animation: zoomIn .5s .8s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+    }
+    
+    .modal-background {
+    }
+
+    &.out {
+      transform: scale(1);
+      animation: unfoldOut 1s .3s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+
+      .modal-background {
+      }
+
+      .modal {
+        animation: zoomOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+      }
+    }
+  }
+
+  &.two {
+    transform: scale(1);
+
+    .modal-background {
+      background: rgba(0, 0, 0, .0);
+      animation: fadeIn .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+
+      .modal {
+        opacity: 0;
+        animation: scaleUp .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+      }
+    }
+
+    +.content {
+      animation: scaleBack .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+    }
+
+    &.out {
+      animation: quickScaleDown 0s .5s linear forwards;
+
+      .modal-background {
+        animation: fadeOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+
+        .modal {
+          animation: scaleDown .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+        }
+      }
+
+      +.content {
+        animation: scaleForward .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+      }
+    }
+  }
+
+  &.three {
+    z-index: 0;
+    transform: scale(1);
+
+    .modal-background {
+      background: rgba(0, 0, 0, .6);
+
+      .modal {
+        animation: moveUp .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+      }
+    }
+
+    +.content {
+      z-index: 1;
+      animation: slideUpLarge .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+    }
+
+    &.out {
+      .modal-background {
+        .modal {
+          animation: moveDown .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+        }
+      }
+
+      +.content {
+        animation: slideDownLarge .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+      }
+    }
+  }
+
+  &.four {
+    z-index: 0;
+    transform: scale(1);
+
+    .modal-background {
+      background: rgba(0, 0, 0, .7);
+
+      .modal {
+        animation: blowUpModal .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+      }
+    }
+
+    +.content {
+      z-index: 1;
+      animation: blowUpContent .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+    }
+
+    &.out {
+      .modal-background {
+        .modal {
+          animation: blowUpModalTwo .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+        }
+      }
+
+      +.content {
+        animation: blowUpContentTwo .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+      }
+    }
+  }
+
+  &.five {
+    transform: scale(1);
+
+    .modal-background {
+      background: rgba(0, 0, 0, .0);
+      animation: fadeIn .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+
+      .modal {
+        transform: translateX(-1500rem);
+        animation: roadRunnerIn .3s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+      }
+    }
+
+    &.out {
+      animation: quickScaleDown 0s .5s linear forwards;
+
+      .modal-background {
+        animation: fadeOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+
+        .modal {
+          animation: roadRunnerOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+        }
+      }
+    }
+  }
+
+  &.six {
+    transform: scale(1);
+
+    .modal-background {
+      background: rgba(0, 0, 0, .0);
+      animation: fadeIn .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+
+      .modal {
+        background-color: transparent;
+        animation: modalFadeIn .5s .8s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+
+        h2,
+        p {
+          opacity: 0;
+          position: relative;
+          animation: modalContentFadeIn .5s 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+        }
+
+        .modal-svg {
+          rect {
+            animation: sketchIn .5s .3s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+          }
+        }
+      }
+    }
+
+    &.out {
+      animation: quickScaleDown 0s .5s linear forwards;
+
+      .modal-background {
+        animation: fadeOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+
+        .modal {
+          animation: modalFadeOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+
+          h2,
+          p {
+            animation: modalContentFadeOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+          }
+
+          .modal-svg {
+            rect {
+              animation: sketchOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.seven {
+    transform: scale(1);
+
+    .modal-background {
+      background: rgba(0, 0, 0, .0);
+      animation: fadeIn .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+
+      .modal {
+        height: 75rem;
+        width: 75rem;
+        border-radius: 75rem;
+        overflow: hidden;
+        animation: bondJamesBond 1.5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+
+        h2,
+        p {
+          opacity: 0;
+          position: relative;
+          animation: modalContentFadeIn .5s 1.4s linear forwards;
+        }
+      }
+    }
+
+    &.out {
+      animation: slowFade .5s 1.5s linear forwards;
+
+      .modal-background {
+        background-color: rgba(0, 0, 0, .7);
+        animation: fadeToRed 2s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+
+        .modal {
+          border-radius: 3rem;
+          height: 162rem;
+          width: 227rem;
+          animation: killShot 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+
+          h2,
+          p {
+            animation: modalContentFadeOut .5s .5 cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+          }
+        }
+      }
+    }
+  }
+
+  .modal-background {
+    display: table-cell;
+    // background: rgba(0, 0, 0, .8);
+    background-color: rgba(78, 81, 245, 0.6);
+    text-align: center;
+    vertical-align: middle;
+
+    width: 100vw;
+    height: 100vh;
+    backface-visibility: hidden;
+  }
+
+  .modal {
+    backface-visibility: hidden;
+    box-sizing: border-box;
+    width: 1000rem;
+    height: 266rem;
+    background-color: #f4f5ff;
+    border: 1rem solid rgba(78, 81, 245, 0.6);
+    clip-path: polygon(0 50rem, 50rem 0, calc(100% - 0rem) 0, 100% 50rem, 100% calc(100% - 50rem), calc(100% - 50rem) 100%, 0rem 100%, 0 calc(120% - 50rem));
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 50rem;
+    padding-bottom: 45rem;
+
+    position: absolute;
+    margin: 0 auto;
+    left: 50%;
+    top: 50%;
+    margin-left: -500rem;
+    margin-top: -133rem;
+
+    @media screen and (max-width: $bp-tab) {
+      width: 696rem;
+      height: auto;
+      padding-top: 36rem;
+      padding-bottom: 50rem;
+      margin-left: -348rem;
+      margin-top: -139rem;
+      flex-wrap: wrap;
+    }
+
+    @media screen and (max-width: $bp-mob) {
+      width: 328rem;
+      height: 188rem;
+      padding-top: 24rem;
+      padding-left: 12rem;
+      padding-right: 12rem;
+      padding-bottom: 36rem;
+      margin-left: -164rem;
+      margin-top: -99rem;
+      clip-path: polygon(0 24rem, 24rem 0, calc(100% - 0rem) 0, 100% 24rem, 100% calc(100% - 24rem), calc(100% - 24rem) 100%, 0rem 100%, 0 calc(120% - 24rem));
+    }
+
+    // .modal-svg {
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    //   height: 100%;
+    //   width: 100%;
+    //   border-radius: 3rem;
+
+    //   rect {
+    //     stroke: #fff;
+    //     stroke-width: 2rem;
+    //     stroke-dasharray: 778;
+    //     stroke-dashoffset: 778;
+    //   }
+    // }
+  }
+}
+
+.modal-icon-close {
+  width: 36rem;
+  height: 36rem;
+  position: absolute;
+  top: 12rem;
+  right: 12rem;
+  cursor: pointer;
+
+  @media screen and (max-width: $bp-mob) {
+    width: 24rem;
+    height: 24rem;
+    top: 8rem;
+    right: 8rem;
+  }
+
+  // .modal-icon-close path
+  path {
+    transition: all .3s ease;
+  }
+
+  // .modal-icon-close:hover path
+  &:hover {
+    path {
+      stroke: $body-4-color;
+    }
+  }
+}
+
+.mobal-decor-img{
+  width: 900rem;
+  height: 176rem;
+  position: absolute;
+  top: 45rem;
+  left: 50rem;
+
+  @media screen and (max-width: $bp-tab) {
+    display: none;
+  }
+}
+
+.modal-input-wrp {
+  width: 425rem;
+  position: relative;
+  z-index: 5;
+
+  @media screen and (max-width: $bp-tab) {
+    width: 100%;
+    margin-bottom: 21rem;
+  }
+
+  @media screen and (max-width: $bp-mob) {
+    margin-bottom: 12rem;
+  }
+}
+
+.modal-text {
+  text-align: left;
+  color: $body-2-color;
+  opacity: .6;
+  margin-bottom: 8rem;
+
+  @media screen and (max-width: $bp-mob) {
+    font-size: 14rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.mobal-input-wrp-bg {
+}
+
+.modal-input {
+  background-color: unset;
+  border: unset;
+  width: 425rem;
+  height: 50rem;
+  background-image: url('../../images/mobal-input-wrp-bg.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-sizing: border-box;
+  padding-left: 16rem;
+
+  @media screen and (max-width: $bp-tab) {
+    width: 596rem;
+    background-image: url('../../images/mobal-input-wrp-bg-tab.svg');
+  }
+
+  @media screen and (max-width: $bp-mob) {
+    width: 304rem;
+    height: 36rem;
+    padding-left: 8rem;
+    background-image: url('../../images/mobal-input-wrp-bg-mob.svg');
+  }
+}
+
+.modal-input-wrp-out{
+  -webkit-user-select: text;
+  user-select: text;
+  pointer-events: none;
+
+  @media screen and (max-width: $bp-tab) {
+    margin-bottom: 0rem;
+  }
+}
+
+.content {
+  min-height: 100%;
+  height: 100%;
+  background: white;
+  position: relative;
+  z-index: 0;
+
+  h1 {
+    padding: 75rem 0 30rem 0;
+    text-align: center;
+    font-size: 30rem;
+    line-height: 30rem;
+  }
+
+  .buttons {
+    max-width: 800rem;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+
+    .button {
+      display: inline-block;
+      text-align: center;
+      padding: 10rem 15rem;
+      margin: 10rem;
+      background: red;
+      font-size: 18rem;
+      background-color: #efefef;
+      border-radius: 3rem;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, .3);
+      cursor: pointer;
+
+      &:hover {
+        color: white;
+        background: #009bd5;
+      }
+    }
+  }
+}

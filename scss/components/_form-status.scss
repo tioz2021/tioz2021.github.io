@@ -84,21 +84,138 @@
   }
 }
 
-@keyframes strongSvgPulse {
-  0%, 100% { 
-    fill: #4E51F5;
-    filter: drop-shadow(0 0 2rem rgba(78, 81, 245, 0.8));
+.form-status--mod {
+  width: 100%;
+  height: auto;
+  margin-top: 70rem;
+  flex-direction: column;
+  background: unset;
+  align-items: unset;
+
+  @media screen and (max-width: $bp-mob) {
+    margin-top: 35rem;
   }
-  25% {
-    fill: #9093f9;
-    filter: drop-shadow(0 0 4rem rgba(144, 147, 249, 0.9));
+}
+
+.form-status--mod-text {
+  @media screen and (max-width: $bp-mob) {
+    display: flex;
   }
-  50% { 
-    fill: #28B6E1;
-    filter: drop-shadow(0 0 6rem rgba(40, 182, 225, 1));
+}
+
+.form-status--mod-text .form-status__icon {
+  display: none;
+  
+  @media screen and (max-width: $bp-mob) {
+    display: block;
   }
-  75% {
-    fill: #9093f9;
-    filter: drop-shadow(0 0 4rem rgba(144, 147, 249, 0.9));
+}
+
+.form-status--mod-value {
+  margin-bottom: 12rem;
+  margin-top: 12rem;
+
+  @media screen and (max-width: $bp-mob) {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+  }
+}
+
+.form-status--mod-text span {
+  color: $body-3-color;
+
+  @media screen and (max-width: $bp-mob) {
+    max-width: 136rem;
+    margin-left: 30rem;
+  }
+}
+
+.form-status-wrp {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 24rem;
+
+  @media screen and (max-width: $bp-mob) {
+    margin-bottom: 16rem;
+  }
+}
+
+.form-status--mod .form-status__icon {
+  position: relative;
+  top: unset;
+  right: unset;
+  transform: unset;
+  margin-left: 8rem;
+
+  @media screen and (max-width: $bp-mob) {
+    position: absolute;
+    right: 0;
+    width: 16rem;
+    height: 20rem;
+    top: 9rem;
+  }
+}
+
+.form-status-wrp .form-status__icon{
+  @media screen and (max-width: $bp-mob) {
+    display: none;
+  }
+}
+
+.form-status--mod .default-btn {
+  width: 300rem;
+  height: 50rem;
+  margin-bottom: 0;
+  background-color: $body-4-color;
+
+  @media screen and (max-width: $bp-mob) {
+    height: 36rem;
+  }
+}
+
+.form-status--mod .default-btn.active,
+.form-status--mod .default-btn:hover {
+  background-color: $body-3-color;
+}
+
+.form-status--mod-text-other {
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  @media screen and (max-width: $bp-tab) {
+    flex-wrap: wrap;
+  }
+}
+
+.form-status--mod-text-other span {
+  max-width: 700rem;
+  margin-left: 16rem;
+  display: ruby;
+
+  @media screen and (max-width: $bp-tab) {
+    margin-left: 0rem;
+  }
+
+  @media screen and (max-width: $bp-tab) {
+    max-width: 306rem;
+  }
+}
+
+.form-status--mod-text-other-icon-ok {
+  width: 24rem;
+  height: 24rem;
+  margin-left: 4rem;
+  position: relative;
+  top: 5rem;
+
+  @media screen and (max-width: $bp-tab) {
+    position: absolute;
+    width: 16rem;
+    height: 16rem;
+    right: 0;
+    top: 50%;
+    // transform: translateY(-50%);
   }
 }

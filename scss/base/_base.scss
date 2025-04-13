@@ -1,11 +1,10 @@
-/* Отключает ВСЕ выделения при кликах/тапах */
 * {
-  -webkit-tap-highlight-color: transparent; /* Для мобильных */
-  -webkit-user-select: none;  /* Запрет выделения текста */
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; 
-  outline: none !important; /* На всякий случай */
+  -webkit-tap-highlight-color: transparent;
+  // -webkit-user-select: none;  
+  // -moz-user-select: none;
+  // -ms-user-select: none;
+  // user-select: none; 
+  outline: none !important;
 }
 
 /* Но разрешаем выделение для полей ввода */
@@ -17,13 +16,12 @@ input, textarea, [contenteditable] {
 html{
   font-family: $main-font;
   scroll-behavior: smooth;
-  transform: translateZ(0);
+  // transform: translateZ(0);
   backface-visibility: hidden;
 
-  scrollbar-gutter: stable; /* Резервирует место под скролл */
-  overflow-y: scroll; /* Всегда включает вертикальную прокрутку (но скроллбар скрыт) */
+  // scrollbar-gutter: stable;
+  // overflow-y: scroll;
   
-  /* Скрываем сам скроллбар */
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE/Edge */
   &::-webkit-scrollbar {
