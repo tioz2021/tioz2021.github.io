@@ -395,16 +395,12 @@
   width: 100%;
   position: absolute;
   top: -101rem;
-  // height: 157rem;
-  // right: -5rem;
-  width: 158rem;
-  right: -6rem;
+  height: 157.4rem;
+  right: -99.5rem;
   z-index: 2;
-
   background-image: url('../../images/main-form__step-wrp-step-img.svg');
   background-position: 100%;
-  // background-size: 100%;
-  background-size: contain;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 
   @media screen and (max-width: $bp-tab) {

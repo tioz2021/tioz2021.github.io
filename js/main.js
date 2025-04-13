@@ -464,19 +464,16 @@
     updateValues() {
       const positions = [0, ...this.handles.map(h => parseFloat(h.style.left)), 100];
       let segments = positions.slice(1).map((pos, i) => pos - positions[i]);
-      
-      // Проверяем все сегменты на минимальное значение
+
       let needsAdjustment = true;
       while (needsAdjustment) {
         needsAdjustment = false;
-        
-        // Находим сегменты меньше минимального
+
         for (let i = 0; i < segments.length; i++) {
           if (segments[i] < this.MIN_SEGMENT) {
             needsAdjustment = true;
             const diff = this.MIN_SEGMENT - segments[i];
-            
-            // Пытаемся взять разницу у соседних сегментов
+
             if (i > 0 && segments[i-1] > this.MIN_SEGMENT) {
               const available = segments[i-1] - this.MIN_SEGMENT;
               const transfer = Math.min(diff, available);
@@ -493,7 +490,6 @@
         }
       }
       
-      // Обновляем позиции ручек на основе скорректированных значений
       let accumulated = 0;
       for (let i = 0; i < this.values.length - 1; i++) {
         accumulated += segments[i];
@@ -523,10 +519,15 @@
           this.values[0] = this.values[0] + 0.001;
         } 
         else if(this.values.length === 6) {
-          this.values[5] = this.values[5] - 0.0015;
+          console.log(this.values[5])
+          if( this.values[5] > 0.15) {
+            this.values[5] = this.values[5] - 0.0015;
+          }
         }
         else if(this.values.length === 7) {
-          this.values[6] = this.values[6] - 0.002;
+          if( this.values[6] > 0.15) {
+            this.values[6] = this.values[6] - 0.002;
+          }
         }
         
         if (inputsPercent[index]) {
