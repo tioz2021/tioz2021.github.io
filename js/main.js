@@ -523,10 +523,10 @@
           this.values[0] = this.values[0] + 0.001;
         } 
         else if(this.values.length === 6) {
-          // this.values[0] = this.values[0] + 0.001;
+          this.values[5] = this.values[5] - 0.002;
         }
         else if(this.values.length === 7) {
-          // this.values[0] = this.values[0] + 0.001;
+          this.values[6] = this.values[6] - 0.002;
         }
         
         if (inputsPercent[index]) {
