@@ -420,9 +420,29 @@ body {
   box-sizing: border-box;
   padding-left: 16rem;
 
+  transition: all .3s ease;
+
+  // .modal-input:focus
+  // .modal-input:active
+  &:focus, &:active {
+    background-image: url('../../images/mobal-input-wrp-bg-focus.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
   @media screen and (max-width: $bp-tab) {
     width: 596rem;
     background-image: url('../../images/mobal-input-wrp-bg-tab.svg');
+
+    // .modal-input:focus
+    // .modal-input:active
+    &:focus, &:active {
+      background-image: url('../../images/mobal-input-wrp-bg-tab-focus.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
 
   @media screen and (max-width: $bp-mob) {
@@ -430,6 +450,15 @@ body {
     height: 36rem;
     padding-left: 8rem;
     background-image: url('../../images/mobal-input-wrp-bg-mob.svg');
+
+    // .modal-input:focus
+    // .modal-input:active
+    &:focus, &:active {
+      background-image: url('../../images/mobal-input-wrp-bg-mob-focus.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
 }
 
