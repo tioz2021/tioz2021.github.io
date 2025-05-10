@@ -887,3 +887,58 @@
   document.querySelector('.modal-icon-close').addEventListener('click', close);
 
 })();
+
+// input cnager calculate
+(() => {
+  const bubbleValue = document.querySelector('.value-bubble-v2 span');
+  const mainBtn = document.querySelector('.btn-flip');
+
+  const modalInputSend = document.querySelector('.modal-input-send');
+  const modalInputReceive = document.querySelector('.modal-input-receive');
+  const mainInputs = document.querySelectorAll('.main-form__step-input-wrp');
+
+  let inputCounter = 0;
+  let fixedForInput = 0;
+
+  if (!modalInputSend || !modalInputReceive || !mainBtn || !mainInputs) return;
+
+  // Функция для расчёта и вывода результата
+  function calculateAndDisplay() {
+    try {
+
+      mainInputs.forEach(input => {
+        if(input.classList.contains('disabled')) {
+          inputCounter += 1;
+        }
+      })
+
+      fixedForInput = (8 - inputCounter) * 0.0002;
+      inputCounter = 0;
+
+
+      const percentText = bubbleValue.textContent || "0%"; // На случай, если нет значения
+      const percentValue = parseFloat(percentText) / 100; // "0.1%" → 0.001
+
+      const inputValue = parseFloat(modalInputSend.value) || 0; // Если инпут пустой → 0
+
+      // Формула: inputValue + 0.0002 + (inputValue * процент)
+      const total = inputValue + fixedForInput + (inputValue * percentValue);
+
+      // Выводим результат (можно добавить .toFixed(9) для округления)
+      modalInputReceive.value = total.toFixed(9);
+    } catch (e) {
+      console.error('Calculation error:', e);
+      modalInputReceive.value = '';
+    }
+  }
+
+  // 1. Расчёт при открытии попапа (клик на mainBtn)
+  mainBtn.addEventListener('click', function() {
+    // Если попап открывается не мгновенно, можно добавить задержку:
+    setTimeout(calculateAndDisplay, 100); // 100 мс (настройте под вашу логику)
+  });
+
+  // 2. Расчёт при изменении первого инпута
+  modalInputSend.addEventListener('input', calculateAndDisplay);
+
+})();

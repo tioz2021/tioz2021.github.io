@@ -6422,4 +6422,92 @@ body.modal-active {
 }
 .how-work__end-text--second {
   color: #4e51f5;
+}
+
+.error-page {
+  position: relative;
+  box-sizing: border-box;
+  padding-top: 100rem;
+  padding-bottom: 150rem;
+  width: 100%;
+  min-height: 826rem;
+  overflow: hidden;
+}
+@media screen and (max-width: 1000px) {
+  .error-page {
+    padding-top: 220rem;
+    padding-bottom: 220rem;
+    min-height: unset;
+  }
+}
+@media screen and (max-width: 600px) {
+  .error-page {
+    padding-top: 120rem;
+    padding-bottom: 120rem;
+  }
+}
+.error-page__container {
+  flex-direction: column;
+  align-items: center;
+}
+.error-page__title {
+  text-align: center;
+  margin-bottom: 15rem;
+  line-height: 110%;
+}
+.error-page__text {
+  max-width: 800rem;
+  text-align: center;
+  margin-bottom: 50rem;
+}
+.error-page__decor-wrp {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: rgba(78, 81, 245, 0.1);
+}
+.error-page__decor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 560rem;
+  height: 826rem;
+  background-image: url("../../images/error-page-decor.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+@media screen and (max-width: 1000px) {
+  .error-page__decor {
+    width: 768rem;
+    height: 150rem;
+    background-image: url("../../images/error-page-decor-tab.svg");
+  }
+}
+@media screen and (max-width: 600px) {
+  .error-page__decor {
+    width: 360rem;
+    height: 70rem;
+  }
+}
+.error-page__decor:last-child {
+  left: unset;
+  right: 0;
+}
+@media screen and (max-width: 1000px) {
+  .error-page__decor:last-child {
+    top: unset;
+    bottom: 0;
+  }
+}
+
+.error-page .button-container {
+  width: auto;
+}
+
+.error-page .button__notification .button.v12 {
+  margin: 0 auto;
 }/*# sourceMappingURL=main.css.map */
