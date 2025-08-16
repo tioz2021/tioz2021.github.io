@@ -19,6 +19,7 @@
   // .header__nav
   &__nav {
     width: 738px;
+    margin-left: 107px;
     display: flex;
     align-items: center;
   }
@@ -41,8 +42,8 @@
 
   // .header__nav-item
   &__nav-item {
-    font-weight: 500;
     margin-right: 36px;
+
     // .header__nav-link:first-child
     &:first-child {
       .header__nav-link {
@@ -59,11 +60,11 @@
 
   // .header__nav-link
   &__nav-link {
-    opacity: 0.6;
+    font-weight: 500;
 
     // .header__nav-link:hover
     &:hover {
-      opacity: 1;
+      color: var(--bg-2);
     }
   }
 
