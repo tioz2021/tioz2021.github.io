@@ -1,3 +1,15 @@
+:root {
+  --bg-0: #000;
+  --bg-1: #dfd7ce;
+  --bg-2: #f9be7c;
+  --bg-3: #544a3e;
+  --bg-4: #2c2720;
+}
+
+:root {
+  --font-family: "Futura PT", sans-serif;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -451,18 +463,99 @@ template {
   font-weight: 400;
   font-style: normal;
 }
-:root {
-  --bg-0: #000;
-  --bg-1: #dfd7ce;
-  --bg-2: #f9be7c;
-  --bg-3: #544a3e;
-  --bg-4: #2c2720;
+html {
+  font-family: var(--font-family);
+  scroll-behavior: smooth;
+  backface-visibility: hidden;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
 }
-
-:root {
-  --font-family: "Futura PT", sans-serif;
+html::-webkit-scrollbar {
+  display: none; /* Chrome/Safari/Opera */
 }
 
 body {
-  font-family: var(--font-family);
-}/*# sourceMappingURL=style.css.map */
+  color: var(--bg-1);
+}
+
+a {
+  color: var(--bg-1);
+  text-decoration: unset;
+}
+
+input {
+  outline: unset;
+}
+
+.container {
+  width: 100%;
+  max-width: 1604px;
+  margin: 0 auto;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.img-wrp {
+  display: block;
+  position: relative;
+}
+.img-wrp img,
+.img-wrp svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@font-face {
+  font-family: "Futura PT";
+  src: local("Futura PT"), url("../fonts/futura-pt-medium.otf") format("otf"), url("../fonts/futura-pt-medium.ttf") format("ttf"), url("../fonts/futura-pt-medium.woff") format("woff"), url("../fonts/futura-pt-medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Futura PT";
+  src: local("Futura PT"), url("../fonts/futura-pt-book.otf") format("otf"), url("../fonts/futura-pt-book.ttf") format("ttf"), url("../fonts/futura-pt-book.woff") format("woff"), url("../fonts/futura-pt-book.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+.text-main-title {
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 110%;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.text-title {
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 120%;
+}
+
+.text-price {
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 120%;
+}
+
+.text-title {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 120%;
+}
+
+.text-main {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+}
+
+.text-decor {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}/*# sourceMappingURL=main.css.map */

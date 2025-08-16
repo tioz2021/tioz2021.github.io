@@ -1,0 +1,21 @@
+// abstracts
+@import "abstracts/variables";
+@import "abstracts/mixin";
+
+// reset/normalize
+@import "base/reset";
+@import "vendors/normalize";
+
+// fonts
+@import "base/fonts";
+
+// base
+@import "base/base";
+@import "base/loyout";
+@import "base/fonts";
+@import "base/typography";
+
+// components
+@import "components/header.scss";
+@import "components/lng-switcher.scss";
+@import "components/main-menu.scss";

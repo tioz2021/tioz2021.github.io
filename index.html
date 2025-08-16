@@ -5,10 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+  <header class="header">
+    <div class="container header__container">
+      <div class="header__lng-switcher lng-switcher">
+        <a href="#" class="lng-switcher__btn lng-switcher__btn--active">EN</a>
+        <a href="#" class="lng-switcher__btn">RU</a>
+      </div>
 
+      <nav class="header__nav">
+        <div class="header__nav-decoration header__nav-decoration--left img-wrp">
+          <img src="image/header-decor-left.svg" alt="decoration">
+        </div>
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">Начать игру</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">Форум</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">Discord</a>
+          </li>
+        </ul>
+        <div class="header__nav-decoration header__nav-decoration--right img-wrp">
+          <img src="image/header-decor-right.svg" alt="decoration">
+        </div>
+      </nav>
+
+      <div class="header__main-menu main-menu">
+        <div class="main-menu__head">
+          <div class="main-menu__head-user-name">Storm54</div>
+          <div class="main-menu__head-open-menu-btn img-wrp">
+            <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 0H16L8.16025 12L0 0Z" fill="#F9BE7C"/>
+            </svg>              
+          </div>
+          <div class="main-menu__head-user-avatar img-wrp">
+            <img src="image/ava.png" alt="avatar">
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </header>
 
 </body>
 </html>
