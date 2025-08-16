@@ -1,5 +1,5 @@
 * {
-
+  
 }
 
 html {
@@ -22,6 +22,7 @@ body {
 a{
   color: var(--bg-1);
   text-decoration: unset;
+  transition: all 0.3s ease-in-out;
 }
 
 input{

@@ -2,17 +2,28 @@
 
   // .main-menu__head
   &__head {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
   }
 
   // .main-menu__head-user-name
   &__head-user-name {
+    font-weight: 500;
+    margin-right: 8px;
   }
 
   // .main-menu__head-open-menu-btn
   &__head-open-menu-btn {
+    width: 16px;
+    height: 12px;
+    margin-right: 16px;
   }
 
   // .main-menu__head-user-avatar
   &__head-user-avatar {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
   }
 }

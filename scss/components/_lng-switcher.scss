@@ -2,9 +2,17 @@
 
   // .lng-switcher__btn
   &__btn {
+    margin-right: 16px;
+    font-weight: 500;
+
+    // .lng-switcher__btn:last-child
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   // .lng-switcher__btn--active
   &__btn--active {
+    color: var(--bg-2);
   }
 }
