@@ -437,4 +437,32 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+@font-face {
+  font-family: "Futura PT";
+  src: local("Futura PT"), url("../fonts/futura-pt-medium.otf") format("otf"), url("../fonts/futura-pt-medium.ttf") format("ttf"), url("../fonts/futura-pt-medium.woff") format("woff"), url("../fonts/futura-pt-medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Futura PT";
+  src: local("Futura PT"), url("../fonts/futura-pt-book.otf") format("otf"), url("../fonts/futura-pt-book.ttf") format("ttf"), url("../fonts/futura-pt-book.woff") format("woff"), url("../fonts/futura-pt-book.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+:root {
+  --bg-0: #000;
+  --bg-1: #dfd7ce;
+  --bg-2: #f9be7c;
+  --bg-3: #544a3e;
+  --bg-4: #2c2720;
+}
+
+:root {
+  --font-family: "Futura PT", sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
 }/*# sourceMappingURL=style.css.map */
