@@ -1,0 +1,34 @@
+.page-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 3;
+
+  // .page-nav__link
+  &__link {
+    opacity: 0.6;
+    cursor: pointer;
+    
+    // .page-nav__link:hover
+    &:hover{
+      opacity: 1;
+    }
+  }
+
+  // .page-nav__link--active
+  &__link--active {
+    opacity: 1;
+  }
+
+  // .page-nav__dot
+  &__dot {
+    width: 12px;
+    height: 12px;
+    margin-left: 12px;
+    margin-right: 12px;
+    background-image: url('../../image/page-nave-dot-img.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}

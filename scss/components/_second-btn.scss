@@ -52,5 +52,21 @@
     font-weight: 500;
     position: relative;
     z-index: 3;
+    display: flex;
+    align-items: center;
+  }
+
+  // .second-btn__num
+  &__num {
+    margin-left: 4px;
+    border-radius: 100%;
+    background-color: var(--bg-1);
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    font-weight: 500;
+    color: var(--bg-0);
   }
 }

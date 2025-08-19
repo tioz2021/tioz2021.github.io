@@ -643,6 +643,7 @@ input {
 }
 .main-menu.active {
   width: 363px;
+  z-index: 5;
 }
 .main-menu.active .main-menu__bg {
   visibility: visible;
@@ -854,6 +855,19 @@ input {
   font-weight: 500;
   position: relative;
   z-index: 3;
+  display: flex;
+  align-items: center;
+}
+.second-btn__num {
+  margin-left: 4px;
+  border-radius: 100%;
+  background-color: var(--bg-1);
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  color: var(--bg-0);
 }
 
 .footer {
@@ -876,6 +890,33 @@ input {
 .footer__text {
   font-weight: 500;
   opacity: 0.6;
+}
+
+.page-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 3;
+}
+.page-nav__link {
+  opacity: 0.6;
+  cursor: pointer;
+}
+.page-nav__link:hover {
+  opacity: 1;
+}
+.page-nav__link--active {
+  opacity: 1;
+}
+.page-nav__dot {
+  width: 12px;
+  height: 12px;
+  margin-left: 12px;
+  margin-right: 12px;
+  background-image: url("../../image/page-nave-dot-img.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .fs {
@@ -946,4 +987,73 @@ input {
   font-weight: 500;
   margin-left: -2px;
   margin-bottom: 46px;
+}
+
+.shop-page-top {
+  height: 1145px;
+  position: relative;
+}
+.shop-page-top__page-nav {
+  position: absolute;
+  top: 51px;
+}
+.shop-page-top__decoration-wrp {
+  width: 100%;
+  height: 401px;
+  position: absolute;
+  left: 50%;
+  top: 44px;
+  transform: translateX(-50%);
+}
+.shop-page-top__decoration {
+  position: absolute;
+}
+.shop-page-top__decoration--bottom {
+  width: 100%;
+  height: 196px;
+  top: 205px;
+  z-index: 3;
+}
+.shop-page-top__decoration--warriors {
+  width: 578px;
+  height: 301px;
+  left: 50%;
+  top: -1px;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+.shop-page-top__decoration--flag-left {
+  width: 289px;
+  height: 269px;
+  left: 602px;
+  top: 36px;
+  z-index: 1;
+}
+.shop-page-top__decoration--flag-center {
+  width: 578px;
+  height: 301px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0px;
+}
+.shop-page-top__decoration--flag-right {
+  width: 289px;
+  height: 269px;
+  right: 602px;
+  top: 36px;
+  z-index: 1;
+}
+.shop-page-top__btn {
+  position: absolute;
+  top: 44px;
+  right: 155px;
+}
+.shop-page-top__bg-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: -2px;
+  transform: translateX(-50%);
+  z-index: -1;
 }/*# sourceMappingURL=main.css.map */

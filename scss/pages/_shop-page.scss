@@ -1,0 +1,97 @@
+.shop-page-top {
+  height: 1145px;
+  position: relative;
+
+  // .shop-page-top__container
+  &__container {
+
+  }
+
+  // .shop-page-top__page-nav
+  &__page-nav {
+    position: absolute;
+    top: 51px;
+  }
+
+  // .shop-page-top__decoration-wrp
+  &__decoration-wrp {
+    width: 100%;
+    height: 401px;
+    position: absolute;
+    left: 50%;
+    top: 44px;
+    transform: translateX(-50%);
+  }
+
+  // .shop-page-top__decoration
+  &__decoration {
+    position: absolute;
+  }
+
+  // .shop-page-top__decoration--bottom
+  &__decoration--bottom {
+    width: 100%;
+    height: 196px;
+    top: 205px;
+    z-index: 3;
+  }
+
+  // .shop-page-top__decoration--warriors
+  &__decoration--warriors {
+    width: 578px;
+    height: 301px;
+    left: 50%;
+    top: -1px;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+
+  // .shop-page-top__decoration--flag
+  &__decoration--flag {
+  }
+
+  // .shop-page-top__decoration--flag-left
+  &__decoration--flag-left {
+    width: 289px;
+    height: 269px;
+    left: 602px;
+    top: 36px;
+    z-index: 1;
+  }
+
+  // .shop-page-top__decoration--flag-center
+  &__decoration--flag-center {
+    width: 578px;
+    height: 301px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0px;
+  }
+
+  // .shop-page-top__decoration--flag-right
+  &__decoration--flag-right {
+    width: 289px;
+    height: 269px;
+    right: 602px;
+    top: 36px;
+    z-index: 1;
+  }
+
+  // .shop-page-top__btn
+  &__btn {
+    position: absolute;
+    top: 44px;
+    right: 155px;
+  }
+
+  // .shop-page-top__bg-img
+  &__bg-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: -2px;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+}
