@@ -4,11 +4,12 @@
   background-position: center;
   background-size: cover;
   height: 80px;
+  position: relative;
 
   // .header__container
   &__container {
     max-width: 100%;
-    justify-content: space-between;
+    // justify-content: space-between;
     align-items: center;
   }
 
@@ -19,7 +20,7 @@
   // .header__nav
   &__nav {
     width: 738px;
-    margin-left: 107px;
+    margin-left: 484px;
     display: flex;
     align-items: center;
   }
@@ -64,7 +65,7 @@
 
     // .header__nav-link:hover
     &:hover {
-      color: var(--bg-2);
+      opacity: 1;
     }
   }
 
@@ -75,5 +76,7 @@
 
   // .header__main-menu
   &__main-menu {
+    margin-left: auto;
+    margin-right: 0;
   }
 }

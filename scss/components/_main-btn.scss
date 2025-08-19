@@ -8,22 +8,6 @@
 
   position: relative;
 
-  // .main-btn__button::after
-  &::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 254px;
-    height: 60px;
-
-    filter: blur(30px);
-    background: rgba(249, 190, 124, 0.6);
-    opacity: 0.6;
-    z-index: 1;
-  }
-
   // .main-btn__decoration
   &__decoration {
     width: 156px;
@@ -37,10 +21,10 @@
 
   // .main-btn__button
   &__button {
-    background-image: url('../../image/button-bg.svg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    // background-image: url('../../image/button-bg.svg');
+    // background-size: cover;
+    // background-position: center;
+    // background-repeat: no-repeat;
     width: 374px;
     height: 92px;
 
@@ -49,16 +33,50 @@
     justify-content: center;
     text-transform: uppercase;
 
-    font-weight: 500;
-    color: var(--bg-1);
-
     position: relative;
-    z-index: 2;
-
     cursor: pointer;
+
+    // .main-btn__button::after
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 254px;
+      height: 60px;
+  
+      filter: blur(30px);
+      background: rgba(249, 190, 124, 0.6);
+      opacity: 0.6;
+      z-index: 1;
+      transition: all 300ms ease-in-out;
+    }
+
+    // .main-btn__button-text
+    &-text {
+      font-weight: 500;
+      color: var(--bg-1);
+      z-index: 3;
+    }
+
+    // .main-btn__button-bg
+    &-bg {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+    }
 
     // .main-btn__button:hover
     &:hover {
+      // .main-btn__button::after:hover
+      &::after {
+        opacity: 1;
+      }
     }
   }
 

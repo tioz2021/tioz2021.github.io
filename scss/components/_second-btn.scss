@@ -1,0 +1,56 @@
+.second-btn {
+  width: 293px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: unset;
+  border: none;
+  position: relative;
+  cursor: pointer;
+
+  // .second-btn__bg
+  &__bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    fill: linear-gradient(180deg, #7f5a30 0%, #261605 100%);
+    background-color: #7F5A30;
+    
+    /* форма с острыми углами */
+    clip-path: polygon(
+      20px 0%,        /* верхний левый отступ */
+      calc(100% - 20px) 0%, /* верхний правый */
+      100% 50%,       /* острый угол справа */
+      calc(100% - 20px) 100%, /* нижний правый */
+      20px 100%,      /* нижний левый */
+      0% 50%          /* острый угол слева */
+    );
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background-image: url('../../image/seccond-btn-bg.png');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      z-index: 2;
+    }
+  }
+
+  // .second-btn__text
+  &__text {
+    color: var(--bg-1);
+    font-weight: 500;
+    position: relative;
+    z-index: 3;
+  }
+}
