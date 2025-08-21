@@ -1,3 +1,4 @@
+// header menu
 (() => {
   const mainBtn = document.querySelector('.main-menu__head');
   const menu = document.querySelector('.main-menu');
@@ -15,3 +16,15 @@
     }
   });
 })();
+
+// paymen method 
+(() => {
+  document.addEventListener("DOMContentLoaded", () => {
+    const paymentBlock = document.querySelector(".payment-methods");
+    const toggleBtn = paymentBlock.querySelector(".payment-methods__toggle-btn");
+  
+    toggleBtn.addEventListener("click", () => {
+      paymentBlock.classList.toggle("open");
+    });
+  });  
+}) ();

@@ -1,0 +1,115 @@
+// .payment-methods__list {
+//   display: none; /* по умолчанию скрыто */
+// }
+
+// .payment-methods.open .payment-methods__list {
+//   display: block; /* открываем при клике */
+// }
+
+.payment-methods {
+  width: 302px;
+  background-color: rgba(249, 190, 124, 0.08);
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(223, 215, 206, 0.6);  
+
+  // .payment-methods.open
+  &.open {
+
+    // .payment-methods.open .payment-methods__list
+    .payment-methods__list {
+      visibility: visible;
+      opacity: 1;
+      max-height: 500px;
+    }
+
+    // .payment-methods__toggle-btn
+    .payment-methods__toggle-btn {
+      transform: rotate(180deg);
+    }
+  }
+
+  // .payment-methods__header
+  &__header {
+    height: 61px;
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  // .payment-methods__item
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+
+  // .payment-methods__radio
+  &__radio {
+    margin-right: 6px;
+    position: relative;
+    top: 2px;
+    left: -1px;
+  }
+
+  // .payment-methods__icon-wrp
+  &__icons-wrp {
+    display: flex;
+    gap: 4px;
+  }
+
+  // .payment-methods__icon
+  &__icon {
+    border-radius: 2px;
+    width: 36px;
+    height: 36px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    // .payment-methods__icon-wrp
+    &-wrp {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+
+  // .payment-methods__toggle-btn
+  &__toggle-btn {
+    background-color: unset;
+    border: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 12px;
+    margin-left: auto;
+    margin-right: 0;
+    cursor: pointer;
+
+    transition: all 350ms ease-in-out;
+  }
+
+  // .payment-methods__list
+  &__list {
+    visibility: hidden;
+    opacity: 0;
+    max-height: 0;
+    transition: all 350ms ease-in-out;
+
+    box-sizing: border-box;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  // .payment-methods__more
+  &__more {
+    box-sizing: border-box;
+    padding-bottom: 12px;
+    color: var(--bg-2);
+    text-align: center;
+  }
+}

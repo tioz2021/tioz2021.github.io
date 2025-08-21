@@ -5,7 +5,14 @@
   background-repeat: no-repeat;
   background-position: center;
   height: 274px;
-  margin-top: -87px;
+  
+  position: relative;
+  z-index: 2;
+  
+  // .footer--index-page
+  &--index-page {
+    margin-top: -87px;
+  }
 
   // .footer__container
   &__container {

@@ -29,6 +29,7 @@
       0% 50%          /* острый угол слева */
     );
 
+    // .second-btn__bg::after
     &::after {
       content: '';
       position: absolute;
@@ -44,6 +45,22 @@
 
       z-index: 2;
     }
+  }
+
+  // .second-btn--nobg
+  &--nobg {
+    background: unset;
+    background-color: var(--bg-0);
+
+    /* форма с острыми углами */
+    clip-path: polygon(
+      20px 0%,        /* верхний левый отступ */
+      calc(100% - 20px) 0%, /* верхний правый */
+      100% 50%,       /* острый угол справа */
+      calc(100% - 20px) 100%, /* нижний правый */
+      20px 100%,      /* нижний левый */
+      0% 50%          /* острый угол слева */
+    );
   }
 
   // .second-btn__text
