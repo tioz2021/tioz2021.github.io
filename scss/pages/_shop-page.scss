@@ -97,6 +97,11 @@
     top: -2px;
     transform: translateX(-50%);
     z-index: -1;
+
+    // .shop-page-top__bg-img img
+    img {
+      object-fit: cover;
+    }
   }
 }
 

@@ -1282,6 +1282,9 @@ main {
   transform: translateX(-50%);
   z-index: -1;
 }
+.shop-page-top__bg-img img {
+  object-fit: cover;
+}
 
 .shop-page-body {
   margin-top: -620px;
