@@ -111,6 +111,12 @@
 
   // .pay-history__list-product-count
   &__list-product-count {
+    color: rgba(223, 215, 206, 0.6);
+
+    // .pay-history__list-product-count span
+    span {
+      color: var(--bg-1);
+    }
   }
 
   // .pay-history__item-price

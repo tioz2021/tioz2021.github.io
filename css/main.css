@@ -606,7 +606,9 @@ main {
 }
 .header__nav {
   width: 738px;
-  margin-left: 484px;
+  margin: 0 auto;
+  position: relative;
+  left: -33px;
   display: flex;
   align-items: center;
 }
@@ -1588,4 +1590,10 @@ main {
 }
 .pay-history__list-product-name {
   margin-bottom: 13px;
+}
+.pay-history__list-product-count {
+  color: rgba(223, 215, 206, 0.6);
+}
+.pay-history__list-product-count span {
+  color: var(--bg-1);
 }/*# sourceMappingURL=main.css.map */

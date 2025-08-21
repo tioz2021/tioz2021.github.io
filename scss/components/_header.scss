@@ -20,7 +20,13 @@
   // .header__nav
   &__nav {
     width: 738px;
-    margin-left: 484px;
+    // margin-left: 484px;
+    
+    // fix position
+    margin: 0 auto;
+    position: relative;
+    left: -33px;
+
     display: flex;
     align-items: center;
   }
