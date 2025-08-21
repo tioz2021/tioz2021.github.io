@@ -1416,7 +1416,7 @@ main {
   min-height: 700px;
   background-image: url("../../image/basket-bg.svg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center top;
   position: relative;
   margin-bottom: 100px;
@@ -1522,4 +1522,70 @@ main {
 
 .footer--basket-page {
   margin-top: 160px;
+}
+
+.pay-history {
+  min-height: 700px;
+  background-image: url("../../image/basket-bg.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+  position: relative;
+  margin-bottom: 119px;
+}
+.pay-history__container {
+  flex-direction: column;
+}
+.pay-history__page-top-box {
+  margin-top: 54px;
+  margin-bottom: 80px;
+}
+.pay-history__title {
+  margin-bottom: 53px;
+}
+.pay-history__head {
+  margin-bottom: 26px;
+}
+.pay-history__item-row {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding-left: 36px;
+  padding-right: 36px;
+}
+.pay-history__item-col1 {
+  width: 338px;
+}
+.pay-history__item-col2 {
+  width: 169px;
+}
+.pay-history__item-col3 {
+  width: 579px;
+  display: flex;
+  position: relative;
+}
+.pay-history__item-col4 {
+  width: 338px;
+}
+.pay-history__head-title {
+  opacity: 0.6;
+}
+.pay-history__item {
+  box-sizing: border-box;
+  padding-top: 22px;
+  border: 1px solid rgba(249, 190, 124, 0.3);
+  border-radius: 8px;
+  width: 100%;
+  margin-bottom: 16px;
+}
+.pay-history__item-img {
+  border-radius: 8px;
+  width: 100px;
+  height: 100px;
+  margin-right: 24px;
+  position: relative;
+  top: -15px;
+}
+.pay-history__list-product-name {
+  margin-bottom: 13px;
 }/*# sourceMappingURL=main.css.map */

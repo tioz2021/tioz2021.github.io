@@ -1,0 +1,119 @@
+.pay-history {
+  min-height: 700px;
+  background-image: url('../../image/basket-bg.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+  position: relative;
+  margin-bottom: 119px;
+
+  // .pay-history__container
+  &__container {
+    flex-direction: column;
+  }
+
+  // .pay-history__page-top-box
+  &__page-top-box {
+    margin-top: 54px;
+    margin-bottom: 80px;
+  }
+
+  // .pay-history__title
+  &__title {
+    margin-bottom: 53px;
+  }
+
+  // .pay-history__list-wrp
+  &__list-wrp {
+  }
+
+  // .pay-history__head 
+  &__head {
+    margin-bottom: 26px;
+  }
+
+  // .pay-history__item-row
+  &__item-row {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
+  // .pay-history__item-col
+  &__item-col {
+
+    // .pay-history__item-col1
+    &1 {
+      width: 338px;
+    }
+
+    // .pay-history__item-col2
+    &2 {
+      width: 169px;
+    }
+
+    // .pay-history__item-col3
+    &3 {
+      width: 579px;
+      display: flex;
+      position: relative;
+    }
+
+    // .pay-history__item-col4
+    &4 {
+      width: 338px;
+    }
+  }
+
+  // .pay-history__head-title
+  &__head-title {
+    opacity: 0.6;
+  }
+
+  // .pay-history__item {
+  &__item {
+    box-sizing: border-box;
+    padding-top: 22px;
+    border: 1px solid rgba(249, 190, 124, 0.3);
+    border-radius: 8px;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  // .pay-history__list
+  &__list {
+  }
+
+  // .pay-history__list-text
+  &__list-text {
+  }
+
+  // .pay-history__item-img
+  &__item-img {
+    border-radius: 8px;
+    width: 100px;
+    height: 100px;
+    margin-right: 24px;
+    position: relative;
+    top: -15px;
+  }
+
+  // .pay-history__item-text-wrp
+  &__item-text-wrp {
+  }
+
+  // .pay-history__list-product-name
+  &__list-product-name {
+    margin-bottom: 13px;
+  }
+
+  // .pay-history__list-product-count
+  &__list-product-count {
+  }
+
+  // .pay-history__item-price
+  &__item-price {
+  }
+}
