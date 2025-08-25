@@ -21,6 +21,7 @@
 (() => {
   document.addEventListener("DOMContentLoaded", () => {
     const paymentBlock = document.querySelector(".payment-methods");
+    if(!paymentBlock) return false;
     const toggleBtn = paymentBlock.querySelector(".payment-methods__toggle-btn");
   
     toggleBtn.addEventListener("click", () => {
@@ -28,3 +29,69 @@
     });
   });  
 }) ();
+
+// gallery
+(() => {
+  document.addEventListener("DOMContentLoaded", () => {
+    const containers = document.querySelectorAll(".thumbnails__img-container");
+    const currentImage = document.getElementById("current-image");
+
+    let isAnimating = false;
+    let pendingImage = null; // сюда кладём "запомненный" клик
+
+    const switchImage = (src, container) => {
+      isAnimating = true;
+
+      // убираем active у всех
+      containers.forEach(c => c.classList.remove("active"));
+      container.classList.add("active");
+
+      currentImage.classList.add("fade-out");
+
+      const handleFadeOut = (e) => {
+        if (e.propertyName !== "opacity") return;
+
+        currentImage.src = src;
+        currentImage.classList.remove("fade-out");
+        currentImage.classList.add("fade-in");
+
+        const handleFadeIn = (e2) => {
+          if (e2.propertyName !== "opacity") return;
+
+          currentImage.classList.remove("fade-in");
+          currentImage.removeEventListener("transitionend", handleFadeIn);
+          isAnimating = false;
+
+          // если во время анимации уже выбрали другую картинку → переключаемся сразу
+          if (pendingImage) {
+            const { src: nextSrc, container: nextContainer } = pendingImage;
+            pendingImage = null;
+            switchImage(nextSrc, nextContainer);
+          }
+        };
+
+        currentImage.addEventListener("transitionend", handleFadeIn);
+        currentImage.removeEventListener("transitionend", handleFadeOut);
+      };
+
+      currentImage.addEventListener("transitionend", handleFadeOut);
+    };
+
+    containers.forEach(container => {
+      const img = container.querySelector("img");
+
+      container.addEventListener("click", () => {
+        const newSrc = img.dataset.full;
+        if (currentImage.src.includes(newSrc)) return;
+
+        if (isAnimating) {
+          // если идёт анимация → просто запоминаем
+          pendingImage = { src: newSrc, container };
+        } else {
+          switchImage(newSrc, container);
+        }
+      });
+    });
+  });
+})();
+
