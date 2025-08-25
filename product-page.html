@@ -197,7 +197,7 @@
                   </div>
                 </div>
                 <button class="product-page__info-main-btn main-btn">
-                  <div class="main-btn__button text-main">
+                  <div class="main-btn__button text-main" id="open-popup">
                     <span class="main-btn__button-text text-main">перейти в корзину</span>
                     <div class="main-btn__button-bg img-wrp">
                       <img src="image/buttons-bg/buttons-product-page-bg.png" alt="bg">
@@ -310,6 +310,32 @@
       </div>
     </footer>
   </div>
+
+  <!-- <button id="open-popup" class="open-btn">Открыть popup</button> -->
+  <div id="popup-overlay" class="popup-overlay">
+    <div class="popup">
+      <!-- <button class="popup__close">&times;</button> -->
+       <div class="popup__title text-title">Заголовок</div>
+       <div class="popup__text text-shop-title">
+        Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. L
+       </div>
+       <div class="popup__btn-wrp">
+        <button class="popup__btn second-btn">
+          <div class="second-btn__bg"></div>
+          <span class="second-btn__text text-main">
+            Названия кнопки
+          </span>
+        </button>
+
+        <button class="popup__btn second-btn second-btn--nobg popup__close">
+          <span class="second-btn__text text-main">
+            Закрыть окно
+          </span>
+        </button>
+       </div>
+    </div>
+  </div>
+
 
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />

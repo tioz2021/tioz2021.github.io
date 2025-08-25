@@ -1,0 +1,75 @@
+/* затемнение фона */
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+  z-index: 10;
+
+  // .popup-overlay.active
+  &.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  // .popup-overlay.active .popup
+  &.active .popup {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.popup {
+  width: 784px;
+  height: 350px;
+  box-sizing: border-box;
+  padding-left: 44px;
+  padding-right: 44px;
+  padding-top: 60px;
+  padding-bottom: 80px;
+  position: relative;
+
+  background-image: url('../../image/popup-bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+
+  /* начальное состояние */
+  transform: scale(0.8);
+  opacity: 0;
+  transition: all 0.4s ease;
+
+  // .popup__title
+  &__title {
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  // .popup__text
+  &__text {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  // .popup__btn-wrp
+  &__btn-wrp {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  // .popup__btn
+  &__btn {
+    width: 336px;
+  }
+
+  // .popup__close
+  &__close {
+  }
+}

@@ -95,3 +95,31 @@
   });
 })();
 
+// popup
+(() => {
+  (() => {
+    document.addEventListener("DOMContentLoaded", () => {
+      const openBtn = document.getElementById("open-popup");
+      const overlay = document.getElementById("popup-overlay");
+      const closeBtn = document.querySelector(".popup__close");
+  
+      // открыть
+      openBtn.addEventListener("click", () => {
+        overlay.classList.add("active");
+      });
+  
+      // закрыть по кнопке
+      closeBtn.addEventListener("click", () => {
+        overlay.classList.remove("active");
+      });
+  
+      // закрыть по клику вне popup
+      overlay.addEventListener("click", (e) => {
+        if (e.target === overlay) {
+          overlay.classList.remove("active");
+        }
+      });
+    });
+  })();
+  
+}) ();
