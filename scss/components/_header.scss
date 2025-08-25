@@ -3,7 +3,7 @@
   background-image: url('../../image/header-bg.svg');
   background-position: center;
   background-size: cover;
-  height: 80px;
+  height: 80rem;
   position: relative;
 
   // .header__container
@@ -19,13 +19,13 @@
 
   // .header__nav
   &__nav {
-    width: 738px;
-    // margin-left: 484px;
+    width: 738rem;
+    // margin-left: 484rem;
     
     // fix position
     margin: 0 auto;
     position: relative;
-    left: -33px;
+    left: -33rem;
 
     display: flex;
     align-items: center;
@@ -33,13 +33,13 @@
 
   // .header__nav-decoration
   &__nav-decoration {
-    width: 156px;
-    height: 11px;
+    width: 156rem;
+    height: 11rem;
   }
 
   // .header__nav-decoration--left
   &__nav-decoration--left {
-    margin-right: 40px;
+    margin-right: 40rem;
   }
 
   // .header__nav-list
@@ -49,7 +49,7 @@
 
   // .header__nav-item
   &__nav-item {
-    margin-right: 36px;
+    margin-right: 36rem;
 
     // .header__nav-link:first-child
     &:first-child {
@@ -77,7 +77,7 @@
 
   // .header__nav-decoration--right
   &__nav-decoration--right {
-    margin-left: 40px;
+    margin-left: 40rem;
   }
 
   // .header__main-menu

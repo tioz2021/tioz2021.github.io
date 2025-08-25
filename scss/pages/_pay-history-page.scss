@@ -1,11 +1,11 @@
 .pay-history {
-  min-height: 700px;
+  min-height: 700rem;
   background-image: url('../../image/basket-bg.svg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center top;
   position: relative;
-  margin-bottom: 119px;
+  margin-bottom: 119rem;
 
   // .pay-history__container
   &__container {
@@ -14,13 +14,13 @@
 
   // .pay-history__page-top-box
   &__page-top-box {
-    margin-top: 54px;
-    margin-bottom: 80px;
+    margin-top: 54rem;
+    margin-bottom: 80rem;
   }
 
   // .pay-history__title
   &__title {
-    margin-bottom: 53px;
+    margin-bottom: 53rem;
   }
 
   // .pay-history__list-wrp
@@ -29,7 +29,7 @@
 
   // .pay-history__head 
   &__head {
-    margin-bottom: 26px;
+    margin-bottom: 26rem;
   }
 
   // .pay-history__item-row
@@ -37,8 +37,8 @@
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
-    padding-left: 36px;
-    padding-right: 36px;
+    padding-left: 36rem;
+    padding-right: 36rem;
   }
 
   // .pay-history__item-col
@@ -46,24 +46,24 @@
 
     // .pay-history__item-col1
     &1 {
-      width: 338px;
+      width: 338rem;
     }
 
     // .pay-history__item-col2
     &2 {
-      width: 169px;
+      width: 169rem;
     }
 
     // .pay-history__item-col3
     &3 {
-      width: 579px;
+      width: 579rem;
       display: flex;
       position: relative;
     }
 
     // .pay-history__item-col4
     &4 {
-      width: 338px;
+      width: 338rem;
     }
   }
 
@@ -75,11 +75,11 @@
   // .pay-history__item {
   &__item {
     box-sizing: border-box;
-    padding-top: 22px;
-    border: 1px solid rgba(249, 190, 124, 0.3);
-    border-radius: 8px;
+    padding-top: 22rem;
+    border: 1rem solid rgba(249, 190, 124, 0.3);
+    border-radius: 8rem;
     width: 100%;
-    margin-bottom: 16px;
+    margin-bottom: 16rem;
   }
 
   // .pay-history__list
@@ -92,12 +92,12 @@
 
   // .pay-history__item-img
   &__item-img {
-    border-radius: 8px;
-    width: 100px;
-    height: 100px;
-    margin-right: 24px;
+    border-radius: 8rem;
+    width: 100rem;
+    height: 100rem;
+    margin-right: 24rem;
     position: relative;
-    top: -15px;
+    top: -15rem;
   }
 
   // .pay-history__item-text-wrp
@@ -106,7 +106,7 @@
 
   // .pay-history__list-product-name
   &__list-product-name {
-    margin-bottom: 13px;
+    margin-bottom: 13rem;
   }
 
   // .pay-history__list-product-count

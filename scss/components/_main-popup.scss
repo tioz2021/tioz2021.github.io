@@ -26,13 +26,13 @@
 }
 
 .popup {
-  width: 784px;
-  height: 350px;
+  width: 784rem;
+  height: 350rem;
   box-sizing: border-box;
-  padding-left: 44px;
-  padding-right: 44px;
-  padding-top: 60px;
-  padding-bottom: 80px;
+  padding-left: 44rem;
+  padding-right: 44rem;
+  padding-top: 60rem;
+  padding-bottom: 80rem;
   position: relative;
 
   background-image: url('../../image/popup-bg.png');
@@ -48,13 +48,13 @@
   // .popup__title
   &__title {
     text-align: center;
-    margin-bottom: 8px;
+    margin-bottom: 8rem;
   }
 
   // .popup__text
   &__text {
     text-align: center;
-    margin-bottom: 24px;
+    margin-bottom: 24rem;
   }
 
   // .popup__btn-wrp
@@ -66,7 +66,7 @@
 
   // .popup__btn
   &__btn {
-    width: 336px;
+    width: 336rem;
   }
 
   // .popup__close

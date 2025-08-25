@@ -7,10 +7,10 @@
 // }
 
 .payment-methods {
-  width: 302px;
+  width: 302rem;
   background-color: rgba(249, 190, 124, 0.08);
   box-sizing: border-box;
-  border-bottom: 1px solid rgba(223, 215, 206, 0.6);  
+  border-bottom: 1rem solid rgba(223, 215, 206, 0.6);  
 
   // .payment-methods.open
   &.open {
@@ -19,7 +19,7 @@
     .payment-methods__list {
       visibility: visible;
       opacity: 1;
-      max-height: 500px;
+      max-height: 500rem;
     }
 
     // .payment-methods__toggle-btn
@@ -30,40 +30,40 @@
 
   // .payment-methods__header
   &__header {
-    height: 61px;
+    height: 61rem;
     box-sizing: border-box;
-    padding-top: 10px;
-    padding-bottom: 12px;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-top: 10rem;
+    padding-bottom: 12rem;
+    padding-left: 12rem;
+    padding-right: 12rem;
   }
 
   // .payment-methods__item
   &__item {
     display: flex;
     align-items: center;
-    margin-bottom: 12px;
+    margin-bottom: 12rem;
   }
 
   // .payment-methods__radio
   &__radio {
-    margin-right: 6px;
+    margin-right: 6rem;
     position: relative;
-    top: 2px;
-    left: -1px;
+    top: 2rem;
+    left: -1rem;
   }
 
   // .payment-methods__icon-wrp
   &__icons-wrp {
     display: flex;
-    gap: 4px;
+    gap: 4rem;
   }
 
   // .payment-methods__icon
   &__icon {
-    border-radius: 2px;
-    width: 36px;
-    height: 36px;
+    border-radius: 2rem;
+    width: 36rem;
+    height: 36rem;
     background-color: #fff;
     display: flex;
     justify-content: center;
@@ -71,8 +71,8 @@
 
     // .payment-methods__icon-wrp
     &-wrp {
-      width: 24px;
-      height: 24px;
+      width: 24rem;
+      height: 24rem;
     }
   }
 
@@ -84,8 +84,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 16px;
-    height: 12px;
+    width: 16rem;
+    height: 12rem;
     margin-left: auto;
     margin-right: 0;
     cursor: pointer;
@@ -101,14 +101,14 @@
     transition: all 350ms ease-in-out;
 
     box-sizing: border-box;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 12rem;
+    padding-right: 12rem;
   }
 
   // .payment-methods__more
   &__more {
     box-sizing: border-box;
-    padding-bottom: 12px;
+    padding-bottom: 12rem;
     color: var(--bg-2);
     text-align: center;
   }

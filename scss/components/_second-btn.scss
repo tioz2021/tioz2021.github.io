@@ -1,6 +1,6 @@
 .second-btn {
-  width: 293px;
-  height: 44px;
+  width: 293rem;
+  height: 44rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,11 +21,11 @@
     
     /* форма с острыми углами */
     clip-path: polygon(
-      20px 0%,        /* верхний левый отступ */
-      calc(100% - 20px) 0%, /* верхний правый */
+      20rem 0%,        /* верхний левый отступ */
+      calc(100% - 20rem) 0%, /* верхний правый */
       100% 50%,       /* острый угол справа */
-      calc(100% - 20px) 100%, /* нижний правый */
-      20px 100%,      /* нижний левый */
+      calc(100% - 20rem) 100%, /* нижний правый */
+      20rem 100%,      /* нижний левый */
       0% 50%          /* острый угол слева */
     );
 
@@ -54,11 +54,11 @@
 
     /* форма с острыми углами */
     clip-path: polygon(
-      20px 0%,        /* верхний левый отступ */
-      calc(100% - 20px) 0%, /* верхний правый */
+      20rem 0%,        /* верхний левый отступ */
+      calc(100% - 20rem) 0%, /* верхний правый */
       100% 50%,       /* острый угол справа */
-      calc(100% - 20px) 100%, /* нижний правый */
-      20px 100%,      /* нижний левый */
+      calc(100% - 20rem) 100%, /* нижний правый */
+      20rem 100%,      /* нижний левый */
       0% 50%          /* острый угол слева */
     );
   }
@@ -75,15 +75,15 @@
 
   // .second-btn__num
   &__num {
-    margin-left: 4px;
+    margin-left: 4rem;
     border-radius: 100%;
     background-color: var(--bg-1);
-    min-width: 24px;
+    min-width: 24rem;
     width: auto;
     box-sizing: border-box;
-    padding-left: 4px;
-    padding-right: 4px;
-    height: 24px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    height: 24rem;
     display: flex;
     justify-content: center;
     // align-items: center;
@@ -92,7 +92,7 @@
 
     // .second-btn__num--big-size
     &--big-size {
-      border-radius: 8px;
+      border-radius: 8rem;
     }
   }
 }

@@ -4,26 +4,26 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 274px;
+  height: 274rem;
   
   position: relative;
   z-index: 2;
   
   // .footer--index-page
   &--index-page {
-    margin-top: -87px;
+    margin-top: -87rem;
   }
 
   // .footer__container
   &__container {
     flex-direction: column;
     align-items: center;
-    padding-top: 87px;
+    padding-top: 87rem;
   }
 
   // .footer__link
   &__link {
-    margin-bottom: 19px;
+    margin-bottom: 19rem;
     font-weight: 500;
   }
 

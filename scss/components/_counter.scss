@@ -11,24 +11,24 @@
     justify-content: space-between;
     
     box-sizing: border-box;
-    width: 336px;
-    height: 92px;
-    padding-left: 33px;
-    padding-right: 33px;
+    width: 336rem;
+    height: 92rem;
+    padding-left: 33rem;
+    padding-right: 33rem;
     background-image: url('../../image/counter-bg.svg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
 
-    // padding-top: 15px;
-    // padding-bottom: 15px;
-    // margin-right: 12px;
+    // padding-top: 15rem;
+    // padding-bottom: 15rem;
+    // margin-right: 12rem;
   }
 
   // .counter__btn
   &__btn {
-    width: 44px;
-    height: 44px;
+    width: 44rem;
+    height: 44rem;
     border: unset;
     background-color: unset;
     position: relative;
@@ -58,7 +58,7 @@
 
   // .counter__value
   &__value {
-    max-width: 148px;
+    max-width: 148rem;
     background-color: unset;
     border: unset;
     color: var(--bg-1);
@@ -78,9 +78,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 12px;
+    margin-left: 12rem;
     position: relative;
-    left: 10px;
+    left: 10rem;
     
     // .counter__btn-bg
     .counter__btn-bg {
@@ -90,7 +90,7 @@
 
   // .counter__btn-icon
   &__btn-icon {
-    width: 24px;
-    height: 24px;
+    width: 24rem;
+    height: 24rem;
   }
 }
