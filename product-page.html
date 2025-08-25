@@ -133,7 +133,7 @@
               <div class="second-btn__bg"></div>
               <span class="second-btn__text text-main">
                 Корзина
-                <span class="second-btn__num">1</span>
+                <span class="second-btn__num second-btn__num--big-size">22</span>
               </span>
             </button>
           </div>
@@ -208,7 +208,96 @@
             </div>
           </div>
 
-          <div class="asd"></div>
+          <div class="product-page__slider main-slider">
+            <div class="swiper my-slider">
+              <div class="main-slider__top">
+                <div class="main-slider__title text-title">Возможно вас заинтересуют другие наборы</div>
+                <div class="main-slider__btn-wrp">
+                  <div class="main-slider__button main-slider__button--prev img-wrp">
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M-7.86805e-07 18L27 2.41154L27 33.5885L-7.86805e-07 18Z" fill="#F9BE7C" />
+                      <path d="M27 12L33 18L27 24L21 18L27 12Z" fill="#F9BE7C" />
+                    </svg>
+                  </div>
+                  <div class="main-slider__button main-slider__button--next img-wrp">
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M36 18L9 33.5885L9 2.41154L36 18Z" fill="#F9BE7C" />
+                      <path d="M9 24L3 18L9 12L15 18L9 24Z" fill="#F9BE7C" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="shop-page-body-gds__item">
+                    <a href="#" class="shop-page-body-gds__link">
+                      <div class="shop-page-body-gds__img img-wrp">
+                        <img src="image/gds/product-img.png" alt="gds images">
+                      </div>
+                      <div class="shop-page-body-gds__name text-shop-title">Набор Лорда Июнь 2025</div>
+                      <div class="shop-page-body-gds__price text-title"><span>2&nbsp;800</span> ₽</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="shop-page-body-gds__item">
+                    <a href="#" class="shop-page-body-gds__link">
+                      <div class="shop-page-body-gds__img img-wrp">
+                        <img src="image/gds/product-img.png" alt="gds images">
+                      </div>
+                      <div class="shop-page-body-gds__name text-shop-title">Набор Лорда Июнь 2025</div>
+                      <div class="shop-page-body-gds__price text-title"><span>2&nbsp;800</span> ₽</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="shop-page-body-gds__item">
+                    <a href="#" class="shop-page-body-gds__link">
+                      <div class="shop-page-body-gds__img img-wrp">
+                        <img src="image/gds/product-img.png" alt="gds images">
+                      </div>
+                      <div class="shop-page-body-gds__name text-shop-title">Набор Лорда Июнь 2025</div>
+                      <div class="shop-page-body-gds__price text-title"><span>2&nbsp;800</span> ₽</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="shop-page-body-gds__item">
+                    <a href="#" class="shop-page-body-gds__link">
+                      <div class="shop-page-body-gds__img img-wrp">
+                        <img src="image/gds/product-img.png" alt="gds images">
+                      </div>
+                      <div class="shop-page-body-gds__name text-shop-title">Набор Лорда Июнь 2025</div>
+                      <div class="shop-page-body-gds__price text-title"><span>2&nbsp;800</span> ₽</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="shop-page-body-gds__item">
+                    <a href="#" class="shop-page-body-gds__link">
+                      <div class="shop-page-body-gds__img img-wrp">
+                        <img src="image/gds/product-img.png" alt="gds images">
+                      </div>
+                      <div class="shop-page-body-gds__name text-shop-title">Набор Лорда Июнь 2025</div>
+                      <div class="shop-page-body-gds__price text-title"><span>2&nbsp;800</span> ₽</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="shop-page-body-gds__item">
+                    <a href="#" class="shop-page-body-gds__link">
+                      <div class="shop-page-body-gds__img img-wrp">
+                        <img src="image/gds/product-img.png" alt="gds images">
+                      </div>
+                      <div class="shop-page-body-gds__name text-shop-title">Набор Лорда Июнь 2025</div>
+                      <div class="shop-page-body-gds__price text-title"><span>2&nbsp;800</span> ₽</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -222,6 +311,22 @@
     </footer>
   </div>
 
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".my-slider", {
+      slidesPerView: 4,
+      spaceBetween: 35,
+      navigation: {
+        nextEl: ".main-slider__button--next",
+        prevEl: ".main-slider__button--prev",
+      },
+    });
+  </script>
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

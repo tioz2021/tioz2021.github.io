@@ -4,6 +4,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center top;
+  margin-bottom: 130px;
 
   // .product-page__container
   &__container {
@@ -36,17 +37,17 @@
   &__info-title {
     text-align: left;
     text-transform: unset;
-    margin-bottom: 24px;
+    margin-bottom: 31px;
   }
 
   // .product-page__info-list-title
   &__info-list-title {
-    margin-bottom: 24px;
+    // margin-bottom: 24px;
   }
 
   // .product-page__info-list
   &__info-list {
-    margin-bottom: 24px;
+    margin-bottom: 28px;
   }
 
   // .product-page__info-item-text
@@ -55,7 +56,7 @@
 
   // .product-page__info-item-price
   &__info-item-price {
-    margin-bottom: 36px;
+    margin-bottom: 30px;
   }
 
   // .product-page__info-counter-wrp
@@ -83,6 +84,15 @@
         height: 60px;
       }
     }
-
   }
+
+  // .product-page__slider
+  &__slider{
+
+    // .product-page__slider .shop-page-body-gds__item
+    .shop-page-body-gds__item {
+      margin-bottom: 0;
+    }
+  }
+
 }

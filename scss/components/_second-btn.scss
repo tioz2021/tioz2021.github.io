@@ -78,12 +78,21 @@
     margin-left: 4px;
     border-radius: 100%;
     background-color: var(--bg-1);
-    width: 24px;
+    min-width: 24px;
+    width: auto;
+    box-sizing: border-box;
+    padding-left: 4px;
+    padding-right: 4px;
     height: 24px;
     display: flex;
     justify-content: center;
     // align-items: center;
     font-weight: 500;
     color: var(--bg-0);
+
+    // .second-btn__num--big-size
+    &--big-size {
+      border-radius: 8px;
+    }
   }
 }
