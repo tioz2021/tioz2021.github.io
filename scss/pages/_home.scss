@@ -47,7 +47,8 @@ main {
     width: 532rem;
     height: 180rem;
     left: 50%;
-    transform: translateX(-50%);
+    margin-left: -266rem;
+    // transform: translateX(-50%);
 
     top: 16rem;
     z-index: 2;

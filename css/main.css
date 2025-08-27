@@ -1327,7 +1327,7 @@ main {
   width: 532rem;
   height: 180rem;
   left: 50%;
-  transform: translateX(-50%);
+  margin-left: -266rem;
   top: 16rem;
   z-index: 2;
 }
@@ -1401,8 +1401,8 @@ main {
   width: 578rem;
   height: 301rem;
   left: 50%;
+  margin-left: -289rem;
   top: -1rem;
-  transform: translateX(-50%);
   z-index: 2;
 }
 .shop-page-top__decoration--flag-left {
@@ -1928,6 +1928,30 @@ main {
 }
 .shop-page-body-gds__item.animate__delay-1s:nth-child(8) {
   --animate-delay: 1.25s;
+}
+
+.fs__img-composition-wariors.animate__delay-1s {
+  --animate-delay: 0.5s;
+}
+
+.fs__img-composition-flag-left.animate__delay-1s {
+  --animate-delay: 1s;
+}
+
+.fs__img-composition-flag-right.animate__delay-1s {
+  --animate-delay: 1s;
+}
+
+.shop-page-top__decoration--warriors.animate__delay-1s {
+  --animate-delay: 0.5s;
+}
+
+.shop-page-top__decoration--flag-left.animate__delay-1s {
+  --animate-delay: 1s;
+}
+
+.shop-page-top__decoration--flag-right.animate__delay-1s {
+  --animate-delay: 1s;
 }
 
 .fog {
