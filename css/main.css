@@ -973,6 +973,7 @@ main {
   width: 100%;
   height: 44rem;
   margin-top: 44rem;
+  z-index: 3;
 }
 
 .payment-methods {
@@ -1586,6 +1587,7 @@ main {
 }
 .basket__container {
   flex-direction: column;
+  position: unset;
 }
 .basket__top {
   margin-top: 54rem;
@@ -1698,6 +1700,7 @@ main {
 }
 .pay-history__container {
   flex-direction: column;
+  position: unset;
 }
 .pay-history__page-top-box {
   margin-top: 54rem;
@@ -1768,6 +1771,7 @@ main {
 }
 .product-page__container {
   flex-direction: column;
+  position: unset;
 }
 .product-page__page-top-box {
   margin-bottom: 80rem;

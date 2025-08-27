@@ -1,3 +1,9 @@
+// .page-wrp--basket {
+//   .header {
+//     z-index: auto;
+//   }
+// }
+
 .basket {
   min-height: 700rem;
   background-image: url('../../image/basket-bg.svg');
@@ -13,6 +19,7 @@
   // .basket__container
   &__container {
     flex-direction: column;
+    position: unset;
   }
 
   // .basket__top
