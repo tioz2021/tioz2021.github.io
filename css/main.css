@@ -526,6 +526,8 @@ main {
   margin: 0 auto;
   display: flex;
   box-sizing: border-box;
+  position: relative;
+  z-index: 2;
 }
 
 .img-wrp {
@@ -600,6 +602,7 @@ main {
   background-size: cover;
   height: 80rem;
   position: relative;
+  z-index: 3;
 }
 .header__container {
   max-width: 100%;
@@ -1286,6 +1289,10 @@ main {
 .popup__btn {
   width: 336rem;
 }
+main {
+  position: relative;
+}
+
 .fs {
   width: 100%;
   height: 1080rem;
@@ -1293,6 +1300,7 @@ main {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
 }
 .fs__container {
   flex-direction: column;
@@ -1364,6 +1372,9 @@ main {
   height: 1145rem;
   position: relative;
 }
+.shop-page-top__container {
+  position: unset;
+}
 .shop-page-top__page-nav {
   position: absolute;
   top: 51rem;
@@ -1375,6 +1386,7 @@ main {
   left: 50%;
   top: 44rem;
   transform: translateX(-50%);
+  z-index: 2;
 }
 .shop-page-top__decoration {
   position: absolute;
@@ -1440,7 +1452,7 @@ main {
 }
 .shop-page-body::after {
   content: "";
-  width: 100%;
+  width: 101%;
   height: 100%;
   position: absolute;
   top: 610rem;
@@ -1870,4 +1882,108 @@ main {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center top;
+}
+
+/* все элементы с анимациями скрыты до запуска */
+.animate__animated {
+  opacity: 0;
+}
+
+.main-btn__button::after {
+  animation: my_pulse 2500ms ease-in-out infinite;
+  opacity: 1;
+}
+
+@keyframes my_pulse {
+  0% {
+    filter: blur(30rem);
+  }
+  50% {
+    filter: blur(45rem);
+  }
+  100% {
+    filter: blur(30rem);
+  }
+}
+.shop-page-body-gds__item.animate__delay-1s:nth-child(1) {
+  --animate-delay: 0.25s;
+}
+.shop-page-body-gds__item.animate__delay-1s:nth-child(2) {
+  --animate-delay: 0.5s;
+}
+.shop-page-body-gds__item.animate__delay-1s:nth-child(3) {
+  --animate-delay: 1s;
+}
+.shop-page-body-gds__item.animate__delay-1s:nth-child(4) {
+  --animate-delay: 1.25s;
+}
+.shop-page-body-gds__item.animate__delay-1s:nth-child(5) {
+  --animate-delay: 0.25s;
+}
+.shop-page-body-gds__item.animate__delay-1s:nth-child(6) {
+  --animate-delay: 0.5s;
+}
+.shop-page-body-gds__item.animate__delay-1s:nth-child(7) {
+  --animate-delay: 1s;
+}
+.shop-page-body-gds__item.animate__delay-1s:nth-child(8) {
+  --animate-delay: 1.25s;
+}
+
+.fog {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-size: cover;
+  z-index: 1;
+}
+.fog--shop {
+  height: 440rem;
+  bottom: unset;
+  top: 0;
+}
+
+.fog::before,
+.fog::after,
+.fog div::before,
+.fog div::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat-x;
+}
+
+.fog div::before,
+.fog div::after {
+  left: 100%;
+}
+
+.fog::before,
+.fog div::before {
+  background-image: url("../../image/fog/fog-1.png");
+  animation: fogmove 20s linear 0s infinite;
+}
+
+.fog::after,
+.fog div::after {
+  background-image: url("../../image/fog/fog-2.png");
+  animation: fogmove 10s linear 0s infinite;
+}
+
+@keyframes fogmove {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
 }/*# sourceMappingURL=main.css.map */

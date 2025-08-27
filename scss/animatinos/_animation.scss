@@ -1,0 +1,51 @@
+/* все элементы с анимациями скрыты до запуска */
+.animate__animated {
+  opacity: 0;
+}
+
+.main-btn__button::after {
+  animation: my_pulse 2500ms ease-in-out infinite;
+  // transition: transform 250ms ease;
+  opacity: 1;
+}
+
+@keyframes my_pulse {
+  0% {
+    filter: blur(30rem);
+  }
+  50% {
+    filter: blur(45rem);
+  }
+  100% {
+    filter: blur(30rem);
+  }
+}
+
+.shop-page-body-gds__item.animate__delay-1s {
+  // .shop-page-body-gds__item.animate__delay-1s:nth-child(1) {
+  &:nth-child(1) {
+    --animate-delay: 0.25s;
+  }
+  &:nth-child(2) {
+    --animate-delay: 0.5s;
+  }
+  &:nth-child(3) {
+    --animate-delay: 1s;
+  }
+  &:nth-child(4) {
+    --animate-delay: 1.25s;
+  }
+
+  &:nth-child(5) {
+    --animate-delay: 0.25s;
+  }
+  &:nth-child(6) {
+    --animate-delay: 0.5s;
+  }
+  &:nth-child(7) {
+    --animate-delay: 1s;
+  }
+  &:nth-child(8) {
+    --animate-delay: 1.25s;
+  }
+}

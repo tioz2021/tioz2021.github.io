@@ -6,6 +6,9 @@
   <title>Index</title>
 
   <link rel="stylesheet" href="css/main.css">
+  <!-- add animation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
 </head>
 <body>
   <div class="page-wrp">
@@ -17,7 +20,7 @@
         </div>
   
         <nav class="header__nav">
-          <div class="header__nav-decoration header__nav-decoration--left img-wrp">
+          <div class="header__nav-decoration header__nav-decoration--left img-wrp animate__animated animate__delay-1s" data-animate="animate__fadeInLeft">
             <img src="image/header-decor-left.svg" alt="decoration">
           </div>
           <ul class="header__nav-list">
@@ -31,7 +34,7 @@
               <a href="#" class="header__nav-link text-main">Discord</a>
             </li>
           </ul>
-          <div class="header__nav-decoration header__nav-decoration--right img-wrp">
+          <div class="header__nav-decoration header__nav-decoration--right img-wrp animate__animated animate__delay-1s" data-animate="animate__fadeInRight">
             <img src="image/header-decor-right.svg" alt="decoration">
           </div>
         </nav>
@@ -140,22 +143,25 @@
   
           <div class="fs__title text-main-title">Bannerlord Online Bannerlord Online уже доступна</div>
           <div class="fs__desc text-shop-title">Bannerlord Online уже доступна.Погрузись в мир Кальрадии.</div>
+          
           <button class="main-btn">
-            <div class="main-btn__decoration main-btn__decoration--left img-wrp">
+            <div class="main-btn__decoration main-btn__decoration--left img-wrp animate__animated animate__delay-1s" data-animate="animate__fadeInLeft">
               <img src="image/header-decor-left.svg" alt="decoration">
             </div>
-            <div class="main-btn__button text-main">
+            <div class="main-btn__button text-main animate__animated" data-animate="animate__fadeIn">
               <span class="main-btn__button-text text-main">Скачать игру</span>
               <div class="main-btn__button-bg img-wrp">
                 <img src="image/button-bg.png" alt="bg">
               </div>
             </div>
-            <div class="main-btn__decoration main-btn__decoration--right img-wrp">
+            <div class="main-btn__decoration main-btn__decoration--right img-wrp animate__animated animate__delay-1s" data-animate="animate__fadeInRight">
               <img src="image/header-decor-right.svg" alt="decoration">
             </div>
           </button>
         </div>
       </section>
+
+      <div class="fog"><div></div></div>
     </main>
   
     <footer class="footer footer--index-page">
@@ -166,7 +172,7 @@
       </div>
     </footer>
   </div>
-  
+
   <script src="js/main.js"></script>
 </body>
 </html>
