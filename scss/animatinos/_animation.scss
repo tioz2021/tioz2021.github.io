@@ -3,7 +3,7 @@
   opacity: 0;
 }
 
-.main-btn__button::after {
+.fs .main-btn__button::after {
   animation: my_pulse 2500ms ease-in-out infinite;
   // transition: transform 250ms ease;
   opacity: 1;
@@ -55,20 +55,58 @@
 }
 
 .fs__img-composition-flag-left.animate__delay-1s {
-  --animate-delay: 1s;
+  --animate-delay: 1.5s;
 }
 
 .fs__img-composition-flag-right.animate__delay-1s {
-  --animate-delay: 1s;
+  --animate-delay: 1.5s;
 }
 
 .shop-page-top__decoration--warriors.animate__delay-1s {
   --animate-delay: 0.5s;
 }
 .shop-page-top__decoration--flag-left.animate__delay-1s {
-  --animate-delay: 1s;
+  --animate-delay: 1.5s;
 }
 
 .shop-page-top__decoration--flag-right.animate__delay-1s {
-  --animate-delay: 1s;
+  --animate-delay: 1.5s;
+}
+
+
+/* Класс для кастомной анимации */
+.animate__fadeInFromCenterLeft {
+  animation-name: fadeInFromCenterLeft;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+/* Класс для кастомной анимации */
+.animate__fadeInFromCenterRight {
+  animation-name: fadeInFromCenterRight;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+/* Кастомная анимация из центра влево */
+@keyframes fadeInFromCenterLeft {
+  from {
+    opacity: 0;
+    transform: translateX(250rem) translateX(-50%); /* Начинаем из центра экрана */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInFromCenterRight {
+  from {
+    opacity: 0;
+    transform: translateX(-250rem) translateX(50%); /* Начинаем из центра экрана */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }

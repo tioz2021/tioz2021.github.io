@@ -1889,7 +1889,7 @@ main {
   opacity: 0;
 }
 
-.main-btn__button::after {
+.fs .main-btn__button::after {
   animation: my_pulse 2500ms ease-in-out infinite;
   opacity: 1;
 }
@@ -1935,11 +1935,11 @@ main {
 }
 
 .fs__img-composition-flag-left.animate__delay-1s {
-  --animate-delay: 1s;
+  --animate-delay: 1.5s;
 }
 
 .fs__img-composition-flag-right.animate__delay-1s {
-  --animate-delay: 1s;
+  --animate-delay: 1.5s;
 }
 
 .shop-page-top__decoration--warriors.animate__delay-1s {
@@ -1947,13 +1947,48 @@ main {
 }
 
 .shop-page-top__decoration--flag-left.animate__delay-1s {
-  --animate-delay: 1s;
+  --animate-delay: 1.5s;
 }
 
 .shop-page-top__decoration--flag-right.animate__delay-1s {
-  --animate-delay: 1s;
+  --animate-delay: 1.5s;
 }
 
+/* Класс для кастомной анимации */
+.animate__fadeInFromCenterLeft {
+  animation-name: fadeInFromCenterLeft;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+/* Класс для кастомной анимации */
+.animate__fadeInFromCenterRight {
+  animation-name: fadeInFromCenterRight;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+/* Кастомная анимация из центра влево */
+@keyframes fadeInFromCenterLeft {
+  from {
+    opacity: 0;
+    transform: translateX(250rem) translateX(-50%); /* Начинаем из центра экрана */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeInFromCenterRight {
+  from {
+    opacity: 0;
+    transform: translateX(-250rem) translateX(50%); /* Начинаем из центра экрана */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 .fog {
   position: absolute;
   bottom: 0;
@@ -1969,6 +2004,14 @@ main {
   height: 440rem;
   bottom: unset;
   top: 0;
+}
+.fog > div {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../image/fog/fog-mask.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .fog::before,
@@ -1994,13 +2037,13 @@ main {
 .fog::before,
 .fog div::before {
   background-image: url("../../image/fog/fog-1.png");
-  animation: fogmove 20s linear 0s infinite;
+  animation: fogmove 40s linear 0s infinite;
 }
 
 .fog::after,
 .fog div::after {
   background-image: url("../../image/fog/fog-2.png");
-  animation: fogmove 10s linear 0s infinite;
+  animation: fogmove 20s linear 0s infinite;
 }
 
 @keyframes fogmove {
