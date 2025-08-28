@@ -604,6 +604,11 @@ main {
   position: relative;
   z-index: 3;
 }
+@media screen and (max-width: 1000px) {
+  .header {
+    height: 160rem;
+  }
+}
 .header__container {
   max-width: 100%;
   align-items: center;
@@ -665,6 +670,7 @@ main {
   position: absolute;
   right: 0;
   top: 0;
+  height: 0;
   box-sizing: border-box;
   padding-left: 37rem;
   padding-right: 35rem;
@@ -674,6 +680,7 @@ main {
 .main-menu.active {
   width: 363rem;
   z-index: 5;
+  height: auto;
 }
 .main-menu.active .main-menu__bg {
   visibility: visible;
@@ -1290,13 +1297,14 @@ main {
 .popup__btn {
   width: 336rem;
 }
-main {
+.index-main {
   position: relative;
+  display: flex;
 }
 
 .fs {
   width: 100%;
-  height: 1080rem;
+  min-height: 1080rem;
   background-image: url("../image/first-screen/fs-bg.png");
   background-size: cover;
   background-position: center;
@@ -1363,6 +1371,10 @@ main {
   font-weight: 500;
   margin-left: -2rem;
   margin-bottom: 46rem;
+}
+
+.shop-page-main {
+  z-index: 2;
 }
 
 .shop-page-wrp {
@@ -1576,6 +1588,10 @@ main {
   position: relative;
 }
 
+.basket-page-main {
+  z-index: 2;
+}
+
 .basket {
   min-height: 700rem;
   background-image: url("../../image/basket-bg.svg");
@@ -1697,6 +1713,7 @@ main {
   background-position: center top;
   position: relative;
   margin-bottom: 119rem;
+  z-index: 2;
 }
 .pay-history__container {
   flex-direction: column;
@@ -1993,6 +2010,22 @@ main {
     transform: translateX(0);
   }
 }
+.pay-history__list .pay-history__item.animate__delay-1s:nth-child(1) {
+  --animate-delay: 0.25s;
+}
+.pay-history__list .pay-history__item.animate__delay-1s:nth-child(2) {
+  --animate-delay: 0.5s;
+}
+.pay-history__list .pay-history__item.animate__delay-1s:nth-child(3) {
+  --animate-delay: 0.75s;
+}
+.pay-history__list .pay-history__item.animate__delay-1s:nth-child(4) {
+  --animate-delay: 1s;
+}
+.pay-history__list .pay-history__item.animate__delay-1s:nth-child(5) {
+  --animate-delay: 1.25s;
+}
+
 .fog {
   position: absolute;
   bottom: 0;
@@ -2056,5 +2089,10 @@ main {
   }
   to {
     transform: translate3d(-100%, 0, 0);
+  }
+}
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 0.12999vw;
   }
 }/*# sourceMappingURL=main.css.map */

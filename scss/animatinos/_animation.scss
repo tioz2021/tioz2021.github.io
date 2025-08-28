@@ -110,3 +110,22 @@
     transform: translateX(0);
   }
 }
+
+.pay-history__list .pay-history__item.animate__delay-1s {
+  // .pay-history__list.pay-history__item.animate__delay-1s:nth-child(1)
+  &:nth-child(1) {
+    --animate-delay: 0.25s;
+  }
+  &:nth-child(2) {
+    --animate-delay: 0.5s;
+  }
+  &:nth-child(3) {
+    --animate-delay: 0.75s;
+  }
+  &:nth-child(4) {
+    --animate-delay: 1s;
+  }
+  &:nth-child(5) {
+    --animate-delay: 1.25s;
+  }
+}

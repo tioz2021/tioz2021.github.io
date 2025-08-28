@@ -42,3 +42,10 @@
 // animation
 @import "animatinos/animation";
 @import "animatinos/fog-animation";
+
+
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 0.12999vw;
+  }
+}

@@ -11,3 +11,16 @@
 :root {
   --font-family: "Futura PT", sans-serif;
 }
+
+$tab-media: 1000px;
+$mob-media: 600px;
+// font-size: 0.12999vw;
+// font-size: 0.27779vw;
+
+@media screen and (max-width: $tab-media) {
+
+}
+
+@media screen and (max-width: $mob-media) {
+
+}
