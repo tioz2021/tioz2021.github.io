@@ -4,6 +4,11 @@
   justify-content: space-between;
   z-index: 3;
 
+  @media screen and (max-width: $tab-media) {
+    position: relative;
+    top: unset;
+  }
+
   // .page-nav__link
   &__link {
     opacity: 0.6;
@@ -30,5 +35,12 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+
+    @media screen and (max-width: $mob-media) {
+      margin-left: 4rem;
+      margin-right: 4rem;
+      width: 8rem;
+      height: 8rem;
+    }
   }
 }

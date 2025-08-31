@@ -7,6 +7,10 @@
   animation: my_pulse 2500ms ease-in-out infinite;
   // transition: transform 250ms ease;
   opacity: 1;
+
+  @media screen and (max-width: $mob-media) {
+    animation: my_pulse-mobile 5000ms ease-in-out infinite;
+  }
 }
 
 @keyframes my_pulse {
@@ -18,6 +22,18 @@
   }
   100% {
     filter: blur(30rem);
+  }
+}
+
+@keyframes my_pulse-mobile {
+  0% {
+    filter: blur(20rem);
+  }
+  50% {
+    filter: blur(40rem);
+  }
+  100% {
+    filter: blur(20rem);
   }
 }
 
@@ -79,6 +95,10 @@
   animation-name: fadeInFromCenterLeft;
   animation-duration: 1s;
   animation-fill-mode: both;
+
+  @media screen and (max-width: $mob-media) {
+    animation-name: fadeInFromCenterLeft-mobile;
+  }
 }
 
 /* Класс для кастомной анимации */
@@ -86,13 +106,28 @@
   animation-name: fadeInFromCenterRight;
   animation-duration: 1s;
   animation-fill-mode: both;
+
+  @media screen and (max-width: $mob-media) {
+    animation-name: fadeInFromCenterRight-mobile;
+  }
 }
 
 /* Кастомная анимация из центра влево */
 @keyframes fadeInFromCenterLeft {
   from {
     opacity: 0;
-    transform: translateX(250rem) translateX(-50%); /* Начинаем из центра экрана */
+    transform: translateX(250rem) translateX(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInFromCenterLeft-mobile {
+  from {
+    opacity: 0;
+    transform: translateX(25rem) translateX(50%);
   }
   to {
     opacity: 1;
@@ -103,7 +138,18 @@
 @keyframes fadeInFromCenterRight {
   from {
     opacity: 0;
-    transform: translateX(-250rem) translateX(50%); /* Начинаем из центра экрана */
+    transform: translateX(-250rem) translateX(50%); 
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInFromCenterRight-mobile {
+  from {
+    opacity: 0;
+    transform: translateX(25rem) translateX(-50%);
   }
   to {
     opacity: 1;

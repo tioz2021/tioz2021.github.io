@@ -30,6 +30,7 @@
 @import "components/gallery";
 @import "components/main-slides";
 @import "components/main-popup";
+@import "components/dropdown";
 
 // pages
 @import "pages/home";
@@ -42,10 +43,3 @@
 // animation
 @import "animatinos/animation";
 @import "animatinos/fog-animation";
-
-
-@media screen and (max-width: 1000px) {
-  html {
-    font-size: 0.12999vw;
-  }
-}

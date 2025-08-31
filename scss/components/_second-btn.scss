@@ -10,6 +10,11 @@
   position: relative;
   cursor: pointer;
 
+  @media screen and (max-width: $mob-media) {
+    width: 144rem;
+    height: 36rem;
+  }
+
   // .second-btn__bg
   &__bg {
     width: 100%;
@@ -28,7 +33,31 @@
       20rem 100%,      /* нижний левый */
       0% 50%          /* острый угол слева */
     );
+    
+    @media screen and (max-width: $tab-media) {
+      /* форма с острыми углами */
+      clip-path: polygon(
+        15rem 0%,        /* верхний левый отступ */
+        calc(100% - 15rem) 0%, /* верхний правый */
+        100% 50%,       /* острый угол справа */
+        calc(100% - 15rem) 100%, /* нижний правый */
+        15rem 100%,      /* нижний левый */
+        0% 50%          /* острый угол слева */
+      );
+    }
 
+    @media screen and (max-width: $mob-media) {
+      /* форма с острыми углами */
+      clip-path: polygon(
+        12rem 0%,        /* верхний левый отступ */
+        calc(100% - 12rem) 0%, /* верхний правый */
+        100% 50%,       /* острый угол справа */
+        calc(100% - 12rem) 100%, /* нижний правый */
+        12rem 100%,      /* нижний левый */
+        0% 50%          /* острый угол слева */
+      );
+    }
+    
     // .second-btn__bg::after
     &::after {
       content: '';
@@ -44,6 +73,10 @@
       background-repeat: no-repeat;
 
       z-index: 2;
+
+      @media screen and (max-width: $mob-media) {
+        background-image: url('../../image/mob/texture-btn-mob.png');
+      }
     }
   }
 
@@ -89,6 +122,12 @@
     // align-items: center;
     font-weight: 500;
     color: var(--bg-0);
+
+    @media screen and (max-width: $mob-media) {
+      min-width: 16rem;
+      height: 16rem;
+      margin-left: 0;
+    }
 
     // .second-btn__num--big-size
     &--big-size {

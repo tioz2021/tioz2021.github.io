@@ -48,6 +48,16 @@
   });  
 }) ();
 
+// tab shop list
+(() => {
+  document.querySelectorAll('.dropdown__toggle').forEach(btn => {
+    btn.addEventListener('click', () => {
+      btn.parentElement.classList.toggle('open');
+    });
+  });
+  
+}) ();
+
 // gallery
 (() => {
   document.addEventListener("DOMContentLoaded", () => {

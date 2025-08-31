@@ -14,6 +14,7 @@
     height: 440rem;
     bottom: unset;
     top: 0;
+    display: none;
   }
 
   &>div {
@@ -40,6 +41,10 @@
   background-size: cover;
   background-position: center;
   background-repeat: repeat-x;
+
+  @media screen and (max-width: $tab-media) {
+    display: none;
+  }
 }
 .fog div::before, 
 .fog div::after    {

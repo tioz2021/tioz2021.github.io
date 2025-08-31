@@ -4,12 +4,20 @@
   line-height: 110%;
   text-transform: uppercase;
   text-align: center;
+
+  @media screen and (max-width: $mob-media) {
+    font-size: 34rem;
+  }
 }
 
 .text-title {
   font-weight: 400;
   font-size: 44rem;
   line-height: 120%;
+
+  @media screen and (max-width: $mob-media) {
+    font-size: 24rem;
+  }
 }
 
 .text-price {
@@ -22,12 +30,20 @@
   font-weight: 400;
   font-size: 32rem;
   line-height: 120%;
+
+  @media screen and (max-width: $mob-media) {
+    font-size: 18rem;
+  }
 }
 
 .text-main {
   font-weight: 400;
   font-size: 24rem;
   line-height: 120%;
+
+  @media screen and (max-width: $mob-media) {
+    font-size: 14rem;
+  }
 }
 
 .text-decor {

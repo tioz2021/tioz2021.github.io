@@ -13,6 +13,12 @@
     background-size: contain;
     background-position: center top;
     background-repeat: no-repeat;
+    background-color: unset;
+  }
+
+  @media screen and (max-width: $mob-media) {
+    background-image: url('../../image/mob/hader-bg-mob.png');
+    height: 88rem;
   }
 
   // .header__container
@@ -54,6 +60,15 @@
   &__nav-decoration {
     width: 156rem;
     height: 11rem;
+
+    @media screen and (max-width: $tab-media) {
+      height: 12rem;
+    }
+
+    @media screen and (max-width: $mob-media) {
+      width: 60rem;
+      height: 4rem;
+    }
   }
 
   // .header__nav-decoration--left
@@ -62,6 +77,10 @@
 
     @media screen and (max-width: $tab-media) {
       margin-right: 23rem;
+    }
+
+    @media screen and (max-width: $mob-media) {
+      margin-right: 10rem;
     }
   }
 
@@ -73,6 +92,14 @@
   // .header__nav-item
   &__nav-item {
     margin-right: 36rem;
+
+    @media screen and (max-width: $tab-media) {
+      margin-right: 37rem;
+    }
+
+    @media screen and (max-width: $mob-media) {
+      margin-right: 16rem;
+    }
 
     // .header__nav-link:first-child
     &:first-child {
@@ -103,7 +130,11 @@
     margin-left: 40rem;
 
     @media screen and (max-width: $tab-media) {
-      margin-left: 23rem;
+      margin-left: 27rem;
+    }
+
+    @media screen and (max-width: $mob-media) {
+      margin-left: 10rem;
     }
   }
 

@@ -1,6 +1,10 @@
 .index-main {
   position: relative;
   display: flex;
+
+  @media screen and (max-width: $tab-media) {
+    // z-index: 4;
+  }
 }
 
 .fs {
@@ -12,6 +16,19 @@
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+
+  @media screen and (max-width: $tab-media) {
+    min-height: unset;
+    box-sizing: border-box;
+    padding-bottom: 180rem;
+  }
+
+  @media screen and (max-width: $mob-media) {
+    background-image: url('../../image/mob/fs-bg.png');
+    background-size: contain;
+    background-position: top;
+    padding-bottom: 165rem;
+  }
 
   // .fs__container
   &__container {
@@ -25,6 +42,16 @@
     height: 575rem;
     margin-bottom: 36rem;
     position: relative;
+
+    @media screen and (max-width: $tab-media) {
+      height: 404rem;
+      margin-bottom: 48rem;
+    }
+
+    @media screen and (max-width: $mob-media) {
+      height: 222rem;
+      margin-bottom: 24rem;
+    }
   }
 
   // .fs__img-composition-img
@@ -41,6 +68,18 @@
 
     top: 166rem;
     z-index: 3;
+
+    @media screen and (max-width: $tab-media) {
+      width: 557rem;
+      height: 331rem;
+      top: 110rem;
+    }
+
+    @media screen and (max-width: $mob-media) {
+      width: 300rem;
+      height: 170rem;
+      top: 67rem;
+    }
   }
 
   // .fs__img-composition-wariors
@@ -53,6 +92,20 @@
 
     top: 16rem;
     z-index: 2;
+
+    @media screen and (max-width: $tab-media) {
+      width: 378rem;
+      height: 128rem;
+      margin-left: -189rem;
+      top: 13rem;
+    }
+
+    @media screen and (max-width: $mob-media) {
+      width: 208rem;
+      height: 69rem;
+      margin-left: -104rem;
+      top: 10rem;
+    }
   }
 
   // .fs__img-composition-flag-left
@@ -63,6 +116,20 @@
 
     top: 8rem;
     z-index: 1;
+
+    @media screen and (max-width: $tab-media) {
+      width: 206rem;
+      height: 364rem;
+      left: 120rem;
+      top: 8rem;
+    }
+
+    @media screen and (max-width: $mob-media) {
+      width: 110rem;
+      height: 196rem;
+      left: 262rem;
+      top: 8rem;
+    }
   }
 
   // .fs__img-composition-flag-center
@@ -74,6 +141,18 @@
 
     top: -22rem;
     z-index: 1;
+
+    @media screen and (max-width: $tab-media) {
+      width: 304rem;
+      height: 398rem;
+      top: -14rem;
+    }
+
+    @media screen and (max-width: $mob-media) {
+      width: 164rem;
+      height: 214rem;
+      top: -5rem;
+    }
   }
 
   // .fs__img-composition-flag-right
@@ -84,6 +163,21 @@
     
     top: 8rem;
     z-index: 1;
+
+    @media screen and (max-width: $tab-media) {
+      width: 200rem;
+      height: 360rem;
+
+      right: 120rem;
+      top: 7rem;
+    }
+
+    @media screen and (max-width: $mob-media) {
+      width: 110rem;
+      height: 196rem;
+      right: 262rem;
+      top: 8rem;
+    }
   }
 
   // .fs__title
@@ -91,6 +185,17 @@
     margin-left: -14rem;
     margin-top: -13rem;
     margin-bottom: 18rem;
+
+    @media screen and (max-width: $tab-media) {
+      margin-top: -14rem;
+      margin-right: -7rem;
+      max-width: 600rem;
+    }
+
+    @media screen and (max-width: $mob-media) {
+      margin-right: -11rem;
+      margin-bottom: 11rem;
+    }
   }
 
   // .fs__desc
@@ -98,5 +203,16 @@
     font-weight: 500;
     margin-left: -2rem;
     margin-bottom: 46rem;
+
+    @media screen and (max-width: $tab-media) {
+      text-align: center;
+      margin-top: -2rem;
+    }
+
+    @media screen and (max-width: $mob-media) {
+      max-width: 330rem;
+      margin-top: 0;
+      margin-bottom: 17rem;
+    }
   }
 }

@@ -151,7 +151,11 @@
             <div class="main-btn__button text-main animate__animated" data-animate="animate__fadeIn">
               <span class="main-btn__button-text text-main">Скачать игру</span>
               <div class="main-btn__button-bg img-wrp">
-                <img src="image/button-bg.png" alt="bg">
+                <picture>
+                  <source srcset="image/mob/main-btn-bg-mob.png" media="(max-width: 600px)">
+                  <source srcset="image/tab/main-btn-bg-tab.png" media="(max-width: 1000px)">
+                  <img src="image/button-bg.png" alt="bg">
+                </picture>
               </div>
             </div>
             <div class="main-btn__decoration main-btn__decoration--right img-wrp animate__animated animate__delay-1s" data-animate="animate__fadeInRight">

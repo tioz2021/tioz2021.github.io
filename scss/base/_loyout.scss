@@ -24,6 +24,11 @@ main {
 
   position: relative;
   z-index: 2;
+
+  @media screen and (max-width: $mob-media) {
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
 }
 
 .img-wrp {

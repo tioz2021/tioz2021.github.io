@@ -16,6 +16,14 @@ html {
 
   // resize
   font-size: 0.05208vw;
+
+  @media screen and (max-width: $tab-media) {
+    font-size: 0.12999vw;
+  }
+
+  @media screen and (max-width: $mob-media) {
+    font-size: 0.27779vw;
+  }
 }
 
 body {
