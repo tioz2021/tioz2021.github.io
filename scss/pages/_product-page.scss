@@ -28,6 +28,10 @@
     @media screen and (max-width: $tab-media) {
       margin-bottom: 60rem;
     }
+
+    @media screen and (max-width: $mob-media) {
+      margin-bottom: 29rem;
+    }
   }
 
   // .product-page__info
@@ -39,6 +43,10 @@
     @media screen and (max-width: $tab-media) {
       flex-wrap: wrap;
     }
+
+    @media screen and (max-width: $mob-media) {
+      margin-bottom: 80rem;
+    }
   }
 
   // .product-page__gallery
@@ -49,11 +57,19 @@
       width: 100%;
       margin-bottom: 38rem;
     }
+
+    @media screen and (max-width: $mob-media) {
+      margin-bottom: 17rem;
+    }
   }
 
   // .product-page__info-text-box
   &__info-text-box {
     width: 784rem;
+
+    @media screen and (max-width: $mob-media) {
+      width: 100%;
+    }
   }
 
   // .product-page__info-title
@@ -61,6 +77,10 @@
     text-align: left;
     text-transform: unset;
     margin-bottom: 31rem;
+
+    @media screen and (max-width: $mob-media) {
+      margin-bottom: 7rem;
+    }
   }
 
   // .product-page__info-list-title
@@ -71,6 +91,10 @@
   // .product-page__info-list
   &__info-list {
     margin-bottom: 28rem;
+
+    @media screen and (max-width: $mob-media) {
+      margin-bottom: 17rem;
+    }
   }
 
   // .product-page__info-item-text
@@ -80,6 +104,10 @@
   // .product-page__info-item-price
   &__info-item-price {
     margin-bottom: 30rem;
+
+    @media screen and (max-width: $mob-media) {
+      margin-bottom: 21rem;
+    }
   }
 
   // .product-page__info-counter-wrp
@@ -88,6 +116,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media screen and (max-width: $mob-media) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 
   // .product-page__info-counter
@@ -124,6 +157,10 @@
       @media screen and (max-width: $tab-media) {
         margin-bottom: 8rem;
       }
+
+      @media screen and (max-width: $mob-media) {
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -131,6 +168,20 @@
   &-top__btn {
     width: 180rem;
     
+    @media screen and (max-width: $mob-media) {
+      width: 60rem;
+
+      .icon {
+        width: 16rem;
+        height: 16rem;
+      }
+
+      // .product-page-top__btn .text
+      .text {
+        display: none;
+      }
+    }
+
     // .product-page-top__btn .second-btn__bg::after
     .second-btn__bg::after {
       background-image: url(../../image/mob//texture-btn-mob.png);

@@ -10,6 +10,10 @@
         flex-wrap: wrap;
         margin-bottom: 37rem;
       }
+
+      @media screen and (max-width: $mob-media) {
+        margin-bottom: 16rem;
+      }
 		}
 
 		// .main-slider__title
@@ -17,6 +21,10 @@
       @media screen and (max-width: $tab-media) {
         text-align: center;
         margin-bottom: 19rem;
+      }
+
+      @media screen and (max-width: $mob-media) {
+        margin-bottom: 11rem;
       }
 		}
 
@@ -37,6 +45,11 @@
       width: 36rem;
       height: 36rem;
       cursor: pointer;
+
+      @media screen and (max-width: $mob-media) {
+        width: 24rem;
+        height: 24rem;
+      }
 		}
 
 		// .main-slider__button--prev

@@ -24,6 +24,10 @@
   font-weight: 500;
   font-size: 44rem;
   line-height: 120%;
+
+  @media screen and (max-width: $mob-media) {
+    font-size: 24rem;
+  }
 }
 
 .text-shop-title {
