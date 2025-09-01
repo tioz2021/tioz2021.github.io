@@ -1541,11 +1541,28 @@ main {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 1000px) {
+  .main-slider__top {
+    flex-wrap: wrap;
+    margin-bottom: 37rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .main-slider__title {
+    text-align: center;
+    margin-bottom: 19rem;
+  }
+}
 .main-slider__btn-wrp {
   display: flex;
   justify-content: space-between;
   gap: 24rem;
   margin-top: 9rem;
+}
+@media screen and (max-width: 1000px) {
+  .main-slider__btn-wrp {
+    width: 100%;
+  }
 }
 .main-slider__button {
   width: 36rem;
@@ -2543,6 +2560,11 @@ main {
 .pay-history__list-product-count span {
   color: var(--bg-1);
 }
+.product-page-main {
+  position: relative;
+  z-index: 2;
+}
+
 .product-page {
   min-height: 700rem;
   background-image: url(../../image/basket-bg.svg);
@@ -2551,6 +2573,11 @@ main {
   background-position: center top;
   margin-bottom: 130rem;
 }
+@media screen and (max-width: 1000px) {
+  .product-page {
+    margin-bottom: 78rem;
+  }
+}
 .product-page__container {
   flex-direction: column;
   position: unset;
@@ -2558,13 +2585,29 @@ main {
 .product-page__page-top-box {
   margin-bottom: 80rem;
 }
+@media screen and (max-width: 1000px) {
+  .product-page__page-top-box {
+    margin-bottom: 60rem;
+  }
+}
 .product-page__info {
   display: flex;
   justify-content: space-between;
   margin-bottom: 120rem;
 }
+@media screen and (max-width: 1000px) {
+  .product-page__info {
+    flex-wrap: wrap;
+  }
+}
 .product-page__gallery {
   width: 708rem;
+}
+@media screen and (max-width: 1000px) {
+  .product-page__gallery {
+    width: 100%;
+    margin-bottom: 38rem;
+  }
 }
 .product-page__info-text-box {
   width: 784rem;
@@ -2589,12 +2632,28 @@ main {
 .product-page__info-main-btn .main-btn__button {
   width: 424rem;
 }
+@media screen and (max-width: 1000px) {
+  .product-page__info-main-btn .main-btn__button {
+    width: 336rem;
+  }
+}
 .product-page__info-main-btn .main-btn__button .main-btn__button::after {
   width: 336rem;
   height: 60rem;
 }
 .product-page__slider .shop-page-body-gds__item {
   margin-bottom: 0;
+}
+@media screen and (max-width: 1000px) {
+  .product-page__slider .shop-page-body-gds__item {
+    margin-bottom: 8rem;
+  }
+}
+.product-page-top__btn {
+  width: 180rem;
+}
+.product-page-top__btn .second-btn__bg::after {
+  background-image: url(../../image/mob//texture-btn-mob.png);
 }
 
 .text-section {

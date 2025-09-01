@@ -1,3 +1,8 @@
+.product-page-main {
+  position: relative;
+  z-index: 2;
+}
+
 .product-page {
   min-height: 700rem;
   background-image: url(../../image/basket-bg.svg);
@@ -5,6 +10,10 @@
   background-size: contain;
   background-position: center top;
   margin-bottom: 130rem;
+
+  @media screen and (max-width: $tab-media) {
+    margin-bottom: 78rem;
+  }
 
   // .product-page__container
   &__container {
@@ -15,6 +24,10 @@
   // .product-page__page-top-box
   &__page-top-box {
     margin-bottom: 80rem;
+
+    @media screen and (max-width: $tab-media) {
+      margin-bottom: 60rem;
+    }
   }
 
   // .product-page__info
@@ -22,11 +35,20 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 120rem;
+
+    @media screen and (max-width: $tab-media) {
+      flex-wrap: wrap;
+    }
   }
 
   // .product-page__gallery
   &__gallery {
     width: 708rem;
+
+    @media screen and (max-width: $tab-media) {
+      width: 100%;
+      margin-bottom: 38rem;
+    }
   }
 
   // .product-page__info-text-box
@@ -79,6 +101,11 @@
     .main-btn__button {
       width: 424rem;
 
+      @media screen and (max-width: $tab-media) {
+        width: 336rem;
+        // height: 92px;
+      }
+
       // .product-page__info-main-btn .main-btn__button::after
       .main-btn__button::after {
         width: 336rem;
@@ -93,6 +120,20 @@
     // .product-page__slider .shop-page-body-gds__item
     .shop-page-body-gds__item {
       margin-bottom: 0;
+
+      @media screen and (max-width: $tab-media) {
+        margin-bottom: 8rem;
+      }
+    }
+  }
+
+  // .product-page-top__btn
+  &-top__btn {
+    width: 180rem;
+    
+    // .product-page-top__btn .second-btn__bg::after
+    .second-btn__bg::after {
+      background-image: url(../../image/mob//texture-btn-mob.png);
     }
   }
 

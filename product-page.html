@@ -203,7 +203,11 @@
                   <div class="main-btn__button text-main" id="open-popup">
                     <span class="main-btn__button-text text-main">перейти в корзину</span>
                     <div class="main-btn__button-bg img-wrp">
-                      <img src="image/buttons-bg/buttons-product-page-bg.png" alt="bg">
+                      <picture>
+                        <source srcset="image/mob/main-btn-bg-mob.png" media="(max-width: 600px)">
+                        <source srcset="image/tab/main-btn-bg-tab.png" media="(max-width: 1000px)">
+                        <img src="image/buttons-bg/buttons-product-page-bg.png" alt="bg">
+                      </picture>
                     </div>
                   </div>
                 </button>
@@ -347,13 +351,29 @@
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper(".my-slider", {
-      slidesPerView: 4,
-      spaceBetween: 35,
       navigation: {
         nextEl: ".main-slider__button--next",
         prevEl: ".main-slider__button--prev",
       },
+      breakpoints: {
+        0: { // от 0px и выше
+          slidesPerView: 2,
+          spaceBetween: 24,
+          grid : {
+            rows: 2,
+            fill: "row",
+          }
+        },
+        1000: { // от 1000px и выше
+          slidesPerView: 4,
+          spaceBetween: 35,
+          grid : {
+            rows: 1,
+          }
+        }
+      }
     });
+
   </script>
   
   <script src="js/main.js"></script>
