@@ -1,5 +1,6 @@
 * {
-  
+  // disable outline for IOS
+  -webkit-tap-highlight-color: transparent;
 }
 
 html {
@@ -56,4 +57,17 @@ input[type=number] {
 
 input{
   outline: unset;
+}
+
+
+button,
+a {
+  outline: none;           /* убирает обводку */
+  -webkit-tap-highlight-color: transparent; /* убирает синий highlight на мобильных */
+}
+
+button:focus,
+a:focus {
+  outline: none;
+  box-shadow: none;
 }

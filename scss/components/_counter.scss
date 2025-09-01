@@ -28,8 +28,11 @@
     // padding-bottom: 15rem;
     // margin-right: 12rem;
 
-    @media screen and (max-width: $mob-media) {
+    @media screen and (max-width: $tab-media) {
       width: 100%;
+    }
+
+    @media screen and (max-width: $mob-media) {
       height: 60rem;
 
       background-image: url('../../image/mob/counter-bg-mob.svg');
@@ -108,6 +111,18 @@
     margin-left: 12rem;
     position: relative;
     left: 10rem;
+
+    @media screen and (max-width: $tab-media) {
+      position: absolute;
+      left: unset;
+      top: 43rem;
+      right: 33rem;
+    }
+
+    @media screen and (max-width: $mob-media) {
+      top: 11rem;
+      right: 21rem;
+    }
     
     // .counter__btn-bg
     .counter__btn-bg {

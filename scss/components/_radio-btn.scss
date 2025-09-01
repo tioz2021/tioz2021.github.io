@@ -11,7 +11,13 @@
   border-radius: 50%;
   display: inline-block;
   position: relative;
-  cursor: pointer;
+  cursor: pointer;  
+  box-sizing: border-box;
+  
+  @media screen and (max-width: $mob-media) {
+    width: 16rem;
+    height: 16rem;
+  }
 }
 
 /* внутренний кружок */
@@ -25,4 +31,9 @@
   background: #e6e0d9;
   border-radius: 50%;
   transform: translate(-50%, -50%);
+
+  @media screen and (max-width: $mob-media) {
+    width: 8rem;
+    height: 8rem;
+  }
 }

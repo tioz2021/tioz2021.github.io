@@ -22,6 +22,10 @@
       max-width: 120rem;
     }
 
+    @media screen and (max-width: $mob-media) {
+      max-width: 150rem;
+    }
+
     // .page-nav__link:hover
     &:hover{
       opacity: 1;

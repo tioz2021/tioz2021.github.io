@@ -168,10 +168,17 @@
   &-top__btn {
     width: 180rem;
     
+    @media screen and (max-width: $tab-media) {
+      .icon {
+        display: none;
+      }
+    }
+
     @media screen and (max-width: $mob-media) {
       width: 60rem;
 
       .icon {
+        display: block;
         width: 16rem;
         height: 16rem;
       }
@@ -188,4 +195,10 @@
     }
   }
 
+}
+
+.product-page__page-top-box .page-nav__link {
+  @media screen and (max-width: $mob-media) {
+    max-width: 120rem;
+  }
 }

@@ -104,6 +104,15 @@
     z-index: 3;
     display: flex;
     align-items: center;
+
+    // .second-btn__text
+    .icon {
+      display: none;
+
+      @media screen and (max-width: $tab-media) {
+        display: block;
+      }
+    }
   }
 
   // .second-btn__num

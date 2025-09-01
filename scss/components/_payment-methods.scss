@@ -12,6 +12,14 @@
   box-sizing: border-box;
   border-bottom: 1rem solid rgba(223, 215, 206, 0.6);  
 
+  @media screen and (max-width: $tab-media) {
+    width: 100%;
+  }
+
+  @media screen and (max-width: $mob-media) {
+    background-color: rgba(249, 190, 124, 0.16);
+  }
+
   // .payment-methods.open
   &.open {
 
@@ -36,6 +44,14 @@
     padding-bottom: 12rem;
     padding-left: 12rem;
     padding-right: 12rem;
+
+    @media screen and (max-width: $mob-media) {
+      height: 56rem;
+      padding-top: 15rem;
+      padding-bottom: 12rem;
+      padding-left: 17rem;
+      padding-right: 12rem;
+    }
   }
 
   // .payment-methods__item
@@ -43,6 +59,14 @@
     display: flex;
     align-items: center;
     margin-bottom: 12rem;
+
+    @media screen and (max-width: $tab-media) {
+      margin-bottom: 11rem;
+    }
+
+    @media screen and (max-width: $mob-media) {
+      margin-bottom: 16rem;
+    }
   }
 
   // .payment-methods__radio
@@ -51,12 +75,22 @@
     position: relative;
     top: 2rem;
     left: -1rem;
+
+    @media screen and (max-width: $mob-media) {
+      margin-right: 11rem;
+      top: 2rem;
+      left: 1rem;
+    }
   }
 
   // .payment-methods__icon-wrp
   &__icons-wrp {
     display: flex;
     gap: 4rem;
+
+    @media screen and (max-width: $mob-media) {
+      gap: 8rem;
+    }
   }
 
   // .payment-methods__icon
@@ -69,10 +103,20 @@
     justify-content: center;
     align-items: center;
 
+    @media screen and (max-width: $mob-media) {
+      width: 24rem;
+      height: 24rem;
+    }
+
     // .payment-methods__icon-wrp
     &-wrp {
       width: 24rem;
       height: 24rem;
+
+      @media screen and (max-width: $mob-media) {
+        width: 16rem;
+        height: 16rem;
+      }
     }
   }
 
@@ -91,6 +135,12 @@
     cursor: pointer;
 
     transition: all 350ms ease-in-out;
+
+    @media screen and (max-width: $mob-media) {
+      width: 12rem;
+      height: 8rem;
+      margin-right: 5rem;
+    }
   }
 
   // .payment-methods__list
@@ -103,6 +153,11 @@
     box-sizing: border-box;
     padding-left: 12rem;
     padding-right: 12rem;
+
+    @media screen and (max-width: $mob-media) {
+      padding-left: 16rem;
+      padding-right: 16rem;
+    }
   }
 
   // .payment-methods__more
@@ -111,5 +166,13 @@
     padding-bottom: 12rem;
     color: var(--bg-2);
     text-align: center;
+
+    @media screen and (max-width: $tab-media) {
+      text-align: left;
+    }
+
+    @media screen and (max-width: $mob-media) {
+      padding-bottom: 17rem;
+    }
   }
 }

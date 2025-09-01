@@ -45,16 +45,40 @@
   opacity: 0;
   transition: all 0.4s ease;
 
+  @media screen and (max-width: $tab-media) {
+    width: 702rem;
+    height: 349rem;
+  }
+
+  @media screen and (max-width: $mob-media) {
+    width: 328rem;
+    height: 194rem;
+    padding-top: 24rem;
+    padding-bottom: 36rem;
+    padding-left: 16rem;
+    padding-right: 16rem;
+
+    background-image: url('../../image/mob/popup-bg-mob.png');
+  }
+
   // .popup__title
   &__title {
     text-align: center;
     margin-bottom: 8rem;
+
+    @media screen and (max-width: $mob-media) {
+      margin-bottom: 4rem;
+    }
   }
 
   // .popup__text
   &__text {
     text-align: center;
     margin-bottom: 24rem;
+
+    @media screen and (max-width: $mob-media) {
+      margin-bottom: 16rem;
+    }
   }
 
   // .popup__btn-wrp
@@ -67,6 +91,15 @@
   // .popup__btn
   &__btn {
     width: 336rem;
+
+    @media screen and (max-width: $tab-media) {
+      width: 300rem;
+    }
+
+    @media screen and (max-width: $mob-media) {
+      width: 144rem;
+      clip-path: polygon(12rem 0%, calc(100% - 12rem) 0%, 100% 50%, calc(100% - 12rem) 100%, 12rem 100%, 0% 50%);
+    }
   }
 
   // .popup__close
