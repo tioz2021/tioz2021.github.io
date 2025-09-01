@@ -83,7 +83,10 @@
   // .basket__top-btn
   &__top-btn {
     @media screen and (max-width: $tab-media) {
-      // width: 336rem;
+      width: 336rem;
+    }
+    
+    @media screen and (max-width: $mob-media) {
       width: 160rem;
     }
   }

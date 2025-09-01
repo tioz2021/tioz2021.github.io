@@ -1,3 +1,13 @@
+.page-wrp--history {
+
+  // .page-wrp--history .header
+  .header {
+    @media screen and (max-width: $mob-media) {
+      height: 93rem;
+    }
+  }
+}
+
 .pay-history {
   min-height: 700rem;
   background-image: url('../../image/basket-bg.svg');
@@ -7,6 +17,15 @@
   position: relative;
   margin-bottom: 119rem;
   z-index: 2;
+
+  @media screen and (max-width: $tab-media) {
+    margin-bottom: 72rem;
+    background-image: url('../../image/tab/basket-bg-tab.svg');
+  }
+
+  @media screen and (max-width: $mob-media) {
+    margin-bottom: 55rem;
+  }
 
   // .pay-history__container
   &__container {
@@ -18,11 +37,62 @@
   &__page-top-box {
     margin-top: 54rem;
     margin-bottom: 80rem;
+
+    @media screen and (max-width: $tab-media) {
+      margin-top: 24rem;
+      margin-bottom: 62rem;
+    }
+
+    @media screen and (max-width: $mob-media) {
+      margin-top: -1rem;
+      margin-bottom: 30rem;
+    }
+
+    // .pay-history__page-top-box .second-btn
+    .second-btn {
+      @media screen and (max-width: $mob-media) {
+        margin-top: 20rem;
+      }
+
+      // .pay-history__page-top-box .second-btn .icon
+      .icon {
+        display: none;
+        @media screen and (max-width: $mob-media) {
+          display: block;
+          position: relative;
+          top: 2rem;
+          left: -3rem;
+        }
+      }
+
+      // .pay-history__page-top-box .second-btn .text
+      .text {
+        @media screen and (max-width: $mob-media) {
+          display: none;
+        }
+      }
+
+      @media screen and (max-width: $tab-media) {
+        width: 180rem;
+      }
+
+      @media screen and (max-width: $mob-media) {
+        width: 60rem;
+      }
+    }
   }
 
   // .pay-history__title
   &__title {
     margin-bottom: 53rem;
+
+    @media screen and (max-width: $tab-media) {
+      margin-bottom: 91rem;
+    }
+
+    @media screen and (max-width: $mob-media) {
+      margin-bottom: 19rem;
+    }
   }
 
   // .pay-history__list-wrp
@@ -32,6 +102,10 @@
   // .pay-history__head 
   &__head {
     margin-bottom: 26rem;
+
+    @media screen and (max-width: $tab-media) {
+      display: none;
+    }
   }
 
   // .pay-history__item-row
@@ -41,6 +115,20 @@
     box-sizing: border-box;
     padding-left: 36rem;
     padding-right: 36rem;
+
+    @media screen and (max-width: $tab-media) {
+      flex-wrap: wrap;
+      padding-left: 24rem;
+      padding-right: 24rem;
+      padding-bottom: 18rem;
+    }
+
+    @media screen and (max-width: $mob-media) {
+      padding-left: 16rem;
+      padding-right: 16rem;
+      margin-bottom: 0rem;
+      padding-bottom: 11rem;
+    }
   }
 
   // .pay-history__item-col
@@ -49,11 +137,37 @@
     // .pay-history__item-col1
     &1 {
       width: 338rem;
+
+      @media screen and (max-width: $tab-media) {
+        width: 350rem;
+        margin-bottom: 41rem;
+      }
+
+      @media screen and (max-width: $mob-media) {
+        margin-bottom: 46rem;
+      }
     }
 
     // .pay-history__item-col2
     &2 {
       width: 169rem;
+
+      @media screen and (max-width: $tab-media) {
+        position: absolute;
+        top: 22rem;
+        right: 24rem;
+
+        // .pay-history__item-col2 .pay-history__list-text
+        .pay-history__list-text {
+          text-align: right;
+          opacity: 0.6;
+        }
+      }
+
+      @media screen and (max-width: $mob-media) {
+        top: 18rem;
+        right: 16rem;
+      }
     }
 
     // .pay-history__item-col3
@@ -61,6 +175,15 @@
       width: 579rem;
       display: flex;
       position: relative;
+
+      @media screen and (max-width: $tab-media) {
+        width: 100%;
+        margin-bottom: 10rem;
+      }
+
+      @media screen and (max-width: $mob-media) {
+        margin-bottom: -3rem;
+      }
     }
 
     // .pay-history__item-col4
@@ -82,6 +205,16 @@
     border-radius: 8rem;
     width: 100%;
     margin-bottom: 16rem;
+
+    @media screen and (max-width: $tab-media) {
+      position: relative;
+    }
+
+    @media screen and (max-width: $mob-media) {
+      border-radius: 4rem;
+      padding-top: 18rem;
+      margin-bottom: 8rem;
+    }
   }
 
   // .pay-history__list
@@ -100,15 +233,34 @@
     margin-right: 24rem;
     position: relative;
     top: -15rem;
+
+    @media screen and (max-width: $tab-media) {
+      margin-right: 17rem;
+    }
+
+    @media screen and (max-width: $mob-media) {
+      width: 60rem;
+      height: 60rem;
+      margin-right: 12rem;
+    }
   }
 
   // .pay-history__item-text-wrp
   &__item-text-wrp {
+    @media screen and (max-width: $mob-media) {
+      position: relative;
+      top: -8rem;
+    }
   }
 
   // .pay-history__list-product-name
   &__list-product-name {
     margin-bottom: 13rem;
+
+    @media screen and (max-width: $mob-media) {
+      font-size: 18rem;
+      margin-bottom: 5rem;
+    }
   }
 
   // .pay-history__list-product-count
