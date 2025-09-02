@@ -3776,7 +3776,11 @@ main {
   height: 440rem;
   bottom: unset;
   top: 0;
-  display: none;
+}
+@media screen and (max-width: 1000px) {
+  .fog--shop {
+    display: none;
+  }
 }
 .fog > div {
   width: 100%;
