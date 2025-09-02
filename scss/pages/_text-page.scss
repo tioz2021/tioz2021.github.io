@@ -159,6 +159,8 @@
     text-align: center;
     position: relative;
     z-index: 2;
+    @include text-overflow(6);
+    overflow: hidden;
 
     @media screen and (max-width: $tab-media) {
       @include text-overflow(5);

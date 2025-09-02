@@ -3622,6 +3622,18 @@ body {
   text-align: center;
   position: relative;
   z-index: 2;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -ms-line-clamp: 6;
+  -webkit-line-clamp: 6;
+  line-clamp: 6;
+  display: -webkit-box;
+  display: box;
+  word-wrap: break-word;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+  overflow: hidden;
 }
 @media screen and (max-width: 1000px) {
   .text-section__last-text {
