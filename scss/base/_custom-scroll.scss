@@ -1,51 +1,51 @@
   // disabled scroll bar
-  html {
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    &::-webkit-scrollbar {
-      display: none;
-    }
-  }
+  // html {
+  //   scrollbar-width: none;
+  //   -ms-overflow-style: none;
+  //   &::-webkit-scrollbar {
+  //     display: none;
+  //   }
+  // }
   
-// /* WebKit браузеры */
-// ::-webkit-scrollbar {
-//   width: 10rem;
-//   height: 10rem; /* для горизонтального скролла */
-// }
+/* WebKit браузеры */
+::-webkit-scrollbar {
+  width: 10rem;
+  height: 10rem; /* для горизонтального скролла */
+}
 
-// ::-webkit-scrollbar-track {
-//   background-color: var(--bg-4);
-//   border-radius: 10rem;
-// }
+::-webkit-scrollbar-track {
+  background-color: var(--bg-4);
+  border-radius: 10rem;
+}
 
-// ::-webkit-scrollbar-thumb {
-//   border-radius: 10rem;
-//   background: var(--bg-3);
-//   border: 2px solid var(--bg-4); /* чтобы не было зазоров */
-// }
+::-webkit-scrollbar-thumb {
+  border-radius: 10rem;
+  background: var(--bg-3);
+  border: 2px solid var(--bg-4); /* чтобы не было зазоров */
+}
 
-// ::-webkit-scrollbar-thumb:hover {
-//   background: var(--bg-2); /* добавим hover эффект */
-// }
+::-webkit-scrollbar-thumb:hover {
+  background: var(--bg-2); /* добавим hover эффект */
+}
 
-// ::-webkit-scrollbar-corner {
-//   background-color: var(--bg-4); /* угол между скроллбарами */
-// }
+::-webkit-scrollbar-corner {
+  background-color: var(--bg-4); /* угол между скроллбарами */
+}
 
-// /* Firefox и современные браузеры */
-// html {
-//   scrollbar-width: auto;
-//   scrollbar-color: var(--bg-3) var(--bg-4);
-// }
+/* Firefox и современные браузеры */
+html {
+  scrollbar-width: auto;
+  scrollbar-color: var(--bg-3) var(--bg-4);
+}
 
-// body {
-//   scrollbar-width: auto;
-//   scrollbar-color: var(--bg-3) var(--bg-4);
-// }
+body {
+  scrollbar-width: auto;
+  scrollbar-color: var(--bg-3) var(--bg-4);
+}
 
-// /* Fallback для браузеров без поддержки кастомных скроллбаров */
-// @supports not (scrollbar-color: red blue) {
-//   body {
-//     scrollbar-width: thin;
-//   }
-// }
+/* Fallback для браузеров без поддержки кастомных скроллбаров */
+@supports not (scrollbar-color: red blue) {
+  body {
+    scrollbar-width: thin;
+  }
+}
