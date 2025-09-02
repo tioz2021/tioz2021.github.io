@@ -1,6 +1,6 @@
 .header {
   background-color: var(--bg-0);
-  background-image: url('../../image/header-bg.png');
+  background-image: url('../image/header-bg.png');
   background-position: center;
   background-size: cover;
   height: 80rem;
@@ -9,7 +9,7 @@
 
   @media screen and (max-width: $tab-media) {
     height: 160rem;
-    background-image: url('../../image/tab/header-bg-tab.png');
+    background-image: url('../image/tab/header-bg-tab.png');
     background-size: contain;
     background-position: center top;
     background-repeat: no-repeat;
@@ -17,7 +17,7 @@
   }
 
   @media screen and (max-width: $mob-media) {
-    background-image: url('../../image/mob/hader-bg-mob.png');
+    background-image: url('../image/mob/hader-bg-mob.png');
     height: 88rem;
   }
 

@@ -159,7 +159,7 @@
     // .shop-page-top__btn .second-btn__bg::after
     .second-btn__bg::after {
       @media screen and (max-width: $mob-media) {
-        background-image: url('../../image/mob/texture-btn-mob2.png');
+        background-image: url('../image/mob/texture-btn-mob2.png');
       }
     }
 
@@ -270,13 +270,13 @@
     // padding-bottom: 20rem;
     margin-bottom: 60rem;
 
-    background-image: url('../../image/gds/nav-bg.svg');
+    background-image: url('../image/gds/nav-bg.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 
     @media screen and (max-width: $tab-media) {
-      // background-image: url('../../image/tab/nav-bg-tab.svg');
+      // background-image: url('../image/tab/nav-bg-tab.svg');
       margin-left: -35rem;
       margin-right: -35rem;
       margin-bottom: 46rem;
@@ -287,7 +287,7 @@
     @media screen and (max-width: $mob-media) {
       height: 44rem;
       margin-bottom: 24rem;
-      // background-image: url('../../image/mob/nav-bg-mob.svg');
+      // background-image: url('../image/mob/nav-bg-mob.svg');
     }
   }
 
@@ -318,7 +318,7 @@
         top: 0;
         left: 50%;
         transform: translateX(-50%);
-        background-image: url('../../image/decoration-figure.svg');
+        background-image: url('../image/decoration-figure.svg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
@@ -334,7 +334,7 @@
         bottom: 0;
         left: 50%;
         transform: translateX(-50%) rotate(180deg);
-        background-image: url('../../image/decoration-figure.svg');
+        background-image: url('../image/decoration-figure.svg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;

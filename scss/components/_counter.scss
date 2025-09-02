@@ -19,7 +19,7 @@
     height: 92rem;
     padding-left: 33rem;
     padding-right: 33rem;
-    background-image: url('../../image/counter-bg.svg');
+    background-image: url('../image/counter-bg.svg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -35,7 +35,7 @@
     @media screen and (max-width: $mob-media) {
       height: 60rem;
 
-      background-image: url('../../image/mob/counter-bg-mob.svg');
+      background-image: url('../image/mob/counter-bg-mob.svg');
       margin-bottom: 12rem;
       padding-left: 20rem;
       padding-right: 21rem;

@@ -97,7 +97,7 @@
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
-      background-image: url('../../image/seccond-btn-bg.png');
+      background-image: url('../image/seccond-btn-bg.png');
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -105,7 +105,7 @@
       z-index: 2;
 
       @media screen and (max-width: $mob-media) {
-        background-image: url('../../image/mob/texture-btn-mob.png');
+        background-image: url('../image/mob/texture-btn-mob.png');
       }
     }
   }

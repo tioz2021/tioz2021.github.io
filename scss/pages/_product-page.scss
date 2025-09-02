@@ -5,7 +5,7 @@
 
 .product-page {
   min-height: 700rem;
-  background-image: url(../../image/basket-bg.svg);
+  background-image: url(../image/basket-bg.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center top;
@@ -191,7 +191,7 @@
 
     // .product-page-top__btn .second-btn__bg::after
     .second-btn__bg::after {
-      background-image: url(../../image/mob//texture-btn-mob.png);
+      background-image: url(../image/mob//texture-btn-mob.png);
     }
   }
 

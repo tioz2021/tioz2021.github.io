@@ -30,7 +30,7 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    background-image: url('../../image/mob/dropdawn-arrow-tab.svg');
+    background-image: url('../image/mob/dropdawn-arrow-tab.svg');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -38,7 +38,7 @@
     @media screen and (max-width: $mob-media) {
       width: 328rem;
       height: 2rem;
-      background-image: url('../../image/mob/dropdawn-arrow-mob.svg');
+      background-image: url('../image/mob/dropdawn-arrow-mob.svg');
     }
   }
 
@@ -120,7 +120,7 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    background-image: url('../../image/mob/dropdawn-arrow-tab.svg');
+    background-image: url('../image/mob/dropdawn-arrow-tab.svg');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -128,7 +128,7 @@
     @media screen and (max-width: $mob-media) {
       width: 328rem;
       height: 2rem;
-      background-image: url('../../image/mob/dropdawn-arrow-mob.svg');
+      background-image: url('../image/mob/dropdawn-arrow-mob.svg');
     }
   }
 

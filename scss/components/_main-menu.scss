@@ -25,7 +25,7 @@
     width: 363rem;
     z-index: 5;
     height: auto;
-    // background-image: url('../../image/main-menu-body-bg.png');
+    // background-image: url('../image/main-menu-body-bg.png');
     // background-position: center top;
     // background-size: 115%;
     // background-repeat: no-repeat;
@@ -75,7 +75,7 @@
     transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
-    background-image: url('../../image/main-menu-body-bg.png');
+    background-image: url('../image/main-menu-body-bg.png');
     background-position: center top;
     background-size: 115%;
     background-repeat: no-repeat;
@@ -85,7 +85,7 @@
     transition: opacity 300ms ease-in-out;
 
     @media screen and (max-width: $mob-media) {
-      background-image: url('../../image/mob/main-menu-body-bg-mob.png');
+      background-image: url('../image/mob/main-menu-body-bg-mob.png');
       background-size: cover;
       
       // .main-menu__bg::after
@@ -125,7 +125,7 @@
       top: -12rem;
       width: 129%;
       height: 151%;
-      background-image: url(../../image/use-panel-bg.png);
+      background-image: url(../image/use-panel-bg.png);
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center top;
@@ -133,7 +133,7 @@
       @media screen and (max-width: $mob-media) {
         width: 172rem;
         height: 44rem;
-        background-image: url('../../image/mob/use-panel-bg-mob.png');
+        background-image: url('../image/mob/use-panel-bg-mob.png');
         left: unset;
         top: -10rem;
         right: -10rem;

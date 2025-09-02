@@ -1,6 +1,6 @@
 .footer {
 
-  background-image: url('../../image/footer-bg.png');
+  background-image: url('../image/footer-bg.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -10,12 +10,12 @@
   z-index: 2;
   
   @media screen and (max-width: $tab-media) {
-    background-image: url('../../image/tab/footer-bg-tab.png');
+    background-image: url('../image/tab/footer-bg-tab.png');
     height: 280rem;
   }
 
   @media screen and (max-width: $mob-media) {
-    background-image: url('../../image/mob/footer-bg-mob.png');
+    background-image: url('../image/mob/footer-bg-mob.png');
     height: 152rem;
   }
 

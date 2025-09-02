@@ -24,7 +24,7 @@
   &>div {
     width: 100%;
     height: 100%;
-    background-image: url('../../image/fog/fog-mask.png');
+    background-image: url('../image/fog/fog-mask.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -56,12 +56,12 @@
 }
 .fog::before, 
 .fog div::before {
-  background-image: url("../../image/fog/fog-1.png");
+  background-image: url("../image/fog/fog-1.png");
   animation: fogmove 40s linear 0s infinite;
 }
 .fog::after, 
 .fog div::after {
-  background-image: url("../../image/fog/fog-2.png");
+  background-image: url("../image/fog/fog-2.png");
   animation: fogmove 20s linear 0s infinite;
 }
 @keyframes fogmove {

@@ -6,7 +6,7 @@
 
 .text-section {
   min-height: 700rem;
-  background-image: url('../../image/basket-bg.svg');
+  background-image: url('../image/basket-bg.svg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center top;
@@ -183,13 +183,13 @@
     transform: translate(-50%, -50%);
     z-index: 1;
 
-    background-image: url('../../image/text-page-last-blog-bg.png');
+    background-image: url('../image/text-page-last-blog-bg.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center top;
 
     @media screen and (max-width: $mob-media) {
-      background-image: url('../../image/mob/text-page-last-box-border-mob.svg');
+      background-image: url('../image/mob/text-page-last-box-border-mob.svg');
     }
   }
 }

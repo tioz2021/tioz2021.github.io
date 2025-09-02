@@ -14,7 +14,7 @@
 
 .basket {
   min-height: 700rem;
-  background-image: url('../../image/basket-bg.svg');
+  background-image: url('../image/basket-bg.svg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center top;
@@ -27,7 +27,7 @@
   @media screen and (max-width: $tab-media) {
     margin-bottom: 86rem;
 
-    background-image: url('../../image/tab/basket-bg-tab.svg');
+    background-image: url('../image/tab/basket-bg-tab.svg');
   }
 
   @media screen and (max-width: $mob-media) {
@@ -223,7 +223,7 @@
     position: relative;
     width: 374rem;
     min-height: 620rem;
-    background-image: url('../../image/basket__buy-bg.svg');
+    background-image: url('../image/basket__buy-bg.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -317,7 +317,7 @@
 
 .basket .counter__changer-count-wrp {
   @media screen and (max-width: $tab-media) {
-    background-image: url('../../image/tab/basket-counter-bg-tab.svg');
+    background-image: url('../image/tab/basket-counter-bg-tab.svg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -325,7 +325,7 @@
   }
 
   @media screen and (max-width: $mob-media) {
-    background-image: url('../../image/mob/counter-bg-mob2.svg');
+    background-image: url('../image/mob/counter-bg-mob2.svg');
   }
 }
 

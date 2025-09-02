@@ -10,7 +10,7 @@
 
 .pay-history {
   min-height: 700rem;
-  background-image: url('../../image/basket-bg.svg');
+  background-image: url('../image/basket-bg.svg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center top;
@@ -20,7 +20,7 @@
 
   @media screen and (max-width: $tab-media) {
     margin-bottom: 72rem;
-    background-image: url('../../image/tab/basket-bg-tab.svg');
+    background-image: url('../image/tab/basket-bg-tab.svg');
   }
 
   @media screen and (max-width: $mob-media) {
