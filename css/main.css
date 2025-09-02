@@ -2140,6 +2140,7 @@ body {
   .fs__img-composition {
     height: 404rem;
     margin-bottom: 48rem;
+    z-index: 4;
   }
 }
 @media screen and (max-width: 600px) {
