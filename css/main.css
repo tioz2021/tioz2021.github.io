@@ -696,7 +696,7 @@ body {
 }
 .header {
   background-color: var(--bg-0);
-  background-image: url("../../image/header-bg.png");
+  background-image: url("../image/header-bg.png");
   background-position: center;
   background-size: cover;
   height: 80rem;
@@ -706,7 +706,7 @@ body {
 @media screen and (max-width: 1000px) {
   .header {
     height: 160rem;
-    background-image: url("../../image/tab/header-bg-tab.png");
+    background-image: url("../image/tab/header-bg-tab.png");
     background-size: contain;
     background-position: center top;
     background-repeat: no-repeat;
@@ -715,7 +715,7 @@ body {
 }
 @media screen and (max-width: 600px) {
   .header {
-    background-image: url("../../image/mob/hader-bg-mob.png");
+    background-image: url("../image/mob/hader-bg-mob.png");
     height: 88rem;
   }
 }
@@ -906,7 +906,7 @@ body {
   transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
-  background-image: url("../../image/main-menu-body-bg.png");
+  background-image: url("../image/main-menu-body-bg.png");
   background-position: center top;
   background-size: 115%;
   background-repeat: no-repeat;
@@ -916,7 +916,7 @@ body {
 }
 @media screen and (max-width: 600px) {
   .main-menu__bg {
-    background-image: url("../../image/mob/main-menu-body-bg-mob.png");
+    background-image: url("../image/mob/main-menu-body-bg-mob.png");
     background-size: cover;
   }
   .main-menu__bg::after {
@@ -949,7 +949,7 @@ body {
   top: -12rem;
   width: 129%;
   height: 151%;
-  background-image: url(../../image/use-panel-bg.png);
+  background-image: url(../image/use-panel-bg.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center top;
@@ -958,7 +958,7 @@ body {
   .main-menu__head::after {
     width: 172rem;
     height: 44rem;
-    background-image: url("../../image/mob/use-panel-bg-mob.png");
+    background-image: url("../image/mob/use-panel-bg-mob.png");
     left: unset;
     top: -10rem;
     right: -10rem;
@@ -1210,7 +1210,7 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background-image: url("../../image/seccond-btn-bg.png");
+  background-image: url("../image/seccond-btn-bg.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1218,7 +1218,7 @@ body {
 }
 @media screen and (max-width: 600px) {
   .second-btn__bg::after {
-    background-image: url("../../image/mob/texture-btn-mob.png");
+    background-image: url("../image/mob/texture-btn-mob.png");
   }
 }
 .second-btn--nobg {
@@ -1273,7 +1273,7 @@ body {
 }
 
 .footer {
-  background-image: url("../../image/footer-bg.png");
+  background-image: url("../image/footer-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1283,13 +1283,13 @@ body {
 }
 @media screen and (max-width: 1000px) {
   .footer {
-    background-image: url("../../image/tab/footer-bg-tab.png");
+    background-image: url("../image/tab/footer-bg-tab.png");
     height: 280rem;
   }
 }
 @media screen and (max-width: 600px) {
   .footer {
-    background-image: url("../../image/mob/footer-bg-mob.png");
+    background-image: url("../image/mob/footer-bg-mob.png");
     height: 152rem;
   }
 }
@@ -1371,7 +1371,7 @@ body {
   height: 12rem;
   margin-left: 12rem;
   margin-right: 12rem;
-  background-image: url("../../image/page-nave-dot-img.svg");
+  background-image: url("../image/page-nave-dot-img.svg");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1580,7 +1580,7 @@ body {
   height: 92rem;
   padding-left: 33rem;
   padding-right: 33rem;
-  background-image: url("../../image/counter-bg.svg");
+  background-image: url("../image/counter-bg.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -1593,7 +1593,7 @@ body {
 @media screen and (max-width: 600px) {
   .counter__changer-count-wrp {
     height: 60rem;
-    background-image: url("../../image/mob/counter-bg-mob.svg");
+    background-image: url("../image/mob/counter-bg-mob.svg");
     margin-bottom: 12rem;
     padding-left: 20rem;
     padding-right: 21rem;
@@ -1877,7 +1877,7 @@ body {
   padding-top: 60rem;
   padding-bottom: 80rem;
   position: relative;
-  background-image: url("../../image/popup-bg.png");
+  background-image: url("../image/popup-bg.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center top;
@@ -1900,7 +1900,7 @@ body {
     padding-bottom: 36rem;
     padding-left: 16rem;
     padding-right: 16rem;
-    background-image: url("../../image/mob/popup-bg-mob.png");
+    background-image: url("../image/mob/popup-bg-mob.png");
   }
 }
 .popup__title {
@@ -1968,7 +1968,7 @@ body {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  background-image: url("../../image/mob/dropdawn-arrow-tab.svg");
+  background-image: url("../image/mob/dropdawn-arrow-tab.svg");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1977,7 +1977,7 @@ body {
   .dropdown::after, .dropdown::before {
     width: 328rem;
     height: 2rem;
-    background-image: url("../../image/mob/dropdawn-arrow-mob.svg");
+    background-image: url("../image/mob/dropdawn-arrow-mob.svg");
   }
 }
 .dropdown::before {
@@ -2051,7 +2051,7 @@ body {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  background-image: url("../../image/mob/dropdawn-arrow-tab.svg");
+  background-image: url("../image/mob/dropdawn-arrow-tab.svg");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -2060,7 +2060,7 @@ body {
   .dropdown__menu::after {
     width: 328rem;
     height: 2rem;
-    background-image: url("../../image/mob/dropdawn-arrow-mob.svg");
+    background-image: url("../image/mob/dropdawn-arrow-mob.svg");
   }
 }
 @media screen and (max-width: 1000px) {
@@ -2118,7 +2118,7 @@ body {
 }
 @media screen and (max-width: 600px) {
   .fs {
-    background-image: url("../../image/mob/fs-bg.png");
+    background-image: url("../image/mob/fs-bg.png");
     background-size: contain;
     background-position: top;
     padding-bottom: 165rem;
@@ -2453,7 +2453,7 @@ body {
 }
 @media screen and (max-width: 600px) {
   .shop-page-top__btn .second-btn__bg::after {
-    background-image: url("../../image/mob/texture-btn-mob2.png");
+    background-image: url("../image/mob/texture-btn-mob2.png");
   }
 }
 .shop-page-top__btn .icon {
@@ -2549,7 +2549,7 @@ body {
   justify-content: center;
   box-sizing: border-box;
   margin-bottom: 60rem;
-  background-image: url("../../image/gds/nav-bg.svg");
+  background-image: url("../image/gds/nav-bg.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -2590,7 +2590,7 @@ body {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  background-image: url("../../image/decoration-figure.svg");
+  background-image: url("../image/decoration-figure.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -2603,7 +2603,7 @@ body {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%) rotate(180deg);
-  background-image: url("../../image/decoration-figure.svg");
+  background-image: url("../image/decoration-figure.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -2760,7 +2760,7 @@ body {
 
 .basket {
   min-height: 700rem;
-  background-image: url("../../image/basket-bg.svg");
+  background-image: url("../image/basket-bg.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center top;
@@ -2770,7 +2770,7 @@ body {
 @media screen and (max-width: 1000px) {
   .basket {
     margin-bottom: 86rem;
-    background-image: url("../../image/tab/basket-bg-tab.svg");
+    background-image: url("../image/tab/basket-bg-tab.svg");
   }
 }
 @media screen and (max-width: 600px) {
@@ -2947,7 +2947,7 @@ body {
   position: relative;
   width: 374rem;
   min-height: 620rem;
-  background-image: url("../../image/basket__buy-bg.svg");
+  background-image: url("../image/basket__buy-bg.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -3030,7 +3030,7 @@ body {
 
 @media screen and (max-width: 1000px) {
   .basket .counter__changer-count-wrp {
-    background-image: url("../../image/tab/basket-counter-bg-tab.svg");
+    background-image: url("../image/tab/basket-counter-bg-tab.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -3039,7 +3039,7 @@ body {
 }
 @media screen and (max-width: 600px) {
   .basket .counter__changer-count-wrp {
-    background-image: url("../../image/mob/counter-bg-mob2.svg");
+    background-image: url("../image/mob/counter-bg-mob2.svg");
   }
 }
 
@@ -3069,7 +3069,7 @@ body {
 
 .pay-history {
   min-height: 700rem;
-  background-image: url("../../image/basket-bg.svg");
+  background-image: url("../image/basket-bg.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center top;
@@ -3080,7 +3080,7 @@ body {
 @media screen and (max-width: 1000px) {
   .pay-history {
     margin-bottom: 72rem;
-    background-image: url("../../image/tab/basket-bg-tab.svg");
+    background-image: url("../image/tab/basket-bg-tab.svg");
   }
 }
 @media screen and (max-width: 600px) {
@@ -3307,7 +3307,7 @@ body {
 
 .product-page {
   min-height: 700rem;
-  background-image: url(../../image/basket-bg.svg);
+  background-image: url(../image/basket-bg.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center top;
@@ -3457,7 +3457,7 @@ body {
   }
 }
 .product-page-top__btn .second-btn__bg::after {
-  background-image: url(../../image/mob//texture-btn-mob.png);
+  background-image: url(../image/mob//texture-btn-mob.png);
 }
 
 @media screen and (max-width: 600px) {
@@ -3474,7 +3474,7 @@ body {
 
 .text-section {
   min-height: 700rem;
-  background-image: url("../../image/basket-bg.svg");
+  background-image: url("../image/basket-bg.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center top;
@@ -3665,14 +3665,14 @@ body {
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
-  background-image: url("../../image/text-page-last-blog-bg.png");
+  background-image: url("../image/text-page-last-blog-bg.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center top;
 }
 @media screen and (max-width: 600px) {
   .text-section__last-box-bg {
-    background-image: url("../../image/mob/text-page-last-box-border-mob.svg");
+    background-image: url("../image/mob/text-page-last-box-border-mob.svg");
   }
 }
 
@@ -3867,7 +3867,7 @@ body {
 .fog > div {
   width: 100%;
   height: 100%;
-  background-image: url("../../image/fog/fog-mask.png");
+  background-image: url("../image/fog/fog-mask.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -3903,13 +3903,13 @@ body {
 
 .fog::before,
 .fog div::before {
-  background-image: url("../../image/fog/fog-1.png");
+  background-image: url("../image/fog/fog-1.png");
   animation: fogmove 40s linear 0s infinite;
 }
 
 .fog::after,
 .fog div::after {
-  background-image: url("../../image/fog/fog-2.png");
+  background-image: url("../image/fog/fog-2.png");
   animation: fogmove 20s linear 0s infinite;
 }
 
