@@ -158,7 +158,9 @@
 
     // .shop-page-top__btn .second-btn__bg::after
     .second-btn__bg::after {
-      background-image: url('../../image/mob//texture-btn-mob2.png');
+      @media screen and (max-width: $mob-media) {
+        background-image: url('../../image/mob/texture-btn-mob2.png');
+      }
     }
 
     // .shop-page-top__btn .icon

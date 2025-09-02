@@ -7,14 +7,7 @@ html {
   font-family: var(--font-family);
   scroll-behavior: smooth;
   backface-visibility: hidden;
-
-  // disabled scroll bar
-  // scrollbar-width: none;
-  // -ms-overflow-style: none;
-  // &::-webkit-scrollbar {
-  //   display: none;
-  // }
-
+  
   // resize
   @media screen and (min-width: 2200px) {
     font-size: calc(100vw / 2200);

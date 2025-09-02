@@ -15,6 +15,36 @@
     height: 36rem;
   }
 
+  // .second-btn:hover
+  &:hover {
+    // .second-btn:hover::after
+    &::after {
+      opacity: 0.8;
+    }
+  }
+
+  // .second-btn::after
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+
+    filter: blur(20rem);
+    background: rgba(249, 190, 124, 0.6);
+    opacity: 0.6;
+    z-index: 1;
+    transition: all 300ms ease-in-out;
+
+    @media screen and (max-width: $mob-media) {
+      width: 60%;
+      height: 60%;
+    }
+  }
+
   // .second-btn__bg
   &__bg {
     width: 100%;
@@ -94,6 +124,11 @@
       20rem 100%,      /* нижний левый */
       0% 50%          /* острый угол слева */
     );
+
+    // .second-btn--nobg::after
+    &::after {
+      display: none;
+    }
   }
 
   // .second-btn__text
