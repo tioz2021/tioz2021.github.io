@@ -2056,17 +2056,15 @@ html::-webkit-scrollbar {
 }
 
 .page-wrp--index .header {
-  z-index: 2;
-}
-@media screen and (max-width: 1000px) {
-  .page-wrp--index .header {
-    z-index: 3;
-  }
+  z-index: 5;
 }
 
 .index-main {
   position: relative;
   display: flex;
+}
+.index-main .main-btn {
+  z-index: 6;
 }
 .fs {
   width: 100%;
@@ -2095,12 +2093,14 @@ html::-webkit-scrollbar {
 .fs__container {
   flex-direction: column;
   align-items: center;
+  z-index: unset;
 }
 .fs__img-composition {
   width: 856rem;
   height: 575rem;
   margin-bottom: 36rem;
   position: relative;
+  z-index: 6;
 }
 @media screen and (max-width: 1000px) {
   .fs__img-composition {
@@ -2235,6 +2235,7 @@ html::-webkit-scrollbar {
   margin-left: -14rem;
   margin-top: -13rem;
   margin-bottom: 18rem;
+  z-index: 6;
 }
 @media screen and (max-width: 1000px) {
   .fs__title {
@@ -2253,6 +2254,7 @@ html::-webkit-scrollbar {
   font-weight: 500;
   margin-left: -2rem;
   margin-bottom: 46rem;
+  z-index: 6;
 }
 @media screen and (max-width: 1000px) {
   .fs__desc {
