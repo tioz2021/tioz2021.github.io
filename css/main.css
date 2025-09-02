@@ -474,16 +474,6 @@ html {
   backface-visibility: hidden;
   font-size: 0.0520833333vw;
 }
-@media screen and (min-width: 2200px) {
-  html {
-    font-size: 0.0454545455vw;
-  }
-}
-@media screen and (max-width: 1600px) {
-  html {
-    font-size: 0.0625vw;
-  }
-}
 @media screen and (max-width: 1000px) {
   html {
     font-size: 0.1302083333vw;
@@ -646,6 +636,11 @@ main {
   font-size: 24rem;
   line-height: 120%;
 }
+@media screen and (max-width: 1000px) {
+  .text-main {
+    font-size: 23rem;
+  }
+}
 @media screen and (max-width: 600px) {
   .text-main {
     font-size: 14rem;
@@ -657,48 +652,14 @@ main {
   text-decoration-skip-ink: none;
 }
 
-/* WebKit браузеры */
-::-webkit-scrollbar {
-  width: 10rem;
-  height: 10rem; /* для горизонтального скролла */
-}
-
-::-webkit-scrollbar-track {
-  background-color: var(--bg-4);
-  border-radius: 10rem;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 10rem;
-  background: var(--bg-3);
-  border: 2px solid var(--bg-4); /* чтобы не было зазоров */
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--bg-2); /* добавим hover эффект */
-}
-
-::-webkit-scrollbar-corner {
-  background-color: var(--bg-4); /* угол между скроллбарами */
-}
-
-/* Firefox и современные браузеры */
 html {
-  scrollbar-width: auto;
-  scrollbar-color: var(--bg-3) var(--bg-4);
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+html::-webkit-scrollbar {
+  display: none;
 }
 
-body {
-  scrollbar-width: auto;
-  scrollbar-color: var(--bg-3) var(--bg-4);
-}
-
-/* Fallback для браузеров без поддержки кастомных скроллбаров */
-@supports not (scrollbar-color: red blue) {
-  body {
-    scrollbar-width: thin;
-  }
-}
 .header {
   background-color: var(--bg-0);
   background-image: url("../../image/header-bg.png");
@@ -2092,6 +2053,15 @@ body {
 .dropdown.open .dropdown__menu {
   visibility: visible;
   opacity: 1;
+}
+
+.page-wrp--index .header {
+  z-index: 2;
+}
+@media screen and (max-width: 1000px) {
+  .page-wrp--index .header {
+    z-index: 3;
+  }
 }
 
 .index-main {

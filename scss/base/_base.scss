@@ -9,15 +9,15 @@ html {
   backface-visibility: hidden;
   
   // resize
-  @media screen and (min-width: 2200px) {
-    font-size: calc(100vw / 2200);
-  }
+  // @media screen and (min-width: 2200px) {
+  //   font-size: calc(100vw / 2200);
+  // }
 
   font-size: calc(100vw / 1920);
 
-  @media screen and (max-width: 1600px) {
-    font-size: calc(100vw / 1600);
-  }
+  // @media screen and (max-width: 1600px) {
+  //   font-size: calc(100vw / 1600);
+  // }
 
   @media screen and (max-width: $tab-media) {
     font-size: calc(100vw / 768);
