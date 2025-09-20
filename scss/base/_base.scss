@@ -7,17 +7,13 @@ html {
   font-family: var(--font-family);
   scroll-behavior: smooth;
   backface-visibility: hidden;
-  
-  // resize
-  // @media screen and (min-width: 2200px) {
-  //   font-size: calc(100vw / 2200);
-  // }
 
   font-size: calc(100vw / 1920);
 
-  // @media screen and (max-width: 1600px) {
-  //   font-size: calc(100vw / 1600);
-  // }
+
+  @media screen and (min-width: 1920px) {
+    font-size: 1px;
+  }
 
   @media screen and (max-width: $tab-media) {
     font-size: calc(100vw / 768);
@@ -26,7 +22,6 @@ html {
   @media screen and (max-width: $mob-media) {
     font-size: calc(100vw / 360);
   }
-
 }
 
 body {

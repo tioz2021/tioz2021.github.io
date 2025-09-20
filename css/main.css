@@ -474,6 +474,11 @@ html {
   backface-visibility: hidden;
   font-size: 0.0520833333vw;
 }
+@media screen and (min-width: 1920px) {
+  html {
+    font-size: 1px;
+  }
+}
 @media screen and (max-width: 1000px) {
   html {
     font-size: 0.1302083333vw;
