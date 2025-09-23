@@ -10,6 +10,14 @@
   position: relative;
   cursor: pointer;
 
+  transition: all 250ms ease-in-out;
+
+  // .second-btn:active
+  &:active {
+    transform: scale(0.95);
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.15);
+  }
+
   @media screen and (max-width: $mob-media) {
     width: 144rem;
     height: 36rem;
@@ -17,6 +25,7 @@
 
   // .second-btn:hover
   &:hover {
+
     // .second-btn:hover::after
     &::after {
       opacity: 0.8;

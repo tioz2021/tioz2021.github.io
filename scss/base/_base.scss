@@ -8,11 +8,15 @@ html {
   scroll-behavior: smooth;
   backface-visibility: hidden;
 
+  
   font-size: calc(100vw / 1920);
 
+  @media screen and (min-width: 1900px) {
+    font-size: calc(100vw / 2560);
+  }
 
-  @media screen and (min-width: 1920px) {
-    font-size: 1px;
+  @media screen and (min-width: 2561px) {
+    font-size: calc(100vw / 3440);
   }
 
   @media screen and (max-width: $tab-media) {

@@ -88,8 +88,10 @@
 
     // .main-btn__button:hover
     &:hover {
+
       // .main-btn__button::after:hover
       &::after {
+        transform: translate(-50%, -50%) scale(1.25);
         opacity: 1;
       }
     }
@@ -98,5 +100,41 @@
   // .main-btn__decoration--right
   &__decoration--right {
     margin-left: 24rem;
+  }
+}
+
+.main-btn {
+  &__button {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+
+    // плавные переходы
+    transition: transform 80ms ease;
+
+    // эффект при клике
+    &:active {
+      transform: scale(0.95); // вся кнопка "вдавилась"
+    }
+
+    // текст и фон не трогаем!
+    &-text {
+      font-weight: 500;
+      color: var(--bg-1);
+      z-index: 3;
+    }
+
+    &-bg {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+    }
   }
 }

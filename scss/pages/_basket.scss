@@ -16,7 +16,7 @@
   min-height: 700rem;
   background-image: url('../image/basket-bg.svg');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center top;
   // margin-bottom: calc(160rem + 60rem);
   // margin-bottom: 57rem;
@@ -345,4 +345,8 @@
   @media screen and (max-width: $mob-media) {
     opacity: 0.4;
   }
+}
+
+.basket__buy-btn .main-btn__button::after {
+  transform: translate(-50%, -50%) scale(1.1);
 }

@@ -8,6 +8,15 @@
   
   position: relative;
   z-index: 2;
+
+  @media screen and (min-width: 1920px) {
+    background-image: url('../image/big/footer-2k.png');
+  }
+
+  @media screen and (min-width: 2561px) {
+    background-image: url('../image/big/footer-4k.png');
+  }
+
   
   @media screen and (max-width: $tab-media) {
     background-image: url('../image/tab/footer-bg-tab.png');
