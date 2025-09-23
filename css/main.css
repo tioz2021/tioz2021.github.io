@@ -1670,10 +1670,11 @@ body {
   background-color: unset;
   position: relative;
   cursor: pointer;
-  transition: all 500ms ease-in-out;
+  transform: scale(1);
+  transition: all 90ms ease-in-out;
 }
 .counter__btn:active {
-  transform: scale(0.95);
+  transform: scale(0.9);
 }
 .counter__btn:hover .counter__btn-bg {
   background-color: #fff;
@@ -1693,7 +1694,7 @@ body {
   transform: translate(-50%, -50%) rotate(-45deg);
   z-index: 1;
   background: var(--bg-2);
-  transition: all 500ms ease-in-out;
+  transition: all 250ms ease-in-out;
 }
 .counter__btn svg {
   width: 24rem;
