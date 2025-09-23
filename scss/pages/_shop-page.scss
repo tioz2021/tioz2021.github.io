@@ -110,6 +110,14 @@
     @media screen and (max-width: $tab-media) {
       display: none;
     }
+
+    @media screen and (min-width: 1900px) {
+      left: 902rem;
+    }
+
+    @media screen and (min-width: 2561px) {
+      left: 1302rem;
+    }
   }
 
   // .shop-page-top__decoration--flag-center
@@ -135,6 +143,14 @@
 
     @media screen and (max-width: $tab-media) {
       display: none;
+    }
+
+    @media screen and (min-width: 1900px) {
+      right: 902rem;
+    }
+
+    @media screen and (min-width: 2561px) {
+      right: 1302rem;
     }
   }
 

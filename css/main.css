@@ -2482,6 +2482,16 @@ body {
     display: none;
   }
 }
+@media screen and (min-width: 1900px) {
+  .shop-page-top__decoration--flag-left {
+    left: 902rem;
+  }
+}
+@media screen and (min-width: 2561px) {
+  .shop-page-top__decoration--flag-left {
+    left: 1302rem;
+  }
+}
 .shop-page-top__decoration--flag-center {
   width: 578rem;
   height: 301rem;
@@ -2504,6 +2514,16 @@ body {
 @media screen and (max-width: 1000px) {
   .shop-page-top__decoration--flag-right {
     display: none;
+  }
+}
+@media screen and (min-width: 1900px) {
+  .shop-page-top__decoration--flag-right {
+    right: 902rem;
+  }
+}
+@media screen and (min-width: 2561px) {
+  .shop-page-top__decoration--flag-right {
+    right: 1302rem;
   }
 }
 .shop-page-top__btn {
@@ -3948,7 +3968,7 @@ body {
   z-index: 1;
 }
 .fog--shop {
-  height: 402rem;
+  height: 440rem;
   bottom: unset;
   top: 0;
 }
