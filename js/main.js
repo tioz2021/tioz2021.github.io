@@ -150,3 +150,17 @@
     });
   });
 })();
+
+
+const allItems = document.querySelectorAll('.shop-page-body__item');
+
+allItems.forEach(item => {
+  item.addEventListener('click', () => {
+    // убираем активный класс у всех
+    allItems.forEach(el => el.classList.remove('shop-page-body__item--active'));
+
+    // добавляем активный только на кликнутый
+    item.classList.add('shop-page-body__item--active');
+  });
+});
+

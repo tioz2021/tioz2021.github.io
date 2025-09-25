@@ -1914,6 +1914,17 @@ body {
   width: 36rem;
   height: 36rem;
   cursor: pointer;
+  transition: all 90ms ease-in-out;
+}
+.main-slider__button svg path {
+  transition: all 250ms ease-in-out;
+}
+.main-slider__button:hover svg path {
+  fill: #fff;
+}
+.main-slider__button:active {
+  transform: scale(0.95);
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.15);
 }
 @media screen and (max-width: 600px) {
   .main-slider__button {
