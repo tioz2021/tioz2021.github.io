@@ -4,71 +4,7 @@
 }
 
 html {
-  font-family: var(--font-family);
+  
   scroll-behavior: smooth;
   backface-visibility: hidden;
-
-  
-  font-size: calc(100vw / 1920);
-
-  @media screen and (min-width: 1900px) {
-    font-size: calc(100vw / 2560);
-  }
-
-  @media screen and (min-width: 2561px) {
-    font-size: calc(100vw / 3440);
-  }
-
-  @media screen and (max-width: $tab-media) {
-    font-size: calc(100vw / 768);
-  }
-
-  @media screen and (max-width: $mob-media) {
-    font-size: calc(100vw / 360);
-  }
-}
-
-body {
-  color: var(--bg-1);
-}
-
-a{
-  color: var(--bg-1);
-  text-decoration: unset;
-  transition: all 0.3s ease-in-out;
-
-  // a:hover
-  &:hover {
-    color: var(--bg-2);
-  }
-}
-
-/* убираем стрелки в Chrome, Safari, Edge */
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* убираем стрелки в Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
-}
-
-
-input{
-  outline: unset;
-}
-
-
-button,
-a {
-  outline: none;           /* убирает обводку */
-  -webkit-tap-highlight-color: transparent; /* убирает синий highlight на мобильных */
-}
-
-button:focus,
-a:focus {
-  outline: none;
-  box-shadow: none;
 }

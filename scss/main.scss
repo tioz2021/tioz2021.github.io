@@ -14,33 +14,12 @@
 @import "base/loyout";
 @import "base/fonts";
 @import "base/typography";
-@import "base/custom-scroll";
 
 // components
-@import "components/header.scss";
-@import "components/lng-switcher.scss";
-@import "components/main-menu.scss";
 @import "components/main-btn";
-@import "components/second-btn";
-@import "components/footer";
-@import "components/page-nav";
-@import "components/page-top-box";
-@import "components/payment-methods";
-@import "components/counter";
-@import "components/radio-btn";
-@import "components/gallery";
-@import "components/main-slides";
-@import "components/main-popup";
-@import "components/dropdown";
 
 // pages
 @import "pages/home";
-@import "pages/shop-page";
-@import "pages/basket";
-@import "pages/pay-history-page";
-@import "pages/product-page";
-@import "pages/text-page";
 
 // animation
 @import "animatinos/animation";
-@import "animatinos/fog-animation";
