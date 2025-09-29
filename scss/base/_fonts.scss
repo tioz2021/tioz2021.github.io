@@ -1,10 +1,44 @@
-// @font-face {
-//   font-family: "Futura PT";
-//   src: local("Futura PT"),
-//     url("../fonts/futura-pt-medium.otf") format("otf"),
-//     url("../fonts/futura-pt-medium.ttf") format("ttf"),
-//     url("../fonts/futura-pt-medium.woff") format("woff"),
-//     url("../fonts/futura-pt-medium.woff2") format("woff2");
-//   font-weight: 500;
-//   font-style: normal;
-// }
+
+// Fira Sans Regular / main font
+@font-face {
+  font-family: 'Fira Sans';
+  src: local('Fira Sans Regular'), local('Fira-Sans-Regular'),
+      url('../../fonts/fifa-sans/FiraSans-Regular.woff2') format('woff2'),
+      url('../../fonts/fifa-sans/FiraSans-Regular.woff') format('woff'),
+      url('../../fonts/fifa-sans/FiraSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+// Fira Sans Medium / main font
+@font-face {
+  font-family: 'Fira Sans';
+  src: local('Fira Sans Medium'), local('Fira-Sans-Medium'),
+      url('../../fonts/fifa-sans/FiraSans-Medium.woff2') format('woff2'),
+      url('../../fonts/fifa-sans/FiraSans-Medium.woff') format('woff'),
+      url('../../fonts/fifa-sans/FiraSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+// Fira Sans SemiBold / main font
+@font-face {
+  font-family: 'Fira Sans';
+  src: local('Fira Sans SemiBold'), local('Fira-Sans-SemiBold'),
+      url('../../fonts/fifa-sans/FiraSans-SemiBold.woff2') format('woff2'),
+      url('../../fonts/fifa-sans/FiraSans-SemiBold.woff') format('woff'),
+      url('../../fonts/fifa-sans/FiraSans-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+// PF Reminder Pro / second font
+@font-face {
+  font-family: 'PF Reminder Pro';
+  src: local('PF Reminder Pro Medium'), local('PF-Reminder-Pro-Medium'),
+      url('../../fonts/pfr/PFReminderPro-Medium.woff2') format('woff2'),
+      url('../../fonts/pfr/PFReminderPro-Medium.woff') format('woff'),
+      url('../../fonts/pfr/PFReminderPro-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
