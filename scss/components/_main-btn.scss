@@ -1,0 +1,27 @@
+.main-btn {
+  border-radius: 8px;
+  padding: 17px 16px;
+  width: 254px;
+  height: 60px;
+  background: var(--body-3);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  // .main-btn__text
+  &__text {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--body-1);
+  }
+
+
+  // .main-btn--blue 
+  &--blue {
+
+  }
+}

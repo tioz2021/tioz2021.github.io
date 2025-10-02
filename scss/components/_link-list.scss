@@ -1,0 +1,25 @@
+.link-list {
+
+  // .link-list__list
+  &__list {
+    display: flex;
+    gap: 36px;
+  }
+  
+  // .link-list__item
+  &__item {
+  }
+
+  // .link-list__link
+  &__link {    
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    color: var(--body-2);
+  }
+
+  // .link-list .main-btn
+  .main-btn {
+    margin-left: auto;
+  }
+}

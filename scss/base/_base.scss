@@ -1,10 +1,60 @@
 * {
   // disable outline for IOS
   -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
 }
 
 html {
-  
   scroll-behavior: smooth;
   backface-visibility: hidden;
+
+  //   scrollbar-width: none;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+body {
+  font-family: var(--font-family);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  background-color: grey;
+}
+
+/* убираем стрелки в Chrome, Safari, Edge */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* убираем стрелки в Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input{
+  outline: unset;
+}
+
+button,
+a {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  text-decoration: unset;
+}
+
+button:focus,
+a:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+section,
+header,
+footer {
+  width: 100%;
 }

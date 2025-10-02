@@ -1,0 +1,29 @@
+.fs {
+
+  background-image: url('../../image/fs-bg.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 1080px;
+
+
+
+  // .fs__container
+  &__container {
+    justify-content: space-between;
+  }
+
+  // .fs__title
+  &__title {
+    max-width: 864px;
+    margin-top: 461px;
+  }
+
+  // .fs__img
+  &__img {
+    width: 783px;
+    height: 884px;
+    position: relative;
+    left: -32px;
+  }
+}

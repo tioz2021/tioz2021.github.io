@@ -1,6 +1,13 @@
 
 .container {
+  max-width: calc(var(--container-size-web) + var(--border-web)*2);
+  width: 100%;
+  padding-left: var(--border-web);
+  padding-right: var(--border-web);
 
+  display: flex;
+
+  // border: 1px solid red;  
 }
 
 .img-wrp {
