@@ -1,0 +1,44 @@
+.ticker {
+  overflow: hidden;
+  background: #fff;
+  padding: 36px 0;
+  border: 1px solid rgba(5, 5, 18, .6);
+  margin-bottom: 154px;
+  position: relative;
+  width: 100%;
+}
+
+.ticker__track {
+  display: flex;
+  gap: 36px;
+  will-change: transform;
+  perspective: 1000px; 
+}
+
+.ticker__item {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  font-weight: 400;
+  font-size: 36px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.ticker__flag-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.ticker__country-name {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 120%;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--body-2);
+  flex-shrink: 0;
+}
