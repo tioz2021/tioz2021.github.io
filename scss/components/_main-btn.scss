@@ -1,8 +1,8 @@
 .main-btn {
-  border-radius: 8px;
-  padding: 17px 16px;
-  width: 254px;
-  height: 60px;
+  border-radius: 0.8rem;
+  padding: 1.7rem 1.6rem;
+  width: 25.4rem;
+  height: 6.0rem;
   background: var(--body-3);
 
   display: flex;
@@ -12,7 +12,7 @@
   // .main-btn__text
   &__text {
     font-weight: 500;
-    font-size: 24px;
+    font-size: 2.4rem;
     line-height: 120%;
     text-transform: uppercase;
     text-align: center;
