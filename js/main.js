@@ -92,3 +92,24 @@
 
 })();
 
+// s4 slider
+(() => {
+  const swiper = new Swiper(".s4__swiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    mousewheel: false,
+    breakpoints: {
+      // 320: { slidesPerView: 1 },
+      // 768: { slidesPerView: 2 },
+      // 1024: { slidesPerView: 3 }
+    },
+    pagination: {
+      el: ".product__swiper-pagination",
+    },
+    navigation: {
+      nextEl: ".product__swiper-button-next",
+      prevEl: ".product__swiper-button-prev",
+    },
+  });
+
+}) ();
