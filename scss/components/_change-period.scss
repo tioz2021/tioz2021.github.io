@@ -1,0 +1,58 @@
+.change-period {
+
+  // .change-period .counter
+  .counter {
+    display: flex;
+    align-items: center;
+    font-size: 2.4rem;
+    gap: .8rem;
+    position: relative;
+    left: .5rem;
+    top: -0.2rem;
+  }
+  
+  // .change-period .arrows
+  .arrows {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  // .change-period .arrow
+  .arrow {
+    width: 0;
+    height: 0;
+    cursor: pointer;
+  }
+  
+  // .change-period .arrow.up
+  .arrow.up {
+    margin-bottom: .4rem;
+  }
+  
+  // .change-period .arrow.down
+  .arrow.down {
+    margin-top: .4rem;
+  }
+  
+  // .change-period .text
+  .text {
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 120%;
+    color: var(--body-2);
+    text-transform: uppercase;
+  }
+  
+  // .change-period .arrow-up
+  .arrow-up {
+    width: 1.2rem;
+    height: 1.0rem;
+  }
+  
+  // .change-period .arrow-down
+  .arrow-down {
+    width: 1.2rem;
+    height: 1.0rem;
+  }
+}

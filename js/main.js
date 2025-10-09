@@ -113,3 +113,33 @@
   });
 
 }) ();
+
+// s6 counter
+(() => {
+  const countEl = document.getElementById('count');
+  const wordEl = document.getElementById('word');
+  const upArrow = document.querySelector('.arrow.up');
+  const downArrow = document.querySelector('.arrow.down');
+
+  let count = 1;
+
+  function updateText() {
+    let word = 'МЕСЯЦ';
+    if (count % 10 === 1 && count % 100 !== 11) word = 'МЕСЯЦ';
+    else if ([2,3,4].includes(count % 10) && ![12,13,14].includes(count % 100)) word = 'МЕСЯЦА';
+    else word = 'МЕСЯЦЕВ';
+
+    countEl.textContent = count;
+    wordEl.textContent = word;
+  }
+
+  upArrow.addEventListener('click', () => {
+    count++;
+    updateText();
+  });
+
+  downArrow.addEventListener('click', () => {
+    if (count > 1) count--;
+    updateText();
+  });
+}) ();
