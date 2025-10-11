@@ -1453,8 +1453,8 @@ footer {
 }
 
 .s7 {
-  background: var(--body-3);
   position: relative;
+  background: var(--body-3);
   overflow: hidden;
   margin-bottom: 16rem;
   padding-bottom: 15.6rem;
@@ -1501,6 +1501,104 @@ footer {
 }
 .s7 p:last-child {
   margin-bottom: 0;
+}
+
+.s8 {
+  position: relative;
+  min-height: 175.2rem;
+  background-image: url("../../image/s8/bg.png");
+  background-position: center 21.5rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 16rem;
+}
+.s8__container {
+  flex-direction: column;
+}
+.s8__head {
+  max-width: 116.4rem;
+  position: relative;
+  top: -0.3rem;
+  margin-bottom: 5.2rem;
+}
+.s8__head-decor-icon {
+  width: 8rem;
+  height: 8rem;
+  top: 1.4rem;
+  margin-left: 1rem;
+}
+.s8__head-text--last {
+  display: block;
+  top: -0.5rem;
+}
+.s8__body {
+  display: flex;
+  align-items: flex-start;
+  gap: 3.5rem;
+  margin-bottom: 8rem;
+}
+.s8__body-desk {
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 6rem;
+  line-height: 100%;
+  color: var(--body-2);
+  max-width: 56.2rem;
+}
+.s8__body-photo {
+  border-radius: 0.8rem;
+  width: 56.2rem;
+  height: 56.6rem;
+}
+.s8__body-text {
+  font-weight: 400;
+  font-size: 3.6rem;
+  line-height: 120%;
+  color: var(--body-2);
+  max-width: 56.4rem;
+}
+.s8__platform-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.s8__platform-item {
+  border: 0.1rem solid var(--body-1);
+  background: var(--body-1);
+  border-radius: 0.8rem;
+  padding: 1.6rem 1.7rem;
+  width: 41.2rem;
+  height: 8rem;
+}
+.s8__platform-item-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.s8__platform-icon {
+  width: 3.6rem;
+  height: 3.6rem;
+  margin-right: 0.8rem;
+  position: relative;
+  top: 0.4rem;
+}
+.s8__platform-item-name {
+  font-weight: 500;
+  font-size: 3.6rem;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: var(--body-3);
+}
+.s8__decoration-text {
+  width: 176.4rem;
+  height: 57rem;
+  position: absolute;
+  left: 49%;
+  transform: translateX(-50%);
+  z-index: -1;
+  top: 31.1rem;
 }
 
 .s3__container {
