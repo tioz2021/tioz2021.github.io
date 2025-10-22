@@ -1099,6 +1099,182 @@ footer {
   color: var(--body-2);
 }
 
+.popup {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  backdrop-filter: blur(60px);
+  background: rgba(7, 16, 241, 0.6);
+  transition: opacity 0.45s ease, visibility 0.45s ease;
+}
+.popup.open {
+  opacity: 1;
+  z-index: 10;
+  visibility: visible;
+}
+.popup-content {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.45s ease, visibility 0.45s ease;
+}
+.popup-content.open {
+  opacity: 1;
+  visibility: visible;
+}
+.popup .closeBtn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  transition: all 500ms ease-in-out;
+}
+.popup .closeBtn:hover .closeBtn-icon-wrp rect, .popup .closeBtn--blue .closeBtn-icon-wrp rect {
+  transition: all 500ms ease-in-out;
+  fill: var(--body-3);
+}
+.popup .closeBtn:hover .closeBtn-icon-wrp path, .popup .closeBtn--blue .closeBtn-icon-wrp path {
+  transition: all 500ms ease-in-out;
+  stroke: var(--body-1);
+}
+.popup .closeBtn-icon-wrp {
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+}
+.popup .closeBtn-icon-wrp rect,
+.popup .closeBtn-icon-wrp path {
+  transition: all 500ms ease-in-out;
+}
+
+.info-pak__wrp {
+  width: 1164px;
+  border-radius: 8px;
+  background: var(--body-1);
+  padding-top: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 60px;
+}
+.info-pak__info-wrp {
+  width: 100%;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.info-pak__img-box {
+  border-radius: 8px;
+  width: 1140px;
+  height: 360px;
+  background: #7cd8f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 36px;
+}
+.info-pak__img-box .img-wrp {
+  width: 406px;
+  height: 328px;
+}
+.info-pak__title {
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: var(--body-2);
+  margin-bottom: 10px;
+}
+.info-pak__text {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  color: var(--body-2);
+  margin-bottom: 20px;
+}
+.info-pak__info-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+.info-pak__info-box-name {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  color: var(--body-2);
+}
+.info-pak__info-box-price {
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 120%;
+  text-transform: uppercase;
+  text-align: right;
+  color: var(--body-2);
+}
+.info-pak__info-box-price span {
+  font-size: 36px;
+}
+.info-pak__btn {
+  width: 1044px;
+}
+
+.polic-pop {
+  border-radius: 8px;
+  width: 1164px;
+  background: var(--body-1);
+  padding: 60px;
+}
+.polic-pop__title {
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: var(--body-2);
+  margin-bottom: 12px;
+}
+.polic-pop__text {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  color: var(--body-2);
+  max-height: 730px; /* ограничиваем высоту */
+  overflow-y: auto; /* включаем вертикальный скролл */
+  padding-right: 12px; /* отступ, чтобы текст не прилипал к скроллу */
+  scrollbar-gutter: stable; /* чтобы контент не прыгал при появлении скролла */
+}
+
+/* --- Кастомный скролл для WebKit (Chrome, Edge, Safari) --- */
+.polic-pop__text::-webkit-scrollbar {
+  width: 8px; /* ширина полосы прокрутки */
+}
+
+.polic-pop__text::-webkit-scrollbar-track {
+  background: #f0f0f0; /* цвет фона дорожки */
+  border-radius: 4px;
+}
+
+.polic-pop__text::-webkit-scrollbar-thumb {
+  background: rgba(7, 16, 241, 0.3); /* цвет ползунка */
+  border-radius: 4px;
+}
+
+.polic-pop__text::-webkit-scrollbar-thumb:hover {
+  background: #555; /* цвет при наведении */
+}
+
+/* --- Поддержка Firefox --- */
+.polic-pop__text {
+  scrollbar-width: thin; /* тонкий скролл */
+  scrollbar-color: rgba(7, 16, 241, 0.3) rgb(255, 255, 255); /* цвет ползунка и фона */
+}
+
 .fs {
   background-image: url("../../image/fs-bg.png");
   background-position: center;
@@ -2120,6 +2296,55 @@ footer {
   text-decoration-skip-ink: none;
   color: var(--body-1);
   opacity: 0.6;
+}
+
+.p404 {
+  width: 100%;
+  height: 100%;
+  min-height: 1400px;
+  background-image: url("../../image/404-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 160px;
+}
+.p404__container {
+  max-width: 1164px;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+.p404__title {
+  font-weight: 600;
+  font-size: 74px;
+  line-height: 120%;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--body-1);
+  margin-bottom: 17px;
+}
+.p404__text {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  color: var(--body-1);
+  opacity: 0.6;
+  margin-bottom: 60px;
+  max-width: 564px;
+}
+.p404__btn-wrp {
+  width: 564px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.p404 .main-btn {
+  width: 270px;
+}
+.p404 .main-btn--opacity {
+  border: 1px solid var(--body-1);
+  background-color: inherit;
 }
 
 .s3__container {

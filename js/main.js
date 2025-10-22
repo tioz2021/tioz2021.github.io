@@ -204,3 +204,48 @@
     // },
   });
 }) ();
+
+// popup
+(() => {
+  document.addEventListener("DOMContentLoaded", function () {
+    const openButtons = document.querySelectorAll(".openBtn");
+    const popups = document.querySelectorAll(".popup");
+
+    openButtons.forEach((btn) => {
+      btn.addEventListener("click", (evt) => {
+        evt.preventDefault();
+        const popupId = btn.getAttribute("data-popup");
+        const popup = document.getElementById(popupId);
+        if (popup) {
+          const popupContent = popup.querySelector(".popup-content");
+          popup.classList.add("open");
+          popupContent.classList.add("open");
+        }
+      });
+    });
+
+    popups.forEach((popup) => {
+      const popupContent = popup.querySelector(".popup-content");
+      const closeBtn = popup.querySelector(".closeBtn");
+
+      if (closeBtn) {
+        closeBtn.addEventListener("click", () => {
+          popup.classList.remove("open");
+          popupContent.classList.remove("open");
+        });
+      }
+
+      // Закрытие при клике вне области
+      document.addEventListener("click", (event) => {
+        if (
+          popup.classList.contains("open") &&
+          !popupContent.contains(event.target) &&
+          !event.target.closest(".openBtn")
+        ) {
+          popup.classList.remove("open");
+          popupContent.classList.remove("open");
+        }
+      });
+    });
+  });
+})();
