@@ -1,18 +1,18 @@
 .p404 {
   width: 100%;
   height: 100%;
-  min-height: 1400px;
+  min-height: 140.0rem;
 
   background-image: url('../../image/404-bg.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  padding-top: 160px;
+  padding-top: 16.0rem;
 
 
   // .p404__container
   &__container {
-    max-width: 1164px;
+    max-width: 116.4rem;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
@@ -21,29 +21,29 @@
   // .p404__title
   &__title {
     font-weight: 600;
-    font-size: 74px;
+    font-size: 7.4rem;
     line-height: 120%;
     text-transform: uppercase;
     text-align: center;
     color: var(--body-1);
-    margin-bottom: 17px;
+    margin-bottom: 1.7rem;
   }
 
   // .p404__text
   &__text {
     font-weight: 400;
-    font-size: 24px;
+    font-size: 2.4rem;
     line-height: 120%;
     text-align: center;
     color: var(--body-1);
     opacity: 0.6;
-    margin-bottom: 60px;
-    max-width: 564px;
+    margin-bottom: 6.0rem;
+    max-width: 56.4rem;
   }
 
   // .p404__btn-wrp
   &__btn-wrp {
-    width: 564px;
+    width: 56.4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -52,11 +52,11 @@
 
   // .p404__btn-wrp .main-btn
   .main-btn {
-    width: 270px;
+    width: 27.0rem;
 
     // .main-btn--opacity
     &--opacity {
-      border: 1px solid var(--body-1);
+      border: .1rem solid var(--body-1);
       background-color: inherit;
     }
   }

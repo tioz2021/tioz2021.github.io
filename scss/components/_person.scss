@@ -1,0 +1,134 @@
+.person {
+  padding: 1.2rem;
+  padding-bottom: 2.4rem;
+  border-radius: .8rem;
+  background-color: var(--body-1);
+
+  // .person--1
+  &--1 {
+
+    // .person--1 .person__img
+    .person__img {
+      width: 32.6rem;
+      height: 44.8rem;
+    }
+
+    // .person--1 .person__img-wrp
+    .person__img-wrp {
+      background: #ab93cd;
+    }
+  }
+
+  // .person--2
+  &--2 {
+
+    // .person--2 .person__img
+    .person__img {
+      width: 33.4rem;
+      height: 44.8rem;
+    }
+
+    // .person--2 .person__img-wrp
+    .person__img-wrp {
+      background: #7cd8f6;
+    }
+  }
+
+  // .person--3
+  &--3 {
+
+    // .person--3 .person__img
+    .person__img {
+      width: 39.9rem;
+      height: 44.8rem;
+    }
+
+    // .person--3 .person__img-wrp
+    .person__img-wrp {
+      background: #ab93cd;
+    }
+  }
+
+  // .person--4
+  &--4 {
+
+    // .person--4 .person__img
+    .person__img {
+      width: 40.6rem;
+      height: 46.4rem;
+    }
+
+    // .person--4 .person__img-wrp
+    .person__img-wrp {
+      background: #7cd8f6;
+    }
+  }
+
+  // .person--5
+  &--5 {
+
+    // .person--5 .person__img
+    .person__img {
+      width: 43.4rem;
+      height: 44.8rem;
+    }
+
+    // .person--5 .person__img-wrp
+    .person__img-wrp {
+      background: #7cd8f6;
+    }
+  }
+
+  // .person__img-wrp
+  &__img-wrp {
+    border-radius: .8rem;
+    width: 54.0rem;
+    height: 47.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    margin-bottom: 1.6rem;
+  }
+
+  // .person__img
+  &__img {
+    width: 32.6rem;
+    height: 44.8rem;
+  }
+
+  // .person__name
+  &__name {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 6.0rem;
+    line-height: 100%;
+    color: var(--body-1);
+    
+    transform: rotate(-12deg);
+    position: absolute;
+    top: 2.6rem;
+    left: 2.4rem;
+  }
+
+  // .person__title
+  &__title {
+    font-weight: 400;
+    font-size: 3.6rem;
+    line-height: 120%;
+    color: var(--body-2);
+    margin-bottom: .4rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
+
+  // .person__text
+  &__text {
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 120%;
+    color: var(--body-2);
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
+}

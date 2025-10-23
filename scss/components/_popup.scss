@@ -10,7 +10,7 @@
 
   // background: rgba(61, 71, 209, 0.8);
   // background: rgba(168, 224, 241, 0.9);
-  backdrop-filter: blur(60px);
+  backdrop-filter: blur(6.0rem);
   background: rgba(7, 16, 241, 0.6);
 
   transition: opacity 0.45s ease, visibility 0.45s ease;
@@ -30,10 +30,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    // padding: 20px;
+    // padding: 20rem;
     // background: #fff;
-    // border-radius: 5px;
-    // box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    // border-radius: 5rem;
+    // box-shadow: 0 0 10rem rgba(0, 0, 0, 0.3);
     // text-align: center;
     transition: opacity 0.45s ease, visibility 0.45s ease;
 
@@ -47,8 +47,8 @@
   // .popup .closeBtn
   .closeBtn {
     position: absolute;
-    top: 24px;
-    right: 24px;
+    top: 2.4rem;
+    right: 2.4rem;
 
     transition: all 500ms ease-in-out;
 
@@ -77,8 +77,8 @@
 
   // .popup .closeBtn-icon-wrp
   .closeBtn-icon-wrp {
-    width: 44px;
-    height: 44px;
+    width: 4.4rem;
+    height: 4.4rem;
     cursor: pointer;
 
     // .popup .closeBtn-icon-wrp rect
@@ -94,57 +94,57 @@
 
   // .info-pak__wrp 
   &__wrp {
-    width: 1164px;
-    border-radius: 8px;
+    width: 116.4rem;
+    border-radius: .8rem;
     background: var(--body-1);
-    padding-top: 12px;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-bottom: 60px;
+    padding-top: 1.2rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    padding-bottom: 6.0rem;
   }
 
   // .info-pak__info-wrp
   &__info-wrp {
     width: 100%;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 6.0rem;
+    padding-right: 6.0rem;
   }
 
   // .info-pak__img-box
   &__img-box {
-    border-radius: 8px;
-    width: 1140px;
-    height: 360px;
+    border-radius: .8rem;
+    width: 114.0rem;
+    height: 36.0rem;
     background: #7cd8f6;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 36px;
+    margin-bottom: 3.6rem;
 
     // .info-pak__img-box .img-wrp
     .img-wrp {
-      width: 406px;
-      height: 328px;
+      width: 40.6rem;
+      height: 32.8rem;
     }
   }
 
   // .info-pak__title
   &__title {
     font-weight: 600;
-    font-size: 44px;
+    font-size: 4.4rem;
     line-height: 120%;
     text-transform: uppercase;
     color: var(--body-2);
-    margin-bottom: 10px;
+    margin-bottom: 1.0rem;
   }
 
   // .info-pak__text
   &__text {
     font-weight: 400;
-    font-size: 24px;
+    font-size: 2.4rem;
     line-height: 120%;
     color: var(--body-2);
-    margin-bottom: 20px;
+    margin-bottom: 2.0rem;
   }
 
   // .info-pak__info-box
@@ -153,12 +153,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 24px;
+    margin-bottom: 2.4rem;
 
     // .info-pak__info-box-name
     &-name {
       font-weight: 400;
-      font-size: 24px;
+      font-size: 2.4rem;
       line-height: 120%;
       color: var(--body-2);
     }
@@ -166,7 +166,7 @@
     // .info-pak__info-box-price
     &-price {
       font-weight: 600;
-      font-size: 44px;
+      font-size: 4.4rem;
       line-height: 120%;
       text-transform: uppercase;
       text-align: right;
@@ -174,60 +174,60 @@
 
       // .info-pak__info-box-price span
       span {
-        font-size: 36px;
+        font-size: 3.6rem;
       }
     }
   }
 
   // .info-pak__btn
   &__btn {
-    width: 1044px;
+    width: 104.4rem;
   }
 }
 
 .polic-pop {
-  border-radius: 8px;
-  width: 1164px;
-  // height: 914px;
+  border-radius: .8rem;
+  width: 116.4rem;
+  // height: 914rem;
   background: var(--body-1);
-  padding: 60px;
+  padding: 6.0rem;
 
   // .polic-pop__title
   &__title {
     font-weight: 600;
-    font-size: 44px;
+    font-size: 4.4rem;
     line-height: 120%;
     text-transform: uppercase;
     color: var(--body-2);
-    margin-bottom: 12px;
+    margin-bottom: 1.2rem;
   }
 
   // .polic-pop__text
   &__text {
     font-weight: 400;
-    font-size: 24px;
+    font-size: 2.4rem;
     line-height: 120%;
     color: var(--body-2);
-    max-height: 730px;       /* ограничиваем высоту */
+    max-height: 73.0rem;       /* ограничиваем высоту */
     overflow-y: auto;        /* включаем вертикальный скролл */
-    padding-right: 12px;     /* отступ, чтобы текст не прилипал к скроллу */
+    padding-right: 1.2rem;     /* отступ, чтобы текст не прилипал к скроллу */
     scrollbar-gutter: stable; /* чтобы контент не прыгал при появлении скролла */
   } 
 }
 
 /* --- Кастомный скролл для WebKit (Chrome, Edge, Safari) --- */
 .polic-pop__text::-webkit-scrollbar {
-  width: 8px;               /* ширина полосы прокрутки */
+  width: .8rem;               /* ширина полосы прокрутки */
 }
 
 .polic-pop__text::-webkit-scrollbar-track {
   background: #f0f0f0;      /* цвет фона дорожки */
-  border-radius: 4px;
+  border-radius: .4rem;
 }
 
 .polic-pop__text::-webkit-scrollbar-thumb {
   background: rgba(7, 16, 241, .3);         /* цвет ползунка */
-  border-radius: 4px;
+  border-radius: .4rem;
 }
 
 .polic-pop__text::-webkit-scrollbar-thumb:hover {
