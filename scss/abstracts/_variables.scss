@@ -12,7 +12,10 @@
   // sizes
   --container-size-web: 176rem;
   --border-web: 7.8rem;
+
+  --base-anim-d: all 500ms ease-in-out;
 }
 
-
-
+/* 
+transition: var(--base-anim-d);
+*/

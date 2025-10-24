@@ -12,6 +12,17 @@
 
   // .header__item-wrp
   &__item-wrp {
+    cursor: pointer;
+
+    // .header__item-wrp:hover
+    &:hover {
+      background: var(--body-3);
+
+      // .header__item-wrp:hover .header__logo-text
+      .header__logo-text {
+        color: var(--body-1);
+      }
+    }
   }
 
   // .header__logo-wrp
@@ -21,17 +32,24 @@
     height: 8.0rem;
     background: var(--body-1);
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  // .header__logo-text
+  &__logo-text {
+    position: relative;
+    left: 0.6rem;
+    color: var(--body-3);
+    transition: var(--base-anim-d);
+
     font-weight: 500;
     font-size: 4.8rem;
     line-height: 120%;
     text-align: center;
-    color: var(--body-3);
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    // .header__logo-wrp span
+    // .header__logo-text span
     span {
       font-family: var(--second-family);
       line-height: 100%;
@@ -40,12 +58,6 @@
       right: 1.2rem;
       top: -0.2rem;
     }
-  }
-
-  // .header__logo-text
-  &__logo-text {
-    position: relative;
-    left: 0.6rem;
   }
 
   // .header__info-wrp

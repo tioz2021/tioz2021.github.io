@@ -104,6 +104,7 @@
     background: var(--body-1);
     border-radius: 0.4rem;
     margin-bottom: 2.4rem;
+    overflow: hidden;
   }
 
   // .product__swiper-button
@@ -114,11 +115,30 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    background: var(--body-1);
+    transition: var(--base-anim-d);
+
+    // .product__swiper-button:hover
+    &:hover {
+      background: var(--body-3);
+
+      // .product__swiper-button:hover path
+      path {
+        stroke: var(--body-1);
+      }
+
+    }
 
     // .product__swiper-button svg
     svg {
       width: 3.6rem;
       height: 3.6rem;
+    }
+
+    // .product__swiper-button path
+    path {
+      transition: var(--base-anim-d);
+      stroke: var(--body-2);
     }
 
     // .product__swiper-button-prev

@@ -50,7 +50,7 @@
     top: 2.4rem;
     right: 2.4rem;
 
-    transition: all 500ms ease-in-out;
+    transition: var(--base-anim-d);
 
     // .popup .closeBtn:hover 
     // .popup .closeBtn--blue
@@ -62,13 +62,13 @@
 
         // .popup .closeBtn:hover .closeBtn-icon-wrp rect
         rect {
-          transition: all 500ms ease-in-out;
+          transition: var(--base-anim-d);
           fill: var(--body-3);
         }
 
         // .popup .closeBtn:hover .closeBtn-icon-wrp path
         path {
-          transition: all 500ms ease-in-out;
+          transition: var(--base-anim-d);
           stroke: var(--body-1);
         }
       }
@@ -85,7 +85,7 @@
     // .popup .closeBtn-icon-wrp path
     rect,
     path {
-      transition: all 500ms ease-in-out;
+      transition: var(--base-anim-d);
     }
   }
 }

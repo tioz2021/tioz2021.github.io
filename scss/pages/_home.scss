@@ -953,6 +953,22 @@
     padding: 1.6rem 1.7rem;
     width: 41.2rem;
     height: 8.0rem;
+    transition: var(--base-anim-d);
+
+    // .s8__platform-item:hover
+    &:hover {
+      background: var(--body-3);
+
+      // .s8__platform-item:hover .s8__platform-item-name
+      .s8__platform-item-name {
+        color: var(--body-1);
+      }
+
+      // .s8__platform-item:hover .s8__platform-icon path
+      .s8__platform-icon path {
+        fill: var(--body-1);
+      }
+    }
   }
 
   // .s8__platform-item-link
@@ -972,6 +988,12 @@
     margin-right: 0.8rem;
     position: relative;
     top: 0.4rem;
+
+    // .s8__platform-icon path
+    path {
+      transition: var(--base-anim-d);
+      fill: var(--body-3);
+    }
   }
 
   // .s8__platform-item-name
@@ -981,6 +1003,7 @@
     line-height: 120%;
     text-transform: uppercase;
     color: var(--body-3);
+    transition: var(--base-anim-d);
   }
 
   // .s8__decoration-text
@@ -1392,6 +1415,11 @@
       font-weight: 500;
       font-size: 4.4rem;
       text-transform: uppercase;
+
+      // .footer__info-text--strong:hover
+      &:hover {
+        
+      }
     }
   }
 
@@ -1413,6 +1441,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+    transition: var(--base-anim-d);
+
+    // .footer__contact-item:hover
+    &:hover {
+      background: var(--body-1);
+
+      // .footer__contact-item:hover .footer__contact-item-icon path
+      .footer__contact-item-icon path {
+        fill: var(--body-3);
+      }
+
+      // .footer__contact-item:hover .footer__contact-item-text
+      .footer__contact-item-text {
+        color: var(--body-3);
+      }
+    }
   }
 
   // .footer__contact-item-icon
@@ -1420,6 +1465,12 @@
     width: 3.6rem;
     height: 3.6rem;
     margin-right: .8rem;
+
+    // .footer__contact-item-icon path
+    path {
+      transition: var(--base-anim-d);
+      fill: var(--body-1);
+    }
   }
 
   // .footer__contact-item-text
@@ -1430,6 +1481,7 @@
     text-transform: uppercase;
     text-align: center;
     color: var(--body-1);
+    transition: var(--base-anim-d);
   }
 
   // .footer__menu
@@ -1441,6 +1493,7 @@
 
   // .footer__menu-logo
   &__menu-logo {
+    transition: var(--base-anim-d);
   }
 
   // .footer__menu-logo-text
@@ -1480,6 +1533,11 @@
       text-decoration-skip-ink: none;
       color: var(--body-1);
       opacity: 0.6;
+
+      // .footer__end-info-link-wrp a:hover
+      &:hover {
+        opacity: 1;
+      }
     }
   }
 }

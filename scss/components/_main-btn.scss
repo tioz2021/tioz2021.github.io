@@ -17,11 +17,30 @@
     text-transform: uppercase;
     text-align: center;
     color: var(--body-1);
+    transition: var(--base-anim-d);
   }
 
+  // .main-btn:hover
+  &:hover {
+    border-color: var(--body-3);
+
+    // .main-btn:hover .main-btn__text
+    .main-btn__text {
+      color: var(--body-3);
+    }
+  }
 
   // .main-btn--blue 
   &--blue {
 
+    // .main-btn--blue:hover
+    &:hover {
+      background: var(--body-2);
+
+      // .main-btn--blue:hover .main-btn__text
+      .main-btn__text {
+        color: var(--body-1);
+      }
+    }
   }
 }

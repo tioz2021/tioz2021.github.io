@@ -49,6 +49,14 @@ a {
   text-decoration: unset;
 }
 
+a {
+  transition: var(--base-anim-d);
+}
+
+a:hover {
+  color: var(--body-3);
+}
+
 button:focus,
 a:focus {
   outline: none;
