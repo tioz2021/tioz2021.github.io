@@ -13,8 +13,12 @@ html {
   &::-webkit-scrollbar {
     display: none;
   }
+  // overflow-x: hidden;
 
-  font-size: 10px;
+  // font-size: 10px;
+  // font-size: clamp(8px, 0.5208vw, 10px);
+  // font-size: 0.05208vw * 10;
+  font-size: calc(0.05208vw * 10);
 }
 
 body {

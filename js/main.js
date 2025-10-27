@@ -194,7 +194,7 @@
     coverflowEffect: {
       rotate: 0,
       stretch: 0,
-      depth: 144,
+      depth: 145,
       modifier: 2.5,
     },
 
@@ -249,3 +249,28 @@
     });
   });
 })();
+
+// text animation
+(() => {
+  document.addEventListener('DOMContentLoaded', function() {
+    function initTextAnimation() {
+      const animatedTexts = document.querySelectorAll('.animated-text');
+      
+      animatedTexts.forEach(textElement => {
+        const chars = textElement.querySelectorAll('.char'); // Находим ВСЕ буквы сразу
+        let globalIndex = 0; // Общий индекс для всех букв
+        
+        chars.forEach((char, index) => {
+          const charDelay = index * 0.015; // Только задержка между буквами
+          char.style.animationDelay = `${charDelay}s`;
+        });
+        
+        // Запускаем анимацию сразу
+        textElement.classList.add('animated');
+      });
+    }
+    
+    // Запускаем анимацию при загрузке
+    initTextAnimation();
+  });  
+}) ();

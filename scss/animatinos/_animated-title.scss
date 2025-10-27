@@ -1,0 +1,30 @@
+/* Основные стили для текста */
+.plan__title {
+  font-weight: 600;
+  font-size: 7.4rem;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: var(--body-1);
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.word {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: .7rem;
+  margin-left: .7rem;
+}
+
+.char {
+  display: flex;
+  flex-wrap: wrap;
+  transform: scaleY(0) translateY(2.0rem); /* Начальное состояние: сжата по высоте */
+  animation: growFromBottom 0.2s ease-out forwards;
+}
+
+@keyframes growFromBottom {
+  0% { transform: scaleY(0); opacity: 0; }
+  100% { transform: scaleY(1); opacity: 1; }
+}

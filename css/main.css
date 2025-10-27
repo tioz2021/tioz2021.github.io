@@ -488,7 +488,7 @@ html {
   scroll-behavior: smooth;
   backface-visibility: hidden;
   -ms-overflow-style: none;
-  font-size: 10px;
+  font-size: 0.5208vw;
 }
 html::-webkit-scrollbar {
   display: none;
@@ -1311,12 +1311,15 @@ footer {
 .fs {
   background-image: url("../../image/fs-bg.png");
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  min-height: 108rem;
+  background-attachment: fixed;
+  height: 108rem;
 }
 .fs__container {
   justify-content: space-between;
+  position: relative;
+  z-index: 2;
 }
 .fs__title {
   max-width: 86.4rem;
@@ -2417,6 +2420,41 @@ footer {
   background-color: inherit;
 }
 
+/* Основные стили для текста */
+.plan__title {
+  font-weight: 600;
+  font-size: 7.4rem;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: var(--body-1);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.word {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 0.7rem;
+  margin-left: 0.7rem;
+}
+
+.char {
+  display: flex;
+  flex-wrap: wrap;
+  transform: scaleY(0) translateY(2rem); /* Начальное состояние: сжата по высоте */
+  animation: growFromBottom 0.2s ease-out forwards;
+}
+
+@keyframes growFromBottom {
+  0% {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
 .s3__container {
   flex-direction: column;
 }/*# sourceMappingURL=main.css.map */
