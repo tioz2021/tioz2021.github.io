@@ -609,6 +609,10 @@ footer {
   display: ruby;
   position: relative;
 }
+.h2-title .word {
+  margin: 0;
+  letter-spacing: -0.155rem;
+}
 .h2-title__m-text {
   font-weight: 400;
   font-size: 2.4rem;
@@ -1345,6 +1349,18 @@ footer {
 .how-it-works__title {
   margin-bottom: 4.2rem;
 }
+.how-it-works .h2-title__m-text {
+  margin-right: 6.2rem;
+}
+.how-it-works .word {
+  margin: 0;
+}
+.how-it-works .h2-title__decor-icon--1 {
+  margin-left: -0.3rem;
+}
+.how-it-works .h2-title__decor-icon--2 {
+  margin-left: 0;
+}
 .how-it-works__swiper {
   width: 100%;
   overflow: visible !important;
@@ -1471,12 +1487,15 @@ footer {
   width: 8rem;
   height: 8rem;
   top: 1.4rem;
-  margin-left: 1rem;
+  margin-left: 0rem;
 }
 .s3__head .h2-title__m-text {
   color: var(--body-1);
   top: -0.4rem;
   left: 0.4rem;
+}
+.s3__head .word {
+  letter-spacing: 0;
 }
 .s3__head .h2-title__text {
   color: var(--body-1);
@@ -1495,7 +1514,8 @@ footer {
 }
 
 .s4 {
-  margin-bottom: 13.5rem;
+  padding-bottom: 13.5rem;
+  overflow: hidden;
 }
 .s4__container {
   margin: 0 auto;
@@ -1505,7 +1525,7 @@ footer {
   width: 8rem;
   height: 8rem;
   top: 0.4rem;
-  left: 0.7rem;
+  left: -0.7rem;
 }
 .s4 .h2-title__text--mod {
   position: relative;
@@ -1528,6 +1548,12 @@ footer {
 }
 .s4__head {
   margin-bottom: 4.6rem;
+}
+.s4__head .h2-title__m-text {
+  margin-right: 5.4rem;
+}
+.s4__head .word {
+  letter-spacing: 0;
 }
 .s4__swiper {
   position: relative;
@@ -2420,7 +2446,17 @@ footer {
   background-color: inherit;
 }
 
-/* Основные стили для текста */
+.slide-from-top {
+  opacity: 0;
+  transform: translateY(-50rem);
+  transition: all 0.8s ease-out;
+}
+
+.slide-from-top.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .plan__title {
   font-weight: 600;
   font-size: 7.4rem;
@@ -2441,20 +2477,64 @@ footer {
 .char {
   display: flex;
   flex-wrap: wrap;
-  transform: scaleY(0) translateY(2rem); /* Начальное состояние: сжата по высоте */
+  transform: scaleY(0) translateY(2rem);
+  opacity: 0;
+  /* Убираем анимацию по умолчанию, будет включаться через JS */
+}
+
+/* Класс, который включает анимацию */
+.animated-text.animated .char {
   animation: growFromBottom 0.2s ease-out forwards;
 }
 
 @keyframes growFromBottom {
   0% {
-    transform: scaleY(0);
+    transform: scaleY(0) translateY(2rem);
     opacity: 0;
   }
   100% {
-    transform: scaleY(1);
+    transform: scaleY(1) translateY(0);
     opacity: 1;
   }
 }
+/* Стили для иконок */
+.animated-icon {
+  display: inline-block;
+  transform: scale(0) rotate(-180deg);
+  opacity: 0;
+}
+
+/* Анимация для иконок */
+.animated-text.animated .animated-icon {
+  animation: iconAppear 0.4s ease-out forwards;
+}
+
+/* Ключевые кадры для иконок */
+@keyframes iconAppear {
+  0% {
+    transform: scale(0) rotate(-180deg);
+    opacity: 0;
+  }
+  70% {
+    transform: scale(1.1) rotate(10deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+.animated-text-simple .animated-paragraph {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.animated-text-simple.animated .animated-paragraph {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .s3__container {
   flex-direction: column;
 }/*# sourceMappingURL=main.css.map */

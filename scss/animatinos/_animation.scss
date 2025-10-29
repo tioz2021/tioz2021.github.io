@@ -1,0 +1,10 @@
+.slide-from-top {
+  opacity: 0;
+  transform: translateY(-50.0rem);
+  transition: all 0.8s ease-out;
+}
+
+.slide-from-top.animated {
+  opacity: 1;
+  transform: translateY(0);
+}

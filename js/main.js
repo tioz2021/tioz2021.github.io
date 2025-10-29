@@ -97,22 +97,21 @@
   const swiper = new Swiper(".s4__swiper", {
     slidesPerView: 1,
     spaceBetween: 30,
-    mousewheel: false,
-    breakpoints: {
-      // 320: { slidesPerView: 1 },
-      // 768: { slidesPerView: 2 },
-      // 1024: { slidesPerView: 3 }
-    },
-    pagination: {
-      el: ".product__swiper-pagination",
-    },
+    loop: true,
+    speed: 1000,
+    grabCursor: true,
+    parallax: true,
+
     navigation: {
       nextEl: ".product__swiper-button-next",
       prevEl: ".product__swiper-button-prev",
     },
+    pagination: {
+      el: ".product__swiper-pagination",
+      clickable: true,
+    },
   });
-
-}) ();
+})();
 
 // s6 counter
 (() => {
@@ -251,26 +250,54 @@
 })();
 
 // text animation
-(() => {
+(function() {
   document.addEventListener('DOMContentLoaded', function() {
-    function initTextAnimation() {
-      const animatedTexts = document.querySelectorAll('.animated-text');
+      const observerOptions = {
+          root: null,
+          rootMargin: '0px 0px -50px 0px',
+          threshold: 0.1
+      };
       
-      animatedTexts.forEach(textElement => {
-        const chars = textElement.querySelectorAll('.char'); // Находим ВСЕ буквы сразу
-        let globalIndex = 0; // Общий индекс для всех букв
-        
-        chars.forEach((char, index) => {
-          const charDelay = index * 0.015; // Только задержка между буквами
-          char.style.animationDelay = `${charDelay}s`;
-        });
-        
-        // Запускаем анимацию сразу
-        textElement.classList.add('animated');
+      let hasAnimated = new Set();
+      
+      function initAnimation(element) {
+          const delay = element.dataset.delay ? parseInt(element.dataset.delay) : 0;
+          
+          setTimeout(() => {
+              // Для текстовых элементов
+              if (element.classList.contains('animated-text')) {
+                  const chars = element.querySelectorAll('.char');
+                  const icons = element.querySelectorAll('.animated-icon');
+                  
+                  chars.forEach((char, index) => {
+                      const charDelay = index * 0.015;
+                      char.style.animationDelay = `${charDelay}s`;
+                  });
+                  
+                  icons.forEach((icon, iconIndex) => {
+                      const iconDelay = 0.3 + (iconIndex * 0.2);
+                      icon.style.animationDelay = `${iconDelay}s`;
+                  });
+              }
+              
+              // Активируем анимацию
+              element.classList.add('animated');
+              hasAnimated.add(element);
+          }, delay);
+      }
+      
+      const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+              if (entry.isIntersecting && !hasAnimated.has(entry.target)) {
+                  initAnimation(entry.target);
+              }
+          });
+      }, observerOptions);
+      
+      // Наблюдаем за всеми анимированными элементами
+      const animatedElements = document.querySelectorAll('.animated-text, .animated-element');
+      animatedElements.forEach(element => {
+          observer.observe(element);
       });
-    }
-    
-    // Запускаем анимацию при загрузке
-    initTextAnimation();
-  });  
-}) ();
+  });
+})();

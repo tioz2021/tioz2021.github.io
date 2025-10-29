@@ -17,6 +17,12 @@
     position: relative;
   }
 
+  // .h2-title__m-text .word
+  .word {
+    margin: 0;
+    letter-spacing: -0.155rem;
+  }
+
   // .h2-title__m-text
   &__m-text {
     font-weight: 400;

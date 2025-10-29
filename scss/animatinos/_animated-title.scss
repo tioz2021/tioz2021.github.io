@@ -1,11 +1,9 @@
-/* Основные стили для текста */
 .plan__title {
   font-weight: 600;
   font-size: 7.4rem;
   line-height: 120%;
   text-transform: uppercase;
   color: var(--body-1);
-
   display: flex;
   flex-wrap: wrap;
 }
@@ -20,11 +18,57 @@
 .char {
   display: flex;
   flex-wrap: wrap;
-  transform: scaleY(0) translateY(2.0rem); /* Начальное состояние: сжата по высоте */
+  transform: scaleY(0) translateY(2.0rem);
+  opacity: 0;
+  /* Убираем анимацию по умолчанию, будет включаться через JS */
+}
+
+/* Класс, который включает анимацию */
+.animated-text.animated .char {
   animation: growFromBottom 0.2s ease-out forwards;
 }
 
 @keyframes growFromBottom {
-  0% { transform: scaleY(0); opacity: 0; }
-  100% { transform: scaleY(1); opacity: 1; }
+  0% { transform: scaleY(0) translateY(2.0rem); opacity: 0; }
+  100% { transform: scaleY(1) translateY(0); opacity: 1; }
+}
+
+
+/* Стили для иконок */
+.animated-icon {
+  display: inline-block;
+  transform: scale(0) rotate(-180deg);
+  opacity: 0;
+}
+
+/* Анимация для иконок */
+.animated-text.animated .animated-icon {
+  animation: iconAppear 0.4s ease-out forwards;
+}
+
+/* Ключевые кадры для иконок */
+@keyframes iconAppear {
+  0% { 
+      transform: scale(0) rotate(-180deg); 
+      opacity: 0; 
+  }
+  70% { 
+      transform: scale(1.1) rotate(10deg); 
+      opacity: 1; 
+  }
+  100% { 
+      transform: scale(1) rotate(0deg); 
+      opacity: 1; 
+  }
+}
+
+.animated-text-simple .animated-paragraph {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.animated-text-simple.animated .animated-paragraph {
+  opacity: 1;
+  transform: translateY(0);
 }
