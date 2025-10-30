@@ -1,0 +1,359 @@
+.s6__list-item {
+  cursor: pointer;
+
+  // .s6__list-item .s6__list-item1-decor
+  .s6__list-item1-decor {
+    visibility: hidden;
+    position: absolute;
+    width: 11.2rem;
+    height: 10.5rem;
+    top: 3.6rem;
+    left: 26.6rem;
+  }
+  
+  // .s6__list-item .s6__list-item .img-wrp
+  .s6__list-item .img-wrp {
+    position: relative;
+    z-index: 3;
+  }
+  
+  // .s6__list-item .s6__list-item-img
+  .s6__list-item-img {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.s6__list-item1-decor {
+  visibility: hidden;
+  opacity: 0;
+  transition: var(--base-anim-d);
+  position: absolute;
+  width: 11.2rem;
+  height: 10.5rem;
+  top: 3.5rem;
+  left: 26.5rem;
+  z-index: 4;
+}
+
+.s6__list-item:nth-child(1):hover {
+
+  // .s6__list-item:nth-child(1):hover .s6__list-item1-decor
+  .s6__list-item1-decor {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.s6__list-item2-decor {
+  position: relative;
+  z-index: 4;
+}
+
+.s6__list-item2-decore-icon {
+  position: absolute;
+
+  // .s6__list-item2-decore-icon1
+  &1 {
+    width: 8.0rem;
+    height: 9.6rem;
+    top: 16.9rem;
+    left: 7.9rem;
+  }
+
+  // .s6__list-item2-decore-icon2
+  &2 {
+    width: 7.0rem;
+    height: 7.7rem;
+    top: 20.8rem;
+    right: 7.9rem;
+  }
+
+  // .s6__list-item2-decore-icon3
+  &3 {
+    width: 8.1rem;
+    height: 7.5rem;
+    top: 2.0rem;
+    left: 12.2rem;
+  }
+
+  // .s6__list-item2-decore-icon4
+  &4 {
+    width: 9.0rem;
+    height: 7.2rem;
+    top: 2.3rem;
+    right: 8.2rem;
+  }
+
+  // .s6__list-item2-decore-icon-woman
+  &-woman {
+    width: 40.6rem;
+    height: 32.8rem;
+    top: 1.6rem;
+    left: 50%;
+    margin-left: -20.3rem;
+  }
+}
+
+.s6__list-item:nth-child(2):hover {
+
+  // .s6__list-item:nth-child(2):hover .s6__list-item2-decore-icon1
+  .s6__list-item2-decore-icon1 {
+    animation: levitateSmall 3s ease-in-out infinite;
+  }
+
+  // .s6__list-item:nth-child(2):hover .s6__list-item2-decore-icon2
+  .s6__list-item2-decore-icon2 {
+    animation: levitateSmall 3s ease-in-out infinite;
+  }
+
+  // .s6__list-item:nth-child(2):hover .s6__list-item2-decore-icon3
+  .s6__list-item2-decore-icon3 {
+    animation: levitateSmall 3s ease-in-out infinite;
+  }
+
+  // .s6__list-item:nth-child(2):hover .s6__list-item2-decore-icon4
+  .s6__list-item2-decore-icon4 {
+    animation: levitateSmall 3s ease-in-out infinite;
+  }
+
+  // .s6__list-item:nth-child(2):hover .s6__list-item2-decore-icon-woman
+  .s6__list-item2-decore-icon-woman {
+    animation: levitate 3s ease-in-out infinite;
+  }
+}
+
+.s6__list-item {}
+
+.s6__list-item3-decor-man {
+  position: absolute;
+  width: 37.8rem;
+  height: 32.8rem;
+  z-index: 6;
+  left: 9.2rem;
+  top: 1.3rem;
+}
+
+.s6__list-item3-decor {
+  position: absolute;
+  width: 12.1rem;
+  height: 12.0rem;
+  z-index: 5;
+  top: 7.6rem;
+  right: 11.4rem;
+  transform: rotate(0deg);
+}
+
+.s6__list-item:nth-child(3):hover {
+
+  .s6__list-item3-decor {
+    animation: armSway 2s ease-in-out infinite;
+  }
+}
+
+/* Левитация - стандартная скорость */
+.levitate {
+  animation: levitate 3s ease-in-out infinite;
+}
+
+/* Левитация - быстрая */
+.levitate--fast {
+  animation: levitate 2s ease-in-out infinite;
+}
+
+/* Левитация - медленная */
+.levitate--slow {
+  animation: levitate 4s ease-in-out infinite;
+}
+
+/* Ключевые кадры для левитации */
+@keyframes levitate {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-1.0rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Дополнительные вариации с разной амплитудой */
+.levitate--small {
+  animation: levitateSmall 3s ease-in-out infinite;
+}
+
+@keyframes levitateSmall {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-0.5rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.levitate--large {
+  animation: levitateLarge 3s ease-in-out infinite;
+}
+
+@keyframes levitateLarge {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-1.5rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Комбинированные стили */
+.levitate-fast-small {
+  animation: levitateSmall 2s ease-in-out infinite;
+}
+
+.levitate-slow-large {
+  animation: levitateLarge 4s ease-in-out infinite;
+}
+
+/* Покачивание - стандартное */
+.wiggle {
+  animation: wiggle 2s ease-in-out infinite;
+  transform-origin: center bottom;
+}
+
+/* Покачивание - быстрое */
+.wiggle--fast {
+  animation: wiggle 1s ease-in-out infinite;
+  transform-origin: center bottom;
+}
+
+/* Покачивание - медленное */
+.wiggle--slow {
+  animation: wiggle 3s ease-in-out infinite;
+  transform-origin: center bottom;
+}
+
+/* Покачивание - маленькая амплитуда */
+.wiggle--small {
+  animation: wiggleSmall 2s ease-in-out infinite;
+  transform-origin: center bottom;
+}
+
+/* Покачивание - большая амплитуда */
+.wiggle--large {
+  animation: wiggleLarge 2s ease-in-out infinite;
+  transform-origin: center bottom;
+}
+
+/* Ключевые кадры для покачивания */
+@keyframes wiggle {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-3deg);
+  }
+  75% {
+    transform: rotate(3deg);
+  }
+}
+
+@keyframes wiggleSmall {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-1.5deg);
+  }
+  75% {
+    transform: rotate(1.5deg);
+  }
+}
+
+@keyframes wiggleLarge {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-6deg);
+  }
+  75% {
+    transform: rotate(6deg);
+  }
+}
+
+/* Покачивание с задержкой (для естественного движения) */
+.wiggle-delayed {
+  animation: wiggle 2s ease-in-out infinite;
+  animation-delay: 0.5s;
+  transform-origin: center bottom;
+}
+
+/* Покачивание только в одну сторону */
+.wiggle-one-way {
+  animation: wiggleOneWay 2s ease-in-out infinite;
+  transform-origin: center bottom;
+}
+
+@keyframes wiggleOneWay {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(4deg);
+  }
+}
+
+/* Комбинированное движение (покачивание + левитация) */
+.wiggle-levitate {
+  animation: wiggle 2s ease-in-out infinite, levitate 3s ease-in-out infinite;
+  transform-origin: center bottom;
+}
+
+/* Для руки персонажа - более естественное движение */
+.arm-sway {
+  animation: armSway 2.5s ease-in-out infinite;
+  transform-origin: top center;
+}
+
+@keyframes armSway {
+  0%, 100% {
+    transform: rotate(0deg) translateY(0);
+  }
+  33% {
+    transform: rotate(-2deg) translateY(-.2rem);
+  }
+  66% {
+    transform: rotate(2deg) translateY(.1rem);
+  }
+}
+
+/* Естественное движение руки с паузой */
+.arm-natural {
+  animation: armNatural 4s ease-in-out infinite;
+  transform-origin: shoulder; /* или top left/right в зависимости от позиции */
+}
+
+@keyframes armNatural {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-1deg);
+  }
+  40% {
+    transform: rotate(2deg);
+  }
+  60% {
+    transform: rotate(-1deg);
+  }
+  80% {
+    transform: rotate(1deg);
+  }
+}

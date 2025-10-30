@@ -264,7 +264,7 @@
           const delay = element.dataset.delay ? parseInt(element.dataset.delay) : 0;
           
           setTimeout(() => {
-              // Для текстовых элементов
+              // Для текстовых элементов (специальная обработка)
               if (element.classList.contains('animated-text')) {
                   const chars = element.querySelectorAll('.char');
                   const icons = element.querySelectorAll('.animated-icon');
@@ -280,7 +280,7 @@
                   });
               }
               
-              // Активируем анимацию
+              // Для всех анимированных элементов
               element.classList.add('animated');
               hasAnimated.add(element);
           }, delay);

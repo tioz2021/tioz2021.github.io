@@ -1,0 +1,103 @@
+/* Fade In */
+.fadeIn {
+  opacity: 0;
+  transition: all 0.6s ease-out;
+}
+
+.fadeIn.animated {
+  opacity: 1;
+}
+
+/* Fade In Up */
+.fadeInUp {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.fadeInUp.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Fade In Down */
+.fadeInDown {
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: all 0.6s ease-out;
+}
+
+.fadeInDown.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Fade In Left */
+.fadeInLeft {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: all 0.6s ease-out;
+}
+
+.fadeInLeft.animated {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Fade In Right */
+.fadeInRight {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: all 0.6s ease-out;
+}
+
+.fadeInRight.animated {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Дополнительные вариации с разной скоростью */
+.fadeInUp--fast {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s ease-out;
+}
+
+.fadeInUp--fast.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fadeInUp--slow {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.9s ease-out;
+}
+
+.fadeInUp--slow.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Для больших перемещений */
+.fadeInUp--large {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.7s ease-out;
+}
+
+.fadeInUp--large.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fadeInLeft--large {
+  opacity: 0;
+  transform: translateX(-60px);
+  transition: all 0.7s ease-out;
+}
+
+.fadeInLeft--large.animated {
+  opacity: 1;
+  transform: translateX(0);
+}
