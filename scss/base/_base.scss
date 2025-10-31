@@ -8,12 +8,12 @@ html {
   scroll-behavior: smooth;
   backface-visibility: hidden;
 
-    scrollbar-width: none;
-  -ms-overflow-style: none;
+  // scrollbar-width: none;
+  // -ms-overflow-style: none;
   &::-webkit-scrollbar {
     display: none;
   }
-  // overflow-x: hidden;
+  overflow-x: hidden;
 
   // font-size: 10px;
   // font-size: clamp(8px, 0.5208vw, 10px);
@@ -28,6 +28,8 @@ body {
   align-items: center;
   
   background: #feffff;
+
+  overflow-x: hidden;
 }
 
 /* убираем стрелки в Chrome, Safari, Edge */

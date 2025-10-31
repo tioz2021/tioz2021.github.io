@@ -487,8 +487,7 @@ template {
 html {
   scroll-behavior: smooth;
   backface-visibility: hidden;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+  overflow-x: hidden;
   font-size: 0.5208vw;
 }
 html::-webkit-scrollbar {
@@ -501,6 +500,7 @@ body {
   flex-direction: column;
   align-items: center;
   background: #feffff;
+  overflow-x: hidden;
 }
 
 /* убираем стрелки в Chrome, Safari, Edge */
@@ -812,8 +812,8 @@ footer {
 
 .tranding-slide {
   position: relative;
-  width: 564px;
-  height: 640px;
+  width: 56.4rem;
+  height: 64rem;
 }
 
 .product {
@@ -1343,6 +1343,7 @@ footer {
   background: #fff;
   position: relative;
   margin-bottom: 18.4rem;
+  overflow: hidden;
 }
 .how-it-works__container {
   flex-direction: column;
