@@ -1,3 +1,11 @@
+.animated-text .char,
+.animated-element {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  will-change: transform, opacity;
+}
+
 .slide-from-top {
   opacity: 0;
   transform: translateY(-50.0rem);

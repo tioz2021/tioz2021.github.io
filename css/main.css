@@ -1474,6 +1474,9 @@ footer {
   padding-bottom: 16rem;
   background: var(--body-3);
 }
+.s3__container {
+  flex-direction: column;
+}
 .s3__top-info {
   display: flex;
   justify-content: space-between;
@@ -2461,6 +2464,14 @@ footer {
   background-color: inherit;
 }
 
+.animated-text .char,
+.animated-element {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  will-change: transform, opacity;
+}
+
 .slide-from-top {
   opacity: 0;
   transform: translateY(-50rem);
@@ -2967,7 +2978,4 @@ footer {
   80% {
     transform: rotate(1deg);
   }
-}
-.s3__container {
-  flex-direction: column;
 }/*# sourceMappingURL=main.css.map */
