@@ -487,6 +487,8 @@ template {
 html {
   scroll-behavior: smooth;
   backface-visibility: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   overflow-x: hidden;
   font-size: 0.5208vw;
 }
@@ -2979,4 +2981,7 @@ footer {
   80% {
     transform: rotate(1deg);
   }
+}
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 0.4rem);
 }/*# sourceMappingURL=main.css.map */

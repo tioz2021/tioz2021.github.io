@@ -36,3 +36,8 @@
 @import "animatinos/animated-title";
 @import "animatinos/fade-anim";
 @import "animatinos/s6-hover-anim";
+
+// slider fix
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, .4rem);
+}

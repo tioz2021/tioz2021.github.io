@@ -8,8 +8,8 @@ html {
   scroll-behavior: smooth;
   backface-visibility: hidden;
 
-  // scrollbar-width: none;
-  // -ms-overflow-style: none;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   &::-webkit-scrollbar {
     display: none;
   }
