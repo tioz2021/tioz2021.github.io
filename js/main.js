@@ -98,14 +98,20 @@
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
-    speed: 1000,
+    speed: 750,
     grabCursor: true,
-    parallax: true,
+    // parallax: true,
+
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true // Плавное перекрытие слайдов
+    },
 
     navigation: {
       nextEl: ".product__swiper-button-next",
       prevEl: ".product__swiper-button-prev",
     },
+    
     pagination: {
       el: ".product__swiper-pagination",
       clickable: true,
