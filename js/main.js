@@ -183,6 +183,7 @@
   });
 })();
 
+// 3d-slider
 (() => {
   var TrandingSlider = new Swiper('.tranding-slider', {
     effect: 'coverflow',
@@ -190,17 +191,19 @@
     centeredSlides: true,
     loop: true,
     slidesPerView: 'auto',
+    speed: 500,
+    
     coverflowEffect: {
       rotate: 0,
       stretch: 0,
-      depth: 145,
+      depth: 141,
       modifier: 2.5,
     },
 
-    // autoplay: {
-    //   delay: 2000, 
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 4000, 
+      disableOnInteraction: false,
+    },
   });
 }) ();
 
