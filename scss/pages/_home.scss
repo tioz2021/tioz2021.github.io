@@ -1234,6 +1234,12 @@
       top: 1.5rem;
       left: .3rem;
     }
+
+    // .s10__head .h2-title__text--mod-last
+    .h2-title__text--mod-last {
+      display: flex;
+      gap: 1.0rem;
+    }
   }
 
 
@@ -1320,7 +1326,7 @@
     position: absolute;
     left: 50%;
     top: 22.5rem;
-    transform: translateX(-50%);
+    transform: translateX(-50%) !important;
   }
 
   // .s10__decoration-shadow-bg
@@ -1338,6 +1344,8 @@
 .s11 {
   margin-top: -14.3rem;
   margin-bottom: 16.0rem;
+  position: relative;
+  z-index: 2;
 
   // .s11__container
   &__container {
@@ -1353,6 +1361,9 @@
     text-align: center;
     color: var(--body-2);
     margin-bottom: 3.6rem;
+
+    display: flex;
+    justify-content: center;
   }
 
   // .s11__title
@@ -1364,6 +1375,12 @@
     text-align: center;
     color: var(--body-2);
     margin-bottom: 3.4rem;
+
+    // .s11__title .word-wrapper
+    .word-wrapper {
+      display: flex;
+      justify-content: center;
+    }
   }
 
   // .s11__accordion
@@ -1431,6 +1448,9 @@
     top: 0;
     left: .5rem;
     color: var(--body-1);
+
+    display: flex;
+    gap: 1.0rem;
   }
 
   // .footer__info-list

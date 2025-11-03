@@ -51,12 +51,23 @@
 }
 
 .deg-fade-in4 {
-  opacity: 0;
   transform: rotate(4deg) translateX(6.0rem) !important;
+  opacity: 0;
   transition: all 0.8s ease-out;
   // .deg-fade-in1.animated
   &.animated {
     opacity: 1;
     transform: rotate(4deg) translateX(0rem) !important;
+  }
+}
+
+
+.my-fade-in {
+  opacity: 0;
+  transition: all 0.8s ease-out;
+
+  // .my-fade-in.animated
+  &.animated {
+    opacity: 1;
   }
 }
