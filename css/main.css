@@ -2069,6 +2069,8 @@ footer {
   color: var(--body-2);
   max-width: 100%;
   margin-right: 0;
+  display: flex;
+  gap: 1rem;
 }
 .s9__list {
   width: 100%;
@@ -2484,6 +2486,46 @@ footer {
 .slide-from-top.animated {
   opacity: 1;
   transform: translateY(0);
+}
+
+.deg-fade-in1 {
+  opacity: 0;
+  transform: translateX(-3rem);
+  transition: all 0.8s ease-out;
+}
+.deg-fade-in1.animated {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.deg-fade-in2 {
+  opacity: 0;
+  transform: rotate(-2deg) translateX(6rem) !important;
+  transition: all 0.8s ease-out;
+}
+.deg-fade-in2.animated {
+  opacity: 1;
+  transform: rotate(-2deg) translateX(0rem) !important;
+}
+
+.deg-fade-in3 {
+  opacity: 0;
+  transform: rotate(-4deg) translateX(-6rem) !important;
+  transition: all 0.8s ease-out;
+}
+.deg-fade-in3.animated {
+  opacity: 1;
+  transform: rotate(-4deg) translateX(0rem) !important;
+}
+
+.deg-fade-in4 {
+  opacity: 0;
+  transform: rotate(4deg) translateX(6rem) !important;
+  transition: all 0.8s ease-out;
+}
+.deg-fade-in4.animated {
+  opacity: 1;
+  transform: rotate(4deg) translateX(0rem) !important;
 }
 
 .plan__title {

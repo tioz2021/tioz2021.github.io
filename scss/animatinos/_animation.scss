@@ -16,3 +16,47 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+.deg-fade-in1 {
+  opacity: 0;
+  transform: translateX(-3.0rem);
+  transition: all 0.8s ease-out;
+  // .deg-fade-in1.animated
+  &.animated {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+.deg-fade-in2 {
+  opacity: 0;
+  transform: rotate(-2deg) translateX(6.0rem) !important;
+  transition: all 0.8s ease-out;
+  // .deg-fade-in1.animated
+  &.animated {
+    opacity: 1;
+    transform: rotate(-2deg) translateX(0rem) !important;
+  }
+}
+
+.deg-fade-in3 {
+  opacity: 0;
+  transform: rotate(-4deg) translateX(-6.0rem) !important;
+  transition: all 0.8s ease-out;
+  // .deg-fade-in1.animated
+  &.animated {
+    opacity: 1;
+    transform: rotate(-4deg) translateX(0rem) !important;
+  }
+}
+
+.deg-fade-in4 {
+  opacity: 0;
+  transform: rotate(4deg) translateX(6.0rem) !important;
+  transition: all 0.8s ease-out;
+  // .deg-fade-in1.animated
+  &.animated {
+    opacity: 1;
+    transform: rotate(4deg) translateX(0rem) !important;
+  }
+}
