@@ -33,7 +33,9 @@
   const swiper = new Swiper(".how-it-works__swiper", {
     direction: "horizontal",
     slidesPerView: 3,
-    spaceBetween: 36,
+    
+    // try use rem
+    spaceBetween: parseFloat(getComputedStyle(document.documentElement).fontSize) * 3.6,
     mousewheel: false,
     breakpoints: {
       320: { slidesPerView: 1 },
