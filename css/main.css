@@ -609,7 +609,8 @@ footer {
   display: flex;
 }
 .h2-title h2 {
-  display: ruby;
+  display: flex;
+  flex-wrap: wrap;
   position: relative;
 }
 .h2-title .word {
@@ -625,7 +626,10 @@ footer {
   max-width: 12rem;
   margin-right: 3.6rem;
   position: relative;
-  top: -0.5rem;
+  top: 1.2rem;
+}
+.h2-title__m-text .word {
+  letter-spacing: unset;
 }
 .h2-title__decor-icon {
   margin-right: 1.2rem;
@@ -634,13 +638,10 @@ footer {
 .h2-title__decor-icon--1 {
   width: 10rem;
   height: 10rem;
-  top: 2.4rem;
-  margin-left: 0.7rem;
 }
 .h2-title__decor-icon--2 {
   width: 8rem;
   height: 8rem;
-  margin-left: 1.1rem;
 }
 .h2-title__text {
   font-weight: 600;
@@ -648,10 +649,23 @@ footer {
   line-height: 120%;
   text-transform: uppercase;
   color: var(--body-2);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 .h2-title__text--mod-last {
   position: relative;
   top: -1.5rem;
+}
+.h2-title .word-top-mod {
+  position: relative;
+  top: -2rem;
+}
+.h2-title .char-margin-left {
+  margin-left: 0.7rem;
+}
+.h2-title .char-margin-right {
+  margin-right: 2.5rem;
 }
 
 .header {
@@ -767,7 +781,7 @@ footer {
   border: 0.1rem solid rgba(5, 5, 18, 0.6);
   position: relative;
   width: 100%;
-  margin-bottom: 12.9rem;
+  margin-bottom: 15.9rem;
 }
 
 .ticker__track {
@@ -1007,7 +1021,7 @@ footer {
 }
 .product__swiper-pagination .swiper-pagination-bullet {
   border: 0.1rem solid var(--body-2) !important;
-  width: 8rem !important;
+  width: 7rem !important;
   height: 0rem !important;
   background-color: unset !important;
   opacity: 0.3 !important;
@@ -1413,7 +1427,7 @@ footer {
   display: flex;
   background: #fff;
   position: relative;
-  margin-bottom: 18.4rem;
+  margin-bottom: 15.4rem;
 }
 .how-it-works__container {
   flex-direction: column;
@@ -1427,11 +1441,8 @@ footer {
 .how-it-works .word {
   margin: 0;
 }
-.how-it-works .h2-title__decor-icon--1 {
-  margin-left: -0.3rem;
-}
 .how-it-works .h2-title__decor-icon--2 {
-  margin-left: 0;
+  margin-top: -1.5rem;
 }
 .how-it-works__swiper {
   width: 100%;
@@ -1556,18 +1567,13 @@ footer {
 .s3__head {
   width: 115.9rem;
   position: relative;
-  top: -1rem;
 }
 .s3__head .h2-title__decor-icon--1 {
   width: 8rem;
   height: 8rem;
-  top: 1.4rem;
-  margin-left: 0rem;
 }
 .s3__head .h2-title__m-text {
   color: var(--body-1);
-  top: -0.4rem;
-  left: 0.4rem;
 }
 .s3__head .word {
   letter-spacing: 0;
@@ -1599,8 +1605,6 @@ footer {
 .s4 .h2-title__decor-icon--1 {
   width: 8rem;
   height: 8rem;
-  top: 0.4rem;
-  left: -0.7rem;
 }
 .s4 .h2-title__text--mod {
   position: relative;
@@ -1625,7 +1629,7 @@ footer {
   margin-bottom: 4.6rem;
 }
 .s4__head .h2-title__m-text {
-  margin-right: 5.4rem;
+  margin-right: 3.6rem;
 }
 .s4__head .word {
   letter-spacing: 0;
@@ -1651,15 +1655,13 @@ footer {
 .s5__head h2 span {
   color: #fff;
 }
+.s5 .h2-title__text--mod-last {
+  top: 0;
+}
 .s5 .h2-title__decor-icon {
   width: 8rem;
   height: 8rem;
   top: 0rem;
-  left: 0.6rem;
-}
-.s5 .h2-title__text--mod-last {
-  top: -1.6rem;
-  left: 0.7rem;
 }
 .s5__info {
   width: 86.4rem;
@@ -1984,13 +1986,11 @@ footer {
 }
 .s7__head-text--last {
   color: var(--body-1);
-  top: -1.3rem;
+  top: -0.3rem;
 }
 .s7__head-decor-icon {
   width: 8rem;
   height: 8rem;
-  top: 0.4rem;
-  margin-left: 0;
 }
 .s7 p {
   font-weight: 400;
@@ -2024,8 +2024,6 @@ footer {
 .s8__head-decor-icon {
   width: 8rem;
   height: 8rem;
-  top: 1.4rem;
-  margin-left: 1rem;
 }
 .s8__head-text--last {
   display: block;
@@ -2138,7 +2136,7 @@ footer {
   max-width: 100%;
   margin-right: 0;
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
 }
 .s9__list {
   width: 100%;
@@ -2239,13 +2237,11 @@ footer {
 }
 .s10__head .h2-title__text--mod-last {
   display: flex;
-  gap: 1rem;
 }
 .s10__head-decor-icon {
   width: 8rem;
   height: 8rem;
   position: relative;
-  top: 1.6rem;
   left: -0.7rem;
 }
 .s10__head-decor-icon--2 {
@@ -2370,7 +2366,7 @@ footer {
 }
 .footer .wrp {
   display: flex;
-  margin-left: 42.1rem;
+  margin-left: 39.3rem;
   position: relative;
   top: 0;
 }
@@ -2389,7 +2385,6 @@ footer {
   left: 0.5rem;
   color: var(--body-1);
   display: flex;
-  gap: 1rem;
 }
 .footer__info-list {
   width: 116.4rem;

@@ -28,6 +28,10 @@
   animation: growFromBottom 0.2s ease-out forwards;
 }
 
+.h2-title__m-text.animated .char {
+  
+}
+
 @keyframes growFromBottom {
   0% { transform: scaleY(0) translateY(2.0rem); opacity: 0; }
   100% { transform: scaleY(1) translateY(0); opacity: 1; }

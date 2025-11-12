@@ -36,7 +36,6 @@
     
     // try use rem
     spaceBetween: parseFloat(getComputedStyle(document.documentElement).fontSize) * 3.6,
-    mousewheel: false,
     breakpoints: {
       320: { slidesPerView: 1 },
       768: { slidesPerView: 2 },

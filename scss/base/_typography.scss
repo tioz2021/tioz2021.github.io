@@ -13,7 +13,9 @@
 
   // .h2-title h2
   h2 {
-    display: ruby;
+    // display: ruby;
+    display: flex;
+    flex-wrap: wrap;
     position: relative;
   }
 
@@ -21,6 +23,8 @@
   .word {
     margin: 0;
     letter-spacing: -0.155rem;
+    // margin-left: 2.0rem;
+    // margin-right: 2.0rem;
   }
 
   // .h2-title__m-text
@@ -33,7 +37,12 @@
     max-width: 12.0rem;
     margin-right: 3.6rem;
     position: relative;
-    top: -0.5rem;
+    top: 1.2rem;
+
+    // .h2-title__m-text.word
+    .word {
+      letter-spacing: unset;
+    }
   }
 
   // .h2-title__decor-icon
@@ -46,15 +55,15 @@
     &--1 {
       width: 10.0rem;
       height: 10.0rem;
-      top: 2.4rem;
-      margin-left: 0.7rem;
+      // top: 2.4rem;
+      // margin-left: 0.7rem;
     }
 
     // .h2-title__decor-icon--2
     &--2 {
       width: 8.0rem;
       height: 8.0rem;
-      margin-left: 1.1rem;
+      // margin-left: 1.1rem;
     }
   }
 
@@ -66,10 +75,30 @@
     text-transform: uppercase;
     color: var(--body-2);
 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+
     // .h2-title__text--mod-last
     &--mod-last {
       position: relative;
       top: -1.5rem; 
     }
+  }
+
+  // .word-top-mod
+  .word-top-mod {
+    position: relative;
+    top: -2.0rem;
+  }
+
+  // .h2-title .char-margin-left
+  .char-margin-left {
+    margin-left: 0.7rem;
+  }
+
+  // .h2-title .char-margin-right
+  .char-margin-right {
+    margin-right: 2.5rem;
   }
 }
