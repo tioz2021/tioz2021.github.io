@@ -28,13 +28,20 @@
   animation: growFromBottom 0.2s ease-out forwards;
 }
 
-.h2-title__m-text.animated .char {
-  
+.animated-text.animated .h2-title__m-text .char {
+  animation: fadeIn 0.5s ease-in-out forwards;
 }
 
 @keyframes growFromBottom {
-  0% { transform: scaleY(0) translateY(2.0rem); opacity: 0; }
-  100% { transform: scaleY(1) translateY(0); opacity: 1; }
+  0% {
+    transform: scaleY(0) translateY(2.0rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scaleY(1) translateY(0);
+    opacity: 1;
+  }
 }
 
 
@@ -52,17 +59,19 @@
 
 /* Ключевые кадры для иконок */
 @keyframes iconAppear {
-  0% { 
-      transform: scale(0) rotate(-180deg); 
-      opacity: 0; 
+  0% {
+    transform: scale(0) rotate(-180deg);
+    opacity: 0;
   }
-  70% { 
-      transform: scale(1.1) rotate(10deg); 
-      opacity: 1; 
+
+  70% {
+    transform: scale(1.1) rotate(10deg);
+    opacity: 1;
   }
-  100% { 
-      transform: scale(1) rotate(0deg); 
-      opacity: 1; 
+
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
   }
 }
 

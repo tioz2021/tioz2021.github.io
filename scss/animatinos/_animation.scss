@@ -21,6 +21,7 @@
   opacity: 0;
   transform: translateX(-3.0rem);
   transition: all 0.8s ease-out;
+
   // .deg-fade-in1.animated
   &.animated {
     opacity: 1;
@@ -32,6 +33,7 @@
   opacity: 0;
   transform: rotate(-2deg) translateX(6.0rem) !important;
   transition: all 0.8s ease-out;
+
   // .deg-fade-in1.animated
   &.animated {
     opacity: 1;
@@ -43,6 +45,7 @@
   opacity: 0;
   transform: rotate(-4deg) translateX(-6.0rem) !important;
   transition: all 0.8s ease-out;
+
   // .deg-fade-in1.animated
   &.animated {
     opacity: 1;
@@ -54,6 +57,7 @@
   transform: rotate(4deg) translateX(6.0rem) !important;
   opacity: 0;
   transition: all 0.8s ease-out;
+
   // .deg-fade-in1.animated
   &.animated {
     opacity: 1;
@@ -68,6 +72,23 @@
 
   // .my-fade-in.animated
   &.animated {
+    opacity: 1;
+  }
+}
+
+/*
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+*/
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
     opacity: 1;
   }
 }
