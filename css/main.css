@@ -2914,6 +2914,20 @@ footer {
   opacity: 1;
 }
 
+/*
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .plan__title {
   font-weight: 600;
   font-size: 7.4rem;
@@ -2947,6 +2961,10 @@ footer {
 /* Класс, который включает анимацию */
 .animated-text.animated .char {
   animation: growFromBottom 0.2s ease-out forwards;
+}
+
+.animated-text.animated .h2-title__m-text .char {
+  animation: fadeIn 0.5s ease-in-out forwards;
 }
 
 @keyframes growFromBottom {
