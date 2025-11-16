@@ -317,9 +317,11 @@
   const openMenuBtn = document.querySelector('.header__tab-version-gmbrg-btn');
   const tabMenuBody = document.querySelector('.tab-menu');
   const tabMenuCloseBtn = document.querySelector('.tab-menu__close-btn');
+  const fsBody = document.querySelector('.fs');
 
   function menu() {
     tabMenuBody.classList.toggle('active');
+    fsBody.classList.toggle('active')
   };
 
   openMenuBtn.addEventListener('click', menu);

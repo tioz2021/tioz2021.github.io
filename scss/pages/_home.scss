@@ -8,6 +8,21 @@
   
   height: 108.0rem;
 
+  // .fs.active
+  &.active {
+  }
+  
+  @media screen and (max-width: $tab-media) {
+    height: 97.0rem;
+    background-attachment: unset;
+    background-image: url('../../image/fs-bg-tab.png');
+  }
+
+  @media screen and (max-width: $mob-media) {
+    height: 51.6rem;
+    background-image: url('../../image/fs-bg-mob.png');
+  }
+
   // .fs__container
   &__container {
     justify-content: space-between;
@@ -16,6 +31,7 @@
 
     @media screen and (max-width: $tab-media) {
       flex-wrap: wrap;
+      justify-content: center;
     }
   }
 
@@ -23,6 +39,16 @@
   &__title {
     max-width: 86.4rem;
     margin-top: 46.1rem;
+
+    @media screen and (max-width: $tab-media) {
+      max-width: 100%;
+      margin-top: 0;
+      margin-bottom: 3.6rem;
+    }
+
+    @media screen and (max-width: $mob-media) {
+      margin-bottom: 1.6rem;
+    }
   }
 
   // .fs__img
@@ -31,6 +57,19 @@
     height: 88.4rem;
     position: relative;
     left: -3.2rem;
+
+    @media screen and (max-width: $tab-media) {
+      left: unset;
+      top: -0.4rem;
+      width: 56.0rem;
+      height: 60.0rem;
+    }
+
+    @media screen and (max-width: $mob-media) {
+      top: 0.1rem;
+      width: 28.2rem;
+      height: 30.0rem;
+    }
   }
 }
 
