@@ -79,6 +79,10 @@
     flex-wrap: wrap;
     gap: 2rem;
 
+    @media screen and (max-width: $tab-media) {
+      font-size: 5.6rem;
+    }
+
     // .h2-title__text--mod-last
     &--mod-last {
       position: relative;

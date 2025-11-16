@@ -7,7 +7,17 @@
 
   display: flex;
 
-  // border: 1px solid red;  
+  @media screen and (max-width: $tab-media) {
+    max-width: calc(var(--container-size-tab) + var(--border-tab)*2);
+    padding-left: var(--border-tab);
+    padding-right: var(--border-tab);
+  }
+
+  @media screen and (max-width: $mob-media) {
+    max-width: calc(var(--container-size-mob) + var(--border-mob)*2);
+    padding-left: var(--border-mob);
+    padding-right: var(--border-mob);
+  }
 }
 
 .img-wrp {

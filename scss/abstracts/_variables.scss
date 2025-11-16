@@ -14,9 +14,29 @@
   --container-size-web: 176rem;
   --border-web: 7.8rem;
 
+  --container-size-tab: 69.8rem;
+  --border-tab: 3.6rem;
+
+  --container-size-mob: 32.8rem;
+  --border-mob: 1.6rem;
+
   --base-anim-d: all 500ms ease-in-out;
 }
 
 /* 
 transition: var(--base-anim-d);
 */
+
+$tab-media: 1000px;
+$mob-media: 600px;
+// font-size: 0.12999vw;
+// font-size: 0.27779vw;
+
+@media screen and (max-width: $tab-media) {
+
+}
+
+@media screen and (max-width: $mob-media) {
+
+}
+

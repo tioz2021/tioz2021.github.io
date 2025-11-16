@@ -18,6 +18,10 @@
     text-align: center;
     color: var(--body-1);
     transition: var(--base-anim-d);
+
+    @media screen and (max-width: $tab-media) {
+      font-size: 1.4rem;
+    }
   }
 
   // .main-btn:hover

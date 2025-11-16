@@ -16,7 +16,6 @@
 @import "base/typography";
 
 // components
-@import "components/header";
 @import "components/main-btn";
 @import "components/link-list";
 @import "components/ticker";
@@ -26,6 +25,8 @@
 @import "components/accordion";
 @import "components/popup";
 @import "components/person";
+@import "components/header";
+@import "components/tab-menu";
 
 // pages
 @import "pages/home";
@@ -41,16 +42,3 @@
 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0 var(--swiper-pagination-bullet-horizontal-gap, .4rem);
 }
-
-
-// .h2-title h2 {
-//   display: flex;
-//   flex-wrap: wrap;
-// }
-
-// .h2-title__text {
-//   display: flex;
-//   gap: 1.0rem;
-// }
-
-

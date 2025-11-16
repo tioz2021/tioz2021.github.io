@@ -6,6 +6,10 @@
   color: var(--body-1);
   display: flex;
   flex-wrap: wrap;
+
+  @media screen and (max-width: $tab-media) {
+    font-size: 5.6rem;
+  }
 }
 
 .word {
