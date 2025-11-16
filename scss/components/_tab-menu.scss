@@ -10,6 +10,8 @@
   z-index: 9;
   background: var(--body-3);
   
+  transition: all 500ms ease-in-out;
+
   // .tab-menu.active
   &.active {
     visibility: visible;

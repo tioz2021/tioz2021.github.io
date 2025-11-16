@@ -311,3 +311,17 @@
       });
   });
 })();
+
+// tab/mobile menu
+(() => {
+  const openMenuBtn = document.querySelector('.header__tab-version-gmbrg-btn');
+  const tabMenuBody = document.querySelector('.tab-menu');
+  const tabMenuCloseBtn = document.querySelector('.tab-menu__close-btn');
+
+  function menu() {
+    tabMenuBody.classList.toggle('active');
+  };
+
+  openMenuBtn.addEventListener('click', menu);
+  tabMenuCloseBtn.addEventListener('click', menu);
+}) ();
