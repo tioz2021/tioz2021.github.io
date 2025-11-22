@@ -204,38 +204,48 @@
     loop: true,
     slidesPerView: 'auto',
     speed: 500,
-
+    
+    
     breakpoints: {
-      320: { 
+      // 0-600px - настройки по умолчанию (mobile)
+      321: {
+        coverflowEffect: {
+          // rotate: 0,
+          // stretch: 1,
+          // depth: 1,
+          // modifier: 1,
+          // scale: 1,
+        }
+      },
+
+      // 601-1000px (tablet)
+      601: {
+        // slidesPerView: 1.3,
+        centeredSlides: true,
+        coverflowEffect: {
+          // rotate: 0,
+          // stretch: 18.68,
+          // depth: 15,
+          // modifier: 15,
+        }
+      },
+      
+      // 1001px+ (desktop)
+      1001: {
         coverflowEffect: {
           rotate: 0,
           stretch: 0,
           depth: 141,
           modifier: 2.5,
-        },        
-      },
-      768: { 
-        coverflowEffect: {
-          rotate: 0,
-          stretch: 0,
-          depth: 100,
-          modifier: 2.5,
-        },
-      },
-      1024: {
-        coverflowEffect: {
-          rotate: 0,
-          stretch: 0,
-          depth: 141,
-          modifier: 2.5,
-        },
+        }
       }
     },
 
-    autoplay: {
-      delay: 4000, 
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 4000, 
+    //   disableOnInteraction: false,
+    // },
+
   });
 }) ();
 
