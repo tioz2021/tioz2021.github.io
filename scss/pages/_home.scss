@@ -497,6 +497,14 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 4.5rem;
+
+    @media screen and (max-width: $tab-media) {
+      flex-wrap: wrap;
+    }
+    
+    @media screen and (max-width: $mob-media) {
+    
+    }    
   }
 
   // .s3__head

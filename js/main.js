@@ -204,12 +204,32 @@
     loop: true,
     slidesPerView: 'auto',
     speed: 500,
-    
-    coverflowEffect: {
-      rotate: 0,
-      stretch: 0,
-      depth: 141,
-      modifier: 2.5,
+
+    breakpoints: {
+      320: { 
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 141,
+          modifier: 2.5,
+        },        
+      },
+      768: { 
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 100,
+          modifier: 2.5,
+        },
+      },
+      1024: {
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 141,
+          modifier: 2.5,
+        },
+      }
     },
 
     autoplay: {

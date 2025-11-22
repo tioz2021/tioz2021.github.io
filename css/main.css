@@ -2279,6 +2279,11 @@ footer {
   justify-content: space-between;
   margin-bottom: 4.5rem;
 }
+@media screen and (max-width: 1000px) {
+  .s3__top-info {
+    flex-wrap: wrap;
+  }
+}
 .s3__head {
   width: 115.9rem;
   position: relative;
