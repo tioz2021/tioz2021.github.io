@@ -10,6 +10,14 @@
   opacity: 0;
   transform: translateY(-50.0rem);
   transition: all 0.8s ease-out;
+
+  @media screen and (max-width: $tab-media) {
+    transform: translateY(-25.0rem);
+  }
+  
+  @media screen and (max-width: $mob-media) {
+    transform: translateY(-10.0rem);
+  }
 }
 
 .slide-from-top.animated {

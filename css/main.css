@@ -3720,6 +3720,16 @@ footer {
   transform: translateY(-50rem);
   transition: all 0.8s ease-out;
 }
+@media screen and (max-width: 1000px) {
+  .slide-from-top {
+    transform: translateY(-25rem);
+  }
+}
+@media screen and (max-width: 600px) {
+  .slide-from-top {
+    transform: translateY(-10rem);
+  }
+}
 
 .slide-from-top.animated {
   opacity: 1;
