@@ -9,6 +9,14 @@
   align-items: center;
   justify-content: center;
 
+  @media screen and (max-width: $tab-media) {
+
+  }
+  
+  @media screen and (max-width: $mob-media) {
+    border-radius: 0.4rem;
+  }
+
   // .main-btn__text
   &__text {
     font-weight: 500;

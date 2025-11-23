@@ -9,6 +9,11 @@
     position: relative;
     left: .5rem;
     top: -0.2rem;
+
+    @media screen and (max-width: $mob-media) {
+      left: .2rem;
+      top: -0.5rem;
+    }
   }
   
   // .change-period .arrows
@@ -42,17 +47,39 @@
     line-height: 120%;
     color: var(--body-2);
     text-transform: uppercase;
+
+    @media screen and (max-width: $mob-media) {
+      position: relative;
+      left: -0.2rem;
+      top: .2rem;
+    }
   }
   
   // .change-period .arrow-up
   .arrow-up {
     width: 1.2rem;
     height: 1.0rem;
+
+    @media screen and (max-width: $tab-media) {
+
+    }
+    
+    @media screen and (max-width: $mob-media) {
+    
+    }
   }
   
   // .change-period .arrow-down
   .arrow-down {
     width: 1.2rem;
     height: 1.0rem;
+
+    @media screen and (max-width: $tab-media) {
+      
+    }
+    
+    @media screen and (max-width: $mob-media) {
+    
+    }
   }
 }

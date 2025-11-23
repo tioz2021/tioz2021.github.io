@@ -198,5 +198,13 @@
   // .h2-title .char-margin-right
   .char-margin-right {
     margin-right: 2.5rem;
+
+    @media screen and (max-width: $tab-media) {
+      margin-right: 1.3rem;
+    }
+    
+    @media screen and (max-width: $mob-media) {
+      margin-right: 0.8rem;
+    }
   }
 }
