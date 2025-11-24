@@ -34,6 +34,14 @@
   &.animated {
     opacity: 1;
     transform: translateX(0%);
+
+    @media screen and (max-width: $tab-media) {
+      transform: unset!important;
+    }
+    
+    @media screen and (max-width: $mob-media) {
+      
+    }
   }
 }
 
@@ -46,6 +54,14 @@
   &.animated {
     opacity: 1;
     transform: rotate(-2deg) translateX(0rem) !important;
+
+    @media screen and (max-width: $tab-media) {
+      transform: rotate(-4deg) translateX(0rem) !important;
+    }
+    
+    @media screen and (max-width: $mob-media) {
+      
+    }
   }
 }
 
@@ -58,6 +74,14 @@
   &.animated {
     opacity: 1;
     transform: rotate(-4deg) translateX(0rem) !important;
+
+    @media screen and (max-width: $tab-media) {
+      transform: rotate(2deg) translateX(0rem) !important;
+    }
+    
+    @media screen and (max-width: $mob-media) {
+      
+    }
   }
 }
 
@@ -70,6 +94,14 @@
   &.animated {
     opacity: 1;
     transform: rotate(4deg) translateX(0rem) !important;
+
+    @media screen and (max-width: $tab-media) {
+      transform: rotate(-4deg) translateX(0rem) !important;
+    }
+    
+    @media screen and (max-width: $mob-media) {
+      
+    }
   }
 }
 
