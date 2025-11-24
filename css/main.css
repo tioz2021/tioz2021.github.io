@@ -4062,6 +4062,11 @@ footer {
   display: flex;
   gap: 2rem;
 }
+@media screen and (max-width: 1000px) {
+  .s9__head-title {
+    flex-wrap: wrap;
+  }
+}
 .s9__list {
   width: 100%;
   display: flex;

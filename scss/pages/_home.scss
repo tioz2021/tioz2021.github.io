@@ -2211,6 +2211,14 @@
 
     display: flex;
     gap: 2rem;
+
+    @media screen and (max-width: $tab-media) {
+      flex-wrap: wrap;
+    }
+    
+    @media screen and (max-width: $mob-media) {
+      
+    }
   }
 
   // .s9__list
