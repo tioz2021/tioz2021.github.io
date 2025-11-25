@@ -63,6 +63,7 @@
     @media screen and (max-width: $mob-media) {
       width: 10.0rem;
       height: 4.4rem;
+      border-radius: .4rem;
     }
   }
 
@@ -85,6 +86,7 @@
 
     @media screen and (max-width: $mob-media) {
       font-size: 1.8rem;
+      left: .3rem;
     }
 
     // .header__logo-text span
@@ -98,6 +100,9 @@
 
       @media screen and (max-width: $tab-media) {
         right: 0.6rem;
+      }
+      @media screen and (max-width: $mob-media) {
+        top: 0;
       }
     }
   }
@@ -135,6 +140,9 @@
     @media screen and (max-width: $tab-media) {
       display: flex;
     }
+    @media screen and (max-width: $mob-media) {
+      gap: 1.4rem;
+    }
   }
 
   // .header__tab-version-menu
@@ -162,6 +170,10 @@
       height: 4.4rem;
     }
 
+    @media screen and (max-width: $mob-media) {
+      padding: 0;
+    }
+
     // .header__tab-version-gmbrg-btn svg
     svg {
       width: 3.6rem;
@@ -169,7 +181,7 @@
 
       @media screen and (max-width: $mob-media) {
         width: 2.4rem;
-        height: 1.2rem;
+        height: 1.4rem;
       }
     }
   }
