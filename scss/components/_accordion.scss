@@ -1,4 +1,20 @@
 .accordion {
+  --content-padding: 2.4rem;
+  --extra-space: 2.4rem;
+
+  @media screen and (max-width: $tab-media) {
+    --content-padding: 1.6rem;
+    --extra-space: 1.6rem;
+  }
+  
+  @media screen and (max-width: $mob-media) {
+    --content-padding: 1.2rem;
+    --extra-space: 1.2rem;
+  }
+}
+
+
+.accordion {
   width: 100%;
   margin-bottom: 6.0rem;
 
@@ -33,6 +49,16 @@
     padding-top: 2.4rem;
     padding-bottom: 2.4rem;
 
+    @media screen and (max-width: $tab-media) {
+      padding-top: 1.6rem;
+      padding-bottom: 1.6rem;
+    }
+    
+    @media screen and (max-width: $mob-media) {
+      padding-top: 1.2rem;
+      padding-bottom: 1.2rem;
+    }
+
     // .accordion__header:hover
     &:hover {
       // .accordion__header:hover .accordion__title
@@ -49,6 +75,14 @@
     // .accordion__header.active
     &.active {
       padding-bottom: 1.6rem;
+
+      @media screen and (max-width: $tab-media) {
+
+      }
+      
+      @media screen and (max-width: $mob-media) {
+        padding-bottom: 1.2rem;
+      }
 
       // .accordion__header.active .accordion__icon
       .accordion__icon {
@@ -74,6 +108,17 @@
     color: var(--body-2);
 
     transition: all 350ms ease-in-out;
+
+    @media screen and (max-width: $tab-media) {
+      font-size: 2.4rem;
+      min-height: unset;
+      max-width: 64.4rem;
+    }
+    
+    @media screen and (max-width: $mob-media) {
+      font-size: 1.8rem;
+      max-width: 29.2rem;
+    }
   }
   
   // .accordion__icon
@@ -81,6 +126,16 @@
     width: 4.4rem;
     height: 4.4rem;
     will-change: transform;
+
+    @media screen and (max-width: $tab-media) {
+      width: 3.6rem;
+      height: 3.4rem;
+    }
+    
+    @media screen and (max-width: $mob-media) {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
   }
 
   // .accordion__content
@@ -98,5 +153,13 @@
     font-size: 2.4rem;
     line-height: 120%;
     color: var(--body-2);
+
+    @media screen and (max-width: $tab-media) {
+      font-size: 1.8rem;
+    }
+    
+    @media screen and (max-width: $mob-media) {
+      font-size: 1.4rem;
+    }
   }
 }

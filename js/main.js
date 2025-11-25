@@ -181,16 +181,18 @@
         }
       });
 
-      // Устанавливаем максимальную высоту для текущего элемента в rem
       if (header.classList.contains("active")) {
-        // Получаем высоту текста внутри .accordion__content и устанавливаем в rem
         const textHeight = content.scrollHeight;
-        content.style.maxHeight = `${textHeight + 2.4}rem`;
-        content.style.paddingBottom = "2.4rem";
+        const extraSpace = getComputedStyle(content).getPropertyValue('--extra-space') || '2.4rem';
+        const paddingBottom = getComputedStyle(content).getPropertyValue('--content-padding') || '2.4rem';
+        
+        content.style.maxHeight = `calc(${textHeight}px + ${extraSpace})`;
+        content.style.paddingBottom = paddingBottom;
       } else {
-        content.style.maxHeight = "0";
-        content.style.paddingBottom = "0rem";
+          content.style.maxHeight = "0";
+          content.style.paddingBottom = "0";
       }
+
     });
   });
 })();
