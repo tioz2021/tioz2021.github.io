@@ -39,7 +39,8 @@
 @import "animatinos/s6-hover-anim";
 
 // slider fix
-.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0 var(--swiper-pagination-bullet-horizontal-gap, .4rem);
 }
 
@@ -48,6 +49,7 @@
     .swiper-slide-next {
       transform: translate3d(-278px, 15px, -11px) rotateX(0deg) rotateY(1deg) scale(1.01) !important;
     }
+
     .swiper-slide-prev {
       transform: translate3d(278px, 15px, -11px) rotateX(0deg) rotateY(1deg) scale(1.01) !important;
     }
@@ -59,12 +61,38 @@
     //   transform: translate3d(533px, 10px, -20px) rotateX(0deg) rotateY(0deg) scale(0.65) !important;
     // }
   }
+
   @media screen and (max-width: $mob-media) {
     .swiper-slide-next {
       transform: translate3d(-269px, 15px, -11px) rotateX(0deg) rotateY(1deg) scale(1.18) !important;
     }
+
     .swiper-slide-prev {
       transform: translate3d(269px, 15px, -11px) rotateX(0deg) rotateY(1deg) scale(1.18) !important;
     }
+  }
+}
+
+.how-it-works__swiper .swiper-wrapper {
+  gap: 3.6rem;
+
+  @media screen and (max-width: $tab-media) {
+    gap: 2.4rem;
+  }
+
+  @media screen and (max-width: $mob-media) {
+    // gap: 3.6rem;
+    gap: 1.6rem;
+  }
+}
+
+.how-it-works .swiper-slide {
+  width: 56.4rem !important;
+  @media screen and (max-width: $tab-media) {
+    width: 33.6rem !important;
+  }
+
+  @media screen and (max-width: $mob-media) {
+    width: 32.8rem !important;
   }
 }

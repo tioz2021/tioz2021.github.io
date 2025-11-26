@@ -6331,7 +6331,8 @@ footer {
     transform: rotate(1deg);
   }
 }
-.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 0.4rem);
 }
 
@@ -6349,5 +6350,33 @@ footer {
   }
   .tranding-slider .swiper-slide-prev {
     transform: translate3d(269px, 15px, -11px) rotateX(0deg) rotateY(1deg) scale(1.18) !important;
+  }
+}
+
+.how-it-works__swiper .swiper-wrapper {
+  gap: 3.6rem;
+}
+@media screen and (max-width: 1000px) {
+  .how-it-works__swiper .swiper-wrapper {
+    gap: 2.4rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .how-it-works__swiper .swiper-wrapper {
+    gap: 1.6rem;
+  }
+}
+
+.how-it-works .swiper-slide {
+  width: 56.4rem !important;
+}
+@media screen and (max-width: 1000px) {
+  .how-it-works .swiper-slide {
+    width: 33.6rem !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .how-it-works .swiper-slide {
+    width: 32.8rem !important;
   }
 }/*# sourceMappingURL=main.css.map */
