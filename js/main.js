@@ -206,29 +206,26 @@
     loop: true,
     slidesPerView: 'auto',
     speed: 500,
-    
-    
     breakpoints: {
       // 0-600px - настройки по умолчанию (mobile)
       321: {
         coverflowEffect: {
-          // rotate: 0,
-          // stretch: 1,
-          // depth: 1,
-          // modifier: 1,
-          // scale: 1,
+          rotate: 0,
+          stretch: 0,
+          depth: 10,
+          modifier: 1,
         }
       },
 
       // 601-1000px (tablet)
       601: {
-        // slidesPerView: 1.3,
+        // slidesPerView: 3,
         centeredSlides: true,
         coverflowEffect: {
-          // rotate: 0,
-          // stretch: 18.68,
-          // depth: 15,
-          // modifier: 15,
+          rotate: 0,
+          stretch: 0,
+          depth: 10,
+          modifier: 1,
         }
       },
       
@@ -243,12 +240,17 @@
       }
     },
 
-    // autoplay: {
-    //   delay: 4000, 
-    //   disableOnInteraction: false,
-    // },
-
+    autoplay: {
+      delay: 4000, 
+      disableOnInteraction: false,
+    },
   });
+
+  const activeIndex = TrandingSlider.activeIndex;
+  const prevSlide = TrandingSlider.slides[activeIndex - 2];
+  prevSlide.classList.add('swiper-slide-prev-prev');
+  const nextSlide = TrandingSlider.slides[activeIndex + 2];
+  nextSlide.classList.add('swiper-slide-next-next');
 }) ();
 
 // popup
