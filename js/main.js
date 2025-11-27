@@ -172,27 +172,48 @@ allItems.forEach(item => {
       this.acceptBtn = document.getElementById('cookieAccept');
       this.closeBtn = document.querySelector('.cookie-consent__close-btn');
       this.moreLink = document.querySelector('.cookie-consent__link');
+      this.title = document.querySelector('.cookie-consent__title');
+      this.description = document.querySelector('.cookie-consent__description');
+      this.buttonText = document.querySelector('.cookie-consent__btn .second-btn__text');
       
       this.cookieName = 'cookie_consent_accepted';
+      this.disclaimerShownName = 'disclaimer_shown'; // Новый куки для отслеживания показа дисклеймера
       this.cookieExpiryDays = 365;
       this.isDetailedView = false;
+      this.isDisclaimerMode = false;
       
       this.init();
     }
   
     init() {
+      // Проверяем, не принял ли уже пользователь куки И не показывали ли уже дисклеймер
       if (!this.getCookie(this.cookieName)) {
         this.showModal();
+      } else if (!this.getCookie(this.disclaimerShownName)) {
+        // Если куки приняты, но дисклеймер еще не показывали - показываем его
+        this.showDisclaimer();
       }
+      // Если оба куки есть - ничего не показываем
   
       this.acceptBtn.addEventListener('click', () => {
-        this.acceptCookies();
+        if (this.isDisclaimerMode) {
+          // В режиме дисклеймера закрываем окно и устанавливаем куки, что дисклеймер показан
+          this.setCookie(this.disclaimerShownName, 'true', this.cookieExpiryDays);
+          this.hideModal();
+        } else {
+          // В обычном режиме принимаем куки и показываем дисклеймер
+          this.acceptCookies();
+        }
       });
 
       // Закрытие по кнопке X
       this.closeBtn.addEventListener('click', () => {
         if (this.isDetailedView) {
           this.hideDetailedText();
+        } else if (this.isDisclaimerMode) {
+          // При закрытии дисклеймера крестиком тоже сохраняем, что показали
+          this.setCookie(this.disclaimerShownName, 'true', this.cookieExpiryDays);
+          this.hideModal();
         } else {
           this.hideModal();
         }
@@ -209,6 +230,10 @@ allItems.forEach(item => {
         if (e.key === 'Escape' && this.modal.classList.contains('active')) {
           if (this.isDetailedView) {
             this.hideDetailedText();
+          } else if (this.isDisclaimerMode) {
+            // При ESC в режиме дисклеймера тоже сохраняем
+            this.setCookie(this.disclaimerShownName, 'true', this.cookieExpiryDays);
+            this.hideModal();
           } else {
             this.hideModal();
           }
@@ -268,10 +293,31 @@ allItems.forEach(item => {
       // Показываем ссылку "Подробнее"
       originalLink.style.display = 'block';
     }
+
+    showDisclaimer() {
+      this.isDisclaimerMode = true;
+      
+      // Меняем заголовок
+      this.title.textContent = 'Дисклеймер';
+      
+      // Меняем текст описания
+      this.description.textContent = 'Majestic RP не связана и не поддерживается Take-Two, Rockstar North Interactive или любым другим правообладателем. Все используемые товарные знаки принадлежат их соответствующим владельцам и не связаны и не одобрены Take-Two, Rockstar North Interactive.';
+      
+      // Скрываем ссылку "Подробнее"
+      this.moreLink.style.display = 'none';
+      
+      // Меняем текст кнопки
+      this.buttonText.textContent = 'Закрыть';
+      
+      // Показываем модалку
+      this.showModal();
+    }
   
     acceptCookies() {
       this.setCookie(this.cookieName, 'true', this.cookieExpiryDays);
-      this.hideModal();
+      
+      // После принятия кук показываем дисклеймер
+      this.showDisclaimer();
       
       this.onAcceptCallback && this.onAcceptCallback();
     }
@@ -300,8 +346,18 @@ allItems.forEach(item => {
   
     show() {
       this.deleteCookie(this.cookieName);
-      this.hideDetailedText(); // Сбрасываем к краткому виду
+      this.deleteCookie(this.disclaimerShownName);
+      this.hideDetailedText();
+      this.resetToCookieMode();
       this.showModal();
+    }
+
+    resetToCookieMode() {
+      this.isDisclaimerMode = false;
+      this.title.textContent = 'Файлы cookie';
+      this.description.textContent = 'Наш сайт использует файлы cookie с целью улучшить его работу';
+      this.moreLink.style.display = 'block';
+      this.buttonText.textContent = 'Понятно';
     }
   
     deleteCookie(name) {
