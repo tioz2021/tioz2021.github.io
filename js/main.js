@@ -164,3 +164,156 @@ allItems.forEach(item => {
   });
 });
 
+// cookie popup
+(() => {
+  class CookieConsent {
+    constructor() {
+      this.modal = document.getElementById('cookieConsent');
+      this.acceptBtn = document.getElementById('cookieAccept');
+      this.closeBtn = document.querySelector('.cookie-consent__close-btn');
+      this.moreLink = document.querySelector('.cookie-consent__link');
+      
+      this.cookieName = 'cookie_consent_accepted';
+      this.cookieExpiryDays = 365;
+      this.isDetailedView = false;
+      
+      this.init();
+    }
+  
+    init() {
+      if (!this.getCookie(this.cookieName)) {
+        this.showModal();
+      }
+  
+      this.acceptBtn.addEventListener('click', () => {
+        this.acceptCookies();
+      });
+
+      // Закрытие по кнопке X
+      this.closeBtn.addEventListener('click', () => {
+        if (this.isDetailedView) {
+          this.hideDetailedText();
+        } else {
+          this.hideModal();
+        }
+      });
+  
+      // Обработчик кнопки "Подробнее"
+      this.moreLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        this.showDetailedText();
+      });
+  
+      // Закрытие по ESC
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && this.modal.classList.contains('active')) {
+          if (this.isDetailedView) {
+            this.hideDetailedText();
+          } else {
+            this.hideModal();
+          }
+        }
+      });
+    }
+  
+    showModal() {
+      setTimeout(() => {
+        document.body.style.overflow = 'hidden';
+        this.modal.classList.add('active');
+        
+        setTimeout(() => {
+          this.modal.classList.add('visible');
+        }, 100);
+      }, 1000);
+    }
+  
+    hideModal() {
+      this.modal.classList.remove('visible');
+      
+      setTimeout(() => {
+        this.modal.classList.remove('active');
+        document.body.style.overflow = '';
+      }, 300);
+    }
+
+    showDetailedText() {
+      this.isDetailedView = true;
+      
+      // Сохраняем оригинальный текст
+      const originalDescription = document.querySelector('.cookie-consent__description');
+      const originalLink = document.querySelector('.cookie-consent__link');
+      
+      // Заменяем текст
+      originalDescription.textContent = 'Наш сайт использует файлы cookie с целью улучшить его работу, повысить его удобство и эффективность. Продолжая пользоваться сайтом, Вы выражаете свое согласие ООО «Маджестик Девелопмент» на обработку персональных с использованием метрической программы Яндекс.Метрика. Это позволяет нам анализировать взаимодействие посетителей с сайтом и делать его лучше.';
+      
+      // Скрываем ссылку "Подробнее"
+      originalLink.style.display = 'none';
+      
+      // Добавляем анимацию появления
+      setTimeout(() => {
+        originalDescription.style.opacity = '1';
+        originalDescription.style.transform = 'translateY(0)';
+      }, 50);
+    }
+
+    hideDetailedText() {
+      this.isDetailedView = false;
+      
+      const originalDescription = document.querySelector('.cookie-consent__description');
+      const originalLink = document.querySelector('.cookie-consent__link');
+      
+      // Возвращаем оригинальный текст
+      originalDescription.textContent = 'Наш сайт использует файлы cookie с целью улучшить его работу';
+      
+      // Показываем ссылку "Подробнее"
+      originalLink.style.display = 'block';
+    }
+  
+    acceptCookies() {
+      this.setCookie(this.cookieName, 'true', this.cookieExpiryDays);
+      this.hideModal();
+      
+      this.onAcceptCallback && this.onAcceptCallback();
+    }
+  
+    setCookie(name, value, days) {
+      const date = new Date();
+      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+      const expires = "expires=" + date.toUTCString();
+      document.cookie = name + "=" + value + ";" + expires + ";path=/;SameSite=Lax";
+    }
+  
+    getCookie(name) {
+      const nameEQ = name + "=";
+      const ca = document.cookie.split(';');
+      for (let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+        if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+      }
+      return null;
+    }
+  
+    onAccept(callback) {
+      this.onAcceptCallback = callback;
+    }
+  
+    show() {
+      this.deleteCookie(this.cookieName);
+      this.hideDetailedText(); // Сбрасываем к краткому виду
+      this.showModal();
+    }
+  
+    deleteCookie(name) {
+      document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+    }
+  }
+  
+  document.addEventListener('DOMContentLoaded', () => {
+    window.cookieConsent = new CookieConsent();
+    
+    window.cookieConsent.onAccept(() => {
+      console.log('Cookies accepted!');
+    });
+  });
+})();

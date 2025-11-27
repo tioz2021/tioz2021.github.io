@@ -1,0 +1,220 @@
+.cookie-consent {
+  position: fixed;
+  bottom: -100%;
+  right: 36px;
+  z-index: 10000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease-in-out;
+  transform: translateY(100%);
+  width: 291px;
+
+
+  // .cookie-consent::after
+  &::after {
+    content: ' ';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--bg-0);
+    filter: blur(36px);
+    width: 331px;
+    height: 194px;
+    z-index: -1;
+  }
+
+  // @media screen and (max-width: $tab-media) {
+  //   right: unset;
+  //   left: 50%;
+  //   transform: translate(-50%, 100%);
+  // }
+  
+  @media screen and (max-width: $mob-media) {
+    width: 327px;
+    left: 50%;
+    transform: translateX(-50%) !important;
+    right: unset;
+  }
+}
+
+.cookie-consent.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  bottom: 48px;
+
+  @media screen and (max-width: $mob-media) {
+    bottom: 12px;
+  }
+}
+
+.cookie-consent.visible .cookie-consent__content {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.cookie-consent__content {
+  width: 291px;
+  // height: 214px;
+
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  // gap: 20px;
+
+  /* Анимация появления контента */
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 0.5s ease-in-out 0.2s;
+
+  background-image: url('../../image/cookie-popup-bg.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cookie-consent__text {
+  flex: 1;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.cookie-consent__title {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  color: var(--bg-1);
+  margin-bottom: 6px;
+}
+
+.cookie-consent__description {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  color: var(--bg-1);
+  margin-bottom: 10px;
+}
+
+.cookie-consent__link {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 120%;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: var(--bg-2);
+}
+
+.cookie-consent__link:hover {
+  text-decoration: underline;
+}
+
+.cookie-consent__actions {
+  flex-shrink: 0;
+}
+
+.cookie-consent__btn {
+  // padding: 12px 24px;
+  // border: none;
+  // border-radius: 6px;
+  // font-size: 14px;
+  // font-weight: 500;
+
+
+
+  width: 243px;
+  height: 44px;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cookie-consent__btn .second-btn__text {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  color: var(--bg-1);
+}
+
+.cookie-consent__btn::after {
+  opacity: 0.1;
+} 
+
+.cookie-consent__btn:hover::after {
+  opacity: 0.3; 
+}
+
+.cookie-consent__btn--primary {
+  background: #0066cc;
+  color: white;
+}
+
+.cookie-consent__btn--primary:hover {
+  background: #0052a3;
+  transform: translateY(-1px);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .cookie-consent__content {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+  
+  .cookie-consent__actions {
+    width: 100%;
+  }
+  
+  .cookie-consent__btn {
+    width: 100%;
+  }
+}
+
+.cookie-consent__close-btn {
+  position: absolute;
+  width: 16px;
+  height: 15px;
+  top: 12px;
+  right: 12px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+/* Анимации для текста */
+.cookie-consent__description {
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.cookie-consent__link {
+  transition: all 0.3s ease-in-out;
+  display: block;
+}
+
+/* Адаптивность для длинного текста */
+@media (max-width: 768px) {
+  .cookie-consent {
+    // right: 20px !important;
+    // left: 20px !important;
+    // bottom: 20px !important;
+  }
+  
+  .cookie-consent__content {
+    width: auto !important;
+    height: auto !important;
+    // min-height: 214px;
+  }
+  
+  .cookie-consent.active {
+    // bottom: 20px !important;
+  }
+}
