@@ -352,17 +352,50 @@
 })();
 
 // tab/mobile menu
+// tab/mobile menu
 (() => {
   const openMenuBtn = document.querySelector('.header__tab-version-gmbrg-btn');
   const tabMenuBody = document.querySelector('.tab-menu');
   const tabMenuCloseBtn = document.querySelector('.tab-menu__close-btn');
-  const fsBody = document.querySelector('.fs');
+  const body = document.body;
 
-  function menu() {
-    tabMenuBody.classList.toggle('active');
-    fsBody.classList.toggle('active')
-  };
+  function openMenu() {
+    tabMenuBody.classList.add('active');
+    body.classList.add('no-scroll'); // Блокируем скролл
+  }
 
-  openMenuBtn.addEventListener('click', menu);
-  tabMenuCloseBtn.addEventListener('click', menu);
-}) ();
+  function closeMenu() {
+    tabMenuBody.classList.remove('active');
+    body.classList.remove('no-scroll'); // Разблокируем скролл
+  }
+
+  function toggleMenu() {
+    if (tabMenuBody.classList.contains('active')) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
+  }
+
+  function handleClickOutside(e) {
+    // Если меню открыто и клик был вне меню
+    if (tabMenuBody.classList.contains('active') &&
+        !tabMenuBody.contains(e.target) && 
+        e.target !== openMenuBtn &&
+        !openMenuBtn.contains(e.target)) {
+      closeMenu();
+    }
+  }
+
+  // Закрытие по ESC
+  function handleEscapeKey(e) {
+    if (e.key === 'Escape' && tabMenuBody.classList.contains('active')) {
+      closeMenu();
+    }
+  }
+
+  openMenuBtn.addEventListener('click', toggleMenu);
+  tabMenuCloseBtn.addEventListener('click', closeMenu);
+  document.addEventListener('click', handleClickOutside);
+  document.addEventListener('keydown', handleEscapeKey);
+})();
