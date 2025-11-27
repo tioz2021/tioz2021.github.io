@@ -1265,7 +1265,7 @@ body {
   transform: translate(-50%, -50%);
   background-image: url("../image/seccond-btn-bg.png");
   background-position: center;
-  background-size: cover;
+  background-size: 117%;
   background-repeat: no-repeat;
   z-index: 2;
 }
@@ -2240,11 +2240,22 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media screen and (max-width: 600px) {
+  .cookie-consent__content {
+    padding: 16px;
+    padding-bottom: 28px;
+  }
+}
 
 .cookie-consent__text {
   flex: 1;
   margin-bottom: 24px;
   text-align: left;
+}
+@media screen and (max-width: 600px) {
+  .cookie-consent__text {
+    margin-bottom: 16px;
+  }
 }
 
 .cookie-consent__title {
@@ -2253,7 +2264,7 @@ body {
   font-size: 24px;
   line-height: 120%;
   color: var(--bg-1);
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
 .cookie-consent__description {
@@ -2262,7 +2273,7 @@ body {
   font-size: 14px;
   line-height: 120%;
   color: var(--bg-1);
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .cookie-consent__link {
@@ -2301,6 +2312,11 @@ body {
   text-align: center;
   color: var(--bg-1);
 }
+@media screen and (max-width: 600px) {
+  .cookie-consent__btn .second-btn__text {
+    font-size: 14px;
+  }
+}
 
 .cookie-consent__btn::after {
   opacity: 0.1;
@@ -2315,13 +2331,13 @@ body {
   .cookie-consent__content {
     flex-direction: column;
     text-align: center;
-    gap: 16px;
   }
   .cookie-consent__actions {
     width: 100%;
   }
   .cookie-consent__btn {
     width: 100%;
+    height: 36px;
   }
 }
 .cookie-consent__close-btn {
@@ -2336,13 +2352,11 @@ body {
 
 /* Анимации для текста */
 .cookie-consent__description {
-  transition: all 0.3s ease-in-out;
   opacity: 1;
   transform: translateY(0);
 }
 
 .cookie-consent__link {
-  transition: all 0.3s ease-in-out;
   display: block;
 }
 
@@ -2353,6 +2367,10 @@ body {
     height: auto !important;
   }
 }
+.cookie-consent__btn .second-btn__bg::after {
+  background-image: url(../image/seccond-btn-bg.png) !important;
+}
+
 .page-wrp--index .header {
   z-index: 5;
 }

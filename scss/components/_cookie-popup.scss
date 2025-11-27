@@ -74,12 +74,21 @@
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+
+  @media screen and (max-width: $mob-media) {
+    padding: 16px;
+    padding-bottom: 28px;
+  }
 }
 
 .cookie-consent__text {
   flex: 1;
   margin-bottom: 24px;
   text-align: left;
+
+  @media screen and (max-width: $mob-media) {
+    margin-bottom: 16px;
+  }
 }
 
 .cookie-consent__title {
@@ -88,7 +97,7 @@
   font-size: 24px;
   line-height: 120%;
   color: var(--bg-1);
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
 .cookie-consent__description {
@@ -97,7 +106,7 @@
   font-size: 14px;
   line-height: 120%;
   color: var(--bg-1);
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .cookie-consent__link {
@@ -137,6 +146,10 @@
   line-height: 120%;
   text-align: center;
   color: var(--bg-1);
+
+  @media screen and (max-width: $mob-media) {
+    font-size: 14px;
+  }
 }
 
 .cookie-consent__btn::after {
@@ -152,7 +165,7 @@
   .cookie-consent__content {
     flex-direction: column;
     text-align: center;
-    gap: 16px;
+    // gap: 16px;
   }
   
   .cookie-consent__actions {
@@ -161,6 +174,7 @@
   
   .cookie-consent__btn {
     width: 100%;
+    height: 36px;
   }
 }
 
@@ -176,13 +190,13 @@
 
 /* Анимации для текста */
 .cookie-consent__description {
-  transition: all 0.3s ease-in-out;
+  // transition: all 0.3s ease-in-out;
   opacity: 1;
   transform: translateY(0);
 }
 
 .cookie-consent__link {
-  transition: all 0.3s ease-in-out;
+  // transition: all 0.3s ease-in-out;
   display: block;
 }
 
@@ -203,4 +217,8 @@
   .cookie-consent.active {
     // bottom: 20px !important;
   }
+}
+
+.cookie-consent__btn .second-btn__bg::after {
+  background-image: url(../image/seccond-btn-bg.png) !important;
 }

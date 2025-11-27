@@ -177,148 +177,157 @@ allItems.forEach(item => {
       this.buttonText = document.querySelector('.cookie-consent__btn .second-btn__text');
       
       this.cookieName = 'cookie_consent_accepted';
-      this.disclaimerShownName = 'disclaimer_shown'; // Новый куки для отслеживания показа дисклеймера
+      this.disclaimerShownName = 'disclaimer_shown';
       this.cookieExpiryDays = 365;
       this.isDetailedView = false;
       this.isDisclaimerMode = false;
+      this.isAnimating = false;
+      this.showTimeout = null;
+      this.hideTimeout = null;
       
       this.init();
     }
   
     init() {
-      // Проверяем, не принял ли уже пользователь куки И не показывали ли уже дисклеймер
       if (!this.getCookie(this.cookieName)) {
         this.showModal();
       } else if (!this.getCookie(this.disclaimerShownName)) {
-        // Если куки приняты, но дисклеймер еще не показывали - показываем его
         this.showDisclaimer();
       }
-      // Если оба куки есть - ничего не показываем
-  
+
       this.acceptBtn.addEventListener('click', () => {
-        if (this.isDisclaimerMode) {
-          // В режиме дисклеймера закрываем окно и устанавливаем куки, что дисклеймер показан
-          this.setCookie(this.disclaimerShownName, 'true', this.cookieExpiryDays);
-          this.hideModal();
-        } else {
-          // В обычном режиме принимаем куки и показываем дисклеймер
-          this.acceptCookies();
-        }
+        this.handleAcceptClick();
       });
 
-      // Закрытие по кнопке X
       this.closeBtn.addEventListener('click', () => {
-        if (this.isDetailedView) {
-          this.hideDetailedText();
-        } else if (this.isDisclaimerMode) {
-          // При закрытии дисклеймера крестиком тоже сохраняем, что показали
-          this.setCookie(this.disclaimerShownName, 'true', this.cookieExpiryDays);
-          this.hideModal();
-        } else {
-          this.hideModal();
-        }
+        this.handleCloseClick();
       });
   
-      // Обработчик кнопки "Подробнее"
       this.moreLink.addEventListener('click', (e) => {
         e.preventDefault();
         this.showDetailedText();
       });
   
-      // Закрытие по ESC
       document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && this.modal.classList.contains('active')) {
-          if (this.isDetailedView) {
-            this.hideDetailedText();
-          } else if (this.isDisclaimerMode) {
-            // При ESC в режиме дисклеймера тоже сохраняем
-            this.setCookie(this.disclaimerShownName, 'true', this.cookieExpiryDays);
-            this.hideModal();
-          } else {
-            this.hideModal();
-          }
+          this.handleEscapePress();
         }
       });
     }
+
+    handleAcceptClick() {
+      if (this.isAnimating) return;
+      
+      if (this.isDisclaimerMode) {
+        this.setCookie(this.disclaimerShownName, 'true', this.cookieExpiryDays);
+        this.hideModal();
+      } else {
+        this.acceptCookies();
+      }
+    }
+
+    handleCloseClick() {
+      if (this.isAnimating) return;
+      
+      if (this.isDetailedView) {
+        this.hideDetailedText();
+      } else if (this.isDisclaimerMode) {
+        this.setCookie(this.disclaimerShownName, 'true', this.cookieExpiryDays);
+        this.hideModal();
+      } else {
+        this.hideModal();
+      }
+    }
+
+    handleEscapePress() {
+      if (this.isAnimating) return;
+      
+      if (this.isDetailedView) {
+        this.hideDetailedText();
+      } else if (this.isDisclaimerMode) {
+        this.setCookie(this.disclaimerShownName, 'true', this.cookieExpiryDays);
+        this.hideModal();
+      } else {
+        this.hideModal();
+      }
+    }
   
     showModal() {
-      setTimeout(() => {
+      if (this.showTimeout) clearTimeout(this.showTimeout);
+      if (this.hideTimeout) clearTimeout(this.hideTimeout);
+      
+      this.showTimeout = setTimeout(() => {
+        if (this.modal.classList.contains('active')) return;
+        
+        this.isAnimating = true;
         document.body.style.overflow = 'hidden';
         this.modal.classList.add('active');
         
         setTimeout(() => {
           this.modal.classList.add('visible');
+          this.isAnimating = false;
         }, 100);
       }, 1000);
     }
   
     hideModal() {
+      if (this.isAnimating) return;
+      
+      this.isAnimating = true;
       this.modal.classList.remove('visible');
       
-      setTimeout(() => {
+      if (this.hideTimeout) clearTimeout(this.hideTimeout);
+      
+      this.hideTimeout = setTimeout(() => {
         this.modal.classList.remove('active');
         document.body.style.overflow = '';
+        this.isAnimating = false;
       }, 300);
     }
 
     showDetailedText() {
+      if (this.isAnimating) return;
+      
       this.isDetailedView = true;
       
-      // Сохраняем оригинальный текст
       const originalDescription = document.querySelector('.cookie-consent__description');
       const originalLink = document.querySelector('.cookie-consent__link');
       
-      // Заменяем текст
+      // Меняем текст без анимации
       originalDescription.textContent = 'Наш сайт использует файлы cookie с целью улучшить его работу, повысить его удобство и эффективность. Продолжая пользоваться сайтом, Вы выражаете свое согласие ООО «Маджестик Девелопмент» на обработку персональных с использованием метрической программы Яндекс.Метрика. Это позволяет нам анализировать взаимодействие посетителей с сайтом и делать его лучше.';
-      
-      // Скрываем ссылку "Подробнее"
       originalLink.style.display = 'none';
-      
-      // Добавляем анимацию появления
-      setTimeout(() => {
-        originalDescription.style.opacity = '1';
-        originalDescription.style.transform = 'translateY(0)';
-      }, 50);
     }
 
     hideDetailedText() {
+      if (this.isAnimating) return;
+      
       this.isDetailedView = false;
       
       const originalDescription = document.querySelector('.cookie-consent__description');
       const originalLink = document.querySelector('.cookie-consent__link');
       
-      // Возвращаем оригинальный текст
+      // Возвращаем оригинальный текст без анимации
       originalDescription.textContent = 'Наш сайт использует файлы cookie с целью улучшить его работу';
-      
-      // Показываем ссылку "Подробнее"
       originalLink.style.display = 'block';
     }
 
     showDisclaimer() {
+      if (this.isAnimating) return;
+      
       this.isDisclaimerMode = true;
       
-      // Меняем заголовок
+      // Меняем контент без анимации
       this.title.textContent = 'Дисклеймер';
-      
-      // Меняем текст описания
       this.description.textContent = 'Majestic RP не связана и не поддерживается Take-Two, Rockstar North Interactive или любым другим правообладателем. Все используемые товарные знаки принадлежат их соответствующим владельцам и не связаны и не одобрены Take-Two, Rockstar North Interactive.';
-      
-      // Скрываем ссылку "Подробнее"
       this.moreLink.style.display = 'none';
-      
-      // Меняем текст кнопки
       this.buttonText.textContent = 'Закрыть';
-      
-      // Показываем модалку
-      this.showModal();
     }
   
     acceptCookies() {
+      if (this.isAnimating) return;
+      
       this.setCookie(this.cookieName, 'true', this.cookieExpiryDays);
-      
-      // После принятия кук показываем дисклеймер
       this.showDisclaimer();
-      
       this.onAcceptCallback && this.onAcceptCallback();
     }
   
