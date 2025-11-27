@@ -9,6 +9,19 @@
   background-size: contain;
   padding-top: 16.0rem;
 
+  @media screen and (max-width: $tab-media) {
+    background-image: url('../../image/404-bg-tab.png');
+    min-height: 120.0rem;
+    padding-top: 12rem;
+  }
+
+  @media screen and (max-width: $mob-media) {
+    background-image: url('../../image/404-bg-mob.png');
+    min-height: 64.0rem;
+    padding-top: 6rem;
+  }
+
+
 
   // .p404__container
   &__container {
@@ -27,6 +40,16 @@
     text-align: center;
     color: var(--body-1);
     margin-bottom: 1.7rem;
+
+    @media screen and (max-width: $tab-media) {
+      font-size: 6.6rem;
+      margin-bottom: 1rem;
+    }
+
+    @media screen and (max-width: $mob-media) {
+      font-size: 2rem;
+    }
+
   }
 
   // .p404__text
@@ -39,6 +62,16 @@
     opacity: 0.6;
     margin-bottom: 6.0rem;
     max-width: 56.4rem;
+
+    @media screen and (max-width: $tab-media) {
+      font-size: 1.8rem;
+      max-width: 100%;
+    }
+
+    @media screen and (max-width: $mob-media) {
+      font-size: 1.4rem;
+      margin-bottom: 3.6rem;
+    }
   }
 
   // .p404__btn-wrp
@@ -48,11 +81,32 @@
     justify-content: space-between;
     align-items: center;
 
+    @media screen and (max-width: $tab-media) {
+      width: 100%;
+    }
+
+    @media screen and (max-width: $mob-media) {}
+
   }
 
   // .p404__btn-wrp .main-btn
   .main-btn {
     width: 27.0rem;
+
+    @media screen and (max-width: $tab-media) {
+      width: 33.6rem;
+    }
+
+    @media screen and (max-width: $mob-media) {
+      width: 15.6rem;
+      height: 4.4rem;
+
+      // .p404__btn-wrp .main-btn span
+      span {
+        font-size: 1.8rem;
+      }
+    }
+
 
     // .main-btn--opacity
     &--opacity {
