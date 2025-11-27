@@ -248,7 +248,7 @@
     width: 9.9rem;
     height: 9.9rem;
     top: 6.6rem;
-    right: 20.4rem;
+    right: 21.4rem;
   }
   
   @media screen and (max-width: $mob-media) {
@@ -486,5 +486,83 @@
   }
   80% {
     transform: rotate(1deg);
+  }
+}
+
+
+// Ваш существующий код с ховерами
+.s6__list-item:nth-child(3):hover {
+  .s6__list-item3-decor {
+    animation: armSway 2s ease-in-out infinite;
+
+    @media screen and (max-width: $mob-media) {
+      animation: armSwayMob 2s ease-in-out infinite;
+    }
+  }
+}
+
+.s6__list-item:nth-child(1):hover {
+  .s6__list-item1-decor {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+// Анимация мерцания
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.s6__list-item:nth-child(2):hover {
+  .s6__list-item2-decore-icon1 {
+    animation: levitateSmall 3s ease-in-out infinite;
+  }
+
+  .s6__list-item2-decore-icon2 {
+    animation: levitateSmall 3s ease-in-out infinite;
+  }
+
+  .s6__list-item2-decore-icon3 {
+    animation: levitateSmall 3s ease-in-out infinite;
+  }
+
+  .s6__list-item2-decore-icon4 {
+    animation: levitateSmall 3s ease-in-out infinite;
+  }
+
+  .s6__list-item2-decore-icon-woman {
+    animation: levitate 3s ease-in-out infinite;
+  }
+}
+
+// Добавляем постоянные анимации для мобильных устройств
+@media screen and (max-width: $tab-media) {
+  .s6__list-item:nth-child(3) .s6__list-item3-decor {
+    animation: armSway 2s ease-in-out infinite;
+  }
+
+  .s6__list-item:nth-child(1) .s6__list-item1-decor {
+    visibility: visible;
+    opacity: 1;
+    animation: blink 2.5s ease-in-out infinite;
+  }
+
+  .s6__list-item:nth-child(2) .s6__list-item2-decore-icon1,
+  .s6__list-item:nth-child(2) .s6__list-item2-decore-icon2,
+  .s6__list-item:nth-child(2) .s6__list-item2-decore-icon3,
+  .s6__list-item:nth-child(2) .s6__list-item2-decore-icon4 {
+    animation: levitateSmall 3s ease-in-out infinite;
+  }
+
+  .s6__list-item:nth-child(2) .s6__list-item2-decore-icon-woman {
+    animation: levitate 3s ease-in-out infinite;
+  }
+}
+
+// Отдельно для мобилок с другой анимацией
+@media screen and (max-width: $mob-media) {
+  .s6__list-item:nth-child(3) .s6__list-item3-decor {
+    animation: armSwayMob 2s ease-in-out infinite;
   }
 }
