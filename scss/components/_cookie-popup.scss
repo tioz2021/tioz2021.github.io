@@ -108,6 +108,10 @@
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: var(--bg-2);
+
+  &:hover {
+    color: var(--bg-1);
+  }
 }
 
 .cookie-consent__link:hover {
@@ -119,14 +123,6 @@
 }
 
 .cookie-consent__btn {
-  // padding: 12px 24px;
-  // border: none;
-  // border-radius: 6px;
-  // font-size: 14px;
-  // font-weight: 500;
-
-
-
   width: 243px;
   height: 44px;
 
@@ -149,16 +145,6 @@
 
 .cookie-consent__btn:hover::after {
   opacity: 0.3; 
-}
-
-.cookie-consent__btn--primary {
-  background: #0066cc;
-  color: white;
-}
-
-.cookie-consent__btn--primary:hover {
-  background: #0052a3;
-  transform: translateY(-1px);
 }
 
 /* Адаптивность */

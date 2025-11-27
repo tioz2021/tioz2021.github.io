@@ -2274,6 +2274,9 @@ body {
   text-decoration-skip-ink: none;
   color: var(--bg-2);
 }
+.cookie-consent__link:hover {
+  color: var(--bg-1);
+}
 
 .cookie-consent__link:hover {
   text-decoration: underline;
@@ -2305,16 +2308,6 @@ body {
 
 .cookie-consent__btn:hover::after {
   opacity: 0.3;
-}
-
-.cookie-consent__btn--primary {
-  background: #0066cc;
-  color: white;
-}
-
-.cookie-consent__btn--primary:hover {
-  background: #0052a3;
-  transform: translateY(-1px);
 }
 
 /* Адаптивность */
