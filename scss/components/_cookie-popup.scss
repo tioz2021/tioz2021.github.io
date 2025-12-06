@@ -193,9 +193,27 @@
   scroll-behavior: smooth;
   backface-visibility: hidden;
 
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    filter: blur(20rem);
+    background: rgba(249, 190, 124, 0.6);
+    opacity: 0.8;
+    z-index: 1;
+    transition: all 300ms ease-in-out;
+  }
+
   // .cookie-consent__close-btn:hover
   &:hover {
-    transform: rotate(90deg);
+    &::after {
+      opacity: 0.3;
+    }
+    // transform: rotate(90deg);
   }
 }
 

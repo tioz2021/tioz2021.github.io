@@ -260,7 +260,7 @@ allItems.forEach(item => {
         if (this.modal.classList.contains('active')) return;
         
         this.isAnimating = true;
-        document.body.style.overflow = 'hidden';
+        // Убрано: document.body.style.overflow = 'hidden';
         this.modal.classList.add('active');
         
         setTimeout(() => {
@@ -280,7 +280,7 @@ allItems.forEach(item => {
       
       this.hideTimeout = setTimeout(() => {
         this.modal.classList.remove('active');
-        document.body.style.overflow = '';
+        // Убрано: document.body.style.overflow = '';
         this.isAnimating = false;
       }, 300);
     }
