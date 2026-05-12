@@ -8,6 +8,7 @@
 @import 'vendors/normalize';
 
 // base/animation
+@import 'base/fonts';
 @import 'base/base';
 @import 'base/typography';
 @import 'base/utilities';
@@ -25,4 +26,4 @@
 @import 'layout/footer';
 
 // pages
-@import 'pages/home'
+@import 'pages/home';
