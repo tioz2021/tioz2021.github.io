@@ -1,3 +1,21 @@
+html {
+    /* Для Chrome, Safari, Edge и новых версий Opera */
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
 body {
     font-family: var(--font-family);
+    background: var(--bg-1-page);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    text-decoration: unset;
 }

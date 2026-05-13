@@ -1,14 +1,17 @@
-// colors
 :root {
+	// colors
 	--bodi-1: #fff;
 	--bodi-2: #989ccf;
 	--bg-1-page: #050728;
 	--dop-1: #716df0;
 	--dop-2: #f16386;
+
+	// fonts
+	--font-family: "Segoe UI", sans-serif;
+	--second-family: "HeinrichScript", sans-serif;
+
+	// 1280 + 15*2
+	--border-web: 15px;
+	--container-size-web: 1280px;
 }
 
-// fonts
-:root {
-  --font-family: "Segoe UI", sans-serif;
-  --second-family: "HeinrichScript", sans-serif;
-}

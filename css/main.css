@@ -1,14 +1,14 @@
+@charset "UTF-8";
 :root {
   --bodi-1: #fff;
   --bodi-2: #989ccf;
   --bg-1-page: #050728;
   --dop-1: #716df0;
   --dop-2: #f16386;
-}
-
-:root {
   --font-family: "Segoe UI", sans-serif;
   --second-family: "HeinrichScript", sans-serif;
+  --border-web: 15px;
+  --container-size-web: 1280px;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -372,16 +372,133 @@ template {
 
 @font-face {
   font-family: "Segoe UI";
-  src: local("Segoe UI Regular"), local("Segoe-UI-Regular"), url("../../fonts/SegoeUI.woff2") format("woff2"), url("../../fonts/SegoeUI.woff") format("woff"), url("../../fonts/SegoeUI.ttf") format("truetype");
+  src: local("Segoe UI Regular"), local("Segoe-UI-Regular"), url("../fonts/SegoeUI.woff2") format("woff2"), url("../fonts/SegoeUI.woff") format("woff"), url("../fonts/SegoeUI.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Segoe UI";
-  src: local("Segoe UI SemiBold"), local("Segoe-UI-SemiBold"), url("../../fonts/SegoeUI-SemiBold.woff2") format("woff2"), url("../../fonts/SegoeUI-SemiBold.woff") format("woff"), url("../../fonts/SegoeUI-SemiBold.ttf") format("truetype");
+  src: local("Segoe UI SemiBold"), local("Segoe-UI-SemiBold"), url("../fonts/SegoeUI-SemiBold.woff2") format("woff2"), url("../fonts/SegoeUI-SemiBold.woff") format("woff"), url("../fonts/SegoeUI-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
+html {
+  /* Для Chrome, Safari, Edge и новых версий Opera */
+}
+html::-webkit-scrollbar {
+  display: none;
+}
+html {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
 body {
   font-family: var(--font-family);
+  background: var(--bg-1-page);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  text-decoration: unset;
+}
+
+.main-logo__link {
+  width: 92px;
+  height: 45px;
+}
+
+.main-menu {
+  border-radius: 22px;
+  width: 1052px;
+  height: 44px;
+  background-image: url("../../imges/header-bg.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: -14px;
+}
+.main-menu__list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-menu__link {
+  display: flex;
+  align-items: center;
+}
+.main-menu__icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 4px;
+}
+.main-menu__text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+  color: var(--bodi-1);
+}
+
+.languare-switcher {
+  width: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.languare-switcher__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: var(--bodi-2);
+}
+.languare-switcher__body {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../imges/icons/header/language-bg.svg");
+}
+.languare-switcher__body-item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: var(--bodi-1);
+}
+
+.container {
+  width: var(--container-size-web);
+  display: flex;
+}
+
+.img-wrp {
+  display: block;
+  position: relative;
+}
+.img-wrp img,
+.img-wrp svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header {
+  padding-top: 23px;
+}
+.header__container {
+  justify-content: space-between;
 }/*# sourceMappingURL=main.css.map */

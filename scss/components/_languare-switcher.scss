@@ -1,0 +1,32 @@
+.languare-switcher {
+    width: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    // .languare-switcher__text
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+        color: var(--bodi-2);
+    }
+
+    // .languare-switcher__body
+    &__body {
+        width: 36px;
+        height: 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('../../imges/icons/header/language-bg.svg');
+    }
+
+    // .languare-switcher__body-item
+    &__body-item {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+        color: var(--bodi-1);
+    }
+}
