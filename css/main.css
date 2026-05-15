@@ -371,6 +371,12 @@ template {
 }
 
 @font-face {
+  font-family: "HeinrichScript";
+  src: local("HeinrichScript"), local("HeinrichScript-Regular"), url("../fonts/semi/HeinrichScript.woff2") format("woff2"), url("../fonts/semi/HeinrichScript.woff") format("woff"), url("../fonts/semi/HeinrichScript.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
   font-family: "Segoe UI";
   src: local("Segoe UI Regular"), local("Segoe-UI-Regular"), url("../fonts/SegoeUI.woff2") format("woff2"), url("../fonts/SegoeUI.woff") format("woff"), url("../fonts/SegoeUI.ttf") format("truetype");
   font-weight: 400;
