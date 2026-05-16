@@ -21,6 +21,9 @@
 @import 'components/main-logo';
 @import 'components/main-menu';
 @import 'components/languare-switcher';
+@import 'components/info-box';
+@import 'components/video-box';
+
 
 // layout
 @import 'layout/grid';
@@ -28,22 +31,3 @@
 
 // pages
 @import 'pages/home';
-
-
-.header {
-    padding-top: 23px;
-
-    // .header__container
-    &__container {
-        justify-content: space-between;
-    }
-
-    // .header__logo
-    &__logo {}
-
-    // .header__menu
-    &__menu {}
-
-    // .header__language-switcher
-    &__language-switcher {}
-}

@@ -1,0 +1,17 @@
+.header {
+    padding-top: 23px;
+
+    // .header__container
+    &__container {
+        justify-content: space-between;
+    }
+
+    // .header__logo
+    &__logo {}
+
+    // .header__menu
+    &__menu {}
+
+    // .header__language-switcher
+    &__language-switcher {}
+}
