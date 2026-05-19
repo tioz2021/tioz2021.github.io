@@ -7,6 +7,10 @@
 @import 'base/reset';
 @import 'vendors/normalize';
 
+// layout
+@import 'layout/grid';
+@import 'layout/navigation';
+
 // base/animation
 @import 'base/fonts';
 @import 'base/base';
@@ -23,11 +27,6 @@
 @import 'components/languare-switcher';
 @import 'components/info-box';
 @import 'components/video-box';
-
-
-// layout
-@import 'layout/grid';
-@import 'layout/navigation';
 
 // pages
 @import 'pages/home';

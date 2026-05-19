@@ -1,23 +1,61 @@
 .video-box {
 
     // .video-box_prev-img
-    &_prev-img {}
+    &_prev-img {
+        width: 100%;
+        height: 100%;
+    }
 
     // .video-box__title
-    &__title {}
+    &__title {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        color: var(--bodi-1);
+        margin-bottom: 15px;
+    }
 
     // .video-box__body
-    &__body {}
+    &__body {
+        width: 324px;
+        height: 180px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 12px;
+    }
 
     // .video-box__play-icon
-    &__play-icon {}
+    &__play-icon {
+        width: 88px;
+        height: 81px;
+        position: absolute !important;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
 
     // .video-box__text-wrp
-    &__text-wrp {}
+    &__text-wrp {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
 
     // .video-box__last-text-icon
-    &__last-text-icon {}
+    &__last-text-icon {
+        width: 24px;
+        height: 24px;
+    }
 
     // .video-box__last-text
-    &__last-text {}
+    &__last-text {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 120%;
+        color: var(--bodi-2);
+    }
 }

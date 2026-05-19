@@ -1,20 +1,79 @@
 .main-btn {
+    position: relative;
+    width: 140px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 
     // .main-btn--pink
-    &--pink {}
+    &--pink {
+
+        // .main-btn--pink .main-btn__bg
+        .main-btn__bg {
+            backdrop-filter: blur(4px);
+            background: radial-gradient(409.52% 192.34% at 89.29% 50%, #f16386 0%, #050728 100%);
+        }
+
+        // .main-btn--pink .main-btn__light
+        .main-btn__light {
+            background: var(--dop-2);
+        }
+    }
 
     // .main-btn__icon
-    &__icon {}
+    &__icon {
+        width: 24px;
+        height: 24px;
+        z-index: 2;
+    }
 
     // .main-btn__text
-    &__text {}
+    &__text {
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 120%;
+        color: var(--bodi-1);
+        text-shadow: inset 0 2px 2px 0 rgba(255, 255, 255, 0.3), 0 1px 2px 0 rgba(115, 102, 235, 0.6);
+        z-index: 2;
+    }
 
     // .main-btn__light
-    &__light {}
+    &__light {
+        width: 124px;
+        height: 24px;
+        position: absolute;
+        top: 26px;
+        left: 50%;
+        transform: translateX(-50%);
+        filter: blur(24px);
+        background: #7366eb;
+        z-index: -1;
+    }
 
     // .main-btn__bg
-    &__bg {}
+    &__bg {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(4px);
+        background: radial-gradient(449.66% 290.65% at 86.07% -45.24%, #716df0 0%, #050728 100%);
+        border-radius: 12px;
+    }
 
     // .main-btn__shadow
-    &__shadow {}
+    &__shadow {
+        border-radius: 12px;
+        width: 136px;
+        height: 44px;
+        background: var(--bg-1-page);
+        position: absolute;
+        bottom: -2px;
+        z-index: -1;
+    }
 }

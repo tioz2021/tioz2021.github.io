@@ -370,6 +370,27 @@ template {
   display: none;
 }
 
+.container {
+  width: var(--container-size-web);
+  display: flex;
+}
+
+.img-wrp {
+  display: block;
+  position: relative;
+}
+.img-wrp img,
+.img-wrp svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 @font-face {
   font-family: "HeinrichScript";
   src: local("HeinrichScript"), local("HeinrichScript-Regular"), url("../fonts/semi/HeinrichScript.woff2") format("woff2"), url("../fonts/semi/HeinrichScript.woff") format("woff"), url("../fonts/semi/HeinrichScript.ttf") format("truetype");
@@ -411,8 +432,71 @@ a {
   text-decoration: unset;
 }
 
+.main-btn {
+  position: relative;
+  width: 140px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.main-btn--pink .main-btn__bg {
+  backdrop-filter: blur(4px);
+  background: radial-gradient(409.52% 192.34% at 89.29% 50%, #f16386 0%, #050728 100%);
+}
+.main-btn--pink .main-btn__light {
+  background: var(--dop-2);
+}
+.main-btn__icon {
+  width: 24px;
+  height: 24px;
+  z-index: 2;
+}
+.main-btn__text {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+  color: var(--bodi-1);
+  text-shadow: inset 0 2px 2px 0 rgba(255, 255, 255, 0.3), 0 1px 2px 0 rgba(115, 102, 235, 0.6);
+  z-index: 2;
+}
+.main-btn__light {
+  width: 124px;
+  height: 24px;
+  position: absolute;
+  top: 26px;
+  left: 50%;
+  transform: translateX(-50%);
+  filter: blur(24px);
+  background: #7366eb;
+  z-index: -1;
+}
+.main-btn__bg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(4px);
+  background: radial-gradient(449.66% 290.65% at 86.07% -45.24%, #716df0 0%, #050728 100%);
+  border-radius: 12px;
+}
+.main-btn__shadow {
+  border-radius: 12px;
+  width: 136px;
+  height: 44px;
+  background: var(--bg-1-page);
+  position: absolute;
+  bottom: -2px;
+  z-index: -1;
+}
+
 .header {
   padding-top: 23px;
+  padding-bottom: 40px;
 }
 .header__container {
   justify-content: space-between;
@@ -518,23 +602,334 @@ a {
   opacity: 0.7;
 }
 
-.container {
-  width: var(--container-size-web);
+.info-box {
+  position: relative;
+  padding: 16px;
+  padding-bottom: 22px;
+  background-image: url("../../imges/info-box-bg.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  border-radius: 12px;
+  width: 324px;
+  height: 218px;
+}
+.info-box__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  color: var(--bodi-1);
+  margin-bottom: 9px;
+}
+.info-box__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  text-align: center;
+  color: var(--bodi-2);
+  margin-bottom: 17px;
+}
+.info-box__btn-wrp {
+  width: 100%;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.info-box__btn {
+  width: 140px;
+  height: 60px;
 }
 
-.img-wrp {
-  display: block;
-  position: relative;
-}
-.img-wrp img,
-.img-wrp svg {
-  display: block;
+.video-box_prev-img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  position: absolute;
-  top: 50%;
+}
+.video-box__title {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  color: var(--bodi-1);
+  margin-bottom: 15px;
+}
+.video-box__body {
+  width: 324px;
+  height: 180px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+.video-box__play-icon {
+  width: 88px;
+  height: 81px;
+  position: absolute !important;
   left: 50%;
+  top: 50%;
   transform: translate(-50%, -50%);
+}
+.video-box__text-wrp {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.video-box__last-text-icon {
+  width: 24px;
+  height: 24px;
+}
+.video-box__last-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  color: var(--bodi-2);
+}
+
+.fs-wrp {
+  width: 100%;
+  min-width: 1920px;
+  height: 892px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../../imges/fs-bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.fs {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fs__container {
+  flex-wrap: wrap;
+  position: relative;
+}
+.fs__title {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+}
+.fs__title-h1 {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 160px;
+  line-height: 80%;
+  text-align: center;
+  margin: 0;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  /* 1. ОСНОВНОЙ СЛОЙ: Задаем многоцветный градиент */
+  background: linear-gradient(143deg, #716df0 0%, #b068bc 19.71%, #c3647c 40%, #af68bd 60%, #d56a79 80%, #d5659d 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 4px 16px rgba(115, 102, 235, 0.4);
+}
+.fs__title-h1::before {
+  content: attr(data-text);
+  position: absolute;
+  top: -9px;
+  left: 22px;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  text-align: center;
+  /* Делаем текст прозрачным, но добавляем ТОНКИЙ БЕЛЫЙ КОНТУР */
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.6); /* Тот самый блик трубки */
+  /* Слегка смещаем контур, чтобы он имитировал падение света сверху */
+  transform: translate(0px, -1px);
+  pointer-events: none;
+  /* Маской срезаем нижнюю часть контура, чтобы блик был только СВЕРХУ букв */
+  mask-image: linear-gradient(to bottom, #fff 0%, transparent 70%);
+  -webkit-mask-image: linear-gradient(to bottom, #fff 0%, transparent 70%);
+  height: 180px;
+  display: flex;
+  align-items: center;
+}
+.fs__title-h1::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  text-align: center;
+  /* Создаем темную подложку для глубины */
+  color: #3b23a6;
+  /* А вот теперь безопасно размываем подложку, создавая эффект объема внутри */
+  filter: blur(5px);
+  opacity: 0.8;
+}
+.fs__title-img {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 6px;
+  top: -8px;
+}
+.fs__title-desk-wrp {
+  width: 988px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2px;
+}
+.fs__title-desk {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.fs__title-desk-icon {
+  width: 36px;
+  height: 36px;
+  top: 8px;
+}
+.fs__title-desk-text {
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 120%;
+  text-align: right;
+}
+.fs__title-desk-text--1 {
+  color: var(--dop-1);
+  color: transparent;
+  background: linear-gradient(180deg, #ffffff 0%, #a49fff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* 2. Делаем внешнюю рабочую тень (без inset и лишних нулей) */
+  text-shadow: 0 2px 4px rgba(115, 102, 235, 0.6);
+  position: relative;
+  display: inline-block;
+  /* 3. Имитируем тот самый "inset" (внутренний белый блик сверху) */
+}
+.fs__title-desk-text--1::before {
+  content: attr(data-text);
+  /* Подтянет текст из HTML автоматически */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  /* Белая полупрозрачная заливка, которая плавно исчезает к низу */
+  color: transparent;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, transparent 60%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* Сдвигаем на 1-2 пикселя вниз для эффекта объема */
+  transform: translateY(1px);
+  pointer-events: none;
+}
+.fs__title-desk-text--1 {
+  /* 4. Реализуем filter: blur(4px) как мягкое неоновое облако ПОД текстом */
+}
+.fs__title-desk-text--1::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  /* Строго под текст */
+  color: #7366eb;
+  /* Цвет неонового размытия */
+  filter: blur(4px);
+  /* Вот теперь блюр работает как надо! */
+  opacity: 0.8;
+}
+.fs__title-desk-text--2 {
+  color: var(--dop-2);
+  /* 1. Основной цвет текста — белый/светло-розовый градиент */
+  color: transparent;
+  background: linear-gradient(180deg, #ffffff 0%, var(--dop-2) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* 2. Валидная внешняя розовая тень (без inset и лишних нулей) */
+  text-shadow: 0 2px 4px rgba(241, 99, 134, 0.6);
+  position: relative;
+  display: inline-block;
+  /* 3. Имитируем "inset 0 4px 4px... rgba(255,255,255,0.3)" */
+  /* Создаем белый блик в верхней части букв для объема */
+}
+.fs__title-desk-text--2::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  color: transparent;
+  /* Белый полупрозрачный блик, уходящий в прозрачность */
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, transparent 50%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  transform: translateY(1px);
+  /* Легкий сдвиг для объема */
+  pointer-events: none;
+}
+.fs__title-desk-text--2 {
+  /* 4. Безопасный "filter: blur(4px)" */
+  /* Выносим размытие на задний план, чтобы создать неоновое облако */
+}
+.fs__title-desk-text--2::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  color: #f16386;
+  /* Тот самый розовый цвет из Фигмы */
+  filter: blur(4px);
+  /* Теперь размытие не портит читаемость букв */
+  opacity: 0.7;
+}
+.fs__video-box {
+  position: absolute;
+  z-index: 3;
+  top: 264px;
+}
+.fs__info-box {
+  position: absolute;
+  right: 0;
+  top: 264px;
+  z-index: 3;
+}
+.fs__main-img {
+  width: 1280px;
+  height: 622px;
+  top: -114px;
+  z-index: 2;
+}
+.fs__decoration {
+  position: absolute;
+  z-index: 1;
+}
+.fs__decoradion-1 {
+  width: 756px;
+  height: 240px;
+  left: -44px;
+  bottom: 53px;
+}
+.fs__decoradion-2 {
+  width: 755px;
+  height: 240px;
+  right: -62px;
+  bottom: 6px;
 }/*# sourceMappingURL=main.css.map */

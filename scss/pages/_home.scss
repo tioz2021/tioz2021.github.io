@@ -1,34 +1,292 @@
+.fs-wrp {
+    width: 100%;
+    min-width: 1920px;
+    height: 892px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../../imges/fs-bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .fs {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     // .fs__container
-    &__container {}
+    &__container {
+        flex-wrap: wrap;
+        position: relative;
+    }
 
     // .fs__title
-    &__title {}
+    &__title {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+        // margin-bottom: 50px;
+    }
 
     // .fs__title-h1
-    &__title-h1 {}
+    &__title-h1 {
+        font-family: var(--second-family);
+        font-weight: 400;
+        font-size: 160px;
+        line-height: 80%;
+        text-align: center;
+        // background: linear-gradient(143deg, #716df0 0%, #b068bc 19.71%, #c3647c 40%, #af68bd 60%, #d56a79 80%, #d5659d 100%);
+        // background-clip: text;
+        // -webkit-background-clip: text;
+        // -webkit-text-fill-color: transparent;
+        // text-shadow: inset 0 4px 4px 0 #b7b4ff, 0 4px 16px 0 rgba(115, 102, 235, 0.6);
+        margin: 0;
+
+        height: 160px;
+        display: flex;
+        align-items: center;
+
+        
+        /* 1. ОСНОВНОЙ СЛОЙ: Задаем многоцветный градиент */
+        background: linear-gradient(143deg, #716df0 0%, #b068bc 19.71%, #c3647c 40%, #af68bd 60%, #d56a79 80%, #d5659d 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    
+        text-shadow: 0 4px 16px rgba(115, 102, 235, 0.4); 
+
+        // .fs__title-h1::before
+        &::before {
+            content: attr(data-text);
+            position: absolute;
+            top: -9px;
+            left: 22px;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            text-align: center;
+            
+            /* Делаем текст прозрачным, но добавляем ТОНКИЙ БЕЛЫЙ КОНТУР */
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.6); /* Тот самый блик трубки */
+            
+            /* Слегка смещаем контур, чтобы он имитировал падение света сверху */
+            transform: translate(0px, -1px); 
+            pointer-events: none;
+            
+            /* Маской срезаем нижнюю часть контура, чтобы блик был только СВЕРХУ букв */
+            mask-image: linear-gradient(to bottom, #fff 0%, transparent 70%);
+            -webkit-mask-image: linear-gradient(to bottom, #fff 0%, transparent 70%);
+
+            height: 180px;
+            display: flex;
+            align-items: center;
+        }
+
+        // .fs__title-h1::after
+        &::after {
+            content: attr(data-text);
+            position: absolute;
+            top: 2px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            text-align: center;
+            
+            /* Создаем темную подложку для глубины */
+            color: #3b23a6; 
+            
+            /* А вот теперь безопасно размываем подложку, создавая эффект объема внутри */
+            filter: blur(5px); 
+            opacity: 0.8;
+        }
+    }
+
+    // .fs__title-img
+    &__title-img {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        left: 6px;
+        top: -8px;
+    }
 
     // .fs__title-desk-wrp
-    &__title-desk-wrp {}
+    &__title-desk-wrp {
+        width: 988px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 2px;
+    }
 
     // .fs__title-desk
-    &__title-desk {}
+    &__title-desk {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
 
     // .fs__title-desk-icon
-    &__title-desk-icon {}
+    &__title-desk-icon {
+        width: 36px;
+        height: 36px;
+        top: 8px;
+    }
 
     // .fs__title-desk-text
-    &__title-desk-text {}
+    &__title-desk-text {
+        font-weight: 400;
+        font-size: 44px;
+        line-height: 120%;
+        text-align: right;
+
+        // .fs__title-desk-text--1
+        &--1 {
+            color: var(--dop-1);
+            color: transparent;
+            background: linear-gradient(180deg, #ffffff 0%, #a49fff 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+
+            /* 2. Делаем внешнюю рабочую тень (без inset и лишних нулей) */
+            text-shadow: 0 2px 4px rgba(115, 102, 235, 0.6);
+
+            position: relative;
+            display: inline-block;
+
+            /* 3. Имитируем тот самый "inset" (внутренний белый блик сверху) */
+            // .fs__title-desk-text--1::before
+            &::before {
+                content: attr(data-text);
+                /* Подтянет текст из HTML автоматически */
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+
+                /* Белая полупрозрачная заливка, которая плавно исчезает к низу */
+                color: transparent;
+                background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, transparent 60%);
+                -webkit-background-clip: text;
+                background-clip: text;
+
+                /* Сдвигаем на 1-2 пикселя вниз для эффекта объема */
+                transform: translateY(1px);
+                pointer-events: none;
+            }
+
+            /* 4. Реализуем filter: blur(4px) как мягкое неоновое облако ПОД текстом */
+            // .fs__title-desk-text--1::after
+            &::after {
+                content: attr(data-text);
+                position: absolute;
+                top: 2px;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                /* Строго под текст */
+
+                color: #7366eb;
+                /* Цвет неонового размытия */
+                filter: blur(4px);
+                /* Вот теперь блюр работает как надо! */
+                opacity: 0.8;
+            }
+        }
+
+        // .fs__title-desk-text--2
+        &--2 {
+            color: var(--dop-2);
+
+            /* 1. Основной цвет текста — белый/светло-розовый градиент */
+            color: transparent;
+            background: linear-gradient(180deg, #ffffff 0%, var(--dop-2) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+
+            /* 2. Валидная внешняя розовая тень (без inset и лишних нулей) */
+            text-shadow: 0 2px 4px rgba(241, 99, 134, 0.6);
+
+            position: relative;
+            display: inline-block;
+
+            /* 3. Имитируем "inset 0 4px 4px... rgba(255,255,255,0.3)" */
+            /* Создаем белый блик в верхней части букв для объема */
+            // .fs__title-desk-text--2::before
+            &::before {
+                content: attr(data-text);
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+
+                color: transparent;
+                /* Белый полупрозрачный блик, уходящий в прозрачность */
+                background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, transparent 50%);
+                -webkit-background-clip: text;
+                background-clip: text;
+
+                transform: translateY(1px);
+                /* Легкий сдвиг для объема */
+                pointer-events: none;
+            }
+
+            /* 4. Безопасный "filter: blur(4px)" */
+            /* Выносим размытие на задний план, чтобы создать неоновое облако */
+            // .fs__title-desk-text--2::after
+            &::after {
+                content: attr(data-text);
+                position: absolute;
+                top: 2px;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+
+                color: #f16386;
+                /* Тот самый розовый цвет из Фигмы */
+                filter: blur(4px);
+                /* Теперь размытие не портит читаемость букв */
+                opacity: 0.7;
+            }
+        }
+    }
 
     // .fs__video-box
-    &__video-box {}
+    &__video-box {
+        position: absolute;
+        z-index: 3;
+        top: 264px;
+    }
 
     // .fs__info-box
-    &__info-box {}
+    &__info-box {
+        position: absolute;
+        right: 0;
+        top: 264px;
+        z-index: 3;
+    }
 
     // .fs__main-img
-    &__main-img {}
+    &__main-img {
+        width: 1280px;
+        height: 622px;
+        top: -114px;
+        z-index: 2;
+    }
 
     // .fs__light-wrp
     &__light-wrp {}
@@ -43,11 +301,24 @@
     &__light-item--right {}
 
     // .fs__decoration
-    &__decoration {}
+    &__decoration {
+        position: absolute;
+        z-index: 1;
+    }
 
     // .fs__decoradion-1
-    &__decoradion-1 {}
+    &__decoradion-1 {
+        width: 756px;
+        height: 240px;
+        left: -44px;
+        bottom: 53px;
+    }
 
     // .fs__decoradion-2
-    &__decoradion-2 {}
+    &__decoradion-2 {
+        width: 755px;
+        height: 240px;
+        right: -62px;
+        bottom: 6px;
+    }
 }
