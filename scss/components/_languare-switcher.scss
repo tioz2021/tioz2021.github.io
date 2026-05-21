@@ -1,10 +1,12 @@
 .languare-switcher {
+    width: 87px;
     display: flex;
     gap: 12px;
     position: relative;
     top: 5px;
     left: 1px;
 
+    // .languare-switcher__text
     &__text {
         font-weight: 400;
         font-size: 16px;
@@ -15,8 +17,12 @@
         left: 9px;
     }
 
+    // .languare-switcher__body
     &__body {
-        position: relative;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 3;
         width: 36px;
         height: 36px;
         display: flex;
@@ -30,6 +36,7 @@
         transition: all 0.2s ease-out;
         overflow: hidden;
 
+        // .languare-switcher__body._active
         &._active {
             height: 126px; /* Высота под 3 языка (36*3 + отступы) */
             border-radius: 20px;
@@ -38,6 +45,7 @@
         }
     }
 
+    // .languare-switcher__body-item
     &__body-item {
         display: flex;
         justify-content: center;
@@ -56,10 +64,12 @@
 
         transition: background 0.2s, opacity 0.2s;
 
+        // .languare-switcher__body-item._current
         &._current {
             order: -1; 
         }
 
+        // .languare-switcher__body-item:hover
         &:hover {
             opacity: 0.7;
         }

@@ -71,19 +71,12 @@
             height: 100%;
             z-index: 2;
             text-align: center;
-            
-            /* Делаем текст прозрачным, но добавляем ТОНКИЙ БЕЛЫЙ КОНТУР */
             -webkit-text-fill-color: transparent;
-            -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.6); /* Тот самый блик трубки */
-            
-            /* Слегка смещаем контур, чтобы он имитировал падение света сверху */
-            transform: translate(0px, -1px); 
+            -webkit-text-stroke: 1.5px rgba(255, 255, 255, 1);
+            transform: translate(0px, -1px);
             pointer-events: none;
-            
-            /* Маской срезаем нижнюю часть контура, чтобы блик был только СВЕРХУ букв */
             mask-image: linear-gradient(to bottom, #fff 0%, transparent 70%);
-            -webkit-mask-image: linear-gradient(to bottom, #fff 0%, transparent 70%);
-
+            -webkit-mask-image: linear-gradient(to bottom, #fff 0%, transparent 100%);
             height: 180px;
             display: flex;
             align-items: center;
@@ -292,13 +285,25 @@
     &__light-wrp {}
 
     // .fs__light-item
-    &__light-item {}
+    &__light-item {
+        position: absolute;
+        width: 1180px;
+        height: 1024px;
+        mix-blend-mode: soft-light;
+        z-index: -1;
+    }
 
     // .fs__light-item--left
-    &__light-item--left {}
+    &__light-item--left {
+        top: -170px;
+        left: -472px;
+    }
 
     // .fs__light-item--right
-    &__light-item--right {}
+    &__light-item--right {
+        top: -170px;
+        right: -472px;
+    }
 
     // .fs__decoration
     &__decoration {
