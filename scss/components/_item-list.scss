@@ -1,0 +1,99 @@
+.item-list {
+
+    // .item-list__item
+    &__item {
+        border-radius: 12px;
+        width: 308px;
+        height: 388px;
+        background-image: url('../../imges/items/item-bg.svg');
+        box-sizing: border-box;
+        padding: 8px;
+    }
+
+    // .item-list__item-mark-wrp
+    &__item-mark-wrp {
+        display: none;
+    }
+
+    // .item-list__item-mark-item
+    &__item-mark-item {}
+
+    // .item-list__item-mark-item--black
+    &__item-mark-item--black {}
+
+    // .item-list__item-img
+    &__item-img {
+        width: 292px;
+        height: 140px;
+        margin-bottom: 12px;
+    }
+
+    // .item-list__item-rating-wrp
+    &__item-rating-wrp {
+        box-sizing: border-box;
+        padding-left: 8px;
+        padding-right: 8px;
+        margin-bottom: 8px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // .item-list__item-rating-start-wrp
+    &__item-rating-start-wrp {
+        display: flex;
+        gap: 4px;
+    }
+
+    // .item-list__item-rating-star-icon
+    &__item-rating-star-icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    // .item-list__item-rating-text
+    &__item-rating-text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 120%;
+        text-align: right;
+        color: var(--bodi-2);
+        position: relative;
+        top: -4px;
+    }
+
+    // .item-list__item-rating-num
+    &__item-rating-num {
+        font-weight: 600;
+        color: var(--bodi-1);
+    }
+
+    // .item-list__item-title-wrp
+    &__item-title-wrp {}
+
+    // .item-list__item-icon
+    &__item-icon {}
+
+    // .item-list__item-title
+    &__item-title {}
+
+    // .item-list__item-place-wrp
+    &__item-place-wrp {}
+
+    // .item-list__item-place-icon
+    &__item-place-icon {}
+
+    // .item-list__item-place
+    &__item-place {}
+
+    // .item-list__check-list
+    &__check-list {}
+
+    // .item-list__check-item
+    &__check-item {}
+
+    // .item-list__check-icon
+    &__check-icon {}
+
+    // .item-list__item-main-text
+    &__item-main-text {}
+}

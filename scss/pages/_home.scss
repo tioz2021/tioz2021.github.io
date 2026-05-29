@@ -52,14 +52,14 @@
         display: flex;
         align-items: center;
 
-        
+
         /* 1. ОСНОВНОЙ СЛОЙ: Задаем многоцветный градиент */
         background: linear-gradient(143deg, #716df0 0%, #b068bc 19.71%, #c3647c 40%, #af68bd 60%, #d56a79 80%, #d5659d 100%);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-    
-        text-shadow: 0 4px 16px rgba(115, 102, 235, 0.4); 
+
+        text-shadow: 0 4px 16px rgba(115, 102, 235, 0.4);
 
         // .fs__title-h1::before
         &::before {
@@ -92,12 +92,12 @@
             height: 100%;
             z-index: -1;
             text-align: center;
-            
+
             /* Создаем темную подложку для глубины */
-            color: #3b23a6; 
-            
+            color: #3b23a6;
+
             /* А вот теперь безопасно размываем подложку, создавая эффект объема внутри */
-            filter: blur(5px); 
+            filter: blur(5px);
             opacity: 0.8;
         }
     }
@@ -326,4 +326,111 @@
         right: -62px;
         bottom: 6px;
     }
+}
+
+.s1 {
+    margin-bottom: 60px;
+
+    // .s1__container
+    &__container {
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    // .s1__title
+    &__title {
+        color: transparent;
+        background: linear-gradient(180deg, #ffffff 0%, #a49fff 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        text-shadow: 0 2px 4px rgba(115, 102, 235, 0.6);
+        position: relative;
+        display: inline-block;
+        font-size: 44px;
+        line-height: 120%;
+        margin-bottom: 52px;
+
+        // .s1__title--1
+        &--1 {
+            color: var(--dop-1);
+        }
+
+        // .s1__title--2
+        &--2 {
+            color: var(--dop-2);
+        }
+    }
+
+    // .s1__decoration-left
+    &__decoration-left {
+        position: absolute;
+        width: 272px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        left: 0;
+        top: 128px;
+    }
+
+    // .s1__decoration-left-text
+    &__decoration-left-text {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        text-align: center;
+        color: var(--bodi-1);
+    }
+
+    // .s1__decoration-icon
+    &__decoration-icon {
+        width: 80px;
+        height: 68px;
+    }
+
+    // .s1__decoration-icon-left
+    &__decoration-icon-left {
+        margin-bottom: 16px;
+    }
+
+    // .s1__decoration-right
+    &__decoration-right {
+        width: 272px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        right: 0;
+        top: 213px;
+    }
+
+    // .s1__decoration-right-text
+    &__decoration-right-text {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        text-align: center;
+        color: var(--bodi-1);
+        margin-bottom: 21px;
+    }
+
+    // .s1__decoration-icon-right
+    &__decoration-icon-right {
+        width: 132px;
+        height: 80px;
+        position: relative;
+        left: 9px;
+    }
+
+    // .s1 .filter-form
+    .filter-form {}
+}
+
+.s2 {
+
+    // .s2__container
+    &__container {}
+
+    // .s2__item-list
+    &__item-list {}
 }

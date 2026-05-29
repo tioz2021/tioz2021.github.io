@@ -1,0 +1,268 @@
+.filter-form {
+    position: relative;
+    width: 664px;
+    height: 424px;
+    margin: 0 auto;
+
+    background-image: url('../../imges/main-form-bg.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    box-sizing: border-box;
+    padding: 16px;
+    padding-bottom: 36px;
+
+    // .filter-form__grid
+    &__grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+.filter-select {
+    position: relative;
+    width: 308px;
+    margin-bottom: 16px;
+
+    // .filter-select:last-child
+    &:last-child {
+        width: 100%;
+    }
+
+    // .filter-select__header
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        padding: 0 16px;
+        cursor: pointer;
+        user-select: none;
+
+        background: linear-gradient(162deg, #1e1941 0%, #1a1a42 100%);
+        border-radius: 12px;
+        
+        position: relative;
+        z-index: 2; 
+    }
+
+    // .filter-select__arrow
+    &__arrow {
+        transition: transform 0.3s ease;
+        z-index: 3;
+
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background:var(--bg-1-page);
+        border-radius: 50%;
+
+        transform: rotate(180deg);
+
+        position: relative;
+        left: 4px;
+        top: -1px;
+    }
+
+    // .filter-select__arrow-icon
+    &__arrow-icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    // .filter-select__dropdown
+    &__dropdown {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+
+        max-height: 280px;
+        overflow-y: auto;
+        transition: all 0.3s ease;
+
+        background: linear-gradient(162deg, #1e1941 0%, #1a1a42 100%);
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        
+        padding-top: 55px; 
+        padding-bottom: 12px;
+        
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); 
+    }
+
+    // .filter-select__item
+    &__item {
+        padding: 12px 16px;
+        cursor: pointer;
+        font-size: 18px;
+        color: var(--bodi-1, #ffffff);
+        transition: background 0.2s ease, color 0.2s ease;
+
+        // filter-select__item:hover
+        &:hover {
+            background: rgba(255, 255, 255, 0.05);
+            color: #716df0;
+        }
+
+        // filter-select__item._selected
+        &._selected {
+            color: #716df0;
+            font-weight: 500;
+        }
+    }
+
+    // filter-select._active
+    &._active {
+        /* При желании, можно менять z-index всего селекта при открытии, 
+           чтобы он гарантированно перекрывал нижние ряды */
+        z-index: 20; 
+
+        // .filter-select._active .filter-select__dropdown
+        .filter-select__dropdown {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+
+        // .filter-select._active .filter-select__arrow
+        .filter-select__arrow {
+            transform: rotate(360deg);
+        }
+    }
+}
+
+.filter-select__title {
+    color: var(--bodi-2);
+    font-size: 18px;
+    z-index: 3;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    top: -4px;
+
+    // .filter-select__title b
+    b {
+        color: var(--bodi-1);
+        margin-left: 11px;
+    }
+}
+
+.filter-select__title-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 4px;
+    top: 3px;
+}
+
+.filter-form__btn {
+    width: 100%;
+    background-color: unset;
+    border: unset;
+    cursor: pointer;
+
+    // .filter-form__btn .main-btn__light
+    .main-btn__light {
+        width: 608px;
+        height: 24px;
+        filter: blur(36px);
+        background: radial-gradient(1063.72% 629.78% at -29.33% 100.98%, #1450d2 0%, #d33759 5.22%, #4a78cf 11%, #214ba4 14.75%, #4729ee 19.39%, #497ded 28.5%, #fa7c9f 46%, #687ef0 56%, #6968e9 63.5%, #143ad2 68.5%, #fa6aa8 78.5%, #2735ea 85%, #2ba7e5 93%, #0e3eb8 100%);
+    }
+
+    // .filter-form__btn .main-btn__shadow
+    .main-btn__shadow {
+        border-radius: 12px;
+        width: 632px;
+        height: 44px;
+    }
+
+    // .filter-form__btn .main-btn__bg
+    .main-btn__bg {
+        background: unset;
+        backdrop-filter: unset;
+    }
+
+    // .filter-form__btn .main-btn__icon
+    .main-btn__icon {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.filter-checkbox {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    // padding: 5px 0;
+    margin-right: 33px;
+    margin-bottom: 20px;
+
+    // .filter-checkbox__input
+    &__input {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        padding: 0;
+        border: 0;
+
+        // .filter-checkbox__input:checked + .filter-checkbox__text::before
+        &:checked + .filter-checkbox__text::before {
+            background: #8c82ff; 
+            background-clip: content-box !important;
+            
+            padding: 3px; 
+        }
+    }
+
+    // .filter-checkbox__text
+    &__text {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px; 
+        
+        font-size: 18px;
+        color: var(--bodi-1);
+        line-height: 120%;
+
+        /* Сам кастомный квадратик */
+        // .filter-checkbox__text::before
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            flex-shrink: 0;
+            
+            background: linear-gradient(162deg, #1e1941 0%, #1a1a42 100%);
+            border-radius: 4px;
+            
+            border: 1px solid rgba(113, 109, 240, 0.4); 
+            
+            box-sizing: border-box; 
+            transition: all 0.2s ease;
+        }
+    }
+
+    // .filter-checkbox:hover
+    &:hover {
+        // .filter-checkbox:hover .filter-checkbox__text::before
+        .filter-checkbox__text::before {
+
+        }
+    }
+}
