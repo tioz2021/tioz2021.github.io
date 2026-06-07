@@ -478,7 +478,7 @@
 
 .s3 {
     margin-bottom: 120px;
-    
+
     // .s3__container
     &__container {
         display: flex;
@@ -489,10 +489,6 @@
     &__list {
         width: 100%;
         display: flex;
-        background: url('../../imges/s3-border.svg');
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
         min-height: 248px;
     }
 
@@ -518,5 +514,60 @@
         font-size: 18px;
         line-height: 120%;
         color: var(--bodi-2);
+    }
+}
+
+.s4 {
+    margin-bottom: 160px;
+
+    // .s4__container
+    &__container {
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    // .s4__title
+    &__title {
+        font-weight: 400;
+        font-size: 44px;
+        line-height: 120%;
+        text-align: center;
+        color: var(--bodi-1);
+        filter: blur(.4px);
+        text-shadow: inset 0 4px 4px 0 rgba(255, 255, 255, 0.3), 0 2px 4px 0 rgba(115, 102, 235, 0.6);
+        margin-bottom: 54px;
+    }
+
+    // .s4__accordion
+    &__accordion {}
+
+    // .s4__decoration
+    &__decoration {
+        position: absolute;
+    }
+
+    // .s4__decoration--left
+    &__decoration--left {
+        width: 120px;
+        height: 122px;
+        left: 244px;
+        top: -18px;
+    }
+
+    // .s4__decoration--center
+    &__decoration--center {
+        width: 83px;
+        height: 83px;
+        left: 323px;
+        top: 39px;
+    }
+
+    // .s4__decoration--right
+    &__decoration--right {
+        width: 148px;
+        height: 154px;
+        right: 230px;
+        top: -30px;
     }
 }

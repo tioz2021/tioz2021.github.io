@@ -82,3 +82,45 @@
     });
 });
 })();
+
+// acardion
+(() => {
+  // Получаем все элементы аккордеона
+  const accordionItems = document.querySelectorAll(".accordion__item");
+
+  // Добавляем обработчик события для каждого элемента аккордеона
+  accordionItems.forEach((item) => {
+    const header = item.querySelector(".accordion__header");
+    const content = item.querySelector(".accordion__content");
+
+    header.addEventListener("click", () => {
+      // Переключаем класс 'active' для заголовка текущего элемента
+      header.classList.toggle("active");
+
+      // Закрываем все другие элементы аккордеона
+      accordionItems.forEach((otherItem) => {
+        if (otherItem !== item) {
+          otherItem
+            .querySelector(".accordion__header")
+            .classList.remove("active");
+          otherItem.querySelector(".accordion__content").style.maxHeight = "0";
+          otherItem.querySelector(".accordion__content").style.paddingBottom =
+            "0px";
+        }
+      });
+
+      if (header.classList.contains("active")) {
+        const textHeight = content.scrollHeight;
+        const extraSpace = getComputedStyle(content).getPropertyValue('--extra-space') || '36px';
+        const paddingBottom = getComputedStyle(content).getPropertyValue('--content-padding') || '36px';
+        
+        content.style.maxHeight = `calc(${textHeight}px + ${extraSpace})`;
+        content.style.paddingBottom = paddingBottom;
+      } else {
+          content.style.maxHeight = "0";
+          content.style.paddingBottom = "0";
+      }
+
+    });
+  });
+})();

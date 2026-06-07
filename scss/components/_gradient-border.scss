@@ -1,0 +1,48 @@
+.gradient-border {
+    position: relative;
+    border-radius: 12px;
+
+    // .gradient-border::before
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        border-radius: 16px;
+
+        padding: 2px;
+
+        -webkit-mask:
+            linear-gradient(#fff 0 0) content-box,
+            linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+
+        pointer-events: none;
+
+        z-index: 1;
+    }
+
+    // .gradient-border--right
+    &--right {
+
+        // .gradient-border--right::before
+        &::before {
+            inset: 0 0 0 auto; /* Прижимаем к правому краю */
+            width: 2px;
+            padding: 0;
+            -webkit-mask: none;
+            mask-composite: unset;
+            border-radius: 0 12px 12px 0;
+            z-index: -1;
+        }
+    }
+}
+
+.gradient-border--base-color {
+
+    // .gradient-border--base-color::before
+    &::before {
+         /* Твой градиент для обводки */
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.03) 100%);   
+    }
+}
