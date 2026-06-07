@@ -1,4 +1,6 @@
 html {
+    scroll-behavior: smooth;
+    
     /* Для Chrome, Safari, Edge и новых версий Opera */
     &::-webkit-scrollbar {
         display: none;

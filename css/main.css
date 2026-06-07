@@ -410,6 +410,7 @@ template {
   font-style: normal;
 }
 html {
+  scroll-behavior: smooth;
   /* Для Chrome, Safari, Edge и новых версий Opera */
 }
 html::-webkit-scrollbar {
