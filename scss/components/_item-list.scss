@@ -8,12 +8,26 @@
     &__item {
         border-radius: 12px;
         width: 308px;
-        height: 388px;
-        background-image: url('../../imges/items/item-bg.svg');
+        min-height: 388px;
         box-sizing: border-box;
         padding: 8px;
         position: relative;
+        overflow: hidden;
+        cursor: pointer;
         // margin-bottom: 16px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 386px;
+            background: url('../../imges/items/item-bg.svg') no-repeat center;
+            background-size: cover;
+            z-index: -1;
+        }
     }
 
     // .item-list__item-mark-wrp

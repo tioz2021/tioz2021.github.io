@@ -598,6 +598,16 @@
         margin-bottom: 16px;
     }
 
+    // .footer__top-decor
+    &__top-decor {
+        width: 412px;
+        height: 159px;
+        position: absolute;
+        top: -84px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
     // .footer__main-logo
     &__main-logo {}
 
@@ -771,7 +781,7 @@
 
         // .footer__decoration--right
         &--right {
-            right: 300px;
+            right: -300px;
             filter: blur(360px);
             background: var(--dop-2);
             opacity: 0.2;
