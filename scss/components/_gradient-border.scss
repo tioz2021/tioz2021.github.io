@@ -42,7 +42,16 @@
 
     // .gradient-border--base-color::before
     &::before {
-         /* Твой градиент для обводки */
         background: linear-gradient(135deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.03) 100%);   
+    }
+}
+
+.gradient-border--menu{
+
+    // .gradient-border--menu::before
+    &::before {
+        padding: 1px;
+        border-radius: 30px;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.3) 100%);
     }
 }
