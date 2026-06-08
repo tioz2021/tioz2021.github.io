@@ -14,7 +14,7 @@
     // .fs-wrp::before
     &::before {
         content: '';
-        width: 1920px;
+        width: 100%;
         height: 360px;
         position: absolute;
         left: 50%;
@@ -35,7 +35,7 @@
     // .fs::after
     &::after {
         content: '';
-        width: 1920px;
+        width: 100%;
         height: 300px;
         position: absolute;
         left: 50%;
@@ -343,7 +343,7 @@
     &__decoradion-1 {
         width: 756px;
         height: 240px;
-        left: -44px;
+        left: -365px;
         bottom: 53px;
     }
 
@@ -351,7 +351,7 @@
     &__decoradion-2 {
         width: 755px;
         height: 240px;
-        right: -62px;
+        right: -384px;
         bottom: 6px;
     }
 }

@@ -956,6 +956,10 @@ a {
   line-height: 120%;
   text-align: center;
 }
+.item-list__item-mark-item span {
+  position: relative;
+  top: -2px;
+}
 .item-list__item-mark-item--black {
   color: var(--bodi-1);
   background: var(--bg-1-page);
@@ -1268,7 +1272,7 @@ a {
 }
 .fs-wrp::before {
   content: "";
-  width: 1920px;
+  width: 100%;
   height: 360px;
   position: absolute;
   left: 50%;
@@ -1287,7 +1291,7 @@ a {
 }
 .fs::after {
   content: "";
-  width: 1920px;
+  width: 100%;
   height: 300px;
   position: absolute;
   left: 50%;
@@ -1525,13 +1529,13 @@ a {
 .fs__decoradion-1 {
   width: 756px;
   height: 240px;
-  left: -44px;
+  left: -365px;
   bottom: 53px;
 }
 .fs__decoradion-2 {
   width: 755px;
   height: 240px;
-  right: -62px;
+  right: -384px;
   bottom: 6px;
 }
 

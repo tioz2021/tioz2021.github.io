@@ -53,6 +53,11 @@
         font-size: 16px;
         line-height: 120%;
         text-align: center;
+
+        span{
+            position: relative;
+            top: -2px;
+        }
     }
 
     // .item-list__item-mark-item--black
