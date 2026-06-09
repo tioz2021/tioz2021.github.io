@@ -168,36 +168,10 @@
 
 .filter-form__btn {
     width: 100%;
+    height: 58px;
     background-color: unset;
     border: unset;
     cursor: pointer;
-
-    // .filter-form__btn .main-btn__light
-    .main-btn__light {
-        width: 608px;
-        height: 24px;
-        filter: blur(36px);
-        background: radial-gradient(1063.72% 629.78% at -29.33% 100.98%, #1450d2 0%, #d33759 5.22%, #4a78cf 11%, #214ba4 14.75%, #4729ee 19.39%, #497ded 28.5%, #fa7c9f 46%, #687ef0 56%, #6968e9 63.5%, #143ad2 68.5%, #fa6aa8 78.5%, #2735ea 85%, #2ba7e5 93%, #0e3eb8 100%);
-    }
-
-    // .filter-form__btn .main-btn__shadow
-    .main-btn__shadow {
-        border-radius: 12px;
-        width: 632px;
-        height: 44px;
-    }
-
-    // .filter-form__btn .main-btn__bg
-    .main-btn__bg {
-        background: unset;
-        backdrop-filter: unset;
-    }
-
-    // .filter-form__btn .main-btn__icon
-    .main-btn__icon {
-        width: 24px;
-        height: 24px;
-    }
 }
 
 .filter-checkbox {

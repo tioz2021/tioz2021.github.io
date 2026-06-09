@@ -129,21 +129,14 @@
 (() => {
     const mainImgContainer = document.querySelector('.main-item__img-box-main-img');
     const secondaryImgList = document.querySelectorAll('.main-item__img-box-secondary-img');
-
-    // Находим саму картинку внутри главного контейнера
     const mainImg = mainImgContainer ? mainImgContainer.querySelector('img') : null;
-
-    // Проверяем, нашлись ли элементы на странице, чтобы JS не падал в ошибку
     if (!mainImg || secondaryImgList.length === 0) return;
 
-    // Перебираем список миниатюр
     secondaryImgList.forEach(item => {
         item.addEventListener('click', () => {
-            // Ищем картинку внутри кликнутой миниатюры
             const clickedImg = item.querySelector('img');
             
             if (clickedImg) {
-                // Меняем путь (src) и альт (alt) главной картинки на данные из миниатюры
                 mainImg.src = clickedImg.src;
                 mainImg.alt = clickedImg.alt;
             }

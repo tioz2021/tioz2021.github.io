@@ -1,0 +1,204 @@
+.add-fb__main-form-wrp {}
+
+
+.add-fb-form {
+    width: 512px;
+    height: 556px;
+    border-radius: 12px;
+    // backdrop-filter: blur(24px);
+    // background: linear-gradient(135deg, rgba(30, 25, 65, 0.1) 0%, rgba(26, 26, 66, 0.3) 100%);
+
+    box-sizing: border-box;
+    padding: 24px;
+    padding-bottom: 44px;
+
+    background-image: url('../../imges/items/form-bg.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    // .add-fb-form__top
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 21px;
+    }
+
+    // .add-fb-form__rating-text-wrp
+    &__rating-text-wrp {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+    // .add-fb-form__rating-text
+    &__rating-text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 120%;
+        color: var(--bodi-2);
+    }
+
+    // .add-fb-form__rating-num
+    &__rating-num {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 120%;
+        color: var(--bodi-1);
+    }
+
+    // .add-fb-form__rating-star-list
+    &__rating-star-list {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+    // .add-fb-form__rating-star-icon
+    &__rating-star-icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    // .add-fb-form__form
+    &__form {}
+
+    // .add-fb-form__field
+    &__field {
+        margin-bottom: 16px;
+        height: 60px;
+
+        overflow: hidden;
+        box-sizing: border-box;
+        padding: 16px;
+        backdrop-filter: blur(24px);
+        background: var(--bg-1-page);
+
+        // .add-fb-form__field--text-area
+        &--text-area {
+            height: 148px;
+        }
+
+        // .add-fb-form__field--error
+        &--error {
+            border: 1px solid var(--dop-2);
+
+            &::before {
+                visibility: hidden;
+            }
+        }
+
+        /* СТИЛИЗАЦИЯ СКРОЛЛБАРА */
+        &::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: transparent;
+            margin: 8px 0;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 100px;
+            transition: background 0.2s ease;
+
+            &:hover {
+                background: rgba(255, 255, 255, 0.3);
+            }
+        }
+
+        /* Поддержка для браузера Firefox */
+        scrollbar-width: thin;
+        scrollbar-color: rgba(255, 255, 255, 0.15) transparent;
+    }
+
+    // .add-fb-form__input
+    &__input {
+        width: 100%;
+        height: 100%;
+
+        background-color: unset;
+        border: unset;
+        outline: unset;
+
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 120%;
+        color: var(--bodi-1);
+
+        // .add-fb-form__input::placeholder 
+        &::placeholder {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 120%;
+            color: var(--bodi-2);
+        }
+    }
+
+    // .add-fb-form__textarea
+    &__textarea {
+        width: 100%;
+        resize: none;
+
+        background-color: unset;
+        border: unset;
+        outline: unset;
+
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 120%;
+        color: var(--bodi-1);
+
+        // .add-fb-form__textarea::placeholder 
+        &::placeholder {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 120%;
+            color: var(--bodi-2);
+        }
+    }
+
+    // .add-fb-form__submit-btn
+    &__submit-btn {
+        width: 100%;
+        height: 59px;
+        margin-bottom: 18px;
+        border-radius: 12px;
+        margin-top: 7px;
+    }
+
+    // .add-fb-form__agreement
+    &__agreement {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+    // .add-fb-form__agreement-icon
+    &__agreement-icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    // .add-fb-form__agreement-text
+    &__agreement-text {
+        max-width: 436px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+        color: var(--bodi-2);
+    }
+
+    // .add-fb-form__agreement-link
+    &__agreement-link {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+        color: var(--bodi-2);
+
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+    }
+}

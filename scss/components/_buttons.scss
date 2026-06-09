@@ -7,6 +7,15 @@
     justify-content: center;
     gap: 8px;
 
+    // .main-btn:hover
+    &:hover {
+
+        // .main-btn:hover .main-btn__light
+        .main-btn__light {
+            filter: blur(18px);
+        }
+    }
+
     // .main-btn--pink
     &--pink {
 
@@ -48,7 +57,8 @@
         top: 26px;
         left: 50%;
         transform: translateX(-50%);
-        filter: blur(24px);
+        transition: all 250ms ease-in-out;
+        filter: blur(12px);
         background: #7366eb;
         z-index: -1;
     }
