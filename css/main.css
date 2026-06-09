@@ -660,14 +660,11 @@ svg path {
   position: relative;
   padding: 16px;
   padding-bottom: 22px;
-  background-image: url("../../imges/info-box-bg.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
+  backdrop-filter: blur(24px);
+  background: rgba(5, 7, 40, 0.6);
   box-sizing: border-box;
   border-radius: 12px;
   width: 324px;
-  height: 218px;
 }
 .info-box__title {
   font-weight: 400;
@@ -701,6 +698,7 @@ svg path {
   height: 100%;
 }
 .video-box__title {
+  max-width: 324px;
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 24px;
@@ -1311,6 +1309,10 @@ svg path {
   width: 632px;
   height: 304px;
   margin-bottom: 24px;
+  overflow: hidden;
+}
+.main-item__img-box-main-img img {
+  object-fit: cover;
 }
 .main-item__img-box-secondary-imgs {
   width: 100%;
@@ -1323,6 +1325,10 @@ svg path {
   border-radius: 12px;
   width: 200px;
   height: 96px;
+  overflow: hidden;
+}
+.main-item__img-box-secondary-img img {
+  object-fit: cover;
 }
 .main-item__info-box {
   width: 572px;
@@ -1385,6 +1391,7 @@ svg path {
   margin-right: 8px;
 }
 .main-item__info-list-item-text {
+  max-width: 243px;
   font-weight: 400;
   font-size: 24px;
   line-height: 120%;
@@ -2057,6 +2064,7 @@ svg path {
   min-height: 248px;
 }
 .s3__list-item {
+  width: 25%;
   box-sizing: border-box;
   padding: 16px;
   padding-top: 18px;
@@ -2422,11 +2430,12 @@ svg path {
 }
 .vacancy__list {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 16px;
 }
 .vacancy__list-item {
+  width: 308px;
   border-radius: 12px;
   box-sizing: border-box;
   padding: 16px;

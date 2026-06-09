@@ -176,13 +176,14 @@
     // .vacancy__list
     &__list {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-between;
         gap: 16px;
     }
 
     // .vacancy__list-item
     &__list-item {
+        width: 308px;
         border-radius: 12px;
         box-sizing: border-box;
         padding: 16px;

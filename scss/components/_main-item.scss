@@ -22,6 +22,12 @@
         width: 632px;
         height: 304px;
         margin-bottom: 24px;
+        overflow: hidden;
+
+        // .main-item__img-box-main-img img
+        img {
+            object-fit: cover;
+        }
     }
 
     // .main-item__img-box-secondary-imgs
@@ -38,6 +44,12 @@
         border-radius: 12px;
         width: 200px;
         height: 96px;
+        overflow: hidden;
+
+        // .main-item__img-box-secondary-img img
+        img {
+            object-fit: cover;
+        }
     }
 
     // .main-item__info-box
@@ -125,6 +137,7 @@
 
     // .main-item__info-list-item-text
     &__info-list-item-text {
+        max-width: 243px;
         font-weight: 400;
         font-size: 24px;
         line-height: 120%;
