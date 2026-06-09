@@ -464,16 +464,19 @@ svg path {
 .default-link {
   display: inline-block;
   cursor: pointer;
-  background-image: linear-gradient(90deg, var(--bodi-1) 0%, var(--bodi-1) 50%, #1450d2 60%, #4729ee 70%, #fa7c9f 80%, #687ef0 90%, #fa6aa8 100%);
-  background-size: 200% 100%;
-  background-position: 0% 0%;
+  background-image: linear-gradient(90deg, #1450d2 0%, #4729ee 30%, #fa7c9f 55%, #687ef0 75%, #fa6aa8 100%);
+  background-size: 100% 100%;
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: background-position 0.3s ease-out;
+  color: var(--bodi-1);
+  -webkit-text-fill-color: var(--bodi-1);
+  transition: -webkit-text-fill-color 0.6s ease, color 0.6s ease;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .default-link:hover {
-  background-position: 100% 0%;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 .main-btn {
