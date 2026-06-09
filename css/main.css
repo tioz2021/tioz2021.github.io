@@ -1257,6 +1257,10 @@ a {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.03) 100%);
 }
 
+.gradient-border--vacancy::before {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.03) 100%);
+}
+
 .main-item {
   margin-bottom: 60px;
 }
@@ -1269,6 +1273,7 @@ a {
   width: 632px;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 .main-item__img-box-main-img {
   border-radius: 12px;
@@ -2070,4 +2075,102 @@ a {
   line-height: 120%;
   text-align: right;
   color: var(--bodi-2);
+}
+
+.about-studio {
+  margin-bottom: 71px;
+}
+.about-studio__container {
+  display: flex;
+  flex-direction: column;
+}
+.about-studio__title-wrp {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 23px;
+}
+.about-studio__title-icon {
+  width: 24px;
+  height: 24px;
+}
+.about-studio__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  color: var(--bodi-1);
+}
+.about-studio__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  color: var(--bodi-2);
+}
+
+.vacancy {
+  margin-bottom: 60px;
+}
+.vacancy__container {
+  display: flex;
+  flex-direction: column;
+}
+.vacancy__title-wrp {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 31px;
+}
+.vacancy__icon {
+  width: 24px;
+  height: 24px;
+}
+.vacancy__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  color: var(--bodi-1);
+}
+.vacancy__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.vacancy__list-item {
+  border-radius: 12px;
+  box-sizing: border-box;
+  padding: 16px;
+}
+.vacancy__list-item-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  color: var(--bodi-1);
+  margin-bottom: 16px;
+}
+.vacancy__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  color: var(--bodi-2);
+  margin-bottom: 21px;
+}
+.vacancy__link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.vacancy__link-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  color: var(--bodi-2);
+}
+.vacancy__link-icon {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  top: 1px;
 }/*# sourceMappingURL=main.css.map */
