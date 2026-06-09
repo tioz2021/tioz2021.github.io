@@ -2288,6 +2288,18 @@ svg path {
   opacity: 0.25;
 }
 
+.item-page-top-light {
+  position: absolute;
+  top: -160px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 560px;
+  filter: blur(360px);
+  background: var(--dop-2);
+  opacity: 0.15;
+}
+
 .header--item-page {
   padding-bottom: 24px;
 }
