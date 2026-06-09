@@ -21,3 +21,7 @@ body {
 a {
     text-decoration: unset;
 }
+
+svg path {
+    transition: fill 250ms ease;
+}

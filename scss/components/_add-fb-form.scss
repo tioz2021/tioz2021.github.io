@@ -200,5 +200,12 @@
 
         text-decoration: underline;
         text-decoration-skip-ink: none;
+
+        transition: color 250ms ease-in-out;
+
+        // .add-fb-form__agreement-link:hover
+        &:hover {
+            color: var(--bodi-1);
+        }
     }
 }

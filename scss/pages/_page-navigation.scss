@@ -51,6 +51,20 @@
     &__back-link {
         display: flex;
         align-items: center;
+
+        // .page-navigation__back-link:hover
+        &:hover {
+
+            // .page-navigation__back-link:hover .page-navigation__back-link-text
+            .page-navigation__back-link-text {
+                color: var(--bodi-1);
+            }
+            
+            // .page-navigation__back-link:hover path
+            path {
+                fill: var(--bodi-1);
+            }
+        }
     }
 
     // .page-navigation__back-link-icon
@@ -183,15 +197,29 @@
         display: flex;
         align-items: center;
         gap: 4px;
+
+        // .vacancy__link:hover
+        &:hover {
+
+            // .vacancy__link:hover .vacancy__link-text
+            .vacancy__link-text {
+                color: var(--bodi-1);
+            }
+            // .vacancy__link:hover path
+            path {
+                fill: var(--bodi-1);
+            }
+        }
     }
 
     // .vacancy__link-text
     &__link-text {
-
         font-weight: 400;
         font-size: 18px;
         line-height: 120%;
         color: var(--bodi-2);
+        
+        transition: color 250ms ease-in-out;
     }
 
     // .vacancy__link-icon
@@ -359,6 +387,12 @@
         line-height: 120%;
         text-align: center;
         color: var(--bodi-2);
+        transition: color 250ms ease-in-out;
+
+        // .add-fb__list-more-link:hover
+        &:hover {
+            color: var(--bodi-1);
+        }
         
         // .add-fb__list-more-link::after
         &::after {

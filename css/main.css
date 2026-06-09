@@ -433,6 +433,10 @@ a {
   text-decoration: unset;
 }
 
+svg path {
+  transition: fill 250ms ease;
+}
+
 .title-neon {
   font-weight: 400;
   font-size: 44px;
@@ -455,6 +459,21 @@ a {
   color: rgba(115, 102, 235, 0.8);
   filter: blur(1px);
   pointer-events: none;
+}
+
+.default-link {
+  display: inline-block;
+  cursor: pointer;
+  background-image: linear-gradient(90deg, var(--bodi-1) 0%, var(--bodi-1) 50%, #1450d2 60%, #4729ee 70%, #fa7c9f 80%, #687ef0 90%, #fa6aa8 100%);
+  background-size: 200% 100%;
+  background-position: 0% 0%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: background-position 0.3s ease-out;
+}
+.default-link:hover {
+  background-position: 100% 0%;
 }
 
 .main-btn {
@@ -1617,6 +1636,10 @@ a {
   color: var(--bodi-2);
   text-decoration: underline;
   text-decoration-skip-ink: none;
+  transition: color 250ms ease-in-out;
+}
+.add-fb-form__agreement-link:hover {
+  color: var(--bodi-1);
 }
 
 .fs-wrp {
@@ -1993,6 +2016,9 @@ a {
   height: 44px;
   position: relative;
 }
+.s2__btn:hover .s2__btn-text {
+  color: var(--bodi-1);
+}
 .s2__btn-text {
   position: absolute;
   left: 50%;
@@ -2004,6 +2030,7 @@ a {
   line-height: 120%;
   text-align: center;
   color: var(--bodi-2);
+  transition: color 250ms ease-in-out;
 }
 .s2__btn-bg {
   backdrop-filter: blur(24px);
@@ -2163,6 +2190,13 @@ a {
   color: var(--bodi-2);
   display: flex;
   align-items: center;
+  transition: color 250ms ease-in-out;
+}
+.footer__menu-list-link:hover {
+  color: var(--bodi-1);
+}
+.footer__menu-list-link:hover .footer__menu-list-link-icon path {
+  fill: var(--bodi-1);
 }
 .footer__menu-list-link-icon {
   width: 16px;
@@ -2187,6 +2221,10 @@ a {
   font-size: 16px;
   line-height: 120%;
   color: var(--bodi-2);
+  transition: color 250ms ease-in-out;
+}
+.footer__info-list-link:hover {
+  color: var(--bodi-1);
 }
 .footer__info-copyright {
   font-weight: 400;
@@ -2209,6 +2247,12 @@ a {
   display: flex;
   align-items: center;
   cursor: pointer;
+}
+.footer__end-arrow-wrp:hover .footer__end-arrow-text {
+  color: var(--bodi-2);
+}
+.footer__end-arrow-wrp:hover path {
+  fill: var(--bodi-2);
 }
 .footer__end-arrow-text {
   font-weight: 400;
@@ -2284,6 +2328,12 @@ a {
 .page-navigation__back-link {
   display: flex;
   align-items: center;
+}
+.page-navigation__back-link:hover .page-navigation__back-link-text {
+  color: var(--bodi-1);
+}
+.page-navigation__back-link:hover path {
+  fill: var(--bodi-1);
 }
 .page-navigation__back-link-icon {
   width: 16px;
@@ -2385,11 +2435,18 @@ a {
   align-items: center;
   gap: 4px;
 }
+.vacancy__link:hover .vacancy__link-text {
+  color: var(--bodi-1);
+}
+.vacancy__link:hover path {
+  fill: var(--bodi-1);
+}
 .vacancy__link-text {
   font-weight: 400;
   font-size: 18px;
   line-height: 120%;
   color: var(--bodi-2);
+  transition: color 250ms ease-in-out;
 }
 .vacancy__link-icon {
   width: 16px;
@@ -2509,6 +2566,10 @@ a {
   line-height: 120%;
   text-align: center;
   color: var(--bodi-2);
+  transition: color 250ms ease-in-out;
+}
+.add-fb__list-more-link:hover {
+  color: var(--bodi-1);
 }
 .add-fb__list-more-link::after {
   content: "";

@@ -21,7 +21,7 @@
             <nav class="header__menu main-menu gradient-border gradient-border--menu">
                 <ul class="main-menu__list">
                     <li class="main-menu__item">
-                        <a class="main-menu__link" href="#">
+                        <a class="main-menu__link default-link  " href="#">
                             <div class="main-menu__icon img-wrp">
                                 <img src="imges/icons/header/ic1.svg" alt="icon">
                             </div>
@@ -29,7 +29,7 @@
                         </a>
                     </li>
                     <li class="main-menu__item">
-                        <a class="main-menu__link" href="#">
+                        <a class="main-menu__link default-link " href="#">
                             <div class="main-menu__icon img-wrp">
                                 <img src="imges/icons/header/ic2.svg" alt="icon">
                             </div>
@@ -37,7 +37,7 @@
                         </a>
                     </li>
                     <li class="main-menu__item">
-                        <a class="main-menu__link" href="#">
+                        <a class="main-menu__link default-link " href="#">
                             <div class="main-menu__icon img-wrp">
                                 <img src="imges/icons/header/ic3.svg" alt="icon">
                             </div>
@@ -45,7 +45,7 @@
                         </a>
                     </li>
                     <li class="main-menu__item">
-                        <a class="main-menu__link" href="#">
+                        <a class="main-menu__link default-link " href="#">
                             <div class="main-menu__icon img-wrp">
                                 <img src="imges/icons/header/ic4.svg" alt="icon">
                             </div>
@@ -53,7 +53,7 @@
                         </a>
                     </li>
                     <li class="main-menu__item">
-                        <a class="main-menu__link" href="#">
+                        <a class="main-menu__link default-link " href="#">
                             <div class="main-menu__icon img-wrp">
                                 <img src="imges/icons/header/ic5.svg" alt="icon">
                             </div>
@@ -61,7 +61,7 @@
                         </a>
                     </li>
                     <li class="main-menu__item">
-                        <a class="main-menu__link" href="#">
+                        <a class="main-menu__link default-link " href="#">
                             <div class="main-menu__icon img-wrp">
                                 <img src="imges/icons/header/ic6.svg" alt="icon">
                             </div>
@@ -69,7 +69,7 @@
                         </a>
                     </li>
                     <li class="main-menu__item">
-                        <a class="main-menu__link" href="#">
+                        <a class="main-menu__link default-link " href="#">
                             <div class="main-menu__icon img-wrp">
                                 <img src="imges/icons/header/ic7.svg" alt="icon">
                             </div>
@@ -77,7 +77,7 @@
                         </a>
                     </li>
                     <li class="main-menu__item">
-                        <a class="main-menu__link" href="#">
+                        <a class="main-menu__link default-link " href="#">
                             <div class="main-menu__icon img-wrp">
                                 <img src="imges/icons/header/ic8.svg" alt="icon">
                             </div>
@@ -115,7 +115,12 @@
             <div class="page-navigation__back-link-wrp">
                 <a class="page-navigation__back-link" href="index.html">
                     <div class="page-navigation__back-link-icon img-wrp">
-                        <img src="imges/icons/footer-ic.png" alt="icon">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.31923 12.3996C9.11927 12.5901 9.11155 12.9066 9.30199 13.1065C9.49244 13.3065 9.80892 13.3142 10.0089 13.1238L9.66406 12.7617L9.31923 12.3996ZM15.0089 8.36188C15.2089 8.17144 15.2166 7.85495 15.0261 7.65499C14.8357 7.45502 14.5192 7.4473 14.3192 7.63774L14.6641 7.99981L15.0089 8.36188ZM14.3192 8.36178C14.5192 8.55222 14.8357 8.5445 15.0261 8.34454C15.2166 8.14457 15.2089 7.82808 15.0089 7.63764L14.6641 7.99971L14.3192 8.36178ZM10.0089 2.87574C9.80892 2.68529 9.49244 2.69301 9.30199 2.89298C9.11155 3.09294 9.11927 3.40943 9.31923 3.59987L9.66406 3.23781L10.0089 2.87574ZM14.6641 8.49987C14.9402 8.49987 15.1641 8.27601 15.1641 7.99987C15.1641 7.72372 14.9402 7.49987 14.6641 7.49987V7.99987V8.49987ZM1.33073 7.49987C1.05459 7.49987 0.830729 7.72372 0.830729 7.99987C0.830729 8.27601 1.05459 8.49987 1.33073 8.49987V7.99987V7.49987ZM9.66406 12.7617L10.0089 13.1238L15.0089 8.36188L14.6641 7.99981L14.3192 7.63774L9.31923 12.3996L9.66406 12.7617ZM14.6641 7.99971L15.0089 7.63764L10.0089 2.87574L9.66406 3.23781L9.31923 3.59987L14.3192 8.36178L14.6641 7.99971ZM14.6641 7.99987V7.49987L1.33073 7.49987V7.99987V8.49987L14.6641 8.49987V7.99987Z"
+                                fill="#989CCF" />
+                        </svg>
+
                     </div>
                     <span class="page-navigation__back-link-text">Назад</span>
                 </a>
@@ -835,10 +840,12 @@
                             <div class="add-fb-form__field gradient-border gradient-border--form-field">
                                 <input type="text" class="add-fb-form__input" placeholder="Ваше ім'я" required>
                             </div>
-                            <div class="add-fb-form__field add-fb-form__field--error gradient-border gradient-border--form-field">
+                            <div
+                                class="add-fb-form__field add-fb-form__field--error gradient-border gradient-border--form-field">
                                 <input type="text" class="add-fb-form__input" placeholder="Ваша пошта" required>
                             </div>
-                            <div class="add-fb-form__field add-fb-form__field--text-area gradient-border gradient-border--form-field">
+                            <div
+                                class="add-fb-form__field add-fb-form__field--text-area gradient-border gradient-border--form-field">
                                 <textarea class="add-fb-form__textarea" placeholder="Ваш відгук" rows="5"></textarea>
                             </div>
 
@@ -908,7 +915,7 @@
                 <nav class="footer__main-menu main-menu gradient-border gradient-border--menu">
                     <ul class="main-menu__list">
                         <li class="main-menu__item">
-                            <a class="main-menu__link" href="#">
+                            <a class="main-menu__link default-link " href="#">
                                 <div class="main-menu__icon img-wrp">
                                     <img src="imges/icons/header/ic1.svg" alt="icon">
                                 </div>
@@ -916,7 +923,7 @@
                             </a>
                         </li>
                         <li class="main-menu__item">
-                            <a class="main-menu__link" href="#">
+                            <a class="main-menu__link default-link " href="#">
                                 <div class="main-menu__icon img-wrp">
                                     <img src="imges/icons/header/ic2.svg" alt="icon">
                                 </div>
@@ -924,7 +931,7 @@
                             </a>
                         </li>
                         <li class="main-menu__item">
-                            <a class="main-menu__link" href="#">
+                            <a class="main-menu__link default-link " href="#">
                                 <div class="main-menu__icon img-wrp">
                                     <img src="imges/icons/header/ic3.svg" alt="icon">
                                 </div>
@@ -932,7 +939,7 @@
                             </a>
                         </li>
                         <li class="main-menu__item">
-                            <a class="main-menu__link" href="#">
+                            <a class="main-menu__link default-link " href="#">
                                 <div class="main-menu__icon img-wrp">
                                     <img src="imges/icons/header/ic4.svg" alt="icon">
                                 </div>
@@ -940,7 +947,7 @@
                             </a>
                         </li>
                         <li class="main-menu__item">
-                            <a class="main-menu__link" href="#">
+                            <a class="main-menu__link default-link " href="#">
                                 <div class="main-menu__icon img-wrp">
                                     <img src="imges/icons/header/ic5.svg" alt="icon">
                                 </div>
@@ -948,7 +955,7 @@
                             </a>
                         </li>
                         <li class="main-menu__item">
-                            <a class="main-menu__link" href="#">
+                            <a class="main-menu__link default-link " href="#">
                                 <div class="main-menu__icon img-wrp">
                                     <img src="imges/icons/header/ic6.svg" alt="icon">
                                 </div>
@@ -956,7 +963,7 @@
                             </a>
                         </li>
                         <li class="main-menu__item">
-                            <a class="main-menu__link" href="#">
+                            <a class="main-menu__link default-link " href="#">
                                 <div class="main-menu__icon img-wrp">
                                     <img src="imges/icons/header/ic7.svg" alt="icon">
                                 </div>
@@ -964,7 +971,7 @@
                             </a>
                         </li>
                         <li class="main-menu__item">
-                            <a class="main-menu__link" href="#">
+                            <a class="main-menu__link default-link " href="#">
                                 <div class="main-menu__icon img-wrp">
                                     <img src="imges/icons/header/ic8.svg" alt="icon">
                                 </div>
@@ -1000,7 +1007,13 @@
                             <a class="footer__menu-list-link" href="#">
                                 всі міста
                                 <div class="footer__menu-list-link-icon img-wrp">
-                                    <img src="imges/icons/footer-ic.png" alt="icon">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.31923 12.3996C9.11927 12.5901 9.11155 12.9066 9.30199 13.1065C9.49244 13.3065 9.80892 13.3142 10.0089 13.1238L9.66406 12.7617L9.31923 12.3996ZM15.0089 8.36188C15.2089 8.17144 15.2166 7.85495 15.0261 7.65499C14.8357 7.45502 14.5192 7.4473 14.3192 7.63774L14.6641 7.99981L15.0089 8.36188ZM14.3192 8.36178C14.5192 8.55222 14.8357 8.5445 15.0261 8.34454C15.2166 8.14457 15.2089 7.82808 15.0089 7.63764L14.6641 7.99971L14.3192 8.36178ZM10.0089 2.87574C9.80892 2.68529 9.49244 2.69301 9.30199 2.89298C9.11155 3.09294 9.11927 3.40943 9.31923 3.59987L9.66406 3.23781L10.0089 2.87574ZM14.6641 8.49987C14.9402 8.49987 15.1641 8.27601 15.1641 7.99987C15.1641 7.72372 14.9402 7.49987 14.6641 7.49987V7.99987V8.49987ZM1.33073 7.49987C1.05459 7.49987 0.830729 7.72372 0.830729 7.99987C0.830729 8.27601 1.05459 8.49987 1.33073 8.49987V7.99987V7.49987ZM9.66406 12.7617L10.0089 13.1238L15.0089 8.36188L14.6641 7.99981L14.3192 7.63774L9.31923 12.3996L9.66406 12.7617ZM14.6641 7.99971L15.0089 7.63764L10.0089 2.87574L9.66406 3.23781L9.31923 3.59987L14.3192 8.36178L14.6641 7.99971ZM14.6641 7.99987V7.49987L1.33073 7.49987V7.99987V8.49987L14.6641 8.49987V7.99987Z"
+                                            fill="#989CCF" />
+                                    </svg>
+
                                 </div>
                             </a>
                         </li>
@@ -1030,7 +1043,13 @@
                             <a class="footer__menu-list-link" href="#">
                                 всі міста
                                 <div class="footer__menu-list-link-icon img-wrp">
-                                    <img src="imges/icons/footer-ic.png" alt="icon">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.31923 12.3996C9.11927 12.5901 9.11155 12.9066 9.30199 13.1065C9.49244 13.3065 9.80892 13.3142 10.0089 13.1238L9.66406 12.7617L9.31923 12.3996ZM15.0089 8.36188C15.2089 8.17144 15.2166 7.85495 15.0261 7.65499C14.8357 7.45502 14.5192 7.4473 14.3192 7.63774L14.6641 7.99981L15.0089 8.36188ZM14.3192 8.36178C14.5192 8.55222 14.8357 8.5445 15.0261 8.34454C15.2166 8.14457 15.2089 7.82808 15.0089 7.63764L14.6641 7.99971L14.3192 8.36178ZM10.0089 2.87574C9.80892 2.68529 9.49244 2.69301 9.30199 2.89298C9.11155 3.09294 9.11927 3.40943 9.31923 3.59987L9.66406 3.23781L10.0089 2.87574ZM14.6641 8.49987C14.9402 8.49987 15.1641 8.27601 15.1641 7.99987C15.1641 7.72372 14.9402 7.49987 14.6641 7.49987V7.99987V8.49987ZM1.33073 7.49987C1.05459 7.49987 0.830729 7.72372 0.830729 7.99987C0.830729 8.27601 1.05459 8.49987 1.33073 8.49987V7.99987V7.49987ZM9.66406 12.7617L10.0089 13.1238L15.0089 8.36188L14.6641 7.99981L14.3192 7.63774L9.31923 12.3996L9.66406 12.7617ZM14.6641 7.99971L15.0089 7.63764L10.0089 2.87574L9.66406 3.23781L9.31923 3.59987L14.3192 8.36178L14.6641 7.99971ZM14.6641 7.99987V7.49987L1.33073 7.49987V7.99987V8.49987L14.6641 8.49987V7.99987Z"
+                                            fill="#989CCF" />
+                                    </svg>
+
                                 </div>
                             </a>
                         </li>
@@ -1060,7 +1079,13 @@
                             <a class="footer__menu-list-link" href="#">
                                 всі міста
                                 <div class="footer__menu-list-link-icon img-wrp">
-                                    <img src="imges/icons/footer-ic.png" alt="icon">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.31923 12.3996C9.11927 12.5901 9.11155 12.9066 9.30199 13.1065C9.49244 13.3065 9.80892 13.3142 10.0089 13.1238L9.66406 12.7617L9.31923 12.3996ZM15.0089 8.36188C15.2089 8.17144 15.2166 7.85495 15.0261 7.65499C14.8357 7.45502 14.5192 7.4473 14.3192 7.63774L14.6641 7.99981L15.0089 8.36188ZM14.3192 8.36178C14.5192 8.55222 14.8357 8.5445 15.0261 8.34454C15.2166 8.14457 15.2089 7.82808 15.0089 7.63764L14.6641 7.99971L14.3192 8.36178ZM10.0089 2.87574C9.80892 2.68529 9.49244 2.69301 9.30199 2.89298C9.11155 3.09294 9.11927 3.40943 9.31923 3.59987L9.66406 3.23781L10.0089 2.87574ZM14.6641 8.49987C14.9402 8.49987 15.1641 8.27601 15.1641 7.99987C15.1641 7.72372 14.9402 7.49987 14.6641 7.49987V7.99987V8.49987ZM1.33073 7.49987C1.05459 7.49987 0.830729 7.72372 0.830729 7.99987C0.830729 8.27601 1.05459 8.49987 1.33073 8.49987V7.99987V7.49987ZM9.66406 12.7617L10.0089 13.1238L15.0089 8.36188L14.6641 7.99981L14.3192 7.63774L9.31923 12.3996L9.66406 12.7617ZM14.6641 7.99971L15.0089 7.63764L10.0089 2.87574L9.66406 3.23781L9.31923 3.59987L14.3192 8.36178L14.6641 7.99971ZM14.6641 7.99987V7.49987L1.33073 7.49987V7.99987V8.49987L14.6641 8.49987V7.99987Z"
+                                            fill="#989CCF" />
+                                    </svg>
+
                                 </div>
                             </a>
                         </li>
@@ -1090,7 +1115,13 @@
                             <a class="footer__menu-list-link" href="#">
                                 всі міста
                                 <div class="footer__menu-list-link-icon img-wrp">
-                                    <img src="imges/icons/footer-ic.png" alt="icon">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.31923 12.3996C9.11927 12.5901 9.11155 12.9066 9.30199 13.1065C9.49244 13.3065 9.80892 13.3142 10.0089 13.1238L9.66406 12.7617L9.31923 12.3996ZM15.0089 8.36188C15.2089 8.17144 15.2166 7.85495 15.0261 7.65499C14.8357 7.45502 14.5192 7.4473 14.3192 7.63774L14.6641 7.99981L15.0089 8.36188ZM14.3192 8.36178C14.5192 8.55222 14.8357 8.5445 15.0261 8.34454C15.2166 8.14457 15.2089 7.82808 15.0089 7.63764L14.6641 7.99971L14.3192 8.36178ZM10.0089 2.87574C9.80892 2.68529 9.49244 2.69301 9.30199 2.89298C9.11155 3.09294 9.11927 3.40943 9.31923 3.59987L9.66406 3.23781L10.0089 2.87574ZM14.6641 8.49987C14.9402 8.49987 15.1641 8.27601 15.1641 7.99987C15.1641 7.72372 14.9402 7.49987 14.6641 7.49987V7.99987V8.49987ZM1.33073 7.49987C1.05459 7.49987 0.830729 7.72372 0.830729 7.99987C0.830729 8.27601 1.05459 8.49987 1.33073 8.49987V7.99987V7.49987ZM9.66406 12.7617L10.0089 13.1238L15.0089 8.36188L14.6641 7.99981L14.3192 7.63774L9.31923 12.3996L9.66406 12.7617ZM14.6641 7.99971L15.0089 7.63764L10.0089 2.87574L9.66406 3.23781L9.31923 3.59987L14.3192 8.36178L14.6641 7.99971ZM14.6641 7.99987V7.49987L1.33073 7.49987V7.99987V8.49987L14.6641 8.49987V7.99987Z"
+                                            fill="#989CCF" />
+                                    </svg>
+
                                 </div>
                             </a>
                         </li>
@@ -1126,7 +1157,12 @@
                 <a href="#" class="footer__end-arrow-wrp">
                     <span class="footer__end-arrow-text">вгору</span>
                     <div class="footer__end-arrow img-wrp">
-                        <img src="imges/icons/arrow-icon-top.png" alt="icon">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.3957 6.68077C12.5862 6.88073 12.9027 6.88845 13.1026 6.69801C13.3026 6.50756 13.3103 6.19108 13.1199 5.99111L12.7578 6.33594L12.3957 6.68077ZM8.35798 0.991111C8.16753 0.791146 7.85105 0.783426 7.65108 0.973869C7.45112 1.16431 7.4434 1.4808 7.63384 1.68077L7.99591 1.33594L8.35798 0.991111ZM8.35787 1.68077C8.54832 1.4808 8.5406 1.16431 8.34063 0.97387C8.14067 0.783427 7.82418 0.791146 7.63374 0.991111L7.99581 1.33594L8.35787 1.68077ZM2.87183 5.99111C2.68139 6.19108 2.68911 6.50756 2.88907 6.69801C3.08904 6.88845 3.40553 6.88073 3.59597 6.68077L3.2339 6.33594L2.87183 5.99111ZM8.49596 1.33594C8.49596 1.0598 8.2721 0.835939 7.99596 0.835939C7.71982 0.835939 7.49596 1.0598 7.49596 1.33594L7.99596 1.33594L8.49596 1.33594ZM7.49596 14.6693C7.49596 14.9454 7.71982 15.1693 7.99596 15.1693C8.2721 15.1693 8.49596 14.9454 8.49596 14.6693L7.99596 14.6693L7.49596 14.6693ZM12.7578 6.33594L13.1199 5.99111L8.35798 0.991111L7.99591 1.33594L7.63384 1.68077L12.3957 6.68077L12.7578 6.33594ZM7.99581 1.33594L7.63374 0.991111L2.87183 5.99111L3.2339 6.33594L3.59597 6.68077L8.35787 1.68077L7.99581 1.33594ZM7.99596 1.33594L7.49596 1.33594L7.49596 14.6693L7.99596 14.6693L8.49596 14.6693L8.49596 1.33594L7.99596 1.33594Z"
+                                fill="white" />
+                        </svg>
+
                     </div>
                 </a>
             </div>
