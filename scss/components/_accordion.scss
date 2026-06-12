@@ -1,32 +1,32 @@
 .accordion {
-    --content-padding: 36px;
-    --extra-space: 36px;
+    --content-padding: 36rem;
+    --extra-space: 36rem;
 
     // @media screen and (max-width: $tab-media) {
-    //     --content-padding: 16px;
-    //     --extra-space: 16px;
+    //     --content-padding: 16rem;
+    //     --extra-space: 16rem;
     // }
 
     // @media screen and (max-width: $mob-media) {
-    //     --content-padding: 12px;
-    //     --extra-space: 12px;
+    //     --content-padding: 12rem;
+    //     --extra-space: 12rem;
     // }
 }
 
 
 .accordion {
-    border-radius: 12px;
-    width: 632px;
+    border-radius: 12rem;
+    width: 632rem;
 
     // .accordion__item
     &__item {
         box-sizing: border-box;
-        margin-bottom: 12px;
+        margin-bottom: 12rem;
         cursor: pointer;
 
         // .accordion__item.active .accordion__content
         &.active .accordion__content {
-            max-height: 1000px;
+            max-height: 1000rem;
             // transition: all 0.5s ease-in-out;
         }
 
@@ -44,20 +44,20 @@
         justify-content: space-between;
         // transition: var(--base-anim-d);
 
-        padding-left: 24px;
-        padding-right: 24px;
-        padding-top: 9px;
-        padding-bottom: 16px;
+        padding-left: 24rem;
+        padding-right: 24rem;
+        padding-top: 9rem;
+        padding-bottom: 16rem;
 
 
         // @media screen and (max-width: $tab-media) {
-        //     padding-top: 16px;
-        //     padding-bottom: 16px;
+        //     padding-top: 16rem;
+        //     padding-bottom: 16rem;
         // }
 
         // @media screen and (max-width: $mob-media) {
-        //     padding-top: 12px;
-        //     padding-bottom: 12px;
+        //     padding-top: 12rem;
+        //     padding-bottom: 12rem;
         // }
 
         // .accordion__header:hover
@@ -71,12 +71,12 @@
 
         // .accordion__header.active
         &.active {
-            padding-bottom: 8px;
+            padding-bottom: 8rem;
 
             // @media screen and (max-width: $tab-media) {}
 
             // @media screen and (max-width: $mob-media) {
-            //     padding-bottom: 12px;
+            //     padding-bottom: 12rem;
             // }
 
             // .accordion__header.active .accordion__icon
@@ -88,34 +88,34 @@
 
     // .accordion__title
     &__title {
-        max-width: 530px;
-        min-height: 44px;
+        max-width: 530rem;
+        min-height: 44rem;
         display: flex;
         align-items: center;
 
         font-weight: 400;
-        font-size: 24px;
+        font-size: 24rem;
         line-height: 120%;
         color: var(--bodi-1);
 
         transition: all 350ms ease-in-out;
 
         // @media screen and (max-width: $tab-media) {
-        //     font-size: 24px;
+        //     font-size: 24rem;
         //     min-height: unset;
-        //     max-width: 644px;
+        //     max-width: 644rem;
         // }
 
         // @media screen and (max-width: $mob-media) {
-        //     font-size: 18px;
-        //     max-width: 292px;
+        //     font-size: 18rem;
+        //     max-width: 292rem;
         // }
     }
 
     // .accordion__icon
     &__icon {
-        width: 36px;
-        height: 36px;
+        width: 36rem;
+        height: 36rem;
         border-radius: 50%;
 
         will-change: transform;
@@ -123,13 +123,13 @@
 
          /* Твой градиент для обводки */
         // @media screen and (max-width: $tab-media) {
-        //     width: 36px;
-        //     height: 34px;
+        //     width: 36rem;
+        //     height: 34rem;
         // }
 
         // @media screen and (max-width: $mob-media) {
-        //     width: 24px;
-        //     height: 24px;
+        //     width: 24rem;
+        //     height: 24rem;
         // }
     }
 
@@ -139,8 +139,8 @@
         box-sizing: border-box;
         padding-bottom: 0;
 
-        padding-left: 24px;
-        padding-right: 24px;
+        padding-left: 24rem;
+        padding-right: 24rem;
 
         transition: all 0.25s ease-in-out;
         max-height: 0;
@@ -148,16 +148,16 @@
         will-change: transform;
 
         font-weight: 400;
-        font-size: 18px;
+        font-size: 18rem;
         line-height: 120%;
         color: var(--bodi-2);
 
         // @media screen and (max-width: $tab-media) {
-        //     font-size: 18px;
+        //     font-size: 18rem;
         // }
 
         // @media screen and (max-width: $mob-media) {
-        //     font-size: 14px;
+        //     font-size: 14rem;
         // }
     }
 }

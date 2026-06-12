@@ -5,25 +5,25 @@
 
 @keyframes my_pulse {
   0% {
-    filter: blur(30px);
+    filter: blur(30rem);
   }
   50% {
-    filter: blur(45px);
+    filter: blur(45rem);
   }
   100% {
-    filter: blur(30px);
+    filter: blur(30rem);
   }
 }
 
 @keyframes my_pulse-mobile {
   0% {
-    filter: blur(20px);
+    filter: blur(20rem);
   }
   50% {
-    filter: blur(40px);
+    filter: blur(40rem);
   }
   100% {
-    filter: blur(20px);
+    filter: blur(20rem);
   }
 }
 
@@ -42,7 +42,7 @@
 @keyframes fadeInFromCenterLeft {
   from {
     opacity: 0;
-    transform: translateX(250px) translateX(-50%);
+    transform: translateX(250rem) translateX(-50%);
   }
   to {
     opacity: 1;
@@ -53,7 +53,7 @@
 @keyframes fadeInFromCenterLeft-mobile {
   from {
     opacity: 0;
-    transform: translateX(25px) translateX(50%);
+    transform: translateX(25rem) translateX(50%);
   }
   to {
     opacity: 1;
@@ -64,7 +64,7 @@
 @keyframes fadeInFromCenterRight {
   from {
     opacity: 0;
-    transform: translateX(-250px) translateX(50%); 
+    transform: translateX(-250rem) translateX(50%); 
   }
   to {
     opacity: 1;
@@ -75,7 +75,7 @@
 @keyframes fadeInFromCenterRight-mobile {
   from {
     opacity: 0;
-    transform: translateX(25px) translateX(-50%);
+    transform: translateX(25rem) translateX(-50%);
   }
   to {
     opacity: 1;

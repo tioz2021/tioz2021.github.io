@@ -101,16 +101,16 @@
                         .classList.remove("active");
                     otherItem.querySelector(".accordion__content").style.maxHeight = "0";
                     otherItem.querySelector(".accordion__content").style.paddingBottom =
-                        "0px";
+                        "0rem";
                 }
             });
 
             if (header.classList.contains("active")) {
                 const textHeight = content.scrollHeight;
-                const extraSpace = getComputedStyle(content).getPropertyValue('--extra-space') || '36px';
-                const paddingBottom = getComputedStyle(content).getPropertyValue('--content-padding') || '36px';
+                const extraSpace = getComputedStyle(content).getPropertyValue('--extra-space') || '36rem';
+                const paddingBottom = getComputedStyle(content).getPropertyValue('--content-padding') || '36rem';
 
-                content.style.maxHeight = `calc(${textHeight}px + ${extraSpace})`;
+                content.style.maxHeight = `calc(${textHeight}rem + ${extraSpace})`;
                 content.style.paddingBottom = paddingBottom;
             } else {
                 content.style.maxHeight = "0";

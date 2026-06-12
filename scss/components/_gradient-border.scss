@@ -1,15 +1,15 @@
 .gradient-border {
     position: relative;
-    border-radius: 12px;
+    border-radius: 12rem;
 
     // .gradient-border::before
     &::before {
         content: '';
         position: absolute;
         inset: 0;
-        border-radius: 16px;
+        border-radius: 16rem;
 
-        padding: 2px;
+        padding: 2rem;
 
         -webkit-mask:
             linear-gradient(#fff 0 0) content-box,
@@ -28,11 +28,11 @@
         // .gradient-border--right::before
         &::before {
             inset: 0 0 0 auto;
-            width: 2px;
+            width: 2rem;
             padding: 0;
             -webkit-mask: none;
             mask-composite: unset;
-            border-radius: 0 12px 12px 0;
+            border-radius: 0 12rem 12rem 0;
             z-index: -1;
         }
     }
@@ -44,11 +44,11 @@
         &::before {
             inset: auto 0 0 0;
             width: auto;
-            height: 2px;
+            height: 2rem;
             padding: 0;
             -webkit-mask: none;
             mask-composite: unset;
-            border-radius: 0 0 12px 12px;
+            border-radius: 0 0 12rem 12rem;
             z-index: 1;
         }
     }
@@ -66,8 +66,8 @@
 
     // .gradient-border--menu::before
     &::before {
-        padding: 1px;
-        border-radius: 30px;
+        padding: 1rem;
+        border-radius: 30rem;
         background: linear-gradient(135deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.3) 100%);
     }
 }
@@ -76,8 +76,8 @@
 
     // .gradient-border--s2::before
     &::before {
-        padding: 2px;
-        border-radius: 12px;
+        padding: 2rem;
+        border-radius: 12rem;
         background: linear-gradient(135deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.03) 100%);
     }
 }
@@ -87,7 +87,7 @@
     
     // .gradient-border--page-nav::before
     &::before {
-        height: 1px;
+        height: 1rem;
         background: linear-gradient(135deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.03) 100%);
     }
 }
@@ -111,8 +111,8 @@
 
     // .gradient-border--footer::before
     &::before {
-        padding: 1px;
-        border-radius: 12px;
+        padding: 1rem;
+        border-radius: 12rem;
         background: linear-gradient(135deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.3) 100%);
     }
 }
@@ -121,8 +121,8 @@
 
     // .gradient-border--form::before
     &::before {
-        padding: 1px;
-        border-radius: 12px;
+        padding: 1rem;
+        border-radius: 12rem;
         background: linear-gradient(135deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.3) 100%);
     }
 }
@@ -131,8 +131,8 @@
 
     // .gradient-border--form-field::before
     &::before {
-        padding: 2px;
-        border-radius: 12px;
+        padding: 2rem;
+        border-radius: 12rem;
         background: linear-gradient(135deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.3) 100%);
     } 
 }

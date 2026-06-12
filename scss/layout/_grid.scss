@@ -12,12 +12,12 @@
   //     padding-right: var(--border-tab);
   //   }
 
-  // @media screen and (max-width: $mobile) {
-  //   box-sizing: border-box;
-  //   width: calc(var(--container-size-mob) + var(--mob-padding)*2);
-  //   padding-left: var(--mob-padding);
-  //   padding-right: var(--mob-padding);
-  // }
+  @media screen and (max-width: $mobile) {
+    box-sizing: border-box;
+    width: calc(var(--container-size-mob) + var(--mob-padding)*2);
+    padding-left: var(--mob-padding);
+    padding-right: var(--mob-padding);
+  }
 }
 
 .img-wrp {

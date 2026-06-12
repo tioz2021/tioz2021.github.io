@@ -1,37 +1,37 @@
 .info-box {
     position: relative;
-    padding: 16px;
-    padding-bottom: 22px;
+    padding: 16rem;
+    padding-bottom: 22rem;
     // background-image: url('../../imges/info-box-bg.png');
     // background-position: center;
     // background-size: contain;
     // background-repeat: no-repeat;
 
-    backdrop-filter: blur(24px);
+    backdrop-filter: blur(24rem);
     background: rgba(5, 7, 40, 0.6);
 
     box-sizing: border-box;
-    border-radius: 12px;
-    width: 324px;
+    border-radius: 12rem;
+    width: 324rem;
 
     // .info-box__title
     &__title {
         font-weight: 400;
-        font-size: 24px;
+        font-size: 24rem;
         line-height: 120%;
         text-align: center;
         color: var(--bodi-1);
-        margin-bottom: 9px;
+        margin-bottom: 9rem;
     }
 
     // .info-box__text
     &__text {
         font-weight: 400;
-        font-size: 18px;
+        font-size: 18rem;
         line-height: 120%;
         text-align: center;
         color: var(--bodi-2);
-        margin-bottom: 17px;
+        margin-bottom: 17rem;
     }
 
     // .info-box__btn-wrp
@@ -44,7 +44,7 @@
 
     // .info-box__btn
     &__btn {
-        width: 140px;
-        height: 60px;
+        width: 140rem;
+        height: 60rem;
     }
 }

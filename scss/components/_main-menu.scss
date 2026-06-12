@@ -1,16 +1,16 @@
 .main-menu {
-    border-radius: 22px;
-    width: 1052px;
-    height: 44px;
+    border-radius: 22rem;
+    width: 1052rem;
+    height: 44rem;
 
     display: flex;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 16rem;
+    padding-right: 16rem;
 
-    margin-left: -5px;
+    margin-left: -5rem;
 
     // .main-menu__list
     &__list {
@@ -34,15 +34,15 @@
 
     // .main-menu__icon
     &__icon {
-        width: 24px;
-        height: 24px;
-        margin-right: 4px;
+        width: 24rem;
+        height: 24rem;
+        margin-right: 4rem;
     }
 
     // .main-menu__text
     &__text {
         font-weight: 600;
-        font-size: 16px;
+        font-size: 16rem;
         line-height: 120%;
         color: var(--bodi-1);
     }

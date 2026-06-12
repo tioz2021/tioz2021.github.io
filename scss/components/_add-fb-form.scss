@@ -2,15 +2,15 @@
 
 
 .add-fb-form {
-    width: 512px;
-    height: 556px;
-    border-radius: 12px;
-    // backdrop-filter: blur(24px);
+    width: 512rem;
+    height: 556rem;
+    border-radius: 12rem;
+    // backdrop-filter: blur(24rem);
     // background: linear-gradient(135deg, rgba(30, 25, 65, 0.1) 0%, rgba(26, 26, 66, 0.3) 100%);
 
     box-sizing: border-box;
-    padding: 24px;
-    padding-bottom: 44px;
+    padding: 24rem;
+    padding-bottom: 44rem;
 
     background-image: url('../../imges/items/form-bg.svg');
     background-position: center;
@@ -22,20 +22,20 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-bottom: 21px;
+        margin-bottom: 21rem;
     }
 
     // .add-fb-form__rating-text-wrp
     &__rating-text-wrp {
         display: flex;
         align-items: center;
-        gap: 4px;
+        gap: 4rem;
     }
 
     // .add-fb-form__rating-text
     &__rating-text {
         font-weight: 400;
-        font-size: 18px;
+        font-size: 18rem;
         line-height: 120%;
         color: var(--bodi-2);
     }
@@ -43,7 +43,7 @@
     // .add-fb-form__rating-num
     &__rating-num {
         font-weight: 400;
-        font-size: 18px;
+        font-size: 18rem;
         line-height: 120%;
         color: var(--bodi-1);
     }
@@ -52,13 +52,13 @@
     &__rating-star-list {
         display: flex;
         align-items: center;
-        gap: 4px;
+        gap: 4rem;
     }
 
     // .add-fb-form__rating-star-icon
     &__rating-star-icon {
-        width: 16px;
-        height: 16px;
+        width: 16rem;
+        height: 16rem;
     }
 
     // .add-fb-form__form
@@ -66,23 +66,23 @@
 
     // .add-fb-form__field
     &__field {
-        margin-bottom: 16px;
-        height: 60px;
+        margin-bottom: 16rem;
+        height: 60rem;
 
         overflow: hidden;
         box-sizing: border-box;
-        padding: 16px;
-        backdrop-filter: blur(24px);
+        padding: 16rem;
+        backdrop-filter: blur(24rem);
         background: var(--bg-1-page);
 
         // .add-fb-form__field--text-area
         &--text-area {
-            height: 148px;
+            height: 148rem;
         }
 
         // .add-fb-form__field--error
         &--error {
-            border: 1px solid var(--dop-2);
+            border: 1rem solid var(--dop-2);
 
             &::before {
                 visibility: hidden;
@@ -91,17 +91,17 @@
 
         /* СТИЛИЗАЦИЯ СКРОЛЛБАРА */
         &::-webkit-scrollbar {
-            width: 6px;
+            width: 6rem;
         }
 
         &::-webkit-scrollbar-track {
             background: transparent;
-            margin: 8px 0;
+            margin: 8rem 0;
         }
 
         &::-webkit-scrollbar-thumb {
             background: rgba(255, 255, 255, 0.15);
-            border-radius: 100px;
+            border-radius: 100rem;
             transition: background 0.2s ease;
 
             &:hover {
@@ -124,14 +124,14 @@
         outline: unset;
 
         font-weight: 400;
-        font-size: 18px;
+        font-size: 18rem;
         line-height: 120%;
         color: var(--bodi-1);
 
         // .add-fb-form__input::placeholder 
         &::placeholder {
             font-weight: 400;
-            font-size: 18px;
+            font-size: 18rem;
             line-height: 120%;
             color: var(--bodi-2);
         }
@@ -147,14 +147,14 @@
         outline: unset;
 
         font-weight: 400;
-        font-size: 18px;
+        font-size: 18rem;
         line-height: 120%;
         color: var(--bodi-1);
 
         // .add-fb-form__textarea::placeholder 
         &::placeholder {
             font-weight: 400;
-            font-size: 18px;
+            font-size: 18rem;
             line-height: 120%;
             color: var(--bodi-2);
         }
@@ -163,30 +163,30 @@
     // .add-fb-form__submit-btn
     &__submit-btn {
         width: 100%;
-        height: 59px;
-        margin-bottom: 18px;
-        border-radius: 12px;
-        margin-top: 7px;
+        height: 59rem;
+        margin-bottom: 18rem;
+        border-radius: 12rem;
+        margin-top: 7rem;
     }
 
     // .add-fb-form__agreement
     &__agreement {
         display: flex;
         align-items: center;
-        gap: 4px;
+        gap: 4rem;
     }
 
     // .add-fb-form__agreement-icon
     &__agreement-icon {
-        width: 24px;
-        height: 24px;
+        width: 24rem;
+        height: 24rem;
     }
 
     // .add-fb-form__agreement-text
     &__agreement-text {
-        max-width: 436px;
+        max-width: 436rem;
         font-weight: 400;
-        font-size: 16px;
+        font-size: 16rem;
         line-height: 120%;
         color: var(--bodi-2);
     }
@@ -194,7 +194,7 @@
     // .add-fb-form__agreement-link
     &__agreement-link {
         font-weight: 400;
-        font-size: 16px;
+        font-size: 16rem;
         line-height: 120%;
         color: var(--bodi-2);
 

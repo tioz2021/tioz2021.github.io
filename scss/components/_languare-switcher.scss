@@ -1,20 +1,20 @@
 .languare-switcher {
-    width: 87px;
+    width: 87rem;
     display: flex;
-    gap: 12px;
+    gap: 12rem;
     position: relative;
-    top: 5px;
-    left: 1px;
+    top: 5rem;
+    left: 1rem;
 
     // .languare-switcher__text
     &__text {
         font-weight: 400;
-        font-size: 16px;
+        font-size: 16rem;
         color: var(--bodi-2);
         text-transform: lowercase;
         position: relative;
-        top: 8px;
-        left: 9px;
+        top: 8rem;
+        left: 9rem;
     }
 
     // .languare-switcher__body
@@ -23,14 +23,14 @@
         right: 0;
         top: 0;
         z-index: 3;
-        width: 36px;
-        height: 36px;
+        width: 36rem;
+        height: 36rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         
-        border: 1px solid transparent;
-        border-radius: 18px; 
+        border: 1rem solid transparent;
+        border-radius: 18rem; 
         
         cursor: pointer;
         transition: all 0.2s ease-out;
@@ -38,10 +38,10 @@
 
         // .languare-switcher__body._active
         &._active {
-            height: 126px; /* Высота под 3 языка (36*3 + отступы) */
-            border-radius: 20px;
+            height: 126rem; /* Высота под 3 языка (36*3 + отступы) */
+            border-radius: 20rem;
             // overflow: visible;
-            padding-bottom: 5px;
+            padding-bottom: 5rem;
         }
     }
 
@@ -50,10 +50,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 36px;
-        height: 36px;
+        width: 36rem;
+        height: 36rem;
         flex-shrink: 0;
-        font-size: 16px;
+        font-size: 16rem;
         color: var(--bodi-1);
         text-decoration: none;
         transition: opacity 0.2s;
@@ -61,7 +61,7 @@
         background-image: url('../../imges/icons/header/language-bg.svg');
         background-repeat: no-repeat;
         background-position: center;
-        margin-bottom: 6px;
+        margin-bottom: 6rem;
 
         transition: background 0.2s, opacity 0.2s;
 
