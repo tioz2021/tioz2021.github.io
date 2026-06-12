@@ -17,7 +17,10 @@
             <div class="header__container container">
                 <div class="header__logo main-logo">
                     <a class="main-logo__link img-wrp" href="index.html">
-                        <img src="/imges/icons/logo.svg" alt="logo">
+                        <picture>
+                            <source srcset="imges/icons/logo-mob.svg" media="(max-width: 1024px)">
+                            <img src="imges/icons/logo.svg" alt="logo">
+                        </picture>
                     </a>
                 </div>
                 <nav class="header__menu main-menu gradient-border gradient-border--menu">
@@ -97,30 +100,48 @@
                         <a class="languare-switcher__body-item" href="#">EN</a>
                     </div>
                 </div>
+                <div class="mobile-menu-btn img-wrp">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="11.5" fill="#050728" fill-opacity="0.6"
+                            stroke="url(#paint0_linear_18028_3385)" />
+                        <line x1="4.5" y1="15.5" x2="19.5" y2="15.5" stroke="white" stroke-linecap="round" />
+                        <line x1="4.5" y1="11.5" x2="19.5" y2="11.5" stroke="white" stroke-linecap="round" />
+                        <line x1="4.5" y1="7.5" x2="19.5" y2="7.5" stroke="white" stroke-linecap="round" />
+                        <defs>
+                            <linearGradient id="paint0_linear_18028_3385" x1="1.48052" y1="4.57192e-07" x2="27.7857"
+                                y2="16.5655" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="white" stop-opacity="0.6" />
+                                <stop offset="0.5" stop-color="white" stop-opacity="0.2" />
+                                <stop offset="1" stop-color="white" stop-opacity="0.6" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+
+                </div>
             </div>
         </header>
 
         <div class="fs">
             <div class="fs__container container">
                 <div class="fs__title">
-                    <h1 
-                        class="fs__title-h1 animate__animated animate__delay-250ms"
-                        data-text="Робота веб моделлю"
-                        data-animate="animate__fadeIn"
-                    >
+                    <h1 class="fs__title-h1 animate__animated animate__delay-250ms" data-text="Робота веб моделлю"
+                        data-animate="animate__fadeIn">
                         Робота веб моделлю
                     </h1>
-                    <div class="fs__title-img img-wrp animate__animated animate__delay-500ms" data-animate="animate__fadeIn">
+                    <div class="fs__title-img img-wrp animate__animated animate__delay-500ms"
+                        data-animate="animate__fadeIn">
                         <img src="imges/icons/title-decor.png" alt="img">
                     </div>
                     <div class="fs__title-desk-wrp">
-                        <div class="fs__title-desk animate__animated animate__delay-750ms" data-animate="animate__fadeInLeft">
+                        <div class="fs__title-desk animate__animated animate__delay-750ms"
+                            data-animate="animate__fadeInLeft">
                             <div class="fs__title-desk-icon img-wrp">
                                 <img src="imges/icons/fs-title-icon1.svg" alt="icon">
                             </div>
                             <div class="fs__title-desk-text fs__title-desk-text--1">на локальній студії</div>
                         </div>
-                        <div class="fs__title-desk animate__animated animate__delay-750ms" data-animate="animate__fadeInRight">
+                        <div class="fs__title-desk animate__animated animate__delay-750ms"
+                            data-animate="animate__fadeInRight">
                             <div class="fs__title-desk-text fs__title-desk-text--2">або онлайн з дому</div>
                             <div class="fs__title-desk-icon img-wrp">
                                 <img src="imges/icons/fs-title-icon2.svg" alt="icon">
@@ -177,14 +198,19 @@
                 </div>
 
                 <div class="fs__main-img img-wrp">
-                    <img src="imges/fs-main-img.png" alt="main img">
+                    <picture>
+                        <source srcset="imges/fs-main-img-mob.png" media="(max-width: 1024px)">
+                        <img src="imges/fs-main-img.png" alt="main img">
+                    </picture>
                 </div>
 
                 <div class="fs__light-wrp">
-                    <div class="fs__light-item fs__light-item--left img-wrp animate__animated animate__delay-1s" data-animate="animate__fadeIn">
+                    <div class="fs__light-item fs__light-item--left img-wrp animate__animated animate__delay-1s"
+                        data-animate="animate__fadeIn">
                         <img src="imges/light-left.png" alt="light image">
                     </div>
-                    <div class="fs__light-item fs__light-item--right img-wrp animate__animated animate__delay-1s" data-animate="animate__fadeIn">
+                    <div class="fs__light-item fs__light-item--right img-wrp animate__animated animate__delay-1s"
+                        data-animate="animate__fadeIn">
                         <img src="imges/light-right.png" alt="light image">
                     </div>
                 </div>
@@ -365,18 +391,22 @@
                 </form>
 
                 <div class="s1__decoration-left">
-                    <div class="s1__decoration-icon s1__decoration-icon-left img-wrp animate__animated animate__delay-500ms" data-animate="animate__fadeIn">
+                    <div class="s1__decoration-icon s1__decoration-icon-left img-wrp animate__animated animate__delay-500ms"
+                        data-animate="animate__fadeIn">
                         <img src="imges/icons/s1-decoration-left.svg" alt="decoration icon">
                     </div>
-                    <div class="s1__decoration-left-text animate__animated animate__delay-250ms" data-animate="animate__fadeIn">
+                    <div class="s1__decoration-left-text animate__animated animate__delay-250ms"
+                        data-animate="animate__fadeIn">
                         Вибрати студію для роботи веб моделлю просто
                     </div>
                 </div>
                 <div class="s1__decoration-right">
-                    <div class="s1__decoration-right-text animate__animated animate__delay-750ms" data-animate="animate__fadeIn">
+                    <div class="s1__decoration-right-text animate__animated animate__delay-750ms"
+                        data-animate="animate__fadeIn">
                         Обери необхідні налаштування і тисни “Пошук”
                     </div>
-                    <div class="s1__decoration-icon s1__decoration-icon-right img-wrp animate__animated animate__delay-1s" data-animate="animate__fadeIn">
+                    <div class="s1__decoration-icon s1__decoration-icon-right img-wrp animate__animated animate__delay-1s"
+                        data-animate="animate__fadeIn">
                         <img src="imges/icons/s1-decoration-right.svg" alt="decoration icon">
                     </div>
                 </div>
@@ -1861,13 +1891,16 @@
                     </div>
                 </div>
 
-                <div class="s4__decoration s4__decoration--left img-wrp animate__animated animate__delay-250ms" data-animate="animate__fadeIn">
+                <div class="s4__decoration s4__decoration--left img-wrp animate__animated animate__delay-250ms"
+                    data-animate="animate__fadeIn">
                     <img src="imges/s4/decor-left.png" alt="decoration">>
                 </div>
-                <div class="s4__decoration s4__decoration--center img-wrp animate__animated animate__delay-750ms" data-animate="animate__fadeIn">
+                <div class="s4__decoration s4__decoration--center img-wrp animate__animated animate__delay-750ms"
+                    data-animate="animate__fadeIn">
                     <img src="imges/s4/decor-center.svg" alt="decoration">
                 </div>
-                <div class="s4__decoration s4__decoration--right img-wrp animate__animated animate__delay-500ms" data-animate="animate__fadeIn">
+                <div class="s4__decoration s4__decoration--right img-wrp animate__animated animate__delay-500ms"
+                    data-animate="animate__fadeIn">
                     <img src="imges/s4/decor-right.png" alt="decoration">
                 </div>
 

@@ -1,0 +1,245 @@
+@media screen and (max-width: $mobile) {
+
+    // ================================================== FS ========================================================
+    .header {
+        padding-bottom: 0;
+        padding-top: 12rem;
+    }
+
+    .header__logo {
+        position: relative;
+        top: -3rem;
+    }
+
+    .fs-wrp {
+        min-width: unset;
+        width: 100%;
+        height: auto;
+        background-image: url('../../imges/fs-bg-mob.png');
+        background-position: center top;
+        background-size: 100% 360rem;
+        margin-bottom: 80rem;
+    }
+
+    .fs-wrp::before {
+        display: none;
+    }
+
+    .main-logo__link {
+        width: 68rem;
+        height: 30rem;
+    }
+
+    .header__menu {
+        display: none;
+    }
+
+    .languare-switcher {
+        width: 62rem;
+        gap: 4rem;
+        left: 2rem;
+        top: -3rem;
+        flex-direction: column;
+        margin-right: 8rem;
+        margin-left: auto;
+    }
+
+    .languare-switcher__text {
+        font-size: 14rem;
+        top: 5rem;
+        left: 0;
+    }
+
+    .languare-switcher__body {
+        width: 24rem;
+        height: 24rem;
+        right: 1rem;
+        top: 2rem;
+    }
+
+    .languare-switcher__body-item {
+        width: 24rem;
+        height: 24rem;
+        font-size: 12rem;
+        background-size: cover;
+        background-color: unset;
+    }
+
+    .fs__title-h1 {
+        font-size: 70rem;
+        line-height: 80%;
+    }
+
+    .fs__title-h1::before {
+        top: -9rem;
+        left: 0rem;
+        -webkit-text-stroke: 1rem rgb(255, 255, 255);
+        height: 160rem;
+    }
+
+    .fs__title-img {
+        display: none;
+    }
+
+    .fs__title-desk-icon {
+        display: none;
+    }
+
+    .fs__title-desk-text {
+        font-size: 24rem;
+    }
+
+    .fs__title-desk {
+        width: 144rem;
+    }
+
+    .fs__title-desk-text--2 {
+        text-align: left !important;
+    }
+
+    .fs__title-desk-wrp {
+        width: 100%;
+        margin-top: -5rem;
+    }
+
+    .fs__title-h1 {
+        height: 140rem;
+    }
+
+    .fs__title {
+        margin-top: 8rem;
+        margin-bottom: 132rem;
+    }
+
+    .video-box__title {
+        width: 100%;
+        max-width: unset;
+        font-size: 18rem;
+        margin-bottom: 6rem;
+    }
+
+    .video-box__text-wrp {
+        gap: 0;
+    }
+
+    .video-box_prev-img {
+        display: none;
+    }
+
+    .video-box__play-icon {
+        width: 44rem;
+        height: 44rem;
+    }
+
+    .video-box__body {
+        width: 44rem;
+        height: 44rem;
+        margin-bottom: 0;
+        position: absolute;
+        left: 0;
+        top: 2rem;
+    }
+
+    .video-box__last-text-icon {
+        display: none;
+    }
+
+    .video-box__last-text {
+        font-size: 16rem;
+    }
+
+    .fs__video-box {
+        position: relative;
+        top: 0;
+        padding-left: 57rem;
+        margin-bottom: 17rem;
+    }
+
+    .fs__main-img {
+        width: 360rem;
+        height: 200rem;
+        position: absolute;
+        top: 146rem;
+        left: 0;
+        z-index: 2;
+    }
+
+    .fs__info-box {
+        position: relative;
+        top: 0;
+    }
+
+    .info-box {
+        width: 100%;
+        padding: 12rem;
+        padding-bottom: 18rem;
+        border-radius: 8rem;
+        overflow: hidden;
+    }
+
+    .gradient-border::before {
+        border-radius: 8rem;
+        padding: 1rem;
+    }
+
+    .info-box__title {
+        font-size: 18rem;
+        margin-bottom: 6rem;
+    }
+
+    .info-box__text {
+        font-size: 16rem;
+        margin-bottom: 18rem;
+    }
+
+    .info-box__btn {
+        border-radius: 8rem;
+        width: 148rem;
+        height: 42rem;
+    }
+
+    .main-btn {
+        gap: 4rem;
+    }
+
+    .main-btn__text {
+        font-size: 16rem;
+    }
+
+    .main-btn__shadow {
+        border-radius: 8rem;
+        width: 144rem;
+        height: 44rem;
+    }
+
+    .main-btn__light {
+        width: 132rem;
+        height: 24rem;
+        filter: blur(24rem);
+        opacity: 0.6;
+    }
+
+    .main-btn__bg {
+        border-radius: 8rem;
+    }
+
+    .fs__decoration {
+        display: none;
+    }
+
+    .fs::after {
+        display: none;
+    }
+
+    .fs__light-item {
+        width: 506rem;
+        height: 440rem;
+        top: -42rem;
+    }
+    .fs__light-item--left {
+        left: -40%;
+    }
+    .fs__light-item--right {
+        right: -40%;
+    }
+}

@@ -1,0 +1,9 @@
+.mobile-menu-btn {
+    display: none;
+    width: 24px;
+    height: 24px;
+
+    @media screen and (max-width: $mobile) {
+		display: block;
+	}
+}

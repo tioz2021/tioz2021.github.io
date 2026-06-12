@@ -37,10 +37,11 @@
 @import 'components/gradient-btn';
 @import 'components/add-fb-form';
 @import 'components/popup';
+@import "components/mobile-menu";
 
 // pages
 @import 'pages/home';
 @import 'pages/page-navigation';
 
 // adaptive
-@import 'base/resizing';
+@import 'layout/mobile-adaptive';
