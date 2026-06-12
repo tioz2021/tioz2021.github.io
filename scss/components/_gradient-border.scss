@@ -139,7 +139,15 @@
 
 .gradient-border--popup {
 
-    // .gradient-border--base-popup::before
+    // .gradient-border--popup::before
+    &::before {
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.03) 100%);
+    }
+}
+
+.gradient-border--filter-form {
+
+    // .gradient-border--filter-form::before
     &::before {
         background: linear-gradient(135deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.03) 100%);
     }
