@@ -7322,4 +7322,7 @@ body.popup-lock {
   .s3__list-item:nth-child(3)::before {
     display: none;
   }
+  .s3, .s4 {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */
