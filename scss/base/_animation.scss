@@ -1,0 +1,143 @@
+/* все элементы с анимациями скрыты до запуска */
+.animate__animated {
+  opacity: 0;
+}
+
+@keyframes my_pulse {
+  0% {
+    filter: blur(30px);
+  }
+  50% {
+    filter: blur(45px);
+  }
+  100% {
+    filter: blur(30px);
+  }
+}
+
+@keyframes my_pulse-mobile {
+  0% {
+    filter: blur(20px);
+  }
+  50% {
+    filter: blur(40px);
+  }
+  100% {
+    filter: blur(20px);
+  }
+}
+
+.animate__fadeInFromCenterLeft {
+  animation-name: fadeInFromCenterLeft;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.animate__fadeInFromCenterRight {
+  animation-name: fadeInFromCenterRight;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInFromCenterLeft {
+  from {
+    opacity: 0;
+    transform: translateX(250px) translateX(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInFromCenterLeft-mobile {
+  from {
+    opacity: 0;
+    transform: translateX(25px) translateX(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInFromCenterRight {
+  from {
+    opacity: 0;
+    transform: translateX(-250px) translateX(50%); 
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInFromCenterRight-mobile {
+  from {
+    opacity: 0;
+    transform: translateX(25px) translateX(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.buttonPulse {
+    animation: buttonPulse 2s normal infinite;
+}
+
+.buttonPulse--noTransition {
+    animation: buttonPulseNoTransition 2s normal infinite;
+}
+
+@keyframes buttonPulse {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.05);
+        opacity: 0.9;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes buttonPulseNoTransition {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.9;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.animate__animated.animate__delay-250ms {
+    -webkit-animation-delay: 250ms !important;
+    animation-delay: 250ms !important;
+    -webkit-animation-delay: var(--animate-delay);
+    animation-delay: var(--animate-delay);
+}
+
+.animate__animated.animate__delay-500ms {
+    -webkit-animation-delay: 500ms !important;
+    animation-delay: 500ms !important;
+    -webkit-animation-delay: var(--animate-delay);
+    animation-delay: var(--animate-delay);
+}
+
+.animate__animated.animate__delay-750ms {
+    -webkit-animation-delay: 750ms !important;
+    animation-delay: 750ms !important;
+    -webkit-animation-delay: var(--animate-delay);
+    animation-delay: var(--animate-delay);
+}

@@ -1,22 +1,23 @@
 .container {
 
   width: var(--container-size-web);
-//   padding-left: var(--border-web);
-//   padding-right: var(--border-web);
+  //   padding-left: var(--border-web);
+  //   padding-right: var(--border-web);
 
   display: flex;
 
-//   @media screen and (max-width: $tab-media) {
-//     max-width: calc(var(--container-size-tab) + var(--border-tab)*2);
-//     padding-left: var(--border-tab);
-//     padding-right: var(--border-tab);
-//   }
+  //   @media screen and (max-width: $tab-media) {
+  //     max-width: calc(var(--container-size-tab) + var(--border-tab)*2);
+  //     padding-left: var(--border-tab);
+  //     padding-right: var(--border-tab);
+  //   }
 
-//   @media screen and (max-width: $mob-media) {
-//     max-width: calc(var(--container-size-mob) + var(--border-mob)*2);
-//     padding-left: var(--border-mob);
-//     padding-right: var(--border-mob);
-//   }
+  // @media screen and (max-width: $mobile) {
+  //   box-sizing: border-box;
+  //   width: calc(var(--container-size-mob) + var(--mob-padding)*2);
+  //   padding-left: var(--mob-padding);
+  //   padding-right: var(--mob-padding);
+  // }
 }
 
 .img-wrp {

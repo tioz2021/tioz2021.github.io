@@ -6,6 +6,7 @@
 // reset/normalize
 @import 'base/reset';
 @import 'vendors/normalize';
+@import 'vendors/animate';
 
 // layout
 @import 'layout/grid';
@@ -40,3 +41,6 @@
 // pages
 @import 'pages/home';
 @import 'pages/page-navigation';
+
+// adaptive
+@import 'base/resizing';

@@ -196,3 +196,20 @@
         });
     })();
 })();
+
+// observe animation
+(() => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const animation = entry.target.dataset.animate; 
+        if (animation) {
+          entry.target.classList.add('animate__animated', animation);
+        }
+        observer.unobserve(entry.target); 
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('[data-animate]').forEach(el => observer.observe(el));
+})();
