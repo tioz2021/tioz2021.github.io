@@ -3,15 +3,15 @@
     const switcherBody = document.querySelector('.languare-switcher__body');
     const items = document.querySelectorAll('.languare-switcher__body-item');
 
-    switcherBody.addEventListener('click', function (e) {
+    if(switcherBody) switcherBody.addEventListener('click', function (e) {
         this.classList.toggle('_active');
     });
 
     items.forEach(item => {
         item.addEventListener('click', function (e) {
-            e.stopPropagation(); 
-            e.preventDefault(); 
-            
+            e.stopPropagation();
+            e.preventDefault();
+
             if (!switcherBody.classList.contains('_active')) {
                 switcherBody.classList.add('_active');
                 return;
@@ -19,7 +19,7 @@
 
             const currentActive = document.querySelector('.languare-switcher__body-item._current');
             if (currentActive) currentActive.classList.remove('_current');
-            
+
             this.classList.add('_current');
 
             setTimeout(() => {
@@ -37,92 +37,88 @@
 
 (() => {
     document.addEventListener('DOMContentLoaded', () => {
-    const selects = document.querySelectorAll('.filter-select');
+        const selects = document.querySelectorAll('.filter-select');
 
-    selects.forEach(select => {
-        const header = select.querySelector('.filter-select__header');
-        const items = select.querySelectorAll('.filter-select__item');
-        const titleText = select.querySelector('.filter-select__title b'); // Ищем жирный текст, куда подставим выбор
+        selects.forEach(select => {
+            const header = select.querySelector('.filter-select__header');
+            const items = select.querySelectorAll('.filter-select__item');
+            const titleText = select.querySelector('.filter-select__title b'); // Ищем жирный текст, куда подставим выбор
 
-        // 1. Открытие/закрытие по клику на плашку
-        header.addEventListener('click', (e) => {
-            e.stopPropagation();
-            
-            // Закрываем все ОСТАЛЬНЫЕ селекты перед открытием текущего
-            selects.forEach(s => {
-                if (s !== select) s.classList.remove('_active');
-            });
-
-            select.classList.toggle('_active');
-        });
-
-        // 2. Выбор элемента в списке
-        items.forEach(item => {
-            item.addEventListener('click', (e) => {
+            // 1. Открытие/закрытие по клику на плашку
+            header.addEventListener('click', (e) => {
                 e.stopPropagation();
 
-                // Меняем текст в шапке на выбранный
-                if (titleText) {
-                    titleText.textContent = item.textContent;
-                }
+                // Закрываем все ОСТАЛЬНЫЕ селекты перед открытием текущего
+                selects.forEach(s => {
+                    if (s !== select) s.classList.remove('_active');
+                });
 
-                // Переключаем активный класс у элементов списка
-                select.querySelector('.filter-select__item._selected')?.classList.remove('_selected');
-                item.classList.add('_selected');
+                select.classList.toggle('_active');
+            });
 
-                // Закрываем дропдаун
-                select.classList.remove('_active');
+            // 2. Выбор элемента в списке
+            items.forEach(item => {
+                item.addEventListener('click', (e) => {
+                    e.stopPropagation();
+
+                    // Меняем текст в шапке на выбранный
+                    if (titleText) {
+                        titleText.textContent = item.textContent;
+                    }
+
+                    // Переключаем активный класс у элементов списка
+                    select.querySelector('.filter-select__item._selected')?.classList.remove('_selected');
+                    item.classList.add('_selected');
+
+                    // Закрываем дропдаун
+                    select.classList.remove('_active');
+                });
             });
         });
-    });
 
-    // 3. Закрытие любого открытого селекта при клике в пустую область экрана
-    document.addEventListener('click', () => {
-        selects.forEach(s => s.classList.remove('_active'));
+        // 3. Закрытие любого открытого селекта при клике в пустую область экрана
+        document.addEventListener('click', () => {
+            selects.forEach(s => s.classList.remove('_active'));
+        });
     });
-});
 })();
 
 // acardion
 (() => {
-  // Получаем все элементы аккордеона
-  const accordionItems = document.querySelectorAll(".accordion__item");
+    const accordionItems = document.querySelectorAll(".accordion__item");
 
-  // Добавляем обработчик события для каждого элемента аккордеона
-  accordionItems.forEach((item) => {
-    const header = item.querySelector(".accordion__header");
-    const content = item.querySelector(".accordion__content");
+    accordionItems.forEach((item) => {
+        const header = item.querySelector(".accordion__header");
+        const content = item.querySelector(".accordion__content");
 
-    header.addEventListener("click", () => {
-      // Переключаем класс 'active' для заголовка текущего элемента
-      header.classList.toggle("active");
+        header.addEventListener("click", () => {
+            header.classList.toggle("active");
 
-      // Закрываем все другие элементы аккордеона
-      accordionItems.forEach((otherItem) => {
-        if (otherItem !== item) {
-          otherItem
-            .querySelector(".accordion__header")
-            .classList.remove("active");
-          otherItem.querySelector(".accordion__content").style.maxHeight = "0";
-          otherItem.querySelector(".accordion__content").style.paddingBottom =
-            "0px";
-        }
-      });
+            accordionItems.forEach((otherItem) => {
+                if (otherItem !== item) {
+                    otherItem
+                        .querySelector(".accordion__header")
+                        .classList.remove("active");
+                    otherItem.querySelector(".accordion__content").style.maxHeight = "0";
+                    otherItem.querySelector(".accordion__content").style.paddingBottom =
+                        "0px";
+                }
+            });
 
-      if (header.classList.contains("active")) {
-        const textHeight = content.scrollHeight;
-        const extraSpace = getComputedStyle(content).getPropertyValue('--extra-space') || '36px';
-        const paddingBottom = getComputedStyle(content).getPropertyValue('--content-padding') || '36px';
-        
-        content.style.maxHeight = `calc(${textHeight}px + ${extraSpace})`;
-        content.style.paddingBottom = paddingBottom;
-      } else {
-          content.style.maxHeight = "0";
-          content.style.paddingBottom = "0";
-      }
+            if (header.classList.contains("active")) {
+                const textHeight = content.scrollHeight;
+                const extraSpace = getComputedStyle(content).getPropertyValue('--extra-space') || '36px';
+                const paddingBottom = getComputedStyle(content).getPropertyValue('--content-padding') || '36px';
 
+                content.style.maxHeight = `calc(${textHeight}px + ${extraSpace})`;
+                content.style.paddingBottom = paddingBottom;
+            } else {
+                content.style.maxHeight = "0";
+                content.style.paddingBottom = "0";
+            }
+
+        });
     });
-  });
 })();
 
 // main-item galery
@@ -135,11 +131,68 @@
     secondaryImgList.forEach(item => {
         item.addEventListener('click', () => {
             const clickedImg = item.querySelector('img');
-            
+
             if (clickedImg) {
                 mainImg.src = clickedImg.src;
                 mainImg.alt = clickedImg.alt;
             }
         });
     });
+})();
+
+// popups 
+(() => {
+    (() => {
+        const popupButtons = document.querySelectorAll('.open-popup');
+        const body = document.body;
+
+        function openPopup(popupElement) {
+            if (!popupElement) return;
+
+            const activePopup = document.querySelector('.popup.is-open');
+            if (activePopup) {
+                closePopup(activePopup, false);
+            }
+
+            popupElement.classList.add('is-open');
+            body.classList.add('popup-lock');
+        }
+
+        function closePopup(popupElement, removeLock = true) {
+            if (!popupElement) return;
+
+            popupElement.classList.remove('is-open');
+
+            if (removeLock) {
+                body.classList.remove('popup-lock');
+            }
+        }
+
+        popupButtons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                e.preventDefault();
+                const popupId = button.getAttribute('data-popup');
+                const targetPopup = document.getElementById(popupId);
+                openPopup(targetPopup);
+            });
+        });
+
+        const popups = document.querySelectorAll('.popup');
+        popups.forEach(popup => {
+            popup.addEventListener('click', (e) => {
+                if (e.target.classList.contains('popup__body') || e.target.closest('.popup__close')) {
+                    closePopup(popup);
+                }
+            });
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                const activePopup = document.querySelector('.popup.is-open');
+                if (activePopup) {
+                    closePopup(activePopup);
+                }
+            }
+        });
+    })();
 })();
