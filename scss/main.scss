@@ -46,3 +46,14 @@
 
 // adaptive
 @import 'layout/mobile-adaptive';
+
+.test-page {
+    .s1, .s2, .s3, .baner {
+        margin-bottom: 160px;
+
+        @media screen and (max-width: $mobile) {
+            margin-bottom: 80px;
+        }
+    }
+
+}

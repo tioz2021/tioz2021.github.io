@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
+<body class="test-page">
 
     <a href="index.html" style="padding: 16px; color: #fff;">index.html</a>
 
@@ -21,25 +21,219 @@
         <span>Пустий контейнер під відео</span>
     </button>
 
+    <section class="s1">
+        <div class="s1__container container">
+            <h2 class="s1__title">
+                <span class="s1__title--1" data-text="Обери студію">Обери студію</span>
+                <span class="s1__title--2" data-text="для роботи">для роботи</span>
+            </h2>
+
+            <form class="filter-form gradient-border gradient-border--filter-form">
+                <div class="filter-form__grid">
+
+                    <div class="filter-select">
+                        <div class="filter-select__header">
+                            <div class="filter-select__title">
+                                <div class="filter-select__title-icon img-wrp">
+                                    <img src="imges/icons/main-form/ic1.svg" alt="icon">
+                                </div>
+                                Країна <b>Україна</b>
+                            </div>
+                            <div class="filter-select__arrow">
+                                <div class="filter-select__arrow-icon img-wrp">
+                                    <img src="imges/main-form-icon.svg" alt="icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-select__dropdown custom-scroll">
+                            <div class="filter-select__item _selected">Україна</div>
+                            <div class="filter-select__item">Польща</div>
+                            <div class="filter-select__item">Німеччина</div>
+                            <div class="filter-select__item">Німеччина</div>
+                            <div class="filter-select__item">Німеччина</div>
+                            <div class="filter-select__item">Німеччина</div>
+                            <div class="filter-select__item">Німеччина</div>
+                        </div>
+                    </div>
+
+                    <div class="filter-select">
+                        <div class="filter-select__header">
+                            <div class="filter-select__title">
+                                <div class="filter-select__title-icon img-wrp">
+                                    <img src="imges/icons/main-form/ic1.svg" alt="icon">
+                                </div>
+                                Місто <b>Всі міста</b>
+                            </div>
+                            <div class="filter-select__arrow">
+                                <div class="filter-select__arrow-icon img-wrp">
+                                    <img src="imges/main-form-icon.svg" alt="icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-select__dropdown custom-scroll">
+                            <div class="filter-select__item _selected">Всі міста</div>
+                            <div class="filter-select__item">Київ</div>
+                            <div class="filter-select__item">Львів</div>
+                        </div>
+                    </div>
+
+                    <div class="filter-select">
+                        <div class="filter-select__header">
+                            <div class="filter-select__title">
+                                <div class="filter-select__title-icon img-wrp">
+                                    <img src="imges/icons/main-form/ic2.svg" alt="icon">
+                                </div>
+                                Досвід <b>Без досвіду</b>
+                            </div>
+                            <div class="filter-select__arrow">
+                                <div class="filter-select__arrow-icon img-wrp">
+                                    <img src="imges/main-form-icon.svg" alt="icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-select__dropdown custom-scroll">
+                            <div class="filter-select__item _selected">Без досвіду</div>
+                            <div class="filter-select__item">Від 1 року</div>
+                            <div class="filter-select__item">Від 3 років</div>
+                        </div>
+                    </div>
+
+                    <div class="filter-select">
+                        <div class="filter-select__header">
+                            <div class="filter-select__title">
+                                <div class="filter-select__title-icon img-wrp">
+                                    <img src="imges/icons/main-form/ic3.svg" alt="icon">
+                                </div>
+                                Модель <b>Для жінок</b>
+                            </div>
+                            <div class="filter-select__arrow">
+                                <div class="filter-select__arrow-icon img-wrp">
+                                    <img src="imges/main-form-icon.svg" alt="icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-select__dropdown custom-scroll">
+                            <div class="filter-select__item _selected">Для жінок</div>
+                            <div class="filter-select__item">Для чоловіків</div>
+                        </div>
+                    </div>
+
+                    <div class="filter-select">
+                        <div class="filter-select__header">
+                            <div class="filter-select__title">
+                                <div class="filter-select__title-icon img-wrp">
+                                    <img src="imges/icons/main-form/ic4.svg" alt="icon">
+                                </div>
+                                Тип студії <b>Онлайн</b>
+                            </div>
+                            <div class="filter-select__arrow">
+                                <div class="filter-select__arrow-icon img-wrp">
+                                    <img src="imges/main-form-icon.svg" alt="icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-select__dropdown custom-scroll">
+                            <div class="filter-select__item _selected">Онлайн</div>
+                            <div class="filter-select__item">Офлайн</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="filter-form__checkboxes">
+                    <label class="filter-checkbox">
+                        <input type="checkbox" class="filter-checkbox__input">
+                        <span class="filter-checkbox__text">Без штрафів</span>
+                    </label>
+                    <label class="filter-checkbox">
+                        <input type="checkbox" class="filter-checkbox__input">
+                        <span class="filter-checkbox__text">Фотосесія</span>
+                    </label>
+                    <label class="filter-checkbox">
+                        <input type="checkbox" class="filter-checkbox__input">
+                        <span class="filter-checkbox__text">Житло</span>
+                    </label>
+                    <label class="filter-checkbox">
+                        <input type="checkbox" class="filter-checkbox__input">
+                        <span class="filter-checkbox__text">Навчання</span>
+                    </label>
+                    <label class="filter-checkbox">
+                        <input type="checkbox" class="filter-checkbox__input">
+                        <span class="filter-checkbox__text">Для чоловіків</span>
+                    </label>
+                    <label class="filter-checkbox">
+                        <input type="checkbox" class="filter-checkbox__input">
+                        <span class="filter-checkbox__text">Допомога з переїздом</span>
+                    </label>
+                </div>
+
+                <button type="button" class="filter-form__btn gradient-btn">
+                    <div class="gradient-btn__container">
+                        <div class="gradient-btn__text">ПОШУК</div>
+                        <div class="gradient-btn__icon img-wrp">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M3 10.2005C3.00004 6.76565 5.42647 3.8092 8.79534 3.13924C12.1642 2.46927 15.5372 4.2724 16.8514 7.44584C18.1656 10.6193 17.0551 14.2792 14.1989 16.1872C11.3428 18.0952 7.53654 17.7198 5.10806 15.2908C3.75826 13.9406 2.99998 12.1096 3 10.2005Z"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M17.3984 17.4003L20.9984 21.0003" stroke="white" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </button>
+
+                <div class="filter-form__decoration filter-form__decoration--left"></div>
+                <div class="filter-form__decoration filter-form__decoration--right"></div>
+            </form>
+
+            <div class="s1__decoration-left">
+                <div class="s1__decoration-icon s1__decoration-icon-left img-wrp animate__animated animate__delay-500ms"
+                    data-animate="animate__fadeIn">
+                    <img src="imges/icons/s1-decoration-left.svg" alt="decoration icon">
+                </div>
+                <div class="s1__decoration-left-text animate__animated animate__delay-250ms"
+                    data-animate="animate__fadeIn">
+                    Вибрати студію для роботи веб моделлю просто
+                </div>
+            </div>
+            <div class="s1__decoration-right">
+                <div class="s1__decoration-right-text animate__animated animate__delay-750ms"
+                    data-animate="animate__fadeIn">
+                    Обери необхідні налаштування і тисни “Пошук”
+                </div>
+                <div class="s1__decoration-icon s1__decoration-icon-right img-wrp animate__animated animate__delay-1s"
+                    data-animate="animate__fadeIn">
+                    <img src="imges/icons/s1-decoration-right.svg" alt="decoration icon">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <div class="baner container gradient-border gradient-border--popup">
 
         <div class="popup__start">
-            <div class="popup__start-text">Як завести крипто картку Trustee?</div>
+            <div class="popup__start-text">Як завести <span>крипто</span> картку Trustee?</div>
             <div class="popup__img-wrp">
                 <div class="popup__main-img img-wrp">
-                    <img src="imges/popup-main-img.png" alt="img">
+                    <picture>
+                        <source srcset="imges/popup-main-img-mob.png" media="(max-width: 1024px)">
+                        <img src="imges/popup-main-img.png" alt="img">
+                    </picture>
                 </div>
                 <button class="popup__button-start-video img-wrp buttonPulse--noTransition">
                     <img src="imges/icons/video-box__play-icon.svg" alt="play icon">
                 </button>
                 <div class="popup__img-shadow img-wrp">
-                    <img src="imges/popup-shadow.png" alt="shadow">
+                    <picture>
+                        <source srcset="imges/popup-shadow-mob.png" media="(max-width: 1024px)">
+                        <img src="imges/popup-shadow.png" alt="shadow">
+                    </picture>
                 </div>
             </div>
             <div class="popup__start-info-text-wrp">
                 <div class="popup__start-info-icon img-wrp">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path opacity="0.3"
                             d="M9.80313 3.3001C10.2031 2.9001 10.3031 2.6001 10.5031 2.5001C11.3031 1.8001 12.5031 1.8001 13.4031 2.5001C13.6031 2.6001 13.8031 2.9001 14.1031 3.3001C14.3031 3.5001 14.4031 3.6001 14.4031 3.7001C14.8031 4.1001 15.4031 4.3001 16.0031 4.3001H16.5031C17.1031 4.2001 17.4031 4.2001 17.6031 4.2001C18.7031 4.3001 19.5031 5.2001 19.6031 6.2001C19.6031 6.4001 19.6031 6.7001 19.5031 7.3001V7.8001C19.5031 8.4001 19.7031 8.9001 20.1031 9.4001C20.2031 9.5001 20.3031 9.6001 20.5031 9.7001C20.9031 10.1001 21.2031 10.2001 21.3031 10.4001C22.0031 11.2001 22.0031 12.4001 21.3031 13.3001C21.2031 13.5001 20.9031 13.7001 20.5031 14.0001C20.3031 14.2001 20.2031 14.3001 20.1031 14.3001C19.7031 14.7001 19.5031 15.3001 19.5031 15.9001V16.4001C19.6031 17.0001 19.6031 17.3001 19.6031 17.5001C19.5031 18.6001 18.6031 19.4001 17.6031 19.5001C17.4031 19.5001 17.1031 19.5001 16.5031 19.4001C16.2031 19.4001 16.1031 19.4001 16.0031 19.4001C15.4031 19.4001 14.9031 19.6001 14.4031 20.0001C14.3031 20.1001 14.2031 20.2001 14.1031 20.4001C13.7031 20.8001 13.6031 21.1001 13.4031 21.2001C12.6031 21.9001 11.4031 21.9001 10.5031 21.2001C10.3031 21.1001 10.1031 20.8001 9.80313 20.4001C9.60313 20.2001 9.50313 20.1001 9.50313 20.0001C9.10313 19.6001 8.50313 19.4001 7.90313 19.4001C7.80313 19.4001 7.60313 19.4001 7.40313 19.4001C6.80313 19.5001 6.50313 19.5001 6.30313 19.5001C5.20313 19.4001 4.40313 18.5001 4.30313 17.5001C4.30313 17.3001 4.30313 17.0001 4.40313 16.4001C4.40313 16.1001 4.40313 16.0001 4.40313 15.9001C4.40313 15.3001 4.20313 14.8001 3.80313 14.3001C3.70313 14.2001 3.60313 14.1001 3.40313 14.0001C3.00313 13.6001 2.70313 13.5001 2.60313 13.3001C1.90312 12.5001 1.90312 11.3001 2.60313 10.4001C2.70313 10.2001 3.00313 10.0001 3.40313 9.7001C3.60313 9.5001 3.70313 9.4001 3.80313 9.4001C4.20313 9.0001 4.40313 8.4001 4.40313 7.8001C4.40313 7.7001 4.40313 7.5001 4.40313 7.3001C4.30313 6.8001 4.30313 6.5001 4.30313 6.3001C4.40313 5.2001 5.30313 4.4001 6.30313 4.3001C6.50313 4.3001 6.80313 4.3001 7.40313 4.4001H7.90313C8.50313 4.4001 9.00313 4.2001 9.50313 3.8001C9.60313 3.6001 9.70313 3.5001 9.80313 3.3001Z"
                             fill="#989CCF" />
@@ -65,8 +259,7 @@
             <ul class="popup__list">
                 <li class="popup__list-item">
                     <div class="popup__list-item-icon img-wrp">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M2 12.5L8.66714 19L22 6" stroke="white" stroke-linecap="round"
                                 stroke-linejoin="round" />
                         </svg>
@@ -78,8 +271,7 @@
                 </li>
                 <li class="popup__list-item">
                     <div class="popup__list-item-icon img-wrp">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M2 12.5L8.66714 19L22 6" stroke="white" stroke-linecap="round"
                                 stroke-linejoin="round" />
                         </svg>
@@ -91,8 +283,7 @@
                 </li>
                 <li class="popup__list-item">
                     <div class="popup__list-item-icon img-wrp">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M2 12.5L8.66714 19L22 6" stroke="white" stroke-linecap="round"
                                 stroke-linejoin="round" />
                         </svg>
@@ -122,8 +313,7 @@
                     <span>Зручно, надійно, беспечно</span>
                 </div>
                 <div class="popup__end-end-arrow-icon img-wrp">
-                    <svg width="54" height="80" viewBox="0 0 54 80" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
+                    <svg width="54" height="80" viewBox="0 0 54 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_18004_1616)">
                             <path opacity="0.3"
                                 d="M8.76566 57.1247C13.8733 63.8761 20.5083 68.3017 28.2533 71.0284C28.6712 71.1489 29.1781 71.3428 29.8539 71.6013C29.4007 71.8998 29.1786 72.0901 28.8675 72.2071C25.8374 74.1154 22.7273 76.0324 19.6972 77.9407C19.2441 78.2393 18.7909 78.5378 18.5067 78.901C17.8672 79.7182 18.3835 80.7415 19.4415 80.7922C19.7704 80.8394 20.1615 80.7137 20.4726 80.5968C21.1657 80.2721 21.8589 79.9473 22.5432 79.5405C26.4264 77.2901 30.3008 74.9576 34.1751 72.625C34.3262 72.5255 34.4772 72.426 34.6283 72.3265C35.5257 71.6473 35.5783 70.645 34.8577 69.9761C32.7924 65.8827 30.736 61.8715 28.5995 57.8689C27.8963 56.6168 27.2732 55.356 26.57 54.1039C26.3742 53.793 25.9473 53.5904 25.6983 53.5345C25.3694 53.4873 24.9694 53.5309 24.6762 53.8121C24.3741 54.0111 24.1699 54.3656 24.1257 54.7026C24.0904 55.1217 24.2062 55.4412 24.402 55.7521C24.7046 56.3004 24.9983 56.7667 25.221 57.3238C25.2299 57.4058 25.3099 57.3971 25.3189 57.4792C25.3189 57.4792 25.5147 57.79 25.3278 57.5612C25.221 57.3238 25.3368 57.6433 25.3368 57.6433C25.3457 57.7254 25.4257 57.7167 25.4347 57.7987C25.5415 58.0362 25.7373 58.3471 25.8442 58.5846C26.3605 59.6079 26.9569 60.6225 27.4732 61.6459C28.5859 63.6838 29.6275 65.8126 30.7402 67.8505C30.8471 68.088 31.0429 68.3989 31.1497 68.6363C23.6184 66.3847 17.126 62.5249 11.9921 56.2746C6.39552 49.4935 3.83854 41.6335 4.73903 32.8152C5.5069 25.008 8.01942 18.4198 13.4206 13.0141C22.0377 4.43413 25.5077 3.54123 37.4202 3.65426C39.1271 3.71731 40.914 3.77162 42.6209 3.83467C43.1899 3.85569 43.812 3.62176 43.8915 2.86566C44.0978 1.29312 40.3641 0.647035 39.4961 0.500003C36.5445 8.13619e-06 28.9414 -1.00116 22.5112 1.78829C15.3169 4.90926 11.2695 8.82238 6.99944 15.7707C-1.46397 29.5424 -0.880041 44.3903 8.76566 57.1247Z"
@@ -131,8 +321,7 @@
                         </g>
                         <defs>
                             <clipPath id="clip0_18004_1616">
-                                <rect width="54" height="80" fill="white"
-                                    transform="translate(54 80) rotate(-180)" />
+                                <rect width="54" height="80" fill="white" transform="translate(54 80) rotate(-180)" />
                             </clipPath>
                         </defs>
                     </svg>
@@ -145,8 +334,7 @@
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
                                     d="M1 5.301V18.699C1.0025 19.4257 1.29368 20.1216 1.80945 20.6336C2.32522 21.1455 3.0233 21.4315 3.75 21.4286H20.25C20.9767 21.4315 21.6748 21.1455 22.1905 20.6336C22.7063 20.1216 22.9975 19.4257 23 18.699V5.301C22.9975 4.5743 22.7063 3.87838 22.1905 3.36644C21.6748 2.8545 20.9767 2.56851 20.25 2.57143H3.75C3.0233 2.56851 2.32522 2.8545 1.80945 3.36644C1.29368 3.87838 1.0025 4.5743 1 5.301Z"
-                                    stroke="white" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" />
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                 <path
                                     d="M23 10.0221C23.5523 10.0221 24 9.57438 24 9.02209C24 8.46981 23.5523 8.02209 23 8.02209V9.02209V10.0221ZM1 8.02209C0.447715 8.02209 0 8.46981 0 9.02209C0 9.57438 0.447715 10.0221 1 10.0221V9.02209V8.02209ZM13.375 14.8607C13.9273 14.8607 14.375 14.413 14.375 13.8607C14.375 13.3084 13.9273 12.8607 13.375 12.8607V13.8607V14.8607ZM1 12.8607C0.447715 12.8607 0 13.3084 0 13.8607C0 14.413 0.447715 14.8607 1 14.8607V13.8607V12.8607ZM18.8756 14.8609C19.4278 14.8609 19.8756 14.4132 19.8756 13.8609C19.8756 13.3086 19.4278 12.8609 18.8756 12.8609V13.8609V14.8609ZM17.5006 12.8609C16.9483 12.8609 16.5006 13.3086 16.5006 13.8609C16.5006 14.4132 16.9483 14.8609 17.5006 14.8609V13.8609V12.8609ZM23 9.02209V8.02209H1V9.02209V10.0221H23V9.02209ZM13.375 13.8607V12.8607H1V13.8607V14.8607H13.375V13.8607ZM18.8756 13.8609V12.8609H17.5006V13.8609V14.8609H18.8756V13.8609Z"
                                     fill="white" />
@@ -158,25 +346,1363 @@
         </div>
     </div>
 
+    <section class="s2">
+        <div class="s2__container container">
+            <ul class="s2__item-list item-list">
+                <li class="item-list__item gradient-border gradient-border--s2">
+                    <a href="item-page.html" class="item-list__item-link">
+                        <div class="item-list__item-mark-wrp">
+                            <div class="item-list__item-mark-item item-list__item-mark-item--black">
+                                <span>рекомендуємо<span>
+                            </div>
+                            <!-- <div class="item-list__item-mark-item item-list__item-mark-item--white">
+                                    <span>надійна</span>
+                                </div> -->
+                        </div>
+                        <div class="item-list__item-img img-wrp">
+                            <img src="imges/items/item-img.png" alt="main img">
+                        </div>
+                        <div class="item-list__item-rating-wrp">
+                            <div class="item-list__item-rating-start-wrp">
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                            </div>
+
+                            <div class="item-list__item-rating-text">
+                                рейтинг
+                                <span class="item-list__item-rating-num">5.0</span>
+                            </div>
+                        </div>
+
+                        <div class="item-list__item-title-wrp">
+                            <div class="item-list__item-icon img-wrp">
+                                <img src="imges/items/icon-ok.svg" alt="icon">
+                            </div>
+                            <div class="item-list__item-title">Apelsin Studio</div>
+                        </div>
+
+                        <div class="item-list__item-place-wrp">
+                            <div class="item-list__item-place-icon img-wrp">
+                                <img src="imges/items/icon-place.svg" alt="icon">
+                            </div>
+                            <div class="item-list__item-place"><span>Місто:</span> Всі міста</div>
+                        </div>
+
+                        <ul class="item-list__check-list">
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Без штрафів
+                            </li>
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Фотосесія
+                            </li>
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Навчання
+                            </li>
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Житло
+                            </li>
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Допомога з переїздом
+                            </li>
+                        </ul>
+
+                        <div class="item-list__item-main-text">
+                            Lorem Ipsum - це текст-"риба", що використовується в друкарстві та д
+                        </div>
+                    </a>
+                </li>
+                <li class="item-list__item gradient-border gradient-border--s2">
+                    <a href="item-page.html" class="item-list__item-link">
+                        <div class="item-list__item-mark-wrp">
+                            <div class="item-list__item-mark-item item-list__item-mark-item--white">
+                                <span>надійна</span>
+                            </div>
+                        </div>
+                        <div class="item-list__item-img img-wrp">
+                            <img src="imges/items/item-img.png" alt="main img">
+                        </div>
+                        <div class="item-list__item-rating-wrp">
+                            <div class="item-list__item-rating-start-wrp">
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star-05.svg" alt="icon">
+                                </div>
+                            </div>
+
+                            <div class="item-list__item-rating-text">
+                                рейтинг
+                                <span class="item-list__item-rating-num">4.5</span>
+                            </div>
+                        </div>
+
+                        <div class="item-list__item-title-wrp">
+                            <!-- <div class="item-list__item-icon img-wrp">
+                                    <img src="imges/items/icon-ok.svg" alt="icon">
+                                </div> -->
+                            <div class="item-list__item-title">Apelsin Studio</div>
+                        </div>
+
+                        <div class="item-list__item-place-wrp">
+                            <div class="item-list__item-place-icon img-wrp">
+                                <img src="imges/items/icon-place.svg" alt="icon">
+                            </div>
+                            <div class="item-list__item-place"><span>Місто:</span> Всі міста</div>
+                        </div>
+
+                        <ul class="item-list__check-list">
+
+                        </ul>
+
+                        <div class="item-list__item-main-text">
+                            Lorem Ipsum - це текст-"риба", що використовується в друкарстві та д
+                        </div>
+                    </a>
+                </li>
+                <li class="item-list__item gradient-border gradient-border--s2">
+                    <a href="item-page.html" class="item-list__item-link">
+                        <div class="item-list__item-mark-wrp">
+                            <div class="item-list__item-mark-item item-list__item-mark-item--black">
+                                <span>рекомендуємо<span>
+                            </div>
+                            <!-- <div class="item-list__item-mark-item item-list__item-mark-item--white">
+                                    <span>надійна</span>
+                                </div> -->
+                        </div>
+                        <div class="item-list__item-img img-wrp">
+                            <img src="imges/items/item-img.png" alt="main img">
+                        </div>
+                        <div class="item-list__item-rating-wrp">
+                            <div class="item-list__item-rating-start-wrp">
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                            </div>
+
+                            <div class="item-list__item-rating-text">
+                                рейтинг
+                                <span class="item-list__item-rating-num">4.0</span>
+                            </div>
+                        </div>
+
+                        <div class="item-list__item-title-wrp">
+                            <div class="item-list__item-icon img-wrp">
+                                <img src="imges/items/icon-ok.svg" alt="icon">
+                            </div>
+                            <div class="item-list__item-title">Apelsin Studio</div>
+                        </div>
+
+                        <div class="item-list__item-place-wrp">
+                            <div class="item-list__item-place-icon img-wrp">
+                                <img src="imges/items/icon-place.svg" alt="icon">
+                            </div>
+                            <div class="item-list__item-place"><span>Місто:</span> Всі міста</div>
+                        </div>
+
+                        <ul class="item-list__check-list">
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Без штрафів
+                            </li>
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Фотосесія
+                            </li>
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Навчання
+                            </li>
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Житло
+                            </li>
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Допомога з переїздом
+                            </li>
+                        </ul>
+
+                        <div class="item-list__item-main-text">
+                            Lorem Ipsum - це текст-"риба", що використовується в друкарстві та д
+                        </div>
+                    </a>
+                </li>
+                <li class="item-list__item gradient-border gradient-border--s2">
+                    <a href="item-page.html" class="item-list__item-link">
+                        <div class="item-list__item-mark-wrp">
+                            <div class="item-list__item-mark-item item-list__item-mark-item--black">
+                                <span>рекомендуємо<span>
+                            </div>
+                            <!-- <div class="item-list__item-mark-item item-list__item-mark-item--white">
+                                    <span>надійна</span>
+                                </div> -->
+                        </div>
+                        <div class="item-list__item-img img-wrp">
+                            <img src="imges/items/item-img.png" alt="main img">
+                        </div>
+                        <div class="item-list__item-rating-wrp">
+                            <div class="item-list__item-rating-start-wrp">
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                            </div>
+
+                            <div class="item-list__item-rating-text">
+                                рейтинг
+                                <span class="item-list__item-rating-num">5.0</span>
+                            </div>
+                        </div>
+
+                        <div class="item-list__item-title-wrp">
+                            <div class="item-list__item-icon img-wrp">
+                                <img src="imges/items/icon-ok.svg" alt="icon">
+                            </div>
+                            <div class="item-list__item-title">Apelsin Studio</div>
+                        </div>
+
+                        <div class="item-list__item-place-wrp">
+                            <div class="item-list__item-place-icon img-wrp">
+                                <img src="imges/items/icon-place.svg" alt="icon">
+                            </div>
+                            <div class="item-list__item-place"><span>Місто:</span> Всі міста</div>
+                        </div>
+
+                        <ul class="item-list__check-list">
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Без штрафів
+                            </li>
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Фотосесія
+                            </li>
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Навчання
+                            </li>
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Житло
+                            </li>
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Допомога з переїздом
+                            </li>
+                        </ul>
+
+                        <div class="item-list__item-main-text">
+                            Lorem Ipsum - це текст-"риба", що використовується в друкарстві та д
+                        </div>
+                    </a>
+                </li>
+
+                <li class="item-list__item gradient-border gradient-border--s2">
+                    <a href="item-page.html" class="item-list__item-link">
+                        <div class="item-list__item-mark-wrp">
+                            <div class="item-list__item-mark-item item-list__item-mark-item--black">
+                                <span>рекомендуємо<span>
+                            </div>
+                            <!-- <div class="item-list__item-mark-item item-list__item-mark-item--white">
+                                    <span>надійна</span>
+                                </div> -->
+                        </div>
+                        <div class="item-list__item-img img-wrp">
+                            <img src="imges/items/item-img.png" alt="main img">
+                        </div>
+                        <div class="item-list__item-rating-wrp">
+                            <div class="item-list__item-rating-start-wrp">
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                            </div>
+
+                            <div class="item-list__item-rating-text">
+                                рейтинг
+                                <span class="item-list__item-rating-num">5.0</span>
+                            </div>
+                        </div>
+
+                        <div class="item-list__item-title-wrp">
+                            <div class="item-list__item-icon img-wrp">
+                                <img src="imges/items/icon-ok.svg" alt="icon">
+                            </div>
+                            <div class="item-list__item-title">Apelsin Studio</div>
+                        </div>
+
+                        <div class="item-list__item-place-wrp">
+                            <div class="item-list__item-place-icon img-wrp">
+                                <img src="imges/items/icon-place.svg" alt="icon">
+                            </div>
+                            <div class="item-list__item-place"><span>Місто:</span> Всі міста</div>
+                        </div>
+
+                        <ul class="item-list__check-list">
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Без штрафів
+                            </li>
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Фотосесія
+                            </li>
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Навчання
+                            </li>
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Житло
+                            </li>
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Допомога з переїздом
+                            </li>
+                        </ul>
+
+                        <div class="item-list__item-main-text">
+                            Lorem Ipsum - це текст-"риба", що використовується в друкарстві та д
+                        </div>
+                    </a>
+                </li>
+                <li class="item-list__item gradient-border gradient-border--s2">
+                    <a href="item-page.html" class="item-list__item-link">
+                        <div class="item-list__item-mark-wrp">
+                            <div class="item-list__item-mark-item item-list__item-mark-item--black">
+                                <span>рекомендуємо<span>
+                            </div>
+                            <!-- <div class="item-list__item-mark-item item-list__item-mark-item--white">
+                                    <span>надійна</span>
+                                </div> -->
+                        </div>
+                        <div class="item-list__item-img img-wrp">
+                            <img src="imges/items/item-img.png" alt="main img">
+                        </div>
+                        <div class="item-list__item-rating-wrp">
+                            <div class="item-list__item-rating-start-wrp">
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                            </div>
+
+                            <div class="item-list__item-rating-text">
+                                рейтинг
+                                <span class="item-list__item-rating-num">5.0</span>
+                            </div>
+                        </div>
+
+                        <div class="item-list__item-title-wrp">
+                            <div class="item-list__item-icon img-wrp">
+                                <img src="imges/items/icon-ok.svg" alt="icon">
+                            </div>
+                            <div class="item-list__item-title">Apelsin Studio</div>
+                        </div>
+
+                        <div class="item-list__item-place-wrp">
+                            <div class="item-list__item-place-icon img-wrp">
+                                <img src="imges/items/icon-place.svg" alt="icon">
+                            </div>
+                            <div class="item-list__item-place"><span>Місто:</span> Всі міста</div>
+                        </div>
+
+                        <ul class="item-list__check-list">
+
+                        </ul>
+
+                        <div class="item-list__item-main-text">
+                            Lorem Ipsum - це текст-"риба", що використовується в друкарстві та д
+                        </div>
+                    </a>
+                </li>
+                <li class="item-list__item gradient-border gradient-border--s2">
+                    <a href="item-page.html" class="item-list__item-link">
+                        <div class="item-list__item-mark-wrp">
+                            <div class="item-list__item-mark-item item-list__item-mark-item--black">
+                                <span>рекомендуємо<span>
+                            </div>
+                            <!-- <div class="item-list__item-mark-item item-list__item-mark-item--white">
+                                    <span>надійна</span>
+                                </div> -->
+                        </div>
+                        <div class="item-list__item-img img-wrp">
+                            <img src="imges/items/item-img.png" alt="main img">
+                        </div>
+                        <div class="item-list__item-rating-wrp">
+                            <div class="item-list__item-rating-start-wrp">
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                            </div>
+
+                            <div class="item-list__item-rating-text">
+                                рейтинг
+                                <span class="item-list__item-rating-num">5.0</span>
+                            </div>
+                        </div>
+
+                        <div class="item-list__item-title-wrp">
+                            <div class="item-list__item-icon img-wrp">
+                                <img src="imges/items/icon-ok.svg" alt="icon">
+                            </div>
+                            <div class="item-list__item-title">Apelsin Studio</div>
+                        </div>
+
+                        <div class="item-list__item-place-wrp">
+                            <div class="item-list__item-place-icon img-wrp">
+                                <img src="imges/items/icon-place.svg" alt="icon">
+                            </div>
+                            <div class="item-list__item-place"><span>Місто:</span> Всі міста</div>
+                        </div>
+
+                        <ul class="item-list__check-list">
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Без штрафів
+                            </li>
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Фотосесія
+                            </li>
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Навчання
+                            </li>
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Житло
+                            </li>
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Допомога з переїздом
+                            </li>
+                        </ul>
+
+                        <div class="item-list__item-main-text">
+                            Lorem Ipsum - це текст-"риба", що використовується в друкарстві та д
+                        </div>
+                    </a>
+                </li>
+                <li class="item-list__item gradient-border gradient-border--s2">
+                    <a href="item-page.html" class="item-list__item-link">
+                        <div class="item-list__item-mark-wrp">
+                            <div class="item-list__item-mark-item item-list__item-mark-item--black">
+                                <span>рекомендуємо<span>
+                            </div>
+                            <!-- <div class="item-list__item-mark-item item-list__item-mark-item--white">
+                                    <span>надійна</span>
+                                </div> -->
+                        </div>
+                        <div class="item-list__item-img img-wrp">
+                            <img src="imges/items/item-img.png" alt="main img">
+                        </div>
+                        <div class="item-list__item-rating-wrp">
+                            <div class="item-list__item-rating-start-wrp">
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                            </div>
+
+                            <div class="item-list__item-rating-text">
+                                рейтинг
+                                <span class="item-list__item-rating-num">5.0</span>
+                            </div>
+                        </div>
+
+                        <div class="item-list__item-title-wrp">
+                            <div class="item-list__item-icon img-wrp">
+                                <img src="imges/items/icon-ok.svg" alt="icon">
+                            </div>
+                            <div class="item-list__item-title">Apelsin Studio</div>
+                        </div>
+
+                        <div class="item-list__item-place-wrp">
+                            <div class="item-list__item-place-icon img-wrp">
+                                <img src="imges/items/icon-place.svg" alt="icon">
+                            </div>
+                            <div class="item-list__item-place"><span>Місто:</span> Всі міста</div>
+                        </div>
+
+                        <ul class="item-list__check-list">
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Без штрафів
+                            </li>
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Фотосесія
+                            </li>
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Навчання
+                            </li>
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Житло
+                            </li>
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Допомога з переїздом
+                            </li>
+                        </ul>
+
+                        <div class="item-list__item-main-text">
+                            Lorem Ipsum - це текст-"риба", що використовується в друкарстві та д
+                        </div>
+                    </a>
+                </li>
+
+                <li class="item-list__item gradient-border gradient-border--s2">
+                    <a href="item-page.html" class="item-list__item-link">
+                        <div class="item-list__item-mark-wrp">
+                            <div class="item-list__item-mark-item item-list__item-mark-item--black">
+                                <span>рекомендуємо<span>
+                            </div>
+                            <!-- <div class="item-list__item-mark-item item-list__item-mark-item--white">
+                                    <span>надійна</span>
+                                </div> -->
+                        </div>
+                        <div class="item-list__item-img img-wrp">
+                            <img src="imges/items/item-img.png" alt="main img">
+                        </div>
+                        <div class="item-list__item-rating-wrp">
+                            <div class="item-list__item-rating-start-wrp">
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                            </div>
+
+                            <div class="item-list__item-rating-text">
+                                рейтинг
+                                <span class="item-list__item-rating-num">5.0</span>
+                            </div>
+                        </div>
+
+                        <div class="item-list__item-title-wrp">
+                            <div class="item-list__item-icon img-wrp">
+                                <img src="imges/items/icon-ok.svg" alt="icon">
+                            </div>
+                            <div class="item-list__item-title">Apelsin Studio</div>
+                        </div>
+
+                        <div class="item-list__item-place-wrp">
+                            <div class="item-list__item-place-icon img-wrp">
+                                <img src="imges/items/icon-place.svg" alt="icon">
+                            </div>
+                            <div class="item-list__item-place"><span>Місто:</span> Всі міста</div>
+                        </div>
+
+                        <ul class="item-list__check-list">
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Без штрафів
+                            </li>
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Фотосесія
+                            </li>
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Навчання
+                            </li>
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Житло
+                            </li>
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Допомога з переїздом
+                            </li>
+                        </ul>
+
+                        <div class="item-list__item-main-text">
+                            Lorem Ipsum - це текст-"риба", що використовується в друкарстві та д
+                        </div>
+                    </a>
+                </li>
+                <li class="item-list__item gradient-border gradient-border--s2">
+                    <a href="item-page.html" class="item-list__item-link">
+                        <div class="item-list__item-mark-wrp">
+                            <div class="item-list__item-mark-item item-list__item-mark-item--black">
+                                <span>рекомендуємо<span>
+                            </div>
+                            <!-- <div class="item-list__item-mark-item item-list__item-mark-item--white">
+                                    <span>надійна</span>
+                                </div> -->
+                        </div>
+                        <div class="item-list__item-img img-wrp">
+                            <img src="imges/items/item-img.png" alt="main img">
+                        </div>
+                        <div class="item-list__item-rating-wrp">
+                            <div class="item-list__item-rating-start-wrp">
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                            </div>
+
+                            <div class="item-list__item-rating-text">
+                                рейтинг
+                                <span class="item-list__item-rating-num">5.0</span>
+                            </div>
+                        </div>
+
+                        <div class="item-list__item-title-wrp">
+                            <div class="item-list__item-icon img-wrp">
+                                <img src="imges/items/icon-ok.svg" alt="icon">
+                            </div>
+                            <div class="item-list__item-title">Apelsin Studio</div>
+                        </div>
+
+                        <div class="item-list__item-place-wrp">
+                            <div class="item-list__item-place-icon img-wrp">
+                                <img src="imges/items/icon-place.svg" alt="icon">
+                            </div>
+                            <div class="item-list__item-place"><span>Місто:</span> Всі міста</div>
+                        </div>
+
+                        <ul class="item-list__check-list">
+
+                        </ul>
+
+                        <div class="item-list__item-main-text">
+                            Lorem Ipsum - це текст-"риба", що використовується в друкарстві та д
+                        </div>
+                    </a>
+                </li>
+                <li class="item-list__item gradient-border gradient-border--s2">
+                    <a href="item-page.html" class="item-list__item-link">
+                        <div class="item-list__item-mark-wrp">
+                            <div class="item-list__item-mark-item item-list__item-mark-item--black">
+                                <span>рекомендуємо<span>
+                            </div>
+                            <!-- <div class="item-list__item-mark-item item-list__item-mark-item--white">
+                                    <span>надійна</span>
+                                </div> -->
+                        </div>
+                        <div class="item-list__item-img img-wrp">
+                            <img src="imges/items/item-img.png" alt="main img">
+                        </div>
+                        <div class="item-list__item-rating-wrp">
+                            <div class="item-list__item-rating-start-wrp">
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                            </div>
+
+                            <div class="item-list__item-rating-text">
+                                рейтинг
+                                <span class="item-list__item-rating-num">5.0</span>
+                            </div>
+                        </div>
+
+                        <div class="item-list__item-title-wrp">
+                            <div class="item-list__item-icon img-wrp">
+                                <img src="imges/items/icon-ok.svg" alt="icon">
+                            </div>
+                            <div class="item-list__item-title">Apelsin Studio</div>
+                        </div>
+
+                        <div class="item-list__item-place-wrp">
+                            <div class="item-list__item-place-icon img-wrp">
+                                <img src="imges/items/icon-place.svg" alt="icon">
+                            </div>
+                            <div class="item-list__item-place"><span>Місто:</span> Всі міста</div>
+                        </div>
+
+                        <ul class="item-list__check-list">
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Без штрафів
+                            </li>
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Фотосесія
+                            </li>
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Навчання
+                            </li>
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Житло
+                            </li>
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Допомога з переїздом
+                            </li>
+                        </ul>
+
+                        <div class="item-list__item-main-text">
+                            Lorem Ipsum - це текст-"риба", що використовується в друкарстві та д
+                        </div>
+                    </a>
+                </li>
+                <li class="item-list__item gradient-border gradient-border--s2">
+                    <a href="item-page.html" class="item-list__item-link">
+                        <div class="item-list__item-mark-wrp">
+                            <div class="item-list__item-mark-item item-list__item-mark-item--black">
+                                <span>рекомендуємо<span>
+                            </div>
+                            <!-- <div class="item-list__item-mark-item item-list__item-mark-item--white">
+                                    <span>надійна</span>
+                                </div> -->
+                        </div>
+                        <div class="item-list__item-img img-wrp">
+                            <img src="imges/items/item-img.png" alt="main img">
+                        </div>
+                        <div class="item-list__item-rating-wrp">
+                            <div class="item-list__item-rating-start-wrp">
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                            </div>
+
+                            <div class="item-list__item-rating-text">
+                                рейтинг
+                                <span class="item-list__item-rating-num">5.0</span>
+                            </div>
+                        </div>
+
+                        <div class="item-list__item-title-wrp">
+                            <div class="item-list__item-icon img-wrp">
+                                <img src="imges/items/icon-ok.svg" alt="icon">
+                            </div>
+                            <div class="item-list__item-title">Apelsin Studio</div>
+                        </div>
+
+                        <div class="item-list__item-place-wrp">
+                            <div class="item-list__item-place-icon img-wrp">
+                                <img src="imges/items/icon-place.svg" alt="icon">
+                            </div>
+                            <div class="item-list__item-place"><span>Місто:</span> Всі міста</div>
+                        </div>
+
+                        <ul class="item-list__check-list">
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Без штрафів
+                            </li>
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Фотосесія
+                            </li>
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Навчання
+                            </li>
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Житло
+                            </li>
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Допомога з переїздом
+                            </li>
+                        </ul>
+
+                        <div class="item-list__item-main-text">
+                            Lorem Ipsum - це текст-"риба", що використовується в друкарстві та д
+                        </div>
+                    </a>
+                </li>
+
+                <li class="item-list__item gradient-border gradient-border--s2">
+                    <a href="item-page.html" class="item-list__item-link">
+                        <div class="item-list__item-mark-wrp">
+                            <div class="item-list__item-mark-item item-list__item-mark-item--black">
+                                <span>рекомендуємо<span>
+                            </div>
+                            <!-- <div class="item-list__item-mark-item item-list__item-mark-item--white">
+                                    <span>надійна</span>
+                                </div> -->
+                        </div>
+                        <div class="item-list__item-img img-wrp">
+                            <img src="imges/items/item-img.png" alt="main img">
+                        </div>
+                        <div class="item-list__item-rating-wrp">
+                            <div class="item-list__item-rating-start-wrp">
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                            </div>
+
+                            <div class="item-list__item-rating-text">
+                                рейтинг
+                                <span class="item-list__item-rating-num">5.0</span>
+                            </div>
+                        </div>
+
+                        <div class="item-list__item-title-wrp">
+                            <div class="item-list__item-icon img-wrp">
+                                <img src="imges/items/icon-ok.svg" alt="icon">
+                            </div>
+                            <div class="item-list__item-title">Apelsin Studio</div>
+                        </div>
+
+                        <div class="item-list__item-place-wrp">
+                            <div class="item-list__item-place-icon img-wrp">
+                                <img src="imges/items/icon-place.svg" alt="icon">
+                            </div>
+                            <div class="item-list__item-place"><span>Місто:</span> Всі міста</div>
+                        </div>
+
+                        <ul class="item-list__check-list">
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Без штрафів
+                            </li>
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Фотосесія
+                            </li>
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Навчання
+                            </li>
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Житло
+                            </li>
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Допомога з переїздом
+                            </li>
+                        </ul>
+
+                        <div class="item-list__item-main-text">
+                            Lorem Ipsum - це текст-"риба", що використовується в друкарстві та д
+                        </div>
+                    </a>
+                </li>
+                <li class="item-list__item gradient-border gradient-border--s2">
+                    <a href="item-page.html" class="item-list__item-link">
+                        <div class="item-list__item-mark-wrp">
+                            <div class="item-list__item-mark-item item-list__item-mark-item--black">
+                                <span>рекомендуємо<span>
+                            </div>
+                            <!-- <div class="item-list__item-mark-item item-list__item-mark-item--white">
+                                    <span>надійна</span>
+                                </div> -->
+                        </div>
+                        <div class="item-list__item-img img-wrp">
+                            <img src="imges/items/item-img.png" alt="main img">
+                        </div>
+                        <div class="item-list__item-rating-wrp">
+                            <div class="item-list__item-rating-start-wrp">
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                            </div>
+
+                            <div class="item-list__item-rating-text">
+                                рейтинг
+                                <span class="item-list__item-rating-num">5.0</span>
+                            </div>
+                        </div>
+
+                        <div class="item-list__item-title-wrp">
+                            <div class="item-list__item-icon img-wrp">
+                                <img src="imges/items/icon-ok.svg" alt="icon">
+                            </div>
+                            <div class="item-list__item-title">Apelsin Studio</div>
+                        </div>
+
+                        <div class="item-list__item-place-wrp">
+                            <div class="item-list__item-place-icon img-wrp">
+                                <img src="imges/items/icon-place.svg" alt="icon">
+                            </div>
+                            <div class="item-list__item-place"><span>Місто:</span> Всі міста</div>
+                        </div>
+
+                        <ul class="item-list__check-list">
+
+                        </ul>
+
+                        <div class="item-list__item-main-text">
+                            Lorem Ipsum - це текст-"риба", що використовується в друкарстві та д
+                        </div>
+                    </a>
+                </li>
+                <li class="item-list__item gradient-border gradient-border--s2">
+                    <a href="item-page.html" class="item-list__item-link">
+                        <div class="item-list__item-mark-wrp">
+                            <div class="item-list__item-mark-item item-list__item-mark-item--black">
+                                <span>рекомендуємо<span>
+                            </div>
+                            <!-- <div class="item-list__item-mark-item item-list__item-mark-item--white">
+                                    <span>надійна</span>
+                                </div> -->
+                        </div>
+                        <div class="item-list__item-img img-wrp">
+                            <img src="imges/items/item-img.png" alt="main img">
+                        </div>
+                        <div class="item-list__item-rating-wrp">
+                            <div class="item-list__item-rating-start-wrp">
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                            </div>
+
+                            <div class="item-list__item-rating-text">
+                                рейтинг
+                                <span class="item-list__item-rating-num">5.0</span>
+                            </div>
+                        </div>
+
+                        <div class="item-list__item-title-wrp">
+                            <div class="item-list__item-icon img-wrp">
+                                <img src="imges/items/icon-ok.svg" alt="icon">
+                            </div>
+                            <div class="item-list__item-title">Apelsin Studio</div>
+                        </div>
+
+                        <div class="item-list__item-place-wrp">
+                            <div class="item-list__item-place-icon img-wrp">
+                                <img src="imges/items/icon-place.svg" alt="icon">
+                            </div>
+                            <div class="item-list__item-place"><span>Місто:</span> Всі міста</div>
+                        </div>
+
+                        <ul class="item-list__check-list">
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Без штрафів
+                            </li>
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Фотосесія
+                            </li>
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Навчання
+                            </li>
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Житло
+                            </li>
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Допомога з переїздом
+                            </li>
+                        </ul>
+
+                        <div class="item-list__item-main-text">
+                            Lorem Ipsum - це текст-"риба", що використовується в друкарстві та д
+                        </div>
+                    </a>
+                </li>
+                <li class="item-list__item gradient-border gradient-border--s2">
+                    <a href="item-page.html" class="item-list__item-link">
+                        <div class="item-list__item-mark-wrp">
+                            <div class="item-list__item-mark-item item-list__item-mark-item--black">
+                                <span>рекомендуємо<span>
+                            </div>
+                            <!-- <div class="item-list__item-mark-item item-list__item-mark-item--white">
+                                    <span>надійна</span>
+                                </div> -->
+                        </div>
+                        <div class="item-list__item-img img-wrp">
+                            <img src="imges/items/item-img.png" alt="main img">
+                        </div>
+                        <div class="item-list__item-rating-wrp">
+                            <div class="item-list__item-rating-start-wrp">
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                                <div class="item-list__item-rating-star-icon img-wrp">
+                                    <img src="imges/items/icon-star.svg" alt="icon">
+                                </div>
+                            </div>
+
+                            <div class="item-list__item-rating-text">
+                                рейтинг
+                                <span class="item-list__item-rating-num">5.0</span>
+                            </div>
+                        </div>
+
+                        <div class="item-list__item-title-wrp">
+                            <div class="item-list__item-icon img-wrp">
+                                <img src="imges/items/icon-ok.svg" alt="icon">
+                            </div>
+                            <div class="item-list__item-title">Apelsin Studio</div>
+                        </div>
+
+                        <div class="item-list__item-place-wrp">
+                            <div class="item-list__item-place-icon img-wrp">
+                                <img src="imges/items/icon-place.svg" alt="icon">
+                            </div>
+                            <div class="item-list__item-place"><span>Місто:</span> Всі міста</div>
+                        </div>
+
+                        <ul class="item-list__check-list">
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Без штрафів
+                            </li>
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Фотосесія
+                            </li>
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Навчання
+                            </li>
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Житло
+                            </li>
+                            <li class="item-list__check-item">
+                                <div class="item-list__check-icon img-wrp">
+                                    <img src="imges/items/icon-check.svg" alt="icon">
+                                </div>
+                                Допомога з переїздом
+                            </li>
+                        </ul>
+
+                        <div class="item-list__item-main-text">
+                            Lorem Ipsum - це текст-"риба", що використовується в друкарстві та д
+                        </div>
+                    </a>
+                </li>
+            </ul>
+
+            <button class="s2__btn">
+                <div class="s2__btn-text">Більше студій</div>
+                <div class="s2__btn-bg"></div>
+            </button>
+        </div>
+    </section>
+
     <div class="baner container gradient-border gradient-border--popup">
 
         <div class="popup__start">
-            <div class="popup__start-text">Як завести крипто картку Trustee?</div>
+            <div class="popup__start-text">Як завести <span>крипто</span> картку Simple?</div>
             <div class="popup__img-wrp">
                 <div class="popup__main-img img-wrp">
-                    <img src="imges/popup-main-img.png" alt="img">
+                    <picture>
+                        <source srcset="imges/popup-main-img-mob.png" media="(max-width: 1024px)">
+                        <img src="imges/popup-main-img.png" alt="img">
+                    </picture>
                 </div>
                 <button class="popup__button-start-video img-wrp buttonPulse--noTransition">
                     <img src="imges/icons/video-box__play-icon.svg" alt="play icon">
                 </button>
                 <div class="popup__img-shadow img-wrp">
-                    <img src="imges/popup-shadow.png" alt="shadow">
+                    <picture>
+                        <source srcset="imges/popup-shadow-mob.png" media="(max-width: 1024px)">
+                        <img src="imges/popup-shadow.png" alt="shadow">
+                    </picture>
                 </div>
             </div>
             <div class="popup__start-info-text-wrp">
                 <div class="popup__start-info-icon img-wrp">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path opacity="0.3"
                             d="M9.80313 3.3001C10.2031 2.9001 10.3031 2.6001 10.5031 2.5001C11.3031 1.8001 12.5031 1.8001 13.4031 2.5001C13.6031 2.6001 13.8031 2.9001 14.1031 3.3001C14.3031 3.5001 14.4031 3.6001 14.4031 3.7001C14.8031 4.1001 15.4031 4.3001 16.0031 4.3001H16.5031C17.1031 4.2001 17.4031 4.2001 17.6031 4.2001C18.7031 4.3001 19.5031 5.2001 19.6031 6.2001C19.6031 6.4001 19.6031 6.7001 19.5031 7.3001V7.8001C19.5031 8.4001 19.7031 8.9001 20.1031 9.4001C20.2031 9.5001 20.3031 9.6001 20.5031 9.7001C20.9031 10.1001 21.2031 10.2001 21.3031 10.4001C22.0031 11.2001 22.0031 12.4001 21.3031 13.3001C21.2031 13.5001 20.9031 13.7001 20.5031 14.0001C20.3031 14.2001 20.2031 14.3001 20.1031 14.3001C19.7031 14.7001 19.5031 15.3001 19.5031 15.9001V16.4001C19.6031 17.0001 19.6031 17.3001 19.6031 17.5001C19.5031 18.6001 18.6031 19.4001 17.6031 19.5001C17.4031 19.5001 17.1031 19.5001 16.5031 19.4001C16.2031 19.4001 16.1031 19.4001 16.0031 19.4001C15.4031 19.4001 14.9031 19.6001 14.4031 20.0001C14.3031 20.1001 14.2031 20.2001 14.1031 20.4001C13.7031 20.8001 13.6031 21.1001 13.4031 21.2001C12.6031 21.9001 11.4031 21.9001 10.5031 21.2001C10.3031 21.1001 10.1031 20.8001 9.80313 20.4001C9.60313 20.2001 9.50313 20.1001 9.50313 20.0001C9.10313 19.6001 8.50313 19.4001 7.90313 19.4001C7.80313 19.4001 7.60313 19.4001 7.40313 19.4001C6.80313 19.5001 6.50313 19.5001 6.30313 19.5001C5.20313 19.4001 4.40313 18.5001 4.30313 17.5001C4.30313 17.3001 4.30313 17.0001 4.40313 16.4001C4.40313 16.1001 4.40313 16.0001 4.40313 15.9001C4.40313 15.3001 4.20313 14.8001 3.80313 14.3001C3.70313 14.2001 3.60313 14.1001 3.40313 14.0001C3.00313 13.6001 2.70313 13.5001 2.60313 13.3001C1.90312 12.5001 1.90312 11.3001 2.60313 10.4001C2.70313 10.2001 3.00313 10.0001 3.40313 9.7001C3.60313 9.5001 3.70313 9.4001 3.80313 9.4001C4.20313 9.0001 4.40313 8.4001 4.40313 7.8001C4.40313 7.7001 4.40313 7.5001 4.40313 7.3001C4.30313 6.8001 4.30313 6.5001 4.30313 6.3001C4.40313 5.2001 5.30313 4.4001 6.30313 4.3001C6.50313 4.3001 6.80313 4.3001 7.40313 4.4001H7.90313C8.50313 4.4001 9.00313 4.2001 9.50313 3.8001C9.60313 3.6001 9.70313 3.5001 9.80313 3.3001Z"
                             fill="#989CCF" />
@@ -196,14 +1722,13 @@
             <div class="popup__title">
                 <span class="fs__title-desk-text fs__title-desk-text--1">
                     Криптовалютна картка
-                    Trustee <span>для моделей</span>
+                    Simple <span>для моделей</span>
                 </span>
             </div>
             <ul class="popup__list">
                 <li class="popup__list-item">
                     <div class="popup__list-item-icon img-wrp">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M2 12.5L8.66714 19L22 6" stroke="white" stroke-linecap="round"
                                 stroke-linejoin="round" />
                         </svg>
@@ -215,8 +1740,7 @@
                 </li>
                 <li class="popup__list-item">
                     <div class="popup__list-item-icon img-wrp">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M2 12.5L8.66714 19L22 6" stroke="white" stroke-linecap="round"
                                 stroke-linejoin="round" />
                         </svg>
@@ -228,8 +1752,7 @@
                 </li>
                 <li class="popup__list-item">
                     <div class="popup__list-item-icon img-wrp">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M2 12.5L8.66714 19L22 6" stroke="white" stroke-linecap="round"
                                 stroke-linejoin="round" />
                         </svg>
@@ -244,7 +1767,7 @@
         <div class="popup__end">
             <div class="popup__end-top-text-wrp">
                 <div class="popup__end-top-icon img-wrp">
-                    <img src="imges/icons/popup1-icon.png" alt="icon">
+                    <img src="imges/icons/popup2-icon.png" alt="icon">
                 </div>
                 <div class="popup__end-top-text">
                     Ідеально підходить для веб моделей та моделей
@@ -259,8 +1782,7 @@
                     <span>Зручно, надійно, беспечно</span>
                 </div>
                 <div class="popup__end-end-arrow-icon img-wrp">
-                    <svg width="54" height="80" viewBox="0 0 54 80" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
+                    <svg width="54" height="80" viewBox="0 0 54 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_18004_1616)">
                             <path opacity="0.3"
                                 d="M8.76566 57.1247C13.8733 63.8761 20.5083 68.3017 28.2533 71.0284C28.6712 71.1489 29.1781 71.3428 29.8539 71.6013C29.4007 71.8998 29.1786 72.0901 28.8675 72.2071C25.8374 74.1154 22.7273 76.0324 19.6972 77.9407C19.2441 78.2393 18.7909 78.5378 18.5067 78.901C17.8672 79.7182 18.3835 80.7415 19.4415 80.7922C19.7704 80.8394 20.1615 80.7137 20.4726 80.5968C21.1657 80.2721 21.8589 79.9473 22.5432 79.5405C26.4264 77.2901 30.3008 74.9576 34.1751 72.625C34.3262 72.5255 34.4772 72.426 34.6283 72.3265C35.5257 71.6473 35.5783 70.645 34.8577 69.9761C32.7924 65.8827 30.736 61.8715 28.5995 57.8689C27.8963 56.6168 27.2732 55.356 26.57 54.1039C26.3742 53.793 25.9473 53.5904 25.6983 53.5345C25.3694 53.4873 24.9694 53.5309 24.6762 53.8121C24.3741 54.0111 24.1699 54.3656 24.1257 54.7026C24.0904 55.1217 24.2062 55.4412 24.402 55.7521C24.7046 56.3004 24.9983 56.7667 25.221 57.3238C25.2299 57.4058 25.3099 57.3971 25.3189 57.4792C25.3189 57.4792 25.5147 57.79 25.3278 57.5612C25.221 57.3238 25.3368 57.6433 25.3368 57.6433C25.3457 57.7254 25.4257 57.7167 25.4347 57.7987C25.5415 58.0362 25.7373 58.3471 25.8442 58.5846C26.3605 59.6079 26.9569 60.6225 27.4732 61.6459C28.5859 63.6838 29.6275 65.8126 30.7402 67.8505C30.8471 68.088 31.0429 68.3989 31.1497 68.6363C23.6184 66.3847 17.126 62.5249 11.9921 56.2746C6.39552 49.4935 3.83854 41.6335 4.73903 32.8152C5.5069 25.008 8.01942 18.4198 13.4206 13.0141C22.0377 4.43413 25.5077 3.54123 37.4202 3.65426C39.1271 3.71731 40.914 3.77162 42.6209 3.83467C43.1899 3.85569 43.812 3.62176 43.8915 2.86566C44.0978 1.29312 40.3641 0.647035 39.4961 0.500003C36.5445 8.13619e-06 28.9414 -1.00116 22.5112 1.78829C15.3169 4.90926 11.2695 8.82238 6.99944 15.7707C-1.46397 29.5424 -0.880041 44.3903 8.76566 57.1247Z"
@@ -268,8 +1790,7 @@
                         </g>
                         <defs>
                             <clipPath id="clip0_18004_1616">
-                                <rect width="54" height="80" fill="white"
-                                    transform="translate(54 80) rotate(-180)" />
+                                <rect width="54" height="80" fill="white" transform="translate(54 80) rotate(-180)" />
                             </clipPath>
                         </defs>
                     </svg>
@@ -282,8 +1803,7 @@
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
                                     d="M1 5.301V18.699C1.0025 19.4257 1.29368 20.1216 1.80945 20.6336C2.32522 21.1455 3.0233 21.4315 3.75 21.4286H20.25C20.9767 21.4315 21.6748 21.1455 22.1905 20.6336C22.7063 20.1216 22.9975 19.4257 23 18.699V5.301C22.9975 4.5743 22.7063 3.87838 22.1905 3.36644C21.6748 2.8545 20.9767 2.56851 20.25 2.57143H3.75C3.0233 2.56851 2.32522 2.8545 1.80945 3.36644C1.29368 3.87838 1.0025 4.5743 1 5.301Z"
-                                    stroke="white" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" />
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                 <path
                                     d="M23 10.0221C23.5523 10.0221 24 9.57438 24 9.02209C24 8.46981 23.5523 8.02209 23 8.02209V9.02209V10.0221ZM1 8.02209C0.447715 8.02209 0 8.46981 0 9.02209C0 9.57438 0.447715 10.0221 1 10.0221V9.02209V8.02209ZM13.375 14.8607C13.9273 14.8607 14.375 14.413 14.375 13.8607C14.375 13.3084 13.9273 12.8607 13.375 12.8607V13.8607V14.8607ZM1 12.8607C0.447715 12.8607 0 13.3084 0 13.8607C0 14.413 0.447715 14.8607 1 14.8607V13.8607V12.8607ZM18.8756 14.8609C19.4278 14.8609 19.8756 14.4132 19.8756 13.8609C19.8756 13.3086 19.4278 12.8609 18.8756 12.8609V13.8609V14.8609ZM17.5006 12.8609C16.9483 12.8609 16.5006 13.3086 16.5006 13.8609C16.5006 14.4132 16.9483 14.8609 17.5006 14.8609V13.8609V12.8609ZM23 9.02209V8.02209H1V9.02209V10.0221H23V9.02209ZM13.375 13.8607V12.8607H1V13.8607V14.8607H13.375V13.8607ZM18.8756 13.8609V12.8609H17.5006V13.8609V14.8609H18.8756V13.8609Z"
                                     fill="white" />
@@ -294,6 +1814,64 @@
             </div>
         </div>
     </div>
+
+    <section class="s3">
+        <div class="s3__container container">
+            <div class="custom-list">
+                <ol class="custom-list__numeric">
+                    <li class="custom-list__item">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та
+                        дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя</li>
+                    <li class="custom-list__item">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та
+                        дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя</li>
+                    <li class="custom-list__item">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та
+                        дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя</li>
+                </ol>
+                <ul class="custom-list__bullet">
+                    <li class="custom-list__item">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та
+                        дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя</li>
+                    <li class="custom-list__item">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та
+                        дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя</li>
+                    <li class="custom-list__item">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та
+                        дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя</li>
+                </ul>
+            </div>
+
+            <ul class="s3__list gradient-border gradient-border--base-color">
+                <li class="s3__list-item gradient-border gradient-border--base-color gradient-border--right">
+                    <div class="s3__list-item-title">Заголовок</div>
+                    <div class="s3__list-item-text">
+                        Вона популяризувалась в 60-их роках минулого сторіччя завдяки виданню зразків шрифтів
+                        Letraset, які містили уривки з Lorem Ipsum, і вдруге - нещодавно завдяки програмам
+                        комп'ютерного верстування на кшталт Aldus Pagemaker, які
+                    </div>
+                </li>
+                <li class="s3__list-item gradient-border gradient-border--base-color gradient-border--right">
+                    <div class="s3__list-item-title">Заголовок</div>
+                    <div class="s3__list-item-text">
+                        Вона популяризувалась в 60-их роках минулого сторіччя завдяки виданню зразків шрифтів
+                        Letraset, які містили уривки з Lorem Ipsum, і вдруге - нещодавно завдяки програмам
+                        комп'ютерного верстування на кшталт Aldus Pagemaker, які
+                    </div>
+                </li>
+                <li class="s3__list-item gradient-border gradient-border--base-color gradient-border--right">
+                    <div class="s3__list-item-title">Заголовок</div>
+                    <div class="s3__list-item-text">
+                        Вона популяризувалась в 60-их роках минулого сторіччя завдяки виданню зразків шрифтів
+                        Letraset, які містили уривки з Lorem Ipsum, і вдруге - нещодавно завдяки програмам
+                        комп'ютерного верстування на кшталт Aldus Pagemaker, які
+                    </div>
+                </li>
+                <li class="s3__list-item">
+                    <div class="s3__list-item-title">Заголовок</div>
+                    <div class="s3__list-item-text">
+                        Вона популяризувалась в 60-их роках минулого сторіччя завдяки виданню зразків шрифтів
+                        Letraset, які містили уривки з Lorem Ipsum, і вдруге - нещодавно завдяки програмам
+                        комп'ютерного верстування на кшталт Aldus Pagemaker, які
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
 
     <div id="popup" class="popup">
         <div class="popup__body">
@@ -301,16 +1879,22 @@
                 <button class="popup__close" aria-label="Закрыть окно">&times;</button>
 
                 <div class="popup__start">
-                    <div class="popup__start-text">Як завести крипто картку Simple?</div>
+                    <div class="popup__start-text">Як завести <span>крипто</span> картку Simple?</div>
                     <div class="popup__img-wrp">
                         <div class="popup__main-img img-wrp">
-                            <img src="imges/popup-main-img.png" alt="img">
+                            <picture>
+                                <source srcset="imges/popup-main-img-mob.png" media="(max-width: 1024px)">
+                                <img src="imges/popup-main-img.png" alt="img">
+                            </picture>
                         </div>
                         <button class="popup__button-start-video img-wrp buttonPulse--noTransition">
                             <img src="imges/icons/video-box__play-icon.svg" alt="play icon">
                         </button>
                         <div class="popup__img-shadow img-wrp">
-                            <img src="imges/popup-shadow.png" alt="shadow">
+                            <picture>
+                                <source srcset="imges/popup-shadow-mob.png" media="(max-width: 1024px)">
+                                <img src="imges/popup-shadow.png" alt="shadow">
+                            </picture>
                         </div>
                     </div>
                     <div class="popup__start-info-text-wrp">
@@ -454,7 +2038,7 @@
                 <button class="popup__close" aria-label="Закрыть окно">&times;</button>
 
                 <!-- тут можна вставити фрейм на відео любий -->
-                 <div class="video-container"></div>
+                <div class="video-container"></div>
             </div>
         </div>
     </div>
