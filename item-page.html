@@ -17,13 +17,16 @@
         <div class="header__container container">
             <div class="header__logo main-logo">
                 <a class="main-logo__link img-wrp" href="index.html">
-                    <img src="/imges/icons/logo.svg" alt="logo">
+                    <picture>
+                        <source srcset="imges/icons/logo-mob.svg" media="(max-width: 1024px)">
+                        <img src="imges/icons/logo.svg" alt="logo">
+                    </picture>
                 </a>
             </div>
             <nav class="header__menu main-menu gradient-border gradient-border--menu">
                 <ul class="main-menu__list">
                     <li class="main-menu__item">
-                        <a class="main-menu__link default-link  " href="#">
+                        <a class="main-menu__link default-link " href="#">
                             <div class="main-menu__icon img-wrp">
                                 <img src="imges/icons/header/ic1.svg" alt="icon">
                             </div>
@@ -96,6 +99,24 @@
                     <a class="languare-switcher__body-item" href="#">RU</a>
                     <a class="languare-switcher__body-item" href="#">EN</a>
                 </div>
+            </div>
+            <div class="mobile-menu-btn img-wrp">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="11.5" fill="#050728" fill-opacity="0.6"
+                        stroke="url(#paint0_linear_18028_3385)" />
+                    <line x1="4.5" y1="15.5" x2="19.5" y2="15.5" stroke="white" stroke-linecap="round" />
+                    <line x1="4.5" y1="11.5" x2="19.5" y2="11.5" stroke="white" stroke-linecap="round" />
+                    <line x1="4.5" y1="7.5" x2="19.5" y2="7.5" stroke="white" stroke-linecap="round" />
+                    <defs>
+                        <linearGradient id="paint0_linear_18028_3385" x1="1.48052" y1="4.57192e-07" x2="27.7857"
+                            y2="16.5655" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="white" stop-opacity="0.6" />
+                            <stop offset="0.5" stop-color="white" stop-opacity="0.2" />
+                            <stop offset="1" stop-color="white" stop-opacity="0.6" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+
             </div>
         </div>
     </header>
@@ -221,12 +242,6 @@
                             <div class="main-item__info-list-item-icon img-wrp">
                                 <img src="imges/item-page/item-box-list-icon.svg" alt="icon">
                             </div>
-                            <div class="main-item__info-list-item-text">Влаштуємо переїзд</div>
-                        </li>
-                        <li class="main-item__info-list-item">
-                            <div class="main-item__info-list-item-icon img-wrp">
-                                <img src="imges/item-page/item-box-list-icon.svg" alt="icon">
-                            </div>
                             <div class="main-item__info-list-item-text">Надаємо житло</div>
                         </li>
                     </ul>
@@ -265,7 +280,7 @@
                         <span class="main-item__end-info-box-text">Телефон:</span>
                         <a href="#"
                             class="main-item__end-info-box-text main-item__end-info-box-text--ws">+380661234567</a>
-                        <div class="main-item__end-info-box-icon main-item__end-info-box-icon--phone img-wrp">
+                        <div class="main-item__end-info-box-icon main-item__end-info-box-icon--ws-phone img-wrp">
                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -792,7 +807,7 @@
 
                 <div class="add-fb__main-form-wrp">
                     <div class="add-fb__main-form-title-wrp">
-                        <div class="add-fb__main-form-title-icon">
+                        <div class="add-fb__main-form-title-icon img-wrp">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
