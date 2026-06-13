@@ -42,13 +42,11 @@
         selects.forEach(select => {
             const header = select.querySelector('.filter-select__header');
             const items = select.querySelectorAll('.filter-select__item');
-            const titleText = select.querySelector('.filter-select__title b'); // Ищем жирный текст, куда подставим выбор
+            const titleText = select.querySelector('.filter-select__title b');
 
-            // 1. Открытие/закрытие по клику на плашку
             header.addEventListener('click', (e) => {
                 e.stopPropagation();
 
-                // Закрываем все ОСТАЛЬНЫЕ селекты перед открытием текущего
                 selects.forEach(s => {
                     if (s !== select) s.classList.remove('_active');
                 });
@@ -56,27 +54,22 @@
                 select.classList.toggle('_active');
             });
 
-            // 2. Выбор элемента в списке
             items.forEach(item => {
                 item.addEventListener('click', (e) => {
                     e.stopPropagation();
 
-                    // Меняем текст в шапке на выбранный
                     if (titleText) {
                         titleText.textContent = item.textContent;
                     }
 
-                    // Переключаем активный класс у элементов списка
                     select.querySelector('.filter-select__item._selected')?.classList.remove('_selected');
                     item.classList.add('_selected');
 
-                    // Закрываем дропдаун
                     select.classList.remove('_active');
                 });
             });
         });
 
-        // 3. Закрытие любого открытого селекта при клике в пустую область экрана
         document.addEventListener('click', () => {
             selects.forEach(s => s.classList.remove('_active'));
         });
@@ -223,7 +216,7 @@
     if (menuBtn && headerMenu) {
         menuBtn.addEventListener('click', (e) => {
             e.stopPropagation();
-            
+
             menuBtn.classList.toggle('is-active');
             headerMenu.classList.toggle('is-open');
 
