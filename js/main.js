@@ -3,7 +3,7 @@
     const switcherBody = document.querySelector('.languare-switcher__body');
     const items = document.querySelectorAll('.languare-switcher__body-item');
 
-    if(switcherBody) switcherBody.addEventListener('click', function (e) {
+    if (switcherBody) switcherBody.addEventListener('click', function (e) {
         this.classList.toggle('_active');
     });
 
@@ -199,17 +199,51 @@
 
 // observe animation
 (() => {
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const animation = entry.target.dataset.animate; 
-        if (animation) {
-          entry.target.classList.add('animate__animated', animation);
-        }
-        observer.unobserve(entry.target); 
-      }
-    });
-  }, { threshold: 0.1 });
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const animation = entry.target.dataset.animate;
+                if (animation) {
+                    entry.target.classList.add('animate__animated', animation);
+                }
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
 
-  document.querySelectorAll('[data-animate]').forEach(el => observer.observe(el));
+    document.querySelectorAll('[data-animate]').forEach(el => observer.observe(el));
+})();
+
+// mobile menu
+(() => {
+    const menuBtn = document.querySelector('.mobile-menu-btn');
+    const headerMenu = document.querySelector('.header__menu');
+    const body = document.body;
+
+    if (menuBtn && headerMenu) {
+        menuBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            
+            menuBtn.classList.toggle('is-active');
+            headerMenu.classList.toggle('is-open');
+
+            body.classList.toggle('menu-lock');
+        });
+
+        headerMenu.addEventListener('click', (e) => {
+            if (e.target.closest('a')) {
+                menuBtn.classList.remove('is-active');
+                headerMenu.classList.remove('is-open');
+                body.classList.remove('menu-lock');
+            }
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!headerMenu.contains(e.target) && !menuBtn.contains(e.target)) {
+                menuBtn.classList.remove('is-active');
+                headerMenu.classList.remove('is-open');
+                body.classList.remove('menu-lock');
+            }
+        });
+    }
 })();

@@ -1,9 +1,15 @@
 .mobile-menu-btn {
-    display: none;
-    width: 24rem;
-    height: 24rem;
+	display: none;
+	width: 24rem;
+	height: 24rem;
+	cursor: pointer;
 
-    @media screen and (max-width: $mobile) {
+	.close-icon {
+		display: none;
+	}
+
+	@media screen and (max-width: $mobile) {
 		display: block;
 	}
 }
+

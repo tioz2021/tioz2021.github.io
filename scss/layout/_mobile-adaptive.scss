@@ -31,10 +31,6 @@
         height: 30rem;
     }
 
-    .header__menu {
-        display: none;
-    }
-
     .languare-switcher {
         width: 62rem;
         gap: 4rem;
@@ -162,7 +158,7 @@
         position: absolute;
         top: 146rem;
         left: 0;
-        z-index: 2;
+        z-index: 1;
     }
 
     .fs__info-box {
@@ -1296,4 +1292,87 @@
         left: 0;
     }
 
+    .main-menu__list {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* Блокируем скролл сайта при открытом меню */
+body.menu-lock {
+    overflow: hidden;
+}
+
+.menu-lock {
+
+    .fs__video-box,
+    .fs__info-box,
+    main {
+        // visibility: hidden;
+        // display: none;
+        opacity: 0;
+    }
+
+    .close-icon {
+        display: block;
+    }
+
+    .burger-icon {
+        display: none;
+    }
+
+}
+
+// .mobile-menu-btn
+.mobile-menu-btn {
+    @media screen and (max-width: 1024px) {
+        display: block;
+        position: relative;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 150;
+    }
+}
+
+// .header__menu
+.header__menu {
+
+    @media screen and (max-width: 1024px) {
+        position: absolute;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        box-sizing: border-box;
+
+
+        position: fixed;
+        top: 0;
+        right: -150%;
+        width: 100%;
+        max-width: 400rem;
+        height: 100vh;
+
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        border-radius: 0;
+
+        background: linear-gradient(162deg, rgba(30, 25, 65, 0.8) 0%, rgba(26, 26, 66, 0.8) 100%);
+        -webkit-backdrop-filter: blur(24rem);
+        backdrop-filter: blur(24rem);
+        z-index: 140;
+        transition: right 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+
+        &.is-open {
+            right: 0;
+        }
+
+        // .header__menu::before
+        &::before {
+            display: none;
+        }
+    }
 }
