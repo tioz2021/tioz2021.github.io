@@ -5989,7 +5989,7 @@ body.popup-lock {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-  bottom: 4rem;
+  bottom: 24rem;
   background: linear-gradient(0deg, #050728 0%, rgba(5, 7, 40, 0) 100%);
   z-index: 1;
 }
