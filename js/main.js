@@ -244,15 +244,32 @@
 // star interact
 (() => {
     const starList = document.querySelector('.add-fb-form__rating-star-list');
+    const ratingNumSpan = document.querySelector('.add-fb-form__rating-num span:first-child');
     
-    if (starList) {
+    if (starList && ratingNumSpan) {
         const stars = starList.querySelectorAll('.add-fb-form__rating-star-icon');
 
+        let currentSavedRating = 5; 
+
         stars.forEach((star, index) => {
+            const actualRating = 5 - index;
+
             star.addEventListener('click', () => {
+
                 stars.forEach(s => s.classList.remove('is-selected'));
                 star.classList.add('is-selected');
+
+                currentSavedRating = actualRating;
+                ratingNumSpan.textContent = currentSavedRating;
             });
+
+            star.addEventListener('mouseenter', () => {
+                ratingNumSpan.textContent = actualRating;
+            });
+        });
+
+        starList.addEventListener('mouseleave', () => {
+            ratingNumSpan.textContent = currentSavedRating;
         });
     }
 })();
