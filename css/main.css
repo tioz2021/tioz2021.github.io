@@ -7999,4 +7999,10 @@ body.menu-lock {
   .test-page .s1, .test-page .s2, .test-page .s3, .test-page .baner {
     margin-bottom: 80px;
   }
+}
+
+.mobile-menu-btn.is-active {
+  position: fixed;
+  top: 10px;
+  right: 10px;
 }/*# sourceMappingURL=main.css.map */
