@@ -5435,6 +5435,7 @@ svg path {
 .add-fb-form__rating-star-icon {
   width: 16rem;
   height: 16rem;
+  cursor: pointer;
 }
 .add-fb-form__field {
   margin-bottom: 16rem;
@@ -5522,6 +5523,33 @@ svg path {
 }
 .add-fb-form__agreement-link:hover {
   color: var(--bodi-1);
+}
+
+.add-fb-form__rating-star-list {
+  display: inline-flex;
+  flex-direction: row-reverse;
+  gap: 4rem;
+}
+.add-fb-form__rating-star-icon {
+  width: 16rem;
+  height: 16rem;
+  cursor: pointer;
+  opacity: 0.4;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+.add-fb-form__rating-star-icon img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  pointer-events: none;
+}
+.add-fb-form__rating-star-icon:hover, .add-fb-form__rating-star-icon:hover ~ .add-fb-form__rating-star-icon {
+  opacity: 1;
+  transform: scale(1.1);
+}
+.add-fb-form__rating-star-icon.is-selected, .add-fb-form__rating-star-icon.is-selected ~ .add-fb-form__rating-star-icon {
+  opacity: 1 !important;
+  transform: scale(1);
 }
 
 body.popup-lock {
@@ -7951,7 +7979,7 @@ body.menu-lock {
   display: none;
 }
 
-@media screen and (max-width: 1024rem) {
+@media screen and (max-width: 1024px) {
   .mobile-menu-btn {
     display: block;
     position: relative;
@@ -7962,7 +7990,7 @@ body.menu-lock {
   }
 }
 
-@media screen and (max-width: 1024rem) {
+@media screen and (max-width: 1024px) {
   .header__menu {
     position: absolute;
     flex-direction: column;

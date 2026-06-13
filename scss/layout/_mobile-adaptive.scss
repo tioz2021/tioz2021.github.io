@@ -1328,7 +1328,7 @@ body.menu-lock {
 
 // .mobile-menu-btn
 .mobile-menu-btn {
-    @media screen and (max-width: 1024rem) {
+    @media screen and (max-width: 1024px) {
         display: block;
         position: relative;
         background: transparent;
@@ -1341,7 +1341,7 @@ body.menu-lock {
 // .header__menu
 .header__menu {
 
-    @media screen and (max-width: 1024rem) {
+    @media screen and (max-width: 1024px) {
         position: absolute;
         flex-direction: column;
         align-items: flex-start;

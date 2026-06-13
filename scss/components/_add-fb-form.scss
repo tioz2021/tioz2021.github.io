@@ -59,6 +59,7 @@
     &__rating-star-icon {
         width: 16rem;
         height: 16rem;
+        cursor: pointer;
     }
 
     // .add-fb-form__form
@@ -182,6 +183,47 @@
         // .add-fb-form__agreement-link:hover
         &:hover {
             color: var(--bodi-1);
+        }
+    }
+}
+
+
+// interactive
+.add-fb-form {
+
+    // .add-fb-form__rating-star-list
+    &__rating-star-list {
+        display: inline-flex;
+        flex-direction: row-reverse; 
+        gap: 4rem; 
+    }
+
+    // .add-fb-form__rating-star-icon
+    &__rating-star-icon {
+        width: 16rem;
+        height: 16rem;
+        cursor: pointer;
+        
+        opacity: 0.4; 
+        transition: opacity 0.2s ease, transform 0.2s ease;
+
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            pointer-events: none;
+        }
+
+        &:hover,
+        &:hover ~ .add-fb-form__rating-star-icon {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+
+        &.is-selected,
+        &.is-selected ~ .add-fb-form__rating-star-icon {
+            opacity: 1 !important;
+            transform: scale(1);
         }
     }
 }

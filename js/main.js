@@ -240,3 +240,19 @@
         });
     }
 })();
+
+// star interact
+(() => {
+    const starList = document.querySelector('.add-fb-form__rating-star-list');
+    
+    if (starList) {
+        const stars = starList.querySelectorAll('.add-fb-form__rating-star-icon');
+
+        stars.forEach((star, index) => {
+            star.addEventListener('click', () => {
+                stars.forEach(s => s.classList.remove('is-selected'));
+                star.classList.add('is-selected');
+            });
+        });
+    }
+})();
