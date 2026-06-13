@@ -1170,10 +1170,10 @@
     }
 
     .popup__img-shadow {
-        width: 328px;
-        height: 208px;
-        top: -15px;
-        left: 5px;
+        width: 328rem;
+        height: 208rem;
+        top: -15rem;
+        left: 5rem;
     }
 
     .popup__img-shadow img {}
@@ -1227,6 +1227,8 @@
         display: flex;
         flex-direction: column;
         margin-bottom: 12rem;
+        margin-top: -70rem;
+        z-index: 2;
     }
 
     .popup__title {
@@ -1235,6 +1237,7 @@
 
     .popup__title .fs__title-desk-text--1 {
         text-align: center;
+        text-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.3);
     }
 
     .popup__list {
@@ -1325,7 +1328,7 @@ body.menu-lock {
 
 // .mobile-menu-btn
 .mobile-menu-btn {
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 1024rem) {
         display: block;
         position: relative;
         background: transparent;
@@ -1338,7 +1341,7 @@ body.menu-lock {
 // .header__menu
 .header__menu {
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 1024rem) {
         position: absolute;
         flex-direction: column;
         align-items: flex-start;
@@ -1353,10 +1356,10 @@ body.menu-lock {
         max-width: 400rem;
         height: 100vh;
 
-        padding-left: 16px;
-        padding-right: 16px;
-        padding-top: 24px;
-        padding-bottom: 24px;
+        padding-left: 16rem;
+        padding-right: 16rem;
+        padding-top: 24rem;
+        padding-bottom: 24rem;
         border-radius: 0;
 
         background: linear-gradient(162deg, rgba(30, 25, 65, 0.8) 0%, rgba(26, 26, 66, 0.8) 100%);
@@ -1364,7 +1367,7 @@ body.menu-lock {
         backdrop-filter: blur(24rem);
         z-index: 140;
         transition: right 0.5s cubic-bezier(0.25, 1, 0.5, 1);
-        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+        box-shadow: -10rem 0 30rem rgba(0, 0, 0, 0.5);
 
         &.is-open {
             right: 0;

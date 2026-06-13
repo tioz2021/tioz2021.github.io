@@ -5944,13 +5944,13 @@ body.popup-lock {
 .fs::after {
   content: "";
   width: 100%;
-  height: 300rem;
+  height: 600rem;
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-  bottom: -4rem;
+  bottom: -8rem;
   background: linear-gradient(0deg, #050728 0%, rgba(5, 7, 40, 0) 100%);
-  z-index: 2;
+  z-index: 1;
 }
 .fs__container {
   flex-wrap: wrap;
@@ -6194,7 +6194,7 @@ body.popup-lock {
 .s1 {
   margin-bottom: 60rem;
   position: relative;
-  z-index: 2;
+  z-index: 999;
 }
 .s1__container {
   flex-direction: column;
@@ -7828,10 +7828,10 @@ body.popup-lock {
     margin: 0;
   }
   .popup__img-shadow {
-    width: 328px;
-    height: 208px;
-    top: -15px;
-    left: 5px;
+    width: 328rem;
+    height: 208rem;
+    top: -15rem;
+    left: 5rem;
   }
   .popup__start-text {
     max-width: 151rem;
@@ -7875,12 +7875,15 @@ body.popup-lock {
     display: flex;
     flex-direction: column;
     margin-bottom: 12rem;
+    margin-top: -70rem;
+    z-index: 2;
   }
   .popup__title {
     margin-bottom: 8rem;
   }
   .popup__title .fs__title-desk-text--1 {
     text-align: center;
+    text-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.3);
   }
   .popup__list {
     gap: 4rem;
@@ -7948,7 +7951,7 @@ body.menu-lock {
   display: none;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024rem) {
   .mobile-menu-btn {
     display: block;
     position: relative;
@@ -7959,7 +7962,7 @@ body.menu-lock {
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024rem) {
   .header__menu {
     position: absolute;
     flex-direction: column;
@@ -7972,17 +7975,17 @@ body.menu-lock {
     width: 100%;
     max-width: 400rem;
     height: 100vh;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-left: 16rem;
+    padding-right: 16rem;
+    padding-top: 24rem;
+    padding-bottom: 24rem;
     border-radius: 0;
     background: linear-gradient(162deg, rgba(30, 25, 65, 0.8) 0%, rgba(26, 26, 66, 0.8) 100%);
     -webkit-backdrop-filter: blur(24rem);
     backdrop-filter: blur(24rem);
     z-index: 140;
     transition: right 0.5s cubic-bezier(0.25, 1, 0.5, 1);
-    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+    box-shadow: -10rem 0 30rem rgba(0, 0, 0, 0.5);
   }
   .header__menu.is-open {
     right: 0;
@@ -7993,16 +7996,16 @@ body.menu-lock {
 }
 
 .test-page .s1, .test-page .s2, .test-page .s3, .test-page .baner {
-  margin-bottom: 160px;
+  margin-bottom: 160rem;
 }
 @media screen and (max-width: 1024px) {
   .test-page .s1, .test-page .s2, .test-page .s3, .test-page .baner {
-    margin-bottom: 80px;
+    margin-bottom: 80rem;
   }
 }
 
 .mobile-menu-btn.is-active {
   position: fixed;
-  top: 10px;
-  right: 10px;
+  top: 10rem;
+  right: 10rem;
 }/*# sourceMappingURL=main.css.map */
