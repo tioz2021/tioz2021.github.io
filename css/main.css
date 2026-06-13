@@ -4150,6 +4150,18 @@ svg path {
   transition: fill 250ms ease;
 }
 
+/* Полное отключение системной подсветки тапов на iOS/Android */
+button,
+a,
+input,
+select,
+textarea,
+.add-fb-form__rating-star-icon,
+.mobile-menu-btn { /* И кнопку бургер-меню */
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none; /* Дополнительно: отключает системное меню при долгом тапе (актуально для ссылок/картинок) */
+}
+
 .title-neon {
   font-weight: 400;
   font-size: 44rem;
