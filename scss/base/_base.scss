@@ -16,6 +16,7 @@ html {
 
     @media screen and (max-width: $mobile) {
         font-size: calc(100vw / 360);
+        overflow: hidden;
     }
 }
 

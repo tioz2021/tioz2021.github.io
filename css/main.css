@@ -4124,6 +4124,7 @@ html {
 @media screen and (max-width: 1024px) {
   html {
     font-size: 0.2777777778vw;
+    overflow: hidden;
   }
 }
 
@@ -7479,7 +7480,6 @@ body.popup-lock {
   }
   .footer {
     margin-bottom: 24rem;
-    overflow: hidden;
   }
   .footer__decoration--left {
     border-radius: 12rem;
