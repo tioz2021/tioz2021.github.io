@@ -4610,6 +4610,7 @@ textarea,
   box-sizing: border-box;
   padding: 16rem;
   padding-bottom: 36rem;
+  background: rgba(5, 7, 40, 0.6);
 }
 .filter-form__grid {
   display: flex;
@@ -4627,14 +4628,14 @@ textarea,
 .filter-form__decoration--left {
   left: -24rem;
   bottom: 36rem;
-  filter: blur(100rem);
+  filter: blur(120rem);
   background: var(--dop-1);
   opacity: 0.25;
 }
 .filter-form__decoration--right {
   right: -24rem;
   bottom: 88rem;
-  filter: blur(100rem);
+  filter: blur(120rem);
   background: var(--dop-2);
   opacity: 0.25;
 }
@@ -5194,7 +5195,7 @@ textarea,
 }
 
 .gradient-border--filter-form::before {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.03) 100%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.45) 0%, rgba(255, 255, 255, 0.09) 100%);
 }
 
 .main-item {
@@ -5988,7 +5989,7 @@ body.popup-lock {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-  bottom: -8rem;
+  bottom: 4rem;
   background: linear-gradient(0deg, #050728 0%, rgba(5, 7, 40, 0) 100%);
   z-index: 1;
 }
