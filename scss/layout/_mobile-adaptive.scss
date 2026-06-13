@@ -504,11 +504,11 @@
 
     .custom-list__numeric {
         gap: 13rem;
-        margin-bottom: 21px;
+        margin-bottom: 21rem;
     }
 
     .custom-list__bullet {
-        gap: 14px;
+        gap: 14rem;
     }
 
     .custom-list__bullet .custom-list__item {
@@ -520,7 +520,11 @@
     }
 
     .custom-list {
-        margin-bottom: 20px;
+        margin-bottom: 20rem;
+    }
+
+    .s3 {
+        margin-bottom: 78px;
     }
 
     .s3__list {
@@ -529,17 +533,17 @@
 
     .s3__list-item {
         width: 100%;
-        padding: 12px;
-        padding-bottom: 16px;
+        padding: 12rem;
+        padding-bottom: 16rem;
     }
 
     .s3__list-item-title {
-        font-size: 16px;
-        margin-bottom: 9px;
+        font-size: 16rem;
+        margin-bottom: 9rem;
     }
 
     .s3__list-item-text {
-        font-size: 16px;
+        font-size: 16rem;
     }
 
     .gradient-border--right::before {
@@ -558,9 +562,204 @@
         display: none;
     }
 
-    // just time
-    .s3, .s4 {
-        display: none;
+    // ================================================== S4 ========================================================
+    .s4__title {
+        font-size: 24rem;
+        margin-bottom: 23rem;
+        left: 11px;
     }
+
+    .s4__decoration--left {
+        width: 60rem;
+        height: 62rem;
+        left: 16rem;
+        top: -20rem;
+    }
+
+    .s4__decoration--center {
+        width: 44rem;
+        height: 44rem;
+        left: 28rem;
+        top: 2rem;
+    }
+
+    .s4__decoration--right {
+        width: 60rem;
+        height: 62rem;
+        right: 17rem;
+        top: -13rem;
+    }
+
+    .accordion {
+        width: 100%;
+        border-radius: 8rem;
+    }
+
+    .accordion__header {
+        padding: 12rem;
+    }
+
+    .accordion__title {
+        font-size: 18rem;
+        max-width: 272rem;
+    }
+
+    .accordion__icon {
+        width: 24rem;
+        height: 24rem;
+    }
+
+    .accordion__content {
+        font-size: 16rem;
+        padding-left: 12rem;
+        padding-right: 12rem;
+    }
+
+    .s4 {
+        margin-bottom: 80rem;
+    }
+
+    .accordion__item {
+        margin-bottom: 6px;
+    }
+
+    .footer__container {
+        padding: 12px;
+        width: 328px;
+        padding-bottom: 26px;
+    }
+
+    .footer__top {
+        margin-bottom: 12px;
+    }
+
+    .footer__top-decor {
+        width: 154px;
+        height: 59px;
+        top: -31px;
+    }
+
+    .footer .languare-switcher {
+        left: 10rem;
+        top: 0rem;
+    }
+
+    .footer__main-menu {
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 12px;
+        padding-bottom: 15px;
+        height: auto;
+        min-height: unset;
+    }
+
+    .main-menu {
+        margin-left: 0;
+    }
+
+    .main-menu__list {
+        flex-wrap: wrap;
+        row-gap: 18px;
+    }
+
+    .main-menu__icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    .main-menu__item {
+        width: 141px;
+    }
+
+    .footer__main-menu .main-menu__text {
+        font-size: 16px;
+    }
+
+    .footer__menu {
+        padding: 12px;
+        flex-wrap: wrap;
+        row-gap: 9px;
+        margin-bottom: 8px;
+    }
+
+    .footer__menu-item {
+        width: 128px;
+    }
+
+    .footer__menu-title {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    .footer__menu-list-item {
+        min-height: 24px;
+        margin-bottom: 8px;
+    }
+
+    .footer__menu-list-link {
+        font-size: 16px;
+    }
+
+    .footer__info-list-link {
+        font-size: 14px;
+    }
+
+    .footer__info-link-list {
+        flex-wrap: wrap;
+        gap: 8px;
+        width: 148px;
+    }
+
+    .footer__info-copyright {
+        font-size: 14px;
+        text-align: left;
+        max-width: 145px;
+
+        // .footer__info-copyright br
+        br {
+            display: block;
+        }
+    }
+
+    .footer__end-protected {
+        width: 100px;
+        height: 16px;
+    }
+
+    .footer__info {
+        margin-bottom: 18px;
+    }
+
+    .footer__end-arrow-text {
+        font-size: 14px;
+    }
+
+    .footer {
+        margin-bottom: 24px;
+    }
+
+    .footer__decoration--left {
+        border-radius: 12px;
+        width: 196px;
+        height: 642px;
+        left: -32px;
+        bottom: 18px;
+        filter: blur(160px);
+        opacity: .2;
+    }
+
+    .footer__decoration--right {
+        border-radius: 12px;
+        width: 196px;
+        height: 642px;
+        right: -32px;
+        bottom: 18px;
+        filter: blur(160px);
+        opacity: .2;
+    }
+
+    // ================================================== item-page ========================================================
+    
+
 
 }

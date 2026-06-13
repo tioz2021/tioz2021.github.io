@@ -7,10 +7,10 @@
     //     --extra-space: 16rem;
     // }
 
-    // @media screen and (max-width: $mob-media) {
-    //     --content-padding: 12rem;
-    //     --extra-space: 12rem;
-    // }
+    @media screen and (max-width: $mobile) {
+        --content-padding: 12rem;
+        --extra-space: 12rem;
+    }
 }
 
 

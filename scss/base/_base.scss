@@ -13,7 +13,7 @@ html {
     @media screen and (max-width: 1300px) {
         font-size: calc(100vw / 1360);
     }
-    
+
     @media screen and (max-width: $mobile) {
         font-size: calc(100vw / 360);
     }
@@ -28,6 +28,10 @@ body {
     align-items: center;
 
     font-size: 16rem;
+
+    @media screen and (max-width: $mobile) {
+        overflow-x: hidden;
+    }
 }
 
 a {
